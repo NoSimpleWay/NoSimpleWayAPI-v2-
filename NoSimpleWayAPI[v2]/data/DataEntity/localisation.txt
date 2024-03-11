@@ -2965,6 +2965,110 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_area_level"
+	[tag]"name EN"		[value]"Area level"
+	[tag]"name RU"		[value]"Уровень области"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_rarity_normal"
+	[tag]"base name"	[value]"Normal"
+	[tag]"name EN"		[value]"Item rarity: normal"
+	[tag]"name RU"		[value]"Редкость предмета: oбычная"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_rarity_magic"
+	[tag]"base name"	[value]"Magic"
+	[tag]"name EN"		[value]"Item rarity: magic"
+	[tag]"name RU"		[value]"Редкость предмета: волшебная"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_rarity_rare"
+	[tag]"base name"	[value]"Normal"
+	[tag]"name EN"		[value]"Item rarity: rare"
+	[tag]"name RU"		[value]"Редкость предмета: редкая"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_rarity_unique"
+	[tag]"base name"	[value]"Normal"
+	[tag]"name EN"		[value]"Item rarity: unique"
+	[tag]"name RU"		[value]"Редкость предмета: уникальная"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_level"
+	[tag]"name EN"		[value]"Item level"
+	[tag]"name RU"		[value]"Уровень предмета"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"sockets_count"
+	[tag]"name EN"		[value]"Sockets"
+	[tag]"name RU"		[value]"Гнёзда"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"links_count"
+	[tag]"name EN"		[value]"Linked sockets"
+	[tag]"name RU"		[value]"Связанные гнёзда"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"red_sockets_weight"
+	[tag]"name EN"		[value]"Socket chance: red"
+	[tag]"name RU"		[value]"Шанс гнезда: красное"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"green_sockets_weight"
+	[tag]"name EN"		[value]"Socket chance: green"
+	[tag]"name RU"		[value]"Шанс гнезда: зелёное"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"blue_sockets_weight"
+	[tag]"name EN"		[value]"Socket chance: blue"
+	[tag]"name RU"		[value]"Шанс гнезда: синее"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"white_sockets_weight"
+	[tag]"name EN"		[value]"Socket chance: white"
+	[tag]"name RU"		[value]"Шанс гнезда: белое"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_quantity"
+	[tag]"name EN"		[value]"Quantity multiplier"
+	[tag]"name RU"		[value]"Множитель количества"
+	
 	
 	
 	

@@ -5307,7 +5307,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вдоводел"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5326,7 +5326,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кинжал Ангила"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5353,7 +5353,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Белый ветер"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5372,7 +5372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Губитель сердец"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5391,7 +5391,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дивинариус"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5419,7 +5419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Всепоглощающая тьма"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5438,7 +5438,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клык Аракаали"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5641,7 +5641,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вулконус"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5668,7 +5668,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Острие холодного железа"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5696,7 +5696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кухонный нож Бино"
 
 	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Rune Dagger"
+	[tag]"base class"	[value]"Rune Daggers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -5958,7 +5958,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чёрная трость"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -5985,7 +5985,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сингулярность"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6012,7 +6012,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Знак поедателя грехов"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6039,7 +6039,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мудрость Лавианги"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6058,7 +6058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сияющий клюв"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6085,7 +6085,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровавый крушитель"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6112,7 +6112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ледяное дыхание"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6138,7 +6138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пожиратель плоти"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6164,7 +6164,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Объятия Эарендила"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6190,7 +6190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рука смерти"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6205,11 +6205,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Karui Sceptre"
-	[tag]"name EN"		[value]"Учение Мааты"
-	[tag]"name RU"		[value]"Рука смерти"
+	[tag]"name EN"		[value]"Maata's Teaching"
+	[tag]"name RU"		[value]"Учение Мааты"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6235,7 +6235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скульптор"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6262,7 +6262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Молот Камерии"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6280,7 +6280,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мьёльнир"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"
+	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6306,7 +6306,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Молоток Каллинелия"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6332,7 +6332,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дыхание Совета"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6358,7 +6358,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Костёр"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6384,7 +6384,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вечность Аксиомы"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6411,7 +6411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фонарь Нюкты"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6431,7 +6431,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Высшая истина"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6457,7 +6457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Хватка Мон'Трегула"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6476,7 +6476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Златоворот"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6495,7 +6495,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небулис"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6522,7 +6522,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дун Кьюбияри"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6541,7 +6541,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Катализатор Дориани"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6561,7 +6561,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Согласие Яомака"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6588,7 +6588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тёмный провидец"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6608,7 +6608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Горькая мечта"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6634,7 +6634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лапа Цербера"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6661,7 +6661,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крапило Изувера"
 
 	[tag]"icon path"	[value]"SuperSceptre"
-	[tag]"base class"	[value]"Sceptre"	
+	[tag]"base class"	[value]"Sceptres"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6686,7 +6686,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Туманность"
 
 	[tag]"icon path"	[value]"SuperHammer"
-	[tag]"base class"	[value]"One Handed Mace"	
+	[tag]"base class"	[value]"One Hand Maces"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6712,7 +6712,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Буйная сталь"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6734,7 +6734,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Собиратель имён"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6759,7 +6759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Царевна"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -6785,7 +6785,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Запрет богини"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"
+	[tag]"base class"	[value]"One Hand Swords"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -6811,7 +6811,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Левша"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6837,7 +6837,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Приказ Ригвальда"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6856,7 +6856,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мощь Ахна"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6875,7 +6875,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лезвие Седьмого солнца"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6901,7 +6901,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Красный клюв"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6927,7 +6927,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Многоцветное затмение"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6953,7 +6953,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клинок Лакишу"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -6979,7 +6979,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клинок Иннсбери"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7004,7 +7004,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ичимондзи"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7029,7 +7029,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ярость Хьяона"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7048,7 +7048,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Спаситель"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"	
@@ -7075,7 +7075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шип Фиделиса"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7101,7 +7101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Морок Ивара"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7127,7 +7127,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Страсть Дарессо"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7152,7 +7152,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Страсть Дарессо"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7177,7 +7177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Аурумворакс"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7203,7 +7203,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перо грёз"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7222,7 +7222,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шип Грелесья"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7241,7 +7241,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клинок Белдрева"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7266,7 +7266,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отпор ваал"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7285,7 +7285,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Варунастра"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7310,7 +7310,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Эфемерное острие"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7335,7 +7335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Разорванные во сне"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7355,7 +7355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Слившиеся во сне"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7380,7 +7380,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"История ваал"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -7405,7 +7405,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Беда Коспри"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7430,7 +7430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Парадоксика"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -7455,7 +7455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скипетр сотрясения"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7479,7 +7479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скипетр сотрясения"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7498,7 +7498,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сердце бури"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7537,7 +7537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Они-Гороси"
 
 	[tag]"icon path"	[value]"SuperBlade"
-	[tag]"base class"	[value]"One Handed Sword"	
+	[tag]"base class"	[value]"One Hand Swords"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7560,7 +7560,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровавый шип"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -7579,7 +7579,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Болотная коряга"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -7603,7 +7603,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вырыватель душ"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7623,7 +7623,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ветра судьбы"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7643,7 +7643,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Центр вращения"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7663,7 +7663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трость познания"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7689,7 +7689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дрожь Тарина"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7709,7 +7709,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Расщепитель"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7735,7 +7735,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Повелитель осколков"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7754,7 +7754,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трость Кулемака"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7781,7 +7781,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Исказитель бытия"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7800,7 +7800,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Опора пленённого бога"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7820,7 +7820,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дыхание увядания"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7846,7 +7846,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мощи святых"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7866,7 +7866,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гнёт теней"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7891,7 +7891,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Агнерод запада"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7910,7 +7910,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Агнерод Юга"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7929,7 +7929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Агнерод Севера"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7948,7 +7948,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Агнерод Востока"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7973,7 +7973,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Эра господства"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -7992,7 +7992,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Серая игла"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8011,7 +8011,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Закон Атзири"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8033,7 +8033,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рука помощи"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8060,7 +8060,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Опаляющее касание"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8086,7 +8086,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рычаг Ксергилия"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8111,7 +8111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущий лёд"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"	
+	[tag]"base class"	[value]"Warstaves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8136,7 +8136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мученик Невинности"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8158,7 +8158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Правосудие охотника на ведьм"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8183,7 +8183,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Расщепляющий свет"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staff"	
+	[tag]"base class"	[value]"Staves"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8210,7 +8210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крылья энтропии"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8235,7 +8235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Размашистый удар"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8261,7 +8261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жнец"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8287,7 +8287,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровавый жнец"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8312,7 +8312,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пыл Синвикты"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8337,7 +8337,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Погоня жнеца"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8363,7 +8363,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отсекатель"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8389,7 +8389,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первенство Каома"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8415,7 +8415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровожадность Хезманы"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8435,7 +8435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Поцелуй Уул-Нетол"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8456,7 +8456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Немилость Атзири"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8484,7 +8484,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Панихида Дибиона"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8509,7 +8509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пламя Нгамаху"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8533,7 +8533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пир Китавы"
 
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	[tag]"base class"	[value]"Two Handed Axe"	
+	[tag]"base class"	[value]"Two Hand Axes"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"

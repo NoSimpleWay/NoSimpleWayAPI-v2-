@@ -632,6 +632,90 @@ public:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//		FOR LOOT SIMULATOR
+//		ATTRIBUTE GROUPS
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+class GameAttributeGenerator;
+class EButtonGroupAttributeGeneratorGroup : public EButtonGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	ID_string	name;
+	bool		is_active = false;
+
+	GameAttributeGenerator*
+	attribute_generator = nullptr;
+
+	virtual void init();
+	//virtual void execute_attribute_group(EGameItem* _game_item);
+};
+
+
+
+
+
+
+
+
+class EButtonGroupAttributeGeneratorGroup_Rarity : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_Rarity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()											override;
+	//void execute_attribute_group(EGameItem* _game_item)	override;
+};
+
+
+class EButtonGroupAttributeGeneratorGroup_ItemLevel : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_ItemLevel(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()											override;
+	//void execute_attribute_group(EGameItem* _game_item)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_SocketsAndLinks : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_SocketsAndLinks(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()											override;
+	//void execute_attribute_group(EGameItem* _game_item)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_Quantity : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_Quantity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()											override;
+	//void execute_attribute_group(EGameItem* _game_item)	override;
+};
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
 class EntityButtonLootItem;
 class EButtonGroupLootSimulator : public EButtonGroup
 {
@@ -676,6 +760,29 @@ public:
 	void generate_info_buttons_for_right_side(EntityButtonLootItem* _loot_button);
 
 	void create_info_button(EButtonGroupFilterBlock* _filter_block, std::string _key);
+
+
+
+	//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_
+
+	EButtonGroupAttributeGeneratorGroup_Rarity* attribute_group_rarity = nullptr;
+	int		selected_rarity			= -1;
+	int		rarity_override			= -1;
+
+	float	selected_item_level		= 80;
+
+	float	selected_sockets		= 3;
+	float	selected_links			= 3;
+
+	float	selected_red_weight		= 100;
+	float	selected_green_weight	= 100;
+	float	selected_blue_weight	= 100;
+	float	selected_white_weight	= 0;
+
+	float	selected_quantity		= 0;
+
+
+	std::vector<EButtonGroupAttributeGeneratorGroup*> attribute_group_list;
 };
 
 class EButtonGroupNonListedLine : public EButtonGroup
@@ -881,6 +988,11 @@ public:
 //	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
 //	EntityButtonForFilterBlock* input_field;
 //};
+
+
+
+
+
 
 namespace NSWRegisteredButtonGroups
 {
@@ -1788,27 +1900,27 @@ public:
 
 
 
-struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxFloat
+struct GameAttributeGeneratorQuantity : public GameAttributeGenerator
 {
 public:
-	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGeneratorMinMaxFloat(_attribute_name) {};
-	float base_pow = 1.0f;
+	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+	//float base_pow = 1.0f;
 	void execute_generation(EGameItem* _game_item);
 };
 
-struct GameAttributeGeneratorItemLevel : public GameAttributeGeneratorMinMaxInt
+struct GameAttributeGeneratorItemLevel : public GameAttributeGenerator
 {
 public:
 	//pointer_to_input_area_level_button
-	GameAttributeGeneratorItemLevel(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+	GameAttributeGeneratorItemLevel(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
 	void execute_generation(EGameItem* _game_item);
 };
 
-struct GameAttributeGeneratorRarity : public GameAttributeGeneratorMinMaxInt
+struct GameAttributeGeneratorRarity : public GameAttributeGenerator
 {
 public:
-	GameAttributeGeneratorRarity(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+	GameAttributeGeneratorRarity(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
 	float base_pow = 1.0f;
 
@@ -1945,23 +2057,29 @@ public:
 class LootSimulatorPattern
 {
 public:
-	ELocalisationText							localised_name;
+	ELocalisationText									localised_name;
 	ETextureGabarite* icon;
-	LootPatternFolderEnum						folder_enum;
+	LootPatternFolderEnum								folder_enum;
 
 	LootSimulatorPattern();
 
-	std::vector<GameItemGenerator*>				game_item_generator_list;
+	std::vector<GameItemGenerator*>						game_item_generator_list;
 
-	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
-	static void									execute_loot_pattern(LootSimulatorPattern* _pattern);
+	static std::vector<LootSimulatorPattern*>			registered_loot_simulater_pattern_list;
+	static void											execute_loot_pattern(LootSimulatorPattern* _pattern);
 
-	bool										additional_force_field_for_buttons = false;
-	//static void								refresh_loot_simulator();
-	bool										always_show = false;
-	bool										is_folder = false;
-	bool										have_force_field = false;
-	bool										can_be_configured = true;
+	bool												additional_force_field_for_buttons = false;
+	//static void										refresh_loot_simulator();
+	bool												always_show = false;
+	bool												is_folder = false;
+	bool												have_force_field = false;
+	bool												can_be_configured = true;
+
+	std::vector<ID_string>								activate_attribute_group_by_ID_string_list;
+
+	void												activate_attribute_group_by_name(std::string _name);
+
+	int													rarity_override = -1;
 
 
 };

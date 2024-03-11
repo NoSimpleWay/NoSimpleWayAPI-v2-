@@ -572,6 +572,8 @@ public:
 
 
 	void add_button_to_working_group(EntityButton* _button);
+	void add_button_to_working_group_and_expand_y(EntityButton* _button);
+
 	void add_button_to_additional_group(EntityButton* _button);
 	ESpriteLayer* background_sprite_layer = nullptr;
 

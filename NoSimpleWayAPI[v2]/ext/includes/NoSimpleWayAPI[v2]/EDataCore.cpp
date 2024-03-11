@@ -1652,15 +1652,15 @@ void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* 
 		}
 	}
 
-	if (button_variant_router->target_bool_value != nullptr)
-	{
-		*button_variant_router->target_bool_value = (bool)(button_variant_router->selected_variant);
-	}
+	//if (button_variant_router->target_bool_value != nullptr)
+	//{
+	//	*button_variant_router->target_bool_value = (bool)(button_variant_router->selected_variant);
+	//}
 
-	if (button_variant_router->target_int_value != nullptr)
-	{
-		*button_variant_router->target_int_value = button_variant_router->selected_variant;
-	}
+	//if (button_variant_router->target_int_value != nullptr)
+	//{
+	//	*button_variant_router->target_int_value = button_variant_router->selected_variant;
+	//}
 }
 
 void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _entity, ECustomData* _custom_data, float _d)

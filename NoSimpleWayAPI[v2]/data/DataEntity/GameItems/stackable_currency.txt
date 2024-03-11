@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"Scroll_Fragment_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
@@ -31,7 +31,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Trash"
 		
 	[tag]"drop level"		[value]"1"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"40"
 	
 	[tag]"item width"		[value]"1"
@@ -52,7 +52,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Trash"
 		
 	[tag]"drop level"		[value]"2"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"		[value]"1"
@@ -74,7 +74,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Trash"
 		
 	[tag]"drop level"		[value]"1"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"40"
 	
 	[tag]"item width"		[value]"1"
@@ -96,7 +96,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"30"
 
 	[tag]"item width"	[value]"1"
@@ -117,7 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"25"
-	[tag]"stack multiplier"	[value]"2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -138,7 +138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"	[value]"1"
@@ -153,7 +153,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blacksmith's_Whetstone_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	
@@ -188,12 +188,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -215,8 +214,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"12"
-	[tag]"stack multiplier"	[value]"3"
-	[tag]"max stack size"	[value]"10"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -237,7 +236,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"		[value]"61"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"		[value]"1"
@@ -259,7 +258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"12"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -304,7 +303,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -326,7 +325,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"35"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -346,7 +345,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"12"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -367,7 +366,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -431,7 +430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"8"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -463,7 +462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -488,7 +487,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item width"	[value]"1"
@@ -504,7 +503,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"15"
-	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -565,7 +564,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"35"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -614,7 +613,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -636,7 +635,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"35"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -661,7 +660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -685,7 +684,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Veritania"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -709,7 +708,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Drox"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -734,7 +733,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -823,7 +822,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Very expensive"
 		
 	[tag]"drop level"		[value]"35"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"		[value]"1"
@@ -864,7 +863,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Common"
 		
 	[tag]"drop level"		[value]"2"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"		[value]"1"
@@ -885,7 +884,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"4"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -907,7 +906,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"35"
-	[tag]"stack multiplier"	[value]"0.35"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -932,7 +931,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Common"
 		
 	[tag]"drop level"		[value]"2"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"		[value]"1"
@@ -949,12 +948,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"8"
-	[tag]"stack multiplier"	[value]"7"
+	[tag]"stack multiplier"	[value]"4"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -976,7 +974,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"68"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -997,7 +995,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"	
 
 	[tag]"drop level"	[value]"2"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"	[value]"1"
@@ -1019,7 +1017,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"12"
-	[tag]"stack multiplier"	[value]"7"
+	[tag]"stack multiplier"	[value]"4"
 	[tag]"max stack size"	[value]"30"
 
 	[tag]"item width"	[value]"1"
@@ -1044,7 +1042,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"League: Ritual"
 	[tag]"drop level"	[value]"70"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -1081,7 +1079,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -1102,7 +1100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"12"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1126,7 +1124,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1170,7 +1168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -1193,7 +1191,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"50"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1212,7 +1210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -1230,7 +1228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
@@ -1337,7 +1335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1357,7 +1355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -1392,7 +1390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1421,7 +1419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1445,7 +1443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1470,7 +1468,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1501,7 +1499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1525,7 +1523,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1554,7 +1552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1581,7 +1579,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1608,7 +1606,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1635,7 +1633,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1662,7 +1660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1690,7 +1688,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1725,7 +1723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1752,7 +1750,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1779,7 +1777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1806,7 +1804,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1833,7 +1831,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1860,7 +1858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1892,7 +1890,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1919,7 +1917,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1946,7 +1944,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -1973,7 +1971,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2000,7 +1998,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2027,7 +2025,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2063,7 +2061,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2091,7 +2089,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2119,7 +2117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2147,7 +2145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2175,7 +2173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2203,7 +2201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2231,7 +2229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2268,7 +2266,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2295,7 +2293,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2322,7 +2320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2349,7 +2347,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2376,7 +2374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2403,7 +2401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2435,7 +2433,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2462,7 +2460,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2489,7 +2487,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2516,7 +2514,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2543,7 +2541,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2570,7 +2568,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2601,7 +2599,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2628,7 +2626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2655,7 +2653,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2682,7 +2680,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2709,7 +2707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2736,7 +2734,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2775,7 +2773,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2802,7 +2800,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2829,7 +2827,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2856,7 +2854,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2884,7 +2882,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2912,7 +2910,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2946,7 +2944,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -2975,7 +2973,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3004,7 +3002,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3033,7 +3031,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3060,7 +3058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3087,7 +3085,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3122,7 +3120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3149,7 +3147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3176,7 +3174,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3203,7 +3201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3230,7 +3228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3257,7 +3255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3296,7 +3294,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3323,7 +3321,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3350,7 +3348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3377,7 +3375,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3404,7 +3402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3431,7 +3429,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3458,7 +3456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3485,7 +3483,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3512,7 +3510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3539,7 +3537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3566,7 +3564,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3594,7 +3592,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3622,7 +3620,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3650,7 +3648,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3678,7 +3676,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3706,7 +3704,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3734,7 +3732,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3779,7 +3777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3806,7 +3804,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3833,7 +3831,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3860,7 +3858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3887,7 +3885,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3914,7 +3912,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3941,7 +3939,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3968,7 +3966,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -3995,7 +3993,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4022,7 +4020,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4049,7 +4047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4084,7 +4082,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4109,7 +4107,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4134,7 +4132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4157,7 +4155,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -4184,7 +4182,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4210,7 +4208,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4235,7 +4233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4260,7 +4258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4285,7 +4283,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4310,7 +4308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4336,7 +4334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4362,7 +4360,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4388,7 +4386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4413,7 +4411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4438,7 +4436,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -4463,7 +4461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"

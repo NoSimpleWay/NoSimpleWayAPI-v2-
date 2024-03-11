@@ -3591,6 +3591,20 @@ void EButtonGroup::add_button_to_working_group(EntityButton* _button)
 	workspace_button_list.push_back(_button);
 }
 
+void EButtonGroup::add_button_to_working_group_and_expand_y(EntityButton* _button)
+{
+	_button->parent_button_group = this;
+
+	all_button_list.push_back(_button);
+	workspace_button_list.push_back(_button);
+
+	//float
+	//addition = _button->button_gabarite->size_y + _button->force_field_bottom + _button->force_field_up;
+	
+	region_gabarite->size_y	+= _button->button_gabarite->size_y + _button->force_field_bottom + _button->force_field_up;
+	//base_height				+= addition;
+}
+
 void EButtonGroup::add_button_to_additional_group(EntityButton* _button)
 {
 	_button->parent_button_group = this;

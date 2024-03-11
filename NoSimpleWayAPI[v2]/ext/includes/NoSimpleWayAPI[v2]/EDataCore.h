@@ -333,8 +333,8 @@ enum RegisteredFilterRules
 //};
 
 
-constexpr unsigned int ID_string_array_size = 65535;
-constexpr unsigned int ID_string_array_size_for_hash = ID_string_array_size/16;
+constexpr unsigned int ID_string_array_size = 65536;
+constexpr unsigned int ID_string_array_size_for_hash = ID_string_array_size/128;
 struct ID_string
 {
 	bool is_empty						= true;
@@ -503,14 +503,14 @@ class EDataContainer_VerticalNamedSlider : public EDataContainer
 {
 public:
 	//ESpriteLayer*			pointer_to_head;
-	ESpriteLayer*	pointer_to_brick_line_sprite_layer;
-	ESpriteLayer*	pointer_to_digit_section_sprite_layer;
+	ESpriteLayer*			pointer_to_brick_line_sprite_layer;
+	ESpriteLayer*			pointer_to_digit_section_sprite_layer;
 
-	EGUIStyle*		slider_style;
+	EGUIStyle*				slider_style;
 
-	std::string		stored_text;
-	ETextArea*		pointer_to_text_area;
-	ETextArea*		pointer_to_digit_text_area;
+	std::string				stored_text;
+	ETextArea*				pointer_to_text_area;
+	ETextArea*				pointer_to_digit_text_area;
 
 	float					operable_area_size_x;
 	float					current_slide_value;
@@ -522,7 +522,7 @@ public:
 	float					max_value = 1.0f;
 	
 
-	float* pointer_to_value;
+	float*					pointer_to_value;
 
 	bool					force_shift = false;
 	bool					rounded_numbers = false;

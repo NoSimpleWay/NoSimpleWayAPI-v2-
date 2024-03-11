@@ -991,7 +991,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	//DIGIT SECTION
 	{
 		ESpriteLayer*
-			digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
+		digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
 		digit_section->offset_x = 0.0f;
 		data->pointer_to_digit_section_sprite_layer = digit_section;
 		jc_button->sprite_layer_list.push_back(digit_section);
@@ -1018,7 +1018,10 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_text_area->offset_by_gabarite_size_y = 1.0;
 	jc_text_area->offset_by_text_size_y = -1.0;
 
-	jc_text_area->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
+	jc_text_area->forbide_new_line		= true;
+	jc_text_area->forbide_outbounding	= true;
+
+	jc_text_area->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left * 0.0f;
 	//jc_text_area->offset_border[BorderSide::LEFT] = 8.0f;
 
 	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
@@ -1046,8 +1049,12 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 		text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
 	//text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left * 0.0f;
 
-	text_area_digit_segment->can_be_edited = true;
-	text_area_digit_segment->can_change_localisation = true;
+
+	text_area_digit_segment->forbide_new_line			= true;
+	text_area_digit_segment->forbide_outbounding		= true;
+
+	text_area_digit_segment->can_be_edited				= true;
+	text_area_digit_segment->can_change_localisation	= true;
 
 	//text_area_digit_segment->autoerase_text = true;
 
@@ -2488,6 +2495,10 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 		}
 
 		pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+
+		if (target_bool_value != nullptr)	{*target_bool_value = (bool)(selected_variant);}
+
+		if (target_int_value != nullptr)	{*target_int_value = selected_variant;}
 	}
 	else
 	{
