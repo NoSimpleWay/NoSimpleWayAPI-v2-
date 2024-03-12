@@ -5,6 +5,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Амулеты"
 	
 	[tag]"short name"	[value]"Amulet"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_amulets"
 	
@@ -15,6 +23,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кольца"
 	
 	[tag]"short name"	[value]"Ring"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_rings"
 	
@@ -34,6 +50,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Jewels"
 	[tag]"name RU"		[value]"Самоцветы"
 	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Replica"
+	
 	[tag]"short name"	[value]"Jewel"
 
 	[tag]"icon path"	[value]"class_jewels"
@@ -46,6 +68,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Самоцвет Бездны"
 	
 	[tag]"short name"	[value]"Abyss Jewel"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Replica"
 
 	[tag]"icon path"	[value]"AbyssJewel"
 	
@@ -63,6 +91,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Когти"
 	
 	[tag]"short name"	[value]"Claw"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 	
 	[tag]"max sockets"	[value]"3"
 
@@ -97,6 +133,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Wand"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_wands"
 	
@@ -107,6 +151,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скипетры"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_sceptres"
 	
@@ -117,6 +169,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рунический кинжал"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_rune_dagger"
 	
@@ -136,6 +196,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"One Hand Sword"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_one_hand_swords"
 
@@ -146,6 +214,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шпаги"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_thrusting_one_hand_swords"
 	
@@ -158,6 +234,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Sword"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_two_hand_sword"
 	
@@ -178,6 +262,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"One Hand Axe"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_one_hand_axes"
 	
@@ -190,6 +282,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Axe"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_two_hand_axes"
 	
@@ -208,6 +308,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"One Hand Mace"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_one_hand_maces"
 	
@@ -220,6 +328,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Mace"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_tho_hand_maces"
 	
@@ -240,6 +356,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Bow"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_bows"
 
@@ -250,6 +374,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Колчаны"
 	
 	[tag]"short name"	[value]"Quiver"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Replica"
 
 	[tag]"icon path"	[value]"class_quivers"
 	
@@ -270,6 +400,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Staff"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_staves"
 	
@@ -282,6 +420,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Warstaff"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_warstaves"
 	
@@ -306,6 +452,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Fishing Rod"
 	
 	[tag]"max sockets"	[value]"4"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"FishingRod"
 	
@@ -336,6 +490,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перчатки"
 	
 	[tag]"max sockets"	[value]"4"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_gloves"
 
@@ -349,6 +511,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"max sockets"	[value]"4"
 
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 	[tag]"icon path"	[value]"class_helmets"
 	
 ADD_NEW_DATA_ENTITY
@@ -358,6 +528,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Обувь"
 	
 	[tag]"max sockets"	[value]"4"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_boots"
 	
@@ -370,6 +548,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Body Armour"
 	
 	[tag]"max sockets"	[value]"6"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_body_armours"
 	
@@ -384,6 +570,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Shield"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"class_shields"
 	
@@ -404,6 +598,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Skill Gems"
 	[tag]"short name"	[value]"Skill Gem"
 	[tag]"name RU"		[value]"Камни умений"
+	
+	[tag]"can be"		[value]"Corrupted"
+
+	[tag]"can be"		[value]"Gem quality"
 
 	[tag]"icon path"	[value]"PortalGem"
 	
@@ -413,6 +611,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Support Gems"
 	[tag]"short name"	[value]"Support Gem"
 	[tag]"name RU"		[value]"Камень поддержки"
+
+	[tag]"can be"		[value]"Gem quality"
 
 	[tag]"icon path"	[value]"SupportGems"
 	
@@ -499,6 +699,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Life Flask"
 	
 	[tag]"name RU"		[value]"Флаконы жизни"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
 	
@@ -508,6 +716,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mana Flasks"
 	[tag]"short name"	[value]"Mana Flask"
 	[tag]"name RU"		[value]"Флаконы маны"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+
 
 	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
 	
@@ -518,6 +735,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Hybrid Flask"
 	
 	[tag]"name RU"		[value]"Флаконы равновесия"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+
 
 	[tag]"icon path"	[value]"Hybrid_flask"
 	
@@ -528,6 +754,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Utility Flask"
 	
 	[tag]"name RU"		[value]"Особые флаконы"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+
 
 	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
 	
@@ -549,6 +784,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Map"
 	
 	[tag]"name RU"		[value]"Карты"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Maptier"
+
 	
 	[tag]"icon path"	[value]"Map"
 	
@@ -611,6 +856,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Expedition Logbook"
 	
 	[tag]"name RU"		[value]"Журнал экспедиции"
+	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+
 
 	[tag]"icon path"	[value]"ExpeditionLogbook"
 	
@@ -791,14 +1041,6 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Pantheon Soul"
-	[tag]"name RU"		[value]"Душа Пантеона"
-
-	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
 	[tag]"name EN"		[value]"Item Piece"
 	[tag]"name RU"		[value]"Часть"
 
@@ -838,6 +1080,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"name RU"		[value]"Контракт"
 	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+
+	
 
 	[tag]"icon path"	[value]"Contract"
 	
@@ -849,6 +1098,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"name RU"		[value]"Чертёж"
 	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	
 
 	[tag]"icon path"	[value]"Blueprint"
 	
@@ -859,6 +1113,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Разбойничья накидка"
 	
 	[tag]"short name"	[value]"Heist Cloak"
+	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
 
 	[tag]"icon path"	[value]"Cloak"
 	
@@ -878,6 +1136,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Heist Tools"
 	[tag]"short name"	[value]"Heist Tool"
 	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	
 	[tag]"name RU"		[value]"Разбойничий инструмент"
 	
 
@@ -888,6 +1150,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Heist Gear"
 	[tag]"name RU"		[value]"Разбойничьи принадлежности"
+	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
 
 	[tag]"icon path"	[value]"Arrow"
 	
@@ -950,7 +1216,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Sanctum Research"
-	[tag]"name RU"		[value]"Священные реликвии"
+	[tag]"name RU"		[value]"Исследования Святилища"
 
 	[tag]"icon path"	[value]"forbidden_tome"
 	
@@ -963,6 +1229,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Tincture"
 	[tag]"name RU"		[value]"Микстуры"
+	
+	[tag]"rarity override"	[value]"Magic"
 
 	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
 	
@@ -971,6 +1239,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Charms"
 	[tag]"name RU"		[value]"Обереги"
+	
+	[tag]"rarity override"	[value]"Magic"
 
 	[tag]"icon path"	[value]"UrsineCharm"
 	

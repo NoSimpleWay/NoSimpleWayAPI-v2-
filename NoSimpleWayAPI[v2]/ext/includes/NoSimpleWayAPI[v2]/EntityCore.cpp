@@ -1670,6 +1670,7 @@ void EntityButton::make_default_bool_switcher_button_with_unedible_text(ERegionG
 {
 	make_default_button_with_unedible_text(_region_gabarite, _parent_group, _dap, _ltext);
 	main_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
+	main_text_area->set_align_to_left_middle();
 
 	auto data_container = new EDataContainer_Button_BoolSwitcher();
 

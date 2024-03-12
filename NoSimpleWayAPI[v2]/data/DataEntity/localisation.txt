@@ -3072,6 +3072,67 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_synthesised"
+	[tag]"name EN"		[value]"Item synthesised"
+	[tag]"name RU"		[value]"Предмет синтезирован"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_fractured"
+	[tag]"name EN"		[value]"Item fractured"
+	[tag]"name RU"		[value]"Предмет расколот"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_corrupted"
+	[tag]"name EN"		[value]"Item corrrupted"
+	[tag]"name RU"		[value]"Предмет осквернён"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"corrupted_implicit_count"
+	[tag]"name EN"		[value]"Corrupted implicits"
+	[tag]"name RU"		[value]"Осквернённые свойства"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_identified"
+	[tag]"name EN"		[value]"Item identified"
+	[tag]"name RU"		[value]"Предмет опознан"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_mirrored"
+	[tag]"name EN"		[value]"Item mirrored"
+	[tag]"name RU"		[value]"Предмет отражён"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_enchanted"
+	[tag]"name EN"		[value]"Item enchanted"
+	[tag]"name RU"		[value]"Предмет зачарован"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_replica"
+	[tag]"name EN"		[value]"Item replica"
+	[tag]"name RU"		[value]"Реплика предмета"
+	
+	
+	
+	
 
 	
 	

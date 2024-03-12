@@ -73,6 +73,8 @@ namespace ERegisteredStrings
 	ID_string item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
 	ID_string all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
 	ID_string always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
+
+	ID_string rarity_override			= ID_string::register_new_unique_ID_by_key("rarity override");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3276,7 +3278,7 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 		if (_action_text == "tag")
 		{
 			last_created_data_tag = new EDataTag();
-			last_created_data_tag->tag_name.register_new_string_ID_by_string(_value);
+			last_created_data_tag->tag_name.set_ID_by_string(_value);
 
 			last_created_data_entity->tag_list.push_back(last_created_data_tag);
 		}
@@ -3287,7 +3289,7 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 				ID_string
 				new_ID_string;
 
-				new_ID_string.register_new_string_ID_by_string(_value);
+				new_ID_string.set_ID_by_string(_value);
 
 				last_created_data_tag->tag_value_list.push_back(new_ID_string);
 			}

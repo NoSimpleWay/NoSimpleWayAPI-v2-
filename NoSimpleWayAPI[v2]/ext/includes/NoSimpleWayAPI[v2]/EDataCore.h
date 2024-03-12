@@ -1,10 +1,10 @@
 #pragma once
 
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
-#include <vector>
 #include <string>
+#include <vector>
 
 
 
@@ -349,7 +349,7 @@ struct ID_string
 	static unsigned int last_registered_id;
 
 
-	void register_new_string_ID_by_string(std::string _string);
+	void set_ID_by_string(std::string _string);
 };
 
 namespace ERegisteredStrings
@@ -388,6 +388,8 @@ namespace ERegisteredStrings
 	extern ID_string item_tag;
 	extern ID_string all_sockets_white;
 	extern ID_string always_six_linked;
+
+	extern ID_string rarity_override;
 }
 
 

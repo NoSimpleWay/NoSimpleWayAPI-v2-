@@ -663,7 +663,7 @@ public:
 	attribute_generator = nullptr;
 
 	virtual void init();
-	//virtual void execute_attribute_group(EGameItem* _game_item);
+	virtual void execute_attribute_group(EGameItem* _game_item);
 };
 
 
@@ -679,7 +679,7 @@ public:
 	EButtonGroupAttributeGeneratorGroup_Rarity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
 	void init()											override;
-	//void execute_attribute_group(EGameItem* _game_item)	override;
+	void execute_attribute_group(EGameItem* _game_item)	override;
 };
 
 
@@ -689,7 +689,7 @@ public:
 	EButtonGroupAttributeGeneratorGroup_ItemLevel(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
 	void init()											override;
-	//void execute_attribute_group(EGameItem* _game_item)	override;
+	void execute_attribute_group(EGameItem* _game_item)	override;
 };
 
 class EButtonGroupAttributeGeneratorGroup_SocketsAndLinks : public EButtonGroupAttributeGeneratorGroup
@@ -698,7 +698,7 @@ public:
 	EButtonGroupAttributeGeneratorGroup_SocketsAndLinks(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
 	void init()											override;
-	//void execute_attribute_group(EGameItem* _game_item)	override;
+	void execute_attribute_group(EGameItem* _game_item)	override;
 };
 
 class EButtonGroupAttributeGeneratorGroup_Quantity : public EButtonGroupAttributeGeneratorGroup
@@ -707,7 +707,16 @@ public:
 	EButtonGroupAttributeGeneratorGroup_Quantity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
 	void init()											override;
-	//void execute_attribute_group(EGameItem* _game_item)	override;
+	void execute_attribute_group(EGameItem* _game_item)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_FlagAttributes : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_FlagAttributes(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()											override;
+	void execute_attribute_group(EGameItem* _game_item)	override;
 };
 
 
@@ -766,20 +775,30 @@ public:
 	//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_
 
 	EButtonGroupAttributeGeneratorGroup_Rarity* attribute_group_rarity = nullptr;
-	int		selected_rarity			= -1;
-	int		rarity_override			= -1;
+	int		selected_rarity				= -1;
+	int		rarity_override				= -1;
 
-	float	selected_item_level		= 80;
+	float	selected_item_level			= 80.0f;
 
-	float	selected_sockets		= 3;
-	float	selected_links			= 3;
+	float	selected_sockets			= 3.0f;
+	float	selected_links				= 3.0f;
 
-	float	selected_red_weight		= 100;
-	float	selected_green_weight	= 100;
-	float	selected_blue_weight	= 100;
-	float	selected_white_weight	= 0;
+	float	selected_red_weight			= 100.0f;
+	float	selected_green_weight		= 100.0f;
+	float	selected_blue_weight		= 100.0f;
+	float	selected_white_weight		= 0.0f;
 
-	float	selected_quantity		= 0;
+	float	selected_quantity			= 1.0f;
+
+	bool	is_synthesised				= false;
+	bool	is_fractured				= false;
+	bool	is_corrupted				= false;
+	bool	is_identified				= false;
+	bool	is_mirrored					= false;
+	bool	is_enchanted				= false;
+	bool	is_replica					= false;
+
+	float	selected_corrupted_imlicits	= 0.0f;
 
 
 	std::vector<EButtonGroupAttributeGeneratorGroup*> attribute_group_list;
@@ -1228,7 +1247,7 @@ enum DefaultGameAttributeEnum
 	_GAME_ATTRIBUTE_LAST_ELEMENT
 
 };
-
+class EGameItemAttributeContainer;
 class GameItemAttribute
 {
 public:
@@ -1243,20 +1262,21 @@ public:
 	bool have_input_field_for_listed = false;
 	bool have_exact_match = false;
 
-	int							attribute_tab_priority = 0;
+	int									attribute_tab_priority = 0;
 
-	std::string					data_entity_tag_filtration;
-	std::string					header_localistaion_key = "";
-	std::string					description_localisation_key = "";
+	std::string							data_entity_tag_filtration;
+	std::string							header_localistaion_key = "";
+	std::string							description_localisation_key = "";
 
-	bool						always_present;
-	float						button_x_size_override = 0.0f;
+	bool								always_present;
+	float								button_x_size_override = 0.0f;
 
-	bool						commentary_config = false;
-	bool						global_attribute_value = false;
-	bool						show_in_loot_item_description = true;
+	bool								commentary_config = false;
+	bool								global_attribute_value = false;
+	bool								show_in_loot_item_description = true;
 
-	static GameItemAttribute* get_attribute_by_name(std::vector<GameItemAttribute*>* _vector, std::string _name);
+	static GameItemAttribute*			get_attribute_by_name(std::vector<GameItemAttribute*>* _vector, std::string _name);
+	static EGameItemAttributeContainer* add_new_game_attribute_by_name(EGameItem* _game_item, std::string _name);
 
 	static GameItemAttribute* default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 };
@@ -1703,7 +1723,21 @@ public:
 	int max_stack_size = 1;
 	float stack_multiplier = 1.0f;
 
+	bool can_be_synthesised		= false;
+	bool can_be_fractured		= false;
+	bool can_be_corrupted		= false;
+	bool can_be_mirrored		= false;
+	bool can_be_enchanted		= false;
+	bool can_be_replica			= false;
+	bool can_be_quality			= false;
+	bool can_be_map_tier		= false;
+	bool can_be_gem_quality		= false;
+	bool can_be_maptier			= false;
+	bool can_be_blighted		= false;
+	bool can_be_uberblighted	= false;
+
 	bool warn_when_hidden = false;
+
 
 	std::string short_class_name = "";
 
@@ -1999,7 +2033,7 @@ struct GameAttributeGeneratorBoolFlag : public GameAttributeGenerator
 public:
 	GameAttributeGeneratorBoolFlag(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
-	float chance_to_activate = 0.5f;
+	float chance_to_activate = 1.0f;
 	void execute_generation(EGameItem* _game_item);
 };
 
