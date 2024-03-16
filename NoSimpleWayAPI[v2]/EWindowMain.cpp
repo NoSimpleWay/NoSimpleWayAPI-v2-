@@ -6967,6 +6967,21 @@ EWindowMain::EWindowMain()
 					right_loot_part->add_group(socket_link_color_group);
 
 				}
+
+				/////////		INFLUENCE																								//////////
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				{
+					EButtonGroupAttributeGeneratorGroup_Influense*
+					socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_Influense(new ERegionGabarite(200.0f, 0.0f));
+					socket_link_color_group->init();
+					socket_link_color_group->additional_y_distance = 10.0f;
+
+					socket_link_color_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+					socket_link_color_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+					right_loot_part->add_group(socket_link_color_group);
+
+				}
 		
 				
 		//||
@@ -17248,7 +17263,7 @@ void EWindowMain::register_new_folder_gems()
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
+			//game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(1.0f, 21.0f, 2.0f);
 
 
@@ -17274,7 +17289,7 @@ void EWindowMain::register_new_folder_gems()
 			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			//game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
 			game_item_generator->add_gem_level(1.0f, 20.0f, 2.0f);
 
 
@@ -17303,9 +17318,9 @@ void EWindowMain::register_new_folder_gems()
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
+			//game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
-			game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
+			//game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -17329,9 +17344,9 @@ void EWindowMain::register_new_folder_gems()
 			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
+			//game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
-			game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
+			//game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -17356,9 +17371,9 @@ void EWindowMain::register_new_folder_gems()
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
+			//game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(1.0f, 21.0f, 2.0f);
-			game_item_generator->add_flag_attrubite_by_name("Corrupted", 1.00f);
+			//game_item_generator->add_flag_attrubite_by_name("Corrupted", 1.00f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -17414,7 +17429,7 @@ void EWindowMain::register_new_folder_gems()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			//game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
 			game_item_generator->add_gem_level(1.0f, 5.0f, 2.0f);
 
 
@@ -17546,8 +17561,8 @@ void EWindowMain::register_new_folder_boss_loot()
 			tag_filter->add_new_banned_value("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(3.0f, 3.0f, 2.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(3.0f, 3.0f, 2.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -17672,8 +17687,8 @@ void EWindowMain::register_new_folder_boss_loot()
 			tag_filter->add_new_banned_value("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(3.0f, 3.0f, 2.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(3.0f, 3.0f, 2.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -17988,9 +18003,9 @@ void EWindowMain::register_pattern_flasks()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(0.0f, 1.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_quality(0, 30, 2.0f);
+			//game_item_generator->add_rarity(0.0f, 1.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_quality(0, 30, 2.0f);
 
 		}
 
@@ -18018,9 +18033,9 @@ void EWindowMain::register_pattern_flasks()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(3.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_quality(0, 30, 2.0f);
+			//game_item_generator->add_rarity(3.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_quality(0, 30, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18384,7 +18399,7 @@ void EWindowMain::register_pattern_map_splinters()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 
 
 
@@ -18431,8 +18446,8 @@ void EWindowMain::register_pattern_maps()
 			l_text.localisations[NSW_localisation_RU] = "Карта";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 			{
@@ -18477,8 +18492,8 @@ void EWindowMain::register_pattern_maps()
 			l_text.localisations[NSW_localisation_RU] = "Карта";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 			{
@@ -18523,8 +18538,8 @@ void EWindowMain::register_pattern_maps()
 			l_text.localisations[NSW_localisation_RU] = "Карта";
 			game_item_generator->add_class(l_text);
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 			{
@@ -18576,8 +18591,8 @@ void EWindowMain::register_pattern_maps()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 			{
@@ -18594,7 +18609,7 @@ void EWindowMain::register_pattern_maps()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_random_influence(1.0f);
+			//game_item_generator->add_random_influence(1.0f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -18633,8 +18648,8 @@ void EWindowMain::register_pattern_maps()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 			{
@@ -18790,9 +18805,9 @@ void EWindowMain::register_new_folder_delve_items()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -18892,9 +18907,9 @@ void EWindowMain::register_new_folder_delve_items()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -18945,9 +18960,9 @@ void EWindowMain::register_new_folder_delve_items()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -19016,8 +19031,8 @@ void EWindowMain::register_new_folder_delve_items()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -19085,8 +19100,8 @@ void EWindowMain::register_new_folder_delve_items()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -19154,8 +19169,8 @@ void EWindowMain::register_new_folder_delve_items()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -19333,7 +19348,7 @@ void EWindowMain::register_new_folder_breach_items()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 		}
@@ -19375,8 +19390,8 @@ void EWindowMain::register_new_folder_breach_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//GENERATORS
-			game_item_generator->add_item_level(70, 86, 1.0f);
-			game_item_generator->add_rarity(3, 3, 1.0f);
+			//game_item_generator->add_item_level(70, 86, 1.0f);
+			//game_item_generator->add_rarity(3, 3, 1.0f);
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 		}
@@ -19915,9 +19930,9 @@ void EWindowMain::register_new_pattern_uniques()
 
 
 
-			game_item_generator->add_rarity(3, 3, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(3, 3, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -19970,9 +19985,9 @@ void EWindowMain::register_new_pattern_uniques()
 
 
 
-			game_item_generator->add_rarity(3, 3, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(3, 3, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20061,9 +20076,9 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 
-			game_item_generator->add_rarity(0, 2, 2.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(0, 2, 2.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
 
@@ -20119,9 +20134,9 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 
-			game_item_generator->add_rarity(0, 2, 2.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 3, 0, 3);
+			//game_item_generator->add_rarity(0, 2, 2.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 3, 0, 3);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20168,7 +20183,7 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20218,7 +20233,7 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20265,7 +20280,7 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20312,7 +20327,7 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20465,9 +20480,9 @@ void EWindowMain::register_pattern_all_equip()
 
 
 
-			game_item_generator->add_rarity(0, 3, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
+			//game_item_generator->add_rarity(0, 3, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20523,9 +20538,9 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 3, 0, 3);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 3, 0, 3);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (GLOVES HELMETS BOOTS)			/////////////////////////////////////////////
@@ -20559,9 +20574,9 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
@@ -20597,8 +20612,8 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
@@ -20639,9 +20654,9 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20686,7 +20701,7 @@ void EWindowMain::register_new_folder_delirium_orbs()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20726,7 +20741,7 @@ void EWindowMain::register_new_folder_delirium_orbs()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20777,7 +20792,7 @@ void EWindowMain::register_new_folder_catalysts()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20827,8 +20842,8 @@ void EWindowMain::register_pattern_incubators()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20880,7 +20895,7 @@ void EWindowMain::register_new_folder_currency_shards()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -20932,7 +20947,7 @@ void EWindowMain::register_new_folder_oils()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21007,7 +21022,7 @@ void EWindowMain::register_pattern_harvest_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21056,7 +21071,7 @@ void EWindowMain::register_pattern_expedition_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (LOGBOOK)			/////////////////////////////////////////////
@@ -21082,7 +21097,7 @@ void EWindowMain::register_pattern_expedition_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 1.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 1.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21134,7 +21149,7 @@ void EWindowMain::register_pattern_eldritch_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21185,7 +21200,7 @@ void EWindowMain::register_pattern_delirium_orbs()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21235,7 +21250,7 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21283,7 +21298,7 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21353,8 +21368,7 @@ void EWindowMain::register_pattern_essences()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21411,7 +21425,7 @@ void EWindowMain::register_pattern_currencies_shard()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21475,7 +21489,7 @@ void EWindowMain::register_pattern_tainted_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21533,7 +21547,7 @@ void EWindowMain::register_embers_and_ichors()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21594,7 +21608,7 @@ void EWindowMain::register_pattern_guardian_orbs()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21656,7 +21670,7 @@ void EWindowMain::register_pattern_rare_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21711,7 +21725,7 @@ void EWindowMain::register_pattern_good_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21782,7 +21796,7 @@ void EWindowMain::register_pattern_basic_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21837,7 +21851,7 @@ void EWindowMain::register_pattern_cheap_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -21860,7 +21874,7 @@ void EWindowMain::register_valuable_items()
 		loot_simulator_pattern = new LootSimulatorPattern;
 
 	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Valuable items";
-	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ценные предеты";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ценные предметы";
 	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[star]");
 
 
@@ -21879,7 +21893,7 @@ void EWindowMain::register_valuable_items()
 		tag_filter->target_tag.set_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Stackable Currency");
 		tag_filter->add_new_suitable_value("Currency");
-		tag_filter->add_new_suitable_value("Divinations");
+		tag_filter->add_new_suitable_value("Divination Cards");
 		tag_filter->add_new_suitable_value("Breachstones");
 		tag_filter->add_new_suitable_value("Memories");
 		tag_filter->add_new_suitable_value("Map Fragments");
@@ -21906,7 +21920,7 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 	}
 
 	/////////////////////////////			ITEM GENERATOR (QUEST AND OTHER ITEMS					/////////////////////////////////////////////
@@ -21940,7 +21954,7 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 	}
 
 	/////////////////////////////			ITEM GENERATOR (SIX LINKS)								/////////////////////////////////////////////
@@ -21953,6 +21967,7 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 
 
+		game_item_generator->always_6_linked = true;
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
@@ -21978,9 +21993,9 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_rarity(0, 3, 3.0f);
-		game_item_generator->add_sockets_and_links(6, 6, 6, 6);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_rarity(0, 3, 3.0f);
+		//game_item_generator->add_sockets_and_links(6, 6, 6, 6);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
 	}
 
 	/////////////////////////////			ITEM GENERATOR (VALUABLE UNIQUES)						/////////////////////////////////////////////
@@ -21992,6 +22007,7 @@ void EWindowMain::register_valuable_items()
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
+		game_item_generator->always_unique = true;
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
@@ -22018,9 +22034,9 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_rarity(3, 3, 3.0f);
-		game_item_generator->add_sockets_and_links(0, 5, 0, 5);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_rarity(3, 3, 3.0f);
+		//game_item_generator->add_sockets_and_links(0, 5, 0, 5);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
 	}
 
 	/////////////////////////////			RED TIER MAP			/////////////////////////////////////////////
@@ -22045,8 +22061,8 @@ void EWindowMain::register_valuable_items()
 		l_text.localisations[NSW_localisation_RU] = "Карты";
 		game_item_generator->add_class(l_text);
 
-		game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 		/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 		{
@@ -22091,9 +22107,9 @@ void EWindowMain::register_valuable_items()
 		l_text.localisations[NSW_localisation_RU] = "Карты";
 		game_item_generator->add_class(l_text);
 
-		game_item_generator->add_rarity(0.0f, 2.0f, 3.0f);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
-		game_item_generator->add_random_influence(1.0f);
+		//game_item_generator->add_rarity(0.0f, 2.0f, 3.0f);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_random_influence(1.0f);
 
 		/////////////////////////////			MAP TIER			/////////////////////////////////////////////
 		{
@@ -22169,7 +22185,7 @@ void EWindowMain::register_trash_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		//game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
 	}
 
 	/////////////////////////////			ITEM GENERATOR (VALUABLE CURRENCY/DIVINATIONS)			/////////////////////////////////////////////
@@ -22239,9 +22255,9 @@ void EWindowMain::register_trash_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		game_item_generator->add_rarity(1.0f, 3.0f, 3.0f);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
-		game_item_generator->add_sockets_and_links(1, 4, 0, 5);
+		//game_item_generator->add_rarity(1.0f, 3.0f, 3.0f);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_sockets_and_links(1, 4, 0, 5);
 	}
 
 
@@ -22327,7 +22343,7 @@ void EWindowMain::register_pattern_all_currencies()
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
+		//game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
 
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22363,7 +22379,7 @@ void EWindowMain::register_all_deleted_items()
 		tag_filter->add_new_suitable_value("Deleted");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
+		//game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
 
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22474,9 +22490,9 @@ void EWindowMain::register_crubible_items_with_passive_tree()
 
 
 
-		game_item_generator->add_rarity(0, 3, 3.0f);
-		game_item_generator->add_item_level(-3, 3, 1.0f);
-		game_item_generator->add_flag_attrubite_by_name("HasCruciblePassiveTree", 1.0f);
+		//game_item_generator->add_rarity(0, 3, 3.0f);
+		//game_item_generator->add_item_level(-3, 3, 1.0f);
+		//game_item_generator->add_flag_attrubite_by_name("HasCruciblePassiveTree", 1.0f);
 	}
 
 	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22525,7 +22541,7 @@ void EWindowMain::register_crubible_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+			//game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22816,7 +22832,7 @@ void EWindowMain::register_ancestors_small_tattoo()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22866,7 +22882,7 @@ void EWindowMain::register_ancestors_honoured_tattoo()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22916,7 +22932,7 @@ void EWindowMain::register_ancestors_loyalty_tattoo()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -22969,7 +22985,7 @@ void EWindowMain::register_ancestors_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23013,7 +23029,7 @@ void EWindowMain::register_ancestors_sanctum_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23057,7 +23073,7 @@ void EWindowMain::register_ancestors_omens()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23226,7 +23242,7 @@ void EWindowMain::register_affliction_currency()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23276,7 +23292,7 @@ void EWindowMain::register_affliction_omens()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+			//game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23326,7 +23342,7 @@ void EWindowMain::register_affliction_bases()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(0.0f, 3.0f, 5.0f);
+			//game_item_generator->add_rarity(0.0f, 3.0f, 5.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23369,7 +23385,7 @@ void EWindowMain::register_affliction_tinctures()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 1.0f, 5.0f);
+			//game_item_generator->add_rarity(1.0f, 1.0f, 5.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23412,7 +23428,7 @@ void EWindowMain::register_affliction_charms()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 1.0f, 5.0f);
+			//game_item_generator->add_rarity(1.0f, 1.0f, 5.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23455,7 +23471,7 @@ void EWindowMain::register_affliction_corpses()
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(0.0f, 0.0f, 5.0f);
+			//game_item_generator->add_rarity(0.0f, 0.0f, 5.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23535,8 +23551,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23582,8 +23598,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23629,8 +23645,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23677,8 +23693,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23725,8 +23741,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23773,8 +23789,8 @@ void EWindowMain::register_crubible_deleted_attributes()
 			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
+			//game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			//game_item_generator->add_item_level(-3, 3, 1.0f);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -23894,8 +23910,8 @@ void EWindowMain::register_crubible_changed_items()
 		tag_filter->add_new_suitable_value("Wands");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		game_item_generator->add_rarity(0, 3, 2.0f);
-		game_item_generator->add_item_level(-3, 3, 2.0f);
+		//game_item_generator->add_rarity(0, 3, 2.0f);
+		//game_item_generator->add_item_level(-3, 3, 2.0f);
 
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 	}
@@ -26827,7 +26843,7 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 	}
 }
 
-void GameItemGenerator::init_game_item(EGameItem* _game_item)
+void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	//reset item rarity
 	_game_item->rarity = -1;
@@ -27077,7 +27093,12 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			}
 
 			//CHECK IS ITEM ALWAYS UNIQUE
-			if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Always unique", _game_item->stored_data_entity))
+			if
+			(
+				(DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Always unique", _game_item->stored_data_entity))
+				||
+				(_generator->always_unique)
+			)
 			{
 				_game_item->rarity = 3;
 			}
@@ -27154,7 +27175,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 	{
 		if (a_group->is_active)
 		{
-			a_group->execute_attribute_group(_game_item);
+			a_group->execute_attribute_group(_game_item, _generator);
 
 			/*EGameItemAttributeContainer
 			generated_attribute_container;
@@ -27424,102 +27445,102 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 	}
 }
 
-void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
-{
-	//		value
-	GameAttributeGeneratorRarity*
-	attribute_generator = new GameAttributeGeneratorRarity("Rarity");
+//void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
+//{
+//	//		value
+//	GameAttributeGeneratorRarity*
+//	attribute_generator = new GameAttributeGeneratorRarity("Rarity");
+//
+//	//		parameters
+//	//attribute_generator->min_value = _rarity_min;
+//	//attribute_generator->max_value = _rarity_max;
+//	//attribute_generator->generator_pow = _pow;
+//
+//	attribute_generator->base_pow = _pow;
+//
+//
+//
+//	attribute_generators_list.push_back(attribute_generator);
+//}
 
-	//		parameters
-	//attribute_generator->min_value = _rarity_min;
-	//attribute_generator->max_value = _rarity_max;
-	//attribute_generator->generator_pow = _pow;
+//void GameItemGenerator::add_item_level(int _level_min, int _level_max, float _pow)
+//{
+//	GameAttributeGeneratorItemLevel*
+//		value_generator = new GameAttributeGeneratorItemLevel("ItemLevel");
+//
+//	//		parameters
+//	//value_generator->min_value = _level_min;
+//	//value_generator->max_value = _level_max;
+//	//value_generator->generator_pow = _pow;
+//
+//	attribute_generators_list.push_back(value_generator);
+//}
 
-	attribute_generator->base_pow = _pow;
+//void GameItemGenerator::add_random_influence(float _chance)
+//{
+//	//		value
+//	GameAttributeGeneratorItemInfluence*
+//		attribute_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//	//		parameters
+//	attribute_generator->chance_to_generate = _chance;
+//	attribute_generator->base_chance_to_add = _chance;
+//
+//	attribute_generators_list.push_back(attribute_generator);
+//}
 
+//GameAttributeGeneratorSocketsLinksColours* GameItemGenerator::add_sockets_and_links(int _min_sockets, int _max_sockets, int _min_links, int _max_links)
+//{
+//	//		value
+//	GameAttributeGeneratorSocketsLinksColours*
+//	attribute_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+//
+//	//		parameters
+//	attribute_generator->sockets_min_value = _min_sockets;
+//	attribute_generator->sockets_max_value = _max_sockets;
+//
+//	attribute_generator->links_min = _min_links;
+//	attribute_generator->links_max = _max_links;
+//
+//
+//	
+//
+//	attribute_generators_list.push_back(attribute_generator);
+//
+//	return attribute_generator;
+//}
 
+//void GameItemGenerator::add_quantity(float _min = 0.0f, float _max = 3.0f, float _pow = 2.0f)
+//{
+//	//		value
+//	GameAttributeGeneratorQuantity*
+//	value_generator = new GameAttributeGeneratorQuantity("StackSize");
+//
+//	////		parameters
+//	//value_generator->min_value = _min;
+//	//value_generator->max_value = _max;
+//	//value_generator->generator_pow = _pow;
+//
+//	//value_generator->base_pow = _pow;
+//
+//	attribute_generators_list.push_back(value_generator);
+//}
 
-	attribute_generators_list.push_back(attribute_generator);
-}
-
-void GameItemGenerator::add_item_level(int _level_min, int _level_max, float _pow)
-{
-	GameAttributeGeneratorItemLevel*
-		value_generator = new GameAttributeGeneratorItemLevel("ItemLevel");
-
-	//		parameters
-	//value_generator->min_value = _level_min;
-	//value_generator->max_value = _level_max;
-	//value_generator->generator_pow = _pow;
-
-	attribute_generators_list.push_back(value_generator);
-}
-
-void GameItemGenerator::add_random_influence(float _chance)
-{
-	//		value
-	GameAttributeGeneratorItemInfluence*
-		attribute_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-	//		parameters
-	attribute_generator->chance_to_generate = _chance;
-	attribute_generator->base_chance_to_add = _chance;
-
-	attribute_generators_list.push_back(attribute_generator);
-}
-
-GameAttributeGeneratorSocketsLinksColours* GameItemGenerator::add_sockets_and_links(int _min_sockets, int _max_sockets, int _min_links, int _max_links)
-{
-	//		value
-	GameAttributeGeneratorSocketsLinksColours*
-	attribute_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-	//		parameters
-	attribute_generator->sockets_min_value = _min_sockets;
-	attribute_generator->sockets_max_value = _max_sockets;
-
-	attribute_generator->links_min = _min_links;
-	attribute_generator->links_max = _max_links;
-
-
-	
-
-	attribute_generators_list.push_back(attribute_generator);
-
-	return attribute_generator;
-}
-
-void GameItemGenerator::add_quantity(float _min = 0.0f, float _max = 3.0f, float _pow = 2.0f)
-{
-	//		value
-	GameAttributeGeneratorQuantity*
-	value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-	////		parameters
-	//value_generator->min_value = _min;
-	//value_generator->max_value = _max;
-	//value_generator->generator_pow = _pow;
-
-	//value_generator->base_pow = _pow;
-
-	attribute_generators_list.push_back(value_generator);
-}
-
-void GameItemGenerator::add_quality(int _min, int _max, float _pow)
-{
-	//		value
-	GameAttributeGeneratorQuality*
-		value_generator = new GameAttributeGeneratorQuality("Quality");
-
-	//		parameters
-	value_generator->min_value = _min;
-	value_generator->max_value = _max;
-	value_generator->generator_pow = _pow;
-
-	value_generator->base_pow = _pow;
-
-	attribute_generators_list.push_back(value_generator);
-}
+//void GameItemGenerator::add_quality(int _min, int _max, float _pow)
+//{
+//	//		value
+//	GameAttributeGeneratorQuality*
+//		value_generator = new GameAttributeGeneratorQuality("Quality");
+//
+//	//		parameters
+//	value_generator->min_value = _min;
+//	value_generator->max_value = _max;
+//	value_generator->generator_pow = _pow;
+//
+//	value_generator->base_pow = _pow;
+//
+//	attribute_generators_list.push_back(value_generator);
+//}
 
 void GameItemGenerator::add_gem_level(int _level_min, int _level_max, float _pow)
 {
@@ -27534,17 +27555,17 @@ void GameItemGenerator::add_gem_level(int _level_min, int _level_max, float _pow
 	attribute_generators_list.push_back(value_generator);
 }
 
-void GameItemGenerator::add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add)
-{
-	//		value
-	GameAttributeGeneratorBoolFlag*
-		attribute_generator = new GameAttributeGeneratorBoolFlag(_attribute_name);
-
-	//		parameters
-	attribute_generator->chance_to_activate = _chance_to_add;
-
-	attribute_generators_list.push_back(attribute_generator);
-}
+//void GameItemGenerator::add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add)
+//{
+//	//		value
+//	GameAttributeGeneratorBoolFlag*
+//		attribute_generator = new GameAttributeGeneratorBoolFlag(_attribute_name);
+//
+//	//		parameters
+//	attribute_generator->chance_to_activate = _chance_to_add;
+//
+//	attribute_generators_list.push_back(attribute_generator);
+//}
 
 void GameItemGenerator::add_class(ELocalisationText _attribute_localisation)
 {
@@ -28200,11 +28221,11 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 
 		for (EGameItem* game_item : game_item_vector)
 		{
-			_pattern->game_item_generator_list[i]->init_game_item(game_item);
+			_pattern->game_item_generator_list[i]->init_game_item(game_item, _pattern->game_item_generator_list[i]);
 
 
 			EntityButtonLootItem*
-				loot_item = new EntityButtonLootItem();
+			loot_item = new EntityButtonLootItem();
 			loot_item->align_even_if_hidden = true;
 			loot_item->do_not_generate_bg = true;
 
@@ -28253,7 +28274,7 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 
 
 			loot_item->main_custom_data->actions_on_pre_draw.push_back(EDataActionCollection::action_draw_loot_button);
-			EButtonGroupLootSimulator::show_hidden = true;
+			//EButtonGroupLootSimulator::show_hidden = true;
 
 			//loot_item->disable_draw =
 			//(
@@ -29238,27 +29259,27 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 
 void EButtonGroupLootSimulator::generate_info_buttons_for_right_side(EntityButtonLootItem* _loot_button)
 {
-	pointer_to_right_side_info_buttons->remove_all_workspace_buttons();
+	//pointer_to_right_side_info_buttons->remove_all_workspace_buttons();
 
 
 
 
 
-	std::string key_string = "";
-	create_info_button(_loot_button->matched_size_block, "button_matched_size_block");
+	//std::string key_string = "";
+	//create_info_button(_loot_button->matched_size_block, "button_matched_size_block");
 
-	create_info_button(_loot_button->matched_bg_color_block, "button_matched_bg_color_block");
-	create_info_button(_loot_button->matched_rama_color_block, "button_matched_rama_color_block");
-	create_info_button(_loot_button->matched_text_color_block, "button_matched_text_color_block");
+	//create_info_button(_loot_button->matched_bg_color_block, "button_matched_bg_color_block");
+	//create_info_button(_loot_button->matched_rama_color_block, "button_matched_rama_color_block");
+	//create_info_button(_loot_button->matched_text_color_block, "button_matched_text_color_block");
 
-	create_info_button(_loot_button->matched_minimap_icon_block, "button_matched_minimap_icon_block");
-	//create_info_button(_loot_button->matched_minimap_icon_shape_block,	"button_matched_minimap_icon_shape_block");
-	//create_info_button(_loot_button->matched_minimap_icon_size_block,	"button_matched_minimap_icon_size_block");
+	//create_info_button(_loot_button->matched_minimap_icon_block, "button_matched_minimap_icon_block");
+	////create_info_button(_loot_button->matched_minimap_icon_shape_block,	"button_matched_minimap_icon_shape_block");
+	////create_info_button(_loot_button->matched_minimap_icon_size_block,	"button_matched_minimap_icon_size_block");
 
 
-	create_info_button(_loot_button->matched_show_hide_block, "button_matched_show_hide_block");
+	//create_info_button(_loot_button->matched_show_hide_block, "button_matched_show_hide_block");
 
-	pointer_to_right_side_info_buttons->need_change = true;
+	//pointer_to_right_side_info_buttons->need_change = true;
 }
 
 void EButtonGroupLootSimulator::create_info_button(EButtonGroupFilterBlock* _filter_block, std::string _key)
@@ -31057,7 +31078,7 @@ EntityButtonColorButtonForFilterBlock::~EntityButtonColorButtonForFilterBlock()
 {
 }
 
-void EButtonGroupAttributeGeneratorGroup::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 }
 
@@ -31104,7 +31125,7 @@ void EButtonGroupAttributeGeneratorGroup_Rarity::init()
 	
 }
 
-void EButtonGroupAttributeGeneratorGroup_Rarity::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup_Rarity::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	EGameItemAttributeContainer*
 	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Rarity");
@@ -31153,7 +31174,7 @@ void EButtonGroupAttributeGeneratorGroup_ItemLevel::init()
 
 }
 
-void EButtonGroupAttributeGeneratorGroup_ItemLevel::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup_ItemLevel::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	EGameItemAttributeContainer*
 	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "ItemLevel");
@@ -31374,7 +31395,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 
 }
 
-void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	EButtonGroupLootSimulator*
 	loot_simulator_pointer = EWindowMain::loot_simulator_button_group;
@@ -31434,9 +31455,17 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 
 		if
 		(
-			(_game_item->stored_data_entity != nullptr)
-			&&
-			(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::always_six_linked, _game_item->stored_data_entity))
+			(
+				(_game_item->stored_data_entity != nullptr)
+				&&
+				(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::always_six_linked, _game_item->stored_data_entity))
+			)
+			||
+			(
+				(_generator != nullptr)
+				&&
+				(_generator->always_6_linked)
+			)
 		)//ALWAYS 6-linked
 		{
 			sockets_count = 6;
@@ -31608,7 +31637,7 @@ void EButtonGroupAttributeGeneratorGroup_Quantity::init()
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 }
 
-void EButtonGroupAttributeGeneratorGroup_Quantity::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup_Quantity::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	EGameItemAttributeContainer*
 	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "StackSize");
@@ -31641,11 +31670,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/synthesised_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/synthesised_inactive"),
 		ELocalisationText::get_localisation_by_key("item_synthesised"),
 		&EWindowMain::loot_simulator_button_group->is_synthesised
 	);
@@ -31661,16 +31690,57 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/fractured_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/fractured_inactive"),
 		ELocalisationText::get_localisation_by_key("item_fractured"),
 		&EWindowMain::loot_simulator_button_group->is_fractured
 	);
 	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+	///
+	//CORRUPTED IMPLICITS
+	EntityButton*
+	named_slider = nullptr;
+
+
+	
+	named_slider = EntityButton::create_horizontal_named_slider
+	(
+
+		new ERegionGabarite(350.0f, 36.0f),
+		this,
+		EFont::font_list[0],
+		EGUIStyle::active_style,
+		ELocalisationText::get_localisation_by_key("corrupted_implicits")
+	);
+	
+	named_slider->force_field_up = 2.0f;
+	named_slider->force_field_bottom = 8.0f;
+
+	add_button_to_working_group_and_expand_y(named_slider);
+	named_slider->can_be_stretched = true;
+
+
+	EDataContainer_VerticalNamedSlider*
+	container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container);
+
+	container->pointer_to_value = &EWindowMain::loot_simulator_button_group->selected_corrupted_implicits;
+
+	container->min_value = 0.0f;
+	container->mid_value = 1.0f;
+	container->max_value = 2.0f;
+
+	container->rounded_numbers = true;
+
+	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
+
+
 
 
 
@@ -31681,11 +31751,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/corrupted_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/corrupted_inactive"),
 		ELocalisationText::get_localisation_by_key("item_corrupted"),
 		&EWindowMain::loot_simulator_button_group->is_corrupted
 	);
@@ -31701,11 +31771,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/identified_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/identified_inactive"),
 		ELocalisationText::get_localisation_by_key("item_identified"),
 		&EWindowMain::loot_simulator_button_group->is_identified
 	);
@@ -31721,11 +31791,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/mirrored_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/mirrored_inactive"),
 		ELocalisationText::get_localisation_by_key("item_mirrored"),
 		&EWindowMain::loot_simulator_button_group->is_mirrored
 	);
@@ -31741,11 +31811,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/enchanted_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/enchanted_inactive"),
 		ELocalisationText::get_localisation_by_key("item_enchanted"),
 		&EWindowMain::loot_simulator_button_group->is_enchanted
 	);
@@ -31761,11 +31831,11 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	switch_button->can_be_stretched = true;
 	switch_button->make_default_bool_switcher_button_with_unedible_text
 	(
-		new ERegionGabarite(region_gabarite->size_x, 22.0f),
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
 		this,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/replica_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/replica_inactive"),
 		ELocalisationText::get_localisation_by_key("item_replica"),
 		&EWindowMain::loot_simulator_button_group->is_replica
 	);
@@ -31775,7 +31845,7 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 
 }
 
-void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group(EGameItem* _game_item)
+void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	if ((EWindowMain::loot_simulator_button_group->is_synthesised) && (_game_item->can_be_synthesised))
 	{
@@ -31789,12 +31859,20 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group
 		EGameItemAttributeContainer*
 		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Corrupted");
 		attribute_container->attribute_value_bool = true;
+
+
+		if (std::round(EWindowMain::loot_simulator_button_group->selected_corrupted_implicits) > 0)
+		{
+			attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "CorruptedMods");
+			attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_corrupted_implicits);
+		}
+		
 	}
 
 	if ((EWindowMain::loot_simulator_button_group->is_enchanted) && (_game_item->can_be_enchanted))
 	{
 		EGameItemAttributeContainer*
-		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "HasEnchantment");
+		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "AnyEnchantment");
 		attribute_container->attribute_value_bool = true;
 	}
 
@@ -31824,5 +31902,198 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group
 		EGameItemAttributeContainer*
 		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Replica");
 		attribute_container->attribute_value_bool = true;
+	}
+}
+
+void EButtonGroupAttributeGeneratorGroup_Influense::init()
+{
+	name.set_ID_by_string("Influence");
+	EWindowMain::loot_simulator_button_group->attribute_group_list.push_back(this);
+
+
+	EntityButton*
+	switch_button = nullptr;
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/crusader_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/crusader_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_crusader"),
+		&EWindowMain::loot_simulator_button_group->influence_crusader
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/hunter_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/hunter_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_hunter"),
+		&EWindowMain::loot_simulator_button_group->influence_hunter
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/redeemer_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/redeemer_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_redeemer"),
+		&EWindowMain::loot_simulator_button_group->influence_redeemer
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/warlord_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/warlord_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_warlord"),
+		&EWindowMain::loot_simulator_button_group->influence_warlord
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/shaper_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/shaper_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_shaper"),
+		&EWindowMain::loot_simulator_button_group->influence_shaper
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/elder_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/influences_swicher/elder_inactive"),
+		ELocalisationText::get_localisation_by_key("influence_elder"),
+		&EWindowMain::loot_simulator_button_group->influence_elder
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+}
+
+void EButtonGroupAttributeGeneratorGroup_Influense::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
+{
+	EGameItemAttributeContainer*
+	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "HasInfluence");
+	//attribute_container->attribute_value_bool = true;
+
+
+		//elder
+	if (EWindowMain::loot_simulator_button_group->influence_elder)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Elder";
+		l_text.localisations[NSW_localisation_EN] = "Elder";
+		l_text.localisations[NSW_localisation_RU] = "Древний";
+
+		attribute_container->listed_value_list.push_back(l_text);
+	}
+
+	//shaper
+	if (EWindowMain::loot_simulator_button_group->influence_shaper)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Shaper";
+		l_text.localisations[NSW_localisation_EN] = "Shaper";
+		l_text.localisations[NSW_localisation_RU] = "Создателя";
+
+		attribute_container->listed_value_list.push_back(l_text);
+	}
+
+	//Redeemer
+	if (EWindowMain::loot_simulator_button_group->influence_redeemer)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Redeemer";
+		l_text.localisations[NSW_localisation_EN] = "Redeemer";
+		l_text.localisations[NSW_localisation_RU] = "Избавительницы";
+
+		attribute_container->listed_value_list.push_back(l_text);
+	}
+
+	//Warlord
+	if (EWindowMain::loot_simulator_button_group->influence_warlord)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Warlord";
+		l_text.localisations[NSW_localisation_EN] = "Warlord";
+		l_text.localisations[NSW_localisation_RU] = "Вождя";
+
+		attribute_container->listed_value_list.push_back(l_text);
+	}
+
+	//Hunter
+	if (EWindowMain::loot_simulator_button_group->influence_hunter)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Hunter";
+		l_text.localisations[NSW_localisation_EN] = "Hunter";
+		l_text.localisations[NSW_localisation_RU] = "Охотника";
+
+		attribute_container->listed_value_list.push_back(l_text);
+	}
+
+	//Crusader
+	if (EWindowMain::loot_simulator_button_group->influence_crusader)
+	{
+		ELocalisationText l_text;
+		l_text.base_name = "Crusader";
+		l_text.localisations[NSW_localisation_EN] = "Crusader";
+		l_text.localisations[NSW_localisation_RU] = "Крестоносца";
+
+		attribute_container->listed_value_list.push_back(l_text);
 	}
 }

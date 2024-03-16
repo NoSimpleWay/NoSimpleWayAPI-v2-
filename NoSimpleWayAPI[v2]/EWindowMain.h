@@ -651,6 +651,7 @@ public:
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 class GameAttributeGenerator;
+struct GameItemGenerator;
 class EButtonGroupAttributeGeneratorGroup : public EButtonGroup
 {
 public:
@@ -663,7 +664,7 @@ public:
 	attribute_generator = nullptr;
 
 	virtual void init();
-	virtual void execute_attribute_group(EGameItem* _game_item);
+	virtual void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator);
 };
 
 
@@ -672,14 +673,14 @@ public:
 
 
 
-
+class GameItemGenerator;
 class EButtonGroupAttributeGeneratorGroup_Rarity : public EButtonGroupAttributeGeneratorGroup
 {
 public:
 	EButtonGroupAttributeGeneratorGroup_Rarity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
-	void init()											override;
-	void execute_attribute_group(EGameItem* _game_item)	override;
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
 
@@ -688,8 +689,8 @@ class EButtonGroupAttributeGeneratorGroup_ItemLevel : public EButtonGroupAttribu
 public:
 	EButtonGroupAttributeGeneratorGroup_ItemLevel(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
-	void init()											override;
-	void execute_attribute_group(EGameItem* _game_item)	override;
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
 class EButtonGroupAttributeGeneratorGroup_SocketsAndLinks : public EButtonGroupAttributeGeneratorGroup
@@ -697,8 +698,8 @@ class EButtonGroupAttributeGeneratorGroup_SocketsAndLinks : public EButtonGroupA
 public:
 	EButtonGroupAttributeGeneratorGroup_SocketsAndLinks(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
-	void init()											override;
-	void execute_attribute_group(EGameItem* _game_item)	override;
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
 class EButtonGroupAttributeGeneratorGroup_Quantity : public EButtonGroupAttributeGeneratorGroup
@@ -706,8 +707,8 @@ class EButtonGroupAttributeGeneratorGroup_Quantity : public EButtonGroupAttribut
 public:
 	EButtonGroupAttributeGeneratorGroup_Quantity(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
-	void init()											override;
-	void execute_attribute_group(EGameItem* _game_item)	override;
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
 class EButtonGroupAttributeGeneratorGroup_FlagAttributes : public EButtonGroupAttributeGeneratorGroup
@@ -715,8 +716,18 @@ class EButtonGroupAttributeGeneratorGroup_FlagAttributes : public EButtonGroupAt
 public:
 	EButtonGroupAttributeGeneratorGroup_FlagAttributes(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
-	void init()											override;
-	void execute_attribute_group(EGameItem* _game_item)	override;
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+
+class EButtonGroupAttributeGeneratorGroup_Influense : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_Influense(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
 
@@ -775,30 +786,38 @@ public:
 	//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_//_
 
 	EButtonGroupAttributeGeneratorGroup_Rarity* attribute_group_rarity = nullptr;
-	int		selected_rarity				= -1;
-	int		rarity_override				= -1;
+	int		selected_rarity					= -1;
+	int		rarity_override					= -1;
 
-	float	selected_item_level			= 80.0f;
+	float	selected_item_level				= 80.0f;
 
-	float	selected_sockets			= 3.0f;
-	float	selected_links				= 3.0f;
+	float	selected_sockets				= 3.0f;
+	float	selected_links					= 3.0f;
 
-	float	selected_red_weight			= 100.0f;
-	float	selected_green_weight		= 100.0f;
-	float	selected_blue_weight		= 100.0f;
-	float	selected_white_weight		= 0.0f;
+	float	selected_red_weight				= 100.0f;
+	float	selected_green_weight			= 100.0f;
+	float	selected_blue_weight			= 100.0f;
+	float	selected_white_weight			= 0.0f;
 
-	float	selected_quantity			= 1.0f;
+	float	selected_quantity				= 1.0f;
+	float	selected_corrupted_implicits	= 1.0f;
 
-	bool	is_synthesised				= false;
-	bool	is_fractured				= false;
-	bool	is_corrupted				= false;
-	bool	is_identified				= false;
-	bool	is_mirrored					= false;
-	bool	is_enchanted				= false;
-	bool	is_replica					= false;
+	bool	is_synthesised					= false;
+	bool	is_fractured					= false;
+	bool	is_corrupted					= false;
+	bool	is_identified					= false;
+	bool	is_mirrored						= false;
+	bool	is_enchanted					= false;
+	bool	is_replica						= false;
 
-	float	selected_corrupted_imlicits	= 0.0f;
+	bool	influence_crusader				= false;
+	bool	influence_hunter				= false;
+	bool	influence_redeemer				= false;
+	bool	influence_warlord				= false;
+	bool	influence_shaper				= false;
+	bool	influence_elder					= false;
+
+	//float	selected_corrupted_imlicits	= 0.0f;
 
 
 	std::vector<EButtonGroupAttributeGeneratorGroup*> attribute_group_list;
@@ -2063,6 +2082,9 @@ public:
 	bool									can_be_configured			= true;
 	bool									indicate					= true;
 
+	bool									always_unique	= false;
+	bool									always_6_linked	= false;
+
 	ELocalisationText						filtered_by_exact_name;
 	std::vector<DataEntityTagFilter*>		filtered_by_tags;
 
@@ -2070,17 +2092,17 @@ public:
 	ETextureGabarite* icon;
 
 	void										generate_game_item_list(std::vector<EGameItem*>* _target_list);
-	void										init_game_item(EGameItem* _game_item);
+	void										init_game_item(EGameItem* _game_item, GameItemGenerator* _generator);
 
-	void										add_rarity(int _rarity_min, int _rarity_max, float _pow);
-	void										add_item_level(int _level_min, int _level_max, float _pow);
-	void										add_random_influence(float _chance);
-	GameAttributeGeneratorSocketsLinksColours* add_sockets_and_links(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
-	void										add_quantity(float _min, float _max, float _pow);
-	void										add_quality(int _min, int _max, float _pow);
+	//void											add_rarity(int _rarity_min, int _rarity_max, float _pow);
+	//void											add_item_level(int _level_min, int _level_max, float _pow);
+	//void											add_random_influence(float _chance);
+	//GameAttributeGeneratorSocketsLinksColours*	add_sockets_and_links(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
+	//void											add_quantity(float _min, float _max, float _pow);
+	//void											add_quality(int _min, int _max, float _pow);
 	void										add_gem_level(int _level_min, int _level_max, float _pow);
 
-	void										add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add);
+	//void										add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add);
 	void										add_class(ELocalisationText _attribute_localisation);
 
 	void										add_default_worth_tags(int _min, int _max);

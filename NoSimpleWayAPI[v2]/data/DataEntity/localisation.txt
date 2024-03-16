@@ -2983,7 +2983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"item_rarity_normal"
 	[tag]"base name"	[value]"Normal"
 	[tag]"name EN"		[value]"Item rarity: normal"
-	[tag]"name RU"		[value]"Редкость предмета: oбычная"
+	[tag]"name RU"		[value]"Редкость: oбычная"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -2991,7 +2991,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"item_rarity_magic"
 	[tag]"base name"	[value]"Magic"
 	[tag]"name EN"		[value]"Item rarity: magic"
-	[tag]"name RU"		[value]"Редкость предмета: волшебная"
+	[tag]"name RU"		[value]"Редкость: волшебная"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -2999,7 +2999,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"item_rarity_rare"
 	[tag]"base name"	[value]"Normal"
 	[tag]"name EN"		[value]"Item rarity: rare"
-	[tag]"name RU"		[value]"Редкость предмета: редкая"
+	[tag]"name RU"		[value]"Редкость: редкая"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3007,7 +3007,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"item_rarity_unique"
 	[tag]"base name"	[value]"Normal"
 	[tag]"name EN"		[value]"Item rarity: unique"
-	[tag]"name RU"		[value]"Редкость предмета: уникальная"
+	[tag]"name RU"		[value]"Редкость: уникальная"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3078,7 +3078,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"item_synthesised"
 	[tag]"name EN"		[value]"Item synthesised"
-	[tag]"name RU"		[value]"Предмет синтезирован"
+	[tag]"name RU"		[value]"Предмет синтеза"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3091,8 +3091,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"item_corrupted"
-	[tag]"name EN"		[value]"Item corrrupted"
+	[tag]"name EN"		[value]"Item corrupted"
 	[tag]"name RU"		[value]"Предмет осквернён"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"corrupted_implicits"
+	[tag]"name EN"		[value]"Corrupted implicits"
+	[tag]"name RU"		[value]"Свойства осквернения"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3129,6 +3136,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"item_replica"
 	[tag]"name EN"		[value]"Item replica"
 	[tag]"name RU"		[value]"Реплика предмета"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_elder"
+	[tag]"name EN"		[value]"Influence: Elder"
+	[tag]"name RU"		[value]"Влияние: Древний"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_shaper"
+	[tag]"name EN"		[value]"Influence: Shaper"
+	[tag]"name RU"		[value]"Влияние: Создатель"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_redeemer"
+	[tag]"name EN"		[value]"Influence: Redeemer"
+	[tag]"name RU"		[value]"Влияние: Искупитель"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_warlord"
+	[tag]"name EN"		[value]"Influence: Warlord"
+	[tag]"name RU"		[value]"Влияние: Вождь"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_crusader"
+	[tag]"name EN"		[value]"Influence: Crusader"
+	[tag]"name RU"		[value]"Влияние: Крестоносец"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"influence_hunter"
+	[tag]"name EN"		[value]"Influence: Hunter"
+	[tag]"name RU"		[value]"Влияние: Охотник"
 	
 	
 	

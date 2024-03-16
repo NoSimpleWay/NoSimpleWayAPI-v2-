@@ -1281,11 +1281,11 @@ void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECusto
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			((EntityButton*)_entity)->button_gabarite->world_position_x,
-			((EntityButton*)_entity)->button_gabarite->world_position_y,
+			((EntityButton*)_entity)->button_gabarite->world_position_x + 2.0f,
+			((EntityButton*)_entity)->button_gabarite->world_position_y + 2.0f,
 
-			((EntityButton*)_entity)->button_gabarite->size_y,
-			((EntityButton*)_entity)->button_gabarite->size_y,
+			((EntityButton*)_entity)->button_gabarite->size_y - 4.0f,
+			((EntityButton*)_entity)->button_gabarite->size_y - 4.0f,
 
 			(highlight) ? (data_container->texture_gabarite_on) : (data_container->texture_gabarite_off)
 		);
@@ -1619,11 +1619,24 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 
 void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EntityButton*
+	but = static_cast<EntityButton*> (_entity);
+
 	if (static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value != nullptr)
 	{
 		*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value)
-			=
-			!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
+		=
+		!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
+
+		if (but->main_text_area != nullptr)
+		{
+			if (*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value))
+			{but->main_text_area->set_color(1.0f, 0.8f, 0.6f, 1.0f);}
+			else
+			{but->main_text_area->set_color(0.5f, 0.45f, 0.4f, 1.0f);}
+
+			but->main_text_area->generate_text();
+		}
 	}
 }
 

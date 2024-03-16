@@ -1688,6 +1688,15 @@ void EntityButton::make_default_bool_switcher_button_with_unedible_text(ERegionG
 		data_container->target_value = new bool(true);
 	}
 
+	if ((data_container->target_value != nullptr) && (*data_container->target_value))
+	{
+		main_text_area->set_color(1.0f, 0.8f, 0.6f, 1.0f);
+	}
+	else
+	{
+		main_text_area->set_color(0.5f, 0.45f, 0.40f, 1.0f);
+	}
+
 
 
 
