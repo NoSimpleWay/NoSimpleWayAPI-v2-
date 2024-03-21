@@ -407,7 +407,7 @@ public:
 	HSVRGBAColor		text_color;
 
 
-	bool				is_active		= true;
+	bool				DETF_is_active		= true;
 	bool				always_suitable = false;
 	bool				force_field		= false;
 };

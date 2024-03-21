@@ -6,6 +6,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19,6 +23,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32,6 +40,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -45,6 +57,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -58,6 +74,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -71,6 +91,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -86,6 +110,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -99,6 +127,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -114,6 +146,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"base class"	[value]"Deleted"
 	[tag]"base class"	[value]"Deleted in Affliction"
@@ -130,6 +166,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 	
@@ -145,6 +185,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -161,6 +205,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -174,6 +222,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -188,6 +240,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -201,6 +257,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор камнереза"
 	
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"item tag"		[value]"Deleted"
@@ -219,6 +279,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -233,6 +297,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -247,6 +315,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -261,6 +333,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -275,6 +351,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -289,6 +369,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -303,6 +387,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -317,6 +405,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -331,6 +423,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -345,6 +441,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -359,6 +459,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -375,6 +479,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -393,6 +501,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExpeditionIncubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -414,6 +526,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"blight_incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -428,6 +544,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"morphling_incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -444,6 +564,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -460,6 +584,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"maddening_incubator"
 	[tag]"base class"	[value]"Incubators"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

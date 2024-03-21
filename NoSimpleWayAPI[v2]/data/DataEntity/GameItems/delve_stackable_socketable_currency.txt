@@ -11,6 +11,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Deleted"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -27,6 +31,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Delve resonator"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -43,6 +51,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Deleted"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -59,6 +71,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Delve resonator"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
@@ -78,6 +94,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -95,6 +115,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Delve resonator"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -111,6 +135,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Deleted"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -127,6 +155,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Delve resonator"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -1471,7 +1471,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"T1"
 	
 	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
+	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -1500,7 +1500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"T3"
 	
 	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
+	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -1614,7 +1614,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"T2"
 	
 	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
+	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
 
