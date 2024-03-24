@@ -594,7 +594,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 {
 	if (_text_area->parent_entity_for_text_area != nullptr)
 	{
-		auto		multisearch_data_container = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity_for_text_area);
+		auto		multisearch_button = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity_for_text_area);
 		std::string	inputed_text = _text_area->original_text;
 
 		bool match = false;
@@ -603,7 +603,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 
 		//try search any text field with suitable text
 		//for every group in multisearch vector
-		for (EButtonGroup* button_group : multisearch_data_container->target_group_list)
+		for (EButtonGroup* button_group : multisearch_button->target_group_list)
 		{
 			//for every workcspace button in group
 			for (EntityButton* but : button_group->workspace_button_list)
@@ -3212,7 +3212,7 @@ void ETextParser::split_data_entity_list_to_named_structs()
 
 
 				
-
+				if (false)
 				if (data_type_name == "Explicit")
 				{
 					

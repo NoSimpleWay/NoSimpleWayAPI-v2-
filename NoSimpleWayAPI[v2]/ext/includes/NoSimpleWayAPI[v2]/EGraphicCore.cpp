@@ -5410,11 +5410,11 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETe
 ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
 {
 	if
-		(
-			(!_layer->sprite_frame_list.empty())
-			&&
-			(!(_layer->sprite_frame_list.back()->sprite_list.empty()))
-			)
+	(
+		(!_layer->sprite_frame_list.empty())
+		&&
+		(!(_layer->sprite_frame_list.back()->sprite_list.empty()))
+	)
 	{
 		return _layer->sprite_frame_list.back()->sprite_list.back();
 	}

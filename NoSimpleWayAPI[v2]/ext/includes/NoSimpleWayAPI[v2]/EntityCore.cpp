@@ -778,6 +778,8 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 			:
 			(nullptr);
 
+		jc_button->texture_icon = item_icon;
+
 		float resize_factor = 0.0f;
 		float offset_x = 0.0f;
 		float offset_y = 0.0f;
@@ -806,6 +808,9 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 			jc_button->sprite_layer_list.push_back(second_button_layer);
 
+			jc_button->second_sprite_layer = second_button_layer;
+
+			//jc_button->change_texture(item_icon);
 			//second_button_layer->make_as_PBR();
 		}
 
@@ -951,6 +956,34 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 	}
 
 	return jc_button;
+}
+
+void EntityButtonWideItem::change_texture(ETextureGabarite* _texture)
+{
+	if (second_sprite_layer != nullptr)
+	{
+		float
+		resize_factor = (button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up - 6.0f) / max(_texture->size_x_in_pixels, _texture->size_y_in_pixels);
+		resize_factor = min(resize_factor, 1.0f);
+
+		ESprite*
+		last_sprite = ESpriteLayer::get_last_created_sprite(second_sprite_layer);
+		
+		if (last_sprite != nullptr)
+		{
+			last_sprite->offset_x = ((button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up) - _texture->size_x_in_pixels * resize_factor) / 2.0f;
+			last_sprite->offset_y = ((button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up) - _texture->size_y_in_pixels * resize_factor) / 2.0f;
+
+			last_sprite->size_x = round(_texture->size_x_in_pixels * resize_factor);
+			last_sprite->size_y = round(_texture->size_y_in_pixels * resize_factor);
+
+			last_sprite->set_texture_gabarite(_texture, nullptr, nullptr);
+		}
+
+		have_phantom_draw = true;
+
+		texture_icon = _texture;
+	}
 }
 
 EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, ELocalisationText _ltext)

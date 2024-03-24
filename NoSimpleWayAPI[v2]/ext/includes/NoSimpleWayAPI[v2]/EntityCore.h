@@ -581,6 +581,12 @@ public:
 
 	ELocalisationText localised_name;
 
+	ESpriteLayer*
+	second_sprite_layer = nullptr;
+
+	ETextureGabarite*
+	texture_icon = nullptr;
+
 	static EntityButtonWideItem* create_wide_item_button
 	(
 		ERegionGabarite* _region_gabarite,
@@ -590,6 +596,8 @@ public:
 		bool _can_be_deleted
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
+
+	void change_texture(ETextureGabarite* _texture);
 };
 
 

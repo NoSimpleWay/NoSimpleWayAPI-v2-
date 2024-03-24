@@ -730,6 +730,19 @@ public:
 	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
+constexpr int NSW_loot_simulator_explicit_button_count = 3;
+class EButtonGroupAttributeGeneratorGroup_Explicit : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_Explicit(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	EntityButtonWideItem*
+	explicit_item_buttons[NSW_loot_simulator_explicit_button_count];
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
 
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -1027,16 +1040,25 @@ public:
 //	EntityButtonForFilterBlock* input_field;
 //};
 
+class EButtonGroupAddExplicitToLootSimulatorItem : public EButtonGroup
+{
+public:
+	EButtonGroupAddExplicitToLootSimulatorItem(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	EntityButtonWideItem*
+	target_wide_button = nullptr;
+};
 
 
 
 
 namespace NSWRegisteredButtonGroups
 {
-	static EButtonGroupFilterBlockColors* filter_block_colors;
+	static EButtonGroupFilterBlockColors*				filter_block_colors;
+	static EButtonGroupAddExplicitToLootSimulatorItem*	add_explicit_to_simulator;
 
 	static void register_filter_block_colors_group_for_filter_block();
+	static void register_explicit_for_loot_simulator_group();
 
 }
 
@@ -1165,6 +1187,8 @@ namespace EDataActionCollection
 	void action_select_cosmetic_element(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1473,6 +1497,7 @@ public:
 
 	static std::vector<EDataEntity*>			registered_data_entity_game_item_list;
 	static std::vector<EDataEntity*>			registered_data_entity_class_list;
+	static std::vector<EDataEntity*>			registered_data_entity_explicit_list;
 
 	static void									add_game_item_data_entity_to_list();
 	

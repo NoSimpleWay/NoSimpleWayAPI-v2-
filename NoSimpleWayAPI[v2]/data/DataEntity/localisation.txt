@@ -3192,9 +3192,9 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
 	
-	
-	
-	
-	
-	
+	[tag]"key"			[value]"empty_affix"
+	[tag]"name EN"		[value]"Empty affix"
+	[tag]"name RU"		[value]"Нет свойства"
