@@ -1,0 +1,161 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"Map"
+	[tag]"name RU"		[value]"Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Body Armour"
+	[tag]"name EN"		[value]"Body armour"
+	[tag]"name RU"		[value]"Нательный доспех"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gloves"
+	[tag]"name EN"		[value]"Gloves"
+	[tag]"name RU"		[value]"Перчатки"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Boots"
+	[tag]"name EN"		[value]"Boots"
+	[tag]"name RU"		[value]"Сапоги"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Helmet"
+	[tag]"name EN"		[value]"Helmet"
+	[tag]"name RU"		[value]"Шлем"
+
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Belt"
+	[tag]"name EN"		[value]"Belt"
+	[tag]"name RU"		[value]"Пояс"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Random Ring"
+	[tag]"name EN"		[value]"Ring"
+	[tag]"name RU"		[value]"Кольцо"
+
+	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amulet"
+	[tag]"name EN"		[value]"Amulet"
+	[tag]"name RU"		[value]"Амулет"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Delve affix item"
+	[tag]"add affix"	[value]"Subterranean"
+	[tag]"add affix"	[value]"of the Underground"
+	
+	[tag]"worth"		[value]"Rare"

@@ -1491,7 +1491,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_quality"
-	[tag]"name EN"		[value]"УсловиеQuality gives different bonuses depending on the type of item.\n\nThe following items can have quality:\n= Flasks\n= Maps\n= Weapons\n= Armours\n= Jewelry\n= Skill gems\n\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
+	[tag]"name EN"		[value]"Quality gives different bonuses depending on the type of item.\n\nThe following items can have quality:\n= Flasks\n= Maps\n= Weapons\n= Armours\n= Jewelry\n= Skill gems\n\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
 	[tag]"name RU"		[value]"Качество даёт различные бонусы в зависимости от типа предмета.\n\nКачество могут иметь:\n= Флаконы\n= Карты\n= Оружие\n= Броня\n= Бижутерия\n= Камни умений\n\nПо умолчанию, максимальное качество для обычных предметов: 20.\nВ особых случаях качество может достигать до 23% для камней, и 30% для экипировки, карт, и флаконов"
 	
 ADD_NEW_DATA_ENTITY
@@ -3182,6 +3182,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"influence_hunter"
 	[tag]"name EN"		[value]"Influence: Hunter"
 	[tag]"name RU"		[value]"Влияние: Охотник"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_quality"
+	[tag]"name EN"		[value]"Item quality"
+	[tag]"name RU"		[value]"Качество предмета"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"gem_level"
+	[tag]"name EN"		[value]"Gem level"
+	[tag]"name RU"		[value]"Уровень камня"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"transfigured_gem"
+	[tag]"name EN"		[value]"Transfigured gem"
+	[tag]"name RU"		[value]"Изменённый камень"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"map_tier"
+	[tag]"name EN"		[value]"Map tier"
+	[tag]"name RU"		[value]"Тир карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"blighted_map"
+	[tag]"name EN"		[value]"Blighted map"
+	[tag]"name RU"		[value]"Карта скверны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"uberblighted_map"
+	[tag]"name EN"		[value]"Uber blighted map"
+	[tag]"name RU"		[value]"Карта уберскверны"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"defence_procentile"
+	[tag]"name EN"		[value]"Defence procentile"
+	[tag]"name RU"		[value]"Ролл защиты"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"exarch_level"
+	[tag]"name EN"		[value]"Exarch level"
+	[tag]"name RU"		[value]"Уровень Экзарха"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"eater_level"
+	[tag]"name EN"		[value]"Eater level"
+	[tag]"name RU"		[value]"Уровень Пожирателя"
 	
 	
 	

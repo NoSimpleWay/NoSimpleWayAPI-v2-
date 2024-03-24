@@ -658,10 +658,10 @@ public:
 	EButtonGroupAttributeGeneratorGroup(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	ID_string	name;
-	bool		is_active = false;
+	bool		attribute_generator_is_active = false;
 
-	GameAttributeGenerator*
-	attribute_generator = nullptr;
+	//GameAttributeGenerator*
+	//attribute_generator = nullptr;
 
 	virtual void init();
 	virtual void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator);
@@ -803,6 +803,13 @@ public:
 	int		rarity_override					= -1;
 
 	float	selected_item_level				= 80.0f;
+	float	selected_quality				= 0.0f;
+
+	float	selected_gem_level				= 1.0f;
+
+	float	selected_maptier				= 1.0f;
+
+	float	selected_procentile				= 0.0f;
 
 	float	selected_sockets				= 3.0f;
 	float	selected_links					= 3.0f;
@@ -812,8 +819,10 @@ public:
 	float	selected_blue_weight			= 100.0f;
 	float	selected_white_weight			= 0.0f;
 
-	float	selected_quantity				= 1.0f;
-	float	selected_corrupted_implicits	= 1.0f;
+	float	selected_quantity				= 0.0f;
+	float	selected_corrupted_implicits	= 0.0f;
+	float	selected_exarch_level			= 0.0f;
+	float	selected_eater_level			= 0.0f;
 
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
@@ -822,6 +831,9 @@ public:
 	bool	is_mirrored						= false;
 	bool	is_enchanted					= false;
 	bool	is_replica						= false;
+	bool	is_transfigured					= false;
+	bool	is_blighted						= false;
+	bool	is_uberblighted					= false;
 
 	bool	influence_crusader				= false;
 	bool	influence_hunter				= false;
@@ -1321,6 +1333,9 @@ public:
 	static GameItemAttribute*			get_attribute_by_name(std::vector<GameItemAttribute*>* _vector, std::string _name);
 	static EGameItemAttributeContainer* add_new_game_attribute_by_name(EGameItem* _game_item, std::string _name);
 
+	static void							add_new_listed_value_to_game_attribute	(EGameItem* _game_item, std::string _name, ELocalisationText _value);
+	static void							add_new_int_value_to_game_attribute		(EGameItem* _game_item, std::string _name, int _value);
+
 	static GameItemAttribute* default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 };
 
@@ -1409,6 +1424,9 @@ public:
 	
 	void get_poe_ninja_api_prices();
 	void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode);
+
+	void export_loot_patterns_to_file();
+	void import_loot_patterns_from_file();
 
 	EWindowMain();
 
@@ -1506,212 +1524,15 @@ public:
 	static int selected_filter_tab_id;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
-	static void add_force_field_for_last_pattern_folder();
-	static void register_pattern_folder(std::string _localisation_key, std::string _icon_path);
+
 	static void register_filter_rule_folder(std::string _named_id, std::string _tag, std::string _localisation_key, std::string _icon_path);
-	static void register_loot_simulator_patterns();
+
 	static void register_loot_filter_version_patterns();
-
-	//GEMS FOLDER
-	static void register_new_folder_gems();
-	////////////////////////////////////////////////////////////////////////
-
-
-	//BOSS LOOT FOLDER
-	static void register_new_folder_boss_loot();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//DIVINATIONS FOLDER
-	static void register_pattern_folder_divinations();
-	static void register_pattern_divinations_expensive();
-	static void register_pattern_divinations_rare();
-	static void register_pattern_divinations_moderate();
-	static void register_pattern_divinations_cheap();
-	static void register_pattern_divinations_by_worth();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//FLASKS FOLDER
-	static void register_pattern_flasks();
-	////////////////////////////////////////////////////////////////////////
-
-
-	//SPECIFIC ITEMS FOLDER
-	static void register_new_folder_specific_items();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//MAPS FOLDER
-	static void register_new_folder_map_items();
-	static void register_pattern_scouting_report();
-	static void register_pattern_set_fragment();
-	static void register_pattern_reliquary_keys();
-	static void register_pattern_scarabs();
-	static void register_pattern_all_map_fragments();
-	static void register_pattern_map_splinters();
-	static void register_pattern_maps();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//DELVE FOLDER
-	static void register_new_folder_delve_items();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//BREACH FOLDER
-	static void register_new_folder_breach_items();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//UNIQUES FOLDER
-	static void register_new_pattern_uniques();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//HEIST FOLDER
-	static void register_new_folder_heist_items();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//EQUIP FOLDER
-	static void register_new_folder_equip();
-	static void register_pattern_gloves_helmets_boots_body_jewelry();
-	static void register_pattern_runic_base();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	static void register_pattern_all_equip();
-	//static void register_pattern_all_equip();
-	static void register_pattern_top_tier_bases();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//DELIRIUM ORBS FOLDER
-	static void register_new_folder_delirium_orbs();
-	////////////////////////////////////////////////////////////////////////
-
-	//CATALYSTS FOLDER
-	static void register_new_folder_catalysts();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//CURRENCY SHARDS FOLDER
-	static void register_new_folder_currency_shards();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//OILS FOLDER
-	static void register_new_folder_oils();
-	////////////////////////////////////////////////////////////////////////
 
 
 
 	//UNUSUAL CURRENCY FOLDER
-	static void register_new_folder_all_currency();
-	static void register_pattern_harvest_items();
-	static void register_pattern_expedition_currency();
-	static void register_pattern_eldritch_currency();
-	static void register_pattern_delirium_orbs();
-	static void register_pattern_oils_and_catalysts();
-	static void register_pattern_essences();
-	static void register_pattern_incubators();
-	static void register_pattern_currencies_shard();
-	static void register_pattern_tainted_currencies();
-	static void register_embers_and_ichors();
-	static void register_pattern_guardian_orbs();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//BASIC CURRENCY FOLDER
-	static void register_new_folder_basic_currency();
-	static void register_pattern_rare_currencies();
-	static void register_pattern_good_currencies();
-	static void register_pattern_cheap_currencies();
-	static void register_pattern_basic_currencies();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-	//FAST CHECK
-	static void register_fast_check_folder();
-	static void register_valuable_items();
-	static void register_trash_items();
-	////////////////////////////////////////////////////////////////////////
-	//unused
-	//static void register_pattern_basic_currencies();
-	static void register_pattern_all_currencies();
-	////////////////////////////////////////////////////////////////////////
-
-	static void register_all_deleted_items();
-
-
-
-
-	//CRUCIBLE FOLDER
-	static void register_new_folder_crucible_items();
-	static void register_crubible_deleted_items();
-	static void register_crubible_changed_items();
-
-	static void register_crubible_deleted_attributes();
-
-	static void register_crubible_items_with_passive_tree();
-	static void register_crubible_currency();
-	static void register_crubible_divinations();
-	////////////////////////////////////////////////////////////////////////
-
-
-
-
-	//ANCESTOR TRIAL FOLDER
-	static void register_new_folder_ancestors_items();
-
-	static void register_ancestors_deleted_items();
-	static void register_ancestors_changed_items();
-	static void register_ancestors_divinations();
-
-	static void register_ancestors_small_tattoo();
-	static void register_ancestors_honoured_tattoo();
-	static void register_ancestors_loyalty_tattoo();
-
-	static void register_ancestors_currency();
-
-	static void register_ancestors_sanctum_items();
-
-	static void register_ancestors_omens();
-
-	////////////////////////////////////////////////////////////////////////
-
-
-	//AFFLICTION TRIAL FOLDER
-	static void register_new_folder_affliction_items();
-
-	static void register_affliction_deleted_items();
-	static void register_affliction_changed_items();
-	static void register_affliction_divinations();
-
-	static void register_affliction_currency();
-
-	static void register_affliction_omens();
-	static void register_affliction_bases();
-	static void register_affliction_tinctures();
-	static void register_affliction_charms();
-	static void register_affliction_corpses();
-
-	////////////////////////////////////////////////////////////////////////
+	
 
 
 	static void set_color_version	(HSVRGBAColor* _target_color, int _selected_mode);
@@ -1774,11 +1595,13 @@ public:
 	bool can_be_enchanted		= false;
 	bool can_be_replica			= false;
 	bool can_be_quality			= false;
-	bool can_be_map_tier		= false;
-	bool can_be_gem_quality		= false;
+	bool can_be_gem_level		= false;
 	bool can_be_maptier			= false;
 	bool can_be_blighted		= false;
 	bool can_be_uberblighted	= false;
+	bool can_be_transfigured	= false;
+	bool can_be_procentile		= false;
+	bool can_be_influenced		= false;
 
 	bool warn_when_hidden = false;
 
@@ -2098,7 +1921,7 @@ public:
 	int										generations_count = 1;
 	std::vector<GameAttributeGenerator*>	attribute_generators_list;
 
-	ELocalisationText						localised_name;
+	ELocalisationText						generator_name;
 
 	GameItemGeneratorMode					generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 	int										random_selection_count = 1;
@@ -2113,7 +1936,7 @@ public:
 	ELocalisationText						filtered_by_exact_name;
 	std::vector<DataEntityTagFilter*>		filtered_by_tags;
 
-	ELocalisationText						localisation;
+	//ELocalisationText						localisation;
 	ETextureGabarite* icon;
 
 	void										generate_game_item_list(std::vector<EGameItem*>* _target_list);

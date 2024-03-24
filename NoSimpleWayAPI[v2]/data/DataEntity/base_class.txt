@@ -13,6 +13,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_amulets"
 	
@@ -31,6 +32,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_rings"
 	
@@ -99,6 +101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 	
 	[tag]"max sockets"	[value]"3"
 
@@ -111,6 +114,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кинжалы"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 	
 	[tag]"short name"	[value]"Dagger"
 
@@ -141,6 +153,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_wands"
 	
@@ -159,6 +172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_sceptres"
 	
@@ -177,6 +191,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_rune_dagger"
 	
@@ -204,6 +219,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_one_hand_swords"
 
@@ -222,6 +238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_thrusting_one_hand_swords"
 	
@@ -242,6 +259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_two_hand_sword"
 	
@@ -270,6 +288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_one_hand_axes"
 	
@@ -290,6 +309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_two_hand_axes"
 	
@@ -316,6 +336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_one_hand_maces"
 	
@@ -336,6 +357,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_tho_hand_maces"
 	
@@ -364,6 +386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_bows"
 
@@ -380,6 +403,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
 	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_quivers"
 	
@@ -408,6 +432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_staves"
 	
@@ -428,6 +453,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_warstaves"
 	
@@ -460,6 +486,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"FishingRod"
 	
@@ -498,6 +525,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Procentile"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_gloves"
 
@@ -519,6 +548,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Procentile"
+	[tag]"can be"		[value]"Influenced"
+	
 	[tag]"icon path"	[value]"class_helmets"
 	
 ADD_NEW_DATA_ENTITY
@@ -536,6 +568,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Procentile"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_boots"
 	
@@ -556,6 +590,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Procentile"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_body_armours"
 	
@@ -578,6 +614,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Procentile"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_shields"
 	
@@ -600,8 +638,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Камни умений"
 	
 	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Transfigured"
 
-	[tag]"can be"		[value]"Gem quality"
+	[tag]"can be"		[value]"Gem level"
 
 	[tag]"icon path"	[value]"PortalGem"
 	
@@ -612,7 +651,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Support Gem"
 	[tag]"name RU"		[value]"Камень поддержки"
 
-	[tag]"can be"		[value]"Gem quality"
+	[tag]"can be"		[value]"Gem level"
 
 	[tag]"icon path"	[value]"SupportGems"
 	
@@ -793,6 +832,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Maptier"
+	[tag]"can be"		[value]"Blighted"
+	[tag]"can be"		[value]"Uberblighted"
+	[tag]"can be"		[value]"Influenced"
 
 	
 	[tag]"icon path"	[value]"Map"

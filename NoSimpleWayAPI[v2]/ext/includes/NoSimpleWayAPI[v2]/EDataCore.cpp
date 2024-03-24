@@ -3771,7 +3771,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 								if
 								(
 									//empty suitable text means 'any value suitable'
-									(suitable_DETF.is_active)
+									(suitable_DETF.DETF_is_active)
 									&&
 									(
 										(suitable_DETF.target_value_key.is_empty)
