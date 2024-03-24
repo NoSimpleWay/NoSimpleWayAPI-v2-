@@ -886,6 +886,8 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 			jc_button->sprite_layer_list.push_back(second_button_layer);
 
+			jc_button->second_sprite_layer = second_button_layer;
+
 			//second_button_layer->make_as_PBR();
 		}
 	}
@@ -963,21 +965,37 @@ void EntityButtonWideItem::change_texture(ETextureGabarite* _texture)
 	if (second_sprite_layer != nullptr)
 	{
 		float
-		resize_factor = (button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up - 6.0f) / max(_texture->size_x_in_pixels, _texture->size_y_in_pixels);
+		max_size = max(_texture->size_x_in_pixels, _texture->size_y_in_pixels);
+		
+		float
+		texture_container_size = (button_gabarite->size_y - parent_button_group->group_border_texture_bottom - parent_button_group->group_border_texture_up - 0.0f);
+
+		float
+		resize_factor = texture_container_size / max_size;
 		resize_factor = min(resize_factor, 1.0f);
+
+		float
+		final_size_x = round(_texture->size_x_in_pixels * resize_factor);
+
+		float
+		final_size_y = round(_texture->size_y_in_pixels * resize_factor);
+
+		
 
 		ESprite*
 		last_sprite = ESpriteLayer::get_last_created_sprite(second_sprite_layer);
 		
 		if (last_sprite != nullptr)
 		{
-			last_sprite->offset_x = ((button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up) - _texture->size_x_in_pixels * resize_factor) / 2.0f;
-			last_sprite->offset_y = ((button_gabarite->size_y - parent_button_group->group_offset_for_content_bottom - parent_button_group->group_offset_for_content_up) - _texture->size_y_in_pixels * resize_factor) / 2.0f;
-
-			last_sprite->size_x = round(_texture->size_x_in_pixels * resize_factor);
-			last_sprite->size_y = round(_texture->size_y_in_pixels * resize_factor);
-
 			last_sprite->set_texture_gabarite(_texture, nullptr, nullptr);
+
+			last_sprite->offset_x = parent_button_group->group_border_texture_left		+ (texture_container_size - final_size_x) / 2.0f;
+			last_sprite->offset_y = parent_button_group->group_border_texture_bottom	+ (texture_container_size - final_size_y) / 2.0f;
+
+			last_sprite->size_x = final_size_x;
+			last_sprite->size_y = final_size_y;
+
+			
 		}
 
 		have_phantom_draw = true;

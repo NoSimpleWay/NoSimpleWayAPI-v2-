@@ -3464,6 +3464,7 @@ void EDataActionCollection::action_select_this_affix_for_loot_simulator(Entity* 
 		(explicit_group->target_wide_button != nullptr)
 	)
 	{
+		explicit_group->target_wide_button->pointer_to_data_entity = wide_button->pointer_to_data_entity;
 		explicit_group->target_wide_button->change_texture(wide_button->texture_icon);
 
 		explicit_group->target_wide_button->main_text_area->localisation_text = ELocalisationText::generate_localization_with_base_name(wide_button->main_text_area->localisation_text.base_name);
@@ -3473,6 +3474,22 @@ void EDataActionCollection::action_select_this_affix_for_loot_simulator(Entity* 
 
 		explicit_group->target_wide_button->have_phantom_draw = true;
 	}
+}
+
+void EDataActionCollection::action_reset_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
+	EntityButtonWideItem*
+	wide_button = static_cast<EntityButtonWideItem*>(_entity);
+
+
+	wide_button->pointer_to_data_entity = nullptr;
+	wide_button->change_texture(NS_EGraphicCore::load_from_textures_folder("undefined_item"));
+
+	wide_button->main_text_area->localisation_text = ELocalisationText::get_localisation_by_key("empty_affix");
+	wide_button->main_text_area->change_text(wide_button->main_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+	wide_button->main_text_area->localisation_text.base_name = "";
+	wide_button->have_phantom_draw = true;
 }
 
 //void EDataActionCollection::action_select_loot_filter_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -7429,7 +7446,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
 			EButtonGroupAttributeGeneratorGroup_SocketsAndLinks*
-				socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_SocketsAndLinks(new ERegionGabarite(200.0f, 0.0f));
+			socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_SocketsAndLinks(new ERegionGabarite(200.0f, 0.0f));
 			socket_link_color_group->init();
 			socket_link_color_group->additional_y_distance = 10.0f;
 
@@ -7444,7 +7461,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
 			EButtonGroupAttributeGeneratorGroup_FlagAttributes*
-				socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_FlagAttributes(new ERegionGabarite(200.0f, 0.0f));
+			socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_FlagAttributes(new ERegionGabarite(200.0f, 0.0f));
 			socket_link_color_group->init();
 			socket_link_color_group->additional_y_distance = 10.0f;
 
@@ -7459,7 +7476,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
 			EButtonGroupAttributeGeneratorGroup_Influense*
-				socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_Influense(new ERegionGabarite(200.0f, 0.0f));
+			socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_Influense(new ERegionGabarite(200.0f, 0.0f));
 			socket_link_color_group->init();
 			socket_link_color_group->additional_y_distance = 10.0f;
 
@@ -7474,7 +7491,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
 			EButtonGroupAttributeGeneratorGroup_Explicit*
-				socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_Explicit(new ERegionGabarite(200.0f, 0.0f));
+			socket_link_color_group = new EButtonGroupAttributeGeneratorGroup_Explicit(new ERegionGabarite(200.0f, 0.0f));
 			socket_link_color_group->init();
 			socket_link_color_group->additional_y_distance = 10.0f;
 
@@ -24788,6 +24805,7 @@ void NSWRegisteredButtonGroups::register_explicit_for_loot_simulator_group()
 		);
 
 		wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_affix_for_loot_simulator);
+		
 
 		part_with_data_entity->add_button_to_working_group(wide_button);
 	}
@@ -26422,8 +26440,11 @@ void EButtonGroupAttributeGeneratorGroup_DefenceProcentile::execute_attribute_gr
 
 void EButtonGroupAttributeGeneratorGroup_Explicit::init()
 {
+	name.set_ID_by_string("Explicits");
+	//attribute_generator = new GameAttributeGeneratorItemLevel("GemLevel");
+	EWindowMain::loot_simulator_button_group->attribute_group_list.push_back(this);
 	EntityButtonWideItem*
-		wide_button = nullptr;
+	wide_button = nullptr;
 
 	for (int i = 0; i < NSW_loot_simulator_explicit_button_count; i++)
 	{
@@ -26441,11 +26462,30 @@ void EButtonGroupAttributeGeneratorGroup_Explicit::init()
 		explicit_item_buttons[i] = wide_button;
 
 		wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_open_add_explicit_for_loot_simulator);
+		wide_button->add_close_circle(&EDataActionCollection::action_reset_affix_for_loot_simulator);
 
 		add_button_to_working_group_and_expand_y(wide_button);
 	}
 }
 void EButtonGroupAttributeGeneratorGroup_Explicit::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
+	for (int i = 0; i < NSW_loot_simulator_explicit_button_count; i++)
+	{
+		if ((explicit_item_buttons[i]->main_text_area->localisation_text.base_name != "") && (explicit_item_buttons[i]->pointer_to_data_entity != nullptr))
+		{
+			ELocalisationText
+			ltext;
 
+			ltext.base_name = explicit_item_buttons[i]->main_text_area->localisation_text.base_name;
+			ltext.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", explicit_item_buttons[i]->pointer_to_data_entity);
+			ltext.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", explicit_item_buttons[i]->pointer_to_data_entity);
+
+			GameItemAttribute::add_new_listed_value_to_game_attribute
+			(
+				_game_item,
+				"HasExplicitMod",
+				ltext
+			);
+		}
+	}
 }

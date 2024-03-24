@@ -1237,8 +1237,11 @@ namespace EDataActionCollection
 	void action_select_cosmetic_element(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	//LOOT SIMULATOR ATTRIBUTES AFFIXES
 	void action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_reset_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
