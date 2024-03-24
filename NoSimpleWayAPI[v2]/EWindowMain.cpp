@@ -26418,3 +26418,34 @@ void EButtonGroupAttributeGeneratorGroup_DefenceProcentile::execute_attribute_gr
 		attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_procentile);
 	}
 }
+
+
+void EButtonGroupAttributeGeneratorGroup_Explicit::init()
+{
+	EntityButtonWideItem*
+		wide_button = nullptr;
+
+	for (int i = 0; i < NSW_loot_simulator_explicit_button_count; i++)
+	{
+		wide_button = EntityButtonWideItem::create_wide_item_button
+		(
+			new ERegionGabarite(region_gabarite->size_x, 24.0f),
+			this,
+			nullptr,
+			EFont::font_list[0],
+			false
+		);
+
+		wide_button->main_text_area->localisation_text = ELocalisationText::get_localisation_by_key("empty_affix");
+		wide_button->main_text_area->change_text(wide_button->main_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+		explicit_item_buttons[i] = wide_button;
+
+		wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_open_add_explicit_for_loot_simulator);
+
+		add_button_to_working_group_and_expand_y(wide_button);
+	}
+}
+void EButtonGroupAttributeGeneratorGroup_Explicit::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
+{
+
+}

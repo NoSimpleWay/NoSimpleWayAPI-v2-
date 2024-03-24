@@ -721,6 +721,44 @@ public:
 };
 
 
+
+class EButtonGroupAttributeGeneratorGroup_Quality : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_Quality(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_GemAttributes : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_GemAttributes(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_MapAttributes : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_MapAttributes(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_DefenceProcentile : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_DefenceProcentile(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+
 class EButtonGroupAttributeGeneratorGroup_Influense : public EButtonGroupAttributeGeneratorGroup
 {
 public:
