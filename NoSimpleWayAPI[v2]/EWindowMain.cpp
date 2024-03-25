@@ -3473,6 +3473,8 @@ void EDataActionCollection::action_select_this_affix_for_loot_simulator(Entity* 
 		explicit_group->close_this_group();
 
 		explicit_group->target_wide_button->have_phantom_draw = true;
+
+		EWindowMain::loot_simulator_button_group->delayed_execution = true;
 	}
 }
 
@@ -3490,6 +3492,8 @@ void EDataActionCollection::action_reset_affix_for_loot_simulator(Entity* _entit
 	wide_button->main_text_area->change_text(wide_button->main_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 	wide_button->main_text_area->localisation_text.base_name = "";
 	wide_button->have_phantom_draw = true;
+
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
 //void EDataActionCollection::action_select_loot_filter_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -4951,7 +4955,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/localisation.txt");
 
 
-	//parse_raw_explicit_table();
+	parse_raw_explicit_table();
 
 
 
@@ -9468,8 +9472,8 @@ void EWindowMain::parse_raw_explicit_table()
 
 		writabro << '\t' << "[tag]\"base name\"\t[value]\"" << raw_data_entity_pointer->mod_name.localisations[NSW_localisation_EN] << "\"" << std::endl;
 
-		writabro << '\t' << "[tag]\"name EN\"\t[value]\"" << raw_data_entity_pointer->mod_description.localisations[NSW_localisation_EN] << "\"" << std::endl;
-		writabro << '\t' << "[tag]\"name RU\"\t[value]\"" << raw_data_entity_pointer->mod_description.localisations[NSW_localisation_RU] << "\"" << std::endl;
+		writabro << '\t' << "[tag]\"name EN\"\t[value]\"[T" << std::to_string(raw_data_entity_pointer->tier) << "]" << raw_data_entity_pointer->mod_description.localisations[NSW_localisation_EN] << "\"" << std::endl;
+		writabro << '\t' << "[tag]\"name RU\"\t[value]\"[T" << std::to_string(raw_data_entity_pointer->tier) << "]" << raw_data_entity_pointer->mod_description.localisations[NSW_localisation_RU] << "\"" << std::endl;
 		writabro << std::endl;
 
 		writabro << '\t' << "[tag]\"tier\"\t[value]\"" << raw_data_entity_pointer->tier << "\"" << std::endl;
@@ -24805,6 +24809,7 @@ void NSWRegisteredButtonGroups::register_explicit_for_loot_simulator_group()
 		);
 
 		wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_affix_for_loot_simulator);
+		//wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 		
 
 		part_with_data_entity->add_button_to_working_group(wide_button);
@@ -26462,6 +26467,7 @@ void EButtonGroupAttributeGeneratorGroup_Explicit::init()
 		explicit_item_buttons[i] = wide_button;
 
 		wide_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_open_add_explicit_for_loot_simulator);
+		
 		wide_button->add_close_circle(&EDataActionCollection::action_reset_affix_for_loot_simulator);
 
 		add_button_to_working_group_and_expand_y(wide_button);
