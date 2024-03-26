@@ -1,0 +1,869 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Frogs"
+	[tag]"name RU"		[value]"Уголь Всепламени лягушек"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Rats"
+	[tag]"name RU"		[value]"Уголь Всепламени крыс"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Xoph"
+	[tag]"name RU"		[value]"Уголь Всепламени Ксофа"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Tul"
+	[tag]"name RU"		[value]"Уголь Всепламени Тул"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Esh"
+	[tag]"name RU"		[value]"Уголь Всепламени Иш"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Uul-Netol"
+	[tag]"name RU"		[value]"Уголь Всепламени Уул-Нетол"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Chayula"
+	[tag]"name RU"		[value]"Уголь Всепламени Чаюлы"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Sulphite"
+	[tag]"name RU"		[value]"Уголь Всепламени сульфита"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Valako"
+	[tag]"name RU"		[value]"Уголь Всепламени Валако"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Tukohama"
+	[tag]"name RU"		[value]"Уголь Всепламени Тукохамы"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Tawhoa"
+	[tag]"name RU"		[value]"Уголь Всепламени Тахоа"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Tasalio"
+	[tag]"name RU"		[value]"Уголь Всепламени Тасалио"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Rongokurai"
+	[tag]"name RU"		[value]"Уголь Всепламени Ронгокураи"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Ramako"
+	[tag]"name RU"		[value]"Уголь Всепламени Рамако"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Ngamahu"
+	[tag]"name RU"		[value]"Уголь Всепламени Нгамаху"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Kitava"
+	[tag]"name RU"		[value]"Уголь Всепламени Китавы"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Hinekora"
+	[tag]"name RU"		[value]"Уголь Всепламени Хинекоры"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Arohongui"
+	[tag]"name RU"		[value]"Уголь Всепламени Арохонгуи"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Abyss"
+	[tag]"name RU"		[value]"Уголь Всепламени Бездны"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Beidat"
+	[tag]"name RU"		[value]"Уголь Всепламени Беидата"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Ghorr"
+	[tag]"name RU"		[value]"Уголь Всепламени Гхорр"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of K'tash"
+	[tag]"name RU"		[value]"Уголь Всепламени К'таш"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Brawling Gemlings"
+	[tag]"name RU"		[value]"Уголь Всепламени каменитов-бойцов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Berserking Gemlings"
+	[tag]"name RU"		[value]"Уголь Всепламени каменитов-берсерков"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Frostmage Gemlings"
+	[tag]"name RU"		[value]"Уголь Всепламени каменитов-морозных магов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Artillery Gemlings"
+	[tag]"name RU"		[value]"Уголь Всепламени каменитов-артиллеристов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Corpsemage Gemlings"
+	[tag]"name RU"		[value]"Уголь Всепламени каменитов-магов смерти"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Broken Circle"
+	[tag]"name RU"		[value]"Уголь Всепламени Разомкнутого круга"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Order of the Chalice"
+	[tag]"name RU"		[value]"Уголь Всепламени Ордена Чаши"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Black Scythe"
+	[tag]"name RU"		[value]"Уголь Всепламени Чёрной косы"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Knights of the Sun"
+	[tag]"name RU"		[value]"Уголь Всепламени Рыцарей Солнца"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Meatsacks"
+	[tag]"name RU"		[value]"Уголь Всепламени кусков мяса"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Beasts"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых зверей"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Apes"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых приматов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Rhoas"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых роа"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Spitters"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых плевунов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Maws"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых пастей"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Chimerals"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых ящеров"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Untainted Devourers"
+	[tag]"name RU"		[value]"Уголь Всепламени нетронутых пожирателей"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Wildwood Cultists"
+	[tag]"name RU"		[value]"Уголь Всепламени культистов Диколесья"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Wildwood Treants"
+	[tag]"name RU"		[value]"Уголь Всепламени древней Диколесья"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Wildwood Beasts"
+	[tag]"name RU"		[value]"Уголь Всепламени зверей Диколесья"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Karui Legion"
+	[tag]"name RU"		[value]"Уголь Всепламени Легиона каруи"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Eternal Legion"
+	[tag]"name RU"		[value]"Уголь Всепламени Легиона вечных"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Maraketh Legion"
+	[tag]"name RU"		[value]"Уголь Всепламени Легиона маракетов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Templar Legion"
+	[tag]"name RU"		[value]"Уголь Всепламени Легиона жрецов"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Vaal Legion"
+	[tag]"name RU"		[value]"Уголь Всепламени Легиона ваал"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Shaper"
+	[tag]"name RU"		[value]"Уголь Всепламени Создателя"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Elder"
+	[tag]"name RU"		[value]"Уголь Всепламени Древнего"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Warlord"
+	[tag]"name RU"		[value]"Уголь Всепламени вождя"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Redeemer"
+	[tag]"name RU"		[value]"Уголь Всепламени избавителя"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Crusader"
+	[tag]"name RU"		[value]"Уголь Всепламени крестоносца"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of The Hunter"
+	[tag]"name RU"		[value]"Уголь Всепламени охотника"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of Scientists"
+	[tag]"name RU"		[value]"Мерцающий уголь Всепламени учёных"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of Wildwood Cultists"
+	[tag]"name RU"		[value]"Мерцающий уголь Всепламени культистов Диколесья"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of Kalguurans"
+	[tag]"name RU"		[value]"Мерцающий уголь Всепламени калгууранцев"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of Abyss"
+	[tag]"name RU"		[value]"Мерцающий уголь Всепламени Бездны"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of The First Ones"
+	[tag]"name RU"		[value]"Мерцающий уголь Всепламени Первых"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -1202,13 +1202,13 @@ void EButtonGroup::draw_button_group()
 
 	//EInputCore::logger_simple_success("draw button group");
 	if
-		(
+	(
 			(is_in_visible_diapason())
 			&&
 			(is_this_group_active())
 			&&
 			(!block_need_remove)
-			)
+	)
 	{
 		//bool visibility = is_this_group_active();
 
@@ -4023,10 +4023,12 @@ bool EButtonGroup::is_in_visible_diapason()
 			//&&
 			(parent_group != nullptr)
 			&&
-			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y > parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y < parent_group->region_gabarite->world_position_y)
+			(
+				(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y < parent_group->region_gabarite->world_position_y)
+				||
+				(region_gabarite->world_position_y + region_gabarite->phantom_translate_y > parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
 			)
+		)
 	{
 		return false;
 	}

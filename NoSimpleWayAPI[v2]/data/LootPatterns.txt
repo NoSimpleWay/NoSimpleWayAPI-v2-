@@ -10,7 +10,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -31,7 +34,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -62,14 +68,20 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Vault Keys"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Trash"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -85,7 +97,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -152,14 +167,20 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Shields"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Trash"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -204,7 +225,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -235,7 +259,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Vault Keys"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -250,7 +277,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Very expensive"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -266,7 +296,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -281,7 +314,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Misc Map Items"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -298,7 +334,10 @@ random_selection_count	3
 generator_mode	RANDOM_COUNT_ERASE
 generator_forceful_6_linked
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -325,7 +364,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Bows"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -342,14 +384,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_forceful_unique
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Unique item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -364,7 +412,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Very expensive"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -402,8 +453,8 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
-name_EN	"Affliction:\nDeleted items"
-name_RU	"Заклятье:\nудалённые предметы"
+name_EN	"Deleted items"
+name_RU	"Удалённые предметы"
 icon	"data/textures/buttons/button_red_x.png"
 always_show
 cannot_be_configured
@@ -413,14 +464,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Deleted in Affliction"
+DETF_value_key	"Deleted in Necropolis"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"data type"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -431,11 +488,12 @@ DETF_color	255	230	204	255
 
 
 
+
+
 REGISTER_NEW_PATTERN
-name_EN	"Affliction: divinations"
-name_RU	"Заклятье: гадальные карты"
-icon	"data/textures/icons/card.png"
-add_additional_force_field
+name_EN	"New currency"
+name_RU	"Новая валюта"
+icon	"data/textures/icons/Veiled_scarab.png"
 cannot_be_configured
 
 REGISTER_NEW_GENERATOR
@@ -443,21 +501,29 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
-target_tag	"base class"
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Divination Cards"
-DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Affliction league"
+DETF_value_key	"Introduced: Necropolis league"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Changed in Necropolis"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -467,150 +533,182 @@ DETF_color	255	128	64	255
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
-
-
-
-
-
-REGISTER_NEW_PATTERN
-name_EN	"Affliction:\nCurrency item"
-name_RU	"Заклятье:\nВалюта"
-icon	"data/textures/icons/TaintedCatalyst.png"
-cannot_be_configured
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-register_new_filter_tag
-target_tag	"base class"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Stackable Currency"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Incubators"
-DETF_color	255	230	204	255
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Affliction league"
-DETF_color	255	230	204	255
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Tattoo"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Omen"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Honourable tattoo"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Loyalty tattoo"
-DETF_color	255	128	64	255
-
-
-
-
-
-REGISTER_NEW_PATTERN
-name_EN	"Returned items:\nOmens"
-name_RU	"Возвращённые предметы:\nПредсказания"
-icon	"data/textures/icons/Omen.png"
-cannot_be_configured
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Omen"
-DETF_color	255	230	204	255
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Returned if Affliction"
-DETF_color	255	230	204	255
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
 
 
 
 
 REGISTER_NEW_PATTERN
 name_EN	"New bases"
-name_RU	"Новые базы"
-icon	"data/textures/icons/AfflictionTempPic.png"
+name_RU	"Новые базы предмета"
+icon	"data/textures/icons/SuperBelt.png"
 cannot_be_configured
-
-activate_attribute_group_by_name	"Rarity"
-activate_attribute_group_by_name	"ItemLevel"
-activate_attribute_group_by_name	"SocketsLinksColours"
-activate_attribute_group_by_name	"FlagAttributes"
-activate_attribute_group_by_name	"Influence"
-activate_attribute_group_by_name	"Quality"
-activate_attribute_group_by_name	"DefenceProcentile"
-activate_attribute_group_by_name	"Explicits"
 
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rings"
+DETF_value_key	"Belts"
 DETF_color	255	230	204	255
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Amulets"
-DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Affliction league"
+DETF_value_key	"Introduced: Necropolis league"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Returned items"
+name_RU	"Возвращённые предметы"
+icon	"data/textures/icons/Honoured_tattoo.png"
+cannot_be_configured
+rarity_override	2
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Returned in Necropolis"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Embers of the Allflame"
+name_RU	"Уголья Всепламени"
+icon	"data/textures/icons/Allflame_ember.png"
+cannot_be_configured
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Embers of the Allflame"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"tem tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Scarabs"
+name_RU	"Скарабеи"
+icon	"data/textures/icons/Veiled_scarab.png"
+cannot_be_configured
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"scarab item"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Introduced: Necropolis league"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -625,10 +723,11 @@ DETF_color	255	128	64	255
 
 
 
+
 REGISTER_NEW_PATTERN
-name_EN	"Tinctures"
-name_RU	"Микстуры"
-icon	"data/textures/icons/DroopingIronwoodTinctureofPoaching.png"
+name_EN	"New map fragments"
+name_RU	"Новые проходки"
+icon	"data/textures/icons/cosmic_fragment.png"
 cannot_be_configured
 
 REGISTER_NEW_GENERATOR
@@ -636,14 +735,30 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
-target_tag	"base class"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Tincture"
+DETF_value_key	"pass fragment"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Introduced: Necropolis league"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -658,76 +773,19 @@ DETF_color	255	128	64	255
 
 
 
-REGISTER_NEW_PATTERN
-name_EN	"Charms"
-name_RU	"Обереги"
-icon	"data/textures/icons/UrsineCharm.png"
-cannot_be_configured
 
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
 
-register_new_filter_tag
-target_tag	"base class"
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Charms"
-DETF_color	255	230	204	255
 
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
 
 
 
 
 
 REGISTER_NEW_PATTERN
-name_EN	"Corpses"
-name_RU	"Трупы"
-icon	"data/textures/icons/Corpse.png"
-cannot_be_configured
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-register_new_filter_tag
-target_tag	"base class"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Corpses"
-DETF_color	255	230	204	255
-
-register_new_filter_tag
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-
-
-
-
-REGISTER_NEW_PATTERN
-name_EN	"Category:\nAffliction"
-name_RU	"Категория:\nЗаклятье"
-icon	"data/textures/buttons/pattern_folder_affliction.png"
+name_EN	"Category:\nNecropolis"
+name_RU	"Категория:\nНекрополис"
+icon	"data/textures/buttons/pattern_folder_necropolis.png"
 is_folder
 have_force_field
 
@@ -746,7 +804,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -758,7 +819,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Oil item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -785,7 +849,10 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -811,7 +878,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -819,7 +889,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Catalyst item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -840,7 +913,10 @@ DETF_localised_attribute_name_EN	"Worth: Moderate"
 DETF_localised_attribute_name_RU	"Недорогое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -866,7 +942,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -874,7 +953,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Currency shard"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -913,7 +995,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -941,21 +1026,30 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Stackable Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Harvest seed"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -982,21 +1076,30 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Stackable Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Expedition currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1012,14 +1115,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Expedition Logbooks"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1045,7 +1154,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1053,7 +1165,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Stackable Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1061,7 +1176,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Eldritch currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1082,7 +1200,10 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1108,7 +1229,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1116,7 +1240,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Stackable Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1124,7 +1251,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Delirium orb"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1145,7 +1275,10 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1171,7 +1304,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1183,7 +1319,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1191,7 +1330,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Essences"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1218,7 +1360,10 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1226,7 +1371,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Essences"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1252,7 +1400,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1264,7 +1415,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1272,7 +1426,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Tainted currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1305,7 +1462,10 @@ DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1333,7 +1493,10 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1344,14 +1507,20 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Guardian orb"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1377,7 +1546,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1385,7 +1557,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Incubators"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1412,7 +1587,10 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1438,7 +1616,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1450,7 +1631,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1458,7 +1642,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Basic currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1497,7 +1684,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1542,7 +1732,10 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_indicate
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1695,7 +1888,10 @@ DETF_localised_attribute_name_EN	"Abyss jewels"
 DETF_localised_attribute_name_RU	"Самоцветы Бездны"
 DETF_color	255	230	128	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base tier"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1721,7 +1917,10 @@ DETF_localised_attribute_name_EN	"Any"
 DETF_localised_attribute_name_RU	"Любое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base family"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1765,7 +1964,10 @@ DETF_localised_attribute_name_EN	"Any"
 DETF_localised_attribute_name_RU	"Любое"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1800,14 +2002,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Unique item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1815,7 +2023,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Good for start"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1847,7 +2058,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1855,7 +2069,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Unique item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -1894,7 +2111,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1932,14 +2152,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Breach item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -1978,14 +2204,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Breach blessing"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2013,21 +2245,30 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Breach item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Splinter item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2062,14 +2303,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Breach unique item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2106,7 +2353,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -2114,7 +2364,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Delve fossil"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2147,7 +2400,10 @@ DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2176,14 +2432,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Delve resonator"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2218,14 +2480,20 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"special tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Delve affix item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2247,6 +2515,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+cannot_be_configured
 name_EN	"Heist base items"
 name_RU	"Базы кражи"
 icon	"data/textures/icons/SuperFangs.png"
@@ -2263,14 +2532,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base family"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Heist"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2298,7 +2573,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2325,7 +2603,10 @@ DETF_localised_attribute_name_EN	"Tools"
 DETF_localised_attribute_name_RU	"Инструменты"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"heist level"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2352,7 +2633,10 @@ DETF_localised_attribute_name_EN	"Level: 5 (best)"
 DETF_localised_attribute_name_RU	"Уровень: 5 (лучший)"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2378,7 +2662,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"heist price"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2411,7 +2698,10 @@ DETF_localised_attribute_name_EN	"Price: Low"
 DETF_localised_attribute_name_RU	"Ценность: Низкая"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2440,21 +2730,30 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Heist contract"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Quest Items"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2484,14 +2783,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Contracts"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2521,14 +2826,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Blueprints"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2565,14 +2876,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Scouting Report"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2598,14 +2915,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Piece of set"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2631,14 +2954,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Vault Keys"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2664,7 +2993,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -2672,26 +3004,46 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Scarab item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"scarab tier"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rusted"
+DETF_value_key	"Basic"
+DETF_localised_attribute_name_EN	"League content: basic"
+DETF_localised_attribute_name_RU	"Контент лиги: базовый"
 DETF_color	230	153	77	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Polished"
+DETF_value_key	"Bonus"
+DETF_localised_attribute_name_EN	"League content: bonus"
+DETF_localised_attribute_name_RU	"Контент лиги: бонусный"
 DETF_color	128	204	230	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Gilded"
+DETF_value_key	"Influencing"
+DETF_localised_attribute_name_EN	"Influencing"
+DETF_localised_attribute_name_RU	"Влияния"
 DETF_color	230	204	128	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Winged"
+DETF_value_key	"Special"
+DETF_localised_attribute_name_EN	"Special"
+DETF_localised_attribute_name_RU	"Особый"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Horned"
+DETF_localised_attribute_name_EN	"Horned"
+DETF_localised_attribute_name_RU	"Рогатый"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2717,14 +3069,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Map Fragments"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2751,14 +3109,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Splinter item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2774,14 +3138,20 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Splinter item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2813,7 +3183,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"special tag"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2836,6 +3209,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+cannot_be_configured
 name_EN	"Specific items"
 name_RU	"Особые предметы"
 icon	"data/textures/icons/incursion.png"
@@ -2845,7 +3219,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2864,7 +3241,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Quest Items"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2880,31 +3260,42 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+cannot_be_configured
 name_EN	"Vial item"
 name_RU	"Виалы"
 icon	"data/textures/icons/Vial_of_Awakening_inventory_icon.png"
 add_additional_force_field
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Stackable Currency"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Vial item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2945,7 +3336,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2960,7 +3354,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Hybrid Flasks"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -2995,7 +3392,10 @@ generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -3003,7 +3403,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Divination Cards"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -3042,7 +3445,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -3084,7 +3490,10 @@ generator_mode	MODE_ALL
 generator_forceful_warn_when_hided
 generator_forceful_unique
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -3092,14 +3501,21 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Boss drop"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
+tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Unique item"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -3138,7 +3554,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -3160,7 +3579,10 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_forceful_warn_when_hided
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -3168,7 +3590,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Boss drop"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -3201,7 +3626,10 @@ DETF_localised_attribute_name_EN	"Item piece"
 DETF_localised_attribute_name_RU	"Фрагмент предмета"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -3240,7 +3668,10 @@ DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
@@ -3263,6 +3694,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+cannot_be_configured
 name_EN	"Gems"
 name_RU	"Камни"
 icon	"data/textures/icons/Active.png"
@@ -3325,14 +3757,21 @@ random_selection_count	1
 generator_mode	MODE_ALL
 generator_forceful_warn_when_hided
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
+tag_cannot_be_configured
 DETF_value_key	"Awakened gem"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -3359,7 +3798,10 @@ DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
 DETF_color	255	230	204	255
 
-register_new_filter_tag
+
+
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES

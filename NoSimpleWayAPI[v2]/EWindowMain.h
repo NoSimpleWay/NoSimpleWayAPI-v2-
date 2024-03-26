@@ -1120,7 +1120,7 @@ namespace EDataActionCollection
 
 
 	void action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 
@@ -1469,7 +1469,39 @@ public:
 	void export_loot_patterns_to_file();
 	void import_loot_patterns_from_file();
 
+	void add_all_loot_patter_to_loot_simulator(EButtonGroup* left_part_for_patterns);
+
+	void register_loot_simulator_group();
+
+	void register_add_content_to_filter_block_group();
+
+	void register_sound_group();
+
+	void register_about_group();
+
+	void register_world_parameters_group();
+
+	void register_add_data_entity_group();
+
+	void register_create_new_loot_filter_group();
+
+	void register_loot_version_configurator();
+
+	void register_loot_filter_error_list_group();
+
+	void register_2013_april_fool_group();
+
+	void register_styles_group();
+
+	void register_filter_tabs();
+
+	void register_bottom_search_line();
+
+	void register_color_editor();
+
 	EWindowMain();
+
+	void register_loot_filter_list_group();
 
 	void parse_raw_explicit_table();
 
@@ -1490,7 +1522,7 @@ public:
 
 	//registered button groups
 	static EButtonGroup* select_rarity_button_group;
-	static EButtonGroup* select_quality_button_group;
+	//static EButtonGroup* select_quality_button_group;
 	static EButtonGroupFilterBlockEditor* active_loot_filter_editor;
 	static EButtonGroup* world_parameters;
 	static EButtonGroup* tab_list_group;
@@ -1743,14 +1775,14 @@ enum LootPatternFolderEnum
 class EntityButtonLootPatternSelector : public EntityButton
 {
 public:
-	LootSimulatorPattern* target_pattern;
+	LootSimulatorPattern*				target_pattern;
 
 	bool								is_folder;
 	bool								hidden_by_folder;
 	bool								folder_is_expanded = false;
 
 	LootPatternFolderEnum				folder_enum;
-	EntityButtonLootPatternSelector* parent_folder_button;
+	EntityButtonLootPatternSelector*	parent_folder_button;
 
 	EButtonGroup* target_loot_pattern_button_group;
 
@@ -1803,6 +1835,8 @@ struct GameAttributeGenerator
 {
 public:
 	EGameItemAttributeContainer* target_attribute_container;
+
+	~GameAttributeGenerator();
 
 	float chance_to_generate = 1.0f;
 
@@ -1958,6 +1992,8 @@ struct GameItemGenerator
 public:
 
 	GameItemGenerator();
+	~GameItemGenerator();
+
 	GameItemGenerator(std::string _key);
 	int										generations_count = 1;
 	std::vector<GameAttributeGenerator*>	attribute_generators_list;
@@ -2003,10 +2039,11 @@ class LootSimulatorPattern
 {
 public:
 	ELocalisationText									localised_name;
-	ETextureGabarite* icon;
+	ETextureGabarite*									icon;
 	LootPatternFolderEnum								folder_enum;
 
 	LootSimulatorPattern();
+	~LootSimulatorPattern();
 
 	std::vector<GameItemGenerator*>						game_item_generator_list;
 

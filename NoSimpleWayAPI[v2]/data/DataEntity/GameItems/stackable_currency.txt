@@ -223,17 +223,19 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	
-	[tag]"name EN"			[value]"Veiled Chaos Orb"
-	[tag]"name RU"			[value]"Сфера скрытого хаоса"
+	[tag]"name EN"			[value]"Veiled Orb"
+	[tag]"name RU"			[value]"Скрытая сфера"
 	
 	[tag]"icon path"		[value]"Veiled_chaos"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Rare"
+	[tag]"worth"			[value]"Expensive"
 		
-	[tag]"item tag"			[value]"World drop"
-	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Boss drop"
+	[tag]"item tag"			[value]"Loot source: Catarina"
+	[tag]"item tag"			[value]"Syndicate drop"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"			[value]"Changed in Necropolis"
 	
 	[tag]"drop level"		[value]"61"
 	[tag]"stack multiplier"	[value]"1"
@@ -1264,6 +1266,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"68"
 	[tag]"stack multiplier"	[value]"1"
@@ -1284,6 +1288,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -1550,6 +1556,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1576,7 +1583,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1603,7 +1610,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1630,7 +1637,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1657,7 +1664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1720,7 +1727,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1747,7 +1754,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1774,7 +1781,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1801,7 +1808,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1827,8 +1834,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1886,8 +1892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1913,8 +1918,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1940,8 +1944,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1967,8 +1970,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1994,8 +1996,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2057,8 +2058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2085,8 +2085,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2113,36 +2112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Tattoo of the Rongokurai Goliath"
-	[tag]"name RU"		[value]"Татуировка Голиафа Ронгокураи"
-
-	[tag]"icon path"	[value]"Rongokurai_tattoo"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Tattoo"
-	[tag]"item tag"		[value]"Regular tattoo"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2169,8 +2139,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2197,8 +2166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2262,8 +2230,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2289,8 +2256,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2316,8 +2282,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2343,8 +2308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2370,8 +2334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2429,8 +2392,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2456,8 +2418,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2483,8 +2444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2510,8 +2470,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2537,8 +2496,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2598,6 +2556,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
+	[tag]"item tag"		[value]"Returned in Necropolis"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2622,8 +2582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2649,8 +2608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2676,8 +2634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2703,8 +2660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2769,8 +2725,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2796,8 +2751,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2823,8 +2777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2849,9 +2802,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2878,8 +2829,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2943,6 +2893,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
+	[tag]"item tag"		[value]"Returned in Necropolis"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2969,8 +2921,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2998,8 +2949,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3027,8 +2977,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3054,8 +3003,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3116,8 +3064,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3143,8 +3090,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3170,8 +3116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3197,8 +3142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3224,8 +3168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Returned in Necropolis"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -4058,6 +4001,89 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journey Tattoo of the Body"
+	[tag]"name RU"		[value]"Татуировка странствия тела"
+
+	[tag]"icon path"	[value]"Journey_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Journey tattoo"
+	
+	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journey Tattoo of the Mind"
+	[tag]"name RU"		[value]"Татуировка странствия разума"
+
+	[tag]"icon path"	[value]"Journey_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Journey tattoo"
+	
+	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journey Tattoo of the Soul"
+	[tag]"name RU"		[value]"Татуировка странствия души"
+
+	[tag]"icon path"	[value]"Journey_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Journey tattoo"
+	
+	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -4482,6 +4508,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Maven"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -4501,8 +4529,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Veiled Scarab"
+	[tag]"name RU"		[value]"Скрытый скарабей"
+
+	[tag]"icon path"	[value]"Veiled_scarab"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Veiled"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

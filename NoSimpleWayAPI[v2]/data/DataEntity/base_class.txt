@@ -1293,3 +1293,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трупы"
 
 	[tag]"icon path"	[value]"Corpse"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Embers of the Allflame"
+	[tag]"name RU"		[value]"Уголья Всепламени"
+
+	[tag]"icon path"	[value]"Allflame_ember"

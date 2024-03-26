@@ -365,6 +365,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -382,6 +384,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -399,6 +403,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -416,6 +422,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -433,6 +441,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -450,6 +460,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 
@@ -481,6 +493,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -500,6 +514,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -517,6 +533,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -534,6 +552,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -551,6 +571,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -570,6 +592,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -587,6 +611,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -690,6 +716,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -707,6 +735,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -724,6 +754,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -741,6 +773,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -758,6 +792,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -775,6 +811,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -792,6 +830,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -809,6 +849,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -826,6 +868,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -845,6 +889,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -862,6 +908,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -879,6 +927,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -896,6 +946,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -913,6 +965,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -944,6 +998,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -960,6 +1016,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -976,6 +1034,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -992,6 +1052,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1008,6 +1072,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1024,6 +1090,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1040,6 +1108,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1056,6 +1126,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1072,6 +1144,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1093,6 +1167,8 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1109,6 +1185,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1129,6 +1207,8 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1145,6 +1225,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1161,6 +1243,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1177,6 +1261,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1193,6 +1279,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1305,11 +1393,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1327,6 +1419,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1344,6 +1438,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1361,6 +1457,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1378,6 +1476,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1395,6 +1495,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1412,6 +1514,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1429,6 +1533,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1446,6 +1552,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1465,6 +1573,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1482,6 +1592,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1499,6 +1611,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1516,6 +1630,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1533,6 +1649,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1550,6 +1668,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2509,36 +2629,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Maven's Invitation: The Atlas"
-	[tag]"name RU"		[value]"Приглашение Мейвен: Атлас"
-
-	[tag]"icon path"	[value]"Maven_invitation_atlas"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Maven's Invitation: The Elderslayers"
-	[tag]"name RU"		[value]"Приглашение Мейвен: Убийцы Древнего"
-
-	[tag]"icon path"	[value]"MavenInvitationTheElderslayers"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2627,6 +2717,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -2648,6 +2740,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2669,6 +2763,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2688,6 +2784,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2707,6 +2805,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2726,6 +2826,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2744,6 +2846,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2764,6 +2868,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2781,6 +2887,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2798,6 +2906,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2815,6 +2925,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2831,6 +2943,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"scarab tier"	[value]"Rusted"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2848,6 +2962,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2865,6 +2981,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2882,6 +3000,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2972,3 +3092,2387 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cosmic Fragment"
+	[tag]"name RU"		[value]"Космический фрагмент"
+
+	[tag]"icon path"	[value]"cosmic_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decaying Fragment"
+	[tag]"name RU"		[value]"Разлагающий фрагмент"
+
+	[tag]"icon path"	[value]"Decaying_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakening Fragment"
+	[tag]"name RU"		[value]"Пробуждающий фрагмент"
+
+	[tag]"icon path"	[value]"Awakening_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Synthesising Fragment"
+	[tag]"name RU"		[value]"Синтезирующий фрагмент"
+
+	[tag]"icon path"	[value]"Synthesising_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reality Fragment"
+	[tag]"name RU"		[value]"Фрагмент реальности"
+
+	[tag]"icon path"	[value]"Reality_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blazing Fragment"
+	[tag]"name RU"		[value]"Пылающий фрагмент"
+
+	[tag]"icon path"	[value]"Blazing_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"pass fragment"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab"
+	[tag]"name RU"		[value]"Скарабей Разлома"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab of the Dreamer"
+	[tag]"name RU"		[value]"Скарабей Разлома мечтателя"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab of Lordship"
+	[tag]"name RU"		[value]"Скарабей Разлома владений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab of Splintering"
+	[tag]"name RU"		[value]"Скарабей Разлома расщепления"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab of Snares"
+	[tag]"name RU"		[value]"Скарабей Разлома ловушек"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+Bonus
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab"
+	[tag]"name RU"		[value]"Скарабей картографии"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Ascension"
+	[tag]"name RU"		[value]"Скарабей картографии восхождения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Singularity"
+	[tag]"name RU"		[value]"Скарабей картографии неповторимости"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Corruption"
+	[tag]"name RU"		[value]"Скарабей картографии осквернения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Duplication"
+	[tag]"name RU"		[value]"Скарабей картографии удвоения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reliquary Scarab"
+	[tag]"name RU"		[value]"Реликтовый скарабей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reliquary Scarab of Overlords"
+	[tag]"name RU"		[value]"Реликтовый скарабей повелителей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reliquary Scarab of Vision"
+	[tag]"name RU"		[value]"Реликтовый скарабей видения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bestiary Scarab"
+	[tag]"name RU"		[value]"Скарабей Бестиария"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bestiary Scarab of the Herd"
+	[tag]"name RU"		[value]"Скарабей Бестиария стаи"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bestiary Scarab of Duplicating"
+	[tag]"name RU"		[value]"Скарабей Бестиария удвоения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bestiary Scarab of the Shadowed Crow"
+	[tag]"name RU"		[value]"Скарабей Бестиария тёмной вороны"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Influencing Scarab of the Shaper"
+	[tag]"name RU"		[value]"Влиятельный скарабей Создателя"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Influencing"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Influencing Scarab of the Elder"
+	[tag]"name RU"		[value]"Влиятельный скарабей Древнего"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Influencing"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Influencing Scarab of Hordes"
+	[tag]"name RU"		[value]"Влиятельный скарабей орд"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Influencing"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Influencing Scarab of Hordes"
+	[tag]"name RU"		[value]"Влиятельный скарабей превращения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Influencing"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sulphite Scarab"
+	[tag]"name RU"		[value]"Сульфитовый скарабей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sulphite Scarab of Greed"
+	[tag]"name RU"		[value]"Сульфитовый скарабей алчности"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sulphite Scarab of Fumes"
+	[tag]"name RU"		[value]"Сульфитовый скарабей испарений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divination Scarab"
+	[tag]"name RU"		[value]"Скарабей предсказания"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divination Scarab of Curation"
+	[tag]"name RU"		[value]"Скарабей предсказания курирования"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divination Scarab of Completion"
+	[tag]"name RU"		[value]"Скарабей предсказания завершения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torment Scarab"
+	[tag]"name RU"		[value]"Скарабей Мучения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torment Scarab of Peculiarity"
+	[tag]"name RU"		[value]"Скарабей Мучения своеобразия"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torment Scarab of Release"
+	[tag]"name RU"		[value]"Скарабей Мучения освобождения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Scarab"
+	[tag]"name RU"		[value]"Скарабей Засады"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Scarab of Hidden Compartments"
+	[tag]"name RU"		[value]"Скарабей Засады потайных отсеков"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Scarab of Potency"
+	[tag]"name RU"		[value]"Скарабей Засады могущества"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Scarab of Containment"
+	[tag]"name RU"		[value]"Скарабей Засады содержания"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Scarab of Discernment"
+	[tag]"name RU"		[value]"Скарабей Засады разборчивости"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harbinger Scarab"
+	[tag]"name RU"		[value]"Скарабей Предвестника"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harbinger Scarab of Discernment"
+	[tag]"name RU"		[value]"Скарабей Предвестника разборчивости"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harbinger Scarab of Regency"
+	[tag]"name RU"		[value]"Скарабей Предвестника регентства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harbinger Scarab of Warhoards"
+	[tag]"name RU"		[value]"Скарабей Предвестника военных запасов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Scarab"
+	[tag]"name RU"		[value]"Скарабей Экспедиции"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Scarab of Runefinding"
+	[tag]"name RU"		[value]"Скарабей Экспедиции поиска рун"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Scarab of Verisium Powder"
+	[tag]"name RU"		[value]"Скарабей Экспедиции веризиевой пыли"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Scarab of the Skald"
+	[tag]"name RU"		[value]"Скарабей Экспедиции скальда"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Scarab of Archaeology"
+	[tag]"name RU"		[value]"Скарабей Экспедиции археологии"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Scarab"
+	[tag]"name RU"		[value]"Скарабей Легиона"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Scarab of Officers"
+	[tag]"name RU"		[value]"Скарабей Легиона офицеров"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Scarab of Command"
+	[tag]"name RU"		[value]"Скарабей Легиона командования"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Scarab of The Sekhema"
+	[tag]"name RU"		[value]"Скарабей Легиона Сехемы"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Scarab of Eternal Conflict"
+	[tag]"name RU"		[value]"Скарабей Легиона вечной войны"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyss Scarab"
+	[tag]"name RU"		[value]"Скарабей Бездны"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Multitudes"
+	[tag]"name RU"		[value]"Скарабей Бездны множеств"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Edifice"
+	[tag]"name RU"		[value]"Скарабей Бездны строений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Emptiness"
+	[tag]"name RU"		[value]"Скарабей Бездны пустоты"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Anarchy Scarab"
+	[tag]"name RU"		[value]"Скарабей Анархии"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Anarchy Scarab of Gigantification"
+	[tag]"name RU"		[value]"Скарабей Анархии исполинства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Anarchy Scarab of Partnership"
+	[tag]"name RU"		[value]"Скарабей Анархии партнёрства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence Scarab"
+	[tag]"name RU"		[value]"Скарабей Сущности"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence Scarab of Ascent"
+	[tag]"name RU"		[value]"Скарабей Сущности восхождения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence Scarab of Stability"
+	[tag]"name RU"		[value]"Скарабей Сущности стабильности"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence Scarab of Calcification"
+	[tag]"name RU"		[value]"Скарабей Сущности окостенения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Domination Scarab"
+	[tag]"name RU"		[value]"Скарабей Господства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Domination Scarab of Abnormality"
+	[tag]"name RU"		[value]"Скарабей Господства аномалии"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Domination Scarab of Teachings"
+	[tag]"name RU"		[value]"Скарабей Господства учений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Domination Scarab of Terrors"
+	[tag]"name RU"		[value]"Скарабей Господства ужасов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Scarab of Selectiveness"
+	[tag]"name RU"		[value]"Ритуальный скарабей избранности"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Scarab of Recognition"
+	[tag]"name RU"		[value]"Ритуальный скарабей признания"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Scarab of Abundance"
+	[tag]"name RU"		[value]"Ритуальный скарабей изобилия"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harvest Scarab"
+	[tag]"name RU"		[value]"Скарабей Жатвы"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harvest Scarab of Doubling"
+	[tag]"name RU"		[value]"Скарабей Жатвы удвоения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harvest Scarab of Cornucopia"
+	[tag]"name RU"		[value]"Скарабей Жатвы изобилия"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incursion Scarab"
+	[tag]"name RU"		[value]"Скарабей Вмешательства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incursion Scarab of Invasion"
+	[tag]"name RU"		[value]"Скарабей Вмешательства вторжения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incursion Scarab of Champions"
+	[tag]"name RU"		[value]"Скарабей Вмешательства чемпионов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incursion Scarab of Timelines"
+	[tag]"name RU"		[value]"Скарабей Вмешательства хроник"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Betrayal Scarab"
+	[tag]"name RU"		[value]"Скарабей Предательства"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Intelligence"
+	[tag]"name RU"		[value]"Скарабей Предательства разведки"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Reinforcements"
+	[tag]"name RU"		[value]"Скарабей Предательства подкреплений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Perpetuation"
+	[tag]"name RU"		[value]"Скарабей Предательства увековечения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beyond Scarab"
+	[tag]"name RU"		[value]"Скарабей Иномирья"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beyond Scarab of Corruption"
+	[tag]"name RU"		[value]"Скарабей Иномирья осквернения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beyond Scarab of Haemophilia"
+	[tag]"name RU"		[value]"Скарабей Иномирья кровопотери"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beyond Scarab of Resurgence"
+	[tag]"name RU"		[value]"Скарабей Иномирья возрождения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beyond Scarab of the Invasion"
+	[tag]"name RU"		[value]"Скарабей Иномирья вторжения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Scarab"
+	[tag]"name RU"		[value]"Скарабей Ультиматума"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Scarab of Bribing"
+	[tag]"name RU"		[value]"Скарабей Ультиматума подкупа"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Scarab of Dueling"
+	[tag]"name RU"		[value]"Скарабей Ультиматума поединка"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Scarab of Catalysing"
+	[tag]"name RU"		[value]"Скарабей Ультиматума катализа"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Scarab of Inscription"
+	[tag]"name RU"		[value]"Скарабей Ультиматума начертания"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirium Scarab"
+	[tag]"name RU"		[value]"Скарабей Делириума"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirium Scarab of Mania"
+	[tag]"name RU"		[value]"Скарабей Делириума мании"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirium Scarab of Paranoia"
+	[tag]"name RU"		[value]"Скарабей Делириума паранойи"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirium Scarab of Neuroses"
+	[tag]"name RU"		[value]"Скарабей Делириума неврозов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirium Scarab of Delusions"
+	[tag]"name RU"		[value]"Скарабей Делириума галлюцинаций"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blight Scarab"
+	[tag]"name RU"		[value]"Скарабей Скверны"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blight Scarab of Bounty"
+	[tag]"name RU"		[value]"Скарабей Скверны щедрости"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blight Scarab of Oils"
+	[tag]"name RU"		[value]"Скарабей Скверны масел"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blight Scarab of Blooming"
+	[tag]"name RU"		[value]"Скарабей Скверны цветения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Monstrous Lineage"
+	[tag]"name RU"		[value]"Скарабей чудовищных поколений"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Adversaries"
+	[tag]"name RU"		[value]"Скарабей антагонистов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mysterious Scarab"
+	[tag]"name RU"		[value]"Загадочный скарабей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Hunted Traitors"
+	[tag]"name RU"		[value]"Скарабей затравленных предателей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Stability"
+	[tag]"name RU"		[value]"Скарабей стабильности"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Bloodlines"
+	[tag]"name RU"		[value]"Рогатый скарабей Родословных"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Nemeses"
+	[tag]"name RU"		[value]"Рогатый скарабей Немезиды"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Preservation"
+	[tag]"name RU"		[value]"Рогатый скарабей сохранения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Awakening"
+	[tag]"name RU"		[value]"Рогатый скарабей пробуждения"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Tradition"
+	[tag]"name RU"		[value]"Рогатый скарабей традиций"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Glittering"
+	[tag]"name RU"		[value]"Рогатый скарабей переливов"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Horned Scarab of Pandemonium"
+	[tag]"name RU"		[value]"Рогатый скарабей Пандемониума"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"scarab tier"	[value]"Horned"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
