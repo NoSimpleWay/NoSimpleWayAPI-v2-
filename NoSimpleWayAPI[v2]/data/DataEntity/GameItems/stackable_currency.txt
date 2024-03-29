@@ -245,6 +245,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"		[value]"1"
 	
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Veiled Chaos Orb"
+	[tag]"name RU"			[value]"Скрытая сфера хаоса"
+	
+	[tag]"icon path"		[value]"Veiled_chaos"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Expensive"
+		
+	[tag]"item tag"			[value]"Boss drop"
+	[tag]"item tag"			[value]"Loot source: Catarina"
+	[tag]"item tag"			[value]"Syndicate drop"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"			[value]"Deleted in Necropolis"
+	[tag]"item tag"			[value]"Deleted"
+	
+	[tag]"drop level"		[value]"61"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Vaal Orb"
@@ -252,7 +277,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vaal_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -275,7 +299,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harbinger's_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
@@ -971,7 +994,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1014,7 +1036,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1143,7 +1164,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -4553,7 +4573,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
-	[tag]"scarab tier"	[value]"Veiled"
+	[tag]"scarab tier"	[value]"Special"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

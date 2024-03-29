@@ -278,7 +278,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"1"
 	[tag]"stack multiplier"	[value]"1"

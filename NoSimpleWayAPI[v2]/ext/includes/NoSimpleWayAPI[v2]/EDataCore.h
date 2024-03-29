@@ -510,7 +510,7 @@ public:
 
 	EGUIStyle*				slider_style;
 
-	std::string				stored_text;
+	ELocalisationText		stored_text;
 	ETextArea*				pointer_to_text_area;
 	ETextArea*				pointer_to_digit_text_area;
 

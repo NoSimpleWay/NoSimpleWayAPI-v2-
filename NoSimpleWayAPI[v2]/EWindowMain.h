@@ -1099,6 +1099,20 @@ public:
 	target_wide_button = nullptr;
 };
 
+class EButtonGroupPoeNijaPriceChecker : public EButtonGroup
+{
+public:
+	EButtonGroupPoeNijaPriceChecker(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton*
+	league_name_button = nullptr;
+
+	EButtonGroup*
+	pointer_to_status_group = nullptr;
+
+	EntityButton* add_status_button(ELocalisationText _ltext, int _code, int _data_length);
+};
+
 
 
 
@@ -1106,9 +1120,11 @@ namespace NSWRegisteredButtonGroups
 {
 	static EButtonGroupFilterBlockColors*				filter_block_colors;
 	static EButtonGroupAddExplicitToLootSimulatorItem*	add_explicit_to_simulator;
+	static EButtonGroupPoeNijaPriceChecker*				poe_ninja_price_checker_group;
 
 	static void register_filter_block_colors_group_for_filter_block();
 	static void register_explicit_for_loot_simulator_group();
+	static void register_poe_ninja_price_checker();
 
 }
 
@@ -1242,6 +1258,10 @@ namespace EDataActionCollection
 	void action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_reset_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+	void action_get_poe_ninja_prices(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_price_check_window(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1449,6 +1469,7 @@ enum class PoeNinjaAPIMode
 	CURRENCY,
 	UNIQUES,
 	DIVINATIONS,
+	GEMS
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
@@ -1463,8 +1484,8 @@ public:
 	void register_loot_version_names();
 
 	
-	void get_poe_ninja_api_prices();
-	void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode);
+	static void get_poe_ninja_api_prices();
+	static void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode);
 
 	void export_loot_patterns_to_file();
 	void import_loot_patterns_from_file();
@@ -1498,6 +1519,10 @@ public:
 	void register_bottom_search_line();
 
 	void register_color_editor();
+
+	void register_default_color_patterns();
+
+	
 
 	EWindowMain();
 
@@ -1822,11 +1847,13 @@ namespace DataEntityFilterConfigurer
 	extern void create_configurer_buttons(DataEntityTagFilter* _tag_filter, DETFConfigurerMode _mode, EButtonGroup* _target_group);
 
 	////////////////////////////////
-	extern std::vector <EntityButtonVariantRouterPatternConfigurer*> router_button_vector[ROUTER_BUTTON_VECTOR_SIZE];
+	extern std::vector <EntityButtonVariantRouterPatternConfigurer*> router_button_vector_for_loot_simulator[ROUTER_BUTTON_VECTOR_SIZE];
+	extern std::vector <EntityButtonVariantRouterPatternConfigurer*> router_button_vector_for_data_entity_filter[ROUTER_BUTTON_VECTOR_SIZE];
 
-	extern int router_button_vector_id;
+	extern int router_button_vector_id_for_loot_simulator;
+	extern int router_button_vector_id_for_data_entity_filter;
 
-	extern void clear_router_vector();
+	extern void clear_router_vector(DETFConfigurerMode _mode);
 	////////////////////////////////
 }
 

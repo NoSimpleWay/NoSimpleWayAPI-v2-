@@ -4274,13 +4274,13 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText _text)
 {
 	EClickableArea*
-		new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
+	new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
 	main_clickable_area = new_clickable_area;
 
 	clickable_area_list.push_back(new_clickable_area);
 
 	ETextArea*
-		new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text);
+	new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text);
 	new_text_area->localisation_text = _text;
 	new_text_area->parent_group = this;
 	new_text_area->can_be_edited = false;

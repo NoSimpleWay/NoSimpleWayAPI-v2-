@@ -1862,12 +1862,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"rule_folder_ancestral"
 	[tag]"name EN"		[value]"Trial of the ancestors:\nnew items"
 	[tag]"name RU"		[value]"Испытание предков:\nновые предметы"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"rule_folder_affliction"
 	[tag]"name EN"		[value]"Affliction:\nnew items"
 	[tag]"name RU"		[value]"Заклятье:\nновые предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_necropolis"
+	[tag]"name EN"		[value]"Necropolis:\nnew items"
+	[tag]"name RU"		[value]"Некрополис:\nновые предметы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3270,3 +3278,184 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"empty_affix"
 	[tag]"name EN"		[value]"Empty affix"
 	[tag]"name RU"		[value]"Нет свойства"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_basic"
+	[tag]"name EN"		[value]"Basic"
+	[tag]"name RU"		[value]"Базовый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_bonus"
+	[tag]"name EN"		[value]"Bonus"
+	[tag]"name RU"		[value]"Бонусный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_influenced"
+	[tag]"name EN"		[value]"Influenced"
+	[tag]"name RU"		[value]"Влияния"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_horned"
+	[tag]"name EN"		[value]"Horned"
+	[tag]"name RU"		[value]"Рогатый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_Special"
+	[tag]"name EN"		[value]"Special"
+	[tag]"name RU"		[value]"Особый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"scarab_tier_Special"
+	[tag]"name EN"		[value]"Special"
+	[tag]"name RU"		[value]"Особый"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"update_poe_ninja_prices"
+	[tag]"name EN"		[value]"Update prices"
+	[tag]"name RU"		[value]"Обновить цены"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"league_name_gray_text"
+	[tag]"name EN"		[value]"League name"
+	[tag]"name RU"		[value]"Название лиги"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_check_prices"
+	[tag]"name EN"		[value]"Refresh prices"
+	[tag]"name RU"		[value]"Обновить цены"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"league_name_group_text"
+	[tag]"name EN"		[value]"League name"
+	[tag]"name RU"		[value]"Название лиги"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"status_list_group_text"
+	[tag]"name EN"		[value]"Status"
+	[tag]"name RU"		[value]"Статус"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_error_stus"
+	[tag]"name EN"		[value]"Status"
+	[tag]"name RU"		[value]"Статус"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_unique_jewels"
+	[tag]"name EN"		[value]"Unique jewels"
+	[tag]"name RU"		[value]"Уникальные самоцветы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_unique_flasks"
+	[tag]"name EN"		[value]"Unique flasks"
+	[tag]"name RU"		[value]"Уникальные флаконы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_unique_weapon"
+	[tag]"name EN"		[value]"Unique weapon"
+	[tag]"name RU"		[value]"Уникальное оружие"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_unique_armour"
+	[tag]"name EN"		[value]"Unique armour"
+	[tag]"name RU"		[value]"Уникальные доспехи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_unique_accessory"
+	[tag]"name EN"		[value]"Unique accessory"
+	[tag]"name RU"		[value]"Уникальные бижутерия"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_divinations"
+	[tag]"name EN"		[value]"Divinations"
+	[tag]"name RU"		[value]"Гадальные карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_currency"
+	[tag]"name EN"		[value]"Currency"
+	[tag]"name RU"		[value]"Валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_fragment"
+	[tag]"name EN"		[value]"Fragments"
+	[tag]"name RU"		[value]"Фрагменты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_incubator"
+	[tag]"name EN"		[value]"Incubators"
+	[tag]"name RU"		[value]"Инкубаторы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_scarab"
+	[tag]"name EN"		[value]"Scarabs"
+	[tag]"name RU"		[value]"Скарабеи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_fossils"
+	[tag]"name EN"		[value]"Fossils"
+	[tag]"name RU"		[value]"Ископаемые"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_skill_gem"
+	[tag]"name EN"		[value]"Gems"
+	[tag]"name RU"		[value]"Камни умений"

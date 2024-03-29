@@ -1077,7 +1077,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 	data->pointer_to_text_area = jc_text_area;
-	data->stored_text = _ltext.localisations[ELocalisationText::active_localisation];
+	data->stored_text = _ltext;
 
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);

@@ -134,8 +134,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Awakened gem"
 			
 	[tag]"worth"		[value]"Moderate"
-			
-	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

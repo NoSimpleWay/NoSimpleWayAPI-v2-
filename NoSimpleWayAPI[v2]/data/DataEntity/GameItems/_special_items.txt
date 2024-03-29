@@ -159,3 +159,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"add affix"	[value]"of the Underground"
 	
 	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Support"
+	[tag]"name EN"		[value]"Support gem"
+	[tag]"name RU"		[value]"Камень поддержки"
+
+	[tag]"icon path"	[value]"Gem"
+	[tag]"base class"	[value]"Support Gem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Support gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Skill Gem"
+	[tag]"name EN"		[value]"Skill Gems"
+	[tag]"name RU"		[value]"Камень умения"
+
+	[tag]"icon path"	[value]"Gem"
+	[tag]"base class"	[value]"Skill Gems"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Skill gem"
+	
+	[tag]"worth"		[value]"Common"

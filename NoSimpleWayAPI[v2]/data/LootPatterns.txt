@@ -507,6 +507,15 @@ generator_mode	MODE_ALL
 
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+
+
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
@@ -532,6 +541,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"scarab item"
 DETF_color	255	128	64	255
 
 
@@ -678,7 +691,6 @@ REGISTER_NEW_PATTERN
 name_EN	"Scarabs"
 name_RU	"Скарабеи"
 icon	"data/textures/icons/Veiled_scarab.png"
-cannot_be_configured
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -692,14 +704,51 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
+tag_cannot_be_configured
 DETF_value_key	"scarab item"
 DETF_color	255	230	204	255
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"scarab tier"
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Basic"
+DETF_localised_attribute_name_EN	"League content: basic"
+DETF_localised_attribute_name_RU	"Контент лиги: базовый"
+DETF_color	230	153	77	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Bonus"
+DETF_localised_attribute_name_EN	"League content: bonus"
+DETF_localised_attribute_name_RU	"Контент лиги: бонусный"
+DETF_color	128	204	230	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Influencing"
+DETF_localised_attribute_name_EN	"Influencing"
+DETF_localised_attribute_name_RU	"Влияния"
+DETF_color	230	204	128	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Special"
+DETF_localised_attribute_name_EN	"Special"
+DETF_localised_attribute_name_RU	"Особый"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Horned"
+DETF_localised_attribute_name_EN	"Horned"
+DETF_localised_attribute_name_RU	"Рогатый"
+DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Introduced: Necropolis league"
+DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Introduced: Necropolis league"
@@ -710,6 +759,7 @@ DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
+tag_cannot_be_configured
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
@@ -742,7 +792,7 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"pass fragment"
+DETF_value_key	"Piece of set"
 DETF_color	255	230	204	255
 
 
@@ -849,6 +899,17 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
 
 
 
@@ -911,6 +972,24 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Moderate"
 DETF_localised_attribute_name_EN	"Worth: Moderate"
 DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 
@@ -1563,8 +1642,7 @@ DETF_color	255	230	204	255
 REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
+REGISTER_NEW_SUITABLE_VALUESDETF_value_key	"Trash"
 DETF_localised_attribute_name_EN	"Worth: Trash"
 DETF_localised_attribute_name_RU	"Мусор"
 DETF_color	255	230	204	255
@@ -1585,6 +1663,18 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Rare"
 DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 
@@ -1730,7 +1820,6 @@ REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
-generator_cannot_be_indicate
 
 
 
@@ -2469,7 +2558,6 @@ activate_attribute_group_by_name	"ItemLevel"
 activate_attribute_group_by_name	"FlagAttributes"
 activate_attribute_group_by_name	"Influence"
 activate_attribute_group_by_name	"Quality"
-activate_attribute_group_by_name	"MapAttributes"
 activate_attribute_group_by_name	"Explicits"
 add_additional_force_field
 cannot_be_configured
@@ -3009,7 +3097,6 @@ DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"scarab tier"
-
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Basic"
 DETF_localised_attribute_name_EN	"League content: basic"
@@ -3705,42 +3792,22 @@ generations_count	8
 random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured
-generator_filtered_base	"Skill Gem"
-generator_filtered_EN	"Active Gem"
-generator_filtered_RU	"Камень умения"
 
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Support"
-generator_filtered_EN	"Support Gem"
-generator_filtered_RU	"Камень поддержки"
 
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Skill Gem"
-generator_filtered_EN	"Corrupted Skill Gem"
-generator_filtered_RU	"Осквернённый камень умения"
+REGISTER_NEW_FILTER_TAG
+target_tag	"special tag"
 
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Support Gems"
-generator_filtered_EN	"Corrupted Support Gem"
-generator_filtered_RU	"Осквернённый камень поддержки"
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Support gem"
+DETF_localised_attribute_name_EN	"Support gems"
+DETF_localised_attribute_name_RU	"Камни поддержки"
+DETF_color	255	230	204	255
 
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Vaal"
-generator_filtered_EN	"Vaal Skill Gem"
-generator_filtered_RU	"Камень умения Ваал"
-
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Skill gem"
+DETF_localised_attribute_name_EN	"Skill gems"
+DETF_localised_attribute_name_RU	"Камни умения"
+DETF_color	255	230	204	255
 
 
 
@@ -3775,6 +3842,12 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
 REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Common"
 DETF_localised_attribute_name_EN	"Worth: Common"
 DETF_localised_attribute_name_RU	"Дешёвое"
@@ -3796,6 +3869,12 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Expensive"
 DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 

@@ -13,6 +13,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -32,6 +34,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -51,6 +55,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -70,5 +76,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"

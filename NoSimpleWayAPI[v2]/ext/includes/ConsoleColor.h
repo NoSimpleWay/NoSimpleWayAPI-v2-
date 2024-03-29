@@ -54,6 +54,18 @@ inline std::ostream& yellow(std::ostream& s)
 	return s;
 }
 
+inline std::ostream& purple(std::ostream& s)
+
+{
+	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	SetConsoleTextAttribute(hStdout,
+
+		FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+
+	return s;
+}
+
 inline std::ostream& white(std::ostream& s)
 
 {

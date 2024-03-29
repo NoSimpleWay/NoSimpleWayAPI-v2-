@@ -1033,7 +1033,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 			=
 			(1.0f - (data->current_slide_value - 0.5f) * 2.0f)	* data->mid_value 
 			+
-			(data->current_slide_value - 0.5f) * 2.0f				* data->max_value;
+			(data->current_slide_value - 0.5f) * 2.0f			* data->max_value;
 		}
 
 		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
@@ -1053,7 +1053,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		//CHANGE HEAD TEXT
 		if (data->pointer_to_text_area != nullptr)
 		{
-			data->pointer_to_text_area->change_text(data->stored_text);
+			data->pointer_to_text_area->change_text(data->stored_text.localisations[ELocalisationText::active_localisation]);
 		}
 
 		//CHANGE DIGIT TEXT
