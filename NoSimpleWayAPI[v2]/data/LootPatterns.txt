@@ -28,6 +28,7 @@ REGISTER_NEW_PATTERN
 name_EN	"Trash items"
 name_RU	"Мусор"
 icon	"data/textures/icons/Orb_of_Alchemy_inventory_icon.png"
+cannot_be_configured
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -49,7 +50,7 @@ DETF_value_key	"Currency"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Divinations"
+DETF_value_key	"Divination Cards"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -219,7 +220,8 @@ REGISTER_NEW_PATTERN
 name_EN	"Valuable items"
 name_RU	"Ценные предметы"
 icon	"data/textures/minimap_shapes/minimap_icon_shape[star].png"
-
+activate_attribute_group_by_name	"SocketsLinksColours"
+cannot_be_configured
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
@@ -421,22 +423,6 @@ target_tag	"item tag"
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
 DETF_color	255	128	64	255
-
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Map"
-generator_filtered_EN	"Map"
-generator_filtered_RU	"Карта"
-
-REGISTER_NEW_GENERATOR
-generations_count	8
-random_selection_count	1
-generator_mode	MODE_ALL
-generator_filtered_base	"Map"
-generator_filtered_EN	"Map"
-generator_filtered_RU	"Карта"
 
 
 
@@ -3431,15 +3417,27 @@ target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Utility Flasks"
-DETF_color	255	230	204	255
+DETF_localised_attribute_name_EN	"Utility flasks"
+DETF_localised_attribute_name_RU	"Особые флаконы"
+DETF_color	100	255	200	255
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Life Flasks"
-DETF_color	255	230	204	255
+DETF_localised_attribute_name_EN	"Life flasks"
+DETF_localised_attribute_name_RU	"Флаконы здоровья"
+DETF_color	255	64	16	255
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Hybrid Flasks"
-DETF_color	255	230	204	255
+DETF_localised_attribute_name_EN	"Hybrid flasks"
+DETF_localised_attribute_name_RU	"Флаконы равновесия"
+DETF_color	255	100	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Mana Flasks"
+DETF_localised_attribute_name_EN	"Mana flasks"
+DETF_localised_attribute_name_RU	"Флаконы маны"
+DETF_color	100	128	255	255
 
 
 
@@ -3788,7 +3786,7 @@ icon	"data/textures/icons/Active.png"
 activate_attribute_group_by_name	"GemAttributes"
 
 REGISTER_NEW_GENERATOR
-generations_count	8
+generations_count	1
 random_selection_count	1
 generator_mode	MODE_ALL
 generator_cannot_be_configured

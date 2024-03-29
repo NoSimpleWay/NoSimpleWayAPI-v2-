@@ -5413,8 +5413,8 @@ void EWindowMain::register_loot_simulator_group()
 			whole_loot_simulator_group->pointer_to_target_loot_filter_version_button = variant_router_button;
 
 			variant_router_button->make_as_default_router_variant_button (new ERegionGabarite(256.0f, 25.0f));
-			
-
+			variant_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+			variant_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 			for (int i = 0; i < NSW_LOOT_FILTER_MAX_VERSIONS; i++)
 				if (LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i])
 				{
@@ -7973,7 +7973,7 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 {
 	EButtonGroupPoeNijaPriceChecker*
 	poe_ninja_price_checker_group = new EButtonGroupPoeNijaPriceChecker(new ERegionGabarite(200.0f, 320.0f));
-	poe_ninja_price_checker_group->button_group_is_active = true;
+	poe_ninja_price_checker_group->button_group_is_active = false;
 	poe_ninja_price_checker_group->auto_superfocused = true;
 
 	poe_ninja_price_checker_group->init_as_root_group(EWindowMain::link_to_main_window);
@@ -25144,8 +25144,8 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 					(_generator != nullptr)
 					&&
 					(_generator->always_6_linked)
-					)
-				)//ALWAYS 6-linked
+				)
+			)//ALWAYS 6-linked
 		{
 			sockets_count = 6;
 			links_count = 6;
@@ -25309,7 +25309,7 @@ void EButtonGroupAttributeGeneratorGroup_Quantity::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 5.0f;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 20.0f;
 
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 0.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 2.0f;
 
 	//static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 
@@ -25954,7 +25954,77 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::init()
 
 
 
+
+
+
+
 	EntityButton*
+	switch_button = nullptr;
+
+
+
+
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/corrupted_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/corrupted_inactive"),
+		ELocalisationText::get_localisation_by_key("item_corrupted"),
+		&EWindowMain::loot_simulator_button_group->gem_is_corrupted
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
+
+
+
+
+
+
+
+	EntityButton*
+		named_slider = EntityButton::create_horizontal_named_slider
+		(
+
+			new ERegionGabarite(350.0f, 40.0f),
+			this,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ELocalisationText::get_localisation_by_key("gem_quality")
+		);
+	add_button_to_working_group_and_expand_y(named_slider);
+	named_slider->can_be_stretched = true;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->pointer_to_value = &EWindowMain::loot_simulator_button_group->selected_gem_quality;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->min_value = 1.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 15.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 21.0f;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 0.0f;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 		named_slider = EntityButton::create_horizontal_named_slider
 		(
 
@@ -25978,6 +26048,13 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
+	
+	
+	
+	
+	
+	
+	
 
 
 
@@ -25987,7 +26064,6 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::init()
 
 
 
-	EntityButton*
 	switch_button = nullptr;
 
 
@@ -26027,6 +26103,22 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::execute_attribute_group(
 		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "GemLevel");
 
 		attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_gem_level;
+	}
+
+	if (_game_item->can_be_quality)
+	{
+		EGameItemAttributeContainer*
+		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Quality");
+
+		attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_gem_quality;
+	}
+
+	if (_game_item->can_be_corrupted)
+	{
+		EGameItemAttributeContainer*
+		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Corrupted");
+
+		attribute_container->attribute_value_bool = true;
 	}
 
 }

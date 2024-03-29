@@ -844,6 +844,7 @@ public:
 	float	selected_quality				= 0.0f;
 
 	float	selected_gem_level				= 1.0f;
+	float	selected_gem_quality			= 0.0f;
 
 	float	selected_maptier				= 1.0f;
 
@@ -857,7 +858,7 @@ public:
 	float	selected_blue_weight			= 100.0f;
 	float	selected_white_weight			= 0.0f;
 
-	float	selected_quantity				= 0.0f;
+	float	selected_quantity				= 1.0f;
 	float	selected_corrupted_implicits	= 0.0f;
 	float	selected_exarch_level			= 0.0f;
 	float	selected_eater_level			= 0.0f;
@@ -865,6 +866,7 @@ public:
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
 	bool	is_corrupted					= false;
+	bool	gem_is_corrupted				= false;
 	bool	is_identified					= false;
 	bool	is_mirrored						= false;
 	bool	is_enchanted					= false;

@@ -1183,6 +1183,61 @@ void ETextArea::update(float _d)
 			}
 
 		}
+		
+		//DELETE key - erase right sided symbol
+		if
+			(
+				(
+					(EInputCore::key_pressed_once(GLFW_KEY_DELETE))
+					||
+					(
+						(EInputCore::key_holded(GLFW_KEY_DELETE, 0.20f))
+						&&
+						(jump_cooldown <= 0)
+						)
+					)
+				&&
+				(text_area_active)
+				)
+		{
+			jump_cooldown = 0.065f;
+
+			int target_glyph_id = max(selected_glyph_position, 0);
+			EFontGlyph* target_glyph = font_glyph_list.at(target_glyph_id);
+
+			int target_row_id = target_glyph->row_id;
+			int target_sym_id = target_glyph->storer_text_sym_id - 0;
+
+			//if (*selected_left_side) { target_sym_id--; }
+
+			if (target_sym_id >= 0)
+			{
+
+				original_text.erase(target_sym_id, 1);
+
+				//std::string ss(target_glyph->sym, 1);
+				//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
+
+				//if ((target_glyph_id - 1 >= 0) && (font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (selected_glyph_position) += 1; }
+				//(selected_glyph_position) += 1;
+
+				change_text(original_text);
+
+				//if ((parent_clickable_region != nullptr) && (parent_clickable_region->parent_custom_data != nullptr))
+				//{
+				//for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+
+				//}
+				type_cooldown = 0.2f;
+
+				//if (row.at(*target_glyph->row_id)->length() <= 1) { (selected_glyph_position) -= 1; }
+
+
+				//if delete all text
+
+			}
+
+		}
 
 		if
 			(

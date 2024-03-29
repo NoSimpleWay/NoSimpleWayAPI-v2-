@@ -639,8 +639,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Transfigured"
-
 	[tag]"can be"		[value]"Gem level"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"PortalGem"
 	
@@ -650,8 +650,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Support Gems"
 	[tag]"short name"	[value]"Support Gem"
 	[tag]"name RU"		[value]"Камень поддержки"
-
+	
+	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Gem level"
+	[tag]"can be"		[value]"Quality"
 
 	[tag]"icon path"	[value]"SupportGems"
 	

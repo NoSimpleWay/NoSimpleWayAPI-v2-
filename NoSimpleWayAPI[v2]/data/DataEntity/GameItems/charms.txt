@@ -12,6 +12,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 	
+	[tag]"item tag"		[value]"Deleted in Necropolis"
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 		
 	[tag]"worth"		[value]"Rare"
@@ -30,6 +33,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 	
+	[tag]"item tag"		[value]"Deleted in Necropolis"
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 		
 	[tag]"worth"		[value]"Rare"
@@ -47,6 +53,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Deleted in Necropolis"
+	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 		

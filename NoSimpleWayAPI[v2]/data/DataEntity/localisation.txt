@@ -3214,6 +3214,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"gem_quality"
+	[tag]"name EN"		[value]"Gem quality"
+	[tag]"name RU"		[value]"Качество камня"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"transfigured_gem"
 	[tag]"name EN"		[value]"Transfigured gem"
 	[tag]"name RU"		[value]"Изменённый камень"

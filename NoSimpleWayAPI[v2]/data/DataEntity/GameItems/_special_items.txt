@@ -171,7 +171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Support gem"
 	[tag]"name RU"		[value]"Камень поддержки"
 
-	[tag]"icon path"	[value]"Gem"
+	[tag]"icon path"	[value]"SupportGems"
 	[tag]"base class"	[value]"Support Gem"
 
 	[tag]"item width"	[value]"1"
@@ -189,7 +189,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Skill Gems"
 	[tag]"name RU"		[value]"Камень умения"
 
-	[tag]"icon path"	[value]"Gem"
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill Gems"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Skill gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal"
+	[tag]"name EN"		[value]"Vaal Skill Gems"
+	[tag]"name RU"		[value]"Камень умения Ваал"
+
+	[tag]"icon path"	[value]"PortalGem"
 	[tag]"base class"	[value]"Skill Gems"	
 
 	[tag]"item width"	[value]"1"
