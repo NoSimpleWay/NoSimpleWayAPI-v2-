@@ -11863,6 +11863,15 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}

@@ -3203,6 +3203,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Devouring Fragment"
+	[tag]"name RU"		[value]"Пожирающий фрагмент"
+
+	[tag]"icon path"	[value]"Devouring_fragment"
+	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
 	
 	
 	

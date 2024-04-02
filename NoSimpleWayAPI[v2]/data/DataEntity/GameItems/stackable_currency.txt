@@ -4577,3 +4577,23 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Valdo's Puzzle Box"
+	[tag]"name RU"		[value]"Скрытый скарабей"
+
+	[tag]"icon path"	[value]"ValdosPuzzleBox"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
