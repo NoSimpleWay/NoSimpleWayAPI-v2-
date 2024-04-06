@@ -574,6 +574,7 @@ public:
 	EButtonGroup* target_group;
 };
 
+struct DataEntityTagFilter;
 class EntityButtonWideItem : public EntityButton
 {
 public:
@@ -587,6 +588,8 @@ public:
 	ETextureGabarite*
 	texture_icon = nullptr;
 
+	std::vector<DataEntityTagFilter> data_entity_tag_filter_list;
+
 	static EntityButtonWideItem* create_wide_item_button
 	(
 		ERegionGabarite* _region_gabarite,
@@ -598,6 +601,8 @@ public:
 	);
 
 	void change_texture(ETextureGabarite* _texture);
+
+
 };
 
 

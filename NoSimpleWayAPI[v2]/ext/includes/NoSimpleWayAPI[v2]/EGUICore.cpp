@@ -1009,7 +1009,7 @@ void EButtonGroup::button_group_update(float _d)
 			(is_in_visible_diapason())//in visible gabarites
 			&&
 			(!block_need_remove)
-			)
+		)
 	{
 
 		phantom_translate_if_need();
@@ -3991,10 +3991,10 @@ void EButtonGroup::translate_group_content(float _x, float _y, float _z, bool _m
 
 bool EButtonGroup::is_in_visible_diapason()
 {
-	if (EInputCore::key_pressed(GLFW_KEY_TAB))
-	{
-		return true;
-	}
+	//if (EInputCore::key_pressed(GLFW_KEY_TAB))
+	//{
+	//	return true;
+	//}
 
 	if
 		(

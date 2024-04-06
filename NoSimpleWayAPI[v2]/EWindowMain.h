@@ -840,28 +840,29 @@ public:
 	int		selected_rarity					= -1;
 	int		rarity_override					= -1;
 
-	float	selected_item_level				= 80.0f;
-	float	selected_quality				= 0.0f;
+	int	selected_item_level				= 80.0f;
+	int	selected_quality				= 0.0f;
 
-	float	selected_gem_level				= 1.0f;
-	float	selected_gem_quality			= 0.0f;
+	int	selected_gem_level				= 1.0f;
+	int	selected_gem_quality			= 0.0f;
 
-	float	selected_maptier				= 1.0f;
+	int	selected_maptier				= 1.0f;
 
-	float	selected_procentile				= 0.0f;
+	int	selected_procentile				= 0.0f;
 
-	float	selected_sockets				= 3.0f;
-	float	selected_links					= 3.0f;
+	int	selected_sockets				= 3.0f;
+	int	selected_links					= 3.0f;
 
-	float	selected_red_weight				= 100.0f;
-	float	selected_green_weight			= 100.0f;
-	float	selected_blue_weight			= 100.0f;
-	float	selected_white_weight			= 0.0f;
+	int	selected_red_weight				= 100.0f;
+	int	selected_green_weight			= 100.0f;
+	int	selected_blue_weight			= 100.0f;
+	int	selected_white_weight			= 0.0f;
 
-	float	selected_quantity				= 1.0f;
-	float	selected_corrupted_implicits	= 0.0f;
-	float	selected_exarch_level			= 0.0f;
-	float	selected_eater_level			= 0.0f;
+	int	selected_quantity				= 1.0f;
+	int	selected_corrupted_implicits	= 0.0f;
+	int	selected_exarch_level			= 0.0f;
+	int	selected_eater_level			= 0.0f;
+	int	selected_area_level				= 1.0f;
 
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
@@ -1397,7 +1398,9 @@ public:
 	static EGameItemAttributeContainer* add_new_game_attribute_by_name(EGameItem* _game_item, std::string _name);
 
 	static void							add_new_listed_value_to_game_attribute	(EGameItem* _game_item, std::string _name, ELocalisationText _value);
-	static void							add_new_int_value_to_game_attribute		(EGameItem* _game_item, std::string _name, int _value);
+
+	static void							game_attribute_set_int_value		(EGameItem* _game_item, std::string _name, int _value);
+	static void							game_attribute_set_string_value		(EGameItem* _game_item, std::string _name, std::string _value);
 
 	static GameItemAttribute* default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 };
@@ -1471,7 +1474,8 @@ enum class PoeNinjaAPIMode
 	CURRENCY,
 	UNIQUES,
 	DIVINATIONS,
-	GEMS
+	GEMS,
+	FRAGMENTS
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow

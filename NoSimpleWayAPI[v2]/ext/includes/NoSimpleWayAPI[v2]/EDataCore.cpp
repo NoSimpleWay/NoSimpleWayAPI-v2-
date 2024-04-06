@@ -896,39 +896,62 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 	float
 	original_slider_value = 0.0f;
 
+	float float_value = 0.0f;
+	if (data->pointer_to_value != nullptr)
+	{
+		if (data->is_float)
+		{float_value = *(float*)data->pointer_to_value;}
+		else
+		{float_value = (float)(*(int*)data->pointer_to_value);}
+	}
+	
+
 	if (data->pointer_to_value != nullptr)
 	{
 		if ((data->pointer_to_digit_text_area != nullptr) && (data->pointer_to_digit_text_area->text_area_active))
 		{
-			*data->pointer_to_value = EStringUtils::safe_convert_string_to_number
-			(
-				data->pointer_to_digit_text_area->original_text,
-				data->min_value,
-				data->max_value
-			);
+			if (data->is_float)
+			{
+				*(float*)data->pointer_to_value = EStringUtils::safe_convert_string_to_number
+				(
+					data->pointer_to_digit_text_area->original_text,
+					data->min_value,
+					data->max_value
+				);
+			}
+			else
+			{
+				*(int*)data->pointer_to_value = EStringUtils::safe_convert_string_to_number
+				(
+					data->pointer_to_digit_text_area->original_text,
+					data->min_value,
+					data->max_value
+				);
+			}
+
 		}
 		
-		if (*data->pointer_to_value <= data->min_value)
+		if (float_value <= data->min_value)
 		{
 			original_slider_value = 0.0f;
 		}
 		else
-		if (*data->pointer_to_value >= data->max_value)
+		if (float_value >= data->max_value)
 		{
 			original_slider_value = 1.0f;
 		}
 		else
-			if (*data->pointer_to_value < data->mid_value)
+			if (float_value < data->mid_value)
 			{
-				original_slider_value = (*data->pointer_to_value - data->min_value) / (data->mid_value - data->min_value);
+				original_slider_value = (float_value - data->min_value) / (data->mid_value - data->min_value);
 				original_slider_value *= 0.5f;
 			}
 			else
-				if (*data->pointer_to_value >= data->mid_value)
+				if (float_value >= data->mid_value)
 				{	
 					//				(1.0						-	1.0)			/	(10.0f			-		1.0)
 					//				0.0												/	(9.0)
-					original_slider_value = (*data->pointer_to_value - data->mid_value) / (data->max_value - data->mid_value);
+					original_slider_value = (float_value - data->mid_value) / (data->max_value - data->mid_value);
 					//original_value -= 0.5f;
 					//original_value *= 2.0f;
 					original_slider_value *= 0.5f;
@@ -1041,7 +1064,14 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		//SET TARGET VALUE
 		if (data->pointer_to_value != nullptr)
 		{
-			*data->pointer_to_value = result_value;
+			if (data->is_float)
+			{
+				*(float*)data->pointer_to_value = result_value;
+			}
+			else
+			{
+				*(int*)data->pointer_to_value = round(result_value);
+			}
 		}
 
 		//ADDITIONAL ACTIONS ON SLIDE
@@ -3606,22 +3636,36 @@ void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 	}
 }
 
+#define A 54059		/* a prime */
+#define B 76963		/* another prime */
+#define C 86969		/* yet another prime */
+#define FIRSTH 37	/* also prime */
 int EStringUtils::hashFunction(std::string _input)
 {
 	int hashCode = 0;
 
 	for (int i = 0; i < _input.length(); i++)
 	{
-		hashCode += (_input[i] * (int)pow(PRIME_CONST, i) % 2731) ;
+		hashCode += (_input[i] + (int)pow(PRIME_CONST, i) % 2731) ;
 	}
 
-	return hashCode % 278;
+	return hashCode;
+
+	//unsigned h = FIRSTH;
+	//for (int i = 0; i < _input.length(); i++)
+	//{
+	//	h = (h * A) ^ (_input[0] * B);
+	//}
+	//return h % 255; // or return h % C;
 }
 
 int EStringUtils::get_id_by_hash(std::string _input)
 {
+	
 	int
 	index = EStringUtils::hashFunction(_input) & 0x00000000000000FF;
+	//index = EStringUtils::hashFunction(_input);
+	//index = EStringUtils::hashFunction(_input) % 255;
 	index = min(index, 255);
 	index = max(index, 0);
 

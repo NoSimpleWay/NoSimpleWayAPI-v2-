@@ -3466,3 +3466,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"trade_type_skill_gem"
 	[tag]"name EN"		[value]"Gems"
 	[tag]"name RU"		[value]"Камни умений"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"area_level_slider"
+	[tag]"name EN"		[value]"Area level"
+	[tag]"name RU"		[value]"Уровень области"

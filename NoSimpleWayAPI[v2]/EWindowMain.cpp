@@ -4029,7 +4029,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS);
 		url_content = "";
 	}
 	
@@ -4079,7 +4079,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS);
 		url_content = "";
 	}
 	
@@ -4258,24 +4258,15 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 			}*/
 
 			if
+			(
 				(
-					(
-						((read_buffer[0] == "currencyTypeName") && (_mode == PoeNinjaAPIMode::CURRENCY))
-						||
-						(
-							(read_buffer[0] == "name")
-							&&
-							(
-								(_mode == PoeNinjaAPIMode::UNIQUES)
-								||
-								(_mode == PoeNinjaAPIMode::DIVINATIONS)
-								||
-								(_mode == PoeNinjaAPIMode::GEMS)
-							)
-						)
-					)
-					&& (read_mode == 1)
+					(read_buffer[0] == "currencyTypeName")
+					||
+					(read_buffer[0] == "name")
 				)
+				&&
+				(read_mode == 1)
+			)
 			{
 				links = 0;
 				count = 0;
@@ -4285,10 +4276,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 				details_id = "";
 				item_name = read_buffer[1];
 
-				if (_mode == PoeNinjaAPIMode::CURRENCY)
+				/*if (_mode == PoeNinjaAPIMode::CURRENCY)
 				{
 					_mode = _mode;
-				}
+				}*/
 			}
 
 
@@ -4342,23 +4333,12 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 			if
 			(
 				(
-					((read_buffer[0] == "chaosEquivalent") && (_mode == PoeNinjaAPIMode::CURRENCY))
+					(read_buffer[0] == "chaosEquivalent")
 					||
-					(
-						(read_buffer[0] == "chaosValue")
-						&&
-						(
-							(_mode == PoeNinjaAPIMode::UNIQUES)
-							||
-							(_mode == PoeNinjaAPIMode::DIVINATIONS)
-							||
-							(_mode == PoeNinjaAPIMode::GEMS)
-						)
-					)
-
-					)
-					&&
-					(read_mode == 1)
+					(read_buffer[0] == "chaosValue")
+				)
+				&&
+				(read_mode == 1)
 			)
 			{
 				item_value = std::stof(read_buffer[1]);
@@ -4408,7 +4388,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 								)
 								||
 								(
-									((_mode == PoeNinjaAPIMode::DIVINATIONS))
+									(_mode == PoeNinjaAPIMode::DIVINATIONS)
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Divination Cards", data_entity))
 									&&
@@ -4416,7 +4396,11 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 								)
 								||
 								(
-									((_mode == PoeNinjaAPIMode::CURRENCY))
+									(
+										(_mode == PoeNinjaAPIMode::CURRENCY)
+										||
+										(_mode == PoeNinjaAPIMode::FRAGMENTS)
+									)
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Stackable Currency", data_entity))
 									&&
@@ -4424,13 +4408,22 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 								)
 								||
 								(
-									((_mode == PoeNinjaAPIMode::GEMS))
+									(_mode == PoeNinjaAPIMode::GEMS)
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Support Gems", data_entity))
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
+								)
+								||
+								(
+									(_mode == PoeNinjaAPIMode::FRAGMENTS)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Map Fragments", data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
 									)
 								)
+
 						{
 
 							existed_item = true;
@@ -5119,7 +5112,7 @@ void EWindowMain::register_loot_simulator_group()
 		//______MAIN SECTION______(TOP)
 		/////////		CONTROL PART FOR BUTTONS WHICH CAN (FOR EXAMPLE) CHANGE LUCK> MADE ITEMS CORRUPTED AND ETC.		//////////
 		EButtonGroup*
-		top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 25.0f));
+		top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 38.0f));
 		top_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 		workspace_part->add_group(top_control_part);
@@ -5412,7 +5405,11 @@ void EWindowMain::register_loot_simulator_group()
 			top_control_part->add_button_to_working_group(variant_router_button);
 			whole_loot_simulator_group->pointer_to_target_loot_filter_version_button = variant_router_button;
 
-			variant_router_button->make_as_default_router_variant_button (new ERegionGabarite(256.0f, 25.0f));
+			variant_router_button->make_as_default_router_variant_button (new ERegionGabarite(256.0f, 38.0f));
+
+			variant_router_button->main_text_area->font = EFont::font_list[1];
+			variant_router_button->main_text_area->font_scale = 0.75f;
+
 			variant_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 			variant_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 			for (int i = 0; i < NSW_LOOT_FILTER_MAX_VERSIONS; i++)
@@ -5424,21 +5421,63 @@ void EWindowMain::register_loot_simulator_group()
 			variant_router_button->select_variant(0);
 		}
 
+
+
+		//		AREA LEVEL
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButton*
+				area_level_slider = EntityButton::create_horizontal_named_slider
+				(
+					new ERegionGabarite(250.0f, 38.0f),
+					top_control_part,
+					EFont::font_list[0],
+					EGUIStyle::active_style,
+					ELocalisationText::get_localisation_by_key("area_level_slider")
+				);
+
+			area_level_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
+			area_level_slider->main_text_area->font = EFont::font_list[1];
+			area_level_slider->main_text_area->font_scale = 0.75f;
+
+			EDataContainer_VerticalNamedSlider*
+			slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(area_level_slider->main_custom_data->data_container);
+			
+			slider_data->rounded_numbers = true;
+			slider_data->pointer_to_value = &(loot_simulator_button_group->selected_area_level);
+			slider_data->min_value = 1.0f;
+			slider_data->mid_value = 50.0f;
+			slider_data->max_value = 86.0f;
+
+			//slider_data->current_slide_value = 0.0f;
+
+			top_control_part->add_button_to_working_group(area_level_slider);
+		}
+
+
+		//		UPDATE PRICES
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
 			EntityButton*
 			poe_ninja_price_check_button = new EntityButton();
+			//poe_ninja_price_check_button->force_field_left = 32.0f;
 
 			poe_ninja_price_check_button->make_as_default_button_with_icon_and_localisation_by_key
 			(
-				new ERegionGabarite(200.0f, 25.0f),
+				new ERegionGabarite(200.0f, 38.0f),
 				top_control_part,
 				&EDataActionCollection::action_open_price_check_window,
 				NS_EGraphicCore::load_from_textures_folder("buttons/ninja-logo"),
 				"update_poe_ninja_prices"
 			);
 
+
+			poe_ninja_price_check_button->main_text_area->font = EFont::font_list[1];
+			poe_ninja_price_check_button->main_text_area->font_scale = 0.75f;
 			top_control_part->add_button_to_working_group(poe_ninja_price_check_button);
 		}
+
+		
 
 		button_group_list.push_back(whole_loot_simulator_group);
 		//EButtonGroup::refresh_button_group(main_loot_buttons_group);
@@ -6518,7 +6557,7 @@ void EWindowMain::register_add_data_entity_group()
 
 		////////////////////////////////////////////////////////
 		DataEntityTagFilter
-			data_entity_filter;
+		data_entity_filter;
 		data_entity_filter.target_tag.set_ID_by_string("data type");
 		data_entity_filter.add_new_suitable_value("Game item");
 
@@ -6531,18 +6570,19 @@ void EWindowMain::register_add_data_entity_group()
 
 
 		EButtonGroup*
-			workspace_part = data_entity_main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(200.0f, 20.0f), EGUIStyle::active_style);
+		workspace_part = data_entity_main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(200.0f, 20.0f), EGUIStyle::active_style);
+		workspace_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		data_entity_main_group->add_help_button(NS_EGraphicCore::load_from_textures_folder("buttons/button_info"), "description_help_info_data_entity");
 		data_entity_main_group->add_caption_by_localistation_key("window_header_data_entity");
 
-		///		DATA ENTITY LIST	///
-		EButtonGroup*
-			workspace_child_A_for_items = workspace_part->add_group
-			(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 480.0f), EGUIStyle::active_style));
-		workspace_child_A_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-		workspace_child_A_for_items->stretch_x_by_parent_size = true;
-		workspace_child_A_for_items->dynamic_size_y = true;
-		workspace_child_A_for_items->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		/////		DATA ENTITY LIST	///
+		//EButtonGroup*
+		//	workspace_child_A_for_items = workspace_part->add_group
+		//	(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 480.0f), EGUIStyle::active_style));
+		//workspace_child_A_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		//workspace_child_A_for_items->stretch_x_by_parent_size = true;
+		//workspace_child_A_for_items->dynamic_size_y = true;
+		//workspace_child_A_for_items->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
 
 
@@ -6552,7 +6592,7 @@ void EWindowMain::register_add_data_entity_group()
 
 
 		///		LEFT SIDE FOR BUTTONS
-		EButtonGroup* left_side_for_data_entity_buttons = workspace_child_A_for_items->add_group
+		EButtonGroup* left_side_for_data_entity_buttons = workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
@@ -6561,15 +6601,12 @@ void EWindowMain::register_add_data_entity_group()
 			)
 		)->set_parameters
 		(
-			ChildAlignMode::ALIGN_HORIZONTAL,
+			ChildAlignMode::ALIGN_VERTICAL,
 			NSW_dynamic_autosize,
 			NSW_dynamic_autosize
 		);
 
-		left_side_for_data_entity_buttons->button_size_x_override = 350.0f;
-		left_side_for_data_entity_buttons->group_have_button_lines = true;
-
-		data_entity_main_group->main_left_side = left_side_for_data_entity_buttons;
+		
 
 
 
@@ -6577,7 +6614,7 @@ void EWindowMain::register_add_data_entity_group()
 
 
 		///		RIGHT SIDE FOR FILTERS
-		EButtonGroup* right_side_for_filter_rule_buttons = workspace_child_A_for_items->add_group
+		EButtonGroup* right_side_for_filter_rule_buttons = workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
@@ -6596,7 +6633,7 @@ void EWindowMain::register_add_data_entity_group()
 
 		///		RIGHT SIDE FOR CONFIGURERS
 		EButtonGroup*
-			right_side_for_configure = workspace_child_A_for_items->add_group
+			right_side_for_configure = workspace_part->add_group
 			(
 				EButtonGroup::create_default_button_group
 				(
@@ -6614,6 +6651,49 @@ void EWindowMain::register_add_data_entity_group()
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+				////////////////////////////////////		DATA ENTITY SEARCH		////////////////////////////////////
+				EButtonGroup*
+					part_for_data_entity = left_side_for_data_entity_buttons->add_group
+					(EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 50.0f), EGUIStyle::active_style))->set_parameters
+					(
+						ChildAlignMode::ALIGN_HORIZONTAL,
+						NSW_dynamic_autosize,
+						NSW_dynamic_autosize
+					);
+
+
+				part_for_data_entity->button_size_x_override = 350.0f;
+				part_for_data_entity->group_have_button_lines = true;
+
+				data_entity_main_group->main_left_side = part_for_data_entity;
+				////////////////////////////////////
+
+				////////////////////////////////////		DATA ENTITY SEARCH		////////////////////////////////////
+				EButtonGroup*
+					part_for_search = left_side_for_data_entity_buttons->add_group
+					(EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 25.0f), EGUIStyle::active_style))->set_parameters
+					(
+						ChildAlignMode::ALIGN_HORIZONTAL,
+						NSW_dynamic_autosize,
+						NSW_static_autosize
+					);
+				////////////////////////////////////
+
+
+				////////////////////////////////////
+				EntityButtonClearAttachedTextArea*
+					clear_text_button = new EntityButtonClearAttachedTextArea();
+				part_for_search->add_button_to_working_group(clear_text_button);
+				clear_text_button->do_not_generate_bg = true;
+				clear_text_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(25.0f, 25.0f),
+					part_for_search,
+					&EDataActionCollection::action_clear_attached_text_area,
+					NS_EGraphicCore::load_from_textures_folder("button_close")
+				);
+				////////////////////////////////////
+				// 
 		//right_side_for_filter_rule_buttons->button_size_x_override = 100.0f;
 
 		//right_side_for_filter_rule_buttons->button_size_x_override = 150.0f;
@@ -6621,7 +6701,7 @@ void EWindowMain::register_add_data_entity_group()
 
 		//right_side_for_filter_rule_buttons->can
 
-		jc_data_container_for_search_group->pointer_to_group_with_data_entities = left_side_for_data_entity_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_data_entities = part_for_data_entity;
 		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list = right_side_for_filter_rule_buttons;
 
 		for (int i = 0; i < EFilterRule::registered_filter_rules_for_list.size(); i++)
@@ -6695,28 +6775,9 @@ void EWindowMain::register_add_data_entity_group()
 			right_side_for_filter_rule_buttons->selected_button = right_side_for_filter_rule_buttons->workspace_button_list.front();
 		}
 
-		////////////////////////////////////		DATA ENTITY SEARCH		////////////////////////////////////
-		EButtonGroup*
-			workspace_child_B_for_control = workspace_part->add_group
-			(EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 50.0f), EGUIStyle::active_style));
-		workspace_child_B_for_control->stretch_x_by_parent_size = true;
-		workspace_child_B_for_control->dynamic_size_y = false;
 
-
-
-		////////////////////////////////////
-		EntityButtonClearAttachedTextArea*
-			clear_text_button = new EntityButtonClearAttachedTextArea();
-		workspace_child_B_for_control->add_button_to_working_group(clear_text_button);
-		clear_text_button->do_not_generate_bg = true;
-		clear_text_button->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(25.0f, 25.0f),
-			workspace_child_B_for_control,
-			&EDataActionCollection::action_clear_attached_text_area,
-			NS_EGraphicCore::load_from_textures_folder("button_close")
-		);
-		////////////////////////////////////
+		
+		
 
 
 		//	INPUT FIELD (FILTER DATA ENTITY BY NAME)
@@ -6725,8 +6786,8 @@ void EWindowMain::register_add_data_entity_group()
 				filter_text_button = new EntityButton();
 			filter_text_button->make_default_button_with_edible_text
 			(
-				new ERegionGabarite(600.0f, 25.0f),
-				workspace_child_B_for_control,
+				new ERegionGabarite(500.0f, 25.0f),
+				part_for_search,
 				nullptr,
 				""
 			);
@@ -6745,7 +6806,7 @@ void EWindowMain::register_add_data_entity_group()
 			filter_text_button->add_default_description_by_key("description_data_entity_search");
 			jc_data_container_for_search_group->pointer_to_search_bar = filter_text_button;
 
-			workspace_child_B_for_control->add_button_to_working_group(filter_text_button);
+			part_for_search->add_button_to_working_group(filter_text_button);
 
 			clear_text_button->attached_text_area = filter_text_button->main_text_area;
 		}
@@ -6777,16 +6838,18 @@ void EWindowMain::register_add_data_entity_group()
 			jc_button = new EntityButton();
 			jc_button->make_default_button_with_unedible_text
 			(
-				new ERegionGabarite(256.0f, 25.0f),
-				workspace_child_B_for_control,
+				new ERegionGabarite(200.0f, 25.0f),
+				part_for_search,
 				&EDataActionCollection::action_add_text_as_item,
 				ELocalisationText::get_localisation_by_key("button_add_this_text_as_item")
 			);
 
 			jc_button->add_default_description_by_key("description_add_search_text_as_item");
+
+			jc_button->can_be_stretched = false;
 			data_entity_main_group->add_as_item_button = jc_button;
 			jc_data_container_for_search_group->pointer_to_add_as_item_button = jc_button;
-			workspace_child_B_for_control->add_button_to_working_group(jc_button);
+			part_for_search->add_button_to_working_group(jc_button);
 		}
 		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
 
@@ -6794,15 +6857,17 @@ void EWindowMain::register_add_data_entity_group()
 		jc_button = new EntityButton();
 		jc_button->make_default_button_with_unedible_text
 		(
-			new ERegionGabarite(256.0f, 25.0f),
-			workspace_child_B_for_control,
+			new ERegionGabarite(200.0f, 25.0f),
+			part_for_search,
 			&EDataActionCollection::action_add_all_entity_buttons_to_filter_block,
 			ELocalisationText::get_localisation_by_key("button_add_all_these_items")
 		);
 
+
+		jc_button->can_be_stretched = false;
 		jc_button->add_default_description_by_key("description_add_all_items");
 
-		workspace_child_B_for_control->add_button_to_working_group(jc_button);
+		part_for_search->add_button_to_working_group(jc_button);
 		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
 
 		//EButtonGroup::refresh_button_group(data_entity_main_group);
@@ -11424,6 +11489,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
 		jc_filter.target_tag.set_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Base Class");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -11469,6 +11535,7 @@ void EWindowMain::register_filter_rules()
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
 		jc_filter.target_tag.set_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
@@ -19493,11 +19560,11 @@ GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute(std
 void EButtonGroupFilterBlock::post_draw()
 {
 	if
-		(
+	(
 			(is_this_group_active())
 			&&
 			(is_in_visible_diapason())
-			)
+	)
 	{
 		EButtonGroup::post_draw();
 
@@ -20568,7 +20635,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 			{
 				_game_item->rarity = EWindowMain::loot_simulator_button_group->rarity_override;
 
-				GameItemAttribute::add_new_int_value_to_game_attribute
+				GameItemAttribute::game_attribute_set_int_value
 				(
 					_game_item,
 					"Rarity",
@@ -20586,7 +20653,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 			{
 				_game_item->rarity = 3;
 
-				GameItemAttribute::add_new_int_value_to_game_attribute
+				GameItemAttribute::game_attribute_set_int_value
 				(
 					_game_item,
 					"Rarity",
@@ -21976,10 +22043,34 @@ void GameItemAttribute::add_new_listed_value_to_game_attribute(EGameItem* _game_
 	attribute->listed_value_list.push_back(_value);
 }
 
-void GameItemAttribute::add_new_int_value_to_game_attribute(EGameItem* _game_item, std::string _name, int _value)
+void GameItemAttribute::game_attribute_set_int_value(EGameItem* _game_item, std::string _name, int _value)
 {
 	EGameItemAttributeContainer*
 	attribute = nullptr;
+
+	for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
+		//for (EGameItemAttributeContainer searched : _game_item->attribute_container_list)
+	{
+		EGameItemAttributeContainer*
+		searched = &(_game_item->attribute_container_list[i]);
+
+		if (EStringUtils::compare_ignoring_case(searched->target_attribute->localisation.base_name, _name))
+		{
+			attribute = searched;
+
+			break;
+		}
+	}
+
+	if (attribute == nullptr) { attribute = add_new_game_attribute_by_name(_game_item, _name); }
+
+	attribute->attribute_value_int = _value;
+}
+
+void GameItemAttribute::game_attribute_set_string_value(EGameItem* _game_item, std::string _name, std::string _value)
+{
+	EGameItemAttributeContainer*
+		attribute = nullptr;
 
 	for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
 		//for (EGameItemAttributeContainer searched : _game_item->attribute_container_list)
@@ -21997,7 +22088,7 @@ void GameItemAttribute::add_new_int_value_to_game_attribute(EGameItem* _game_ite
 
 	if (attribute == nullptr) { attribute = add_new_game_attribute_by_name(_game_item, _name); }
 
-	attribute->attribute_value_int = _value;
+	attribute->attribute_value_str = _value;
 }
 
 
@@ -22012,11 +22103,11 @@ void GameAttributeGeneratorQuantity::execute_generation(EGameItem* _game_item)
 
 	//generate base quantity
 	float
-		f_quantity = 1.0f;
+	f_quantity = 1.0f;
 
 	//apply stack multiplier
 	f_quantity *= _game_item->stack_multiplier;
-	f_quantity *= EWindowMain::loot_simulator_button_group->selected_quantity;
+	f_quantity *= (float)EWindowMain::loot_simulator_button_group->selected_quantity;
 	//clamp values
 	_game_item->quantity = std::clamp(int(round(f_quantity)), 1, _game_item->max_stack_size);
 
@@ -22262,7 +22353,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 						(
 							!is_condition_satisfied
 							(
-								(int)(EWindowMain::loot_simulator_button_group->selected_item_level),					//blobal parameter "AreaLevel"
+								(int)(EWindowMain::loot_simulator_button_group->selected_area_level),					//blobal parameter "AreaLevel"
 								line_group->target_button_with_condition->return_base_text_from_selected_router(),		//condition operator
 								std::stoi(line_group->target_button_with_value->main_text_area->original_text)			//block value
 							)
@@ -23294,7 +23385,7 @@ void GameAttributeGeneratorItemLevel::execute_generation(EGameItem* _game_item)
 		=
 		std::clamp
 		(
-			(int)(round(EWindowMain::loot_simulator_button_group->selected_item_level)),
+			EWindowMain::loot_simulator_button_group->selected_item_level,
 			1,
 			100
 		);
@@ -23924,10 +24015,10 @@ void EButtonGroupPreviewBox::draw_button_group()
 	}
 }
 
-DataEntityTagFilter* DataEntityTagFilter::add_new_suitable_value(std::string _value, ELocalisationText _ltext)
+void DataEntityTagFilter::add_new_suitable_value(std::string _value, ELocalisationText _ltext)
 {
 	DETF_Value
-		new_value;
+	new_value;
 
 	new_value.target_value_key.set_ID_by_string(_value);
 	new_value.localised_attribute_name = _ltext;
@@ -23936,7 +24027,7 @@ DataEntityTagFilter* DataEntityTagFilter::add_new_suitable_value(std::string _va
 
 	suitable_values.push_back(new_value);
 
-	return this;
+	//return this;
 }
 
 void DataEntityTagFilter::set_text_color(float _r, float _g, float _b, float _a)
@@ -24047,7 +24138,7 @@ void ID_string::set_ID_by_string(std::string _string)
 
 
 
-DataEntityTagFilter* DataEntityTagFilter::add_new_banned_value(std::string _value, ELocalisationText _ltext)
+void DataEntityTagFilter::add_new_banned_value(std::string _value, ELocalisationText _ltext)
 {
 	DETF_Value
 		new_value;
@@ -24059,7 +24150,7 @@ DataEntityTagFilter* DataEntityTagFilter::add_new_banned_value(std::string _valu
 
 	banned_tags.push_back(new_value);
 
-	return this;
+	//return this;
 }
 
 
@@ -24818,7 +24909,7 @@ void EButtonGroupAttributeGeneratorGroup_Rarity::execute_attribute_group(EGameIt
 
 	}
 
-	GameItemAttribute::add_new_int_value_to_game_attribute
+	GameItemAttribute::game_attribute_set_int_value
 	(
 		_game_item,
 		"Rarity",
@@ -24854,6 +24945,9 @@ void EButtonGroupAttributeGeneratorGroup_ItemLevel::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 25.0f;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 100.0f;
 
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
+
+
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
@@ -24864,10 +24958,9 @@ void EButtonGroupAttributeGeneratorGroup_ItemLevel::init()
 
 void EButtonGroupAttributeGeneratorGroup_ItemLevel::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
-	EGameItemAttributeContainer*
-		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "ItemLevel");
+	GameItemAttribute::game_attribute_set_int_value(_game_item, "ItemLevel", EWindowMain::loot_simulator_button_group->selected_item_level);
 
-	attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_item_level;
+	//attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_item_level;
 
 }
 
@@ -24914,6 +25007,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -24944,6 +25038,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 100.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -24972,6 +25067,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 100.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -25000,6 +25096,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 100.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -25029,6 +25126,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 6.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -25061,6 +25159,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 6.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -25091,7 +25190,8 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 	int color_weight[6];
 
 	EGameItemAttributeContainer*
-		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "SocketGroup");
+	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "SocketGroup");
+
 	if
 		(
 			(_game_item->stored_data_entity != nullptr)
@@ -25110,13 +25210,13 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 	}
 	else
 	{
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = round(loot_simulator_pointer->selected_red_weight);
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = round(loot_simulator_pointer->selected_green_weight);
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = round(loot_simulator_pointer->selected_blue_weight);
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED]	= loot_simulator_pointer->selected_red_weight;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN]	= loot_simulator_pointer->selected_green_weight;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE]	= loot_simulator_pointer->selected_blue_weight;
 
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE] = round(loot_simulator_pointer->selected_white_weight);
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS] = 0;
-		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE] = 0;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE]	= loot_simulator_pointer->selected_white_weight;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS]	= 0;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE]	= 0;
 	}
 
 	//if (!wrong_base)
@@ -25164,8 +25264,8 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 			/*sockets_count	= sockets_min_value	+ round((float)(sockets_max_value	- sockets_min_value)	* pow((rand() % 101) / 100.0f, sockets_pow	/ EWindowMain::loot_simulator_button_group->MF_factor));
 			links_count		= links_min			+ round((float)(links_max			- links_min)			* pow((rand() % 101) / 100.0f, links_pow	/ EWindowMain::loot_simulator_button_group->MF_factor));*/
 
-			sockets_count = round(loot_simulator_pointer->selected_sockets);
-			links_count = round(loot_simulator_pointer->selected_links);
+			sockets_count = loot_simulator_pointer->selected_sockets;
+			links_count = loot_simulator_pointer->selected_links;
 
 			sockets_count = std::min(sockets_count, _game_item->max_available_sockets);
 			links_count = std::min(links_count, sockets_count);
@@ -25260,7 +25360,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 
 			//ADD "SOCKET GROUP" ATTRIBUTE
 			EGameItemAttributeContainer
-				new_attribute_container;
+			new_attribute_container;
 
 			new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Sockets");
 			new_attribute_container.attribute_value_str = sockets_group_result_string;
@@ -25319,6 +25419,7 @@ void EButtonGroupAttributeGeneratorGroup_Quantity::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 20.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 2.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	//static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 
@@ -25934,6 +26035,7 @@ void EButtonGroupAttributeGeneratorGroup_Quality::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 }
@@ -25950,7 +26052,7 @@ void EButtonGroupAttributeGeneratorGroup_Quality::execute_attribute_group(EGameI
 		EGameItemAttributeContainer*
 			attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Quality");
 
-		attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_quality);
+		attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_quality;
 	}
 
 }
@@ -26019,6 +26121,7 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 0.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 
 
@@ -26055,6 +26158,7 @@ void EButtonGroupAttributeGeneratorGroup_GemAttributes::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 0.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 	
@@ -26160,6 +26264,7 @@ void EButtonGroupAttributeGeneratorGroup_MapAttributes::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 17.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -26272,6 +26377,7 @@ void EButtonGroupAttributeGeneratorGroup_DefenceProcentile::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -26284,7 +26390,7 @@ void EButtonGroupAttributeGeneratorGroup_DefenceProcentile::execute_attribute_gr
 		EGameItemAttributeContainer*
 		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "BaseDefencePercentile");
 
-		attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_procentile);
+		attribute_container->attribute_value_int = EWindowMain::loot_simulator_button_group->selected_procentile;
 	}
 }
 

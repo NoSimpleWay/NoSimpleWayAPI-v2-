@@ -407,7 +407,7 @@ public:
 	HSVRGBAColor		text_color;
 
 
-	bool				DETF_is_active		= true;
+	bool				DETF_is_active	= true;
 	bool				always_suitable = false;
 	bool				force_field		= false;
 };
@@ -428,8 +428,8 @@ public:
 	std::vector<DETF_Value>	suitable_values;
 	std::vector<DETF_Value>	banned_tags;
 
-	DataEntityTagFilter* add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
-	DataEntityTagFilter* add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	void add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	void add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
 
 	void set_text_color(float _r, float _g, float _b, float _a);
 	void add_force_field();
@@ -524,10 +524,12 @@ public:
 	float					max_value = 1.0f;
 	
 
-	float*					pointer_to_value;
+	void*					pointer_to_value;
 
 	bool					force_shift = false;
 	bool					rounded_numbers = false;
+
+	bool					is_float = true;
 
 	data_action_pointer		additional_action_on_slide;
 	//EDataContainer*			additional_data_container;
