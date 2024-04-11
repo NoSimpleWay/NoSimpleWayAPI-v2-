@@ -1057,12 +1057,6 @@ void EButtonGroup::button_group_update(float _d)
 					)
 					&&
 					(!is_blocked_by_superfocus())
-					&&
-					(
-						(but->suppressor == nullptr)
-						||
-						(*but->suppressor ^ but->invert_suppression)
-					)
 				)
 				{
 					but->update(_d);

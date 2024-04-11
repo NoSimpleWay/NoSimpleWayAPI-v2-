@@ -3519,6 +3519,106 @@ void EDataActionCollection::action_open_price_check_window(Entity* _entity, ECus
 	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->activate_move_to_foreground_and_center();
 }
 
+void EDataActionCollection::action_add_pattern_as_game_item(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	auto
+	data_entity_container = static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container);
+
+	if (data_entity_container->pointer_to_group_with_filter_rules_list->selected_button != nullptr)
+	{
+		EntityButtonWideItem*
+			wide_button = EntityButtonWideItem::create_wide_item_button
+			(
+				new ERegionGabarite(220.0f, 40.0f),
+				data_entity_container->pointer_to_group_item_receiver,
+				nullptr,
+				EFont::font_list[0],
+				true
+			);
+			wide_button->is_pattern_filter = true;
+
+			data_entity_container->pointer_to_group_item_receiver->add_button_to_working_group(wide_button);
+
+			//wide_button->description_container->replacer_list.push_back(EStringReplacer("%a", data_entity_container->filter_text_area->original_text));
+
+			ELocalisationText l_text;
+			//l_text.base_name = data_entity_container->filter_text_area->original_text;
+			l_text.localisations[NSW_localisation_EN] = "Pattern";
+			l_text.localisations[NSW_localisation_RU] = "Шаблон";
+
+			wide_button->main_text_area->localisation_text = l_text;
+			wide_button->main_text_area->change_text(l_text.localisations[ELocalisationText::active_localisation]);
+
+
+			EntityButtonFilterRule*
+			filter_rule_button = static_cast<EntityButtonFilterRule*>(data_entity_container->pointer_to_group_with_filter_rules_list->selected_button);
+
+			for (DataEntityTagFilter filter_rule : filter_rule_button->target_filter_rule->required_tag_list)
+			{
+				wide_button->data_entity_tag_required_tag_list.push_back(filter_rule);
+			}
+
+			for (DataEntityTagFilter filter_rule : filter_rule_button->target_filter_rule->banned_tag_list)
+			{
+				wide_button->data_entity_tag_banned_tag_list.push_back(filter_rule);
+			}
+
+			for (EDataEntity* de : EWindowMain::registered_data_entity_game_item_list)
+			{
+				bool matched = EFilterRule::matched_by_filter_rule(de, filter_rule_button->target_filter_rule, "");
+
+				if (matched)
+				{
+					EntityButtonWideItem*
+						fake_wide_button = EntityButtonWideItem::create_wide_item_button
+						(
+							new ERegionGabarite(220.0f, 40.0f),
+							data_entity_container->pointer_to_group_item_receiver,
+							de,
+							EFont::font_list[0],
+							false
+						);
+
+					fake_wide_button->suppressor = new bool(false);
+					fake_wide_button->button_suppressor = wide_button;
+
+					data_entity_container->pointer_to_group_item_receiver->add_button_to_working_group(fake_wide_button);
+
+					wide_button->attached_game_item_buttons.push_back(fake_wide_button);
+					//break;
+				}
+
+
+			}
+
+
+	
+
+
+
+		//EButtonGroup::change_group(data_entity_container->pointer_to_group_item_receiver);
+		data_entity_container->pointer_to_group_item_receiver->need_change = true;
+
+		((EntityButton*)(_entity))->parent_button_group->root_group->close_this_group();
+
+		int pattern_button_id = 0;
+
+		for (EntityButton* but : data_entity_container->pointer_to_group_item_receiver->workspace_button_list)
+		{
+			EntityButtonWideItem*
+			wide_button = static_cast<EntityButtonWideItem*>(but);
+
+			if (wide_button->is_pattern_filter)
+			{
+				wide_button->main_text_area->localisation_text.base_name = "Pattern button #" + std::to_string(pattern_button_id);
+
+				pattern_button_id++;
+			}
+		}
+
+	}
+}
+
 //void EDataActionCollection::action_select_loot_filter_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //}
@@ -3869,7 +3969,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3894,7 +3994,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3915,7 +4015,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3938,7 +4038,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3960,7 +4060,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3982,7 +4082,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::DIVINATIONS);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::DIVINATIONS, false);
 		url_content = "";
 	}
 
@@ -4005,7 +4105,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4029,7 +4129,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS, false);
 		url_content = "";
 	}
 	
@@ -4054,7 +4154,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4079,7 +4179,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS, false);
 		url_content = "";
 	}
 	
@@ -4104,7 +4204,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4129,7 +4229,26 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::GEMS);
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::GEMS, false);
+		url_content = "";
+	}
+
+	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=AllflameEmber";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_allflame_embers"), code, url_content.length());
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed! [" << (CURLcode)code << "]\r\n";
+	}
+	else
+	{
+
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::EMBERS, true);
 		url_content = "";
 	}
 
@@ -4176,7 +4295,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 }
 
-void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode)
+void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode, bool _console_debug)
 {
 	//	PARSER
 	//########################################
@@ -4421,8 +4540,16 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Map Fragments", data_entity))
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-									)
 								)
+								||
+								(
+									(_mode == PoeNinjaAPIMode::EMBERS)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Embers of the Allflame", data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
+								)
+							)
 
 						{
 
@@ -4491,19 +4618,21 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 								//(new_worth_id > old_worth_id)
 							)
 							{
-								std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
+								if (_console_debug)
+								{
+									std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
 								
-								if (new_worth_id == 0){std::cout << white;} else
-								if (new_worth_id == 1){std::cout << green;} else
-								if (new_worth_id == 2){std::cout << blue;} else
-								if (new_worth_id == 3){std::cout << purple;} else
-								if (new_worth_id >= 4){std::cout << yellow;}
+									if (new_worth_id == 0){std::cout << white;} else
+									if (new_worth_id == 1){std::cout << green;} else
+									if (new_worth_id == 2){std::cout << blue;} else
+									if (new_worth_id == 3){std::cout << purple;} else
+									if (new_worth_id >= 4){std::cout << yellow;}
 
-								std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
+									std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
 
-								DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
-								DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
-
+									DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
+									DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+								}
 								//for (EDataTag* tag : data_entity->tag_list)
 								//{
 								//	EDataTag*
@@ -4545,10 +4674,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 										sub_base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, sub_data_entity);
 									}
 
-									if ((sub_base_item_name == "Steelscale Gauntlets") && (base_item_name == "Steelscale Gauntlets"))
-									{
-										sub_base_item_name = sub_base_item_name;
-									}
+									//if ((sub_base_item_name == "Steelscale Gauntlets") && (base_item_name == "Steelscale Gauntlets"))
+									//{
+									//	sub_base_item_name = sub_base_item_name;
+									//}
 									//MATCHED BASE ITEM
 									if
 									(
@@ -4578,8 +4707,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 
 											data_tag->tag_value_list.push_back(id_string);
 											sub_data_entity->tag_list.push_back(data_tag);
-
-											std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Good" << green << ">" << std::endl;
+											if (_console_debug)
+											{
+												std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Good" << green << ">" << std::endl;
+											}
 										}
 										else
 											//
@@ -4598,8 +4729,11 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 													id_string;
 
 												id_string.set_ID_by_string("Expensive base for unique");
-
-												std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Expensive" << green << ">" << std::endl;
+												
+												if (_console_debug)
+												{
+													std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Expensive" << green << ">" << std::endl;
+												}
 
 												data_tag->tag_value_list.push_back(id_string);
 												sub_data_entity->tag_list.push_back(data_tag);
@@ -4621,9 +4755,12 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 
 					if (!existed_item)
 					{
-						EInputCore::logger_simple_error(item_name);
-						EInputCore::logger_simple_error(details_id);
-						std::cout << std::endl;
+						if (_console_debug)
+						{
+							EInputCore::logger_simple_error(item_name);
+							EInputCore::logger_simple_error(details_id);
+							std::cout << std::endl;
+						}
 					}
 				}
 
@@ -4646,6 +4783,8 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 			}
 		}
 	}
+
+	std::cout << "Parsing finished!" << std::endl;
 }
 
 void EWindowMain::export_loot_patterns_to_file()
@@ -6610,11 +6749,9 @@ void EWindowMain::register_add_data_entity_group()
 
 
 
-
-
-
-		///		RIGHT SIDE FOR FILTERS
-		EButtonGroup* right_side_for_filter_rule_buttons = workspace_part->add_group
+		///		RIGHT NEST FOR FILTERS
+		EButtonGroup*
+		nest_for_filters = workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
@@ -6627,9 +6764,44 @@ void EWindowMain::register_add_data_entity_group()
 			NSW_static_autosize,
 			NSW_dynamic_autosize
 		);
-
-		data_entity_main_group->right_side_for_filters = right_side_for_filter_rule_buttons;
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+				///		RIGHT SIDE FOR FILTERS
+				EButtonGroup* bottom_part_for_filter_rule_buttons = nest_for_filters->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(250.0f, 480.0f),
+						EGUIStyle::active_style
+					)
+				)->set_parameters
+				(
+					ChildAlignMode::ALIGN_VERTICAL,
+					NSW_dynamic_autosize,
+					NSW_dynamic_autosize
+				);
+
+				data_entity_main_group->right_side_for_filters = bottom_part_for_filter_rule_buttons;
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+				///		TOP SIDE FOR ADD BUTTON
+				EButtonGroup* top_part_for_add_filter_as_item_pattern = nest_for_filters->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(250.0f, 25.0f),
+						EGUIStyle::active_style
+					)
+				)->set_parameters
+				(
+					ChildAlignMode::ALIGN_VERTICAL,
+					NSW_dynamic_autosize,
+					NSW_static_autosize
+				);
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 		///		RIGHT SIDE FOR CONFIGURERS
 		EButtonGroup*
@@ -6701,8 +6873,9 @@ void EWindowMain::register_add_data_entity_group()
 
 		//right_side_for_filter_rule_buttons->can
 
-		jc_data_container_for_search_group->pointer_to_group_with_data_entities = part_for_data_entity;
-		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list = right_side_for_filter_rule_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_data_entities		= part_for_data_entity;
+		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list	= bottom_part_for_filter_rule_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_configurers		= right_side_for_configure;
 
 		for (int i = 0; i < EFilterRule::registered_filter_rules_for_list.size(); i++)
 		{
@@ -6712,7 +6885,7 @@ void EWindowMain::register_add_data_entity_group()
 			filter_button->make_as_default_button_with_icon_and_text
 			(
 				new ERegionGabarite(200.0f, 40.0f),
-				right_side_for_filter_rule_buttons,
+				bottom_part_for_filter_rule_buttons,
 				(!EFilterRule::registered_filter_rules_for_list[i]->is_folder) ? (&EDataActionCollection::action_select_this_filter_variant) : (&EDataActionCollection::action_switch_folder_for_data_entity_filter),
 				EFilterRule::registered_filter_rules_for_list[i]->icon_texture,
 				EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[ELocalisationText::active_localisation]
@@ -6736,12 +6909,12 @@ void EWindowMain::register_add_data_entity_group()
 			filter_button->target_filter_rule = EFilterRule::registered_filter_rules_for_list[i];
 			filter_button->target_data_container = jc_data_container_for_search_group;
 
-			right_side_for_filter_rule_buttons->add_button_to_working_group(filter_button);
+			bottom_part_for_filter_rule_buttons->add_button_to_working_group(filter_button);
 		}
 
 
 		//push buttons to folder
-		for (EntityButton* but : right_side_for_filter_rule_buttons->workspace_button_list)
+		for (EntityButton* but : bottom_part_for_filter_rule_buttons->workspace_button_list)
 		{
 			EntityButtonFilterRule*
 				filter_rule_button = static_cast<EntityButtonFilterRule*>(but);
@@ -6752,7 +6925,7 @@ void EWindowMain::register_add_data_entity_group()
 			{
 				target_named_id = filter_rule_button->folder_named_id;
 
-				for (EntityButton* child_but : right_side_for_filter_rule_buttons->workspace_button_list)
+				for (EntityButton* child_but : bottom_part_for_filter_rule_buttons->workspace_button_list)
 				{
 					EntityButtonFilterRule*
 						child_filter_rule_button = static_cast<EntityButtonFilterRule*>(child_but);
@@ -6770,20 +6943,34 @@ void EWindowMain::register_add_data_entity_group()
 			}
 		}
 
-		if (!right_side_for_filter_rule_buttons->workspace_button_list.empty())
+		if (!bottom_part_for_filter_rule_buttons->workspace_button_list.empty())
 		{
-			right_side_for_filter_rule_buttons->selected_button = right_side_for_filter_rule_buttons->workspace_button_list.front();
+			bottom_part_for_filter_rule_buttons->selected_button = bottom_part_for_filter_rule_buttons->workspace_button_list.front();
 		}
 
+		//ADD AS FILTER PATTER GAME BUTTON
+		{
+			EntityButton*
+			button_add_filter_as_item_button_pattern = new EntityButton();
+			button_add_filter_as_item_button_pattern->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(top_part_for_add_filter_as_item_pattern->region_gabarite->size_x, top_part_for_add_filter_as_item_pattern->region_gabarite->size_y),
+				top_part_for_add_filter_as_item_pattern,
+				&EDataActionCollection::action_add_pattern_as_game_item,
+				ELocalisationText::get_localisation_by_key("button_add_filter_as_button")
+			);
 
-		
+			button_add_filter_as_item_button_pattern->can_be_stretched = true;
+
+			top_part_for_add_filter_as_item_pattern->add_button_to_working_group(button_add_filter_as_item_button_pattern);
+		}
 		
 
 
 		//	INPUT FIELD (FILTER DATA ENTITY BY NAME)
 		{
 			EntityButton*
-				filter_text_button = new EntityButton();
+			filter_text_button = new EntityButton();
 			filter_text_button->make_default_button_with_edible_text
 			(
 				new ERegionGabarite(500.0f, 25.0f),
@@ -8037,7 +8224,7 @@ void EWindowMain::register_default_color_patterns()
 void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 {
 	EButtonGroupPoeNijaPriceChecker*
-	poe_ninja_price_checker_group = new EButtonGroupPoeNijaPriceChecker(new ERegionGabarite(200.0f, 320.0f));
+	poe_ninja_price_checker_group = new EButtonGroupPoeNijaPriceChecker(new ERegionGabarite(240.0f, 320.0f));
 	poe_ninja_price_checker_group->button_group_is_active = false;
 	poe_ninja_price_checker_group->auto_superfocused = true;
 
@@ -11254,6 +11441,39 @@ void EWindowMain::register_game_item_attributes()
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "next_buttons_is_fake";
+	jc_localisation.localisations[NSW_localisation_EN] = "Fake buttons count";
+	jc_localisation.localisations[NSW_localisation_RU] = "Фальшивые кнопки";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_CONFIG;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_CONFIG_FAKE_BUTTONS_COUNT;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->commentary_config = true;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "create_pattern_button";
+	jc_localisation.localisations[NSW_localisation_EN] = "Create pattern button";
+	jc_localisation.localisations[NSW_localisation_RU] = "Создать кнопку шаблон";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_CONFIG;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->commentary_config = true;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -11812,7 +12032,7 @@ void EWindowMain::register_filter_rules()
 		//
 		// 
 		// 
-		//filter by class "divination"
+		//filter by class "scarabs"
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = true;
 		jc_filter.target_tag.set_ID_by_string("scarab tier");
@@ -11821,6 +12041,78 @@ void EWindowMain::register_filter_rules()
 		jc_filter.add_new_suitable_value("Influencing",	ELocalisationText::get_localisation_by_key("scarab_tier_influenced"));
 		jc_filter.add_new_suitable_value("Horned",		ELocalisationText::get_localisation_by_key("scarab_tier_horned"));
 		jc_filter.add_new_suitable_value("Special",		ELocalisationText::get_localisation_by_key("scarab_tier_Special"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by worth
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash",			ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common",			ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate",		ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare",			ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive",		ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive",	ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+	
+	//NECROPOLIS ALLFLAMES
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Allflame_ember");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Necropolis:\nAllflame embers";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Некрополис:\\nУгольки всепламени";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "necropolis folder";
+
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Embers of the Allflame");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by worth
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash",			ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common",			ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate",		ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare",			ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive",		ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive",	ELocalisationText::get_localisation_by_key("tag_very_expensive"));
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -11845,8 +12137,8 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->category_id = 0;
 
 		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Necropolis:\\New item bases";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Некрополис:\\nНовые базы предметов";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Necropolis:\nNew item bases";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Некрополис:\nНовые базы предметов";
 		jc_filter_rule->tag = "Game item";
 		jc_filter_rule->named_id = "necropolis folder";
 
@@ -18676,8 +18968,18 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 		{
 			auto listed_block = static_cast<EButtonGroupListedBlock*>(button_group);
 
+			
+			bool non_pattern_buttons = false;
+
+			for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
+			if(!static_cast<EntityButtonWideItem*>(listed_button)->is_pattern_filter)
+			{
+				non_pattern_buttons = true;
+				break;
+			}
+
 			//if attribute have no values, no sence generate this filter condition
-			if ((listed_block != nullptr) && (listed_block->section_for_wide_item_buttons->all_button_list.size() > 1))
+			if ((listed_block != nullptr) && (non_pattern_buttons))
 			{
 				if (listed_block->filter_attribute_name != "")
 				{
@@ -18710,9 +19012,34 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
 				{
+					EntityButtonWideItem*
+					wide_button = static_cast<EntityButtonWideItem*>(listed_button);
 
-					if (listed_button->main_text_area != nullptr)
+					if (listed_button->main_text_area == nullptr)
 					{
+						EInputCore::logger_simple_error("TextArea is NULL! [" + std::to_string(id) + "]");
+					}
+					else
+					if
+					(
+						(!wide_button->is_pattern_filter)//DO NOT SAVE PATTERN FILTER BUTTON AS ITEM
+						//&&
+						//(
+						//	(
+						//		(_save_mode != -1)//AUTOGENERATED
+						//		&&
+						//		(!static_cast<EntityButtonWideItem*>(listed_button)->is_pattern_filter)//PATTER ITEM CANNOT BE SAVED
+						//	)
+						//	||
+						//	(
+						//		(_save_mode == -1)//ORIGINAL
+						//		&&
+						//		(static_cast<EntityButtonWideItem*>(listed_button)->suppressor == nullptr)//FAKE ITEMS CANNOT BE SAVED
+						//	)
+						//)
+					)
+					{
+
 						if (listed_block->associated_item_attribute != nullptr)
 						{
 							result_string += " ";
@@ -18723,13 +19050,104 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 							result_string += " ";
 							result_string += '"' + listed_button->main_text_area->original_text + '"';
 						}
+
+	
 					}
-					else
-					{
-						EInputCore::logger_simple_error("TextArea is NULL! [" + std::to_string(id) + "]");
-					}
+					
 
 					id++;
+				}
+
+
+				//ADD CONFIG INFO FOR PATTERN BUTTONS
+				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
+				{
+					EntityButtonWideItem*
+					wide_button = static_cast<EntityButtonWideItem*>(listed_button);
+
+					if (wide_button->is_pattern_filter)
+					{
+						result_string += "\n";
+						result_string += "#create_pattern_button";
+						result_string += +' ';
+						result_string += std::to_string(wide_button->attached_game_item_buttons.size());
+
+						wide_button = static_cast<EntityButtonWideItem*>(listed_button);
+
+						if (!wide_button->data_entity_tag_required_tag_list.empty())
+						{
+							
+
+							for (DataEntityTagFilter tag_filter : wide_button->data_entity_tag_required_tag_list)
+							{
+								result_string += "\n";
+								result_string += "#required_tags";
+								result_string += ' ';
+								result_string += '"' + tag_filter.target_tag.string_value + '"';
+
+								if (!tag_filter.suitable_values.empty())
+								{
+									result_string += "\n";
+									result_string += "#suitable_values";
+									for (DETF_Value detf_value : tag_filter.suitable_values)
+									{
+
+										result_string += ' ';
+										result_string += '"' + detf_value.target_value_key.string_value + '"';
+									}
+								}
+
+								if (!tag_filter.banned_tags.empty())
+								{
+									result_string += "\n";
+									result_string += "#banned_tags";
+									for (DETF_Value detf_value : tag_filter.banned_tags)
+									{
+
+										result_string += ' ';
+										result_string += '"' + detf_value.target_value_key.string_value + '"';
+									}
+								}
+
+							}
+
+							for (DataEntityTagFilter tag_filter : wide_button->data_entity_tag_banned_tag_list)
+							{
+								result_string += "\n";
+								result_string += "#forbidden_tags";
+								result_string += ' ';
+								result_string += '"' + tag_filter.target_tag.string_value + '"';
+
+								if (!tag_filter.suitable_values.empty())
+								{
+									result_string += "\n";
+									result_string += "#suitable_values";
+									for (DETF_Value detf_value : tag_filter.suitable_values)
+									{
+
+										result_string += ' ';
+										result_string += '"' + detf_value.target_value_key.string_value + '"';
+									}
+								}
+
+								if (!tag_filter.banned_tags.empty())
+								{
+									result_string += "\n";
+									result_string += "#banned_tags";
+									for (DETF_Value detf_value : tag_filter.banned_tags)
+									{
+
+										result_string += ' ';
+										result_string += '"' + detf_value.target_value_key.string_value + '"';
+									}
+								}
+
+							}
+						}
+
+
+						
+					}
 				}
 
 				result_string += '\n';
@@ -26470,23 +26888,23 @@ EntityButton* EButtonGroupPoeNijaPriceChecker::add_status_button(ELocalisationTe
 		{
 			status_button->main_text_area->set_color(0.25f, 1.0f, 0.5f, 1.0f);
 
-			status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + ": success!";
-			status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + ": успешно!";
+			status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + "\nSuccess!";
+			status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + "\nуспешно!";
 		}
 		else
 		{
 			status_button->main_text_area->set_color(1.0f, 0.25f, 0.5f, 1.0f);
 
-			status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + ": no data!";
-			status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + ": мало данных!";
+			status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + "\nNo data!";
+			status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + "\nМало данных!";
 		}
 	}
 	else
 	{
 		status_button->main_text_area->set_color(1.0f, 0.25f, 0.5f, 1.0f);
 
-		status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + ": ERROR #"	+ std::to_string(_code);
-		status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + ": ОШИБКА #"	+ std::to_string(_code);
+		status_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = _ltext.localisations[NSW_localisation_EN] + "\nERROR #"	+ std::to_string(_code);
+		status_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = _ltext.localisations[NSW_localisation_RU] + "\nОШИБКА #"	+ std::to_string(_code);
 	}
 
 	status_button->main_text_area->change_text(status_button->main_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);

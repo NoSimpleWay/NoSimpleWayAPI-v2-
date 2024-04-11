@@ -715,6 +715,14 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	return jc_button;
 }
 
+EntityButtonWideItem::~EntityButtonWideItem()
+{
+	for (EntityButtonWideItem* wide_item_button : attached_game_item_buttons)
+	{
+		wide_item_button->entity_need_remove = true;
+	}
+}
+
 EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font, bool _can_be_deleted)
 {
 	EntityButtonWideItem* jc_button = new EntityButtonWideItem();
@@ -836,11 +844,11 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 		}
 
 		if
-			(
-				(_can_be_deleted)
-				&&
-				(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", _data_entity))
-				)
+		(
+			(_can_be_deleted)
+			&&
+			(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", _data_entity))
+		)
 		{
 			jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
 			jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
@@ -2077,38 +2085,46 @@ void EntityButton::update(float _d)
 		destroy_attached_description();
 	}
 
-	for (EHotKeyManager hotkey : hotkey_list)
+	if
+	(
+			(suppressor == nullptr)
+			||
+			(*suppressor ^ invert_suppression)
+	)
 	{
-		if
-			(
-				(hotkey.parent_button != nullptr)
-				&&
+		for (EHotKeyManager hotkey : hotkey_list)
+		{
+			if
 				(
-					(
-						(hotkey.require_main_button > 0)
-						&&
-						(EInputCore::key_pressed(hotkey.require_main_button))
-						)
+					(hotkey.parent_button != nullptr)
 					&&
 					(
-						(hotkey.require_main_button <= 0)
-						||
-						(EInputCore::key_pressed_once(hotkey.require_secondare_button))
+						(
+							(hotkey.require_main_button > 0)
+							&&
+							(EInputCore::key_pressed(hotkey.require_main_button))
+							)
+						&&
+						(
+							(hotkey.require_main_button <= 0)
+							||
+							(EInputCore::key_pressed_once(hotkey.require_secondare_button))
+							)
 						)
 					)
-				)
-		{
-			for (ECustomData* cd : custom_data_list)
-				for (EClickableArea* ca : cd->clickable_area_list)
-					for (data_action_pointer dap : ca->actions_on_click_list)
-						if
-						(
-							(dap != nullptr)
-						)
-						{
-							EInputCore::logger_simple_info("call [actions on click list]");
-							dap(this, cd, _d);
-						}
+			{
+				for (ECustomData* cd : custom_data_list)
+					for (EClickableArea* ca : cd->clickable_area_list)
+						for (data_action_pointer dap : ca->actions_on_click_list)
+							if
+							(
+								(dap != nullptr)
+							)
+							{
+								EInputCore::logger_simple_info("call [actions on click list]");
+								dap(this, cd, _d);
+							}
+			}
 		}
 	}
 	//}
