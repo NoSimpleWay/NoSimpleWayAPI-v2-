@@ -588,8 +588,17 @@ public:
 	ETextureGabarite*
 	texture_icon = nullptr;
 
-	std::vector<DataEntityTagFilter> data_entity_tag_filter_list;
 
+
+
+	std::vector<DataEntityTagFilter>	data_entity_tag_required_tag_list;
+	std::vector<DataEntityTagFilter>	data_entity_tag_banned_tag_list;
+
+	std::vector<EntityButtonWideItem*>	attached_game_item_buttons;
+	bool is_pattern_filter = false;
+
+
+	~EntityButtonWideItem();
 	static EntityButtonWideItem* create_wide_item_button
 	(
 		ERegionGabarite* _region_gabarite,

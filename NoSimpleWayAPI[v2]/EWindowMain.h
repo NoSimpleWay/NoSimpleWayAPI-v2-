@@ -1265,6 +1265,7 @@ namespace EDataActionCollection
 
 	void action_get_poe_ninja_prices(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_price_check_window(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_pattern_as_game_item(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1343,7 +1344,10 @@ enum FilterAttributeValueType
 
 
 
-	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN
+	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
+
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FAKE_BUTTONS_COUNT,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON
 
 
 
@@ -1475,7 +1479,9 @@ enum class PoeNinjaAPIMode
 	UNIQUES,
 	DIVINATIONS,
 	GEMS,
-	FRAGMENTS
+	FRAGMENTS,
+	EMBERS
+
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
@@ -1491,7 +1497,7 @@ public:
 
 	
 	static void get_poe_ninja_api_prices();
-	static void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode);
+	static void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
 	void export_loot_patterns_to_file();
 	void import_loot_patterns_from_file();

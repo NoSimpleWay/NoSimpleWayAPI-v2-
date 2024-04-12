@@ -3470,6 +3470,20 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"trade_type_allflame_embers"
+	[tag]"name EN"		[value]"Allflame embers"
+	[tag]"name RU"		[value]"Угольки всепламени"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"area_level_slider"
 	[tag]"name EN"		[value]"Area level"
 	[tag]"name RU"		[value]"Уровень области"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_add_filter_as_button"
+	[tag]"name EN"		[value]"Add as pattern"
+	[tag]"name RU"		[value]"Добавить как шаблон"

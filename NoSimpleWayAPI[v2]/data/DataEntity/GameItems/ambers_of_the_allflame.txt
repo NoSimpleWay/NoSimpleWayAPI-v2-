@@ -867,3 +867,189 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Manifested Wealth"
+	[tag]"name RU"		[value]"Уголь Богатства"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Anarchy"
+	[tag]"name RU"		[value]"Уголь Анархии"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Syndicate Assassins"
+	[tag]"name RU"		[value]"Уголь убийц Синдиката"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Syndicate Guards"
+	[tag]"name RU"		[value]"Уголь стражей Синдиката"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Syndicate Escorts"
+	[tag]"name RU"		[value]"Уголь сопровождения Синдиката"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Syndicate Researchers"
+	[tag]"name RU"		[value]"Уголь исследователей Синдиката"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of Breachlords"
+	[tag]"name RU"		[value]"Мерцающий уголь повелителей Разлома"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Synthetic Fury"
+	[tag]"name RU"		[value]"Уголь синтезированной ярости"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaring Allflame Ember of the Vaal"
+	[tag]"name RU"		[value]"Мерцающий уголь Ваал"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of the False God"
+	[tag]"name RU"		[value]"Уголь ложного Бога"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Trial Guards"
+	[tag]"name RU"		[value]"Уголь хранителей испытаний"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Allflame Ember of Trial Cores"
+	[tag]"name RU"		[value]"Уголь сердца испытаний"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
