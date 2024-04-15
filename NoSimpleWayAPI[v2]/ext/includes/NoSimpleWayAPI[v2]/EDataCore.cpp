@@ -75,6 +75,15 @@ namespace ERegisteredStrings
 	ID_string always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
 
 	ID_string rarity_override			= ID_string::register_new_unique_ID_by_key("rarity override");
+	ID_string unique_item				= ID_string::register_new_unique_ID_by_key("Unique item");
+	ID_string details_ID				= ID_string::register_new_unique_ID_by_key("detailsId");
+	ID_string divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
+	ID_string stackable_currency		= ID_string::register_new_unique_ID_by_key("Stackable Currency");
+	ID_string support_gems				= ID_string::register_new_unique_ID_by_key("Support Gems");
+	ID_string map_fragments				= ID_string::register_new_unique_ID_by_key("Map Fragments");
+	ID_string embers_of_allflame		= ID_string::register_new_unique_ID_by_key("Embers of the Allflame");
+	ID_string expensive_base_for_unique = ID_string::register_new_unique_ID_by_key("Expensive base for unique");
+	ID_string good_base_for_unique		= ID_string::register_new_unique_ID_by_key("Good base for unique");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)

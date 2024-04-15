@@ -59,8 +59,9 @@ namespace DataEntityUtils
 	extern void set_tag_value_by_name(int _id, std::string _name, std::string _value, EDataEntity* _data_entity);
 
 
-	extern bool is_exist_tag_by_name_and_value(int _id, std::string _name, std::string _value, EDataEntity* _data_entity);
-	extern bool is_exist_tag_by_name_and_value_ID(int _id, ID_string* _name, ID_string* _value, EDataEntity* _data_entity);
+	extern bool is_exist_tag_by_name_and_value		(int _id, std::string _name,	std::string _value,	EDataEntity* _data_entity);
+	extern bool is_exist_tag_by_name_and_value_ID	(int _id, ID_string* _name,		ID_string* _value,	EDataEntity* _data_entity);
+	extern bool is_exist_tag_by_name_and_value_ID	(int _id, ID_string* _name,		std::string _value, EDataEntity* _data_entity);
 }
 
 //struct ELocalisationText
