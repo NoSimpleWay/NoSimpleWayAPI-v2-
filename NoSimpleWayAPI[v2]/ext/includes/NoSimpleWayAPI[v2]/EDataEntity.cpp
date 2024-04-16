@@ -111,6 +111,19 @@ bool DataEntityUtils::is_exist_tag_by_name_and_value_ID(int _id, ID_string* _nam
 	return false;
 }
 
+bool DataEntityUtils::is_exist_tag_by_name_and_value_ID(int _id, ID_string* _name, std::string _value, EDataEntity* _data_entity)
+{
+	for (EDataTag* data_tag : _data_entity->tag_list)
+	{
+		if ((data_tag->tag_name.ID == _name->ID) && (data_tag->tag_value_list[_id].string_value == _value))
+		{
+			//std::cout << "tag [" << data_tag->tag_name.string_value << "]<" << data_tag->tag_name.ID << ">" << " with value [" << data_tag->tag_value_list[_id].string_value << "]<" << data_tag->tag_value_list[_id].ID << "> is exist" << std::endl;;
+			return true;
+		}
+	}
+	return false;
+}
+
 EDataEntity::EDataEntity()
 {
 }

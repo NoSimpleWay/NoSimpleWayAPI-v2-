@@ -390,6 +390,16 @@ namespace ERegisteredStrings
 	extern ID_string always_six_linked;
 
 	extern ID_string rarity_override;
+	extern ID_string unique_item;
+	extern ID_string details_ID;
+
+	extern ID_string divination_cards;
+	extern ID_string stackable_currency;
+	extern ID_string support_gems;
+	extern ID_string map_fragments;
+	extern ID_string embers_of_allflame;
+	extern ID_string expensive_base_for_unique;
+	extern ID_string good_base_for_unique;
 }
 
 

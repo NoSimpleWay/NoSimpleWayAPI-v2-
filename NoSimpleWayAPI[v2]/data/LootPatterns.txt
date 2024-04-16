@@ -769,6 +769,9 @@ DETF_color	255	230	204	255
 
 
 
+
+
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
 
@@ -807,6 +810,8 @@ DETF_value_key	"Very expensive"
 DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
+
+
 
 
 REGISTER_NEW_FILTER_TAG

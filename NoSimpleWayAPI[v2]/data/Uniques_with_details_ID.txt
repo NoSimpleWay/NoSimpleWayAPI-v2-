@@ -64,7 +64,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tainted-pact-coral-amulet"
 
@@ -82,7 +82,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tavukai-coral-amulet"
 
@@ -137,7 +137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"atziris-foible-paua-amulet"
 
@@ -173,7 +173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"zerphis-heart-paua-amulet"
 
@@ -212,7 +212,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach loot"
 	[tag]"item tag"	[value]"Loot source: Tul"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-halcyon-jade-amulet"
 
@@ -230,7 +230,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rashkaldors-patience-jade-amulet"
 
@@ -304,7 +304,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doedres-tongue-lapis-amulet"
 
@@ -397,7 +397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Esh"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"choir-of-the-storm-lapis-amulet"
 
@@ -451,7 +451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"perquils-toe-gold-amulet"
 
@@ -580,7 +580,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Cannot drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"xophs-blood-amber-amulet"
 
@@ -634,7 +634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rigwalds-curse-wereclaw-talisman"
 
@@ -726,7 +726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ungils-harmony-turquoise-amulet"
 
@@ -744,7 +744,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fury-valve-turquoise-amulet"
 
@@ -780,7 +780,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"badge-of-the-brotherhood-turquoise-amulet"
 
@@ -816,7 +816,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Sanctum"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"eternal-damnation-agate-amulet"
 
@@ -852,7 +852,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"volls-devotion-agate-amulet"
 
@@ -1032,7 +1032,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hinekoras-sight-onyx-amulet"
 
@@ -1107,7 +1107,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ashes-of-the-stars-onyx-amulet"
 
@@ -1278,7 +1278,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"leaderships-price-onyx-amulet"
 
@@ -1296,7 +1296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"yoke-of-suffering-onyx-amulet"
 
@@ -1351,7 +1351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"gloomfang-blue-pearl-amulet"
 
@@ -1478,7 +1478,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"immortal-flesh-leather-belt"
 
@@ -1496,7 +1496,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hyperboreus-leather-belt"
 
@@ -1533,7 +1533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"bears-girdle-leather-belt"
 
@@ -1661,7 +1661,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"soul-tether-cloth-belt"
 
@@ -1736,7 +1736,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Maven"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"arns-anguish-cloth-belt"
 
@@ -1773,7 +1773,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"biscos-leash-heavy-belt"
 
@@ -1846,7 +1846,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"survivors-guilt-heavy-belt"
 
@@ -1993,7 +1993,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-retch-rustic-sash"
 
@@ -2120,7 +2120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"chains-of-emancipation-chain-belt"
 
@@ -2251,7 +2251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ventors-gamble-gold-ring"
 
@@ -2287,7 +2287,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"andvarius-gold-ring"
 
@@ -2305,7 +2305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"circle-of-fear-sapphire-ring"
 
@@ -2343,7 +2343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"pyre-sapphire-ring"
 
@@ -2380,7 +2380,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dream-fragments-sapphire-ring"
 
@@ -2419,7 +2419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Architect"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"uzazas-meadow-sapphire-ring"
 
@@ -2439,7 +2439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Lich"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"uzazas-mountain-sapphire-ring"
 
@@ -2459,7 +2459,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Aul"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"uzazas-valley-sapphire-ring"
 
@@ -2477,7 +2477,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"circle-of-nostalgia-amethyst-ring"
 
@@ -2513,7 +2513,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mings-heart-amethyst-ring"
 
@@ -2551,7 +2551,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"blackflame-amethyst-ring"
 
@@ -2626,7 +2626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"emberwake-ruby-ring"
 
@@ -2647,7 +2647,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ahkelis-mountain-ruby-ring"
 
@@ -2668,7 +2668,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ahkelis-valley-ruby-ring"
 
@@ -2688,7 +2688,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Aul"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ahkelis-meadow-ruby-ring"
 
@@ -2707,7 +2707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"warriors-legacy-ruby-ring"
 
@@ -2744,7 +2744,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"circle-of-guilt-iron-ring"
 
@@ -2835,7 +2835,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"circle-of-regret-topaz-ring"
 
@@ -2930,7 +2930,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"astral-projector-topaz-ring"
 
@@ -2950,7 +2950,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Architect"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"putembos-valley-topaz-ring"
 
@@ -2990,7 +2990,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Lich"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"putembos-meadow-topaz-ring"
 
@@ -3044,7 +3044,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"voideye-unset-ring"
 
@@ -3098,7 +3098,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-hungry-loop-unset-ring"
 
@@ -3136,7 +3136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"vivinsect-unset-ring"
 
@@ -3154,7 +3154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"brinerot-mark-unset-ring"
 
@@ -3173,7 +3173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Map boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"redblade-band-unset-ring"
 
@@ -3192,7 +3192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Map boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rotblood-promise-unset-ring"
 
@@ -3210,7 +3210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-pariah-unset-ring"
 
@@ -3228,7 +3228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mutewind-seal-unset-ring"
 
@@ -3300,7 +3300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"call-of-the-brotherhood-two-stone-ring"
 
@@ -3390,7 +3390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"shavronnes-revelation-moonstone-ring"
 
@@ -3445,7 +3445,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"praxis-paua-ring"
 
@@ -3518,7 +3518,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fated-end-paua-ring"
 
@@ -3575,7 +3575,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"stormfire-opal-ring"
 
@@ -3613,7 +3613,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Small Exarch"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"polaric-devastation-opal-ring"
 
@@ -3670,7 +3670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"winterweave-coral-ring"
 
@@ -3726,7 +3726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mark-of-the-elder-steel-ring"
 
@@ -3856,7 +3856,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"deaths-harp-death-bow"
 
@@ -3874,7 +3874,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"slivertongue-harbinger-bow"
 
@@ -3946,7 +3946,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"darkscorn-assassin-bow"
 
@@ -3965,7 +3965,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-gluttonous-tide-citadel-bow"
 
@@ -3985,7 +3985,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach loot"
 	[tag]"item tag"	[value]"Loot source: Xoph"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"xophs-inception-citadel-bow"
 
@@ -4021,7 +4021,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"reach-of-the-council-spine-bow"
 
@@ -4058,7 +4058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"quill-rain-short-bow"
 
@@ -4076,7 +4076,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"nulls-inclination-ranger-bow"
 
@@ -4095,7 +4095,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Elder"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hopeshredder-ranger-bow"
 
@@ -4113,7 +4113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"windripper-imperial-bow"
 
@@ -4150,7 +4150,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-crimson-storm-steelwood-bow"
 
@@ -4206,7 +4206,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Esh"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hand-of-thought-and-motion-imperial-claw"
 
@@ -4260,7 +4260,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-scourge-terror-claw"
 
@@ -4386,7 +4386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"law-of-the-wilds-hellions-paw"
 
@@ -4404,7 +4404,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"bloodseeker-hellions-paw"
 
@@ -4440,7 +4440,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"essentia-sanguis-vaal-claw"
 
@@ -4530,7 +4530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"divinarius-imperial-skean"
 
@@ -4548,7 +4548,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-consuming-dark-fiend-dagger"
 
@@ -4746,7 +4746,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"binos-kitchen-knife-slaughter-knife"
 
@@ -4783,7 +4783,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rigwalds-savagery-royal-axe"
 
@@ -4875,7 +4875,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"actum-butcher-axe"
 
@@ -4893,7 +4893,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"soul-taker-siege-axe"
 
@@ -4912,7 +4912,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-black-cane-royal-sceptre"
 
@@ -5096,7 +5096,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"maatas-teaching-karui-sceptre"
 
@@ -5115,7 +5115,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"clayshaper-rock-breaker"
 
@@ -5224,7 +5224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"axiom-perpetuum-bronze-sceptre"
 
@@ -5261,7 +5261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-supreme-truth-crystal-sceptre"
 
@@ -5279,7 +5279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"montreguls-grasp-void-sceptre"
 
@@ -5334,7 +5334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doon-cuebiyari-vaal-sceptre"
 
@@ -5372,7 +5372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"yaomacs-accord-vaal-sceptre"
 
@@ -5391,7 +5391,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-dark-seer-shadow-sceptre"
 
@@ -5430,7 +5430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Delve drop"
 	[tag]"item tag"	[value]"Loot source: Delve Architect"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cerberus-limb-blood-sceptre"
 
@@ -5467,7 +5467,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Elder"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"nebuloch-nightmare-mace"
 
@@ -5504,7 +5504,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"nametaker-graceful-sword"
 
@@ -5579,7 +5579,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rigwalds-command-midnight-blade"
 
@@ -5616,7 +5616,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Phoenix"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"razor-of-the-seventh-sun-midnight-blade"
 
@@ -5709,7 +5709,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ichimonji-corsair-sword"
 
@@ -5839,7 +5839,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dreamfeather-eternal-sword"
 
@@ -5857,7 +5857,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"grelwood-shank-eternal-sword"
 
@@ -5875,7 +5875,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"beltimber-blade-eternal-sword"
 
@@ -5893,7 +5893,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rebuke-of-the-vaal-vaal-blade"
 
@@ -5911,7 +5911,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"varunastra-vaal-blade"
 
@@ -5929,7 +5929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ephemeral-edge-dusk-blade"
 
@@ -5986,7 +5986,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Container drop"
 	[tag]"item tag"	[value]"Atzoatl drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"story-of-the-vaal-gemstone-sword"
 
@@ -6022,7 +6022,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"paradoxica-vaal-rapier"
 
@@ -6040,7 +6040,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tremor-rod-military-staff"
 
@@ -6149,7 +6149,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-winds-of-fate-foul-staff"
 
@@ -6205,7 +6205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"taryns-shiver-maelstrom-staff"
 
@@ -6262,7 +6262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Catarina"
 	[tag]"item tag"	[value]"Syndicate drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cane-of-kulemak-serpentine-staff"
 
@@ -6354,7 +6354,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-burden-of-shadows-primordial-staff"
 
@@ -6444,7 +6444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hegemonys-era-judgement-staff"
 
@@ -6462,7 +6462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-grey-spire-judgement-staff"
 
@@ -6519,7 +6519,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-searing-touch-lathi"
 
@@ -6555,7 +6555,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-whispering-ice-vile-staff"
 
@@ -6574,7 +6574,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"martyr-of-innocence-highborn-staff"
 
@@ -6592,7 +6592,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Harvest"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"witchhunters-judgment-highborn-staff"
 
@@ -6611,7 +6611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-annihilating-light-quarterstaff"
 
@@ -6779,7 +6779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hezmanas-bloodlust-vaal-axe"
 
@@ -6854,7 +6854,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ngamahus-flame-abyssal-axe"
 
@@ -6872,7 +6872,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kitavas-feast-void-axe"
 
@@ -6908,7 +6908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"marohi-erqi-karui-maul"
 
@@ -7315,7 +7315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doomsower-lion-sword"
 
@@ -7351,7 +7351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"apeps-rage-omen-wand"
 
@@ -7370,7 +7370,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lifesprig-driftwood-wand"
 
@@ -7424,7 +7424,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"relic-of-the-pact-sage-wand"
 
@@ -7443,7 +7443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Elder"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"shimmeron-tornado-wand"
 
@@ -7463,7 +7463,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Tul"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"jack-the-axe-vaal-hatchet"
 
@@ -7500,7 +7500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"reverberation-rod-spiraled-wand"
 
@@ -7537,7 +7537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"obliteration-imbued-wand"
 
@@ -7575,7 +7575,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"midnight-bargain-engraved-wand"
 
@@ -7737,7 +7737,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-rat-cage-sharkskin-tunic"
 
@@ -8046,7 +8046,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ambus-charge-crusader-chainmail"
 
@@ -8156,7 +8156,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"greeds-embrace-golden-plate"
 
@@ -8211,7 +8211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"yriels-fostering-maim-exquisite-leather"
 
@@ -8229,7 +8229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"yriels-fostering-poison-exquisite-leather"
 
@@ -8267,7 +8267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"daressos-defiance-full-dragonscale"
 
@@ -8303,7 +8303,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tinkerskin-sadist-garb"
 
@@ -8321,7 +8321,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-fourth-vow-devout-chainmail"
 
@@ -8358,7 +8358,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Tul"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-snowblind-grace-zodiac-leather"
 
@@ -8394,7 +8394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"queen-of-the-forest-destiny-leather"
 
@@ -8412,7 +8412,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"perfidy-glorious-plate"
 
@@ -8448,7 +8448,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doedres-skin-widowsilk-robe"
 
@@ -8558,7 +8558,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Loot source: Catarina"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-queens-hunger-vaal-regalia"
 
@@ -8577,7 +8577,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Atziri"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"atziris-splendour-armour-sacrificial-garb"
 
@@ -8615,7 +8615,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Craiceann"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"craiceanns-carapace-golden-plate"
 
@@ -8670,7 +8670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-iron-fortress-crusader-plate"
 
@@ -8708,7 +8708,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Fenumus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fenumus-shroud-widowsilk-robe"
 
@@ -8801,7 +8801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"inpulsas-broken-heart-sadist-garb"
 
@@ -8820,7 +8820,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Maven"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doppelgänger-guise-sadist-garb"
 
@@ -8838,7 +8838,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fleshcrafter-necromancer-silks"
 
@@ -8895,7 +8895,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Synthesis"
 	[tag]"item tag"	[value]"Loot source: Cortex"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"garb-of-the-ephemeral-savants-robe"
 
@@ -8913,7 +8913,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-brass-dome-gladiator-plate"
 
@@ -9279,7 +9279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"march-of-the-legion-legion-boots"
 
@@ -9315,7 +9315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"inyas-epiphany-arcanist-slippers"
 
@@ -9442,7 +9442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"darkray-vectors-dragonscale-boots"
 
@@ -9479,7 +9479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"redblade-tramplers-ancient-greaves"
 
@@ -9516,7 +9516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rainbowstride-conjurer-boots"
 
@@ -9534,7 +9534,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kaoms-roots-titan-greaves"
 
@@ -9553,7 +9553,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"inextricable-fate-fugitive-boots"
 
@@ -9611,7 +9611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Uul-Netol"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-infinite-pursuit-titan-greaves"
 
@@ -9629,7 +9629,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"steppan-eard-sorcerer-boots"
 
@@ -9648,7 +9648,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dawnstrider-vaal-greaves"
 
@@ -9666,7 +9666,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"brinerot-whalers-trapper-boots"
 
@@ -9684,7 +9684,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"beacon-of-madness-two-toned-boots"
 
@@ -9703,7 +9703,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Shaper"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"voidwalker-murder-boots"
 
@@ -9723,7 +9723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Saqawal"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"saqawals-talons-hydrascale-boots"
 
@@ -9741,7 +9741,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"gamblesprint-hydrascale-boots"
 
@@ -9759,7 +9759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mutewind-whispersteps-serpentscale-boots"
 
@@ -9779,7 +9779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Farrul"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"farruls-chase-slink-boots"
 
@@ -9798,7 +9798,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Abyss"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"bubonic-trail-2-jewels-murder-boots"
 
@@ -9855,7 +9855,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"skyforth-sorcerer-boots"
 
@@ -9892,7 +9892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"olroths-charge-runic-sollerets"
 
@@ -9912,7 +9912,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Fenumus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fenumus-spinnerets-assassins-boots"
 
@@ -9931,7 +9931,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"voranas-march-runic-sabatons"
 
@@ -9950,7 +9950,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Doryani"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doryanis-delusion-sorcerer-boots"
 
@@ -9969,7 +9969,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Doryani"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doryanis-delusion-titan-greaves"
 
@@ -9988,7 +9988,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Doryani"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doryanis-delusion-slink-boots"
 
@@ -10006,7 +10006,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"abberaths-hooves-goathide-boots"
 
@@ -10043,7 +10043,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"corpsewalker-carnal-boots"
 
@@ -10062,7 +10062,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"temptation-step-shagreen-boots"
 
@@ -10099,7 +10099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Maven"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"legacy-of-fury-wyrmscale-boots"
 
@@ -10156,7 +10156,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Exarch"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"annihilations-approach-dragonscale-boots"
 
@@ -10503,7 +10503,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"malachais-mark-murder-mitts"
 
@@ -10630,7 +10630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doedres-tenure-velvet-gloves"
 
@@ -10685,7 +10685,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"allelopathy-satin-gloves"
 
@@ -10777,7 +10777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"grip-of-the-council-arcanist-gloves"
 
@@ -10815,7 +10815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tanu-ahi-wyrmscale-gauntlets"
 
@@ -10853,7 +10853,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Elder"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"blasphemers-grasp-assassins-mitts"
 
@@ -10872,7 +10872,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"aurseize-steelscale-gauntlets"
 
@@ -10890,7 +10890,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"volkuurs-guidance-lightning-zealot-gloves"
 
@@ -10908,7 +10908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"volkuurs-guidance-fire-zealot-gloves"
 
@@ -10926,7 +10926,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"volkuurs-guidance-cold-zealot-gloves"
 
@@ -10963,7 +10963,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"nightgrip-runic-gages"
 
@@ -11019,7 +11019,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"repentance-crusader-gloves"
 
@@ -11038,7 +11038,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"medveds-challenge-runic-gauntlets"
 
@@ -11076,7 +11076,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Small Eater"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ceaseless-feast-spiked-gloves"
 
@@ -11095,7 +11095,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Small Eater"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"black-zenith-fingerless-silk-gloves"
 
@@ -11133,7 +11133,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doryanis-fist-vaal-gauntlets"
 
@@ -11170,7 +11170,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"breathstealer-hydrascale-gauntlets"
 
@@ -11188,7 +11188,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"winds-of-change-ancient-gauntlets"
 
@@ -11206,7 +11206,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"vixens-entrapment-embroidered-gloves"
 
@@ -11224,7 +11224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"thunderfist-murder-mitts"
 
@@ -11242,7 +11242,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"storms-gift-assassins-mitts"
 
@@ -11262,7 +11262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Saqawal"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"saqawals-winds-soldier-gloves"
 
@@ -11281,7 +11281,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Cortex"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"offering-to-the-serpent-legion-gloves"
 
@@ -11299,7 +11299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"machina-mitts-murder-mitts"
 
@@ -11319,7 +11319,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Fenumus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fenumus-weave-carnal-mitts"
 
@@ -11358,7 +11358,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Delve Lich"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"command-of-the-pit-riveted-gloves"
 
@@ -11395,7 +11395,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"abhorrent-interrogation-ambush-mitts"
 
@@ -11414,7 +11414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sirus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hands-of-the-high-templar-crusader-gloves"
 
@@ -11488,7 +11488,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hand-of-the-fervent-zealot-gloves"
 
@@ -11507,7 +11507,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Shaper"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"entropic-devastation-assassins-mitts"
 
@@ -11581,7 +11581,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"wraithlord-bone-circlet"
 
@@ -11599,7 +11599,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"willclash-golden-mask"
 
@@ -11835,7 +11835,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kitavas-thirst-zealot-helmet"
 
@@ -11946,7 +11946,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fairgraves-tricorne-tricorne"
 
@@ -12054,7 +12054,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-tricksters-smile-visored-sallet"
 
@@ -12072,7 +12072,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"curtain-call-plague-mask"
 
@@ -12162,7 +12162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rime-gaze-mind-cage"
 
@@ -12252,7 +12252,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"maw-of-conquest-steel-circlet"
 
@@ -12270,7 +12270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-bringer-of-rain-nightmare-bascinet"
 
@@ -12288,7 +12288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"scolds-bridle-mind-cage"
 
@@ -12342,7 +12342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"eye-of-malice-callous-mask"
 
@@ -12378,7 +12378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"usurpers-penance-eternal-burgonet"
 
@@ -12396,7 +12396,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"thundersight-solaris-circlet"
 
@@ -12415,7 +12415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Harvest"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"plume-of-pursuit-bone-circlet"
 
@@ -12433,7 +12433,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"flamesight-solaris-circlet"
 
@@ -12451,7 +12451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"black-sun-crest-lacquered-helmet"
 
@@ -12470,7 +12470,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Atziri"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-vertex-vaal-mask"
 
@@ -12507,7 +12507,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Small Exarch"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"sudden-dawn-steel-circlet"
 
@@ -12526,7 +12526,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Abyss"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lightpoacher-2-jewels-great-crown"
 
@@ -12544,7 +12544,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"heretics-veil-deicide-mask"
 
@@ -12563,7 +12563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Delve Lich"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hale-negator-mind-cage"
 
@@ -12600,7 +12600,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"galesight-solaris-circlet"
 
@@ -12618,7 +12618,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fractal-thoughts-vaal-mask"
 
@@ -12638,7 +12638,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Fenumus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fenumus-toxins-necromancer-circlet"
 
@@ -12713,7 +12713,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cowl-of-the-ceraunophile-solaris-circlet"
 
@@ -12767,7 +12767,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"alphas-howl-sinner-tricorne"
 
@@ -12787,7 +12787,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Xoph"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-formless-flame-royal-burgonet"
 
@@ -12805,7 +12805,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cowl-of-the-cryophile-silken-hood"
 
@@ -12824,7 +12824,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cadigans-crown-runic-crown"
 
@@ -12842,7 +12842,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-tempests-binding-callous-mask"
 
@@ -12896,7 +12896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-gull-raven-mask"
 
@@ -12914,7 +12914,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"maw-of-mischief-bone-helmet"
 
@@ -12933,7 +12933,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Synthesis"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mask-of-the-tribunal-magistrate-crown"
 
@@ -12971,7 +12971,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cowl-of-the-thermophile-ezomyte-burgonet"
 
@@ -13029,7 +13029,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
 	[tag]"item tag"	[value]"Logbook drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"faithguard-runic-helm"
 
@@ -13047,7 +13047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-brine-crown-prophet-crown"
 
@@ -13065,7 +13065,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"abyssus-ezomyte-burgonet"
 
@@ -13084,7 +13084,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sirus"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"crown-of-the-inward-eye-prophet-crown"
 
@@ -13102,7 +13102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mask-of-the-spirit-drinker-magistrate-crown"
 
@@ -13120,7 +13120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"heatshiver-leather-hood"
 
@@ -13138,7 +13138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"asenaths-mark-iron-circlet"
 
@@ -13157,7 +13157,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"indigon-hubris-circlet"
 
@@ -13213,7 +13213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Heist drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"crest-of-desire-fluted-bascinet"
 
@@ -13233,7 +13233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Loot source: Catarina"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-devouring-diadem-necromancer-circlet"
 
@@ -13451,7 +13451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hyrris-bite-sharktooth-arrow-quiver"
 
@@ -13506,7 +13506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"steelworm-broadhead-arrow-quiver"
 
@@ -13524,7 +13524,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rigwalds-quills-two-point-arrow-quiver"
 
@@ -13542,7 +13542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"maloneys-mechanism-ornate-quiver"
 
@@ -13561,7 +13561,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"voidfletcher-primal-arrow-quiver"
 
@@ -13615,7 +13615,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-flawed-refuge-maple-round-shield"
 
@@ -13833,7 +13833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"rise-of-the-phoenix-mosaic-kite-shield"
 
@@ -14014,7 +14014,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"brinerot-flag-tarnished-spirit-shield"
 
@@ -14050,7 +14050,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"manastorm-lacewood-spirit-shield"
 
@@ -14068,7 +14068,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"malachais-loop-harmonic-spirit-shield"
 
@@ -14086,7 +14086,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lepers-alms-mirrored-spiked-shield"
 
@@ -14122,7 +14122,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mistwall-lacquered-buckler"
 
@@ -14158,7 +14158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"mutewind-pennant-enameled-buckler"
 
@@ -14176,7 +14176,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lioneyes-remorse-pinnacle-tower-shield"
 
@@ -14195,7 +14195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lycosidae-rawhide-tower-shield"
 
@@ -14215,7 +14215,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Esh"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"eshs-mirror-vaal-spirit-shield"
 
@@ -14233,7 +14233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"daressos-courage-baroque-round-shield"
 
@@ -14251,7 +14251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tukohamas-fortress-ebony-tower-shield"
 
@@ -14288,7 +14288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Synthesis"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"perepiteia-ezomyte-spiked-shield"
 
@@ -14307,7 +14307,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dawnbreaker-colossal-tower-shield"
 
@@ -14327,7 +14327,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Loot source: Catarina"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"bitterbind-point-titanium-spirit-shield"
 
@@ -14345,7 +14345,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-scales-of-justice-chiming-spirit-shield"
 
@@ -14363,7 +14363,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"unyielding-flame-archon-kite-shield"
 
@@ -14419,7 +14419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Chest drop"
 	[tag]"item tag"	[value]"Atzoatl drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"apeps-slumber-vaal-spirit-shield"
 
@@ -14437,7 +14437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"shattershard-crimson-round-shield"
 
@@ -14455,7 +14455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"broken-faith-archon-kite-shield"
 
@@ -14473,7 +14473,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"font-of-thunder-mirrored-spiked-shield"
 
@@ -14509,7 +14509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"qotras-regulator-sovereign-spiked-shield"
 
@@ -14545,7 +14545,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"redblade-banner-painted-tower-shield"
 
@@ -14563,7 +14563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"emperors-vigilance-steel-kite-shield"
 
@@ -14581,7 +14581,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"apeps-supremacy-vaal-spirit-shield"
 
@@ -14842,7 +14842,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"voranas-preparation"
 
@@ -14860,7 +14860,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"elixir-of-the-unbroken-circle"
 
@@ -14878,7 +14878,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"olroths-resolve"
 
@@ -14896,7 +14896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"starlight-chalice"
 
@@ -14932,7 +14932,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"zerphis-last-breath"
 
@@ -15060,7 +15060,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Shaper"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dying-sun"
 
@@ -15152,7 +15152,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Loot source: Catarina"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"cinderswallow-urn"
 
@@ -15298,7 +15298,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"emperors-might-crimson-jewel"
 
@@ -15407,7 +15407,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fortress-covenant-cobalt-jewel"
 
@@ -15425,7 +15425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"unnatural-instinct-viridian-jewel"
 
@@ -15443,7 +15443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"stormshroud-viridian-jewel"
 
@@ -15499,7 +15499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"amanamus-gaze-ghastly-eye-jewel"
 
@@ -15557,7 +15557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"forbidden-flame-crimson-jewel"
 
@@ -15576,7 +15576,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Eater"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"forbidden-flesh-cobalt-jewel"
 
@@ -15650,7 +15650,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Uber Shaper"
 	[tag]"item tag"	[value]"Loot source: Uber Uber Elder"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"sublime-vision-prismatic-jewel"
 
@@ -15705,7 +15705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"ancestral-vision-viridian-jewel"
 
@@ -15723,7 +15723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"brutal-restraint-timeless-jewel"
 
@@ -15796,7 +15796,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"primordial-might-crimson-jewel"
 
@@ -15833,7 +15833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Uber Breach"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-blue-nightmare-cobalt-jewel"
 
@@ -15869,7 +15869,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"combat-focus-viridian-jewel"
 
@@ -15887,7 +15887,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"combat-focus-cobalt-jewel"
 
@@ -15905,7 +15905,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"energy-from-within-cobalt-jewel"
 
@@ -15923,7 +15923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"elegant-hubris-timeless-jewel"
 
@@ -15959,7 +15959,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"grand-spectrum-cobalt-jewel"
 
@@ -15977,7 +15977,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"grand-spectrum-viridian-jewel"
 
@@ -15996,7 +15996,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"melding-of-the-flesh-cobalt-jewel"
 
@@ -16014,7 +16014,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"dead-reckoning-cobalt-jewel"
 
@@ -16069,7 +16069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"seething-fury-viridian-jewel"
 
@@ -16105,7 +16105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"one-with-nothing-small-cluster-jewel"
 
@@ -16123,7 +16123,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-anima-stone-prismatic-jewel"
 
@@ -16307,7 +16307,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"primordial-eminence-viridian-jewel"
 
@@ -16380,7 +16380,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-interrogation-small-cluster-jewel"
 
@@ -16453,7 +16453,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Chayula"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-red-dream-crimson-jewel"
 
@@ -16471,7 +16471,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"calamitous-visions-small-cluster-jewel"
 
@@ -16489,7 +16489,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"chill-of-corruption-viridian-jewel"
 
@@ -16507,7 +16507,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fevered-mind-cobalt-jewel"
 
@@ -16525,7 +16525,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"firesong-crimson-jewel"
 
@@ -16543,7 +16543,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"hidden-potential-viridian-jewel"
 
@@ -16561,7 +16561,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kitavas-teachings-small-cluster-jewel"
 
@@ -16634,7 +16634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-siege-small-cluster-jewel"
 
@@ -16652,7 +16652,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"atziris-reign-crimson-jewel"
 
@@ -16670,7 +16670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"careful-planning-viridian-jewel"
 
@@ -16724,7 +16724,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-golden-rule-viridian-jewel"
 
@@ -16796,7 +16796,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"fluid-motion-viridian-jewel"
 
@@ -16850,7 +16850,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tempered-flesh-crimson-jewel"
 
@@ -16940,7 +16940,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"apex-mode-cobalt-jewel"
 

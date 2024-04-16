@@ -3969,7 +3969,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -3994,7 +3994,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -4015,7 +4015,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -4038,7 +4038,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -4060,7 +4060,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		url_content = "";
 	}
 
@@ -4082,7 +4082,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::DIVINATIONS, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::DIVINATIONS, false);
 		url_content = "";
 	}
 
@@ -4105,7 +4105,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4129,7 +4129,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, false);
 		url_content = "";
 	}
 	
@@ -4154,7 +4154,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4179,7 +4179,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::FRAGMENTS, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, false);
 		url_content = "";
 	}
 	
@@ -4204,7 +4204,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
 		url_content = "";
 	}
 	
@@ -4229,7 +4229,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::GEMS, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::GEMS, false);
 		url_content = "";
 	}
 
@@ -4248,7 +4248,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::EMBERS, true);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::EMBERS, true);
 		url_content = "";
 	}
 
@@ -4265,7 +4265,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	std::ofstream writabro;
+	/*std::ofstream writabro;
 	writabro.open("data/Uniques_with_details_ID.txt");
 
 
@@ -4287,7 +4287,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 		}
 
 	}
-	writabro.close();
+	writabro.close();*/
 	curl_easy_cleanup(curl);
 
 
@@ -4295,431 +4295,419 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 }
 
-void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode, bool _console_debug)
+void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug)
 {
-	//	PARSER
-	//########################################
-	bool raw_read_mode = false;
-	//bool read_as_parameter = true;
-	int read_mode = 0;
-	int depth = 0;
-	int links = 0;
-	int count = 0;
-	int gem_level = 0;
-
-	std::string buff = "", param = "", value = "";
-	std::string read_buffer[16]{ "" };
-
-	std::string item_name = "";
-	std::string details_id = "";
-	float item_value = 0;
-
-	bool is_banned = false;
-
-	static std::string banned_detail_id[]
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		"asphyxias-wrath-two-point-arrow-quiver",
-		""
-	};
-
-	//std::vector<EDataEntity*> data_entity_vector;
-
-	//reset cost of all uniques
-	if (_mode == PoeNinjaAPIMode::UNIQUES)
-	{
-
+		_console_debug = true;
 	}
 
-
-	for (int i = 0; i < _url_content.length(); i++)
+	if (true)
 	{
-		char chr = _url_content.at(i);
+		//	PARSER
+		//########################################
+		bool raw_read_mode = false;
+		//bool read_as_parameter = true;
+		int read_mode = 0;
+		int depth = 0;
+		int links = 0;
+		int count = 0;
+		int gem_level = 0;
 
-		if (chr == '"') { raw_read_mode = !raw_read_mode; }
+		std::string buff = "", param = "", value = "";
+		std::string read_buffer[16]{ "" };
 
-		//add char to buff
-		if
-			(
-				(
-					((chr != '{') && (chr != '}') && (chr != ':') && (chr != ','))
-					||
-					(raw_read_mode)
-					)
-				&&
-				(chr != '"')
-				)
+		std::string item_name = "";
+		std::string details_id = "";
+		float item_value = 0;
+
+		bool is_banned = false;
+
+		static std::string banned_detail_id[]
 		{
-			buff += chr;
+			"asphyxias-wrath-two-point-arrow-quiver",
+			""
+		};
+
+		//std::vector<EDataEntity*> data_entity_vector;
+
+		//reset cost of all uniques
+		if (_mode == PoeNinjaAPIMode::UNIQUES)
+		{
+
 		}
 
 
-
-		if (chr == '{') { depth++; }
-		if (chr == '}') { depth--; }
-
-		//finalize buff, read to param or value
-		if
-			(
-				(
-					((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
-					&&
-					(!raw_read_mode)
-					)
-				)
+		for (int i = 0; i < (*_url_content).length(); i++)
 		{
-			read_buffer[read_mode] = buff;
-			//read_mode++;
-			buff = "";
+			char chr = (*_url_content).at(i);
 
-			/*if (read_mode == 1)
-			{
-				EInputCore::logger_param(read_buffer[0], read_buffer[1]);
-			}*/
+			if (chr == '"') { raw_read_mode = !raw_read_mode; }
 
+			//add char to buff
 			if
-			(
 				(
-					(read_buffer[0] == "currencyTypeName")
-					||
-					(read_buffer[0] == "name")
-				)
-				&&
-				(read_mode == 1)
-			)
+					(
+						((chr != '{') && (chr != '}') && (chr != ':') && (chr != ','))
+						||
+						(raw_read_mode)
+						)
+					&&
+					(chr != '"')
+					)
 			{
-				links = 0;
-				count = 0;
-				gem_level = 0;
-				is_banned = false;
+				buff += chr;
+			}
 
-				details_id = "";
-				item_name = read_buffer[1];
 
-				/*if (_mode == PoeNinjaAPIMode::CURRENCY)
+
+			if (chr == '{') { depth++; }
+			if (chr == '}') { depth--; }
+
+			//finalize buff, read to param or value
+			if
+				(
+					(
+						((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
+						&&
+						(!raw_read_mode)
+						)
+					)
+			{
+				read_buffer[read_mode] = buff;
+				//read_mode++;
+				buff = "";
+
+				/*if (read_mode == 1)
 				{
-					_mode = _mode;
+					EInputCore::logger_param(read_buffer[0], read_buffer[1]);
 				}*/
-			}
 
-
-			//links
-			if
-				(
-					(read_buffer[0] == "links")
-					&&
-					(_mode == PoeNinjaAPIMode::UNIQUES)
-					&&
-					(read_mode == 1)
-					)
-			{
-				links = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 6);
-			}
-
-			//count
-			if
-				(
-					(read_buffer[0] == "listingCount")
-					&&
-					(read_mode == 1)
-					)
-			{
-				count = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 999999);
-			}
-
-			//detailsId
-			if
-				(
-					(read_buffer[0] == "detailsId")
-					&&
-					(read_mode == 1)
-				)
-			{
-				details_id = read_buffer[1];
-			}
-
-			//detailsId
-			if
-				(
-					(read_buffer[0] == "gemLevel")
-					&&
-					(read_mode == 1)
-				)
-			{
-				gem_level = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 30);
-			}
-
-			//READ WORTH
-			if
-			(
-				(
-					(read_buffer[0] == "chaosEquivalent")
-					||
-					(read_buffer[0] == "chaosValue")
-				)
-				&&
-				(read_mode == 1)
-			)
-			{
-				item_value = std::stof(read_buffer[1]);
-			}
-				//EInputCore::logger_param(item_name, item_value);
-			
-			
-			//FINALIZE READ, PREPARE ITEM
-			if ((read_buffer[0] == "detailsId") &&(read_mode == 1))
-			{
-				bool existed_item = false;
-
-
-
-				//for (int k = 0; k < 1000; k++)
-				//{
-				//	if (banned_detail_id[k] == "") { break; }
-				//	if (banned_detail_id[k] == details_id) { is_banned = true; break; }
-				//}
-
-
-
-				//only 1-4 links, if that weapon or armour
 				if
-				(
-					((links <= 4) || (_mode != PoeNinjaAPIMode::UNIQUES))
-					&&
-					((gem_level <= 1) || (_mode != PoeNinjaAPIMode::GEMS))
-				)
+					(
+						(
+							(read_buffer[0] == "currencyTypeName")
+							||
+							(read_buffer[0] == "name")
+							)
+						&&
+						(read_mode == 1)
+						)
 				{
-					for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
+					links = 0;
+					count = 0;
+					gem_level = 0;
+					is_banned = false;
+
+					details_id = "";
+					item_name = read_buffer[1];
+
+					/*if (_mode == PoeNinjaAPIMode::CURRENCY)
 					{
-						EDataEntity*
-						data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+						_mode = _mode;
+					}*/
+				}
+
+
+				//links
+				if
+					(
+						(read_buffer[0] == "links")
+						&&
+						(_mode == PoeNinjaAPIMode::UNIQUES)
+						&&
+						(read_mode == 1)
+						)
+				{
+					links = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 6);
+				}
+
+				//count
+				if
+					(
+						(read_buffer[0] == "listingCount")
+						&&
+						(read_mode == 1)
+						)
+				{
+					count = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 999999);
+				}
+
+				//detailsId
+				if
+					(
+						(read_buffer[0] == "detailsId")
+						&&
+						(read_mode == 1)
+						)
+				{
+					details_id = read_buffer[1];
+				}
+
+				//detailsId
+				if
+					(
+						(read_buffer[0] == "gemLevel")
+						&&
+						(read_mode == 1)
+						)
+				{
+					gem_level = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 30);
+				}
+
+				//READ WORTH
+				if
+					(
+						(
+							(read_buffer[0] == "chaosEquivalent")
+							||
+							(read_buffer[0] == "chaosValue")
+							)
+						&&
+						(read_mode == 1)
+						)
+				{
+					item_value = std::stof(read_buffer[1]);
+				}
+				//EInputCore::logger_param(item_name, item_value);
+
+
+			//FINALIZE READ, PREPARE ITEM
+				if ((read_buffer[0] == "detailsId") && (read_mode == 1))
+				{
+					bool existed_item = false;
 
 
 
-						//set new
-						if
-							(
-								(
-									(_mode == PoeNinjaAPIMode::UNIQUES)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Unique item", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "detailsId", details_id, data_entity))
-								)
-								||
-								(
-									(_mode == PoeNinjaAPIMode::DIVINATIONS)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Divination Cards", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-								)
-								||
+					//for (int k = 0; k < 1000; k++)
+					//{
+					//	if (banned_detail_id[k] == "") { break; }
+					//	if (banned_detail_id[k] == details_id) { is_banned = true; break; }
+					//}
+
+
+
+					//only 1-4 links, if that weapon or armour
+					if
+						(
+							((links <= 4) || (_mode != PoeNinjaAPIMode::UNIQUES))
+							&&
+							((gem_level <= 1) || (_mode != PoeNinjaAPIMode::GEMS))
+							)
+					{
+						for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
+						{
+							EDataEntity*
+								data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+
+
+
+							//set new
+							if
 								(
 									(
-										(_mode == PoeNinjaAPIMode::CURRENCY)
-										||
+										(_mode == PoeNinjaAPIMode::UNIQUES)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
+										)
+									||
+									(
+										(_mode == PoeNinjaAPIMode::DIVINATIONS)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::divination_cards, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+										)
+									||
+									(
+										(
+											(_mode == PoeNinjaAPIMode::CURRENCY)
+											||
+											(_mode == PoeNinjaAPIMode::FRAGMENTS)
+											)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::stackable_currency, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+										)
+									||
+									(
+										(_mode == PoeNinjaAPIMode::GEMS)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::support_gems, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+										)
+									||
+									(
 										(_mode == PoeNinjaAPIMode::FRAGMENTS)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::map_fragments, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+										)
+									||
+									(
+										(_mode == PoeNinjaAPIMode::EMBERS)
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::embers_of_allflame, data_entity))
+										&&
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+										)
 									)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Stackable Currency", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-								)
-								||
-								(
-									(_mode == PoeNinjaAPIMode::GEMS)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Support Gems", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-								)
-								||
-								(
-									(_mode == PoeNinjaAPIMode::FRAGMENTS)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Map Fragments", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-								)
-								||
-								(
-									(_mode == PoeNinjaAPIMode::EMBERS)
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Embers of the Allflame", data_entity))
-									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
-								)
-							)
 
-						{
-
-							existed_item = true;
-
-							//STACK MULTIPLIER
-							std::string
-							stack_multiplier_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::stack_multiplier, data_entity);
-							float stack_multiplier = 1.0f;
-
-							if (_mode == PoeNinjaAPIMode::CURRENCY)
 							{
-								if (stack_multiplier_text != "")
+
+								existed_item = true;
+
+								//STACK MULTIPLIER
+								std::string
+									stack_multiplier_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::stack_multiplier, data_entity);
+								float stack_multiplier = 1.0f;
+
+								if (_mode == PoeNinjaAPIMode::CURRENCY)
 								{
-									stack_multiplier = std::stof(stack_multiplier_text);
+									if (stack_multiplier_text != "")
+									{
+										stack_multiplier = std::stof(stack_multiplier_text);
+									}
 								}
-							}
-							else
-							{
-								stack_multiplier = 1.0f;
-							}
-
-							int total_cost = round(item_value * stack_multiplier);
-
-							ID_string new_worth_ID_string;
-							int old_worth_id = -1;
-							int new_worth_id = -1;
-
-							if (total_cost <= 1) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
-							else
-								if (total_cost <= 3) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
 								else
-									if (total_cost <= 10) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
-									else
-										if (total_cost <= 100) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
-										else
-											if (total_cost <= 300) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
-											else
-												/*__________________*/ {
-												new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive;
-											}
-
-
-							std::string
-							base_worth_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_worth, data_entity);
-
-							if (base_worth_value == "Trash") { old_worth_id = 0; }
-							else
-								if (base_worth_value == "Common") { old_worth_id = 1; }
-								else
-									if (base_worth_value == "Moderate") { old_worth_id = 2; }
-									else
-										if (base_worth_value == "Rare") { old_worth_id = 3; }
-										else
-											if (base_worth_value == "Expensive") { old_worth_id = 4; }
-											else
-												if (base_worth_value == "Very expensive") { old_worth_id = 5; }
-
-							//if (item_name == "Blightwell")
-							//{ old_worth_id = old_worth_id; }
-							//set new worth if new higher that old
-							if
-							(
-								(old_worth_id != -1)
-								//&&
-								//(new_worth_id > old_worth_id)
-							)
-							{
-								if (_console_debug)
 								{
-									std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
-								
-									if (new_worth_id == 0){std::cout << white;} else
-									if (new_worth_id == 1){std::cout << green;} else
-									if (new_worth_id == 2){std::cout << blue;} else
-									if (new_worth_id == 3){std::cout << purple;} else
-									if (new_worth_id >= 4){std::cout << yellow;}
-
-									std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
-
-									DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
-									DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+									stack_multiplier = 1.0f;
 								}
-								//for (EDataTag* tag : data_entity->tag_list)
-								//{
-								//	EDataTag*
-								//		base_worth_tag = nullptr;
 
-								//	if ((tag->tag_name.ID == ERegisteredStrings::worth.ID) || (tag->tag_name.ID == ERegisteredStrings::base_worth.ID))
-								//	{
-								//		tag->tag_value_list[0] = new_worth_ID_string;
-								//		break;
-								//	}
+								int total_cost = round(item_value * stack_multiplier);
 
-								//}
-							}
+								ID_string new_worth_ID_string;
+								int old_worth_id = 0;
+								int new_worth_id = -1;
 
-							//chance cost of base item [for uniques]
-							if ((_mode == PoeNinjaAPIMode::UNIQUES))
-							{
 
-								DataEntityUtils::set_tag_value_by_name(0, "detailsId", details_id, data_entity);
+								if (total_cost <= 1) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								else
+									if (total_cost <= 3) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
+									else
+										if (total_cost <= 10) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
+										else
+											if (total_cost <= 100) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
+											else
+												if (total_cost <= 300) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
+												else
+													/*__________________*/ {
+													new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive;
+												}
+
 
 								std::string
-								base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
+									base_worth_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_worth, data_entity);
 
-								if (base_item_name == "")
+								if (base_worth_value == "Trash") { old_worth_id = 0; }
+								else
+									if (base_worth_value == "Common") { old_worth_id = 1; }
+									else
+										if (base_worth_value == "Moderate") { old_worth_id = 2; }
+										else
+											if (base_worth_value == "Rare") { old_worth_id = 3; }
+											else
+												if (base_worth_value == "Expensive") { old_worth_id = 4; }
+												else
+													if (base_worth_value == "Very expensive") { old_worth_id = 5; }
+
+
+								//if (item_name == "Blightwell")
+								//{ old_worth_id = old_worth_id; }
+								//set new worth if new higher that old
+								if
+									(
+										(old_worth_id != -1)
+										&&
+										(new_worth_id > old_worth_id)
+										)
 								{
-									base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_entity);
+									if (_console_debug)
+									{
+										std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
+
+										if (new_worth_id == 0) { std::cout << white; }
+										else
+											if (new_worth_id == 1) { std::cout << green; }
+											else
+												if (new_worth_id == 2) { std::cout << blue; }
+												else
+													if (new_worth_id == 3) { std::cout << purple; }
+													else
+														if (new_worth_id >= 4) { std::cout << yellow; }
+
+										std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
+
+										DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
+										DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+									}
+									//for (EDataTag* tag : data_entity->tag_list)
+									//{
+									//	EDataTag*
+									//		base_worth_tag = nullptr;
+
+									//	if ((tag->tag_name.ID == ERegisteredStrings::worth.ID) || (tag->tag_name.ID == ERegisteredStrings::base_worth.ID))
+									//	{
+									//		tag->tag_value_list[0] = new_worth_ID_string;
+									//		break;
+									//	}
+
+									//}
 								}
 
-								for (int j = 0; j < EWindowMain::registered_data_entity_game_item_list.size(); j++)
+								//chance cost of base item [for uniques]
+								if ((_mode == PoeNinjaAPIMode::UNIQUES))
 								{
-									EDataEntity*
-									sub_data_entity = EWindowMain::registered_data_entity_game_item_list[j];
+
+									DataEntityUtils::set_tag_value_by_name(0, "detailsId", details_id, data_entity);
 
 									std::string
-										sub_base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, sub_data_entity);
+										base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
 
-									if (sub_base_item_name == "")
+									if (base_item_name == "")
 									{
-										sub_base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, sub_data_entity);
+										base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_entity);
 									}
 
-									//if ((sub_base_item_name == "Steelscale Gauntlets") && (base_item_name == "Steelscale Gauntlets"))
-									//{
-									//	sub_base_item_name = sub_base_item_name;
-									//}
-									//MATCHED BASE ITEM
-									if
-									(
-										(sub_base_item_name == base_item_name)
-										&&
-										(!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Unique item", sub_data_entity))
-									)
+									for (int j = 0; j < EWindowMain::registered_data_entity_game_item_list.size(); j++)
 									{
-										//
-										if
-										(
-												(new_worth_id >= 2) && (new_worth_id <= 3)
-												&&
-												(!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Expensive base for unique", sub_data_entity))//protect overriding expensive bases
-												&&
-												(!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Good base for unique", sub_data_entity))//protect adding same tag
-										)
+										EDataEntity*
+											sub_data_entity = EWindowMain::registered_data_entity_game_item_list[j];
+
+										std::string
+											sub_base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, sub_data_entity);
+
+										if (sub_base_item_name == "")
 										{
-											EDataTag*
-												data_tag = new EDataTag();
-											data_tag->tag_name.set_ID_by_string("item tag");
-
-											ID_string
-												id_string;
-
-											id_string.set_ID_by_string("Good base for unique");
-
-											data_tag->tag_value_list.push_back(id_string);
-											sub_data_entity->tag_list.push_back(data_tag);
-											if (_console_debug)
-											{
-												std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Good" << green << ">" << std::endl;
-											}
+											sub_base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, sub_data_entity);
 										}
-										else
+
+										//if ((sub_base_item_name == "Steelscale Gauntlets") && (base_item_name == "Steelscale Gauntlets"))
+										//{
+										//	sub_base_item_name = sub_base_item_name;
+										//}
+										//MATCHED BASE ITEM
+										if
+											(
+												(sub_base_item_name == base_item_name)
+												&&
+												(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, sub_data_entity))
+												)
+										{
 											//
 											if
-											(
-												(new_worth_id >= 4)
-												&&
-												(!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Expensive base for unique", sub_data_entity))//protect adding same tag
-											)
+												(
+													(new_worth_id >= 2) && (new_worth_id <= 3)
+													&&
+													(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::expensive_base_for_unique, sub_data_entity))//protect overriding expensive bases
+													&&
+													(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::good_base_for_unique, sub_data_entity))//protect adding same tag
+													)
 											{
 												EDataTag*
 													data_tag = new EDataTag();
@@ -4728,63 +4716,90 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAP
 												ID_string
 													id_string;
 
-												id_string.set_ID_by_string("Expensive base for unique");
-												
-												if (_console_debug)
-												{
-													std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Expensive" << green << ">" << std::endl;
-												}
+												id_string.set_ID_by_string("Good base for unique");
 
 												data_tag->tag_value_list.push_back(id_string);
 												sub_data_entity->tag_list.push_back(data_tag);
+
+												if (_console_debug)
+												{
+													std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Good" << green << ">" << std::endl;
+												}
 											}
+											else
+												//
+												if
+													(
+														(new_worth_id >= 4)
+														&&
+														(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::expensive_base_for_unique, sub_data_entity))//protect adding same tag
+														)
+												{
+													EDataTag*
+														data_tag = new EDataTag();
+													data_tag->tag_name.set_ID_by_string("item tag");
+
+													ID_string
+														id_string;
+
+													id_string.set_ID_by_string("Expensive base for unique");
+
+													if (_console_debug)
+													{
+														std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Expensive" << green << ">" << std::endl;
+													}
+
+													data_tag->tag_value_list.push_back(id_string);
+													sub_data_entity->tag_list.push_back(data_tag);
+												}
 
 											DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
-										break;
+											break;
+										}
 									}
+
+
 								}
 
-
+								break;
 							}
 
-							break;
+
 						}
 
-
-					}
-
-					if (!existed_item)
-					{
-						if (_console_debug)
+						if (!existed_item)
 						{
-							EInputCore::logger_simple_error(item_name);
-							EInputCore::logger_simple_error(details_id);
-							std::cout << std::endl;
+							if (_console_debug)
+							{
+								EInputCore::logger_simple_error(item_name);
+								EInputCore::logger_simple_error(details_id);
+								std::cout << std::endl;
+							}
 						}
 					}
+
+
 				}
 
 
 			}
 
-
-		}
-
-		if (chr == ':') { read_mode = 1; }
-		if ((chr == ',') || (chr == '{') || (chr == '}'))
-		{
-			read_mode = 0;
-
-			//links = 0;
-
-			for (int k = 0; k < 16; k++)
+			if (chr == ':') { read_mode = 1; }
+			if ((chr == ',') || (chr == '{') || (chr == '}'))
 			{
-				read_buffer[k] = "";
+				read_mode = 0;
+
+				//links = 0;
+
+				for (int k = 0; k < 16; k++)
+				{
+					read_buffer[k] = "";
+				}
 			}
 		}
-	}
 
-	std::cout << "Parsing finished!" << std::endl;
+		std::cout << "Parsing finished!" << std::endl;
+	}
 }
 
 void EWindowMain::export_loot_patterns_to_file()
