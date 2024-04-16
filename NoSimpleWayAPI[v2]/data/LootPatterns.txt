@@ -625,7 +625,6 @@ REGISTER_NEW_PATTERN
 name_EN	"Embers of the Allflame"
 name_RU	"Уголья Всепламени"
 icon	"data/textures/icons/Allflame_ember.png"
-cannot_be_configured
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -640,6 +639,7 @@ generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
+tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Embers of the Allflame"
@@ -650,10 +650,50 @@ DETF_color	255	230	204	255
 
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"tem tag"
+tag_cannot_be_configured
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
@@ -725,6 +765,47 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Horned"
 DETF_localised_attribute_name_EN	"Horned"
 DETF_localised_attribute_name_RU	"Рогатый"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 
