@@ -4179,7 +4179,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, false);
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, true);
 		url_content = "";
 	}
 	
@@ -4264,18 +4264,19 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-
-	/*std::ofstream writabro;
-	writabro.open("data/Uniques_with_details_ID.txt");
-
-
-	for (EDataEntity* de : EDataEntity::data_entity_global_list)
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		std::string
-		details_ID = DataEntityUtils::get_tag_value_by_name(0, "detailsId", de);
+		std::ofstream writabro;
+		writabro.open("data/Cached_data_entity_from_poe_ninja.txt");
 
-	if (details_ID != "")
+
+		for (EDataEntity* de : EDataEntity::data_entity_global_list)
 		{
+			std::string
+				data_type = DataEntityUtils::get_tag_value_by_name(0, "data type", de);
+
+			if (data_type == "Game item")
+			{
 				writabro << "ADD_NEW_DATA_ENTITY" << std::endl;
 
 				for (EDataTag* tag : de->tag_list)
@@ -4284,10 +4285,12 @@ void EWindowMain::get_poe_ninja_api_prices()
 				}
 
 				writabro << std::endl << std::endl << std::endl;
-		}
+			}
 
+		}
+		writabro.close();
 	}
-	writabro.close();*/
+
 	curl_easy_cleanup(curl);
 
 
@@ -4621,11 +4624,11 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								//{ old_worth_id = old_worth_id; }
 								//set new worth if new higher that old
 								if
-									(
+								(
 										(old_worth_id != -1)
 										&&
-										(new_worth_id > old_worth_id)
-										)
+										(new_worth_id >= old_worth_id)
+								)
 								{
 									if (_console_debug)
 									{
@@ -19369,11 +19372,11 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 			//		INGAME SOUNDS
 			if
-				(
-					(!whole_block_data->pointer_to_game_sound_button->named_sound_vector.empty())
-					||
-					(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 1)//forcibly disabled sound
-					)
+			(
+				(!whole_block_data->pointer_to_game_sound_button->named_sound_vector.empty())
+				||
+				(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 1)//forcibly disabled sound
+			)
 			{
 				result_string += '\t';
 				if
@@ -19410,7 +19413,8 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 			}
 
 			//ENABLE/DISABLE DROP SOUND
-			EntityButtonVariantRouterForFilterBlock* drop_sound_router_button = whole_block_data->pointer_to_disable_enable_drop_sound;
+			EntityButtonVariantRouterForFilterBlock*
+			drop_sound_router_button = whole_block_data->pointer_to_disable_enable_drop_sound;
 
 			if (drop_sound_router_button->selected_variant > 0)
 			{
@@ -19418,6 +19422,19 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 				result_string += drop_sound_router_button->router_variant_list[drop_sound_router_button->selected_variant]->router_localisation.base_name;
 				result_string += '\n';
 			}
+		}
+		else
+		{
+			//EntityButtonVariantRouterForFilterBlock*
+			//drop_sound_router_button = whole_block_data->pointer_to_disable_enable_drop_sound;
+
+			result_string += '\t';
+			result_string += "DisableDropSound";
+			result_string += '\n';
+
+			//result_string += '\t';
+			//result_string += drop_sound_router_button->router_variant_list[drop_sound_router_button->selected_variant]->router_localisation.base_name;
+			//result_string += '\n';
 		}
 
 

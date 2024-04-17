@@ -3323,7 +3323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
-Bonus
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -5479,7 +5479,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"worth"	[value]"Rare"
 	
@@ -5501,7 +5500,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"worth"	[value]"Rare"
 	
@@ -5523,7 +5521,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"worth"	[value]"Rare"
 	
@@ -5567,7 +5564,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"worth"	[value]"Rare"
 	
@@ -5589,7 +5585,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"worth"	[value]"Rare"
 	
