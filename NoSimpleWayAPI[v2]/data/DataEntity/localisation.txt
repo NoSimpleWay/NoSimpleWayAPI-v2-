@@ -3477,6 +3477,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"trade_type_tattoo"
+	[tag]"name EN"		[value]"Tattoo"
+	[tag]"name RU"		[value]"Татуировки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"area_level_slider"
 	[tag]"name EN"		[value]"Area level"
 	[tag]"name RU"		[value]"Уровень области"

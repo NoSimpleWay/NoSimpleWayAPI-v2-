@@ -4233,6 +4233,12 @@ void EWindowMain::get_poe_ninja_api_prices()
 		url_content = "";
 	}
 
+
+
+
+
+
+
 	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=AllflameEmber";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
@@ -4249,6 +4255,31 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::EMBERS, true);
+		url_content = "";
+	}
+
+
+
+
+
+
+
+	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Tattoo";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_tattoo"), code, url_content.length());
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed! [" << (CURLcode)code << "]\r\n";
+	}
+	else
+	{
+
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::TATTOO, true);
 		url_content = "";
 	}
 
@@ -4526,7 +4557,9 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 											(_mode == PoeNinjaAPIMode::CURRENCY)
 											||
 											(_mode == PoeNinjaAPIMode::FRAGMENTS)
-											)
+											||
+											(_mode == PoeNinjaAPIMode::TATTOO)
+										)
 										&&
 										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::stackable_currency, data_entity))
 										&&

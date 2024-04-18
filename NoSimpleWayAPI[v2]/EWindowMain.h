@@ -1480,7 +1480,8 @@ enum class PoeNinjaAPIMode
 	DIVINATIONS,
 	GEMS,
 	FRAGMENTS,
-	EMBERS
+	EMBERS,
+	TATTOO
 
 };
 constexpr int filter_tabs_count = 5;
