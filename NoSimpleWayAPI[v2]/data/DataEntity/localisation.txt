@@ -3478,8 +3478,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"trade_type_tattoo"
-	[tag]"name EN"		[value]"Tattoo"
+	[tag]"name EN"		[value]"Tattoos"
 	[tag]"name RU"		[value]"Татуировки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_omen"
+	[tag]"name EN"		[value]"Omens"
+	[tag]"name RU"		[value]"Предсказания"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

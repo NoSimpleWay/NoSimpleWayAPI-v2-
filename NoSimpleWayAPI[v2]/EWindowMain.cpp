@@ -4289,6 +4289,31 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
+	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Omen";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_omen"), code, url_content.length());
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed! [" << (CURLcode)code << "]\r\n";
+	}
+	else
+	{
+
+		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::OMEN, true);
+		url_content = "";
+	}
+
+
+
+
+
+
+
 
 
 
@@ -4545,7 +4570,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, data_entity))
 										&&
 										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
-										)
+									)
 									||
 									(
 										(_mode == PoeNinjaAPIMode::DIVINATIONS)
@@ -4562,12 +4587,14 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 											(_mode == PoeNinjaAPIMode::FRAGMENTS)
 											||
 											(_mode == PoeNinjaAPIMode::TATTOO)
+											||
+											(_mode == PoeNinjaAPIMode::OMEN)
 										)
 										&&
 										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::stackable_currency, data_entity))
 										&&
 										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-										)
+									)
 									||
 									(
 										(_mode == PoeNinjaAPIMode::GEMS)

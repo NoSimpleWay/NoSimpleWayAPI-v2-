@@ -1481,8 +1481,8 @@ enum class PoeNinjaAPIMode
 	GEMS,
 	FRAGMENTS,
 	EMBERS,
-	TATTOO
-
+	TATTOO,
+	OMEN
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
