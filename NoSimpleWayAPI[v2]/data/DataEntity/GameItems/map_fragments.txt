@@ -3323,7 +3323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
-Bonus
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -5479,9 +5479,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5499,9 +5500,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5519,9 +5521,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5541,7 +5544,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"scarab tier"	[value]"Horned"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5559,9 +5564,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5579,9 +5585,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Horned"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
