@@ -407,7 +407,7 @@ namespace ERegisteredStrings
 
 
 
-struct DETF_Value
+struct DETF_SuitableVariant
 {
 public:
 	ID_string			target_value_key;
@@ -435,8 +435,8 @@ public:
 	//std::vector<std::string>	suitable_values;
 	//std::vector<std::string>	banned_tags;
 
-	std::vector<DETF_Value>	suitable_values;
-	std::vector<DETF_Value>	banned_tags;
+	std::vector<DETF_SuitableVariant>	suitable_values;
+	std::vector<DETF_SuitableVariant>	banned_tags;
 
 	void add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
 	void add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
@@ -455,7 +455,7 @@ public:
 class EFilterRule
 {
 public:
-	ELocalisationText* localisation_text = nullptr;
+	ELocalisationText localisation_text;
 
 	std::string focused_by_data_type = "";
 
@@ -483,7 +483,7 @@ public:
 	//void								add_default_banned_tag();
 	
 	
-	
+	void	reset_filter_rule();
 	
 	
 	static	std::vector<EFilterRule*>	registered_global_filter_rules;

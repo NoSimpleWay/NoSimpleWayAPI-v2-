@@ -3681,6 +3681,11 @@ int EStringUtils::get_id_by_hash(std::string _input)
 	return index;
 }
 
+void EFilterRule::reset_filter_rule()
+{
+
+}
+
 bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule* _filter_rule, std::string _search_text)
 {
 	std::string tag_value = "";
@@ -3724,7 +3729,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 					if (data_entity_tag->tag_name.ID == banned_tag_filter.target_tag.ID)
 					{
 
-						for (DETF_Value suitable_str : banned_tag_filter.banned_tags)//one of suitable list
+						for (DETF_SuitableVariant suitable_str : banned_tag_filter.banned_tags)//one of suitable list
 						{
 							//EInputCore::logger_param("data_entity_tag", tag_value);
 
@@ -3819,7 +3824,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 							required_tag_value_match = true;
 						}
 						else
-							for (DETF_Value suitable_DETF : required_tag_filter.suitable_values)//one of suitable list
+							for (DETF_SuitableVariant suitable_DETF : required_tag_filter.suitable_values)//one of suitable list
 							{
 								if
 								(

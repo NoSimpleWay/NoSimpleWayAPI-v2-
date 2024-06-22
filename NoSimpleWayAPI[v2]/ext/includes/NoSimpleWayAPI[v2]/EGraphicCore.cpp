@@ -221,8 +221,10 @@ void ERenderBatcher::draw_call()
 	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
 	{
 
-
-		batcher_shader->use();
+		//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+		{
+			batcher_shader->use();
+		}
 		apply_transform();
 
 		//batcher_shader->setInt("texture1", 0);
@@ -231,8 +233,6 @@ void ERenderBatcher::draw_call()
 		if
 		(
 			(gl_vertex_attribute_total_count > 12)
-			//&&
-			//(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
 		)
 		{
 			glActiveTexture(GL_TEXTURE0);
@@ -5270,7 +5270,12 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 
 
 			//if batcher have free space
-			if (batcher_free_space > 0)
+			if
+			(
+				(batcher_free_space > 0)
+				//&&
+				//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+			)
 			{
 				data_part = min(remaining_data, batcher_free_space);
 
@@ -5291,7 +5296,11 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 				remaining_data -= data_part;
 				batcher_free_space -= data_part;
 
-
+				if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+				{
+					batcher->draw_call();
+					batcher_free_space = batcher_size;
+				}
 				//if (batcher->last_vertice_buffer_index >= batcher_size)
 				//{
 				//	batcher->draw_call();
@@ -5300,7 +5309,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			}
 			else
 			{
-				EInputCore::logger_simple_info("free space in batcher consumed, draw call");
+				//EInputCore::logger_simple_info("free space in batcher consumed, draw call");
 				batcher->draw_call();
 				batcher_free_space = batcher_size;
 			}
