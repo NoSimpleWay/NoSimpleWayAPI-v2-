@@ -157,6 +157,51 @@ public:
 };
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
+
+struct DataEntityTagFilter;
+class EntityButtonFilterRule;
+class EntityButtonWideItem : public EntityButton
+{
+public:
+	EClickableArea* pointer_to_close_area;
+
+	ELocalisationText localised_name;
+
+	ESpriteLayer*
+		second_sprite_layer = nullptr;
+
+	ETextureGabarite*
+		texture_icon = nullptr;
+
+
+	EFilterRule* attached_filter_rule;
+
+	//std::vector<DataEntityTagFilter>	data_entity_tag_required_tag_list;
+	//std::vector<DataEntityTagFilter>	data_entity_tag_banned_tag_list;
+
+	std::vector<EntityButtonWideItem*>	attached_game_item_buttons;
+	bool is_pattern_filter = false;
+
+
+	~EntityButtonWideItem();
+	static EntityButtonWideItem* create_wide_item_button
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EDataEntity* _data_entity,
+		EFont* _font,
+		bool _can_be_deleted
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
+	void change_texture(ETextureGabarite* _texture);
+
+	void reinit_as_pattern_item_button(EFilterRule* _filter_rule, EButtonGroup* _target_group);
+
+};
+
+
+
 //BUTTONS
 class EntityButtonForFilterBlock : public EntityButton
 {
@@ -1007,6 +1052,8 @@ public:
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
 	EntityButtonForFilterBlock* input_field;
 	EButtonGroupFilterBlock* parent_filter_block;
+
+	void reinit_all_pattern_wide_item_buttons();
 };
 
 
@@ -1347,7 +1394,12 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
 
 	FILTER_ATTRIBUTE_VALUE_CONFIG_FAKE_BUTTONS_COUNT,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON
+	
+	FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_REQUIRED_TAGS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FORBIDDEN_TAGS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FINALIZE_FILTER_RULE
+	
 
 
 

@@ -3585,6 +3585,15 @@ void EButtonGroup::add_button_to_working_group(EntityButton* _button)
 	workspace_button_list.push_back(_button);
 }
 
+void EButtonGroup::add_button_to_working_group_specific_place(EntityButton* _button, int _place)
+{
+	_button->parent_button_group = this;
+
+	all_button_list.insert(all_button_list.begin() + _place, _button);
+
+	workspace_button_list.insert(workspace_button_list.begin() + _place, _button);
+}
+
 void EButtonGroup::add_button_to_working_group_and_expand_y(EntityButton* _button)
 {
 	_button->parent_button_group = this;

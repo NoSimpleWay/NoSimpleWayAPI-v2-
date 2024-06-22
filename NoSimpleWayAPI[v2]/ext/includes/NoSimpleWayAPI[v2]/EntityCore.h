@@ -574,47 +574,6 @@ public:
 	EButtonGroup* target_group;
 };
 
-struct DataEntityTagFilter;
-class EntityButtonWideItem : public EntityButton
-{
-public:
-	EClickableArea* pointer_to_close_area;
-
-	ELocalisationText localised_name;
-
-	ESpriteLayer*
-	second_sprite_layer = nullptr;
-
-	ETextureGabarite*
-	texture_icon = nullptr;
-
-
-
-
-	std::vector<DataEntityTagFilter>	data_entity_tag_required_tag_list;
-	std::vector<DataEntityTagFilter>	data_entity_tag_banned_tag_list;
-
-	std::vector<EntityButtonWideItem*>	attached_game_item_buttons;
-	bool is_pattern_filter = false;
-
-
-	~EntityButtonWideItem();
-	static EntityButtonWideItem* create_wide_item_button
-	(
-		ERegionGabarite* _region_gabarite,
-		EButtonGroup* _parent_group,
-		EDataEntity* _data_entity,
-		EFont* _font,
-		bool _can_be_deleted
-		//void (*data_action_pointer)(Entity*, ECustomData*, float)
-	);
-
-	void change_texture(ETextureGabarite* _texture);
-
-
-};
-
-
 
 
 class EntityButtonVariantRouterSelector : public EntityButton
