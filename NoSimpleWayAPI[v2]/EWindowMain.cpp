@@ -4320,7 +4320,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
 		std::ofstream writabro;
 		writabro.open("data/Cached_data_entity_from_poe_ninja.txt");
@@ -4706,9 +4706,11 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 
 										std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
 
-										DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
-										DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+										
 									}
+
+									DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
+									DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
 									//for (EDataTag* tag : data_entity->tag_list)
 									//{
 									//	EDataTag*
@@ -26037,7 +26039,8 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 	container->mid_value = 1.0f;
 	container->max_value = 2.0f;
 
-	container->rounded_numbers = true;
+	container->is_float			= false;
+	container->rounded_numbers	= true;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 

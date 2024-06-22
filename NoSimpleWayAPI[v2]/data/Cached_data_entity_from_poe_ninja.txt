@@ -243,13 +243,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -391,8 +391,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -402,7 +402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Сфера Пробудителя"
 	[tag]"icon path"	[value]"AwakenerOrb"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Pinnacle boss loot"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -413,7 +413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -726,13 +726,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"drop level"	[value]"35"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -798,13 +798,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"drop level"	[value]"2"
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"40"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -835,14 +835,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"drop level"	[value]"70"
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -886,13 +886,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"drop level"	[value]"12"
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -954,7 +954,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Колода карт"
 	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -963,7 +963,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -979,8 +979,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -996,8 +996,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -1205,7 +1205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Огненного ходока Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1219,7 +1219,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1229,7 +1229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1252,7 +1252,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1275,7 +1275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Зачинщика войны Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1288,7 +1288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -1298,7 +1298,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Резчика по дереву Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1311,7 +1311,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1344,7 +1344,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Кровопийцы Китавы"
 	[tag]"icon path"	[value]"Kaitava_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1367,7 +1367,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Смутьяна Китавы"
 	[tag]"icon path"	[value]"Kaitava_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1390,7 +1390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Китавы"
 	[tag]"icon path"	[value]"Kaitava_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1413,7 +1413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Пожирателя сердец Китавы"
 	[tag]"icon path"	[value]"Kaitava_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1436,7 +1436,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Китавы"
 	[tag]"icon path"	[value]"Kaitava_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1448,7 +1448,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1481,7 +1481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Тукохамы"
 	[tag]"icon path"	[value]"Tukohama_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1493,7 +1493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1503,7 +1503,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Тукохамы"
 	[tag]"icon path"	[value]"Tukohama_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1525,7 +1525,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Поединщика Тукохамы"
 	[tag]"icon path"	[value]"Tukohama_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1547,7 +1547,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Зачинщика войны Тукохамы"
 	[tag]"icon path"	[value]"Tukohama_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1569,7 +1569,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Глашатая войны Тукохамы"
 	[tag]"icon path"	[value]"Tukohama_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1581,7 +1581,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -1614,7 +1614,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Ронгокураи"
 	[tag]"icon path"	[value]"Rongokurai_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1626,7 +1626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1636,7 +1636,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Громилы Ронгокураи"
 	[tag]"icon path"	[value]"Rongokurai_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1658,7 +1658,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Голиафа Ронгокураи"
 	[tag]"icon path"	[value]"Rongokurai_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1692,7 +1692,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -1702,7 +1702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Черепахи Стражника"
 	[tag]"icon path"	[value]"Rongokurai_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1747,7 +1747,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Танцующего с клинками Тасалио"
 	[tag]"icon path"	[value]"Tasalio_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1769,7 +1769,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Волнореза Тасалио"
 	[tag]"icon path"	[value]"Tasalio_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1781,7 +1781,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1791,7 +1791,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Тасалио"
 	[tag]"icon path"	[value]"Tasalio_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1813,7 +1813,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Тасалио"
 	[tag]"icon path"	[value]"Tasalio_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1825,7 +1825,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -1847,7 +1847,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -1880,7 +1880,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Хранителя луны Арохонгуи"
 	[tag]"icon path"	[value]"Arohongui_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1892,7 +1892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -1902,7 +1902,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Разведчика Арохонгуи"
 	[tag]"icon path"	[value]"Arohongui_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1924,7 +1924,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Арохонгуи"
 	[tag]"icon path"	[value]"Arohongui_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1946,7 +1946,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Зачинщика войны Арохонгуи"
 	[tag]"icon path"	[value]"Arohongui_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1968,7 +1968,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Арохонгуи"
 	[tag]"icon path"	[value]"Arohongui_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -1980,7 +1980,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2013,7 +2013,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Разведчика Рамако"
 	[tag]"icon path"	[value]"Ramako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2035,7 +2035,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Лучника Рамако"
 	[tag]"icon path"	[value]"Ramako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2057,7 +2057,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Снайпера Рамако"
 	[tag]"icon path"	[value]"Ramako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2069,7 +2069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2079,7 +2079,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Гонца Рамако"
 	[tag]"icon path"	[value]"Ramako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2091,7 +2091,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -2113,7 +2113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -2146,7 +2146,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Хинекоры"
 	[tag]"icon path"	[value]"Hinekora_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2158,7 +2158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2168,7 +2168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Стража смерти Хинекоры"
 	[tag]"icon path"	[value]"Hinekora_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2190,7 +2190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Хинекоры"
 	[tag]"icon path"	[value]"Hinekora_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2212,7 +2212,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Сказителя Хинекоры"
 	[tag]"icon path"	[value]"Hinekora_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2224,7 +2224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -2234,7 +2234,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Зачинщика войны Хинекоры"
 	[tag]"icon path"	[value]"Hinekora_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2246,7 +2246,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2279,7 +2279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Натуралиста Тахоа"
 	[tag]"icon path"	[value]"Tawhoa_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2301,7 +2301,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Разведчика Тахоа"
 	[tag]"icon path"	[value]"Tawhoa_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2323,7 +2323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Тахоа"
 	[tag]"icon path"	[value]"Tawhoa_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2345,7 +2345,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Травника Тахоа"
 	[tag]"icon path"	[value]"Tawhoa_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2357,7 +2357,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -2367,7 +2367,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Травника Тахоа"
 	[tag]"icon path"	[value]"Tawhoa_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2379,7 +2379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -2412,7 +2412,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Наездника бури Валако"
 	[tag]"icon path"	[value]"Valako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2424,7 +2424,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2434,7 +2434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Разведчика Валако"
 	[tag]"icon path"	[value]"Valako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2456,7 +2456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Воина Валако"
 	[tag]"icon path"	[value]"Valako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2478,7 +2478,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Щитоносца Валако"
 	[tag]"icon path"	[value]"Valako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -2490,7 +2490,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2500,7 +2500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка Шамана Валако"
 	[tag]"icon path"	[value]"Valako_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3201,7 +3201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -3211,7 +3211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка странствия разума"
 	[tag]"icon path"	[value]"Journey_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3223,7 +3223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -3233,7 +3233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Татуировка странствия души"
 	[tag]"icon path"	[value]"Journey_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3245,7 +3245,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -3266,7 +3266,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -3276,7 +3276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание возвращения"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3297,7 +3297,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание танца со смертью"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3318,7 +3318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание восполнения"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3339,7 +3339,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание Пожирателя душ"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3382,7 +3382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание удачи"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3393,7 +3393,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -3403,7 +3403,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание златокузнеца"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3414,7 +3414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -3424,7 +3424,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание связей"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3435,7 +3435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -3456,7 +3456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -3532,7 +3532,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание адреналина"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3553,7 +3553,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание Врат Смерти"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3574,7 +3574,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание великолепия"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
@@ -3585,7 +3585,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -4127,14 +4127,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Catalyst item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -4205,13 +4205,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Catalyst item"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -4224,13 +4224,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Catalyst item"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -4261,14 +4261,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Catalyst item"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -4530,7 +4530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -4557,7 +4557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Осколок возвышени¤"
 	[tag]"icon path"	[value]"Exalted_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Currency shard"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"drop level"	[value]"35"
@@ -4565,7 +4565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -5144,8 +5144,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Trash"
 
 
 
@@ -5161,10 +5161,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -5295,10 +5295,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -5333,10 +5333,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -5448,10 +5448,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -5467,10 +5467,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -6117,10 +6117,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"8"
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -6137,10 +6137,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"35"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -6694,8 +6694,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Trash"
 
 
 
@@ -6712,8 +6712,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
 
 
 
@@ -6820,8 +6820,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
 
 
 
@@ -6921,10 +6921,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"81"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -7004,13 +7004,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Eater"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"drop level"	[value]"81"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -7055,8 +7055,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
 
 
 
@@ -7102,8 +7102,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
 
 
 
@@ -9994,7 +9994,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -10033,7 +10033,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -10310,7 +10309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -10868,7 +10867,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -11416,10 +11415,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Drox"
 	[tag]"item tag"	[value]"Loot source: Veritania"
 	[tag]"item tag"	[value]"Loot source: Sirus"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -11561,10 +11560,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Цена анархии"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -11653,10 +11652,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Искушающие ожидания"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -11785,11 +11784,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Собратья по изгнанию"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -11812,10 +11811,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Горящая кровь"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -11825,10 +11824,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Призыв Первых"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -11879,10 +11878,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Al-Hezmin"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12001,10 +12000,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пари полубога"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12166,10 +12165,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Отголоски любви"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12179,10 +12178,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Император Чистоты"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12205,10 +12204,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Выгравированные в крови"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -12232,10 +12231,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"От костей к пеплу"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -12245,10 +12244,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Новое изобретение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -12271,11 +12270,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Судьбоносная встреча"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -12404,10 +12403,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Гармония душ"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12417,11 +12416,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Преследующие тени"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12444,10 +12443,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Гетерохромия"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12496,10 +12495,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Смирение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12522,10 +12521,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Трофей охотника"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12641,10 +12640,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Свет и правда"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12654,10 +12653,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пережитки прошлого"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12839,13 +12838,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Корона Нука"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Loot source: Catarina"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -12899,10 +12898,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Гордость Первых"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -12912,10 +12911,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Кузня Прометея"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -12977,10 +12976,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Перерождение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -13003,11 +13002,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Дерзкие амбиции"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -13077,10 +13076,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Семь лет неудач"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -13159,10 +13158,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Академик"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -13172,10 +13171,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Поклонник"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13211,10 +13210,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Дюжий волшебник"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13237,11 +13236,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Тюремщик"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Fucking slave"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -13304,11 +13303,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Левиафан"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Introduced: Kalandra league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -13402,10 +13401,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Мститель"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -13415,10 +13414,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пробуждённые"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -13534,10 +13533,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Кости"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13560,10 +13559,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Хрупкий император"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -13625,10 +13624,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Картограф"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13664,10 +13663,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Небесный судья"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13729,19 +13728,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Канун бури"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"The Conduit"
-	[tag]"name RU"	[value]"Проводник"
-	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -13751,14 +13737,27 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"The Craving"
-	[tag]"name RU"	[value]"Стремление"
+	[tag]"name EN"	[value]"The Conduit"
+	[tag]"name RU"	[value]"Проводник"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"base worth"	[value]"Common"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"The Craving"
+	[tag]"name RU"	[value]"Стремление"
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13794,10 +13793,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Одарённый франт"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13846,10 +13845,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Обманщик"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13872,10 +13871,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Демон"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -13898,10 +13897,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Доктор"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -13937,10 +13936,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Сердце дракона"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -13963,10 +13962,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Страна грёз"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -14002,10 +14001,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Аномальное увядание"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14028,10 +14027,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Бесконечная тьма"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -14087,10 +14086,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Эфемерность"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14126,10 +14125,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Глаз дракона"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -14165,10 +14164,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Враг"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -14230,10 +14229,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Бесформенное море"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -14282,10 +14281,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Крикливая мощь"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14334,10 +14333,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Золотой век"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14375,10 +14374,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Крепкое сердце"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14414,10 +14413,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Героическая попытка"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14453,10 +14452,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Голод"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -14492,10 +14491,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Невинный"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14518,10 +14517,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Ненасытный"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -14559,12 +14558,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Ржавый бард"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Crucible league"
 	[tag]"item tag"	[value]"Changed in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14691,10 +14690,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Похититель жизни"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14757,10 +14756,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Владыка триумфа"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14901,10 +14900,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Медсестра"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -14940,10 +14939,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Подношение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15005,10 +15004,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пакт"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -15018,11 +15017,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пациент"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15071,10 +15070,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Дикобраз"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -15084,10 +15083,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Цена преданности"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -15110,10 +15109,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Первородный"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -15123,10 +15122,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Профессор"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15162,10 +15161,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Царица"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -15253,10 +15252,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Жертвоприношение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -15266,10 +15265,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Сокровище святоши"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -15346,10 +15345,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Сефирот"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -15359,10 +15358,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Побочное задание"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -15424,10 +15423,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Искра и пламя"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15596,10 +15595,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Престол"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -15674,10 +15673,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Луна в сумерках"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -15713,10 +15712,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Неустрашимый"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15794,10 +15793,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Простор"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -15820,10 +15819,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Ничто"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15846,10 +15845,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Воевода"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15925,10 +15924,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Ветер"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16016,10 +16015,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пожиратель миров"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -16120,10 +16119,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Спокойствие"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16146,12 +16145,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Трискайдекафобия"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Atziri"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16213,10 +16212,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Тщеславие"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16252,10 +16251,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Стихийная пустота"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -16343,7 +16342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Цена предвидения"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Al-Hezmin"
 	[tag]"item tag"	[value]"Loot source: Baran"
@@ -16351,7 +16350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Veritania"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16400,10 +16399,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Ценный раритет"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16485,10 +16484,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Энтузиасты"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16568,10 +16567,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предрассудки"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16581,10 +16580,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Кратчайший путь"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16594,10 +16593,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Шулер"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16623,10 +16622,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Aul"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -16649,7 +16648,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Многообещающие амбиции"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item tag"	[value]"Loot source: Maven"
 	[tag]"item tag"	[value]"Loot source: Elder"
@@ -16658,7 +16657,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -16696,11 +16695,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Смертельная тоска"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16724,11 +16723,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Бесконечные перемены"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16738,11 +16737,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пыльное воспоминание"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16766,11 +16765,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Завершающий штрих"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16780,11 +16779,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Отчаянный поход"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -16794,11 +16793,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Совершенный камень"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16851,11 +16850,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Князь тьмы"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16865,12 +16864,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Улов"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Deleted"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16880,11 +16879,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Вечные узы"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16950,11 +16949,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Лис в терновнике"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16992,11 +16991,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Драгоценности"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -17070,11 +17069,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Паразитирующие пассажиры"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -17084,11 +17083,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Двойственность"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -17112,11 +17111,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Преображение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -17213,11 +17212,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Утешение души"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Crucible league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -17227,10 +17226,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Отравленная вера"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Crucible league"
 	[tag]"item width"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -17240,12 +17239,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пронизывающий ветер"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Crucible league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"item width"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -17311,11 +17310,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Просители"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Introduced: Affliction league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -17339,11 +17338,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Бесконечная ночь"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Introduced: Affliction league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -18075,6 +18074,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -18273,7 +18273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -19099,6 +19099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -19910,7 +19911,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Expensive base for unique"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -19937,6 +19938,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -20383,7 +20385,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -20534,6 +20535,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -20604,6 +20606,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -20676,7 +20679,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -21062,7 +21064,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -21226,6 +21227,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -22090,6 +22092,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -22137,7 +22140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -22188,7 +22191,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -22280,7 +22282,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -22385,7 +22386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -22639,6 +22640,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -23387,7 +23389,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -23405,6 +23406,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -24160,7 +24162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -25033,6 +25035,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -28585,6 +28588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -28847,6 +28851,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -28997,7 +29002,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Expensive base for unique"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -29130,7 +29135,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -29160,6 +29164,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -29759,6 +29764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -30409,7 +30415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Expensive base for unique"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -31128,7 +31134,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -31325,7 +31330,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -31751,6 +31755,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -33116,6 +33121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -33380,6 +33386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -34375,6 +34382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -37502,6 +37510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -37608,6 +37617,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -38266,11 +38276,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пробужденный: Кольцо стрел"
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Awakened gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38295,10 +38305,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -38309,10 +38319,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -38323,10 +38333,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38351,10 +38361,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -38393,10 +38403,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38448,10 +38458,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -38490,10 +38500,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38574,10 +38584,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -38658,10 +38668,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38685,11 +38695,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Пробужденный: Манипуляция пустотой"
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Awakened gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -38702,8 +38712,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Exceptional gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
 
 
 
@@ -38730,8 +38740,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Exceptional gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -38788,8 +38798,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -39006,6 +39016,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -39461,10 +39472,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -39661,10 +39672,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Loot source: Chimera"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -39678,10 +39689,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Loot source: Hydra"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -39695,10 +39706,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Loot source: Minotaur"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -39712,10 +39723,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Loot source: Phoenix"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -39982,8 +39993,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Uber Atziri"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
 
 
 
@@ -39999,8 +40010,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Uber Atziri"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Rare"
 
 
 
@@ -41196,8 +41207,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -41213,8 +41224,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -41230,8 +41241,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -41247,8 +41258,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -41360,8 +41371,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
 
 
 
@@ -41376,8 +41387,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -41392,8 +41403,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -41517,8 +41528,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -41535,8 +41546,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -41553,8 +41564,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Drox"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -41571,8 +41582,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Veritania"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -42055,8 +42066,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Moderate"
 
 
 
@@ -42111,8 +42122,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -42230,11 +42241,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Basic"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -42247,11 +42258,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -42298,11 +42309,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42315,11 +42326,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Basic"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42366,11 +42377,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42383,11 +42394,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -42434,11 +42445,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -42502,11 +42513,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -42672,11 +42683,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -42740,11 +42751,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Basic"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42808,11 +42819,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42876,11 +42887,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -42944,11 +42955,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -42995,11 +43006,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43199,11 +43210,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43233,11 +43244,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -43250,11 +43261,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Basic"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43284,11 +43295,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43318,11 +43329,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43352,11 +43363,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -43675,11 +43686,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -43828,11 +43839,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43862,11 +43873,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"scarab tier"	[value]"Bonus"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -43913,11 +43924,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Special"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -43981,11 +43992,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Horned"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -44033,11 +44044,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Scarab item"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
 	[tag]"scarab tier"	[value]"Horned"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -44573,8 +44584,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Kalandra league"
 	[tag]"item tag"	[value]"Harvest seed"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -44611,8 +44622,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Kalandra league"
 	[tag]"item tag"	[value]"Harvest seed"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -44631,8 +44642,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Kalandra league"
 	[tag]"item tag"	[value]"Harvest seed"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -46485,10 +46496,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -46541,10 +46552,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -46569,10 +46580,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -46751,10 +46762,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -46919,10 +46930,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -46961,10 +46972,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -47003,10 +47014,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -47017,10 +47028,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -47031,10 +47042,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -47045,10 +47056,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -47129,10 +47140,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -47356,8 +47367,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"tainted-pact-coral-amulet"
 
 
@@ -47374,8 +47385,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"tavukai-coral-amulet"
 
 
@@ -47633,8 +47644,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"marylenes-fallacy-lapis-amulet"
 
 
@@ -47725,8 +47736,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Affliction"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-untouched-soul-gold-amulet"
 
 
@@ -47743,8 +47754,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"perquils-toe-gold-amulet"
 
 
@@ -47818,8 +47829,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach loot"
 	[tag]"item tag"	[value]"Loot source: Xoph"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"xophs-heart-amber-amulet"
 
 
@@ -47872,8 +47883,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Cannot drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"xophs-blood-amber-amulet"
 
 
@@ -47908,8 +47919,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"blightwell-clutching-talisman"
 
 
@@ -48072,8 +48083,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"badge-of-the-brotherhood-turquoise-amulet"
 
 
@@ -48108,8 +48119,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Sanctum"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"eternal-damnation-agate-amulet"
 
 
@@ -48144,8 +48155,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"volls-devotion-agate-amulet"
 
 
@@ -48399,8 +48410,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"ashes-of-the-stars-onyx-amulet"
 
 
@@ -48588,8 +48599,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"yoke-of-suffering-onyx-amulet"
 
 
@@ -48643,8 +48654,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"gloomfang-blue-pearl-amulet"
 
 
@@ -48807,8 +48818,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Elder"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"cyclopean-coil-leather-belt"
 
 
@@ -48917,8 +48928,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"soulthirst-cloth-belt"
 
 
@@ -48971,8 +48982,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-flow-untethered-cloth-belt"
 
 
@@ -49192,8 +49203,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"dyadian-dawn-heavy-belt"
 
 
@@ -49376,8 +49387,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"cowards-chains-chain-belt"
 
 
@@ -49450,8 +49461,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"ryslathas-coil-studded-belt"
 
 
@@ -49525,8 +49536,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"auxium-crystal-belt"
 
 
@@ -49579,8 +49590,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"andvarius-gold-ring"
 
 
@@ -49672,8 +49683,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"dream-fragments-sapphire-ring"
 
 
@@ -49711,8 +49722,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Delve Architect"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"uzazas-meadow-sapphire-ring"
 
 
@@ -49824,8 +49835,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"death-rush-amethyst-ring"
 
 
@@ -49918,8 +49929,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"emberwake-ruby-ring"
 
 
@@ -49999,8 +50010,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"warriors-legacy-ruby-ring"
 
 
@@ -50017,8 +50028,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"blackheart-iron-ring"
 
 
@@ -50145,8 +50156,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"storm-secret-topaz-ring"
 
 
@@ -50465,8 +50476,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Map boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"redblade-band-unset-ring"
 
 
@@ -50484,8 +50495,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Map boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"rotblood-promise-unset-ring"
 
 
@@ -50556,8 +50567,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"bereks-pass-two-stone-ring"
 
 
@@ -50628,8 +50639,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tawhanukus-timing-moonstone-ring"
 
 
@@ -50646,8 +50657,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"timeclasp-moonstone-ring"
 
 
@@ -50682,8 +50693,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"shavronnes-revelation-moonstone-ring"
 
 
@@ -50701,8 +50712,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"anathema-moonstone-ring"
 
 
@@ -50737,8 +50748,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"praxis-paua-ring"
 
 
@@ -50810,8 +50821,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"fated-end-paua-ring"
 
 
@@ -50867,8 +50878,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"stormfire-opal-ring"
 
 
@@ -50905,8 +50916,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Small Exarch"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"polaric-devastation-opal-ring"
 
 
@@ -51148,8 +51159,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"deaths-harp-death-bow"
 
 
@@ -51313,8 +51324,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"reach-of-the-council-spine-bow"
 
 
@@ -51331,8 +51342,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"voltaxic-rift-spine-bow"
 
 
@@ -51368,8 +51379,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"nulls-inclination-ranger-bow"
 
 
@@ -51387,8 +51398,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Elder"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"hopeshredder-ranger-bow"
 
 
@@ -51405,8 +51416,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"windripper-imperial-bow"
 
 
@@ -51678,8 +51689,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"law-of-the-wilds-hellions-paw"
 
 
@@ -51696,8 +51707,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"bloodseeker-hellions-paw"
 
 
@@ -51804,8 +51815,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"heartbreaker-royal-skean"
 
 
@@ -51840,8 +51851,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-consuming-dark-fiend-dagger"
 
 
@@ -52020,8 +52031,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"cold-iron-point-ezomyte-dagger"
 
 
@@ -52185,8 +52196,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"soul-taker-siege-axe"
 
 
@@ -52553,8 +52564,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-supreme-truth-crystal-sceptre"
 
 
@@ -52571,8 +52582,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"montreguls-grasp-void-sceptre"
 
 
@@ -52740,8 +52751,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"brutus-lead-sprinkler-ritual-sceptre"
 
 
@@ -52908,8 +52919,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Phoenix"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"razor-of-the-seventh-sun-midnight-blade"
 
 
@@ -53203,8 +53214,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"varunastra-vaal-blade"
 
 
@@ -53221,8 +53232,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"ephemeral-edge-dusk-blade"
 
 
@@ -53240,8 +53251,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Chayula"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"severed-in-sleep-cutlass"
 
 
@@ -53369,8 +53380,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"rakiatas-dance-engraved-greatsword"
 
 
@@ -53441,8 +53452,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"the-winds-of-fate-foul-staff"
 
 
@@ -53811,8 +53822,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"the-searing-touch-lathi"
 
 
@@ -53884,8 +53895,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Harvest"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"witchhunters-judgment-highborn-staff"
 
 
@@ -54071,8 +54082,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"hezmanas-bloodlust-vaal-axe"
 
 
@@ -54091,8 +54102,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Uul-Netol"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"uul-netols-kiss-vaal-axe"
 
 
@@ -54146,8 +54157,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"ngamahus-flame-abyssal-axe"
 
 
@@ -54164,8 +54175,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"kitavas-feast-void-axe"
 
 
@@ -54200,8 +54211,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"marohi-erqi-karui-maul"
 
 
@@ -54348,8 +54359,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Minotaur"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"brain-rattler-meatgrinder"
 
 
@@ -54496,8 +54507,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Uber Maven drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"echoforge-infernal-sword"
 
 
@@ -54643,8 +54654,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"apeps-rage-omen-wand"
 
 
@@ -54716,8 +54727,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"relic-of-the-pact-sage-wand"
 
 
@@ -54755,8 +54766,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Tul"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"jack-the-axe-vaal-hatchet"
 
 
@@ -55011,8 +55022,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"the-restless-ward-carnal-armour"
 
 
@@ -55448,8 +55459,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"greeds-embrace-golden-plate"
 
 
@@ -55559,8 +55570,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"daressos-defiance-full-dragonscale"
 
 
@@ -55595,8 +55606,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"tinkerskin-sadist-garb"
 
 
@@ -55668,8 +55679,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-ivory-tower-saints-hauberk"
 
 
@@ -55686,8 +55697,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"queen-of-the-forest-destiny-leather"
 
 
@@ -55704,8 +55715,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"perfidy-glorious-plate"
 
 
@@ -55740,8 +55751,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"doedres-skin-widowsilk-robe"
 
 
@@ -55776,8 +55787,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"cospris-will-assassins-garb"
 
 
@@ -55794,8 +55805,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"carcass-jack-varnished-coat"
 
 
@@ -55962,8 +55973,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-iron-fortress-crusader-plate"
 
 
@@ -56018,8 +56029,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"doryanis-prototype-saints-hauberk"
 
 
@@ -56093,8 +56104,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"inpulsas-broken-heart-sadist-garb"
 
 
@@ -56130,8 +56141,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"fleshcrafter-necromancer-silks"
 
 
@@ -56150,7 +56161,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
 	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-eternity-shroud-blood-raiment"
 
 
@@ -56279,8 +56290,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Farrul"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"farruls-fur-triumphant-lamellar"
 
 
@@ -56297,8 +56308,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"cloak-of-tawmr-isley-savants-robe"
 
 
@@ -56351,8 +56362,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"diallas-malefaction-sages-robe"
 
 
@@ -56571,8 +56582,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"march-of-the-legion-legion-boots"
 
 
@@ -56826,8 +56837,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"kaoms-roots-titan-greaves"
 
 
@@ -56845,8 +56856,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"inextricable-fate-fugitive-boots"
 
 
@@ -56940,8 +56951,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"dawnstrider-vaal-greaves"
 
 
@@ -56958,8 +56969,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"brinerot-whalers-trapper-boots"
 
 
@@ -56976,8 +56987,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"beacon-of-madness-two-toned-boots"
 
 
@@ -57015,8 +57026,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Saqawal"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"saqawals-talons-hydrascale-boots"
 
 
@@ -57184,8 +57195,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"olroths-charge-runic-sollerets"
 
 
@@ -57335,8 +57346,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"corpsewalker-carnal-boots"
 
 
@@ -57429,8 +57440,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"ralakeshs-impatience-riveted-boots"
 
 
@@ -57795,8 +57806,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"malachais-mark-murder-mitts"
 
 
@@ -58051,8 +58062,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"hrimsorrow-goathide-gloves"
 
 
@@ -58164,8 +58175,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"aurseize-steelscale-gauntlets"
 
 
@@ -58200,8 +58211,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"volkuurs-guidance-fire-zealot-gloves"
 
 
@@ -58255,8 +58266,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"nightgrip-runic-gages"
 
 
@@ -58274,8 +58285,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"vaal-caress-bronzescale-gauntlets"
 
 
@@ -58311,8 +58322,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"repentance-crusader-gloves"
 
 
@@ -58349,8 +58360,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"maligaros-virtuosity-deerskin-gloves"
 
 
@@ -58368,8 +58379,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Small Eater"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"ceaseless-feast-spiked-gloves"
 
 
@@ -58387,8 +58398,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Small Eater"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"black-zenith-fingerless-silk-gloves"
 
 
@@ -58425,8 +58436,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"doryanis-fist-vaal-gauntlets"
 
 
@@ -58444,8 +58455,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"haemophilia-serpentscale-gauntlets"
 
 
@@ -58462,8 +58473,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"breathstealer-hydrascale-gauntlets"
 
 
@@ -58480,8 +58491,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"winds-of-change-ancient-gauntlets"
 
 
@@ -58498,8 +58509,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"vixens-entrapment-embroidered-gloves"
 
 
@@ -58516,8 +58527,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"thunderfist-murder-mitts"
 
 
@@ -58534,8 +58545,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"storms-gift-assassins-mitts"
 
 
@@ -58591,8 +58602,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"machina-mitts-murder-mitts"
 
 
@@ -58669,8 +58680,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"asenaths-gentle-touch-silk-gloves"
 
 
@@ -58706,8 +58717,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sirus"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"hands-of-the-high-templar-crusader-gloves"
 
 
@@ -58725,8 +58736,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Atziri"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"atziris-acuity-vaal-gauntlets"
 
 
@@ -58891,8 +58902,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"willclash-golden-mask"
 
 
@@ -58928,8 +58939,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"thrillsteel-barbute-helmet"
 
 
@@ -59127,8 +59138,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"kitavas-thirst-zealot-helmet"
 
 
@@ -59219,8 +59230,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"geofris-crest-great-crown"
 
 
@@ -59364,8 +59375,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"curtain-call-plague-mask"
 
 
@@ -59544,8 +59555,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"maw-of-conquest-steel-circlet"
 
 
@@ -59562,8 +59573,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"the-bringer-of-rain-nightmare-bascinet"
 
 
@@ -59616,8 +59627,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"leer-cast-festival-mask"
 
 
@@ -59670,8 +59681,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"usurpers-penance-eternal-burgonet"
 
 
@@ -59688,8 +59699,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"thundersight-solaris-circlet"
 
 
@@ -59799,8 +59810,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Small Exarch"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"sudden-dawn-steel-circlet"
 
 
@@ -59836,8 +59847,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"heretics-veil-deicide-mask"
 
 
@@ -59855,8 +59866,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Delve Lich"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"hale-negator-mind-cage"
 
 
@@ -60005,8 +60016,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"cowl-of-the-ceraunophile-solaris-circlet"
 
 
@@ -60097,8 +60108,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"cowl-of-the-cryophile-silken-hood"
 
 
@@ -60116,8 +60127,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"cadigans-crown-runic-crown"
 
 
@@ -60245,8 +60256,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Beast drop"
 	[tag]"item tag"	[value]"Loot source: Farrul"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"farruls-bite-harlequin-mask"
 
 
@@ -60263,8 +60274,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"cowl-of-the-thermophile-ezomyte-burgonet"
 
 
@@ -60321,8 +60332,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
 	[tag]"item tag"	[value]"Logbook drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"faithguard-runic-helm"
 
 
@@ -60394,8 +60405,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"mask-of-the-spirit-drinker-magistrate-crown"
 
 
@@ -60449,8 +60460,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"indigon-hubris-circlet"
 
 
@@ -60468,8 +60479,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Harvest"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"forbidden-shako-great-crown"
 
 
@@ -60487,8 +60498,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Delve Aul"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"crown-of-the-tyrant-magistrate-crown"
 
 
@@ -60543,8 +60554,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"sandstorm-visage-necromancer-circlet"
 
 
@@ -60743,8 +60754,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"hyrris-bite-sharktooth-arrow-quiver"
 
 
@@ -60816,8 +60827,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"rigwalds-quills-two-point-arrow-quiver"
 
 
@@ -61414,8 +61425,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"mistwall-lacquered-buckler"
 
 
@@ -61487,8 +61498,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"lycosidae-rawhide-tower-shield"
 
 
@@ -61543,8 +61554,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"tukohamas-fortress-ebony-tower-shield"
 
 
@@ -61637,8 +61648,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-scales-of-justice-chiming-spirit-shield"
 
 
@@ -61655,8 +61666,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"unyielding-flame-archon-kite-shield"
 
 
@@ -61747,8 +61758,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"broken-faith-archon-kite-shield"
 
 
@@ -61765,8 +61776,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"font-of-thunder-mirrored-spiked-shield"
 
 
@@ -61819,8 +61830,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"prism-guardian-archon-kite-shield"
 
 
@@ -61893,8 +61904,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Uul-Netol"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-anticipation-ezomyte-tower-shield"
 
 
@@ -61949,8 +61960,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"mahuxotls-machination-steel-kite-shield"
 
 
@@ -61968,8 +61979,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"All sockets white"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"the-squire-elegant-round-shield"
 
 
@@ -62134,8 +62145,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Expedition"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"voranas-preparation"
 
 
@@ -62152,8 +62163,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"elixir-of-the-unbroken-circle"
 
 
@@ -62170,8 +62181,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"olroths-resolve"
 
 
@@ -62188,8 +62199,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"starlight-chalice"
 
 
@@ -62224,8 +62235,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"zerphis-last-breath"
 
 
@@ -62462,8 +62473,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"witchfire-brew"
 
 
@@ -62735,8 +62746,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"stormshroud-viridian-jewel"
 
 
@@ -62753,8 +62764,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"lioneyes-fall-viridian-jewel"
 
 
@@ -62772,8 +62783,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Uber Breach"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"the-green-nightmare-viridian-jewel"
 
 
@@ -62812,8 +62823,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Uber Elder"
 	[tag]"item tag"	[value]"Loot source: Uber Uber Elder"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"watchers-eye-prismatic-jewel"
 
 
@@ -62849,8 +62860,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"forbidden-flame-crimson-jewel"
 
 
@@ -62904,8 +62915,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"quickening-covenant-viridian-jewel"
 
 
@@ -62922,8 +62933,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"rain-of-splinters-crimson-jewel"
 
 
@@ -63015,8 +63026,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"brutal-restraint-timeless-jewel"
 
 
@@ -63125,8 +63136,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Uber Breach"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"the-blue-nightmare-cobalt-jewel"
 
 
@@ -63288,8 +63299,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Exarch"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"melding-of-the-flesh-cobalt-jewel"
 
 
@@ -63306,8 +63317,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"dead-reckoning-cobalt-jewel"
 
 
@@ -63361,8 +63372,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"seething-fury-viridian-jewel"
 
 
@@ -63379,8 +63390,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"glorious-vanity-timeless-jewel"
 
 
@@ -63654,8 +63665,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Chayula"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-green-dream-viridian-jewel"
 
 
@@ -63781,8 +63792,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"chill-of-corruption-viridian-jewel"
 
 
@@ -63980,8 +63991,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"tempered-spirit-viridian-jewel"
 
 
@@ -64052,8 +64063,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"efficient-training-crimson-jewel"
 
 
@@ -64106,8 +64117,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"inertia-crimson-jewel"
 
 
@@ -64124,8 +64135,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"pacifism-viridian-jewel"
 
 
@@ -64178,8 +64189,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"powerlessness-cobalt-jewel"
 
 
