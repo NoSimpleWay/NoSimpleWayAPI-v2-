@@ -180,7 +180,8 @@ public:
 	//std::vector<DataEntityTagFilter>	data_entity_tag_banned_tag_list;
 
 	std::vector<EntityButtonWideItem*>	attached_game_item_buttons;
-	bool is_pattern_filter = false;
+	bool is_pattern_filter	= false;
+	bool is_part_of_pattern	= false;
 
 
 	~EntityButtonWideItem();
@@ -589,6 +590,9 @@ class EButtonGroupFilterBlockEditor : public EButtonGroup
 public:
 	EButtonGroupFilterBlockEditor(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 	void button_group_prechange() override;
+
+
+	void reinit_all_filter_rule_pattern_buttons();
 };
 
 class EButtonGroupNewLootFilter : public EButtonGroup
@@ -654,14 +658,22 @@ public:
 	EntityButton* main_input_field;
 	EntityButton* add_as_item_button;
 
-	EButtonGroup* main_left_side			= nullptr;
-	EButtonGroup* right_side_for_filters	= nullptr;
-	EButtonGroup* right_side_for_configure	= nullptr;
+	EButtonGroup* main_left_side							= nullptr;
+	EButtonGroup* right_side_for_filters					= nullptr;
+	EButtonGroup* right_side_for_configure					= nullptr;
+	EButtonGroup* top_side_for_add_pattern_button			= nullptr;
+
+	EntityButtonWideItem* target_filter_rule_pattern_button	= nullptr;
 
 	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	void button_group_update(float _d) override;
 	void background_update(float _d);
+
+	void show_only_suitable_buttons();
+
+	void prepare_for_filter_pattern(EntityButtonWideItem* _wide_button);
+	void prepare_for_default_use();
 
 	EButtonGroup* focused_part = nullptr;
 };
@@ -903,11 +915,11 @@ public:
 	int	selected_blue_weight			= 100.0f;
 	int	selected_white_weight			= 0.0f;
 
-	int	selected_quantity				= 1.0f;
-	int	selected_corrupted_implicits	= 0.0f;
-	int	selected_exarch_level			= 0.0f;
-	int	selected_eater_level			= 0.0f;
-	int	selected_area_level				= 1.0f;
+	int	selected_quantity				= 1;
+	int	selected_corrupted_implicits	= -1;
+	int	selected_exarch_level			= 0;
+	int	selected_eater_level			= 0;
+	int	selected_area_level				= 1;
 
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
@@ -1304,6 +1316,11 @@ namespace EDataActionCollection
 
 	void action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void action_configure_pattern_filter_rule(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+
+
 	//LOOT SIMULATOR ATTRIBUTES AFFIXES
 	void action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_affix_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -1350,6 +1367,8 @@ namespace EDataActionCollection
 
 	//close button grup
 	void action_on_closing_loot_versions_window(EButtonGroup* _group);
+	void action_on_closing_data_entity_group(EButtonGroup* _group);
+
 }
 
 

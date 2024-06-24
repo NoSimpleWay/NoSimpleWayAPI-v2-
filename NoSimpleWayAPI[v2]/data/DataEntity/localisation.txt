@@ -3501,3 +3501,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_add_filter_as_button"
 	[tag]"name EN"		[value]"Add as pattern"
 	[tag]"name RU"		[value]"Добавить как шаблон"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_selected_pattern"
+	[tag]"name EN"		[value]"Filter rule"
+	[tag]"name RU"		[value]"Правило фильтрации"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tattoo_color_red"
+	[tag]"name EN"		[value]"Red"
+	[tag]"name RU"		[value]"Красные"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tattoo_color_green"
+	[tag]"name EN"		[value]"Green"
+	[tag]"name RU"		[value]"Зелёные"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tattoo_color_blue"
+	[tag]"name EN"		[value]"Blue"
+	[tag]"name RU"		[value]"Синие"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tattoo_color_special"
+	[tag]"name EN"		[value]"Special"
+	[tag]"name RU"		[value]"Особые"

@@ -1574,9 +1574,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Affliction"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1602,8 +1603,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1629,8 +1631,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1656,8 +1659,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1683,8 +1687,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1746,8 +1751,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1773,8 +1779,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1800,8 +1807,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1827,8 +1835,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	
-	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1855,6 +1864,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1914,6 +1925,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -1939,6 +1952,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -1966,6 +1981,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -1992,6 +2009,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2017,6 +2036,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2080,6 +2101,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2106,6 +2129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2134,6 +2159,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2161,6 +2188,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2187,6 +2216,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Red"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2252,6 +2283,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2304,6 +2337,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2355,6 +2390,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Green"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2414,6 +2451,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2439,6 +2478,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Green"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2466,6 +2507,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2492,6 +2535,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2517,6 +2562,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2578,6 +2625,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2603,6 +2652,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Green"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2630,6 +2681,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2656,6 +2709,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2681,6 +2736,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Green"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2747,6 +2804,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2772,6 +2831,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2799,6 +2860,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2823,6 +2886,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tattoo"
 	[tag]"item tag"		[value]"Regular tattoo"
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2850,6 +2915,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2915,6 +2982,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2942,6 +3011,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Green"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -2971,6 +3042,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -2999,6 +3072,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -3024,6 +3099,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3086,6 +3163,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -3111,6 +3190,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -3138,6 +3219,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Blue"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -3164,6 +3247,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Red"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -3189,6 +3274,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Regular tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Blue"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -4040,6 +4127,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Special"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -4066,6 +4155,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Special"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
@@ -4091,6 +4182,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Journey tattoo"
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
+	
+	[tag]"tattoo color"		[value]"Special"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"

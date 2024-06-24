@@ -65,7 +65,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -82,7 +81,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Special fragment"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -98,7 +96,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Special fragment"
 	[tag]"item tag"		[value]"League: Ritual"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -128,7 +125,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Boss drop"
 
@@ -146,7 +142,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -166,7 +161,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Boss drop"
 
@@ -184,7 +178,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Boss drop"
 
@@ -207,7 +200,6 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Rare"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -223,7 +215,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Boss drop"
 
@@ -246,7 +237,6 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Rare"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -262,7 +252,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -282,7 +271,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Chimera"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -302,7 +290,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Hydra"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -322,7 +309,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Minotaur"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -342,7 +328,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Phoenix"
 	[tag]"item tag"		[value]"Boss drop"
 		
@@ -362,7 +347,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -381,7 +365,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -400,7 +383,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -419,7 +401,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -438,7 +419,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -457,7 +437,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -475,7 +454,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Necropolis"
 
@@ -492,7 +470,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -532,7 +509,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -551,7 +527,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -570,7 +545,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -591,7 +565,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -610,7 +583,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -643,7 +615,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
@@ -661,7 +632,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
@@ -679,7 +649,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
@@ -697,7 +666,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
@@ -715,7 +683,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -734,7 +701,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -753,7 +719,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -772,7 +737,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -791,7 +755,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -810,7 +773,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -829,7 +791,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -848,7 +809,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -867,7 +827,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -907,7 +866,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -926,7 +884,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -945,7 +902,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -964,7 +920,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -983,7 +938,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Necropolis"
 
@@ -1368,7 +1322,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"League: Ritual"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1401,7 +1354,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Necropolis"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1420,7 +1372,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1439,7 +1390,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1458,7 +1408,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1477,7 +1426,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1496,7 +1444,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1515,7 +1462,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1534,7 +1480,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1553,7 +1498,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1593,7 +1537,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1612,7 +1555,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1631,7 +1573,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1650,7 +1591,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1669,7 +1609,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -1700,7 +1639,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Dedication to the Goddess"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1713,7 +1651,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gift-to-the-Goddess"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1726,7 +1663,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tribute-to-the-Goddess"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2142,7 +2078,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2159,7 +2094,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2176,7 +2110,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2193,7 +2126,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2210,7 +2142,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2340,7 +2271,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2358,7 +2288,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2375,7 +2304,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2393,7 +2321,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2409,7 +2336,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2441,7 +2367,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2461,7 +2386,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2478,7 +2402,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Drox"
@@ -2498,7 +2421,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"item tag"		[value]"Piece of set"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Veritania"
@@ -2517,7 +2439,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2534,7 +2455,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Boss drop"
 		
 	[tag]"worth"		[value]"Rare"
@@ -2553,7 +2473,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2569,7 +2488,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2584,7 +2502,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2599,7 +2516,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2614,7 +2530,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2629,7 +2544,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2644,7 +2558,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2659,7 +2572,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2674,7 +2586,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2689,7 +2600,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2704,7 +2614,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2741,7 +2650,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -2762,7 +2670,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 	
@@ -2785,7 +2692,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -2806,7 +2712,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -2827,7 +2732,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -2847,7 +2751,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -2888,7 +2791,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -2907,7 +2809,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -2926,7 +2827,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -2963,7 +2863,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Polished"
 	[tag]"item tag"		[value]"Deleted"
@@ -2982,7 +2881,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 	[tag]"item tag"		[value]"Deleted"
@@ -3001,7 +2899,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"
 	[tag]"item tag"		[value]"Deleted"
@@ -3020,7 +2917,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Templar_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -3035,7 +2931,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Vaal_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -3050,7 +2945,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Eternal_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3063,7 +2957,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Karui_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3078,7 +2971,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Maraketh_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3091,7 +2983,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"sacred_blossom"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3115,7 +3006,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"cosmic_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3131,7 +3021,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Decaying_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3147,7 +3036,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakening_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3163,7 +3051,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Synthesising_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3179,7 +3066,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Reality_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3195,7 +3081,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blazing_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3211,7 +3096,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Devouring_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3237,7 +3121,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3257,7 +3140,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3277,7 +3159,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3297,7 +3178,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3317,7 +3197,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3342,7 +3221,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3362,7 +3240,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3382,7 +3259,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3402,7 +3278,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3422,7 +3297,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3447,7 +3321,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3467,7 +3340,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3487,7 +3359,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3511,7 +3382,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3531,7 +3401,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3551,7 +3420,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3571,7 +3439,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3598,7 +3465,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3618,7 +3484,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3638,7 +3503,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3658,7 +3522,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3684,7 +3547,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3704,7 +3566,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3724,7 +3585,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3751,7 +3611,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3771,10 +3630,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Expensive"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Bonus"
 
@@ -3791,10 +3650,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Expensive"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Bonus"
 
@@ -3819,7 +3678,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3839,7 +3697,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3859,7 +3716,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3887,7 +3743,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3907,7 +3762,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3927,7 +3781,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3947,7 +3800,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3967,7 +3819,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3994,7 +3845,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4014,7 +3864,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4034,7 +3883,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4054,7 +3902,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4084,7 +3931,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4104,7 +3950,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4124,7 +3969,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4144,7 +3988,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4164,7 +4007,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4193,7 +4035,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4213,7 +4054,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4233,7 +4073,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4253,7 +4092,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4273,7 +4111,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4300,7 +4137,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4320,7 +4156,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4341,7 +4176,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4361,7 +4195,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4388,7 +4221,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4408,7 +4240,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4428,7 +4259,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4455,7 +4285,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4475,7 +4304,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4495,7 +4323,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4515,7 +4342,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4544,7 +4370,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4564,7 +4389,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4584,7 +4408,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4604,7 +4427,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4633,7 +4455,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4653,7 +4474,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4673,7 +4493,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4704,7 +4523,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4724,7 +4542,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4744,7 +4561,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4776,7 +4592,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4796,7 +4611,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4816,7 +4630,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4836,7 +4649,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4868,7 +4680,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4888,7 +4699,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4908,7 +4718,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4928,7 +4737,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4956,7 +4764,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4976,7 +4783,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4996,7 +4802,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5016,7 +4821,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5036,7 +4840,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5069,7 +4872,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5089,7 +4891,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5109,7 +4910,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5129,7 +4929,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5149,7 +4948,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5177,7 +4975,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5197,7 +4994,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5217,7 +5013,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5237,7 +5032,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5257,7 +5051,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5289,7 +5082,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5309,7 +5101,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5329,7 +5120,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5349,7 +5139,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5369,7 +5158,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5396,7 +5184,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5416,7 +5203,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5436,7 +5222,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5456,7 +5241,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5476,13 +5260,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	
 	[tag]"scarab tier"	[value]"Horned"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5497,7 +5281,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
@@ -5518,13 +5301,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	
 	[tag]"scarab tier"	[value]"Horned"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5539,7 +5322,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5561,7 +5343,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
@@ -5582,7 +5363,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
@@ -5603,7 +5383,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Rare"

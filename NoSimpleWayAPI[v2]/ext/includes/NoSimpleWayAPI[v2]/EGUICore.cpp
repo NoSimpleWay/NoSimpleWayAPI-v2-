@@ -974,16 +974,15 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (need_change)
 	{
-		EButtonGroup::change_group(this);
-
 		need_change = false;
+		EButtonGroup::change_group(this);
 	}
 
 	bool any_button_order_change = false;
 
 	if (!all_button_list.empty())
 		for (unsigned int i = 0; i < all_button_list.size(); i++)
-			if (all_button_list[i]->entity_need_remove)
+			if ((all_button_list[i]->entity_need_remove) && (is_in_visible_diapason()))
 			{
 				any_button_order_change = true;
 
@@ -997,7 +996,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (any_button_order_change)
 	{
-		EButtonGroup::change_group(this);
+		need_change = true; // EButtonGroup::change_group(this);
 	}
 
 
@@ -2661,19 +2660,21 @@ void EButtonGroup::button_group_prechange()
 
 void EButtonGroup::change_group(EButtonGroup* _group)
 {
-	_group->recursive_reset_phantom_translate();
+	
 
 	//_group->highlight_this_group_green_info();
 
 	if
-		(
-			(_group->is_this_group_active())
-			&&
-			((_group->is_in_visible_diapason()) || (true))
-			&&
-			(!_group->block_need_remove)
-			)
+	(
+		(_group->is_this_group_active())
+		&&
+		((_group->is_in_visible_diapason()) || (true))
+		&&
+		(!_group->block_need_remove)
+	)
 	{
+		_group->recursive_reset_phantom_translate();
+
 		recursive_change_group_first_pass(_group);
 		//recursive_change_group_first_pass(_group);
 
@@ -2878,11 +2879,11 @@ void EButtonGroup::button_group_postchange()
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 	if
-		(
-			(_group->is_this_group_active())
-			&&
-			(!_group->block_need_remove)
-			)
+	(
+		(_group->is_this_group_active())
+		&&
+		(!_group->block_need_remove)
+	)
 	{
 		_group->recursive_expand_to_workspace_size();
 		change_group(_group);

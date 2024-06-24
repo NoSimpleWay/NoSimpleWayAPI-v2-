@@ -43,6 +43,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пояса"
 	
 	[tag]"short name"	[value]"Belt"
+	
+	[tag]"can be"		[value]"Synthesised"
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Replica"
+	[tag]"can be"		[value]"Quality"
+	[tag]"can be"		[value]"Influenced"
 
 	[tag]"icon path"	[value]"class_belts"
 	

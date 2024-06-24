@@ -588,7 +588,6 @@ REGISTER_NEW_PATTERN
 name_EN	"Returned items"
 name_RU	"Возвращённые предметы"
 icon	"data/textures/icons/Honoured_tattoo.png"
-cannot_be_configured
 rarity_override	2
 
 REGISTER_NEW_GENERATOR
@@ -601,11 +600,17 @@ generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
+tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Returned in Necropolis"
 DETF_color	255	230	204	255
 
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"tattoo color"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
@@ -615,8 +620,72 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"tattoo color"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Red"
+DETF_localised_attribute_name_EN	"Red"
+DETF_localised_attribute_name_RU	"Красные"
+DETF_color	255	200	200	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Green"
+DETF_localised_attribute_name_EN	"Green"
+DETF_localised_attribute_name_RU	"Зелёные"
+DETF_color	200	255	200	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Blue"
+DETF_localised_attribute_name_EN	"Blue"
+DETF_localised_attribute_name_RU	"Синие"
+DETF_color	200	200	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Special"
+DETF_localised_attribute_name_EN	"Special"
+DETF_localised_attribute_name_RU	"Особые"
+DETF_color	255	255	200	255
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
 
 
 
