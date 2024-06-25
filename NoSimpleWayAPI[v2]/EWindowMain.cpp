@@ -3451,11 +3451,18 @@ void EDataActionCollection::action_configure_pattern_filter_rule(Entity* _entity
 	{
 		EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
 
-		if (button_rule->target_filter_rule->tag == "*ALL*")
+		if
+		(
+			(button_rule->target_filter_rule->always_show)
+			||
+			(EInputCore::key_pressed(GLFW_KEY_TAB))
+		)
 		{button_rule->entity_disabled = false;}
 		else
 		{button_rule->entity_disabled = true;}
 	}
+
+	EWindowMain::data_entity_filter->need_refresh = true;
 
 	EButtonGroup*			right_side_group			= EWindowMain::data_entity_filter->right_side_for_filters;
 	EntityButtonFilterRule* filter_rule_button			= static_cast<EntityButtonFilterRule*>(right_side_group->workspace_button_list[0]);
@@ -8492,6 +8499,8 @@ EWindowMain::EWindowMain()
 
 
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/stackable_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/omens.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/tattoos.txt");
 
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/delve_stackable_socketable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/oils.txt");
@@ -11832,16 +11841,17 @@ void EWindowMain::register_filter_rules()
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//ALL ITEMS
+	//FILTER RULE
 	{
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("undefined_item");
 		jc_filter_rule->category_id = 0;
+		jc_filter_rule->always_show = true;
 
 		//jc_filter_rule->localisation_text = new ELocalisationText();
 		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Filter rule";
 		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Правило фильтрации";
-		jc_filter_rule->tag = "*ALL*";
+		jc_filter_rule->tag = "Filter rule";
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
@@ -12210,6 +12220,70 @@ void EWindowMain::register_filter_rules()
 		jc_filter.can_be_configured = false;
 		jc_filter.target_tag.set_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Tattoo");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//NECROPOLIS OMENS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Omen");
+		jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Necropolis:\\Omens";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Некрополис:\\nПредсказания";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "necropolis folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by worth
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash",			ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common",			ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate",		ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare",			ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive",		ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive",	ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Omen");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -24736,7 +24810,7 @@ void EntityButtonWideItem::reinit_as_pattern_item_button(EFilterRule* _filter_ru
 
 	if (attached_filter_rule == nullptr) { attached_filter_rule = new EFilterRule(); }
 	*attached_filter_rule = *_filter_rule;
-
+	attached_filter_rule->always_show = true;
 	int button_position = -1;
 	for (int i = 0; i < _target_group->workspace_button_list.size(); i++)
 	{

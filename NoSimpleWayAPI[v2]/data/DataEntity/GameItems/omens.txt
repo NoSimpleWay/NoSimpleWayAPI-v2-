@@ -1,0 +1,406 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Amelioration"
+	[tag]"name RU"		[value]"Предсказание избавления"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Return"
+	[tag]"name RU"		[value]"Предсказание возвращения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Death-dancing"
+	[tag]"name RU"		[value]"Предсказание танца со смертью"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Refreshment"
+	[tag]"name RU"		[value]"Предсказание восполнения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of the Soul Devourer"
+	[tag]"name RU"		[value]"Предсказание Пожирателя душ"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Acceleration"
+	[tag]"name RU"		[value]"Предсказание ускорения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Fortune"
+	[tag]"name RU"		[value]"Предсказание удачи"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of the Jeweller"
+	[tag]"name RU"		[value]"Предсказание златокузнеца"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Connections"
+	[tag]"name RU"		[value]"Предсказание связей"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Blanching"
+	[tag]"name RU"		[value]"Предсказание обеления"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Revenge"
+	[tag]"name RU"		[value]"Предсказание мести"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Bequeathal"
+	[tag]"name RU"		[value]"Предсказание наследства"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Resurgence"
+	[tag]"name RU"		[value]"Предсказание возрождения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Adrenaline"
+	[tag]"name RU"		[value]"Предсказание адреналина"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Death's Door"
+	[tag]"name RU"		[value]"Предсказание Врат Смерти"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Brilliance"
+	[tag]"name RU"		[value]"Предсказание великолепия"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

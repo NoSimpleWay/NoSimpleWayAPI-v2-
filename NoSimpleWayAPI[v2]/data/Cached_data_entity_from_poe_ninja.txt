@@ -1201,6 +1201,419 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Elevated Sextant"
+	[tag]"name RU"	[value]"Возвышенный секстант"
+	[tag]"icon path"	[value]"Elevated_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Pinnacle boss loot"
+	[tag]"item tag"	[value]"Loot source: Maven"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Trial of the Ancestors"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"League: Ritual"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Awakened Sextant"
+	[tag]"name RU"	[value]"Пробужденный секстант"
+	[tag]"icon path"	[value]"AwakenedSextant"
+	[tag]"base class"	[value]"Currency"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Basic currency"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Trial of the Ancestors"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Veiled Scarab"
+	[tag]"name RU"	[value]"Скрытый скарабей"
+	[tag]"icon path"	[value]"Veiled_scarab"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"	[value]"Scarab item"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Introduced: Necropolis league"
+	[tag]"scarab tier"	[value]"Special"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Valdo's Puzzle Box"
+	[tag]"name RU"	[value]"Скрытый скарабей"
+	[tag]"icon path"	[value]"ValdosPuzzleBox"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Introduced: Affliction league"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Basic currency"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Very expensive"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Amelioration"
+	[tag]"name RU"	[value]"Предсказание избавления"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Rare"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Return"
+	[tag]"name RU"	[value]"Предсказание возвращения"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Death-dancing"
+	[tag]"name RU"	[value]"Предсказание танца со смертью"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Refreshment"
+	[tag]"name RU"	[value]"Предсказание восполнения"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of the Soul Devourer"
+	[tag]"name RU"	[value]"Предсказание Пожирателя душ"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Acceleration"
+	[tag]"name RU"	[value]"Предсказание ускорения"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Fortune"
+	[tag]"name RU"	[value]"Предсказание удачи"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Very expensive"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of the Jeweller"
+	[tag]"name RU"	[value]"Предсказание златокузнеца"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Moderate"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Connections"
+	[tag]"name RU"	[value]"Предсказание связей"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Expensive"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Blanching"
+	[tag]"name RU"	[value]"Предсказание обеления"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Rare"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Revenge"
+	[tag]"name RU"	[value]"Предсказание мести"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Bequeathal"
+	[tag]"name RU"	[value]"Предсказание наследства"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Resurgence"
+	[tag]"name RU"	[value]"Предсказание возрождения"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Rare"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Deleted in Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Adrenaline"
+	[tag]"name RU"	[value]"Предсказание адреналина"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Death's Door"
+	[tag]"name RU"	[value]"Предсказание Врат Смерти"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"name EN"	[value]"Omen of Brilliance"
+	[tag]"name RU"	[value]"Предсказание великолепия"
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"worth"	[value]"Common"
+	[tag]"item tag"	[value]"Non-basic currency"
+	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"	[value]"Omen"
+	[tag]"item tag"	[value]"Returned if Affliction"
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"base worth"	[value]"Common"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
 	[tag]"name EN"	[value]"Tattoo of the Ngamahu Firewalker"
 	[tag]"name RU"	[value]"Татуировка Огненного ходока Нгамаху"
 	[tag]"icon path"	[value]"Ngamahu_tattoo"
@@ -3285,419 +3698,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Amelioration"
-	[tag]"name RU"	[value]"Предсказание избавления"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Return"
-	[tag]"name RU"	[value]"Предсказание возвращения"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Death-dancing"
-	[tag]"name RU"	[value]"Предсказание танца со смертью"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Refreshment"
-	[tag]"name RU"	[value]"Предсказание восполнения"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of the Soul Devourer"
-	[tag]"name RU"	[value]"Предсказание Пожирателя душ"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Acceleration"
-	[tag]"name RU"	[value]"Предсказание ускорения"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Fortune"
-	[tag]"name RU"	[value]"Предсказание удачи"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Very expensive"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of the Jeweller"
-	[tag]"name RU"	[value]"Предсказание златокузнеца"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Connections"
-	[tag]"name RU"	[value]"Предсказание связей"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Blanching"
-	[tag]"name RU"	[value]"Предсказание обеления"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Revenge"
-	[tag]"name RU"	[value]"Предсказание мести"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Bequeathal"
-	[tag]"name RU"	[value]"Предсказание наследства"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Resurgence"
-	[tag]"name RU"	[value]"Предсказание возрождения"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Rare"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Adrenaline"
-	[tag]"name RU"	[value]"Предсказание адреналина"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Death's Door"
-	[tag]"name RU"	[value]"Предсказание Врат Смерти"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Omen of Brilliance"
-	[tag]"name RU"	[value]"Предсказание великолепия"
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Common"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Omen"
-	[tag]"item tag"	[value]"Returned if Affliction"
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Elevated Sextant"
-	[tag]"name RU"	[value]"Возвышенный секстант"
-	[tag]"icon path"	[value]"Elevated_Sextant_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"item tag"	[value]"Non-basic currency"
-	[tag]"item tag"	[value]"Pinnacle boss loot"
-	[tag]"item tag"	[value]"Loot source: Maven"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Boss drop"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Trial of the Ancestors"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"item tag"	[value]"League: Ritual"
-	[tag]"item tag"	[value]"Boss drop"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Awakened Sextant"
-	[tag]"name RU"	[value]"Пробужденный секстант"
-	[tag]"icon path"	[value]"AwakenedSextant"
-	[tag]"base class"	[value]"Currency"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Basic currency"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Deleted"
-	[tag]"item tag"	[value]"Deleted in Trial of the Ancestors"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Veiled Scarab"
-	[tag]"name RU"	[value]"Скрытый скарабей"
-	[tag]"icon path"	[value]"Veiled_scarab"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"item tag"	[value]"Scarab item"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Introduced: Necropolis league"
-	[tag]"scarab tier"	[value]"Special"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-	[tag]"worth"	[value]"Common"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"name EN"	[value]"Valdo's Puzzle Box"
-	[tag]"name RU"	[value]"Скрытый скарабей"
-	[tag]"icon path"	[value]"ValdosPuzzleBox"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"	[value]"Introduced: Affliction league"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Basic currency"
-	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"base worth"	[value]"Very expensive"
@@ -6237,10 +6237,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"40"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -6754,8 +6754,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
-	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Trash"
 
 
 
@@ -6826,8 +6826,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Common"
 
 
 
@@ -11694,10 +11694,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Искушающие ожидания"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -11826,11 +11826,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Собратья по изгнанию"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"League: Ritual"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -12909,7 +12909,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Идеал"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Loot source: Chimera"
 	[tag]"item tag"	[value]"Loot source: Minotaur"
 	[tag]"item tag"	[value]"Loot source: Hydra"
@@ -12917,7 +12917,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13783,10 +13783,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Проводник"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13874,10 +13874,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Соглашение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -13900,10 +13900,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Глубокие"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14004,10 +14004,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Страна грёз"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14271,10 +14271,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Бесформенное море"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -14468,10 +14468,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Скопище знаний"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -15099,10 +15099,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Полимат"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -15782,10 +15782,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Неожиданная награда"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16018,10 +16018,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Тень Волка"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16215,10 +16215,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Освобождённый"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16371,10 +16371,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Потомство"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16526,10 +16526,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Энтузиасты"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -16793,11 +16793,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Возвращение крысы"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -16991,11 +16991,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Лис в терновнике"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Scourge league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -17125,11 +17125,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Двойственность"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -17153,11 +17153,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Преображение"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"Introduced: Archnemesis league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Common"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -31183,6 +31183,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -32231,7 +32232,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -34197,7 +34197,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -35533,6 +35532,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
+	[tag]"item tag"	[value]"Good base for unique"
 
 
 
@@ -38172,7 +38172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"item tag"	[value]"Good base for unique"
+	[tag]"item tag"	[value]"Expensive base for unique"
 
 
 
@@ -38355,10 +38355,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -38383,10 +38383,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -41210,7 +41210,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -41243,7 +41244,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Deleted in Crucible"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 
 
 
@@ -46631,10 +46633,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -46827,10 +46829,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -47527,8 +47529,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Esh"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"choir-of-the-storm-lapis-amulet"
 
 
@@ -51076,8 +51078,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"darkscorn-assassin-bow"
 
 
@@ -51390,8 +51392,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-scourge-terror-claw"
 
 
@@ -51858,8 +51860,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"cold-iron-point-ezomyte-dagger"
 
 
@@ -53152,8 +53154,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"paradoxica-vaal-rapier"
 
 
@@ -54594,7 +54596,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Loot source: Tul"
 	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"jack-the-axe-vaal-hatchet"
 
 
@@ -55856,8 +55858,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"doryanis-prototype-saints-hauberk"
 
 
@@ -58149,8 +58151,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"repentance-crusader-gloves"
 
 
@@ -59563,8 +59565,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"flamesight-solaris-circlet"
 
 
@@ -60963,8 +60965,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"rise-of-the-phoenix-mosaic-kite-shield"
 
 
@@ -62555,8 +62557,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"unnatural-instinct-viridian-jewel"
 
 
@@ -62706,8 +62708,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Eater"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"forbidden-flesh-cobalt-jewel"
 
 
@@ -62853,8 +62855,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"brutal-restraint-timeless-jewel"
 
 
@@ -63053,8 +63055,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"elegant-hubris-timeless-jewel"
 
 
@@ -63217,8 +63219,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"glorious-vanity-timeless-jewel"
 
 

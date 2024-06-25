@@ -480,6 +480,8 @@ public:
 	bool								is_folder	= false;
 	std::string							named_id	= "";
 
+	bool								always_show = false;
+
 	//void								add_default_banned_tag();
 	
 	
