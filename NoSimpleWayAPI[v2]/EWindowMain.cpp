@@ -11932,6 +11932,7 @@ void EWindowMain::register_filter_rules()
 
 		jc_filter.add_new_suitable_value("Daggers");
 		jc_filter.add_new_suitable_value("Rune Daggers");
+		jc_filter.add_new_suitable_value("Sceptres");
 
 		jc_filter.add_new_suitable_value("One Hand Maces");
 		jc_filter.add_new_suitable_value("One Hand Axes");
@@ -19391,7 +19392,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 				int id = 0;
 
 				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
-				if (!listed_button->entity_need_remove)
+				if ((!listed_button->entity_need_remove) && (listed_button->main_text_area->localisation_text.base_name != ""))
 				{
 					EntityButtonWideItem*
 					wide_button = static_cast<EntityButtonWideItem*>(listed_button);
