@@ -3950,9 +3950,9 @@ void EWindowMain::get_poe_ninja_api_prices()
 		{
 			if
 			(
-				(data_entity->tag_list[k]->tag_value_list[0].string_value == "Good base for unique")
+				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_world_drop.ID)
 				||
-				(data_entity->tag_list[k]->tag_value_list[0].string_value == "Expensive base for unique")
+				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_boss_drop.ID)
 			)
 			{
 				data_entity->tag_list.erase(data_entity->tag_list.begin() + k);
@@ -4581,64 +4581,21 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 
 							//set new
 							if
+							(
 								(
-									(
-										(_mode == PoeNinjaAPIMode::UNIQUES)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
-									)
-									||
-									(
-										(_mode == PoeNinjaAPIMode::DIVINATIONS)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::divination_cards, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-										)
-									||
-									(
-										(
-											(_mode == PoeNinjaAPIMode::CURRENCY)
-											||
-											(_mode == PoeNinjaAPIMode::FRAGMENTS)
-											||
-											(_mode == PoeNinjaAPIMode::TATTOO)
-											||
-											(_mode == PoeNinjaAPIMode::OMEN)
-										)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::stackable_currency, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-									)
-									||
-									(
-										(_mode == PoeNinjaAPIMode::GEMS)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::support_gems, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-										)
-									||
-									(
-										(_mode == PoeNinjaAPIMode::FRAGMENTS)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::map_fragments, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-										)
-									||
-									(
-										(_mode == PoeNinjaAPIMode::EMBERS)
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::base_class, &ERegisteredStrings::embers_of_allflame, data_entity))
-										&&
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-										)
-									)
-
+									(_mode == PoeNinjaAPIMode::UNIQUES)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
+								)
+								||
+								(
+									(_mode != PoeNinjaAPIMode::UNIQUES)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+								)
+							)
 							{
 
 								existed_item = true;
@@ -4682,24 +4639,66 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 												}
 
 
-								std::string
-									base_worth_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_worth, data_entity);
+								const ID_string*
+								predetermined_worth_value = nullptr;
+								
+								const ID_string*
+								target_worth_ID_string = nullptr;
 
-								if (base_worth_value == "Trash") { old_worth_id = 0; }
-								else
-									if (base_worth_value == "Common") { old_worth_id = 1; }
+								//get basic, predetermined prices from data entity
+								// 
+								//uniques store worth in 2 different tags: "worth: world drop" and "worth: boss drop"
+								if (_mode == PoeNinjaAPIMode::UNIQUES)
+								{
+									
+									
+									//is world drop?
+									if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop,	data_entity))
+									{target_worth_ID_string = &ERegisteredStrings::worth_world_drop;}
 									else
-										if (base_worth_value == "Moderate") { old_worth_id = 2; }
-										else
-											if (base_worth_value == "Rare") { old_worth_id = 3; }
-											else
-												if (base_worth_value == "Expensive") { old_worth_id = 4; }
-												else
-													if (base_worth_value == "Very expensive") { old_worth_id = 5; }
+									if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,	data_entity))
+									{target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;}
+									else
+									{
+										EInputCore::logger_simple_error("unique item[" + item_name + "] have no suitable tags (<world drop> or <boss item>!");
+									}
+									
+								}
+								else//non-uniques item always use tag "worth"
+								{
+									target_worth_ID_string = &ERegisteredStrings::base_worth;
+								}
+
+								if (target_worth_ID_string != nullptr)
+								{
+									predetermined_worth_value = DataEntityUtils::get_tag_ID_string_by_name_ID(0, target_worth_ID_string, data_entity);
+								}
+								else
+								{
+
+								}
+
+								const unsigned short
+								trash_id = ERegisteredStrings::trash.ID;
+
+								if (predetermined_worth_value != nullptr)
+								{
+									if (predetermined_worth_value->ID == ERegisteredStrings::trash.ID)			{ old_worth_id = 0; }
+									else
+									if (predetermined_worth_value->ID == ERegisteredStrings::common.ID)			{ old_worth_id = 1; }
+									else
+									if (predetermined_worth_value->ID == ERegisteredStrings::moderate.ID)		{ old_worth_id = 2; }
+									else
+									if (predetermined_worth_value->ID == ERegisteredStrings::rare.ID)			{ old_worth_id = 3; }
+									else
+									if (predetermined_worth_value->ID == ERegisteredStrings::expensive.ID)		{ old_worth_id = 4; }
+									else
+									if (predetermined_worth_value->ID == ERegisteredStrings::very_expensive.ID)	{ old_worth_id = 5; }
+								}
+								else
+								{old_worth_id = -1;}
 
 
-								//if (item_name == "Blightwell")
-								//{ old_worth_id = old_worth_id; }
 								//set new worth if new higher that old
 								if
 								(
@@ -4708,6 +4707,20 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 										(new_worth_id >= old_worth_id)
 								)
 								{
+									if (_mode == PoeNinjaAPIMode::UNIQUES)
+									{
+										
+									}
+									else
+									{
+
+									}
+
+
+
+									DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
+									DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+
 									if (_console_debug)
 									{
 										std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
@@ -4723,12 +4736,9 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 														if (new_worth_id >= 4) { std::cout << yellow; }
 
 										std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
-
-										
 									}
 
-									DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
-									DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, data_entity);
+
 									//for (EDataTag* tag : data_entity->tag_list)
 									//{
 									//	EDataTag*
@@ -4744,13 +4754,13 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								}
 
 								//chance cost of base item [for uniques]
-								if ((_mode == PoeNinjaAPIMode::UNIQUES))
+								if (_mode == PoeNinjaAPIMode::UNIQUES)
 								{
 
 									DataEntityUtils::set_tag_value_by_name(0, "detailsId", details_id, data_entity);
 
 									std::string
-										base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
+									base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
 
 									if (base_item_name == "")
 									{
@@ -4776,67 +4786,21 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 										//}
 										//MATCHED BASE ITEM
 										if
-											(
-												(sub_base_item_name == base_item_name)
-												&&
-												(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, sub_data_entity))
-												)
+										(
+											(sub_base_item_name == base_item_name)
+											&&
+											(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, sub_data_entity))
+										)
 										{
 											//
-											if
-												(
-													(new_worth_id >= 2) && (new_worth_id <= 3)
-													&&
-													(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::expensive_base_for_unique, sub_data_entity))//protect overriding expensive bases
-													&&
-													(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::good_base_for_unique, sub_data_entity))//protect adding same tag
-													)
-											{
-												EDataTag*
-													data_tag = new EDataTag();
-												data_tag->tag_name.set_ID_by_string("item tag");
+											
+											//set unique-item-specific tag for worth
+											if (target_worth_ID_string != nullptr)
+											{DataEntityUtils::set_tag_value_by_ID_string_name	(0, target_worth_ID_string,	new_worth_ID_string.string_value, data_entity);}
 
-												ID_string
-													id_string;
+											//set default worth
+											//DataEntityUtils::set_tag_value_by_name				(0, "worth",				new_worth_ID_string.string_value, data_entity);
 
-												id_string.set_ID_by_string("Good base for unique");
-
-												data_tag->tag_value_list.push_back(id_string);
-												sub_data_entity->tag_list.push_back(data_tag);
-
-												if (_console_debug)
-												{
-													std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Good" << green << ">" << std::endl;
-												}
-											}
-											else
-												//
-												if
-													(
-														(new_worth_id >= 4)
-														&&
-														(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::expensive_base_for_unique, sub_data_entity))//protect adding same tag
-														)
-												{
-													EDataTag*
-														data_tag = new EDataTag();
-													data_tag->tag_name.set_ID_by_string("item tag");
-
-													ID_string
-														id_string;
-
-													id_string.set_ID_by_string("Expensive base for unique");
-
-													if (_console_debug)
-													{
-														std::cout << white << "Base [" << yellow << sub_base_item_name << green << "]" << " raise cost to <" << yellow << "Expensive" << green << ">" << std::endl;
-													}
-
-													data_tag->tag_value_list.push_back(id_string);
-													sub_data_entity->tag_list.push_back(data_tag);
-												}
-
-											DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, data_entity);
 											break;
 										}
 									}

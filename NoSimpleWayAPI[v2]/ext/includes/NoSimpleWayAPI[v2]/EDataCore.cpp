@@ -39,51 +39,57 @@ unsigned int ID_string::last_registered_id = 0;
 
 namespace ERegisteredStrings
 {
-	ID_string data_type					= ID_string::register_new_unique_ID_by_key("data type");
-	ID_string icon_path					= ID_string::register_new_unique_ID_by_key("icon path");
-	ID_string name_EN					= ID_string::register_new_unique_ID_by_key("name EN");
-	ID_string name_RU					= ID_string::register_new_unique_ID_by_key("name RU");
-	ID_string base_name					= ID_string::register_new_unique_ID_by_key("base name");
-	ID_string base_class				= ID_string::register_new_unique_ID_by_key("base class");
-	ID_string short_name				= ID_string::register_new_unique_ID_by_key("short name");
-	ID_string max_stack_size			= ID_string::register_new_unique_ID_by_key("max stack size");
-	ID_string stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
-	ID_string max_sockets				= ID_string::register_new_unique_ID_by_key("max sockets");
-	ID_string base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
-	ID_string base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
-	ID_string base_armour_min			= ID_string::register_new_unique_ID_by_key("base armour min");
-	ID_string base_armour_max			= ID_string::register_new_unique_ID_by_key("base armour max");
-	ID_string base_evasion_min			= ID_string::register_new_unique_ID_by_key("base evasion min");
-	ID_string base_evasion_max			= ID_string::register_new_unique_ID_by_key("base evasion max");
-	ID_string base_energy_shield_min	= ID_string::register_new_unique_ID_by_key("base energy shield min");
-	ID_string base_energy_shield_max	= ID_string::register_new_unique_ID_by_key("base energy shield max");
-	ID_string item_height				= ID_string::register_new_unique_ID_by_key("item height");
-	ID_string item_width				= ID_string::register_new_unique_ID_by_key("item width");
-	ID_string key						= ID_string::register_new_unique_ID_by_key("key");
-	ID_string worth						= ID_string::register_new_unique_ID_by_key("worth");
-	ID_string base_worth				= ID_string::register_new_unique_ID_by_key("base worth");
+	const ID_string ERegisteredStrings::data_type					= ID_string::register_new_unique_ID_by_key("data type");
+	const ID_string ERegisteredStrings::icon_path					= ID_string::register_new_unique_ID_by_key("icon path");
+	const ID_string ERegisteredStrings::name_EN						= ID_string::register_new_unique_ID_by_key("name EN");
+	const ID_string ERegisteredStrings::name_RU						= ID_string::register_new_unique_ID_by_key("name RU");
+	const ID_string ERegisteredStrings::base_name					= ID_string::register_new_unique_ID_by_key("base name");
+	const ID_string ERegisteredStrings::base_class					= ID_string::register_new_unique_ID_by_key("base class");
+	const ID_string ERegisteredStrings::short_name					= ID_string::register_new_unique_ID_by_key("short name");
+	const ID_string ERegisteredStrings::max_stack_size				= ID_string::register_new_unique_ID_by_key("max stack size");
+	const ID_string ERegisteredStrings::stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
+	const ID_string ERegisteredStrings::max_sockets					= ID_string::register_new_unique_ID_by_key("max sockets");
+	const ID_string ERegisteredStrings::base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
+	const ID_string ERegisteredStrings::base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
+	const ID_string ERegisteredStrings::base_armour_min				= ID_string::register_new_unique_ID_by_key("base armour min");
+	const ID_string ERegisteredStrings::base_armour_max				= ID_string::register_new_unique_ID_by_key("base armour max");
+	const ID_string ERegisteredStrings::base_evasion_min			= ID_string::register_new_unique_ID_by_key("base evasion min");
+	const ID_string ERegisteredStrings::base_evasion_max			= ID_string::register_new_unique_ID_by_key("base evasion max");
+	const ID_string ERegisteredStrings::base_energy_shield_min		= ID_string::register_new_unique_ID_by_key("base energy shield min");
+	const ID_string ERegisteredStrings::base_energy_shield_max		= ID_string::register_new_unique_ID_by_key("base energy shield max");
+	const ID_string ERegisteredStrings::item_height					= ID_string::register_new_unique_ID_by_key("item height");
+	const ID_string ERegisteredStrings::item_width					= ID_string::register_new_unique_ID_by_key("item width");
+	const ID_string ERegisteredStrings::key							= ID_string::register_new_unique_ID_by_key("key");
+	const ID_string ERegisteredStrings::worth						= ID_string::register_new_unique_ID_by_key("worth");
+	const ID_string ERegisteredStrings::base_worth					= ID_string::register_new_unique_ID_by_key("base worth");
 
-	ID_string trash						= ID_string::register_new_unique_ID_by_key("Trash");
-	ID_string common					= ID_string::register_new_unique_ID_by_key("Common");
-	ID_string moderate					= ID_string::register_new_unique_ID_by_key("Moderate");
-	ID_string rare						= ID_string::register_new_unique_ID_by_key("Rare");
-	ID_string expensive					= ID_string::register_new_unique_ID_by_key("Expensive");
-	ID_string very_expensive			= ID_string::register_new_unique_ID_by_key("Very expensive");
+	const ID_string ERegisteredStrings::trash						= ID_string::register_new_unique_ID_by_key("Trash");
+	const ID_string ERegisteredStrings::common						= ID_string::register_new_unique_ID_by_key("Common");
+	const ID_string ERegisteredStrings::moderate					= ID_string::register_new_unique_ID_by_key("Moderate");
+	const ID_string ERegisteredStrings::rare						= ID_string::register_new_unique_ID_by_key("Rare");
+	const ID_string ERegisteredStrings::expensive					= ID_string::register_new_unique_ID_by_key("Expensive");
+	const ID_string ERegisteredStrings::very_expensive				= ID_string::register_new_unique_ID_by_key("Very expensive");
 
-	ID_string item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
-	ID_string all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
-	ID_string always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
+	const ID_string ERegisteredStrings::item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
+	const ID_string ERegisteredStrings::all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
+	const ID_string ERegisteredStrings::always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
 
-	ID_string rarity_override			= ID_string::register_new_unique_ID_by_key("rarity override");
-	ID_string unique_item				= ID_string::register_new_unique_ID_by_key("Unique item");
-	ID_string details_ID				= ID_string::register_new_unique_ID_by_key("detailsId");
-	ID_string divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
-	ID_string stackable_currency		= ID_string::register_new_unique_ID_by_key("Stackable Currency");
-	ID_string support_gems				= ID_string::register_new_unique_ID_by_key("Support Gems");
-	ID_string map_fragments				= ID_string::register_new_unique_ID_by_key("Map Fragments");
-	ID_string embers_of_allflame		= ID_string::register_new_unique_ID_by_key("Embers of the Allflame");
-	ID_string expensive_base_for_unique = ID_string::register_new_unique_ID_by_key("Expensive base for unique");
-	ID_string good_base_for_unique		= ID_string::register_new_unique_ID_by_key("Good base for unique");
+	const ID_string ERegisteredStrings::rarity_override				= ID_string::register_new_unique_ID_by_key("rarity override");
+	const ID_string ERegisteredStrings::unique_item					= ID_string::register_new_unique_ID_by_key("Unique item");
+	const ID_string ERegisteredStrings::details_ID					= ID_string::register_new_unique_ID_by_key("detailsId");
+	const ID_string ERegisteredStrings::divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
+	const ID_string ERegisteredStrings::stackable_currency			= ID_string::register_new_unique_ID_by_key("Stackable Currency");
+	const ID_string ERegisteredStrings::support_gems				= ID_string::register_new_unique_ID_by_key("Support Gems");
+	const ID_string ERegisteredStrings::map_fragments				= ID_string::register_new_unique_ID_by_key("Map Fragments");
+	const ID_string ERegisteredStrings::embers_of_allflame			= ID_string::register_new_unique_ID_by_key("Embers of the Allflame");
+	const ID_string ERegisteredStrings::expensive_base_for_unique	= ID_string::register_new_unique_ID_by_key("Expensive base for unique");
+	const ID_string ERegisteredStrings::good_base_for_unique		= ID_string::register_new_unique_ID_by_key("Good base for unique");
+
+	const ID_string ERegisteredStrings::worth_world_drop			= ID_string::register_new_unique_ID_by_key("Worth: world drop");
+	const ID_string ERegisteredStrings::worth_boss_drop				= ID_string::register_new_unique_ID_by_key("Worth: boss drop");
+
+	const ID_string ERegisteredStrings::world_drop					= ID_string::register_new_unique_ID_by_key("World drop");
+	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Boss drop");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)

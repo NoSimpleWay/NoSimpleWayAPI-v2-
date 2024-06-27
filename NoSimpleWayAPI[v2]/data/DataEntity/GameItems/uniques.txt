@@ -430,6 +430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Loot source: Affliction"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
@@ -577,6 +578,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Cannot drop"
@@ -813,6 +815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
@@ -1296,9 +1299,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"yoke-of-suffering-onyx-amulet"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"	[value]"Replica Dragonfang's Flight"
+	[tag]"name RU"	[value]"Копия Полёта Драконьего клыка"
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"replica-dragonfangs-flight-onyx-amulet"
 
 
 
@@ -2200,6 +2219,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"perseverance-vanguard-belt"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vanguard Belt"
+	[tag]"name EN"	[value]"The Tides of Time"
+	[tag]"name RU"	[value]"Волны времён"
+	[tag]"icon path"	[value]"Vanguard_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Shaper"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-tides-of-time-vanguard-belt"
+
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -2492,6 +2532,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
@@ -3133,6 +3174,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Syndicate drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
@@ -3559,6 +3601,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"loris-lantern-prismatic-ring"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Prismatic Ring"
+	[tag]"name EN"	[value]"Circle of Ambition"
+	[tag]"name RU"	[value]"Круг устремлений"
+	[tag]"icon path"	[value]"Prismatic_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Cortex"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Good for start"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"circle-of-ambition-prismatic-ring"
 
 
 
@@ -4599,6 +4659,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Dagger"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Heist"
@@ -5501,9 +5562,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Hand Swords"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"Loot source: Affliction"
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"nametaker-graceful-sword"
@@ -5564,6 +5625,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"scaeva-gladius"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Gladius"
+	[tag]"name EN"	[value]"The Iron Mass"
+	[tag]"name RU"	[value]"Железная масса"
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Hand Swords"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-iron-mass-gladius"
 
 
 
@@ -5982,6 +6060,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Hand Swords"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Container drop"
@@ -6146,6 +6225,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Warstaves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
@@ -6164,6 +6244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Warstaves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Heist"
@@ -6351,6 +6432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
@@ -6589,6 +6671,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Harvest"
@@ -7071,6 +7154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Two Hand Mace"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"worth"	[value]"Moderate"
@@ -7421,6 +7505,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wand"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
@@ -7824,6 +7909,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Body Armour"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
@@ -8564,11 +8650,17 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"base name"	[value]"Sacrificial Garb"
-	[tag]"name EN"	[value]"Atziri's Splendour"
-	[tag]"name RU"	[value]"Величие Атзири"
+	[tag]"base name"	[value]"Vaal Regalia"
+	[tag]"name EN"	[value]"The Queen's Hunger"
+	[tag]"name RU"	[value]"Жажда царицы"
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armour"
 	[tag]"item width"	[value]"2"
@@ -8576,12 +8668,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Boss drop"
-	[tag]"item tag"	[value]"Loot source: Uber Atziri"
+	[tag]"item tag"	[value]"Syndicate drop"
+	[tag]"item tag"	[value]"Loot source: Catarina"
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
-	[tag]"detailsId"	[value]"atziris-splendour-armour-sacrificial-garb"
+	[tag]"detailsId"	[value]"the-queens-hunger-vaal-regalia"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Cabalist Regalia"
+	[tag]"name EN"	[value]"The Apostate"
+	[tag]"name RU"	[value]"Отступник"
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Cortex"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-apostate-cabalist-regalia"
+
+
+
+
+
+
+
+
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -8946,6 +9065,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Body Armour"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Heist drop"
@@ -9038,6 +9158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Body Armour"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -9738,6 +9859,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Boots"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Ultimatum"
@@ -9821,6 +9943,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"craiceanns-tracks-goliath-greaves"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Goliath Greaves"
+	[tag]"name EN"	[value]"The Tempest Rising"
+	[tag]"name RU"	[value]"Надвигающаяся буря"
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Sirus"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-tempest-rising-goliath-greaves"
 
 
 
@@ -10077,6 +10216,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Boots"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -10189,6 +10329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Boots"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Uber lab"
@@ -10603,6 +10744,23 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Goliath Gauntlets"
+	[tag]"name EN"	[value]"The Celestial Brace"
+	[tag]"name RU"	[value]"Небесный хват"
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Exarch"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-celestial-brace-goliath-gauntlets"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Goliath Gauntlets"
 	[tag]"name EN"	[value]"Empire's Grasp"
 	[tag]"name RU"	[value]"Имперская хватка"
 	[tag]"icon path"	[value]"SuperGloves"
@@ -10645,6 +10803,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Delve drop"
@@ -10960,6 +11119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
@@ -11167,6 +11327,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -11566,6 +11727,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"wreath-of-phrecia-iron-circlet"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Pig-Faced Bascinet"
+	[tag]"name EN"	[value]"The Devourer of Minds"
+	[tag]"name RU"	[value]"Пожиратель умов"
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Uber Elder"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"the-devourer-of-minds-pig-faced-bascinet"
+	
+	
+	
 
 
 
@@ -11838,6 +12021,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kitavas-thirst-zealot-helmet"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Zealot Helmet"
+	[tag]"name EN"	[value]"Ravenous Passion"
+	[tag]"name RU"	[value]"Ненасытная страсть"
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Eater"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"ravenous-passion-zealot-helmet"
 
 
 
@@ -12710,6 +12910,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -12802,6 +13003,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -12968,6 +13170,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Blight drop"
@@ -13025,6 +13228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Expedition drop"
@@ -13210,6 +13414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Heist drop"
@@ -13248,6 +13453,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
@@ -13612,6 +13818,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shield"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Loot source: Affliction"
@@ -14415,6 +14622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shield"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"Chest drop"
@@ -15283,6 +15491,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"emperors-mastery-prismatic-jewel"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Prismatic Jewel"
+	[tag]"name EN"	[value]"The Perandus Pact"
+	[tag]"name RU"	[value]"Пакт Перандусов"
+	[tag]"icon path"	[value]"ThePerandusPact"
+	[tag]"base class"	[value]"Jewels"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
+	[tag]"detailsId"	[value]"the-perandus-pact-prismatic-jewel"
 
 
 
@@ -15370,6 +15594,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Sanctum"
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
@@ -15388,6 +15613,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
 	[tag]"item tag"	[value]"Loot source: Uber lab"
 	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Very expensive"
@@ -16943,6 +17169,165 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"apex-mode-cobalt-jewel"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"	[value]"Curiosity"
+	[tag]"name RU"	[value]"Любопытство"
+	[tag]"icon path"	[value]"VaalAspectCuriosity"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Delve Architect"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"curiosity-vaal-aspect"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"	[value]"Ambition"
+	[tag]"name RU"	[value]"Стремление"
+	[tag]"icon path"	[value]"VaalAspectAmbition"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Atzoatl drop"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"ambition-vaal-aspect"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"	[value]"Cooperation"
+	[tag]"name RU"	[value]"Сотрудничество"
+	[tag]"icon path"	[value]"VaalAspectCooperation"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Vaal Temple drop"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"cooperation-vaal-aspect"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"	[value]"Beauty"
+	[tag]"name RU"	[value]"Красота"
+	[tag]"icon path"	[value]"VaalAspectBeauty"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Atziri"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"beauty-vaal-aspect"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Primordial Fragment"
+	[tag]"name EN"	[value]"Curio of Consumption"
+	[tag]"name RU"	[value]"Диковинка поглощения"
+	[tag]"icon path"	[value]"CurioOfConsumption"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Eater"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"curio-of-consumption-primordial-fragment"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Primordial Fragment"
+	[tag]"name EN"	[value]"Curio of Absorption"
+	[tag]"name RU"	[value]"Диковинка усвоения"
+	[tag]"icon path"	[value]"CurioOfAbsorption"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Exarch"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"curio-of-absorption-primordial-fragment"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Primordial Fragment"
+	[tag]"name EN"	[value]"Curio of Potential"
+	[tag]"name RU"	[value]"Диковинка усвоения"
+	[tag]"icon path"	[value]"CurioOfPotential"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Maven"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"curio-of-potential-primordial-fragment"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Primordial Fragment"
+	[tag]"name EN"	[value]"Curio of Decay"
+	[tag]"name RU"	[value]"Диковинка разложения"
+	[tag]"icon path"	[value]"CurioOfDecay"
+	[tag]"base class"	[value]"Unique Piece"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Uber Uber Elder"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"curio-of-decay-primordial-fragment"
 
 
 

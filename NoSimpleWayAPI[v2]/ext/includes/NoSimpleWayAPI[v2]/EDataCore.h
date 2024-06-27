@@ -354,52 +354,58 @@ struct ID_string
 
 namespace ERegisteredStrings
 {
-	extern ID_string data_type;
-	extern ID_string icon_path;
-	extern ID_string name_EN;
-	extern ID_string name_RU;
-	extern ID_string base_name;
-	extern ID_string base_class;
-	extern ID_string short_name;
-	extern ID_string max_stack_size;
-	extern ID_string stack_multiplier;
-	extern ID_string max_sockets;
-	extern ID_string base_ward_min;
-	extern ID_string base_ward_max;
-	extern ID_string base_armour_min;
-	extern ID_string base_armour_max;
-	extern ID_string base_evasion_min;
-	extern ID_string base_evasion_max;
-	extern ID_string base_energy_shield_min;
-	extern ID_string base_energy_shield_max;
-	extern ID_string item_height;
-	extern ID_string item_width;
-	extern ID_string key;
-	extern ID_string worth;
-	extern ID_string base_worth;
+	extern const ID_string data_type;
+	extern const ID_string icon_path;
+	extern const ID_string name_EN;
+	extern const ID_string name_RU;
+	extern const ID_string base_name;
+	extern const ID_string base_class;
+	extern const ID_string short_name;
+	extern const ID_string max_stack_size;
+	extern const ID_string stack_multiplier;
+	extern const ID_string max_sockets;
+	extern const ID_string base_ward_min;
+	extern const ID_string base_ward_max;
+	extern const ID_string base_armour_min;
+	extern const ID_string base_armour_max;
+	extern const ID_string base_evasion_min;
+	extern const ID_string base_evasion_max;
+	extern const ID_string base_energy_shield_min;
+	extern const ID_string base_energy_shield_max;
+	extern const ID_string item_height;
+	extern const ID_string item_width;
+	extern const ID_string key;
+	extern const ID_string worth;
+	extern const ID_string base_worth;
 
-	extern ID_string trash;
-	extern ID_string common;
-	extern ID_string moderate;
-	extern ID_string rare;
-	extern ID_string expensive;
-	extern ID_string very_expensive;
+	extern const ID_string trash;
+	extern const ID_string common;
+	extern const ID_string moderate;
+	extern const ID_string rare;
+	extern const ID_string expensive;
+	extern const ID_string very_expensive;
 
-	extern ID_string item_tag;
-	extern ID_string all_sockets_white;
-	extern ID_string always_six_linked;
+	extern const ID_string item_tag;
+	extern const ID_string all_sockets_white;
+	extern const ID_string always_six_linked;
 
-	extern ID_string rarity_override;
-	extern ID_string unique_item;
-	extern ID_string details_ID;
+	extern const ID_string rarity_override;
+	extern const ID_string unique_item;
+	extern const ID_string details_ID;
 
-	extern ID_string divination_cards;
-	extern ID_string stackable_currency;
-	extern ID_string support_gems;
-	extern ID_string map_fragments;
-	extern ID_string embers_of_allflame;
-	extern ID_string expensive_base_for_unique;
-	extern ID_string good_base_for_unique;
+	extern const ID_string divination_cards;
+	extern const ID_string stackable_currency;
+	extern const ID_string support_gems;
+	extern const ID_string map_fragments;
+	extern const ID_string embers_of_allflame;
+	extern const ID_string expensive_base_for_unique;
+	extern const ID_string good_base_for_unique;
+
+	extern const ID_string worth_world_drop;
+	extern const ID_string worth_boss_drop;
+
+	extern const ID_string world_drop;
+	extern const ID_string boss_drop;
 }
 
 

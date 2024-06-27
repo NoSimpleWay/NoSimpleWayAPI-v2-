@@ -1553,7 +1553,8 @@ enum class PoeNinjaAPIMode
 	FRAGMENTS,
 	EMBERS,
 	TATTOO,
-	OMEN
+	OMEN,
+	INCUBATORS
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow

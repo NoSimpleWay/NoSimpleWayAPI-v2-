@@ -3148,6 +3148,25 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Scarab of Resonant Cascade"
+	[tag]"name RU"		[value]"Скарабей Разлома Каскадного Резонанса"
+
+	[tag]"icon path"	[value]"CascadeResonance"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -4165,6 +4184,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Profound Depth"
+	[tag]"name RU"		[value]"Скарабей Бездны глубокой Бездны"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -4312,12 +4350,88 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence Scarab of Adaptation"
+	[tag]"name RU"		[value]"Скарабей Сущности Адаптации"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Essence Scarab of Stability"
 	[tag]"name RU"		[value]"Скарабей Сущности стабильности"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Radiant Storms"
+	[tag]"name RU"		[value]"Скарабей сияющих бурь"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torment Scarab of Possession"
+	[tag]"name RU"		[value]"Скарабей мучения одержимости"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab of Wisps"
+	[tag]"name RU"		[value]"Скарабей Светлячков"
 
 	[tag]"icon path"	[value]"Scarab_bonus"
 	[tag]"base class"	[value]"Map Fragments"
@@ -5096,6 +5210,25 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blight Scarab of Bounty"
 	[tag]"name RU"		[value]"Скарабей Скверны щедрости"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blight Scarab of Invigoration"
+	[tag]"name RU"		[value]"Скарабей Скверны оживления"
 
 	[tag]"icon path"	[value]"Scarab_bonus"
 	[tag]"base class"	[value]"Map Fragments"
