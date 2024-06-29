@@ -482,8 +482,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	
-	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

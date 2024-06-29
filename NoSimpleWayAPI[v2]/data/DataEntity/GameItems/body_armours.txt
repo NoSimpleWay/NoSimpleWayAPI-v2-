@@ -557,6 +557,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	
+	
+
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -583,11 +589,10 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Strapped Leather"
+	[tag]"name EN"		[value]"Wild Leather"
 	[tag]"name RU"		[value]"Охотничья кожанка"
 
 	[tag]"icon path"	[value]"Wild_Leather_inventory_icon"
@@ -608,7 +613,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
-	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -850,6 +854,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Trash"
+	
+
 	
 	
 ADD_NEW_DATA_ENTITY

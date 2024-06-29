@@ -4702,8 +4702,6 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								//set new worth if new higher that old
 								if
 								(
-										(old_worth_id != -1)
-										&&
 										(new_worth_id >= old_worth_id)
 								)
 								{
@@ -4796,7 +4794,33 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 											
 											//set unique-item-specific tag for worth
 											if (target_worth_ID_string != nullptr)
-											{DataEntityUtils::set_tag_value_by_ID_string_name	(0, target_worth_ID_string,	new_worth_ID_string.string_value, data_entity);}
+											{
+												ID_string*
+												prev_price_ID = DataEntityUtils::get_tag_ID_string_by_name_ID(0, target_worth_ID_string, sub_data_entity);
+
+												if (prev_price_ID != nullptr)
+												{
+													if (prev_price_ID->ID == ERegisteredStrings::trash.ID)			{ old_worth_id = 0; }
+													else
+													if (prev_price_ID->ID == ERegisteredStrings::common.ID)			{ old_worth_id = 1; }
+													else
+													if (prev_price_ID->ID == ERegisteredStrings::moderate.ID)		{ old_worth_id = 2; }
+													else
+													if (prev_price_ID->ID == ERegisteredStrings::rare.ID)			{ old_worth_id = 3; }
+													else
+													if (prev_price_ID->ID == ERegisteredStrings::expensive.ID)		{ old_worth_id = 4; }
+													else
+													if (prev_price_ID->ID == ERegisteredStrings::very_expensive.ID)	{ old_worth_id = 5; }
+												}
+												else
+												{
+													old_worth_id = -1;
+												}
+
+												//new worth is bigger that old
+												if (new_worth_id >= old_worth_id)
+												{DataEntityUtils::set_tag_value_by_ID_string_name	(0, target_worth_ID_string,	new_worth_ID_string.string_value, sub_data_entity);}
+											}
 
 											//set default worth
 											//DataEntityUtils::set_tag_value_by_name				(0, "worth",				new_worth_ID_string.string_value, data_entity);
@@ -12594,6 +12618,16 @@ void EWindowMain::register_filter_rules()
 		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
 		//
 
 		//
@@ -12937,25 +12971,57 @@ void EWindowMain::register_filter_rules()
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
 
-	//UNIQUES valuable
+	////UNIQUES valuable
+	//{
+	//	jc_filter_rule = new EFilterRule();
+	//	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+	//	jc_filter_rule->category_id = 5;
+	//	jc_filter_rule->named_id = "item bases folder";
+
+	//	//jc_filter_rule->localisation_text = new ELocalisationText();
+	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful uniques";
+	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ценные уники";
+	//	jc_filter_rule->tag = "Game item";
+
+
+
+	//	//filter "item tag" by 
+	//	jc_filter = DataEntityTagFilter();
+	//	jc_filter.can_be_configured = false;
+	//	jc_filter.target_tag.set_ID_by_string("item tag");
+	//	jc_filter.add_new_suitable_value("Good base for unique");
+	//	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//	//
+
+	//	//
+	//	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	//	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//}
+	// 
+	//UNIQUES world drop
 	{
 		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_boss_drop");
 		jc_filter_rule->category_id = 5;
 		jc_filter_rule->named_id = "item bases folder";
 
 		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful uniques";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ценные уники";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nBoss drop";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nдроп c Боссов";
 		jc_filter_rule->tag = "Game item";
 
 
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Good base for unique");
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("Worth: boss drop");
+		jc_filter.add_new_suitable_value_with_color("Trash", ELocalisationText::get_localisation_by_key("tag_trash"), 0.60f, 0.60f, 0.60f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Common", ELocalisationText::get_localisation_by_key("tag_common"), 0.80f, 0.80f, 0.80f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"), 0.85f, 1.00f, 0.85f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Rare", ELocalisationText::get_localisation_by_key("tag_rare"), 0.85f, 0.90f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"), 0.90f, 0.85f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"), 1.00f, 0.90f, 0.60f, 1.00f);
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -12964,25 +13030,30 @@ void EWindowMain::register_filter_rules()
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
 
-	//UNIQUES valuable
+	//UNIQUES world drop
 	{
 		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_world_drop");
 		jc_filter_rule->category_id = 5;
 		jc_filter_rule->named_id = "item bases folder";
 
 		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Expensive uniques";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Дорогие уники";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nworld drop";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nглобальный дроп";
 		jc_filter_rule->tag = "Game item";
 
 
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Expensive base for unique");
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string		("Worth: world drop");
+		jc_filter.add_new_suitable_value_with_color	("Trash",			ELocalisationText::get_localisation_by_key("tag_trash"),			0.60f, 0.60f, 0.60f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color	("Common",			ELocalisationText::get_localisation_by_key("tag_common"),			0.80f, 0.80f, 0.80f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color	("Moderate",		ELocalisationText::get_localisation_by_key("tag_moderate"),			0.85f, 1.00f, 0.85f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color	("Rare",			ELocalisationText::get_localisation_by_key("tag_rare"),				0.85f, 0.90f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color	("Expensive",		ELocalisationText::get_localisation_by_key("tag_expensive"),		0.90f, 0.85f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color	("Very expensive",	ELocalisationText::get_localisation_by_key("tag_very_expensive"),	1.00f, 0.90f, 0.60f, 1.00f);
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -12990,6 +13061,8 @@ void EWindowMain::register_filter_rules()
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
+
+	
 
 
 	register_filter_rule_folder("item bases folder", "Game item", "rule_folder_bases_folder", "buttons/pattern_folder_equip");
@@ -25432,6 +25505,12 @@ void DataEntityTagFilter::add_new_suitable_value(std::string _value, ELocalisati
 	suitable_values.push_back(new_value);
 
 	//return this;
+}
+
+void DataEntityTagFilter::add_new_suitable_value_with_color(std::string _value, ELocalisationText _ltext, float _r, float _g, float _b, float _a)
+{
+	add_new_suitable_value(_value, _ltext);
+	suitable_values.back().text_color.set_color_RGBA(_r, _g, _b, _a);
 }
 
 void DataEntityTagFilter::set_text_color(float _r, float _g, float _b, float _a)

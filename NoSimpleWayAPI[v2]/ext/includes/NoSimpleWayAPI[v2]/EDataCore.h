@@ -444,7 +444,8 @@ public:
 	std::vector<DETF_SuitableVariant>	suitable_values;
 	std::vector<DETF_SuitableVariant>	banned_tags;
 
-	void add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	void add_new_suitable_value				(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	void add_new_suitable_value_with_color	(std::string _value, ELocalisationText _ltext, float _r, float _g, float _b, float _a);
 	void add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
 
 	void set_text_color(float _r, float _g, float _b, float _a);
