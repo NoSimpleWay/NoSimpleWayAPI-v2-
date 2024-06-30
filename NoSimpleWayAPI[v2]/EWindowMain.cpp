@@ -4575,7 +4575,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 						for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
 						{
 							EDataEntity*
-								data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+							data_entity = EWindowMain::registered_data_entity_game_item_list[i];
 
 
 
@@ -4585,7 +4585,9 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								(
 									(_mode == PoeNinjaAPIMode::UNIQUES)
 									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, data_entity))
+									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN,	item_name, data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag,	&ERegisteredStrings::unique_item, data_entity))
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
 								)
@@ -4597,7 +4599,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								)
 							)
 							{
-
+								//if (item_name == "Shimmeron")
+								//{
+								//	item_name = item_name;
+								//}
 								existed_item = true;
 
 								//STACK MULTIPLIER
@@ -4721,7 +4726,13 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 
 									if (_console_debug)
 									{
-										std::cout << green << "Item [" << yellow << item_name << green << "]" << " cost is <";
+										std::cout
+										<<
+										green << "Item [" << yellow << item_name << green << "]"
+										<<
+										"<" << blue << details_id << green << ">"
+										<<
+										" cost is <";
 
 										if (new_worth_id == 0) { std::cout << white; }
 										else
@@ -4842,8 +4853,9 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 						{
 							if (_console_debug)
 							{
-								EInputCore::logger_simple_error(item_name);
-								EInputCore::logger_simple_error(details_id);
+								EInputCore::logger_simple_error("Item[" + item_name + "]<" + details_id + "> not registered in DataEntityList!");
+								//EInputCore::logger_simple_error(item_name);
+								//EInputCore::logger_simple_error(details_id);
 								std::cout << std::endl;
 							}
 						}
