@@ -7,6 +7,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -21,6 +22,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
@@ -42,6 +44,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -57,6 +60,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -71,6 +75,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -85,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -99,6 +105,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common	"
 	
@@ -113,6 +120,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -127,6 +135,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 
 	[tag]"item tag"		[value]"League: Ritual"
 	
@@ -143,6 +152,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -156,6 +166,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -170,6 +181,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -184,6 +196,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -198,6 +211,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -212,6 +226,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -226,6 +241,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -240,6 +256,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -254,6 +271,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -269,6 +287,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -283,6 +302,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -297,6 +317,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -311,6 +332,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"worth"		[value]"Trash"
 	
@@ -325,6 +347,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -338,6 +361,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -351,6 +375,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item width"	[value]"1"
@@ -365,6 +390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	
@@ -379,6 +405,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -392,6 +419,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -405,6 +433,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -418,6 +447,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item tag"		[value]"League: Ritual"
@@ -433,6 +463,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -446,6 +477,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -459,6 +491,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -472,6 +505,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -485,6 +519,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -498,6 +533,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -511,6 +547,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
@@ -528,6 +565,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -543,6 +581,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -562,6 +601,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -575,6 +615,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -588,6 +629,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -601,6 +643,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -614,6 +657,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -627,6 +671,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -640,6 +685,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -653,6 +699,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -666,6 +713,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Boss drop"
@@ -684,6 +732,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -697,6 +746,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -710,6 +760,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -725,6 +776,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -738,6 +790,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -751,6 +804,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -766,6 +820,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Loot source: Shaper"
 	[tag]"item tag"		[value]"Boss drop"
@@ -785,6 +840,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -798,6 +854,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -813,6 +870,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -826,6 +884,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -839,6 +898,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -852,6 +912,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -865,6 +926,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
@@ -880,6 +942,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -893,6 +956,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -906,6 +970,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -919,6 +984,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -934,6 +1000,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 
@@ -947,6 +1014,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
@@ -963,6 +1031,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"worth"		[value]"Trash"
 	
@@ -977,6 +1046,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -990,6 +1060,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1003,6 +1074,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1016,6 +1088,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1031,6 +1104,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1044,6 +1118,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1057,6 +1132,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1070,6 +1146,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1085,6 +1162,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1098,6 +1176,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1111,6 +1190,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1124,6 +1204,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1137,6 +1218,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1150,6 +1232,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1163,6 +1246,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1176,6 +1260,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1189,6 +1274,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1202,6 +1288,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1215,6 +1302,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1228,6 +1316,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1243,6 +1332,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1256,6 +1346,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1271,6 +1362,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1284,6 +1376,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1297,6 +1390,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1310,6 +1404,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1323,6 +1418,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1336,6 +1432,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1354,6 +1451,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1367,6 +1465,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1380,6 +1479,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1393,6 +1493,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1406,6 +1507,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1419,6 +1521,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1432,6 +1535,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1445,6 +1549,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1458,6 +1563,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1471,6 +1577,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1484,6 +1591,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1497,6 +1605,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Loot source: Catarina"
@@ -1514,6 +1623,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1527,6 +1637,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Loot source: Chimera"
@@ -1546,6 +1657,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1559,6 +1671,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1572,6 +1685,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1585,6 +1699,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1598,6 +1713,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1611,6 +1727,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1624,6 +1741,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1637,6 +1755,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1650,6 +1769,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1663,6 +1783,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1678,6 +1799,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1691,6 +1813,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1704,6 +1827,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	
@@ -1729,6 +1853,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1742,6 +1867,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1755,6 +1881,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1768,6 +1895,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1783,6 +1911,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -1797,6 +1926,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1810,6 +1940,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Boss drop"
@@ -1826,6 +1957,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1839,6 +1971,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1852,6 +1985,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1865,6 +1999,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1878,6 +2013,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1891,6 +2027,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1904,6 +2041,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Fucking slave"
@@ -1919,6 +2057,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1932,6 +2071,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1945,6 +2085,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1958,6 +2099,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1973,6 +2115,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1988,6 +2131,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -2003,6 +2147,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -2018,6 +2163,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2031,6 +2177,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Loot source: Uber Elder"
@@ -2049,6 +2196,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2064,6 +2212,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2077,6 +2226,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2090,6 +2240,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2103,6 +2254,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2116,6 +2268,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2131,6 +2284,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -2146,6 +2300,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2159,6 +2314,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2172,6 +2328,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2185,6 +2342,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2198,6 +2356,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2211,6 +2370,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2224,6 +2384,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2237,6 +2398,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2250,6 +2412,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2263,6 +2426,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2276,6 +2440,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2289,6 +2454,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2302,6 +2468,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2315,6 +2482,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2328,6 +2496,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2341,6 +2510,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2354,6 +2524,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2367,6 +2538,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2380,6 +2552,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2393,6 +2566,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2406,6 +2580,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2419,6 +2594,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2432,6 +2608,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2445,6 +2622,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2458,6 +2636,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2471,6 +2650,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2484,6 +2664,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2497,6 +2678,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2510,6 +2692,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2523,6 +2706,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2536,6 +2720,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2549,6 +2734,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2562,6 +2748,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2575,6 +2762,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2588,6 +2776,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2601,6 +2790,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2614,6 +2804,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2627,6 +2818,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2640,6 +2832,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2653,6 +2846,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2666,6 +2860,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2679,6 +2874,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2692,6 +2888,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2705,6 +2902,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2718,6 +2916,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2731,6 +2930,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2744,6 +2944,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Boss drop"
 	
@@ -2767,6 +2968,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2780,6 +2982,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2793,6 +2996,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2806,6 +3010,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2819,6 +3024,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2832,6 +3038,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2845,6 +3052,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2858,6 +3066,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2871,6 +3080,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2884,6 +3094,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2897,6 +3108,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2910,6 +3122,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2923,6 +3136,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2936,6 +3150,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2949,6 +3164,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2962,6 +3178,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2975,6 +3192,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2988,6 +3206,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3001,6 +3220,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3014,6 +3234,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3027,6 +3248,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3040,6 +3262,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Boss drop"
@@ -3055,6 +3278,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3068,6 +3292,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3081,6 +3306,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3094,6 +3320,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3107,6 +3334,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3120,6 +3348,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3133,6 +3362,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3146,6 +3376,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3159,6 +3390,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3172,6 +3404,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3185,6 +3418,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3198,6 +3432,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3211,6 +3446,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3224,6 +3460,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Crucible"
@@ -3239,6 +3476,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -3255,6 +3493,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3268,6 +3507,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3281,6 +3521,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3294,6 +3535,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3307,6 +3549,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3320,6 +3563,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3333,6 +3577,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3346,6 +3591,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -3359,6 +3605,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3372,6 +3619,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3385,6 +3633,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3398,6 +3647,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3411,6 +3661,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -3426,6 +3677,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3439,6 +3691,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3452,6 +3705,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3465,6 +3719,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3478,6 +3733,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3491,6 +3747,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3504,6 +3761,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3517,6 +3775,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -3531,6 +3790,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3544,6 +3804,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3557,6 +3818,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3570,6 +3832,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3583,6 +3846,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3596,6 +3860,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3609,6 +3874,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3622,6 +3888,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3635,6 +3902,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3648,6 +3916,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3661,6 +3930,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3674,6 +3944,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3687,6 +3958,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3700,6 +3972,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -3715,6 +3988,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3728,6 +4002,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3741,6 +4016,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3754,6 +4030,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3767,6 +4044,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3780,6 +4058,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3793,6 +4072,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3806,6 +4086,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3819,6 +4100,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3832,6 +4114,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3845,6 +4128,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3858,6 +4142,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3871,6 +4156,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3884,6 +4170,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3897,6 +4184,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3910,6 +4198,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3924,6 +4213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3938,6 +4228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3952,6 +4243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3966,6 +4258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Loot source: Abyss"
@@ -3982,6 +4275,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3996,6 +4290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4010,6 +4305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4024,6 +4320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4038,6 +4335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4052,6 +4350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4065,6 +4364,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4079,6 +4379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4093,6 +4394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4107,6 +4409,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4120,6 +4423,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4133,6 +4437,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4146,6 +4451,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4159,6 +4465,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4172,6 +4479,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Boss drop"
@@ -4189,6 +4497,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4202,6 +4511,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4215,6 +4525,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4228,6 +4539,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4241,6 +4553,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4254,6 +4567,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -4268,6 +4582,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4281,6 +4596,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4294,6 +4610,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4307,6 +4624,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4320,6 +4638,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4333,6 +4652,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4346,6 +4666,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4359,6 +4680,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4372,6 +4694,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4385,6 +4708,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4398,6 +4722,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4411,6 +4736,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4424,6 +4750,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Loot source: Chayula"
 	[tag]"item tag"		[value]"Boss drop"
 	
@@ -4440,6 +4767,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4453,6 +4781,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4466,6 +4795,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4479,6 +4809,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -4493,6 +4824,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4506,6 +4838,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4519,6 +4852,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4532,6 +4866,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4545,6 +4880,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4558,6 +4894,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4571,6 +4908,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4584,6 +4922,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4597,6 +4936,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -4612,6 +4952,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4625,6 +4966,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4638,6 +4980,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4651,6 +4994,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4664,6 +5008,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4677,6 +5022,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4690,6 +5036,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4703,6 +5050,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4716,6 +5064,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4729,6 +5078,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4742,6 +5092,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4755,6 +5106,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4768,6 +5120,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4781,6 +5134,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4794,6 +5148,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4807,6 +5162,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4820,6 +5176,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4833,6 +5190,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4846,6 +5204,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Boss drop"
@@ -4862,6 +5221,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4875,6 +5235,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4888,6 +5249,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4901,6 +5263,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4914,6 +5277,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4927,6 +5291,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4940,6 +5305,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4953,6 +5319,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4966,6 +5333,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4979,6 +5347,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4992,6 +5361,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5005,6 +5375,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5018,6 +5389,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5031,6 +5403,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5044,6 +5417,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Boss drop"
@@ -5063,6 +5437,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5076,6 +5451,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5089,6 +5465,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -5102,6 +5479,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5115,6 +5493,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5128,6 +5507,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
@@ -5150,6 +5530,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5164,6 +5545,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5177,6 +5559,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5190,6 +5573,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5203,6 +5587,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -5216,6 +5601,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5229,6 +5615,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5242,6 +5629,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -5255,6 +5643,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Boss drop"
@@ -5274,6 +5663,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5287,6 +5677,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5300,6 +5691,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5313,6 +5705,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5326,6 +5719,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Boss drop"
@@ -5344,6 +5738,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -5360,6 +5755,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5382,6 +5778,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5398,6 +5795,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5414,6 +5812,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5430,6 +5829,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5446,6 +5846,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5462,6 +5863,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5478,6 +5880,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5494,6 +5897,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5511,6 +5915,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5526,6 +5931,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5541,6 +5947,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 	
@@ -5557,6 +5964,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5572,6 +5980,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5587,6 +5996,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5602,6 +6012,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 	
@@ -5618,6 +6029,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5633,6 +6045,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5648,6 +6061,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5663,6 +6077,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5678,6 +6093,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5693,6 +6109,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5708,6 +6125,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5725,6 +6143,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5740,6 +6159,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5755,6 +6175,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5770,6 +6191,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Loot source: Delve Lich"
@@ -5789,6 +6211,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5804,6 +6227,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5825,6 +6249,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5840,6 +6265,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5855,6 +6281,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5870,6 +6297,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5885,6 +6313,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5900,6 +6329,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
 	[tag]"item tag"		[value]"Boss drop"
@@ -5920,6 +6350,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5936,6 +6367,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5952,6 +6384,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5974,6 +6407,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expenvise"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -5989,6 +6423,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -6004,6 +6439,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -6018,6 +6454,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -6034,6 +6471,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
@@ -6057,6 +6495,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6072,6 +6511,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6087,6 +6527,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6102,6 +6543,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6117,6 +6559,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6132,6 +6575,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
@@ -6147,6 +6591,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"

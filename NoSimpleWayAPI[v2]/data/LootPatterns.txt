@@ -437,7 +437,6 @@ is_folder
 
 
 
-
 REGISTER_NEW_PATTERN
 name_EN	"Deleted items"
 name_RU	"Удалённые предметы"
@@ -1048,6 +1047,136 @@ have_force_field
 
 
 
+REGISTER_NEW_PATTERN
+name_EN	"Currency, gems, divinations"
+name_RU	"Валюта, камни, гадалки"
+icon	"data/textures/buttons/pattern_high_volatility_currency_and_other.png"
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Incubator item"
+DETF_localised_attribute_name_EN	"Incubators"
+DETF_localised_attribute_name_RU	"Инкубаторы"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Delirium orb"
+DETF_localised_attribute_name_EN	"Delirium orbs"
+DETF_localised_attribute_name_RU	"Сферы делириума"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Catalyst item"
+DETF_localised_attribute_name_EN	"Catalystы"
+DETF_localised_attribute_name_RU	"Катализаторы"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Delve fossil"
+DETF_localised_attribute_name_EN	"Fossils"
+DETF_localised_attribute_name_RU	"Ископаемые"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Scarab item"
+DETF_localised_attribute_name_EN	"Scarabs"
+DETF_localised_attribute_name_RU	"Скарабеи"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Divination item"
+DETF_localised_attribute_name_EN	"Divinations"
+DETF_localised_attribute_name_RU	"Гадалки"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Awakened gem"
+DETF_localised_attribute_name_EN	"Awakened gems"
+DETF_localised_attribute_name_RU	"Пробуждённые камни"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"High volatility"
+name_RU	"Высокая волатильность"
+icon	"data/textures/buttons/pattern_folder_high_volatility.png"
+is_folder
+have_force_field
+
+
+
+
+
+
 
 REGISTER_NEW_PATTERN
 name_EN	"All oils item"
@@ -1645,6 +1774,18 @@ DETF_localised_attribute_name_EN	"Worth: Rare"
 DETF_localised_attribute_name_RU	"Редкое"
 DETF_color	255	230	204	255
 
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
 
 
 
@@ -1745,6 +1886,12 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Expensive"
 DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 
@@ -2694,6 +2841,12 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Expensive"
 DETF_localised_attribute_name_EN	"Worth: Expensive"
 DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
 DETF_color	255	230	204	255
 
 
