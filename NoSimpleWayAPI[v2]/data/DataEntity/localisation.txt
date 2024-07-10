@@ -3538,3 +3538,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"tattoo_color_special"
 	[tag]"name EN"		[value]"Special"
 	[tag]"name RU"		[value]"Особые"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_new_version"
+	[tag]"name EN"		[value]"New version!"
+	[tag]"name RU"		[value]"Новая версия!"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"text_region_new_version_detected"
+	[tag]"name EN"		[value]"New version of AwakenedDaDEditor!\n\nPress 'Update' button, to open update webpage!"
+	[tag]"name RU"		[value]"Новая версия!\n\nНажмите кнопку 'Обновить', что бы открыть веб-сайт с обновлением!"

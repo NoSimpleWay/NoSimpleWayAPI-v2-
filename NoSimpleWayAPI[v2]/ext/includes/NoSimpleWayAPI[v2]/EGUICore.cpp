@@ -697,6 +697,11 @@ void EButtonGroup::close_this_group()
 	unmake_this_group_superfocused();
 
 	recursive_close_process();
+
+	if (autodeletable)
+	{
+		block_need_remove = true;
+	}
 }
 
 void EButtonGroup::recursive_close_process()

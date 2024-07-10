@@ -624,11 +624,11 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					(x_adding + region_gabarite->world_position_x) - 1.0f,
-					(region_gabarite->world_position_y + y_adding) - 1.0f,
+					(x_adding + region_gabarite->world_position_x) - 3.0f,
+					(region_gabarite->world_position_y + y_adding) - 2.0f,
 
-					(get_row_width(str) * font_scale) + 2.0f,
-					(font->base * font_scale) + 2.0f,
+					(get_row_width(str) * font_scale) + 6.0f,
+					(font->base * font_scale) + 6.0f,
 
 					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);

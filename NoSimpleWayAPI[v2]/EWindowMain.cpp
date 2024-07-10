@@ -3991,6 +3991,15 @@ void EWindowMain::get_poe_ninja_api_prices()
 		url_content = "";
 	}
 
+
+
+
+
+
+
+
+	
+
 	
 
 
@@ -4882,6 +4891,147 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 		}
 
 		std::cout << "Parsing finished!" << std::endl;
+	}
+}
+
+
+const std::string EWindowMain::this_version = "1.3.0";
+
+void EWindowMain::check_new_version_from_github()
+{
+	CURL*		curl;
+	CURLcode	code;
+
+	curl = curl_easy_init();
+	//curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+
+	std::string	url_content;
+
+	std::string	url = "https://raw.githubusercontent.com/NoSimpleWay/NoSimpleWayAPI-v2-/Master(default)/NoSimpleWayAPI[v2]/latest_version.txt";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	//NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_unique_jewels"), code, url_content.length());
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed! [" << (CURLcode)code << "]\r\n";
+	}
+	else
+	{
+		//parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+		EInputCore::logger_param("latest version from Github", url_content);
+
+		if (url_content.length() < 5)
+		{
+			EInputCore::logger_simple_error("ERROR: server return too short message!");
+		}
+		else
+		if ((url_content[1] != '.') || (url_content[3] != '.'))
+		{
+			EInputCore::logger_simple_error("ERROR: message do not match with pattern [#.#.#]!");
+		}
+		else
+		if (this_version != url_content)
+		{
+
+			EInputCore::logger_simple_info("New version found");
+			
+			EButtonGroup*
+			new_version_group = new EButtonGroup(new ERegionGabarite(500.0f, 200.0f));
+			
+
+			new_version_group->init_as_root_group(EWindowMain::link_to_main_window);
+			new_version_group->autodeletable		= true;
+			new_version_group->auto_superfocused	= true;
+
+			EButtonGroup*
+			new_version_workspace_part = new_version_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+			new_version_workspace_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+			new_version_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			new_version_workspace_part->add_caption_by_localistation_key("window_header_new_version");
+
+
+			//bottom: buttons
+			EButtonGroup*
+			accept_decline_group = new_version_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 50.0f)));
+			accept_decline_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+			accept_decline_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+			accept_decline_group->button_size_x_override = 200.0f;
+			accept_decline_group->group_have_button_lines = true;
+
+			//up: text
+			EButtonGroup*
+			text_info_group = new_version_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 25.0f)));
+			text_info_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+			text_info_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			text_info_group->button_size_x_override = 200.0f;
+			text_info_group->group_have_button_lines = true;
+
+			text_info_group->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("text_region_new_version_detected"));
+
+
+			////////
+			EntityButtonOpenURL*
+			button_accept = new EntityButtonOpenURL();
+			button_accept->stored_url = "https://github.com/NoSimpleWay/NoSimpleWayAPI-v2-/releases";
+
+			accept_decline_group->add_button_to_working_group(button_accept);
+
+			ELocalisationText
+			ltext;
+			ltext.localisations[NSW_localisation_EN] = "Update";
+			ltext.localisations[NSW_localisation_RU] = "Обновить";
+
+			button_accept->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(200.0f, 25.0f),
+				accept_decline_group,
+				&EDataActionCollection::action_open_url,
+				ltext
+			);
+			button_accept->main_text_area->localisation_text = ltext;
+			button_accept->main_text_area->set_color(0.75f, 1.0f, 0.85f, 1.0f);
+			button_accept->can_be_stretched = true;
+
+			////////
+			{
+				EntityButton*
+				button_decline = new EntityButton();
+				//button_decline->stored_url = "https://github.com/NoSimpleWay/NoSimpleWayAPI-v2-/releases";
+
+				accept_decline_group->add_button_to_working_group(button_decline);
+
+				ELocalisationText
+					ltext;
+				ltext.localisations[NSW_localisation_EN] = "Thanks, no";
+				ltext.localisations[NSW_localisation_RU] = "Позже";
+
+				button_decline->make_default_button_with_unedible_text
+				(
+					new ERegionGabarite(200.0f, 25.0f),
+					accept_decline_group,
+					&EDataActionCollection::action_close_root_group,
+					ltext
+				);
+
+				button_decline->main_text_area->localisation_text = ltext;
+				button_decline->main_text_area->set_color(1.00f, 0.75f, 0.65f, 1.0f);
+				button_decline->can_be_stretched = true;
+			}
+
+			new_version_group->activate_move_to_foreground_and_center();
+
+			//EButtonGroup::refresh_button_group(about_whole_group);
+			new_version_group->need_refresh = true;
+
+			EWindowMain::link_to_main_window->button_group_list.push_back(new_version_group);
+		}
+				
+	
+		//url_content = "";
 	}
 }
 
@@ -9557,8 +9707,8 @@ EWindowMain::EWindowMain()
 		style_list_group->activate_move_to_foreground_and_center();
 	}
 
-
-
+	
+	check_new_version_from_github();
 }
 
 void EWindowMain::register_loot_filter_list_group()

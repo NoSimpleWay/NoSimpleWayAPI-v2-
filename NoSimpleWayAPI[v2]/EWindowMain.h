@@ -1572,6 +1572,10 @@ public:
 	static void get_poe_ninja_api_prices();
 	static void parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
+	static const std::string this_version;
+
+	static void check_new_version_from_github();
+
 	void export_loot_patterns_to_file();
 	void import_loot_patterns_from_file();
 

@@ -375,15 +375,16 @@ public:
 
 	bool group_is_suppressed = false;
 
-	bool debug_translation = false;
-	bool can_be_moved = true;
-	bool have_shadow = true;
-	bool is_selected = false;
-	bool focusable_for_select = false;
-	bool have_rama = false;
-	bool can_be_resized_to_highest_point_y = false;
-	bool ignore_buttons_force_field = false;
-	bool ignore_vertical_buttons_force_field = false;
+	bool debug_translation						= false;
+	bool can_be_moved							= true;
+	bool have_shadow							= true;
+	bool is_selected							= false;
+	bool focusable_for_select					= false;
+	bool have_rama								= false;
+	bool can_be_resized_to_highest_point_y		= false;
+	bool ignore_buttons_force_field				= false;
+	bool ignore_vertical_buttons_force_field	= false;
+	bool autodeletable							= false;
 
 	EntityButton* close_button = nullptr;
 
