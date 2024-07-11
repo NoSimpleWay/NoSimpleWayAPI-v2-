@@ -885,6 +885,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"button_pattern_generate_nothing"
+	[tag]"name EN"		[value]"Pattern generate empty item list"
+	[tag]"name RU"		[value]"Шаблон сгенерировал пустой список предметов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"undefined_attribute"
 	[tag]"name EN"		[value]"Undefined attribute"
 	[tag]"name RU"		[value]"Неизвестный атрибут"

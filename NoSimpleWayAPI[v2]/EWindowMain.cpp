@@ -3988,6 +3988,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+
+		save_poe_ninja_cache("UniqueJewel", &url_content);
 		url_content = "";
 	}
 
@@ -4022,6 +4024,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+
+		save_poe_ninja_cache("UniqueFlask", &url_content);
 		url_content = "";
 	}
 
@@ -4043,6 +4047,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+
+		save_poe_ninja_cache("UniqueWeapon", &url_content);
 		url_content = "";
 	}
 
@@ -4066,6 +4072,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+
+		save_poe_ninja_cache("UniqueArmour", &url_content);
 		url_content = "";
 	}
 
@@ -4088,6 +4096,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
+
+		save_poe_ninja_cache("UniqueAccessory", &url_content);
 		url_content = "";
 	}
 
@@ -4110,6 +4120,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::DIVINATIONS, false);
+
+		save_poe_ninja_cache("DivinationCard", &url_content);
 		url_content = "";
 	}
 
@@ -4133,6 +4145,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
+
+		save_poe_ninja_cache("Currency", &url_content);
 		url_content = "";
 	}
 	
@@ -4157,6 +4171,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, false);
+
+		save_poe_ninja_cache("Fragment", &url_content);
 		url_content = "";
 	}
 	
@@ -4182,6 +4198,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
+
+		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
 	}
 	
@@ -4207,6 +4225,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::FRAGMENTS, true);
+
+		save_poe_ninja_cache("Scarab", &url_content);
 		url_content = "";
 	}
 	
@@ -4232,6 +4252,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::CURRENCY, false);
+
+		save_poe_ninja_cache("Fossil", &url_content);
 		url_content = "";
 	}
 	
@@ -4257,6 +4279,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::GEMS, false);
+
+		save_poe_ninja_cache("SkillGem", &url_content);
 		url_content = "";
 	}
 
@@ -4282,6 +4306,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::EMBERS, true);
+
+		save_poe_ninja_cache("AllflameEmber", &url_content);
 		url_content = "";
 	}
 
@@ -4307,6 +4333,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::TATTOO, true);
+
+		save_poe_ninja_cache("Tattoo", &url_content);
 		url_content = "";
 	}
 
@@ -4332,6 +4360,8 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::OMEN, true);
+
+		save_poe_ninja_cache("Omen", &url_content);
 		url_content = "";
 	}
 
@@ -4347,7 +4377,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
 		std::ofstream writabro;
 		writabro.open("data/Cached_data_entity_from_poe_ninja.txt");
@@ -4891,6 +4921,45 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 		}
 
 		std::cout << "Parsing finished!" << std::endl;
+	}
+}
+
+void EWindowMain::save_poe_ninja_cache(std::string _filename, std::string* _content)
+{
+	std::ofstream writabro;
+
+	std::string buffer = "";
+
+	namespace fs = std::filesystem;
+	fs::create_directories(path_of_exile_folder + "poe_ninja_cache/");
+	writabro.open(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt");
+	
+	writabro << *_content << std::endl;
+
+	writabro.close();
+}
+
+void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode)
+{
+	if (!std::filesystem::exists(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt"))
+	{
+		EInputCore::logger_simple_error("Cannot read [poe ninja cache], because file <" + path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt" + "> do not exist");
+	}
+	else
+	{
+		std::ifstream	file;
+		std::string		str;
+		std::string		buffer;
+
+		file.open(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt");
+
+		while (std::getline(file, str))
+		{
+			buffer += str;
+		}
+
+		parse_json_from_poe_ninja(&buffer, _api_mode, false);
+		file.close();
 	}
 }
 
@@ -7978,7 +8047,7 @@ void EWindowMain::register_loot_filter_error_list_group()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
 			loot_filter_error_bottom_part_fot_buttons = new EButtonGroup(new ERegionGabarite(300.0f, 40.0f));
-		loot_filter_error_bottom_part_fot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+		loot_filter_error_bottom_part_fot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		loot_filter_error_bottom_part_fot_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		loot_filter_error_bottom_part_fot_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
@@ -9709,6 +9778,23 @@ EWindowMain::EWindowMain()
 
 	
 	check_new_version_from_github();
+	  
+	read_poe_ninja_cache("UniqueJewel",		PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueFlask",		PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueWeapon",	PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueArmour",	PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueAccessory",	PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("DivinationCard",	PoeNinjaAPIMode::DIVINATIONS);
+	read_poe_ninja_cache("Currency",		PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("Fragment",		PoeNinjaAPIMode::FRAGMENTS);
+	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::FRAGMENTS);
+	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("SkillGem",		PoeNinjaAPIMode::GEMS);
+	read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
+	read_poe_ninja_cache("Tattoo",			PoeNinjaAPIMode::TATTOO);
+	read_poe_ninja_cache("Omen",			PoeNinjaAPIMode::OMEN);
+
 }
 
 void EWindowMain::register_loot_filter_list_group()
@@ -19665,7 +19751,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 				int id = 0;
 
 				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
-				if ((!listed_button->entity_need_remove) && (listed_button->main_text_area->localisation_text.base_name != ""))
+				if (!listed_button->entity_need_remove)
 				{
 					EntityButtonWideItem*
 					wide_button = static_cast<EntityButtonWideItem*>(listed_button);
@@ -19695,7 +19781,12 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 					)
 					{
 
-						if (listed_block->associated_item_attribute != nullptr)
+						if
+						(
+							(listed_block->associated_item_attribute != nullptr)
+							&&
+							(listed_button->main_text_area->localisation_text.base_name != "")
+						)
 						{
 							result_string += " ";
 							result_string += '"' + listed_button->main_text_area->localisation_text.base_name + '"';
@@ -19707,6 +19798,17 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 						}
 
 	
+					}
+					else
+					{
+						if (wide_button->attached_game_item_buttons.empty())
+						{
+							result_string += " ";
+							result_string += '"';
+							result_string += "Golden Obi";
+							result_string += '"';
+							//result_string = "ZZZ";
+						}
 					}
 					
 
@@ -19736,8 +19838,16 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 						result_string += ' ';
 						result_string += std::to_string(fake_id);
 
-						result_string += ' ';
-						result_string += std::to_string(wide_button->attached_game_item_buttons.size());
+						if (!wide_button->attached_game_item_buttons.empty())
+						{
+							result_string += ' ';
+							result_string += std::to_string(wide_button->attached_game_item_buttons.size());
+						}
+						else
+						{
+							result_string += ' ';
+							result_string += "1";
+						}
 
 
 
@@ -21349,6 +21459,9 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 
 void EButtonGroupFilterBlockEditor::reinit_all_filter_rule_pattern_buttons()
 {
+	//EWindowMain::active_loot_filter_editor->check_errors();
+
+	
 
 	for (int i = 0; i < group_list.size(); i++)
 	if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group_list[i]))//is it FilterBlock or Separator?
@@ -21376,6 +21489,8 @@ void EButtonGroupFilterBlockEditor::reinit_all_filter_rule_pattern_buttons()
 			//group->need_change = true;
 		}
 	}
+
+	EWindowMain::registered_group_filter_error_list->check_errors();
 }
 
 EButtonGroupFilterBlockSeparator::~EButtonGroupFilterBlockSeparator()
@@ -25098,12 +25213,13 @@ void EButtonGroupLootFilterErrors::check_errors()
 			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group))
 			{
 				EButtonGroupFilterBlock*
-					filter_block = static_cast<EButtonGroupFilterBlock*>(group);
+				filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
+				//check undefined attribute
 				for (EntityButton* but : filter_block->pointer_to_attribute_tab->workspace_button_list)
 				{
 					EntityButtonAttributeTab*
-						tab_button = static_cast<EntityButtonAttributeTab*>(but);
+					tab_button = static_cast<EntityButtonAttributeTab*>(but);
 
 
 
@@ -25125,6 +25241,35 @@ void EButtonGroupLootFilterErrors::check_errors()
 
 
 				}
+
+				//PATTERN WIDE GAME BUTTON
+				for (EButtonGroup* sub_group : filter_block->pointer_to_listed_attributes->group_list)//every listed block
+				{
+					EButtonGroupListedBlock*
+					listed_block = static_cast<EButtonGroupListedBlock*>(sub_group);
+
+					for (EntityButton* but : listed_block->section_for_wide_item_buttons->workspace_button_list)//check empty pattern button
+					{
+						EntityButtonWideItem*
+						wide_button = static_cast<EntityButtonWideItem*>(but);
+
+						if ((wide_button->is_pattern_filter) && (wide_button->attached_game_item_buttons.empty()))
+						{
+							any_error = true;
+
+							ELocalisationText ltext;
+							ltext = ELocalisationText::get_localisation_by_key("button_pattern_generate_nothing");
+							//ltext.add_text_to_all_languages(" [" + tab_button->main_text_area->stored_text + "]");
+
+							EntityButtonFilterBlockError::add_error_button_to_error_list
+							(
+								new ERegionGabarite(300.0f, 30.0f),
+								filter_block,
+								ltext
+							);
+						}
+					}
+				}
 			}
 
 
@@ -25134,6 +25279,8 @@ void EButtonGroupLootFilterErrors::check_errors()
 	{
 		//EWindowMain::registered_group_filter_error_list->status_text_area.se
 		EWindowMain::registered_group_filter_error_list->set_status_error();
+
+		EWindowMain::registered_group_filter_error_list->activate_move_to_foreground_and_center();
 	}
 	else
 	{
