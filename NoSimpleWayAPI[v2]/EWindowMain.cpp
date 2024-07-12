@@ -18130,8 +18130,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												{
 													EButtonGroupListedBlock*
 													l_block = static_cast<EButtonGroupListedBlock*>(jc_filter_block->pointer_to_listed_attributes->group_list.back());
-
-													l_block->section_for_wide_item_buttons->workspace_button_list[zx]->entity_need_remove = true;
+													
+													if (zx < l_block->section_for_wide_item_buttons->workspace_button_list.size())
+													{
+														l_block->section_for_wide_item_buttons->workspace_button_list[zx]->entity_need_remove = true;
+													}
 												}
 
 												break;
