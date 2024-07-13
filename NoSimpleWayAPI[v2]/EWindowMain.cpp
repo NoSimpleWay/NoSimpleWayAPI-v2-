@@ -21309,9 +21309,12 @@ void EButtonGroupDataEntity::background_update(float _d)
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
 				glGenerateMipmap(GL_TEXTURE_2D);
 
-				//glActiveTexture(GL_TEXTURE0);
-				//glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
-				//glGenerateMipmap(GL_TEXTURE_2D);
+				//for (int j = 1; j < texture_skydome_levels; j++)
+				//{
+				//	glActiveTexture(GL_TEXTURE0);
+				//	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[j]->get_framebuffer());
+				//	glGenerateMipmap(GL_TEXTURE_2D);
+				//}
 
 
 			}
