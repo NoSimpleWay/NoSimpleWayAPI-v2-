@@ -62,11 +62,6 @@ public:
 	
 
 	static std::vector<HRA_color_collection*> registered_color_list;
-
-
-
-
-
 	static void rgb2hsv(HSVRGBAColor* col)
 	{
 		double      min, max, delta;
@@ -110,8 +105,6 @@ public:
 				col->h += 360.0f;
 		}
 	}
-
-
 	static void hsv2rgb(HSVRGBAColor* col)
 	{
 		double      hh, p, q, t, ff;
@@ -176,6 +169,8 @@ public:
 		//col->r = 1.0f;
 		//return out;
 	}
+
+	static std::string get_clipboard_text();
 };
 
 

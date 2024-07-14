@@ -23,6 +23,40 @@ std::string Helper::float_to_string_with_precision(float _f, float _precision)
 	return float_to_string(round(_f * _precision) / _precision);
 }
 
+std::string Helper::get_clipboard_text()
+{
+	if (!OpenClipboard(nullptr))
+	{
+	}
+
+	// Get handle of clipboard object for ANSI text
+	HANDLE hData = GetClipboardData(CF_TEXT);
+	if (hData == nullptr)
+	{
+	}
+
+	// Lock the handle to get the actual text pointer
+	char* pszText = static_cast<char*>(GlobalLock(hData));
+	if (pszText == nullptr)
+	{
+	}
+
+	// Save text in a string class instance
+	std::string clipboard_text(pszText);
+	
+	// Release the lock
+	GlobalUnlock(hData);
+
+	// Release the clipboard
+	CloseClipboard();
+
+
+	//std::string full_text = clipboard_text;
+
+	return clipboard_text;
+	//return std::string();
+}
+
 
 
 void HSVRGBAColor::set_color(HSVRGBAColor* _HRA_color)

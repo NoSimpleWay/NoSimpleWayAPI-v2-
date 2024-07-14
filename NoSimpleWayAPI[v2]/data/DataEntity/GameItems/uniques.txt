@@ -4549,7 +4549,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"base name"	[value]"Boot Blade"
+	[tag]"base name"	[value]"Boot Knife"
 	[tag]"name EN"	[value]"Ungil's Gauche"
 	[tag]"name RU"	[value]"Кинжал Ангила"
 	[tag]"icon path"	[value]"SuperDagger"

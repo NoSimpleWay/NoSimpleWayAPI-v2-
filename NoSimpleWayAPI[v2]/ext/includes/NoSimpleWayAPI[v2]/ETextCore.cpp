@@ -1077,11 +1077,11 @@ void ETextArea::update(float _d)
 
 
 		if
-			(
-				(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
-				&&
-				(text_area_active)
-				)
+		(
+			(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
+			&&
+			(text_area_active)
+		)
 		{
 			//		ENTER IS NEW LINE
 			if
@@ -1129,6 +1129,29 @@ void ETextArea::update(float _d)
 			}
 		}
 
+		if
+		(
+			(can_be_edited)
+			&&
+			(EInputCore::key_pressed_once(GLFW_KEY_V))
+			&&
+			(
+				(EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
+				||
+				(EInputCore::key_pressed(GLFW_KEY_RIGHT_CONTROL))
+			)
+			&&
+			(is_overlapped_by_mouse())
+			&&
+			(EButtonGroup::catched_group_for_translation == nullptr)
+		)
+		{
+			change_text(Helper::get_clipboard_text());
+
+			for (text_actions_pointer dap : action_on_finalize_text)	if (dap != nullptr) { dap(this); }
+			for (text_actions_pointer dap : action_on_change_text)		if (dap != nullptr) { dap(this); }
+		}
+
 		//BACKSPACE key - erase left sided symbol
 		if
 			(
@@ -1139,11 +1162,11 @@ void ETextArea::update(float _d)
 						(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.20f))
 						&&
 						(jump_cooldown <= 0)
-						)
 					)
+				)
 				&&
 				(text_area_active)
-				)
+			)
 		{
 			jump_cooldown = 0.065f;
 
