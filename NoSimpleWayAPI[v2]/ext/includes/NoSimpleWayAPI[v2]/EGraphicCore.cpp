@@ -228,7 +228,9 @@ void ERenderBatcher::draw_call()
 		apply_transform();
 
 		//batcher_shader->setInt("texture1", 0);
-		
+		//glDisable(GL_MULTISAMPLE);
+		//glfwWindowHint(GLFW_SAMPLES, 0);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 16);
 		
 		if
 		(
@@ -249,14 +251,13 @@ void ERenderBatcher::draw_call()
 			}
 			else
 			{
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST);//texture filtering
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);//texture filtering
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 			}
 
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-			
 
 			//SKYDOMES
 			for (int i = 0; i < texture_skydome_levels; i++)
@@ -268,8 +269,21 @@ void ERenderBatcher::draw_call()
 
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+
+				if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+				{
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);//texture filtering
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+				}
+				else
+				{
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+				}
+				//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
+				//{glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);}//
+				//else
+				
 				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 				
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
@@ -320,7 +334,19 @@ void ERenderBatcher::draw_call()
 		glBindVertexArray(VAO);
 
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, &vertex_buffer, GL_STREAM_DRAW);
+		if (EInputCore::key_pressed(GLFW_KEY_1))
+		{
+			glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, &vertex_buffer, GL_STATIC_DRAW);
+		}
+		else
+		if (EInputCore::key_pressed(GLFW_KEY_1))
+		{
+			glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, &vertex_buffer, GL_DYNAMIC_DRAW);
+		}
+		else
+		{
+			glBufferData(GL_ARRAY_BUFFER, sizeof(float)* last_vertice_buffer_index, &vertex_buffer, GL_STREAM_DRAW);
+		}
 
 		//							 6 indices																  4 vertex to form shape
 		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_INT, 0);
@@ -2444,6 +2470,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 2);//
+		//glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_LOD, 2.0f);//
 
 		NS_EGraphicCore::skydome_batcher->get_shader()->setInt("blur_table", -1);
 
@@ -2464,8 +2492,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
 		//glGenerateMipmap(GL_TEXTURE_2D);
 	}
 
@@ -2484,6 +2512,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 2);//
+		//glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_LOD, 2.0f);//
 
 		float pp = max(1.0f, i - 0.8f);
 		pp *= pp;
@@ -2509,8 +2539,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
 		//glGenerateMipmap(GL_TEXTURE_2D);
 	}
 
@@ -2519,7 +2549,12 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 		glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 
-		
+		for (int i = 0; i < texture_skydome_levels; i++)
+		{
+			glActiveTexture(GL_TEXTURE0);
+			glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
+			glGenerateMipmap(GL_TEXTURE_2D);
+		}
 
 }
 
@@ -5308,11 +5343,13 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 				remaining_data -= data_part;
 				batcher_free_space -= data_part;
 
-				if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-				{
-					batcher->draw_call();
-					batcher_free_space = batcher_size;
-				}
+				//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+				//{
+				//	batcher->draw_call();
+				//	batcher_free_space = batcher_size;
+				//}
+
+
 				//if (batcher->last_vertice_buffer_index >= batcher_size)
 				//{
 				//	batcher->draw_call();

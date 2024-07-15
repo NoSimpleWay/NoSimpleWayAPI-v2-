@@ -4624,8 +4624,8 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								(
 									(_mode == PoeNinjaAPIMode::UNIQUES)
 									&&
-									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN,	item_name, data_entity))
-									&&
+									//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN,	item_name, data_entity))
+									//&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag,	&ERegisteredStrings::unique_item, data_entity))
 									&&
 									(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::details_ID, details_id, data_entity))
@@ -4638,6 +4638,16 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								)
 							)
 							{
+
+								if
+								(
+									(_mode == PoeNinjaAPIMode::UNIQUES)
+									&&
+									(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
+								)
+								{
+									std::cout << yellow << "Details id[" << green << details_id << yellow << "] match. item name[" << red << item_name << yellow << "] do not match" << std::endl;
+								}
 								//if (item_name == "Shimmeron")
 								//{
 								//	item_name = item_name;
@@ -4697,14 +4707,23 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 									
 									
 									//is world drop?
-									if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop,	data_entity))
+									if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop,				data_entity))
 									{target_worth_ID_string = &ERegisteredStrings::worth_world_drop;}
 									else
-									if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,	data_entity))
-									{target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;}
+									if
+									(
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,				data_entity))
+										||
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::replica_item,			data_entity))
+										||
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::assembled_from_pieces,	data_entity))
+									)
+									{
+										target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;
+									}
 									else
 									{
-										EInputCore::logger_simple_error("unique item[" + item_name + "] have no suitable tags (<world drop> or <boss item>!");
+										EInputCore::logger_simple_error("unique item[" + item_name + "] have no suitable tags (<world drop>, <boss item>, <replica> or <assembled from pieces>)!");
 									}
 									
 								}
@@ -21822,7 +21841,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 			if (_game_item->localised_name.base_name != "")
 			{
 				EGameItemAttributeContainer
-					attribute_container;
+				attribute_container;
 
 				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
 				//attribute_container.attribute_value_str = game_item->localised_name.base_name;
@@ -22024,6 +22043,20 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 					_game_item->rarity
 				);
 			}
+
+			std::string
+			set_bool_string = DataEntityUtils::get_tag_value_by_name(0, "set bool attribute", _game_item->stored_data_entity);
+
+			if (set_bool_string != "")
+			{
+				GameItemAttribute::game_attribute_set_bool_value
+				(
+					_game_item,
+					set_bool_string,
+					true
+				);
+			}
+
 
 			//CHECK IS ITEM ALWAYS UNIQUE
 			if
@@ -23447,6 +23480,30 @@ void GameItemAttribute::game_attribute_set_int_value(EGameItem* _game_item, std:
 	if (attribute == nullptr) { attribute = add_new_game_attribute_by_name(_game_item, _name); }
 
 	attribute->attribute_value_int = _value;
+}
+
+void GameItemAttribute::game_attribute_set_bool_value(EGameItem* _game_item, std::string _name, bool _value)
+{
+	EGameItemAttributeContainer*
+	attribute = nullptr;
+
+	for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
+		//for (EGameItemAttributeContainer searched : _game_item->attribute_container_list)
+	{
+		EGameItemAttributeContainer*
+		searched = &(_game_item->attribute_container_list[i]);
+
+		if (EStringUtils::compare_ignoring_case(searched->target_attribute->localisation.base_name, _name))
+		{
+			attribute = searched;
+
+			break;
+		}
+	}
+
+	if (attribute == nullptr) { attribute = add_new_game_attribute_by_name(_game_item, _name); }
+
+	attribute->attribute_value_bool = _value;
 }
 
 void GameItemAttribute::game_attribute_set_string_value(EGameItem* _game_item, std::string _name, std::string _value)
@@ -27446,7 +27503,7 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group
 	if ((EWindowMain::loot_simulator_button_group->is_corrupted) && (_game_item->can_be_corrupted))
 	{
 		EGameItemAttributeContainer*
-			attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Corrupted");
+		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Corrupted");
 		attribute_container->attribute_value_bool = true;
 
 

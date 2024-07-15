@@ -90,6 +90,8 @@ namespace ERegisteredStrings
 
 	const ID_string ERegisteredStrings::world_drop					= ID_string::register_new_unique_ID_by_key("World drop");
 	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Boss drop");
+	const ID_string ERegisteredStrings::replica_item				= ID_string::register_new_unique_ID_by_key("Replica");
+	const ID_string ERegisteredStrings::assembled_from_pieces		= ID_string::register_new_unique_ID_by_key("Assembled from pieces");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)

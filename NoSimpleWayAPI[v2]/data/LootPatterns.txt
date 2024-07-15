@@ -2557,6 +2557,47 @@ DETF_color	255	230	204	255
 
 
 
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"World drop"
+DETF_localised_attribute_name_EN	"World drop"
+DETF_localised_attribute_name_RU	"Добывается везде"
+DETF_color	200	230	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Boss drop"
+DETF_localised_attribute_name_EN	"Boss drop"
+DETF_localised_attribute_name_RU	"Добывается с Боссов"
+DETF_color	255	200	180	255
+DETF_color	200	230	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Replica"
+DETF_localised_attribute_name_EN	"Replica"
+DETF_localised_attribute_name_RU	"Копия уника"
+DETF_color	220	200	100	255
+
+
+
+
+
+
+
+
+
+
+
+
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 

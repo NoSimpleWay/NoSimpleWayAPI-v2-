@@ -1475,6 +1475,7 @@ public:
 	static void							add_new_listed_value_to_game_attribute	(EGameItem* _game_item, std::string _name, ELocalisationText _value);
 
 	static void							game_attribute_set_int_value		(EGameItem* _game_item, std::string _name, int _value);
+	static void							game_attribute_set_bool_value		(EGameItem* _game_item, std::string _name, bool _value);
 	static void							game_attribute_set_string_value		(EGameItem* _game_item, std::string _name, std::string _value);
 
 	static GameItemAttribute* default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];

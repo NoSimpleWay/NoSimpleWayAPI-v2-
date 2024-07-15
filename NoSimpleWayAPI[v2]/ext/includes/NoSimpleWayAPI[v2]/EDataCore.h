@@ -406,6 +406,8 @@ namespace ERegisteredStrings
 
 	extern const ID_string world_drop;
 	extern const ID_string boss_drop;
+	extern const ID_string replica_item;
+	extern const ID_string assembled_from_pieces;
 }
 
 
