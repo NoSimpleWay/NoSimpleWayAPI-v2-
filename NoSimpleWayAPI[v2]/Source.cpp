@@ -544,8 +544,8 @@ int main()
 				NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());
 
 
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 				NS_ERenderCollection::add_data_to_vertex_buffer_default
 				(
@@ -553,8 +553,8 @@ int main()
 					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 					0.0,
 					0.0f,
-					1024.0f,
-					1024.0f
+					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_x(),
+					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_y()
 				);
 
 				NS_EGraphicCore::default_batcher_for_drawing->draw_call();

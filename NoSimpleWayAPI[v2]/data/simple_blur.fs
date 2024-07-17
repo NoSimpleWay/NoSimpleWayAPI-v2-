@@ -10,7 +10,7 @@ in vec2 TexCoord;
 uniform sampler2D texture1;
 uniform sampler2D texture2;
 
-uniform int blur_table = 0;
+uniform float blur_size = 0.0f;
 uniform float blur_size_x = 1.0f/20480.0f;
 uniform float blur_size_y = 1.0f/20480.0f;
 
@@ -18,21 +18,33 @@ vec4 result_color;
 float divis = 0.0f;
 float mul = 0.0f;
 
+float linear_dist;
+float dist_factor;
+
 float table[7] = {8.0f, 16.0f, 16.0f, 32.0f, 32.0f, 32.0f, 64.0f};
 
 void main()
 {
 	// linearly interpolate between both textures (80% container, 20% awesomeface)
-	if (blur_table >= 0)
+	//blur_size = blur_size * 2.0f;
+	if (blur_size > 0.0f)
 	{
 		result_color = vec4(0.0f);
 		
-		for (int i = -32; i <= 32; i++)
-		for (int j = -32; j <= 32; j++)
+		for (int i = -8; i <= 8; i++)
+		for (int j = -8; j <= 8; j++)
 		{
-			mul = 1.0f / (pow((i*i + j*j) / table[blur_table] , 2.0f / (1.0f + blur_table / 15.0f)) + 1.0f) * (texture(texture1, TexCoord).a * 1.0f + 1.0f);
+			linear_dist = (i*i + j*j) / 8.0f;
+			//linear_dist = pow(linear_dist, 2.0f);
+			//linear_dist = 0.0f;
+			dist_factor = 1.0f - linear_dist * linear_dist;
 			
-			result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i) * 1.0f).rgba * mul;
+			//dist_factor = 1.0f;
+			
+			mul = clamp(dist_factor, 0.0f, 1.0f) * (texture(texture1, TexCoord).a);
+			//mul = 1.0f;
+			
+			result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i) * blur_size).rgba * mul;
 			divis += mul;
 		}
 		
@@ -46,7 +58,7 @@ void main()
 	//result_color.a += 0.2;
 	//result_color.a = 1.0;
 	
-	FragColor.rgba = result_color;
+	FragColor.rgba = clamp(result_color, vec4(0.0f), vec4(1.0f));
 	//FragColor.rgba = texture(texture1, TexCoord);
 	//FragColor.a = 1.0f;
 	//FragColor.r = gl_FragCoord.x / 1920.0f;

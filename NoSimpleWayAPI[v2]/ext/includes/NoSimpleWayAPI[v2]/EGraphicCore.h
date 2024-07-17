@@ -449,8 +449,8 @@ public:
 class ETextureAtlas
 {
 private:
-	int* atlas_size_x = new int(0);
-	int* atlas_size_y = new int(0);
+	int atlas_size_x = 0;
+	int atlas_size_y = 0;
 
 	GLuint* framebuffer = new GLuint(0);
 	GLuint* colorbuffer = new GLuint(0);
@@ -466,7 +466,9 @@ public:
 	ETextureAtlas(int _size_x, int _size_y, int _color_depth = GL_RGBA, int _byte_mode = GL_UNSIGNED_BYTE);
 	~ETextureAtlas();
 
+	void set_size(int _size_x, int _size_y);
 	bool** free_space;
+	bool have_matrix = false;
 	bool can_place_here(int _x, int _y, int _w, int _h);
 };
 

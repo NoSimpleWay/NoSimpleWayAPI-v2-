@@ -4638,15 +4638,22 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								)
 							)
 							{
-
-								if
-								(
-									(_mode == PoeNinjaAPIMode::UNIQUES)
-									&&
-									(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::name_EN, item_name, data_entity))
-								)
+								
+								
+								if (_mode == PoeNinjaAPIMode::UNIQUES)
 								{
-									std::cout << yellow << "Details id[" << green << details_id << yellow << "] match. item name[" << red << item_name << yellow << "] do not match" << std::endl;
+									std::string
+									item_name_en = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_entity);
+
+									if (item_name_en == "")
+									{
+										EInputCore::logger_simple_error("item [" + details_id + "] have no item name!");
+									}
+									else
+									if (item_name_en != item_name)
+									{
+										std::cout << yellow << "Details id[" << green << details_id << yellow << "] match. item name[" << red << item_name << yellow << "|" << blue << item_name_en << yellow << "] do not match" << std::endl;
+									}
 								}
 								//if (item_name == "Shimmeron")
 								//{
