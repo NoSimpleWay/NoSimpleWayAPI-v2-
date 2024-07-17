@@ -61,7 +61,13 @@ float c_b;
 float c_a;
 
 vec4 skydome_pixel;
+vec4 skydome_pixel_A;
+vec4 skydome_pixel_B;
 
+
+float tile_offset_x	[11] = {0.0f, 0.5f, 0.75f,	0.5f,	0.625f, 0.750f,	0.875f,	0.5f,	0.625f,	0.750f, 0.875f};
+float tile_offset_y	[11] = {0.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.0f, 	0.000f,	0.000f,	0.000f};
+float tile_scale	[11] = {1.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.25f, 	0.25f,	0.25f,	0.25f};
 
 
 float level = 0.0f;
@@ -105,7 +111,7 @@ vec3 sky_light;
 
 float AO_bottom_shade_factor;
 
-int steps = 6;
+int steps = 10;
 
 float fast_gloss;
 
@@ -118,13 +124,16 @@ void main()
 	plastic_or_metal			*= plastic_or_metal_multiplier;
 	
 	reflection_blur_area		= clamp(texture(texture1, GlossMapTexCoord).b, 0.0f, 1.0f);
+	
+	
 	reflection_blur_area		*= gloss_map_multiplier;
+	reflection_blur_area		= pow (reflection_blur_area, 1.5);
 	reflection_blur_area		= min(reflection_blur_area, 1.0f);
 	
 	//reflection_blur_area = sun_flat_decay;
 	//gloss_power = 0.2f;
 	
-	fast_gloss = max(reflection_blur_area, 0.0f);
+	fast_gloss = clamp(reflection_blur_area, 0.01f, 1.0f);
 	
 	level = (1.0f - fast_gloss) * steps;
 	//level = (level - 0.5) * 2.000f;
@@ -135,6 +144,8 @@ void main()
 	
 	skydome_mix_factor = level - glossy_flat;
 	
+	//glossy_flat = 0;
+	//glossy_flat = int(round(move_multiplier));
 	nrm = (texture(texture1, NormalMapTexCoord).rg - vec2(0.5f)) * 2.0f;
 	//nrm = pow(nrm, vec2(2.0f)) * vec2((nrm[0] < 0) ? (-1.0f) : (1.0f),(nrm[1] < 0) ? (-1.0f) : (1.0f));
 	
@@ -147,89 +158,75 @@ void main()
 	//normal_y += -0.5f;
 	
 	
-	reflect_pos_x =  0.333f;
-	reflect_pos_x += (gl_FragCoord.x / scr_x) * 0.333f;
+	if (glossy_flat <= 10)
+	{
+		reflect_pos_x = (gl_FragCoord.x / scr_x);
+		reflect_pos_x += nrm[0] * 0.333f;
+		reflect_pos_x += time / 50.0f;
+		reflect_pos_x = ((reflect_pos_x * 2.0f) - floor(reflect_pos_x * 2.0f));
+		
+		reflect_pos_x *= 0.5f;
+		reflect_pos_x *= tile_scale		[glossy_flat];
+		reflect_pos_x += tile_offset_x	[glossy_flat];
+		reflect_pos_x = clamp(reflect_pos_x, tile_offset_x[glossy_flat] + 0.5f / 1024.0f, tile_offset_x[glossy_flat] + tile_scale[glossy_flat] * 0.5f - 0.5f / 1024.0f);
+		
+		
+		
+		reflect_pos_y = (WorldPosition.y / scr_y);
+		reflect_pos_y += nrm[1] * 0.333f;
+		reflect_pos_y *= tile_scale[glossy_flat];
+		reflect_pos_y += tile_offset_y[glossy_flat];
+
+		reflect_coord = vec2 (reflect_pos_x, reflect_pos_y);
+		skydome_pixel_A = texture(SD_array[1], reflect_coord);	
+	}
+	else
+	{
+		skydome_pixel_A = vec4(1.0f, 0.75f, 0.5f, 1.0f);
+	}
+	
+	glossy_flat = min(glossy_flat + 1, 11);
+	if (glossy_flat <= 10)
+	{
+		
+		
+		reflect_pos_x = (gl_FragCoord.x / scr_x);
+		reflect_pos_x += nrm[0] * 0.333f;
+		reflect_pos_x += time / 50.0f;
+		reflect_pos_x = ((reflect_pos_x * 2.0f) - floor(reflect_pos_x * 2.0f));
+		
+		reflect_pos_x *= 0.5f;
+		reflect_pos_x *= tile_scale		[glossy_flat];
+		reflect_pos_x += tile_offset_x	[glossy_flat];
+		reflect_pos_x = clamp(reflect_pos_x, tile_offset_x[glossy_flat] + 0.5f / 1024.0f, tile_offset_x[glossy_flat] + tile_scale[glossy_flat] * 0.5f - 0.5f / 1024.0f);
+		
+		
+		
+		reflect_pos_y = (WorldPosition.y / scr_y);
+		reflect_pos_y += nrm[1] * 0.333f;
+		reflect_pos_y *= tile_scale[glossy_flat];
+		reflect_pos_y += tile_offset_y[glossy_flat];
+
+		reflect_coord = vec2 (reflect_pos_x, reflect_pos_y);
+		
+		skydome_pixel_B = texture(SD_array[1], reflect_coord);	
+	}
+	else
+	{
+		skydome_pixel_B = vec4(0.9f, 0.95f, 1.00f, 1.0f);
+	}
+	
+	skydome_pixel = mix(skydome_pixel_A, skydome_pixel_B, skydome_mix_factor);
+	
+	//else
+	//{
+	//	skydome_pixel = vec4(0.5f, 0.75f, 1.0, 1.0f);
+	//}
+	reflect_pos_x = (gl_FragCoord.x / scr_x);
 	reflect_pos_x += nrm[0] * 0.333f;
 	
-	reflect_pos_y =  0.333f;
-	reflect_pos_y += ((WorldPosition.y	/ scr_y)) * 0.333f;
+	reflect_pos_y = (WorldPosition.y / scr_y);
 	reflect_pos_y += nrm[1] * 0.333f;
-
-	
-	//reflect_pos_y += (ground_level * 2.0f - 1.0f);
-	
-	//				x_scale		aspect ratio
-	float sky_reflect_x = reflect_pos_x * 2.0f * scr_x / scr_y + time / 50.0f * move_multiplier;
-	float sky_reflect_y = reflect_pos_y * 2.0f - ground_level;
-	
-	//sky_reflect_x = 1424.32525f;
-	//sky_reflect_y = 5235.4234f;
-	
-	reflect_coord =
-	vec2
-	(
-		//base offset		screen position offset					//normal offset
-		sky_reflect_x,
-		sky_reflect_y
-	);
-	
-	
-	//interpolation_A = 1.0f;
-	//skydome_mix_factor = 0.0f;
-	
-	if (glossy_flat == 0)
-	{
-		skydome_pixel = mix(texture(SD_array[0], reflect_coord)	,texture(SD_array[1], reflect_coord), skydome_mix_factor);
-		
-		//skydome_pixel = vec4(1.0f, 0.0f, 0.0f, 1.0f);
-	}
-	else
-	if (glossy_flat == 1)
-	{
-		skydome_pixel = mix(texture(SD_array[1], reflect_coord)	,texture(SD_array[2], reflect_coord), skydome_mix_factor);
-		
-		//skydome_pixel = vec4(0.0f, 1.0f, 0.0f, 1.0f);
-	}
-	else
-	if (glossy_flat == 2)
-	{
-		skydome_pixel = mix(texture(SD_array[2], reflect_coord)	,texture(SD_array[3], reflect_coord), skydome_mix_factor);	
-		
-		//skydome_pixel = vec4(0.0f, 0.0f, 1.0f, 1.0f);
-	}
-	else
-	if (glossy_flat == 3)
-	{
-		skydome_pixel = mix(texture(SD_array[3], reflect_coord)	,texture(SD_array[4], reflect_coord), skydome_mix_factor);	
-		
-		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-	}
-	else
-	if (glossy_flat == 4)
-	{
-		skydome_pixel = mix(texture(SD_array[4], reflect_coord)	,texture(SD_array[5], reflect_coord), skydome_mix_factor);	
-		
-		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-	}
-	else
-	if (glossy_flat == 5)
-	{
-		skydome_pixel = mix(texture(SD_array[5], reflect_coord)	,texture(SD_array[6], reflect_coord), skydome_mix_factor);	
-		
-		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-	}
-	else
-	{
-		skydome_pixel
-		=
-		clamp
-		(
-			texture(SD_array[6], reflect_coord),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
-		);
-		//skydome_pixel = vec4(1.0f, 1.0f, 1.0f, 1.0f);
-	}
 	
 	dist_x = reflect_pos_x - (sun_position_x);
 	dist_y = reflect_pos_y - (sun_position_y);
@@ -331,7 +328,7 @@ void main()
 	//FragColor.g = (reflect_pos_y);
 	//FragColor.b = 0.5f;
 	
-	//FragColor.rgb = vec3(dist_total);
+	//FragColor.rgb = skydome_pixel.rgb;
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;
 	//FragColor.rgb = vec3(dist_total);
 	//FragColor.rgb = (matte_sun_light);

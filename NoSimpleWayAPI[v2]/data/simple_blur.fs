@@ -44,7 +44,7 @@ void main()
 			mul = clamp(dist_factor, 0.0f, 1.0f) * (texture(texture1, TexCoord).a);
 			//mul = 1.0f;
 			
-			result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i) * blur_size).rgba * mul;
+			result_color += texture(texture1, TexCoord + vec2(blur_size_x * float(j) / 8.0f, blur_size_y * float(i) / 8.0f) * blur_size).rgba * mul;
 			divis += mul;
 		}
 		

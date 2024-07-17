@@ -62,7 +62,7 @@ namespace NS_EGraphicCore
 	float							sun_blur							= 0.75f;
 	float							sun_bright							= 21.000f;
 	float							sun_exp								= 3.300f;
-	float							ground_level						= 0.475f;
+	float							ground_level						= 0.0f;
 	float							time_total							= 0.00f;
 	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;
@@ -260,33 +260,39 @@ void ERenderBatcher::draw_call()
 
 
 			//SKYDOMES
-			for (int i = 0; i < 1; i++)
+			//for (int i = 0; i < 1; i++)
 			{
 
 
-				glActiveTexture(GL_TEXTURE1 + i);
-				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
+				glActiveTexture(GL_TEXTURE1);
+				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
 
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
 
 				if (!EInputCore::key_pressed(GLFW_KEY_TAB))
 				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);//texture filtering
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
 					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 				}
 				else
 				{
 					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
 					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					
 				}
+				
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
+				
+				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 				//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
 				//{glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);}//
 				//else
 				
 				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 				
-				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(1) + "]", 1);
 			}
 
 			//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[0]", 0);
@@ -2505,8 +2511,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		{
 			skydome_tile_struct(0.000f,	0.0f,		1.0f,	1.0f,	0.0f),	//0		[original]
 
-			skydome_tile_struct(0.500f,	0.5f,		0.5f,	0.5f,	0.5f),	//1		[half size,		blur = 1]
-			skydome_tile_struct(0.750f,	0.5f,		0.5f,	0.5f,	1.0f),	//2		[half size,		blur = 2]
+			skydome_tile_struct(0.500f,	0.5f,		0.5f,	0.5f,	1.0f),	//1		[half size,		blur = 1]
+			skydome_tile_struct(0.750f,	0.5f,		0.5f,	0.5f,	2.0f),	//2		[half size,		blur = 2]
 
 			skydome_tile_struct(0.500f,	0.25f,		0.25f,	0.25f,	1.0f),	//3		[quart size,	blur = 4]
 			skydome_tile_struct(0.625f,	0.25f,		0.25f,	0.25f,	2.0f),	//4		[quart size,	blur = 8]
@@ -2516,7 +2522,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 			skydome_tile_struct(0.500f,	0.0f,		0.25f,	0.25f,	16.0f),	//7		[quart size,	blur = 64]
 			skydome_tile_struct(0.625f,	0.0f,		0.25f,	0.25f,	32.0f),	//8		[quart size,	blur = 128]
 			skydome_tile_struct(0.750f,	0.0f,		0.25f,	0.25f,	64.0f),	//9		[quart size,	blur = 256]
-			skydome_tile_struct(0.875f,	0.0f,		0.25f,	0.25f,	2.0f)	//10	[quart size,	blur = 512]} ;
+			skydome_tile_struct(0.875f,	0.0f,		0.25f,	0.25f,	128.0f)	//10	[quart size,	blur = 512]} ;
 		};
 
 
