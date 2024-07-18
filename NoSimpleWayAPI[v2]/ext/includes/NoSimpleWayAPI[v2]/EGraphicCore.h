@@ -180,6 +180,7 @@ namespace NS_EGraphicCore
 {
 	extern int				old_w, old_h;
 	extern bool				changed_resolution;
+	extern bool				window_focused;
 	extern int				SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
 	extern Shader*			shader_texture_atlas_putter;

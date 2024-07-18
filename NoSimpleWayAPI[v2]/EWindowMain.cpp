@@ -4719,19 +4719,106 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 									else
 									if
 									(
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,				data_entity))
-										||
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::replica_item,			data_entity))
-										||
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::assembled_from_pieces,	data_entity))
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::non_world_drop,				data_entity))
+										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,				data_entity))
+										//||
+										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::replica_item,			data_entity))
+										//||
+										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::assembled_from_pieces,	data_entity))
+										//||
+										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::atzoatl_sacrifice,		data_entity))
 									)
 									{
 										target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;
 									}
 									else
 									{
-										EInputCore::logger_simple_error("unique item[" + item_name + "] have no suitable tags (<world drop>, <boss item>, <replica> or <assembled from pieces>)!");
+										//EInputCore::logger_simple_error("unique item[" + item_name + "] have no suitable tags (<World drop> or <Non world drop>)!");
 									}
+
+									bool is_world_drop		= false;
+									bool is_non_world_drop	= false;
+
+									if(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop, data_entity))
+									{
+										is_world_drop = true;
+										//target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;
+									}
+
+
+									if(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::non_world_drop, data_entity))
+									{
+										is_non_world_drop = true;
+									}
+									else
+									{
+										if (!is_world_drop)
+										{
+											EInputCore::logger_simple_error("unique item[" + details_id + "] have no suitable loot source (<World drop> or <Non world drop>)!");
+										}
+
+
+									}
+
+									if
+									(
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::atzoatl_sacrifice, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::assembled_from_pieces, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::uber_lab, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::heist_drop, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::upgraded_by_blessing, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::vendor_recipe, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::blight_drop, data_entity))
+											||
+											(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::simulacrum, data_entity))
+									)
+									{
+										if (is_world_drop)
+										{
+											EInputCore::logger_simple_error("unique item[" + details_id + "] have tag <World drop> and one of non-world tags in same time!");
+										}
+
+										if (!is_non_world_drop)
+										{
+											EInputCore::logger_simple_error("unique item[" + details_id + "] have one of non-world tags, but have no <Non world drop> tag!");
+										}
+										//target_worth_ID_string = &ERegisteredStrings::worth_boss_drop;
+									}
+									else
+									{
+										if (!is_world_drop)
+										{
+											EInputCore::logger_simple_error("unique item[" + details_id + "] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)!");
+										}
+									}
+
+									if ((is_world_drop) && (is_non_world_drop))
+									{
+										EInputCore::logger_simple_error("unique item[" + details_id + "] have tags <World drop> and <Non world drop> in same time!");
+									}
+
+
+									int replica_score = 0;
+									if
+									(
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::replica_item, data_entity)) 
+										&&
+										(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::heist_drop, data_entity))
+									)										
+									{
+										EInputCore::logger_simple_error("Item[" + details_id + "] is replica, but have no <Loot source: Heist> and <Replica> tag!");
+									}
+									
 									
 								}
 								else//non-uniques item always use tag "worth"
@@ -4831,7 +4918,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string* _url_content, PoeNinjaA
 								if (_mode == PoeNinjaAPIMode::UNIQUES)
 								{
 
-									DataEntityUtils::set_tag_value_by_name(0, "detailsId", details_id, data_entity);
+									//DataEntityUtils::set_tag_value_by_name(0, "detailsId", details_id, data_entity);
 
 									std::string
 									base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);

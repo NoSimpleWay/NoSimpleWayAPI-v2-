@@ -2586,6 +2586,12 @@ DETF_localised_attribute_name_EN	"Replica"
 DETF_localised_attribute_name_RU	"Копия уника"
 DETF_color	220	200	100	255
 
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Assembled from pieces"
+DETF_localised_attribute_name_EN	"Assembled from pieces"
+DETF_localised_attribute_name_RU	"Собранный из кусков"
+DETF_color	220	200	100	255
+
 
 
 

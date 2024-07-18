@@ -487,40 +487,49 @@ int main()
 
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-		for (EWindow* w : EWindow::window_list)
+		if ((NS_EGraphicCore::window_focused) || (true))
 		{
+			for (EWindow* w : EWindow::window_list)
+			{
 
-			w->update_default(NS_EGraphicCore::delta_time);
-			w->update_additional(NS_EGraphicCore::delta_time);
+				w->update_default(NS_EGraphicCore::delta_time);
+				w->update_additional(NS_EGraphicCore::delta_time);
 
-			w->GUI_update_default(NS_EGraphicCore::delta_time);
-			w->GUI_update_additional(NS_EGraphicCore::delta_time);
+				w->GUI_update_default(NS_EGraphicCore::delta_time);
+				w->GUI_update_additional(NS_EGraphicCore::delta_time);
+			}
+
+			for (EWindow* w : EWindow::window_list)
+			{
+				w->draw_default(NS_EGraphicCore::delta_time);
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+				w->draw_additional(NS_EGraphicCore::delta_time);
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+				w->GUI_draw_default(NS_EGraphicCore::delta_time);
+				NS_EGraphicCore::pbr_batcher->draw_call();
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+				w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
+				NS_EGraphicCore::pbr_batcher->draw_call();
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+				w->GUI_draw_additional(NS_EGraphicCore::delta_time);
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+				//NS_EGraphicCore::pbr_batcher->draw_call();
+			}
+
+
+			//EInputCore::logger_simple_info("window focused!");
+		}
+		else
+		{
+			//EInputCore::logger_simple_info("window do not focused!");
 		}
 
-
-
-		for (EWindow* w : EWindow::window_list)
-		{
-			w->draw_default(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-
-			w->draw_additional(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-
-			w->GUI_draw_default(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::pbr_batcher->draw_call();
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-
-			w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::pbr_batcher->draw_call();
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-
-			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-			//NS_EGraphicCore::pbr_batcher->draw_call();
-		}
-
+		
+		
 		for (EWindow* w : EWindow::window_list)
 		{
 
@@ -594,13 +603,11 @@ int main()
 		}
 
 
-
-		//	NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-				//glActiveTexture(GL_TEXTURE0);
-				//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());//1
-			///reset input states
-		glFlush();
-		glfwSwapBuffers(NS_EGraphicCore::main_window);
+		//glFlush();
+		if (NS_EGraphicCore::window_focused)
+		{
+			glfwSwapBuffers(NS_EGraphicCore::main_window);
+		}
 
 		for (int i = 0; i < EInputCore::key_count; i++)
 		{

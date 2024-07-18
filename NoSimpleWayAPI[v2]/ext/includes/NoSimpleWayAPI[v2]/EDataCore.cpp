@@ -89,9 +89,17 @@ namespace ERegisteredStrings
 	const ID_string ERegisteredStrings::worth_boss_drop				= ID_string::register_new_unique_ID_by_key("Worth: boss drop");
 
 	const ID_string ERegisteredStrings::world_drop					= ID_string::register_new_unique_ID_by_key("World drop");
-	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Boss drop");
+	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Boss");;
+	const ID_string ERegisteredStrings::heist_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Heist");
+	const ID_string ERegisteredStrings::uber_lab					= ID_string::register_new_unique_ID_by_key("Loot source: Uber Lab");
 	const ID_string ERegisteredStrings::replica_item				= ID_string::register_new_unique_ID_by_key("Replica");
 	const ID_string ERegisteredStrings::assembled_from_pieces		= ID_string::register_new_unique_ID_by_key("Assembled from pieces");
+	const ID_string ERegisteredStrings::atzoatl_sacrifice			= ID_string::register_new_unique_ID_by_key("Atzoatl sacrifice");
+	const ID_string ERegisteredStrings::non_world_drop				= ID_string::register_new_unique_ID_by_key("Non world drop");
+	const ID_string ERegisteredStrings::upgraded_by_blessing		= ID_string::register_new_unique_ID_by_key("Upgraded by blessing");
+	const ID_string ERegisteredStrings::vendor_recipe				= ID_string::register_new_unique_ID_by_key("Vendor recipe");
+	const ID_string ERegisteredStrings::blight_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Blight");
+	const ID_string ERegisteredStrings::simulacrum					= ID_string::register_new_unique_ID_by_key("Loot source: Simulacrum");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)

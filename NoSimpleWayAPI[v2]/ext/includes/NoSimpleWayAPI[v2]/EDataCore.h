@@ -406,8 +406,16 @@ namespace ERegisteredStrings
 
 	extern const ID_string world_drop;
 	extern const ID_string boss_drop;
+	extern const ID_string heist_drop;
+	extern const ID_string uber_lab;
 	extern const ID_string replica_item;
 	extern const ID_string assembled_from_pieces;
+	extern const ID_string atzoatl_sacrifice;
+	extern const ID_string non_world_drop;
+	extern const ID_string upgraded_by_blessing;
+	extern const ID_string vendor_recipe;
+	extern const ID_string blight_drop;
+	extern const ID_string simulacrum;
 }
 
 

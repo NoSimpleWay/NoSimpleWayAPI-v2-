@@ -9,6 +9,7 @@ namespace NS_EGraphicCore
 {
 	int								old_w, old_h;
 	bool							changed_resolution = false;
+	bool							window_focused = false;
 	int								SCREEN_WIDTH = 1620, SCREEN_HEIGHT = 880;
 	float							correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
@@ -77,6 +78,7 @@ namespace NS_EGraphicCore
 
 
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+	void framebuffer_iconify_callback(GLFWwindow* window, int iconified);
 	void recalculate_correction();
 
 	void switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas);
@@ -248,17 +250,12 @@ void ERenderBatcher::draw_call()
 			{
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+			
+			
+
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);	
 			}
-			else
-			{
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-			}
-
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-
-
 			//SKYDOMES
 			//for (int i = 0; i < 1; i++)
 			{
@@ -266,24 +263,21 @@ void ERenderBatcher::draw_call()
 
 				glActiveTexture(GL_TEXTURE1);
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
-
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
-
-				if (!EInputCore::key_pressed(GLFW_KEY_TAB))
-				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-				}
-				else
-				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-					
-				}
 				
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
+				//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+				{
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+				}
+					
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					
+
+				
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
+
 				
 				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 				//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
@@ -682,6 +676,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	glfwMakeContextCurrent(NS_EGraphicCore::main_window);
 
 	glfwSetFramebufferSizeCallback(NS_EGraphicCore::main_window, framebuffer_size_callback);
+	glfwSetWindowFocusCallback(NS_EGraphicCore::main_window, framebuffer_iconify_callback);
+
 	glfwSetInputMode(NS_EGraphicCore::main_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
 	//glfwSetMousePos(0, 0);
@@ -5282,6 +5278,11 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 
 		changed_resolution = true; 
 		
+}
+
+void NS_EGraphicCore::framebuffer_iconify_callback(GLFWwindow* window, int iconified)
+{
+	window_focused = iconified;
 }
 
 void NS_EGraphicCore::recalculate_correction()
