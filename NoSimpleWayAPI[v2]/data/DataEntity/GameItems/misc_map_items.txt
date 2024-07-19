@@ -8,7 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Древнего Реликвария"
 
 	[tag]"icon path"	[value]"timeworn_reliquary_key"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Keys"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -22,7 +22,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ Реликвария"
 
 	[tag]"icon path"	[value]"timeworn_reliquary_key"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Keys"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -57,7 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Rare"
@@ -78,7 +78,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Uber Shaper"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -115,7 +115,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Rare"
@@ -136,7 +136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Uber Sirus"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -156,7 +156,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Uber Maven"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	[tag]"worth"		[value]"Rare"
 

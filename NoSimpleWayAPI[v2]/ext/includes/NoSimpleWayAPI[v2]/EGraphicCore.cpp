@@ -9,7 +9,7 @@ namespace NS_EGraphicCore
 {
 	int								old_w, old_h;
 	bool							changed_resolution = false;
-	bool							window_focused = false;
+	bool							window_focused = true;
 	int								SCREEN_WIDTH = 1620, SCREEN_HEIGHT = 880;
 	float							correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;

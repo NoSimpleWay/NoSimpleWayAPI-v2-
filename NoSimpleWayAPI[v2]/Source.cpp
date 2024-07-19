@@ -604,7 +604,7 @@ int main()
 
 
 		//glFlush();
-		if (NS_EGraphicCore::window_focused)
+		if ((NS_EGraphicCore::window_focused)||(true))
 		{
 			glfwSwapBuffers(NS_EGraphicCore::main_window);
 		}

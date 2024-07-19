@@ -126,7 +126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -143,7 +143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Elder"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -162,7 +162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -179,7 +179,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -196,7 +196,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Shaper"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 	
@@ -216,7 +216,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -233,7 +233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Shaper"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 	
@@ -253,7 +253,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Elder"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -272,7 +272,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Chimera"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -291,7 +291,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Hydra"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -310,7 +310,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Minotaur"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -329,7 +329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Loot source: Phoenix"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -616,7 +616,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -633,7 +633,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -650,7 +650,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -667,7 +667,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -1255,7 +1255,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -1272,7 +1272,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -1289,7 +1289,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
@@ -1303,7 +1303,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
@@ -2363,7 +2363,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"item tag"		[value]"Piece of set"
@@ -2382,7 +2382,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"item tag"		[value]"Piece of set"
@@ -2403,7 +2403,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Drox"
 
 	[tag]"item width"	[value]"1"
@@ -2422,7 +2422,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
@@ -2455,7 +2455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 		
 	[tag]"worth"		[value]"Rare"
 

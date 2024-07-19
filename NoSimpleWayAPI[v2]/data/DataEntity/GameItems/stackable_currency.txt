@@ -231,7 +231,7 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Expensive"
 		
-	[tag]"item tag"			[value]"Boss drop"
+	[tag]"item tag"			[value]"Loot source: Boss"
 	[tag]"item tag"			[value]"Loot source: Catarina"
 	[tag]"item tag"			[value]"Syndicate drop"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
@@ -255,7 +255,7 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Expensive"
 		
-	[tag]"item tag"			[value]"Boss drop"
+	[tag]"item tag"			[value]"Loot source: Boss"
 	[tag]"item tag"			[value]"Loot source: Catarina"
 	[tag]"item tag"			[value]"Syndicate drop"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
@@ -509,7 +509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Sirus"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -622,7 +622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -631,7 +631,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Uber Shaper"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Loot source: Sirus"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
@@ -679,7 +679,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"worth"		[value]"Expensive"
@@ -705,7 +705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Veritania"
 	
 	[tag]"drop level"	[value]"1"
@@ -729,7 +729,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Drox"
 	
 	[tag]"drop level"	[value]"1"
@@ -754,7 +754,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"drop level"	[value]"1"
@@ -1580,7 +1580,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Maven"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 
@@ -1588,7 +1588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"League: Ritual"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Boss"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

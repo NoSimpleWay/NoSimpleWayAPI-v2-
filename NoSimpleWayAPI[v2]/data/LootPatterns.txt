@@ -2397,7 +2397,7 @@ DETF_localised_attribute_name_RU	"Руническое"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boss"
+DETF_value_key	"Loot source: Boss"
 DETF_localised_attribute_name_EN	"Boss drop"
 DETF_localised_attribute_name_RU	"Дроп из босса"
 DETF_color	255	230	204	255
@@ -2574,7 +2574,7 @@ DETF_localised_attribute_name_RU	"Добывается везде"
 DETF_color	200	230	255	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boss drop"
+DETF_value_key	"Loot source: Boss"
 DETF_localised_attribute_name_EN	"Boss drop"
 DETF_localised_attribute_name_RU	"Добывается с Боссов"
 DETF_color	255	200	180	255
@@ -4046,7 +4046,7 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boss drop"
+DETF_value_key	"Loot source: Boss"
 DETF_color	255	230	204	255
 
 
@@ -4135,12 +4135,12 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boss drop"
+DETF_value_key	"Loot source: Boss"
 DETF_color	255	230	204	255
 
 
 
-
+	
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
@@ -4169,7 +4169,7 @@ DETF_localised_attribute_name_RU	"Ключи реликвария"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Item Piece"
+DETF_value_key	"Unique Piece"
 DETF_localised_attribute_name_EN	"Item piece"
 DETF_localised_attribute_name_RU	"Фрагмент предмета"
 DETF_color	255	230	204	255
