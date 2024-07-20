@@ -897,29 +897,29 @@ public:
 	int		selected_rarity					= -1;
 	int		rarity_override					= -1;
 
-	int	selected_item_level				= 80.0f;
-	int	selected_quality				= 0.0f;
+	int	selected_item_level				= 80;
+	int	selected_quality				= 0;
 
-	int	selected_gem_level				= 1.0f;
-	int	selected_gem_quality			= 0.0f;
+	int	selected_gem_level				= 1;
+	int	selected_gem_quality			= 0;
 
-	int	selected_maptier				= 1.0f;
+	int	selected_maptier				= 1;
 
-	int	selected_procentile				= 0.0f;
+	int	selected_procentile				= -1;
 
 	int	selected_sockets				= 3.0f;
 	int	selected_links					= 3.0f;
 
-	int	selected_red_weight				= 100.0f;
-	int	selected_green_weight			= 100.0f;
-	int	selected_blue_weight			= 100.0f;
-	int	selected_white_weight			= 0.0f;
+	int	selected_red_weight				= 100;
+	int	selected_green_weight			= 100;
+	int	selected_blue_weight			= 100;
+	int	selected_white_weight			= -1;
 
-	int	selected_quantity				= 1;
+	float selected_quantity				= -1.0f;
 	int	selected_corrupted_implicits	= -1;
-	int	selected_exarch_level			= 0;
-	int	selected_eater_level			= 0;
-	int	selected_area_level				= 1;
+	int	selected_exarch_level			= -1;
+	int	selected_eater_level			= -1;
+	int	selected_area_level				= 68;
 
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
@@ -1039,8 +1039,8 @@ class EButtonGroupSocketPreview : public EButtonGroup
 public:
 	EButtonGroupSocketPreview(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	ETextureGabarite* icon_texture{};
-	EGameItem* stored_game_item{};
+	ETextureGabarite*	icon_texture{};
+	EGameItem*			stored_game_item{};
 
 	void draw_button_group() override;
 };
@@ -1584,7 +1584,8 @@ public:
 	static void check_new_version_from_github();
 
 	void export_loot_patterns_to_file();
-	void import_loot_patterns_from_file();
+	void static read_loot_patterns_from_file(std::string _filename);
+	void static import_loot_patterns();
 
 	void add_all_loot_patter_to_loot_simulator(EButtonGroup* left_part_for_patterns);
 

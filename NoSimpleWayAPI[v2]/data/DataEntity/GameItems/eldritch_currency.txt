@@ -41,7 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"73"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -63,7 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ember item"
 	
 	[tag]"drop level"	[value]"78"
-	[tag]"stack multiplier"	[value]"0.25"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -91,7 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ember item"
 	
 	[tag]"drop level"	[value]"81"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"01"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Rare"
@@ -146,7 +146,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ichor item"
 	
 	[tag]"drop level"	[value]"73"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -172,7 +172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"78"
-	[tag]"stack multiplier"	[value]"0.25"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -200,7 +200,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"81"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -251,7 +251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"drop level"		[value]"78"
-	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"		[value]"1"
@@ -276,8 +276,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"drop level"	[value]"78"
-	[tag]"stack multiplier"	[value]"0.5"
-	[tag]"max stack size"	[value]"1	0"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -301,7 +301,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"

@@ -233,7 +233,9 @@ void EWindowMain::update_additional(float _d)
 		(EInputCore::key_pressed_once(GLFW_KEY_F5))
 	)
 	{
-		EWindowMain::import_loot_patterns_from_file();
+		EWindowMain::import_loot_patterns();
+		
+
 		EWindowMain::add_all_loot_patter_to_loot_simulator(EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment);
 		EWindowMain::loot_simulator_button_group->need_refresh = true;
 	}
@@ -2350,13 +2352,13 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 
 	if
-		(
-			(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
-			&&
-			(but->button_gabarite->overlapped_by_mouse())
-			&&
-			(static_cast<EntityButton*>(_entity)->main_clickable_area->hover_time >= 0.25f)
-			)
+	(
+		(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
+		&&
+		(but->button_gabarite->overlapped_by_mouse())
+		&&
+		(static_cast<EntityButton*>(_entity)->main_clickable_area->hover_time >= 0.25f)
+	)
 	{
 
 		if (but->attached_description == nullptr)
@@ -2424,7 +2426,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 			/////	SOCKETS	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroupSocketPreview*
-				left_part_for_sockets = new EButtonGroupSocketPreview(new ERegionGabarite(100.0f, 200.0f));
+			left_part_for_sockets = new EButtonGroupSocketPreview(new ERegionGabarite(100.0f, 200.0f));
 
 			bottom_part_for_item_info->add_group(left_part_for_sockets);
 
@@ -5091,8 +5093,10 @@ void EWindowMain::read_user_loot_patterns()
 		{
 			std::string loot_pattern_full_name = EStringUtils::UTF8_to_ANSI(p.path().filename().u8string());
 			std::string loot_pattern_name = loot_pattern_full_name.substr(0, loot_pattern_full_name.length() - 3);
+			std::string loot_pattern_path = EStringUtils::UTF8_to_ANSI(p.path().u8string());
+			//ETextParser::data_entity_parse_file(loot_pattern_path);
 
-			ETextParser::data_entity_parse_file(p.path().u8string());
+			EWindowMain::read_loot_patterns_from_file(loot_pattern_path);
 		}
 	}
 	else
@@ -5376,18 +5380,11 @@ void EWindowMain::export_loot_patterns_to_file()
 	writabro.close();
 }
 
-void EWindowMain::import_loot_patterns_from_file()
+void EWindowMain::read_loot_patterns_from_file(std::string _filename)
 {
-	if (std::filesystem::exists("data/LootPatterns.txt"))
+	if (std::filesystem::exists(_filename))
 	{
-		for (int i = 0; i < LootSimulatorPattern::registered_loot_simulater_pattern_list.size(); i++)
-		{
-			delete LootSimulatorPattern::registered_loot_simulater_pattern_list[i];
-		}
 
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.clear();
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.shrink_to_fit();
-		//first_time_open = false;
 
 		std::ifstream file;
 		std::string str;
@@ -5404,7 +5401,7 @@ void EWindowMain::import_loot_patterns_from_file()
 		DETF_SuitableVariant*
 		just_created_DETF = nullptr;
 
-		file.open("data/LootPatterns.txt");
+		file.open(_filename);
 
 		int version_id = 0;
 
@@ -5609,7 +5606,30 @@ void EWindowMain::import_loot_patterns_from_file()
 				just_created_DETF = &(just_created_tag_filter->banned_tags.back());
 			}
 		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.size();
 	}
+	else
+	{
+		EInputCore::logger_simple_error("file " + _filename + " dont exist!");
+	}
+
+}
+
+void EWindowMain::import_loot_patterns()
+{
+	for (int i = 0; i < LootSimulatorPattern::registered_loot_simulater_pattern_list.size(); i++)
+	{
+		delete LootSimulatorPattern::registered_loot_simulater_pattern_list[i];
+	}
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.clear();
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.shrink_to_fit();
+
+
+	EWindowMain::read_user_loot_patterns();
+	EWindowMain::read_loot_patterns_from_file("data/LootPatterns.txt");
+	//first_time_open = false;
 }
 
 void EWindowMain::add_all_loot_patter_to_loot_simulator(EButtonGroup* left_part_for_patterns)
@@ -6043,6 +6063,7 @@ void EWindowMain::register_loot_simulator_group()
 			slider_data->min_value = 1.0f;
 			slider_data->mid_value = 50.0f;
 			slider_data->max_value = 86.0f;
+			//slider_data->current_slide_value = -1.0f;
 
 			//slider_data->current_slide_value = 0.0f;
 
@@ -9032,7 +9053,7 @@ EWindowMain::EWindowMain()
 	//register_loot_simulator_patterns();
 
 	//export_loot_patterns_to_file();
-	import_loot_patterns_from_file();
+	import_loot_patterns();
 
 	std::cout << green << "IDstrings hash density" << std::endl;
 
@@ -23915,7 +23936,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 						(
 							!is_condition_satisfied
 							(
-								(int)(EWindowMain::loot_simulator_button_group->selected_area_level),					//blobal parameter "AreaLevel"
+								(int)(std::clamp(EWindowMain::loot_simulator_button_group->selected_area_level, 1, 100)),					//blobal parameter "AreaLevel"
 								line_group->target_button_with_condition->return_base_text_from_selected_router(),		//condition operator
 								std::stoi(line_group->target_button_with_value->main_text_area->original_text)			//block value
 							)
@@ -25507,12 +25528,12 @@ void EButtonGroupSocketPreview::draw_button_group()
 
 		for (int i = 0; i < 4; i++)
 		{
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_RED][i] = NS_EColorUtils::COLOR_RED[i];
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN][i] = NS_EColorUtils::COLOR_GREEN[i];
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE][i] = NS_EColorUtils::COLOR_BLUE[i];
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE][i] = NS_EColorUtils::COLOR_WHITE[i];
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE][i] = NS_EColorUtils::COLOR_YELLOW[i];
-			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS][i] = NS_EColorUtils::COLOR_BLACK[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_RED][i]		= NS_EColorUtils::COLOR_RED[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN][i]	= NS_EColorUtils::COLOR_GREEN[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE][i]		= NS_EColorUtils::COLOR_BLUE[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE][i]	= NS_EColorUtils::COLOR_WHITE[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE][i]	= NS_EColorUtils::COLOR_YELLOW[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS][i]	= NS_EColorUtils::COLOR_BLACK[i];
 		}
 
 
@@ -27395,7 +27416,7 @@ void EButtonGroupAttributeGeneratorGroup_Quantity::init()
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 20.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 2.0f;
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = true;
 
 	//static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->current_slide_value = 1.0f;
 

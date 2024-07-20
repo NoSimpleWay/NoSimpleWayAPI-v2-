@@ -754,6 +754,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Returned in Necropolis"
 	
+	[tag]"tattoo color"		[value]"Green"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"

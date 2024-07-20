@@ -560,6 +560,7 @@ public:
 	bool					rounded_numbers = false;
 
 	bool					is_float = true;
+	bool					need_init = true;
 
 	data_action_pointer		additional_action_on_slide;
 	//EDataContainer*			additional_data_container;

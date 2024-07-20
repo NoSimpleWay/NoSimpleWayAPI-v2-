@@ -30,6 +30,16 @@ name_RU	"Мусор"
 icon	"data/textures/icons/Orb_of_Alchemy_inventory_icon.png"
 cannot_be_configured
 
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1

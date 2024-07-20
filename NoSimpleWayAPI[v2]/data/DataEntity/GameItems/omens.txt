@@ -12,7 +12,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -39,7 +38,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -64,7 +62,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -89,7 +86,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"drop level"	[value]"1"
@@ -114,7 +110,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -139,7 +134,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -165,7 +159,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -190,7 +183,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -215,7 +207,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -240,7 +231,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -265,7 +255,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -291,7 +280,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -317,7 +305,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -343,7 +330,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -368,7 +354,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
@@ -393,7 +378,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Returned if Affliction"
