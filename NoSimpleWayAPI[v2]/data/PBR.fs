@@ -127,7 +127,7 @@ void main()
 	
 	
 	reflection_blur_area		*= gloss_map_multiplier;
-	reflection_blur_area		= pow (reflection_blur_area, 1.5);
+	reflection_blur_area		= pow (reflection_blur_area, 2.0);
 	reflection_blur_area		= min(reflection_blur_area, 1.0f);
 	
 	//reflection_blur_area = sun_flat_decay;
