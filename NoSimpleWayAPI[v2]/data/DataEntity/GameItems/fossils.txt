@@ -436,28 +436,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Perfect Fossil"
-	[tag]"name RU"		[value]"Безупречное ископаемое"
-
-	[tag]"icon path"	[value]"Perfect_Fossil_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Delve item"
-	[tag]"item tag"		[value]"Delve fossil"
-	
-	[tag]"drop level"	[value]"1"
-		
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
-	
-	[tag]"worth"		[value]"Rare"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

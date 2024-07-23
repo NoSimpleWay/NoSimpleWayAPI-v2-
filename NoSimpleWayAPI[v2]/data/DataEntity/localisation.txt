@@ -2177,7 +2177,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"description_focus_slider"
 	[tag]"name EN"		[value]"Focus determine multiplier of text size, brightness, and saturation."
-	[tag]"name RU"		[value]"‘окус определ€ет, наколько большим, €рким,и насыщенным будет текст."
+	[tag]"name RU"		[value]"‘окус определ€ет, наколько большим, €рким, и насыщенным будет текст."
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

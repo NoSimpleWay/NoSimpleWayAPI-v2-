@@ -488,7 +488,7 @@ DETF_color	255	230	204	255
 REGISTER_NEW_PATTERN
 name_EN	"New currency"
 name_RU	"Новая валюта"
-icon	"data/textures/icons/Veiled_scarab.png"
+icon	"data/textures/icons/SuperChisel.png"
 cannot_be_configured
 
 REGISTER_NEW_GENERATOR
@@ -523,13 +523,6 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Changed in Settlers"
 DETF_color	255	230	204	255
 
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
 DETF_color	255	128	64	255
@@ -538,8 +531,38 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Changed items"
+name_RU	"Изменённые предметы"
+icon	"data/textures/buttons/button_refresh.png"
+cannot_be_configured
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Changed in Settlers"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
 REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"scarab item"
+DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
 
@@ -548,8 +571,8 @@ DETF_color	255	128	64	255
 REGISTER_NEW_PATTERN
 name_EN	"New bases"
 name_RU	"Новые базы предмета"
-icon	"data/textures/icons/SuperBelt.png"
-cannot_be_configured
+icon	"data/textures/icons/SuperChest.png"
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -563,8 +586,34 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Belts"
+DETF_value_key	"Gloves"
+DETF_localised_attribute_name_EN	"Gloves"
+DETF_localised_attribute_name_RU	"Перчатки"
 DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Helmets"
+DETF_localised_attribute_name_EN	"Helmets"
+DETF_localised_attribute_name_RU	"Шлемы"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Boots"
+DETF_localised_attribute_name_EN	"Boots"
+DETF_localised_attribute_name_RU	"Сапоги"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Body Armours"
+DETF_localised_attribute_name_EN	"Body armours"
+DETF_localised_attribute_name_RU	"Доспехи"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rings"
+DETF_localised_attribute_name_EN	"Rings"
+DETF_localised_attribute_name_RU	"Кольца"
+DETF_color	255	230	128	255
 
 
 
@@ -576,7 +625,13 @@ DETF_value_key	"Introduced: Settlers league"
 DETF_color	255	230	204	255
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
 
+REGISTER_NEW_SUITABLE_VALUES
+tag_cannot_be_configured
+DETF_value_key	"Introduced: Settlers league"
+DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
@@ -596,7 +651,7 @@ DETF_color	255	128	64	255
 REGISTER_NEW_PATTERN
 name_EN	"Returned items"
 name_RU	"Возвращённые предметы"
-icon	"data/textures/icons/Honoured_tattoo.png"
+icon	"data/textures/icons/SubduingOakbranchTinctureoftheChase.png"
 rarity_override	2
 
 REGISTER_NEW_GENERATOR
@@ -623,235 +678,9 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
-REGISTER_NEW_FILTER_TAG
-target_tag	"tattoo color"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Red"
-DETF_localised_attribute_name_EN	"Red"
-DETF_localised_attribute_name_RU	"Красные"
-DETF_color	255	200	200	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Green"
-DETF_localised_attribute_name_EN	"Green"
-DETF_localised_attribute_name_RU	"Зелёные"
-DETF_color	200	255	200	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Blue"
-DETF_localised_attribute_name_EN	"Blue"
-DETF_localised_attribute_name_RU	"Синие"
-DETF_color	200	200	255	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Special"
-DETF_localised_attribute_name_EN	"Special"
-DETF_localised_attribute_name_RU	"Особые"
-DETF_color	255	255	200	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_PATTERN
-name_EN	"Returned items"
-name_RU	"Возвращённые предметы"
-icon	"data/textures/icons/Omen.png"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Omen"
-DETF_color	255	230	204	255
-
 REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
+DETF_value_key	"Scarab item"
 DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_PATTERN
-name_EN	"Embers of the Allflame"
-name_RU	"Уголья Всепламени"
-icon	"data/textures/icons/Allflame_ember.png"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Embers of the Allflame"
-DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"tem tag"
-tag_cannot_be_configured
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-
-
-
-
-
-
 
 
 
@@ -993,7 +822,6 @@ REGISTER_NEW_PATTERN
 name_EN	"New map fragments"
 name_RU	"Новые проходки"
 icon	"data/textures/icons/cosmic_fragment.png"
-cannot_be_configured
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -1004,10 +832,10 @@ generator_mode	MODE_ALL
 
 
 REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
+target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Piece of set"
+DETF_value_key	"Map Fragments"
 DETF_color	255	230	204	255
 
 
@@ -1032,6 +860,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Scarab item"
 DETF_color	255	128	64	255
 
 
@@ -1179,6 +1011,119 @@ REGISTER_NEW_PATTERN
 name_EN	"High volatility"
 name_RU	"Высокая волатильность"
 icon	"data/textures/buttons/pattern_folder_high_volatility.png"
+is_folder
+have_force_field
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Tinctures"
+name_RU	"Микстуры"
+icon	"data/textures/icons/FulguriteTincturePic.png"
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"FlagAttributes"
+cannot_be_configured
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Tincture"
+DETF_localised_attribute_name_EN	"Tinctures"
+DETF_localised_attribute_name_RU	"Микстуры"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Corpses"
+name_RU	"Трупы"
+icon	"data/textures/icons/Corpse.png"
+activate_attribute_group_by_name	"ItemLevel"
+cannot_be_configured
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Corpses"
+DETF_localised_attribute_name_EN	"Corpses"
+DETF_localised_attribute_name_RU	"Трупы"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Afflition items"
+name_RU	"Вещи заклятья"
+icon	"data/textures/buttons/pattern_folder_affliction.png"
 is_folder
 have_force_field
 

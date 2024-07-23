@@ -5277,7 +5277,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Cartography Scarab"
+	[tag]"base name"		[value]"Cartography Scarab"
 	[tag]"name EN"		[value]"'Cartography Scarab' -> 'Cartography Scarab of Escalation'"
 	[tag]"name RU"		[value]"'Скарабей картографии' -> 'Скарабей картографии эскалации'"
 
@@ -5299,7 +5299,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Cartography Scarab of Ascension"
+	[tag]"base name"		[value]"Cartography Scarab of Ascension"
 	[tag]"name EN"		[value]"'Cartography Scarab of Ascension' -> 'Cartography Scarab of Risk'"
 	[tag]"name RU"		[value]"'Скарабей картографии восхождени' -> 'Скарабей картографии риска'"
 
@@ -5321,7 +5321,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Cartography Scarab of Risk"
+	[tag]"base name"		[value]"Cartography Scarab of Risk"
 	[tag]"name EN"		[value]"'Cartography Scarab of Risk' -> 'Cartography Scarab of the Multitude'"
 	[tag]"name RU"		[value]"'Скарабей картографии удвоения' -> 'Скарабей картографии множеств'"
 
@@ -5343,7 +5343,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Reliquary Scarab"
+	[tag]"base name"		[value]"Reliquary Scarab"
 	[tag]"name EN"		[value]"'Reliquary Scarab' -> 'Titanic Scarab'"
 	[tag]"name RU"		[value]"'Реликтовый скарабей' -> 'Титанический скарабей'"
 
@@ -5365,7 +5365,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Reliquary Scarab of Overlords"
+	[tag]"base name"		[value]"Reliquary Scarab of Overlords"
 	[tag]"name EN"		[value]"'Reliquary Scarab of Overlords' -> 'Titanic Scarab of Treasures'"
 	[tag]"name RU"		[value]"'Реликтовый скарабей повелителей' -> 'Титанический скарабей сокровищ'"
 
@@ -5387,7 +5387,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Reliquary Scarab of Vision"
+	[tag]"base name"		[value]"Reliquary Scarab of Vision"
 	[tag]"name EN"		[value]"'Reliquary Scarab of Vision' -> 'Titanic Scarab of Legend'"
 	[tag]"name RU"		[value]"'Реликтовый скарабей видения' -> 'Титанический скарабей легенды'"
 
@@ -5409,7 +5409,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Divination Scarab"
+	[tag]"base name"		[value]"Divination Scarab"
 	[tag]"name EN"		[value]"'Divination Scarab' -> 'Divination Scarab of The Cloister'"
 	[tag]"name RU"		[value]"'Скарабей предсказания' -> 'Скарабей предсказания тлетворности'"
 
@@ -5431,7 +5431,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Divination Scarab of Curation"
+	[tag]"base name"		[value]"Divination Scarab of Curation"
 	[tag]"name EN"		[value]"'Divination Scarab of Curation' -> 'Divination Scarab of Plenty'"
 	[tag]"name RU"		[value]"'Скарабей предсказания курирования' -> 'Скарабей предсказания изобилия'"
 
@@ -5453,7 +5453,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Divination Scarab of Completion"
+	[tag]"base name"		[value]"Divination Scarab of Completion"
 	[tag]"name EN"		[value]"'Divination Scarab of Completion' -> 'Divination Scarab of Pilfering'"
 	[tag]"name RU"		[value]"'Скарабей предсказания завершения' -> 'Скарабей предсказания расхищения'"
 
@@ -5475,7 +5475,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Harbinger Scarab of Discernment"
+	[tag]"base name"		[value]"Harbinger Scarab of Discernment"
 	[tag]"name EN"		[value]"'Harbinger Scarab of Discernment' -> 'Harbinger Scarab of Obelisks'"
 	[tag]"name RU"		[value]"'Скарабей Предвестника разборчивости' -> 'Скарабей Предвестника разборчивости'"
 
@@ -5497,7 +5497,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Domination Scarab of Abnormality"
+	[tag]"base name"		[value]"Domination Scarab of Abnormality"
 	[tag]"name EN"		[value]"'Domination Scarab of Abnormality' -> 'Domination Scarab of Apparitions'"
 	[tag]"name RU"		[value]"'Скарабей Господства аномалии' -> 'Скарабей Господства призраков'"
 
@@ -5519,7 +5519,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Domination Scarab of Teachings"
+	[tag]"base name"		[value]"Domination Scarab of Teachings"
 	[tag]"name EN"		[value]"'Domination Scarab of Teachings' -> 'Domination Scarab of Evolution'"
 	[tag]"name RU"		[value]"'Скарабей Господства учений' -> 'Скарабей Господства эволюции'"
 
@@ -5541,7 +5541,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Ritual Scarab of Recognition"
+	[tag]"base name"		[value]"Ritual Scarab of Recognition"
 	[tag]"name EN"		[value]"'Ritual Scarab of Recognition' -> 'Ritual Scarab of Wisps'"
 	[tag]"name RU"		[value]"'Ритуальный скарабей признания' -> 'Ритуальный скарабей огоньков'"
 
@@ -5563,7 +5563,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Blight Scarab of Oils"
+	[tag]"base name"		[value]"Blight Scarab of Oils"
 	[tag]"name EN"		[value]"'Blight Scarab of Oils' -> 'Blight Scarab of the Blightheart'"
 	[tag]"name RU"		[value]"'Скарабей Скверны масел' -> 'Скарабей Скверны сердцевины'"
 
@@ -5585,7 +5585,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Mysterious Scarab"
+	[tag]"base name"		[value]"Mysterious Scarab"
 	[tag]"name EN"		[value]"'Mysterious Scarab' -> 'Scarab of Divinity'"
 	[tag]"name RU"		[value]"'Загадочный скарабей' -> 'Скарабей божественности'"
 
@@ -5615,7 +5615,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Mysterious Scarab"
+	[tag]"base name"		[value]"Mysterious Scarab"
 	[tag]"name EN"		[value]"'Mysterious Scarab' -> 'Scarab of Divinity'"
 	[tag]"name RU"		[value]"'Загадочный скарабей' -> 'Скарабей божественности'"
 

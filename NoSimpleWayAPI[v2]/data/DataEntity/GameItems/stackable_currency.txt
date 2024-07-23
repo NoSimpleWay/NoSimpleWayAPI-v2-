@@ -1702,6 +1702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1725,6 +1726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1748,6 +1750,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1771,6 +1774,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1794,6 +1798,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1818,6 +1823,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1838,6 +1844,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1858,6 +1865,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1878,6 +1886,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1898,6 +1907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1918,6 +1928,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1938,6 +1949,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1958,6 +1970,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1978,6 +1991,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -1998,6 +2012,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Rune"
 	
 	[tag]"worth"		[value]"Rare"
 	
