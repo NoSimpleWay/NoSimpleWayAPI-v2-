@@ -6059,10 +6059,11 @@ void EWindowMain::register_loot_simulator_group()
 			slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(area_level_slider->main_custom_data->data_container);
 			
 			slider_data->rounded_numbers = true;
-			slider_data->pointer_to_value = &(loot_simulator_button_group->selected_area_level);
+			slider_data->pointer_to_value = &(loot_simulator_button_group->selected_item_level);
 			slider_data->min_value = 1.0f;
 			slider_data->mid_value = 50.0f;
 			slider_data->max_value = 86.0f;
+			slider_data->is_float = false;
 			//slider_data->current_slide_value = -1.0f;
 
 			//slider_data->current_slide_value = 0.0f;
@@ -23939,7 +23940,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 						(
 							!is_condition_satisfied
 							(
-								(int)(std::clamp(EWindowMain::loot_simulator_button_group->selected_area_level, 1, 100)),					//blobal parameter "AreaLevel"
+								(int)(EWindowMain::loot_simulator_button_group->selected_area_level),					//blobal parameter "AreaLevel"
 								line_group->target_button_with_condition->return_base_text_from_selected_router(),		//condition operator
 								std::stoi(line_group->target_button_with_value->main_text_area->original_text)			//block value
 							)

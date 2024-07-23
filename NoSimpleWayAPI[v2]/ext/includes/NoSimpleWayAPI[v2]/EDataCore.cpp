@@ -929,10 +929,20 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		else
 		{float_value = (float)(*(int*)data->pointer_to_value);}
 	}
-	
+
+	//float_value = loot_simulator_button_group->;
 
 	if (data->pointer_to_value != nullptr)
 	{
+		if (data->need_init)
+		{
+			//data->current_slide_value = data->get_slider_value_by_pointer_value(float_value);
+			//data->current_slide_value = 0.5f;
+			//data->need_init = false;
+
+			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(float_value, 100.0f));
+		}
+
 		if ((data->pointer_to_digit_text_area != nullptr) && (data->pointer_to_digit_text_area->text_area_active))
 		{
 			if (data->is_float)
@@ -956,38 +966,11 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 
 		}
 		
-		if (float_value <= data->min_value)
-		{
-			original_slider_value = 0.0f;
-		}
-		else
-		if (float_value >= data->max_value)
-		{
-			original_slider_value = 1.0f;
-		}
-		else
-			if (float_value < data->mid_value)
-			{
-				original_slider_value = (float_value - data->min_value) / (data->mid_value - data->min_value);
-				original_slider_value *= 0.5f;
-			}
-			else
-				if (float_value >= data->mid_value)
-				{	
-					//				(1.0						-	1.0)			/	(10.0f			-		1.0)
-					//				0.0												/	(9.0)
-					original_slider_value = (float_value - data->mid_value) / (data->max_value - data->mid_value);
-					//original_value -= 0.5f;
-					//original_value *= 2.0f;
-					original_slider_value *= 0.5f;
-					original_slider_value += 0.5f;
 
-					//original_value = 0.5f;
+		original_slider_value = data->get_slider_value_by_pointer_value(float_value);
 
 
-				}
-
-
+		if (true)
 		{
 			if (original_slider_value != data->current_slide_value)
 			{
@@ -3898,4 +3881,28 @@ void ID_string::register_new_ID_string(int _id, std::string _string)
 	ID_string::HASHED_registered_ID_strings[hash_id][_id].string_value = _string;
 	ID_string::HASHED_registered_ID_strings[hash_id][_id].ID = last_registered_id;
 	last_registered_id++;
+}
+
+float EDataContainer_VerticalNamedSlider::get_slider_value_by_pointer_value(float _pointer_value)
+{
+	if (_pointer_value <= min_value)
+	{
+		return 0.0f;
+	}
+	else
+	if (_pointer_value >= max_value)
+	{
+		return 1.0f;
+	}
+	else
+	{
+		if (_pointer_value < mid_value)
+		{
+			return ((_pointer_value - min_value) / (mid_value - min_value)) * 0.5f;
+		}
+		else
+		{
+			return ((_pointer_value - mid_value) / (max_value - mid_value)) * 0.5f + 0.5f;
+		}
+	}
 }

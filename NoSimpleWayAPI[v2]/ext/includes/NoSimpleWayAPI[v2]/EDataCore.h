@@ -562,7 +562,11 @@ public:
 	bool					is_float = true;
 	bool					need_init = true;
 
+	float					slider_stored_value;
+
 	data_action_pointer		additional_action_on_slide;
+
+	float					get_slider_value_by_pointer_value(float _pointer_value);
 	//EDataContainer*			additional_data_container;
 };
 

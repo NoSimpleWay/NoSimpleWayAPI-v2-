@@ -905,7 +905,7 @@ public:
 
 	int	selected_maptier				= 1;
 
-	int	selected_procentile				= -1;
+	int	selected_procentile				= 0;
 
 	int	selected_sockets				= 3.0f;
 	int	selected_links					= 3.0f;
@@ -915,10 +915,10 @@ public:
 	int	selected_blue_weight			= 100;
 	int	selected_white_weight			= -1;
 
-	float selected_quantity				= -1.0f;
-	int	selected_corrupted_implicits	= -1;
-	int	selected_exarch_level			= -1;
-	int	selected_eater_level			= -1;
+	float selected_quantity				= 1.0f;
+	int	selected_corrupted_implicits	= 0;
+	int	selected_exarch_level			= 0;
+	int	selected_eater_level			= 0;
 	int	selected_area_level				= 68;
 
 	bool	is_synthesised					= false;
