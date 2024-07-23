@@ -22,7 +22,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"	
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Common"
@@ -135,7 +135,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -191,7 +191,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Behemoth Mace"
-	[tag]"name RU"		[value]"Булава бегемота"
+	[tag]"name RU"		[value]"Булава исполина"
 
 	[tag]"icon path"	[value]"Wyrm_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -208,7 +208,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -232,7 +232,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -376,7 +376,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -427,7 +427,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"base tier"	[value]"T2"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"

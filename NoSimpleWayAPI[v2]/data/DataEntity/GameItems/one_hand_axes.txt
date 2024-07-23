@@ -394,7 +394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
@@ -418,7 +418,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -443,7 +443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -515,7 +515,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Expensive base for unique"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"

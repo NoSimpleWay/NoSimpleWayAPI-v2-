@@ -8880,6 +8880,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/stackable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/omens.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/tattoos.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/gold.txt");
 
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/delve_stackable_socketable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/oils.txt");
@@ -8972,6 +8973,7 @@ EWindowMain::EWindowMain()
 
 
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/support_skill_gems.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/skill_gems.txt");
 
 
 	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/flasks.txt");
@@ -13342,7 +13344,8 @@ void EWindowMain::register_filter_rules()
 		jc_filter.target_tag.set_ID_by_string("Base tier");
 		jc_filter.add_new_suitable_value("Acceptable", ELocalisationText::get_localisation_by_key("tag_tier_acceptable"));		jc_filter.set_text_color(0.60f, 0.65f, 0.70f, 1.0f);
 		jc_filter.add_new_suitable_value("Good", ELocalisationText::get_localisation_by_key("tag_tier_good"));					jc_filter.set_text_color(0.60f, 1.00f, 0.70f, 1.0f);
-		jc_filter.add_new_suitable_value("Best", ELocalisationText::get_localisation_by_key("tag_tier_best"));					jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
+		jc_filter.add_new_suitable_value("Great", ELocalisationText::get_localisation_by_key("tag_tier_great"));				jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
+		jc_filter.add_new_suitable_value("Uber", ELocalisationText::get_localisation_by_key("tag_tier_uber	"));					jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
 
 		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any"));							jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
 

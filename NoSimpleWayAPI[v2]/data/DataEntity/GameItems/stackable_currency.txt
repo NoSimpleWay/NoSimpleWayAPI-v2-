@@ -197,6 +197,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -1635,7 +1639,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Valdo's Puzzle Box"
-	[tag]"name RU"		[value]"Скрытый скарабей"
+	[tag]"name RU"		[value]"Куб загадок Валдо"
 
 	[tag]"icon path"	[value]"ValdosPuzzleBox"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -1646,6 +1650,360 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reflecting Mist"
+	[tag]"name RU"		[value]"Отражающий туман"
+
+	[tag]"icon path"	[value]"ReflectingMist"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+		
+	[tag]"item tag"		[value]"Non world drop"
+	[tag]"item tag"		[value]"Loot source: league content"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Procurement"
+	[tag]"name RU"		[value]"Резец Мейвен добычи"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Proliferation"
+	[tag]"name RU"		[value]"Резец Мейвен размножения"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Divination"
+	[tag]"name RU"		[value]"Резец Мейвен предсказания"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Scarabs"
+	[tag]"name RU"		[value]"Резец Мейвен скарабеев"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Avarice"
+	[tag]"name RU"		[value]"Резец Мейвен алчности"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Life Rune"
+	[tag]"name RU"		[value]"Руна Жизни"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sun Rune"
+	[tag]"name RU"		[value]"Руна Солнца"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bound Rune"
+	[tag]"name RU"		[value]"Руна Единства"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"War Rune"
+	[tag]"name RU"		[value]"Руна Войны"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"River Rune"
+	[tag]"name RU"		[value]"Руна Реки"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bounty Rune"
+	[tag]"name RU"		[value]"Руна Щедрости"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journey Rune"
+	[tag]"name RU"		[value]"Руна Странствия"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mountain Rune"
+	[tag]"name RU"		[value]"Руна Горы"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Time Rune"
+	[tag]"name RU"		[value]"Руна Времени"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Power Rune"
+	[tag]"name RU"		[value]"Руна Силы"
+
+	[tag]"icon path"	[value]"Rune"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

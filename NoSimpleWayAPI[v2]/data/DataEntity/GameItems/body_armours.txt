@@ -27,7 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"892"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -85,7 +85,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"782"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -967,7 +967,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"811"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -1020,7 +1020,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"197"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -1642,7 +1642,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"113"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Have implicit"
@@ -2707,7 +2707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"77"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Boss"
 		
 	[tag]"worth"		[value]"Rare"
@@ -2806,7 +2806,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"110"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -3055,7 +3055,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"549"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -3181,7 +3181,509 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"51"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Boss"
 		
 	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titan Plate"
+	[tag]"name RU"		[value]"Доспех титана"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Plate"
+	[tag]"name RU"		[value]"Латы легионера"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Royal Plate"
+	[tag]"name RU"		[value]"Царские латы"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Supreme Leather"
+	[tag]"name RU"		[value]"Императорский кожаный доспех"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Astral Leather"
+	[tag]"name RU"		[value]"Звёздная кожа"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Syndicate's Garb"
+	[tag]"name RU"		[value]"Облачение синдиката"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Arcane Vestment"
+	[tag]"name RU"		[value]"Халат колдуна"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Nightweave Robe"
+	[tag]"name RU"		[value]"Одеяние покрова ночи"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Twilight Regalia"
+	[tag]"name RU"		[value]"Наряд сумрака"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Full Wyvernscale"
+	[tag]"name RU"		[value]"Полный доспех из чешуи виверны"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Marshall's Brigandine"
+	[tag]"name RU"		[value]"Бригандина маршала"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Conquest Lamellar"
+	[tag]"name RU"		[value]"Пластинчатый доспех покорителя"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Ringmail"
+	[tag]"name RU"		[value]"Великолепный кольчатый доспех"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Paladin's Hauberk"
+	[tag]"name RU"		[value]"Хауберг паладина"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Chainmail"
+	[tag]"name RU"		[value]"Освящённая кольчуга"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanguine Raiment"
+	[tag]"name RU"		[value]"Червлёный камзол"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torturer Garb"
+	[tag]"name RU"		[value]"Облачение истязателя"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Necrotic Armour"
+	[tag]"name RU"		[value]"Бледный доспех"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"210"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"base family"	[value]"Uber"
+		
+	[tag]"worth"		[value]"Moderate"

@@ -1032,7 +1032,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item width"	[value]"1"
@@ -1578,6 +1578,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Settlers"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1770,6 +1771,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Settlers"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3662,6 +3664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Settlers"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -6595,6 +6598,91 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Father's Love"
+	[tag]"name RU"		[value]"Отеческая любовь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Avian Pursuit"
+	[tag]"name RU"		[value]"Пернатая погоня"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Temperance"
+	[tag]"name RU"		[value]"Умеренность"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lonely Warrior"
+	[tag]"name RU"		[value]"Одинокий воин"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Toxic Tidings"
+	[tag]"name RU"		[value]"Токсичные вести"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

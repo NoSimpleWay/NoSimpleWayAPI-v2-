@@ -312,6 +312,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 		
 	[tag]"item tag"			[value]"Special oil item"
+	[tag]"item tag"			[value]"Deleted"
+	[tag]"item tag"			[value]"Deleted in Settlers"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -339,3 +341,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	
 	[tag]"worth"		[value]"Common"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prismatic Oil"
+	[tag]"name RU"		[value]"Радужное масло"
+
+	[tag]"icon path"	[value]"PrismaticOil"
+	
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"

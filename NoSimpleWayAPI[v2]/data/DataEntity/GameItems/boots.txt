@@ -1023,7 +1023,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"283"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1080,7 +1080,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"59"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1277,7 +1277,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"30"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1470,7 +1470,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"57"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -1499,7 +1499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"78"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -1527,7 +1527,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"37"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Ritual"
 	
 		
@@ -1670,7 +1670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"271"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -1731,7 +1731,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"37"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1798,3 +1798,240 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Precursor Greaves"
+	[tag]"name RU"			[value]"Поножи предтечи"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Leviathan Greaves"
+	[tag]"name RU"			[value]"Поножи исполина"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Harpyskin Boots"
+	[tag]"name RU"			[value]"Гарпиевые ботинки"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Velour Boots"
+	[tag]"name RU"			[value]"Велюровые ботинки"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Sage Slippers"
+	[tag]"name RU"			[value]"Сапоги мудреца"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Warlock Boots"
+	[tag]"name RU"			[value]"Сапоги колдуна"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Chimerascale Boots"
+	[tag]"name RU"			[value]"Ботинки из чешуи химеры"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Wyvernscale Boots"
+	[tag]"name RU"			[value]"Ботинки из чешуи виверны"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Martyr Boots"
+	[tag]"name RU"			[value]"Сапоги мученика"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Paladin Boots"
+	[tag]"name RU"			[value]"Сапоги паладина"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Infiltrator Boots"
+	[tag]"name RU"			[value]"Сандалеты лазутчика"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Phantom Boots"
+	[tag]"name RU"			[value]"Сапоги призрака"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"base tier"		[value]"Uber"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	

@@ -1,0 +1,18 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Gold"
+	[tag]"name RU"			[value]"Золото"
+	
+	[tag]"icon path"		[value]"Gold"
+	[tag]"base class"		[value]"Gold"
+	[tag]"stack multiplier"	[value]"100"
+	[tag]"max stack size"	[value]"999999999"
+	
+	[tag]"drop level"		[value]"1"
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+			
+	[tag]"worth"			[value]"Common"
+	
+	[tag]"item width"		[value]"0"
+	[tag]"item height"		[value]"0"

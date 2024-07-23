@@ -6,7 +6,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -21,7 +23,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -36,7 +40,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -51,7 +57,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -66,7 +74,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -81,7 +91,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -96,7 +108,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -111,7 +125,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -126,7 +142,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -141,7 +159,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -156,7 +176,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -171,7 +193,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -186,7 +210,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -201,7 +227,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -216,7 +244,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -231,7 +261,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -246,7 +278,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -261,7 +295,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -276,7 +312,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -291,7 +329,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -306,7 +346,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -321,7 +363,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -336,7 +380,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -351,7 +397,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -366,7 +414,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -381,7 +431,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -396,7 +448,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -411,7 +465,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -426,7 +482,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -441,7 +499,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -456,7 +516,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -471,7 +533,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -486,7 +550,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -501,7 +567,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -516,7 +584,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -531,7 +601,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -546,7 +618,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -561,7 +635,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -576,7 +652,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -591,7 +669,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -606,7 +686,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -621,7 +703,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -636,7 +720,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -651,7 +737,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -666,7 +754,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -681,7 +771,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -696,7 +788,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -711,7 +805,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -726,7 +822,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -741,7 +839,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -756,7 +856,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -771,7 +873,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -786,7 +890,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -801,7 +907,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -816,7 +924,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -831,7 +941,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -846,7 +958,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -861,7 +975,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -882,7 +998,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -897,7 +1015,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -912,7 +1032,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -927,7 +1049,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -942,7 +1066,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -957,7 +1083,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -972,7 +1100,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -987,7 +1117,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -1002,7 +1134,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -1017,7 +1151,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -1032,7 +1168,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -1047,7 +1185,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Embers of the Allflame"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Moderate"
 

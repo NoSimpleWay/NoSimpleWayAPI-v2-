@@ -2387,9 +2387,16 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"tag_tier_best"
-	[tag]"name EN"		[value]"Tier: Best"
-	[tag]"name RU"		[value]"Тир: Лучшее"
+	[tag]"key"			[value]"tag_tier_great"
+	[tag]"name EN"		[value]"Tier: Great"
+	[tag]"name RU"		[value]"Тир: Отличное"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_uber"
+	[tag]"name EN"		[value]"Tier: Uber"
+	[tag]"name RU"		[value]"Тир: Убер"
 	
 	
 	

@@ -1282,8 +1282,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Tincture"
 	[tag]"name RU"		[value]"Микстуры"
-	
-	[tag]"rarity override"	[value]"Magic"
 
 	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
 	
@@ -1312,3 +1310,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Уголья Всепламени"
 
 	[tag]"icon path"	[value]"Allflame_ember"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Gold"
+	[tag]"name RU"		[value]"Золото"
+
+	[tag]"icon path"	[value]"Gold"

@@ -32,7 +32,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
@@ -247,7 +247,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Great"
 	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"

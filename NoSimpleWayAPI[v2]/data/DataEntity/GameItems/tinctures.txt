@@ -7,8 +7,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SubduingOakbranchTinctureoftheChase"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -22,8 +21,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -37,8 +35,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AshbarkTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -52,8 +49,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FulguriteTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -67,8 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"PoisonberryTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -82,8 +77,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"UnKnownTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -97,8 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"UnKnownTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -112,8 +105,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"UnKnownTincturePic"
 	[tag]"base class"	[value]"Tincture"
 	
-	[tag]"item tag"		[value]"Deleted in Necropolis"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Settlers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prismatic Tincture"
+	[tag]"name RU"		[value]"Микстура из цветных ягод"
+
+	[tag]"icon path"	[value]"UnKnownTincturePic"
+	[tag]"base class"	[value]"Tincture"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sporebloom Tincture"
+	[tag]"name RU"		[value]"Микстура из споровика"
+
+	[tag]"icon path"	[value]"UnKnownTincturePic"
+	[tag]"base class"	[value]"Tincture"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"

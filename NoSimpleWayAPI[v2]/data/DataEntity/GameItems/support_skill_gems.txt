@@ -694,7 +694,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большой залп"
 
 	[tag]"icon path"	[value]"Awakened"
-	[tag]"base class"	[value]"Support Gems"
+	[tag]"base class"	[value]"Skill Gems"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

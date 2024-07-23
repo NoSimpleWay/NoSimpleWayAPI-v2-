@@ -633,3 +633,74 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Perfect Fossil"
+	[tag]"name EN"		[value]"'Perfect Fossil' -> 'Opulent Fossil'"
+	[tag]"name RU"		[value]"'Безупречное ископаемое' -> 'Богатое ископаемое'"
+
+	[tag]"icon path"	[value]"FossilAttributes"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Delve fossil"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Delve fossil"
+	
+	[tag]"item tag"		[value]"Changed in Settlers"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Opulent Fossil"
+	[tag]"name RU"		[value]"Богатое ископаемое"
+
+	[tag]"icon path"	[value]"FossilAttributes"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Delve fossil"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
