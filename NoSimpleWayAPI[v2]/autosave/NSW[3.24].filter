@@ -1,88 +1,4 @@
-#BlockSeparator "Necropolis" shrinked no_space
-
-Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Golden Obi"
-#create_pattern_button "Game item" 0 1 "Necropolis:\nAllflame embers" "Некрополь:\nУгольки всепламени" "data/textures/icons/Allflame_ember.png"
-#required_tags "data type" 1 "Game item"
-#required_tags "base class" 1 "Embers of the Allflame"
-#required_tags "worth" 000011 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
-#forbidden_tags "item tag" 11 "Deleted" "Hidden item"
-#finalize_filter_rule
-	SetBackgroundColor 237 255 141 255
-	SetTextColor 240 121 54 252
-	SetBorderColor 163 255 210 251
-	SetFontSize 45
-	MinimapIcon 0 White Star
-	PlayEffect White
-	PlayAlertSound 1 100
-
-
-Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Golden Obi"
-#create_pattern_button "Game item" 0 1 "Necropolis:\nAllflame embers" "Некрополь:\nУгольки всепламени" "data/textures/icons/Allflame_ember.png"
-#required_tags "data type" 1 "Game item"
-#required_tags "base class" 1 "Embers of the Allflame"
-#required_tags "worth" 000100 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
-#forbidden_tags "item tag" 11 "Deleted" "Hidden item"
-#finalize_filter_rule
-	SetBackgroundColor 252 251 209 255
-	SetTextColor 240 121 54 252
-	SetBorderColor 0 245 255 251
-	SetFontSize 40
-	MinimapIcon 1 White Star
-	PlayEffect White
-	PlayAlertSound 7 100
-
-
-Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Golden Obi"
-#create_pattern_button "Game item" 0 1 "Necropolis:\nAllflame embers" "Некрополис:\nУгольки всепламени" "data/textures/icons/Allflame_ember.png"
-#required_tags "data type" 1 "Game item"
-#required_tags "base class" 1 "Embers of the Allflame"
-#required_tags "worth" 001000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
-#forbidden_tags "item tag" 11 "Deleted" "Hidden item"
-#finalize_filter_rule
-	SetBackgroundColor 252 251 209 255
-	SetTextColor 240 121 54 252
-	SetBorderColor 122 191 157 251
-	SetFontSize 35
-	MinimapIcon 2 White Star
-	PlayEffect White
-	PlayAlertSound 7 100
-
-
-Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Golden Obi"
-#create_pattern_button "Game item" 0 1 "Necropolis:\nAllflame embers" "Некрополь:\nУгольки всепламени" "data/textures/icons/Allflame_ember.png"
-#required_tags "data type" 1 "Game item"
-#required_tags "base class" 1 "Embers of the Allflame"
-#required_tags "worth" 110000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
-#forbidden_tags "item tag" 11 "Deleted" "Hidden item"
-#finalize_filter_rule
-	SetBackgroundColor 226 225 188 174
-	SetTextColor 126 63 43 252
-	SetBorderColor 152 191 175 251
-	SetFontSize 30
-	MinimapIcon 2 White Star
-	PlayEffect White
-	PlayAlertSound 7 100
-
-
-Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	Class "Embers of the Allflame"
-	SetBackgroundColor 252 200 200 154
-	SetTextColor 240 121 54 252
-	SetBorderColor 129 0 0 251
-	SetFontSize 35
-	MinimapIcon 2 White Star
-	PlayEffect White
-	PlayAlertSound 7 100
-
+#BlockSeparator "Necropolis" expanded no_space
 
 #BlockSeparator "Affliction" shrinked no_space
 
@@ -3836,9 +3752,9 @@ Show
 Show
 	#config_VersionControl full_ignore full_ignore full_ignore full_ignore full_ignore full_ignore standard standard standard
 	Rarity = Unique
-	BaseType "Golden Obi"
-#create_pattern_button "Game item" 0 1 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
-#required_tags "Worth: boss drop" 100000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+	BaseType "Agate Amulet" "Lapis Amulet" "Onyx Amulet" "Unset Amulet" "Ghastly Eye Jewel" "Chain Belt" "Cloth Belt" "Crystal Belt" "Leather Belt" "Vanguard Belt" "Amethyst Ring" "Sapphire Ring" "Topaz Ring" "Large Cluster Jewel" "Prismatic Jewel" "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel" "Timeless Jewel" "Cabalist Regalia" "Blood Raiment" "Carnal Armour" "Saint's Hauberk" "Triumphant Lamellar" "Ancient Gauntlets" "Crusader Gloves" "Callous Mask" "Hubris Circlet" "Necromancer Circlet" "Pig-Faced Bascinet" "Zealot Helmet" "Goliath Greaves" "Soldier Boots" "Titan Greaves" "Vaal Greaves" "Despot Axe" "Vaal Axe" "Infernal Sword" "Maelstrom Staff" "Prophecy Wand" "Sage Wand" "Quarterstaff" "Colossal Tower Shield" "Ezomyte Tower Shield" "Golden Buckler" "Steel Kite Shield" "Elegant Sword" "Legion Sword" "Amethyst Flask" "Bismuth Flask" "Ruby Flask" "Sulphur Flask" "Vaal Aspect"
+#create_pattern_button "Game item" 0 53 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 000001 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 49 0 0 178
 	SetTextColor 204 0 0 205
