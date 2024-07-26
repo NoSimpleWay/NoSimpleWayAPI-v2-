@@ -13,7 +13,7 @@ Show
 	DisableDropSound
 
 
-#BlockSeparator "Affliction" expanded no_space
+#BlockSeparator "Affliction" shrinked no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
@@ -3005,7 +3005,7 @@ Show
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	StackSize >= 2500
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 255 216 100 255
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 167 0 255
@@ -3019,7 +3019,7 @@ Show
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	StackSize >= 1000
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 205 174 80 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 220 82 255
@@ -3033,7 +3033,7 @@ Show
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	StackSize >= 500
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 186 158 73 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 167 0 255
@@ -3047,7 +3047,7 @@ Show
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	StackSize >= 250
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 186 158 73 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 167 0 255
@@ -3061,7 +3061,7 @@ Show
 Show
 	#config_VersionControl focus standard hide hide hide hide standard standard standard
 	StackSize >= 50
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 169 144 66 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 167 0 255
@@ -3074,7 +3074,7 @@ Show
 
 Show
 	#config_VersionControl focus standard hide hide hide hide standard standard standard
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetBackgroundColor 144 123 56 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 167 0 255

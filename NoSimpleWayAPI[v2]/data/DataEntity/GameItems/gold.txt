@@ -2,7 +2,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	
 	[tag]"name EN"			[value]"Gold"
-	[tag]"name RU"			[value]"Р—РѕР»РѕС‚Рѕ"
+	[tag]"name RU"			[value]"Золото"
 	
 	[tag]"icon path"		[value]"Gold"
 	[tag]"base class"		[value]"Gold"

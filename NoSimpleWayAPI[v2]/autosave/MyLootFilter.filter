@@ -1,0 +1,11 @@
+Show
+	#config_VersionControl standard standard standard standard standard standard standard standard standard
+	BaseType "Blacksmith's Whetstone"
+	SetBackgroundColor 181 137 253 255
+	SetTextColor 104 162 213 122
+	SetBorderColor 255 110 161 95
+	SetFontSize 30
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
