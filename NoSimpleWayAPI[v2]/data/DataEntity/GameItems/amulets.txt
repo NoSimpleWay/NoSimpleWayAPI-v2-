@@ -19,7 +19,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good amulet base"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	
@@ -48,7 +48,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
@@ -69,7 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have influence"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Rare"
@@ -119,7 +119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good amulet base"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
@@ -222,7 +222,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	
@@ -251,7 +251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	
@@ -275,7 +275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Common"
@@ -302,7 +302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
@@ -368,7 +368,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Rare"
@@ -413,7 +413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
@@ -435,7 +435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Talisman"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Talisman"
 	
 	
@@ -475,7 +475,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Expensive base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Boss"
 	
 	[tag]"item tag"		[value]"Always unique"

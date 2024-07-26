@@ -4,7 +4,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"Debilitation Gauntlets"
 	[tag]"name EN"		[value]"'Debilitation Gauntlets' - > 'Thwarting Gauntlets'"
-	[tag]"name RU"		[value]"'Истощающие перчатки' -> 'Thwarting Gauntlets'"
+	[tag]"name RU"		[value]"'Истощающие перчатки' -> 'Предотвращающие перчатки'"
 
 	[tag]"icon path"	[value]"Debilitation_Gauntlets_inventory_icon"
 	[tag]"base class"	[value]"Gloves"
@@ -16,7 +16,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"271"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Ritual"
 
 	[tag]"item width"	[value]"2"
@@ -25,8 +25,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Debilitation Gauntlets"
-	[tag]"name RU"		[value]"Истощающие перчатки"
+	[tag]"name EN"		[value]"Thwarting Gauntlets"
+	[tag]"name RU"		[value]"Предотвращающие перчатки"
 
 	[tag]"icon path"	[value]"Debilitation_Gauntlets_inventory_icon"
 	[tag]"base class"	[value]"Gloves"
@@ -37,7 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"271"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Ritual"
 
 	[tag]"item width"	[value]"2"
@@ -188,7 +188,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"271"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -218,7 +218,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"271"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -348,8 +348,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Gauche Gloves"
-	[tag]"name RU"		[value]"Грубые перчатки"
+	[tag]"name EN"		[value]"Tinker Gloves"
+	[tag]"name RU"		[value]"Перчатки умельца"
 
 	[tag]"icon path"	[value]"Sinistral_Gloves_inventory_icon"
 	[tag]"base class"	[value]"Gloves"
@@ -406,7 +406,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"54"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Ritual"
 		
 	[tag]"worth"		[value]"Common"
@@ -835,7 +835,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"139"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -911,7 +911,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"52"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1015,7 +1015,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"253"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1189,7 +1189,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"28"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1577,7 +1577,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"253"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -1924,7 +1924,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"33"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"

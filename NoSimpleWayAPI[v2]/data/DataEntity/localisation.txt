@@ -1071,6 +1071,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"rule_folder_map_fragments"
+	[tag]"name EN"		[value]"Category:\nMap fragments"
+	[tag]"name RU"		[value]"Категория:\nФрагменты карт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"rule_folder_heist_tools"
 	[tag]"name EN"		[value]"Category:\nHeist tools"
 	[tag]"name RU"		[value]"Категория:\nИнструменты кражи"
@@ -1883,6 +1890,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"rule_folder_necropolis"
 	[tag]"name EN"		[value]"Necropolis:\nnew items"
 	[tag]"name RU"		[value]"Некрополис:\nновые предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_settlers"
+	[tag]"name EN"		[value]"Settlers:\nnew items"
+	[tag]"name RU"		[value]"Поселенцы:\nновые предметы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

@@ -145,7 +145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
@@ -244,7 +244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"

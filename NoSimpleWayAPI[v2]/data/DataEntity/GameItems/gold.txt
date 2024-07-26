@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"Gold"
 	[tag]"base class"		[value]"Gold"
-	[tag]"stack multiplier"	[value]"100"
+	[tag]"stack multiplier"	[value]"250"
 	[tag]"max stack size"	[value]"999999999"
 	
 	[tag]"drop level"		[value]"1"

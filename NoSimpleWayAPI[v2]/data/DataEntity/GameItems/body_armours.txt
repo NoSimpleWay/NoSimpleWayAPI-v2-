@@ -27,7 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"892"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -85,7 +85,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"782"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
@@ -967,7 +967,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"811"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -1020,7 +1020,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"197"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -1642,7 +1642,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"113"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Have implicit"
@@ -2707,7 +2707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"77"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Boss"
 		
 	[tag]"worth"		[value]"Rare"
@@ -2806,7 +2806,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"110"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -3055,7 +3055,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"549"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"worth"		[value]"Common"
@@ -3181,7 +3181,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"51"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Boss"
 		
 	[tag]"worth"		[value]"Rare"

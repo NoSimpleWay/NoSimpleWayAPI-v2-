@@ -26,7 +26,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
@@ -58,7 +58,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
@@ -104,7 +104,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"base tier"	[value]"T2"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
@@ -136,7 +136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -172,7 +172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -190,7 +190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -212,7 +212,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
@@ -250,7 +250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"item tag"		[value]"Good for attack build"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"

@@ -1,0 +1,17 @@
+Show
+	#config_VersionControl standard standard standard standard standard standard standard standard standard
+	BaseType "Beauty Through Death" "Choking Guilt" "Divine Justice" "House of Mirrors" "Seven Years Bad Luck" "The Apothecary" "The Price of Devotion" "The Cheater" "The Immortal" "The Progeny of Lunaris" "Unrequited Love" "Luminous Trove" "Auspicious Ambitions" "The Insane Cat" "Brother's Gift" "Matryoshka" "I See Brothers" "Fire Of Unknown Origin" "Chaos Orb"
+#create_pattern_button "Game item" 0 18 "Divinations" "Гадальные карты" "data/textures/icons/card.png"
+#required_tags "data type" 1 "Game item"
+#required_tags "base class" 1 "Divination cards"
+#required_tags "worth" 000001 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+#forbidden_tags "item tag" 11 "Deleted" "Hidden item"
+#finalize_filter_rule
+	#SetBackgroundColor 0 0 0 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 30
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+

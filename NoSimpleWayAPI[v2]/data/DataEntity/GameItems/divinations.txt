@@ -1611,7 +1611,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Catarina"
 	[tag]"item tag"		[value]"Loot source: Boss"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6601,6 +6600,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

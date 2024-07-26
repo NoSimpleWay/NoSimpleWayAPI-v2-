@@ -505,7 +505,7 @@ public:
 	EntityButton* text_size_button;
 	EntityButtonVariantRouter* text_size_router_button;
 	bool	text_size_bool = true;
-	float	text_size = 30.0f;
+	int	text_size = 30;
 
 	EntityButtonVariantRouterForFilterBlock* button_show_hide;
 	EntityButtonVariantRouterForFilterBlock* button_continue;
@@ -1189,7 +1189,7 @@ namespace NSWRegisteredButtonGroups
 
 	static void register_filter_block_colors_group_for_filter_block();
 	static void register_explicit_for_loot_simulator_group();
-	static void register_poe_ninja_price_checker();
+	static void register_poe_ninja_price_checker();		
 
 }
 
@@ -1868,7 +1868,7 @@ public:
 	EButtonGroupFilterBlock* matched_minimap_icon_block;
 
 	//SIZE
-	float* matched_size;
+	int* matched_size;
 	EButtonGroupFilterBlock* matched_size_block;
 	bool	have_implicit;
 

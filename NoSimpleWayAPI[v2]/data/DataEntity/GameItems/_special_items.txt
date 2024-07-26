@@ -217,3 +217,97 @@ ADD_NEW_DATA_ENTITY
 	[tag]"special tag"	[value]"Skill gem"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancestral Protector"
+	[tag]"name RU"		[value]"Защитник предков"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill Gems"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancestral Warchief"
+	[tag]"name RU"		[value]"Вождь предков"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill Gems"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Ancestral Warchief"
+	[tag]"name RU"		[value]"Вождь предков Ваал"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill Gems"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Earthbreaker Support"
+	[tag]"name RU"		[value]"Камнелом"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Support Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Increased Duration"
+	[tag]"name RU"		[value]"Продление"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Support Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Common"

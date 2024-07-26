@@ -80,7 +80,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Simulacrum"
 	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Special fragment"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -127,6 +127,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -144,6 +145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -163,6 +165,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -180,6 +183,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -197,6 +202,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Shaper"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 	
@@ -217,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Elder Guardian"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -234,6 +241,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Shaper"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 	
@@ -254,6 +262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Elder"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -273,6 +282,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Chimera"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -292,6 +302,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Hydra"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -311,6 +322,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Minotaur"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -330,6 +342,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Phoenix"
 	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -635,6 +648,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -652,6 +666,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -669,6 +684,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1257,6 +1273,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1274,6 +1291,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1291,6 +1309,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1308,6 +1327,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1322,6 +1342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1334,6 +1355,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Volkuur's_Key_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"Boss pass"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -1639,6 +1661,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Dedication to the Goddess"
 	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"Special fragment"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1651,6 +1674,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gift-to-the-Goddess"
 	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"Special fragment"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1663,6 +1687,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tribute-to-the-Goddess"
 	[tag]"base class"	[value]"Map Fragments"
+	[tag]"item tag"		[value]"Special fragment"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2078,6 +2103,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2094,6 +2120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2110,6 +2137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2126,6 +2154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2142,6 +2171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2271,6 +2301,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2288,6 +2319,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2304,6 +2336,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2321,6 +2354,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2336,6 +2370,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Changed in Crucible"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2367,6 +2402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2386,6 +2422,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2402,6 +2439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Boss pass"
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Drox"
@@ -2421,6 +2459,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Boss pass"
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Veritania"
@@ -2530,6 +2569,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2544,6 +2584,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2558,6 +2599,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2572,6 +2614,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2586,6 +2629,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2600,6 +2644,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2614,6 +2659,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2918,6 +2964,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Timeless_Templar_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
 	
+	[tag]"item tag"		[value]"Boss pass"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -2932,6 +2980,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Timeless_Vaal_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
 	
+	[tag]"item tag"		[value]"Boss pass"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -2945,6 +2995,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Eternal_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2957,6 +3009,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Karui_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2971,6 +3025,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Maraketh_Emblem_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3009,6 +3065,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3021,9 +3078,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Decaying_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3036,9 +3094,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakening_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3051,9 +3110,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Synthesising_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3066,10 +3126,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Reality_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
-
+	[tag]"item tag"		[value]"Boss pass"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -3081,9 +3142,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blazing_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3096,9 +3158,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Devouring_fragment"
 	[tag]"base class"	[value]"Map Fragments"
-	[tag]"item tag"		[value]"Piece of set"
 	
+	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Boss pass"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5259,6 +5322,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Boss pass"
+	
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -5295,6 +5360,31 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Escalation"
+	[tag]"name RU"		[value]"Скарабей картографии эскалации"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -5317,12 +5407,39 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"		[value]"Cartography Scarab of Risk"
-	[tag]"name EN"		[value]"'Cartography Scarab of Risk' -> 'Cartography Scarab of the Multitude'"
+	[tag]"name EN"		[value]"Cartography Scarab of Risk"
+	[tag]"name RU"		[value]"Скарабей картографии риска"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"		[value]"Cartography Scarab of Ascension"
+	[tag]"name EN"		[value]"'Cartography Scarab of Duplication' -> 'Cartography Scarab of Duplication'"
 	[tag]"name RU"		[value]"'Скарабей картографии удвоения' -> 'Скарабей картографии множеств'"
 
 	[tag]"icon path"	[value]"Scarab"
@@ -5339,6 +5456,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartography Scarab of Duplication"
+	[tag]"name RU"		[value]"Скарабей картографии риска"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -5611,28 +5754,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"base name"		[value]"Mysterious Scarab"
-	[tag]"name EN"		[value]"'Mysterious Scarab' -> 'Scarab of Divinity'"
-	[tag]"name RU"		[value]"'Загадочный скарабей' -> 'Скарабей божественности'"
-
-	[tag]"icon path"	[value]"Scarab"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Scarab item"
-	
-	[tag]"item tag"		[value]"Changed in Settlers"
-	[tag]"item tag"		[value]"Deleted"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"scarab tier"	[value]"Basic"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
 	
 	

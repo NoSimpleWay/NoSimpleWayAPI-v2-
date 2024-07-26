@@ -188,6 +188,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	[tag]"item tag"		[value]"Chisel"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1813,6 +1814,9 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -1828,8 +1832,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1849,8 +1853,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1870,8 +1874,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1891,8 +1895,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1912,8 +1916,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1933,8 +1937,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1954,8 +1958,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1975,8 +1979,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1996,8 +2000,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2017,9 +2021,32 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Filled Coffin"
+	[tag]"name RU"		[value]"Заполненный гроб"
+
+	[tag]"icon path"	[value]"FilledCoffin"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Settlers"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1"
+
+	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	

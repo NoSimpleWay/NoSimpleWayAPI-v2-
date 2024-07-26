@@ -3738,7 +3738,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 							if
 							(
 									//empty suitable text means 'any value suitable'
-									(suitable_str.target_value_key.is_empty)
+									(suitable_str.target_value_key.string_value == "")
 									||
 									(suitable_str.target_value_key.ID == tag_ID)
 							)
@@ -3831,7 +3831,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 									(suitable_DETF.DETF_is_active)
 									&&
 									(
-										(suitable_DETF.target_value_key.is_empty)
+										(suitable_DETF.target_value_key.string_value == "")
 										||
 										(suitable_DETF.target_value_key.ID == data_entity_tag->tag_value_list[0].ID)
 									)

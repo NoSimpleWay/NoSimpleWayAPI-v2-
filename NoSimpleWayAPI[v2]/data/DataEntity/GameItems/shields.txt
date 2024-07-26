@@ -373,7 +373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"240"
 	[tag]"base tier"	[value]"T2"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -429,7 +429,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"16"
 	[tag]"base evasion max"	[value]"19"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -450,7 +450,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"50"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"base tier"	[value]"Acceptable"
@@ -508,7 +508,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"348"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1058,7 +1058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"49"
 	[tag]"base energy shield max"	[value]"55"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1245,7 +1245,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"379"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1273,7 +1273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"506"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1400,7 +1400,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"477"
 	[tag]"base evasion max"	[value]"549"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -1782,7 +1782,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"537"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -2353,7 +2353,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"57"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -2462,7 +2462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"77"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
@@ -2491,7 +2491,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"64"
 	[tag]"base tier"	[value]"T1"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
@@ -2542,7 +2542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"330"
 	[tag]"base evasion max"	[value]"379"
 	
-	[tag]"base tier"	[value]"Great"
+	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
