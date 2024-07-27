@@ -5439,7 +5439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"		[value]"Cartography Scarab of Ascension"
-	[tag]"name EN"		[value]"'Cartography Scarab of Duplication' -> 'Cartography Scarab of Duplication'"
+	[tag]"name EN"		[value]"'Cartography Scarab of Duplication' -> 'Cartography Scarab of the Multitude'"
 	[tag]"name RU"		[value]"'Скарабей картографии удвоения' -> 'Скарабей картографии множеств'"
 
 	[tag]"icon path"	[value]"Scarab"
@@ -5461,7 +5461,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Cartography Scarab of Duplication"
+	[tag]"name EN"		[value]"Cartography Scarab of the Multitude"
 	[tag]"name RU"		[value]"Скарабей картографии риска"
 
 	[tag]"icon path"	[value]"Scarab"

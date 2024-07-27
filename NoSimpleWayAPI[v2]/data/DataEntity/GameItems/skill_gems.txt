@@ -3,7 +3,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"Riposte"
 	[tag]"name EN"		[value]"<Riposte>-<Glacial Shield Swipe>"
-	[tag]"name RU"		[value]"<ÐŸÐ°Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ>-<Ð’Ð·Ð¼Ð°Ñ… Ð»ÐµÐ´ÑÐ½Ð¾Ð³Ð¾ Ñ‰Ð¸Ñ‚Ð°>"
+	[tag]"name RU"		[value]"<Ïàðèðîâàíèå>-<Âçìàõ ëåäÿíîãî ùèòà>"
 
 	[tag]"icon path"	[value]"Active"
 	[tag]"base class"	[value]"Support Gems"
@@ -17,7 +17,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"Vengeance"
 	[tag]"name EN"		[value]"<Vengeance>-<Crushing Fist>"
-	[tag]"name RU"		[value]"<ÐŸÐ°Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ>-<Ð’Ð·Ð¼Ð°Ñ… Ð»ÐµÐ´ÑÐ½Ð¾Ð³Ð¾ Ñ‰Ð¸Ñ‚Ð°>"
+	[tag]"name RU"		[value]"<Ïàðèðîâàíèå>-<Âçìàõ ëåäÿíîãî ùèòà>"
 
 	[tag]"icon path"	[value]"Active"
 	[tag]"base class"	[value]"Support Gems"
@@ -31,7 +31,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"Reckoning"
 	[tag]"name EN"		[value]"<Reckoning>-<Swordstorm>"
-	[tag]"name RU"		[value]"<Ð’Ð¾Ð·Ð¼ÐµÐ·Ð´Ð¸Ðµ>-<Ð‘ÑƒÑ€Ñ Ð¼ÐµÑ‡ÐµÐ¹>"
+	[tag]"name RU"		[value]"<Âîçìåçäèå>-<Áóðÿ ìå÷åé>"
 
 	[tag]"icon path"	[value]"Active"
 	[tag]"base class"	[value]"Support Gems"
@@ -45,7 +45,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"Call to Arms"
 	[tag]"name EN"		[value]"<Call to Arms>-<Autoexertion>"
-	[tag]"name RU"		[value]"<ÐŸÑ€Ð¸Ð·Ñ‹Ð² Ðº Ð¾Ñ€ÑƒÐ¶Ð¸ÑŽ>-<ÐÐ²Ñ‚Ð¾ÑƒÑÐ¸Ð»ÐµÐ½Ð¸Ðµ>"
+	[tag]"name RU"		[value]"<Ïðèçûâ ê îðóæèþ>-<Àâòîóñèëåíèå>"
 
 	[tag]"icon path"	[value]"Active"
 	[tag]"base class"	[value]"Support Gems"
