@@ -5186,7 +5186,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string EWindowMain::this_version = "1.4.0";
+const std::string EWindowMain::this_version = "1.4.1";
 
 void EWindowMain::check_new_version_from_github()
 {
@@ -5215,16 +5215,16 @@ void EWindowMain::check_new_version_from_github()
 		//parse_json_from_poe_ninja(&url_content, PoeNinjaAPIMode::UNIQUES, false);
 		EInputCore::logger_param("latest version from Github", url_content);
 
-		if (url_content.length() < 5)
-		{
-			EInputCore::logger_simple_error("ERROR: server return too short message!");
-		}
-		else
-		if ((url_content[1] != '.') || (url_content[3] != '.'))
-		{
-			EInputCore::logger_simple_error("ERROR: message do not match with pattern [#.#.#]!");
-		}
-		else
+		//if (url_content.length() < 5)
+		//{
+		//	EInputCore::logger_simple_error("ERROR: server return too short message!");
+		//}
+		//else
+		//if ((url_content[1] != '.') || (url_content[3] != '.'))
+		//{
+		//	EInputCore::logger_simple_error("ERROR: message do not match with pattern [#.#.#]!");
+		//}
+		//else
 		if (this_version != url_content)
 		{
 

@@ -5462,7 +5462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Cartography Scarab of the Multitude"
-	[tag]"name RU"		[value]"Скарабей картографии риска"
+	[tag]"name RU"		[value]"Скарабей картографии множеств"
 
 	[tag]"icon path"	[value]"Scarab"
 	[tag]"base class"	[value]"Map Fragments"
