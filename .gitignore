@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /ExternalSources/.~lock.RawExplicitsTable.ods#
 /NoSimpleWayAPI[v2]/data/Uniques_with_details_ID.txt
+*.filter
