@@ -280,8 +280,10 @@ void EWindow::GUI_update_default(float _d)
 			&&
 			(EButtonGroup::focused_button_group_for_select != nullptr)
 			&&
+			(EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
+			&&
 			(EButtonGroup::focused_button_group_for_select->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
-			)
+		)
 	{
 		if
 			(EButtonGroup::first_selected_element == nullptr)

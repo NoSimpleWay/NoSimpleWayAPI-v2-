@@ -450,9 +450,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"50"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
 

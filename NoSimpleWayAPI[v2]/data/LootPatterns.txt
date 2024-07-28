@@ -2303,7 +2303,7 @@ DETF_localised_attribute_name_RU	"Тир: Хорошее"
 DETF_color	153	255	179	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Great"
+DETF_value_key	"Best"
 DETF_localised_attribute_name_EN	"Tier: Great"
 DETF_localised_attribute_name_RU	"Тир: Отличное"
 DETF_color	255	204	153	255
