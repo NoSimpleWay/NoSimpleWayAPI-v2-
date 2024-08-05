@@ -39,67 +39,14 @@ unsigned int ID_string::last_registered_id = 0;
 
 namespace ERegisteredStrings
 {
-	const ID_string ERegisteredStrings::data_type					= ID_string::register_new_unique_ID_by_key("data type");
-	const ID_string ERegisteredStrings::icon_path					= ID_string::register_new_unique_ID_by_key("icon path");
-	const ID_string ERegisteredStrings::name_EN						= ID_string::register_new_unique_ID_by_key("name EN");
-	const ID_string ERegisteredStrings::name_RU						= ID_string::register_new_unique_ID_by_key("name RU");
-	const ID_string ERegisteredStrings::base_name					= ID_string::register_new_unique_ID_by_key("base name");
-	const ID_string ERegisteredStrings::base_class					= ID_string::register_new_unique_ID_by_key("base class");
-	const ID_string ERegisteredStrings::short_name					= ID_string::register_new_unique_ID_by_key("short name");
-	const ID_string ERegisteredStrings::max_stack_size				= ID_string::register_new_unique_ID_by_key("max stack size");
-	const ID_string ERegisteredStrings::stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
-	const ID_string ERegisteredStrings::max_sockets					= ID_string::register_new_unique_ID_by_key("max sockets");
-	const ID_string ERegisteredStrings::base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
-	const ID_string ERegisteredStrings::base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
-	const ID_string ERegisteredStrings::base_armour_min				= ID_string::register_new_unique_ID_by_key("base armour min");
-	const ID_string ERegisteredStrings::base_armour_max				= ID_string::register_new_unique_ID_by_key("base armour max");
-	const ID_string ERegisteredStrings::base_evasion_min			= ID_string::register_new_unique_ID_by_key("base evasion min");
-	const ID_string ERegisteredStrings::base_evasion_max			= ID_string::register_new_unique_ID_by_key("base evasion max");
-	const ID_string ERegisteredStrings::base_energy_shield_min		= ID_string::register_new_unique_ID_by_key("base energy shield min");
-	const ID_string ERegisteredStrings::base_energy_shield_max		= ID_string::register_new_unique_ID_by_key("base energy shield max");
-	const ID_string ERegisteredStrings::item_height					= ID_string::register_new_unique_ID_by_key("item height");
-	const ID_string ERegisteredStrings::item_width					= ID_string::register_new_unique_ID_by_key("item width");
-	const ID_string ERegisteredStrings::key							= ID_string::register_new_unique_ID_by_key("key");
-	const ID_string ERegisteredStrings::worth						= ID_string::register_new_unique_ID_by_key("worth");
-	const ID_string ERegisteredStrings::base_worth					= ID_string::register_new_unique_ID_by_key("base worth");
 
-	const ID_string ERegisteredStrings::trash						= ID_string::register_new_unique_ID_by_key("Trash");
-	const ID_string ERegisteredStrings::common						= ID_string::register_new_unique_ID_by_key("Common");
-	const ID_string ERegisteredStrings::moderate					= ID_string::register_new_unique_ID_by_key("Moderate");
-	const ID_string ERegisteredStrings::rare						= ID_string::register_new_unique_ID_by_key("Rare");
-	const ID_string ERegisteredStrings::expensive					= ID_string::register_new_unique_ID_by_key("Expensive");
-	const ID_string ERegisteredStrings::very_expensive				= ID_string::register_new_unique_ID_by_key("Very expensive");
+	const ID_string ERegisteredStrings::key = ID_string::register_new_unique_ID_by_key("key");
 
-	const ID_string ERegisteredStrings::item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
-	const ID_string ERegisteredStrings::all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
-	const ID_string ERegisteredStrings::always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
+	const ID_string ERegisteredStrings::name_EN = ID_string::register_new_unique_ID_by_key("name EN");
+	const ID_string ERegisteredStrings::name_RU = ID_string::register_new_unique_ID_by_key("name RU");
+	const ID_string ERegisteredStrings::base_name = ID_string::register_new_unique_ID_by_key("base name");
 
-	const ID_string ERegisteredStrings::rarity_override				= ID_string::register_new_unique_ID_by_key("rarity override");
-	const ID_string ERegisteredStrings::unique_item					= ID_string::register_new_unique_ID_by_key("Unique item");
-	const ID_string ERegisteredStrings::details_ID					= ID_string::register_new_unique_ID_by_key("detailsId");
-	const ID_string ERegisteredStrings::divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
-	const ID_string ERegisteredStrings::stackable_currency			= ID_string::register_new_unique_ID_by_key("Stackable Currency");
-	const ID_string ERegisteredStrings::support_gems				= ID_string::register_new_unique_ID_by_key("Support Gems");
-	const ID_string ERegisteredStrings::map_fragments				= ID_string::register_new_unique_ID_by_key("Map Fragments");
-	const ID_string ERegisteredStrings::embers_of_allflame			= ID_string::register_new_unique_ID_by_key("Embers of the Allflame");
-	const ID_string ERegisteredStrings::expensive_base_for_unique	= ID_string::register_new_unique_ID_by_key("Expensive base for unique");
-	const ID_string ERegisteredStrings::good_base_for_unique		= ID_string::register_new_unique_ID_by_key("Good base for unique");
-
-	const ID_string ERegisteredStrings::worth_world_drop			= ID_string::register_new_unique_ID_by_key("Worth: world drop");
-	const ID_string ERegisteredStrings::worth_boss_drop				= ID_string::register_new_unique_ID_by_key("Worth: boss drop");
-
-	const ID_string ERegisteredStrings::world_drop					= ID_string::register_new_unique_ID_by_key("World drop");
-	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Boss");;
-	const ID_string ERegisteredStrings::heist_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Heist");
-	const ID_string ERegisteredStrings::uber_lab					= ID_string::register_new_unique_ID_by_key("Loot source: Uber Lab");
-	const ID_string ERegisteredStrings::replica_item				= ID_string::register_new_unique_ID_by_key("Replica");
-	const ID_string ERegisteredStrings::assembled_from_pieces		= ID_string::register_new_unique_ID_by_key("Assembled from pieces");
-	const ID_string ERegisteredStrings::atzoatl_sacrifice			= ID_string::register_new_unique_ID_by_key("Atzoatl sacrifice");
-	const ID_string ERegisteredStrings::non_world_drop				= ID_string::register_new_unique_ID_by_key("Non world drop");
-	const ID_string ERegisteredStrings::upgraded_by_blessing		= ID_string::register_new_unique_ID_by_key("Upgraded by blessing");
-	const ID_string ERegisteredStrings::vendor_recipe				= ID_string::register_new_unique_ID_by_key("Vendor recipe");
-	const ID_string ERegisteredStrings::blight_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Blight");
-	const ID_string ERegisteredStrings::simulacrum					= ID_string::register_new_unique_ID_by_key("Loot source: Simulacrum");
+	const ID_string ERegisteredStrings::data_type = ID_string::register_new_unique_ID_by_key("data type");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -770,28 +717,28 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 	}
 }
 
-void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	EInputCore::logger_simple_info("try add new button");
-
-	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
-	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
-	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
-
-	EntityButton* jc_button = EntityButton::create_item_button
-	(
-		new ERegionGabarite(45.0f, 45.0f),
-		receiver,
-		data_entity_holder->stored_data_entity
-	);
-
-	receiver->add_button_to_working_group(jc_button);
-	//receiver->button_list.clear();
-	//EButtonGroup::refresh_button_group(receiver->root_group);
-	receiver->root_group->need_refresh = true;
-}
+//void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
+//{
+//	EInputCore::logger_simple_info("try add new button");
+//
+//	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
+//	EButtonGroup* root_group = parent_group->root_group;
+//	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
+//	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
+//	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+//
+//	EntityButton* jc_button = EntityButton::create_item_button
+//	(
+//		new ERegionGabarite(45.0f, 45.0f),
+//		receiver,
+//		data_entity_holder->stored_data_entity
+//	);
+//
+//	receiver->add_button_to_working_group(jc_button);
+//	//receiver->button_list.clear();
+//	//EButtonGroup::refresh_button_group(receiver->root_group);
+//	receiver->root_group->need_refresh = true;
+//}
 
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3877,7 +3824,7 @@ void ID_string::register_new_ID_string(int _id, std::string _string)
 	int
 	hash_id = EStringUtils::get_id_by_hash(EStringUtils::to_lower(_string));
 
-	ID_string::HASHED_registered_ID_strings[hash_id][_id].is_empty = false;
+	ID_string::HASHED_registered_ID_strings[hash_id][_id].ID_is_used = true;
 	ID_string::HASHED_registered_ID_strings[hash_id][_id].string_value = _string;
 	ID_string::HASHED_registered_ID_strings[hash_id][_id].ID = last_registered_id;
 	last_registered_id++;
