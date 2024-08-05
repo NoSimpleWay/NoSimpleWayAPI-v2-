@@ -14389,7 +14389,6 @@ void EWindowMain::register_filter_rules()
 		jc_filter.add_new_suitable_value("cold", ELocalisationText::get_localisation_by_key("tag_cold"));							jc_filter.set_text_color(0.25f, 0.75f, 1.00f, 1.0f);
 		jc_filter.add_new_suitable_value("lightning", ELocalisationText::get_localisation_by_key("tag_lightning"));					jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
 		jc_filter.add_new_suitable_value("chaos", ELocalisationText::get_localisation_by_key("tag_chaos"));							jc_filter.set_text_color(1.00f, 1.00f, 0.00f, 1.0f);
-		jc_filter.add_new_suitable_value("defences", ELocalisationText::get_localisation_by_key("tag_defence"));						jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
 
 		jc_filter.add_force_field();
 

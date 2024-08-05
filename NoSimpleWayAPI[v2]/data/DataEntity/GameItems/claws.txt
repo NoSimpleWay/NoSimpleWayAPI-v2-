@@ -292,7 +292,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"base tier"	[value]"T3"
 	
-	[tag]"base tier"	[value]"Best"
+	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
