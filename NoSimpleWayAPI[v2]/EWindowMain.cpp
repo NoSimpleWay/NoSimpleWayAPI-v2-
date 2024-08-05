@@ -111,69 +111,6 @@ std::vector<ENamedSound*>								EWindowMain::custom_sound_list;
 
 GameItemAttribute* GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 
-namespace ERegisteredStrings
-{
-	
-	const ID_string ERegisteredStrings::icon_path					= ID_string::register_new_unique_ID_by_key("icon path");
-
-	const ID_string ERegisteredStrings::base_class					= ID_string::register_new_unique_ID_by_key("base class");
-	const ID_string ERegisteredStrings::short_name					= ID_string::register_new_unique_ID_by_key("short name");
-	const ID_string ERegisteredStrings::max_stack_size				= ID_string::register_new_unique_ID_by_key("max stack size");
-	const ID_string ERegisteredStrings::stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
-	const ID_string ERegisteredStrings::max_sockets					= ID_string::register_new_unique_ID_by_key("max sockets");
-	const ID_string ERegisteredStrings::base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
-	const ID_string ERegisteredStrings::base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
-	const ID_string ERegisteredStrings::base_armour_min				= ID_string::register_new_unique_ID_by_key("base armour min");
-	const ID_string ERegisteredStrings::base_armour_max				= ID_string::register_new_unique_ID_by_key("base armour max");
-	const ID_string ERegisteredStrings::base_evasion_min			= ID_string::register_new_unique_ID_by_key("base evasion min");
-	const ID_string ERegisteredStrings::base_evasion_max			= ID_string::register_new_unique_ID_by_key("base evasion max");
-	const ID_string ERegisteredStrings::base_energy_shield_min		= ID_string::register_new_unique_ID_by_key("base energy shield min");
-	const ID_string ERegisteredStrings::base_energy_shield_max		= ID_string::register_new_unique_ID_by_key("base energy shield max");
-	const ID_string ERegisteredStrings::item_height					= ID_string::register_new_unique_ID_by_key("item height");
-	const ID_string ERegisteredStrings::item_width					= ID_string::register_new_unique_ID_by_key("item width");
-	const ID_string ERegisteredStrings::worth						= ID_string::register_new_unique_ID_by_key("worth");
-	const ID_string ERegisteredStrings::base_worth					= ID_string::register_new_unique_ID_by_key("base worth");
-
-	const ID_string ERegisteredStrings::trash						= ID_string::register_new_unique_ID_by_key("Trash");
-	const ID_string ERegisteredStrings::common						= ID_string::register_new_unique_ID_by_key("Common");
-	const ID_string ERegisteredStrings::moderate					= ID_string::register_new_unique_ID_by_key("Moderate");
-	const ID_string ERegisteredStrings::rare						= ID_string::register_new_unique_ID_by_key("Rare");
-	const ID_string ERegisteredStrings::expensive					= ID_string::register_new_unique_ID_by_key("Expensive");
-	const ID_string ERegisteredStrings::very_expensive				= ID_string::register_new_unique_ID_by_key("Very expensive");
-
-	const ID_string ERegisteredStrings::item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
-	const ID_string ERegisteredStrings::all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
-	const ID_string ERegisteredStrings::always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
-
-	const ID_string ERegisteredStrings::rarity_override				= ID_string::register_new_unique_ID_by_key("rarity override");
-	const ID_string ERegisteredStrings::unique_item					= ID_string::register_new_unique_ID_by_key("Unique item");
-	const ID_string ERegisteredStrings::details_ID					= ID_string::register_new_unique_ID_by_key("detailsId");
-	const ID_string ERegisteredStrings::divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
-	const ID_string ERegisteredStrings::stackable_currency			= ID_string::register_new_unique_ID_by_key("Stackable Currency");
-	const ID_string ERegisteredStrings::support_gems				= ID_string::register_new_unique_ID_by_key("Support Gems");
-	const ID_string ERegisteredStrings::map_fragments				= ID_string::register_new_unique_ID_by_key("Map Fragments");
-	const ID_string ERegisteredStrings::embers_of_allflame			= ID_string::register_new_unique_ID_by_key("Embers of the Allflame");
-	const ID_string ERegisteredStrings::expensive_base_for_unique	= ID_string::register_new_unique_ID_by_key("Expensive base for unique");
-	const ID_string ERegisteredStrings::good_base_for_unique		= ID_string::register_new_unique_ID_by_key("Good base for unique");
-
-	const ID_string ERegisteredStrings::worth_world_drop			= ID_string::register_new_unique_ID_by_key("Worth: world drop");
-	const ID_string ERegisteredStrings::worth_boss_drop				= ID_string::register_new_unique_ID_by_key("Worth: boss drop");
-
-	const ID_string ERegisteredStrings::world_drop					= ID_string::register_new_unique_ID_by_key("World drop");
-	const ID_string ERegisteredStrings::boss_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Boss");;
-	const ID_string ERegisteredStrings::heist_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Heist");
-	const ID_string ERegisteredStrings::uber_lab					= ID_string::register_new_unique_ID_by_key("Loot source: Uber Lab");
-	const ID_string ERegisteredStrings::replica_item				= ID_string::register_new_unique_ID_by_key("Replica");
-	const ID_string ERegisteredStrings::assembled_from_pieces		= ID_string::register_new_unique_ID_by_key("Assembled from pieces");
-	const ID_string ERegisteredStrings::atzoatl_sacrifice			= ID_string::register_new_unique_ID_by_key("Atzoatl sacrifice");
-	const ID_string ERegisteredStrings::non_world_drop				= ID_string::register_new_unique_ID_by_key("Non world drop");
-	const ID_string ERegisteredStrings::upgraded_by_blessing		= ID_string::register_new_unique_ID_by_key("Upgraded by blessing");
-	const ID_string ERegisteredStrings::vendor_recipe				= ID_string::register_new_unique_ID_by_key("Vendor recipe");
-	const ID_string ERegisteredStrings::blight_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Blight");
-	const ID_string ERegisteredStrings::simulacrum					= ID_string::register_new_unique_ID_by_key("Loot source: Simulacrum");
-
-	const ID_string ERegisteredStrings::deleted						= ID_string::register_new_unique_ID_by_key("Deleted");
-}
 
 namespace NS_DefaultGabarites
 {
@@ -2966,11 +2903,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	EButtonGroup* root_group = parent_group->root_group;
 	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
 	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	
-	EntityButtonWideItem*
-	wide_button = static_cast<EntityButtonWideItem*>(_entity);
-	//EDataContainer_DataEntityHolder*
-	//data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
 	//EInputCore::logger_simple_info("!!!");
 	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
@@ -2980,12 +2913,12 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	//if (data->target_rule. )
 
 	bool
-	already_have_this_item = false;
+		already_have_this_item = false;
 
 	for (EntityButton* but : receiver->workspace_button_list)
 	{
 		EntityButtonWideItem*
-		wide_item_button = static_cast<EntityButtonWideItem*>(but);
+			wide_item_button = static_cast<EntityButtonWideItem*>(but);
 
 		//EDataEntity*
 		//stored_data_entity = static_cast<EDataContainer_DataEntityHolder*> (wide_item_button->main_custom_data->data_container)->stored_data_entity;
@@ -3005,7 +2938,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 		(
 			new ERegionGabarite(temp_width, 40.0f),
 			receiver,
-			wide_button->stored_data_entity,
+			data_entity_holder->stored_data_entity,
 			EFont::font_list[0],
 			true
 		);
@@ -9210,7 +9143,7 @@ EWindowMain::EWindowMain()
 	{
 		for (int j = 0; j < ID_string_array_size_for_hash; j++)
 		{
-			if (!ID_string::HASHED_registered_ID_strings[i][j].ID_is_used)
+			if (ID_string::HASHED_registered_ID_strings[i][j].is_empty)
 			{
 				EInputCore::logger_param("ID string[" + std::to_string(i) + "]", j);
 				break;
@@ -12301,7 +12234,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule = new EFilterRule();
 	jc_filter_rule->min_y_size = 40.0f;
 	jc_filter_rule->focused_by_data_type = "Game item";
-	//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 	jc_filter = DataEntityTagFilter();
 	jc_filter.target_tag.set_ID_by_string("data type");
@@ -12323,7 +12256,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->min_y_size = 40.0f;
 		jc_filter_rule->focused_by_data_type = "Base Class";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 		jc_filter = DataEntityTagFilter();
@@ -12340,7 +12273,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->min_y_size = 45.0f;
 		jc_filter_rule->focused_by_data_type = "Influence";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 
@@ -12357,7 +12290,7 @@ void EWindowMain::register_filter_rules()
 	{
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->focused_by_data_type = "Gem";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 		jc_filter = DataEntityTagFilter();
@@ -12374,7 +12307,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->min_y_size = 45.0f;
 		jc_filter_rule->focused_by_data_type = "Explicit";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 		jc_filter = DataEntityTagFilter();
@@ -12391,7 +12324,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->min_y_size = 45.0f;
 		jc_filter_rule->focused_by_data_type = "Cluster passive";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 		jc_filter = DataEntityTagFilter();
@@ -12408,7 +12341,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->min_y_size = 45.0f;
 		jc_filter_rule->focused_by_data_type = "Enchantment";
-		//jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 
 		jc_filter = DataEntityTagFilter();
@@ -21183,7 +21116,7 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 
 //data conatainer with filter rule (for data entity list)
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*
-	data_store_filter_rule = nullptr;
+		data_store_filter_rule = nullptr;
 
 	EntityButtonForUndefinedAttribute*
 		add_new_undefined_attribute_button = nullptr;
@@ -24510,20 +24443,18 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 						{
 							std::string filter_block_button_attribute_name = "";
 
-							//EDataContainer_DataEntityHolder*
-							//data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(filter_block_button->main_custom_data->data_container);
+							EDataContainer_DataEntityHolder*
+								data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(filter_block_button->main_custom_data->data_container);
 
-							EntityButtonWideItem*
-							wide_button = static_cast<EntityButtonWideItem*>(filter_block_button);
 
 							//		GET ITEM NAME (FROM FILTER BLOCK)
-							if (wide_button->stored_data_entity != nullptr)
+							if (data_container_entity->stored_data_entity != nullptr)
 							{
-								filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, wide_button->stored_data_entity);
+								filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_container_entity->stored_data_entity);
 
 								if (filter_block_button_attribute_name == "")
 								{
-									filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, wide_button->stored_data_entity);
+									filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_container_entity->stored_data_entity);
 								}
 							}
 							else
@@ -25565,10 +25496,10 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 	);
 	jc_button->can_be_stretched = true;
 
-	//EDataContainer_DataEntityHolder*
-	//data_holder = new EDataContainer_DataEntityHolder();
-	jc_button->stored_data_entity = _data_entity;
-	//EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
+	EDataContainer_DataEntityHolder*
+		data_holder = new EDataContainer_DataEntityHolder();
+	data_holder->stored_data_entity = _data_entity;
+	EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
 	//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
 
 	jc_button->pointer_to_data_entity = _data_entity;
@@ -25583,7 +25514,7 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 	//create text area
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea*
-	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
+		jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -25928,21 +25859,6 @@ void EntityButtonWideItem::reinit_as_pattern_item_button(EFilterRule* _filter_ru
 		EInputCore::logger_simple_error("_filter_rule is NULL!");
 	}
 	//_target_group->need_change = true;
-}
-
-bool EntityButtonWideItem::is_have_deleted_item()
-{
-	if
-	(
-		(stored_data_entity != nullptr)
-		&&
-		(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::deleted, stored_data_entity))
-	)
-	{
-		return true;
-	}
-
-	return false;
 }
 
 EntityButtonFilterBlockError* EntityButtonFilterBlockError::add_error_button_to_error_list(ERegionGabarite* _gabarite, EButtonGroupFilterBlock* _filter_block, ELocalisationText _ltext)
@@ -26611,9 +26527,9 @@ ID_string ID_string::register_new_unique_ID_by_key(std::string _string)
 	int
 		hash_id = EStringUtils::get_id_by_hash(EStringUtils::to_lower(_string));
 
-	for (int i = 0; i < ID_string_array_size_for_hash; i++)
+	for (int i = 0; i < ID_string_array_size; i++)
 	{
-		if (!HASHED_registered_ID_strings[hash_id][i].ID_is_used)
+		if (HASHED_registered_ID_strings[hash_id][i].is_empty)
 		{
 			ID_string::register_new_ID_string(i, _string);
 
@@ -26621,12 +26537,10 @@ ID_string ID_string::register_new_unique_ID_by_key(std::string _string)
 		}
 	}
 
-	EInputCore::logger_simple_error("[" + _string + "] have no space for HashID");
-
 	ID_string
-	empty_ID_string;
+		empty_ID_string;
 
-	empty_ID_string.ID_is_used = false;
+	empty_ID_string.is_empty = true;
 
 	return empty_ID_string;
 }
@@ -26651,7 +26565,7 @@ void ID_string::set_ID_by_string(std::string _string)
 	{
 
 		//create new one
-		if (!HASHED_registered_ID_strings[hash_id][i].ID_is_used)//empty = free
+		if (HASHED_registered_ID_strings[hash_id][i].is_empty)//empty = free
 		{
 			//if (_string == "Rarity")
 			//{
@@ -26662,7 +26576,7 @@ void ID_string::set_ID_by_string(std::string _string)
 			//last_registered_id++;
 
 			string_value = _string;
-			ID_is_used = true;
+			is_empty = false;
 
 			register_new_ID_string(i, _string);
 
@@ -26682,7 +26596,7 @@ void ID_string::set_ID_by_string(std::string _string)
 				//last_registered_id++;
 
 				string_value = _string;
-				ID_is_used = true;
+				is_empty = false;
 
 				//std::cout << green << "Registeren new unique ID_string. ID=" << yellow << ID << green << " value={" << yellow << string_value << std::endl;
 

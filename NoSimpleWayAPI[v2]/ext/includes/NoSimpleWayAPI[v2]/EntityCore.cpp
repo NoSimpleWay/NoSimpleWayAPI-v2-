@@ -660,61 +660,60 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 }
 
-//EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity)
-//{
-//	EntityButton* jc_button = new EntityButton();
-//
-//	jc_button->make_as_default_clickable_button
-//	(
-//		new ERegionGabarite(44.0f, 44.0f),
-//		_parent_group,
-//		nullptr
-//	);
-//
-//	//EDataContainer_DataEntityHolder*
-//	//data = new EDataContainer_DataEntityHolder();
-//	jc_button->stored_data_entity = _data_entity;
-//
-//	EntityButton::get_last_custom_data(jc_button)->data_container = data;
-//
-//	//delete action on right click
-//	Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
-//
-//	//_parent_group->button_list.push_back(jc_button);
-//
-//	//int selected_data_entity = _data_entity;
-//
-//	ETextureGabarite* item_icon
-//		=
-//		NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _data_entity));
-//
-//	if (item_icon != nullptr)
-//	{
-//		float resize_factor = 38.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
-//		resize_factor = min(resize_factor, 1.0f);
-//
-//		ESpriteLayer* second_button_layer =
-//			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-//			(item_icon,
-//				(44.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-//				(44.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
-//				3.0f,
-//
-//				item_icon->size_x_in_pixels * resize_factor,
-//				item_icon->size_y_in_pixels * resize_factor,
-//				0.0f
-//			);
-//
-//		jc_button->sprite_layer_list.push_back(second_button_layer);
-//
-//		//second_button_layer->make_as_PBR();
-//	}
-//
-//	//jc_button->add_description("123");
-//	//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
-//
-//	return jc_button;
-//}
+EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity)
+{
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->make_as_default_clickable_button
+	(
+		new ERegionGabarite(44.0f, 44.0f),
+		_parent_group,
+		nullptr
+	);
+
+	EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
+	data->stored_data_entity = _data_entity;
+
+	EntityButton::get_last_custom_data(jc_button)->data_container = data;
+
+	//delete action on right click
+	Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+	//_parent_group->button_list.push_back(jc_button);
+
+	//int selected_data_entity = _data_entity;
+
+	ETextureGabarite* item_icon
+		=
+		NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _data_entity));
+
+	if (item_icon != nullptr)
+	{
+		float resize_factor = 38.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+		resize_factor = min(resize_factor, 1.0f);
+
+		ESpriteLayer* second_button_layer =
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(item_icon,
+				(44.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+				(44.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+				3.0f,
+
+				item_icon->size_x_in_pixels * resize_factor,
+				item_icon->size_y_in_pixels * resize_factor,
+				0.0f
+			);
+
+		jc_button->sprite_layer_list.push_back(second_button_layer);
+
+		//second_button_layer->make_as_PBR();
+	}
+
+	//jc_button->add_description("123");
+	//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+
+	return jc_button;
+}
 
 
 

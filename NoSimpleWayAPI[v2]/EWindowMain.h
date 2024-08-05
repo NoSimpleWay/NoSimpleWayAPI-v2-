@@ -95,70 +95,6 @@ namespace LootFilterVersionPattern
 	extern std::vector<PatternStruct*> registered_loot_filter_version_patterns;
 }
 
-namespace ERegisteredStrings
-{
-	
-	extern const ID_string icon_path;
-
-	extern const ID_string base_class;
-	extern const ID_string short_name;
-	extern const ID_string max_stack_size;
-	extern const ID_string stack_multiplier;
-	extern const ID_string max_sockets;
-	extern const ID_string base_ward_min;
-	extern const ID_string base_ward_max;
-	extern const ID_string base_armour_min;
-	extern const ID_string base_armour_max;
-	extern const ID_string base_evasion_min;
-	extern const ID_string base_evasion_max;
-	extern const ID_string base_energy_shield_min;
-	extern const ID_string base_energy_shield_max;
-	extern const ID_string item_height;
-	extern const ID_string item_width;
-	extern const ID_string worth;
-	extern const ID_string base_worth;
-
-	extern const ID_string trash;
-	extern const ID_string common;
-	extern const ID_string moderate;
-	extern const ID_string rare;
-	extern const ID_string expensive;
-	extern const ID_string very_expensive;
-
-	extern const ID_string item_tag;
-	extern const ID_string all_sockets_white;
-	extern const ID_string always_six_linked;
-
-	extern const ID_string rarity_override;
-	extern const ID_string unique_item;
-	extern const ID_string details_ID;
-
-	extern const ID_string divination_cards;
-	extern const ID_string stackable_currency;
-	extern const ID_string support_gems;
-	extern const ID_string map_fragments;
-	extern const ID_string embers_of_allflame;
-	extern const ID_string expensive_base_for_unique;
-	extern const ID_string good_base_for_unique;
-
-	extern const ID_string worth_world_drop;
-	extern const ID_string worth_boss_drop;
-
-	extern const ID_string world_drop;
-	extern const ID_string boss_drop;
-	extern const ID_string heist_drop;
-	extern const ID_string uber_lab;
-	extern const ID_string replica_item;
-	extern const ID_string assembled_from_pieces;
-	extern const ID_string atzoatl_sacrifice;
-	extern const ID_string non_world_drop;
-	extern const ID_string upgraded_by_blessing;
-	extern const ID_string vendor_recipe;
-	extern const ID_string blight_drop;
-	extern const ID_string simulacrum;
-
-	extern const ID_string deleted;
-}
 
 namespace NS_DefaultGabarites
 {
@@ -226,7 +162,6 @@ public:
 
 struct DataEntityTagFilter;
 class EntityButtonFilterRule;
-class EFilterRule;
 class EntityButtonWideItem : public EntityButton
 {
 public:
@@ -235,16 +170,13 @@ public:
 	ELocalisationText localised_name;
 
 	ESpriteLayer*
-	second_sprite_layer = nullptr;
+		second_sprite_layer = nullptr;
 
 	ETextureGabarite*
-	texture_icon = nullptr;
-	
-	EDataEntity*
-	stored_data_entity;
+		texture_icon = nullptr;
 
-	EFilterRule*
-	attached_filter_rule;
+
+	EFilterRule* attached_filter_rule;
 
 	//std::vector<DataEntityTagFilter>	data_entity_tag_required_tag_list;
 	//std::vector<DataEntityTagFilter>	data_entity_tag_banned_tag_list;
@@ -268,8 +200,6 @@ public:
 	void change_texture(ETextureGabarite* _texture);
 
 	void reinit_as_pattern_item_button(EFilterRule* _filter_rule, EButtonGroup* _target_group);
-
-	bool is_have_deleted_item();
 
 };
 
