@@ -601,6 +601,213 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 	//_button->sprite_layer_list.pu
 }
 
+//class EButtonGroupButtonDebugger;
+EButtonGroupButtonDebugger* EntityButton::open_button_debugger()
+{
+	EButtonGroupButtonDebugger*
+	button_debug_group
+	=
+	new EButtonGroupButtonDebugger (new ERegionGabarite (200.0f, 500.0f));
+
+	button_debug_group->target_button = this;
+	button_debug_group->auto_superfocused = true;
+
+	
+	button_debug_group->autodeletable = true;
+
+	button_debug_group->init_as_root_group(parent_button_group->root_group->parent_window);
+
+
+
+
+
+	EButtonGroup*
+	workspace_part = button_debug_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+
+	//WIDTH
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_width")
+			);
+
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(button_gabarite->size_x), 0.0f, 250.0f, 1000.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+	
+	//HEIGHT
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_height")
+			);
+
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(button_gabarite->size_y), 0.0f, 50.0f, 500.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+	
+	//FORCE FIELD: BOTTOM
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_force_field_bottom")
+			);
+
+		button_width_slider->force_field_bottom = 4.0f;
+		button_width_slider->main_text_area->set_color(0.9f, 0.7f, 1.0f, 1.0f);
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(force_field_bottom), 0.0f, 50.0f, 500.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+	
+	//FORCE FIELD: UP
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_force_field_top")
+			);
+
+		button_width_slider->force_field_bottom = 4.0f;
+		button_width_slider->main_text_area->set_color(0.9f, 0.7f, 1.0f, 1.0f);
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(force_field_up), 0.0f, 50.0f, 500.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+	
+	//FORCE FIELD: LEFT
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_force_field_left")
+			);
+
+		button_width_slider->force_field_bottom = 4.0f;
+		button_width_slider->main_text_area->set_color(0.9f, 0.7f, 1.0f, 1.0f);
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(force_field_left), 0.0f, 50.0f, 500.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+	
+	//FORCE FIELD: LEFT
+	{
+		EntityButton*
+			button_width_slider = EntityButton::create_horizontal_named_slider
+			(
+				new ERegionGabarite(200.0f, 38.0f),
+				workspace_part,
+				EFont::font_list[0],
+				EGUIStyle::active_style,
+				ELocalisationText::get_localisation_by_key("button_force_field_right")
+			);
+
+		button_width_slider->force_field_bottom = 4.0f;
+		button_width_slider->main_text_area->set_color(0.9f, 0.7f, 1.0f, 1.0f);
+		button_width_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_parent_group_slider_version);
+		button_width_slider->main_text_area->font = EFont::font_list[1];
+		button_width_slider->main_text_area->font_scale = 0.75f;
+		button_width_slider->can_be_stretched = true;
+
+		set_parameters_for_named_slider(button_width_slider, &(force_field_right), 0.0f, 50.0f, 500.0f);
+		set_parameters_for_named_slider(button_width_slider, true, true);
+
+		workspace_part->add_button_to_working_group(button_width_slider);
+	}
+
+	//NEW LINE METHOD
+	{
+		EntityButtonVariantRouter*
+		router_button = new EntityButtonVariantRouter();
+		workspace_part->add_button_to_working_group(router_button);
+
+		router_button->force_field_bottom = 12.0f;
+
+		
+		router_button->make_as_default_router_variant_button(new ERegionGabarite(200.0f, 20.0f));
+		router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_parent_group_router_variant_version);
+
+		router_button->can_be_stretched = true;
+		router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+		router_button->height_division = 1;
+
+		router_button->add_router_variant_with_localization_key_and_color("button_new_line_method_overfill",	0.9f, 0.8f, 0.7f, 1.0f);
+		router_button->add_router_variant_with_localization_key_and_color("button_new_line_method_forcibly",	0.5f, 1.0f, 0.7f, 1.0f);
+		router_button->add_router_variant_with_localization_key_and_color("button_new_line_method_forbidden",	1.0f, 0.7f, 0.5f, 1.0f);
+
+		router_button->target_int_value = &new_line_method;
+
+		router_button->select_variant(new_line_method);
+
+		
+	}
+
+
+
+
+
+
+	parent_button_group->root_group->parent_window->button_group_list.push_back(button_debug_group);
+	button_debug_group->activate_move_to_foreground_and_center();
+
+	return button_debug_group;
+}
+
 void EntityButton::add_default_description_by_key(std::string _key)
 {
 
@@ -835,6 +1042,26 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 
 	return jc_button;
+}
+
+void EntityButton::set_parameters_for_named_slider(EntityButton* _button, void* _pointer, float _min_value, float _mid_value, float _max_value)
+{
+	EDataContainer_VerticalNamedSlider*
+	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(_button->main_custom_data->data_container);
+	
+	slider_data->pointer_to_value	= _pointer;
+	slider_data->min_value			= _min_value;
+	slider_data->mid_value			= _mid_value;
+	slider_data->max_value			= _max_value;
+}
+
+void EntityButton::set_parameters_for_named_slider(EntityButton* _button, bool _is_rounded, bool _is_float)
+{
+	EDataContainer_VerticalNamedSlider*
+	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(_button->main_custom_data->data_container);
+
+	slider_data->rounded_numbers	= _is_rounded;
+	slider_data->is_float			= _is_float;
 }
 
 void EntityButtonColorButton::make_as_named_color_button
@@ -1735,6 +1962,8 @@ void EntityButton::draw_second_pass()
 
 		if (timer % 700 <= 350)
 		{
+			button_suppressor->set_highlight(0.2f, 0.2f);
+
 			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.5f);
 			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
@@ -1835,6 +2064,17 @@ void EntityButton::update(float _d)
 			}
 		}
 	}
+
+	if
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_F10))
+		&&
+		(EClickableArea::active_clickable_region == main_clickable_area)
+	)
+	{
+		EButtonGroupButtonDebugger* button_bebugger = open_button_debugger();
+	}
+	
 	//}
 }
 
@@ -2569,30 +2809,41 @@ void DescriptionContainerDefault::create_description()
 		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
 		description_group->need_refresh = true;
 
-
-		if (!replacer_list.empty())
+		if
+		(
+			(parent_button->suppressor == nullptr)
+			||
+			(*(parent_button->suppressor) ^ (parent_button->invert_suppression))//T^F F^T
+		)
 		{
-			ELocalisationText
-				temp_ltext = localisation_text;
-
-			for (int i = 0; i < NSW_languages_count; i++)
+			if (!replacer_list.empty())
 			{
-				for (EStringReplacer replacer : replacer_list)
+				ELocalisationText
+					temp_ltext = localisation_text;
+
+				for (int i = 0; i < NSW_languages_count; i++)
 				{
-					size_t start_pos = 0;
-					while ((start_pos = temp_ltext.localisations[i].find(replacer.what_replaced, start_pos)) != std::string::npos)
+					for (EStringReplacer replacer : replacer_list)
 					{
-						temp_ltext.localisations[i].replace(start_pos, replacer.what_replaced.length(), replacer.result_string);
-						start_pos += replacer.result_string.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+						size_t start_pos = 0;
+						while ((start_pos = temp_ltext.localisations[i].find(replacer.what_replaced, start_pos)) != std::string::npos)
+						{
+							temp_ltext.localisations[i].replace(start_pos, replacer.what_replaced.length(), replacer.result_string);
+							start_pos += replacer.result_string.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+						}
 					}
 				}
-			}
 
-			description_group->add_default_clickable_region_with_text_area(temp_ltext);
+				description_group->add_default_clickable_region_with_text_area(temp_ltext);
+			}
+			else
+			{
+				description_group->add_default_clickable_region_with_text_area(localisation_text);
+			}
 		}
 		else
 		{
-			description_group->add_default_clickable_region_with_text_area(localisation_text);
+			description_group->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("description_this_button_is_supressed"));
 		}
 
 		float additional_left_offset = 8.0f;

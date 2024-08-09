@@ -2144,7 +2144,7 @@ void EDataActionCollection::action_refresh_loot_simulator_when_release(Entity* _
 			//(EInputCore::MOUSE_SPEED_X != 0.0)
 			&&
 			(EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment->selected_button != nullptr)
-			)
+		)
 	{
 		EWindowMain::loot_simulator_button_group->delayed_execution = true;
 	}
@@ -4759,22 +4759,22 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 									stack_multiplier = 1.0f;
 								}
 
-								int total_cost = round(item_value * stack_multiplier);
+								float total_cost = item_value * stack_multiplier;
 
 								ID_string new_worth_ID_string;
 								int old_worth_id = 0;
 								int new_worth_id = -1;
 
 
-								if (total_cost <= 1) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								if (total_cost <= 1.0f) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
 								else
-									if (total_cost <= 3) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
+									if (total_cost <= 3.0f) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
 									else
-										if (total_cost <= 10) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
+										if (total_cost <= 10.0f) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
 										else
-											if (total_cost <= 100) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
+											if (total_cost <= 100.0f) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
 											else
-												if (total_cost <= 300) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
+												if (total_cost <= 300.0f) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
 												else
 													/*__________________*/ {
 													new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive;
@@ -4977,7 +4977,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 													else
 														if (new_worth_id >= 4) { std::cout << yellow; }
 
-										std::cout << new_worth_ID_string.string_value << green << ">" << std::endl;
+										std::cout << new_worth_ID_string.string_value << green << ">(" << yellow << total_cost << green << " chaos)" << std::endl;
 									}
 
 
@@ -14322,6 +14322,7 @@ void EWindowMain::register_filter_rules()
 		jc_filter.add_new_suitable_value("cold", ELocalisationText::get_localisation_by_key("tag_cold"));							jc_filter.set_text_color(0.25f, 0.75f, 1.00f, 1.0f);
 		jc_filter.add_new_suitable_value("lightning", ELocalisationText::get_localisation_by_key("tag_lightning"));					jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
 		jc_filter.add_new_suitable_value("chaos", ELocalisationText::get_localisation_by_key("tag_chaos"));							jc_filter.set_text_color(1.00f, 1.00f, 0.00f, 1.0f);
+		jc_filter.add_new_suitable_value("defences", ELocalisationText::get_localisation_by_key("tag_defence"));					jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
 
 		jc_filter.add_force_field();
 
@@ -15577,7 +15578,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EButtonGroup*
 			sound_cosmetic_segment
 			= EButtonGroup::create_default_button_group(new ERegionGabarite(350.0f, 150.0f), EGUIStyle::active_style)
-			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_static_autosize);
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 		sound_cosmetic_segment->button_group_is_active = false;
 		//sound_cosmetic_segment->disable_gabarite = true;
@@ -15758,7 +15759,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			&whole_filter_block_group->game_sound_suppressor_bool
 		);
 		button_ingame_sound_suppressor_bool->new_line_method = NewLineMethod::FORBIDDEN;
-		button_ingame_sound_suppressor_bool->force_field_right = 4.0f;
+		button_ingame_sound_suppressor_bool->force_field_right = 0.0f;
 		left_sound_segment->add_button_to_working_group(button_ingame_sound_suppressor_bool);
 
 
@@ -15782,7 +15783,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			nullptr
 		);
 		button_variant_FB_router->parent_filter_block = whole_filter_block_group;
-		button_variant_FB_router->force_field_right = 4.0f;
+		button_variant_FB_router->force_field_right = 0.0f;
 		button_variant_FB_router->can_be_stretched = true;
 		button_variant_FB_router->new_line_method = NewLineMethod::FORCIBLY;
 
@@ -15879,7 +15880,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		sound_button->can_be_stretched = true;
 		sound_button->new_line_method = NewLineMethod::FORBIDDEN;
 		sound_button->add_default_description_by_key("description_user_sound");
-		sound_button->force_field_left = 4.0f;
+		sound_button->force_field_left = 0.0f;
 
 		sound_button->parent_filter_block = whole_filter_block_group;
 
@@ -15935,7 +15936,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->can_be_stretched = true;
 		//button_variant_FB_router->force_field_up = 8.0f;
 		button_variant_FB_router->new_line_method = NewLineMethod::FORCIBLY;
-		button_variant_FB_router->force_field_left = 4.0f;
+		button_variant_FB_router->force_field_left = 0.0f;
 
 		button_variant_FB_router->add_default_description_by_key("description_mandatory_or_optional_sound");
 
@@ -16036,7 +16037,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			jc_button = EntityButton::create_horizontal_named_slider
 			(
 
-				new ERegionGabarite(170.0f, 40.0f),
+				new ERegionGabarite(170.0f, 35.0f),
 				general_sound_section_for_top,
 				EFont::font_list[0],
 				EGUIStyle::active_style,
@@ -16061,7 +16062,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			jc_button = EntityButton::create_horizontal_named_slider
 			(
 
-				new ERegionGabarite(170.0f, 40.0f),
+				new ERegionGabarite(170.0f, 35.0f),
 				general_sound_section_for_top,
 				EFont::font_list[0],
 				EGUIStyle::active_style,
@@ -16069,6 +16070,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			);
 			jc_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
 			jc_button->button_suppressor = button_custom_sound_bool_suppressor;
+
 			jc_button->new_line_method = NewLineMethod::FORBIDDEN;
 
 			jc_button->add_default_description_by_key("description_user_sound_volume");
@@ -16092,7 +16094,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
 
 			general_sound_section_for_top->add_button_to_working_group(button_variant_disable_ingame_sound);
-			button_variant_disable_ingame_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 20.0f));
+			button_variant_disable_ingame_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 25.0f));
 			button_variant_disable_ingame_sound->add_default_description_by_key("description_disable_sound");
 
 			button_variant_disable_ingame_sound->new_line_method = NewLineMethod::FORCIBLY;
@@ -16122,7 +16124,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
 
 			general_sound_section_for_top->add_button_to_working_group(button_variant_disable_user_sound);
-			button_variant_disable_user_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 20.0f));
+			button_variant_disable_user_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 25.0f));
 			button_variant_disable_user_sound->add_default_description_by_key("description_disable_sound");
 
 			button_variant_disable_user_sound->new_line_method = NewLineMethod::FORBIDDEN;
@@ -16153,7 +16155,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 			button_variant_FB_router->make_as_default_button_with_icon
 			(
-				new ERegionGabarite(340.0f, 40.0f),
+				new ERegionGabarite(340.0f, 20.0f),
 				general_sound_section_for_top,
 				&EDataActionCollection::action_rotate_variant,
 				nullptr
@@ -25497,7 +25499,7 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 	jc_button->can_be_stretched = true;
 
 	EDataContainer_DataEntityHolder*
-		data_holder = new EDataContainer_DataEntityHolder();
+	data_holder = new EDataContainer_DataEntityHolder();
 	data_holder->stored_data_entity = _data_entity;
 	EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
 	//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);

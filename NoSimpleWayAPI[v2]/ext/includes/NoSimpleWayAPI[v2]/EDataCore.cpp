@@ -1791,6 +1791,31 @@ void EDataActionCollection::action_out_main_text_area(Entity* _entity, ECustomDa
 	}
 }
 
+class EButtonGroupButtonDebugger;
+void EDataActionCollection::action_refresh_parent_group_slider_version(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	//EntityButton* but = static_cast<EntityButton*>(_entity);
+	
+	if
+	(
+		(EButtonGroupButtonDebugger::target_button->parent_button_group != nullptr)
+		&&
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(EClickableArea::active_clickable_region == static_cast<EntityButton*>(_entity)->main_clickable_area)
+	)
+	{
+		EButtonGroupButtonDebugger::target_button->parent_button_group->need_change = true;
+
+		//EButtonGroupButtonDebugger::target_button->main_text_area->change_text("!");
+	}
+}
+
+void EDataActionCollection::action_refresh_parent_group_router_variant_version(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupButtonDebugger::target_button->parent_button_group->need_change = true;
+}
+
 //void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)

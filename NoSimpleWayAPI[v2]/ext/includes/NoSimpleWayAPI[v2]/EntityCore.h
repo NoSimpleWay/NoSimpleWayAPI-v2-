@@ -177,7 +177,7 @@ public:
 
 
 
-enum class NewLineMethod
+enum NewLineMethod
 {
 	WHEN_OUT_OF_GABARITE,
 	FORCIBLY,
@@ -201,6 +201,7 @@ enum class ButtonSearchMode
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class EButtonGroupButtonDebugger;
 class EntityButton : public Entity
 {
 public:
@@ -209,8 +210,8 @@ public:
 
 	ButtonSearchMode				button_search_mode = ButtonSearchMode::DEFAULT;
 
-	NewLineMethod
-		new_line_method = NewLineMethod::WHEN_OUT_OF_GABARITE;
+	int
+	new_line_method = NewLineMethod::WHEN_OUT_OF_GABARITE;
 
 	bool button_hidden_by_search = false;
 	bool disable_force_field = false;
@@ -270,6 +271,9 @@ public:
 
 	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 
+
+	virtual EButtonGroupButtonDebugger* open_button_debugger();
+
 	void add_default_description_by_key(std::string _key);
 
 	void init
@@ -315,6 +319,8 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+	static void set_parameters_for_named_slider(EntityButton* _button, void* _pointer, float _min_value, float _mid_value, float _max_value);
+	static void set_parameters_for_named_slider(EntityButton* _button, bool _is_rounded, bool _is_float);
 
 
 	static EntityButton* create_default_radial_button
@@ -549,7 +555,7 @@ public:
 	RouterVariant* add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 	//RouterVariant* add_router_variant_with_localization_color_and_icon(std::string _text, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 
-	int height_division = 2;
+	int height_division = 1;
 };
 
 

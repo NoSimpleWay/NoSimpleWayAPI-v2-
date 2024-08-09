@@ -846,7 +846,13 @@ public:
 	static EButtonGroupSimpleColorEditor* registered_color_editor_group;
 };
 
+class EButtonGroupButtonDebugger : public EButtonGroup
+{
+public:
+	EButtonGroupButtonDebugger(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	static EntityButton* target_button;
+};
 
 
 

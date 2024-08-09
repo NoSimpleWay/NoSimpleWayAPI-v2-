@@ -785,7 +785,8 @@ namespace EDataActionCollection
 	void action_out_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_(Entity* _entity, ECustomData* _custom_data, float _d);
 
-
+	void action_refresh_parent_group_slider_version(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_refresh_parent_group_router_variant_version(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 

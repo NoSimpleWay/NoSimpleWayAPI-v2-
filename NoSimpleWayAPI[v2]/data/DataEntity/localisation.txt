@@ -3584,3 +3584,84 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"text_region_new_version_detected"
 	[tag]"name EN"		[value]"New version of AwakenedDaDEditor!\n\nPress 'Update' button, to open update webpage!"
 	[tag]"name RU"		[value]"Новая версия!\n\nНажмите кнопку 'Обновить', что бы открыть веб-сайт с обновлением!"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_width"
+	[tag]"name EN"		[value]"Button width"
+	[tag]"name RU"		[value]"Ширина кнопки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_height"
+	[tag]"name EN"		[value]"Button height"
+	[tag]"name RU"		[value]"Высота кнопки"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_force_field_bottom"
+	[tag]"name EN"		[value]"Button force field bottom"
+	[tag]"name RU"		[value]"Силовое поле: низ"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_force_field_top"
+	[tag]"name EN"		[value]"Button force field top"
+	[tag]"name RU"		[value]"Силовое поле: верх"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_force_field_left"
+	[tag]"name EN"		[value]"Button force field left"
+	[tag]"name RU"		[value]"Силовое поле: лево"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_force_field_right"
+	[tag]"name EN"		[value]"Button force field right"
+	[tag]"name RU"		[value]"Силовое поле: право"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_new_line_method_overfill"
+	[tag]"name EN"		[value]"New line: when overfill"
+	[tag]"name RU"		[value]"Перенос: при переполнении"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_new_line_method_forcibly"
+	[tag]"name EN"		[value]"New line: forcibly"
+	[tag]"name RU"		[value]"Перенос: насильно"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_new_line_method_forbidden"
+	[tag]"name EN"		[value]"New line: forbidden"
+	[tag]"name RU"		[value]"Перенос: запрещено"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_this_button_is_supressed"
+	[tag]"name EN"		[value]"This button is disabled. Press to flashing green button to enable"
+	[tag]"name RU"		[value]"Эта кнопка выключена. Нажмите на подсвеченную, мигающую кнопку, что бы включить выключенну кнопку"
+	

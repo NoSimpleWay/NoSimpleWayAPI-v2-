@@ -2037,7 +2037,7 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 
 	//UNDEFINED LOCALISATION
 	ELocalisationText
-		ltext;
+	ltext;
 
 	ltext.stored_key = _key;
 	ltext.base_name = _key;

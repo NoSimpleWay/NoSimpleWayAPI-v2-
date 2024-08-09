@@ -47,6 +47,7 @@ std::vector<FreshCreatedGroup*>	EButtonGroup::fresh_created_block_list;
 constexpr float BUTTON_GROUP_Y_DISTANCE = 0.0f;
 
 
+EntityButton* EButtonGroupButtonDebugger::target_button;
 
 void EWindow::update_default(float _d)
 {
@@ -347,11 +348,11 @@ void EWindow::GUI_update_default(float _d)
 	//UNPRESSED LMB
 	//GET FOCUSED BUTTON CLICKABLE REGION IN FOCUSED GROUP
 	if
-		(
-			((EButtonGroup::focused_button_group_mouse_unpressed != nullptr))
-			&&
-			(!EInputCore::MOUSE_BUTTON_LEFT)
-			)
+	(
+		((EButtonGroup::focused_button_group_mouse_unpressed != nullptr))
+		&&
+		(!EInputCore::MOUSE_BUTTON_LEFT)
+	)
 	{
 		//EButtonGroup::focused_button_group_mouse_unpressed->highlight_this_group();
 
@@ -1029,7 +1030,7 @@ void EButtonGroup::button_group_update(float _d)
 					(but->entity_is_active())
 					&&
 					(but->button_in_culling_gabarites())
-					)
+				)
 			{
 				//visible last time?
 
