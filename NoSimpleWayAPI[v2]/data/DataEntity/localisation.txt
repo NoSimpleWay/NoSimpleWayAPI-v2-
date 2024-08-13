@@ -3665,3 +3665,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"This button is disabled. Press to flashing green button to enable"
 	[tag]"name RU"		[value]"Эта кнопка выключена. Нажмите на подсвеченную, мигающую кнопку, что бы включить выключенну кнопку"
 	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"text_region_ingame_sound"
+	[tag]"name EN"		[value]"Ingame sound"
+	[tag]"name RU"		[value]"Игровые звуки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"text_region_user_sound"
+	[tag]"name EN"		[value]"User sound"
+	[tag]"name RU"		[value]"Пользовательские звуки"

@@ -560,6 +560,7 @@ void ETextArea::generate_text()
 		y_adding += border_offset_bottom;
 		y_adding += font->base * font_scale * float(row.size() - 1);
 		
+		y_adding += offset_by_constant_y;
 		if ((font_scale >= 0.99f) && (font_scale <= 1.01f))
 		{
 			y_adding = round(y_adding);
@@ -593,6 +594,8 @@ void ETextArea::generate_text()
 				)
 				+
 				(get_row_width(str) * offset_by_text_size_x) * font_scale;
+
+			x_adding += offset_by_constant_x;
 
 			x_adding += offset_border[BorderSide::LEFT];
 			x_adding += border_offset_left;

@@ -5235,6 +5235,8 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 			)
 		);
 
+	main_group->autodeletable = true;
+
 	//main_group->region_gabarite->offset_x -= main_group->region_gabarite->size_x + 5.0f + *EGUIStyle::active_style->button_group_darken->side_offset_left + *EGUIStyle::active_style->button_group_darken->side_offset_right;
 
 	main_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
@@ -5267,7 +5269,8 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 	for (RouterVariant* rv : _router_button->router_variant_list)
 	{
 		EntityButtonVariantRouterSelector*
-			variant_button = new EntityButtonVariantRouterSelector();
+		variant_button = new EntityButtonVariantRouterSelector();
+		variant_button->can_be_stretched = true;
 
 		std::string
 			text = rv->router_localisation.localisations[ELocalisationText::active_localisation];

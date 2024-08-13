@@ -9,7 +9,6 @@ Show
 	SetFontSize 44
 	#MinimapIcon 0 Red Circle
 	#PlayEffect Red
-	CustomAlertSound "levelup.wav" 100
 	DisableDropSound
 
 
@@ -35,7 +34,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Orange Moon
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 13 100
 
 
@@ -50,7 +48,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Orange Moon
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -64,7 +61,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Orange Moon
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -77,7 +73,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Square
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -92,7 +87,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Cyan Circle
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -112,7 +106,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Cyan Kite
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -132,7 +125,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 0 Cyan Kite
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -152,7 +144,6 @@ Show
 	SetFontSize 37
 	MinimapIcon 0 Cyan Kite
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 3 100
 
 
@@ -172,7 +163,6 @@ Show
 	SetFontSize 30
 	MinimapIcon 0 Cyan Kite
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -192,7 +182,6 @@ Show
 	SetFontSize 28
 	MinimapIcon 0 Cyan Kite
 	#PlayEffect Red
-	#CustomAlertSound "fossil_mid.mp3" 100
 	PlayAlertSound 1 100
 
 
@@ -464,7 +453,6 @@ Show
 	SetFontSize 44
 	MinimapIcon 2 Red Circle
 	PlayEffect Green
-	CustomAlertSound "yeaaaahhhhh.mp3" 100
 
 
 Show
@@ -482,7 +470,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 2 Red Circle
 	PlayEffect Green
-	CustomAlertSound "ahhman.mp3" 100
 
 
 Show
@@ -494,7 +481,6 @@ Show
 	SetFontSize 41
 	MinimapIcon 2 Green Circle
 	PlayEffect Green
-	CustomAlertSound "ahhman.mp3" 100
 
 
 Show
@@ -1051,7 +1037,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Green Circle
 	PlayEffect Green
-	CustomAlertSound "convert.wav" 100
 
 
 Show
@@ -1243,7 +1228,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Star
 	PlayEffect Brown
-	CustomAlertSound "hostile.wav" 100
 
 
 Show
@@ -1310,7 +1294,6 @@ Show
 	SetFontSize 41
 	MinimapIcon 0 Red Square
 	PlayEffect Red
-	CustomAlertSound "pffffffrgh_bitbox.wav" 100
 
 
 Show
@@ -1323,7 +1306,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 0 Red Square
 	PlayEffect Red
-	CustomAlertSound "drop_map_high.wav" 100
 
 
 Show
@@ -1391,7 +1373,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Green Diamond
 	#PlayEffect Red
-	CustomAlertSound "amulet.wav" 100
 
 
 Show
@@ -1404,7 +1385,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 0 Green Diamond
 	#PlayEffect Red
-	CustomAlertSound "amulet.wav" 100
 
 
 Show
@@ -2229,7 +2209,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Star
 	PlayEffect Red
-	CustomAlertSound "holysh02.wav" 100
 
 
 Show
@@ -2252,7 +2231,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Circle
 	PlayEffect Brown
-	CustomAlertSound "rare_currency.mp3" 100
 
 
 Show
@@ -2264,7 +2242,6 @@ Show
 	SetFontSize 43
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 
 
 Show
@@ -2276,7 +2253,6 @@ Show
 	SetFontSize 43
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 
 
 Show
@@ -2289,7 +2265,6 @@ Show
 	SetFontSize 43
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 
 
 Show
@@ -2301,7 +2276,6 @@ Show
 	SetFontSize 43
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 
 
 Show
@@ -2313,7 +2287,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Circle
 	PlayEffect Brown
-	CustomAlertSound "sonic2.mp3" 100
 
 
 Show
@@ -2338,7 +2311,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Raindrop
 	#PlayEffect Red
-	CustomAlertSound "fossil_low.mp3" 100
 	DisableDropSound
 
 
@@ -2487,7 +2459,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Cyan Star
 	PlayEffect Cyan
-	CustomAlertSound "silent_mirror.wav" 100
 
 
 Show
@@ -2499,7 +2470,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
-	CustomAlertSound "ayayaya.mp3" 100
 
 
 Show
@@ -2511,7 +2481,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
-	CustomAlertSound "wow.mp3" 100
 
 
 Show
@@ -2523,7 +2492,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Yellow Circle
 	PlayEffect Brown
-	CustomAlertSound "sonic2.mp3" 100
 
 
 Show
@@ -2536,7 +2504,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Circle
 	PlayEffect Yellow
-	CustomAlertSound "damnit04.wav" 100
 
 
 Show
@@ -2548,7 +2515,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Circle
 	PlayEffect Yellow
-	CustomAlertSound "damnit04.wav" 100
 
 
 Show
@@ -2560,7 +2526,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow
-	CustomAlertSound "ahh04.wav" 100
 
 
 Show
@@ -2572,7 +2537,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Pink Circle
 	PlayEffect Pink
-	CustomAlertSound "good_tier_currency.mp3;key.wav" 100
 
 
 Show
@@ -2585,7 +2549,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Yellow Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2597,7 +2560,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Yellow Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2610,7 +2572,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 White Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2622,7 +2583,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 White Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2635,7 +2595,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Red Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2647,7 +2606,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Red Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2660,7 +2618,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Blue Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2672,7 +2629,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Blue Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2685,7 +2641,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Blue Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2698,7 +2653,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Blue Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2710,7 +2664,6 @@ Show
 	SetFontSize 37
 	MinimapIcon 2 Blue Circle
 	#PlayEffect Red
-	CustomAlertSound "low_tier_currency.mp3" 100
 
 
 Show
@@ -2748,7 +2701,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2761,7 +2713,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2773,7 +2724,6 @@ Show
 	SetFontSize 32
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2786,7 +2736,6 @@ Show
 	SetFontSize 41
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -2798,7 +2747,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Green Circle
 	#PlayEffect Red
-	CustomAlertSound "good_tier_currency.mp3" 100
 
 
 Show
@@ -3010,7 +2958,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 0 Orange Circle
 	PlayEffect Orange
-	CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3024,7 +2971,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow
-	CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3038,7 +2984,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Yellow Circle
 	#PlayEffect Red
-	CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3052,7 +2997,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 1 Yellow Circle
 	#PlayEffect Red
-	CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3066,7 +3010,6 @@ Show
 	SetFontSize 30
 	MinimapIcon 1 Yellow Circle
 	#PlayEffect Red
-	CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3079,7 +3022,6 @@ Show
 	SetFontSize 25
 	#MinimapIcon 0 Red Circle
 	#PlayEffect Red
-	#CustomAlertSound "gold.wav" 100
 	DisableDropSound
 
 
@@ -3201,7 +3143,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Cross
 	PlayEffect Pink
-	CustomAlertSound "BaseBallBatJingle.wav" 100
 
 
 Show
@@ -3214,7 +3155,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Cross
 	PlayEffect Pink
-	CustomAlertSound "artefact.wav" 100
 
 
 Show
@@ -3270,7 +3210,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Red Star
 	PlayEffect Red
-	CustomAlertSound "wtf-sound.mp3" 100
 
 
 Show
@@ -3288,7 +3227,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 1 Red Star
 	PlayEffect Red
-	CustomAlertSound "fossil_mid.mp3" 100
 
 
 Show
@@ -3305,7 +3243,6 @@ Show
 	SetFontSize 33
 	MinimapIcon 2 Red Star
 	PlayEffect Red
-	CustomAlertSound "fossil_low.mp3" 100
 
 
 Show
@@ -3389,7 +3326,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Red Star
 	PlayEffect Orange
-	CustomAlertSound "paper-throw-1.wav" 100
 
 
 Show
@@ -3401,7 +3337,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Pentagon
 	PlayEffect Cyan
-	CustomAlertSound "cup2.wav" 100
 
 
 #BlockSeparator "Хейст: цель кражи" shrinked no_space
@@ -3658,7 +3593,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Kite
 	PlayEffect Yellow
-	#CustomAlertSound "leveluphireling.wav" 100
 	PlayAlertSound 6 100
 	DisableDropSound
 
@@ -3690,7 +3624,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect Brown
-	#CustomAlertSound "Legendary.mp3" 100
 	PlayAlertSound 13 100
 	DisableDropSound
 
@@ -3705,7 +3638,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 1 Brown Diamond
 	PlayEffect Brown
-	CustomAlertSound "Legendary.mp3" 100
 	DisableDropSound
 
 
@@ -3719,7 +3651,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 1 Brown Diamond
 	PlayEffect Brown
-	CustomAlertSound "Legendary.mp3" 100
 	DisableDropSound
 
 
@@ -3738,7 +3669,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect Brown
-	#CustomAlertSound "artefact.wav" 100
 	PlayAlertSound 13 100
 	DisableDropSound
 
@@ -3756,7 +3686,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 0 Red Diamond
 	PlayEffect Red
-	#CustomAlertSound "artefact.wav" 100
 	PlayAlertSound 11 100
 	DisableDropSound
 
@@ -3776,7 +3705,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 1 Brown Diamond
 	PlayEffect Brown
-	CustomAlertSound "Legendary.mp3" 100
 	DisableDropSound
 
 
@@ -3793,7 +3721,6 @@ Show
 	SetFontSize 42
 	MinimapIcon 1 Red Diamond
 	PlayEffect Red
-	CustomAlertSound "Legendary.mp3" 100
 	DisableDropSound
 
 
@@ -3812,7 +3739,6 @@ Show
 	SetFontSize 39
 	MinimapIcon 1 Brown Diamond
 	PlayEffect Brown
-	CustomAlertSound "convert.wav" 100
 	DisableDropSound
 
 
@@ -3829,7 +3755,6 @@ Show
 	SetFontSize 39
 	MinimapIcon 1 Red Diamond
 	PlayEffect Red
-	CustomAlertSound "convert.wav" 100
 	DisableDropSound
 
 
@@ -3848,7 +3773,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 1 Brown Diamond
 	PlayEffect Brown
-	CustomAlertSound "convert.wav" 100
 	DisableDropSound
 
 
@@ -3865,7 +3789,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 2 Red Diamond
 	PlayEffect Red
-	CustomAlertSound "convert.wav" 100
 	DisableDropSound
 
 
@@ -3884,7 +3807,6 @@ Show
 	SetFontSize 30
 	MinimapIcon 2 Red Diamond
 	PlayEffect Red
-	#CustomAlertSound "Legendary.mp3" 100
 	PlayAlertSound 16 100
 	DisableDropSound
 
@@ -3902,7 +3824,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 2 Brown Diamond
 	PlayEffect Brown
-	#CustomAlertSound "Legendary.mp3" 100
 	PlayAlertSound 16 100
 	DisableDropSound
 
@@ -3918,7 +3839,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 2 Pink Star
 	PlayEffect Pink
-	#CustomAlertSound "Legendary.mp3" 100
 	PlayAlertSound 16 100
 	DisableDropSound
 
@@ -4362,7 +4282,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Cyan Diamond
 	#PlayEffect Red
-	CustomAlertSound "synthesis.wav" 100
 
 
 #BlockSeparator "Расколотые предметы" shrinked no_space
@@ -4412,7 +4331,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Diamond
 	#PlayEffect Red
-	CustomAlertSound "synthesis.wav" 100
 
 
 Show
@@ -4428,7 +4346,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Diamond
 	#PlayEffect Red
-	CustomAlertSound "synthesis.wav" 100
 
 
 Show
@@ -4444,7 +4361,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Diamond
 	#PlayEffect Red
-	CustomAlertSound "synthesis.wav" 100
 
 
 Show
@@ -4459,7 +4375,6 @@ Show
 	SetFontSize 32
 	MinimapIcon 1 Cyan Diamond
 	#PlayEffect Red
-	CustomAlertSound "synthesis.wav" 100
 
 
 #BlockSeparator "Зачарки" shrinked no_space
@@ -4476,7 +4391,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
-	CustomAlertSound "levelup.wav" 100
 
 
 Show
@@ -4491,7 +4405,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Green Hexagon
 	PlayEffect Green
-	CustomAlertSound "levelup.wav" 100
 
 
 Show
@@ -4506,7 +4419,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 2 Green Hexagon
 	PlayEffect Green
-	CustomAlertSound "levelup.wav" 100
 
 
 Show
@@ -4518,7 +4430,6 @@ Show
 	SetFontSize 30
 	MinimapIcon 1 Cyan Pentagon
 	PlayEffect Cyan
-	CustomAlertSound "helm.wav" 100
 
 
 #BlockSeparator "Убер базы" expanded no_space
@@ -4540,7 +4451,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Cyan Moon
 	#PlayEffect Red
-	CustomAlertSound "glass.wav" 100
 	DisableDropSound
 
 
@@ -4555,7 +4465,6 @@ Show
 	SetFontSize 32
 	MinimapIcon 0 Red Moon
 	#PlayEffect Red
-	CustomAlertSound "glass.wav" 100
 	DisableDropSound
 
 
@@ -4577,7 +4486,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Cyan Triangle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 	DisableDropSound
 
 
@@ -4597,7 +4505,6 @@ Show
 	SetFontSize 30
 	MinimapIcon 1 Blue Triangle
 	#PlayEffect Red
-	CustomAlertSound "glovesmetal.wav" 100
 	DisableDropSound
 
 
@@ -4628,7 +4535,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 White Diamond
 	PlayEffect White
-	CustomAlertSound "choir.wav" 100
 
 
 Show
@@ -4812,7 +4718,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
-	CustomAlertSound "jewel.wav" 100
 	DisableDropSound
 
 
@@ -4830,7 +4735,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Red Square
 	PlayEffect Red
-	#CustomAlertSound "helm.wav" 100
 	PlayAlertSound 15 100
 	DisableDropSound
 
@@ -4847,7 +4751,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Red Square
 	PlayEffect Red
-	#CustomAlertSound "helm.wav" 100
 	PlayAlertSound 15 100
 	DisableDropSound
 
@@ -4863,7 +4766,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Red Circle
 	PlayEffect Orange
-	CustomAlertSound "helm.wav" 100
 
 
 Show
@@ -4876,7 +4778,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Orange Square
 	PlayEffect Orange
-	CustomAlertSound "helm.wav" 100
 
 
 Show
@@ -4890,7 +4791,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Cyan Square
 	#PlayEffect Red
-	CustomAlertSound "helm.wav" 100
 
 
 Show
@@ -4904,7 +4804,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 1 White Square
 	#PlayEffect Red
-	CustomAlertSound "helm.wav" 100
 
 
 Hide
@@ -5045,7 +4944,6 @@ Show
 	SetFontSize 40
 	MinimapIcon 1 Orange Triangle
 	PlayEffect Red
-	CustomAlertSound "synt_high.wav" 100
 
 
 Show
@@ -5065,7 +4963,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 1 Orange Triangle
 	PlayEffect Red
-	CustomAlertSound "synt_high.wav" 100
 
 
 #BlockSeparator "Броня архетипов" shrinked additional_space
@@ -5173,7 +5070,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 0 Red Star
 	#PlayEffect Red
-	#CustomAlertSound "synt_high.wav" 100
 	#PlayAlertSound 2 100
 	DisableDropSound
 
@@ -5189,7 +5085,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 0 Green Star
 	#PlayEffect Red
-	#CustomAlertSound "synt_high.wav" 100
 	#PlayAlertSound 2 100
 	DisableDropSound
 
@@ -5205,7 +5100,6 @@ Show
 	SetFontSize 38
 	MinimapIcon 0 Cyan Star
 	#PlayEffect Red
-	#CustomAlertSound "synt_high.wav" 100
 	#PlayAlertSound 2 100
 	DisableDropSound
 
@@ -5222,7 +5116,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Brown Raindrop
 	PlayEffect Brown
-	CustomAlertSound "monsterguts.wav" 100
 
 
 Show
@@ -5363,7 +5256,6 @@ Show
 	SetFontSize 35
 	MinimapIcon 1 Blue Raindrop
 	#PlayEffect Red
-	CustomAlertSound "potionui.wav" 100
 
 
 Show
@@ -5376,7 +5268,6 @@ Show
 	SetFontSize 36
 	MinimapIcon 0 Blue Raindrop
 	#PlayEffect Red
-	CustomAlertSound "potionui.wav" 100
 
 
 Show

@@ -256,8 +256,11 @@ public:
 	float offset_by_gabarite_size_x = 0.5f;
 	float offset_by_gabarite_size_y = 0.0f;
 
-	float offset_by_text_size_x = -0.5f;
-	float offset_by_text_size_y = 0.0f;
+	float offset_by_text_size_x		= -0.5f;
+	float offset_by_text_size_y		= 0.0f;
+
+	float offset_by_constant_x		= 0.0f;
+	float offset_by_constant_y		= 0.0f;
 	//
 	bool outclick_protection = false;
 

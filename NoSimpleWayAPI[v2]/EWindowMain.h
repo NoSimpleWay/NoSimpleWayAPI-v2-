@@ -1176,6 +1176,8 @@ public:
 	pointer_to_status_group = nullptr;
 
 	EntityButton* add_status_button(ELocalisationText _ltext, int _code, int _data_length);
+
+	static std::string league_name;
 };
 
 
