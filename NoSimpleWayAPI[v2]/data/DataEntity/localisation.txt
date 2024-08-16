@@ -1241,14 +1241,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"variant_disable_font_size"
 	[tag]"base name"	[value]"DisableFontSize"
-	[tag]"name EN"		[value]"Font size disabled"
+	[tag]"name EN"		[value]"Font size: disabled"
 	[tag]"name RU"		[value]"Размер текста: выключен"
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_enable_font_size"
 	[tag]"base name"	[value]"EnableFontSize"
-	[tag]"name EN"		[value]"Font size enabled"
+	[tag]"name EN"		[value]"Font size: enabled"
 	[tag]"name RU"		[value]"Размер текста: включён"
 	
 	
@@ -3682,3 +3682,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"text_region_user_sound"
 	[tag]"name EN"		[value]"User sound"
 	[tag]"name RU"		[value]"Пользовательские звуки"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_sound_tab_ingame"
+	[tag]"name EN"		[value]"Ingame"
+	[tag]"name RU"		[value]"Игровые"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_sound_tab_user"
+	[tag]"name EN"		[value]"User"
+	[tag]"name RU"		[value]"С диска"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_rama_bg"
+	[tag]"name EN"		[value]"Colors"
+	[tag]"name RU"		[value]"Цвета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_minimap_icon_and_ray"
+	[tag]"name EN"		[value]"Icon/ray"
+	[tag]"name RU"		[value]"Иконка/луч"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"text_region_sound_type_tab"
+	[tag]"name EN"		[value]"Item drop sound"
+	[tag]"name RU"		[value]"Звуки при выпадении"

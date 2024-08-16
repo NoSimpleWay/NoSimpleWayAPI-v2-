@@ -397,6 +397,14 @@ public:
 	EntityButtonColorButtonForFilterBlock*	assigned_color_button_from_filter_block;
 };
 
+class EntityButtonFilterBlockCosmeticTypeTab;
+class EntityButtonSwitcherForSoundGroup : public EntityButton
+{
+public:
+	EntityButtonFilterBlockCosmeticTypeTab* target_tab_button = nullptr;
+	bool*									target_bool;
+};
+
 
 
 
@@ -493,6 +501,8 @@ public:
 	EButtonGroup* pointer_to_control_group_mid_show_hide_cosmetic;
 
 
+	EntityButtonFilterBlockCosmeticTypeTab* tab_button_for_ingame_sound	= nullptr;
+	EntityButtonFilterBlockCosmeticTypeTab* tab_button_for_user_sound	= nullptr;
 
 	//color section
 	EntityButtonColorButtonForFilterBlock* pointer_to_color_button[3];
@@ -1324,6 +1334,8 @@ namespace EDataActionCollection
 	void action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_configure_pattern_filter_rule(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_activation_of_sound_type_group(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_change_cosmetic_for_ingame_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1944,6 +1956,23 @@ public:
 	EButtonGroupFilterBlock*			master_block;
 
 	~EntityButtonColorButtonForFilterBlock();
+};
+
+class EntityButtonFilterBlockCosmeticTypeTab : public EntityButton
+{
+public:
+	EButtonGroup*
+	activate_group = nullptr;
+
+	EButtonGroup*
+	hide_group = nullptr;
+
+	EButtonGroup*
+	main_group_nest = nullptr;
+
+	void change_cosmetic_visual(bool _active);
+
+	~EntityButtonFilterBlockCosmeticTypeTab();
 };
 
 

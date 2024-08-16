@@ -2192,7 +2192,7 @@ EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite*
 
 void EClickableArea::update(float _d)
 {
-	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 	//if
 	//(
 	//	(EButtonGroup::focused_button_group_with_slider->region == this->region)
@@ -2224,6 +2224,12 @@ void EClickableArea::update(float _d)
 		(
 			(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
 			&&
+			(
+				(parent_entity == nullptr)
+				||
+				(!parent_entity->is_suppressed())
+			)
+			&&
 			(EClickableArea::active_clickable_region == this)
 		)
 		{
@@ -2239,8 +2245,8 @@ void EClickableArea::update(float _d)
 						//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
 						//&&
 						//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-						&&
-						(EClickableArea::active_clickable_region == this)
+						//&&
+						//(EClickableArea::active_clickable_region == this)
 					)
 				{
 					EInputCore::logger_simple_info("call [actions on click list]");
@@ -2263,20 +2269,29 @@ void EClickableArea::update(float _d)
 	}
 
 	//right click
+	if
+	(
+		(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
+		&&
+		(EClickableArea::active_clickable_region == this)
+		&&
+		(
+			(parent_entity == nullptr)
+			||
+			(!parent_entity->is_suppressed())
+		)
+	)
 	{
 		for (data_action_pointer dap : actions_on_right_click_list)
 			if
-				(
-					(dap != nullptr)
-					&&
-					(parent_entity != nullptr)
-					&&
-					(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-					&&
-					(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-					&&
-					(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
-				)
+			(
+				(dap != nullptr)
+				//&&
+				//&&
+				//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+				//&&
+				//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+			)
 			{
 				dap(parent_entity, parent_custom_data, _d);
 			}
@@ -2296,7 +2311,16 @@ void EClickableArea::update(float _d)
 
 
 
-	if (text_area != nullptr)
+	if
+	(
+		(text_area != nullptr)
+		&&
+		(
+			(parent_entity == nullptr)
+			||
+			(!parent_entity->is_suppressed())
+		)
+	)
 	{
 		text_area->update(_d);
 	}
@@ -2797,7 +2821,14 @@ void ECustomData::update(float _d)
 {
 	for (data_action_pointer action_on_update_pointer : actions_on_update)
 	{
-		if ((action_on_update_pointer != nullptr) && (parent_entity != nullptr))
+		if
+		(
+			(!parent_entity->is_suppressed())//suppressed entity cannot be updated
+			&&
+			(action_on_update_pointer != nullptr)
+			&&
+			(parent_entity != nullptr)
+		)
 		{
 			action_on_update_pointer(parent_entity, this, _d);
 		}

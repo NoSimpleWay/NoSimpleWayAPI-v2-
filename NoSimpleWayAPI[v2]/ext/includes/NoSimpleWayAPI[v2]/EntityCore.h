@@ -58,6 +58,10 @@ public:
 
 	std::vector<ECustomData*> custom_data_list;
 
+	bool* suppressor		= nullptr;
+	bool invert_suppression	= false;
+
+	bool is_suppressed();
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
@@ -426,6 +430,8 @@ public:
 		ERegionGabarite* _region_gabarite
 	);
 
+	
+
 	EClickableArea* create_clickable_region_witch_sprtite_layer_and_icon(ERegionGabarite* _region_gabarite, ETextureGabarite* _icon, data_action_pointer _action);
 
 	EClickableArea* add_close_circle(data_action_pointer _dap);
@@ -441,8 +447,7 @@ public:
 
 	void update(float _d) override;
 
-	bool* suppressor = nullptr;
-	bool invert_suppression = false;
+
 
 	EntityButton* button_suppressor;
 

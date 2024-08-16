@@ -1712,6 +1712,19 @@ void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _regio
 	main_text_area->can_be_edited = false;
 }
 
+bool Entity::is_suppressed()
+{
+	if
+	(
+		(suppressor != nullptr)
+		&&
+		(!(*suppressor ^ invert_suppression))//T^F F^T
+	)
+	{return true;}
+
+	return false;
+}
+
 EClickableArea* EntityButton::create_clickable_region_witch_sprtite_layer_and_icon(ERegionGabarite* _region_gabarite, ETextureGabarite* _icon, data_action_pointer _action)
 {
 	EClickableArea*
@@ -1893,11 +1906,11 @@ void EntityButton::draw()
 
 
 	if
-		(
-			(suppressor != nullptr)
-			&&
-			(!(*suppressor ^ invert_suppression))//T^F F^T
-			)
+	(
+		(suppressor != nullptr)
+		&&
+		(!(*suppressor ^ invert_suppression))//T^F F^T
+	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GREY, 0.85f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -1990,6 +2003,7 @@ void EntityButton::update(float _d)
 {
 	//if ((suppressor == nullptr) || (*suppressor))
 	//{
+
 	Entity::update(_d);
 
 
@@ -2022,12 +2036,8 @@ void EntityButton::update(float _d)
 		destroy_attached_description();
 	}
 
-	if
-	(
-			(suppressor == nullptr)
-			||
-			(*suppressor ^ invert_suppression)
-	)
+	//HOTKEY
+	if (!is_suppressed())
 	{
 		for (EHotKeyManager hotkey : hotkey_list)
 		{

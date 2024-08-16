@@ -1475,7 +1475,7 @@ void EButtonGroup::draw_button_group()
 							(but->be_visible_last_time)
 							&&
 							(but->entity_is_active())
-							)
+						)
 					{
 						//PHANTOM REDRAW
 						if (but->have_phantom_draw)
@@ -2282,7 +2282,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 					(but->be_visible_last_time)
 					&&
 					(but->entity_is_active())
-					)
+				)
 			{
 
 
