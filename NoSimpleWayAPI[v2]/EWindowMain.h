@@ -1574,7 +1574,8 @@ enum class PoeNinjaAPIMode
 	EMBERS,
 	TATTOO,
 	OMEN,
-	INCUBATORS
+	INCUBATORS,
+	RUNES
 };
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow

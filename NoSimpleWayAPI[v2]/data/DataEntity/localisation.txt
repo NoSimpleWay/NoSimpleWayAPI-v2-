@@ -3519,6 +3519,19 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"trade_type_runes"
+	[tag]"name EN"		[value]"Runes"
+	[tag]"name RU"		[value]"Руны"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"area_level_slider"
 	[tag]"name EN"		[value]"Area level"
 	[tag]"name RU"		[value]"Уровень области"

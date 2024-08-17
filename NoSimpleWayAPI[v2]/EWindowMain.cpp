@@ -4475,6 +4475,31 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
+	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=KalguuranRune";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_runes"), code, url_content.length());
+
+	if ((code != CURLE_OK) || (url_content.length() < 500))
+	{
+		std::cout << red << "Something failed! [" << yellow << (CURLcode)code << red << "]\r\nData size: " << yellow << url_content.length();
+	}
+	else
+	{
+
+		parse_json_from_poe_ninja("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
+
+		save_poe_ninja_cache("Runes", &url_content);
+		url_content = "";
+	}
+
+
+
+
+
 
 
 
@@ -4715,7 +4740,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 							((links <= 4) || (_mode != PoeNinjaAPIMode::UNIQUES))
 							&&
 							((gem_level <= 1) || (_mode != PoeNinjaAPIMode::GEMS))
-							)
+						)
 					{
 						for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
 						{
@@ -10096,6 +10121,7 @@ EWindowMain::EWindowMain()
 	read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
 	read_poe_ninja_cache("Tattoo",			PoeNinjaAPIMode::TATTOO);
 	read_poe_ninja_cache("Omen",			PoeNinjaAPIMode::OMEN);
+	read_poe_ninja_cache("Runes",			PoeNinjaAPIMode::RUNES);
 
 	read_user_loot_patterns();
 
