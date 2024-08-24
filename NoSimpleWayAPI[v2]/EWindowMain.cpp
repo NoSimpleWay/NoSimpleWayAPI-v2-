@@ -28456,7 +28456,8 @@ void EButtonGroupAttributeGeneratorGroup_Influense::init()
 
 	container->current_slide_value = 1.0f;
 
-	container->rounded_numbers = true;
+	container->rounded_numbers	= true;
+	container->is_float			= false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
@@ -28492,7 +28493,8 @@ void EButtonGroupAttributeGeneratorGroup_Influense::init()
 
 	container->current_slide_value = 1.0f;
 
-	container->rounded_numbers = true;
+	container->rounded_numbers	= true;
+	container->is_float			= false;
 
 	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 
