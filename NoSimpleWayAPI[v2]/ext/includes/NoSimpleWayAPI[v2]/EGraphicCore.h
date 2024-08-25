@@ -286,6 +286,8 @@ namespace NS_EGraphicCore
 
 	extern float ground_level;
 
+	extern bool pbr_already_updated;
+
 	typedef struct RgbColor
 	{
 		unsigned char r;
@@ -417,6 +419,7 @@ public:
 	//void(*pointer_to_sprite_render)(ESprite* _sprite);
 	//void render_sprite_call(ESprite* _sprite);
 	void draw_call();
+	void draw_call(float* _pointer, int _data_size);
 	void direct_draw_call();
 
 	void set_total_attribute_count(GLsizei _attribute_count);

@@ -68,6 +68,8 @@ namespace NS_EGraphicCore
 	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;
 
+	bool							pbr_already_updated					= false;
+
 	HSVRGBAColor			sun_color;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
@@ -223,118 +225,132 @@ void ERenderBatcher::draw_call()
 	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
 	{
 
-		//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
-		{
-			batcher_shader->use();
-		}
-		apply_transform();
+		batcher_shader->use();
 
-		//batcher_shader->setInt("texture1", 0);
-		//glDisable(GL_MULTISAMPLE);
-		//glfwWindowHint(GLFW_SAMPLES, 0);
-		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 16);
 		
-		if
-		(
-			(gl_vertex_attribute_total_count > 12)
-		)
-		{
-			glActiveTexture(GL_TEXTURE0);
-			//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);
-			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-			
-			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
-			//BASE TEXTURE ATLAS
+			//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
 
-			if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+			apply_transform();
+
+			//batcher_shader->setInt("texture1", 0);
+			//glDisable(GL_MULTISAMPLE);
+			//glfwWindowHint(GLFW_SAMPLES, 0);
+			//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 16);
+
+			if
+			(
+				(gl_vertex_attribute_total_count > 12)
+			)
 			{
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-			
-			
-
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);	
-			}
-			//SKYDOMES
-			//for (int i = 0; i < 1; i++)
-			{
-
-
-				glActiveTexture(GL_TEXTURE1);
-				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
-				
-				//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+				if
+				(
+					(!NS_EGraphicCore::pbr_already_updated)
+					||
+					(EInputCore::key_pressed(GLFW_KEY_TAB))
+				)
 				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-				}
-					
+					NS_EGraphicCore::pbr_already_updated = true;
+					glActiveTexture(GL_TEXTURE0);
+					//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);
+					glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
+					//BASE TEXTURE ATLAS
+
+					//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+
+
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+					}
+					//SKYDOMES
+					//for (int i = 0; i < 1; i++)
+					{
+
+
+						glActiveTexture(GL_TEXTURE1);
+						glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
+
+						//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+						{
+							glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+							glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+						}
+
 						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
 						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-					
 
-				
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
 
-				
-				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-				//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
-				//{glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);}//
-				//else
-				
-				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
-				
-				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(1) + "]", 1);
+
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
+
+
+						//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+						//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
+						//{glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);}//
+						//else
+
+						//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
+
+						NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(1) + "]", 1);
+					}
+
+					//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[0]", 0);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", round(NS_EGraphicCore::global_normal_multiplier * 50.0f) / 50.0f);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("plastic_or_metal_multiplier", NS_EGraphicCore::plastic_or_metal_multiplier);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_x", NS_EGraphicCore::sun_x);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_y", NS_EGraphicCore::sun_y);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_size", NS_EGraphicCore::sun_size);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_blur", NS_EGraphicCore::sun_blur);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_bright", NS_EGraphicCore::sun_bright);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_exp", NS_EGraphicCore::sun_exp);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_flat_decay", NS_EGraphicCore::sun_flat_decay);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("ground_level", NS_EGraphicCore::ground_level);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_x", NS_EGraphicCore::SCREEN_WIDTH);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_y", NS_EGraphicCore::SCREEN_HEIGHT);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time", NS_EGraphicCore::time_total);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier", NS_EGraphicCore::move_multiplier);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light", NS_EGraphicCore::global_free_sky_light_multiplier);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sun_light", NS_EGraphicCore::global_free_sun_light_multiplier);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier", NS_EGraphicCore::global_reflection_multiplier);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[0]", 1.0f);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[1]", 0.2f);
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[2]", 0.1f);
+
+					glm::vec3 v
+					(
+						NS_EGraphicCore::sun_color.r,
+						NS_EGraphicCore::sun_color.g,
+						NS_EGraphicCore::sun_color.b
+					);
+
+					GLuint focusLoc = glGetUniformLocation(NS_EGraphicCore::pbr_batcher->get_shader()->ID, "sun_light_gloss_color");
+					glUniform3fv(focusLoc, 1, &v[0]);
+				}
+				else
+				{
+					NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time", NS_EGraphicCore::time_total);
+				}
 			}
-
-			//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[0]", 0);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", round(NS_EGraphicCore::global_normal_multiplier * 50.0f) / 50.0f);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("plastic_or_metal_multiplier", NS_EGraphicCore::plastic_or_metal_multiplier);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_x", NS_EGraphicCore::sun_x);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_y", NS_EGraphicCore::sun_y);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_size", NS_EGraphicCore::sun_size);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_blur", NS_EGraphicCore::sun_blur);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_bright", NS_EGraphicCore::sun_bright);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_exp", NS_EGraphicCore::sun_exp);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_flat_decay", NS_EGraphicCore::sun_flat_decay);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("ground_level", NS_EGraphicCore::ground_level);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_x", NS_EGraphicCore::SCREEN_WIDTH);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_y", NS_EGraphicCore::SCREEN_HEIGHT);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time", NS_EGraphicCore::time_total);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier", NS_EGraphicCore::move_multiplier);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light", NS_EGraphicCore::global_free_sky_light_multiplier);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sun_light", NS_EGraphicCore::global_free_sun_light_multiplier);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier", NS_EGraphicCore::global_reflection_multiplier);
-
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[0]", 1.0f);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[1]", 0.2f);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[2]", 0.1f);
-
-			glm::vec3 v
-			(
-				NS_EGraphicCore::sun_color.r,
-				NS_EGraphicCore::sun_color.g,
-				NS_EGraphicCore::sun_color.b
-			);
-
-			GLuint focusLoc = glGetUniformLocation(NS_EGraphicCore::pbr_batcher->get_shader()->ID, "sun_light_gloss_color");
-			glUniform3fv(focusLoc, 1, &v[0]);
-		}
 
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
 		glBindVertexArray(VAO);
 
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		if (EInputCore::key_pressed(GLFW_KEY_1))
+		if (EInputCore::key_pressed(GLFW_KEY_0))
 		{
 			glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, &vertex_buffer, GL_STATIC_DRAW);
 		}
@@ -350,6 +366,152 @@ void ERenderBatcher::draw_call()
 
 		//							 6 indices																  4 vertex to form shape
 		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_INT, 0);
+
+		//glDrawElements(GL_TRIANGLES, 6 * (last_vertice_buffer_index / 32), GL_UNSIGNED_INT, 0);
+
+		//std::cout << "Draw call! element [16] is: " << std::to_string(vertex_buffer[16]) << std::endl;
+	}
+	else
+	{
+		if (batcher_shader == nullptr) { EInputCore::logger_simple_error("Shader is NULL"); }
+	}
+
+	reset();
+}
+
+void ERenderBatcher::draw_call(float* _pointer, int _data_size)
+{
+	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
+	{
+
+		//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+		{
+			batcher_shader->use();
+
+			apply_transform();
+
+			//batcher_shader->setInt("texture1", 0);
+			//glDisable(GL_MULTISAMPLE);
+			//glfwWindowHint(GLFW_SAMPLES, 0);
+			//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 16);
+
+			if
+			(
+				(gl_vertex_attribute_total_count > 12)
+			)
+			{
+				glActiveTexture(GL_TEXTURE0);
+				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);
+				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
+				//BASE TEXTURE ATLAS
+
+				//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+				{
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+
+
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+				}
+				//SKYDOMES
+				//for (int i = 0; i < 1; i++)
+				{
+
+
+					glActiveTexture(GL_TEXTURE1);
+					glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
+
+					//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+					}
+
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+
+
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 1);
+
+
+					//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					//if (!EInputCore::key_pressed(GLFW_KEY_TAB	))
+					//{glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);}//
+					//else
+
+					//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
+
+					NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(1) + "]", 1);
+				}
+
+				//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[0]", 0);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", round(NS_EGraphicCore::global_normal_multiplier * 50.0f) / 50.0f);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("plastic_or_metal_multiplier", NS_EGraphicCore::plastic_or_metal_multiplier);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_x", NS_EGraphicCore::sun_x);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_y", NS_EGraphicCore::sun_y);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_size", NS_EGraphicCore::sun_size);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_blur", NS_EGraphicCore::sun_blur);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_bright", NS_EGraphicCore::sun_bright);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_exp", NS_EGraphicCore::sun_exp);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_flat_decay", NS_EGraphicCore::sun_flat_decay);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("ground_level", NS_EGraphicCore::ground_level);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_x", NS_EGraphicCore::SCREEN_WIDTH);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_y", NS_EGraphicCore::SCREEN_HEIGHT);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time", NS_EGraphicCore::time_total);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier", NS_EGraphicCore::move_multiplier);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light", NS_EGraphicCore::global_free_sky_light_multiplier);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sun_light", NS_EGraphicCore::global_free_sun_light_multiplier);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier", NS_EGraphicCore::global_reflection_multiplier);
+
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[0]", 1.0f);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[1]", 0.2f);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[2]", 0.1f);
+
+				glm::vec3 v
+				(
+					NS_EGraphicCore::sun_color.r,
+					NS_EGraphicCore::sun_color.g,
+					NS_EGraphicCore::sun_color.b
+				);
+
+				GLuint focusLoc = glGetUniformLocation(NS_EGraphicCore::pbr_batcher->get_shader()->ID, "sun_light_gloss_color");
+				glUniform3fv(focusLoc, 1, &v[0]);
+			}
+		}
+
+		glBindBuffer(GL_ARRAY_BUFFER, VAO);
+		glBindVertexArray(VAO);
+
+		glBindBuffer(GL_ARRAY_BUFFER, VBO);
+		if (EInputCore::key_pressed(GLFW_KEY_0))
+		{
+			glBufferData(GL_ARRAY_BUFFER, sizeof(float) * _data_size, _pointer, GL_STATIC_DRAW);
+		}
+		else
+			if (EInputCore::key_pressed(GLFW_KEY_1))
+			{
+				glBufferData(GL_ARRAY_BUFFER, sizeof(float) * _data_size, _pointer, GL_DYNAMIC_DRAW);
+			}
+			else
+			{
+				glBufferData(GL_ARRAY_BUFFER, sizeof(float) * _data_size, _pointer, GL_STREAM_DRAW);
+			}
+
+		//							 6 indices																  4 vertex to form shape
+		glDrawElements(GL_TRIANGLES, 6 * (int)(_data_size / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_INT, 0);
 
 		//glDrawElements(GL_TRIANGLES, 6 * (last_vertice_buffer_index / 32), GL_UNSIGNED_INT, 0);
 
@@ -5541,64 +5703,70 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		unsigned int batcher_free_space = batcher_size - batcher->last_vertice_buffer_index;
 		unsigned int data_part = 0;
 
-		while (true)
+		//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
 		{
-
-
-
-			//if batcher have free space
-			if
-			(
-				(batcher_free_space > 0)
-				//&&
-				//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-			)
+			while (true)
 			{
-				data_part = min(remaining_data, batcher_free_space);
-
-				data_copy_calls++;
-
-				memcpy
-				(
-					batcher->vertex_buffer + batcher->last_vertice_buffer_index,	//add to batcher vertex buffer
-					vertex_buffer + (copy_start),									//get from sprite layer vertex buffer
-					data_part * sizeof(float)
-				);
-
-				data_copies_count += data_part * sizeof(float);
-
-				copy_start += data_part;
-
-				batcher->last_vertice_buffer_index += data_part;
-				remaining_data -= data_part;
-				batcher_free_space -= data_part;
-
-				//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-				//{
-				//	batcher->draw_call();
-				//	batcher_free_space = batcher_size;
-				//}
 
 
-				//if (batcher->last_vertice_buffer_index >= batcher_size)
-				//{
-				//	batcher->draw_call();
-				//	batcher_free_space = batcher_size;
-				//}
+
+				//if batcher have free space
+				if
+					(
+						(batcher_free_space > 0)
+						//&&
+						//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+					)
+				{
+					data_part = min(remaining_data, batcher_free_space);
+
+					data_copy_calls++;
+
+					memcpy
+					(
+						batcher->vertex_buffer + batcher->last_vertice_buffer_index,	//add to batcher vertex buffer
+						vertex_buffer + (copy_start),									//get from sprite layer vertex buffer
+						data_part * sizeof(float)
+					);
+
+					data_copies_count += data_part * sizeof(float);
+
+					copy_start += data_part;
+
+					batcher->last_vertice_buffer_index += data_part;
+					remaining_data -= data_part;
+					batcher_free_space -= data_part;
+
+					batcher->draw_call();
+				}
+				else
+				{
+					//EInputCore::logger_simple_info("free space in batcher consumed, draw call");
+					batcher->draw_call();
+					batcher_free_space = batcher_size;
+				}
+
+				if (remaining_data <= 0)
+				{
+					break;
+				}
+				//ERenderBatcher::check_batcher(batcher);
 			}
-			else
-			{
-				//EInputCore::logger_simple_info("free space in batcher consumed, draw call");
-				batcher->draw_call();
-				batcher_free_space = batcher_size;
-			}
-
-			if (remaining_data <= 0)
-			{
-				break;
-			}
-			//ERenderBatcher::check_batcher(batcher);
 		}
+		//else
+		//{
+		//	batcher->draw_call();
+		//	batcher->last_vertice_buffer_index = last_buffer_id;
+
+		//	//memcpy
+		//	//(
+		//	//	batcher->vertex_buffer,			//add to batcher vertex buffer
+		//	//	vertex_buffer,					//get from sprite layer vertex buffer
+		//	//	last_buffer_id * sizeof(float)
+		//	//);
+
+		//	batcher->draw_call(vertex_buffer, last_buffer_id);
+		//}
 
 
 		//std::copy(0, (int)(sizeof(sl->vertex_buffer)), std::begin(sl->batcher->vertex_buffer));

@@ -205,7 +205,7 @@ int main()
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 	EInputCore::logger_param("max_texture_size:", max_tex_size);
 
-	glfwSwapInterval(1);
+	glfwSwapInterval(0);
 
 
 
@@ -296,6 +296,7 @@ int main()
 		(EInputCore::NSW_have_unsave_changes)
 	)
 	{
+		
 
 		if (NS_EGraphicCore::changed_resolution)
 		{
@@ -311,39 +312,54 @@ int main()
 
 			NS_EGraphicCore::recalculate_correction();
 
+			NS_EGraphicCore::pbr_already_updated = false;
+
+			
 			for (EWindow* w : EWindow::window_list)
 			{
-				for (EButtonGroup* group : w->button_group_list)
+				if (false)
 				{
-					float real_gabarite_x = float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x;
-					float additional_real_gabarite_x = float(NS_EGraphicCore::SCREEN_WIDTH) - group->region_gabarite->size_x;
-					float percent_x = group->region_gabarite->offset_x / (real_gabarite_x);
+					for (EButtonGroup* group : w->button_group_list)
+					{
+						float real_gabarite_x = float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x;
+						float additional_real_gabarite_x = float(NS_EGraphicCore::SCREEN_WIDTH) - group->region_gabarite->size_x;
+						float percent_x = group->region_gabarite->offset_x / (real_gabarite_x);
 
-					group->region_gabarite->offset_x = additional_real_gabarite_x * percent_x;
-					group->region_gabarite->offset_x = min(group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
-					group->region_gabarite->offset_x = max(group->region_gabarite->offset_x, -group->region_gabarite->size_x + 64.0f);
-
-
-
-
-					float real_gabarite_y				= float(NS_EGraphicCore::old_h)			- group->region_gabarite->size_y;
-					float additional_real_gabarite_y	= float(NS_EGraphicCore::SCREEN_HEIGHT)	- group->region_gabarite->size_y;
-
-					float percent_y = group->region_gabarite->offset_y / (real_gabarite_y);
-
-					group->region_gabarite->offset_y = additional_real_gabarite_y * percent_y;
-					group->region_gabarite->offset_y = min(group->region_gabarite->offset_y, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
-					group->region_gabarite->offset_y = max(group->region_gabarite->offset_y, -group->region_gabarite->size_y + 64.0f);
+						group->region_gabarite->offset_x = additional_real_gabarite_x * percent_x;
+						group->region_gabarite->offset_x = min(group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
+						group->region_gabarite->offset_x = max(group->region_gabarite->offset_x, -group->region_gabarite->size_x + 64.0f);
 
 
 
 
+						float real_gabarite_y = float(NS_EGraphicCore::old_h) - group->region_gabarite->size_y;
+						float additional_real_gabarite_y = float(NS_EGraphicCore::SCREEN_HEIGHT) - group->region_gabarite->size_y;
 
+						float percent_y = group->region_gabarite->offset_y / (real_gabarite_y);
 
-					//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
+						group->region_gabarite->offset_y = additional_real_gabarite_y * percent_y;
+						group->region_gabarite->offset_y = min(group->region_gabarite->offset_y, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
+						group->region_gabarite->offset_y = max(group->region_gabarite->offset_y, -group->region_gabarite->size_y + 64.0f);
 
-					//group->need_refresh = true;
-					//EButtonGroup::refresh_button_group(group);
+						//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
+
+						//group->need_refresh = true;
+						//EButtonGroup::refresh_button_group(group);
+					}
+				}
+				else
+				{
+					for (EButtonGroup* group : w->button_group_list)
+					{
+						float anchor_x = (group->region_gabarite->offset_x) / (float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x);
+						float anchor_y = (group->region_gabarite->offset_y) / (float(NS_EGraphicCore::old_h) - group->region_gabarite->size_y);
+
+						float center_x = (group->region_gabarite->offset_x + group->region_gabarite->size_x * anchor_x) / float(NS_EGraphicCore::old_w);
+						float center_y = (group->region_gabarite->offset_y + group->region_gabarite->size_y * anchor_y) / float(NS_EGraphicCore::old_h);
+
+						group->region_gabarite->offset_x = NS_EGraphicCore::SCREEN_WIDTH	* center_x - group->region_gabarite->size_x * anchor_x;
+						group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT	* center_y - group->region_gabarite->size_y * anchor_y;
+					}
 				}
 
 
@@ -669,6 +685,8 @@ int main()
 		{
 			EInputCore::logger_simple_error("GL ERROR: " + std::to_string(err));// Process/log the error.
 		}
+
+		NS_EGraphicCore::pbr_already_updated = true;
 	}
 
 	for (EWindow* w : EWindow::window_list)

@@ -47,6 +47,10 @@
 #define _SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING
 #include <experimental/filesystem>
 
+namespace PoeNinjaNamespace
+{
+	float price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
+}
 
 namespace LootFilterVersionPattern
 {
@@ -170,8 +174,16 @@ void EWindowMain::draw_additional(float _d)
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_position(0.0f, 0.0f);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_zoom(1.0f);
+	
+	//NS_EGraphicCore::default_batcher_for_drawing->get_shader()->use();
+	//NS_EGraphicCore::default_batcher_for_drawing->apply_transform();
 
+	//batcher_shader->setInt("texture1", 0);
+	//glDisable(GL_MULTISAMPLE);
+	//glfwWindowHint(GLFW_SAMPLES, 0);
+	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 16);
 
+	
 
 	//for (int j = 0; j < CLUSTER_DIM_X; j++)
 	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
@@ -4396,26 +4408,26 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=AllflameEmber";
-	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
-	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+	//url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=AllflameEmber";
+	//curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	//curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	//curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
 
-	code = curl_easy_perform(curl);
-	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_allflame_embers"), code, url_content.length());
+	//code = curl_easy_perform(curl);
+	//NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_allflame_embers"), code, url_content.length());
 
-	if ((code != CURLE_OK) || (url_content.length() < 500))
-	{
-		std::cout << red << "Something failed! [" << yellow << (CURLcode)code << red << "]\r\nData size: " << yellow << url_content.length();
-	}
-	else
-	{
+	//if ((code != CURLE_OK) || (url_content.length() < 500))
+	//{
+	//	std::cout << red << "Something failed! [" << yellow << (CURLcode)code << red << "]\r\nData size: " << yellow << url_content.length();
+	//}
+	//else
+	//{
 
-		parse_json_from_poe_ninja("Allflame ember", &url_content, PoeNinjaAPIMode::EMBERS, true);
+	//	parse_json_from_poe_ninja("Allflame ember", &url_content, PoeNinjaAPIMode::EMBERS, true);
 
-		save_poe_ninja_cache("AllflameEmber", &url_content);
-		url_content = "";
-	}
+	//	save_poe_ninja_cache("AllflameEmber", &url_content);
+	//	url_content = "";
+	//}
 
 
 
@@ -8962,8 +8974,15 @@ EWindowMain::EWindowMain()
 
 
 
-
-
+	for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+	{
+		PoeNinjaNamespace::price_table[i][0] = 1.0f;		//trash
+		PoeNinjaNamespace::price_table[i][1] = 3.0f;		//common
+		PoeNinjaNamespace::price_table[i][2] = 10.0f;		//moderate
+		PoeNinjaNamespace::price_table[i][3] = 100.0f;		//rare
+		PoeNinjaNamespace::price_table[i][4] = 300.0f;		//expensive
+		PoeNinjaNamespace::price_table[i][5] = 99999.0f;	//very expensive
+	}
 
 
 
@@ -10118,7 +10137,7 @@ EWindowMain::EWindowMain()
 	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::FRAGMENTS);
 	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::CURRENCY);
 	read_poe_ninja_cache("SkillGem",		PoeNinjaAPIMode::GEMS);
-	read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
+	//read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
 	read_poe_ninja_cache("Tattoo",			PoeNinjaAPIMode::TATTOO);
 	read_poe_ninja_cache("Omen",			PoeNinjaAPIMode::OMEN);
 	read_poe_ninja_cache("Runes",			PoeNinjaAPIMode::RUNES);
@@ -29137,3 +29156,5 @@ void EntityButtonFilterBlockCosmeticTypeTab::change_cosmetic_visual(bool _active
 EntityButtonFilterBlockCosmeticTypeTab::~EntityButtonFilterBlockCosmeticTypeTab()
 {
 }
+
+

@@ -1564,6 +1564,8 @@ public:
 	static std::vector<RawExplicitDataEntity> raw_data_entity_list;
 };
 
+
+
 enum class PoeNinjaAPIMode
 {
 	CURRENCY,
@@ -1571,12 +1573,18 @@ enum class PoeNinjaAPIMode
 	DIVINATIONS,
 	GEMS,
 	FRAGMENTS,
-	EMBERS,
 	TATTOO,
 	OMEN,
 	INCUBATORS,
-	RUNES
+	RUNES,
+	_LAST_ELEMENT
 };
+
+namespace PoeNinjaNamespace
+{
+	extern float price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
+};
+
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {

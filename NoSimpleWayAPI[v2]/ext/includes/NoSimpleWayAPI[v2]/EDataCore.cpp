@@ -1604,6 +1604,9 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 		(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 	)
 	{
+
+		//NS_EGraphicCore::changed_resolution = true;
+
 		for (EWindow* w : EWindow::window_list)
 		{
 			NS_EGraphicCore::refresh_autosize_groups(w);
@@ -1619,8 +1622,6 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 				//group->need_refresh = true;
 				//group->group_phantom_redraw = true;
 			}
-
-
 	}
 }
 
