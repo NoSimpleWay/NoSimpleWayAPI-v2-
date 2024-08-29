@@ -3736,3 +3736,117 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"text_region_sound_type_tab"
 	[tag]"name EN"		[value]"Item drop sound"
 	[tag]"name RU"		[value]"Звуки при выпадении"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_currency"
+	[tag]"name EN"		[value]"Currency"
+	[tag]"name RU"		[value]"Валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_uniques"
+	[tag]"name EN"		[value]"Unique items"
+	[tag]"name RU"		[value]"Уники"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_divinations"
+	[tag]"name EN"		[value]"Divination cards"
+	[tag]"name RU"		[value]"Гадальные карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_gems"
+	[tag]"name EN"		[value]"Gems"
+	[tag]"name RU"		[value]"Камни"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_fragments"
+	[tag]"name EN"		[value]"Map fragments"
+	[tag]"name RU"		[value]"Фрагменты карт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_tattoo"
+	[tag]"name EN"		[value]"Tattoo"
+	[tag]"name RU"		[value]"Татуировки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_omens"
+	[tag]"name EN"		[value]"Omens"
+	[tag]"name RU"		[value]"Предсказания"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_incubators"
+	[tag]"name EN"		[value]"Incubators"
+	[tag]"name RU"		[value]"Инкубаторы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_runes"
+	[tag]"name EN"		[value]"Runes"
+	[tag]"name RU"		[value]"Руны"
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_trash"
+	[tag]"name EN"		[value]"Trash >="
+	[tag]"name RU"		[value]"Мусор >="
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_common"
+	[tag]"name EN"		[value]"Common >="
+	[tag]"name RU"		[value]"Недорогое >="
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_moderate"
+	[tag]"name EN"		[value]"Moderate >="
+	[tag]"name RU"		[value]"Средняя ценность >="
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_rare"
+	[tag]"name EN"		[value]"Rare >="
+	[tag]"name RU"		[value]"Редкое >="
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_expensive"
+	[tag]"name EN"		[value]"Expensive >="
+	[tag]"name RU"		[value]"Дорогое >="
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_price_table_very_expensive"
+	[tag]"name EN"		[value]"Very expensive >="
+	[tag]"name RU"		[value]"Очень дорогое >="

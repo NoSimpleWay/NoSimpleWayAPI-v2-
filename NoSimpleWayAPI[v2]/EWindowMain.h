@@ -405,6 +405,22 @@ public:
 	bool*									target_bool;
 };
 
+class EntityButtonPriceTableValue : public EntityButton
+{
+public:
+	float* target_price_float;
+};
+
+class EntityButtonTabForPriceTable : public EntityButton
+{
+public:
+	EButtonGroup* target_group_activator;
+
+	EntityButtonTabForPriceTable();
+
+	static std::vector<EButtonGroup*> all_price_table_groups;
+};
+
 
 
 
@@ -1174,10 +1190,10 @@ public:
 	target_wide_button = nullptr;
 };
 
-class EButtonGroupPoeNijaPriceChecker : public EButtonGroup
+class EButtonGroupPoeNinjaPriceChecker : public EButtonGroup
 {
 public:
-	EButtonGroupPoeNijaPriceChecker(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	EButtonGroupPoeNinjaPriceChecker(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	EntityButton*
 	league_name_button = nullptr;
@@ -1185,9 +1201,17 @@ public:
 	EButtonGroup*
 	pointer_to_status_group = nullptr;
 
+	EButtonGroup*
+	pointer_to_price_table = nullptr;
+
+	EButtonGroup*
+	pointer_to_price_tabs = nullptr;
+
 	EntityButton* add_status_button(ELocalisationText _ltext, int _code, int _data_length);
 
 	static std::string league_name;
+
+	void add_price_table_group(ELocalisationText _ltext, int _table_id);
 };
 
 
@@ -1197,7 +1221,7 @@ namespace NSWRegisteredButtonGroups
 {
 	static EButtonGroupFilterBlockColors*				filter_block_colors;
 	static EButtonGroupAddExplicitToLootSimulatorItem*	add_explicit_to_simulator;
-	static EButtonGroupPoeNijaPriceChecker*				poe_ninja_price_checker_group;
+	static EButtonGroupPoeNinjaPriceChecker*				poe_ninja_price_checker_group;
 
 	static void register_filter_block_colors_group_for_filter_block();
 	static void register_explicit_for_loot_simulator_group();
@@ -1336,6 +1360,7 @@ namespace EDataActionCollection
 	void action_configure_pattern_filter_rule(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_activation_of_sound_type_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_cosmetic_for_ingame_sound(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_price_table_tab(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1565,6 +1590,13 @@ public:
 };
 
 
+#define NSW_price_tag_count 6
+//trash				0
+//common			1
+//moderate			2
+//rare				3
+//expensive			4
+//very expensive	5
 
 enum class PoeNinjaAPIMode
 {
@@ -1577,6 +1609,22 @@ enum class PoeNinjaAPIMode
 	OMEN,
 	INCUBATORS,
 	RUNES,
+	_PLACEHOLDER_01,
+	_PLACEHOLDER_02,
+	_PLACEHOLDER_03,
+	_PLACEHOLDER_04,
+	_PLACEHOLDER_05,
+	_PLACEHOLDER_06,
+	_PLACEHOLDER_07,
+	_PLACEHOLDER_08,
+	_PLACEHOLDER_09,
+	_PLACEHOLDER_10,
+	_PLACEHOLDER_11,
+	_PLACEHOLDER_12,
+	_PLACEHOLDER_13,
+	_PLACEHOLDER_14,
+	_PLACEHOLDER_15,
+	_PLACEHOLDER_16,
 	_LAST_ELEMENT
 };
 
@@ -1778,6 +1826,7 @@ public:
 	static void save_config_file();
 	static void save_config_file_for_loot_versions();
 	static void save_config_file_for_loot_version_patterns();
+	static void save_config_file_price_checker_table();
 
 	void action_on_close() override;
 };

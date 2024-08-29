@@ -3624,6 +3624,87 @@ bool EStringUtils::if_text_is_number(std::string _text)
 	return true;
 }
 
+bool EStringUtils::if_text_is_float(std::string _text)
+{
+	int dot_count = 0;
+
+	if
+	(
+		((_text).length() == 0)
+		||
+		(_text == "")
+	)
+	{ 
+		//EInputCore::logger_param("symbol is empty", _text);
+		return false;
+	}
+
+	for (int i = 0; i < _text.length(); i++)
+	{
+		if ((i > 0) && (_text[i] == '-')) { return false; }// minus can be only on start
+
+		if
+		(
+			(_text[i] == '.')
+			&&
+			(
+				(i == 0)
+				||
+				(i == _text.length() - 1)
+			)
+		)
+		{
+			return false;//dot cannot be on start or end of string
+		}
+
+		if (_text[i] == '.')
+		{
+			dot_count++;
+
+			if (dot_count > 1)
+			{
+				return false;//two or more dots is incorrect
+			}
+		}
+
+		if
+		(
+			!(
+				(_text[i] == '-')
+				||
+				(_text[i] == '0')
+				||
+				(_text[i] == '1')
+				||
+				(_text[i] == '2')
+				||
+				(_text[i] == '3')
+				||
+				(_text[i] == '4')
+				||
+				(_text[i] == '5')
+				||
+				(_text[i] == '6')
+				||
+				(_text[i] == '7')
+				||
+				(_text[i] == '8')
+				||
+				(_text[i] == '9')
+				||
+				(_text[i] == '.')
+			)
+		)
+		{
+			//EInputCore::logger_param("symbol [" + _text.substr(i, 1) + "] is not valid", _text.substr(i, 1));
+			return false;
+		}
+	}
+
+	//EInputCore::logger_simple_success(_text + " is valid!");
+	return true;
+}
+
 int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int _max)
 {
 	if (if_text_is_number(_text))
@@ -3637,6 +3718,20 @@ int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int
 		return _min;
 	}
 	
+}
+
+int EStringUtils::safe_convert_string_to_float(std::string _text, float _min, float _max)
+{
+	if (if_text_is_float(_text))
+	{
+		float num = std::stof(_text);
+
+		return std::clamp(num, _min, _max);
+	}
+	else
+	{
+		return _min;
+	}
 }
 
 const int PRIME_CONST = 4626623;

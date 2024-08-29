@@ -3624,6 +3624,22 @@ void EDataActionCollection::action_change_cosmetic_for_ingame_sound(Entity* _ent
 	}
 }
 
+void EDataActionCollection::action_price_table_tab(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonTabForPriceTable*
+	price_table_tab = static_cast<EntityButtonTabForPriceTable*>(_entity);
+
+	for (EButtonGroup* b_group : EntityButtonTabForPriceTable::all_price_table_groups)
+	{
+		b_group->button_group_is_active = false;
+	}
+
+	price_table_tab->target_group_activator->button_group_is_active = true;
+	price_table_tab->parent_button_group->select_this_button(price_table_tab);
+
+	price_table_tab->parent_button_group->root_group->need_refresh = true;
+}
+
 void EDataActionCollection::action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroupAddExplicitToLootSimulatorItem*
@@ -8849,8 +8865,8 @@ void EWindowMain::register_default_color_patterns()
 
 void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 {
-	EButtonGroupPoeNijaPriceChecker*
-	poe_ninja_price_checker_group = new EButtonGroupPoeNijaPriceChecker(new ERegionGabarite(240.0f, 320.0f));
+	EButtonGroupPoeNinjaPriceChecker*
+	poe_ninja_price_checker_group = new EButtonGroupPoeNinjaPriceChecker(new ERegionGabarite(620.0f, 320.0f));
 	poe_ninja_price_checker_group->button_group_is_active = false;
 	poe_ninja_price_checker_group->auto_superfocused = true;
 
@@ -8861,43 +8877,87 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 	//		WORSPACE PART		//////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 	workspace_part = poe_ninja_price_checker_group->add_close_group_and_return_workspace_group(new ERegionGabarite(1.0f, 20.0f), EGUIStyle::active_style);
+	workspace_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-			//		STATUS_LIST		//////////////////////////////////////////////////////////////////////////////////////////
+			//		LEFT NEST FOR STATUS AND LEAGUE NAME		//////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
-			status_list_part = new EButtonGroup(new ERegionGabarite(100.0f, 40.0f));
-			status_list_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-			status_list_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+			status_and_league_name_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
-			//status_list_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("status_list_group_text"));
-			//status_list_part->main_clickable_area->text_area->offset_by_gabarite_size_y = 1.0f;
-			//status_list_part->main_clickable_area->text_area->offset_by_text_size_y = -1.0f;
-			workspace_part->add_group(status_list_part);
-
-			poe_ninja_price_checker_group->pointer_to_status_group = status_list_part;
+			workspace_part->add_group(status_and_league_name_nest);
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-			//		CHECK BUTTON PART		//////////////////////////////////////////////////////////////////////////////////////////
-			EButtonGroup*
-			check_button_part = new EButtonGroup(new ERegionGabarite(100.0f, 20.0f));
-			check_button_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
-			check_button_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
-			workspace_part->add_group(check_button_part);
-			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
-			//		LEAGUE NAME PART		//////////////////////////////////////////////////////////////////////////////////////////
-			EButtonGroup*
-			league_name_part = new EButtonGroup(new ERegionGabarite(100.0f, 40.0f));
-			league_name_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
-			league_name_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+					//		STATUS_LIST		//////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+						status_list_part = new EButtonGroup(new ERegionGabarite(100.0f, 40.0f));
+					status_list_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+					status_list_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 
-			league_name_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("league_name_group_text"));
-			league_name_part->main_clickable_area->text_area->offset_by_gabarite_size_y = 1.0f;
-			league_name_part->main_clickable_area->text_area->offset_by_text_size_y = -1.0f;
-			workspace_part->add_group(league_name_part);
+					//status_list_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("status_list_group_text"));
+					//status_list_part->main_clickable_area->text_area->offset_by_gabarite_size_y = 1.0f;
+					//status_list_part->main_clickable_area->text_area->offset_by_text_size_y = -1.0f;
+					status_and_league_name_nest->add_group(status_list_part);
+
+					poe_ninja_price_checker_group->pointer_to_status_group = status_list_part;
+					/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					//		CHECK BUTTON PART		//////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+						check_button_part = new EButtonGroup(new ERegionGabarite(100.0f, 20.0f));
+					check_button_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+					check_button_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+					status_and_league_name_nest->add_group(check_button_part);
+					/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					//		LEAGUE NAME PART		//////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+						league_name_part = new EButtonGroup(new ERegionGabarite(100.0f, 40.0f));
+					league_name_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+					league_name_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+
+					league_name_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("league_name_group_text"));
+					league_name_part->main_clickable_area->text_area->offset_by_gabarite_size_y = 1.0f;
+					league_name_part->main_clickable_area->text_area->offset_by_text_size_y = -1.0f;
+					status_and_league_name_nest->add_group(league_name_part);
+					/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+			//		MID NEST FOR PRICE TABLE		//////////////////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			price_table_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(230.0f, 40.0f), EGUIStyle::active_style)
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+
+			poe_ninja_price_checker_group->pointer_to_price_table = price_table_nest;
+			workspace_part->add_group(price_table_nest);
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					
+
+			//		RIGHT NEST FOR PRICE TABS		//////////////////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			price_tabs_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+			poe_ninja_price_checker_group->pointer_to_price_tabs = price_tabs_nest;
+			workspace_part->add_group(price_tabs_nest);
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_currency"),			(int)(PoeNinjaAPIMode::CURRENCY));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_uniques"),			(int)(PoeNinjaAPIMode::UNIQUES));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_divinations"),		(int)(PoeNinjaAPIMode::DIVINATIONS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_gems"),				(int)(PoeNinjaAPIMode::GEMS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_fragments"),		(int)(PoeNinjaAPIMode::FRAGMENTS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_tattoo"),			(int)(PoeNinjaAPIMode::TATTOO));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_omens"),			(int)(PoeNinjaAPIMode::OMEN));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_incubators"),		(int)(PoeNinjaAPIMode::INCUBATORS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_runes"),			(int)(PoeNinjaAPIMode::RUNES));
+
+					
 
 
 
@@ -8912,7 +8972,7 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 			league_name_part,
 			nullptr,
 			//"Settlers"
-			(EButtonGroupPoeNijaPriceChecker::league_name != "") ? (EButtonGroupPoeNijaPriceChecker::league_name) : ("Settlers")
+			(EButtonGroupPoeNinjaPriceChecker::league_name != "") ? (EButtonGroupPoeNinjaPriceChecker::league_name) : ("Settlers")
 		);
 		button_league_name->can_be_stretched = true;
 
@@ -8974,14 +9034,37 @@ EWindowMain::EWindowMain()
 
 
 
-	for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+
+	if (std::filesystem::exists(path_of_exile_folder + "PoeNinjaPriceTable.config.config"))
 	{
-		PoeNinjaNamespace::price_table[i][0] = 1.0f;		//trash
-		PoeNinjaNamespace::price_table[i][1] = 3.0f;		//common
-		PoeNinjaNamespace::price_table[i][2] = 10.0f;		//moderate
-		PoeNinjaNamespace::price_table[i][3] = 100.0f;		//rare
-		PoeNinjaNamespace::price_table[i][4] = 300.0f;		//expensive
-		PoeNinjaNamespace::price_table[i][5] = 99999.0f;	//very expensive
+		first_time_open = false;
+
+		std::ifstream file;
+		std::string str;
+
+		file.open(path_of_exile_folder + "PoeNinjaPriceTable.config");
+
+		int version_id = 0;
+
+		while (std::getline(file, str))
+		{
+			EStringUtils::split_line_to_array(str);
+		}
+
+		file.close();
+	}
+	else
+	{
+
+		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+		{
+			PoeNinjaNamespace::price_table[i][0] = 0.0f;		//trash
+			PoeNinjaNamespace::price_table[i][1] = 1.0f;		//common
+			PoeNinjaNamespace::price_table[i][2] = 3.0f;		//moderate
+			PoeNinjaNamespace::price_table[i][3] = 10.0f;		//rare
+			PoeNinjaNamespace::price_table[i][4] = 100.0f;		//expensive
+			PoeNinjaNamespace::price_table[i][5] = 300.0f;		//very expensive
+		}
 	}
 
 
@@ -10569,7 +10652,7 @@ void EWindowMain::load_config_from_disc()
 			if (EStringUtils::string_array[0] == "league_name_input")
 			{
 				//NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->change_text(EStringUtils::string_array[1]);
-				EButtonGroupPoeNijaPriceChecker::league_name = EStringUtils::string_array[1];
+				EButtonGroupPoeNinjaPriceChecker::league_name = EStringUtils::string_array[1];
 			}
 
 			if (EStringUtils::string_array[0] == "color_collection")
@@ -19523,6 +19606,39 @@ void EWindowMain::save_config_file_for_loot_version_patterns()
 	writabro.close();
 }
 
+void EWindowMain::save_config_file_price_checker_table()
+{
+	std::ofstream writabro;
+
+	std::string buffer = "";
+
+	writabro.open(path_of_exile_folder + "PoeNinjaPriceTable.config");
+
+	for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+	{
+		if (i != 0)
+		{
+			buffer += '\n';
+		}
+
+		for (int j = 0; j < NSW_price_tag_count; j++)
+		{
+			if (j != 0){ buffer += ' '; }
+			buffer += Helper::float_to_string_with_precision(PoeNinjaNamespace::price_table[i][j], 10.0f);
+			
+		}
+
+		
+
+
+	}
+
+	writabro << buffer;
+
+	writabro.close();
+
+}
+
 void EWindowMain::action_on_close()
 {
 	EWindow::action_on_close();
@@ -19530,6 +19646,9 @@ void EWindowMain::action_on_close()
 	save_config_file();
 	save_config_file_for_loot_versions();
 	save_config_file_for_loot_version_patterns();
+	save_config_file_price_checker_table();
+
+
 }
 
 
@@ -29075,8 +29194,8 @@ void EButtonGroupAttributeGeneratorGroup_Explicit::execute_attribute_group(EGame
 		}
 	}
 }
-std::string EButtonGroupPoeNijaPriceChecker::league_name = "";
-EntityButton* EButtonGroupPoeNijaPriceChecker::add_status_button(ELocalisationText _ltext, int _code, int _data_length)
+std::string EButtonGroupPoeNinjaPriceChecker::league_name = "";
+EntityButton* EButtonGroupPoeNinjaPriceChecker::add_status_button(ELocalisationText _ltext, int _code, int _data_length)
 {
 	EntityButton*
 	status_button = new EntityButton();
@@ -29126,6 +29245,96 @@ EntityButton* EButtonGroupPoeNijaPriceChecker::add_status_button(ELocalisationTe
 	return status_button;
 }
 
+void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _ltext, int _table_id)
+{
+	EButtonGroup*
+	group_for_table = EButtonGroup::create_invisible_button_group(new ERegionGabarite(350.0f, 45.0f), EGUIStyle::active_style)
+	->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+	group_for_table->button_group_is_active = (_table_id == 0);
+
+	std::string price_localisation[NSW_price_tag_count] =
+	{
+		"button_price_table_trash",
+		"button_price_table_common",
+		"button_price_table_moderate",
+		"button_price_table_rare",
+		"button_price_table_expensive",
+		"button_price_table_very_expensive"
+	};
+
+	pointer_to_price_table->add_group(group_for_table);
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	EntityButtonTabForPriceTable*
+		tab_button = new EntityButtonTabForPriceTable();
+
+	tab_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(200.0f, 20.0f),
+		pointer_to_price_tabs,
+		&EDataActionCollection::action_price_table_tab,
+		_ltext
+	);
+
+	tab_button->can_be_stretched = true;
+	tab_button->all_price_table_groups.push_back(group_for_table);
+	tab_button->target_group_activator = group_for_table;
+
+	pointer_to_price_tabs->add_button_to_working_group(tab_button);
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+		for (int i = 0; i < NSW_price_tag_count; i++)
+		{
+			////////////////////////////////////////////////////////////////////////////////////////////////
+			EntityButton*
+			text_button = new EntityButton();
+
+			text_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(200.0f, 20.0f),
+				group_for_table,
+				nullptr,
+				ELocalisationText::get_localisation_by_key(price_localisation[i])
+			);
+			text_button->main_text_area->offset_by_gabarite_size_x = 1.0f;
+			text_button->main_text_area->offset_by_text_size_x = -1.0f;
+			text_button->can_be_stretched = true;
+
+
+			group_for_table->add_button_to_working_group(text_button);
+			////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+			////////////////////////////////////////////////////////////////////////////////////////////////
+			EntityButtonPriceTableValue*
+			button_price_value = new EntityButtonPriceTableValue();
+			button_price_value->make_default_button_with_edible_text
+			(
+				new ERegionGabarite(60.0f, 20.0f),
+				group_for_table,
+				nullptr,
+				Helper::float_to_string_with_precision(PoeNinjaNamespace::price_table[_table_id][i], 10.0f)
+			);
+
+			button_price_value->main_text_area->offset_by_gabarite_size_x = 0.0f;
+			button_price_value->main_text_area->offset_by_text_size_x = 0.0f;
+			button_price_value->new_line_method = NewLineMethod::FORBIDDEN;
+
+			if (i == 0) { button_price_value->suppressor = new bool(false); }
+
+			group_for_table->add_button_to_working_group(button_price_value);
+			////////////////////////////////////////////////////////////////////////////////////////////////
+		}
+
+
+
+			//
+}
+
 void EButtonGroupListedBlock::reinit_all_pattern_wide_item_buttons()
 {
 	//for (EntityButton* but : section_for_wide_item_buttons->workspace_button_list)
@@ -29159,4 +29368,8 @@ EntityButtonFilterBlockCosmeticTypeTab::~EntityButtonFilterBlockCosmeticTypeTab(
 {
 }
 
+EntityButtonTabForPriceTable::EntityButtonTabForPriceTable()
+{
+}
 
+std::vector<EButtonGroup*> EntityButtonTabForPriceTable::all_price_table_groups;

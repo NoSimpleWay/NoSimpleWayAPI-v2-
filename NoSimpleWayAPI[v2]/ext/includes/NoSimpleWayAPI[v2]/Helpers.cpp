@@ -12,7 +12,6 @@ std::string Helper::float_to_string(float _f)
 	{
 		if (t.at(i) == '.') { return t.substr(0, i); }
 		if (t.at(i) != '0') { return t.substr(0, i + 1); }
-
 	}
 
 	return "?";

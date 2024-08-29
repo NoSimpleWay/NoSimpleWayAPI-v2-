@@ -349,16 +349,28 @@ int main()
 				}
 				else
 				{
-					for (EButtonGroup* group : w->button_group_list)
+					if 
+					(
+						(NS_EGraphicCore::old_w > 100)
+						&&
+						(NS_EGraphicCore::old_h > 100)
+						&&
+						(NS_EGraphicCore::SCREEN_WIDTH > 100)
+						&&
+						(NS_EGraphicCore::SCREEN_HEIGHT > 100)
+					)
 					{
-						float anchor_x = (group->region_gabarite->offset_x) / (float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x);
-						float anchor_y = (group->region_gabarite->offset_y) / (float(NS_EGraphicCore::old_h) - group->region_gabarite->size_y);
+						for (EButtonGroup* group : w->button_group_list)
+						{
+							float anchor_x = (group->region_gabarite->offset_x) / (float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x);
+							float anchor_y = (group->region_gabarite->offset_y) / (float(NS_EGraphicCore::old_h) - group->region_gabarite->size_y);
 
-						float center_x = (group->region_gabarite->offset_x + group->region_gabarite->size_x * anchor_x) / float(NS_EGraphicCore::old_w);
-						float center_y = (group->region_gabarite->offset_y + group->region_gabarite->size_y * anchor_y) / float(NS_EGraphicCore::old_h);
+							float center_x = (group->region_gabarite->offset_x + group->region_gabarite->size_x * anchor_x) / float(NS_EGraphicCore::old_w);
+							float center_y = (group->region_gabarite->offset_y + group->region_gabarite->size_y * anchor_y) / float(NS_EGraphicCore::old_h);
 
-						group->region_gabarite->offset_x = NS_EGraphicCore::SCREEN_WIDTH	* center_x - group->region_gabarite->size_x * anchor_x;
-						group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT	* center_y - group->region_gabarite->size_y * anchor_y;
+							group->region_gabarite->offset_x = NS_EGraphicCore::SCREEN_WIDTH * center_x - group->region_gabarite->size_x * anchor_x;
+							group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT * center_y - group->region_gabarite->size_y * anchor_y;
+						}
 					}
 				}
 

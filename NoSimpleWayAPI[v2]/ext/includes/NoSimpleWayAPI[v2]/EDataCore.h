@@ -858,7 +858,10 @@ public:
 	static std::string		UTF8_to_ANSI(std::string _text);
 
 	static bool				if_text_is_number(std::string _text);
-	static int				safe_convert_string_to_number(std::string _text, int _min, int _max);
+	static bool				if_text_is_float(std::string _text);
+
+	static int				safe_convert_string_to_number	(std::string _text, int _min,	int _max);
+	static int				safe_convert_string_to_float	(std::string _text, float _min, float _max);
 
 	static std::string		string_array[512];
 
