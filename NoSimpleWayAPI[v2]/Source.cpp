@@ -205,7 +205,7 @@ int main()
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 	EInputCore::logger_param("max_texture_size:", max_tex_size);
 
-	glfwSwapInterval(0);
+	glfwSwapInterval(1);
 
 
 
