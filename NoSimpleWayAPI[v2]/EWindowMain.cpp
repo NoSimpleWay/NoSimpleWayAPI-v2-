@@ -3640,6 +3640,98 @@ void EDataActionCollection::action_price_table_tab(Entity* _entity, ECustomData*
 	price_table_tab->parent_button_group->root_group->need_refresh = true;
 }
 
+void EDataActionCollection::action_price_change_to_copy_mode(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupPoeNinjaPriceChecker*
+	ninja_group = NSWRegisteredButtonGroups::poe_ninja_price_checker_group;
+
+	for (EntityButton* but : ninja_group->price_table_copy_button_vector)
+	{
+		but->entity_disabled = true;
+	}
+
+	for (EntityButton* but : ninja_group->price_table_selector_button_vector)
+	{
+		but->entity_disabled = false;
+	}
+
+	ninja_group->pointer_to_copy_control->button_group_is_active = true;
+
+	ninja_group->need_refresh = true;
+	//ninja_group->close_this_group();
+}
+
+void EDataActionCollection::action_price_table_select_all(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupPoeNinjaPriceChecker*
+	ninja_group = NSWRegisteredButtonGroups::poe_ninja_price_checker_group;
+
+	for (EntityButton* but : ninja_group->price_table_selector_button_vector)
+	{
+		*static_cast<EDataContainer_Button_BoolSwitcher*>(but->main_custom_data->data_container)->target_value = true;
+	}
+}
+
+void EDataActionCollection::action_price_table_deselect_all(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupPoeNinjaPriceChecker*
+		ninja_group = NSWRegisteredButtonGroups::poe_ninja_price_checker_group;
+
+	for (EntityButton* but : ninja_group->price_table_selector_button_vector)
+	{
+		*static_cast<EDataContainer_Button_BoolSwitcher*>(but->main_custom_data->data_container)->target_value = false;
+	}
+}
+
+void EDataActionCollection::action_price_accept_cloning_price_table(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupPoeNinjaPriceChecker*
+	ninja_group = NSWRegisteredButtonGroups::poe_ninja_price_checker_group;
+
+	if (ninja_group->pointer_to_price_tabs->selected_button != nullptr)
+	{
+		EntityButtonTabForPriceTable*
+		select_price_tab = static_cast<EntityButtonTabForPriceTable*>(ninja_group->pointer_to_price_tabs->selected_button);
+
+		int
+		source_table_id = select_price_tab->table_id;
+
+		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+		if
+		(
+			(ninja_group->price_table_value_button_vector[i][0] != NULL)
+			&&
+			(*(static_cast<EDataContainer_Button_BoolSwitcher*>(ninja_group->price_table_selector_button_vector[i]->main_custom_data->data_container)->target_value))
+		)
+		{
+			//ninja_group->pointer_to_price_tabs->workspace_button_list[i * 2]->set_highlight(0.5f, 0.5f);
+			
+			for (int j = 0; j < NSW_price_tag_count; j++)
+			//if (ninja_group->price_table_value_button_vector[i][j] != NULL)
+			{
+				PoeNinjaNamespace::price_table[i][j] = PoeNinjaNamespace::price_table[source_table_id][j];
+
+				ninja_group->price_table_value_button_vector[i][j]->main_text_area
+				->change_text(Helper::float_to_string_with_precision(PoeNinjaNamespace::price_table[source_table_id][j], 100.0f));
+			}
+		}
+	}
+
+	for (EntityButton* but : ninja_group->price_table_copy_button_vector)
+	{
+		but->entity_disabled = false;
+	}
+
+	for (EntityButton* but : ninja_group->price_table_selector_button_vector)
+	{
+		but->entity_disabled = true;
+	}
+
+	ninja_group->pointer_to_copy_control->button_group_is_active = false;
+
+	ninja_group->need_refresh = true;
+}
+
 void EDataActionCollection::action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroupAddExplicitToLootSimulatorItem*
@@ -3866,6 +3958,30 @@ void EDataActionCollection::action_change_version_pattern_name(ETextArea* _text_
 
 	but->attached_pattern->localised_name = ELocalisationText::generate_localization_with_base_name(_text_area->original_text);
 	but->main_text_area->can_be_edited = false;
+}
+
+void EDataActionCollection::action_change_price_table_value(ETextArea* _text_area)
+{
+	EntityButtonPriceTableValue*
+	table_value_button = static_cast<EntityButtonPriceTableValue*>(_text_area->parent_entity_for_text_area);
+
+	int
+	table_id = table_value_button->table_id;
+
+	int
+	price_id = table_value_button->price_id;
+
+	EButtonGroupPoeNinjaPriceChecker*
+	ninja_group = NSWRegisteredButtonGroups::poe_ninja_price_checker_group;
+
+	float
+	unprocessed_float_value = EStringUtils::safe_convert_string_to_float(_text_area->original_text, 0.0f, 999'999.0f);
+
+	PoeNinjaNamespace::price_table[table_id][price_id] = unprocessed_float_value;
+
+	table_value_button->set_highlight(0.5f, 0.5f);
+
+	_text_area->change_text(Helper::float_to_string_with_precision(unprocessed_float_value, 100.0f));
 }
 
 void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -4843,20 +4959,26 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								int old_worth_id = 0;
 								int new_worth_id = -1;
 
-
-								if (total_cost <= 1.0f) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][5]) { new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive; }
 								else
-									if (total_cost <= 3.0f) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
-									else
-										if (total_cost <= 10.0f) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
-										else
-											if (total_cost <= 100.0f) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
-											else
-												if (total_cost <= 300.0f) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
-												else
-													/*__________________*/ {
-													new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive;
-												}
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][4]) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
+								else
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][3]) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
+								else
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][2]) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
+								else
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][1]) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
+								else
+								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][0]) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								
+								
+								
+								
+								
+									/*__________________*/
+								
+									
+								
 
 
 								const ID_string*
@@ -8866,7 +8988,7 @@ void EWindowMain::register_default_color_patterns()
 void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 {
 	EButtonGroupPoeNinjaPriceChecker*
-	poe_ninja_price_checker_group = new EButtonGroupPoeNinjaPriceChecker(new ERegionGabarite(620.0f, 320.0f));
+	poe_ninja_price_checker_group = new EButtonGroupPoeNinjaPriceChecker(new ERegionGabarite(620.0f, 330.0f));
 	poe_ninja_price_checker_group->button_group_is_active = false;
 	poe_ninja_price_checker_group->auto_superfocused = true;
 
@@ -8940,12 +9062,106 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 
 			//		RIGHT NEST FOR PRICE TABS		//////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
-			price_tabs_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
+			price_tabs_and_copy_control_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
-			poe_ninja_price_checker_group->pointer_to_price_tabs = price_tabs_nest;
-			workspace_part->add_group(price_tabs_nest);
+			
+			workspace_part->add_group(price_tabs_and_copy_control_nest);
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+					//		BOTTOM SEGMENT FOR TABS		//////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+					tabs_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
+					->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+					poe_ninja_price_checker_group->pointer_to_price_tabs = tabs_segment;
+					price_tabs_and_copy_control_nest->add_group(tabs_segment);
+					/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+					//		UP SEGMENT FOR COPY CONTROL		//////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+					copy_control_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 82.0f), EGUIStyle::active_style)
+					->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+					copy_control_segment->button_group_is_active = false;
+
+					poe_ninja_price_checker_group->pointer_to_copy_control = copy_control_segment;
+					price_tabs_and_copy_control_nest->add_group(copy_control_segment);
+					/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+							
+							
+							//		COPY PRICE TABLE BUTTON
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EntityButton*
+							accept_copy_button = new EntityButton();
+							accept_copy_button->make_default_button_with_unedible_text
+							(
+								new ERegionGabarite(150.0f, 20.0f),
+								copy_control_segment,
+								&EDataActionCollection::action_price_accept_cloning_price_table,
+								ELocalisationText::get_localisation_by_key("button_copy_selected_price_tables")
+							);
+
+							accept_copy_button->can_be_stretched = true;
+							accept_copy_button->main_text_area->set_color(0.25f, 1.0f, 0.5f, 1.0f);
+
+
+							copy_control_segment->add_button_to_working_group(accept_copy_button);
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							
+							//		DECLINE COPYING PRICE TABLE BUTTON
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EntityButton*
+							cancel_copying_button = new EntityButton();
+							cancel_copying_button->make_default_button_with_unedible_text
+							(
+								new ERegionGabarite(150.0f, 20.0f),
+								copy_control_segment,
+								nullptr,
+								ELocalisationText::get_localisation_by_key("button_decline_copying_selected_price_tables")
+							);
+
+							cancel_copying_button->can_be_stretched = true;
+							cancel_copying_button->main_text_area->set_color(1.0f, 0.5f, 0.25f, 1.0f);
+
+							copy_control_segment->add_button_to_working_group(cancel_copying_button);
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							
+							//		SELECT ALL BUTTONS
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EntityButton*
+							select_all_button = new EntityButton();
+							select_all_button->make_default_button_with_unedible_text
+							(
+								new ERegionGabarite(150.0f, 20.0f),
+								copy_control_segment,
+								&EDataActionCollection::action_price_table_select_all,
+								ELocalisationText::get_localisation_by_key("button_select_all_price_table_buttons")
+							);
+
+							select_all_button->can_be_stretched = true;
+
+							copy_control_segment->add_button_to_working_group(select_all_button);
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+							//		DESELECT ALL BUTTONS
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EntityButton*
+							deselect_all_button = new EntityButton();
+							deselect_all_button->make_default_button_with_unedible_text
+							(
+								new ERegionGabarite(150.0f, 20.0f),
+								copy_control_segment,
+								&EDataActionCollection::action_price_table_deselect_all,
+								ELocalisationText::get_localisation_by_key("button_deselect_all_price_table_buttons")
+							);
+
+							deselect_all_button->can_be_stretched = true;
+
+
+							copy_control_segment->add_button_to_working_group(deselect_all_button);
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_currency"),			(int)(PoeNinjaAPIMode::CURRENCY));
 			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_uniques"),			(int)(PoeNinjaAPIMode::UNIQUES));
@@ -9035,39 +9251,6 @@ EWindowMain::EWindowMain()
 
 
 
-	if (std::filesystem::exists(path_of_exile_folder + "PoeNinjaPriceTable.config.config"))
-	{
-		first_time_open = false;
-
-		std::ifstream file;
-		std::string str;
-
-		file.open(path_of_exile_folder + "PoeNinjaPriceTable.config");
-
-		int version_id = 0;
-
-		while (std::getline(file, str))
-		{
-			EStringUtils::split_line_to_array(str);
-		}
-
-		file.close();
-	}
-	else
-	{
-
-		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
-		{
-			PoeNinjaNamespace::price_table[i][0] = 0.0f;		//trash
-			PoeNinjaNamespace::price_table[i][1] = 1.0f;		//common
-			PoeNinjaNamespace::price_table[i][2] = 3.0f;		//moderate
-			PoeNinjaNamespace::price_table[i][3] = 10.0f;		//rare
-			PoeNinjaNamespace::price_table[i][4] = 100.0f;		//expensive
-			PoeNinjaNamespace::price_table[i][5] = 300.0f;		//very expensive
-		}
-	}
-
-
 
 
 
@@ -9105,6 +9288,51 @@ EWindowMain::EWindowMain()
 		path_of_exile_folder = (std::string)my_documents + "\\My Games\\Path of Exile\\";
 		std::cout << "Path to loot-filters folder: " << path_of_exile_folder << "\n";
 
+	}
+
+	
+	if (std::filesystem::exists(path_of_exile_folder + "PoeNinjaPriceTable.config"))
+	{
+		first_time_open = false;
+
+		std::ifstream file;
+		std::string str;
+
+		file.open(path_of_exile_folder + "PoeNinjaPriceTable.config");
+
+		int version_id = 0;
+
+		while (std::getline(file, str))
+		{
+			if (version_id < (int)(PoeNinjaAPIMode::_LAST_ELEMENT))
+			{
+				EStringUtils::split_line_to_array(str);
+
+				for (int i = 0; i < NSW_price_tag_count; i++)
+				{
+					PoeNinjaNamespace::price_table[version_id][i] = EStringUtils::safe_convert_string_to_float(EStringUtils::string_array[i], 0.0f, 999'999.0f);
+				}
+
+				version_id++;
+			}
+		}
+
+
+
+		file.close();
+	}
+	else
+	{
+
+		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
+		{
+			PoeNinjaNamespace::price_table[i][0] = 0.0f;		//trash
+			PoeNinjaNamespace::price_table[i][1] = 1.1f;		//common
+			PoeNinjaNamespace::price_table[i][2] = 3.0f;		//moderate
+			PoeNinjaNamespace::price_table[i][3] = 10.0f;		//rare
+			PoeNinjaNamespace::price_table[i][4] = 100.0f;		//expensive
+			PoeNinjaNamespace::price_table[i][5] = 300.0f;		//very expensive
+		}
 	}
 
 
@@ -29265,19 +29493,20 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 
 	pointer_to_price_table->add_group(group_for_table);
 	
-	
+	//		SELECT PRICE TABLE BUTTON
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	EntityButtonTabForPriceTable*
 		tab_button = new EntityButtonTabForPriceTable();
 
 	tab_button->make_default_button_with_unedible_text
 	(
-		new ERegionGabarite(200.0f, 20.0f),
+		new ERegionGabarite(135.0f, 20.0f),
 		pointer_to_price_tabs,
 		&EDataActionCollection::action_price_table_tab,
 		_ltext
 	);
 
+	tab_button->table_id = _table_id;
 	tab_button->can_be_stretched = true;
 	tab_button->all_price_table_groups.push_back(group_for_table);
 	tab_button->target_group_activator = group_for_table;
@@ -29285,9 +29514,60 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 	pointer_to_price_tabs->add_button_to_working_group(tab_button);
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
+	//		COPY BUTTON
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	EntityButtonFilterTableID*
+	button_copy_price_table = new EntityButtonFilterTableID();
+
+	button_copy_price_table->table_id = _table_id;
+
+	button_copy_price_table->make_as_default_button_with_full_icon
+	(
+		new ERegionGabarite(20.0f, 20.0f),
+		pointer_to_price_tabs,
+		&EDataActionCollection::action_price_change_to_copy_mode,
+		NS_EGraphicCore::load_from_textures_folder("buttons/button_copy")
+	);
+
+	button_copy_price_table->new_line_method = NewLineMethod::FORBIDDEN;
+	button_copy_price_table->add_default_description_by_key("description_copy_price_table");
+
+	pointer_to_price_tabs->add_button_to_working_group(button_copy_price_table);
+
+	price_table_copy_button_vector.push_back(button_copy_price_table);
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//		SWITCHER BUTTON
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	EntityButtonFilterTableID*
+	button_table_switcher = new EntityButtonFilterTableID();
+
+	button_table_switcher->table_id = _table_id;
+
+	button_table_switcher->make_default_bool_switcher_button
+	(
+		new ERegionGabarite(20.0f, 20.0f),
+		pointer_to_price_tabs,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		new bool(false)
+	);
+
+	button_table_switcher->new_line_method = NewLineMethod::FORBIDDEN;
+	button_table_switcher->add_default_description_by_key("description_copy_price_table");
+
+	button_table_switcher->entity_disabled = true;
+
+	pointer_to_price_tabs->add_button_to_working_group(button_table_switcher);
+
+	price_table_selector_button_vector.push_back(button_table_switcher);
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 		for (int i = 0; i < NSW_price_tag_count; i++)
 		{
+			//		PRICE NAME
 			////////////////////////////////////////////////////////////////////////////////////////////////
 			EntityButton*
 			text_button = new EntityButton();
@@ -29308,7 +29588,7 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 			////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+			//		PRICE VALUE
 			////////////////////////////////////////////////////////////////////////////////////////////////
 			EntityButtonPriceTableValue*
 			button_price_value = new EntityButtonPriceTableValue();
@@ -29320,13 +29600,19 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 				Helper::float_to_string_with_precision(PoeNinjaNamespace::price_table[_table_id][i], 10.0f)
 			);
 
+			button_price_value->table_id = _table_id;
+			button_price_value->price_id = i;
 			button_price_value->main_text_area->offset_by_gabarite_size_x = 0.0f;
 			button_price_value->main_text_area->offset_by_text_size_x = 0.0f;
 			button_price_value->new_line_method = NewLineMethod::FORBIDDEN;
 
+			button_price_value->main_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_change_price_table_value);
+
 			if (i == 0) { button_price_value->suppressor = new bool(false); }
 
 			group_for_table->add_button_to_working_group(button_price_value);
+
+			price_table_value_button_vector[_table_id][i] = button_price_value;
 			////////////////////////////////////////////////////////////////////////////////////////////////
 		}
 

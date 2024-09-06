@@ -3678,6 +3678,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"This button is disabled. Press to flashing green button to enable"
 	[tag]"name RU"		[value]"Эта кнопка выключена. Нажмите на подсвеченную, мигающую кнопку, что бы включить выключенну кнопку"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_copy_price_table"
+	[tag]"name EN"		[value]"To this price table values to another price tables"
+	[tag]"name RU"		[value]"Копировать значения этой таблицы цен в другие таблицы цен."
+	
 	
 	
 	
@@ -3850,3 +3857,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_price_table_very_expensive"
 	[tag]"name EN"		[value]"Very expensive >="
 	[tag]"name RU"		[value]"Очень дорогое >="
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_select_all_price_table_buttons"
+	[tag]"name EN"		[value]"Select all"
+	[tag]"name RU"		[value]"Выбрать всё"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_deselect_all_price_table_buttons"
+	[tag]"name EN"		[value]"Deselect all"
+	[tag]"name RU"		[value]"Убрать выделение"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_copy_selected_price_tables"
+	[tag]"name EN"		[value]"Copy table"
+	[tag]"name RU"		[value]"Копировать таблицу"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_decline_copying_selected_price_tables"
+	[tag]"name EN"		[value]"Cancel"
+	[tag]"name RU"		[value]"Отмена"

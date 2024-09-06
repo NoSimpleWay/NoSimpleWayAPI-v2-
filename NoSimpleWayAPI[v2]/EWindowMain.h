@@ -409,6 +409,9 @@ class EntityButtonPriceTableValue : public EntityButton
 {
 public:
 	float* target_price_float;
+
+	int table_id = -1;
+	int price_id = -1;
 };
 
 class EntityButtonTabForPriceTable : public EntityButton
@@ -417,7 +420,7 @@ public:
 	EButtonGroup* target_group_activator;
 
 	EntityButtonTabForPriceTable();
-
+	int table_id = -1;
 	static std::vector<EButtonGroup*> all_price_table_groups;
 };
 
@@ -1190,6 +1193,49 @@ public:
 	target_wide_button = nullptr;
 };
 
+
+
+
+#define NSW_price_tag_count 6
+//trash				0
+//common			1
+//moderate			2
+//rare				3
+//expensive			4
+//very expensive	5
+
+enum class PoeNinjaAPIMode
+{
+	CURRENCY,
+	UNIQUES,
+	DIVINATIONS,
+	GEMS,
+	FRAGMENTS,
+	TATTOO,
+	OMEN,
+	INCUBATORS,
+	RUNES,
+	_PLACEHOLDER_01,
+	_PLACEHOLDER_02,
+	_PLACEHOLDER_03,
+	_PLACEHOLDER_04,
+	_PLACEHOLDER_05,
+	_PLACEHOLDER_06,
+	_PLACEHOLDER_07,
+	_PLACEHOLDER_08,
+	_PLACEHOLDER_09,
+	_PLACEHOLDER_10,
+	_PLACEHOLDER_11,
+	_PLACEHOLDER_12,
+	_PLACEHOLDER_13,
+	_PLACEHOLDER_14,
+	_PLACEHOLDER_15,
+	_PLACEHOLDER_16,
+	_LAST_ELEMENT
+};
+
+class EntityButtonFilterTableID;
+class EntityButtonPriceTableValue;
 class EButtonGroupPoeNinjaPriceChecker : public EButtonGroup
 {
 public:
@@ -1207,7 +1253,14 @@ public:
 	EButtonGroup*
 	pointer_to_price_tabs = nullptr;
 
+	EButtonGroup*
+	pointer_to_copy_control = nullptr;
+
 	EntityButton* add_status_button(ELocalisationText _ltext, int _code, int _data_length);
+
+	std::vector<EntityButtonFilterTableID*>		price_table_copy_button_vector;
+	std::vector<EntityButtonFilterTableID*>		price_table_selector_button_vector;
+	EntityButtonPriceTableValue*	price_table_value_button_vector[(int)(PoeNinjaAPIMode::_LAST_ELEMENT)][NSW_price_tag_count];
 
 	static std::string league_name;
 
@@ -1361,6 +1414,10 @@ namespace EDataActionCollection
 	void action_switch_activation_of_sound_type_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_cosmetic_for_ingame_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_price_table_tab(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_price_change_to_copy_mode(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_price_table_select_all(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_price_table_deselect_all(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_price_accept_cloning_price_table(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1395,6 +1452,7 @@ namespace EDataActionCollection
 	void action_set_unsave_changes_flag(ETextArea* _text_area);
 	void action_change_version_names(ETextArea* _text_area);
 	void action_change_version_pattern_name(ETextArea* _text_area);
+	void action_change_price_table_value(ETextArea* _text_area);
 
 
 
@@ -1589,44 +1647,6 @@ public:
 	static std::vector<RawExplicitDataEntity> raw_data_entity_list;
 };
 
-
-#define NSW_price_tag_count 6
-//trash				0
-//common			1
-//moderate			2
-//rare				3
-//expensive			4
-//very expensive	5
-
-enum class PoeNinjaAPIMode
-{
-	CURRENCY,
-	UNIQUES,
-	DIVINATIONS,
-	GEMS,
-	FRAGMENTS,
-	TATTOO,
-	OMEN,
-	INCUBATORS,
-	RUNES,
-	_PLACEHOLDER_01,
-	_PLACEHOLDER_02,
-	_PLACEHOLDER_03,
-	_PLACEHOLDER_04,
-	_PLACEHOLDER_05,
-	_PLACEHOLDER_06,
-	_PLACEHOLDER_07,
-	_PLACEHOLDER_08,
-	_PLACEHOLDER_09,
-	_PLACEHOLDER_10,
-	_PLACEHOLDER_11,
-	_PLACEHOLDER_12,
-	_PLACEHOLDER_13,
-	_PLACEHOLDER_14,
-	_PLACEHOLDER_15,
-	_PLACEHOLDER_16,
-	_LAST_ELEMENT
-};
 
 namespace PoeNinjaNamespace
 {
@@ -2033,6 +2053,11 @@ public:
 	~EntityButtonFilterBlockCosmeticTypeTab();
 };
 
+class EntityButtonFilterTableID : public EntityButton
+{
+public:
+	unsigned short table_id;
+};
 
 
 

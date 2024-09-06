@@ -3720,7 +3720,7 @@ int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int
 	
 }
 
-int EStringUtils::safe_convert_string_to_float(std::string _text, float _min, float _max)
+float EStringUtils::safe_convert_string_to_float(std::string _text, float _min, float _max)
 {
 	if (if_text_is_float(_text))
 	{
