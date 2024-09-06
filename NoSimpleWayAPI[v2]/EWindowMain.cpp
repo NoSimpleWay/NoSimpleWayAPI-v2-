@@ -18329,20 +18329,28 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											(!comment_mode)
 											&&
 											(jc_filter_block->pointer_to_custom_sound_button != nullptr)
-											)
+										)
 									{
 										last_custom_sound_button = jc_filter_block->pointer_to_custom_sound_button;
+
+										//if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND_OPTIONAL)
+										//{
+										//	if (jc_filter_block->pointer_to_optional_user_sound != nullptr)
+										//	{
+										//		jc_filter_block->pointer_to_optional_user_sound->select_variant(0);
+										//	}
+										//}
 										//EInputCore::logger_simple_info("user_sound");
 									}
 
 
 									//		ATTRIBUTES WITHOUT PARAMETERS
 									if
-										(
-											(!comment_mode)
-											&&
-											(jc_filter_block != nullptr)
-											)
+									(
+										(!comment_mode)
+										&&
+										(jc_filter_block != nullptr)
+									)
 									{
 										//disable/enable varian router button
 
@@ -18376,7 +18384,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												{
 													if (jc_filter_block->pointer_to_optional_user_sound != nullptr)
 													{
-														jc_filter_block->pointer_to_optional_user_sound->select_variant(1);
+														jc_filter_block->pointer_to_optional_user_sound->select_variant(0);
 													}
 												}
 									}
@@ -18871,10 +18879,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								}
 
 								//		USER SOUND
-								if
-									(
-										(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND)
-									)
+								if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND)
 								{
 									//parameter order - name
 									if (data_part == 2)
