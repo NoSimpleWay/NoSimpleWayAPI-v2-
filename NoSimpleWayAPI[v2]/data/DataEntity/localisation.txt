@@ -3470,14 +3470,14 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"trade_type_incubator"
+	[tag]"key"			[value]"trade_type_incubators"
 	[tag]"name EN"		[value]"Incubators"
 	[tag]"name RU"		[value]"Инкубаторы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"trade_type_scarab"
+	[tag]"key"			[value]"trade_type_scarabs"
 	[tag]"name EN"		[value]"Scarabs"
 	[tag]"name RU"		[value]"Скарабеи"
 	
@@ -3522,6 +3522,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"trade_type_runes"
 	[tag]"name EN"		[value]"Runes"
 	[tag]"name RU"		[value]"Руны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_delirium"
+	[tag]"name EN"		[value]"Delirium orbs"
+	[tag]"name RU"		[value]"Сферы делириума"
 	
 	
 	
@@ -3811,6 +3818,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_tab_price_table_runes"
 	[tag]"name EN"		[value]"Runes"
 	[tag]"name RU"		[value]"Руны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_scarabs"
+	[tag]"name EN"		[value]"Scarabs"
+	[tag]"name RU"		[value]"Скарабеи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_fossils"
+	[tag]"name EN"		[value]"Fossils"
+	[tag]"name RU"		[value]"Ископаемые"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_delirium"
+	[tag]"name EN"		[value]"Delirium orbs"
+	[tag]"name RU"		[value]"Сферы делириума"
 
 	
 	
@@ -3890,3 +3918,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_decline_copying_selected_price_tables"
 	[tag]"name EN"		[value]"Cancel"
 	[tag]"name RU"		[value]"Отмена"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_auto_prices"
+	[tag]"name EN"		[value]"Set prices automatically"
+	[tag]"name RU"		[value]"Назначить цены автоматически"

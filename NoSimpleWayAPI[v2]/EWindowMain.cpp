@@ -50,6 +50,7 @@
 namespace PoeNinjaNamespace
 {
 	float price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
+	float price_table_max[int(PoeNinjaAPIMode::_LAST_ELEMENT)];
 }
 
 namespace LootFilterVersionPattern
@@ -3732,6 +3733,44 @@ void EDataActionCollection::action_price_accept_cloning_price_table(Entity* _ent
 	ninja_group->need_refresh = true;
 }
 
+void EDataActionCollection::action_set_auto_prices(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonAutoPrice*
+	autoprice_button = static_cast<EntityButtonAutoPrice*>(_entity);
+
+	float price_multiplier[6]
+	=
+	{
+		0.0f,			//trash
+		1.0f / 100.0f,	//common
+		1.0f / 30.0f,	//moderate
+		1.0f / 10.0f,	//rare
+		1.0f / 3.0f,	//expensive
+		0.75f			//very expensive
+	};
+
+	int
+	table_id = autoprice_button->table_id;
+
+	for (int i = 0; i < 6; i++)
+	{
+		float
+		result_cost = PoeNinjaNamespace::price_table_max[table_id];
+		result_cost = std::min(result_cost, 300.0f);
+		result_cost *= price_multiplier[i];
+		result_cost = round(result_cost);
+		result_cost = std::max(result_cost, (float)(i));
+	
+
+		NSWRegisteredButtonGroups::poe_ninja_price_checker_group->price_table_value_button_vector[table_id][i]->
+		main_text_area->change_text(Helper::float_to_string(result_cost));
+
+		PoeNinjaNamespace::price_table[table_id][i] = result_cost;
+		
+		NSWRegisteredButtonGroups::poe_ninja_price_checker_group->price_table_value_button_vector[table_id][i]->set_highlight(0.5f, 0.5f);
+	}
+}
+
 void EDataActionCollection::action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroupAddExplicitToLootSimulatorItem*
@@ -4438,7 +4477,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
 
 	code = curl_easy_perform(curl);
-	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_incubator"), code, url_content.length());
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_incubators"), code, url_content.length());
 
 	if ((code != CURLE_OK) || (url_content.length() < 500))
 	{
@@ -4447,7 +4486,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Incubators", &url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
 
 		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
@@ -4465,7 +4504,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
 
 	code = curl_easy_perform(curl);
-	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_scarab"), code, url_content.length());
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_scarabs"), code, url_content.length());
 
 	if ((code != CURLE_OK) || (url_content.length() < 500))
 	{
@@ -4474,7 +4513,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Scarab", &url_content, PoeNinjaAPIMode::FRAGMENTS, true);
+		parse_json_from_poe_ninja("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, true);
 
 		save_poe_ninja_cache("Scarab", &url_content);
 		url_content = "";
@@ -4501,7 +4540,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Fossil", &url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, false);
 
 		save_poe_ninja_cache("Fossil", &url_content);
 		url_content = "";
@@ -4637,6 +4676,31 @@ void EWindowMain::get_poe_ninja_api_prices()
 		parse_json_from_poe_ninja("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
 
 		save_poe_ninja_cache("Runes", &url_content);
+		url_content = "";
+	}
+
+
+
+
+
+	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=DeliriumOrb";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+	NSWRegisteredButtonGroups::poe_ninja_price_checker_group->add_status_button(ELocalisationText::get_localisation_by_key("trade_type_delirium"), code, url_content.length());
+
+	if ((code != CURLE_OK) || (url_content.length() < 500))
+	{
+		std::cout << red << "Something failed! [" << yellow << (CURLcode)code << red << "]\r\nData size: " << yellow << url_content.length();
+	}
+	else
+	{
+
+		parse_json_from_poe_ninja("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, true);
+
+		save_poe_ninja_cache("Delirium", &url_content);
 		url_content = "";
 	}
 
@@ -4971,7 +5035,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								else
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][0]) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
 								
-								
+								PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(total_cost, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
 								
 								
 								
@@ -9172,6 +9236,9 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_omens"),			(int)(PoeNinjaAPIMode::OMEN));
 			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_incubators"),		(int)(PoeNinjaAPIMode::INCUBATORS));
 			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_runes"),			(int)(PoeNinjaAPIMode::RUNES));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_scarabs"),			(int)(PoeNinjaAPIMode::SCARABS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_fossils"),			(int)(PoeNinjaAPIMode::FOSSILS));
+			poe_ninja_price_checker_group->add_price_table_group(ELocalisationText::get_localisation_by_key("button_tab_price_table_delirium"),			(int)(PoeNinjaAPIMode::DELIRIUM_ORBS));
 
 					
 
@@ -10444,14 +10511,15 @@ EWindowMain::EWindowMain()
 	read_poe_ninja_cache("DivinationCard",	PoeNinjaAPIMode::DIVINATIONS);
 	read_poe_ninja_cache("Currency",		PoeNinjaAPIMode::CURRENCY);
 	read_poe_ninja_cache("Fragment",		PoeNinjaAPIMode::FRAGMENTS);
-	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::CURRENCY);
-	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::FRAGMENTS);
-	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::INCUBATORS);
+	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::SCARABS);
+	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::FOSSILS);
 	read_poe_ninja_cache("SkillGem",		PoeNinjaAPIMode::GEMS);
 	//read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
 	read_poe_ninja_cache("Tattoo",			PoeNinjaAPIMode::TATTOO);
 	read_poe_ninja_cache("Omen",			PoeNinjaAPIMode::OMEN);
 	read_poe_ninja_cache("Runes",			PoeNinjaAPIMode::RUNES);
+	read_poe_ninja_cache("Delirium",		PoeNinjaAPIMode::DELIRIUM_ORBS);
 
 	read_user_loot_patterns();
 
@@ -29621,8 +29689,24 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 			////////////////////////////////////////////////////////////////////////////////////////////////
 		}
 
+		//		AUTOPRICE BUTTON
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		EntityButtonAutoPrice*
+		auto_price_button = new EntityButtonAutoPrice();
+		auto_price_button->table_id = _table_id;
+		auto_price_button->can_be_stretched = true;
 
+		auto_price_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(200.0f, 20.0f),
+			group_for_table,
+			&EDataActionCollection::action_set_auto_prices,
+			ELocalisationText::get_localisation_by_key("button_auto_prices")
+		);
 
+		auto_price_button->force_field_bottom = 6.0f;
+		group_for_table->add_button_to_working_group(auto_price_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////
 			//
 }
 

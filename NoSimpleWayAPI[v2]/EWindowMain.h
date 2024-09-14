@@ -424,6 +424,12 @@ public:
 	static std::vector<EButtonGroup*> all_price_table_groups;
 };
 
+class EntityButtonAutoPrice : public EntityButton
+{
+public:
+	int table_id = -1;
+};
+
 
 
 
@@ -1215,9 +1221,9 @@ enum class PoeNinjaAPIMode
 	OMEN,
 	INCUBATORS,
 	RUNES,
-	_PLACEHOLDER_01,
-	_PLACEHOLDER_02,
-	_PLACEHOLDER_03,
+	DELIRIUM_ORBS,
+	SCARABS,
+	FOSSILS,
 	_PLACEHOLDER_04,
 	_PLACEHOLDER_05,
 	_PLACEHOLDER_06,
@@ -1418,6 +1424,7 @@ namespace EDataActionCollection
 	void action_price_table_select_all(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_price_table_deselect_all(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_price_accept_cloning_price_table(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_set_auto_prices(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
