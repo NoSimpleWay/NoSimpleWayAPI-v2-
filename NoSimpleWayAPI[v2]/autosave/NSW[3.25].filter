@@ -138,8 +138,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard ignore standard standard standard
-	BaseType "Omen of the Jeweller" "Omen of Brilliance"
-#create_pattern_button "Game item" 0 2 "Necropolis:\Omens" "Некрополис:\nПредсказания" "data/textures/icons/Omen.png"
+	BaseType "Golden Obi"
+#create_pattern_button "Game item" 0 1 "Necropolis:\Omens" "Некрополис:\nПредсказания" "data/textures/icons/Omen.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Stackable currency"
 #required_tags "worth" 001000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -178,7 +178,7 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard ignore hide standard standard standard
-	BaseType "Omen of Refreshment"
+	BaseType "Golden Obi"
 #create_pattern_button "Game item" 0 1 "Necropolis:\Omens" "Некрополис:\nПредсказания" "data/textures/icons/Omen.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Stackable currency"
@@ -296,8 +296,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Choking Guilt" "Divine Justice" "House of Mirrors" "The Apothecary" "The Price of Devotion" "The Cheater" "The Demon" "The Immortal" "Unrequited Love" "The Insane Cat" "Brother's Gift" "Matryoshka" "I See Brothers" "Fire Of Unknown Origin" "Father's Love"
-#create_pattern_button "Game item" 0 15 "Divinations" "Гадалки" "data/textures/icons/card.png"
+	BaseType == "Choking Guilt" "Divine Justice" "House of Mirrors" "Seven Years Bad Luck" "The Apothecary" "The Price of Devotion" "The Cheater" "The Demon" "The Doctor" "The Immortal" "The Progeny of Lunaris" "Unrequited Love" "Luminous Trove" "The Insane Cat" "Brother's Gift" "I See Brothers" "Fire Of Unknown Origin" "Father's Love"
+#create_pattern_button "Game item" 0 18 "Divinations" "Гадалки" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 000001 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -315,8 +315,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Desecrated Virtue" "Fire of Unknown Origin" "Love Through Ice" "Seven Years Bad Luck" "Succor of the Sinless" "The Doctor" "The Endless Darkness" "The Fiend" "The Progeny of Lunaris" "Wealth and Power" "Broken Promises" "Luminous Trove" "Auspicious Ambitions" "Imperfect Memories"
-#create_pattern_button "Game item" 0 14 "Divinations" "Гадалки" "data/textures/icons/card.png"
+	BaseType == "Beauty Through Death" "Desecrated Virtue" "Fire of Unknown Origin" "Love Through Ice" "Succor of the Sinless" "The Endless Darkness" "The Fiend" "The Sephirot" "Wealth and Power" "Broken Promises" "Auspicious Ambitions" "Matryoshka" "Avian Pursuit"
+#create_pattern_button "Game item" 0 13 "Divinations" "Гадалки" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 000010 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -334,8 +334,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Alluring Bounty" "Anarchy's Price" "Beauty Through Death" "Brother's Stash" "Darker Half" "Doryani's Epiphany" "Further Invention" "Home" "Fateful Meeting" "The Fortunate" "Friendship" "Gemcutter's Mercy" "Monochrome" "Pride of the First Ones" "Rebirth" "Remembrance" "The Destination" "The Dungeon Master" "The Enforcer" "The Leviathan" "The Shieldbearer" "The Artist" "The Astromancer" "The Chosen" "The Damned" "The Dragon's Heart" "The Enlightened" "The Eye of Terror" "The Garish Power" "The Greatest Intentions" "The Gulf" "The Last One Standing" "The Long Con" "The Nurse" "The Old Man" "The Price of Loyalty" "The Queen" "The Sacrifice" "The Samurai's Eye" "The Sephirot" "The Soul" "The Vast" "The World Eater" "Tranquillity" "The Last Supper" "The Emptiness" "Terrible Secret of Space" "Winter's Embrace" "Deadly Joy" "The Eternal War" "A Modest Request" "The Hook" "Divine Beauty" "The Wedding Gift" "The Rabbit's Foot" "Chasing Risk" "Judging Voices" "Misery in Darkness" "Duality" "The One That Got Away" "Magnum Opus" "Assassin's Gift" "Who Asked" "Avian Pursuit" "Temperance" "Lonely Warrior"
-#create_pattern_button "Game item" 0 66 "Divinations" "Гадалки" "data/textures/icons/card.png"
+	BaseType == "Brother's Stash" "Darker Half" "Doryani's Epiphany" "Further Invention" "Home" "Fateful Meeting" "The Fortunate" "Friendship" "Gemcutter's Mercy" "Lethean Temptation" "Monochrome" "Pride of the First Ones" "Remembrance" "The Destination" "The Leviathan" "The Shieldbearer" "The Artist" "The Astromancer" "The Chosen" "The Damned" "The Dragon's Heart" "The Enlightened" "The Eye of Terror" "The Garish Power" "The Greatest Intentions" "The Gulf" "The Last One Standing" "The Long Con" "The Nurse" "The Price of Loyalty" "The Queen" "The Sacrifice" "The Samurai's Eye" "The Soul" "The World Eater" "Tranquillity" "The Last Supper" "The Emptiness" "Winter's Embrace" "Deadly Joy" "The Eternal War" "A Modest Request" "Divine Beauty" "The Rabbit's Foot" "Judging Voices" "Misery in Darkness" "Duality" "Magnum Opus" "Imperfect Memories" "Assassin's Gift" "Who Asked" "Temperance" "Lonely Warrior"
+#create_pattern_button "Game item" 0 53 "Divinations" "Гадалки" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 000100 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -353,8 +353,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "A Fate Worse Than Death" "Altered Perception" "A Familiar Call" "Abandoned Wealth" "Akil's Prophecy" "Azyran's Reward" "Baited Expectations" "Brotherhood in Exile" "Burning Blood" "Council of Cats" "Dying Light" "Gift of Asenath" "Hunter's Reward" "Lethean Temptation" "Peaceful Moments" "Rebirth and Renewal" "Something Dark" "The Forward Gaze" "The Shepherd's Sandals" "The Awakened" "The Bargain" "The Bitter Blossom" "The Cartographer" "The Deep Ones" "The Eldritch Decay" "The Escape" "The Fishmonger" "The Formless Sea" "The Hive of Knowledge" "The Life Thief" "The Mad King" "The Strategist" "The Undisputed" "The White Knight" "Underground Forest" "Void of the Elements" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" "Brush, Paint and Palette" "The Shortcut" "Eternal Bonds" "The Scout" "The Forgotten Treasure" "The Aspirant" "Silence and Frost"
-#create_pattern_button "Game item" 0 47 "Divinations" "Гадалки" "data/textures/icons/card.png"
+	BaseType == "A Fate Worse Than Death" "Altered Perception" "A Familiar Call" "Abandoned Wealth" "Akil's Prophecy" "Alluring Bounty" "Anarchy's Price" "Azyran's Reward" "Baited Expectations" "Brotherhood in Exile" "Burning Blood" "Chaotic Disposition" "Council of Cats" "Deathly Designs" "Draped in Dreams" "Dying Light" "Gift of Asenath" "Hunter's Reward" "Keeper's Corruption" "Mawr Blaidd" "Nook's Crown" "Peaceful Moments" "Rebirth" "Rebirth and Renewal" "Something Dark" "The Dungeon Master" "The Forward Gaze" "The Enforcer" "The Shepherd's Sandals" "The Awakened" "The Bargain" "The Bitter Blossom" "The Cartographer" "The Deep Ones" "The Eldritch Decay" "The Escape" "The Eye of the Dragon" "The Fishmonger" "The Formless Sea" "The Hive of Knowledge" "The Jester" "The Life Thief" "The Long Watch" "The Mad King" "The Old Man" "The Patient" "The Polymath" "The Professor" "The Strategist" "The Tumbleweed" "The Undisputed" "The Vast" "The White Knight" "Underground Forest" "Void of the Elements" "The Offspring" "The Price of Prescience" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" "Brush, Paint and Palette" "The Shortcut" "The Hook" "The Wedding Gift" "A Dusty Memory" "A Stone Perfected" "Chasing Risk" "The Prince of Darkness" "Eternal Bonds" "The Scout" "The Forgotten Treasure" "The Aspirant" "Silence and Frost" "The One That Got Away" "A Chilling Wind" "Toxic Tidings"
+#create_pattern_button "Game item" 0 78 "Divinations" "Гадалки" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 001000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -371,22 +371,9 @@ Show
 
 
 Show
-	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Sambodhi's Vow" "Last Hope" "The Void"
-	SetBackgroundColor 43 84 46 255
-	SetTextColor 220 255 255 255
-	SetBorderColor 65 255 255 255
-	SetFontSize 40
-	MinimapIcon 2 Blue Square
-	#PlayEffect Red
-	PlayAlertSound 11 100
-	DisableDropSound
-
-
-Show
-	#config_VersionControl standard standard standard standard standard ignore standard standard standard
-	BaseType == "A Note in the Wind" "Arrogance of the Vaal" "Audacity" "Boon of the First Ones" "Broken truce" "Buried Treasure" "Chaotic Disposition" "Checkmate" "Dark Dreams" "Deathly Designs" "Dialla's Subjugation" "Draped in Dreams" "Endless night" "Etched in Blood" "From Bone to Ashes" "Harmony of Souls" "Haunting Shadows" "Heterochromia" "Immortal Resolve" "Keeper's Corruption" "Lingering Remnants" "Lucky Deck" "Mawr Blaidd" "Merciless Armament" "Nook's Crown" "Perfection" "Pride Before the Fall" "Prometheus' Armoury" "Reckless Ambition" "The Academic" "The Admirer" "The Brawny Battle Mage" "The Bones" "The Breach" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Stone" "The Conduit" "The Craving" "The Dreamer" "The Ethereal" "The Eye of the Dragon" "The Fathomless Depths" "The Hale Heart" "The Rusted Bard" "The Jester" "The King's Heart" "The Landing" "The Long Watch" "The Lord of Celebration" "The Messenger" "The Obscured" "The Offering" "The Pact" "The Patient" "The Polymath" "The Primordial" "The Professor" "The Rite of Elements" "The Road to Power" "The Saint's Treasure" "The Seeker" "The Side Quest" "The Skeleton" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Throne" "The Tumbleweed" "The Twilight Moon" "The Undaunted" "The Unexpected Prize" "The Union" "The Valkyrie" "The Watcher" "The Wilted Rose" "The Wolf's Legacy" "The Wretched" "Treasure Hunter" "Unchained" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Dementophobia" "Sambodhi's Wisdom" "The Enthusiasts" "Dying Anguish" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch" "Desperate Crusade" "A Stone Perfected" "The Prince of Darkness" "Guardian's Challenge" "The Fox in the Brambles" "Bijoux" "Justified Ambition" "Parasitic Passengers" "The Transformation" "The Magma Crab" "Soul Quenched" "Poisoned Faith" "A Chilling Wind" "Eldritch Perfection" "Endless Night" "Toxic Tidings"
-#create_pattern_button "Game item" 0 107 "Divinations" "Гадальные карты" "data/textures/icons/card.png"
+	#config_VersionControl standard standard standard standard ignore ignore standard standard standard
+	BaseType == "A Note in the Wind" "Arrogance of the Vaal" "Audacity" "Boon of the First Ones" "Broken truce" "Bowyer's Dream" "Checkmate" "Dark Dreams" "Dialla's Subjugation" "Endless night" "Etched in Blood" "From Bone to Ashes" "Harmony of Souls" "Heterochromia" "Immortal Resolve" "Lingering Remnants" "Lucky Deck" "Merciless Armament" "Perfection" "Pride Before the Fall" "Prometheus' Armoury" "Reckless Ambition" "The Academic" "The Admirer" "The Brawny Battle Mage" "The Avenger" "The Bones" "The Breach" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Justicar" "The Celestial Stone" "The Craving" "The Dreamer" "The Easy Stroll" "The Ethereal" "The Fathomless Depths" "The Gentleman" "The Hale Heart" "The Innocent" "The Rusted Bard" "The Journey" "The King's Heart" "The Landing" "The Lord of Celebration" "The Messenger" "The Obscured" "The Offering" "The Pact" "The Primordial" "The Risk" "The Rite of Elements" "The Road to Power" "The Saint's Treasure" "The Seeker" "The Side Quest" "The Skeleton" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Twilight Moon" "The Undaunted" "The Unexpected Prize" "The Union" "The Valkyrie" "The Void" "The Watcher" "The Wilted Rose" "The Wind" "The Wolf's Legacy" "The Wolf's Shadow" "The Wretched" "Treasure Hunter" "Triskaidekaphobia" "Unchained" "The Mind's Eyes" "Dementophobia" "Sambodhi's Wisdom" "The Enthusiasts" "Prejudice" "Dying Anguish" "The Return of the Rat" "The Finishing Touch" "Desperate Crusade" "Guardian's Challenge" "The Fox in the Brambles" "Bijoux" "Justified Ambition" "Parasitic Passengers" "The Transformation" "The Magma Crab" "Man With Bear" "Soul Quenched" "Poisoned Faith" "Eldritch Perfection" "Endless Night"
+#create_pattern_button "Game item" 0 99 "Divinations" "Гадальные карты" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 010000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -404,8 +391,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard hide hide hide standard standard standard
-	BaseType == "A Dab of Ink" "Astral Protection" "A Mother's Parting Gift" "Acclimatisation" "Alone in the Darkness" "Assassin's Favour" "Atziri's Arsenal" "Azure Rage" "Blind Venture" "Boon of Justice" "Boundless Realms" "Bowyer's Dream" "Call to the First Ones" "Cameria's Cut" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Dark Temptation" "Death" "Demigod's Wager" "Destined to Crumble" "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Lantador's Lost Love" "Last Hope" "Left to Fate" "Light and Truth" "Lost Worlds" "Loyalty" "Lucky Connections" "Lysah's Respite" "Might is Right" "Mitts" "More is Never Enough" "No Traces" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Society's Remorse" "Struck by Lightning" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Avenger" "The Battle Born" "The Bear Woman" "The Beast" "The Betrayal" "The Blazing Fire" "The Body" "The Cache" "The Calling" "The Carrion Crow" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Coming Storm" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Demoness" "The Doppelganger" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Easy Stroll" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Fool" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Hermit" "The Heroic Shot" "The Hoarder" "The Hunger" "The Incantation" "The Innocent" "The Inoculated" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Journalist" "The Journey" "The King's Blade" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Master" "The Master Artisan" "The Mercenary" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Opulent" "The Pack Leader" "The Penitent" "The Poet" "The Porcupine" "The Price of Protection" "The Puzzle" "The Rabid Rhoa" "The Realm" "The Risk" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Tinkerer's Table" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Void" "The Warden" "The Warlord" "The Web" "The Whiteout" "The Wind" "The Witch" "The Wolf" "The Wolf's Shadow" "The Wolven King's Bite" "The Wolverine" "The Wrath" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" "Thunderous Skies" "Time-Lost Relic" "Triskaidekaphobia" "Turn the Other Cheek" "Vanity" "Vile Power" "Vinia's Token" "Volatile Power" "A Sea of Blue" "The Adventuring Spirit" "Prejudice" "The Card Sharp" "Ever-Changing" "Disdain" "The Tireless Extractor" "Man With Bear" "Alivia's Grace" "Broken Truce"
-#create_pattern_button "Game item" 0 193 "Divinations" "Гадалки" "data/textures/icons/card.png"
+	BaseType == "A Dab of Ink" "Astral Protection" "A Mother's Parting Gift" "Acclimatisation" "Alone in the Darkness" "Assassin's Favour" "Atziri's Arsenal" "Azure Rage" "Blind Venture" "Boon of Justice" "Boundless Realms" "Buried Treasure" "Call to the First Ones" "Cameria's Cut" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Dark Temptation" "Death" "Demigod's Wager" "Destined to Crumble" "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Haunting Shadows" "Her Mask" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Lantador's Lost Love" "Last Hope" "Left to Fate" "Light and Truth" "Lost Worlds" "Loyalty" "Lucky Connections" "Lysah's Respite" "Might is Right" "Mitts" "More is Never Enough" "No Traces" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Society's Remorse" "Struck by Lightning" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Battle Born" "The Bear Woman" "The Beast" "The Betrayal" "The Blazing Fire" "The Body" "The Cache" "The Calling" "The Carrion Crow" "The Catalyst" "The Chains that Bind" "The Coming Storm" "The Conduit" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Demoness" "The Doppelganger" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Fool" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Golden Era" "The Harvester" "The Hermit" "The Heroic Shot" "The Hoarder" "The Hunger" "The Incantation" "The Inoculated" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Journalist" "The King's Blade" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Master" "The Master Artisan" "The Mercenary" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Opulent" "The Pack Leader" "The Penitent" "The Poet" "The Porcupine" "The Price of Protection" "The Puzzle" "The Rabid Rhoa" "The Realm" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Visionary" "The Warden" "The Warlord" "The Web" "The Whiteout" "The Witch" "The Wolf" "The Wolven King's Bite" "The Wolverine" "The Wrath" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" "Thunderous Skies" "Time-Lost Relic" "Turn the Other Cheek" "Vanity" "Vile Power" "Vinia's Token" "Volatile Power" "A Sea of Blue" "The Adventuring Spirit" "The Card Sharp" "Ever-Changing" "Disdain" "The Tireless Extractor" "Alivia's Grace" "Broken Truce"
+#create_pattern_button "Game item" 0 181 "Divinations" "Гадалки" "data/textures/icons/card.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Divination cards"
 #required_tags "worth" 100000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -465,7 +452,7 @@ Show
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Class "gems"
-	BaseType "Awakened Burning Damage Support" "Awakened Cast On Critical Strike Support" "Awakened Deadly Ailments Support" "Awakened Elemental Focus Support" "Awakened Fork Support" "Awakened Melee Physical Damage Support" "Awakened Spell Cascade Support" "Awakened Swift Affliction Support" "Awakened Unleash Support" "Awakened Void Manipulation Support"
+	BaseType "Awakened Ancestral Call Support" "Awakened Chain Support" "Awakened Elemental Focus Support" "Awakened Fork Support" "Awakened Lightning Penetration Support" "Awakened Melee Physical Damage Support" "Awakened Spell Cascade Support" "Awakened Swift Affliction Support" "Awakened Unleash Support" "Awakened Void Manipulation Support"
 #create_pattern_button "Game item" 0 10 "Awakened gems" "Пробуждённые камни" "data/textures/icons/Awakened.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Awakened gem"
@@ -483,7 +470,7 @@ Show
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Class "gems"
-	BaseType "Awakened Added Chaos Damage Support" "Awakened Added Cold Damage Support" "Awakened Added Fire Damage Support" "Awakened Added Lightning Damage Support" "Awakened Ancestral Call Support" "Awakened Arrow Nova Support" "Awakened Blasphemy Support" "Awakened Brutality Support" "Awakened Hextouch Support" "Awakened Cast While Channelling Support" "Awakened Chain Support" "Awakened Cold Penetration Support" "Awakened Controlled Destruction Support" "Awakened Fire Penetration Support" "Awakened Generosity Support" "Awakened Lightning Penetration Support" "Awakened Melee Splash Support" "Awakened Minion Damage Support" "Awakened Unbound Ailments Support" "Awakened Vicious Projectiles Support"
+	BaseType "Awakened Added Chaos Damage Support" "Awakened Added Cold Damage Support" "Awakened Added Fire Damage Support" "Awakened Added Lightning Damage Support" "Awakened Arrow Nova Support" "Awakened Blasphemy Support" "Awakened Brutality Support" "Awakened Burning Damage Support" "Awakened Hextouch Support" "Awakened Cast On Critical Strike Support" "Awakened Cast While Channelling Support" "Awakened Cold Penetration Support" "Awakened Controlled Destruction Support" "Awakened Deadly Ailments Support" "Awakened Fire Penetration Support" "Awakened Generosity Support" "Awakened Melee Splash Support" "Awakened Minion Damage Support" "Awakened Unbound Ailments Support" "Awakened Vicious Projectiles Support"
 #create_pattern_button "Game item" 0 20 "Awakened gems" "Пробуждённые камни" "data/textures/icons/Awakened.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Awakened gem"
@@ -785,8 +772,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Domination Scarab of Terrors" "Horned Scarab of Pandemonium"
-#create_pattern_button "Game item" 0 2 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
+	BaseType == "Ambush Scarab of Containment" "Ultimatum Scarab of Catalysing" "Horned Scarab of Preservation" "Horned Scarab of Awakening" "Horned Scarab of Glittering"
+#create_pattern_button "Game item" 0 5 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Scarab item"
 #required_tags "scarab tier" 11111 "Basic" "Bonus" "Influencing" "Horned" "Special"
@@ -804,8 +791,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Harvest Scarab of Cornucopia" "Horned Scarab of Bloodlines"
-#create_pattern_button "Game item" 0 2 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
+	BaseType == "Ambush Scarab of Discernment" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Doubling" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Ultimatum Scarab of Dueling" "Horned Scarab of Bloodlines" "Horned Scarab of Pandemonium" "Cartography Scarab of the Multitude" "Divination Scarab of Pilfering"
+#create_pattern_button "Game item" 0 11 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Scarab item"
 #required_tags "scarab tier" 11111 "Basic" "Bonus" "Influencing" "Horned" "Special"
@@ -823,8 +810,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Resonant Cascade" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Bestiary Scarab of the Shadowed Crow" "Sulphite Scarab of Greed" "Torment Scarab of Release" "Ambush Scarab" "Ambush Scarab of Discernment" "Harbinger Scarab of Regency" "Harbinger Scarab of Warhoards" "Expedition Scarab of the Skald" "Legion Scarab of The Sekhema" "Legion Scarab of Eternal Conflict" "Abyss Scarab of Emptiness" "Essence Scarab of Calcification" "Harvest Scarab of Doubling" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of Corruption" "Ultimatum Scarab of Dueling" "Blight Scarab of Bounty" "Blight Scarab of Blooming" "Cartography Scarab of the Multitude" "Divination Scarab of Pilfering"
-#create_pattern_button "Game item" 0 25 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
+	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Resonant Cascade" "Breach Scarab of Snares" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Bestiary Scarab of the Shadowed Crow" "Sulphite Scarab of Greed" "Torment Scarab of Release" "Ambush Scarab" "Harbinger Scarab of Regency" "Harbinger Scarab of Warhoards" "Expedition Scarab of the Skald" "Legion Scarab of The Sekhema" "Legion Scarab of Eternal Conflict" "Abyss Scarab of Emptiness" "Essence Scarab of Adaptation" "Ritual Scarab of Abundance" "Betrayal Scarab of Perpetuation" "Beyond Scarab of Corruption" "Delirium Scarab of Paranoia" "Blight Scarab of Bounty" "Blight Scarab of Blooming" "Horned Scarab of Nemeses" "Cartography Scarab of Risk" "Titanic Scarab of Treasures" "Titanic Scarab of Legend" "Divination Scarab of The Cloister"
+#create_pattern_button "Game item" 0 27 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Scarab item"
 #required_tags "scarab tier" 11111 "Basic" "Bonus" "Influencing" "Horned" "Special"
@@ -842,8 +829,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType == "Breach Scarab of Snares" "Harbinger Scarab" "Essence Scarab of Adaptation" "Scarab of Wisps" "Ritual Scarab of Abundance" "Delirium Scarab of Paranoia" "Horned Scarab of Nemeses" "Cartography Scarab of Risk" "Titanic Scarab of Legend" "Divination Scarab of The Cloister"
-#create_pattern_button "Game item" 0 10 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
+	BaseType == "Breach Scarab" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Influencing Scarab of Conversion" "Harbinger Scarab" "Abyss Scarab of Profound Depth" "Anarchy Scarab of Gigantification" "Essence Scarab" "Essence Scarab of Ascent" "Scarab of Wisps" "Ritual Scarab of Selectiveness" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Inscription" "Blight Scarab of Invigoration" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Horned Scarab of Tradition" "Cartography Scarab of Escalation" "Divination Scarab of Plenty" "Domination Scarab of Evolution"
+#create_pattern_button "Game item" 0 21 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Scarab item"
 #required_tags "scarab tier" 11111 "Basic" "Bonus" "Influencing" "Horned" "Special"
@@ -874,9 +861,9 @@ Show
 
 
 Show
-	#config_VersionControl standard standard standard standard hide hide standard standard standard
-	BaseType == "Breach Scarab" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Bestiary Scarab" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Influencing Scarab of Hordes" "Influencing Scarab of Conversion" "Sulphite Scarab" "Sulphite Scarab of Fumes" "Torment Scarab" "Torment Scarab of Peculiarity" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Expedition Scarab" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of Archaeology" "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Command" "Abyss Scarab" "Abyss Scarab of Multitudes" "Abyss Scarab of Profound Depth" "Abyss Scarab of Edifice" "Anarchy Scarab" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Scarab of Radiant Storms" "Torment Scarab of Possession" "Domination Scarab" "Ritual Scarab of Selectiveness" "Harvest Scarab" "Incursion Scarab" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Beyond Scarab of the Invasion" "Ultimatum Scarab" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Inscription" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab" "Blight Scarab of Invigoration" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Scarab of Hunted Traitors" "Scarab of Stability" "Horned Scarab of Tradition" "Cartography Scarab of Escalation" "Titanic Scarab" "Titanic Scarab of Treasures" "Divination Scarab of Plenty" "Harbinger Scarab of Obelisks" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Wisps" "Blight Scarab of the Blightheart" "Scarab of Divinity"
-#create_pattern_button "Game item" 0 72 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
+	#config_VersionControl standard standard standard standard ignore hide standard standard standard
+	BaseType == "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Fumes" "Torment Scarab" "Torment Scarab of Peculiarity" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Expedition Scarab" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of Archaeology" "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Command" "Abyss Scarab" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Anarchy Scarab" "Anarchy Scarab of Partnership" "Essence Scarab of Stability" "Scarab of Radiant Storms" "Torment Scarab of Possession" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Beyond Scarab of the Invasion" "Ultimatum Scarab" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab" "Scarab of Hunted Traitors" "Scarab of Stability" "Titanic Scarab" "Harbinger Scarab of Obelisks" "Domination Scarab of Apparitions" "Ritual Scarab of Wisps" "Blight Scarab of the Blightheart" "Scarab of Divinity"
+#create_pattern_button "Game item" 0 52 "Necropolis:\nScarabs" "Некрополис:\nСкарабеи" "data/textures/icons/Scarab_bonus.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Scarab item"
 #required_tags "scarab tier" 11111 "Basic" "Bonus" "Influencing" "Horned" "Special"
@@ -1959,8 +1946,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
-	BaseType "Celestial Blacksmith's Incubator" "Diviner's Incubator" "Foreboding Incubator" "Geomancer's Incubator" "Obscured Incubator" "Ornate Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator" "Blighted Incubator" "Challenging Incubator"
-#create_pattern_button "Game item" 0 11 "Incubators" "Инкубаторы" "data/textures/icons/Incubator.png"
+	BaseType "Ornate Incubator" "Challenging Incubator"
+#create_pattern_button "Game item" 0 2 "Incubators" "Инкубаторы" "data/textures/icons/Incubator.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Incubators"
 #required_tags "worth" 001111 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -1977,8 +1964,8 @@ Show
 
 Show
 	#config_VersionControl standard standard standard standard standard ignore standard standard standard
-	BaseType "Abyssal Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Jeweller's Incubator" "Fossilised Incubator" "Fragmented Incubator" "Infused Incubator" "Mysterious Incubator" "Otherworldly Incubator" "Primal Incubator" "Whispering Incubator" "Kalguuran Incubator" "Maddening Incubator"
-#create_pattern_button "Game item" 0 13 "Incubators" "Инкубаторы" "data/textures/icons/Incubator.png"
+	BaseType "Cartographer's Incubator" "Celestial Blacksmith's Incubator" "Diviner's Incubator" "Foreboding Incubator" "Fossilised Incubator" "Geomancer's Incubator" "Infused Incubator" "Obscured Incubator" "Otherworldly Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator" "Kalguuran Incubator" "Blighted Incubator"
+#create_pattern_button "Game item" 0 14 "Incubators" "Инкубаторы" "data/textures/icons/Incubator.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "base class" 1 "Incubators"
 #required_tags "worth" 010000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -3324,8 +3311,8 @@ Show
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Class "Stackable Currency"
-	BaseType "Scorched Fossil" "Serrated Fossil" "Aberrant Fossil" "Aetheric Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Frigid Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Prismatic Fossil" "Pristine Fossil" "Tangled Fossil" "Deft Fossil" "Fundamental Fossil" "Opulent Fossil"
-#create_pattern_button "Game item" 0 18 "Fossils" "Ископаемые" "data/textures/icons/Faceted_Fossil_inventory_icon.png"
+	BaseType "Scorched Fossil" "Aberrant Fossil" "Aetheric Fossil" "Frigid Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Prismatic Fossil" "Pristine Fossil" "Deft Fossil" "Fundamental Fossil" "Opulent Fossil"
+#create_pattern_button "Game item" 0 13 "Fossils" "Ископаемые" "data/textures/icons/Faceted_Fossil_inventory_icon.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "item tag" 1 "Delve fossil"
 #required_tags "worth" 010000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
@@ -3756,13 +3743,28 @@ Show
 	DisableDropSound
 
 
-#BlockSeparator "Уникки (редкое)" shrinked no_space
+Show
+	#config_VersionControl focus standard standard standard standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Lapis Amulet" "Onyx Amulet" "Paua Amulet" "Unset Amulet" "Ghastly Eye Jewel" "Chain Belt" "Cloth Belt" "Leather Belt" "Amethyst Ring" "Sapphire Ring" "Topaz Ring" "Large Cluster Jewel" "Prismatic Jewel" "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel" "Timeless Jewel" "Cabalist Regalia" "Blood Raiment" "Carnal Armour" "Sadist Garb" "Saint's Hauberk" "Triumphant Lamellar" "Ancient Gauntlets" "Carnal Mitts" "Ezomyte Burgonet" "Hubris Circlet" "Magistrate Crown" "Necromancer Circlet" "Runic Helm" "Crusader Boots" "Dragonscale Boots" "Soldier Boots" "Ornate Quiver" "Despot Axe" "Vaal Axe" "Terror Maul" "Infernal Sword" "Foul Staff" "Maelstrom Staff" "Prophecy Wand" "Ebony Tower Shield" "Golden Buckler" "Legion Sword" "Amethyst Flask" "Bismuth Flask" "Quartz Flask" "Ruby Flask" "Sulphur Flask" "Vaal Aspect"
+#create_pattern_button "Game item" 0 50 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 000011 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+#finalize_filter_rule
+	SetBackgroundColor 255 230 204 129
+	SetTextColor 255 113 46 255
+	SetBorderColor 181 0 0 255
+	SetFontSize 40
+	MinimapIcon 0 Red Diamond
+	PlayEffect Red
+	PlayAlertSound 11 100
+	#CustomAlertSound "artefact.wav" 100
+	DisableDropSound
 
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	Rarity = Unique
-	BaseType == "Agate Amulet" "Greatwolf Talisman" "Turquoise Amulet" "Chain Belt" "Studded Belt" "Amethyst Ring" "Moonstone Ring" "Ruby Ring" "Topaz Ring" "Medium Cluster Jewel" "Small Cluster Jewel" "Prismatic Jewel" "Crimson Jewel" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Spidersilk Robe" "Sage's Robe" "Lacquered Garb" "Sadist Garb" "Saint's Hauberk" "Wyrmscale Doublet" "Hydrascale Gauntlets" "Murder Mitts" "Vaal Gauntlets" "Bone Circlet" "Bone Helmet" "Lacquered Helmet" "Prophet Crown" "Goathide Boots" "Rawhide Boots" "Sorcerer Boots" "Stealth Boots" "Two-Point Arrow Quiver" "Ornate Quiver" "Void Axe" "Imperial Maul" "Fiend Dagger" "Crystal Sceptre" "Shadow Sceptre" "Prophecy Wand" "Sage Wand" "Highborn Staff" "Archon Kite Shield" "Champion Kite Shield" "Ebony Tower Shield" "Jingling Spirit Shield" "Mirrored Spiked Shield" "Pinnacle Tower Shield" "Titanium Spirit Shield" "Vaal Spirit Shield" "Gavel" "Vaal Blade" "Jewelled Foil"
-#create_pattern_button "Game item" 0 56 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
+	BaseType == "Agate Amulet" "Greatwolf Talisman" "Turquoise Amulet" "Chain Belt" "Studded Belt" "Moonstone Ring" "Paua Ring" "Ruby Ring" "Topaz Ring" "Medium Cluster Jewel" "Small Cluster Jewel" "Prismatic Jewel" "Cobalt Jewel" "Crimson Jewel" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Zodiac Leather" "Necromancer Silks" "Savant's Robe" "Spidersilk Robe" "Sage's Robe" "Lacquered Garb" "Sadist Garb" "Saint's Hauberk" "Wyrmscale Doublet" "Hydrascale Gauntlets" "Murder Mitts" "Vaal Gauntlets" "Bone Circlet" "Iron Circlet" "Lacquered Helmet" "Prophet Crown" "Goathide Boots" "Rawhide Boots" "Sorcerer Boots" "Stealth Boots" "Two-Point Arrow Quiver" "Ornate Quiver" "Void Axe" "Imperial Maul" "Fiend Dagger" "Crystal Sceptre" "Shadow Sceptre" "Prophecy Wand" "Sage Wand" "Highborn Staff" "Archon Kite Shield" "Champion Kite Shield" "Ebony Tower Shield" "Jingling Spirit Shield" "Mirrored Spiked Shield" "Pinnacle Tower Shield" "Titanium Spirit Shield" "Vaal Spirit Shield" "Gavel" "Dusk Blade" "Vaal Blade" "Jewelled Foil"
+#create_pattern_button "Game item" 0 59 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
 #required_tags "Worth: world drop" 000100 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 169 86 10 255
@@ -3775,13 +3777,27 @@ Show
 	DisableDropSound
 
 
-#BlockSeparator "Уники (среднее)" expanded no_space
+Show
+	#config_VersionControl focus standard standard standard standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Agate Amulet" "Amber Amulet" "Jade Amulet" "Crystal Belt" "Vanguard Belt" "Opal Ring" "Prismatic Ring" "Ruby Ring" "Steel Ring" "Zodiac Leather" "Vaal Regalia" "Savant's Robe" "Elegant Ringmail" "Sacrificial Garb" "Sentinel Jacket" "Ambush Mitts" "Assassin's Mitts" "Crusader Gloves" "Goliath Gauntlets" "Vaal Gauntlets" "Callous Mask" "Fluted Bascinet" "Great Crown" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Solaris Circlet" "Zealot Helmet" "Runic Crown" "Assassin's Boots" "Goliath Greaves" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Vaal Greaves" "Wyrmscale Boots" "Fugitive Boots" "Runic Sollerets" "Assassin Bow" "Citadel Bow" "Imperial Bow" "Blunt Arrow Quiver" "Primal Arrow Quiver" "Great Mallet" "Ezomyte Staff" "Void Sceptre" "Opal Wand" "Sage Wand" "Imperial Staff" "Quarterstaff" "Archon Kite Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Vaal Spirit Shield" "Imperial Claw" "Ambusher" "Gavel" "Cutlass" "Elegant Sword" "Gemstone Sword" "Vaal Rapier" "Granite Flask" "Stibnite Flask"
+#create_pattern_button "Game item" 0 65 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 000100 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+#finalize_filter_rule
+	SetBackgroundColor 166 83 42 129
+	SetTextColor 255 199 54 255
+	SetBorderColor 255 72 37 255
+	SetFontSize 42
+	MinimapIcon 1 Red Diamond
+	PlayEffect Red
+	CustomAlertSound "Legendary.mp3" 100
+	DisableDropSound
 
 Show
 	#config_VersionControl focus standard standard standard standard standard standard standard standard
 	Rarity = Unique
-	BaseType == "Blue Pearl Amulet" "Citrine Amulet" "Gold Amulet" "Lapis Amulet" "Cloth Belt" "Rustic Sash" "Gold Ring" "Paua Ring" "Sapphire Ring" "Two-Stone Ring" "Unset Ring" "Astral Plate" "Majestic Plate" "Destiny Leather" "Exquisite Leather" "Widowsilk Robe" "Occultist's Vestment" "Necromancer Silks" "Scholar's Robe" "Simple Robe" "Devout Chainmail" "Ambush Mitts" "Silk Gloves" "Zealot Gloves" "Callous Mask" "Deicide Mask" "Eternal Burgonet" "Ezomyte Burgonet" "Hubris Circlet" "Iron Circlet" "Leather Hood" "Necromancer Circlet" "Praetor Crown" "Raven Mask" "Regicide Mask" "Sinner Tricorne" "Carnal Boots" "Reinforced Greaves" "Two-Toned Boots" "Assassin Bow" "Demon Dagger" "Karui Sceptre" "Carved Wand" "Crimson Round Shield" "Maple Round Shield" "Painted Tower Shield" "Rawhide Tower Shield" "Sovereign Spiked Shield" "Steel Kite Shield" "Butcher Axe" "Dusk Blade" "Grand Mana Flask" "Granite Flask" "Sapphire Flask" "Stibnite Flask"
-#create_pattern_button "Game item" 0 55 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
+	BaseType == "Blue Pearl Amulet" "Citrine Amulet" "Gold Amulet" "Lapis Amulet" "Wereclaw Talisman" "Cloth Belt" "Rustic Sash" "Amethyst Ring" "Gold Ring" "Sapphire Ring" "Two-Stone Ring" "Unset Ring" "Astral Plate" "Majestic Plate" "Colosseum Plate" "Destiny Leather" "Exquisite Leather" "Widowsilk Robe" "Occultist's Vestment" "Scholar's Robe" "Simple Robe" "Desert Brigandine" "Devout Chainmail" "Saintly Chainmail" "Ambush Mitts" "Ancient Gauntlets" "Deerskin Gloves" "Satin Gloves" "Silk Gloves" "Zealot Gloves" "Bone Helmet" "Callous Mask" "Deicide Mask" "Eternal Burgonet" "Ezomyte Burgonet" "Hubris Circlet" "Leather Hood" "Necromancer Circlet" "Praetor Crown" "Raven Mask" "Regicide Mask" "Sinner Tricorne" "Solaris Circlet" "Zealot Helmet" "Carnal Boots" "Legion Boots" "Reinforced Greaves" "Two-Toned Boots" "Assassin Bow" "Crude Bow" "Royal Bow" "Iron Staff" "Demon Dagger" "Royal Skean" "Karui Sceptre" "Carved Wand" "Crimson Round Shield" "Maple Round Shield" "Painted Tower Shield" "Rawhide Tower Shield" "Sovereign Spiked Shield" "Steel Kite Shield" "Terror Claw" "Butcher Axe" "Eternal Sword" "Graceful Sword" "Grand Mana Flask" "Granite Flask" "Ruby Flask" "Sapphire Flask" "Stibnite Flask"
+#create_pattern_button "Game item" 0 71 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
 #required_tags "Worth: world drop" 001000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 81 55 0 255
@@ -3794,13 +3810,30 @@ Show
 	DisableDropSound
 
 
-#BlockSeparator "Уники (едва ценное)" expanded no_space
+Show
+	#config_VersionControl focus standard standard standard standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel" "Stygian Vise" "Iron Ring" "Unset Ring" "Golden Plate" "Widowsilk Robe" "Varnished Coat" "Arcanist Gloves" "Fingerless Silk Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Samite Gloves" "Soldier Gloves" "Spiked Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Runic Gages" "Festival Mask" "Harlequin Mask" "Silken Hood" "Sinner Tricorne" "Arcanist Slippers" "Bronzescale Boots" "Carnal Boots" "Shagreen Boots" "Silk Slippers" "Runic Sabatons" "Death Bow" "Decimation Bow" "Ranger Bow" "Short Bow" "Steelwood Bow" "Spike-Point Arrow Quiver" "Ezomyte Axe" "Jasper Chopper" "Judgement Staff" "Serpentine Staff" "Boot Knife" "Ezomyte Dagger" "Royal Skean" "Grinning Fetish" "Shadow Sceptre" "Vaal Sceptre" "Engraved Wand" "Tornado Wand" "Gnarled Branch" "Primordial Staff" "Ezomyte Spiked Shield" "Lacquered Buckler" "Laminated Kite Shield" "Steel Kite Shield" "Nailed Fist" "Vaal Claw" "Stiletto" "Nightmare Mace" "Ornate Mace" "Elder Sword" "Eternal Sword" "Gladius" "War Sword" "Sanctified Mana Flask" "Silver Flask" "Topaz Flask" "Iron Flask"
+#create_pattern_button "Game item" 0 66 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 001000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+#finalize_filter_rule
+	SetBackgroundColor 9 0 0 255
+	SetTextColor 224 80 0 255
+	SetBorderColor 194 0 0 255
+	SetFontSize 39
+	MinimapIcon 1 Red Diamond
+	PlayEffect Red
+	CustomAlertSound "convert.wav" 100
+	DisableDropSound
+
+
+#BlockSeparator "Уники (едва ценное)" shrinked no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Rarity = Unique
-	BaseType == "Amber Amulet" "Clutching Talisman" "Coral Amulet" "Jade Amulet" "Rotfeather Talisman" "Wereclaw Talisman" "Crystal Belt" "Vanguard Belt" "Coral Ring" "Iron Ring" "Opal Ring" "Prismatic Ring" "Colosseum Plate" "Assassin's Garb" "Carnal Armour" "Desert Brigandine" "Full Dragonscale" "Full Wyrmscale" "Saintly Chainmail" "Varnished Coat" "Ancient Gauntlets" "Arcanist Gloves" "Assassin's Mitts" "Carnal Mitts" "Crusader Gloves" "Deerskin Gloves" "Embroidered Gloves" "Iron Gauntlets" "Legion Gloves" "Satin Gloves" "Serpentscale Gauntlets" "Soldier Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Velvet Gloves" "Barbute Helmet" "Festival Mask" "Great Crown" "Harlequin Mask" "Leather Cap" "Lion Pelt" "Mind Cage" "Nightmare Bascinet" "Solaris Circlet" "Steel Circlet" "Vaal Mask" "Visored Sallet" "Zealot Helmet" "Arcanist Slippers" "Conjurer Boots" "Dragonscale Boots" "Legion Boots" "Titan Greaves" "Trapper Boots" "Wool Shoes" "Crude Bow" "Death Bow" "Ranger Bow" "Royal Bow" "Short Bow" "Abyssal Axe" "Vaal Axe" "Meatgrinder" "Lion Sword" "Ezomyte Staff" "Iron Staff" "Judgement Staff" "Maelstrom Staff" "Serpentine Staff" "Vile Staff" "Ezomyte Dagger" "Royal Skean" "Bronze Sceptre" "Platinum Sceptre" "Ritual Sceptre" "Vaal Sceptre" "Void Sceptre" "Driftwood Wand" "Imbued Wand" "Omen Wand" "Imperial Staff" "Lathi" "Branded Kite Shield" "Harmonic Spirit Shield" "Lacquered Buckler" "Mosaic Kite Shield" "Terror Claw" "Ambusher" "Royal Axe" "Eternal Sword" "Graceful Sword" "Midnight Blade" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Bismuth Flask" "Ruby Flask"
-#create_pattern_button "Game item" 0 96 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
+	BaseType == "Amber Amulet" "Clutching Talisman" "Coral Amulet" "Jade Amulet" "Rotfeather Talisman" "Crystal Belt" "Vanguard Belt" "Coral Ring" "Diamond Ring" "Iron Ring" "Opal Ring" "Prismatic Ring" "Assassin's Garb" "Vaal Regalia" "Carnal Armour" "Full Dragonscale" "Full Wyrmscale" "Sentinel Jacket" "Triumphant Lamellar" "Varnished Coat" "Arcanist Gloves" "Bronzescale Gauntlets" "Carnal Mitts" "Crusader Gloves" "Embroidered Gloves" "Goliath Gauntlets" "Iron Gauntlets" "Legion Gloves" "Serpentscale Gauntlets" "Shagreen Gloves" "Soldier Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Velvet Gloves" "Barbute Helmet" "Festival Mask" "Golden Mask" "Great Crown" "Harlequin Mask" "Leather Cap" "Lion Pelt" "Mind Cage" "Nightmare Bascinet" "Steel Circlet" "Vaal Mask" "Visored Sallet" "Conjurer Boots" "Dragonscale Boots" "Plated Greaves" "Titan Greaves" "Trapper Boots" "Wool Shoes" "Death Bow" "Ranger Bow" "Short Bow" "Abyssal Axe" "Vaal Axe" "Meatgrinder" "Lion Sword" "Ezomyte Staff" "Judgement Staff" "Maelstrom Staff" "Serpentine Staff" "Vile Staff" "Ezomyte Dagger" "Bronze Sceptre" "Platinum Sceptre" "Ritual Sceptre" "Vaal Sceptre" "Void Sceptre" "Driftwood Wand" "Omen Wand" "Imperial Staff" "Branded Kite Shield" "Harmonic Spirit Shield" "Lacquered Buckler" "Mosaic Kite Shield" "Imperial Claw" "Ambusher" "Legion Sword" "Midnight Blade" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Bismuth Flask"
+#create_pattern_button "Game item" 0 84 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
 #required_tags "Worth: world drop" 010000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 81 50 4 199
@@ -3818,26 +3851,26 @@ Show
 Show
 	#config_VersionControl focus standard standard standard standard ignore standard standard standard
 	Rarity = Unique
-	Height <= 2
-	Width <= 2
-	Class "Amulets" "Rings" "Belts" "Claws" "Daggers" "Wands" "Sceptres" "Rune Daggers" "One Hand Swords" "Two Hand Swords" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "Bows" "Quivers" "Staves" "Warstaves" "Fishing Rods" "Gloves" "Helmets" "Boots" "Body Armours" "Shields"
-	SetBackgroundColor 13 41 51 255
-	SetTextColor 204 73 0 205
-	SetBorderColor 87 228 255 126
-	SetFontSize 37
-	MinimapIcon 2 Brown Diamond
-	PlayEffect Brown
-	PlayAlertSound 16 100
-	#CustomAlertSound "Legendary.mp3" 100
+	BaseType == "Heavy Belt" "Crusader Chainmail" "Riveted Gloves" "Runic Gauntlets" "Bone Circlet" "Great Helmet" "Mind Cage" "Steel Circlet" "Vaal Mask" "Hydrascale Boots" "Blood Sceptre" "Highborn Staff" "Cardinal Round Shield" "Titanium Spirit Shield" "Gut Ripper"
+#create_pattern_button "Game item" 0 15 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 010000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+#finalize_filter_rule
+	SetBackgroundColor 19 0 0 199
+	SetTextColor 224 75 46 255
+	SetBorderColor 131 23 23 255
+	SetFontSize 35
+	MinimapIcon 2 Red Diamond
+	PlayEffect Red
+	CustomAlertSound "convert.wav" 100
 	DisableDropSound
 
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Rarity = Unique
-	BaseType == "Agate Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Paua Amulet" "Unset Amulet" "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel" "Chain Belt" "Cloth Belt" "Crystal Belt" "Heavy Belt" "Leather Belt" "Stygian Vise" "Vanguard Belt" "Amethyst Ring" "Iron Ring" "Opal Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Steel Ring" "Topaz Ring" "Unset Ring" "Large Cluster Jewel" "Prismatic Jewel" "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel" "Timeless Jewel" "Golden Plate" "Zodiac Leather" "Vaal Regalia" "Widowsilk Robe" "Savant's Robe" "Cabalist Regalia" "Blood Raiment" "Carnal Armour" "Crusader Chainmail" "Elegant Ringmail" "Sacrificial Garb" "Sadist Garb" "Saint's Hauberk" "Sentinel Jacket" "Triumphant Lamellar" "Varnished Coat" "Ambush Mitts" "Ancient Gauntlets" "Arcanist Gloves" "Assassin's Mitts" "Carnal Mitts" "Crusader Gloves" "Fingerless Silk Gloves" "Goliath Gauntlets" "Hydrascale Gauntlets" "Legion Gloves" "Riveted Gloves" "Samite Gloves" "Soldier Gloves" "Spiked Gloves" "Steelscale Gauntlets" "Titan Gauntlets" "Vaal Gauntlets" "Runic Gages" "Runic Gauntlets" "Bone Circlet" "Callous Mask" "Ezomyte Burgonet" "Festival Mask" "Fluted Bascinet" "Great Crown" "Great Helmet" "Harlequin Mask" "Hubris Circlet" "Magistrate Crown" "Mind Cage" "Necromancer Circlet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Silken Hood" "Sinner Tricorne" "Solaris Circlet" "Steel Circlet" "Vaal Mask" "Zealot Helmet" "Runic Helm" "Runic Crown" "Arcanist Slippers" "Assassin's Boots" "Bronzescale Boots" "Carnal Boots" "Crusader Boots" "Dragonscale Boots" "Goliath Greaves" "Hydrascale Boots" "Murder Boots" "Shagreen Boots" "Silk Slippers" "Slink Boots" "Soldier Boots" "Sorcerer Boots" "Titan Greaves" "Vaal Greaves" "Wyrmscale Boots" "Fugitive Boots" "Runic Sollerets" "Runic Sabatons" "Assassin Bow" "Citadel Bow" "Death Bow" "Decimation Bow" "Imperial Bow" "Ranger Bow" "Short Bow" "Steelwood Bow" "Blunt Arrow Quiver" "Spike-Point Arrow Quiver" "Primal Arrow Quiver" "Ornate Quiver" "Despot Axe" "Ezomyte Axe" "Jasper Chopper" "Vaal Axe" "Great Mallet" "Terror Maul" "Infernal Sword" "Ezomyte Staff" "Foul Staff" "Judgement Staff" "Maelstrom Staff" "Serpentine Staff" "Boot Knife" "Ezomyte Dagger" "Royal Skean" "Blood Sceptre" "Grinning Fetish" "Shadow Sceptre" "Vaal Sceptre" "Void Sceptre" "Engraved Wand" "Opal Wand" "Prophecy Wand" "Sage Wand" "Tornado Wand" "Gnarled Branch" "Highborn Staff" "Imperial Staff" "Primordial Staff" "Quarterstaff" "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Ebony Tower Shield" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Golden Buckler" "Lacquered Buckler" "Laminated Kite Shield" "Steel Kite Shield" "Titanium Spirit Shield" "Vaal Spirit Shield" "Gut Ripper" "Imperial Claw" "Nailed Fist" "Vaal Claw" "Ambusher" "Stiletto" "Gavel" "Nightmare Mace" "Ornate Mace" "Cutlass" "Elder Sword" "Elegant Sword" "Eternal Sword" "Gemstone Sword" "Gladius" "Legion Sword" "War Sword" "Vaal Rapier" "Sanctified Mana Flask" "Amethyst Flask" "Bismuth Flask" "Granite Flask" "Quartz Flask" "Ruby Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Iron Flask" "Vaal Aspect"
-#create_pattern_button "Game item" 0 196 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
-#required_tags "Worth: boss drop" 111111 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
+	BaseType == "Golden Obi"
+#create_pattern_button "Game item" 0 1 "Uniques:\nBoss drop" "Уники:\nдроп c Боссов" "data/textures/buttons/button_icon_uniques_boss_drop.png"
+#required_tags "Worth: boss drop" 100000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 124 0 0 246
 	SetTextColor 204 0 0 205
@@ -3853,8 +3886,8 @@ Show
 Show
 	#config_VersionControl focus standard standard ignore ignore hide standard standard standard
 	Rarity = Unique
-	BaseType == "Marble Amulet" "Diamond Ring" "Golden Plate" "Copper Plate" "Plate Vest" "Buckskin Tunic" "Wild Leather" "Sun Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Vaal Regalia" "Destroyer Regalia" "Silken Vest" "Bone Armour" "Conquest Chainmail" "Crusader Chainmail" "Elegant Ringmail" "Holy Chainmail" "Latticed Ringmail" "Ornate Ringmail" "Sentinel Jacket" "Triumphant Lamellar" "Bronze Gauntlets" "Bronzescale Gauntlets" "Chain Gloves" "Clasped Mitts" "Conjurer Gloves" "Dragonscale Gauntlets" "Eelskin Gloves" "Goathide Gloves" "Goliath Gauntlets" "Ironscale Gauntlets" "Mesh Gloves" "Nubuck Gloves" "Samite Gloves" "Shagreen Gloves" "Slink Gloves" "Steel Gauntlets" "Strapped Mitts" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Aventail Helmet" "Close Helmet" "Gilded Sallet" "Golden Mask" "Great Helmet" "Iron Hat" "Iron Mask" "Lunaris Circlet" "Plague Mask" "Reaver Helmet" "Samnite Helmet" "Secutor Helm" "Silken Hood" "Soldier Helmet" "Tribal Circlet" "Tricorne" "Ursine Pelt" "Vine Circlet" "Wolf Pelt" "Ancient Greaves" "Antique Greaves" "Bronzescale Boots" "Clasped Boots" "Deerskin Boots" "Eelskin Boots" "Ironscale Boots" "Mesh Boots" "Nubuck Boots" "Plated Greaves" "Scholar Boots" "Serpentscale Boots" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Soldier Boots" "Strapped Boots" "Velvet Slippers" "Decimation Bow" "Harbinger Bow" "Long Bow" "Recurve Bow" "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Feathered Arrow Quiver" "Blazing Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Despot Axe" "Ezomyte Axe" "Headsman Axe" "Jasper Chopper" "Karui Chopper" "Poleaxe" "Shadow Axe" "Woodsplitter" "Brass Maul" "Dread Maul" "Great Mallet" "Jagged Maul" "Sledgehammer" "Steelhead" "Terror Maul" "Bastard Sword" "Etched Greatsword" "Ezomyte Blade" "Highland Blade" "Infernal Sword" "Ornate Sword" "Reaver Sword" "Tiger Sword" "Coiled Staff" "Military Staff" "Boot Blade" "Boot Knife" "Platinum Kris" "Carnal Sceptre" "Grinning Fetish" "Opal Sceptre" "Royal Sceptre" "Tyrant's Sekhem" "Engraved Wand" "Goat's Horn" "Spiraled Wand" "Gnarled Branch" "Primordial Staff" "Royal Staff" "Ancient Spirit Shield" "Baroque Round Shield" "Brass Spirit Shield" "Cedar Tower Shield" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Corrugated Buckler" "Enameled Buckler" "Ironwood Buckler" "Laminated Kite Shield" "Painted Buckler" "Pine Buckler" "Plank Kite Shield" "Polished Spiked Shield" "Reinforced Tower Shield" "Rotted Round Shield" "Studded Round Shield" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Teak Round Shield" "Vaal Buckler" "War Buckler" "Awl" "Fright Claw" "Gut Ripper" "Imperial Claw" "Nailed Fist" "Thresher Claw" "Throat Stabber" "Timeworn Claw" "Flaying Knife" "Skinning Knife" "Stiletto" "Cleaver" "Decorative Axe" "Infernal Axe" "Jade Hatchet" "Tomahawk" "Auric Mace" "Dream Mace" "Ornate Mace" "Rock Breaker" "Spiked Club" "War Hammer" "Corsair Sword" "Elder Sword" "Elegant Sword" "Gladius" "Legion Sword" "Rusted Sword" "Sabre" "Twilight Blade" "War Sword" "Antique Rapier" "Basket Rapier" "Estoc" "Jagged Foil" "Whalebone Rapier" "Sanctified Life Flask" "Greater Mana Flask" "Sanctified Mana Flask" "Diamond Flask" "Quartz Flask" "Quicksilver Flask" "Silver Flask" "Sulphur Flask"
-#create_pattern_button "Game item" 0 200 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
+	BaseType == "Marble Amulet" "Golden Plate" "Copper Plate" "Plate Vest" "Buckskin Tunic" "Wild Leather" "Sun Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destroyer Regalia" "Silken Vest" "Bone Armour" "Conquest Chainmail" "Crusader Chainmail" "Elegant Ringmail" "Holy Chainmail" "Latticed Ringmail" "Ornate Ringmail" "Assassin's Mitts" "Bronze Gauntlets" "Chain Gloves" "Clasped Mitts" "Conjurer Gloves" "Dragonscale Gauntlets" "Eelskin Gloves" "Goathide Gloves" "Ironscale Gauntlets" "Mesh Gloves" "Nubuck Gloves" "Samite Gloves" "Slink Gloves" "Steel Gauntlets" "Strapped Mitts" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Aventail Helmet" "Close Helmet" "Gilded Sallet" "Great Helmet" "Iron Hat" "Iron Mask" "Lunaris Circlet" "Plague Mask" "Reaver Helmet" "Samnite Helmet" "Secutor Helm" "Silken Hood" "Soldier Helmet" "Tribal Circlet" "Tricorne" "Ursine Pelt" "Vine Circlet" "Wolf Pelt" "Ancient Greaves" "Antique Greaves" "Arcanist Slippers" "Bronzescale Boots" "Clasped Boots" "Deerskin Boots" "Eelskin Boots" "Ironscale Boots" "Mesh Boots" "Nubuck Boots" "Scholar Boots" "Serpentscale Boots" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Soldier Boots" "Strapped Boots" "Velvet Slippers" "Decimation Bow" "Harbinger Bow" "Long Bow" "Recurve Bow" "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Feathered Arrow Quiver" "Blazing Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Despot Axe" "Ezomyte Axe" "Headsman Axe" "Jasper Chopper" "Karui Chopper" "Poleaxe" "Shadow Axe" "Woodsplitter" "Brass Maul" "Dread Maul" "Great Mallet" "Jagged Maul" "Sledgehammer" "Steelhead" "Terror Maul" "Bastard Sword" "Etched Greatsword" "Ezomyte Blade" "Highland Blade" "Infernal Sword" "Ornate Sword" "Reaver Sword" "Tiger Sword" "Coiled Staff" "Military Staff" "Boot Blade" "Boot Knife" "Platinum Kris" "Carnal Sceptre" "Grinning Fetish" "Opal Sceptre" "Royal Sceptre" "Tyrant's Sekhem" "Engraved Wand" "Goat's Horn" "Imbued Wand" "Spiraled Wand" "Gnarled Branch" "Lathi" "Primordial Staff" "Royal Staff" "Ancient Spirit Shield" "Baroque Round Shield" "Brass Spirit Shield" "Cedar Tower Shield" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Corrugated Buckler" "Enameled Buckler" "Ironwood Buckler" "Laminated Kite Shield" "Painted Buckler" "Pine Buckler" "Plank Kite Shield" "Polished Spiked Shield" "Reinforced Tower Shield" "Rotted Round Shield" "Studded Round Shield" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Teak Round Shield" "Vaal Buckler" "War Buckler" "Awl" "Fright Claw" "Gut Ripper" "Nailed Fist" "Thresher Claw" "Throat Stabber" "Timeworn Claw" "Flaying Knife" "Skinning Knife" "Stiletto" "Cleaver" "Decorative Axe" "Infernal Axe" "Jade Hatchet" "Royal Axe" "Tomahawk" "Auric Mace" "Dream Mace" "Ornate Mace" "Rock Breaker" "Spiked Club" "War Hammer" "Corsair Sword" "Elder Sword" "Elegant Sword" "Gladius" "Rusted Sword" "Sabre" "Twilight Blade" "War Sword" "Antique Rapier" "Basket Rapier" "Estoc" "Jagged Foil" "Whalebone Rapier" "Sanctified Life Flask" "Greater Mana Flask" "Sanctified Mana Flask" "Diamond Flask" "Quartz Flask" "Quicksilver Flask" "Silver Flask" "Sulphur Flask"
+#create_pattern_button "Game item" 0 194 "Uniques:\nworld drop" "Уники:\nглобальный дроп" "data/textures/buttons/button_icon_uniques_world_drop.png"
 #required_tags "Worth: world drop" 100000 "Trash" "Common" "Moderate" "Rare" "Expensive" "Very expensive"
 #finalize_filter_rule
 	SetBackgroundColor 19 19 19 255
