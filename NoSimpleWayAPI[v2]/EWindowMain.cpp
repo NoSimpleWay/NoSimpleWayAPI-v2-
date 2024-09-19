@@ -4447,7 +4447,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Incubators", &url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
 
 		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
@@ -4959,6 +4959,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								int old_worth_id = 0;
 								int new_worth_id = -1;
 
+
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][5]) { new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive; }
 								else
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][4]) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
@@ -4972,7 +4973,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][0]) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
 								
 								
-								
+								//if (_mode == PoeNinjaAPIMode::INCUBATORS)
+								//{
+								//	_mode  = _mode;
+								//}
 								
 								
 									/*__________________*/
@@ -9327,7 +9331,7 @@ EWindowMain::EWindowMain()
 		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
 		{
 			PoeNinjaNamespace::price_table[i][0] = 0.0f;		//trash
-			PoeNinjaNamespace::price_table[i][1] = 1.1f;		//common
+			PoeNinjaNamespace::price_table[i][1] = 1.0f;		//common
 			PoeNinjaNamespace::price_table[i][2] = 3.0f;		//moderate
 			PoeNinjaNamespace::price_table[i][3] = 10.0f;		//rare
 			PoeNinjaNamespace::price_table[i][4] = 100.0f;		//expensive
@@ -10444,7 +10448,7 @@ EWindowMain::EWindowMain()
 	read_poe_ninja_cache("DivinationCard",	PoeNinjaAPIMode::DIVINATIONS);
 	read_poe_ninja_cache("Currency",		PoeNinjaAPIMode::CURRENCY);
 	read_poe_ninja_cache("Fragment",		PoeNinjaAPIMode::FRAGMENTS);
-	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::INCUBATORS);
 	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::FRAGMENTS);
 	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::CURRENCY);
 	read_poe_ninja_cache("SkillGem",		PoeNinjaAPIMode::GEMS);
