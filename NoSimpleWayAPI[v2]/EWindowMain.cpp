@@ -5023,6 +5023,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								int old_worth_id = 0;
 								int new_worth_id = -1;
 
+
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][5]) { new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive; }
 								else
 								if (total_cost >= PoeNinjaNamespace::price_table[(int)(_mode)][4]) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
@@ -5037,7 +5038,10 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								
 								PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(total_cost, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
 								
-								
+								//if (_mode == PoeNinjaAPIMode::INCUBATORS)
+								//{
+								//	_mode  = _mode;
+								//}
 								
 									/*__________________*/
 								
@@ -9394,7 +9398,7 @@ EWindowMain::EWindowMain()
 		for (int i = 0; i < (int)(PoeNinjaAPIMode::_LAST_ELEMENT); i++)
 		{
 			PoeNinjaNamespace::price_table[i][0] = 0.0f;		//trash
-			PoeNinjaNamespace::price_table[i][1] = 1.1f;		//common
+			PoeNinjaNamespace::price_table[i][1] = 1.0f;		//common
 			PoeNinjaNamespace::price_table[i][2] = 3.0f;		//moderate
 			PoeNinjaNamespace::price_table[i][3] = 10.0f;		//rare
 			PoeNinjaNamespace::price_table[i][4] = 100.0f;		//expensive
