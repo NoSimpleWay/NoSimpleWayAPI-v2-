@@ -2881,7 +2881,15 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		}
 	}
 	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
+	glGenerateMipmap(GL_TEXTURE_2D);
+
+	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[1]->get_framebuffer());
+	glGenerateMipmap(GL_TEXTURE_2D);
+
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[2]->get_framebuffer());
 	glGenerateMipmap(GL_TEXTURE_2D);
 
 	//float blur_table[texture_skydome_levels] = { 2, 2, 3, 4, 5, 6, 7 };
