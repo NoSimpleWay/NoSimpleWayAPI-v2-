@@ -938,7 +938,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		{
 			//data->current_slide_value = data->get_slider_value_by_pointer_value(float_value);
 			//data->current_slide_value = 0.5f;
-			//data->need_init = false;
+			data->need_init = false;
 
 			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(float_value, 100.0f));
 		}
@@ -947,7 +947,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		{
 			if (data->is_float)
 			{
-				*(float*)data->pointer_to_value = EStringUtils::safe_convert_string_to_number
+				*(float*)data->pointer_to_value = EStringUtils::safe_convert_string_to_float
 				(
 					data->pointer_to_digit_text_area->original_text,
 					data->min_value,
@@ -959,8 +959,8 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 				*(int*)data->pointer_to_value = EStringUtils::safe_convert_string_to_number
 				(
 					data->pointer_to_digit_text_area->original_text,
-					data->min_value,
-					data->max_value
+					round(data->min_value),
+					round(data->max_value)
 				);
 			}
 
@@ -1624,6 +1624,8 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 			}
 	}
 }
+
+
 
 void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _entity, ECustomData* _custom_data, float _d)
 {

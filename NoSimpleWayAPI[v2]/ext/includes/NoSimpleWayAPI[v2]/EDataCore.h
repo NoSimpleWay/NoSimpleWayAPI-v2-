@@ -490,7 +490,7 @@ public:
 	float								min_y_size							= 100.0f;
 
 	data_action_pointer					stored_action_for_data_entity_group = nullptr;
-	unsigned int						category_id							= 0;
+	//unsigned int						category_id							= 0;
 
 	ETextureGabarite*					icon_texture;
 

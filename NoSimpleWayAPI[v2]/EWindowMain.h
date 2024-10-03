@@ -1274,6 +1274,13 @@ public:
 };
 
 
+class EButtonGroupEnvironmentConfigure : public EButtonGroup
+{
+public:
+	EButtonGroupEnvironmentConfigure(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	void button_group_update(float _d) override;
+};
 
 
 namespace NSWRegisteredButtonGroups
@@ -1409,6 +1416,7 @@ namespace EDataActionCollection
 	void action_change_selection_of_tag_configurer(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
+	void action_force_shader_uniform_data_update(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -1739,7 +1747,12 @@ public:
 	void register_rarities();
 	void register_alternate_qualities();
 	void register_game_item_attributes();
+
 	void register_filter_rules();
+	void register_default_filter_rules();
+	void export_filter_rules();
+	void import_filter_rules(std::string _filename);
+
 	~EWindowMain();
 
 	//ETextureGabarite* gudron;

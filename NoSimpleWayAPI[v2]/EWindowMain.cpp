@@ -3484,6 +3484,19 @@ void EDataActionCollection::action_change_selection_of_tag_configurer(Entity* _e
 		}
 }
 
+void EDataActionCollection::action_force_shader_uniform_data_update(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if
+	(
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+	)
+	{
+		NS_EGraphicCore::pbr_already_updated = false;
+	}
+}
+
 void EDataActionCollection::action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
@@ -5954,6 +5967,8 @@ void EWindowMain::read_loot_patterns_from_file(std::string _filename)
 			}
 		}
 
+		file.close();
+
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.size();
 	}
 	else
@@ -7108,7 +7123,7 @@ void EWindowMain::register_about_group()
 
 void EWindowMain::register_world_parameters_group()
 {
-	EButtonGroup*
+	EButtonGroupEnvironmentConfigure*
 	main_button_group = nullptr;
 
 	EButtonGroup*
@@ -7123,7 +7138,7 @@ void EWindowMain::register_world_parameters_group()
 		/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		main_button_group = new EButtonGroup(new ERegionGabarite(512, 700.0f));
+		main_button_group = new EButtonGroupEnvironmentConfigure(new ERegionGabarite(512, 700.0f));
 		main_button_group->init_as_root_group(this);
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
@@ -7154,6 +7169,8 @@ void EWindowMain::register_world_parameters_group()
 			ELocalisationText::get_localisation_by_key("Plastic/Metal_slider")
 		);
 		jc_button->can_be_stretched = true;
+		//jc_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_force_shader_uniform_data_update);
+
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::plastic_or_metal_multiplier;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->mid_value = 1.0f;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 10.0f;
@@ -7329,7 +7346,7 @@ void EWindowMain::register_world_parameters_group()
 		l_text.localisations[NSW_localisation_RU] = "Цвет солнца";
 
 		EntityButtonColorButton*
-			sun_color_button = new EntityButtonColorButton();
+		sun_color_button = new EntityButtonColorButton();
 
 		sun_color_button->make_as_named_color_button
 		(
@@ -9574,7 +9591,15 @@ EWindowMain::EWindowMain()
 
 	add_game_item_data_entity_to_list();
 
-	register_filter_rules();
+	
+	register_default_filter_rules();
+	//register_filter_rules();
+	
+	import_filter_rules("data/FilterRules.txt");
+	//export_filter_rules();
+
+
+
 
 
 	preload_textures();
@@ -9588,6 +9613,8 @@ EWindowMain::EWindowMain()
 
 	//export_loot_patterns_to_file();
 	import_loot_patterns();
+
+
 
 	std::cout << green << "IDstrings hash density" << std::endl;
 
@@ -11023,6 +11050,8 @@ void EWindowMain::load_config_from_disc_for_filter_version()
 				version_id++;
 			}
 		}
+
+		file.close();
 	}
 	else
 	{
@@ -11130,6 +11159,8 @@ void EWindowMain::load_config_from_disc_for_filter_version_patterns()
 
 
 		}
+
+		file.close();
 	}
 	else
 	{
@@ -12679,7 +12710,2055 @@ void EWindowMain::register_game_item_attributes()
 
 }
 
-void EWindowMain::register_filter_rules()
+/*void EWindowMain::register_filter_rules()
+{
+	EFilterRule*
+		jc_filter_rule = nullptr;
+
+	DataEntityTagFilter
+		jc_filter;
+
+	
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//FILTER RULE
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("undefined_item");
+		//jc_filter_rule->category_id = 0;
+		jc_filter_rule->always_show = true;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Filter rule";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Правило фильтрации";
+		jc_filter_rule->tag = "Filter rule";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			CLASS SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//ALL CLASSES
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		//jc_filter_rule->category_id = 0;
+
+		////jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All classes";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все классы";
+		jc_filter_rule->tag = "Base Class";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Base Class");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//EQUIP
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Wyrmscale_Boots_inventory_icon");
+		//jc_filter_rule->category_id = 0;
+
+		////jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Equipable";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Экипировка";
+		jc_filter_rule->tag = "Base Class";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Base Class");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("name EN");
+		jc_filter.add_new_suitable_value("Helmets");
+		jc_filter.add_new_suitable_value("Gloves");
+		jc_filter.add_new_suitable_value("Boots");
+
+		jc_filter.add_new_suitable_value("Body Armours");
+
+		jc_filter.add_new_suitable_value("Two Hand Axes");
+		jc_filter.add_new_suitable_value("Two Hand Swords");
+		jc_filter.add_new_suitable_value("Two Hand Maces");
+
+		jc_filter.add_new_suitable_value("Staves");
+		jc_filter.add_new_suitable_value("Warstaves");
+
+		jc_filter.add_new_suitable_value("Daggers");
+		jc_filter.add_new_suitable_value("Rune Daggers");
+		jc_filter.add_new_suitable_value("Sceptres");
+
+		jc_filter.add_new_suitable_value("One Hand Maces");
+		jc_filter.add_new_suitable_value("One Hand Axes");
+		jc_filter.add_new_suitable_value("One Hand Swords");
+		jc_filter.add_new_suitable_value("Claws");
+		jc_filter.add_new_suitable_value("Wands");
+
+		jc_filter.add_new_suitable_value("Bows");
+		jc_filter.add_new_suitable_value("Quivers");
+
+		jc_filter.add_new_suitable_value("Shields");
+
+		jc_filter.add_new_suitable_value("Rings");
+		jc_filter.add_new_suitable_value("Amulets");
+		jc_filter.add_new_suitable_value("Belts");
+
+		jc_filter.add_new_suitable_value("Fishing Rods");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	// <cost list>
+	// trash
+	// common
+	// moderate
+	// rare
+	// expensive
+	// very expensive
+
+	// // // BUTTON LIST // // //
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			INFLUENCES SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//ALL INFLUENCE
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		//jc_filter_rule->category_id = 0;
+
+		////jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All influences";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все влияния";
+		jc_filter_rule->tag = "Influence";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Influence");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			ENCHANTMENTS SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//ALL ENCHANTMENTS
+
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+	//jc_filter_rule->category_id = 0;
+
+	//jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All enchantments";
+	jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все зачарования";
+	jc_filter_rule->tag = "Enchantment";
+
+	//filter by game item
+	jc_filter = DataEntityTagFilter();
+	jc_filter.target_tag.set_ID_by_string("data type");
+	jc_filter.add_new_suitable_value("Enchantment");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//DELETED
+	jc_filter = DataEntityTagFilter();
+	jc_filter.target_tag.set_ID_by_string("item tag");
+	jc_filter.add_new_banned_value("Deleted");
+	jc_filter.add_new_banned_value("Hidden item");
+	jc_filter_rule->banned_tag_list.push_back(jc_filter);
+	//
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			CLUSTER PASSIVES SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//ALL ENCHANTMENTS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All cluster passives";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все пассивки кластера";
+		jc_filter_rule->tag = "Cluster passive";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Cluster passive");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			ITEMS SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//ALL ITEMS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All items";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все предметы";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//DELETED
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_remove_filter_block");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Deleted items";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Удалённые предметы";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Deleted");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		//HIDDEN
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+	}
+
+
+
+
+
+
+
+
+
+
+	//SETTLERS BASES
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/SuperChest");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\\nNew item bases";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\\nНовые базы предметов";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "settlers folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "штекщвгсув"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Settlers league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base family");
+		jc_filter.add_new_banned_value("Ritual");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SETTLERS RUNES
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Rune");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\\nRunes";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\\nРуны";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "settlers folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "штекщвгсув"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Settlers league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Rune");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SETTLERS CHISELS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/SuperChisel");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\\nChisels";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\\nРезцы";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "settlers folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "штекщвгсув"(introduced)
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Settlers league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Chisel");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+	//SETTLERS CHISELS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Gold");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\\nSpecial currency";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\\nОсобая валюта";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "settlers folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Stackable currency");
+		jc_filter.add_new_suitable_value("Gold");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "штекщвгсув"(introduced)
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Settlers league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter.add_new_banned_value("Rune");
+		jc_filter.add_new_banned_value("Chisel");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SETTLERS DIVINATIONS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Card");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\\nNew divinations";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\\nНовые гадалки";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "settlers folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Divination cards");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "штекщвгсув"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Settlers league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+
+	register_filter_rule_folder("settlers folder", "Game item", "rule_folder_settlers", "buttons/pattern_folder_settlers");
+
+	//DIVINATIONS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/card");
+		//jc_filter_rule->category_id = 1;
+		jc_filter_rule->named_id = "";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Divinations";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Гадальные карты";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Divination cards");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//register_filter_rule_folder("divinations folder", "Game item", "rule_folder_divinations", "buttons/pattern_folder_divinations");
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//CURRENCY
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Chaos_Orb_inventory_icon");
+		//jc_filter_rule->category_id = 2;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Currency";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Валюта";
+		jc_filter_rule->tag = "Game item";
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Basic currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//INCUBATORS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Incubators";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Инкубаторы";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Incubators");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//OILS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Opalescent_Oil");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Oils";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Масла";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Oil item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//DELIRIUM ORBS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/DeliriumOrb");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Delirium orbs";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Сферы делириума";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Delirium orb");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+	//register_filter_rule_folder("oils folder", "Game item", "rule_folder_oils", "buttons/pattern_folder_oils");
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//CATALYSTS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Abrasive_Catalyst");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Catalysts";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Катализаторы";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Catalyst item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//FOSSILS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Faceted_Fossil_inventory_icon");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "currency folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Fossils";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ископаемые";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Delve fossil");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//OMENS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Omen");
+		//jc_filter_rule->category_id = 7;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Omens";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Предсказания";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "currency folder";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by worth
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Omen");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	register_filter_rule_folder("currency folder", "Game item", "rule_folder_currency", "buttons/pattern_folder_basic_currencies");
+
+
+	//BOSS PASS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/cosmic_fragment");
+		//jc_filter_rule->category_id = 2;
+		jc_filter_rule->named_id = "map fragments folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Boss set";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Проходка боссов";
+		jc_filter_rule->tag = "Game item";
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Boss pass");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SPECIAL FRAGMENTS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Gift-to-the-Goddess");
+		//jc_filter_rule->category_id = 2;
+		jc_filter_rule->named_id = "map fragments folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Special fragments";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Особые проходки";
+		jc_filter_rule->tag = "Game item";
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Special fragment");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SCARABS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Winged_Scarab");
+		//jc_filter_rule->category_id = 2;
+		jc_filter_rule->named_id = "map fragments folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Scarabs";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Скарабеи";
+		jc_filter_rule->tag = "Game item";
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Scarab item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		// 
+		//filter by class "scarabs"
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("scarab tier");
+		jc_filter.add_new_suitable_value("Basic", ELocalisationText::get_localisation_by_key("scarab_tier_basic"));
+		jc_filter.add_new_suitable_value("Bonus", ELocalisationText::get_localisation_by_key("scarab_tier_bonus"));
+		jc_filter.add_new_suitable_value("Influencing", ELocalisationText::get_localisation_by_key("scarab_tier_influenced"));
+		jc_filter.add_new_suitable_value("Horned", ELocalisationText::get_localisation_by_key("scarab_tier_horned"));
+		jc_filter.add_new_suitable_value("Special", ELocalisationText::get_localisation_by_key("scarab_tier_Special"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//filter by worth
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	register_filter_rule_folder("map fragments folder", "Game item", "rule_folder_map_fragments", "buttons/pattern_folder_map_fragments");
+
+	//HEIST TOOL
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Mask");
+		//jc_filter_rule->category_id = 3;
+		jc_filter_rule->named_id = "heist tool folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist tools";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Инструменты кражи";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.can_be_configured = true;
+		jc_filter.add_new_suitable_value("Heist Cloaks", ELocalisationText::get_localisation_by_key("tag_heist_cloaks"));
+		jc_filter.add_new_suitable_value("Heist Gear", ELocalisationText::get_localisation_by_key("tag_heist_gear"));
+		jc_filter.add_new_suitable_value("Heist Brooches", ELocalisationText::get_localisation_by_key("tag_heist_brooches"));
+		jc_filter.add_new_suitable_value("Heist Tools", ELocalisationText::get_localisation_by_key("tag_heist_tool"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		// //filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("heist level");
+		jc_filter.can_be_configured = true;
+		jc_filter.add_new_suitable_value("2", ELocalisationText::get_localisation_by_key("tag_heist_level_2"));
+		jc_filter.add_new_suitable_value("3", ELocalisationText::get_localisation_by_key("tag_heist_level_3"));
+		jc_filter.add_new_suitable_value("4", ELocalisationText::get_localisation_by_key("tag_heist_level_4"));
+		jc_filter.add_new_suitable_value("5", ELocalisationText::get_localisation_by_key("tag_heist_level_5"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+
+
+
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//HEIST TARGET
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RoguesMarker");
+		//jc_filter_rule->category_id = 3;
+		jc_filter_rule->named_id = "heist tool folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist target";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Цель кражи";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("heist price");
+		jc_filter.add_new_suitable_value("Low", ELocalisationText::get_localisation_by_key("tag_price_low"));			jc_filter.set_text_color(0.6f, 0.55f, 0.5f, 1.0f);
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_price_moderate"));		jc_filter.set_text_color(0.5f, 1.0f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("High", ELocalisationText::get_localisation_by_key("tag_price_high"));			jc_filter.set_text_color(0.5f, 0.7f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Precious", ELocalisationText::get_localisation_by_key("tag_price_precious"));		jc_filter.set_text_color(0.7f, 0.5f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Priceless", ELocalisationText::get_localisation_by_key("tag_price_priceless"));		jc_filter.set_text_color(1.0f, 0.8f, 0.5f, 1.0f);
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+
+
+
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	register_filter_rule_folder("heist tool folder", "Game item", "rule_folder_heist_items", "buttons/pattern_folder_heist_items");
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Items bases
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Steel_Ring_inventory_icon");
+		//jc_filter_rule->category_id = 5;
+		jc_filter_rule->named_id = "item bases folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Item bases";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Базы предметов";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("Base tier");
+		jc_filter.add_new_suitable_value("Acceptable", ELocalisationText::get_localisation_by_key("tag_tier_acceptable"));		jc_filter.set_text_color(0.60f, 0.65f, 0.70f, 1.0f);
+		jc_filter.add_new_suitable_value("Good", ELocalisationText::get_localisation_by_key("tag_tier_good"));					jc_filter.set_text_color(0.60f, 1.00f, 0.70f, 1.0f);
+		jc_filter.add_new_suitable_value("Best", ELocalisationText::get_localisation_by_key("tag_tier_great"));				jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
+		jc_filter.add_new_suitable_value("Uber", ELocalisationText::get_localisation_by_key("tag_tier_uber"));					jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
+
+		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any"));						jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("base family");
+		jc_filter.add_new_suitable_value("Basic", ELocalisationText::get_localisation_by_key("tag_tier_basic"));
+		jc_filter.add_new_suitable_value("Ritual", ELocalisationText::get_localisation_by_key("tag_tier_ritual"));
+		jc_filter.add_new_suitable_value("Heist", ELocalisationText::get_localisation_by_key("tag_tier_heist"));
+		jc_filter.add_new_suitable_value("Breach", ELocalisationText::get_localisation_by_key("tag_tier_breach"));
+		jc_filter.add_new_suitable_value("Runic", ELocalisationText::get_localisation_by_key("tag_tier_runic"));
+		jc_filter.add_new_suitable_value("Boss", ELocalisationText::get_localisation_by_key("tag_tier_boss"));
+
+		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any"));										jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+
+
+
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("base class");
+		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_force_field();
+
+
+
+		jc_filter.add_new_suitable_value("Two Hand Axes", ELocalisationText::get_localisation_by_key("tag_two_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Two Hand Swords", ELocalisationText::get_localisation_by_key("tag_two_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Two Hand Maces", ELocalisationText::get_localisation_by_key("tag_two_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Warstaves", ELocalisationText::get_localisation_by_key("tag_warstaves"));					jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Bows", ELocalisationText::get_localisation_by_key("tag_bows"));							jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Rings", ELocalisationText::get_localisation_by_key("tag_rings"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_new_suitable_value("Amulets", ELocalisationText::get_localisation_by_key("tag_amulets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_new_suitable_value("Belts", ELocalisationText::get_localisation_by_key("tag_belts"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("One Hand Axes", ELocalisationText::get_localisation_by_key("tag_one_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("One Hand Swords", ELocalisationText::get_localisation_by_key("tag_one_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("One Hand Maces", ELocalisationText::get_localisation_by_key("tag_one_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_daggers"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Claws", ELocalisationText::get_localisation_by_key("tag_claws"));				jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Sceptres", ELocalisationText::get_localisation_by_key("tag_sceptres"));					jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Wands", ELocalisationText::get_localisation_by_key("tag_wands"));							jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_rune_daggers"));				jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Staves", ELocalisationText::get_localisation_by_key("tag_staves"));						jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Quivers", ELocalisationText::get_localisation_by_key("tag_quivers"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		//DELETED
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_banned_value("Deleted");
+		jc_filter.add_new_banned_value("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////UNIQUES valuable
+	//{
+	//	jc_filter_rule = new EFilterRule();
+	//	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+	//	jc_filter_rule->category_id = 5;
+	//	jc_filter_rule->named_id = "item bases folder";
+
+	//	//jc_filter_rule->localisation_text = new ELocalisationText();
+	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful uniques";
+	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ценные уники";
+	//	jc_filter_rule->tag = "Game item";
+
+
+
+	//	//filter "item tag" by 
+	//	jc_filter = DataEntityTagFilter();
+	//	jc_filter.can_be_configured = false;
+	//	jc_filter.target_tag.set_ID_by_string("item tag");
+	//	jc_filter.add_new_suitable_value("Good base for unique");
+	//	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//	//
+
+	//	//
+	//	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	//	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//}
+	// 
+	//UNIQUES world drop
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_boss_drop");
+		//jc_filter_rule->category_id = 5;
+		jc_filter_rule->named_id = "item bases folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nBoss drop";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nдроп c Боссов";
+		jc_filter_rule->tag = "Game item";
+
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("Worth: boss drop");
+		jc_filter.add_new_suitable_value_with_color("Trash", ELocalisationText::get_localisation_by_key("tag_trash"), 0.60f, 0.60f, 0.60f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Common", ELocalisationText::get_localisation_by_key("tag_common"), 0.80f, 0.80f, 0.80f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"), 0.85f, 1.00f, 0.85f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Rare", ELocalisationText::get_localisation_by_key("tag_rare"), 0.85f, 0.90f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"), 0.90f, 0.85f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"), 1.00f, 0.90f, 0.60f, 1.00f);
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//UNIQUES world drop
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_world_drop");
+		//jc_filter_rule->category_id = 5;
+		jc_filter_rule->named_id = "item bases folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nworld drop";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nглобальный дроп";
+		jc_filter_rule->tag = "Game item";
+
+
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("Worth: world drop");
+		jc_filter.add_new_suitable_value_with_color("Trash", ELocalisationText::get_localisation_by_key("tag_trash"), 0.60f, 0.60f, 0.60f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Common", ELocalisationText::get_localisation_by_key("tag_common"), 0.80f, 0.80f, 0.80f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"), 0.85f, 1.00f, 0.85f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Rare", ELocalisationText::get_localisation_by_key("tag_rare"), 0.85f, 0.90f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"), 0.90f, 0.85f, 1.00f, 1.00f);
+		jc_filter.add_new_suitable_value_with_color("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"), 1.00f, 0.90f, 0.60f, 1.00f);
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+
+	register_filter_rule_folder("item bases folder", "Game item", "rule_folder_bases_folder", "buttons/pattern_folder_equip");
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Heist league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RoguesMarker");
+		//jc_filter_rule->category_id = 6;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist league";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Кража'";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = false;
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("League: Heist");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Ritual league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RitualRune");
+		//jc_filter_rule->category_id = 6;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "League: Ritual";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига: Ритуал";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("League: Ritual");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Scourge league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/HellscapePaleBoss");
+		//jc_filter_rule->category_id = 6;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Scourge league";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Нашествие'";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Scourge league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Archnemesis league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Archnemesis_league");
+		//jc_filter_rule->category_id = 6;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Archnemesis league";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Возмездие'";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Archnemesis league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Kalandra league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/LakeStampingDevice");
+		//jc_filter_rule->category_id = 6;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Kalandra league";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Каландра'";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Kalandra league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Forbidden sanctum league
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Sanctum_league");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "leagues folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Forbidden Sanctum league";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Запретное святилище'";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Introduced: Forbidden Sanctum league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	register_filter_rule_folder("leagues folder", "Game item", "rule_folder_leagues", "buttons/pattern_folder_leagues");
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Awakened gems
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
+		//jc_filter_rule->category_id = 7;
+		jc_filter_rule->named_id = "awakened gems folder";
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Awakened gems";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Пробуждённые камни";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("item tag");
+		jc_filter.add_new_suitable_value("Awakened gem");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("worth");
+		jc_filter.can_be_configured = true;
+		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
+		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
+		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
+		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
+		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+	//register_filter_rule_folder("awakened gems folder", "Game item", "rule_folder_awakened_gems", "buttons/pattern_folder_gems");
+
+
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			EXPLICIT SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+	//ALL EXPLICITS
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		//jc_filter_rule->category_id = 0;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All explicits";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все атрибуты";
+		jc_filter_rule->tag = "Explicit";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Explicit");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//VEILS
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/veiled");
+		//jc_filter_rule->category_id = 1;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Veiled attributes";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Завуалированные свойства";
+		jc_filter_rule->tag = "Explicit";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Explicit");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("explicit tag");
+		jc_filter.add_new_suitable_value("Undefined veil");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//INCURSION
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/incursion");
+		//jc_filter_rule->category_id = 1;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Incursion";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Вмешательство";
+		jc_filter_rule->tag = "Explicit";
+
+		//filter by game item
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Explicit");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("explicit tag");
+		jc_filter.add_new_suitable_value("Incursion");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+	//
+	//INCURSION
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/essence_explicit");
+		//jc_filter_rule->category_id = 1;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Special";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Особые";
+		jc_filter_rule->tag = "Explicit";
+
+		//filter by game item
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Explicit");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("explicit tag");
+		jc_filter.add_new_suitable_value("Other");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+	//
+
+	//T1 BOW
+	////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Harbinger_Bow_inventory_icon");
+		//jc_filter_rule->category_id = 2;
+
+		//jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful attributes";
+		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Полезные атрибуты";
+		jc_filter_rule->tag = "Explicit";
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Explicit");
+		jc_filter.can_be_configured = false;
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("tier");
+		jc_filter.can_be_configured = true;
+		jc_filter.add_new_suitable_value("1");
+		jc_filter.add_new_suitable_value("2");
+		jc_filter.add_new_suitable_value("3");
+		jc_filter.add_new_suitable_value("4");
+		jc_filter.add_new_suitable_value("5");
+		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any_tier"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		//filter by game item
+		jc_filter = DataEntityTagFilter();
+		jc_filter.can_be_configured = true;
+		jc_filter.target_tag.set_ID_by_string("attribute tag");
+		//jc_filter.add_new_suitable_value("damage", ELocalisationText::get_localisation_by_key("tag_damage"));
+		//jc_filter.add_new_suitable_value("resource", ELocalisationText::get_localisation_by_key("tag_resource"));
+		//jc_filter.add_new_suitable_value("mana",				ELocalisationText::get_localisation_by_key("tag_mana"));
+
+		jc_filter.add_new_suitable_value("attack", ELocalisationText::get_localisation_by_key("tag_attack"));						jc_filter.set_text_color(1.00f, 0.50f, 0.25f, 1.0f);
+		jc_filter.add_new_suitable_value("caster", ELocalisationText::get_localisation_by_key("tag_caster"));						jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
+		jc_filter.add_force_field();
+
+
+		jc_filter.add_new_suitable_value("elemental", ELocalisationText::get_localisation_by_key("tag_elemental"));					jc_filter.set_text_color(1.00f, 0.90f, 0.80f, 1.0f);
+		jc_filter.add_new_suitable_value("physical", ELocalisationText::get_localisation_by_key("tag_physical"));					jc_filter.set_text_color(1.00f, 0.50f, 0.25f, 1.0f);
+		jc_filter.add_new_suitable_value("fire", ELocalisationText::get_localisation_by_key("tag_fire"));							jc_filter.set_text_color(1.00f, 0.75f, 0.50f, 1.0f);
+		jc_filter.add_new_suitable_value("cold", ELocalisationText::get_localisation_by_key("tag_cold"));							jc_filter.set_text_color(0.25f, 0.75f, 1.00f, 1.0f);
+		jc_filter.add_new_suitable_value("lightning", ELocalisationText::get_localisation_by_key("tag_lightning"));					jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
+		jc_filter.add_new_suitable_value("chaos", ELocalisationText::get_localisation_by_key("tag_chaos"));							jc_filter.set_text_color(1.00f, 1.00f, 0.00f, 1.0f);
+		jc_filter.add_new_suitable_value("defences", ELocalisationText::get_localisation_by_key("tag_defence"));					jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
+
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("attribute", ELocalisationText::get_localisation_by_key("tag_attribute"));
+		jc_filter.add_new_suitable_value("speed", ELocalisationText::get_localisation_by_key("tag_speed"));							jc_filter.set_text_color(0.25f, 1.00f, 0.50f, 1.0f);
+		jc_filter.add_new_suitable_value("critical", ELocalisationText::get_localisation_by_key("tag_critical"));					jc_filter.set_text_color(0.25f, 0.50f, 1.00f, 1.0f);
+		jc_filter.add_new_suitable_value("resistance", ELocalisationText::get_localisation_by_key("tag_resistance"));
+		jc_filter.add_new_suitable_value("minion", ELocalisationText::get_localisation_by_key("tag_minions"));						jc_filter.set_text_color(0.00f, 0.75f, 0.25f, 1.0f);
+		jc_filter.add_new_suitable_value("gem", ELocalisationText::get_localisation_by_key("tag_gem"));
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("suitable class");
+		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+		jc_filter.add_force_field();
+
+
+
+		jc_filter.add_new_suitable_value("Two Hand Axes", ELocalisationText::get_localisation_by_key("tag_two_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Two Hand Swords", ELocalisationText::get_localisation_by_key("tag_two_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Two Hand Maces", ELocalisationText::get_localisation_by_key("tag_two_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Warstaves", ELocalisationText::get_localisation_by_key("tag_warstaves"));					jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Bows", ELocalisationText::get_localisation_by_key("tag_bows"));							jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Rings", ELocalisationText::get_localisation_by_key("tag_rings"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_new_suitable_value("Amulets", ELocalisationText::get_localisation_by_key("tag_amulets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_new_suitable_value("Belts", ELocalisationText::get_localisation_by_key("tag_belts"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("One Hand Axes", ELocalisationText::get_localisation_by_key("tag_one_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("One Hand Swords", ELocalisationText::get_localisation_by_key("tag_one_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("One Hand Maces", ELocalisationText::get_localisation_by_key("tag_one_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_daggers"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Claws", ELocalisationText::get_localisation_by_key("tag_claws"));				jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Sceptres", ELocalisationText::get_localisation_by_key("tag_sceptres"));					jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Wands", ELocalisationText::get_localisation_by_key("tag_wands"));							jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_rune_daggers"));				jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_new_suitable_value("Staves", ELocalisationText::get_localisation_by_key("tag_staves"));						jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
+		jc_filter.add_force_field();
+
+		jc_filter.add_new_suitable_value("Quivers", ELocalisationText::get_localisation_by_key("tag_quivers"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
+		jc_filter.add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
+		jc_filter.add_force_field();
+
+
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+
+
+
+
+
+
+
+}*/
+
+void EWindowMain::register_default_filter_rules()
 {
 	EFilterRule*
 		jc_filter_rule = nullptr;
@@ -12810,2042 +14889,375 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
 	}
+}
 
+void EWindowMain::export_filter_rules()
+{
+	std::ofstream writabro;
 
+	std::string buffer = "";
 
+	writabro.open("exported_data_entity_filters.txt");
 
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//FILTER RULE
+	for (EFilterRule* filter_rule : EFilterRule::registered_filter_rules_for_list)
 	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("undefined_item");
-		jc_filter_rule->category_id = 0;
-		jc_filter_rule->always_show = true;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Filter rule";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Правило фильтрации";
-		jc_filter_rule->tag = "Filter rule";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			CLASS SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//ALL CLASSES
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-		jc_filter_rule->category_id = 0;
-
-		////jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All classes";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все классы";
-		jc_filter_rule->tag = "Base Class";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Base Class");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-	//EQUIP
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Wyrmscale_Boots_inventory_icon");
-		jc_filter_rule->category_id = 0;
-
-		////jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Equipable";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Экипировка";
-		jc_filter_rule->tag = "Base Class";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Base Class");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("name EN");
-		jc_filter.add_new_suitable_value("Helmets");
-		jc_filter.add_new_suitable_value("Gloves");
-		jc_filter.add_new_suitable_value("Boots");
-
-		jc_filter.add_new_suitable_value("Body Armours");
-
-		jc_filter.add_new_suitable_value("Two Hand Axes");
-		jc_filter.add_new_suitable_value("Two Hand Swords");
-		jc_filter.add_new_suitable_value("Two Hand Maces");
-
-		jc_filter.add_new_suitable_value("Staves");
-		jc_filter.add_new_suitable_value("Warstaves");
-
-		jc_filter.add_new_suitable_value("Daggers");
-		jc_filter.add_new_suitable_value("Rune Daggers");
-		jc_filter.add_new_suitable_value("Sceptres");
-
-		jc_filter.add_new_suitable_value("One Hand Maces");
-		jc_filter.add_new_suitable_value("One Hand Axes");
-		jc_filter.add_new_suitable_value("One Hand Swords");
-		jc_filter.add_new_suitable_value("Claws");
-		jc_filter.add_new_suitable_value("Wands");
-
-		jc_filter.add_new_suitable_value("Bows");
-		jc_filter.add_new_suitable_value("Quivers");
-
-		jc_filter.add_new_suitable_value("Shields");
-
-		jc_filter.add_new_suitable_value("Rings");
-		jc_filter.add_new_suitable_value("Amulets");
-		jc_filter.add_new_suitable_value("Belts");
-
-		jc_filter.add_new_suitable_value("Fishing Rods");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	// <cost list>
-	// trash
-	// common
-	// moderate
-	// rare
-	// expensive
-	// very expensive
-
-	// // // BUTTON LIST // // //
-
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			INFLUENCES SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//ALL INFLUENCE
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-		jc_filter_rule->category_id = 0;
-
-		////jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All influences";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все влияния";
-		jc_filter_rule->tag = "Influence";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Influence");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			ENCHANTMENTS SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//ALL ENCHANTMENTS
-
-	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-	jc_filter_rule->category_id = 0;
-
-	//jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All enchantments";
-	jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все зачарования";
-	jc_filter_rule->tag = "Enchantment";
-
-	//filter by game item
-	jc_filter = DataEntityTagFilter();
-	jc_filter.target_tag.set_ID_by_string("data type");
-	jc_filter.add_new_suitable_value("Enchantment");
-	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//
-
-	//DELETED
-	jc_filter = DataEntityTagFilter();
-	jc_filter.target_tag.set_ID_by_string("item tag");
-	jc_filter.add_new_banned_value("Deleted");
-	jc_filter.add_new_banned_value("Hidden item");
-	jc_filter_rule->banned_tag_list.push_back(jc_filter);
-	//
-	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			CLUSTER PASSIVES SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//ALL ENCHANTMENTS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All cluster passives";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все пассивки кластера";
-		jc_filter_rule->tag = "Cluster passive";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Cluster passive");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-
-
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			ITEMS SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-	
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//ALL ITEMS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All items";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все предметы";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//DELETED
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_remove_filter_block");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Deleted items";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Удалённые предметы";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Deleted");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		//HIDDEN
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-	}
-
-
-
-
-
-	
-	
-	
-	
-	
-	//SETTLERS BASES
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/SuperChest");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\nNew item bases";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\nНовые базы предметов";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "settlers folder";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "штекщвгсув"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Settlers league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		writabro << "REGISTER_NEW_FILTER_RULE";
+		writabro << std::endl;
+
+		writabro << "name_EN"		<< '\t' << '"' << filter_rule->localisation_text.localisations[NSW_localisation_EN]	<< '"' << std::endl;
+		writabro << "name_RU"		<< '\t' << '"' << filter_rule->localisation_text.localisations[NSW_localisation_RU]	<< '"' << std::endl;
+		writabro << "icon"			<< '\t' << '"' << filter_rule->icon_texture->get_full_path()						<< '"' << std::endl;
 		
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base family");
-		jc_filter.add_new_banned_value("Ritual");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		if (filter_rule->is_folder)
+		{
+			writabro << "is_folder" << std::endl;
+		}
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	
-	//SETTLERS RUNES
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Rune");
-		jc_filter_rule->category_id = 0;
+		if (filter_rule->always_show)
+		{
+			writabro << "always_show" << std::endl;
+		}
 
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\Runes";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\nРуны";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "settlers folder";
+		writabro << std::endl;
 
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+		if (filter_rule->focused_by_data_type != "")
+		{ writabro << "focused_to" << '\t' << '"' << filter_rule->focused_by_data_type << '"' << std::endl; }
 
-		//filter by class "штекщвгсув"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Settlers league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Rune");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	
-	//SETTLERS CHISELS
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/SuperChisel");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\nChisels";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\nРезцы";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "settlers folder";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "штекщвгсув"(introduced)
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Settlers league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Chisel");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-	//SETTLERS CHISELS
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Gold");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\nSpecial currency";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\nОсобая валюта";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "settlers folder";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Stackable currency");
-		jc_filter.add_new_suitable_value("Gold");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "штекщвгсув"(introduced)
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Settlers league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter.add_new_banned_value("Rune");
-		jc_filter.add_new_banned_value("Chisel");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	
-	//SETTLERS DIVINATIONS
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Card");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Settlers:\nNew divinations";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Settlers:\nНовые гадалки";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "settlers folder";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Divination cards");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "штекщвгсув"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Settlers league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-
-
-	register_filter_rule_folder("settlers folder", "Game item", "rule_folder_settlers", "buttons/pattern_folder_settlers");
-	
-	//DIVINATIONS
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/card");
-		jc_filter_rule->category_id = 1;
-		jc_filter_rule->named_id = "";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Divinations";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Гадальные карты";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Divination cards");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
+		if (filter_rule->tag != "")
+		{writabro << "tag"			<< '\t' << '"' << filter_rule->tag << '"' << std::endl;}
 		
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
+		if (filter_rule->named_id != "")
+		{writabro << "named_id" << '\t' << '"' << filter_rule->named_id << '"' << std::endl;}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//register_filter_rule_folder("divinations folder", "Game item", "rule_folder_divinations", "buttons/pattern_folder_divinations");
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//CURRENCY
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Chaos_Orb_inventory_icon");
-		jc_filter_rule->category_id = 2;
-		jc_filter_rule->named_id = "currency folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Currency";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Валюта";
-		jc_filter_rule->tag = "Game item";
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Stackable currency");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Basic currency");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//INCUBATORS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "currency folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Incubators";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Инкубаторы";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Incubators");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//OILS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Opalescent_Oil");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "currency folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Oils";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Масла";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Oil item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//DELIRIUM ORBS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/DeliriumOrb");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "currency folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Delirium orbs";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Сферы делириума";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Delirium orb");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
+		writabro << "min_y"			<< '\t' << '"' << Helper::float_to_string(filter_rule->min_y_size)					<< '"' << std::endl;
 
 
 
-	//register_filter_rule_folder("oils folder", "Game item", "rule_folder_oils", "buttons/pattern_folder_oils");
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//CATALYSTS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Abrasive_Catalyst");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "currency folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Catalysts";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Катализаторы";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Catalyst item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
 		
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
 
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+		for (DataEntityTagFilter tag : filter_rule->required_tag_list)
+		{
+			writabro << std::endl << "REGISTER_NEW_FILTER_TAG" << std::endl;
+			writabro << "target_tag" << '\t' << '"' << tag.target_tag.string_value << '"' << std::endl;
+
+			if (!tag.can_be_configured) { writabro << "tag_cannot_be_configured" << std::endl; }
+			if (tag.merge_with_prev) { writabro << "tag_merge_with_prev" << std::endl; }
+
+			for (DETF_SuitableVariant suitable_DETF : tag.suitable_values)
+			{
+				writabro << std::endl << "REGISTER_NEW_SUITABLE_VALUES" << std::endl;
+
+				if (suitable_DETF.target_value_key.string_value != "")
+				{
+					writabro << "DETF_value_key" << '\t' << '"' << suitable_DETF.target_value_key.string_value << '"' << std::endl;
+				}
+
+				if (suitable_DETF.localised_attribute_name.localisations[NSW_localisation_EN] != "")
+				{
+					writabro << "DETF_localised_attribute_name_EN" << '\t' << '"' << suitable_DETF.localised_attribute_name.localisations[NSW_localisation_EN] << '"' << std::endl;
+				}
+
+				if (suitable_DETF.localised_attribute_name.localisations[NSW_localisation_RU] != "")
+				{
+					writabro << "DETF_localised_attribute_name_RU" << '\t' << '"' << suitable_DETF.localised_attribute_name.localisations[NSW_localisation_RU] << '"' << std::endl;
+				}
+
+				writabro << "DETF_color"
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.r * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.g * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.b * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.a * 255.0f));
+				writabro << std::endl;
+				//if (!suitable_DETF.DETF_is_active)	{ buffer <<= "DETF_inactive" << std::endl; }
+				//if (suitable_DETF.always_suitable)	{ buffer <<= "DETF_inactive" << std::endl; }
+
+			}
+
+			for (DETF_SuitableVariant banned_DETF : tag.banned_tags)
+			{
+				writabro << std::endl << "REGISTER_NEW_BANNED_VALUES" << std::endl;
+
+				if (banned_DETF.target_value_key.string_value != "")
+				{
+					writabro << "DETF_value_key" << '\t' << '"' << banned_DETF.target_value_key.string_value << '"' << std::endl;
+				}
+
+				if (banned_DETF.localised_attribute_name.localisations[NSW_localisation_EN] != "")
+				{
+					writabro << "DETF_localised_attribute_name_EN" << '\t' << '"' << banned_DETF.localised_attribute_name.localisations[NSW_localisation_EN] << '"' << std::endl;
+				}
+
+				if (banned_DETF.localised_attribute_name.localisations[NSW_localisation_RU] != "")
+				{
+					writabro << "DETF_localised_attribute_name_RU" << '\t' << '"' << banned_DETF.localised_attribute_name.localisations[NSW_localisation_RU] << '"' << std::endl;
+				}
+
+				writabro << "DETF_color"
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.r * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.g * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.b * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.a * 255.0f));
+				writabro << std::endl;
+				//if (!suitable_DETF.DETF_is_active)	{ buffer += "DETF_inactive" + '\r' + '\n'; }
+				//if (suitable_DETF.always_suitable)	{ buffer += "DETF_inactive" + '\r' + '\n'; }
+
+			}
+
+		}
+
+		for (DataEntityTagFilter tag : filter_rule->banned_tag_list)
+		{
+			writabro << std::endl << "REGISTER_NEW_BANNED_FILTER_TAG" << std::endl;
+			writabro << "target_tag" << '\t' << '"' << tag.target_tag.string_value << '"' << std::endl;
+
+			if (!tag.can_be_configured) { writabro << "tag_cannot_be_configured" << std::endl; }
+			if (tag.merge_with_prev) { writabro << "tag_merge_with_prev" << std::endl; }
+
+			for (DETF_SuitableVariant suitable_DETF : tag.suitable_values)
+			{
+				writabro << std::endl << "REGISTER_NEW_SUITABLE_VALUES" << std::endl;
+
+				if (suitable_DETF.target_value_key.string_value != "")
+				{
+					writabro << "DETF_value_key" << '\t' << '"' << suitable_DETF.target_value_key.string_value << '"' << std::endl;
+				}
+
+				if (suitable_DETF.localised_attribute_name.localisations[NSW_localisation_EN] != "")
+				{
+					writabro << "DETF_localised_attribute_name_EN" << '\t' << '"' << suitable_DETF.localised_attribute_name.localisations[NSW_localisation_EN] << '"' << std::endl;
+				}
+
+				if (suitable_DETF.localised_attribute_name.localisations[NSW_localisation_RU] != "")
+				{
+					writabro << "DETF_localised_attribute_name_RU" << '\t' << '"' << suitable_DETF.localised_attribute_name.localisations[NSW_localisation_RU] << '"' << std::endl;
+				}
+
+				writabro << "DETF_color"
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.r * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.g * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.b * 255.0f))
+					<< '\t' << std::to_string((int)round(suitable_DETF.text_color.a * 255.0f));
+				writabro << std::endl;
+				//if (!suitable_DETF.DETF_is_active)	{ buffer <<= "DETF_inactive" << std::endl; }
+				//if (suitable_DETF.always_suitable)	{ buffer <<= "DETF_inactive" << std::endl; }
+
+			}
+
+			for (DETF_SuitableVariant banned_DETF : tag.banned_tags)
+			{
+				writabro << std::endl << "REGISTER_NEW_BANNED_VALUES" << std::endl;
+
+				if (banned_DETF.target_value_key.string_value != "")
+				{
+					writabro << "DETF_value_key" << '\t' << '"' << banned_DETF.target_value_key.string_value << '"' << std::endl;
+				}
+
+				if (banned_DETF.localised_attribute_name.localisations[NSW_localisation_EN] != "")
+				{
+					writabro << "DETF_localised_attribute_name_EN" << '\t' << '"' << banned_DETF.localised_attribute_name.localisations[NSW_localisation_EN] << '"' << std::endl;
+				}
+
+				if (banned_DETF.localised_attribute_name.localisations[NSW_localisation_RU] != "")
+				{
+					writabro << "DETF_localised_attribute_name_RU" << '\t' << '"' << banned_DETF.localised_attribute_name.localisations[NSW_localisation_RU] << '"' << std::endl;
+				}
+
+				writabro << "DETF_color"
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.r * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.g * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.b * 255.0f))
+					<< '\t' << std::to_string((int)round(banned_DETF.text_color.a * 255.0f));
+				writabro << std::endl;
+				//if (!suitable_DETF.DETF_is_active)	{ buffer += "DETF_inactive" + '\r' + '\n'; }
+				//if (suitable_DETF.always_suitable)	{ buffer += "DETF_inactive" + '\r' + '\n'; }
+
+			}
+
+		}
+
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
+		writabro << std::endl;
 	}
-	
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//FOSSILS
+
+	writabro.close();
+}
+
+void EWindowMain::import_filter_rules(std::string _filename)
+{
+	if (std::filesystem::exists(_filename))
 	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Faceted_Fossil_inventory_icon");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "currency folder";
+		std::ifstream file;
+		std::string str;
 
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Fossils";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ископаемые";
-		jc_filter_rule->tag = "Game item";
+		EFilterRule*
+		jc_filter_rule = nullptr;
 
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+		DataEntityTagFilter*
+		just_created_tag_filter = nullptr;
 
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Delve fossil");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+		DETF_SuitableVariant*
+		just_created_DETF = nullptr;
 
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+		file.open(_filename);
 
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
+		while (std::getline(file, str))
+		{
+			EStringUtils::split_line_to_array(str);
 
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+			if (EStringUtils::string_array[0] == "REGISTER_NEW_FILTER_RULE")
+			{
+
+				
+				jc_filter_rule = new EFilterRule();
+				EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+				
+			}
+			
+			if (jc_filter_rule != nullptr)
+			{
+
+				if (EStringUtils::string_array[0] == "name_EN")
+				{
+					jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "name_RU")
+				{
+					jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "icon")
+				{
+					jc_filter_rule->icon_texture = NS_EGraphicCore::put_texture_to_atlas(EStringUtils::string_array[1], NS_EGraphicCore::default_texture_atlas);
+				}
+				else
+				if (EStringUtils::string_array[0] == "always_show")
+				{
+					jc_filter_rule->always_show = true;
+				}
+				else
+				if (EStringUtils::string_array[0] == "is_folder")
+				{
+					jc_filter_rule->is_folder = true;
+				}
+				else
+				if (EStringUtils::string_array[0] == "focused_to")
+				{
+					jc_filter_rule->focused_by_data_type = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "tag")
+				{
+					jc_filter_rule->tag = EStringUtils::string_array[1];
+					//jc_filter_rule->tag = "Base Class";
+				}else
+				if (EStringUtils::string_array[0] == "named_id")
+				{
+					jc_filter_rule->named_id = EStringUtils::string_array[1];
+					//jc_filter_rule->tag = "Base Class";
+				}
+				else
+				if (EStringUtils::string_array[0] == "min_y")
+				{
+					jc_filter_rule->min_y_size = EStringUtils::safe_convert_string_to_float(EStringUtils::string_array[0], 100.0f, 200.0f);
+				}
+				else
+				if (EStringUtils::string_array[0] == "REGISTER_NEW_FILTER_TAG")
+				{
+					jc_filter_rule->required_tag_list.push_back(DataEntityTagFilter());
+
+					just_created_tag_filter = &(jc_filter_rule->required_tag_list.back());
+				}
+				else
+				if (EStringUtils::string_array[0] == "REGISTER_NEW_BANNED_FILTER_TAG")
+				{
+					jc_filter_rule->banned_tag_list.push_back(DataEntityTagFilter());
+
+					just_created_tag_filter = &(jc_filter_rule->banned_tag_list.back());
+				}
+				else
+				if (EStringUtils::string_array[0] == "target_tag")
+				{
+					just_created_tag_filter->target_tag.set_ID_by_string(EStringUtils::string_array[1]);
+				}
+				else
+				if (EStringUtils::string_array[0] == "tag_cannot_be_configured")
+				{
+					just_created_tag_filter->can_be_configured = false;
+				}
+				else
+				if (EStringUtils::string_array[0] == "tag_merge_with_prev")
+				{
+					just_created_tag_filter->merge_with_prev = true;
+				}
+				else
+				if (EStringUtils::string_array[0] == "REGISTER_NEW_SUITABLE_VALUES")
+				{
+				
+					just_created_tag_filter->suitable_values.push_back(DETF_SuitableVariant());
+					just_created_DETF = &(just_created_tag_filter->suitable_values.back());
+				}
+
+				else
+				if (EStringUtils::string_array[0] == "DETF_value_key")
+				{
+					just_created_DETF->target_value_key.set_ID_by_string(EStringUtils::string_array[1]);
+				}
+				else
+				if (EStringUtils::string_array[0] == "DETF_value_key")
+				{
+					just_created_DETF->target_value_key.set_ID_by_string(EStringUtils::string_array[1]);
+				}
+				else
+				if (EStringUtils::string_array[0] == "DETF_localised_attribute_name_EN")
+				{
+					just_created_DETF->localised_attribute_name.localisations[NSW_localisation_EN] = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "DETF_localised_attribute_name_RU")
+				{
+					just_created_DETF->localised_attribute_name.localisations[NSW_localisation_RU] = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "DETF_color")
+				{
+					just_created_DETF->text_color.r = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, 255) / 255.0f;
+					just_created_DETF->text_color.g = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[2], 0, 255) / 255.0f;
+					just_created_DETF->text_color.b = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[3], 0, 255) / 255.0f;
+					just_created_DETF->text_color.a = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[4], 0, 255) / 255.0f;
+				}
+				else
+				if (EStringUtils::string_array[0] == "REGISTER_NEW_BANNED_VALUES")
+				{
+					just_created_tag_filter->banned_tags.push_back(DETF_SuitableVariant());
+					just_created_DETF = &(just_created_tag_filter->banned_tags.back());
+				}
+
+				
+			}
+
+		}
+
+		file.close();
 	}
-
-	//OMENS
+	else
 	{
-		////////////////////////////////////////////////////////////////////////////////////////////
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Omen");
-		jc_filter_rule->category_id = 7;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Omens";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Предсказания";
-		jc_filter_rule->tag = "Game item";
-		jc_filter_rule->named_id = "currency folder";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.add_new_suitable_value("Stackable currency");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-		//filter by worth
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by class "divination"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Omen");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		EInputCore::logger_simple_error("[import filter rules] file " + _filename + " dont exist!");
 	}
-
-	register_filter_rule_folder("currency folder", "Game item", "rule_folder_currency", "buttons/pattern_folder_basic_currencies");
-
-
-	//BOSS PASS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/cosmic_fragment");
-		jc_filter_rule->category_id = 2;
-		jc_filter_rule->named_id = "map fragments folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Boss set";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Проходка боссов";
-		jc_filter_rule->tag = "Game item";
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Boss pass");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	
-	//SPECIAL FRAGMENTS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Gift-to-the-Goddess");
-		jc_filter_rule->category_id = 2;
-		jc_filter_rule->named_id = "map fragments folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Special fragments";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Особые проходки";
-		jc_filter_rule->tag = "Game item";
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Special fragment");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	
-	//SCARABS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Winged_Scarab");
-		jc_filter_rule->category_id = 2;
-		jc_filter_rule->named_id = "map fragments folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Scarabs";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Скарабеи";
-		jc_filter_rule->tag = "Game item";
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Scarab item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		// 
-		//filter by class "scarabs"
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("scarab tier");
-		jc_filter.add_new_suitable_value("Basic",		ELocalisationText::get_localisation_by_key("scarab_tier_basic"));
-		jc_filter.add_new_suitable_value("Bonus",		ELocalisationText::get_localisation_by_key("scarab_tier_bonus"));
-		jc_filter.add_new_suitable_value("Influencing",	ELocalisationText::get_localisation_by_key("scarab_tier_influenced"));
-		jc_filter.add_new_suitable_value("Horned",		 ELocalisationText::get_localisation_by_key("scarab_tier_horned"));
-		jc_filter.add_new_suitable_value("Special",		ELocalisationText::get_localisation_by_key("scarab_tier_Special"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-		//filter by worth
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	register_filter_rule_folder("map fragments folder", "Game item", "rule_folder_map_fragments", "buttons/pattern_folder_map_fragments");
-
-	//HEIST TOOL
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Mask");
-		jc_filter_rule->category_id = 3;
-		jc_filter_rule->named_id = "heist tool folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist tools";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Инструменты кражи";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("base class");
-		jc_filter.can_be_configured = true;
-		jc_filter.add_new_suitable_value("Heist Cloaks", ELocalisationText::get_localisation_by_key("tag_heist_cloaks"));
-		jc_filter.add_new_suitable_value("Heist Gear", ELocalisationText::get_localisation_by_key("tag_heist_gear"));
-		jc_filter.add_new_suitable_value("Heist Brooches", ELocalisationText::get_localisation_by_key("tag_heist_brooches"));
-		jc_filter.add_new_suitable_value("Heist Tools", ELocalisationText::get_localisation_by_key("tag_heist_tool"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		// //filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("heist level");
-		jc_filter.can_be_configured = true;
-		jc_filter.add_new_suitable_value("2", ELocalisationText::get_localisation_by_key("tag_heist_level_2"));
-		jc_filter.add_new_suitable_value("3", ELocalisationText::get_localisation_by_key("tag_heist_level_3"));
-		jc_filter.add_new_suitable_value("4", ELocalisationText::get_localisation_by_key("tag_heist_level_4"));
-		jc_filter.add_new_suitable_value("5", ELocalisationText::get_localisation_by_key("tag_heist_level_5"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-
-
-
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	//HEIST TARGET
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RoguesMarker");
-		jc_filter_rule->category_id = 3;
-		jc_filter_rule->named_id = "heist tool folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist target";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Цель кражи";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("heist price");
-		jc_filter.add_new_suitable_value("Low", ELocalisationText::get_localisation_by_key("tag_price_low"));			jc_filter.set_text_color(0.6f, 0.55f, 0.5f, 1.0f);
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_price_moderate"));		jc_filter.set_text_color(0.5f, 1.0f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("High", ELocalisationText::get_localisation_by_key("tag_price_high"));			jc_filter.set_text_color(0.5f, 0.7f, 1.0f, 1.0f);
-		jc_filter.add_new_suitable_value("Precious", ELocalisationText::get_localisation_by_key("tag_price_precious"));		jc_filter.set_text_color(0.7f, 0.5f, 1.0f, 1.0f);
-		jc_filter.add_new_suitable_value("Priceless", ELocalisationText::get_localisation_by_key("tag_price_priceless"));		jc_filter.set_text_color(1.0f, 0.8f, 0.5f, 1.0f);
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-
-
-
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	register_filter_rule_folder("heist tool folder", "Game item", "rule_folder_heist_items", "buttons/pattern_folder_heist_items");
-
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Items bases
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Steel_Ring_inventory_icon");
-		jc_filter_rule->category_id = 5;
-		jc_filter_rule->named_id = "item bases folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Item bases";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Базы предметов";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("Base tier");
-		jc_filter.add_new_suitable_value("Acceptable", ELocalisationText::get_localisation_by_key("tag_tier_acceptable"));		jc_filter.set_text_color(0.60f, 0.65f, 0.70f, 1.0f);
-		jc_filter.add_new_suitable_value("Good", ELocalisationText::get_localisation_by_key("tag_tier_good"));					jc_filter.set_text_color(0.60f, 1.00f, 0.70f, 1.0f);
-		jc_filter.add_new_suitable_value("Best", ELocalisationText::get_localisation_by_key("tag_tier_great"));				jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
-		jc_filter.add_new_suitable_value("Uber", ELocalisationText::get_localisation_by_key("tag_tier_uber"));					jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
-
-		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any"));						jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("base family");
-		jc_filter.add_new_suitable_value("Basic", ELocalisationText::get_localisation_by_key("tag_tier_basic"));
-		jc_filter.add_new_suitable_value("Ritual", ELocalisationText::get_localisation_by_key("tag_tier_ritual"));
-		jc_filter.add_new_suitable_value("Heist", ELocalisationText::get_localisation_by_key("tag_tier_heist"));
-		jc_filter.add_new_suitable_value("Breach", ELocalisationText::get_localisation_by_key("tag_tier_breach"));
-		jc_filter.add_new_suitable_value("Runic", ELocalisationText::get_localisation_by_key("tag_tier_runic"));
-		jc_filter.add_new_suitable_value("Boss", ELocalisationText::get_localisation_by_key("tag_tier_boss"));
-
-		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any"));										jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-
-
-
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-			jc_filter.target_tag.set_ID_by_string("base class");
-			jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			jc_filter.add_force_field();
-
-			jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			jc_filter.add_force_field();
-
-
-
-			jc_filter.add_new_suitable_value("Two Hand Axes", ELocalisationText::get_localisation_by_key("tag_two_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Two Hand Swords", ELocalisationText::get_localisation_by_key("tag_two_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Two Hand Maces", ELocalisationText::get_localisation_by_key("tag_two_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Warstaves", ELocalisationText::get_localisation_by_key("tag_warstaves"));					jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Bows", ELocalisationText::get_localisation_by_key("tag_bows"));							jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_force_field();
-
-			jc_filter.add_new_suitable_value("Rings", ELocalisationText::get_localisation_by_key("tag_rings"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-			jc_filter.add_new_suitable_value("Amulets", ELocalisationText::get_localisation_by_key("tag_amulets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-			jc_filter.add_new_suitable_value("Belts", ELocalisationText::get_localisation_by_key("tag_belts"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-			jc_filter.add_force_field();
-
-			jc_filter.add_new_suitable_value("One Hand Axes", ELocalisationText::get_localisation_by_key("tag_one_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("One Hand Swords", ELocalisationText::get_localisation_by_key("tag_one_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("One Hand Maces", ELocalisationText::get_localisation_by_key("tag_one_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_daggers"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Claws", ELocalisationText::get_localisation_by_key("tag_claws"));				jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-			jc_filter.add_force_field();
-
-			jc_filter.add_new_suitable_value("Sceptres", ELocalisationText::get_localisation_by_key("tag_sceptres"));					jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-			jc_filter.add_new_suitable_value("Wands", ELocalisationText::get_localisation_by_key("tag_wands"));							jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-			jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_rune_daggers"));				jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-			jc_filter.add_new_suitable_value("Staves", ELocalisationText::get_localisation_by_key("tag_staves"));						jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-			jc_filter.add_force_field();
-
-			jc_filter.add_new_suitable_value("Quivers", ELocalisationText::get_localisation_by_key("tag_quivers"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
-			jc_filter.add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
-			jc_filter.add_force_field();
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-
-		//DELETED
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_banned_value("Deleted");
-		jc_filter.add_new_banned_value("Hidden item");
-		jc_filter_rule->banned_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////UNIQUES valuable
-	//{
-	//	jc_filter_rule = new EFilterRule();
-	//	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
-	//	jc_filter_rule->category_id = 5;
-	//	jc_filter_rule->named_id = "item bases folder";
-
-	//	//jc_filter_rule->localisation_text = new ELocalisationText();
-	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful uniques";
-	//	jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Ценные уники";
-	//	jc_filter_rule->tag = "Game item";
-
-
-
-	//	//filter "item tag" by 
-	//	jc_filter = DataEntityTagFilter();
-	//	jc_filter.can_be_configured = false;
-	//	jc_filter.target_tag.set_ID_by_string("item tag");
-	//	jc_filter.add_new_suitable_value("Good base for unique");
-	//	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//	//
-
-	//	//
-	//	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-	//	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	//}
-	// 
-	//UNIQUES world drop
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_boss_drop");
-		jc_filter_rule->category_id = 5;
-		jc_filter_rule->named_id = "item bases folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nBoss drop";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nдроп c Боссов";
-		jc_filter_rule->tag = "Game item";
-
-
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("Worth: boss drop");
-		jc_filter.add_new_suitable_value_with_color("Trash", ELocalisationText::get_localisation_by_key("tag_trash"), 0.60f, 0.60f, 0.60f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color("Common", ELocalisationText::get_localisation_by_key("tag_common"), 0.80f, 0.80f, 0.80f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"), 0.85f, 1.00f, 0.85f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color("Rare", ELocalisationText::get_localisation_by_key("tag_rare"), 0.85f, 0.90f, 1.00f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"), 0.90f, 0.85f, 1.00f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"), 1.00f, 0.90f, 0.60f, 1.00f);
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	//UNIQUES world drop
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques_world_drop");
-		jc_filter_rule->category_id = 5;
-		jc_filter_rule->named_id = "item bases folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Uniques:\\nworld drop";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Уники:\\nглобальный дроп";
-		jc_filter_rule->tag = "Game item";
-
-
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string		("Worth: world drop");
-		jc_filter.add_new_suitable_value_with_color	("Trash",			ELocalisationText::get_localisation_by_key("tag_trash"),			0.60f, 0.60f, 0.60f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color	("Common",			ELocalisationText::get_localisation_by_key("tag_common"),			0.80f, 0.80f, 0.80f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color	("Moderate",		ELocalisationText::get_localisation_by_key("tag_moderate"),			0.85f, 1.00f, 0.85f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color	("Rare",			ELocalisationText::get_localisation_by_key("tag_rare"),				0.85f, 0.90f, 1.00f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color	("Expensive",		ELocalisationText::get_localisation_by_key("tag_expensive"),		0.90f, 0.85f, 1.00f, 1.00f);
-		jc_filter.add_new_suitable_value_with_color	("Very expensive",	ELocalisationText::get_localisation_by_key("tag_very_expensive"),	1.00f, 0.90f, 0.60f, 1.00f);
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	
-
-
-	register_filter_rule_folder("item bases folder", "Game item", "rule_folder_bases_folder", "buttons/pattern_folder_equip");
-
-
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Heist league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RoguesMarker");
-		jc_filter_rule->category_id = 6;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Heist league";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Кража'";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = false;
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("League: Heist");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Ritual league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RitualRune");
-		jc_filter_rule->category_id = 6;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "League: Ritual";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига: Ритуал";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("League: Ritual");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Scourge league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/HellscapePaleBoss");
-		jc_filter_rule->category_id = 6;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Scourge league";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Нашествие'";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Scourge league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Archnemesis league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Archnemesis_league");
-		jc_filter_rule->category_id = 6;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Archnemesis league";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Возмездие'";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Archnemesis league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Kalandra league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/LakeStampingDevice");
-		jc_filter_rule->category_id = 6;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Kalandra league";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Каландра'";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Kalandra league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Forbidden sanctum league
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Sanctum_league");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "leagues folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Forbidden Sanctum league";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Лига 'Запретное святилище'";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Introduced: Forbidden Sanctum league");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	register_filter_rule_folder("leagues folder", "Game item", "rule_folder_leagues", "buttons/pattern_folder_leagues");
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Awakened gems
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
-		jc_filter_rule->category_id = 7;
-		jc_filter_rule->named_id = "awakened gems folder";
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Awakened gems";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Пробуждённые камни";
-		jc_filter_rule->tag = "Game item";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("item tag");
-		jc_filter.add_new_suitable_value("Awakened gem");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter "item tag" by 
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("worth");
-		jc_filter.can_be_configured = true;
-		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
-		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
-		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
-		jc_filter.add_new_suitable_value("Expensive", ELocalisationText::get_localisation_by_key("tag_expensive"));
-		jc_filter.add_new_suitable_value("Very expensive", ELocalisationText::get_localisation_by_key("tag_very_expensive"));
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-
-	//register_filter_rule_folder("awakened gems folder", "Game item", "rule_folder_awakened_gems", "buttons/pattern_folder_gems");
-
-
-
-
-
-
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//			EXPLICIT SECTION
-	////////////////////////////////////////////////////////////////////////////////////////////
-
-	//ALL EXPLICITS
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
-		jc_filter_rule->category_id = 0;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "All explicits";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Все атрибуты";
-		jc_filter_rule->tag = "Explicit";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Explicit");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	//VEILS
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/veiled");
-		jc_filter_rule->category_id = 1;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Veiled attributes";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Завуалированные свойства";
-		jc_filter_rule->tag = "Explicit";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Explicit");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("explicit tag");
-		jc_filter.add_new_suitable_value("Undefined veil");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-	//INCURSION
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/incursion");
-		jc_filter_rule->category_id = 1;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Incursion";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Вмешательство";
-		jc_filter_rule->tag = "Explicit";
-
-		//filter by game item
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Explicit");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("explicit tag");
-		jc_filter.add_new_suitable_value("Incursion");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	//
-	//INCURSION
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/essence_explicit");
-		jc_filter_rule->category_id = 1;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Special";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Особые";
-		jc_filter_rule->tag = "Explicit";
-
-		//filter by game item
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Explicit");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("explicit tag");
-		jc_filter.add_new_suitable_value("Other");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-	//
-
-	//T1 BOW
-	////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Harbinger_Bow_inventory_icon");
-		jc_filter_rule->category_id = 2;
-
-		//jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_EN] = "Useful attributes";
-		jc_filter_rule->localisation_text.localisations[NSW_localisation_RU] = "Полезные атрибуты";
-		jc_filter_rule->tag = "Explicit";
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("data type");
-		jc_filter.add_new_suitable_value("Explicit");
-		jc_filter.can_be_configured = false;
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("tier");
-		jc_filter.can_be_configured = true;
-		jc_filter.add_new_suitable_value("1");
-		jc_filter.add_new_suitable_value("2");
-		jc_filter.add_new_suitable_value("3");
-		jc_filter.add_new_suitable_value("4");
-		jc_filter.add_new_suitable_value("5");
-		jc_filter.add_new_suitable_value("", ELocalisationText::get_localisation_by_key("tag_any_tier"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-
-		//filter by game item
-		jc_filter = DataEntityTagFilter();
-		jc_filter.can_be_configured = true;
-		jc_filter.target_tag.set_ID_by_string("attribute tag");
-		//jc_filter.add_new_suitable_value("damage", ELocalisationText::get_localisation_by_key("tag_damage"));
-		//jc_filter.add_new_suitable_value("resource", ELocalisationText::get_localisation_by_key("tag_resource"));
-		//jc_filter.add_new_suitable_value("mana",				ELocalisationText::get_localisation_by_key("tag_mana"));
-
-		jc_filter.add_new_suitable_value("attack", ELocalisationText::get_localisation_by_key("tag_attack"));						jc_filter.set_text_color(1.00f, 0.50f, 0.25f, 1.0f);
-		jc_filter.add_new_suitable_value("caster", ELocalisationText::get_localisation_by_key("tag_caster"));						jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
-		jc_filter.add_force_field();
-
-
-		jc_filter.add_new_suitable_value("elemental", ELocalisationText::get_localisation_by_key("tag_elemental"));					jc_filter.set_text_color(1.00f, 0.90f, 0.80f, 1.0f);
-		jc_filter.add_new_suitable_value("physical", ELocalisationText::get_localisation_by_key("tag_physical"));					jc_filter.set_text_color(1.00f, 0.50f, 0.25f, 1.0f);
-		jc_filter.add_new_suitable_value("fire", ELocalisationText::get_localisation_by_key("tag_fire"));							jc_filter.set_text_color(1.00f, 0.75f, 0.50f, 1.0f);
-		jc_filter.add_new_suitable_value("cold", ELocalisationText::get_localisation_by_key("tag_cold"));							jc_filter.set_text_color(0.25f, 0.75f, 1.00f, 1.0f);
-		jc_filter.add_new_suitable_value("lightning", ELocalisationText::get_localisation_by_key("tag_lightning"));					jc_filter.set_text_color(0.25f, 1.00f, 1.00f, 1.0f);
-		jc_filter.add_new_suitable_value("chaos", ELocalisationText::get_localisation_by_key("tag_chaos"));							jc_filter.set_text_color(1.00f, 1.00f, 0.00f, 1.0f);
-		jc_filter.add_new_suitable_value("defences", ELocalisationText::get_localisation_by_key("tag_defence"));					jc_filter.set_text_color(1.00f, 1.00f, 1.00f, 1.0f);
-
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("attribute", ELocalisationText::get_localisation_by_key("tag_attribute"));
-		jc_filter.add_new_suitable_value("speed", ELocalisationText::get_localisation_by_key("tag_speed"));							jc_filter.set_text_color(0.25f, 1.00f, 0.50f, 1.0f);
-		jc_filter.add_new_suitable_value("critical", ELocalisationText::get_localisation_by_key("tag_critical"));					jc_filter.set_text_color(0.25f, 0.50f, 1.00f, 1.0f);
-		jc_filter.add_new_suitable_value("resistance", ELocalisationText::get_localisation_by_key("tag_resistance"));
-		jc_filter.add_new_suitable_value("minion", ELocalisationText::get_localisation_by_key("tag_minions"));						jc_filter.set_text_color(0.00f, 0.75f, 0.25f, 1.0f);
-		jc_filter.add_new_suitable_value("gem", ELocalisationText::get_localisation_by_key("tag_gem"));
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-
-		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag.set_ID_by_string("suitable class");
-		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));							jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("Body armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));			jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-		jc_filter.add_force_field();
-
-
-
-		jc_filter.add_new_suitable_value("Two Hand Axes", ELocalisationText::get_localisation_by_key("tag_two_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Two Hand Swords", ELocalisationText::get_localisation_by_key("tag_two_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Two Hand Maces", ELocalisationText::get_localisation_by_key("tag_two_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Warstaves", ELocalisationText::get_localisation_by_key("tag_warstaves"));					jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Bows", ELocalisationText::get_localisation_by_key("tag_bows"));							jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("Rings", ELocalisationText::get_localisation_by_key("tag_rings"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-		jc_filter.add_new_suitable_value("Amulets", ELocalisationText::get_localisation_by_key("tag_amulets"));						jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-		jc_filter.add_new_suitable_value("Belts", ELocalisationText::get_localisation_by_key("tag_belts"));							jc_filter.set_text_color(1.0f, 0.9f, 0.5f, 1.0f);
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("One Hand Axes", ELocalisationText::get_localisation_by_key("tag_one_hand_axes"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("One Hand Swords", ELocalisationText::get_localisation_by_key("tag_one_hand_swords"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("One Hand Maces", ELocalisationText::get_localisation_by_key("tag_one_hand_maces"));		jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_daggers"));			jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Claws", ELocalisationText::get_localisation_by_key("tag_claws"));				jc_filter.set_text_color(1.0f, 0.7f, 0.7f, 1.0f);
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("Sceptres", ELocalisationText::get_localisation_by_key("tag_sceptres"));					jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-		jc_filter.add_new_suitable_value("Wands", ELocalisationText::get_localisation_by_key("tag_wands"));							jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-		jc_filter.add_new_suitable_value("Daggers", ELocalisationText::get_localisation_by_key("tag_rune_daggers"));				jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-		jc_filter.add_new_suitable_value("Staves", ELocalisationText::get_localisation_by_key("tag_staves"));						jc_filter.set_text_color(0.7f, 0.9f, 1.0f, 1.0f);
-		jc_filter.add_force_field();
-
-		jc_filter.add_new_suitable_value("Quivers", ELocalisationText::get_localisation_by_key("tag_quivers"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
-		jc_filter.add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));						jc_filter.set_text_color(0.7f, 1.0f, 0.7f, 1.0f);
-		jc_filter.add_force_field();		
-
-
-
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	}
-
-
-
-
-
 
 }
 
@@ -19556,7 +19968,7 @@ void EWindowMain::write_loot_filter_to_disc(std::string _full_path, std::string*
 void EWindowMain::register_filter_rule_folder(std::string _named_id, std::string _tag, std::string _localisation_key, std::string _icon_path)
 {
 	EFilterRule*
-		jc_filter_rule = new EFilterRule();
+	jc_filter_rule = new EFilterRule();
 	jc_filter_rule->is_folder = true;
 	jc_filter_rule->named_id = _named_id;
 
@@ -29752,3 +30164,10 @@ EntityButtonTabForPriceTable::EntityButtonTabForPriceTable()
 }
 
 std::vector<EButtonGroup*> EntityButtonTabForPriceTable::all_price_table_groups;
+
+void EButtonGroupEnvironmentConfigure::button_group_update(float _d)
+{
+	EButtonGroup::button_group_update(_d);
+
+	NS_EGraphicCore::pbr_already_updated = false;
+}

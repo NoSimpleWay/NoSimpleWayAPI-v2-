@@ -1918,7 +1918,7 @@ void NS_EGraphicCore::create_styles()
 
 		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
 		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
@@ -2669,17 +2669,17 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		{
 			skydome_tile_struct(0.000f,	0.0f,		1.0f,	1.0f,	0.0f),	//0		[original]
 
-			skydome_tile_struct(0.500f,	0.5f,		0.5f,	0.5f,	1.0f),	//1		[half size,		blur = 1]
-			skydome_tile_struct(0.750f,	0.5f,		0.5f,	0.5f,	2.0f),	//2		[half size,		blur = 2]
+			skydome_tile_struct(0.500f,	0.5f,		0.5f,	0.5f,	2.0f),	//1		[half size,		blur = 1]
+			skydome_tile_struct(0.750f,	0.5f,		0.5f,	0.5f,	4.0f),	//2		[half size,		blur = 2]
 
-			skydome_tile_struct(0.500f,	0.25f,		0.25f,	0.25f,	1.0f),	//3		[quart size,	blur = 4]
-			skydome_tile_struct(0.625f,	0.25f,		0.25f,	0.25f,	2.0f),	//4		[quart size,	blur = 8]
-			skydome_tile_struct(0.750f,	0.25f,		0.25f,	0.25f,	4.0f),	//5		[quart size,	blur = 16]
-			skydome_tile_struct(0.875f,	0.25f,		0.25f,	0.25f,	8.0f),	//6		[quart size,	blur = 32]
+			skydome_tile_struct(0.500f,	0.25f,		0.25f,	0.25f,	4.0f),	//3		[quart size,	blur = 4]
+			skydome_tile_struct(0.625f,	0.25f,		0.25f,	0.25f,	4.0f),	//4		[quart size,	blur = 8]
+			skydome_tile_struct(0.750f,	0.25f,		0.25f,	0.25f,	8.0f),	//5		[quart size,	blur = 16]
+			skydome_tile_struct(0.875f,	0.25f,		0.25f,	0.25f,	16.0f),	//6		[quart size,	blur = 32]
 
-			skydome_tile_struct(0.500f,	0.0f,		0.25f,	0.25f,	16.0f),	//7		[quart size,	blur = 64]
-			skydome_tile_struct(0.625f,	0.0f,		0.25f,	0.25f,	32.0f),	//8		[quart size,	blur = 128]
-			skydome_tile_struct(0.750f,	0.0f,		0.25f,	0.25f,	64.0f),	//9		[quart size,	blur = 256]
+			skydome_tile_struct(0.500f,	0.0f,		0.25f,	0.25f,	32.0f),	//7		[quart size,	blur = 64]
+			skydome_tile_struct(0.625f,	0.0f,		0.25f,	0.25f,	64.0f),	//8		[quart size,	blur = 128]
+			skydome_tile_struct(0.750f,	0.0f,		0.25f,	0.25f,	128.0f),	//9		[quart size,	blur = 256]
 			skydome_tile_struct(0.875f,	0.0f,		0.25f,	0.25f,	128.0f)	//10	[quart size,	blur = 512]} ;
 		};
 
