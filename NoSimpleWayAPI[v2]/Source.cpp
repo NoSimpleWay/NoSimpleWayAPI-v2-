@@ -574,7 +574,7 @@ int main()
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 		if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-		for (int i = 0; i < texture_skydome_levels; i++)
+		for (int i = 0; i < 1; i++)
 		{
 			if (EInputCore::key_pressed(GLFW_KEY_1 + i))
 			{
@@ -590,8 +590,8 @@ int main()
 					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 					0.0,
 					0.0f,
-					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_x(),
-					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_y()
+					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_x() / 2.0f,
+					NS_EGraphicCore::skydome_texture_atlas[i]->get_atlas_size_y() / 2.0f
 				);
 
 				NS_EGraphicCore::default_batcher_for_drawing->draw_call();

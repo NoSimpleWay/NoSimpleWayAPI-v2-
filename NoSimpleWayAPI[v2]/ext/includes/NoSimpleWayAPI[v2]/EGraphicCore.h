@@ -254,6 +254,7 @@ namespace NS_EGraphicCore
 	extern void set_active_color(HSVRGBAColor* _color);
 
 	extern void make_skydome_textures(ETextureGabarite* _texture);
+	extern void load_skydome_texture(ETextureGabarite* _texture);
 
 	extern EColor_4 active_color[4];
 

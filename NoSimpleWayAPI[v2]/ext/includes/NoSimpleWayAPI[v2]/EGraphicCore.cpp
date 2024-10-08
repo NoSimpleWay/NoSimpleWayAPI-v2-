@@ -10,7 +10,7 @@ namespace NS_EGraphicCore
 	int								old_w, old_h;
 	bool							changed_resolution = false;
 	bool							window_focused = true;
-	int								SCREEN_WIDTH = 1620, SCREEN_HEIGHT = 880;
+	int								SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
 	float							correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
 
@@ -273,7 +273,7 @@ void ERenderBatcher::draw_call()
 
 
 						glActiveTexture(GL_TEXTURE1);
-						glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
+						glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[0]->get_colorbuffer());//1
 
 						//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
 						{
@@ -423,7 +423,7 @@ void ERenderBatcher::draw_call(float* _pointer, int _data_size)
 
 
 					glActiveTexture(GL_TEXTURE1);
-					glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[1]->get_colorbuffer());//1
+					glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[0]->get_colorbuffer());//1
 
 					//if (!EInputCore::key_pressed(GLFW_KEY_TAB))
 					{
@@ -960,7 +960,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//NS_DefaultGabarites::texture_dark_spruce					= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_skydome				= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome_city.png",			NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_skydome				= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome_city[levels].png",			NS_EGraphicCore::default_texture_atlas);
 	NS_EGraphicCore::complete_texture_gabarite(NS_DefaultGabarites::texture_gabarite_skydome);
 
 	NS_DefaultGabarites::texture_bool_switcher_activated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_on.png",		NS_EGraphicCore::default_texture_atlas);
@@ -998,11 +998,12 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//	);
 	//}
 
-	skydome_texture_atlas[0] = new ETextureAtlas(1024, 1024);
-	skydome_texture_atlas[1] = new ETextureAtlas(2048, 1024);
-	skydome_texture_atlas[2] = new ETextureAtlas(1024, 1024);
+	skydome_texture_atlas[0] = new ETextureAtlas(2048, 1024);
+	//skydome_texture_atlas[1] = new ETextureAtlas(2048, 1024);
+	//skydome_texture_atlas[2] = new ETextureAtlas(1024, 1024);
 
-	make_skydome_textures(NS_DefaultGabarites::texture_gabarite_skydome);
+	//make_skydome_textures(NS_DefaultGabarites::texture_gabarite_skydome);
+	load_skydome_texture(NS_DefaultGabarites::texture_gabarite_skydome);
 
 	//STYLE LIST//
 	create_styles();
@@ -2949,6 +2950,89 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		//	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
 		//	glGenerateMipmap(GL_TEXTURE_2D);
 		//}
+
+}
+
+void NS_EGraphicCore::load_skydome_texture(ETextureGabarite* _texture)
+{
+
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, default_texture_atlas->get_framebuffer());
+	glGenerateMipmap(GL_TEXTURE_2D);
+
+	NS_EGraphicCore::skydome_batcher->get_shader()->use();
+		
+
+
+	glDisable(GL_DEPTH_TEST);
+	glBlendEquation(GL_FUNC_ADD);
+
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+
+	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_colorbuffer());
+	glBindFramebuffer(GL_FRAMEBUFFER, skydome_texture_atlas[0]->get_framebuffer());
+
+	glTexImage2D
+	(
+		GL_TEXTURE_2D,
+		0,
+		GL_RGBA,
+		2048,
+		1024,
+		0,
+		GL_RGBA,
+		GL_UNSIGNED_BYTE,
+		NULL
+	);
+
+	skydome_texture_atlas[0]->set_size(2048, 1024.0f);
+
+			
+	{
+		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
+
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size", -1.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[0]->get_atlas_size_x());
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[0]->get_atlas_size_y());
+
+		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
+
+		glViewport(0, 0, skydome_texture_atlas[0]->get_atlas_size_x(), skydome_texture_atlas[0]->get_atlas_size_y());
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::skydome_batcher->vertex_buffer,
+			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f,
+			_texture
+		);
+		NS_EGraphicCore::skydome_batcher->draw_call();
+
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
+			
+
+
+
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
+	glGenerateMipmap(GL_TEXTURE_2D);
+
+
+	//restore default viewport setting
+	set_target_FBO(0);
+	set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 
 }
 
