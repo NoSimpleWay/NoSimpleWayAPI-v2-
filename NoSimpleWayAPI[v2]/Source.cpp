@@ -481,6 +481,7 @@ int main()
 		{
 			EButtonGroup::focused_button_group = nullptr;
 			EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
+			EButtonGroup::focused_button_group_clickable_area = nullptr;
 			EButtonGroup::catched_group_for_translation = nullptr;
 			EClickableArea::active_clickable_region = nullptr;
 			//EButtonGroup::vector_moving_group							= nullptr;

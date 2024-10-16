@@ -82,7 +82,7 @@ Show
 	#CustomAlertSound "fossil_mid.mp3" 100
 
 
-#BlockSeparator "TotA (F)" shrinked no_space
+#BlockSeparator "TotA (F)" expanded no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
@@ -3255,7 +3255,7 @@ Show
 	PlayAlertSound 15 100
 
 
-#BlockSeparator "Делв" shrinked no_space
+#BlockSeparator "Делв" expanded no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
@@ -4527,8 +4527,8 @@ Show
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
 	Rarity = Rare
-	BaseType == "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts" "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask" "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-#create_pattern_button "Game item" 0 60 "Item bases" "Базы предметов" "data/textures/icons/Steel_Ring_inventory_icon.png"
+	BaseType == "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+#create_pattern_button "Game item" 0 3 "Item bases" "Базы предметов" "data/textures/icons/Steel_Ring_inventory_icon.png"
 #required_tags "data type" 1 "Game item"
 #required_tags "Base tier" 0001 "Acceptable" "Good" "Great" "Uber"
 #required_tags "base family" 100000 "Basic" "Ritual" "Heist" "Breach" "Runic" "Boss"

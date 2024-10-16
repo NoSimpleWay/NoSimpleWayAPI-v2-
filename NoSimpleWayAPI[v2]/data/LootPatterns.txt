@@ -2309,9 +2309,20 @@ DETF_localised_attribute_name_RU	"Тир: Отличное"
 DETF_color	255	204	153	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Uber"
-DETF_localised_attribute_name_EN	"Tier: Uber"
-DETF_localised_attribute_name_RU	"Тир: Убер"
+DETF_value_key	"UberT3"
+DETF_localised_attribute_name_EN	"Tier: Uber(T3)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т3)"
+DETF_color	255	204	153	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"UberT2"
+DETF_localised_attribute_name_EN	"Tier: Uber(T2)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т2)"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"UberT1"
+DETF_localised_attribute_name_EN	"Tier: Uber(T1)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т1)"
 DETF_color	255	204	153	255
 
 REGISTER_NEW_SUITABLE_VALUES

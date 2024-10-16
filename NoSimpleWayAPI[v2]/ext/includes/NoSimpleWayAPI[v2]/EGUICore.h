@@ -385,6 +385,7 @@ public:
 	bool ignore_buttons_force_field				= false;
 	bool ignore_vertical_buttons_force_field	= false;
 	bool autodeletable							= false;
+	bool clickable_area_can_be_focused			= true;
 
 	EntityButton* close_button = nullptr;
 
@@ -439,6 +440,7 @@ public:
 	static EButtonGroup* focused_button_group;
 	static EButtonGroup* focused_button_group_for_select;
 	static EButtonGroup* focused_button_group_mouse_unpressed;
+	static EButtonGroup* focused_button_group_clickable_area;
 	static EButtonGroup* focused_button_group_with_slider;
 	static EButtonGroup* catched_group_for_translation;
 	//static EButtonGroup* super_focus_on_this_group;

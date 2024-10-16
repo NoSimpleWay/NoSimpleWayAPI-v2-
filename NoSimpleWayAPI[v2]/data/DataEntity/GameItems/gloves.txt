@@ -786,6 +786,73 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Martyr Gloves"
+	[tag]"name RU"			[value]"Перчатки мученика"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"203"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"41"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Paladin Gloves"
+	[tag]"name RU"			[value]"Перчатки паладина"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"205"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"47"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Deerskin Gloves"
@@ -839,6 +906,77 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Chimerascale Gauntlets"
+	[tag]"name RU"			[value]"Перчатки из чешуи химеры"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"203"
+	[tag]"base evasion min"	[value]"176"
+	[tag]"base evasion max"	[value]"203"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Wyvernscale Gauntlets"
+	[tag]"name RU"			[value]"Перчатки из чешуи виверны"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"205"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base evasion min"	[value]"205"
+	[tag]"base evasion max"	[value]"236"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1193,6 +1331,71 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Infiltrator Mitts"
+	[tag]"name RU"			[value]"Перчатки лазутчика"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base evasion min"	[value]"176"
+	[tag]"base evasion max"	[value]"203"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"41"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Phantom Mitts"
+	[tag]"name RU"			[value]"Перчатки призрака"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base evasion min"	[value]"205"
+	[tag]"base evasion max"	[value]"236"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"47"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1498,6 +1701,76 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Harpyskin Gloves"
+	[tag]"name RU"			[value]"Гарпиевые перчатки"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base evasion min"	[value]"307"
+	[tag]"base evasion max"	[value]"353"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Velour Gloves"
+	[tag]"name RU"			[value]"Велюровые перчатки"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base evasion min"	[value]"359"
+	[tag]"base evasion max"	[value]"413"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1553,6 +1826,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Sage Gloves"
+	[tag]"name RU"			[value]"Перчатки мудреца"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"71"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Warlock Gloves"
+	[tag]"name RU"			[value]"Перчатки колдуна"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base energy shield min"	[value]"78"
+	[tag]"base energy shield max"	[value]"83"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1718,6 +2042,63 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Precursor Gauntlets"
+	[tag]"name RU"			[value]"Перчатки предтечи"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"307"
+	[tag]"base armour max"	[value]"353"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Leviathan Gauntlets"
+	[tag]"name RU"			[value]"Перчатки исполина"
+	
+	[tag]"icon path"		[value]"SuperGloves"
+	[tag]"base class"		[value]"Gloves"
+	
+	[tag]"base armour min"	[value]"359"
+	[tag]"base armour max"	[value]"413"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1997,245 +2378,3 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Precursor Gauntlets"
-	[tag]"name RU"			[value]"Перчатки предтечи"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Leviathan Gauntlets"
-	[tag]"name RU"			[value]"Перчатки исполина"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Harpyskin Gloves"
-	[tag]"name RU"			[value]"Гарпиевые перчатки"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Velour Gloves"
-	[tag]"name RU"			[value]"Велюровые перчатки"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Sage Gloves"
-	[tag]"name RU"			[value]"Перчатки мудреца"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Warlock Gloves"
-	[tag]"name RU"			[value]"Перчатки колдуна"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Chimerascale Gauntlets"
-	[tag]"name RU"			[value]"Перчатки из чешуи химеры"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Wyvernscale Gauntlets"
-	[tag]"name RU"			[value]"Перчатки из чешуи виверны"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Martyr Gloves"
-	[tag]"name RU"			[value]"Перчатки мученика"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Paladin Gloves"
-	[tag]"name RU"			[value]"Перчатки паладина"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Infiltrator Mitts"
-	[tag]"name RU"			[value]"Перчатки лазутчика"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Phantom Mitts"
-	[tag]"name RU"			[value]"Перчатки призрака"
-	
-	[tag]"icon path"		[value]"SuperGloves"
-	[tag]"base class"		[value]"Gloves"
-	
-	[tag]"base ward min"	[value]"102"
-	[tag]"base ward max"	[value]"117"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
