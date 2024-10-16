@@ -179,6 +179,7 @@ public:
 	~EClickableArea();
 
 	bool debug_updating = false;
+	//bool can_be_focused = true;
 
 
 

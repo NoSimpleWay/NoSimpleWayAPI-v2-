@@ -561,16 +561,116 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
+	
 	[tag]"base evasion min"	[value]"190"
 	[tag]"base evasion max"	[value]"219"
 	[tag]"base energy shield min"	[value]"47"
 	[tag]"base energy shield max"	[value]"54"
+	
 	[tag]"base tier"	[value]"T1"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Jester Mask"
+	[tag]"name RU"			[value]"Маска паяца"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"268"
+	[tag]"base evasion max"	[value]"308"
+	[tag]"base energy shield min"	[value]"54"
+	[tag]"base energy shield max"	[value]"62"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Ancient Mask"
+	[tag]"name RU"			[value]"Древняя маска"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"308"
+	[tag]"base evasion max"	[value]"355"
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"71"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Torturer's Mask"
+	[tag]"name RU"			[value]"Маска истязателя"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"355"
+	[tag]"base evasion max"	[value]"409"
+	[tag]"base energy shield min"	[value]"71"
+	[tag]"base energy shield max"	[value]"82"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -598,6 +698,85 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"General's Helmet"
+	[tag]"name RU"			[value]"Шлем генерала"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"431"
+	[tag]"base armour max"	[value]"496"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Conqueror's Helmet"
+	[tag]"name RU"			[value]"Шлем завоевателя"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"501"
+	[tag]"base armour max"	[value]"576"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Giantslayer Helmet"
+	[tag]"name RU"			[value]"Шлем грозы великанов"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"582"
+	[tag]"base armour max"	[value]"669"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -890,14 +1069,96 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	
 	[tag]"base energy shield min"	[value]"80"
 	[tag]"base energy shield max"	[value]"92"
+	
 	[tag]"base tier"	[value]"T1"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Moonlit Circlet"
+	[tag]"name RU"			[value]"Диадема лунного света"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base energy shield min"	[value]"87"
+	[tag]"base energy shield max"	[value]"100"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Sunfire Circlet"
+	[tag]"name RU"			[value]"Диадема пламени солнца"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base energy shield min"	[value]"101"
+	[tag]"base energy shield max"	[value]"116"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Lich's Circlet"
+	[tag]"name RU"			[value]"Обруч лича"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base energy shield min"	[value]"117"
+	[tag]"base energy shield max"	[value]"134"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1105,6 +1366,94 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Dire Pelt"
+	[tag]"name RU"			[value]"Жуткая морда"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"431"
+	[tag]"base evasion max"	[value]"496"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Grizzly Pelt"
+	[tag]"name RU"			[value]"Морда гризли"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"501"
+	[tag]"base evasion max"	[value]"576"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Majestic Pelt"
+	[tag]"name RU"			[value]"Величавая морда"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base evasion min"	[value]"582"
+	[tag]"base evasion max"	[value]"669"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Lunaris Circlet"
@@ -1228,16 +1577,107 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Top tier base"
+	
 	[tag]"base armour min"	[value]"162"
 	[tag]"base armour max"	[value]"187"
 	[tag]"base evasion min"	[value]"233"
 	[tag]"base evasion max"	[value]"268"
+	
 	[tag]"base tier"	[value]"T1"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Knight Helm"
+	[tag]"name RU"			[value]"Шлем рыцаря"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"268"
+	[tag]"base armour max"	[value]"308"
+	[tag]"base evasion min"	[value]"268"
+	[tag]"base evasion max"	[value]"308"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Conquest Helmet"
+	[tag]"name RU"			[value]"Шлем покорителя"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"308"
+	[tag]"base armour max"	[value]"355"
+	[tag]"base evasion min"	[value]"308"
+	[tag]"base evasion max"	[value]"355"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Haunted Bascinet"
+	[tag]"name RU"			[value]"Одержимый бацинет"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"355"
+	[tag]"base armour max"	[value]"409"
+	[tag]"base evasion min"	[value]"355"
+	[tag]"base evasion max"	[value]"409"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1343,16 +1783,107 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
 	[tag]"base armour min"	[value]"161"
 	[tag]"base armour max"	[value]"185"
 	[tag]"base energy shield min"	[value]"51"
 	[tag]"base energy shield max"	[value]"58"
+	
 	[tag]"base tier"	[value]"T2"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+	
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Faithful Helmet"
+	[tag]"name RU"			[value]"Шлем веры"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"	
+	
+	[tag]"base armour min"	[value]"268"
+	[tag]"base armour max"	[value]"308"
+	[tag]"base energy shield min"	[value]"54"
+	[tag]"base energy shield max"	[value]"62"
+	
+	[tag]"base tier"		[value]"UberT3"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Paladin Crown"
+	[tag]"name RU"			[value]"Корона паладина"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"308"
+	[tag]"base armour max"	[value]"355"
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"71"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Divine Crown"
+	[tag]"name RU"			[value]"Корона божества"
+	
+	[tag]"icon path"		[value]"SuperHelmet"
+	[tag]"base class"		[value]"Helmets"
+	
+	[tag]"base armour min"	[value]"355"
+	[tag]"base armour max"	[value]"409"
+	[tag]"base energy shield min"	[value]"71"
+	[tag]"base energy shield max"	[value]"82"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"			[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2083,351 +2614,3 @@ ADD_NEW_DATA_ENTITY
 	
 
 
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"General's Helmet"
-	[tag]"name RU"			[value]"Шлем генерала"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Conqueror's Helmet"
-	[tag]"name RU"			[value]"Шлем завоевателя"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Giantslayer Helmet"
-	[tag]"name RU"			[value]"Шлем грозы великанов"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Dire Pelt"
-	[tag]"name RU"			[value]"Жуткая морда"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Grizzly Pelt"
-	[tag]"name RU"			[value]"Морда гризли"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Majestic Pelt"
-	[tag]"name RU"			[value]"Величавая морда"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Moonlit Circlet"
-	[tag]"name RU"			[value]"Диадема лунного света"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Sunfire Circlet"
-	[tag]"name RU"			[value]"Диадема пламени солнца"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Lich's Circlet"
-	[tag]"name RU"			[value]"Обруч лича"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Knight Helm"
-	[tag]"name RU"			[value]"Шлем рыцаря"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Conquest Helmet"
-	[tag]"name RU"			[value]"Шлем покорителя"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Haunted Bascinet"
-	[tag]"name RU"			[value]"Одержимый бацинет"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Faithful Helmet"
-	[tag]"name RU"			[value]"Шлем веры"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Paladin Crown"
-	[tag]"name RU"			[value]"Корона паладина"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Divine Crown"
-	[tag]"name RU"			[value]"Корона божества"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Jester Mask"
-	[tag]"name RU"			[value]"Маска паяца"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Ancient Mask"
-	[tag]"name RU"			[value]"Древняя маска"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	
-	[tag]"name EN"			[value]"Torturer's Mask"
-	[tag]"name RU"			[value]"Маска истязателя"
-	
-	[tag]"icon path"		[value]"SuperHelmet"
-	[tag]"base class"		[value]"Helmets"
-	[tag]"base armour min"	[value]"164"
-	[tag]"base armour max"	[value]"189"
-	
-	[tag]"base tier"		[value]"Uber"
-	[tag]"base family"		[value]"Basic"
-	
-	[tag]"item tag"			[value]"Introduced: Settlers league"
-	
-	[tag]"item width"		[value]"2"
-	[tag]"item height"		[value]"2"

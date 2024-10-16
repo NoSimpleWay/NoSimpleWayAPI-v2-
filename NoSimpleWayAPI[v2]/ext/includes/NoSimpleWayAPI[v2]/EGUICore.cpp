@@ -9,6 +9,7 @@ std::vector<EWindow*> EWindow::window_list;
 EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_for_select = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
+EButtonGroup* EButtonGroup::focused_button_group_clickable_area = nullptr;
 EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
 //EButtonGroup*				EButtonGroup::super_focus_on_this_group = nullptr;
 std::vector <EButtonGroup*>	EButtonGroup::super_focus_list;
@@ -235,6 +236,9 @@ void EWindow::GUI_update_default(float _d)
 	}
 
 
+
+
+	//GET LAST FOCUSED GROUP
 	for (EButtonGroup* b_group : button_group_list)
 		if
 			(
@@ -243,10 +247,10 @@ void EWindow::GUI_update_default(float _d)
 				(b_group->is_this_group_active())
 				&&
 				(!b_group->block_need_remove)
-				&&
-				(b_group->region_gabarite->world_position_y <= b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y)
-				&&
-				(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= b_group->region_gabarite->world_position_y)
+				//&&
+				//(b_group->region_gabarite->world_position_y <= b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y)
+				//&&
+				//(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= b_group->region_gabarite->world_position_y)
 				)
 		{
 			EButtonGroup::get_last_focused_group(b_group);
@@ -345,6 +349,23 @@ void EWindow::GUI_update_default(float _d)
 		}
 	}
 
+	if
+	(
+		((EButtonGroup::focused_button_group_clickable_area != nullptr))
+		&&
+		(!EInputCore::MOUSE_BUTTON_LEFT)
+	)
+	{
+		for (EClickableArea* c_area : EButtonGroup::focused_button_group_clickable_area->clickable_area_list)
+		{
+
+			if (EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+			{
+				EClickableArea::active_clickable_region = c_area;
+			}
+		}
+	}
+
 	//UNPRESSED LMB
 	//GET FOCUSED BUTTON CLICKABLE REGION IN FOCUSED GROUP
 	if
@@ -355,6 +376,8 @@ void EWindow::GUI_update_default(float _d)
 	)
 	{
 		//EButtonGroup::focused_button_group_mouse_unpressed->highlight_this_group();
+
+		
 
 		for (EntityButton* but : EButtonGroup::focused_button_group_mouse_unpressed->all_button_list)
 			if ((but->be_visible_last_time) && (but->entity_is_active()))
@@ -4449,7 +4472,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 			(!_group->group_is_suppressed)
 			&&
 			(!_group->is_blocked_by_superfocus())
-			)
+		)
 	{
 		if
 			(
@@ -4468,6 +4491,11 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 			if (_group->focusable_for_select)
 			{
 				EButtonGroup::focused_button_group_for_select = _group;
+			}
+
+			if ((!_group->clickable_area_list.empty()) && (_group->clickable_area_can_be_focused))
+			{
+				EButtonGroup::focused_button_group_clickable_area = _group;
 			}
 
 			//focus last group with slider
