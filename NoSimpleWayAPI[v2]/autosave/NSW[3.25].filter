@@ -82,7 +82,7 @@ Show
 	#CustomAlertSound "fossil_mid.mp3" 100
 
 
-#BlockSeparator "TotA (F)" expanded no_space
+#BlockSeparator "TotA (F)" shrinked no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard
@@ -3255,7 +3255,7 @@ Show
 	PlayAlertSound 15 100
 
 
-#BlockSeparator "Делв" expanded no_space
+#BlockSeparator "Делв" shrinked no_space
 
 Show
 	#config_VersionControl standard standard standard standard standard standard standard standard standard

@@ -2111,9 +2111,9 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
-name_EN	"Equipable"
-name_RU	"Экипировка"
-icon	"data/textures/buttons/button_all_equip.png"
+name_EN	"Equipable:\nArmour"
+name_RU	"Экипировка:\nБроня"
+icon	"data/textures/icons/Nightmare_Bascinet_inventory_icon.png"
 activate_attribute_group_by_name	"Rarity"
 activate_attribute_group_by_name	"ItemLevel"
 activate_attribute_group_by_name	"SocketsLinksColours"
@@ -2157,6 +2157,141 @@ DETF_value_key	"Body Armours"
 DETF_localised_attribute_name_EN	"Body armours"
 DETF_localised_attribute_name_RU	"Доспехи"
 DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base tier"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Acceptable"
+DETF_localised_attribute_name_EN	"Tier: Acceptable"
+DETF_localised_attribute_name_RU	"Тир: Приемлимое"
+DETF_color	153	166	179	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Good"
+DETF_localised_attribute_name_EN	"Tier: Good"
+DETF_localised_attribute_name_RU	"Тир: Хорошее"
+DETF_color	153	255	179	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Best"
+DETF_localised_attribute_name_EN	"Tier: Great"
+DETF_localised_attribute_name_RU	"Тир: Отличное"
+DETF_color	255	204	153	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"UberT3"
+DETF_localised_attribute_name_EN	"Tier: Uber(T3)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т3)"
+DETF_color	255	204	153	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"UberT2"
+DETF_localised_attribute_name_EN	"Tier: Uber(T2)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т2)"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"UberT1"
+DETF_localised_attribute_name_EN	"Tier: Uber(T1)"
+DETF_localised_attribute_name_RU	"Тир: Убер(Т1)"
+DETF_color	255	204	153	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_localised_attribute_name_EN	"Any"
+DETF_localised_attribute_name_RU	"Любое"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base family"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Basic"
+DETF_localised_attribute_name_EN	"Basic"
+DETF_localised_attribute_name_RU	"Обычное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Ritual"
+DETF_localised_attribute_name_EN	"Rutial"
+DETF_localised_attribute_name_RU	"Ритуал"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Heist"
+DETF_localised_attribute_name_EN	"Heist"
+DETF_localised_attribute_name_RU	"Кража"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Breach"
+DETF_localised_attribute_name_EN	"Breach"
+DETF_localised_attribute_name_RU	"Разлом"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Runic"
+DETF_localised_attribute_name_EN	"Runic"
+DETF_localised_attribute_name_RU	"Руническое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Loot source: Boss"
+DETF_localised_attribute_name_EN	"Boss drop"
+DETF_localised_attribute_name_RU	"Дроп из босса"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_localised_attribute_name_EN	"Any"
+DETF_localised_attribute_name_RU	"Любое"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Equipable:\nWeapons and shields"
+name_RU	"Экипировка:\nЩиты и оружие"
+icon	"data/textures/icons/Graceful_Sword_inventory_icon.png"
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Shields"
@@ -2254,6 +2389,124 @@ DETF_localised_attribute_name_EN	"Rune daggers"
 DETF_localised_attribute_name_RU	"Рунические кинжалы"
 DETF_color	179	230	255	255
 
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base tier"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Acceptable"
+DETF_localised_attribute_name_EN	"Tier: Acceptable"
+DETF_localised_attribute_name_RU	"Тир: Приемлимое"
+DETF_color	153	166	179	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Good"
+DETF_localised_attribute_name_EN	"Tier: Good"
+DETF_localised_attribute_name_RU	"Тир: Хорошее"
+DETF_color	153	255	179	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Best"
+DETF_localised_attribute_name_EN	"Tier: Great"
+DETF_localised_attribute_name_RU	"Тир: Отличное"
+DETF_color	255	204	153	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_localised_attribute_name_EN	"Any"
+DETF_localised_attribute_name_RU	"Любое"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base family"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Basic"
+DETF_localised_attribute_name_EN	"Basic"
+DETF_localised_attribute_name_RU	"Обычное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Ritual"
+DETF_localised_attribute_name_EN	"Rutial"
+DETF_localised_attribute_name_RU	"Ритуал"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Heist"
+DETF_localised_attribute_name_EN	"Heist"
+DETF_localised_attribute_name_RU	"Кража"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Breach"
+DETF_localised_attribute_name_EN	"Breach"
+DETF_localised_attribute_name_RU	"Разлом"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Runic"
+DETF_localised_attribute_name_EN	"Runic"
+DETF_localised_attribute_name_RU	"Руническое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Loot source: Boss"
+DETF_localised_attribute_name_EN	"Boss drop"
+DETF_localised_attribute_name_RU	"Дроп из босса"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_localised_attribute_name_EN	"Any"
+DETF_localised_attribute_name_RU	"Любое"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+REGISTER_NEW_PATTERN
+name_EN	"Equipable:\nJewelery"
+name_RU	"Экипировка:\nБижутерия"
+icon	"data/textures/icons/Cerulean_Ring.png"
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Rings"
 DETF_localised_attribute_name_EN	"Rings"
@@ -2306,23 +2559,6 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Best"
 DETF_localised_attribute_name_EN	"Tier: Great"
 DETF_localised_attribute_name_RU	"Тир: Отличное"
-DETF_color	255	204	153	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"UberT3"
-DETF_localised_attribute_name_EN	"Tier: Uber(T3)"
-DETF_localised_attribute_name_RU	"Тир: Убер(Т3)"
-DETF_color	255	204	153	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"UberT2"
-DETF_localised_attribute_name_EN	"Tier: Uber(T2)"
-DETF_localised_attribute_name_RU	"Тир: Убер(Т2)"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"UberT1"
-DETF_localised_attribute_name_EN	"Tier: Uber(T1)"
-DETF_localised_attribute_name_RU	"Тир: Убер(Т1)"
 DETF_color	255	204	153	255
 
 REGISTER_NEW_SUITABLE_VALUES
