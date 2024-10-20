@@ -1,0 +1,947 @@
+"Headhunter"	1782320
+"Mageblood"	1782320
+"Defiance of Destiny"	1782320
+"Replica Shroud of the Lightless"	1583560
+"Stasis Prison"	1583560
+"The Squire"	1537440
+"Rakiata's Dance"	1537440
+"Starforge"	1406980
+"Voidforge"	1406980
+"Replica Kongor's Undying Rage"	1406980
+"Echoforge"	1406980
+"Lioneye's Glare"	1366000
+"Divinarius"	1366000
+"Essentia Sanguis"	1366000
+"Kingmaker"	1366000
+"Soul Taker"	1326220
+"Voltaxic Rift"	1287580
+"Atziri's Disfavour"	1287580
+"Replica Duskdawn"	1287580
+"Bloodseeker"	1213680
+"The Saviour"	1213680
+"Replica Tukohama's Fortress"	1178320
+"Kalandra's Touch"	1144000
+"Bino's Kitchen Knife"	1078340
+"Marohi Erqi"	1046920
+"The Winds of Fate"	986820
+"Hateforge"	779000
+"Uul-Netol's Vow"	734300
+"Soul Ascension"	635280
+"Nimis"	635280
+"Replica Headhunter"	633400
+"Yoke of Suffering"	472720
+"Manastorm"	420000
+"Replica Bated Breath"	412000
+"Stranglegasp"	406560
+"Replica Farrul's Fur"	373160
+"Kitava's Feast"	362300
+"Replica Nebulis"	362300
+"Malachai's Mark"	351740
+"Replica Windripper"	341500
+"Tidebreaker"	331560
+"Replica Eternity Shroud"	331560
+"Annihilation's Approach"	331560
+"Eternal Damnation"	331560
+"Duskdawn"	321900
+"The Brine Crown"	312520
+"Replica Atziri's Acuity"	312520
+"Garukhan's Flight"	303420
+"Tukohama's Fortress"	294580
+"Entropic Devastation"	269580
+"Cloak of Tawm'r Isley"	254100
+"Arakaali's Fang"	232540
+"Martyr of Innocence"	225780
+"Replica Alberon's Warpath"	206620
+"Replica Maloney's Mechanism"	183580
+"Replica Trypanon"	158360
+"Gruthkul's Pelt"	149260
+"Dialla's Malefaction"	144920
+"Ralakesh's Impatience"	140700
+"Skyforth"	139540
+"Wraithlord"	132620
+"Eyes of the Greatwolf"	131520
+"The Dark Seer"	125000
+"Ryslatha's Coil"	125000
+"Shade of Solaris"	117820
+"Void Battery"	113460
+"Rigwald's Quills"	113460
+"The Brass Dome"	113460
+"Light of Lunaris"	111060
+"Seven-League Step"	106940
+"Warrior's Legacy"	106940
+"Astral Projector"	106940
+"Aegis Aurora"	100800
+"The Tides of Time"	100800
+"Atziri's Splendour"	97860
+"Shroud of the Lightless"	95020
+"Voll's Devotion"	92240
+"Shavronne's Revelation"	92240
+"Windripper"	92240
+"Magna Eclipsis"	92240
+"Doryani's Fist"	89560
+"Indigon"	89560
+"Farrul's Fur"	89560
+"Farrul's Chase"	89560
+"Kaom's Heart"	86960
+"Rathpith Globe"	86960
+"Prism Guardian"	86960
+"Broken Faith"	86960
+"Cospri's Malice"	86960
+"Inpulsa's Broken Heart"	86960
+"Hand of Wisdom and Action"	86960
+"The Red Trail"	86960
+"Doryani's Delusion"	86960
+"The Queen's Hunger"	86960
+"Maloney's Mechanism"	86960
+"Badge of the Brotherhood"	86960
+"The Immortal Will"	86960
+"Replica Kaom's Heart"	86960
+"Replica Red Trail"	86960
+"Viridi's Veil"	86960
+"Doppelganger Guise"	86960
+"Grace of the Goddess"	86960
+"Thunderfist"	84420
+"Steppan Eard"	84420
+"Heretic's Veil"	84420
+"Machina Mitts"	84420
+"Sporeguard"	84420
+"Doryani's Prototype"	84420
+"Paradoxica"	81960
+"The Yielding Mortality"	81960
+"Replica Paradoxica"	81960
+"Replica Allure"	81960
+"Hyrri's Ire"	79580
+"The Formless Inferno"	79580
+"The Perfect Form"	79580
+"Doedre's Skin"	79580
+"The Eternity Shroud"	79580
+"Replica Perfect Form"	79580
+"Replica Hyrri's Ire"	79580
+"Varunastra"	77260
+"Uul-Netol's Embrace"	77260
+"The Surrender"	77260
+"Disintegrator"	77260
+"Loreweave"	77260
+"Replica Loreweave"	77260
+"Yaomac's Accord"	77260
+"Replica Stampede"	75000
+"The Devourer of Minds"	75000
+"Shavronne's Wrappings"	72820
+"Darkscorn"	72820
+"Kintsugi"	72820
+"Tulfall"	72820
+"Esh's Visage"	72820
+"Arborix"	72820
+"Apep's Supremacy"	72820
+"The Surging Thoughts"	72820
+"The Admiral"	72820
+"Replica Cold Iron Point"	72820
+"Replica Tulfall"	72820
+"Abberath's Hooves"	69220
+"Mjolner"	68640
+"Replica Abyssus"	68640
+"Replica Mistwall"	68640
+"The Iron Fortress"	66640
+"Farrul's Pounce"	66640
+"Fleshcrafter"	66640
+"Gravebind"	66640
+"Xoph's Nurture"	64700
+"Crown of the Tyrant"	64700
+"Crest of Desire"	64700
+"Farrul's Bite"	62820
+"Offering to the Serpent"	62820
+"Garb of the Ephemeral"	60980
+"Maata's Teaching"	60980
+"Corpsewalker"	59200
+"The Fourth Vow"	59200
+"The Devouring Diadem"	57480
+"Qotra's Regulator"	57480
+"Atziri's Reflection"	57480
+"Sandstorm Visage"	57480
+"The Tempest Rising"	57480
+"Utula's Hunger"	55820
+"The Celestial Brace"	55820
+"Cloak of Defiance"	54180
+"Zerphi's Heart"	53040
+"Svalinn"	52600
+"Replica Frostbreath"	51080
+"The Covenant"	49580
+"Anathema"	49580
+"Replica Covenant"	49580
+"Winds of Change"	46740
+"Death Rush"	45380
+"Emperor's Vigilance"	45380
+"Mahuxotl's Machination"	45380
+"The Pariah"	44060
+"Abhorrent Interrogation"	44060
+"The Tempest's Liberation"	44060
+"Perfidy"	43840
+"Ravenous Passion"	42780
+"Hand of the Fervent"	41520
+"Impresence"	41320
+"Assailum"	41320
+"Mark of the Elder"	38960
+"Mark of the Shaper"	38960
+"Polaric Devastation"	38960
+"Replica Soul Strike"	38000
+"Replica Midnight Bargain"	38000
+"Brain Rattler"	37820
+"Razor of the Seventh Sun"	37820
+"Snakepit"	37820
+"The Scourge"	37820
+"Memory Vault"	37820
+"Grelwood Shank"	37820
+"Beltimber Blade"	37820
+"Vulconus"	37820
+"Augyre"	37820
+"Gloomfang"	37820
+"The Gull"	35820
+"Severed in Sleep"	35820
+"United in Dream"	35820
+"Blackflame"	35820
+"Maligaro's Virtuosity"	35640
+"Asenath's Gentle Touch"	35640
+"Perandus Signet"	35640
+"Nebuloch"	35640
+"Hopeshredder"	35640
+"Shimmeron"	35640
+"Beacon of Madness"	35640
+"Sunblast"	34780
+"Doon Cuebiyari"	34600
+"Death's Door"	34600
+"Auxium"	33600
+"Flamesight"	33600
+"Galesight"	33600
+"Thundersight"	33600
+"The Ivory Tower"	33600
+"Leash of Oblation"	33600
+"Mistwall"	33600
+"Maw of Mischief"	33600
+"The Burden of Truth"	33600
+"The Apostate"	32780
+"Hegemony's Era"	31680
+"Replica Restless Ward"	31680
+"Lioneye's Remorse"	30740
+"Incandescent Heart"	30740
+"The Hungry Loop"	30740
+"Chains of Command"	30740
+"Black Zenith"	30740
+"Crown of Eyes"	29860
+"Ylfeban's Trickery"	29860
+"Voidwalker"	29860
+"Bubonic Trail"	29860
+"Craiceann's Pincers"	29860
+"Usurper's Penance"	29860
+"Replica Voidwalker"	29860
+"Vorana's March"	29860
+"Kaom's Spirit"	29860
+"The Shattered Divinity"	29120
+"Mon'tregul's Grasp"	28980
+"Pledge of Hands"	28980
+"Kaom's Roots"	28980
+"Voll's Vision"	28980
+"Cospri's Will"	28980
+"Tinkerskin"	28980
+"Hand of Thought and Motion"	28980
+"The Infinite Pursuit"	28980
+"The Unshattered Will"	28980
+"Invictus Solaris"	28980
+"Cyclopean Coil"	28980
+"Blasphemer's Grasp"	28980
+"The Grey Spire"	28980
+"Bitterbind Point"	28980
+"Nebulis"	28980
+"Atziri's Rule"	28980
+"Cadigan's Crown"	28980
+"The Taming"	28280
+"Circle of Ambition"	28280
+"The Bringer of Rain"	28140
+"Replica Oro's Sacrifice"	28140
+"Dawnbreaker"	28140
+"Dreamfeather"	27320
+"Repentance"	27320
+"Shaper's Touch"	27320
+"The Enmity Divine"	27320
+"Vix Lunaris"	27320
+"Voidfletcher"	27320
+"Hands of the High Templar"	27320
+"Font of Thunder"	27320
+"Replica Dreamfeather"	27320
+"The Goddess Scorned"	26660
+"Rime Gaze"	26520
+"Infernal Mantle"	26520
+"Ming's Heart"	26520
+"Jack, the Axe"	26520
+"Doomsower"	26520
+"Scold's Bridle"	26520
+"The Formless Flame"	26520
+"The Snowblind Grace"	26520
+"Saqawal's Nest"	26520
+"Fenumus' Shroud"	26520
+"Hale Negator"	26520
+"Echoes of Creation"	26520
+"Taryn's Shiver"	25760
+"Alpha's Howl"	25760
+"Rebuke of the Vaal"	25760
+"Hezmana's Bloodlust"	25760
+"Reach of the Council"	25760
+"Uul-Netol's Kiss"	25760
+"The Anticipation"	25760
+"Replica Alpha's Howl"	25760
+"Daresso's Defiance"	25000
+"Atziri's Acuity"	25000
+"Fenumus' Spinnerets"	25000
+"Crown of the Inward Eye"	25000
+"Astramentis"	24400
+"Presence of Chayula"	24400
+"Aul's Uprising"	24400
+"Solstice Vigil"	24400
+"Crystallised Omniscience"	24400
+"Ashes of the Stars"	24400
+"Stormfire"	24340
+"The Searing Touch"	24280
+"Carcass Jack"	24280
+"Death's Oath"	24280
+"The Vertex"	24280
+"Tulborn"	24280
+"Esh's Mirror"	24280
+"Yriel's Fostering"	24280
+"The Rippling Thoughts"	24280
+"Perepiteia"	24280
+"Fractal Thoughts"	24280
+"Cold Iron Point"	24280
+"Law of the Wilds"	24280
+"Blunderbore"	24280
+"Replica Wings of Entropy"	24280
+"Dawnstrider"	24280
+"Rigwald's Savagery"	23640
+"Rigwald's Command"	23640
+"Slivertongue"	23640
+"Obscurantis"	23640
+"Inya's Epiphany"	23560
+"Replica Inya's Epiphany"	23560
+"The Living Blade"	23560
+"Abyssus"	22880
+"Lightning Coil"	22880
+"Null's Inclination"	22880
+"Dyadian Dawn"	22880
+"Rigwald's Curse"	22880
+"Grip of the Council"	22880
+"Saqawal's Flock"	22880
+"The Iron Mass"	22880
+"The Hidden Blade"	22880
+"The Fulcrum"	22880
+"Replica Grip of the Council"	22880
+"Cameria's Avarice"	22880
+"Algor Mortis"	22280
+"Saffell's Frame"	22220
+"Queen of the Forest"	22220
+"Saqawal's Talons"	22220
+"Breathstealer"	22220
+"Expedition's End"	22220
+"Wilma's Requital"	22220
+"Gamblesprint"	22220
+"First Piece of Focus"	21920
+"Second Piece of Focus"	21920
+"Third Piece of Focus"	21920
+"Fourth Piece of Focus"	21920
+"First Piece of Storms"	21920
+"Second Piece of Storms"	21920
+"Third Piece of Storms"	21920
+"Unyielding Flame"	21640
+"Xoph's Inception"	21560
+"Craiceann's Chitin"	21560
+"Mask of the Stitched Demon"	21560
+"Storm's Gift"	21560
+"Mask of the Tribunal"	21560
+"The Magnate"	21040
+"The Torrent's Reclamation"	21040
+"Replica Soul Tether"	21040
+"Replica Ungil's Gauche"	21040
+"Replica Badge of the Brotherhood"	21040
+"Perseverance"	21000
+"The Black Cane"	21000
+"Willowgift"	21000
+"Eye of Malice"	21000
+"Ancient Skull"	21000
+"Mind of the Council"	20940
+"The Crimson Storm"	20940
+"Kaom's Binding"	20940
+"The Rat Cage"	20320
+"Craiceann's Carapace"	20320
+"Fate of the Vaal"	20320
+"Replica Dragonfang's Flight"	20320
+"Lioneye's Vision"	19800
+"Brinerot Mark"	19740
+"Redblade Band"	19740
+"Mutewind Seal"	19740
+"Ngamahu's Flame"	19740
+"Omeyocan"	19740
+"Tavukai"	19740
+"Replica Three-step Assault"	19740
+"Temptation Step"	19740
+"Great Old One's Tentacles"	19220
+"Ceaseless Feast"	19220
+"Inextricable Fate"	19220
+"Chitus' Apex"	19160
+"Daresso's Courage"	19160
+"Craiceann's Tracks"	19160
+"Fenumus' Toxins"	19160
+"Eye of Innocence"	18900
+"First Piece of Brutality"	18900
+"Second Piece of Brutality"	18900
+"Third Piece of Brutality"	18900
+"First Piece of Directions"	18900
+"Second Piece of Directions"	18900
+"Third Piece of Directions"	18900
+"Leper's Alms"	18900
+"Atziri's Foible"	18700
+"Ahkeli's Meadow"	18700
+"Replica Emberwake"	18700
+"Dyadus"	18660
+"Atziri's Step"	18660
+"Cherrubim's Maleficence"	18660
+"Eber's Unification"	18660
+"Medved's Challenge"	18660
+"Rainbowstride"	18600
+"Apep's Rage"	18600
+"Lightpoacher"	18600
+"Forbidden Shako"	18600
+"Replica Infractem"	18600
+"The Beast Fur Shawl"	18120
+"Touch of Anguish"	18120
+"Ahn's Contempt"	18120
+"Ahn's Might"	18120
+"Gorgon's Gaze"	18060
+"Profane Proxy"	18060
+"Witchhunter's Judgment"	18060
+"Akoya's Gaze"	18060
+"Ynda's Stand"	18060
+"The Ephemeral Bond"	17820
+"Kongor's Undying Rage"	17580
+"Ahn's Heritage"	17580
+"Saqawal's Winds"	17540
+"Legacy of Fury"	17540
+"Devoto's Devotion"	17300
+"Bloodgrip"	17300
+"Agnerod East"	17080
+"Agnerod North"	17080
+"Agnerod South"	17080
+"Agnerod West"	17080
+"Breath of the Council"	17080
+"The Poised Prism"	17080
+"Andvarius"	17020
+"Fenumus' Weave"	17020
+"Replica Victario's Charity"	17020
+"Replica Heartbreaker"	17020
+"Painseeker"	16800
+"The Poet's Pen"	16620
+"Putembo's Mountain"	16620
+"Rise of the Phoenix"	16580
+"Darkray Vectors"	16580
+"Vis Mortis"	16580
+"Ventor's Gamble"	16580
+"Malachai's Loop"	16580
+"Cane of Kulemak"	16520
+"The Scales of Justice"	16520
+"Bound Fate"	16520
+"Death's Hand"	16320
+"Doryani's Catalyst"	16100
+"Soul Strike"	16100
+"Geofri's Sanctuary"	16100
+"Hyrri's Truth"	16100
+"Rashkaldor's Patience"	16040
+"Soul Tether"	16040
+"Maw of Conquest"	16040
+"The Jinxed Juju"	16040
+"Kaom's Command"	16040
+"The Restless Ward"	15840
+"Replica Siegebreaker"	15660
+"Speaker's Wreath"	15620
+"The Stampede"	15620
+"Actum"	15620
+"Cerberus Limb"	15580
+"Replica Kalisa's Grace"	15580
+"Replica Innsbury Edge"	15580
+"Jaws of Agony"	15380
+"Rive"	15380
+"Mercenary's Lot"	15380
+"The Oppressor"	15380
+"Hyaon's Fury"	15180
+"Singularity"	15180
+"Apep's Slumber"	15180
+"Belly of the Beast"	15120
+"Redblade Tramplers"	15120
+"Veruso's Battering Rams"	14920
+"Asenath's Mark"	14760
+"Uzaza's Valley"	14760
+"Scorpion's Call"	14720
+"Tawhoa's Felling"	14720
+"Soulthirst"	14680
+"The Tempest's Binding"	14680
+"Slavedriver's Hand"	14680
+"Vivinsect"	14680
+"Replica Malachai's Artifice"	14680
+"Replica Voideye"	14680
+"Rotblood Promise"	14680
+"Triumvirate Authority"	14680
+"Nuro's Harp"	14500
+"The Hateful Accuser"	14500
+"The Selfish Shepherd"	14500
+"The Queller of Minds"	14500
+"Xoph's Blood"	14320
+"The Pandemonius"	14320
+"Choir of the Storm"	14320
+"Replica Hyrri's Truth"	14320
+"Starkonja's Head"	14300
+"Romira's Banquet"	14300
+"Scaeva"	14300
+"Cane of Unravelling"	14300
+"Soulwrest"	14300
+"Cowl of the Thermophile"	14300
+"Cowl of the Cryophile"	14300
+"The Blood Dance"	14260
+"Hinekora's Sight"	14260
+"Replica Hinekora's Sight"	14260
+"Oro's Sacrifice"	14060
+"Surgebinders"	14060
+"Piscator's Vigil"	13880
+"The Dancing Dervish"	13880
+"Hiltless"	13880
+"Dendrobate"	13880
+"Cowl of the Ceraunophile"	13880
+"Haemophilia"	13840
+"Volkuur's Guidance"	13840
+"Replica Volkuur's Guidance"	13840
+"Callinellus Malleus"	13660
+"Allure"	13660
+"Debeon's Dirge"	13660
+"White Wind"	13660
+"Kaom's Primacy"	13480
+"Snakebite"	13480
+"Ichimonji"	13480
+"Mask of the Spirit Drinker"	13480
+"The Ghastly Theatre"	13480
+"The Gluttonous Tide"	13480
+"Mutewind Pennant"	13440
+"Mutewind Whispersteps"	13440
+"Tainted Pact"	13440
+"Null and Void"	13080
+"Kiloava's Bluster"	13080
+"The Supreme Truth"	13040
+"Nycta's Lantern"	13040
+"Tremor Rod"	13040
+"Brinerot Whalers"	13040
+"Allelopathy"	13040
+"Replica Allelopathy"	13040
+"Mark of the Doubting Knight"	12880
+"Skin of the Loyal"	12740
+"Replica Atziri's Foible"	12740
+"Greed's Embrace"	12700
+"Story of the Vaal"	12700
+"Storm Secret"	12700
+"Ahuana's Bite"	12700
+"Marylene's Fallacy"	12660
+"Call of the Brotherhood"	12660
+"Emberwake"	12660
+"Trypanon"	12660
+"Voice of the Storm"	12660
+"Fury Valve"	12660
+"Mother's Embrace"	12660
+"Blood Price"	12660
+"Thousand Teeth Temu"	12500
+"The Broken Crown"	12500
+"The Retch"	12360
+"Voidbringer"	12340
+"Dance of the Offered"	12340
+"Admiral's Arrogance"	12300
+"Sin Trek"	12140
+"Chin Sol"	12140
+"Wings of Entropy"	12140
+"Sinvicta's Mettle"	12140
+"Voidhome"	11980
+"Pyroshock Clasp"	11980
+"Circle of Nostalgia"	11940
+"Chernobog's Pillar"	11780
+"Kingsguard"	11780
+"Kondo's Pride"	11780
+"Geofri's Crest"	11620
+"Bronn's Lithe"	11620
+"The Consuming Dark"	11620
+"The Coming Calamity"	11620
+"Serle's Masterwork"	11620
+"Command of the Pit"	11600
+"Replica Harvest"	11600
+"Cameria's Maul"	11440
+"Balefire"	11440
+"The Wasp Nest"	11440
+"Taproot"	11440
+"The Druggery"	11440
+"Goblinedge"	11440
+"Victario's Influence"	11280
+"Crown of the Pale King"	11280
+"Oskarm"	11280
+"Aurseize"	11260
+"Tombfist"	11260
+"Vixen's Entrapment"	11260
+"Moonsorrow"	11100
+"Obliteration"	11100
+"The Fledgling"	10960
+"Voll's Protector"	10920
+"Meginord's Vise"	10920
+"Redblade Banner"	10920
+"Xoph's Heart"	10920
+"The Halcyon"	10920
+"Replica Earendel's Embrace"	10920
+"Gang's Momentum"	10780
+"Femurs of the Saints"	10780
+"March of the Legion"	10780
+"Sign of the Sin Eater"	10780
+"The Burden of Shadows"	10780
+"Warped Timepiece"	10640
+"Heartbound Loop"	10640
+"Frostbreath"	10640
+"Darkness Enthroned"	10640
+"Perquil's Toe"	10640
+"Nametaker"	10640
+"Soul Mantle"	10340
+"Alberon's Warpath"	10340
+"Sire of Shards"	10340
+"Wyrmsign"	10340
+"Venopuncture"	10340
+"Icefang Orbit"	10340
+"Shattershard"	10340
+"Steelworm"	10340
+"Tanu Ahi"	10340
+"Bloodsoaked Medallion"	10340
+"Windscream"	10300
+"Deidbell"	10300
+"The Whispering Ice"	10300
+"Gluttony"	10020
+"Nightgrip"	10020
+"Olroth's Charge"	10020
+"Sudden Dawn"	10020
+"Ephemeral Edge"	10000
+"Death's Harp"	10000
+"Bitterdream"	10000
+"Replica Iron Commander"	10000
+"The Hand of Phrecia"	10000
+"Hrimnor's Resolve"	9860
+"Rat's Nest"	9860
+"Maloney's Nightfall"	9860
+"Three-step Assault"	9860
+"The Highwayman"	9860
+"Innsbury Edge"	9740
+"The Fracturing Spinner"	9700
+"Great Old One's Ward"	9460
+"Replica Advancing Fortress"	9460
+"Kahuturoa's Certainty"	9460
+"Umbilicus Immortalis"	9420
+"Xirgil's Crank"	9420
+"Bisco's Leash"	9420
+"Replica Lioneye's Paws"	9420
+"Relic of the Pact"	9420
+"Infractem"	9300
+"Prismatic Eclipse"	9300
+"Empire's Grasp"	9300
+"Voideye"	9180
+"Malachai's Artifice"	9180
+"Kongming's Stratagem"	9180
+"Essence Worm"	9180
+"Architect's Hand"	9180
+"The Annihilating Light"	9180
+"Stormseeker"	9180
+"Maligaro's Restraint"	8920
+"Jorrhast's Blacksteel"	8920
+"Natural Hierarchy"	8920
+"Ascent From Flesh"	8920
+"Kitava's Thirst"	8920
+"Soulbound"	8920
+"Doomfletch"	8880
+"Brutus' Lead Sprinkler"	8880
+"Terminus Est"	8760
+"Black Sun Crest"	8760
+"Southbound"	8760
+"Ambu's Charge"	8660
+"Replica Ambu's Charge"	8660
+"Vaal Caress"	8620
+"Heartbreaker"	8520
+"Immortal Flesh"	8520
+"Victario's Charity"	8520
+"The Embalmer"	8520
+"Zeel's Amplifier"	8260
+"The Eternal Apple"	8260
+"Pragmatism"	8260
+"Demon Stitcher"	8160
+"Eye of Chayula"	8140
+"The Eternal Struggle"	8140
+"Midnight Bargain"	7920
+"Ceinture of Benevolence"	7920
+"Dream Fragments"	7900
+"Reverberation Rod"	7900
+"Winterweave"	7900
+"Doedre's Tongue"	7900
+"Kalisa's Grace"	7800
+"Lightbane Raiment"	7800
+"Doedre's Scorn"	7680
+"Moonbender's Wing"	7680
+"The Flawed Refuge"	7680
+"Ungil's Harmony"	7660
+"Brinerot Flag"	7660
+"Ornament of the East"	7560
+"Advancing Fortress"	7560
+"Valako's Sign"	7460
+"Replica Bones of Ullr"	7440
+"The Blood Reaper"	7340
+"Sibyl's Lament"	7340
+"The Anvil"	7340
+"Maligaro's Lens"	7340
+"Mark of Submission"	7340
+"The Harvest"	7240
+"Rigwald's Charge"	7120
+"Widowmaker"	7120
+"Siegebreaker"	7120
+"Tawhanuku's Timing"	7120
+"Heatshiver"	7020
+"Berek's Respite"	7020
+"Rigwald's Crest"	7020
+"The Flow Untethered"	7020
+"Replica Tempestuous Steel"	7020
+"Arn's Anguish"	7020
+"Olesya's Delight"	7020
+"Graven's Secret"	7020
+"Replica Heatshiver"	7020
+"Nevalius Inheritance"	7020
+"Daresso's Passion"	6920
+"Bloodbond"	6820
+"Wurm's Molt"	6720
+"Winterheart"	6720
+"Goldwyrm"	6640
+"The Primordial Chain"	6640
+"Plume of Pursuit"	6640
+"Veruso's Ambition"	6640
+"Cloak of Flame"	6620
+"Clayshaper"	6520
+"Sentari's Answer"	6440
+"Chober Chaber"	6340
+"Eclipse Solaris"	6340
+"The Aylardex"	6260
+"Iron Commander"	6260
+"Replica Bitterdream"	6260
+"Ahkeli's Valley"	6240
+"Precursor's Emblem"	6240
+"Circle of Anguish"	6240
+"Icetomb"	6140
+"Orbala's Stand"	6140
+"Rearguard"	6060
+"Shadows and Dust"	6060
+"Demigod's Beacon"	6060
+"Aukuna's Will"	6060
+"Replica Winterheart"	6060
+"Valyrium"	5980
+"Lioneye's Paws"	5900
+"Thief's Torment"	5900
+"Lori's Lantern"	5900
+"Replica Twyzel"	5900
+"Zahndethus' Cassock"	5800
+"Mindspiral"	5800
+"Cybil's Paw"	5800
+"Torchoak Step"	5800
+"Chalice of Horrors"	5720
+"Ngamahu's Sign"	5720
+"Skullhead"	5620
+"Skirmish"	5620
+"Gifts from Above"	5560
+"Blightwell"	5560
+"Replica Leer Cast"	5560
+"Putembo's Meadow"	5540
+"Circle of Regret"	5540
+"The Three Dragons"	5460
+"Earendel's Embrace"	5460
+"Willclash"	5460
+"Lycosidae"	5380
+"Mortem Morsu"	5300
+"Al Dhih"	5240
+"The Baron"	5240
+"Fairgraves' Tricorne"	5220
+"Hyperboreus"	5220
+"Survivor's Guilt"	5220
+"Reaper's Pursuit"	5160
+"Drillneck"	5080
+"Timeclasp"	5080
+"Faithguard"	5080
+"Grattus Signet"	5080
+"Shavronne's Pace"	5000
+"Briskwrap"	5000
+"Flesh-Eater"	5000
+"Triad Grip"	5000
+"Le Heup of All"	4940
+"Pyre"	4920
+"Uzaza's Mountain"	4920
+"Circle of Fear"	4920
+"Replica Tasalio's Sign"	4920
+"Call of the Void"	4920
+"Ikiaho's Promise"	4860
+"Matua Tupuna"	4800
+"The Trickster's Smile"	4800
+"Replica Karui Ward"	4780
+"Mightflay"	4720
+"Titucius' Span"	4720
+"Twyzel"	4720
+"The Warden's Brand"	4720
+"Retaliation Charm"	4720
+"Elevore"	4720
+"Veil of the Night"	4660
+"Edge of Madness"	4660
+"Replica Veil of the Night"	4660
+"Relentless Fury"	4580
+"Fated End"	4500
+"Replica Doedre's Damning"	4500
+"Wake of Destruction"	4440
+"Leer Cast"	4440
+"Lakishu's Blade"	4440
+"The Stormheart"	4440
+"Meginord's Girdle"	4380
+"Berek's Pass"	4380
+"Berek's Grip"	4380
+"Kikazaru"	4380
+"Belt of the Deceiver"	4380
+"Tasalio's Sign"	4380
+"Maligaro's Cruelty"	4380
+"Curtain Call"	4380
+"The Felbog Fang"	4380
+"Geofri's Baptism"	4320
+"Sundance"	4320
+"Slitherpinch"	4320
+"Queen's Decree"	4320
+"Thousand Ribbons"	4240
+"Tabula Rasa"	4240
+"Ewar's Mirage"	4180
+"Mark of the Red Covenant"	4180
+"Coward's Legacy"	4120
+"Circle of Guilt"	4120
+"Chains of Emancipation"	4120
+"Carnage Heart"	4060
+"Foxshade"	4060
+"Prismweave"	4060
+"Malachai's Simula"	4020
+"Ashrend"	4020
+"Solaris Lorica"	4020
+"Trolltimber Spire"	4020
+"Widowhail"	4000
+"Storm Prison"	3940
+"Facebreaker"	3900
+"Mokou's Embrace"	3900
+"Ahkeli's Mountain"	3900
+"Stormcharger"	3840
+"Giantsbane"	3840
+"Flesh and Spirit"	3780
+"Replica Bloodplay"	3780
+"Bones of Ullr"	3720
+"Quecholli"	3720
+"Deerstalker"	3720
+"Fidelitas' Spike"	3720
+"Bated Breath"	3720
+"Praxis"	3720
+"Perandus Blazon"	3500
+"Ungil's Gauche"	3500
+"Brightbeak"	3500
+"Daresso's Salute"	3500
+"Victario's Acuity"	3500
+"Asphyxia's Wrath"	3500
+"Shaper's Seed"	3500
+"The Deep One's Hide"	3500
+"Lavianga's Wisdom"	3500
+"Extractor Mentis"	3500
+"The Tempestuous Steel"	3500
+"Saemus' Gift"	3500
+"Victario's Flight"	3460
+"Ashcaller"	3460
+"Putembo's Valley"	3460
+"Ghostwrithe"	3360
+"Dusktoe"	3300
+"Wideswing"	3300
+"Faminebind"	3300
+"Roth's Reach"	3300
+"Thrillsteel"	3300
+"Doryani's Invitation"	3260
+"Night's Hold"	3260
+"Bear's Girdle"	3260
+"Hrimnor's Hymn"	3200
+"Aurumvorax"	3200
+"Kaltenhalt"	3120
+"Nomic's Storm"	3120
+"Dreadarc"	3120
+"Uzaza's Meadow"	3080
+"Wreath of Phrecia"	3080
+"The Ignomon"	3020
+"Bloodplay"	3020
+"The Untouched Soul"	3020
+"The Goddess Bound"	2980
+"Shackles of the Wretched"	2980
+"Hyrri's Bite"	2940
+"Chain of Endurance"	2940
+"Limbsplit"	2860
+"Pillar of the Caged God"	2860
+"Dying Breath"	2860
+"Realmshaper"	2860
+"Doedre's Damning"	2820
+"Quill Rain"	2820
+"Replica Quill Rain"	2820
+"Shiversting"	2760
+"Honourhome"	2760
+"Doedre's Tenure"	2760
+"Wildslash"	2760
+"Kaom's Sign"	2740
+"Replica Blood Thorn"	2740
+"Replica Fencoil"	2740
+"Feastbind"	2680
+"Sadima's Touch"	2660
+"Goldrim"	2660
+"Sacrificial Heart"	2660
+"Replica Last Resort"	2660
+"The Princess"	2600
+"Gorebreaker"	2600
+"Axiom Perpetuum"	2600
+"Coward's Chains"	2580
+"Replica Prismweave"	2580
+"Wondertrap"	2540
+"Hrimsorrow"	2540
+"Storm Cloud"	2540
+"Bramblejack"	2500
+"Crest of Perandus"	2460
+"Stone of Lazhwar"	2380
+"Karui Ward"	2380
+"Springleaf"	2380
+"Tear of Purity"	2380
+"The Screaming Eagle"	2320
+"Abberath's Horn"	2320
+"Ondar's Clasp"	2260
+"Wheel of the Stormsail"	2260
+"Goredrill"	2260
+"Fencoil"	2180
+"Craghead"	2180
+"The Blood Thorn"	2180
+"Sidhebreath"	2120
+"Crown of Thorns"	2120
+"Araku Tiki"	2120
+"Wanderlust"	2120
+"Last Resort"	2120
+"Blackheart"	2060
+"Blackgleam"	2060
+"Oni-Goroshi"	2060
+"Redbeak"	2000
+"Silverbranch"	2000
+"Ezomyte Peak"	2000
+"Lochtonial Caress"	2000
+"Lifesprig"	2000
+"First Piece of the Arcane"	2000
+"Second Piece of the Arcane"	2000
+"Third Piece of the Arcane"	2000
+"First Piece of Time"	2000
+"Second Piece of Time"	2000
+"Demigod's Authority"	2000
+"Curio of Absorption"	2000
+"Curio of Consumption"	2000
+"Curio of Potential"	2000
+"Curio of Decay"	2000

@@ -107,6 +107,7 @@ RouterVariant* EWindowMain::registered_alternate_gem_quality_router_variants[NSW
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_game_item_list;
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_class_list;
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_explicit_list;
+std::vector<EDataEntity*>								EWindowMain::registered_data_entity_uniques_list;
 
 std::vector < std::string>								EWindowMain::filter_text_lines;
 std::vector <EButtonGroupFilterBlockEditor*>			EWindowMain::filter_block_tabs = std::vector<EButtonGroupFilterBlockEditor*>(filter_tabs_count);
@@ -9578,20 +9579,28 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/localisation.txt");
 
 
-	parse_raw_explicit_table();
-
+	//parse_raw_explicit_table();
+	
 
 
 
 
 	ETextParser::split_data_entity_list_to_named_structs();
 
-
-
-
 	add_game_item_data_entity_to_list();
 
-	
+	parse_dust_prices();
+
+
+
+
+
+
+
+
+
+
+
 	register_default_filter_rules();
 	//register_filter_rules();
 	
@@ -10936,6 +10945,79 @@ void EWindowMain::parse_raw_explicit_table()
 
 	}
 	writabro.close();
+}
+
+void EWindowMain::parse_dust_prices()
+{
+	std::ifstream file;
+	std::ofstream result_file;
+
+	std::string str;
+
+	file.open("data/DustPrices.txt");
+
+	std::string
+	result_buffer = "";
+
+	while (std::getline(file, str))
+	{
+		EStringUtils::split_line_to_array(str, false);
+
+		std::string
+		unique_name = EStringUtils::string_array[0];
+
+		//int
+		//hash_ID = EStringUtils::get_id_by_hash(unique_name);
+
+		bool have_match = false;
+
+		for (EDataEntity* de : EWindowMain::registered_data_entity_uniques_list)
+		{
+			std::string
+			de_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
+
+			if
+			(
+				(de_name == unique_name)
+				//&&
+				//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, de))
+			)
+			{
+				have_match = true;
+
+				
+
+				int
+				dust_quantity = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, 9'999'999);
+				
+				ID_string
+				new_worth_ID_string;
+				
+
+				if (dust_quantity >= 250'000)	{ new_worth_ID_string = ERegisteredStrings::very_expensive; }	else
+				if (dust_quantity >= 100'000)	{ new_worth_ID_string = ERegisteredStrings::expensive;		}	else
+				if (dust_quantity >= 35'000)	{ new_worth_ID_string = ERegisteredStrings::rare;			}	else
+				if (dust_quantity >= 10'000)	{ new_worth_ID_string = ERegisteredStrings::moderate;		}	else
+				if (dust_quantity >= 5'000)		{ new_worth_ID_string = ERegisteredStrings::common;			}	else
+				/*	low cost			*/		{ new_worth_ID_string = ERegisteredStrings::trash; }
+
+				DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], de);
+				DataEntityUtils::set_tag_value_by_name(0, "Dust price tag", new_worth_ID_string.string_value, de);
+			}
+		}
+
+		if (!have_match)
+		{
+			result_buffer += "[" + unique_name + "] have no suitable data entity!" + '\r' + '\n';
+		}
+	}
+	
+	file.close();
+
+	result_file.open("data/DustPrices[result].txt");
+	result_file << result_buffer;
+	result_file.close();
+
 }
 
 void EWindowMain::load_config_from_disc()
@@ -19915,18 +19997,37 @@ void EWindowMain::add_game_item_data_entity_to_list()
 	for (int i = 0; i < EDataEntity::data_entity_global_list.size(); i++)
 	{
 		EDataEntity*
-			data_entity = EDataEntity::data_entity_global_list[i];
+		data_entity = EDataEntity::data_entity_global_list[i];
 
 		if (data_entity != nullptr)
 		{
 			int index = 0;
 
 			std::string
-				data_type_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, data_entity);
+			data_type_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, data_entity);
 
+			bool
+			is_unique
+			= false;
+
+			is_unique =
+			DataEntityUtils::is_exist_tag_by_name_and_value_ID
+			(
+				0,
+				&ERegisteredStrings::item_tag,
+				&ERegisteredStrings::unique_item,
+				data_entity
+			);
+
+			
 			if (data_type_name == "Game item")
 			{
 				EWindowMain::registered_data_entity_game_item_list.push_back(data_entity);
+
+				if (is_unique)
+				{
+					EWindowMain::registered_data_entity_uniques_list.push_back(data_entity);
+				}
 			}
 			else if (data_type_name == "Base Class")
 			{
@@ -19936,6 +20037,8 @@ void EWindowMain::add_game_item_data_entity_to_list()
 			{
 				EWindowMain::registered_data_entity_explicit_list.push_back(data_entity);
 			}
+
+
 		}
 	}
 }

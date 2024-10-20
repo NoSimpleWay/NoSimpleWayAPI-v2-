@@ -222,6 +222,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"karui-ward-jade-amulet"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"	[value]"Replica Karui Ward"
+	[tag]"name RU"	[value]"Копия Оберег каруи"
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"price dependency"	[value]"Corruptions"
+	
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
+	[tag]"detailsId"	[value]"replica-karui-ward-jade-amulet"
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -314,6 +337,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"hyrris-truth-jade-amulet"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"	[value]"Replica Hyrri's Truth"
+	[tag]"name RU"	[value]"Копия Правда Хайрри"
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
+	[tag]"detailsId"	[value]"replica-hyrris-truth-jade-amulet"
 
 
 
@@ -538,6 +583,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"winterheart-gold-amulet"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"	[value]"Replica Winterheart"
+	[tag]"name RU"	[value]"Копия Сердце зимы"
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-winterheart-gold-amulet"
 
 
 
@@ -836,6 +903,30 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"badge-of-the-brotherhood-turquoise-amulet"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"	[value]"Replica Badge of the Brotherhood"
+	[tag]"name RU"	[value]"Копия Знак Братства"
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"detailsId"	[value]"replica-badge-of-the-brotherhood-turquoise-amulet"
 
 
 
@@ -1682,6 +1773,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"sunblast-cloth-belt"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"	[value]"Nevalius Inheritance"
+	[tag]"name RU"	[value]"Наследство Невалиев"
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"nevalius-inheritance-cloth-belt"
 
 
 
@@ -2003,6 +2110,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"siegebreaker-heavy-belt"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"	[value]"Replica Siegebreaker"
+	[tag]"name RU"	[value]"Копия Конец осаде"
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-siegebreaker-heavy-belt"
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -2149,6 +2277,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"prismweave-rustic-sash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Rustic Sash"
+	[tag]"name EN"	[value]"Replica Prismweave"
+	[tag]"name RU"	[value]"Копия Сплетение цвета"
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"item tag"	[value]"Good for start"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-prismweave-rustic-sash"
 
 
 
@@ -2334,6 +2484,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-magnate-studded-belt"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Studded Belt"
+	[tag]"name EN"	[value]"Ynda's Stand"
+	[tag]"name RU"	[value]"Рубеж Инды"
+	[tag]"icon path"	[value]"Studded_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Shipping"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"yndas-stand-studded-belt"
 
 
 
@@ -2549,6 +2716,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"tasalios-sign-sapphire-ring"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"	[value]"Replica Tasalio's Sign"
+	[tag]"name RU"	[value]"Копия Знак Тасалио"
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-tasalios-sign-sapphire-ring"
 
 
 
@@ -3345,6 +3535,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"malachais-artifice-unset-ring"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"	[value]"Replica Malachai's Artifice"
+	[tag]"name RU"	[value]"Копия Уловка Малахая"
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-malachais-artifice-unset-ring"
 
 
 
@@ -3363,6 +3574,67 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"profane-proxy-unset-ring"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Nameless Ring"
+	[tag]"name EN"	[value]"The Hateful Accuser"
+	[tag]"name RU"	[value]"Злобный обличитель"
+	[tag]"icon path"	[value]"NamelessRing"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"item tag"	[value]"Loot source: Ritual"
+	
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"the-hateful-accuser-nameless-ring"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Nameless Ring"
+	[tag]"name EN"	[value]"The Selfish Shepherd"
+	[tag]"name RU"	[value]"Эгоистичный пастырь"
+	[tag]"icon path"	[value]"NamelessRing"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"item tag"	[value]"Loot source: Ritual"
+	
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"the-selfish-shepherd-nameless-ring"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Nameless Ring"
+	[tag]"name EN"	[value]"The Queller of Minds"
+	[tag]"name RU"	[value]"Усмиритель умов"
+	[tag]"icon path"	[value]"NamelessRing"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"item tag"	[value]"Loot source: Ritual"
+	
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"the-queller-of-minds-nameless-ring"
 
 
 
@@ -3754,6 +4026,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"doedres-damning-paua-ring"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"	[value]"Replica Doedre's Damning"
+	[tag]"name RU"	[value]"Копия Проклятие Доэдре"
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"replica-doedres-damning-paua-ring"
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -4017,6 +4310,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"gifts-from-above-diamond-ring"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Diamond Ring"
+	[tag]"name EN"	[value]"Grattus Signet"
+	[tag]"name RU"	[value]"Печатка Граттусов"
+	[tag]"icon path"	[value]"Diamond_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"grattus-signet-diamond-ring"
 
 
 
@@ -5374,6 +5685,24 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Vaal Hatchet"
+	[tag]"name EN"	[value]"Jack, the Axe"
+	[tag]"name RU"	[value]"Топор Джек"
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axes"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"jack-the-axe-vaal-hatchet"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Royal Axe"
 	[tag]"name EN"	[value]"Rigwald's Savagery"
 	[tag]"name RU"	[value]"Свирепость Ригвальда"
@@ -5572,6 +5901,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"laviangas-wisdom-war-hammer"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Phantom Mace"
+	[tag]"name EN"	[value]"Serle's Masterwork"
+	[tag]"name RU"	[value]"Шедевр Серли"
+	[tag]"icon path"	[value]"SuperHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Shipping"
+	
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"serles-masterwork-phantom-mace"
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6212,7 +6563,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"War Sword"
-	[tag]"name EN"	[value]"Replica The Tempestuous Steel"
+	[tag]"name EN"	[value]"Replica Tempestuous Steel"
 	[tag]"name RU"	[value]"Копия Буйная сталь"
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"One Hand Swords"
@@ -6994,7 +7345,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Gnarled Branch"
-	[tag]"name EN"	[value]"Replica The Blood Thorn"
+	[tag]"name EN"	[value]"Replica Blood Thorn"
 	[tag]"name RU"	[value]"Копия Кровавый шип"
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Staves"
@@ -7711,7 +8062,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Jasper Chopper"
-	[tag]"name EN"	[value]"Replica The Harvest"
+	[tag]"name EN"	[value]"Replica Harvest"
 	[tag]"name RU"	[value]"Копия Жнец"
 	[tag]"icon path"	[value]"SuperTwoHandAxe"
 	[tag]"base class"	[value]"Two Hand Axes"
@@ -8117,6 +8468,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"replica-kongors-undying-rage-terror-maul"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Piledriver"
+	[tag]"name EN"	[value]"Tawhoa's Felling"
+	[tag]"name RU"	[value]"Падение Тахоа"
+	[tag]"icon path"	[value]"SuperTwoHandedMace"
+	[tag]"base class"	[value]"Two Hand Maces"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Shipping"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"tawhoas-felling-piledriver"
 
 
 
@@ -8420,6 +8790,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"kondos-pride-ezomyte-blade"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Ezomyte Blade"
+	[tag]"name EN"	[value]"The Living Blade"
+	[tag]"name RU"	[value]"Живой меч"
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Swords"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Boss drop"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"the-living-blade-ezomyte-blade"
 
 
 
@@ -8983,7 +9374,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Carnal Armour"
-	[tag]"name EN"	[value]"Replica The Restless Ward"
+	[tag]"name EN"	[value]"Replica Restless Ward"
 	[tag]"name RU"	[value]"Копия Неусыпная опека"
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
@@ -8997,7 +9388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"set bool attribute"	[value]"Replica"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"detailsId"	[value]"replica-the-restless-ward-carnal-armour"
+	[tag]"detailsId"	[value]"replica-restless-ward-carnal-armour"
 
 
 
@@ -9587,6 +9978,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"thousand-ribbons-simple-robe"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"	[value]"Tabula Rasa"
+	[tag]"name RU"	[value]"Табула раса"
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Good for start"
+	[tag]"worth"	[value]"Moderate"
+	
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"tabula-rasa-simple-robe-6l"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"	[value]"Skin of the Loyal"
+	[tag]"name RU"	[value]"Кожа верных"
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Loot source: Chayula"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"worth"	[value]"Moderate"
+	
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"skin-of-the-loyal-simple-robe"
 
 
 
@@ -9720,7 +10152,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Zodiac Leather"
-	[tag]"name EN"	[value]"Replica The Perfect Form"
+	[tag]"name EN"	[value]"Replica Perfect Form"
 	[tag]"name RU"	[value]"Копия Идеальной формы"
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
@@ -9734,7 +10166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"set bool attribute"	[value]"Replica"
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
-	[tag]"detailsId"	[value]"replica-the-perfect-form-zodiac-leather"
+	[tag]"detailsId"	[value]"replica-perfect-form-zodiac-leather"
 
 
 
@@ -10200,8 +10632,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"Loot source: Boss"
-	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Non world drop"
 	[tag]"item tag"	[value]"Loot source: Heist"
 	[tag]"item tag"	[value]"Replica"
@@ -10327,6 +10757,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"replica-eternity-shroud-blood-raiment"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Blood Raiment"
+	[tag]"name EN"	[value]"Replica Kaom's Heart"
+	[tag]"name RU"	[value]"Копия Cердце Каома"
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armours"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"detailsId"	[value]"replica-kaoms-heart-glorious-plate"
+	
+	
 
 
 
@@ -10447,7 +10902,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Spidersilk Robe"
-	[tag]"name EN"	[value]"Replica The Covenant"
+	[tag]"name EN"	[value]"Replica Covenant"
 	[tag]"name RU"	[value]"Копия Договор"
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
@@ -10461,7 +10916,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"set bool attribute"	[value]"Replica"
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
-	[tag]"detailsId"	[value]"replica-the-covenant-spidersilk-robe"
+	[tag]"detailsId"	[value]"replica-covenant-spidersilk-robe"
 
 
 
@@ -10657,6 +11112,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"wake-of-destruction-mesh-boots"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Shackled Boots"
+	[tag]"name EN"	[value]"Veruso's Ambition"
+	[tag]"name RU"	[value]"Амбиции Верузо"
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"verusos-ambition-shackled-boots"
 
 
 
@@ -11274,6 +11745,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-infinite-pursuit-titan-greaves"
 
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Titan Greaves"
@@ -11292,10 +11765,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-red-trail-titan-greaves"
 
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"base name"	[value]"Titan Greaves"
-	[tag]"name EN"	[value]"Replica The Red Trail"
+	[tag]"name EN"	[value]"Replica Red Trail"
 	[tag]"name RU"	[value]"Копия Красный след"
 	[tag]"icon path"	[value]"SuperBoots"
 	[tag]"base class"	[value]"Boots"
@@ -11309,7 +11783,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"set bool attribute"	[value]"Replica"
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
-	[tag]"detailsId"	[value]"replica-the-red-trail-titan-greaves"
+	[tag]"detailsId"	[value]"replica-red-trail-titan-greaves"
 
 
 
@@ -12010,6 +12484,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"wyrmsign-wyrmscale-gauntlets"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Antique Gauntlets"
+	[tag]"name EN"	[value]"Admiral's Arrogance"
+	[tag]"name RU"	[value]"Адмиральский апломб"
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"admirals-arrogance-antique-gauntlets"
 
 
 
@@ -12064,6 +12557,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"triad-grip-mesh-gloves"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Mesh Gloves"
+	[tag]"name EN"	[value]"The Hand of Phrecia"
+	[tag]"name RU"	[value]"Десница Фрекии"
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"World drop"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"the-hand-of-phrecia-mesh-gloves"
 
 
 
@@ -13560,6 +14069,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-devourer-of-minds-pig-faced-bascinet"
 	[tag]"detailsId"	[value]"the-devourer-of-minds-pig-faced-bascinet-relic"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Siege Helmet"
+	[tag]"name EN"	[value]"Kaom's Command"
+	[tag]"name RU"	[value]"Приказ Каома"
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Loot source: Shipping"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
+	[tag]"detailsId"	[value]"the-devourer-of-minds-pig-faced-bascinet"
 	
 	
 	
@@ -15322,6 +15848,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"heatshiver-leather-hood"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Leather Hood"
+	[tag]"name EN"	[value]"Replica Heatshiver"
+	[tag]"name RU"	[value]"Копия Лёд и пламень"
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: Heist"
+	[tag]"item tag"	[value]"Replica"
+	[tag]"set bool attribute"	[value]"Replica"s
+	
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
+	[tag]"detailsId"	[value]"replica-heatshiver-leather-hood"
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -15865,6 +16412,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"zeels-amplifier-polished-spiked-shield"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"base name"	[value]"Girded Tower Shield"
+	[tag]"name EN"	[value]"Svalinn"
+	[tag]"name RU"	[value]"Свалинн"
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"	[value]"Hidden item"
+	[tag]"item tag"	[value]"Unique item"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Trash"
+	[tag]"detailsId"	[value]"svalinn-girded-tower-shield"
 
 
 

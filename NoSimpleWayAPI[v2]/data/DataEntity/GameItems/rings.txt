@@ -651,7 +651,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"Always unique"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Non world drop"
+	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 
 	[tag]"item width"	[value]"1"

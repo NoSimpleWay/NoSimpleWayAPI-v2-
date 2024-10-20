@@ -1738,6 +1738,7 @@ public:
 	void register_loot_filter_list_group();
 
 	void parse_raw_explicit_table();
+	void parse_dust_prices();
 
 	void load_config_from_disc();
 	void load_config_from_disc_for_filter_version();
@@ -1839,6 +1840,7 @@ public:
 	static std::vector<EDataEntity*>			registered_data_entity_game_item_list;
 	static std::vector<EDataEntity*>			registered_data_entity_class_list;
 	static std::vector<EDataEntity*>			registered_data_entity_explicit_list;
+	static std::vector<EDataEntity*>			registered_data_entity_uniques_list;
 
 	static void									add_game_item_data_entity_to_list();
 	

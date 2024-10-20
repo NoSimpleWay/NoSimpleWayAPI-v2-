@@ -2763,6 +2763,47 @@ DETF_color	255	230	204	255
 
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"Dust price tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Dust: < 5 000"
+DETF_localised_attribute_name_RU	"消朦: < 5 000"
+DETF_color	118	128	138	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Dust: >= 5 000"
+DETF_localised_attribute_name_RU	"消朦: >= 5 000"
+DETF_color	220	210	200	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Dust: >= 10 000"
+DETF_localised_attribute_name_RU	"消朦: >= 10 000"
+DETF_color	150	255	100	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Dust: >= 35 000"
+DETF_localised_attribute_name_RU	"消朦: >= 35 000"
+DETF_color	100	200	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 100 000"
+DETF_localised_attribute_name_RU	"消朦: >= 100 000"
+DETF_color	64	255	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 250 000"
+DETF_localised_attribute_name_RU	"消朦: >= 250 000"
+DETF_color	255	200	100	255
+
+
+
 
 
 
@@ -2817,9 +2858,6 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
 DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Runic base"
-DETF_color	255	128	64	255
 
 
 
