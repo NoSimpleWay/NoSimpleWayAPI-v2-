@@ -417,6 +417,10 @@ namespace ERegisteredStrings
 	extern const ID_string vendor_recipe;
 	extern const ID_string blight_drop;
 	extern const ID_string simulacrum;
+
+	extern const ID_string dust_quantity;
+
+
 }
 
 

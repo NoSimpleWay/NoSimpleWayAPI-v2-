@@ -1,5 +1,1597 @@
-[First Piece of Storms] have no suitable data entity!
-[Precursor's Emblem] have no suitable data entity!
-[Demigod's Beacon] have no suitable data entity!
-[Oni-Goroshi] have no suitable data entity!
-[Demigod's Authority] have no suitable data entity!
+[Replica Shroud of the Lightless] is no world drop!
+[Stasis Prison] is no world drop!
+[Starforge] is no world drop!
+[Voidforge] is no world drop!
+[Replica Kongor's Undying Rage] is no world drop!
+[Echoforge] is no world drop!
+[Kingmaker] is no world drop!
+[Atziri's Disfavour] is no world drop!
+[Replica Duskdawn] is no world drop!
+[The Saviour] is no world drop!
+[Replica Tukohama's Fortress] is no world drop!
+[The Winds of Fate] is no world drop!
+[Hateforge] is no world drop!
+[Uul-Netol's Vow] is no world drop!
+[Soul Ascension] is no world drop!
+[Nimis] is no world drop!
+[Replica Headhunter] is no world drop!
+[Replica Bated Breath] is no world drop!
+[Replica Farrul's Fur] is no world drop!
+[Replica Nebulis] is no world drop!
+[Replica Windripper] is no world drop!
+[Replica Eternity Shroud] is no world drop!
+[Annihilation's Approach] is no world drop!
+[Eternal Damnation] is no world drop!
+[Duskdawn] is no world drop!
+[Replica Atziri's Acuity] is no world drop!
+[Entropic Devastation] is no world drop!
+[Replica Alberon's Warpath] is no world drop!
+[Replica Maloney's Mechanism] is no world drop!
+[Replica Trypanon] is no world drop!
+[The Tides of Time] is no world drop!
+[Atziri's Splendour] is no world drop!
+[Shroud of the Lightless] is no world drop!
+[Indigon] is no world drop!
+[Farrul's Fur] is no world drop!
+[Farrul's Chase] is no world drop!
+[Hand of Wisdom and Action] is no world drop!
+[The Red Trail] is no world drop!
+[Doryani's Delusion] is no world drop!
+[Doryani's Delusion] is no world drop!
+[Doryani's Delusion] is no world drop!
+[The Queen's Hunger] is no world drop!
+[The Queen's Hunger] is no world drop!
+[The Immortal Will] is no world drop!
+[Replica Kaom's Heart] is no world drop!
+[Replica Red Trail] is no world drop!
+[Viridi's Veil] is no world drop!
+[Viridi's Veil] is no world drop!
+[Doppelganger Guise] is no world drop!
+[Grace of the Goddess] is no world drop!
+[Sporeguard] is no world drop!
+[Paradoxica] is no world drop!
+[The Yielding Mortality] is no world drop!
+[Replica Paradoxica] is no world drop!
+[Replica Allure] is no world drop!
+[The Formless Inferno] is no world drop!
+[The Perfect Form] is no world drop!
+[The Eternity Shroud] is no world drop!
+[Replica Perfect Form] is no world drop!
+[Replica Hyrri's Ire] is no world drop!
+[Uul-Netol's Embrace] is no world drop!
+[The Surrender] is no world drop!
+[Disintegrator] is no world drop!
+[Loreweave] is no world drop!
+[Replica Loreweave] is no world drop!
+[Yaomac's Accord] is no world drop!
+[Replica Stampede] is no world drop!
+[The Devourer of Minds] is no world drop!
+[Tulfall] is no world drop!
+[Esh's Visage] is no world drop!
+[Arborix] is no world drop!
+[The Surging Thoughts] is no world drop!
+[The Admiral] is no world drop!
+[Replica Cold Iron Point] is no world drop!
+[Replica Tulfall] is no world drop!
+[Replica Abyssus] is no world drop!
+[Replica Mistwall] is no world drop!
+[Farrul's Pounce] is no world drop!
+[Xoph's Nurture] is no world drop!
+[Crown of the Tyrant] is no world drop!
+[Crest of Desire] is no world drop!
+[Farrul's Bite] is no world drop!
+[Offering to the Serpent] is no world drop!
+[Garb of the Ephemeral] is no world drop!
+[The Devouring Diadem] is no world drop!
+[Atziri's Reflection] is no world drop!
+[Sandstorm Visage] is no world drop!
+[The Tempest Rising] is no world drop!
+[The Celestial Brace] is no world drop!
+[Zerphi's Heart] is no world drop!
+[Svalinn] is no world drop!
+[Replica Frostbreath] is no world drop!
+[Replica Covenant] is no world drop!
+[Mahuxotl's Machination] is no world drop!
+[The Tempest's Liberation] is no world drop!
+[Ravenous Passion] is no world drop!
+[Impresence] is no world drop!
+[Impresence] is no world drop!
+[Impresence] is no world drop!
+[Impresence] is no world drop!
+[Impresence] is no world drop!
+[Mark of the Elder] is no world drop!
+[Mark of the Shaper] is no world drop!
+[Polaric Devastation] is no world drop!
+[Replica Soul Strike] is no world drop!
+[Replica Midnight Bargain] is no world drop!
+[Severed in Sleep] is no world drop!
+[United in Dream] is no world drop!
+[Nebuloch] is no world drop!
+[Hopeshredder] is no world drop!
+[Shimmeron] is no world drop!
+[Death's Door] is no world drop!
+[The Burden of Truth] is no world drop!
+[The Apostate] is no world drop!
+[Replica Restless Ward] is no world drop!
+[Black Zenith] is no world drop!
+[Voidwalker] is no world drop!
+[Bubonic Trail] is no world drop!
+[Craiceann's Pincers] is no world drop!
+[Replica Voidwalker] is no world drop!
+[Vorana's March] is no world drop!
+[The Shattered Divinity] is no world drop!
+[Pledge of Hands] is no world drop!
+[Hand of Thought and Motion] is no world drop!
+[The Infinite Pursuit] is no world drop!
+[The Unshattered Will] is no world drop!
+[Invictus Solaris] is no world drop!
+[Cyclopean Coil] is no world drop!
+[Blasphemer's Grasp] is no world drop!
+[Bitterbind Point] is no world drop!
+[Nebulis] is no world drop!
+[Atziri's Rule] is no world drop!
+[Cadigan's Crown] is no world drop!
+[The Taming] is no world drop!
+[Circle of Ambition] is no world drop!
+[Replica Oro's Sacrifice] is no world drop!
+[Dawnbreaker] is no world drop!
+[Shaper's Touch] is no world drop!
+[The Enmity Divine] is no world drop!
+[Vix Lunaris] is no world drop!
+[Voidfletcher] is no world drop!
+[Hands of the High Templar] is no world drop!
+[Replica Dreamfeather] is no world drop!
+[The Goddess Scorned] is no world drop!
+[The Formless Flame] is no world drop!
+[The Snowblind Grace] is no world drop!
+[Saqawal's Nest] is no world drop!
+[Fenumus' Shroud] is no world drop!
+[Hale Negator] is no world drop!
+[Echoes of Creation] is no world drop!
+[Uul-Netol's Kiss] is no world drop!
+[The Anticipation] is no world drop!
+[Replica Alpha's Howl] is no world drop!
+[Atziri's Acuity] is no world drop!
+[Fenumus' Spinnerets] is no world drop!
+[Crown of the Inward Eye] is no world drop!
+[Presence of Chayula] is no world drop!
+[Solstice Vigil] is no world drop!
+[Crystallised Omniscience] is no world drop!
+[Ashes of the Stars] is no world drop!
+[The Vertex] is no world drop!
+[Tulborn] is no world drop!
+[Esh's Mirror] is no world drop!
+[The Rippling Thoughts] is no world drop!
+[Perepiteia] is no world drop!
+[Replica Wings of Entropy] is no world drop!
+[Dawnstrider] is no world drop!
+[Replica Inya's Epiphany] is no world drop!
+[The Living Blade] is no world drop!
+[Saqawal's Flock] is no world drop!
+[The Iron Mass] is no world drop!
+[The Hidden Blade] is no world drop!
+[The Fulcrum] is no world drop!
+[Replica Grip of the Council] is no world drop!
+[Cameria's Avarice] is no world drop!
+[Saqawal's Talons] is no world drop!
+[Breathstealer] is no world drop!
+[Expedition's End] is no world drop!
+[Gamblesprint] is no world drop!
+[First Piece of Focus] is no world drop!
+[Second Piece of Focus] is no world drop!
+[Third Piece of Focus] is no world drop!
+[Fourth Piece of Focus] is no world drop!
+[First Piece of Storms] have no suitable data entity!
+[Second Piece of Storms] is no world drop!
+[Third Piece of Storms] is no world drop!
+[Xoph's Inception] is no world drop!
+[Craiceann's Chitin] is no world drop!
+[Mask of the Stitched Demon] is no world drop!
+[Mask of the Tribunal] is no world drop!
+[Replica Soul Tether] is no world drop!
+[Replica Ungil's Gauche] is no world drop!
+[Replica Badge of the Brotherhood] is no world drop!
+[The Crimson Storm] is no world drop!
+[Craiceann's Carapace] is no world drop!
+[Fate of the Vaal] is no world drop!
+[Redblade Band] is no world drop!
+[Replica Three-step Assault] is no world drop!
+[Temptation Step] is no world drop!
+[Ceaseless Feast] is no world drop!
+[Inextricable Fate] is no world drop!
+[Craiceann's Tracks] is no world drop!
+[Fenumus' Toxins] is no world drop!
+[First Piece of Brutality] is no world drop!
+[Second Piece of Brutality] is no world drop!
+[Third Piece of Brutality] is no world drop!
+[First Piece of Directions] is no world drop!
+[Second Piece of Directions] is no world drop!
+[Third Piece of Directions] is no world drop!
+[Ahkeli's Meadow] is no world drop!
+[Replica Emberwake] is no world drop!
+[Atziri's Step] is no world drop!
+[Medved's Challenge] is no world drop!
+[Lightpoacher] is no world drop!
+[Forbidden Shako] is no world drop!
+[Replica Infractem] is no world drop!
+[Witchhunter's Judgment] is no world drop!
+[Ynda's Stand] is no world drop!
+[Saqawal's Winds] is no world drop!
+[Legacy of Fury] is no world drop!
+[Fenumus' Weave] is no world drop!
+[Replica Victario's Charity] is no world drop!
+[Replica Heartbreaker] is no world drop!
+[Putembo's Mountain] is no world drop!
+[Cane of Kulemak] is no world drop!
+[Doryani's Catalyst] is no world drop!
+[Kaom's Command] is no world drop!
+[Replica Siegebreaker] is no world drop!
+[The Stampede] is no world drop!
+[Cerberus Limb] is no world drop!
+[Replica Kalisa's Grace] is no world drop!
+[Replica Innsbury Edge] is no world drop!
+[Apep's Slumber] is no world drop!
+[Uzaza's Valley] is no world drop!
+[Tawhoa's Felling] is no world drop!
+[Slavedriver's Hand] is no world drop!
+[Vivinsect] is no world drop!
+[Replica Malachai's Artifice] is no world drop!
+[Replica Voideye] is no world drop!
+[Rotblood Promise] is no world drop!
+[Triumvirate Authority] is no world drop!
+[The Hateful Accuser] is no world drop!
+[The Selfish Shepherd] is no world drop!
+[The Queller of Minds] is no world drop!
+[Xoph's Blood] is no world drop!
+[The Pandemonius] is no world drop!
+[Choir of the Storm] is no world drop!
+[Replica Hyrri's Truth] is no world drop!
+[Cowl of the Thermophile] is no world drop!
+[Cowl of the Cryophile] is no world drop!
+[Replica Hinekora's Sight] is no world drop!
+[Cowl of the Ceraunophile] is no world drop!
+[Replica Volkuur's Guidance] is no world drop!
+[Mask of the Spirit Drinker] is no world drop!
+[The Gluttonous Tide] is no world drop!
+[Skin of the Loyal] is no world drop!
+[Replica Atziri's Foible] is no world drop!
+[Story of the Vaal] is no world drop!
+[Voice of the Storm] is no world drop!
+[Dance of the Offered] is no world drop!
+[Admiral's Arrogance] is no world drop!
+[Serle's Masterwork] is no world drop!
+[Command of the Pit] is no world drop!
+[Replica Harvest] is no world drop!
+[Tombfist] is no world drop!
+[Xoph's Heart] is no world drop!
+[The Halcyon] is no world drop!
+[Replica Earendel's Embrace] is no world drop!
+[The Burden of Shadows] is no world drop!
+[Darkness Enthroned] is no world drop!
+[Nightgrip] is no world drop!
+[Olroth's Charge] is no world drop!
+[Sudden Dawn] is no world drop!
+[Replica Iron Commander] is no world drop!
+[The Fracturing Spinner] is no world drop!
+[Replica Advancing Fortress] is no world drop!
+[Replica Lioneye's Paws] is no world drop!
+[Relic of the Pact] is no world drop!
+[Architect's Hand] is no world drop!
+[The Annihilating Light] is no world drop!
+[Replica Ambu's Charge] is no world drop!
+[The Eternal Struggle] is no world drop!
+[Replica Bones of Ullr] is no world drop!
+[The Flow Untethered] is no world drop!
+[Replica Tempestuous Steel] is no world drop!
+[Arn's Anguish] is no world drop!
+[Olesya's Delight] is no world drop!
+[Graven's Secret] is no world drop!
+[Replica Heatshiver] is no world drop!
+[Plume of Pursuit] is no world drop!
+[Replica Bitterdream] is no world drop!
+[Ahkeli's Valley] is no world drop!
+[Precursor's Emblem] have no suitable data entity!
+[Demigod's Beacon] have no suitable data entity!
+[Replica Winterheart] is no world drop!
+[Replica Twyzel] is no world drop!
+[Replica Leer Cast] is no world drop!
+[Putembo's Meadow] is no world drop!
+[Faithguard] is no world drop!
+[Uzaza's Mountain] is no world drop!
+[Replica Tasalio's Sign] is no world drop!
+[Call of the Void] is no world drop!
+[Replica Karui Ward] is no world drop!
+[Replica Veil of the Night] is no world drop!
+[Replica Doedre's Damning] is no world drop!
+[Circle of Guilt] is no world drop!
+[Ahkeli's Mountain] is no world drop!
+[Replica Bloodplay] is no world drop!
+[Putembo's Valley] is no world drop!
+[Doryani's Invitation] is no world drop!
+[Uzaza's Meadow] is no world drop!
+[Replica Quill Rain] is no world drop!
+[Replica Blood Thorn] is no world drop!
+[Replica Fencoil] is no world drop!
+[Sacrificial Heart] is no world drop!
+[Replica Last Resort] is no world drop!
+[Replica Prismweave] is no world drop!
+[Oni-Goroshi] have no suitable data entity!
+[First Piece of the Arcane] is no world drop!
+[Second Piece of the Arcane] is no world drop!
+[Third Piece of the Arcane] is no world drop!
+[First Piece of Time] is no world drop!
+[Second Piece of Time] is no world drop!
+[Demigod's Authority] have no suitable data entity!
+[Curio of Absorption] is no world drop!
+[Curio of Consumption] is no world drop!
+[Curio of Potential] is no world drop!
+[Curio of Decay] is no world drop!
+[Agate Amulet] dust quantity = 92240, dust tag = Rare
+[Amber Amulet] dust quantity = 10340, dust tag = Moderate
+[Blue Pearl Amulet] dust quantity = 37820, dust tag = Rare
+[Citrine Amulet] dust quantity = 18900, dust tag = Moderate
+[Clutching Talisman] dust quantity = 5560, dust tag = Common
+[Coral Amulet] dust quantity = 19740, dust tag = Moderate
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Greatwolf Talisman] dust quantity = 131520, dust tag = Expensive
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Lapis Amulet] dust quantity = 17820, dust tag = Moderate
+[Marble Amulet] dust quantity = 17300, dust tag = Moderate
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
+[Rotfeather Talisman] dust quantity = 8920, dust tag = Common
+[Turquoise Amulet] dust quantity = 86960, dust tag = Rare
+[Wereclaw Talisman] dust quantity = 22880, dust tag = Moderate
+[Chain Belt] dust quantity = 8920, dust tag = Common
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Crystal Belt] dust quantity = 33600, dust tag = Moderate
+[Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
+[Leather Belt] dust quantity = 1782320, dust tag = Very expensive
+[Rustic Sash] dust quantity = 12360, dust tag = Moderate
+[Studded Belt] dust quantity = 125000, dust tag = Expensive
+[Vanguard Belt] dust quantity = 21000, dust tag = Moderate
+[Amethyst Ring] dust quantity = 45380, dust tag = Rare
+[Coral Ring] dust quantity = 7900, dust tag = Common
+[Diamond Ring] dust quantity = 14300, dust tag = Moderate
+[Gold Ring] dust quantity = 17020, dust tag = Moderate
+[Iron Ring] dust quantity = 10340, dust tag = Moderate
+[Moonstone Ring] dust quantity = 92240, dust tag = Rare
+[Opal Ring] dust quantity = 24340, dust tag = Moderate
+[Paua Ring] dust quantity = 35640, dust tag = Rare
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Two-Stone Ring] dust quantity = 12660, dust tag = Moderate
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Ring] dust quantity = 1144000, dust tag = Very expensive
+[Glorious Plate] dust quantity = 86960, dust tag = Rare
+[Gladiator Plate] dust quantity = 113460, dust tag = Expensive
+[Astral Plate] dust quantity = 24280, dust tag = Moderate
+[Crusader Plate] dust quantity = 66640, dust tag = Rare
+[Golden Plate] dust quantity = 12700, dust tag = Moderate
+[Majestic Plate] dust quantity = 55820, dust tag = Rare
+[Colosseum Plate] dust quantity = 8260, dust tag = Common
+[Copper Plate] dust quantity = 4020, dust tag = Trash
+[Plate Vest] dust quantity = 2500, dust tag = Trash
+[Buckskin Tunic] dust quantity = 4020, dust tag = Trash
+[Wild Leather] dust quantity = 4060, dust tag = Trash
+[Sun Leather] dust quantity = 5000, dust tag = Common
+[Cutthroat's Garb] dust quantity = 11620, dust tag = Moderate
+[Sharkskin Tunic] dust quantity = 20320, dust tag = Moderate
+[Destiny Leather] dust quantity = 22220, dust tag = Moderate
+[Exquisite Leather] dust quantity = 72820, dust tag = Rare
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Assassin's Garb] dust quantity = 28980, dust tag = Moderate
+[Vaal Regalia] dust quantity = 18120, dust tag = Moderate
+[Widowsilk Robe] dust quantity = 79580, dust tag = Rare
+[Occultist's Vestment] dust quantity = 72820, dust tag = Rare
+[Necromancer Silks] dust quantity = 66640, dust tag = Rare
+[Savant's Robe] dust quantity = 254100, dust tag = Very expensive
+[Destroyer Regalia] dust quantity = 11620, dust tag = Moderate
+[Spidersilk Robe] dust quantity = 49580, dust tag = Rare
+[Sage's Robe] dust quantity = 144920, dust tag = Expensive
+[Scholar's Robe] dust quantity = 6620, dust tag = Common
+[Silken Vest] dust quantity = 3360, dust tag = Trash
+[Simple Robe] dust quantity = 4240, dust tag = Trash
+[Bone Armour] dust quantity = 6820, dust tag = Common
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Conquest Chainmail] dust quantity = 11780, dust tag = Moderate
+[Crusader Chainmail] dust quantity = 8660, dust tag = Common
+[Desert Brigandine] dust quantity = 22880, dust tag = Moderate
+[Devout Chainmail] dust quantity = 59200, dust tag = Rare
+[Elegant Ringmail] dust quantity = 16100, dust tag = Moderate
+[Full Dragonscale] dust quantity = 25000, dust tag = Moderate
+[Full Wyrmscale] dust quantity = 15120, dust tag = Moderate
+[Holy Chainmail] dust quantity = 10920, dust tag = Moderate
+[Lacquered Garb] dust quantity = 54180, dust tag = Rare
+[Latticed Ringmail] dust quantity = 6140, dust tag = Common
+[Occultist's Vestment] dust quantity = 72820, dust tag = Rare
+[Ornate Ringmail] dust quantity = 7800, dust tag = Common
+[Sadist Garb] dust quantity = 86960, dust tag = Rare
+[Saint's Hauberk] dust quantity = 84420, dust tag = Rare
+[Saintly Chainmail] dust quantity = 30740, dust tag = Moderate
+[Sentinel Jacket] dust quantity = 13880, dust tag = Moderate
+[Triumphant Lamellar] dust quantity = 18660, dust tag = Moderate
+[Varnished Coat] dust quantity = 24280, dust tag = Moderate
+[Wyrmscale Doublet] dust quantity = 149260, dust tag = Expensive
+[Ambush Mitts] dust quantity = 44060, dust tag = Rare
+[Ancient Gauntlets] dust quantity = 46740, dust tag = Rare
+[Arcanist Gloves] dust quantity = 22880, dust tag = Moderate
+[Assassin's Mitts] dust quantity = 21560, dust tag = Moderate
+[Bronze Gauntlets] dust quantity = 3840, dust tag = Trash
+[Bronzescale Gauntlets] dust quantity = 8620, dust tag = Common
+[Carnal Mitts] dust quantity = 22280, dust tag = Moderate
+[Chain Gloves] dust quantity = 2980, dust tag = Trash
+[Clasped Mitts] dust quantity = 6060, dust tag = Common
+[Conjurer Gloves] dust quantity = 12340, dust tag = Moderate
+[Crusader Gloves] dust quantity = 27320, dust tag = Moderate
+[Deerskin Gloves] dust quantity = 35640, dust tag = Rare
+[Dragonscale Gauntlets] dust quantity = 14060, dust tag = Moderate
+[Eelskin Gloves] dust quantity = 19220, dust tag = Moderate
+[Embroidered Gloves] dust quantity = 11260, dust tag = Moderate
+[Goathide Gloves] dust quantity = 2540, dust tag = Trash
+[Goliath Gauntlets] dust quantity = 9300, dust tag = Common
+[Hydrascale Gauntlets] dust quantity = 66640, dust tag = Rare
+[Iron Gauntlets] dust quantity = 2000, dust tag = Trash
+[Ironscale Gauntlets] dust quantity = 3780, dust tag = Trash
+[Legion Gloves] dust quantity = 13080, dust tag = Moderate
+[Mesh Gloves] dust quantity = 10000, dust tag = Moderate
+[Murder Mitts] dust quantity = 351740, dust tag = Very expensive
+[Nubuck Gloves] dust quantity = 11280, dust tag = Moderate
+[Samite Gloves] dust quantity = 7800, dust tag = Common
+[Satin Gloves] dust quantity = 13040, dust tag = Moderate
+[Serpentscale Gauntlets] dust quantity = 13840, dust tag = Moderate
+[Shagreen Gloves] dust quantity = 16800, dust tag = Moderate
+[Silk Gloves] dust quantity = 35640, dust tag = Rare
+[Slink Gloves] dust quantity = 15380, dust tag = Moderate
+[Soldier Gloves] dust quantity = 8760, dust tag = Common
+[Steel Gauntlets] dust quantity = 10920, dust tag = Moderate
+[Steelscale Gauntlets] dust quantity = 11260, dust tag = Moderate
+[Strapped Mitts] dust quantity = 3900, dust tag = Trash
+[Titan Gauntlets] dust quantity = 29860, dust tag = Moderate
+[Vaal Gauntlets] dust quantity = 89560, dust tag = Rare
+[Velvet Gloves] dust quantity = 2760, dust tag = Trash
+[Wool Gloves] dust quantity = 2660, dust tag = Trash
+[Wrapped Mitts] dust quantity = 2260, dust tag = Trash
+[Wyrmscale Gauntlets] dust quantity = 10340, dust tag = Moderate
+[Zealot Gloves] dust quantity = 41520, dust tag = Rare
+[Aventail Helmet] dust quantity = 5800, dust tag = Common
+[Barbute Helmet] dust quantity = 3300, dust tag = Trash
+[Bone Circlet] dust quantity = 132620, dust tag = Expensive
+[Bone Helmet] dust quantity = 33600, dust tag = Moderate
+[Callous Mask] dust quantity = 21000, dust tag = Moderate
+[Close Helmet] dust quantity = 5240, dust tag = Common
+[Deicide Mask] dust quantity = 84420, dust tag = Rare
+[Eternal Burgonet] dust quantity = 29860, dust tag = Moderate
+[Ezomyte Burgonet] dust quantity = 22880, dust tag = Moderate
+[Festival Mask] dust quantity = 4440, dust tag = Trash
+[Gilded Sallet] dust quantity = 10300, dust tag = Moderate
+[Golden Mask] dust quantity = 5460, dust tag = Common
+[Great Crown] dust quantity = 11620, dust tag = Moderate
+[Great Helmet] dust quantity = 4660, dust tag = Trash
+[Harlequin Mask] dust quantity = 20940, dust tag = Moderate
+[Hubris Circlet] dust quantity = 29860, dust tag = Moderate
+[Iron Circlet] dust quantity = 14760, dust tag = Moderate
+[Iron Hat] dust quantity = 2000, dust tag = Trash
+[Iron Mask] dust quantity = 4020, dust tag = Trash
+[Lacquered Helmet] dust quantity = 10960, dust tag = Moderate
+[Leather Cap] dust quantity = 2660, dust tag = Trash
+[Leather Hood] dust quantity = 7020, dust tag = Common
+[Lion Pelt] dust quantity = 23640, dust tag = Moderate
+[Lunaris Circlet] dust quantity = 7680, dust tag = Common
+[Mind Cage] dust quantity = 26520, dust tag = Moderate
+[Necromancer Circlet] dust quantity = 19160, dust tag = Moderate
+[Nightmare Bascinet] dust quantity = 28140, dust tag = Moderate
+[Plague Mask] dust quantity = 4380, dust tag = Trash
+[Praetor Crown] dust quantity = 37820, dust tag = Rare
+[Prophet Crown] dust quantity = 312520, dust tag = Very expensive
+[Raven Mask] dust quantity = 35820, dust tag = Rare
+[Reaver Helmet] dust quantity = 12660, dust tag = Moderate
+[Regicide Mask] dust quantity = 18060, dust tag = Moderate
+[Samnite Helmet] dust quantity = 9860, dust tag = Common
+[Secutor Helm] dust quantity = 5620, dust tag = Common
+[Silken Hood] dust quantity = 14300, dust tag = Moderate
+[Sinner Tricorne] dust quantity = 41320, dust tag = Rare
+[Solaris Circlet] dust quantity = 33600, dust tag = Moderate
+[Soldier Helmet] dust quantity = 2760, dust tag = Trash
+[Steel Circlet] dust quantity = 16040, dust tag = Moderate
+[Tribal Circlet] dust quantity = 4180, dust tag = Trash
+[Tricorne] dust quantity = 5220, dust tag = Common
+[Ursine Pelt] dust quantity = 9860, dust tag = Common
+[Vaal Mask] dust quantity = 24280, dust tag = Moderate
+[Vine Circlet] dust quantity = 2120, dust tag = Trash
+[Visored Sallet] dust quantity = 4800, dust tag = Trash
+[Wolf Pelt] dust quantity = 4720, dust tag = Trash
+[Zealot Helmet] dust quantity = 8920, dust tag = Common
+[Ancient Greaves] dust quantity = 15120, dust tag = Moderate
+[Antique Greaves] dust quantity = 5800, dust tag = Common
+[Arcanist Slippers] dust quantity = 23560, dust tag = Moderate
+[Bronzescale Boots] dust quantity = 5900, dust tag = Common
+[Carnal Boots] dust quantity = 59200, dust tag = Rare
+[Clasped Boots] dust quantity = 4320, dust tag = Trash
+[Conjurer Boots] dust quantity = 18600, dust tag = Moderate
+[Deerskin Boots] dust quantity = 3720, dust tag = Trash
+[Dragonscale Boots] dust quantity = 16580, dust tag = Moderate
+[Eelskin Boots] dust quantity = 6140, dust tag = Common
+[Goathide Boots] dust quantity = 69220, dust tag = Rare
+[Ironscale Boots] dust quantity = 3300, dust tag = Trash
+[Legion Boots] dust quantity = 10780, dust tag = Moderate
+[Mesh Boots] dust quantity = 4440, dust tag = Trash
+[Nubuck Boots] dust quantity = 6640, dust tag = Common
+[Plated Greaves] dust quantity = 3840, dust tag = Trash
+[Rawhide Boots] dust quantity = 106940, dust tag = Expensive
+[Reinforced Greaves] dust quantity = 10300, dust tag = Moderate
+[Riveted Boots] dust quantity = 140700, dust tag = Expensive
+[Scholar Boots] dust quantity = 5000, dust tag = Common
+[Serpentscale Boots] dust quantity = 13440, dust tag = Moderate
+[Shackled Boots] dust quantity = 6640, dust tag = Common
+[Shagreen Boots] dust quantity = 9860, dust tag = Common
+[Sharkskin Boots] dust quantity = 14260, dust tag = Moderate
+[Silk Slippers] dust quantity = 3720, dust tag = Trash
+[Soldier Boots] dust quantity = 10340, dust tag = Moderate
+[Sorcerer Boots] dust quantity = 139540, dust tag = Expensive
+[Stealth Boots] dust quantity = 303420, dust tag = Very expensive
+[Strapped Boots] dust quantity = 3120, dust tag = Trash
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Trapper Boots] dust quantity = 13040, dust tag = Moderate
+[Two-Toned Boots] dust quantity = 35640, dust tag = Rare
+[Velvet Slippers] dust quantity = 2540, dust tag = Trash
+[Wool Shoes] dust quantity = 2120, dust tag = Trash
+[Assassin Bow] dust quantity = 72820, dust tag = Rare
+[Crude Bow] dust quantity = 4000, dust tag = Trash
+[Death Bow] dust quantity = 10000, dust tag = Moderate
+[Decimation Bow] dust quantity = 9300, dust tag = Common
+[Harbinger Bow] dust quantity = 23640, dust tag = Moderate
+[Imperial Bow] dust quantity = 1366000, dust tag = Very expensive
+[Long Bow] dust quantity = 2540, dust tag = Trash
+[Ranger Bow] dust quantity = 22880, dust tag = Moderate
+[Recurve Bow] dust quantity = 3300, dust tag = Trash
+[Royal Bow] dust quantity = 8880, dust tag = Common
+[Short Bow] dust quantity = 2820, dust tag = Trash
+[Spine Bow] dust quantity = 1287580, dust tag = Very expensive
+[Blunt Arrow Quiver] dust quantity = 6060, dust tag = Common
+[Broadhead Arrow Quiver] dust quantity = 10340, dust tag = Moderate
+[Penetrating Arrow Quiver] dust quantity = 5080, dust tag = Common
+[Serrated Arrow Quiver] dust quantity = 2180, dust tag = Trash
+[Sharktooth Arrow Quiver] dust quantity = 12700, dust tag = Moderate
+[Spike-Point Arrow Quiver] dust quantity = 16100, dust tag = Moderate
+[Two-Point Arrow Quiver] dust quantity = 113460, dust tag = Expensive
+[Feathered Arrow Quiver] dust quantity = 3500, dust tag = Trash
+[Blazing Arrow Quiver] dust quantity = 2060, dust tag = Trash
+[Vile Arrow Quiver] dust quantity = 9860, dust tag = Common
+[Heavy Arrow Quiver] dust quantity = 14720, dust tag = Moderate
+[Primal Arrow Quiver] dust quantity = 17080, dust tag = Moderate
+[Ornate Quiver] dust quantity = 86960, dust tag = Rare
+[Abyssal Axe] dust quantity = 19740, dust tag = Moderate
+[Despot Axe] dust quantity = 13660, dust tag = Moderate
+[Ezomyte Axe] dust quantity = 12140, dust tag = Moderate
+[Headsman Axe] dust quantity = 7340, dust tag = Common
+[Jasper Chopper] dust quantity = 7240, dust tag = Common
+[Karui Chopper] dust quantity = 13480, dust tag = Moderate
+[Poleaxe] dust quantity = 3300, dust tag = Trash
+[Shadow Axe] dust quantity = 5160, dust tag = Common
+[Vaal Axe] dust quantity = 25760, dust tag = Moderate
+[Void Axe] dust quantity = 362300, dust tag = Very expensive
+[Woodsplitter] dust quantity = 2860, dust tag = Trash
+[Brass Maul] dust quantity = 4320, dust tag = Trash
+[Dread Maul] dust quantity = 11980, dust tag = Moderate
+[Great Mallet] dust quantity = 12660, dust tag = Moderate
+[Imperial Maul] dust quantity = 331560, dust tag = Very expensive
+[Jagged Maul] dust quantity = 3720, dust tag = Trash
+[Karui Maul] dust quantity = 1046920, dust tag = Very expensive
+[Meatgrinder] dust quantity = 37820, dust tag = Rare
+[Sledgehammer] dust quantity = 3200, dust tag = Trash
+[Steelhead] dust quantity = 8920, dust tag = Common
+[Terror Maul] dust quantity = 17580, dust tag = Moderate
+[Bastard Sword] dust quantity = 2760, dust tag = Trash
+[Engraved Greatsword] dust quantity = 1537440, dust tag = Very expensive
+[Etched Greatsword] dust quantity = 4660, dust tag = Trash
+[Ezomyte Blade] dust quantity = 11780, dust tag = Moderate
+[Highland Blade] dust quantity = 7120, dust tag = Common
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Lion Sword] dust quantity = 26520, dust tag = Moderate
+[Ornate Sword] dust quantity = 4320, dust tag = Trash
+[Reaver Sword] dust quantity = 13880, dust tag = Moderate
+[Tiger Sword] dust quantity = 8760, dust tag = Common
+[Coiled Staff] dust quantity = 9420, dust tag = Common
+[Ezomyte Staff] dust quantity = 14300, dust tag = Moderate
+[Iron Staff] dust quantity = 2860, dust tag = Trash
+[Judgement Staff] dust quantity = 31680, dust tag = Moderate
+[Maelstrom Staff] dust quantity = 25760, dust tag = Moderate
+[Military Staff] dust quantity = 13040, dust tag = Moderate
+[Serpentine Staff] dust quantity = 10340, dust tag = Moderate
+[Vile Staff] dust quantity = 10300, dust tag = Moderate
+[Boot Blade] dust quantity = 7120, dust tag = Common
+[Boot Knife] dust quantity = 3500, dust tag = Trash
+[Demon Dagger] dust quantity = 37820, dust tag = Rare
+[Ezomyte Dagger] dust quantity = 24280, dust tag = Moderate
+[Fiend Dagger] dust quantity = 232540, dust tag = Expensive
+[Imperial Skean] dust quantity = 1366000, dust tag = Very expensive
+[Platinum Kris] dust quantity = 12880, dust tag = Moderate
+[Royal Skean] dust quantity = 8520, dust tag = Common
+[Slaughter Knife] dust quantity = 1078340, dust tag = Very expensive
+[Bronze Sceptre] dust quantity = 2600, dust tag = Trash
+[Carnal Sceptre] dust quantity = 17080, dust tag = Moderate
+[Crystal Sceptre] dust quantity = 13040, dust tag = Moderate
+[Grinning Fetish] dust quantity = 5460, dust tag = Common
+[Karui Sceptre] dust quantity = 60980, dust tag = Rare
+[Opal Sceptre] dust quantity = 11440, dust tag = Moderate
+[Platinum Sceptre] dust quantity = 15180, dust tag = Moderate
+[Ritual Sceptre] dust quantity = 8880, dust tag = Common
+[Royal Sceptre] dust quantity = 21000, dust tag = Moderate
+[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
+[Tyrant's Sekhem] dust quantity = 10780, dust tag = Moderate
+[Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
+[Void Sceptre] dust quantity = 37820, dust tag = Rare
+[Carved Wand] dust quantity = 16620, dust tag = Moderate
+[Driftwood Wand] dust quantity = 2000, dust tag = Trash
+[Engraved Wand] dust quantity = 7920, dust tag = Common
+[Goat's Horn] dust quantity = 2320, dust tag = Trash
+[Imbued Wand] dust quantity = 13880, dust tag = Moderate
+[Omen Wand] dust quantity = 18600, dust tag = Moderate
+[Prophecy Wand] dust quantity = 113460, dust tag = Expensive
+[Sage Wand] dust quantity = 117820, dust tag = Expensive
+[Spiraled Wand] dust quantity = 7900, dust tag = Common
+[Gnarled Branch] dust quantity = 2180, dust tag = Trash
+[Highborn Staff] dust quantity = 225780, dust tag = Expensive
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Lathi] dust quantity = 24280, dust tag = Moderate
+[Primordial Staff] dust quantity = 10780, dust tag = Moderate
+[Royal Staff] dust quantity = 4440, dust tag = Trash
+[Ancient Spirit Shield] dust quantity = 9180, dust tag = Common
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Baroque Round Shield] dust quantity = 19160, dust tag = Moderate
+[Branded Kite Shield] dust quantity = 22220, dust tag = Moderate
+[Brass Spirit Shield] dust quantity = 6440, dust tag = Common
+[Cedar Tower Shield] dust quantity = 4020, dust tag = Trash
+[Champion Kite Shield] dust quantity = 100800, dust tag = Expensive
+[Chiming Spirit Shield] dust quantity = 16520, dust tag = Moderate
+[Colossal Tower Shield] dust quantity = 17580, dust tag = Moderate
+[Compound Spiked Shield] dust quantity = 7340, dust tag = Common
+[Corrugated Buckler] dust quantity = 9460, dust tag = Common
+[Crimson Round Shield] dust quantity = 10340, dust tag = Moderate
+[Ebony Tower Shield] dust quantity = 294580, dust tag = Very expensive
+[Elegant Round Shield] dust quantity = 1537440, dust tag = Very expensive
+[Enameled Buckler] dust quantity = 13440, dust tag = Moderate
+[Harmonic Spirit Shield] dust quantity = 16580, dust tag = Moderate
+[Ironwood Buckler] dust quantity = 13080, dust tag = Moderate
+[Jingling Spirit Shield] dust quantity = 111060, dust tag = Expensive
+[Lacewood Spirit Shield] dust quantity = 420000, dust tag = Very expensive
+[Lacquered Buckler] dust quantity = 33600, dust tag = Moderate
+[Laminated Kite Shield] dust quantity = 8520, dust tag = Common
+[Maple Round Shield] dust quantity = 7680, dust tag = Common
+[Mirrored Spiked Shield] dust quantity = 27320, dust tag = Moderate
+[Mosaic Kite Shield] dust quantity = 16580, dust tag = Moderate
+[Painted Buckler] dust quantity = 3120, dust tag = Trash
+[Painted Tower Shield] dust quantity = 10920, dust tag = Moderate
+[Pine Buckler] dust quantity = 2460, dust tag = Trash
+[Pinnacle Tower Shield] dust quantity = 92240, dust tag = Rare
+[Plank Kite Shield] dust quantity = 2380, dust tag = Trash
+[Polished Spiked Shield] dust quantity = 8260, dust tag = Common
+[Rawhide Tower Shield] dust quantity = 5380, dust tag = Common
+[Reinforced Tower Shield] dust quantity = 4720, dust tag = Trash
+[Rotted Round Shield] dust quantity = 2260, dust tag = Trash
+[Sovereign Spiked Shield] dust quantity = 57480, dust tag = Rare
+[Steel Kite Shield] dust quantity = 45380, dust tag = Rare
+[Studded Round Shield] dust quantity = 3500, dust tag = Trash
+[Supreme Spiked Shield] dust quantity = 15380, dust tag = Moderate
+[Tarnished Spirit Shield] dust quantity = 7660, dust tag = Common
+[Teak Round Shield] dust quantity = 13480, dust tag = Moderate
+[Titanium Spirit Shield] dust quantity = 86960, dust tag = Rare
+[Vaal Buckler] dust quantity = 12500, dust tag = Moderate
+[Vaal Spirit Shield] dust quantity = 72820, dust tag = Rare
+[War Buckler] dust quantity = 5720, dust tag = Common
+[Awl] dust quantity = 2760, dust tag = Trash
+[Fright Claw] dust quantity = 5300, dust tag = Common
+[Gut Ripper] dust quantity = 7560, dust tag = Common
+[Hellion's Paw] dust quantity = 1213680, dust tag = Very expensive
+[Imperial Claw] dust quantity = 18120, dust tag = Moderate
+[Nailed Fist] dust quantity = 2120, dust tag = Trash
+[Terror Claw] dust quantity = 37820, dust tag = Rare
+[Thresher Claw] dust quantity = 5800, dust tag = Common
+[Throat Stabber] dust quantity = 11440, dust tag = Moderate
+[Timeworn Claw] dust quantity = 5240, dust tag = Common
+[Vaal Claw] dust quantity = 1366000, dust tag = Very expensive
+[Ambusher] dust quantity = 11440, dust tag = Moderate
+[Flaying Knife] dust quantity = 4720, dust tag = Trash
+[Skinning Knife] dust quantity = 2260, dust tag = Trash
+[Stiletto] dust quantity = 3020, dust tag = Trash
+[Butcher Axe] dust quantity = 15620, dust tag = Moderate
+[Cleaver] dust quantity = 3120, dust tag = Trash
+[Decorative Axe] dust quantity = 4580, dust tag = Trash
+[Infernal Axe] dust quantity = 18660, dust tag = Moderate
+[Jade Hatchet] dust quantity = 2320, dust tag = Trash
+[Royal Axe] dust quantity = 23640, dust tag = Moderate
+[Siege Axe] dust quantity = 1326220, dust tag = Very expensive
+[Tomahawk] dust quantity = 7680, dust tag = Common
+[Vaal Hatchet] dust quantity = 26520, dust tag = Moderate
+[Auric Mace] dust quantity = 13660, dust tag = Moderate
+[Dream Mace] dust quantity = 5000, dust tag = Common
+[Gavel] dust quantity = 68640, dust tag = Rare
+[Ornate Mace] dust quantity = 10640, dust tag = Moderate
+[Rock Breaker] dust quantity = 6520, dust tag = Common
+[Spiked Club] dust quantity = 2600, dust tag = Trash
+[War Hammer] dust quantity = 3500, dust tag = Trash
+[Corsair Sword] dust quantity = 13480, dust tag = Moderate
+[Dusk Blade] dust quantity = 10000, dust tag = Moderate
+[Elder Sword] dust quantity = 9740, dust tag = Common
+[Elegant Sword] dust quantity = 4440, dust tag = Trash
+[Eternal Sword] dust quantity = 37820, dust tag = Rare
+[Gladius] dust quantity = 14300, dust tag = Moderate
+[Graceful Sword] dust quantity = 10640, dust tag = Moderate
+[Legion Sword] dust quantity = 15180, dust tag = Moderate
+[Midnight Blade] dust quantity = 37820, dust tag = Rare
+[Rusted Sword] dust quantity = 2000, dust tag = Trash
+[Sabre] dust quantity = 2600, dust tag = Trash
+[Twilight Blade] dust quantity = 9300, dust tag = Common
+[Vaal Blade] dust quantity = 77260, dust tag = Rare
+[War Sword] dust quantity = 3500, dust tag = Trash
+[Antique Rapier] dust quantity = 4180, dust tag = Trash
+[Basket Rapier] dust quantity = 3200, dust tag = Trash
+[Estoc] dust quantity = 6920, dust tag = Common
+[Jagged Foil] dust quantity = 3720, dust tag = Trash
+[Jewelled Foil] dust quantity = 86960, dust tag = Rare
+[Whalebone Rapier] dust quantity = 2980, dust tag = Trash
+[Coral Amulet] dust quantity = 2120, dust tag = Trash
+[Coral Amulet] dust quantity = 4860, dust tag = Trash
+[Coral Amulet] dust quantity = 6640, dust tag = Common
+[Coral Amulet] dust quantity = 13440, dust tag = Moderate
+[Coral Amulet] dust quantity = 19740, dust tag = Moderate
+[Paua Amulet] dust quantity = 2120, dust tag = Trash
+[Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
+[Paua Amulet] dust quantity = 18700, dust tag = Moderate
+[Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
+[Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
+[Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
+[Jade Amulet] dust quantity = 2380, dust tag = Trash
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Jade Amulet] dust quantity = 16040, dust tag = Moderate
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Jade Amulet] dust quantity = 16100, dust tag = Moderate
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Lapis Amulet] dust quantity = 2380, dust tag = Trash
+[Lapis Amulet] dust quantity = 7900, dust tag = Common
+[Lapis Amulet] dust quantity = 2380, dust tag = Trash
+[Lapis Amulet] dust quantity = 12660, dust tag = Moderate
+[Lapis Amulet] dust quantity = 17820, dust tag = Moderate
+[Lapis Amulet] dust quantity = 17820, dust tag = Moderate
+[Lapis Amulet] dust quantity = 17820, dust tag = Moderate
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Gold Amulet] dust quantity = 3020, dust tag = Trash
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Gold Amulet] dust quantity = 6720, dust tag = Common
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Gold Amulet] dust quantity = 3020, dust tag = Trash
+[Amber Amulet] dust quantity = 10340, dust tag = Moderate
+[Amber Amulet] dust quantity = 10340, dust tag = Moderate
+[Amber Amulet] dust quantity = 7340, dust tag = Common
+[Amber Amulet] dust quantity = 10340, dust tag = Moderate
+[Black Maw Talisman] dust quantity = 3260, dust tag = Trash
+[Clutching Talisman] dust quantity = 5560, dust tag = Common
+[Wereclaw Talisman] dust quantity = 22880, dust tag = Moderate
+[Rotfeather Talisman] dust quantity = 8920, dust tag = Common
+[Greatwolf Talisman] dust quantity = 131520, dust tag = Expensive
+[Turquoise Amulet] dust quantity = 3500, dust tag = Trash
+[Turquoise Amulet] dust quantity = 4380, dust tag = Trash
+[Turquoise Amulet] dust quantity = 7660, dust tag = Common
+[Turquoise Amulet] dust quantity = 12660, dust tag = Moderate
+[Turquoise Amulet] dust quantity = 10640, dust tag = Moderate
+[Turquoise Amulet] dust quantity = 86960, dust tag = Rare
+[Turquoise Amulet] dust quantity = 86960, dust tag = Rare
+[Agate Amulet] dust quantity = 3500, dust tag = Trash
+[Agate Amulet] dust quantity = 92240, dust tag = Rare
+[Agate Amulet] dust quantity = 3500, dust tag = Trash
+[Agate Amulet] dust quantity = 92240, dust tag = Rare
+[Agate Amulet] dust quantity = 6260, dust tag = Common
+[Citrine Amulet] dust quantity = 4720, dust tag = Trash
+[Citrine Amulet] dust quantity = 3500, dust tag = Trash
+[Citrine Amulet] dust quantity = 16040, dust tag = Moderate
+[Citrine Amulet] dust quantity = 4380, dust tag = Trash
+[Citrine Amulet] dust quantity = 18900, dust tag = Moderate
+[Onyx Amulet] dust quantity = 8140, dust tag = Common
+[Onyx Amulet] dust quantity = 4060, dust tag = Trash
+[Onyx Amulet] dust quantity = 24400, dust tag = Moderate
+[Onyx Amulet] dust quantity = 14260, dust tag = Moderate
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 24400, dust tag = Moderate
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 20320, dust tag = Moderate
+[Marble Amulet] dust quantity = 17300, dust tag = Moderate
+[Blue Pearl Amulet] dust quantity = 37820, dust tag = Rare
+[Leather Belt] dust quantity = 9420, dust tag = Common
+[Leather Belt] dust quantity = 6720, dust tag = Common
+[Leather Belt] dust quantity = 11980, dust tag = Moderate
+[Leather Belt] dust quantity = 33600, dust tag = Moderate
+[Leather Belt] dust quantity = 1782320, dust tag = Very expensive
+[Leather Belt] dust quantity = 1782320, dust tag = Very expensive
+[Leather Belt] dust quantity = 10020, dust tag = Moderate
+[Leather Belt] dust quantity = 8520, dust tag = Common
+[Leather Belt] dust quantity = 5220, dust tag = Common
+[Leather Belt] dust quantity = 1782320, dust tag = Very expensive
+[Leather Belt] dust quantity = 3260, dust tag = Trash
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Cloth Belt] dust quantity = 7020, dust tag = Common
+[Cloth Belt] dust quantity = 16520, dust tag = Moderate
+[Cloth Belt] dust quantity = 3500, dust tag = Trash
+[Cloth Belt] dust quantity = 7920, dust tag = Common
+[Cloth Belt] dust quantity = 14680, dust tag = Moderate
+[Cloth Belt] dust quantity = 11440, dust tag = Moderate
+[Cloth Belt] dust quantity = 16040, dust tag = Moderate
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Cloth Belt] dust quantity = 21040, dust tag = Moderate
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Cloth Belt] dust quantity = 34780, dust tag = Moderate
+[Heavy Belt] dust quantity = 4380, dust tag = Trash
+[Heavy Belt] dust quantity = 9420, dust tag = Common
+[Heavy Belt] dust quantity = 20940, dust tag = Moderate
+[Heavy Belt] dust quantity = 4380, dust tag = Trash
+[Heavy Belt] dust quantity = 7120, dust tag = Common
+[Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
+[Heavy Belt] dust quantity = 5220, dust tag = Common
+[Heavy Belt] dust quantity = 12660, dust tag = Moderate
+[Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
+[Heavy Belt] dust quantity = 22880, dust tag = Moderate
+[Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
+[Rustic Sash] dust quantity = 2680, dust tag = Trash
+[Rustic Sash] dust quantity = 3300, dust tag = Trash
+[Rustic Sash] dust quantity = 4060, dust tag = Trash
+[Rustic Sash] dust quantity = 12360, dust tag = Moderate
+[Rustic Sash] dust quantity = 12360, dust tag = Moderate
+[Chain Belt] dust quantity = 2940, dust tag = Trash
+[Chain Belt] dust quantity = 3720, dust tag = Trash
+[Chain Belt] dust quantity = 8920, dust tag = Common
+[Chain Belt] dust quantity = 8920, dust tag = Common
+[Chain Belt] dust quantity = 8920, dust tag = Common
+[Chain Belt] dust quantity = 2580, dust tag = Trash
+[Chain Belt] dust quantity = 4120, dust tag = Trash
+[Chain Belt] dust quantity = 4120, dust tag = Trash
+[Studded Belt] dust quantity = 21040, dust tag = Moderate
+[Studded Belt] dust quantity = 125000, dust tag = Expensive
+[Studded Belt] dust quantity = 125000, dust tag = Expensive
+[Vanguard Belt] dust quantity = 21000, dust tag = Moderate
+[Vanguard Belt] dust quantity = 21000, dust tag = Moderate
+[Crystal Belt] dust quantity = 33600, dust tag = Moderate
+[Crystal Belt] dust quantity = 33600, dust tag = Moderate
+[Gold Ring] dust quantity = 16580, dust tag = Moderate
+[Gold Ring] dust quantity = 9860, dust tag = Common
+[Gold Ring] dust quantity = 17020, dust tag = Moderate
+[Sapphire Ring] dust quantity = 4920, dust tag = Trash
+[Sapphire Ring] dust quantity = 4380, dust tag = Trash
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Sapphire Ring] dust quantity = 4920, dust tag = Trash
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Sapphire Ring] dust quantity = 7900, dust tag = Common
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Amethyst Ring] dust quantity = 11940, dust tag = Moderate
+[Amethyst Ring] dust quantity = 45380, dust tag = Rare
+[Amethyst Ring] dust quantity = 26520, dust tag = Moderate
+[Amethyst Ring] dust quantity = 45380, dust tag = Rare
+[Amethyst Ring] dust quantity = 35820, dust tag = Rare
+[Ruby Ring] dust quantity = 6240, dust tag = Common
+[Ruby Ring] dust quantity = 5720, dust tag = Common
+[Ruby Ring] dust quantity = 3900, dust tag = Trash
+[Ruby Ring] dust quantity = 12660, dust tag = Moderate
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Iron Ring] dust quantity = 2060, dust tag = Trash
+[Iron Ring] dust quantity = 10340, dust tag = Moderate
+[Iron Ring] dust quantity = 4940, dust tag = Trash
+[Iron Ring] dust quantity = 10340, dust tag = Moderate
+[Iron Ring] dust quantity = 10340, dust tag = Moderate
+[Iron Ring] dust quantity = 4720, dust tag = Trash
+[Topaz Ring] dust quantity = 5540, dust tag = Common
+[Topaz Ring] dust quantity = 12700, dust tag = Moderate
+[Topaz Ring] dust quantity = 4380, dust tag = Trash
+[Topaz Ring] dust quantity = 7460, dust tag = Common
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Unset Ring] dust quantity = 7340, dust tag = Common
+[Unset Ring] dust quantity = 9180, dust tag = Common
+[Unset Ring] dust quantity = 9180, dust tag = Common
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 9180, dust tag = Common
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 18060, dust tag = Moderate
+[Unset Ring] dust quantity = 30740, dust tag = Moderate
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 19740, dust tag = Moderate
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Unset Ring] dust quantity = 19740, dust tag = Moderate
+[Two-Stone Ring] dust quantity = 4380, dust tag = Trash
+[Two-Stone Ring] dust quantity = 4380, dust tag = Trash
+[Two-Stone Ring] dust quantity = 7020, dust tag = Common
+[Two-Stone Ring] dust quantity = 12660, dust tag = Moderate
+[Two-Stone Ring] dust quantity = 7020, dust tag = Common
+[Moonstone Ring] dust quantity = 7120, dust tag = Common
+[Moonstone Ring] dust quantity = 5080, dust tag = Common
+[Moonstone Ring] dust quantity = 10640, dust tag = Moderate
+[Moonstone Ring] dust quantity = 92240, dust tag = Rare
+[Moonstone Ring] dust quantity = 49580, dust tag = Rare
+[Moonstone Ring] dust quantity = 5980, dust tag = Common
+[Paua Ring] dust quantity = 3720, dust tag = Trash
+[Paua Ring] dust quantity = 2820, dust tag = Trash
+[Paua Ring] dust quantity = 35640, dust tag = Rare
+[Paua Ring] dust quantity = 8920, dust tag = Common
+[Paua Ring] dust quantity = 35640, dust tag = Rare
+[Paua Ring] dust quantity = 4500, dust tag = Trash
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Opal Ring] dust quantity = 24340, dust tag = Moderate
+[Opal Ring] dust quantity = 24340, dust tag = Moderate
+[Opal Ring] dust quantity = 24340, dust tag = Moderate
+[Coral Ring] dust quantity = 7340, dust tag = Common
+[Coral Ring] dust quantity = 2740, dust tag = Trash
+[Coral Ring] dust quantity = 7900, dust tag = Common
+[Diamond Ring] dust quantity = 5560, dust tag = Common
+[Diamond Ring] dust quantity = 5080, dust tag = Common
+[Diamond Ring] dust quantity = 14300, dust tag = Moderate
+[Ring] dust quantity = 1144000, dust tag = Very expensive
+[Long Bow] dust quantity = 2540, dust tag = Trash
+[Crude Bow] dust quantity = 4000, dust tag = Trash
+[Crude Bow] dust quantity = 2000, dust tag = Trash
+[Recurve Bow] dust quantity = 3300, dust tag = Trash
+[Death Bow] dust quantity = 6260, dust tag = Common
+[Death Bow] dust quantity = 10000, dust tag = Moderate
+[Death Bow] dust quantity = 10000, dust tag = Moderate
+[Harbinger Bow] dust quantity = 23640, dust tag = Moderate
+[Harbinger Bow] dust quantity = 14500, dust tag = Moderate
+[Decimation Bow] dust quantity = 9300, dust tag = Common
+[Decimation Bow] dust quantity = 9300, dust tag = Common
+[Assassin Bow] dust quantity = 12140, dust tag = Moderate
+[Assassin Bow] dust quantity = 72820, dust tag = Rare
+[Assassin Bow] dust quantity = 72820, dust tag = Rare
+[Royal Bow] dust quantity = 8880, dust tag = Common
+[Spine Bow] dust quantity = 25760, dust tag = Moderate
+[Spine Bow] dust quantity = 1287580, dust tag = Very expensive
+[Short Bow] dust quantity = 2820, dust tag = Trash
+[Short Bow] dust quantity = 2820, dust tag = Trash
+[Ranger Bow] dust quantity = 22880, dust tag = Moderate
+[Ranger Bow] dust quantity = 22880, dust tag = Moderate
+[Imperial Bow] dust quantity = 92240, dust tag = Rare
+[Imperial Bow] dust quantity = 1366000, dust tag = Very expensive
+[Imperial Bow] dust quantity = 1366000, dust tag = Very expensive
+[Awl] dust quantity = 2760, dust tag = Trash
+[Imperial Claw] dust quantity = 18120, dust tag = Moderate
+[Imperial Claw] dust quantity = 18120, dust tag = Moderate
+[Imperial Claw] dust quantity = 18120, dust tag = Moderate
+[Throat Stabber] dust quantity = 11440, dust tag = Moderate
+[Terror Claw] dust quantity = 15380, dust tag = Moderate
+[Terror Claw] dust quantity = 37820, dust tag = Rare
+[Gut Ripper] dust quantity = 7560, dust tag = Common
+[Gut Ripper] dust quantity = 7560, dust tag = Common
+[Gut Ripper] dust quantity = 7560, dust tag = Common
+[Fright Claw] dust quantity = 5300, dust tag = Common
+[Nailed Fist] dust quantity = 2120, dust tag = Trash
+[Nailed Fist] dust quantity = 2120, dust tag = Trash
+[Thresher Claw] dust quantity = 5800, dust tag = Common
+[Timeworn Claw] dust quantity = 5240, dust tag = Common
+[Hellion's Paw] dust quantity = 24280, dust tag = Moderate
+[Hellion's Paw] dust quantity = 1213680, dust tag = Very expensive
+[Vaal Claw] dust quantity = 13660, dust tag = Moderate
+[Vaal Claw] dust quantity = 1366000, dust tag = Very expensive
+[Vaal Claw] dust quantity = 1366000, dust tag = Very expensive
+[Boot Blade] dust quantity = 7120, dust tag = Common
+[Boot Knife] dust quantity = 3500, dust tag = Trash
+[Boot Knife] dust quantity = 3500, dust tag = Trash
+[Imperial Skean] dust quantity = 13660, dust tag = Moderate
+[Royal Skean] dust quantity = 8520, dust tag = Common
+[Royal Skean] dust quantity = 8520, dust tag = Common
+[Imperial Skean] dust quantity = 1366000, dust tag = Very expensive
+[Fiend Dagger] dust quantity = 11620, dust tag = Moderate
+[Fiend Dagger] dust quantity = 232540, dust tag = Expensive
+[Ambusher] dust quantity = 11440, dust tag = Moderate
+[Ambusher] dust quantity = 11440, dust tag = Moderate
+[Ambusher] dust quantity = 11440, dust tag = Moderate
+[Flaying Knife] dust quantity = 4720, dust tag = Trash
+[Platinum Kris] dust quantity = 12880, dust tag = Moderate
+[Skinning Knife] dust quantity = 2260, dust tag = Trash
+[Stiletto] dust quantity = 3020, dust tag = Trash
+[Stiletto] dust quantity = 3020, dust tag = Trash
+[Demon Dagger] dust quantity = 37820, dust tag = Rare
+[Ezomyte Dagger] dust quantity = 24280, dust tag = Moderate
+[Ezomyte Dagger] dust quantity = 24280, dust tag = Moderate
+[Slaughter Knife] dust quantity = 1078340, dust tag = Very expensive
+[Jade Hatchet] dust quantity = 2320, dust tag = Trash
+[Vaal Hatchet] dust quantity = 26520, dust tag = Moderate
+[Royal Axe] dust quantity = 23640, dust tag = Moderate
+[Decorative Axe] dust quantity = 4580, dust tag = Trash
+[Infernal Axe] dust quantity = 18660, dust tag = Moderate
+[Tomahawk] dust quantity = 7680, dust tag = Common
+[Cleaver] dust quantity = 3120, dust tag = Trash
+[Butcher Axe] dust quantity = 15620, dust tag = Moderate
+[Siege Axe] dust quantity = 1326220, dust tag = Very expensive
+[Royal Sceptre] dust quantity = 21000, dust tag = Moderate
+[Platinum Sceptre] dust quantity = 15180, dust tag = Moderate
+[Tyrant's Sekhem] dust quantity = 10780, dust tag = Moderate
+[War Hammer] dust quantity = 3500, dust tag = Trash
+[War Hammer] dust quantity = 3500, dust tag = Trash
+[War Hammer] dust quantity = 3500, dust tag = Trash
+[Spiked Club] dust quantity = 2600, dust tag = Trash
+[Ornate Mace] dust quantity = 10640, dust tag = Moderate
+[Ornate Mace] dust quantity = 10640, dust tag = Moderate
+[Dream Mace] dust quantity = 5000, dust tag = Common
+[Grinning Fetish] dust quantity = 5460, dust tag = Common
+[Grinning Fetish] dust quantity = 5460, dust tag = Common
+[Karui Sceptre] dust quantity = 16320, dust tag = Moderate
+[Karui Sceptre] dust quantity = 60980, dust tag = Rare
+[Rock Breaker] dust quantity = 6520, dust tag = Common
+[Gavel] dust quantity = 11440, dust tag = Moderate
+[Gavel] dust quantity = 68640, dust tag = Rare
+[Gavel] dust quantity = 68640, dust tag = Rare
+[Auric Mace] dust quantity = 13660, dust tag = Moderate
+[Carnal Sceptre] dust quantity = 17080, dust tag = Moderate
+[Opal Sceptre] dust quantity = 11440, dust tag = Moderate
+[Bronze Sceptre] dust quantity = 2600, dust tag = Trash
+[Crystal Sceptre] dust quantity = 13040, dust tag = Moderate
+[Crystal Sceptre] dust quantity = 13040, dust tag = Moderate
+[Void Sceptre] dust quantity = 28980, dust tag = Moderate
+[Void Sceptre] dust quantity = 37820, dust tag = Rare
+[Void Sceptre] dust quantity = 37820, dust tag = Rare
+[Void Sceptre] dust quantity = 37820, dust tag = Rare
+[Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
+[Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
+[Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
+[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
+[Shadow Sceptre] dust quantity = 10000, dust tag = Moderate
+[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
+[Ritual Sceptre] dust quantity = 8880, dust tag = Common
+[War Sword] dust quantity = 3500, dust tag = Trash
+[War Sword] dust quantity = 3500, dust tag = Trash
+[Graceful Sword] dust quantity = 10640, dust tag = Moderate
+[Sabre] dust quantity = 2600, dust tag = Trash
+[Whalebone Rapier] dust quantity = 2980, dust tag = Trash
+[Gladius] dust quantity = 14300, dust tag = Moderate
+[Gladius] dust quantity = 14300, dust tag = Moderate
+[Midnight Blade] dust quantity = 23640, dust tag = Moderate
+[Midnight Blade] dust quantity = 18120, dust tag = Moderate
+[Midnight Blade] dust quantity = 37820, dust tag = Rare
+[Rusted Sword] dust quantity = 2000, dust tag = Trash
+[Twilight Blade] dust quantity = 9300, dust tag = Common
+[Elegant Sword] dust quantity = 4440, dust tag = Trash
+[Elegant Sword] dust quantity = 4440, dust tag = Trash
+[Elder Sword] dust quantity = 9740, dust tag = Common
+[Elder Sword] dust quantity = 9740, dust tag = Common
+[Corsair Sword] dust quantity = 13480, dust tag = Moderate
+[Legion Sword] dust quantity = 15180, dust tag = Moderate
+[Legion Sword] dust quantity = 15180, dust tag = Moderate
+[Legion Sword] dust quantity = 15180, dust tag = Moderate
+[Legion Sword] dust quantity = 15180, dust tag = Moderate
+[Jagged Foil] dust quantity = 3720, dust tag = Trash
+[Antique Rapier] dust quantity = 4180, dust tag = Trash
+[Estoc] dust quantity = 6920, dust tag = Common
+[Basket Rapier] dust quantity = 3200, dust tag = Trash
+[Eternal Sword] dust quantity = 27320, dust tag = Moderate
+[Eternal Sword] dust quantity = 37820, dust tag = Rare
+[Eternal Sword] dust quantity = 37820, dust tag = Rare
+[Eternal Sword] dust quantity = 37820, dust tag = Rare
+[Vaal Blade] dust quantity = 25760, dust tag = Moderate
+[Vaal Blade] dust quantity = 77260, dust tag = Rare
+[Dusk Blade] dust quantity = 10000, dust tag = Moderate
+[Jewelled Foil] dust quantity = 86960, dust tag = Rare
+[Military Staff] dust quantity = 13040, dust tag = Moderate
+[Royal Staff] dust quantity = 4440, dust tag = Trash
+[Engraved Greatsword] dust quantity = 1537440, dust tag = Very expensive
+[Gnarled Branch] dust quantity = 2180, dust tag = Trash
+[Gnarled Branch] dust quantity = 2180, dust tag = Trash
+[Gnarled Branch] dust quantity = 2180, dust tag = Trash
+[Gnarled Branch] dust quantity = 2180, dust tag = Trash
+[Ezomyte Staff] dust quantity = 14300, dust tag = Moderate
+[Ezomyte Staff] dust quantity = 14300, dust tag = Moderate
+[Ezomyte Staff] dust quantity = 14300, dust tag = Moderate
+[Maelstrom Staff] dust quantity = 25760, dust tag = Moderate
+[Maelstrom Staff] dust quantity = 25760, dust tag = Moderate
+[Maelstrom Staff] dust quantity = 25760, dust tag = Moderate
+[Maelstrom Staff] dust quantity = 25760, dust tag = Moderate
+[Serpentine Staff] dust quantity = 10340, dust tag = Moderate
+[Serpentine Staff] dust quantity = 10340, dust tag = Moderate
+[Iron Staff] dust quantity = 2860, dust tag = Trash
+[Iron Staff] dust quantity = 2860, dust tag = Trash
+[Iron Staff] dust quantity = 2860, dust tag = Trash
+[Primordial Staff] dust quantity = 10780, dust tag = Moderate
+[Primordial Staff] dust quantity = 10780, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Imperial Staff] dust quantity = 17080, dust tag = Moderate
+[Judgement Staff] dust quantity = 31680, dust tag = Moderate
+[Judgement Staff] dust quantity = 28980, dust tag = Moderate
+[Judgement Staff] dust quantity = 31680, dust tag = Moderate
+[Judgement Staff] dust quantity = 31680, dust tag = Moderate
+[Lathi] dust quantity = 24280, dust tag = Moderate
+[Coiled Staff] dust quantity = 9420, dust tag = Common
+[Vile Staff] dust quantity = 10300, dust tag = Moderate
+[Highborn Staff] dust quantity = 225780, dust tag = Expensive
+[Highborn Staff] dust quantity = 225780, dust tag = Expensive
+[Ezomyte Axe] dust quantity = 12140, dust tag = Moderate
+[Ezomyte Axe] dust quantity = 12140, dust tag = Moderate
+[Poleaxe] dust quantity = 3300, dust tag = Trash
+[Jasper Chopper] dust quantity = 7240, dust tag = Common
+[Jasper Chopper] dust quantity = 7240, dust tag = Common
+[Headsman Axe] dust quantity = 7340, dust tag = Common
+[Ezomyte Axe] dust quantity = 12140, dust tag = Moderate
+[Shadow Axe] dust quantity = 5160, dust tag = Common
+[Woodsplitter] dust quantity = 2860, dust tag = Trash
+[Karui Chopper] dust quantity = 13480, dust tag = Moderate
+[Vaal Axe] dust quantity = 25760, dust tag = Moderate
+[Vaal Axe] dust quantity = 25760, dust tag = Moderate
+[Vaal Axe] dust quantity = 25760, dust tag = Moderate
+[Vaal Axe] dust quantity = 25760, dust tag = Moderate
+[Despot Axe] dust quantity = 13660, dust tag = Moderate
+[Despot Axe] dust quantity = 13660, dust tag = Moderate
+[Abyssal Axe] dust quantity = 19740, dust tag = Moderate
+[Void Axe] dust quantity = 362300, dust tag = Very expensive
+[Dread Maul] dust quantity = 11980, dust tag = Moderate
+[Karui Maul] dust quantity = 1046920, dust tag = Very expensive
+[Great Mallet] dust quantity = 12660, dust tag = Moderate
+[Great Mallet] dust quantity = 12660, dust tag = Moderate
+[Great Mallet] dust quantity = 6340, dust tag = Common
+[Jagged Maul] dust quantity = 3720, dust tag = Trash
+[Terror Maul] dust quantity = 17580, dust tag = Moderate
+[Terror Maul] dust quantity = 17580, dust tag = Moderate
+[Steelhead] dust quantity = 8920, dust tag = Common
+[Sledgehammer] dust quantity = 3200, dust tag = Trash
+[Brass Maul] dust quantity = 4320, dust tag = Trash
+[Meatgrinder] dust quantity = 37820, dust tag = Rare
+[Imperial Maul] dust quantity = 331560, dust tag = Very expensive
+[Reaver Sword] dust quantity = 13880, dust tag = Moderate
+[Tiger Sword] dust quantity = 8760, dust tag = Common
+[Bastard Sword] dust quantity = 2760, dust tag = Trash
+[Highland Blade] dust quantity = 7120, dust tag = Common
+[Ornate Sword] dust quantity = 4320, dust tag = Trash
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Infernal Sword] dust quantity = 14060, dust tag = Moderate
+[Ezomyte Blade] dust quantity = 11780, dust tag = Moderate
+[Ezomyte Blade] dust quantity = 11780, dust tag = Moderate
+[Reaver Sword] dust quantity = 13880, dust tag = Moderate
+[Etched Greatsword] dust quantity = 4660, dust tag = Trash
+[Lion Sword] dust quantity = 26520, dust tag = Moderate
+[Sage Wand] dust quantity = 4720, dust tag = Trash
+[Sage Wand] dust quantity = 117820, dust tag = Expensive
+[Omen Wand] dust quantity = 18600, dust tag = Moderate
+[Driftwood Wand] dust quantity = 2000, dust tag = Trash
+[Sage Wand] dust quantity = 117820, dust tag = Expensive
+[Prophecy Wand] dust quantity = 113460, dust tag = Expensive
+[Prophecy Wand] dust quantity = 113460, dust tag = Expensive
+[Sage Wand] dust quantity = 117820, dust tag = Expensive
+[Spiraled Wand] dust quantity = 3940, dust tag = Trash
+[Spiraled Wand] dust quantity = 7900, dust tag = Common
+[Imbued Wand] dust quantity = 13880, dust tag = Moderate
+[Imbued Wand] dust quantity = 11100, dust tag = Moderate
+[Imbued Wand] dust quantity = 11100, dust tag = Moderate
+[Engraved Wand] dust quantity = 7920, dust tag = Common
+[Engraved Wand] dust quantity = 7920, dust tag = Common
+[Engraved Wand] dust quantity = 6340, dust tag = Common
+[Carved Wand] dust quantity = 3460, dust tag = Trash
+[Carved Wand] dust quantity = 16620, dust tag = Moderate
+[Goat's Horn] dust quantity = 2320, dust tag = Trash
+[Sage's Robe] dust quantity = 5800, dust tag = Common
+[Holy Chainmail] dust quantity = 10920, dust tag = Moderate
+[Lacquered Garb] dust quantity = 11280, dust tag = Moderate
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Sharkskin Tunic] dust quantity = 20320, dust tag = Moderate
+[Destroyer Regalia] dust quantity = 11620, dust tag = Moderate
+[Vaal Regalia] dust quantity = 18120, dust tag = Moderate
+[Spidersilk Robe] dust quantity = 10340, dust tag = Moderate
+[Copper Plate] dust quantity = 4020, dust tag = Trash
+[Colosseum Plate] dust quantity = 8260, dust tag = Common
+[Ornate Ringmail] dust quantity = 7800, dust tag = Common
+[Conquest Chainmail] dust quantity = 11780, dust tag = Moderate
+[Latticed Ringmail] dust quantity = 6140, dust tag = Common
+[Silken Vest] dust quantity = 3360, dust tag = Trash
+[Elegant Ringmail] dust quantity = 16100, dust tag = Moderate
+[Elegant Ringmail] dust quantity = 16100, dust tag = Moderate
+[Elegant Ringmail] dust quantity = 16100, dust tag = Moderate
+[Wild Leather] dust quantity = 4060, dust tag = Trash
+[Cutthroat's Garb] dust quantity = 11620, dust tag = Moderate
+[Sun Leather] dust quantity = 5000, dust tag = Common
+[Plate Vest] dust quantity = 2500, dust tag = Trash
+[Bone Armour] dust quantity = 6820, dust tag = Common
+[Buckskin Tunic] dust quantity = 4020, dust tag = Trash
+[Crusader Chainmail] dust quantity = 8660, dust tag = Common
+[Crusader Chainmail] dust quantity = 8660, dust tag = Common
+[Triumphant Lamellar] dust quantity = 18660, dust tag = Moderate
+[Necromancer Silks] dust quantity = 16580, dust tag = Moderate
+[Varnished Coat] dust quantity = 24280, dust tag = Moderate
+[Crusader Plate] dust quantity = 19800, dust tag = Moderate
+[Widowsilk Robe] dust quantity = 26520, dust tag = Moderate
+[Golden Plate] dust quantity = 12700, dust tag = Moderate
+[Sentinel Jacket] dust quantity = 13880, dust tag = Moderate
+[Exquisite Leather] dust quantity = 24280, dust tag = Moderate
+[Exquisite Leather] dust quantity = 24280, dust tag = Moderate
+[Exquisite Leather] dust quantity = 24280, dust tag = Moderate
+[Simple Robe] dust quantity = 4240, dust tag = Trash
+[Simple Robe] dust quantity = 4240, dust tag = Trash
+[Simple Robe] dust quantity = 4240, dust tag = Trash
+[Full Dragonscale] dust quantity = 25000, dust tag = Moderate
+[Saintly Chainmail] dust quantity = 30740, dust tag = Moderate
+[Sadist Garb] dust quantity = 28980, dust tag = Moderate
+[Devout Chainmail] dust quantity = 59200, dust tag = Rare
+[Astral Plate] dust quantity = 24280, dust tag = Moderate
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Saint's Hauberk] dust quantity = 33600, dust tag = Moderate
+[Destiny Leather] dust quantity = 22220, dust tag = Moderate
+[Glorious Plate] dust quantity = 43840, dust tag = Rare
+[Saintly Chainmail] dust quantity = 30740, dust tag = Moderate
+[Widowsilk Robe] dust quantity = 79580, dust tag = Rare
+[Astral Plate] dust quantity = 24280, dust tag = Moderate
+[Assassin's Garb] dust quantity = 28980, dust tag = Moderate
+[Varnished Coat] dust quantity = 24280, dust tag = Moderate
+[Full Wyrmscale] dust quantity = 15120, dust tag = Moderate
+[Desert Brigandine] dust quantity = 22880, dust tag = Moderate
+[Vaal Regalia] dust quantity = 18120, dust tag = Moderate
+[Vaal Regalia] dust quantity = 18120, dust tag = Moderate
+[Exquisite Leather] dust quantity = 72820, dust tag = Rare
+[Golden Plate] dust quantity = 12700, dust tag = Moderate
+[Scholar's Robe] dust quantity = 6620, dust tag = Common
+[Lacquered Garb] dust quantity = 54180, dust tag = Rare
+[Crusader Plate] dust quantity = 66640, dust tag = Rare
+[Glorious Plate] dust quantity = 86960, dust tag = Rare
+[Widowsilk Robe] dust quantity = 79580, dust tag = Rare
+[Saint's Hauberk] dust quantity = 84420, dust tag = Rare
+[Occultist's Vestment] dust quantity = 72820, dust tag = Rare
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Sadist Garb] dust quantity = 86960, dust tag = Rare
+[Sadist Garb] dust quantity = 86960, dust tag = Rare
+[Necromancer Silks] dust quantity = 66640, dust tag = Rare
+[Wyrmscale Doublet] dust quantity = 149260, dust tag = Expensive
+[Savant's Robe] dust quantity = 254100, dust tag = Very expensive
+[Gladiator Plate] dust quantity = 113460, dust tag = Expensive
+[Majestic Plate] dust quantity = 55820, dust tag = Rare
+[Sentinel Jacket] dust quantity = 13880, dust tag = Moderate
+[Spidersilk Robe] dust quantity = 49580, dust tag = Rare
+[Spidersilk Robe] dust quantity = 49580, dust tag = Rare
+[Triumphant Lamellar] dust quantity = 18660, dust tag = Moderate
+[Triumphant Lamellar] dust quantity = 18660, dust tag = Moderate
+[Savant's Robe] dust quantity = 254100, dust tag = Very expensive
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Zodiac Leather] dust quantity = 79580, dust tag = Rare
+[Saint's Hauberk] dust quantity = 84420, dust tag = Rare
+[Sage's Robe] dust quantity = 144920, dust tag = Expensive
+[Carnal Armour] dust quantity = 15840, dust tag = Moderate
+[Mesh Boots] dust quantity = 4440, dust tag = Trash
+[Shackled Boots] dust quantity = 6640, dust tag = Common
+[Goathide Boots] dust quantity = 3460, dust tag = Trash
+[Antique Greaves] dust quantity = 5800, dust tag = Common
+[Shagreen Boots] dust quantity = 9860, dust tag = Common
+[Shagreen Boots] dust quantity = 9860, dust tag = Common
+[Clasped Boots] dust quantity = 4320, dust tag = Trash
+[Plated Greaves] dust quantity = 3840, dust tag = Trash
+[Stealth Boots] dust quantity = 12140, dust tag = Moderate
+[Scholar Boots] dust quantity = 5000, dust tag = Common
+[Eelskin Boots] dust quantity = 6140, dust tag = Common
+[Strapped Boots] dust quantity = 3120, dust tag = Trash
+[Legion Boots] dust quantity = 10780, dust tag = Moderate
+[Bronzescale Boots] dust quantity = 5900, dust tag = Common
+[Bronzescale Boots] dust quantity = 5900, dust tag = Common
+[Arcanist Slippers] dust quantity = 23560, dust tag = Moderate
+[Arcanist Slippers] dust quantity = 23560, dust tag = Moderate
+[Velvet Slippers] dust quantity = 2540, dust tag = Trash
+[Legion Boots] dust quantity = 10780, dust tag = Moderate
+[Ironscale Boots] dust quantity = 3300, dust tag = Trash
+[Deerskin Boots] dust quantity = 3720, dust tag = Trash
+[Silk Slippers] dust quantity = 3720, dust tag = Trash
+[Silk Slippers] dust quantity = 3720, dust tag = Trash
+[Soldier Boots] dust quantity = 10340, dust tag = Moderate
+[Soldier Boots] dust quantity = 10340, dust tag = Moderate
+[Dragonscale Boots] dust quantity = 16580, dust tag = Moderate
+[Sharkskin Boots] dust quantity = 14260, dust tag = Moderate
+[Ancient Greaves] dust quantity = 15120, dust tag = Moderate
+[Ancient Greaves] dust quantity = 9460, dust tag = Common
+[Conjurer Boots] dust quantity = 18600, dust tag = Moderate
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Nubuck Boots] dust quantity = 6640, dust tag = Common
+[Wool Shoes] dust quantity = 2120, dust tag = Trash
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Sorcerer Boots] dust quantity = 84420, dust tag = Rare
+[Trapper Boots] dust quantity = 13040, dust tag = Moderate
+[Two-Toned Boots] dust quantity = 35640, dust tag = Rare
+[Serpentscale Boots] dust quantity = 13440, dust tag = Moderate
+[Reinforced Greaves] dust quantity = 10300, dust tag = Moderate
+[Sorcerer Boots] dust quantity = 139540, dust tag = Expensive
+[Carnal Boots] dust quantity = 19740, dust tag = Moderate
+[Carnal Boots] dust quantity = 59200, dust tag = Rare
+[Sorcerer Boots] dust quantity = 139540, dust tag = Expensive
+[Titan Greaves] dust quantity = 28980, dust tag = Moderate
+[Goathide Boots] dust quantity = 69220, dust tag = Rare
+[Carnal Boots] dust quantity = 59200, dust tag = Rare
+[Shagreen Boots] dust quantity = 9860, dust tag = Common
+[Rawhide Boots] dust quantity = 106940, dust tag = Expensive
+[Riveted Boots] dust quantity = 140700, dust tag = Expensive
+[Dragonscale Boots] dust quantity = 16580, dust tag = Moderate
+[Stealth Boots] dust quantity = 303420, dust tag = Very expensive
+[Wyrmscale Gauntlets] dust quantity = 10340, dust tag = Moderate
+[Conjurer Gloves] dust quantity = 12340, dust tag = Moderate
+[Titan Gauntlets] dust quantity = 14920, dust tag = Moderate
+[Mesh Gloves] dust quantity = 5000, dust tag = Common
+[Mesh Gloves] dust quantity = 10000, dust tag = Moderate
+[Carnal Mitts] dust quantity = 8520, dust tag = Common
+[Dragonscale Gauntlets] dust quantity = 14060, dust tag = Moderate
+[Soldier Gloves] dust quantity = 8760, dust tag = Common
+[Bronzescale Gauntlets] dust quantity = 4320, dust tag = Trash
+[Clasped Mitts] dust quantity = 6060, dust tag = Common
+[Chain Gloves] dust quantity = 2980, dust tag = Trash
+[Wool Gloves] dust quantity = 2660, dust tag = Trash
+[Shagreen Gloves] dust quantity = 16800, dust tag = Moderate
+[Nubuck Gloves] dust quantity = 11280, dust tag = Moderate
+[Wrapped Mitts] dust quantity = 2260, dust tag = Trash
+[Legion Gloves] dust quantity = 13080, dust tag = Moderate
+[Slink Gloves] dust quantity = 15380, dust tag = Moderate
+[Murder Mitts] dust quantity = 351740, dust tag = Very expensive
+[Samite Gloves] dust quantity = 7800, dust tag = Common
+[Samite Gloves] dust quantity = 7800, dust tag = Common
+[Eelskin Gloves] dust quantity = 19220, dust tag = Moderate
+[Bronze Gauntlets] dust quantity = 3840, dust tag = Trash
+[Ironscale Gauntlets] dust quantity = 3780, dust tag = Trash
+[Strapped Mitts] dust quantity = 3900, dust tag = Trash
+[Goliath Gauntlets] dust quantity = 9300, dust tag = Common
+[Goliath Gauntlets] dust quantity = 9300, dust tag = Common
+[Velvet Gloves] dust quantity = 2760, dust tag = Trash
+[Satin Gloves] dust quantity = 8160, dust tag = Common
+[Clasped Mitts] dust quantity = 6060, dust tag = Common
+[Satin Gloves] dust quantity = 13040, dust tag = Moderate
+[Satin Gloves] dust quantity = 13040, dust tag = Moderate
+[Assassin's Mitts] dust quantity = 13480, dust tag = Moderate
+[Ambush Mitts] dust quantity = 9180, dust tag = Common
+[Ambush Mitts] dust quantity = 44060, dust tag = Rare
+[Ambush Mitts] dust quantity = 44060, dust tag = Rare
+[Steel Gauntlets] dust quantity = 10920, dust tag = Moderate
+[Goathide Gloves] dust quantity = 2540, dust tag = Trash
+[Arcanist Gloves] dust quantity = 22880, dust tag = Moderate
+[Arcanist Gloves] dust quantity = 22880, dust tag = Moderate
+[Carnal Mitts] dust quantity = 22280, dust tag = Moderate
+[Wyrmscale Gauntlets] dust quantity = 10340, dust tag = Moderate
+[Iron Gauntlets] dust quantity = 2000, dust tag = Trash
+[Assassin's Mitts] dust quantity = 21560, dust tag = Moderate
+[Steelscale Gauntlets] dust quantity = 11260, dust tag = Moderate
+[Zealot Gloves] dust quantity = 13840, dust tag = Moderate
+[Zealot Gloves] dust quantity = 41520, dust tag = Rare
+[Zealot Gloves] dust quantity = 13840, dust tag = Moderate
+[Zealot Gloves] dust quantity = 13840, dust tag = Moderate
+[Steelscale Gauntlets] dust quantity = 11260, dust tag = Moderate
+[Bronzescale Gauntlets] dust quantity = 8620, dust tag = Common
+[Crusader Gloves] dust quantity = 27320, dust tag = Moderate
+[Crusader Gloves] dust quantity = 27320, dust tag = Moderate
+[Deerskin Gloves] dust quantity = 35640, dust tag = Rare
+[Hydrascale Gauntlets] dust quantity = 66640, dust tag = Rare
+[Vaal Gauntlets] dust quantity = 89560, dust tag = Rare
+[Serpentscale Gauntlets] dust quantity = 13840, dust tag = Moderate
+[Hydrascale Gauntlets] dust quantity = 66640, dust tag = Rare
+[Ancient Gauntlets] dust quantity = 46740, dust tag = Rare
+[Embroidered Gloves] dust quantity = 11260, dust tag = Moderate
+[Murder Mitts] dust quantity = 84420, dust tag = Rare
+[Assassin's Mitts] dust quantity = 21560, dust tag = Moderate
+[Soldier Gloves] dust quantity = 8760, dust tag = Common
+[Legion Gloves] dust quantity = 13080, dust tag = Moderate
+[Murder Mitts] dust quantity = 84420, dust tag = Rare
+[Carnal Mitts] dust quantity = 22280, dust tag = Moderate
+[Titan Gauntlets] dust quantity = 29860, dust tag = Moderate
+[Silk Gloves] dust quantity = 35640, dust tag = Rare
+[Ambush Mitts] dust quantity = 44060, dust tag = Rare
+[Crusader Gloves] dust quantity = 27320, dust tag = Moderate
+[Vaal Gauntlets] dust quantity = 89560, dust tag = Rare
+[Vaal Gauntlets] dust quantity = 89560, dust tag = Rare
+[Carnal Mitts] dust quantity = 22280, dust tag = Moderate
+[Titan Gauntlets] dust quantity = 29860, dust tag = Moderate
+[Zealot Gloves] dust quantity = 41520, dust tag = Rare
+[Assassin's Mitts] dust quantity = 21560, dust tag = Moderate
+[Hydrascale Gauntlets] dust quantity = 66640, dust tag = Rare
+[Ancient Gauntlets] dust quantity = 46740, dust tag = Rare
+[Iron Circlet] dust quantity = 3080, dust tag = Trash
+[Bone Circlet] dust quantity = 132620, dust tag = Expensive
+[Golden Mask] dust quantity = 5460, dust tag = Common
+[Great Helmet] dust quantity = 4660, dust tag = Trash
+[Great Helmet] dust quantity = 4660, dust tag = Trash
+[Barbute Helmet] dust quantity = 3300, dust tag = Trash
+[Golden Mask] dust quantity = 5460, dust tag = Common
+[Prophet Crown] dust quantity = 12500, dust tag = Moderate
+[Close Helmet] dust quantity = 5240, dust tag = Common
+[Silken Hood] dust quantity = 14300, dust tag = Moderate
+[Prophet Crown] dust quantity = 15620, dust tag = Moderate
+[Secutor Helm] dust quantity = 5620, dust tag = Common
+[Ursine Pelt] dust quantity = 9860, dust tag = Common
+[Aventail Helmet] dust quantity = 5800, dust tag = Common
+[Tribal Circlet] dust quantity = 4180, dust tag = Trash
+[Iron Mask] dust quantity = 4020, dust tag = Trash
+[Zealot Helmet] dust quantity = 8920, dust tag = Common
+[Zealot Helmet] dust quantity = 8920, dust tag = Common
+[Samnite Helmet] dust quantity = 9860, dust tag = Common
+[Soldier Helmet] dust quantity = 2760, dust tag = Trash
+[Regicide Mask] dust quantity = 18060, dust tag = Moderate
+[Regicide Mask] dust quantity = 18060, dust tag = Moderate
+[Great Crown] dust quantity = 11620, dust tag = Moderate
+[Tricorne] dust quantity = 5220, dust tag = Common
+[Iron Hat] dust quantity = 2000, dust tag = Trash
+[Wolf Pelt] dust quantity = 4720, dust tag = Trash
+[Hubris Circlet] dust quantity = 18660, dust tag = Moderate
+[Lunaris Circlet] dust quantity = 7680, dust tag = Common
+[Gilded Sallet] dust quantity = 10300, dust tag = Moderate
+[Visored Sallet] dust quantity = 4800, dust tag = Trash
+[Plague Mask] dust quantity = 4380, dust tag = Trash
+[Regicide Mask] dust quantity = 11280, dust tag = Moderate
+[Vine Circlet] dust quantity = 2120, dust tag = Trash
+[Praetor Crown] dust quantity = 18120, dust tag = Moderate
+[Hubris Circlet] dust quantity = 29860, dust tag = Moderate
+[Mind Cage] dust quantity = 26520, dust tag = Moderate
+[Lion Pelt] dust quantity = 23640, dust tag = Moderate
+[Harlequin Mask] dust quantity = 20940, dust tag = Moderate
+[Nightmare Bascinet] dust quantity = 17300, dust tag = Moderate
+[Bone Helmet] dust quantity = 21000, dust tag = Moderate
+[Steel Circlet] dust quantity = 16040, dust tag = Moderate
+[Nightmare Bascinet] dust quantity = 28140, dust tag = Moderate
+[Mind Cage] dust quantity = 26520, dust tag = Moderate
+[Praetor Crown] dust quantity = 37820, dust tag = Rare
+[Festival Mask] dust quantity = 4440, dust tag = Trash
+[Festival Mask] dust quantity = 4440, dust tag = Trash
+[Callous Mask] dust quantity = 21000, dust tag = Moderate
+[Callous Mask] dust quantity = 21000, dust tag = Moderate
+[Reaver Helmet] dust quantity = 12660, dust tag = Moderate
+[Eternal Burgonet] dust quantity = 29860, dust tag = Moderate
+[Solaris Circlet] dust quantity = 33600, dust tag = Moderate
+[Bone Circlet] dust quantity = 132620, dust tag = Expensive
+[Solaris Circlet] dust quantity = 33600, dust tag = Moderate
+[Lacquered Helmet] dust quantity = 8760, dust tag = Common
+[Vaal Mask] dust quantity = 24280, dust tag = Moderate
+[Lacquered Helmet] dust quantity = 10960, dust tag = Moderate
+[Steel Circlet] dust quantity = 16040, dust tag = Moderate
+[Great Crown] dust quantity = 11620, dust tag = Moderate
+[Deicide Mask] dust quantity = 84420, dust tag = Rare
+[Mind Cage] dust quantity = 26520, dust tag = Moderate
+[Leather Cap] dust quantity = 2660, dust tag = Trash
+[Solaris Circlet] dust quantity = 33600, dust tag = Moderate
+[Vaal Mask] dust quantity = 24280, dust tag = Moderate
+[Necromancer Circlet] dust quantity = 19160, dust tag = Moderate
+[Hubris Circlet] dust quantity = 29860, dust tag = Moderate
+[Solaris Circlet] dust quantity = 33600, dust tag = Moderate
+[Necromancer Circlet] dust quantity = 19160, dust tag = Moderate
+[Sinner Tricorne] dust quantity = 41320, dust tag = Rare
+[Sinner Tricorne] dust quantity = 25760, dust tag = Moderate
+[Sinner Tricorne] dust quantity = 41320, dust tag = Rare
+[Silken Hood] dust quantity = 14300, dust tag = Moderate
+[Callous Mask] dust quantity = 14680, dust tag = Moderate
+[Solaris Circlet] dust quantity = 22220, dust tag = Moderate
+[Praetor Crown] dust quantity = 28980, dust tag = Moderate
+[Raven Mask] dust quantity = 35820, dust tag = Rare
+[Bone Helmet] dust quantity = 33600, dust tag = Moderate
+[Harlequin Mask] dust quantity = 20940, dust tag = Moderate
+[Ezomyte Burgonet] dust quantity = 22880, dust tag = Moderate
+[Silken Hood] dust quantity = 14300, dust tag = Moderate
+[Praetor Crown] dust quantity = 37820, dust tag = Rare
+[Praetor Crown] dust quantity = 37820, dust tag = Rare
+[Prophet Crown] dust quantity = 312520, dust tag = Very expensive
+[Ezomyte Burgonet] dust quantity = 22880, dust tag = Moderate
+[Ezomyte Burgonet] dust quantity = 22880, dust tag = Moderate
+[Prophet Crown] dust quantity = 312520, dust tag = Very expensive
+[Leather Hood] dust quantity = 7020, dust tag = Common
+[Leather Hood] dust quantity = 7020, dust tag = Common
+[Iron Circlet] dust quantity = 14760, dust tag = Moderate
+[Hubris Circlet] dust quantity = 29860, dust tag = Moderate
+[Great Crown] dust quantity = 11620, dust tag = Moderate
+[Necromancer Circlet] dust quantity = 19160, dust tag = Moderate
+[Necromancer Circlet] dust quantity = 19160, dust tag = Moderate
+[Spike-Point Arrow Quiver] dust quantity = 16100, dust tag = Moderate
+[Spike-Point Arrow Quiver] dust quantity = 16100, dust tag = Moderate
+[Two-Point Arrow Quiver] dust quantity = 5620, dust tag = Common
+[Heavy Arrow Quiver] dust quantity = 14720, dust tag = Moderate
+[Feathered Arrow Quiver] dust quantity = 3500, dust tag = Trash
+[Blunt Arrow Quiver] dust quantity = 6060, dust tag = Common
+[Blunt Arrow Quiver] dust quantity = 6060, dust tag = Common
+[Blunt Arrow Quiver] dust quantity = 6060, dust tag = Common
+[Vile Arrow Quiver] dust quantity = 9860, dust tag = Common
+[Penetrating Arrow Quiver] dust quantity = 5080, dust tag = Common
+[Serrated Arrow Quiver] dust quantity = 2180, dust tag = Trash
+[Blazing Arrow Quiver] dust quantity = 2060, dust tag = Trash
+[Feathered Arrow Quiver] dust quantity = 3500, dust tag = Trash
+[Sharktooth Arrow Quiver] dust quantity = 2940, dust tag = Trash
+[Sharktooth Arrow Quiver] dust quantity = 12700, dust tag = Moderate
+[Primal Arrow Quiver] dust quantity = 17080, dust tag = Moderate
+[Broadhead Arrow Quiver] dust quantity = 10340, dust tag = Moderate
+[Two-Point Arrow Quiver] dust quantity = 113460, dust tag = Expensive
+[Ornate Quiver] dust quantity = 86960, dust tag = Rare
+[Ornate Quiver] dust quantity = 86960, dust tag = Rare
+[Primal Arrow Quiver] dust quantity = 17080, dust tag = Moderate
+[Polished Spiked Shield] dust quantity = 8260, dust tag = Common
+[Rotted Round Shield] dust quantity = 2260, dust tag = Trash
+[Maple Round Shield] dust quantity = 7680, dust tag = Common
+[Laminated Kite Shield] dust quantity = 8520, dust tag = Common
+[Laminated Kite Shield] dust quantity = 8520, dust tag = Common
+[Cedar Tower Shield] dust quantity = 4020, dust tag = Trash
+[Reinforced Tower Shield] dust quantity = 4720, dust tag = Trash
+[Vaal Buckler] dust quantity = 12500, dust tag = Moderate
+[Ironwood Buckler] dust quantity = 13080, dust tag = Moderate
+[Elegant Round Shield] dust quantity = 15380, dust tag = Moderate
+[Teak Round Shield] dust quantity = 13480, dust tag = Moderate
+[Chiming Spirit Shield] dust quantity = 8260, dust tag = Common
+[Studded Round Shield] dust quantity = 3500, dust tag = Trash
+[Plank Kite Shield] dust quantity = 2380, dust tag = Trash
+[Brass Spirit Shield] dust quantity = 6440, dust tag = Common
+[Mosaic Kite Shield] dust quantity = 16580, dust tag = Moderate
+[Tarnished Spirit Shield] dust quantity = 4800, dust tag = Trash
+[Compound Spiked Shield] dust quantity = 7340, dust tag = Common
+[Ancient Spirit Shield] dust quantity = 9180, dust tag = Common
+[Painted Buckler] dust quantity = 3120, dust tag = Trash
+[Supreme Spiked Shield] dust quantity = 15380, dust tag = Moderate
+[Corrugated Buckler] dust quantity = 9460, dust tag = Common
+[Pine Buckler] dust quantity = 2460, dust tag = Trash
+[Ebony Tower Shield] dust quantity = 11780, dust tag = Moderate
+[War Buckler] dust quantity = 5720, dust tag = Common
+[Tarnished Spirit Shield] dust quantity = 7660, dust tag = Common
+[Colossal Tower Shield] dust quantity = 17580, dust tag = Moderate
+[Lacewood Spirit Shield] dust quantity = 420000, dust tag = Very expensive
+[Harmonic Spirit Shield] dust quantity = 16580, dust tag = Moderate
+[Mirrored Spiked Shield] dust quantity = 18900, dust tag = Moderate
+[Lacquered Buckler] dust quantity = 33600, dust tag = Moderate
+[Lacquered Buckler] dust quantity = 33600, dust tag = Moderate
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Enameled Buckler] dust quantity = 13440, dust tag = Moderate
+[Pinnacle Tower Shield] dust quantity = 30740, dust tag = Moderate
+[Rawhide Tower Shield] dust quantity = 5380, dust tag = Common
+[Vaal Spirit Shield] dust quantity = 72820, dust tag = Rare
+[Vaal Spirit Shield] dust quantity = 72820, dust tag = Rare
+[Baroque Round Shield] dust quantity = 19160, dust tag = Moderate
+[Ebony Tower Shield] dust quantity = 294580, dust tag = Very expensive
+[Ebony Tower Shield] dust quantity = 294580, dust tag = Very expensive
+[Branded Kite Shield] dust quantity = 22220, dust tag = Moderate
+[Colossal Tower Shield] dust quantity = 17580, dust tag = Moderate
+[Titanium Spirit Shield] dust quantity = 86960, dust tag = Rare
+[Chiming Spirit Shield] dust quantity = 16520, dust tag = Moderate
+[Archon Kite Shield] dust quantity = 21640, dust tag = Moderate
+[Pinnacle Tower Shield] dust quantity = 92240, dust tag = Rare
+[Jingling Spirit Shield] dust quantity = 111060, dust tag = Expensive
+[Vaal Spirit Shield] dust quantity = 72820, dust tag = Rare
+[Crimson Round Shield] dust quantity = 10340, dust tag = Moderate
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Mirrored Spiked Shield] dust quantity = 27320, dust tag = Moderate
+[Titanium Spirit Shield] dust quantity = 86960, dust tag = Rare
+[Sovereign Spiked Shield] dust quantity = 57480, dust tag = Rare
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Archon Kite Shield] dust quantity = 86960, dust tag = Rare
+[Painted Tower Shield] dust quantity = 10920, dust tag = Moderate
+[Steel Kite Shield] dust quantity = 45380, dust tag = Rare
+[Vaal Spirit Shield] dust quantity = 72820, dust tag = Rare
+[Champion Kite Shield] dust quantity = 100800, dust tag = Expensive
+[Steel Kite Shield] dust quantity = 45380, dust tag = Rare
+[Elegant Round Shield] dust quantity = 1537440, dust tag = Very expensive

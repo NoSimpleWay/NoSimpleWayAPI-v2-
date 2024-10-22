@@ -1841,6 +1841,7 @@ public:
 	static std::vector<EDataEntity*>			registered_data_entity_class_list;
 	static std::vector<EDataEntity*>			registered_data_entity_explicit_list;
 	static std::vector<EDataEntity*>			registered_data_entity_uniques_list;
+	static std::vector<EDataEntity*>			registered_data_entity_base_item_list;
 
 	static void									add_game_item_data_entity_to_list();
 	

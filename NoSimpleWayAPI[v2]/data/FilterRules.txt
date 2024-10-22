@@ -2200,8 +2200,8 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Uniques:\nBoss drop"
-name_RU	"”ники:\nдроп c Ѕоссов"
+name_EN	"Item bases for uniques:\nBoss drop"
+name_RU	"Ѕазы предметов дл€ уников:\nдроп c Ѕоссов"
 icon	"data/textures/buttons/button_icon_uniques_boss_drop.png"
 
 tag	"Game item"
@@ -2249,6 +2249,65 @@ DETF_color	255	230	153	255
 
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"Dust price tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Dust: < 5 000"
+DETF_localised_attribute_name_RU	"ѕыль: < 5 000"
+DETF_color	118	128	138	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Dust: >= 5 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 5 000"
+DETF_color	220	210	200	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Dust: >= 10 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 10 000"
+DETF_color	150	255	100	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Dust: >= 35 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 35 000"
+DETF_color	100	200	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 100 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 100 000"
+DETF_color	64	255	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 250 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 250 000"
+DETF_color	255	200	100	255
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2260,8 +2319,8 @@ DETF_color	255	230	153	255
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Uniques:\nworld drop"
-name_RU	"”ники:\nглобальный дроп"
+name_EN	"Item bases for uniques:\nWorld drop"
+name_RU	"Ѕазы предметов дл€ уников:\n√лобальный дроп"
 icon	"data/textures/buttons/button_icon_uniques_world_drop.png"
 
 tag	"Game item"
@@ -2306,6 +2365,57 @@ DETF_value_key	"Very expensive"
 DETF_localised_attribute_name_EN	"Worth: Very expensive"
 DETF_localised_attribute_name_RU	"ќчень ценное"
 DETF_color	255	230	153	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Dust price tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Dust: < 5 000"
+DETF_localised_attribute_name_RU	"ѕыль: < 5 000"
+DETF_color	118	128	138	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Dust: >= 5 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 5 000"
+DETF_color	220	210	200	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Dust: >= 10 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 10 000"
+DETF_color	150	255	100	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Dust: >= 35 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 35 000"
+DETF_color	100	200	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 100 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 100 000"
+DETF_color	64	255	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Dust: >= 250 000"
+DETF_localised_attribute_name_RU	"ѕыль: >= 250 000"
+DETF_color	255	200	100	255
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
 
 
 

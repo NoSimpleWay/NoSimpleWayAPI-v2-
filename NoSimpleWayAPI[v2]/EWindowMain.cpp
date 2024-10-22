@@ -108,6 +108,7 @@ std::vector<EDataEntity*>								EWindowMain::registered_data_entity_game_item_l
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_class_list;
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_explicit_list;
 std::vector<EDataEntity*>								EWindowMain::registered_data_entity_uniques_list;
+std::vector<EDataEntity*>								EWindowMain::registered_data_entity_base_item_list;
 
 std::vector < std::string>								EWindowMain::filter_text_lines;
 std::vector <EButtonGroupFilterBlockEditor*>			EWindowMain::filter_block_tabs = std::vector<EButtonGroupFilterBlockEditor*>(filter_tabs_count);
@@ -10959,6 +10960,12 @@ void EWindowMain::parse_dust_prices()
 	std::string
 	result_buffer = "";
 
+	//reset dust quantity for bases
+	for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
+	{
+		DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::dust_quantity, "0", item_base_de);
+	}
+
 	while (std::getline(file, str))
 	{
 		EStringUtils::split_line_to_array(str, false);
@@ -10976,6 +10983,11 @@ void EWindowMain::parse_dust_prices()
 			std::string
 			de_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
 
+			bool
+			is_world_drop = DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop, de);
+
+
+
 			if
 			(
 				(de_name == unique_name)
@@ -10985,34 +10997,107 @@ void EWindowMain::parse_dust_prices()
 			{
 				have_match = true;
 
+				if (is_world_drop)
+				{
+					int
+					dust_quantity = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, 9'999'999);
+				
+					ID_string
+					new_worth_ID_string;
 				
 
-				int
-				dust_quantity = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, 9'999'999);
-				
-				ID_string
-				new_worth_ID_string;
-				
+					if (dust_quantity >= 250'000)	{ new_worth_ID_string = ERegisteredStrings::very_expensive; }	else
+					if (dust_quantity >= 100'000)	{ new_worth_ID_string = ERegisteredStrings::expensive;		}	else
+					if (dust_quantity >= 35'000)	{ new_worth_ID_string = ERegisteredStrings::rare;			}	else
+					if (dust_quantity >= 10'000)	{ new_worth_ID_string = ERegisteredStrings::moderate;		}	else
+					if (dust_quantity >= 5'000)		{ new_worth_ID_string = ERegisteredStrings::common;			}	else
+					/*	low cost			*/		{ new_worth_ID_string = ERegisteredStrings::trash;			}
 
-				if (dust_quantity >= 250'000)	{ new_worth_ID_string = ERegisteredStrings::very_expensive; }	else
-				if (dust_quantity >= 100'000)	{ new_worth_ID_string = ERegisteredStrings::expensive;		}	else
-				if (dust_quantity >= 35'000)	{ new_worth_ID_string = ERegisteredStrings::rare;			}	else
-				if (dust_quantity >= 10'000)	{ new_worth_ID_string = ERegisteredStrings::moderate;		}	else
-				if (dust_quantity >= 5'000)		{ new_worth_ID_string = ERegisteredStrings::common;			}	else
-				/*	low cost			*/		{ new_worth_ID_string = ERegisteredStrings::trash; }
+					DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], de);
+					DataEntityUtils::set_tag_value_by_name(0, "Dust price tag", new_worth_ID_string.string_value, de);
 
-				DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], de);
-				DataEntityUtils::set_tag_value_by_name(0, "Dust price tag", new_worth_ID_string.string_value, de);
+					std::string
+					unique_base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
+
+					for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
+					{
+						std::string
+						base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, item_base_de);
+
+						if (base_name == "") { base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, item_base_de); }
+
+						if (base_name == unique_base_name)
+						{
+							std::string
+							base_dust_string = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::dust_quantity, item_base_de);
+
+							int
+							base_dust_quantity = EStringUtils::safe_convert_string_to_number(base_dust_string, 0, 9'999'999);
+
+							if (dust_quantity > base_dust_quantity)
+							{
+								DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], item_base_de);
+							}
+						}
+					}
+				}
+				else
+				{
+					result_buffer += "[" + unique_name + "] is not world drop!" + '\n';
+				}
+
 			}
 		}
 
 		if (!have_match)
 		{
-			result_buffer += "[" + unique_name + "] have no suitable data entity!" + '\r' + '\n';
+			result_buffer += "[" + unique_name + "] have no suitable data entity!" + '\n';
 		}
 	}
 	
+
 	file.close();
+
+	for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
+	{
+		std::string
+		base_dust_string = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::dust_quantity, item_base_de);
+		
+		
+
+		if (base_dust_string != "")
+		{
+			int
+			base_dust_quantity = EStringUtils::safe_convert_string_to_number(base_dust_string, 0, 9'999'999);
+
+			if (base_dust_quantity > 0)
+			{
+				ID_string
+				new_worth_ID_string;
+				
+
+				if (base_dust_quantity >= 250'000)	{ new_worth_ID_string = ERegisteredStrings::very_expensive; }	else
+				if (base_dust_quantity >= 100'000)	{ new_worth_ID_string = ERegisteredStrings::expensive;		}	else
+				if (base_dust_quantity >= 35'000)	{ new_worth_ID_string = ERegisteredStrings::rare;			}	else
+				if (base_dust_quantity >= 10'000)	{ new_worth_ID_string = ERegisteredStrings::moderate;		}	else
+				if (base_dust_quantity >= 5'000)	{ new_worth_ID_string = ERegisteredStrings::common;			}	else
+				/*	low cost			*/			{ new_worth_ID_string = ERegisteredStrings::trash;			}
+
+				//DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], de);
+				DataEntityUtils::set_tag_value_by_name(0, "Dust price tag", new_worth_ID_string.string_value, item_base_de);
+
+				std::string
+				base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, item_base_de);
+
+				if (base_name == "")
+				{
+					base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, item_base_de);
+				}
+
+				result_buffer += "[" + base_name + "] dust quantity = " + std::to_string(base_dust_quantity) + ", dust tag = " + new_worth_ID_string.string_value + '\r' + '\n';
+			}
+		}
+	}
 
 	result_file.open("data/DustPrices[result].txt");
 	result_file << result_buffer;
@@ -20019,6 +20104,11 @@ void EWindowMain::add_game_item_data_entity_to_list()
 				data_entity
 			);
 
+			std::string
+			base_item_name = "";
+
+			base_item_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_class, data_entity);
+
 			
 			if (data_type_name == "Game item")
 			{
@@ -20027,6 +20117,11 @@ void EWindowMain::add_game_item_data_entity_to_list()
 				if (is_unique)
 				{
 					EWindowMain::registered_data_entity_uniques_list.push_back(data_entity);
+				}
+
+				if (base_item_name != "")
+				{
+					EWindowMain::registered_data_entity_base_item_list.push_back(data_entity);
 				}
 			}
 			else if (data_type_name == "Base Class")
@@ -26597,7 +26692,7 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 	//create text area
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea*
-		jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
+	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -26678,7 +26773,12 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 		std::string base_name_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, _data_entity);
 
 		//if base name exist, set
-		if (base_name_value != "")
+		if
+		(
+			(base_name_value != "")
+			//&&
+			//(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::unique_item, _data_entity))
+		)
 		{
 			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, _data_entity);
 		}
@@ -28757,11 +28857,11 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_grou
 	attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "SocketGroup");
 
 	if
-		(
-			(_game_item->stored_data_entity != nullptr)
-			&&
-			(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::all_sockets_white, _game_item->stored_data_entity))
-			)//ALWAYS WHITE
+	(
+		(_game_item->stored_data_entity != nullptr)
+		&&
+		(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::all_sockets_white, _game_item->stored_data_entity))
+	)//ALWAYS WHITE
 	{
 
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 0;

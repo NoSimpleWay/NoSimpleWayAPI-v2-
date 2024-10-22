@@ -100,6 +100,8 @@ namespace ERegisteredStrings
 	const ID_string ERegisteredStrings::vendor_recipe				= ID_string::register_new_unique_ID_by_key("Vendor recipe");
 	const ID_string ERegisteredStrings::blight_drop					= ID_string::register_new_unique_ID_by_key("Loot source: Blight");
 	const ID_string ERegisteredStrings::simulacrum					= ID_string::register_new_unique_ID_by_key("Loot source: Simulacrum");
+
+	const ID_string ERegisteredStrings::dust_quantity				= ID_string::register_new_unique_ID_by_key("Dust quantity");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
