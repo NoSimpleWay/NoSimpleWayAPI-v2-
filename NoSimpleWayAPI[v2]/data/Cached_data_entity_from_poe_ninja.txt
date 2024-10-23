@@ -11126,7 +11126,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Moderate"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -11174,7 +11173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"21000"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -11251,7 +11250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
@@ -11278,7 +11277,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -11363,7 +11362,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"86960"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -11540,7 +11538,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"8920"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -11616,7 +11613,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
-	[tag]"Worth: boss drop"	[value]"Moderate"
+	[tag]"Worth: boss drop"	[value]"Common"
 
 
 
@@ -11644,7 +11641,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -11734,7 +11731,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"12360"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -11757,7 +11753,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"125000"
 	[tag]"Dust price tag"	[value]"Expensive"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -12043,7 +12038,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Moderate"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -12448,7 +12442,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -12469,7 +12462,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"League: Delirium"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 
 
 
@@ -20392,8 +20384,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"79580"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Moderate"
+	[tag]"Worth: boss drop"	[value]"Common"
 
 
 
@@ -20615,7 +20607,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"49580"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -21213,7 +21204,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"8660"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -21361,7 +21351,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"16100"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -22057,7 +22046,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"84420"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -22317,7 +22305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"18660"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -23260,7 +23248,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"44060"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
+	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -23281,7 +23269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: boss drop"	[value]"Very expensive"
-	[tag]"Worth: world drop"	[value]"Moderate"
+	[tag]"Worth: world drop"	[value]"Common"
 
 
 
@@ -23330,7 +23318,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"22880"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -24040,10 +24027,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
-	[tag]"Dust quantity"	[value]"351740"
-	[tag]"Dust price tag"	[value]"Very expensive"
+	[tag]"Dust quantity"	[value]"84420"
+	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Expensive"
+	[tag]"Worth: boss drop"	[value]"Expensive"
+	[tag]"Worth: world drop"	[value]"Moderate"
 
 
 
@@ -24228,7 +24216,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"7800"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -24751,7 +24738,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"89560"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -25341,11 +25328,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"T7"
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
-	[tag]"Dust quantity"	[value]"132620"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Rare"
-	[tag]"Worth: boss drop"	[value]"Common"
+	[tag]"Worth: boss drop"	[value]"Rare"
 
 
 
@@ -25402,7 +25387,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"21000"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -25674,7 +25658,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"22880"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -25729,7 +25712,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"4440"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -25888,7 +25870,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"4660"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -26180,7 +26161,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"7020"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -26981,7 +26961,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Moderate"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -27007,7 +26986,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"33600"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -27449,7 +27427,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"23560"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -27480,7 +27457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -27509,7 +27486,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"5900"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -27541,7 +27517,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Moderate"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -28355,7 +28330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"13440"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Common"
+	[tag]"Worth: world drop"	[value]"Moderate"
 
 
 
@@ -28462,7 +28437,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"3720"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -28555,7 +28529,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"10340"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -28777,7 +28750,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"28980"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -32971,7 +32944,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"72820"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -33108,7 +33080,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"10000"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -33133,7 +33104,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"9300"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -33302,7 +33272,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
-	[tag]"Worth: boss drop"	[value]"Expensive"
 
 
 
@@ -33490,7 +33459,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"2820"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -33626,7 +33594,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"6060"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -33731,7 +33698,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"16100"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -33885,7 +33851,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"86960"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -33977,7 +33942,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"13660"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -34022,7 +33986,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"12140"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -34155,7 +34118,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"7240"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -34628,7 +34590,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"12660"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -34807,7 +34768,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Trash"
 
 
 
@@ -34930,7 +34890,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"17580"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -35693,7 +35652,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"25760"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -35813,7 +35772,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"3500"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -35931,7 +35889,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"24280"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -36145,7 +36102,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"8520"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -36394,7 +36350,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"5460"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -36702,11 +36657,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
-	[tag]"Dust quantity"	[value]"125000"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"10000"
+	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Rare"
-	[tag]"Worth: boss drop"	[value]"Moderate"
+	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: world drop"	[value]"Common"
 
 
 
@@ -36831,7 +36786,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"37820"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
+	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -36968,7 +36923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"2000"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Common"
+	[tag]"Worth: world drop"	[value]"Trash"
 
 
 
@@ -36986,7 +36941,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"7920"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -37089,7 +37043,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Common"
 
 
 
@@ -37339,7 +37293,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"2180"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -37377,7 +37330,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"17080"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -37793,8 +37745,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"86960"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
 	[tag]"Worth: world drop"	[value]"Moderate"
+	[tag]"Worth: boss drop"	[value]"Common"
 
 
 
@@ -38405,7 +38357,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"294580"
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
 	[tag]"Worth: world drop"	[value]"Rare"
 
 
@@ -38625,7 +38576,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -38974,10 +38925,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"55"
 	[tag]"base family"	[value]"Basic"
 	[tag]"worth"	[value]"Trash"
-	[tag]"Dust quantity"	[value]"420000"
-	[tag]"Dust price tag"	[value]"Very expensive"
+	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: world drop"	[value]"Expensive"
+	[tag]"Worth: boss drop"	[value]"Expensive"
 
 
 
@@ -39004,7 +38954,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"33600"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Common"
 
 
@@ -39035,7 +38984,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"8520"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -40444,7 +40392,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"7560"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -40496,7 +40443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"18120"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -40545,7 +40492,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"2120"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -40816,7 +40762,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust price tag"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"Worth: world drop"	[value]"Very expensive"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -41122,7 +41067,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"3020"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -42106,7 +42050,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"68640"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Expensive"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -42180,7 +42123,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"10640"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -42246,7 +42188,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -42664,7 +42605,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"9740"
 	[tag]"Dust price tag"	[value]"Common"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -42688,7 +42628,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"4440"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -42713,7 +42652,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"37820"
 	[tag]"Dust price tag"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -42737,7 +42675,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Rare"
+	[tag]"Worth: boss drop"	[value]"Moderate"
 
 
 
@@ -42762,7 +42700,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"14300"
 	[tag]"Dust price tag"	[value]"Moderate"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -43046,7 +42983,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"Dust quantity"	[value]"3500"
 	[tag]"Dust price tag"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -43996,11 +43932,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"Dust quantity"	[value]"0"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -44146,11 +44082,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Awakened gem"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"Dust quantity"	[value]"0"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -44647,7 +44583,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -44835,7 +44770,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -44863,7 +44797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Very expensive"
+	[tag]"Worth: boss drop"	[value]"Common"
 	[tag]"Worth: world drop"	[value]"Trash"
 
 
@@ -44941,7 +44875,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"Dust quantity"	[value]"0"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"Worth: boss drop"	[value]"Moderate"
 	[tag]"Worth: world drop"	[value]"Moderate"
 
 
@@ -50519,7 +50452,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Kalandra league"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"Dust quantity"	[value]"0"
@@ -55103,7 +55036,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"replica-hinekoras-sight-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55167,7 +55100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Very expensive"
 	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"presence-of-chayula-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55190,7 +55123,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"ashes-of-the-stars-onyx-amulet"
 	[tag]"detailsId"	[value]"ashes-of-the-stars-onyx-amulet-relic"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55214,7 +55147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"the-eternal-struggle-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55236,7 +55169,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"crystallised-omniscience-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55258,7 +55191,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"solstice-vigil-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55282,7 +55215,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"detailsId"	[value]"impresence-cold-onyx-amulet"
 	[tag]"detailsId"	[value]"impresence-cold-onyx-amulet-relic"
 	[tag]"detailsId"	[value]"impresence-chaos-onyx-amulet-relic"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55304,7 +55237,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"impresence-chaos-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55326,7 +55259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"impresence-physical-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55348,7 +55281,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"impresence-fire-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55370,7 +55303,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"impresence-lightning-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55390,7 +55323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"leaderships-price-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55404,14 +55337,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"price dependency"	[value]"Rolls"
 	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"yoke-of-suffering-onyx-amulet"
-	[tag]"Dust quantity"	[value]"472720"
+	[tag]"Dust quantity"	[value]"406560"
 	[tag]"Dust price tag"	[value]"Very expensive"
 
 
@@ -55550,8 +55484,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"pyroshock-clasp-leather-belt"
 	[tag]"Dust quantity"	[value]"11980"
 	[tag]"Dust price tag"	[value]"Moderate"
@@ -58208,8 +58142,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"praxis-paua-ring"
 	[tag]"Dust quantity"	[value]"3720"
 	[tag]"Dust price tag"	[value]"Trash"
@@ -59715,8 +59649,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"white-wind-imperial-skean"
 	[tag]"Dust quantity"	[value]"13660"
 	[tag]"Dust price tag"	[value]"Moderate"
@@ -60935,14 +60869,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Good for start"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"price dependency"	[value]"Rolls"
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"the-dark-seer-shadow-sceptre"
-	[tag]"Dust quantity"	[value]"125000"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"10000"
+	[tag]"Dust price tag"	[value]"Moderate"
 
 
 
@@ -60985,8 +60920,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Moderate"
 	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"replica-bitterdream-shadow-sceptre"
-	[tag]"Dust quantity"	[value]"125000"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"10000"
+	[tag]"Dust price tag"	[value]"Moderate"
 
 
 
@@ -63736,8 +63671,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Good for start"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"lifesprig-driftwood-wand"
 	[tag]"Dust quantity"	[value]"2000"
 	[tag]"Dust price tag"	[value]"Trash"
@@ -67086,8 +67021,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"mutewind-whispersteps-serpentscale-boots"
 	[tag]"Dust quantity"	[value]"13440"
 	[tag]"Dust price tag"	[value]"Moderate"
@@ -68023,12 +67958,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"malachais-mark-murder-mitts"
-	[tag]"Dust quantity"	[value]"351740"
-	[tag]"Dust price tag"	[value]"Very expensive"
+	[tag]"Dust quantity"	[value]"84420"
+	[tag]"Dust price tag"	[value]"Rare"
 
 
 
@@ -68950,8 +68887,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
 	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"winds-of-change-ancient-gauntlets"
 	[tag]"Dust quantity"	[value]"46740"
 	[tag]"Dust price tag"	[value]"Rare"
@@ -69462,12 +69399,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"wraithlord-bone-circlet"
-	[tag]"Dust quantity"	[value]"132620"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"0"
 
 
 
@@ -70484,8 +70422,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"plume-of-pursuit-bone-circlet"
-	[tag]"Dust quantity"	[value]"132620"
-	[tag]"Dust price tag"	[value]"Expensive"
+	[tag]"Dust quantity"	[value]"0"
 
 
 
@@ -72595,12 +72532,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"worth"	[value]"Expensive"
 	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"manastorm-lacewood-spirit-shield"
-	[tag]"Dust quantity"	[value]"420000"
-	[tag]"Dust price tag"	[value]"Very expensive"
+	[tag]"Dust quantity"	[value]"0"
 
 
 
@@ -74618,8 +74556,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Uber Uber Elder"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"watchers-eye-prismatic-jewel"
 	[tag]"Dust quantity"	[value]"0"
 
@@ -74842,8 +74780,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
 	[tag]"price dependency"	[value]"Rolls"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"brutal-restraint-timeless-jewel"
 	[tag]"Dust quantity"	[value]"0"
 
@@ -74905,8 +74843,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
 	[tag]"price dependency"	[value]"Rolls"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"militant-faith-timeless-jewel"
 	[tag]"Dust quantity"	[value]"0"
 
@@ -75084,8 +75022,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"price dependency"	[value]"Rolls"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"elegant-hubris-timeless-jewel"
 	[tag]"Dust quantity"	[value]"0"
 
@@ -75264,8 +75202,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
 	[tag]"price dependency"	[value]"Rolls"
-	[tag]"worth"	[value]"Rare"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"glorious-vanity-timeless-jewel"
 	[tag]"Dust quantity"	[value]"0"
 
@@ -76540,8 +76478,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Piece of unique"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 	[tag]"detailsId"	[value]"second-piece-of-the-arcane-legion-sword-piece"
 	[tag]"Dust quantity"	[value]"0"
 

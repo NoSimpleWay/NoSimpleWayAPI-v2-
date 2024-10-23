@@ -1473,10 +1473,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"item tag"	[value]"Loot source: T17 boss"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"price dependency"	[value]"Rolls"
+	
 	[tag]"worth"	[value]"Rare"
 	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"yoke-of-suffering-onyx-amulet"
@@ -6437,9 +6441,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Good for start"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"item tag"	[value]"Loot source: T17 boss"
+	
 	[tag]"price dependency"	[value]"Rolls"
+	
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"the-dark-seer-shadow-sceptre"
@@ -12808,7 +12817,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"item tag"	[value]"Loot source: T17 boss"
+	
 	[tag]"worth"	[value]"Common"
 	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"malachais-mark-murder-mitts"
@@ -14103,9 +14117,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"item tag"	[value]"Loot source: T17 boss"
+	
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"wraithlord-bone-circlet"
 
 
@@ -16919,9 +16938,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	[tag]"item tag"	[value]"Hidden item"
 	[tag]"item tag"	[value]"Unique item"
-	[tag]"item tag"	[value]"World drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	
+	[tag]"item tag"	[value]"Loot source: Boss"
+	[tag]"item tag"	[value]"Non world drop"
+	
+	[tag]"item tag"	[value]"Loot source: T17 boss"
+	
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"manastorm-lacewood-spirit-shield"
 
 

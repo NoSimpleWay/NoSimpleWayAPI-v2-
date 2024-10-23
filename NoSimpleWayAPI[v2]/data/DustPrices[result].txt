@@ -1,331 +1,336 @@
-[Replica Shroud of the Lightless] is no world drop!
-[Stasis Prison] is no world drop!
-[Starforge] is no world drop!
-[Voidforge] is no world drop!
-[Replica Kongor's Undying Rage] is no world drop!
-[Echoforge] is no world drop!
-[Kingmaker] is no world drop!
-[Atziri's Disfavour] is no world drop!
-[Replica Duskdawn] is no world drop!
-[The Saviour] is no world drop!
-[Replica Tukohama's Fortress] is no world drop!
-[The Winds of Fate] is no world drop!
-[Hateforge] is no world drop!
-[Uul-Netol's Vow] is no world drop!
-[Soul Ascension] is no world drop!
-[Nimis] is no world drop!
-[Replica Headhunter] is no world drop!
-[Replica Bated Breath] is no world drop!
-[Replica Farrul's Fur] is no world drop!
-[Replica Nebulis] is no world drop!
-[Replica Windripper] is no world drop!
-[Replica Eternity Shroud] is no world drop!
-[Annihilation's Approach] is no world drop!
-[Eternal Damnation] is no world drop!
-[Duskdawn] is no world drop!
-[Replica Atziri's Acuity] is no world drop!
-[Entropic Devastation] is no world drop!
-[Replica Alberon's Warpath] is no world drop!
-[Replica Maloney's Mechanism] is no world drop!
-[Replica Trypanon] is no world drop!
-[The Tides of Time] is no world drop!
-[Atziri's Splendour] is no world drop!
-[Shroud of the Lightless] is no world drop!
-[Indigon] is no world drop!
-[Farrul's Fur] is no world drop!
-[Farrul's Chase] is no world drop!
-[Hand of Wisdom and Action] is no world drop!
-[The Red Trail] is no world drop!
-[Doryani's Delusion] is no world drop!
-[Doryani's Delusion] is no world drop!
-[Doryani's Delusion] is no world drop!
-[The Queen's Hunger] is no world drop!
-[The Queen's Hunger] is no world drop!
-[The Immortal Will] is no world drop!
-[Replica Kaom's Heart] is no world drop!
-[Replica Red Trail] is no world drop!
-[Viridi's Veil] is no world drop!
-[Viridi's Veil] is no world drop!
-[Doppelganger Guise] is no world drop!
-[Grace of the Goddess] is no world drop!
-[Sporeguard] is no world drop!
-[Paradoxica] is no world drop!
-[The Yielding Mortality] is no world drop!
-[Replica Paradoxica] is no world drop!
-[Replica Allure] is no world drop!
-[The Formless Inferno] is no world drop!
-[The Perfect Form] is no world drop!
-[The Eternity Shroud] is no world drop!
-[Replica Perfect Form] is no world drop!
-[Replica Hyrri's Ire] is no world drop!
-[Uul-Netol's Embrace] is no world drop!
-[The Surrender] is no world drop!
-[Disintegrator] is no world drop!
-[Loreweave] is no world drop!
-[Replica Loreweave] is no world drop!
-[Yaomac's Accord] is no world drop!
-[Replica Stampede] is no world drop!
-[The Devourer of Minds] is no world drop!
-[Tulfall] is no world drop!
-[Esh's Visage] is no world drop!
-[Arborix] is no world drop!
-[The Surging Thoughts] is no world drop!
-[The Admiral] is no world drop!
-[Replica Cold Iron Point] is no world drop!
-[Replica Tulfall] is no world drop!
-[Replica Abyssus] is no world drop!
-[Replica Mistwall] is no world drop!
-[Farrul's Pounce] is no world drop!
-[Xoph's Nurture] is no world drop!
-[Crown of the Tyrant] is no world drop!
-[Crest of Desire] is no world drop!
-[Farrul's Bite] is no world drop!
-[Offering to the Serpent] is no world drop!
-[Garb of the Ephemeral] is no world drop!
-[The Devouring Diadem] is no world drop!
-[Atziri's Reflection] is no world drop!
-[Sandstorm Visage] is no world drop!
-[The Tempest Rising] is no world drop!
-[The Celestial Brace] is no world drop!
-[Zerphi's Heart] is no world drop!
-[Svalinn] is no world drop!
-[Replica Frostbreath] is no world drop!
-[Replica Covenant] is no world drop!
-[Mahuxotl's Machination] is no world drop!
-[The Tempest's Liberation] is no world drop!
-[Ravenous Passion] is no world drop!
-[Impresence] is no world drop!
-[Impresence] is no world drop!
-[Impresence] is no world drop!
-[Impresence] is no world drop!
-[Impresence] is no world drop!
-[Mark of the Elder] is no world drop!
-[Mark of the Shaper] is no world drop!
-[Polaric Devastation] is no world drop!
-[Replica Soul Strike] is no world drop!
-[Replica Midnight Bargain] is no world drop!
-[Severed in Sleep] is no world drop!
-[United in Dream] is no world drop!
-[Nebuloch] is no world drop!
-[Hopeshredder] is no world drop!
-[Shimmeron] is no world drop!
-[Death's Door] is no world drop!
-[The Burden of Truth] is no world drop!
-[The Apostate] is no world drop!
-[Replica Restless Ward] is no world drop!
-[Black Zenith] is no world drop!
-[Voidwalker] is no world drop!
-[Bubonic Trail] is no world drop!
-[Craiceann's Pincers] is no world drop!
-[Replica Voidwalker] is no world drop!
-[Vorana's March] is no world drop!
-[The Shattered Divinity] is no world drop!
-[Pledge of Hands] is no world drop!
-[Hand of Thought and Motion] is no world drop!
-[The Infinite Pursuit] is no world drop!
-[The Unshattered Will] is no world drop!
-[Invictus Solaris] is no world drop!
-[Cyclopean Coil] is no world drop!
-[Blasphemer's Grasp] is no world drop!
-[Bitterbind Point] is no world drop!
-[Nebulis] is no world drop!
-[Atziri's Rule] is no world drop!
-[Cadigan's Crown] is no world drop!
-[The Taming] is no world drop!
-[Circle of Ambition] is no world drop!
-[Replica Oro's Sacrifice] is no world drop!
-[Dawnbreaker] is no world drop!
-[Shaper's Touch] is no world drop!
-[The Enmity Divine] is no world drop!
-[Vix Lunaris] is no world drop!
-[Voidfletcher] is no world drop!
-[Hands of the High Templar] is no world drop!
-[Replica Dreamfeather] is no world drop!
-[The Goddess Scorned] is no world drop!
-[The Formless Flame] is no world drop!
-[The Snowblind Grace] is no world drop!
-[Saqawal's Nest] is no world drop!
-[Fenumus' Shroud] is no world drop!
-[Hale Negator] is no world drop!
-[Echoes of Creation] is no world drop!
-[Uul-Netol's Kiss] is no world drop!
-[The Anticipation] is no world drop!
-[Replica Alpha's Howl] is no world drop!
-[Atziri's Acuity] is no world drop!
-[Fenumus' Spinnerets] is no world drop!
-[Crown of the Inward Eye] is no world drop!
-[Presence of Chayula] is no world drop!
-[Solstice Vigil] is no world drop!
-[Crystallised Omniscience] is no world drop!
-[Ashes of the Stars] is no world drop!
-[The Vertex] is no world drop!
-[Tulborn] is no world drop!
-[Esh's Mirror] is no world drop!
-[The Rippling Thoughts] is no world drop!
-[Perepiteia] is no world drop!
-[Replica Wings of Entropy] is no world drop!
-[Dawnstrider] is no world drop!
-[Replica Inya's Epiphany] is no world drop!
-[The Living Blade] is no world drop!
-[Saqawal's Flock] is no world drop!
-[The Iron Mass] is no world drop!
-[The Hidden Blade] is no world drop!
-[The Fulcrum] is no world drop!
-[Replica Grip of the Council] is no world drop!
-[Cameria's Avarice] is no world drop!
-[Saqawal's Talons] is no world drop!
-[Breathstealer] is no world drop!
-[Expedition's End] is no world drop!
-[Gamblesprint] is no world drop!
-[First Piece of Focus] is no world drop!
-[Second Piece of Focus] is no world drop!
-[Third Piece of Focus] is no world drop!
-[Fourth Piece of Focus] is no world drop!
+[Replica Shroud of the Lightless] is not world drop!
+[Stasis Prison] is not world drop!
+[Starforge] is not world drop!
+[Voidforge] is not world drop!
+[Replica Kongor's Undying Rage] is not world drop!
+[Echoforge] is not world drop!
+[Kingmaker] is not world drop!
+[Atziri's Disfavour] is not world drop!
+[Replica Duskdawn] is not world drop!
+[The Saviour] is not world drop!
+[Replica Tukohama's Fortress] is not world drop!
+[The Winds of Fate] is not world drop!
+[Hateforge] is not world drop!
+[Uul-Netol's Vow] is not world drop!
+[Soul Ascension] is not world drop!
+[Nimis] is not world drop!
+[Replica Headhunter] is not world drop!
+[Yoke of Suffering] is not world drop!
+[Manastorm] is not world drop!
+[Replica Bated Breath] is not world drop!
+[Replica Farrul's Fur] is not world drop!
+[Replica Nebulis] is not world drop!
+[Malachai's Mark] is not world drop!
+[Replica Windripper] is not world drop!
+[Replica Eternity Shroud] is not world drop!
+[Annihilation's Approach] is not world drop!
+[Eternal Damnation] is not world drop!
+[Duskdawn] is not world drop!
+[Replica Atziri's Acuity] is not world drop!
+[Entropic Devastation] is not world drop!
+[Replica Alberon's Warpath] is not world drop!
+[Replica Maloney's Mechanism] is not world drop!
+[Replica Trypanon] is not world drop!
+[Wraithlord] is not world drop!
+[The Dark Seer] is not world drop!
+[The Tides of Time] is not world drop!
+[Atziri's Splendour] is not world drop!
+[Shroud of the Lightless] is not world drop!
+[Indigon] is not world drop!
+[Farrul's Fur] is not world drop!
+[Farrul's Chase] is not world drop!
+[Hand of Wisdom and Action] is not world drop!
+[The Red Trail] is not world drop!
+[Doryani's Delusion] is not world drop!
+[Doryani's Delusion] is not world drop!
+[Doryani's Delusion] is not world drop!
+[The Queen's Hunger] is not world drop!
+[The Queen's Hunger] is not world drop!
+[The Immortal Will] is not world drop!
+[Replica Kaom's Heart] is not world drop!
+[Replica Red Trail] is not world drop!
+[Viridi's Veil] is not world drop!
+[Viridi's Veil] is not world drop!
+[Doppelganger Guise] is not world drop!
+[Grace of the Goddess] is not world drop!
+[Sporeguard] is not world drop!
+[Paradoxica] is not world drop!
+[The Yielding Mortality] is not world drop!
+[Replica Paradoxica] is not world drop!
+[Replica Allure] is not world drop!
+[The Formless Inferno] is not world drop!
+[The Perfect Form] is not world drop!
+[The Eternity Shroud] is not world drop!
+[Replica Perfect Form] is not world drop!
+[Replica Hyrri's Ire] is not world drop!
+[Uul-Netol's Embrace] is not world drop!
+[The Surrender] is not world drop!
+[Disintegrator] is not world drop!
+[Loreweave] is not world drop!
+[Replica Loreweave] is not world drop!
+[Yaomac's Accord] is not world drop!
+[Replica Stampede] is not world drop!
+[The Devourer of Minds] is not world drop!
+[Tulfall] is not world drop!
+[Esh's Visage] is not world drop!
+[Arborix] is not world drop!
+[The Surging Thoughts] is not world drop!
+[The Admiral] is not world drop!
+[Replica Cold Iron Point] is not world drop!
+[Replica Tulfall] is not world drop!
+[Replica Abyssus] is not world drop!
+[Replica Mistwall] is not world drop!
+[Farrul's Pounce] is not world drop!
+[Xoph's Nurture] is not world drop!
+[Crown of the Tyrant] is not world drop!
+[Crest of Desire] is not world drop!
+[Farrul's Bite] is not world drop!
+[Offering to the Serpent] is not world drop!
+[Garb of the Ephemeral] is not world drop!
+[The Devouring Diadem] is not world drop!
+[Atziri's Reflection] is not world drop!
+[Sandstorm Visage] is not world drop!
+[The Tempest Rising] is not world drop!
+[The Celestial Brace] is not world drop!
+[Zerphi's Heart] is not world drop!
+[Svalinn] is not world drop!
+[Replica Frostbreath] is not world drop!
+[Replica Covenant] is not world drop!
+[Mahuxotl's Machination] is not world drop!
+[The Tempest's Liberation] is not world drop!
+[Ravenous Passion] is not world drop!
+[Impresence] is not world drop!
+[Impresence] is not world drop!
+[Impresence] is not world drop!
+[Impresence] is not world drop!
+[Impresence] is not world drop!
+[Mark of the Elder] is not world drop!
+[Mark of the Shaper] is not world drop!
+[Polaric Devastation] is not world drop!
+[Replica Soul Strike] is not world drop!
+[Replica Midnight Bargain] is not world drop!
+[Severed in Sleep] is not world drop!
+[United in Dream] is not world drop!
+[Nebuloch] is not world drop!
+[Hopeshredder] is not world drop!
+[Shimmeron] is not world drop!
+[Death's Door] is not world drop!
+[The Burden of Truth] is not world drop!
+[The Apostate] is not world drop!
+[Replica Restless Ward] is not world drop!
+[Black Zenith] is not world drop!
+[Voidwalker] is not world drop!
+[Bubonic Trail] is not world drop!
+[Craiceann's Pincers] is not world drop!
+[Replica Voidwalker] is not world drop!
+[Vorana's March] is not world drop!
+[The Shattered Divinity] is not world drop!
+[Pledge of Hands] is not world drop!
+[Hand of Thought and Motion] is not world drop!
+[The Infinite Pursuit] is not world drop!
+[The Unshattered Will] is not world drop!
+[Invictus Solaris] is not world drop!
+[Cyclopean Coil] is not world drop!
+[Blasphemer's Grasp] is not world drop!
+[Bitterbind Point] is not world drop!
+[Nebulis] is not world drop!
+[Atziri's Rule] is not world drop!
+[Cadigan's Crown] is not world drop!
+[The Taming] is not world drop!
+[Circle of Ambition] is not world drop!
+[Replica Oro's Sacrifice] is not world drop!
+[Dawnbreaker] is not world drop!
+[Shaper's Touch] is not world drop!
+[The Enmity Divine] is not world drop!
+[Vix Lunaris] is not world drop!
+[Voidfletcher] is not world drop!
+[Hands of the High Templar] is not world drop!
+[Replica Dreamfeather] is not world drop!
+[The Goddess Scorned] is not world drop!
+[The Formless Flame] is not world drop!
+[The Snowblind Grace] is not world drop!
+[Saqawal's Nest] is not world drop!
+[Fenumus' Shroud] is not world drop!
+[Hale Negator] is not world drop!
+[Echoes of Creation] is not world drop!
+[Uul-Netol's Kiss] is not world drop!
+[The Anticipation] is not world drop!
+[Replica Alpha's Howl] is not world drop!
+[Atziri's Acuity] is not world drop!
+[Fenumus' Spinnerets] is not world drop!
+[Crown of the Inward Eye] is not world drop!
+[Presence of Chayula] is not world drop!
+[Solstice Vigil] is not world drop!
+[Crystallised Omniscience] is not world drop!
+[Ashes of the Stars] is not world drop!
+[The Vertex] is not world drop!
+[Tulborn] is not world drop!
+[Esh's Mirror] is not world drop!
+[The Rippling Thoughts] is not world drop!
+[Perepiteia] is not world drop!
+[Replica Wings of Entropy] is not world drop!
+[Dawnstrider] is not world drop!
+[Replica Inya's Epiphany] is not world drop!
+[The Living Blade] is not world drop!
+[Saqawal's Flock] is not world drop!
+[The Iron Mass] is not world drop!
+[The Hidden Blade] is not world drop!
+[The Fulcrum] is not world drop!
+[Replica Grip of the Council] is not world drop!
+[Cameria's Avarice] is not world drop!
+[Saqawal's Talons] is not world drop!
+[Breathstealer] is not world drop!
+[Expedition's End] is not world drop!
+[Gamblesprint] is not world drop!
+[First Piece of Focus] is not world drop!
+[Second Piece of Focus] is not world drop!
+[Third Piece of Focus] is not world drop!
+[Fourth Piece of Focus] is not world drop!
 [First Piece of Storms] have no suitable data entity!
-[Second Piece of Storms] is no world drop!
-[Third Piece of Storms] is no world drop!
-[Xoph's Inception] is no world drop!
-[Craiceann's Chitin] is no world drop!
-[Mask of the Stitched Demon] is no world drop!
-[Mask of the Tribunal] is no world drop!
-[Replica Soul Tether] is no world drop!
-[Replica Ungil's Gauche] is no world drop!
-[Replica Badge of the Brotherhood] is no world drop!
-[The Crimson Storm] is no world drop!
-[Craiceann's Carapace] is no world drop!
-[Fate of the Vaal] is no world drop!
-[Redblade Band] is no world drop!
-[Replica Three-step Assault] is no world drop!
-[Temptation Step] is no world drop!
-[Ceaseless Feast] is no world drop!
-[Inextricable Fate] is no world drop!
-[Craiceann's Tracks] is no world drop!
-[Fenumus' Toxins] is no world drop!
-[First Piece of Brutality] is no world drop!
-[Second Piece of Brutality] is no world drop!
-[Third Piece of Brutality] is no world drop!
-[First Piece of Directions] is no world drop!
-[Second Piece of Directions] is no world drop!
-[Third Piece of Directions] is no world drop!
-[Ahkeli's Meadow] is no world drop!
-[Replica Emberwake] is no world drop!
-[Atziri's Step] is no world drop!
-[Medved's Challenge] is no world drop!
-[Lightpoacher] is no world drop!
-[Forbidden Shako] is no world drop!
-[Replica Infractem] is no world drop!
-[Witchhunter's Judgment] is no world drop!
-[Ynda's Stand] is no world drop!
-[Saqawal's Winds] is no world drop!
-[Legacy of Fury] is no world drop!
-[Fenumus' Weave] is no world drop!
-[Replica Victario's Charity] is no world drop!
-[Replica Heartbreaker] is no world drop!
-[Putembo's Mountain] is no world drop!
-[Cane of Kulemak] is no world drop!
-[Doryani's Catalyst] is no world drop!
-[Kaom's Command] is no world drop!
-[Replica Siegebreaker] is no world drop!
-[The Stampede] is no world drop!
-[Cerberus Limb] is no world drop!
-[Replica Kalisa's Grace] is no world drop!
-[Replica Innsbury Edge] is no world drop!
-[Apep's Slumber] is no world drop!
-[Uzaza's Valley] is no world drop!
-[Tawhoa's Felling] is no world drop!
-[Slavedriver's Hand] is no world drop!
-[Vivinsect] is no world drop!
-[Replica Malachai's Artifice] is no world drop!
-[Replica Voideye] is no world drop!
-[Rotblood Promise] is no world drop!
-[Triumvirate Authority] is no world drop!
-[The Hateful Accuser] is no world drop!
-[The Selfish Shepherd] is no world drop!
-[The Queller of Minds] is no world drop!
-[Xoph's Blood] is no world drop!
-[The Pandemonius] is no world drop!
-[Choir of the Storm] is no world drop!
-[Replica Hyrri's Truth] is no world drop!
-[Cowl of the Thermophile] is no world drop!
-[Cowl of the Cryophile] is no world drop!
-[Replica Hinekora's Sight] is no world drop!
-[Cowl of the Ceraunophile] is no world drop!
-[Replica Volkuur's Guidance] is no world drop!
-[Mask of the Spirit Drinker] is no world drop!
-[The Gluttonous Tide] is no world drop!
-[Skin of the Loyal] is no world drop!
-[Replica Atziri's Foible] is no world drop!
-[Story of the Vaal] is no world drop!
-[Voice of the Storm] is no world drop!
-[Dance of the Offered] is no world drop!
-[Admiral's Arrogance] is no world drop!
-[Serle's Masterwork] is no world drop!
-[Command of the Pit] is no world drop!
-[Replica Harvest] is no world drop!
-[Tombfist] is no world drop!
-[Xoph's Heart] is no world drop!
-[The Halcyon] is no world drop!
-[Replica Earendel's Embrace] is no world drop!
-[The Burden of Shadows] is no world drop!
-[Darkness Enthroned] is no world drop!
-[Nightgrip] is no world drop!
-[Olroth's Charge] is no world drop!
-[Sudden Dawn] is no world drop!
-[Replica Iron Commander] is no world drop!
-[The Fracturing Spinner] is no world drop!
-[Replica Advancing Fortress] is no world drop!
-[Replica Lioneye's Paws] is no world drop!
-[Relic of the Pact] is no world drop!
-[Architect's Hand] is no world drop!
-[The Annihilating Light] is no world drop!
-[Replica Ambu's Charge] is no world drop!
-[The Eternal Struggle] is no world drop!
-[Replica Bones of Ullr] is no world drop!
-[The Flow Untethered] is no world drop!
-[Replica Tempestuous Steel] is no world drop!
-[Arn's Anguish] is no world drop!
-[Olesya's Delight] is no world drop!
-[Graven's Secret] is no world drop!
-[Replica Heatshiver] is no world drop!
-[Plume of Pursuit] is no world drop!
-[Replica Bitterdream] is no world drop!
-[Ahkeli's Valley] is no world drop!
+[Second Piece of Storms] is not world drop!
+[Third Piece of Storms] is not world drop!
+[Xoph's Inception] is not world drop!
+[Craiceann's Chitin] is not world drop!
+[Mask of the Stitched Demon] is not world drop!
+[Mask of the Tribunal] is not world drop!
+[Replica Soul Tether] is not world drop!
+[Replica Ungil's Gauche] is not world drop!
+[Replica Badge of the Brotherhood] is not world drop!
+[The Crimson Storm] is not world drop!
+[Craiceann's Carapace] is not world drop!
+[Fate of the Vaal] is not world drop!
+[Redblade Band] is not world drop!
+[Replica Three-step Assault] is not world drop!
+[Temptation Step] is not world drop!
+[Ceaseless Feast] is not world drop!
+[Inextricable Fate] is not world drop!
+[Craiceann's Tracks] is not world drop!
+[Fenumus' Toxins] is not world drop!
+[First Piece of Brutality] is not world drop!
+[Second Piece of Brutality] is not world drop!
+[Third Piece of Brutality] is not world drop!
+[First Piece of Directions] is not world drop!
+[Second Piece of Directions] is not world drop!
+[Third Piece of Directions] is not world drop!
+[Ahkeli's Meadow] is not world drop!
+[Replica Emberwake] is not world drop!
+[Atziri's Step] is not world drop!
+[Medved's Challenge] is not world drop!
+[Lightpoacher] is not world drop!
+[Forbidden Shako] is not world drop!
+[Replica Infractem] is not world drop!
+[Witchhunter's Judgment] is not world drop!
+[Ynda's Stand] is not world drop!
+[Saqawal's Winds] is not world drop!
+[Legacy of Fury] is not world drop!
+[Fenumus' Weave] is not world drop!
+[Replica Victario's Charity] is not world drop!
+[Replica Heartbreaker] is not world drop!
+[Putembo's Mountain] is not world drop!
+[Cane of Kulemak] is not world drop!
+[Doryani's Catalyst] is not world drop!
+[Kaom's Command] is not world drop!
+[Replica Siegebreaker] is not world drop!
+[The Stampede] is not world drop!
+[Cerberus Limb] is not world drop!
+[Replica Kalisa's Grace] is not world drop!
+[Replica Innsbury Edge] is not world drop!
+[Apep's Slumber] is not world drop!
+[Uzaza's Valley] is not world drop!
+[Tawhoa's Felling] is not world drop!
+[Slavedriver's Hand] is not world drop!
+[Vivinsect] is not world drop!
+[Replica Malachai's Artifice] is not world drop!
+[Replica Voideye] is not world drop!
+[Rotblood Promise] is not world drop!
+[Triumvirate Authority] is not world drop!
+[The Hateful Accuser] is not world drop!
+[The Selfish Shepherd] is not world drop!
+[The Queller of Minds] is not world drop!
+[Xoph's Blood] is not world drop!
+[The Pandemonius] is not world drop!
+[Choir of the Storm] is not world drop!
+[Replica Hyrri's Truth] is not world drop!
+[Cowl of the Thermophile] is not world drop!
+[Cowl of the Cryophile] is not world drop!
+[Replica Hinekora's Sight] is not world drop!
+[Cowl of the Ceraunophile] is not world drop!
+[Replica Volkuur's Guidance] is not world drop!
+[Mask of the Spirit Drinker] is not world drop!
+[The Gluttonous Tide] is not world drop!
+[Skin of the Loyal] is not world drop!
+[Replica Atziri's Foible] is not world drop!
+[Story of the Vaal] is not world drop!
+[Voice of the Storm] is not world drop!
+[Dance of the Offered] is not world drop!
+[Admiral's Arrogance] is not world drop!
+[Serle's Masterwork] is not world drop!
+[Command of the Pit] is not world drop!
+[Replica Harvest] is not world drop!
+[Tombfist] is not world drop!
+[Xoph's Heart] is not world drop!
+[The Halcyon] is not world drop!
+[Replica Earendel's Embrace] is not world drop!
+[The Burden of Shadows] is not world drop!
+[Darkness Enthroned] is not world drop!
+[Nightgrip] is not world drop!
+[Olroth's Charge] is not world drop!
+[Sudden Dawn] is not world drop!
+[Replica Iron Commander] is not world drop!
+[The Fracturing Spinner] is not world drop!
+[Replica Advancing Fortress] is not world drop!
+[Replica Lioneye's Paws] is not world drop!
+[Relic of the Pact] is not world drop!
+[Architect's Hand] is not world drop!
+[The Annihilating Light] is not world drop!
+[Replica Ambu's Charge] is not world drop!
+[The Eternal Struggle] is not world drop!
+[Replica Bones of Ullr] is not world drop!
+[The Flow Untethered] is not world drop!
+[Replica Tempestuous Steel] is not world drop!
+[Arn's Anguish] is not world drop!
+[Olesya's Delight] is not world drop!
+[Graven's Secret] is not world drop!
+[Replica Heatshiver] is not world drop!
+[Plume of Pursuit] is not world drop!
+[Replica Bitterdream] is not world drop!
+[Ahkeli's Valley] is not world drop!
 [Precursor's Emblem] have no suitable data entity!
 [Demigod's Beacon] have no suitable data entity!
-[Replica Winterheart] is no world drop!
-[Replica Twyzel] is no world drop!
-[Replica Leer Cast] is no world drop!
-[Putembo's Meadow] is no world drop!
-[Faithguard] is no world drop!
-[Uzaza's Mountain] is no world drop!
-[Replica Tasalio's Sign] is no world drop!
-[Call of the Void] is no world drop!
-[Replica Karui Ward] is no world drop!
-[Replica Veil of the Night] is no world drop!
-[Replica Doedre's Damning] is no world drop!
-[Circle of Guilt] is no world drop!
-[Ahkeli's Mountain] is no world drop!
-[Replica Bloodplay] is no world drop!
-[Putembo's Valley] is no world drop!
-[Doryani's Invitation] is no world drop!
-[Uzaza's Meadow] is no world drop!
-[Replica Quill Rain] is no world drop!
-[Replica Blood Thorn] is no world drop!
-[Replica Fencoil] is no world drop!
-[Sacrificial Heart] is no world drop!
-[Replica Last Resort] is no world drop!
-[Replica Prismweave] is no world drop!
+[Replica Winterheart] is not world drop!
+[Replica Twyzel] is not world drop!
+[Replica Leer Cast] is not world drop!
+[Putembo's Meadow] is not world drop!
+[Faithguard] is not world drop!
+[Uzaza's Mountain] is not world drop!
+[Replica Tasalio's Sign] is not world drop!
+[Call of the Void] is not world drop!
+[Replica Karui Ward] is not world drop!
+[Replica Veil of the Night] is not world drop!
+[Replica Doedre's Damning] is not world drop!
+[Circle of Guilt] is not world drop!
+[Ahkeli's Mountain] is not world drop!
+[Replica Bloodplay] is not world drop!
+[Putembo's Valley] is not world drop!
+[Doryani's Invitation] is not world drop!
+[Uzaza's Meadow] is not world drop!
+[Replica Quill Rain] is not world drop!
+[Replica Blood Thorn] is not world drop!
+[Replica Fencoil] is not world drop!
+[Sacrificial Heart] is not world drop!
+[Replica Last Resort] is not world drop!
+[Replica Prismweave] is not world drop!
 [Oni-Goroshi] have no suitable data entity!
-[First Piece of the Arcane] is no world drop!
-[Second Piece of the Arcane] is no world drop!
-[Third Piece of the Arcane] is no world drop!
-[First Piece of Time] is no world drop!
-[Second Piece of Time] is no world drop!
+[First Piece of the Arcane] is not world drop!
+[Second Piece of the Arcane] is not world drop!
+[Third Piece of the Arcane] is not world drop!
+[First Piece of Time] is not world drop!
+[Second Piece of Time] is not world drop!
 [Demigod's Authority] have no suitable data entity!
-[Curio of Absorption] is no world drop!
-[Curio of Consumption] is no world drop!
-[Curio of Potential] is no world drop!
-[Curio of Decay] is no world drop!
+[Curio of Absorption] is not world drop!
+[Curio of Consumption] is not world drop!
+[Curio of Potential] is not world drop!
+[Curio of Decay] is not world drop!
 [Agate Amulet] dust quantity = 92240, dust tag = Rare
 [Amber Amulet] dust quantity = 10340, dust tag = Moderate
 [Blue Pearl Amulet] dust quantity = 37820, dust tag = Rare
@@ -337,7 +342,7 @@
 [Jade Amulet] dust quantity = 21000, dust tag = Moderate
 [Lapis Amulet] dust quantity = 17820, dust tag = Moderate
 [Marble Amulet] dust quantity = 17300, dust tag = Moderate
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
 [Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
 [Rotfeather Talisman] dust quantity = 8920, dust tag = Common
 [Turquoise Amulet] dust quantity = 86960, dust tag = Rare
@@ -437,7 +442,7 @@
 [Ironscale Gauntlets] dust quantity = 3780, dust tag = Trash
 [Legion Gloves] dust quantity = 13080, dust tag = Moderate
 [Mesh Gloves] dust quantity = 10000, dust tag = Moderate
-[Murder Mitts] dust quantity = 351740, dust tag = Very expensive
+[Murder Mitts] dust quantity = 84420, dust tag = Rare
 [Nubuck Gloves] dust quantity = 11280, dust tag = Moderate
 [Samite Gloves] dust quantity = 7800, dust tag = Common
 [Satin Gloves] dust quantity = 13040, dust tag = Moderate
@@ -458,7 +463,6 @@
 [Zealot Gloves] dust quantity = 41520, dust tag = Rare
 [Aventail Helmet] dust quantity = 5800, dust tag = Common
 [Barbute Helmet] dust quantity = 3300, dust tag = Trash
-[Bone Circlet] dust quantity = 132620, dust tag = Expensive
 [Bone Helmet] dust quantity = 33600, dust tag = Moderate
 [Callous Mask] dust quantity = 21000, dust tag = Moderate
 [Close Helmet] dust quantity = 5240, dust tag = Common
@@ -620,7 +624,7 @@
 [Platinum Sceptre] dust quantity = 15180, dust tag = Moderate
 [Ritual Sceptre] dust quantity = 8880, dust tag = Common
 [Royal Sceptre] dust quantity = 21000, dust tag = Moderate
-[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
+[Shadow Sceptre] dust quantity = 10000, dust tag = Moderate
 [Tyrant's Sekhem] dust quantity = 10780, dust tag = Moderate
 [Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
 [Void Sceptre] dust quantity = 37820, dust tag = Rare
@@ -657,7 +661,6 @@
 [Harmonic Spirit Shield] dust quantity = 16580, dust tag = Moderate
 [Ironwood Buckler] dust quantity = 13080, dust tag = Moderate
 [Jingling Spirit Shield] dust quantity = 111060, dust tag = Expensive
-[Lacewood Spirit Shield] dust quantity = 420000, dust tag = Very expensive
 [Lacquered Buckler] dust quantity = 33600, dust tag = Moderate
 [Laminated Kite Shield] dust quantity = 8520, dust tag = Common
 [Maple Round Shield] dust quantity = 7680, dust tag = Common
@@ -796,21 +799,21 @@
 [Onyx Amulet] dust quantity = 4060, dust tag = Trash
 [Onyx Amulet] dust quantity = 24400, dust tag = Moderate
 [Onyx Amulet] dust quantity = 14260, dust tag = Moderate
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
 [Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
 [Onyx Amulet] dust quantity = 24400, dust tag = Moderate
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
-[Onyx Amulet] dust quantity = 472720, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
+[Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
 [Onyx Amulet] dust quantity = 20320, dust tag = Moderate
 [Marble Amulet] dust quantity = 17300, dust tag = Moderate
 [Blue Pearl Amulet] dust quantity = 37820, dust tag = Rare
@@ -1063,9 +1066,9 @@
 [Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
 [Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
 [Vaal Sceptre] dust quantity = 34600, dust tag = Moderate
-[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
 [Shadow Sceptre] dust quantity = 10000, dust tag = Moderate
-[Shadow Sceptre] dust quantity = 125000, dust tag = Expensive
+[Shadow Sceptre] dust quantity = 10000, dust tag = Moderate
+[Shadow Sceptre] dust quantity = 10000, dust tag = Moderate
 [Ritual Sceptre] dust quantity = 8880, dust tag = Common
 [War Sword] dust quantity = 3500, dust tag = Trash
 [War Sword] dust quantity = 3500, dust tag = Trash
@@ -1359,7 +1362,7 @@
 [Wrapped Mitts] dust quantity = 2260, dust tag = Trash
 [Legion Gloves] dust quantity = 13080, dust tag = Moderate
 [Slink Gloves] dust quantity = 15380, dust tag = Moderate
-[Murder Mitts] dust quantity = 351740, dust tag = Very expensive
+[Murder Mitts] dust quantity = 84420, dust tag = Rare
 [Samite Gloves] dust quantity = 7800, dust tag = Common
 [Samite Gloves] dust quantity = 7800, dust tag = Common
 [Eelskin Gloves] dust quantity = 19220, dust tag = Moderate
@@ -1420,7 +1423,6 @@
 [Hydrascale Gauntlets] dust quantity = 66640, dust tag = Rare
 [Ancient Gauntlets] dust quantity = 46740, dust tag = Rare
 [Iron Circlet] dust quantity = 3080, dust tag = Trash
-[Bone Circlet] dust quantity = 132620, dust tag = Expensive
 [Golden Mask] dust quantity = 5460, dust tag = Common
 [Great Helmet] dust quantity = 4660, dust tag = Trash
 [Great Helmet] dust quantity = 4660, dust tag = Trash
@@ -1470,7 +1472,6 @@
 [Reaver Helmet] dust quantity = 12660, dust tag = Moderate
 [Eternal Burgonet] dust quantity = 29860, dust tag = Moderate
 [Solaris Circlet] dust quantity = 33600, dust tag = Moderate
-[Bone Circlet] dust quantity = 132620, dust tag = Expensive
 [Solaris Circlet] dust quantity = 33600, dust tag = Moderate
 [Lacquered Helmet] dust quantity = 8760, dust tag = Common
 [Vaal Mask] dust quantity = 24280, dust tag = Moderate
@@ -1559,7 +1560,6 @@
 [War Buckler] dust quantity = 5720, dust tag = Common
 [Tarnished Spirit Shield] dust quantity = 7660, dust tag = Common
 [Colossal Tower Shield] dust quantity = 17580, dust tag = Moderate
-[Lacewood Spirit Shield] dust quantity = 420000, dust tag = Very expensive
 [Harmonic Spirit Shield] dust quantity = 16580, dust tag = Moderate
 [Mirrored Spiked Shield] dust quantity = 18900, dust tag = Moderate
 [Lacquered Buckler] dust quantity = 33600, dust tag = Moderate

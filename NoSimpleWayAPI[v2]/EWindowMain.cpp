@@ -5083,7 +5083,9 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 									else
 									if
 									(
-										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::non_world_drop,				data_entity))
+										(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,				data_entity))
+										//&&
+										//(!DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::heist_drop,				data_entity))
 										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::boss_drop,				data_entity))
 										//||
 										//(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::replica_item,			data_entity))
