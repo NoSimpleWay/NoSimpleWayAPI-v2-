@@ -65,9 +65,9 @@ vec4 skydome_pixel_A;
 vec4 skydome_pixel_B;
 
 
-float tile_offset_x	[11] = {0.0f, 0.5f, 0.75f,	0.5f,	0.625f, 0.750f,	0.875f,	0.5f,	0.625f,	0.750f, 0.875f};
-float tile_offset_y	[11] = {0.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.0f, 	0.000f,	0.000f,	0.000f};
-float tile_scale	[11] = {1.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.25f, 	0.25f,	0.25f,	0.25f};
+float tile_offset_x	[11] = float[](0.0f, 0.5f, 0.75f,	0.5f,	0.625f, 0.750f,	0.875f,	0.5f,	0.625f,	0.750f, 0.875f);
+float tile_offset_y	[11] = float[](0.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.0f, 	0.000f,	0.000f,	0.000f);
+float tile_scale	[11] = float[](1.0f, 0.5f, 0.5f,	0.25f,	0.25f,	0.25f, 	0.25f,	0.25f, 	0.25f,	0.25f,	0.25f);
 
 
 float level = 0.0f;

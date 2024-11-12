@@ -21,7 +21,7 @@ float mul = 0.0f;
 float linear_dist;
 float dist_factor;
 
-float table[7] = {8.0f, 16.0f, 16.0f, 32.0f, 32.0f, 32.0f, 64.0f};
+float table[7] = float[](8.0f, 16.0f, 16.0f, 32.0f, 32.0f, 32.0f, 64.0f);
 
 void main()
 {
