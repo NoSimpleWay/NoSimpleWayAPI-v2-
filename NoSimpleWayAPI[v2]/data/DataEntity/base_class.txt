@@ -14,6 +14,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_amulets"
 	
@@ -33,6 +36,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_rings"
 	
@@ -52,6 +58,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_belts"
 	
@@ -68,6 +77,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	
 	[tag]"short name"	[value]"Jewel"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_jewels"
 	
@@ -85,6 +97,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
 	[tag]"can be"		[value]"Replica"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"AbyssJewel"
 	
@@ -113,6 +127,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Influenced"
 	
 	[tag]"max sockets"	[value]"3"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_claws"
 	
@@ -134,6 +151,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Influenced"
 	
 	[tag]"short name"	[value]"Dagger"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_daggers"
 	
@@ -163,6 +183,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_wands"
 	
@@ -182,6 +205,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_sceptres"
 	
@@ -201,6 +227,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"class_rune_dagger"
 	
@@ -229,6 +257,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_one_hand_swords"
 
@@ -248,6 +279,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"class_thrusting_one_hand_swords"
 	
@@ -269,6 +302,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_two_hand_sword"
 	
@@ -298,6 +334,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_one_hand_axes"
 	
@@ -319,6 +358,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_two_hand_axes"
 	
@@ -346,6 +388,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_one_hand_maces"
 	
@@ -367,6 +412,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_tho_hand_maces"
 	
@@ -396,6 +444,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_bows"
 
@@ -413,6 +464,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Mirrored"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_quivers"
 	
@@ -442,6 +496,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_staves"
 	
@@ -463,6 +520,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_warstaves"
 	
@@ -496,6 +556,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"FishingRod"
 	
@@ -536,6 +599,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Procentile"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_gloves"
 
@@ -560,6 +626,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Procentile"
 	[tag]"can be"		[value]"Influenced"
 	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
+	
 	[tag]"icon path"	[value]"class_helmets"
 	
 ADD_NEW_DATA_ENTITY
@@ -579,6 +648,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Procentile"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_boots"
 	
@@ -601,6 +673,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Procentile"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_body_armours"
 	
@@ -625,6 +700,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Procentile"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_shields"
 	
@@ -650,6 +728,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Transfigured"
 	[tag]"can be"		[value]"Gem level"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"PortalGem"
 	
@@ -663,6 +744,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Gem level"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"SupportGems"
 	
@@ -683,6 +767,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Stackable Currency"
 	[tag]"name RU"		[value]"Складываемая валюта"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_stackable_currency"
 	
@@ -693,6 +780,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Incubator"
 	
 	[tag]"name RU"		[value]"Инкубатор"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	
 	[tag]"icon path"	[value]"Incubator"
@@ -702,6 +791,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Delve Stackable Socketable Currency"
 	[tag]"name RU"		[value]"Складываемая валюта спуска"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"class_delve_socketable_currency"
 	
@@ -727,6 +818,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Quest Item"
 	
 	[tag]"name RU"		[value]"Вещи для заданий"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"BookOfKnowledge"
 
@@ -757,6 +851,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
 	
@@ -774,6 +871,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 
 	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
@@ -793,6 +893,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 
 	[tag]"icon path"	[value]"Hybrid_flask"
@@ -812,6 +914,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Enchanted"
 	[tag]"can be"		[value]"Replica"
 	[tag]"can be"		[value]"Quality"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 
 	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
@@ -846,6 +950,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Blighted"
 	[tag]"can be"		[value]"Uberblighted"
 	[tag]"can be"		[value]"Influenced"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	
 	[tag]"icon path"	[value]"Map"
@@ -857,6 +963,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Map Fragment"
 	
 	[tag]"name RU"		[value]"Фрагмент карты"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_map_fragments"
 	
@@ -867,6 +976,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Breachstone"
 	
 	[tag]"name RU"		[value]"Камень Разлома"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_breachstone"
 		
@@ -877,6 +989,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Misc Map Item"
 	
 	[tag]"name RU"		[value]"Прочие предметы карт"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Inscribed_Ultimatum"
 	
@@ -888,7 +1002,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"name RU"		[value]"Ключ Реликвария"
 	
-
+	[tag]"exist for"	[value]"PoE1"
+	
 	[tag]"icon path"	[value]"VisceralReliquaryKey"
 	
 ADD_NEW_DATA_ENTITY
@@ -898,6 +1013,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Memory"
 	
 	[tag]"name RU"		[value]"Воспоминание"
+	
+	[tag]"exist for"	[value]"PoE1"
 	
 
 	[tag]"icon path"	[value]"ClassMemory"
@@ -909,6 +1026,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Expedition Logbook"
 	
 	[tag]"name RU"		[value]"Журнал экспедиции"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 	
 	[tag]"can be"		[value]"Fractured"
 	[tag]"can be"		[value]"Corrupted"
@@ -922,6 +1042,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Atlas Upgrade Item"
 	[tag]"name RU"		[value]"Предметы улучшения Атласа"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"titanium_watchstone"
 	
@@ -947,6 +1069,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Divination Card"
 	
 	[tag]"name RU"		[value]"Гадальные карты"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"class_divinations"
 	
@@ -975,6 +1099,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"name RU"		[value]"Предмет Вмешательства"
 	
+	[tag]"exist for"	[value]"PoE1"
+	
 
 	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
 	
@@ -985,6 +1111,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Metamorph Sample"
 	
 	[tag]"name RU"		[value]"Образец Метаморфа"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"eye"
 	
@@ -995,6 +1123,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Leaguestone"
 	
 	[tag]"name RU"		[value]"Камни лиги"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Leaguestone"
 	
@@ -1003,6 +1133,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Archnemesis Mod"
 	[tag]"name RU"		[value]"Свойства Возмездия"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"ArchnemesisItem"
 	
@@ -1027,6 +1159,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Hideout Doodads"
 	[tag]"name RU"		[value]"Предметы убежища"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"CommonOrderArtifact"
 	
@@ -1035,6 +1170,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Microtransactions"
 	[tag]"name RU"		[value]"Микротранзакции"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"CommonOrderArtifact"
 
@@ -1054,6 +1192,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Labyrinth Items"
 	[tag]"short name"	[value]"Labyrinth Item"
 	
+	[tag]"exist for"	[value]"PoE1"
+	
 	[tag]"name RU"		[value]"Предмет лабиринта"
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
@@ -1065,6 +1205,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Labyrinth Trinket"
 	
 	[tag]"name RU"		[value]"Брелок лабиринта"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
 	
@@ -1088,6 +1230,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Pantheon Soul"
 	[tag]"name RU"		[value]"Душа Пантеона"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
 	
@@ -1096,6 +1240,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Unique Piece"
 	[tag]"name RU"		[value]"Часть Уника"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Piece"
 
@@ -1111,6 +1257,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Heist Target"
 	
 	[tag]"name RU"		[value]"Предмет кражи"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"RoguesMarker"
 	
@@ -1121,6 +1269,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Trinket"
 	
 	[tag]"name RU"		[value]"Украшения"
+	
+	[tag]"exist for"	[value]"PoE1"
 	
 
 	[tag]"icon path"	[value]"Thief's Trinket"
@@ -1138,6 +1288,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
 	[tag]"can be"		[value]"Enchanted"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	
 
@@ -1156,6 +1308,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
 	
+	[tag]"exist for"	[value]"PoE1"
+	
 
 	[tag]"icon path"	[value]"Blueprint"
 	
@@ -1170,6 +1324,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Fractured"
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Cloak"
 	
@@ -1180,6 +1336,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Heist Brooch"
 	
 	[tag]"name RU"		[value]"Разбойничья брошь"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Brooch"
 	
@@ -1195,6 +1353,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"name RU"		[value]"Разбойничий инструмент"
 	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Lockpick"
 	
@@ -1207,6 +1366,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Fractured"
 	[tag]"can be"		[value]"Corrupted"
 	[tag]"can be"		[value]"Mirrored"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Arrow"
 	
@@ -1226,6 +1387,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Sentinel Drone"
 	[tag]"name RU"		[value]"Часовые"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Ancient_Stalker_Sentinel_inventory_icon_png"
 	
@@ -1251,6 +1414,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Relic"
 	
 	[tag]"name RU"		[value]"Реликвии"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"coffer_relic"
 	
@@ -1262,6 +1428,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Sanctified Relic"
 	
 	[tag]"name RU"		[value]"Священные реликвии"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"sanctified_relic"
 		
@@ -1270,6 +1438,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Sanctum Research"
 	[tag]"name RU"		[value]"Исследования Святилища"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"forbidden_tome"
 	
@@ -1282,6 +1452,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Tincture"
 	[tag]"name RU"		[value]"Микстуры"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
 	
@@ -1292,6 +1464,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Обереги"
 	
 	[tag]"rarity override"	[value]"Magic"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"UrsineCharm"
 	
@@ -1300,6 +1475,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Corpses"
 	[tag]"name RU"		[value]"Трупы"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Corpse"
 	
@@ -1308,6 +1485,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Embers of the Allflame"
 	[tag]"name RU"		[value]"Уголья Всепламени"
+	
+	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	
@@ -1322,5 +1501,172 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Gold"
 	[tag]"name RU"		[value]"Золото"
+	
+	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"Gold"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Meta Skill Gem"
+	[tag]"name RU"		[value]"Камень мета-умений"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Spirit Gems"
+	[tag]"name RU"		[value]"Камень духа"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem"
+	[tag]"name RU"		[value]"Необработанный камень умения"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Uncut Support Gem"
+	[tag]"name RU"		[value]"Необработанный камень поддержки"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem"
+	[tag]"name RU"		[value]"Необработанный камень духа"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Spears"
+	[tag]"name RU"		[value]"Копья"
+	
+	[tag]"short name"	[value]"Spear"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassSpears"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Flails"
+	[tag]"name RU"		[value]"Кистени"
+	
+	[tag]"short name"	[value]"Flail"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassFlails"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Traps"
+	[tag]"name RU"		[value]"Ловушки"
+	
+	[tag]"short name"	[value]"Trap"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassTraps"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Quarterstaves"
+	[tag]"name RU"		[value]"Боевые посохи(PoE2)"
+	
+	[tag]"short name"	[value]"Quarterstaff"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassQuarterstaves"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Crossbows"
+	[tag]"name RU"		[value]"Арбалеты"
+	
+	[tag]"short name"	[value]"Crossbow"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassCrossbow"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Focus"
+	[tag]"name RU"		[value]"Фокус"
+	
+	[tag]"short name"	[value]"Foci"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassFocus"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Waystones"
+	[tag]"name RU"		[value]"Путевые камни"
+	
+	[tag]"short name"	[value]"Waystone"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassWaystones"
+	

@@ -1,0 +1,712 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Assassin Bow"
+	[tag]"name RU"		[value]"Лук убийцы"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bone Bow"
+	[tag]"name RU"		[value]"Костяной лук"
+
+	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Citadel Bow"
+	[tag]"name RU"		[value]"Осадный лук"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Composite Bow"
+	[tag]"name RU"		[value]"Составной лук"
+
+	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T21"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Compound Bow"
+	[tag]"name RU"		[value]"Сложный лук"
+
+	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T14"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crude Bow"
+	[tag]"name RU"		[value]"Грубый лук"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Death Bow"
+	[tag]"name RU"		[value]"Лук смерти"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Decimation Bow"
+	[tag]"name RU"		[value]"Лук палача"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T10"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Decurve Bow"
+	[tag]"name RU"		[value]"Мощный лук"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T15"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Foundry Bow"
+	[tag]"name RU"		[value]"Литой лук"
+
+	[tag]"icon path"	[value]"SuperBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Grove Bow"
+	[tag]"name RU"		[value]"Лесной лук"
+
+	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T17"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Harbinger Bow"
+	[tag]"name RU"		[value]"Лук предвестника"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hedron Bow"
+	[tag]"name RU"		[value]"Лук с гранями"
+
+	[tag]"icon path"	[value]"SuperBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Heist"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Highborn Bow"
+	[tag]"name RU"		[value]"Лук патриция"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T11"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Imperial Bow"
+	[tag]"name RU"		[value]"Императорский лук"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Expensive base for unique"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ivory Bow"
+	[tag]"name RU"		[value]"Лук из бивня"
+
+	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T12"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Long Bow"
+	[tag]"name RU"		[value]"Длинный лук"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T22"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Maraketh Bow"
+	[tag]"name RU"		[value]"Лук маракета"
+
+	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ranger Bow"
+	[tag]"name RU"		[value]"Лук охотника"
+
+	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Recurve Bow"
+	[tag]"name RU"		[value]"Загнутый лук"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T20"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reflex Bow"
+	[tag]"name RU"		[value]"Лук прыти"
+
+	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T16"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Royal Bow"
+	[tag]"name RU"		[value]"Царский лук"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T16"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Short Bow"
+	[tag]"name RU"		[value]"Короткий лук"
+
+	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T17"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sniper Bow"
+	[tag]"name RU"		[value]"Лук птицебоя"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T13"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Solarine Bow"
+	[tag]"name RU"		[value]"Солнечный лук"
+
+	[tag]"icon path"	[value]"SuperBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spine Bow"
+	[tag]"name RU"		[value]"Лук из рога"
+
+	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Steelwood Bow"
+	[tag]"name RU"		[value]"Железный лук"
+
+	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Thicket Bow"
+	[tag]"name RU"		[value]"Чащобный лук"
+
+	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Ranged weapon"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"

@@ -430,6 +430,20 @@ public:
 	int table_id = -1;
 };
 
+enum class PathOfExileGame
+{
+	UNDEFINED,
+	POE1,
+	POE2,
+	BOTH
+};
+
+class EntityButtonGameSwitch : public EntityButton
+{
+public:
+	PathOfExileGame game_type = PathOfExileGame::UNDEFINED;
+};
+
 
 
 
@@ -693,13 +707,17 @@ public:
 
 	int data_entity_id = 0;
 
-	EntityButton* main_input_field;
-	EntityButton* add_as_item_button;
+	EntityButton*	main_input_field;
+	EntityButton*	add_as_item_button;
 
-	EButtonGroup* main_left_side							= nullptr;
-	EButtonGroup* right_side_for_filters					= nullptr;
-	EButtonGroup* right_side_for_configure					= nullptr;
-	EButtonGroup* top_side_for_add_pattern_button			= nullptr;
+	EButtonGroup*	main_left_side							= nullptr;
+	EButtonGroup*	side_for_filter_rules					= nullptr;
+	EButtonGroup*	right_side_for_configure				= nullptr;
+	EButtonGroup*	top_side_for_add_pattern_button			= nullptr;
+	EButtonGroup*	mid_side_for_game_switch_buttons		= nullptr;
+
+	std::string		target_data_type = "";
+	//EButtonGroup* active_group_for_filter_rules				= nullptr;
 
 	EntityButtonWideItem* target_filter_rule_pattern_button	= nullptr;
 
@@ -708,7 +726,7 @@ public:
 	void button_group_update(float _d) override;
 	void background_update(float _d);
 
-	void show_only_suitable_buttons();
+	void show_only_suitable_buttons(std::string _data_type, std::string _game);
 
 	void prepare_for_filter_pattern(EntityButtonWideItem* _wide_button);
 	void prepare_for_default_use();
@@ -1433,7 +1451,7 @@ namespace EDataActionCollection
 	void action_price_table_deselect_all(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_price_accept_cloning_price_table(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_auto_prices(Entity* _entity, ECustomData* _custom_data, float _d);
-
+	void action_switch_game_in_data_entity_collection(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1669,6 +1687,14 @@ namespace PoeNinjaNamespace
 	extern float price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
 };
 
+//enum class DataEntityParserMode
+//{
+//	POE1,
+//	POE2,
+//	BOTH,
+//	UNDEFINED
+//};
+
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {
@@ -1682,6 +1708,7 @@ public:
 	void register_loot_version_names();
 
 	
+	
 	static void get_poe_ninja_api_prices();
 	static void parse_json_from_poe_ninja(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
@@ -1692,6 +1719,7 @@ public:
 
 
 	static const std::string this_version;
+	//static DataEntityParserMode data_entity_parser_mode;
 
 	static void check_new_version_from_github();
 

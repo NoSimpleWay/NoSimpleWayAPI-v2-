@@ -1595,3 +1595,10 @@
 [Champion Kite Shield] dust quantity = 100800, dust tag = Expensive
 [Steel Kite Shield] dust quantity = 45380, dust tag = Rare
 [Elegant Round Shield] dust quantity = 1537440, dust tag = Very expensive
+[Amber Amulet] dust quantity = 10340, dust tag = Moderate
+[Jade Amulet] dust quantity = 21000, dust tag = Moderate
+[Lapis Amulet] dust quantity = 17820, dust tag = Moderate
+[Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
+[Colosseum Plate] dust quantity = 8260, dust tag = Common
+[Glorious Plate] dust quantity = 86960, dust tag = Rare

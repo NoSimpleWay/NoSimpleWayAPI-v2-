@@ -688,14 +688,14 @@ void EDataActionCollection::action_switch_folder_for_data_entity_filter(Entity* 
 	//EWindowMain::data_entity_filter->need_refresh = true;
 	if (filter_rule_button->is_expanded)
 	{
-		EWindowMain::data_entity_filter->right_side_for_filters->scroll_down(filter_rule_button->button_gabarite->size_y * filter_rule_button->child_button_list.size());
+		EWindowMain::data_entity_filter->side_for_filter_rules->scroll_down(filter_rule_button->button_gabarite->size_y * filter_rule_button->child_button_list.size());
 	}
 	else
 	{
-		EWindowMain::data_entity_filter->right_side_for_filters->scroll_up(filter_rule_button->button_gabarite->size_y * filter_rule_button->child_button_list.size());
+		EWindowMain::data_entity_filter->side_for_filter_rules->scroll_up(filter_rule_button->button_gabarite->size_y * filter_rule_button->child_button_list.size());
 	}
 
-	EWindowMain::data_entity_filter->right_side_for_filters->need_change = true;
+	EWindowMain::data_entity_filter->side_for_filter_rules->need_change = true;
 }
 
 void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1640,27 +1640,55 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 
 	//button_group_data_container->target_rule = button_data_container->filter_rule;
 
+	EWindowMain::data_entity_filter->target_data_type = button_data_container->filter_rule->focused_by_data_type;
 
 
 
+	//which PoE is selected?
+	PathOfExileGame
+	selected_game_type = PathOfExileGame::UNDEFINED;
 
-	for (EntityButton* but : EWindowMain::data_entity_filter->right_side_for_filters->workspace_button_list)
+	if (EWindowMain::data_entity_filter->mid_side_for_game_switch_buttons != nullptr)
 	{
-		EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
-		if
-			(
-				(button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
-				||
-				(button_rule->target_filter_rule->tag == "*ALL*")
-				)
+		EntityButtonGameSwitch*
+		button_switch_game = static_cast<EntityButtonGameSwitch*>(EWindowMain::data_entity_filter->mid_side_for_game_switch_buttons->selected_button);
+		
+		if (button_switch_game != nullptr)
 		{
-			button_rule->entity_disabled = false;
-		}
-		else
-		{
-			button_rule->entity_disabled = true;
+			selected_game_type = button_switch_game->game_type;
 		}
 	}
+
+
+
+
+
+	std::string
+	target_game_name = "*ALL*";
+
+	if (selected_game_type == PathOfExileGame::POE1) { target_game_name = "PoE1"; }
+	else
+	if (selected_game_type == PathOfExileGame::POE2) { target_game_name = "PoE2"; }
+	
+	EWindowMain::data_entity_filter->show_only_suitable_buttons(button_data_container->filter_rule->focused_by_data_type, target_game_name);
+
+	//for (EntityButton* but : EWindowMain::data_entity_filter->side_for_filter_rules->workspace_button_list)
+	//{
+	//	EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
+	//	if
+	//	(
+	//			(button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
+	//			||
+	//			(button_rule->target_filter_rule->tag == "*ALL*")
+	//	)
+	//	{
+	//		button_rule->entity_disabled = false;
+	//	}
+	//	else
+	//	{
+	//		button_rule->entity_disabled = true;
+	//	}
+	//}
 
 
 
@@ -1676,7 +1704,8 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 		{
 			for (EntityButton* but : button_group_data_container->pointer_to_group_with_filter_rules_list->workspace_button_list)
 			{
-				EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
+				EntityButtonFilterRule*
+				button_rule = static_cast<EntityButtonFilterRule*>(but);
 
 				if (button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
 				{
@@ -1687,7 +1716,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 		}
 
 		EntityButtonFilterRule*
-			filter_button = (EntityButtonFilterRule*)button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button;
+		filter_button = (EntityButtonFilterRule*)button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button;
 
 		button_group_data_container->target_rule = filter_button->target_filter_rule;
 	}
@@ -3581,9 +3610,10 @@ void EDataActionCollection::action_configure_pattern_filter_rule(Entity* _entity
 	EWindowMain::data_entity_filter->prepare_for_filter_pattern(static_cast<EntityButtonWideItem*>(_entity));
 	EWindowMain::data_entity_filter->activate_move_to_foreground_and_center();
 
-	for (EntityButton* but : EWindowMain::data_entity_filter->right_side_for_filters->workspace_button_list)
+	for (EntityButton* but : EWindowMain::data_entity_filter->side_for_filter_rules->workspace_button_list)
 	{
-		EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
+		EntityButtonFilterRule*
+		button_rule = static_cast<EntityButtonFilterRule*>(but);
 
 		if
 		(
@@ -3598,7 +3628,7 @@ void EDataActionCollection::action_configure_pattern_filter_rule(Entity* _entity
 
 	EWindowMain::data_entity_filter->need_refresh = true;
 
-	EButtonGroup*			right_side_group			= EWindowMain::data_entity_filter->right_side_for_filters;
+	EButtonGroup*			right_side_group			= EWindowMain::data_entity_filter->side_for_filter_rules;
 	EntityButtonFilterRule* filter_rule_button			= static_cast<EntityButtonFilterRule*>(right_side_group->workspace_button_list[0]);
 	EntityButtonWideItem*	wide_item_button			= static_cast<EntityButtonWideItem*>(_entity);
 
@@ -3784,6 +3814,28 @@ void EDataActionCollection::action_set_auto_prices(Entity* _entity, ECustomData*
 		
 		NSWRegisteredButtonGroups::poe_ninja_price_checker_group->price_table_value_button_vector[table_id][i]->set_highlight(0.5f, 0.5f);
 	}
+}
+
+void EDataActionCollection::action_switch_game_in_data_entity_collection(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonGameSwitch*
+	game_switch_button = static_cast<EntityButtonGameSwitch*>(_entity);
+
+	std::string
+	target_game_name = "*ALL*";
+
+	if (game_switch_button->game_type == PathOfExileGame::POE1) { target_game_name = "PoE1"; }
+	else
+	if (game_switch_button->game_type == PathOfExileGame::POE2) { target_game_name = "PoE2"; }
+
+	EWindowMain::data_entity_filter->show_only_suitable_buttons(EWindowMain::data_entity_filter->target_data_type, target_game_name);
+
+	//select button and refresh search on data entity collection
+	EDataContainer_Group_DataEntitiesSearch*
+	button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
+
+	game_switch_button->parent_button_group->select_this_button(game_switch_button);
+	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 }
 
 void EDataActionCollection::action_open_add_explicit_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -5472,6 +5524,7 @@ void EWindowMain::read_user_loot_patterns()
 
 
 const std::string EWindowMain::this_version = "1.4.1";
+//DataEntityParserMode data_entity_parser_mode = DataEntityParserMode::UNDEFINED;
 
 void EWindowMain::check_new_version_from_github()
 {
@@ -7614,6 +7667,7 @@ void EWindowMain::register_add_data_entity_group()
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 				///		RIGHT SIDE FOR FILTERS
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
 				EButtonGroup* bottom_part_for_filter_rule_buttons = nest_for_filters->add_group
 				(
 					EButtonGroup::create_default_button_group
@@ -7628,10 +7682,81 @@ void EWindowMain::register_add_data_entity_group()
 					NSW_dynamic_autosize
 				);
 
-				data_entity_main_group->right_side_for_filters = bottom_part_for_filter_rule_buttons;
+				data_entity_main_group->side_for_filter_rules			= bottom_part_for_filter_rule_buttons;
+				//data_entity_main_group->active_group_for_filter_rules	= bottom_part_for_filter_rule_buttons;
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
+
+
+				///		MID SIDE FOR GAME SWITCH BUTTONS
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
+				EButtonGroup*
+				mid_part_for_game_switch_buttons = nest_for_filters->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(250.0f, 25.0f),
+						EGUIStyle::active_style
+					)
+				)->set_parameters
+				(
+					ChildAlignMode::ALIGN_HORIZONTAL,
+					NSW_dynamic_autosize,
+					NSW_static_autosize
+				);
+
+				data_entity_main_group->mid_side_for_game_switch_buttons = mid_part_for_game_switch_buttons;
+
+
+
+						//--------------
+						EntityButtonGameSwitch*
+						game_switch_poe_one = new EntityButtonGameSwitch();
+
+						game_switch_poe_one->make_as_default_button_with_icon_and_localisation_by_key
+						(
+							new ERegionGabarite(120.0f, 25.0f),
+							mid_part_for_game_switch_buttons,
+							EDataActionCollection::action_switch_game_in_data_entity_collection,
+							NS_EGraphicCore::load_from_textures_folder("icons/PoE1"),
+							"button_game_poe1"
+						);
+
+						mid_part_for_game_switch_buttons->selected_button = game_switch_poe_one;
+
+						game_switch_poe_one->can_be_stretched = true;
+
+						game_switch_poe_one->game_type = PathOfExileGame::POE1;
+
+						mid_part_for_game_switch_buttons->add_button_to_working_group(game_switch_poe_one);
+						//--------------
+
+
+
+						//--------------
+						EntityButtonGameSwitch*
+						game_switch_poe_two = new EntityButtonGameSwitch();
+
+						game_switch_poe_two->make_as_default_button_with_icon_and_localisation_by_key
+						(
+							new ERegionGabarite(120.0f, 25.0f),
+							mid_part_for_game_switch_buttons,
+							EDataActionCollection::action_switch_game_in_data_entity_collection,
+							NS_EGraphicCore::load_from_textures_folder("icons/PoE2"),
+							"button_game_poe2"
+						);
+
+						game_switch_poe_two->game_type = PathOfExileGame::POE2;
+
+						mid_part_for_game_switch_buttons->add_button_to_working_group(game_switch_poe_two);
+						//--------------
+
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 				///		TOP SIDE FOR ADD BUTTON
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////
 				EButtonGroup* top_part_for_add_filter_as_item_pattern = nest_for_filters->add_group
 				(
 					EButtonGroup::create_default_button_group
@@ -9429,74 +9554,48 @@ EWindowMain::EWindowMain()
 
 
 
+	//data_entity_parser_mode = DataEntityParserMode::POE1;
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/stackable_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/omens.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tattoos.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/gold.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/stackable_currency.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/omens.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/tattoos.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/gold.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/oils.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/catalysts.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/charms.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/currency_shards.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/delirium_orbs.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/fossils.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/map_splinters.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/breach_blessings.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tainted_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tinctures.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/expedition_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/scouting_reports.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/eldritch_currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/incubators.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/incursion_items.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/vials.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/nets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/essences.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/delve_stackable_socketable_currency.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/oils.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/catalysts.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/charms.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/currency_shards.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/delirium_orbs.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/fossils.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/map_splinters.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/breach_blessings.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/harbinger_scrolls.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/tainted_currency.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/tinctures.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/expedition_currency.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/scouting_reports.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/eldritch_currency.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/incubators.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/incursion_items.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/vials.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/nets.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/essences.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/currency.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/currency.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/amulets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/abyss_jewels.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/belts.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/rings.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/jewels.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/amulets.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/abyss_jewels.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/belts.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/rings.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/jewels.txt");
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/divinations.txt");
-
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/body_armours.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/gloves.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/helmets.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/boots.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/divinations.txt");
 
 
-
-
-
-
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/contracts.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/corpses.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/blueprints.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/heist_brooch.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/heist_cloak.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/heist_gear.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/heist_targets.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/heist_tool.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/trinkets.txt");
-
-
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/bows.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/quivers.txt");
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/two_hand_axes.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/two_hand_maces.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/two_hand_swords.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/warstaves.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/body_armours.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/gloves.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/helmets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/boots.txt");
 
 
 
@@ -9504,54 +9603,80 @@ EWindowMain::EWindowMain()
 
 
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/rune_daggers.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/sceptres.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/wands.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/staves.txt");
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/sanctum_research.txt");
-
-
-
-
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/shields.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/contracts.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/corpses.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/blueprints.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/heist_brooch.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/heist_cloak.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/heist_gear.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/heist_targets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/heist_tool.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/trinkets.txt");
 
 
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/claws.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/daggers.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/one_hand_axes.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/one_hand_maces.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/one_hand_swords.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/bows.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/quivers.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/two_hand_axes.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/two_hand_maces.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/two_hand_swords.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/warstaves.txt");
 
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/support_skill_gems.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/skill_gems.txt");
 
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/flasks.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/mana_flasks.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/hybrid_flasks.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/utility_flasks.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/map_fragments.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/maps.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/memories.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/misc_map_items.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/harvest_seeds.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/metamorph_samples.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/quest_items.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/relics.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/atlas_region_upgrade_item.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/item_piece.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/rune_daggers.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/sceptres.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/wands.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/staves.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/ambers_of_the_allflame.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/sanctum_research.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/uniques.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/GameItems/_special_items.txt");
+
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/shields.txt");
+
+
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/claws.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/daggers.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/one_hand_axes.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/one_hand_maces.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/one_hand_swords.txt");
+
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/support_skill_gems.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/skill_gems.txt");
+
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/flasks.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/mana_flasks.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/hybrid_flasks.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/utility_flasks.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/map_fragments.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/maps.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/memories.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/misc_map_items.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/harvest_seeds.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/metamorph_samples.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/quest_items.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/relics.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/item_piece.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/ambers_of_the_allflame.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/uniques.txt");
+
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/_special_items.txt");
 
 
 
@@ -9569,15 +9694,28 @@ EWindowMain::EWindowMain()
 
 	//ETextParser::data_entity_parse_file("data/DataEntity/data_entity_list[game_item].txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/influence.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/influence.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/base_class.txt");
 
 	//ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/Explicits/basic.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/Explicits/special.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/Explicits/basic.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/Explicits/special.txt");
 	//ETextParser::data_entity_parse_file("data/DataEntityExplicitsLowUsable.txt");
 
-	ETextParser::data_entity_parse_file("data/DataEntity/enchantment.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/enchantment.txt");
+
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//POE2
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/amulets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/belts.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/body_armours.txt");
+
+
+
+
+
+
 
 	ETextParser::data_entity_parse_file("data/DataEntity/localisation.txt");
 
@@ -15327,6 +15465,11 @@ void EWindowMain::import_filter_rules(std::string _filename)
 				if (EStringUtils::string_array[0] == "focused_to")
 				{
 					jc_filter_rule->focused_by_data_type = EStringUtils::string_array[1];
+				}
+				else
+				if (EStringUtils::string_array[0] == "target_game")
+				{
+					jc_filter_rule->target_game = EStringUtils::string_array[1];
 				}
 				else
 				if (EStringUtils::string_array[0] == "tag")
@@ -23123,6 +23266,25 @@ void EButtonGroupDataEntity::background_update(float _d)
 
 }
 
+void EButtonGroupDataEntity::show_only_suitable_buttons(std::string _data_type, std::string _game)
+{
+	for (EntityButton* but : side_for_filter_rules->workspace_button_list)
+	{
+		bool match_by_data_type	= false;
+		bool match_by_game		= false;
+
+		EntityButtonFilterRule*
+		button_filter_rule = static_cast<EntityButtonFilterRule*>(but);
+
+		match_by_data_type	= ((button_filter_rule->target_filter_rule->tag == _data_type)		||	(button_filter_rule->target_filter_rule->tag == "*ALL*"));
+		match_by_game		= ((button_filter_rule->target_filter_rule->target_game == _game)	||	(button_filter_rule->target_filter_rule->target_game == "*ALL*"));
+		
+		button_filter_rule->entity_disabled = !(match_by_data_type && match_by_game);
+	}
+
+	side_for_filter_rules->need_change = true;
+}
+
 void EButtonGroupDataEntity::prepare_for_filter_pattern(EntityButtonWideItem* _wide_button)
 {
 	target_filter_rule_pattern_button = _wide_button;
@@ -23133,7 +23295,7 @@ void EButtonGroupDataEntity::prepare_for_filter_pattern(EntityButtonWideItem* _w
 		*but->suppressor = false;
 	}
 
-	right_side_for_filters->group_is_suppressed				= true;
+	side_for_filter_rules->group_is_suppressed				= true;
 	top_side_for_add_pattern_button->group_is_suppressed	= true;
 }
 
@@ -23146,7 +23308,7 @@ void EButtonGroupDataEntity::prepare_for_default_use()
 		if (but->suppressor == nullptr) { but->suppressor = new bool(false); }
 		*but->suppressor = true;
 	}
-	right_side_for_filters->group_is_suppressed				= false;
+	side_for_filter_rules->group_is_suppressed				= false;
 	top_side_for_add_pattern_button->group_is_suppressed	= false;
 }
 

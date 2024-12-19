@@ -1,0 +1,2247 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ambush Boots"
+	[tag]"name RU"		[value]"Сандалеты разбойника"
+
+	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"85"
+	[tag]"base evasion max"	[value]"95"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"20"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ancient Greaves"
+	[tag]"name RU"		[value]"Древние поножи"
+
+	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"151"
+	[tag]"base armour max"	[value]"174"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Antique Greaves"
+	[tag]"name RU"		[value]"Старинные поножи"
+
+	[tag]"icon path"	[value]"Steel_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"122"
+	[tag]"base armour max"	[value]"144"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arcanist Slippers"
+	[tag]"name RU"		[value]"Сапоги тайнописца"
+
+	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"47"
+	[tag]"base energy shield max"	[value]"55"
+	[tag]"base tier"	[value]"T2"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Assassin's Boots"
+	[tag]"name RU"		[value]"Калиги убийцы"
+
+	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"121"
+	[tag]"base evasion max"	[value]"139"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bronzescale Boots"
+	[tag]"name RU"		[value]"Бронзовые ботинки"
+
+	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"55"
+	[tag]"base armour max"	[value]"63"
+	[tag]"base evasion min"	[value]"55"
+	[tag]"base evasion max"	[value]"63"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Carnal Boots"
+	[tag]"name RU"		[value]"Сапоги крови"
+
+	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"99"
+	[tag]"base evasion max"	[value]"117"
+	[tag]"base energy shield min"	[value]"20"
+	[tag]"base energy shield max"	[value]"24"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chain Boots"
+	[tag]"name RU"		[value]"Кольчужные башмаки"
+
+	[tag]"icon path"	[value]"Chain_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"11"
+	[tag]"base armour max"	[value]"15"
+	[tag]"base energy shield min"	[value]"3"
+	[tag]"base energy shield max"	[value]"5"
+	[tag]"base tier"	[value]"T9"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Clasped Boots"
+	[tag]"name RU"		[value]"Калиги"
+
+	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"50"
+	[tag]"base evasion max"	[value]"57"
+	[tag]"base energy shield min"	[value]"11"
+	[tag]"base energy shield max"	[value]"12"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Conjurer Boots"
+	[tag]"name RU"		[value]"Сапоги чародея"
+
+	[tag]"icon path"	[value]"Scholar_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"36"
+	[tag]"base energy shield max"	[value]"42"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crusader Boots"
+	[tag]"name RU"		[value]"Сапоги ревнителя веры"
+
+	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Expensive base for unique"
+	[tag]"base armour min"	[value]"121"
+	[tag]"base armour max"	[value]"139"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Martyr Boots"
+	[tag]"name RU"			[value]"Сапоги мученика"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"203"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"41"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Paladin Boots"
+	[tag]"name RU"			[value]"Сапоги паладина"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base armour min"	[value]"205"
+	[tag]"base armour max"	[value]"236"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"47"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Deerskin Boots"
+	[tag]"name RU"		[value]"Ютевые ботинки"
+
+	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base evasion min"	[value]"74"
+	[tag]"base evasion max"	[value]"92"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dragonscale Boots"
+	[tag]"name RU"		[value]"Ботинки из чешуи дракона"
+
+	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base armour min"	[value]"121"
+	[tag]"base armour max"	[value]"139"
+	[tag]"base evasion min"	[value]"121"
+	[tag]"base evasion max"	[value]"139"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Chimerascale Boots"
+	[tag]"name RU"			[value]"Ботинки из чешуи химеры"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base evasion min"	[value]"176"
+	[tag]"base evasion max"	[value]"203"
+	
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"203"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Wyvernscale Boots"
+	[tag]"name RU"			[value]"Ботинки из чешуи виверны"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base evasion min"		[value]"205"
+	[tag]"base evasion max"		[value]"236"
+	     
+	[tag]"base armour min"		[value]"205"
+	[tag]"base armour max"		[value]"236"
+	
+	
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eelskin Boots"
+	[tag]"name RU"		[value]"Щучьи ботинки"
+
+	[tag]"icon path"	[value]"Goathide_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base evasion min"	[value]"129"
+	[tag]"base evasion max"	[value]"148"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Goathide Boots"
+	[tag]"name RU"		[value]"Сафьяновые ботинки"
+
+	[tag]"icon path"	[value]"Goathide_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base evasion min"	[value]"42"
+	[tag]"base evasion max"	[value]"54"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Goliath Greaves"
+	[tag]"name RU"		[value]"Поножи великана"
+
+	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"base armour min"	[value]"177"
+	[tag]"base armour max"	[value]"209"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hydrascale Boots"
+	[tag]"name RU"		[value]"Ботинки из чешуи гидры"
+
+	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"106"
+	[tag]"base armour max"	[value]"122"
+	[tag]"base evasion min"	[value]"106"
+	[tag]"base evasion max"	[value]"122"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Iron Greaves"
+	[tag]"name RU"		[value]"Железные поножи"
+
+	[tag]"icon path"	[value]"Iron_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"6"
+	[tag]"base armour max"	[value]"9"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ironscale Boots"
+	[tag]"name RU"		[value]"Железные ботинки"
+
+	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"34"
+	[tag]"base armour max"	[value]"44"
+	[tag]"base evasion min"	[value]"34"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"base tier"	[value]"T8"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Leatherscale Boots"
+	[tag]"name RU"		[value]"Башмаки из вареной кожи"
+
+	[tag]"icon path"	[value]"Leatherscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"12"
+	[tag]"base armour max"	[value]"17"
+	[tag]"base evasion min"	[value]"12"
+	[tag]"base evasion max"	[value]"17"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Legion Boots"
+	[tag]"name RU"		[value]"Сапоги легионера"
+
+	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"104"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"base tier"	[value]"T3"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mesh Boots"
+	[tag]"name RU"		[value]"Полукольчужные сапоги"
+
+	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"51"
+	[tag]"base armour max"	[value]"64"
+	[tag]"base evasion min"	[value]"11"
+	[tag]"base evasion max"	[value]"14"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Murder Boots"
+	[tag]"name RU"		[value]"Сапоги смерти"
+
+	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"185"
+	[tag]"base evasion max"	[value]"213"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Infiltrator Boots"
+	[tag]"name RU"			[value]"Сандалеты лазутчика"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base evasion min"	[value]"176"
+	[tag]"base evasion max"	[value]"203"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"41"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Phantom Boots"
+	[tag]"name RU"			[value]"Сапоги призрака"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base evasion min"	[value]"205"
+	[tag]"base evasion max"	[value]"236"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"47"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nubuck Boots"
+	[tag]"name RU"		[value]"Нубуковые ботинки"
+
+	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base evasion min"	[value]"113"
+	[tag]"base evasion max"	[value]"126"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Plated Greaves"
+	[tag]"name RU"		[value]"Латные поножи"
+
+	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"77"
+	[tag]"base armour max"	[value]"96"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Rawhide Boots"
+	[tag]"name RU"		[value]"Сыромятые поножи"
+
+	[tag]"icon path"	[value]"Rawhide_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"13"
+	[tag]"base evasion max"	[value]"18"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reinforced Greaves"
+	[tag]"name RU"		[value]"Усиленные поножи"
+
+	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"109"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ringmail Boots"
+	[tag]"name RU"		[value]"Кольчужные сапоги"
+
+	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"25"
+	[tag]"base armour max"	[value]"32"
+	[tag]"base energy shield min"	[value]"6"
+	[tag]"base energy shield max"	[value]"8"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Riveted Boots"
+	[tag]"name RU"		[value]"Клепаные башмаки"
+
+	[tag]"icon path"	[value]"Chain_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"71"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"15"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Samite Slippers"
+	[tag]"name RU"		[value]"Атласные сапоги"
+
+	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"30"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Satin Slippers"
+	[tag]"name RU"		[value]"Сатиновые тапочки"
+
+	[tag]"icon path"	[value]"Velvet_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"30"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scholar Boots"
+	[tag]"name RU"		[value]"Сапоги ученика"
+
+	[tag]"icon path"	[value]"Scholar_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Serpentscale Boots"
+	[tag]"name RU"		[value]"Ботинки из чешуи гадюки"
+
+	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"76"
+	[tag]"base armour max"	[value]"90"
+	[tag]"base evasion min"	[value]"76"
+	[tag]"base evasion max"	[value]"90"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shackled Boots"
+	[tag]"name RU"		[value]"Сапоги оков"
+
+	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"62"
+	[tag]"base evasion max"	[value]"71"
+	[tag]"base energy shield min"	[value]"13"
+	[tag]"base energy shield max"	[value]"15"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shagreen Boots"
+	[tag]"name RU"		[value]"Шагреневые ботинки"
+
+	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"180"
+	[tag]"base evasion max"	[value]"216"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sharkskin Boots"
+	[tag]"name RU"		[value]"Акульи ботинки"
+
+	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base evasion min"	[value]"145"
+	[tag]"base evasion max"	[value]"171"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Silk Slippers"
+	[tag]"name RU"		[value]"Шелковые сапоги"
+
+	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Slink Boots"
+	[tag]"name RU"		[value]"Замшевые ботинки"
+
+	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"246"
+	[tag]"base evasion max"	[value]"283"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Harpyskin Boots"
+	[tag]"name RU"			[value]"Гарпиевые ботинки"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base evasion min"	[value]"307"
+	[tag]"base evasion max"	[value]"353"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Velour Boots"
+	[tag]"name RU"			[value]"Велюровые ботинки"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base evasion min"	[value]"359"
+	[tag]"base evasion max"	[value]"413"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Soldier Boots"
+	[tag]"name RU"		[value]"Сапоги ауксилария"
+
+	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"88"
+	[tag]"base armour max"	[value]"99"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"20"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sorcerer Boots"
+	[tag]"name RU"		[value]"Сапоги волшебника"
+
+	[tag]"icon path"	[value]"Scholar_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base energy shield min"	[value]"51"
+	[tag]"base energy shield max"	[value]"59"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Sage Slippers"
+	[tag]"name RU"			[value]"Сапоги мудреца"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"71"
+	
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Warlock Boots"
+	[tag]"name RU"			[value]"Сапоги колдуна"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	
+	[tag]"base energy shield min"	[value]"72"
+	[tag]"base energy shield max"	[value]"83"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Stealth Boots"
+	[tag]"name RU"		[value]"Шевровые ботинки"
+
+	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base evasion min"	[value]"220"
+	[tag]"base evasion max"	[value]"253"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Steel Greaves"
+	[tag]"name RU"		[value]"Стальные поножи"
+
+	[tag]"icon path"	[value]"Steel_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base armour min"	[value]"32"
+	[tag]"base armour max"	[value]"42"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Steelscale Boots"
+	[tag]"name RU"		[value]"Стальные башмаки"
+
+	[tag]"icon path"	[value]"Leatherscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base armour min"	[value]"65"
+	[tag]"base armour max"	[value]"75"
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"75"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Strapped Boots"
+	[tag]"name RU"		[value]"Сандалеты"
+
+	[tag]"icon path"	[value]"Strapped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"39"
+	[tag]"base energy shield min"	[value]"7"
+	[tag]"base energy shield max"	[value]"9"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Greaves"
+	[tag]"name RU"		[value]"Поножи ваал"
+
+	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"base armour min"	[value]"220"
+	[tag]"base armour max"	[value]"253"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Titan Greaves"
+	[tag]"name RU"		[value]"Поножи титана"
+
+	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T1"
+		
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Precursor Greaves"
+	[tag]"name RU"			[value]"Поножи предтечи"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base armour min"	[value]"307"
+	[tag]"base armour max"	[value]"353"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base tier"		[value]"UberT2"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Leviathan Greaves"
+	[tag]"name RU"			[value]"Поножи исполина"
+	
+	[tag]"icon path"		[value]"SuperBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base armour min"	[value]"359"
+	[tag]"base armour max"	[value]"413"
+	
+	[tag]"base tier"		[value]"UberT1"
+	[tag]"base family"		[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Trapper Boots"
+	[tag]"name RU"		[value]"Ботинки капканщика"
+
+	[tag]"icon path"	[value]"Strapped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"74"
+	[tag]"base evasion max"	[value]"85"
+	[tag]"base energy shield min"	[value]"16"
+	[tag]"base energy shield max"	[value]"18"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Two-Toned Boots"
+	[tag]"name RU"		[value]"Двуцветные ботинки"
+
+	[tag]"icon path"	[value]"Two-Toned_Boots_(Fire_and_Cold_Resistance)_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base evasion min"	[value]"126"
+	[tag]"base evasion max"	[value]"145"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"30"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Common"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Velvet Slippers"
+	[tag]"name RU"		[value]"Бархатные тапочки"
+
+	[tag]"icon path"	[value]"Velvet_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"8"
+	[tag]"base energy shield max"	[value]"11"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wool Shoes"
+	[tag]"name RU"		[value]"Шерстяные башмаки"
+
+	[tag]"icon path"	[value]"Wool_Shoes_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base energy shield min"	[value]"5"
+	[tag]"base energy shield max"	[value]"7"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wrapped Boots"
+	[tag]"name RU"		[value]"Сандалии"
+
+	[tag]"icon path"	[value]"Wrapped_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base evasion min"	[value]"12"
+	[tag]"base evasion max"	[value]"17"
+	[tag]"base energy shield min"	[value]"4"
+	[tag]"base energy shield max"	[value]"5"
+	[tag]"base tier"	[value]"T10"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wyrmscale Boots"
+	[tag]"name RU"		[value]"Ботинки из чешуи змея"
+
+	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"103"
+	[tag]"base evasion min"	[value]"92"
+	[tag]"base evasion max"	[value]"103"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Zealot Boots"
+	[tag]"name RU"		[value]"Сапоги фанатика"
+
+	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base armour min"	[value]"73"
+	[tag]"base armour max"	[value]"87"
+	[tag]"base energy shield min"	[value]"15"
+	[tag]"base energy shield max"	[value]"18"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dreamquest Slippers"
+	[tag]"name RU"		[value]"Тапочки погони за мечтой"
+
+	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base energy shield min"	[value]"50"
+	[tag]"base energy shield max"	[value]"57"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cloudwhisper Boots"
+	[tag]"name RU"		[value]"Башмаки облачного шёпота"
+
+	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base evasion min"	[value]"68"
+	[tag]"base evasion max"	[value]"78"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Brimstone Treads"
+	[tag]"name RU"		[value]"Серные сапоги"
+
+	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base armour min"	[value]"32"
+	[tag]"base armour max"	[value]"37"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Ritual"
+	
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightwind Slippers"
+	[tag]"name RU"		[value]"Тапочки ночного ветра"
+
+	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base energy shield min"	[value]"34"
+	[tag]"base energy shield max"	[value]"39"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Windbreak Boots"
+	[tag]"name RU"		[value]"Башмаки противления ветру"
+
+	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base evasion min"	[value]"164"
+	[tag]"base evasion max"	[value]"189"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Darksteel Treads"
+	[tag]"name RU"		[value]"Сапоги из тёмной стали"
+
+	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base armour min"	[value]"164"
+	[tag]"base armour max"	[value]"189"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Duskwalk Slippers"
+	[tag]"name RU"		[value]"Тапочки закатного шага"
+
+	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base energy shield min"	[value]"15"
+	[tag]"base energy shield max"	[value]"18"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Stormrider Boots"
+	[tag]"name RU"		[value]"Башмаки наездника бури"
+
+	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base evasion min"	[value]"236"
+	[tag]"base evasion max"	[value]"271"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Basemetal Treads"
+	[tag]"name RU"		[value]"Сапоги из чёрного металла"
+
+	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base"
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base armour min"	[value]"68"
+	[tag]"base armour max"	[value]"78"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Ritual"
+		
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fugitive Boots"
+	[tag]"name RU"		[value]"Сапоги беглеца"
+
+	[tag]"icon path"	[value]"blessed_boots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base evasion min"	[value]"112"
+	[tag]"base evasion max"	[value]"129"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"37"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Runic Greaves"
+	[tag]"name RU"			[value]"Рунические поножи"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+		
+	[tag]"item tag"			[value]"Runic base"
+	[tag]"base ward min"	[value]"24"
+	[tag]"base ward max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Runic"
+
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Runic Sollerets"
+	[tag]"name RU"			[value]"Рунические солереты"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"62"
+	[tag]"base ward max"	[value]"71"
+	
+	[tag]"item tag"			[value]"Runic base"
+	
+	[tag]"base tier"		[value]"Good"
+	[tag]"base family"		[value]"Runic"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Runic Sabatons"
+	[tag]"name RU"			[value]"Рунические сабатоны"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"item tag"			[value]"Runic base"
+	
+	[tag]"base tier"		[value]"Best"
+	[tag]"base family"		[value]"Runic"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
+	
+	
+	
+	
+	

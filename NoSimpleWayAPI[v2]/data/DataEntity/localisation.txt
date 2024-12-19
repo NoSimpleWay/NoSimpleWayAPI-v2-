@@ -3925,3 +3925,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_auto_prices"
 	[tag]"name EN"		[value]"Set prices automatically"
 	[tag]"name RU"		[value]"Назначить цены автоматически"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_game_poe1"
+	[tag]"name EN"		[value]"Path of Exile 1"
+	[tag]"name RU"		[value]"Path of Exile 1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_game_poe2"
+	[tag]"name EN"		[value]"Path of Exile 2"
+	[tag]"name RU"		[value]"Path of Exile 2"

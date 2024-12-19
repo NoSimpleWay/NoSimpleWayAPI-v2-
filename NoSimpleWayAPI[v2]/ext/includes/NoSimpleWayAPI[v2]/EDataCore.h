@@ -492,6 +492,7 @@ public:
 
 
 	std::string							tag									= "";
+	std::string							target_game							= "";
 	float								min_y_size							= 100.0f;
 
 	data_action_pointer					stored_action_for_data_entity_group = nullptr;
@@ -834,6 +835,7 @@ enum ActiveParserMode
 	READ_ACTION,
 	READ_VALUE
 };
+
 
 
 

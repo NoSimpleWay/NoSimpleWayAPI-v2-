@@ -1,0 +1,219 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rawhide Belt"
+	[tag]"name RU"		[value]"Ремень из сыромятной кожи"
+
+	[tag]"icon path"	[value]"RawhideBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Linen Belt"
+	[tag]"name RU"		[value]"Матерчатый пояс"
+
+	[tag]"icon path"	[value]"LinenBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wide Belt"
+	[tag]"name RU"		[value]"Широкий ремень"
+
+	[tag]"icon path"	[value]"WideBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Long Belt"
+	[tag]"name RU"		[value]"Длинный ремень"
+
+	[tag]"icon path"	[value]"LongBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Plate Belt"
+	[tag]"name RU"		[value]"Ремень из пластин"
+
+	[tag]"icon path"	[value]"PlateBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Belt"
+	[tag]"name RU"		[value]"Декорированный ремень"
+
+	[tag]"icon path"	[value]"OrnateBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mail Belt"
+	[tag]"name RU"		[value]"Кольчужный ремень"
+
+	[tag]"icon path"	[value]"MailBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Double Belt"
+	[tag]"name RU"		[value]"Двойной ремень"
+
+	[tag]"icon path"	[value]"DoubleBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heavy Belt"
+	[tag]"name RU"		[value]"Широкий ремень"
+
+	[tag]"icon path"	[value]"HeavyBelt(PoE2)"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Utility Belt"
+	[tag]"name RU"		[value]"Практичный ремень"
+
+	[tag]"icon path"	[value]"UtilityBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fine Belt"
+	[tag]"name RU"		[value]"Тонкий ремень"
+
+	[tag]"icon path"	[value]"FineBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Best"

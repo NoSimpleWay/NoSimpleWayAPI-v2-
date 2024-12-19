@@ -1,0 +1,1722 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rusted Cuirass"
+	[tag]"name RU"		[value]"Ржавая кираса"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fur plate"
+	[tag]"name RU"		[value]"Доспех из шкур"
+
+	[tag]"icon path"	[value]"FurPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"60"
+	[tag]"base armour max"	[value]"60"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Iron Cuirass"
+	[tag]"name RU"		[value]"Железная кираса"
+
+	[tag]"icon path"	[value]"IronCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"96"
+	[tag]"base armour max"	[value]"96"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Raider Plate"
+	[tag]"name RU"		[value]"Рейдерский нагрудник"
+
+	[tag]"icon path"	[value]"RaiderPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"121"
+	[tag]"base armour max"	[value]"121"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Maraketh Cuirass"
+	[tag]"name RU"		[value]"Маракетская кираса"
+
+	[tag]"icon path"	[value]"MarakethCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"141"
+	[tag]"base armour max"	[value]"141"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Steel Plate"
+	[tag]"name RU"		[value]"Стальной доспех"
+
+	[tag]"icon path"	[value]"SteelPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"177"
+	[tag]"base armour max"	[value]"177"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Full Plate"
+	[tag]"name RU"		[value]"Полные латы"
+
+	[tag]"icon path"	[value]"FullPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"208"
+	[tag]"base armour max"	[value]"208"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vaal Cuirass"
+	[tag]"name RU"		[value]"Нагрудник ваал"
+
+	[tag]"icon path"	[value]"VaalCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"228"
+	[tag]"base armour max"	[value]"228"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Juggernaut Plate"
+	[tag]"name RU"		[value]"Доспех покорителя"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chieftain Cuirass"
+	[tag]"name RU"		[value]"Доспех вождя"
+
+	[tag]"icon path"	[value]"ChieftainCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"294"
+	[tag]"base armour max"	[value]"294"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Colosseum Plate"
+	[tag]"name RU"		[value]"Доспех поединщика"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"304"
+	[tag]"base armour max"	[value]"304"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Champion Cuirass"
+	[tag]"name RU"		[value]"Доспех чемпиона"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"335"
+	[tag]"base armour max"	[value]"335"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Glorious Plate"
+	[tag]"name RU"		[value]"Великолепные латы"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"534"
+	[tag]"base armour max"	[value]"534"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Conqueror Plate"
+	[tag]"name RU"		[value]"Доспех завоевателя"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"445"
+	[tag]"base armour max"	[value]"445"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Abyssal Cuirass"
+	[tag]"name RU"		[value]"Доспех кромешной тьмы"
+
+	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"445"
+	[tag]"base armour max"	[value]"445"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lether Vest"
+	[tag]"name RU"		[value]"Кожаный желет"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Quilted Vest"
+	[tag]"name RU"		[value]"Стёганый жилет"
+
+	[tag]"icon path"	[value]"QuiltedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pathfinder Coat"
+	[tag]"name RU"		[value]"Жилет следопыта"
+
+	[tag]"icon path"	[value]"PathfinderCoat"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"78"
+	[tag]"base evasion max"	[value]"78"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shrouded Vest"
+	[tag]"name RU"		[value]"Окутанный жилет"
+
+	[tag]"icon path"	[value]"ShroudedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"102"
+	[tag]"base evasion max"	[value]"102"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rhoahide Coat"
+	[tag]"name RU"		[value]"Накидка из кожи роа"
+
+	[tag]"icon path"	[value]"RhoahideVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"131"
+	[tag]"base evasion max"	[value]"131"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Studded Vest"
+	[tag]"name RU"		[value]"Клёпаный жилет"
+
+	[tag]"icon path"	[value]"StubbedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"150"
+	[tag]"base evasion max"	[value]"150"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Scout's Vest"
+	[tag]"name RU"		[value]"Жилет разведчика"
+
+	[tag]"icon path"	[value]"ScoutsVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"184"
+	[tag]"base evasion max"	[value]"184"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Serpentscale Coat"
+	[tag]"name RU"		[value]"Плащ из змеиной чешуи"
+
+	[tag]"icon path"	[value]"SerpentscaleVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"198"
+	[tag]"base evasion max"	[value]"198"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Corsair Vest"
+	[tag]"name RU"		[value]"Жилет корсара"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"242"
+	[tag]"base evasion max"	[value]"242"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Smuggler Coat"
+	[tag]"name RU"		[value]"Жилет контрабандиста"
+
+	[tag]"icon path"	[value]"SmugglerCoat"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"256"
+	[tag]"base evasion max"	[value]"256"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Strider Vest"
+	[tag]"name RU"		[value]"Жилет страйдера(?)"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"275"
+	[tag]"base evasion max"	[value]"275"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hardleather Coat"
+	[tag]"name RU"		[value]"Жилет из прочной кожи"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"295"
+	[tag]"base evasion max"	[value]"295"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Exquisite Vest"
+	[tag]"name RU"		[value]"Изысканный жилет"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"487"
+	[tag]"base evasion max"	[value]"487"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Exquisite Vest"
+	[tag]"name RU"		[value]"Изысканный жилет"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"487"
+	[tag]"base evasion max"	[value]"487"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mail Coat"
+	[tag]"name RU"		[value]"Кольчужный жилет"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"406"
+	[tag]"base evasion max"	[value]"406"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Armoured Vest"
+	[tag]"name RU"		[value]"Бронированный жилет"
+
+	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"406"
+	[tag]"base evasion max"	[value]"406"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tattered Robe"
+	[tag]"name RU"		[value]"Рваная мантия"
+		
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Feathered Robe"
+	[tag]"name RU"		[value]"Халат из перьев"
+
+	[tag]"icon path"	[value]"FeatheredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hexer's Robe"
+	[tag]"name RU"		[value]"Мантия заклинателя"
+
+	[tag]"icon path"	[value]"HexersRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"44"
+	[tag]"base energy shield max"	[value]"44"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bone Raiment"
+	[tag]"name RU"		[value]"Костяная мантия"
+
+	[tag]"icon path"	[value]"BoneRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"52"
+	[tag]"base energy shield max"	[value]"52"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Silk Robe"
+	[tag]"name RU"		[value]"Шёлковое одеяние"
+
+	[tag]"icon path"	[value]"SilkRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"61"
+	[tag]"base energy shield max"	[value]"61"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Keth Raiment"
+	[tag]"name RU"		[value]"Мантия Кет"
+
+	[tag]"icon path"	[value]"KethRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"70"
+	[tag]"base energy shield max"	[value]"70"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Votive Raiment"
+	[tag]"name RU"		[value]"Обетное одеяние"
+
+	[tag]"icon path"	[value]"VotiveRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"78"
+	[tag]"base energy shield max"	[value]"78"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Altar Robe"
+	[tag]"name RU"		[value]"Церемониальное одеяние"
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"89"
+	[tag]"base energy shield max"	[value]"89"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elementalist Robe"
+	[tag]"name RU"		[value]"Одеяние элементалиста"
+
+	[tag]"icon path"	[value]"ElementalistRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"97"
+	[tag]"base energy shield max"	[value]"97"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mystic Raiment"
+	[tag]"name RU"		[value]"Наряд мистика"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"100"
+	[tag]"base energy shield max"	[value]"100"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Imperial Robe"
+	[tag]"name RU"		[value]"Императорская мантия"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"108"
+	[tag]"base energy shield max"	[value]"108"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Plated Raiment"
+	[tag]"name RU"		[value]"Наряд из пластин"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"117"
+	[tag]"base energy shield max"	[value]"117"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Havoc Raiment"
+	[tag]"name RU"		[value]"Наряд Хэвока(?)"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"184"
+	[tag]"base energy shield max"	[value]"184"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Enlightened Robe"
+	[tag]"name RU"		[value]"Наряд просветления"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Arcane Robe"
+	[tag]"name RU"		[value]"Наряд чародея"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chain Mail"
+	[tag]"name RU"		[value]"Кольчуга"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"25"
+	[tag]"base armour max"	[value]"25"
+	[tag]"base evasion min"	[value]"16"
+	[tag]"base evasion max"	[value]"16"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rogue Armour"
+	[tag]"name RU"		[value]"Доспех разбойника"
+
+	[tag]"icon path"	[value]"RogueArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"53"
+	[tag]"base armour max"	[value]"53"
+	[tag]"base evasion min"	[value]"43"
+	[tag]"base evasion max"	[value]"43"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vagabond Armour"
+	[tag]"name RU"		[value]"Доспех бродяги"
+
+	[tag]"icon path"	[value]"VagaboundArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cloaked Mail"
+	[tag]"name RU"		[value]"Кольчуга с плащом"
+
+	[tag]"icon path"	[value]"CloackedMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"95"
+	[tag]"base armour max"	[value]"95"
+	[tag]"base evasion min"	[value]"83"
+	[tag]"base evasion max"	[value]"83"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Explorer Armour"
+	[tag]"name RU"		[value]"Кольчуга путешественника"
+
+	[tag]"icon path"	[value]"ExplorerArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"114"
+	[tag]"base armour max"	[value]"114"
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	[tag]"worth"		[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Scale Mail"
+	[tag]"name RU"		[value]"Увесистая кольчуга"
+
+	[tag]"icon path"	[value]"ScaleMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"125"
+	[tag]"base armour max"	[value]"125"
+	[tag]"base evasion min"	[value]"112"
+	[tag]"base evasion max"	[value]"112"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Knight Armour"
+	[tag]"name RU"		[value]"Нагрудник рыцаря"
+
+	[tag]"icon path"	[value]"KnightArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"148"
+	[tag]"base armour max"	[value]"148"
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancestral Mail"
+	[tag]"name RU"		[value]"Кольчуга предков"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"162"
+	[tag]"base armour max"	[value]"162"
+	[tag]"base evasion min"	[value]"146"
+	[tag]"base evasion max"	[value]"146"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lamellar Mail"
+	[tag]"name RU"		[value]"Пластинчатый доспех"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"167"
+	[tag]"base armour max"	[value]"167"
+	[tag]"base evasion min"	[value]"151"
+	[tag]"base evasion max"	[value]"151"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gladiator Armour"
+	[tag]"name RU"		[value]"Доспех гладиатора"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"184"
+	[tag]"base armour max"	[value]"184"
+	[tag]"base evasion min"	[value]"167"
+	[tag]"base evasion max"	[value]"167"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heroic Armour"
+	[tag]"name RU"		[value]"Броня героя"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"245"
+	[tag]"base armour max"	[value]"245"
+	[tag]"base evasion min"	[value]"223"
+	[tag]"base evasion max"	[value]"223"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tournament Mail"
+	[tag]"name RU"		[value]"Турнирный доспех"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"97"
+	[tag]"base armour max"	[value]"121"
+	[tag]"base evasion min"	[value]"313"
+	[tag]"base evasion max"	[value]"351"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Slayer Armour"
+	[tag]"name RU"		[value]"Доспех палача"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"294"
+	[tag]"base armour max"	[value]"294"
+	[tag]"base evasion min"	[value]"268"
+	[tag]"base evasion max"	[value]"268"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pilgrim Vestments"
+	[tag]"name RU"		[value]"Облачение паломника"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pelt Mantle"
+	[tag]"name RU"		[value]"Мантия из шкуры"
+
+	[tag]"icon path"	[value]"PeltMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mail Vestments"
+	[tag]"name RU"		[value]"Кольчужное облачение"
+
+	[tag]"icon path"	[value]"MailVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shaman Mantle"
+	[tag]"name RU"		[value]"Мантия шамана"
+
+	[tag]"icon path"	[value]"ShamanMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ironclad Vestments"
+	[tag]"name RU"		[value]"Железное одеяние"
+
+	[tag]"icon path"	[value]"IroncladVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sacrificial Mantle"
+	[tag]"name RU"		[value]"Жертвенная мантия"
+
+	[tag]"icon path"	[value]"SacrificialMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cleric Vestments"
+	[tag]"name RU"		[value]"Одеяние клирика"
+
+	[tag]"icon path"	[value]"ClericVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tideseer Mantle"
+	[tag]"name RU"		[value]"Мантия прилива"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gilded Vestments"
+	[tag]"name RU"		[value]"Позолоченная мантия"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Venerated Mantle"
+	[tag]"name RU"		[value]"Почитаемая мантия"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Revered Vestments"
+	[tag]"name RU"		[value]"Одеяние преподобного"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Corvus Mantle"
+	[tag]"name RU"		[value]"Мантия Корвуса"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zenith Vestments"
+	[tag]"name RU"		[value]"Мантия зенита"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"627"
+	[tag]"base armour max"	[value]"721"
+	[tag]"base energy shield min"	[value]"126"
+	[tag]"base energy shield max"	[value]"145"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+	

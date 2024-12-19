@@ -2955,6 +2955,8 @@ void ETextParser::data_entity_parse_file(std::string _file)
 	unsigned char raw_char = 0;
 	char readable_char = 0;
 
+	
+
 	while (std::getline(file, str))
 	{
 		buffer_text = "";
@@ -3751,7 +3753,20 @@ void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 
 	//EInputCore::logger_param("idiot?", l);
 
+
+	int start_position = 0;
 	for (int i = 0; i < _line.length(); i++)
+	{
+		if
+		(
+			(_line[i] != '\s')
+			&&
+			(_line[i] != '\t')
+		)
+		{ start_position = i; break; }
+	}
+
+	for (int i = start_position; i < _line.length(); i++)
 	{
 	
 
@@ -3769,7 +3784,6 @@ void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 			(sym == '\t')
 			||
 			(i + 1 >= _line.length())
-
 		)
 		{
 			terminator = true;
