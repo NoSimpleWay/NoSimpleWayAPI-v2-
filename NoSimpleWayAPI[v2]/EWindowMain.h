@@ -1818,6 +1818,7 @@ public:
 
 	static std::string username;
 	static std::string path_of_exile_folder;
+	static std::string path_of_exile2_folder;
 
 	enum LoadLootFilterListMode
 	{
