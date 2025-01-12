@@ -1,0 +1,456 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Crude Bow"
+	[tag]"name RU"		[value]"Грубый лук"
+
+	[tag]"icon path"	[value]"CrudeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shortbow"
+	[tag]"name RU"		[value]"Короткий лук"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Shortbow"
+	[tag]"name RU"		[value]"Улучшенный короткий лук"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Shortbow"
+	[tag]"name RU"		[value]"Короткий лук эксперта"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warden Bow"
+	[tag]"name RU"		[value]"Лук часового"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Warden Bow"
+	[tag]"name RU"		[value]"Улучшенный лук часового"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Warden Bow"
+	[tag]"name RU"		[value]"Лук часового эксперта"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Recurve Bow"
+	[tag]"name RU"		[value]"Загнутый лук"
+
+	[tag]"icon path"	[value]"RecurveBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Composite Bow"
+	[tag]"name RU"		[value]"Составной лук"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Composite Bow"
+	[tag]"name RU"		[value]"Улучшенный составной лук"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Composite Bow"
+	[tag]"name RU"		[value]"Составной лук эксперта"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dualstring Bow"
+	[tag]"name RU"		[value]"Спаренный лук"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Dualstring Bow"
+	[tag]"name RU"		[value]"Улучшенный спаренный лук"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cultist Bow"
+	[tag]"name RU"		[value]"Лук культиста"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Cultist Bow"
+	[tag]"name RU"		[value]"Улучшенный лук культиста"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Cultist Bow"
+	[tag]"name RU"		[value]"Лук культиста эксперта"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zealot Bow"
+	[tag]"name RU"		[value]"Лук фанатика"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Zealot Bow"
+	[tag]"name RU"		[value]"Улучшенный лук фанатика"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Zealot Bow"
+	[tag]"name RU"		[value]"Лук фанатика эксперта"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Artillery Bow"
+	[tag]"name RU"		[value]"Артиллерийский лук"
+
+	[tag]"icon path"	[value]"ArtilleryBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tribal Bow"
+	[tag]"name RU"		[value]"Племенной лук"
+
+	[tag]"icon path"	[value]"CrudeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greatbow"
+	[tag]"name RU"		[value]"Большой лук"
+
+	[tag]"icon path"	[value]"CrudeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Double Limb Bow"
+	[tag]"name RU"		[value]"Лук с двойными плечами"
+
+	[tag]"icon path"	[value]"DoubleLimbBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heavy Bow"
+	[tag]"name RU"		[value]"Тяжёлый лук"
+
+	[tag]"icon path"	[value]"HeavyBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+	

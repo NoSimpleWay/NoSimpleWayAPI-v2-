@@ -1,0 +1,337 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flesh Catalyst"
+	[tag]"name RU"		[value]"Плотский катализатор"
+
+	[tag]"icon path"	[value]"FleshCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Невральный Catalyst"
+	[tag]"name RU"		[value]"Плотский катализатор"
+
+	[tag]"icon path"	[value]"NeuralCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carapace Catalyst"
+	[tag]"name RU"		[value]"Панцирный катализатор"
+
+	[tag]"icon path"	[value]"CarapaceCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uul-Netol's Catalyst"
+	[tag]"name RU"		[value]"Катализатор Уул-Нетола"
+
+	[tag]"icon path"	[value]"UulNetolCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Xoph's Catalyst"
+	[tag]"name RU"		[value]"Катализатор Ксофа"
+
+	[tag]"icon path"	[value]"XophCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tul's Catalyst"
+	[tag]"name RU"		[value]"Катализатор Тула"
+
+	[tag]"icon path"	[value]"TulCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Esh's Catalyst"
+	[tag]"name RU"		[value]"Катализатор Иш"
+
+	[tag]"icon path"	[value]"EshCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chayula's Catalyst"
+	[tag]"name RU"		[value]"Катализатор Чаюлы"
+
+	[tag]"icon path"	[value]"ChayulaCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Reaver Catalyst"
+	[tag]"name RU"		[value]"Разбойничий катализатор"
+
+	[tag]"icon path"	[value]"ReaverCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sibilant Catalyst"
+	[tag]"name RU"		[value]"Свистящий катализатор"
+
+	[tag]"icon path"	[value]"SibilantCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Skittering Catalyst"
+	[tag]"name RU"		[value]"Шуршащий катализатор"
+
+	[tag]"icon path"	[value]"SkitteringCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adaptive Catalyst"
+	[tag]"name RU"		[value]"Адаптивный катализатор"
+
+	[tag]"icon path"	[value]"AdaptiveCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
