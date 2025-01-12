@@ -90,6 +90,7 @@ EButtonGroupVersionControlConfigure* EWindowMain::registered_group_loot_version_
 
 std::string												EWindowMain::username;
 std::string												EWindowMain::path_of_exile_folder;
+std::string												EWindowMain::path_of_exile2_folder;
 
 float													EWindowMain::autosave_time = 60.0f;
 
@@ -4132,6 +4133,7 @@ void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustom
 			}
 
 		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4167,6 +4169,22 @@ void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustom
 				EWindowMain::write_loot_filter_to_disc
 				(
 					EWindowMain::path_of_exile_folder
+					+
+					"/"
+					+
+					EWindowMain::tab_list_group->selected_button->main_text_area->original_text
+					+
+					"["
+					+
+					EWindowMain::registered_group_loot_version_configure->pointer_to_version_name_button[j]->main_text_area->original_text
+					+
+					"].filter",
+					&str
+				);
+
+				EWindowMain::write_loot_filter_to_disc
+				(
+					EWindowMain::path_of_exile2_folder
 					+
 					"/"
 					+
@@ -4227,6 +4245,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 
 
 		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 	}
 }
 
@@ -9503,6 +9522,7 @@ EWindowMain::EWindowMain()
 		*/
 
 		path_of_exile_folder = (std::string)my_documents + "\\My Games\\Path of Exile\\";
+		path_of_exile2_folder = (std::string)my_documents + "\\My Games\\Path of Exile 2\\";
 		std::cout << "Path to loot-filters folder: " << path_of_exile_folder << "\n";
 
 	}
@@ -15710,7 +15730,12 @@ void EWindowMain::load_loot_filter_list()
 	//part_with_list->button_list.shrink_to_fit();
 
 
-	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
+	/*for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
+	{
+		EWindowMain::add_this_loot_filter_to_list(p, part_with_list, LoadLootFilterListMode::LLFLM_PATH_OF_EXILE_FOLDER);
+	}*/
+
+	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile2_folder))
 	{
 		EWindowMain::add_this_loot_filter_to_list(p, part_with_list, LoadLootFilterListMode::LLFLM_PATH_OF_EXILE_FOLDER);
 	}
@@ -19095,6 +19120,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 													//matched_button = whole_block_container->pointer_to_color_button[b];
 													target_HRA_color = jc_filter_block->pointer_to_color_button[b]->stored_color;
 													target_color_bool = &jc_filter_block->color_check[b];
+
+													target_HRA_color->a = 1.0f;
 
 													if (!comment_mode)
 													{
