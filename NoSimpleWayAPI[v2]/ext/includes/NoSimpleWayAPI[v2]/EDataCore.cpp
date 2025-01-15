@@ -3759,7 +3759,7 @@ void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 	{
 		if
 		(
-			(_line[i] != '\s')
+			(_line[i] != ' ')
 			&&
 			(_line[i] != '\t')
 		)

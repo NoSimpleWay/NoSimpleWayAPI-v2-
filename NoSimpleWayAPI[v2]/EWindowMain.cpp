@@ -3256,7 +3256,7 @@ void EDataActionCollection::action_select_loot_filter_version_pattern(Entity* _e
 		static_cast<EDataContainer_VerticalNamedSlider*> (EWindowMain::registered_group_loot_version_configure->button_focus_slider->main_custom_data->data_container);
 
 	slider_data->pointer_to_value = &target_pattern_struct->focus_multiplier;
-
+	//*(slider_data->pointer_to_value) = (123.0f);
 
 	Helper::rgb2hsv(&but->main_text_area->stored_color);
 	Helper::rgb2hsv(&but->main_text_area->color);
