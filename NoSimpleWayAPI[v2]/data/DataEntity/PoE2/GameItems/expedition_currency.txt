@@ -1,0 +1,106 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Exotic Coinage"
+	[tag]"name RU"		[value]"Диковинные монеты"
+
+	[tag]"icon path"	[value]"Coinage"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Expedition currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Broken Circle Artifact"
+	[tag]"name RU"		[value]"Артефакт Разомкнутого круга"
+
+	[tag]"icon path"	[value]"LesserBrokenCircleArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Black Scythe Artifact"
+	[tag]"name RU"		[value]"Артефакт Чёрной косы"
+
+	[tag]"icon path"	[value]"LesserBlackScytheArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Order Artifact"
+	[tag]"name RU"		[value]"Артефакт Ордена"
+
+	[tag]"icon path"	[value]"LesserOrderArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sun Artifact"
+	[tag]"name RU"		[value]"Артефакт Солнца"
+
+	[tag]"icon path"	[value]"LesserSunArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expedition Logbooks"
+	[tag]"name RU"		[value]"Журнал экспедиции"
+
+	[tag]"icon path"	[value]"ExpeditionLogbook"
+	[tag]"base class"	[value]"Expedition Logbook"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

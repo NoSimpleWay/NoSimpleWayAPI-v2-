@@ -1,0 +1,44 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Simulacrum Splinter"
+	[tag]"name RU"		[value]"Осколок Симулякра"
+
+	[tag]"icon path"	[value]"SimulacrumSplinter"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"300"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breach Splinter"
+	[tag]"name RU"		[value]"Осколок разлома"
+
+	[tag]"icon path"	[value]"BreachSplinter"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"300"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	

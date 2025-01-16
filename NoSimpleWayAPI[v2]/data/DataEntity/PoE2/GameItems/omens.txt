@@ -1,123 +1,20 @@
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Amelioration"
-	[tag]"name RU"		[value]"Предсказание избавления"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Return"
-	[tag]"name RU"		[value]"Предсказание возвращения"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Death-dancing"
-	[tag]"name RU"		[value]"Предсказание танца со смертью"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Refreshment"
-	[tag]"name RU"		[value]"Предсказание восполнения"
+	[tag]"name RU"		[value]"Предзнаменование восполнения"
 
-	[tag]"icon path"	[value]"Omen"
+	[tag]"icon path"	[value]"OmenOfRefreshment"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"Omen"
 	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
 	
-	[tag]"item tag"		[value]"Returned if Affliction"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of the Soul Devourer"
-	[tag]"name RU"		[value]"Предсказание Пожирателя душ"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -128,200 +25,20 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Acceleration"
-	[tag]"name RU"		[value]"Предсказание ускорения"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Fortune"
-	[tag]"name RU"		[value]"Предсказание удачи"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of the Jeweller"
-	[tag]"name RU"		[value]"Предсказание златокузнеца"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Connections"
-	[tag]"name RU"		[value]"Предсказание связей"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Blanching"
-	[tag]"name RU"		[value]"Предсказание обеления"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Returned if Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Revenge"
-	[tag]"name RU"		[value]"Предсказание мести"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Omen of Bequeathal"
-	[tag]"name RU"		[value]"Предсказание наследства"
-
-	[tag]"icon path"	[value]"Omen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Rare"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"Omen"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Resurgence"
-	[tag]"name RU"		[value]"Предсказание возрождения"
+	[tag]"name RU"		[value]"Предзнаменование возрождения"
 
-	[tag]"icon path"	[value]"Omen"
+	[tag]"icon path"	[value]"OmenOfResurgence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"Omen"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Affliction"
+	
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -332,21 +49,20 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Omen of Adrenaline"
-	[tag]"name RU"		[value]"Предсказание адреналина"
+	[tag]"name EN"		[value]"Omen of Amelioration"
+	[tag]"name RU"		[value]"Предзнаменование избавления"
 
-	[tag]"icon path"	[value]"Omen"
+	[tag]"icon path"	[value]"OmenOfAmelioration"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"Omen"
 	
-	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -357,21 +73,20 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Omen of Death's Door"
-	[tag]"name RU"		[value]"Предсказание Врат Смерти"
+	[tag]"name EN"		[value]"Omen of Whittling"
+	[tag]"name RU"		[value]"Предзнаменование оттачивания"
 
-	[tag]"icon path"	[value]"Omen"
+	[tag]"icon path"	[value]"OmenOfWhittling"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"Omen"
 	
-	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
@@ -382,21 +97,308 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Omen of Brilliance"
-	[tag]"name RU"		[value]"Предсказание великолепия"
+	[tag]"name EN"		[value]"Omen of Sinistral Erasure"
+	[tag]"name RU"		[value]"Предзнаменование истирания левши"
 
-	[tag]"icon path"	[value]"Omen"
+	[tag]"icon path"	[value]"OmenOfSinistralErasure"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"Omen"
 	
-	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Erasure"
+	[tag]"name RU"		[value]"Предзнаменование истирания правши"
+
+	[tag]"icon path"	[value]"OmenOfDextralErasure"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Alchemy"
+	[tag]"name RU"		[value]"Предзнаменование алхимии левши"
+
+	[tag]"icon path"	[value]"OmenOfSinistralAlchemy"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Alchemy"
+	[tag]"name RU"		[value]"Предзнаменование алхимии левши"
+
+	[tag]"icon path"	[value]"OmenOfDextralAlchemy"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Coronation"
+	[tag]"name RU"		[value]"Предзнаменование коронации левши"
+
+	[tag]"icon path"	[value]"OmenOfSinistralCoronation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Coronation"
+	[tag]"name RU"		[value]"Предзнаменование коронации правши"
+
+	[tag]"icon path"	[value]"OmenOfDextralCoronation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Corruption"
+	[tag]"name RU"		[value]"Предзнаменование осквернения"
+
+	[tag]"icon path"	[value]"OmenOfCorruption"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Greater Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование великого возвышения"
+
+	[tag]"icon path"	[value]"OmenOfGreaterExaltation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование возвышения левши"
+
+	[tag]"icon path"	[value]"OmenOfSinistralExaltation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование возвышения правши"
+
+	[tag]"icon path"	[value]"OmenOfDextralExaltation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Greater Annulment"
+	[tag]"name RU"		[value]"Предзнаменование великого очищения"
+
+	[tag]"icon path"	[value]"OmenOfGreaterAnnulment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Annulment"
+	[tag]"name RU"		[value]"Предзнаменование очищения левши"
+
+	[tag]"icon path"	[value]"OmenOfSinistralAnnulment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Annulment"
+	[tag]"name RU"		[value]"Предзнаменование очищения правши"
+
+	[tag]"icon path"	[value]"OmenOfDextralAnnulment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"

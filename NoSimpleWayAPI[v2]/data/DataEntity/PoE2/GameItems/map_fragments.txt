@@ -1,0 +1,53 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Simulacrum"
+	[tag]"name RU"		[value]"Симулякрум"
+
+	[tag]"icon path"	[value]"SimulacrumPoE2"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"An Audience With The King"
+	[tag]"name RU"		[value]"Встреча с Хозяином"
+
+	[tag]"icon path"	[value]"AnAudienceWithTheKing"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breachstone"
+	[tag]"name RU"		[value]"Камень разлома"
+
+	[tag]"icon path"	[value]"BreachstonePoE2"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

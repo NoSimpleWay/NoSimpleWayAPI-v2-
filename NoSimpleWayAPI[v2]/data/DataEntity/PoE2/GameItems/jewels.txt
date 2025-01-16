@@ -1,0 +1,164 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ruby"
+	[tag]"name RU"		[value]"Рубин"
+
+	[tag]"icon path"	[value]"JewelRuby"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emerald"
+	[tag]"name RU"		[value]"Изумруд"
+
+	[tag]"icon path"	[value]"JewelEmerald"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sapphire"
+	[tag]"name RU"		[value]"Сапфир"
+
+	[tag]"icon path"	[value]"JewelSapphire"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Diamond"
+	[tag]"name RU"		[value]"Алмаз"
+
+	[tag]"icon path"	[value]"JewelDiamond"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Time-Lost Ruby"
+	[tag]"name RU"		[value]"Утерянный рубин"
+
+	[tag]"icon path"	[value]"TimeLostRuby"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Time lost"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Time-Lost Emerald"
+	[tag]"name RU"		[value]"Утерянный изумруд"
+
+	[tag]"icon path"	[value]"TimeLostEmerald"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Time lost"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Time-Lost Sapphire"
+	[tag]"name RU"		[value]"Утерянный сапфир"
+
+	[tag]"icon path"	[value]"TimeLostSapphire"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Time lost"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Time-Lost Diamond"
+	[tag]"name RU"		[value]"Утерянный алмаз"
+
+	[tag]"icon path"	[value]"TimeLostDiamond"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Time lost"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
