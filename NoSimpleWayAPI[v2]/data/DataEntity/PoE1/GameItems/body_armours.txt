@@ -3764,7 +3764,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
-	[tag]"base tier"	[value]"Uber"
+	[tag]"base tier"	[value]"UberT3"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Moderate"
@@ -3794,7 +3794,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
-	[tag]"base tier"	[value]"Uber"
+	[tag]"base tier"	[value]"UberT2"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Moderate"
@@ -3823,7 +3823,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
-	[tag]"base tier"	[value]"Uber"
+	[tag]"base tier"	[value]"UberT1"
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Moderate"

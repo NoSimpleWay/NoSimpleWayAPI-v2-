@@ -3256,7 +3256,7 @@ void EDataActionCollection::action_select_loot_filter_version_pattern(Entity* _e
 		static_cast<EDataContainer_VerticalNamedSlider*> (EWindowMain::registered_group_loot_version_configure->button_focus_slider->main_custom_data->data_container);
 
 	slider_data->pointer_to_value = &target_pattern_struct->focus_multiplier;
-
+	//*(slider_data->pointer_to_value) = (123.0f);
 
 	Helper::rgb2hsv(&but->main_text_area->stored_color);
 	Helper::rgb2hsv(&but->main_text_area->color);
@@ -4133,7 +4133,7 @@ void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustom
 			}
 
 		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
-		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
+		//EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4182,21 +4182,21 @@ void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustom
 					&str
 				);
 
-				EWindowMain::write_loot_filter_to_disc
-				(
-					EWindowMain::path_of_exile2_folder
-					+
-					"/"
-					+
-					EWindowMain::tab_list_group->selected_button->main_text_area->original_text
-					+
-					"["
-					+
-					EWindowMain::registered_group_loot_version_configure->pointer_to_version_name_button[j]->main_text_area->original_text
-					+
-					"].filter",
-					&str
-				);
+				//EWindowMain::write_loot_filter_to_disc
+				//(
+				//	EWindowMain::path_of_exile2_folder
+				//	+
+				//	"/"
+				//	+
+				//	EWindowMain::tab_list_group->selected_button->main_text_area->original_text
+				//	+
+				//	"["
+				//	+
+				//	EWindowMain::registered_group_loot_version_configure->pointer_to_version_name_button[j]->main_text_area->original_text
+				//	+
+				//	"].filter",
+				//	&str
+				//);
 			}
 		}
 	}
@@ -4245,7 +4245,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 
 
 		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
-		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
+		//EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile2_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 	}
 }
 
@@ -15730,15 +15730,15 @@ void EWindowMain::load_loot_filter_list()
 	//part_with_list->button_list.shrink_to_fit();
 
 
-	/*for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
-	{
-		EWindowMain::add_this_loot_filter_to_list(p, part_with_list, LoadLootFilterListMode::LLFLM_PATH_OF_EXILE_FOLDER);
-	}*/
-
-	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile2_folder))
+	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
 	{
 		EWindowMain::add_this_loot_filter_to_list(p, part_with_list, LoadLootFilterListMode::LLFLM_PATH_OF_EXILE_FOLDER);
 	}
+
+	/*for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile2_folder))
+	{
+		EWindowMain::add_this_loot_filter_to_list(p, part_with_list, LoadLootFilterListMode::LLFLM_PATH_OF_EXILE_FOLDER);
+	}*/
 
 	for (auto& p : std::experimental::filesystem::directory_iterator("autosave/"))
 	{
