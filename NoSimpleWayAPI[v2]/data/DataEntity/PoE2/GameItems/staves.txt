@@ -1,0 +1,235 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ashen Staff"
+	[tag]"name RU"		[value]"Пепельный посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gelid Staff"
+	[tag]"name RU"		[value]"Студёный посох"
+
+	[tag]"icon path"	[value]"GelidStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Voltaic Staff"
+	[tag]"name RU"		[value]"Гальванический посох"
+
+	[tag]"icon path"	[value]"VoltaicStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Spriggan Staff"
+	[tag]"name RU"		[value]"Посох сприггана"
+
+	[tag]"icon path"	[value]"SprigganStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pyrophyte Staff"
+	[tag]"name RU"		[value]"Пирофитовый посох"
+
+	[tag]"icon path"	[value]"PyrophiteStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chiming Staff"
+	[tag]"name RU"		[value]"Звенящий посох"
+
+	[tag]"icon path"	[value]"ShimingStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rending Staff"
+	[tag]"name RU"		[value]"Раздирающий посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Reaping Staff"
+	[tag]"name RU"		[value]"Пожинающий посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Icicle Staff"
+	[tag]"name RU"		[value]"Посох сосулек"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Roaring Staff"
+	[tag]"name RU"		[value]"Ревущий посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Paralysing Staff"
+	[tag]"name RU"		[value]"Парализующий посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cleric Staff"
+	[tag]"name RU"		[value]"Посох служителя"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dark Staff"
+	[tag]"name RU"		[value]"Тёмный посох"
+
+	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"

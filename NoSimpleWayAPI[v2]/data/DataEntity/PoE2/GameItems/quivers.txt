@@ -1,0 +1,188 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Broadhead Quiver"
+	[tag]"name RU"		[value]"Колчан охотничьих стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fire Quiver"
+	[tag]"name RU"		[value]"Колчан огненных стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sacral Quiver"
+	[tag]"name RU"		[value]"Колчан освящённых стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Two-Point Quiver"
+	[tag]"name RU"		[value]"Колчан двуглавых стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Blunt Quiver"
+	[tag]"name RU"		[value]"Колчан затупленных стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Toxic Quiver"
+	[tag]"name RU"		[value]"Колчан отравленных стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Serrated Quiver"
+	[tag]"name RU"		[value]"Колчан зазубренных стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primed Quiver"
+	[tag]"name RU"		[value]"Колчан боевых стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Penetrating Quiver"
+	[tag]"name RU"		[value]"Колчан пронзающих стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Volant Quiver"
+	[tag]"name RU"		[value]"Колчан крылатых стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Visceral Quiver"
+	[tag]"name RU"		[value]"Колчан жестоких стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"

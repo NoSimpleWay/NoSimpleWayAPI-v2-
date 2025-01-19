@@ -1,0 +1,494 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Blacksmith's Whetstone"
+	[tag]"name RU"			[value]"Точильный камень"
+	
+	[tag]"icon path"		[value]"BlacksmithWhetstone(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Arcanist's Etcher"
+	[tag]"name RU"			[value]"Резец чародея"
+	
+	[tag]"icon path"		[value]"ArcanustEtcher(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Scroll of Wisdom"
+	[tag]"name RU"			[value]"Свиток мудрости"
+	
+	[tag]"icon path"		[value]"ScrollOfWisdom(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Chaos Orb"
+	[tag]"name RU"			[value]"Сфера хаоса"
+	
+	[tag]"icon path"		[value]"ChaosOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Armourer's Scrap"
+	[tag]"name RU"			[value]"Деталь доспеха"
+	
+	[tag]"icon path"		[value]"ArmourerScrap(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Mirror of Kalandra"
+	[tag]"name RU"			[value]"Зеркало Каландры"
+	
+	[tag]"icon path"		[value]"MirrorOfKalandra(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Very expensive"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Alchemy"
+	[tag]"name RU"			[value]"Сфера алхимии"
+	
+	[tag]"icon path"		[value]"OrbOfAlchemy(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Chance"
+	[tag]"name RU"			[value]"Сфера удачи"
+	
+	[tag]"icon path"		[value]"OrbOfChance(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Transmutation"
+	[tag]"name RU"			[value]"Сфера превращения"
+	
+	[tag]"icon path"		[value]"OrbOfTransmutation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Exalted Orb"
+	[tag]"name RU"			[value]"Сфера возвышения"
+	
+	[tag]"icon path"		[value]"ExaltedOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Regal Orb"
+	[tag]"name RU"			[value]"Сфера царей"
+	
+	[tag]"icon path"		[value]"RegalOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Augmentation"
+	[tag]"name RU"			[value]"Сфера усиления"
+	
+	[tag]"icon path"		[value]"OrbOfAugmentation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Glassblower's Bauble"
+	[tag]"name RU"			[value]"Стекольная масса"
+	
+	[tag]"icon path"		[value]"GlassblowerBauble(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gemcutter's Prism"
+	[tag]"name RU"			[value]"Призма камнереза"
+	
+	[tag]"icon path"		[value]"GemcutterPrism(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Lesser Jeweller's Orb"
+	[tag]"name RU"			[value]"Сфера златокузнеца"
+	
+	[tag]"icon path"		[value]"LesserJewellerOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Greater Jeweller's Orb"
+	[tag]"name RU"			[value]"Большая сфера златокузнеца"
+	
+	[tag]"icon path"		[value]"GreaterJewellerOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Jeweller's Orb"
+	[tag]"name RU"			[value]"Совершенная сфера златокузнеца"
+	
+	[tag]"icon path"		[value]"PerfectJewellerOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Expensive"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Artificer's Orb"
+	[tag]"name RU"			[value]"Сфера астромантии"
+	
+	[tag]"icon path"		[value]"ArtificerOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Divine Orb"
+	[tag]"name RU"			[value]"Божественная сфера"
+	
+	[tag]"icon path"		[value]"DivineOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Expensive"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Albino Rhoa Feather"
+	[tag]"name RU"			[value]"Перо белого роа"
+	
+	[tag]"icon path"		[value]"Albino_Rhoa_Feather_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Orb"
+	[tag]"name RU"			[value]"Сфера ваал"
+	
+	[tag]"icon path"		[value]"VaalOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Annulment"
+	[tag]"name RU"			[value]"Сфера отмены"
+	
+	[tag]"icon path"		[value]"OrbOfAnnulment(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gold"
+	[tag]"name RU"			[value]"Золото"
+	
+	[tag]"icon path"		[value]"BronzeKey"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Bronze Key"
+	[tag]"name RU"			[value]"Бронзовый ключ"
+	
+	[tag]"icon path"		[value]"SilverKey"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Silver Key"
+	[tag]"name RU"			[value]"Серебряный ключ"
+	
+	[tag]"icon path"		[value]"GoldKey"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gold Key"
+	[tag]"name RU"			[value]"Золотой ключ"
+	
+	[tag]"icon path"		[value]"3333333333"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	

@@ -1,0 +1,246 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Iron Ring"
+	[tag]"name RU"		[value]"Железное кольцо"
+
+	[tag]"icon path"	[value]"IronRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lazuli Ring"
+	[tag]"name RU"		[value]"Кольцо с лазуритом"
+
+	[tag]"icon path"	[value]"LazuliRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ruby Ring"
+	[tag]"name RU"		[value]"Кольцо с рубином"
+
+	[tag]"icon path"	[value]"RubyRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sapphire Ring"
+	[tag]"name RU"		[value]"Кольцо с сапфиром"
+
+	[tag]"icon path"	[value]"SapphireRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Topaz Ring"
+	[tag]"name RU"		[value]"Кольцо с топазом"
+
+	[tag]"icon path"	[value]"TopazRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Amethyst Ring"
+	[tag]"name RU"		[value]"Кольцо с аметистом"
+
+	[tag]"icon path"	[value]"AmethystRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emerald Ring"
+	[tag]"name RU"		[value]"Кольцо с изумрудом"
+
+	[tag]"icon path"	[value]"EmeraldRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pearl Ring"
+	[tag]"name RU"		[value]"Жемчужное кольцо"
+
+	[tag]"icon path"	[value]"PearlRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Prismatic Ring"
+	[tag]"name RU"		[value]"Радужное кольцо"
+
+	[tag]"icon path"	[value]"PrismaticRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gold Ring"
+	[tag]"name RU"		[value]"Золотое кольцо"
+
+	[tag]"icon path"	[value]"GoldRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Unset Ring"
+	[tag]"name RU"		[value]"Кольцо без камня"
+
+	[tag]"icon path"	[value]"UnsetRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ring"
+	[tag]"name RU"		[value]"Кольцо"
+
+	[tag]"icon path"	[value]"Ring(Poe2)"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breach Ring"
+	[tag]"name RU"		[value]"Кольцо Разлома"
+
+	[tag]"icon path"	[value]"BreachRing(Poe2)"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

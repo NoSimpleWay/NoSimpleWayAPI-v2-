@@ -1,0 +1,2215 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Splintered Tower Shield"
+	[tag]"name RU"	[value]"Обшарпанный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"18"
+	[tag]"base armour max"	[value]"18"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Painted Tower Shield"
+	[tag]"name RU"	[value]"Расписной ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"29"
+	[tag]"base armour max"	[value]"29"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 6, 13 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Braced Tower Shield"
+	[tag]"name RU"	[value]"Окованный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"41"
+	[tag]"base armour max"	[value]"41"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 12, 23 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Barricade Tower Shield"
+	[tag]"name RU"	[value]"Баррикадный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"50"
+	[tag]"base armour max"	[value]"50"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 16, 30 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Effigial Tower Shield"
+	[tag]"name RU"	[value]"Тотемный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"60"
+	[tag]"base armour max"	[value]"60"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 21, 40 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Rampart Tower Shield"
+	[tag]"name RU"	[value]"Крепостной ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"75"
+	[tag]"base armour max"	[value]"75"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 28, 52 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Heraldric Tower Shield"
+	[tag]"name RU"	[value]"Геральдический ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"85"
+	[tag]"base armour max"	[value]"85"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 33, 61 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stone Tower Shield"
+	[tag]"name RU"	[value]"Каменный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"91"
+	[tag]"base armour max"	[value]"91"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 36, 66 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Crucible Tower Shield"
+	[tag]"name RU"	[value]"Закалённый ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"110"
+	[tag]"base armour max"	[value]"110"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 83 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancestor Tower Shield"
+	[tag]"name RU"	[value]"Ростовой щит предков"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"121"
+	[tag]"base armour max"	[value]"121"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 50, 92 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Phalanx Tower Shield"
+	[tag]"name RU"	[value]"Ростовой щит фаланги"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"125"
+	[tag]"base armour max"	[value]"125"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 95 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Defiant Tower Shield"
+	[tag]"name RU"	[value]"Непокорный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"137"
+	[tag]"base armour max"	[value]"137"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 58, 106 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blacksteel Tower Shield"
+	[tag]"name RU"	[value]"Ростовой щит из чёрной стали"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"152"
+	[tag]"base armour max"	[value]"152"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 118 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hardwood Targe"
+	[tag]"name RU"	[value]"Тарджет из твёрдой древесины"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"10"
+	[tag]"base armour max"	[value]"10"
+	[tag]"base evasion min"	[value]"7"
+	[tag]"base evasion max"	[value]"7"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Pelage Targe"
+	[tag]"name RU"	[value]"Отделанный мехом тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"18"
+	[tag]"base armour max"	[value]"18"
+	[tag]"base evasion min"	[value]"14"
+	[tag]"base evasion max"	[value]"14"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 8, 10 Str, 10 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Studded Targe"
+	[tag]"name RU"	[value]"Тарджет с заклёпками"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"27"
+	[tag]"base armour max"	[value]"27"
+	[tag]"base evasion min"	[value]"23"
+	[tag]"base evasion max"	[value]"23"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 16, 18 Str, 18 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Crescent Targe"
+	[tag]"name RU"	[value]"Тарджет с полумесяцем"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"39"
+	[tag]"base armour max"	[value]"39"
+	[tag]"base evasion min"	[value]"34"
+	[tag]"base evasion max"	[value]"34"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 26, 27 Str, 27 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Chiseled Targe"
+	[tag]"name RU"	[value]"Рельефный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"47"
+	[tag]"base armour max"	[value]"47"
+	[tag]"base evasion min"	[value]"41"
+	[tag]"base evasion max"	[value]"41"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 33, 34 Str, 34 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Feathered Targe"
+	[tag]"name RU"	[value]"Украшенный перьями тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"51"
+	[tag]"base armour max"	[value]"51"
+	[tag]"base evasion min"	[value]"46"
+	[tag]"base evasion max"	[value]"46"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 37, 38 Str, 38 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stratified Targe"
+	[tag]"name RU"	[value]"Многослойный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base evasion min"	[value]"54"
+	[tag]"base evasion max"	[value]"54"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 46 Str, 46 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Carved Targe"
+	[tag]"name RU"	[value]"Резной тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"63"
+	[tag]"base armour max"	[value]"63"
+	[tag]"base evasion min"	[value]"57"
+	[tag]"base evasion max"	[value]"57"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 47, 48 Str, 48 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Mosaic Targe"
+	[tag]"name RU"	[value]"Мозаичный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"69"
+	[tag]"base armour max"	[value]"69"
+	[tag]"base evasion min"	[value]"62"
+	[tag]"base evasion max"	[value]"62"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 53 Str, 53 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Aureate Targe"
+	[tag]"name RU"	[value]"Золочёный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base evasion min"	[value]"68"
+	[tag]"base evasion max"	[value]"68"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 57, 58 Str, 58 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Grand Targe"
+	[tag]"name RU"	[value]"Великолепный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"84"
+	[tag]"base armour max"	[value]"84"
+	[tag]"base evasion min"	[value]"76"
+	[tag]"base evasion max"	[value]"76"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 65 Str, 65 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blazon Crest Shield"
+	[tag]"name RU"	[value]"Крашеный гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"10"
+	[tag]"base armour max"	[value]"10"
+	[tag]"base energy shield min"	[value]"6"
+	[tag]"base energy shield max"	[value]"6"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sigil Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит с символикой"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"17"
+	[tag]"base armour max"	[value]"17"
+	[tag]"base energy shield min"	[value]"8"
+	[tag]"base energy shield max"	[value]"8"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 7, 10 Str, 10 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Emblem Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит с эмблемой"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"27"
+	[tag]"base armour max"	[value]"27"
+	[tag]"base energy shield min"	[value]"12"
+	[tag]"base energy shield max"	[value]"12"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 16, 18 Str, 18 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jingling Crest Shield"
+	[tag]"name RU"	[value]"Звенящий гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"41"
+	[tag]"base armour max"	[value]"41"
+	[tag]"base energy shield min"	[value]"16"
+	[tag]"base energy shield max"	[value]"16"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 28, 30 Str, 30 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sectarian Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит сектанта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"47"
+	[tag]"base armour max"	[value]"47"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 33, 34 Str, 34 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Omen Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит знамения"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"50"
+	[tag]"base armour max"	[value]"50"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 36, 37 Str, 37 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wayward Crest Shield"
+	[tag]"name RU"	[value]"Неуступчивый гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base energy shield min"	[value]"22"
+	[tag]"base energy shield max"	[value]"22"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 46 Str, 46 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Seer Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит провидца"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"65"
+	[tag]"base armour max"	[value]"65"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 49, 50 Str, 50 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stoic Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит стоика"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"69"
+	[tag]"base armour max"	[value]"69"
+	[tag]"base energy shield min"	[value]"24"
+	[tag]"base energy shield max"	[value]"24"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 53 Str, 53 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Empyreal Crest Shield"
+	[tag]"name RU"	[value]"Небесный гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"26"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 57, 58 Str, 58 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Deified Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит божества"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"84"
+	[tag]"base armour max"	[value]"84"
+	[tag]"base energy shield min"	[value]"29"
+	[tag]"base energy shield max"	[value]"29"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 65 Str, 65 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Leather Buckler"
+	[tag]"name RU"	[value]"Кожаный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"12"
+	[tag]"base evasion max"	[value]"12"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wooden Buckler"
+	[tag]"name RU"	[value]"Деревянный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"20"
+	[tag]"base evasion max"	[value]"20"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 5, 11 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Plated Buckler"
+	[tag]"name RU"	[value]"Облицованный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"32"
+	[tag]"base evasion max"	[value]"32"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 11, 22 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Iron Buckler"
+	[tag]"name RU"	[value]"Железный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"42"
+	[tag]"base evasion max"	[value]"42"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 16, 30 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ridged Buckler"
+	[tag]"name RU"	[value]"Ребристый баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"54"
+	[tag]"base evasion max"	[value]"54"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 22, 42 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiked Buckler"
+	[tag]"name RU"	[value]"Баклер с шипом"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"62"
+	[tag]"base evasion max"	[value]"62"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 26, 49 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ringed Buckler"
+	[tag]"name RU"	[value]"Баклер с кольцами"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"75"
+	[tag]"base evasion max"	[value]"75"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 33, 61 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Edged Buckler"
+	[tag]"name RU"	[value]"Баклер с остриём"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Laminate Buckler"
+	[tag]"name RU"	[value]"Витой баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"99"
+	[tag]"base evasion max"	[value]"99"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 83 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Pearl Buckler"
+	[tag]"name RU"	[value]"Перламутровый баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Buckler"
+	[tag]"name RU"	[value]"Украшенный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"113"
+	[tag]"base evasion max"	[value]"113"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 95 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Array Buckler"
+	[tag]"name RU"	[value]"Колющий баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 101 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Aegis Buckler"
+	[tag]"name RU"	[value]"Баклер эгиды"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"139"
+	[tag]"base evasion max"	[value]"139"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 118 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Painted Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный расписной ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"110"
+	[tag]"base armour max"	[value]"110"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 83 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Braced Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный окованный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"116"
+	[tag]"base armour max"	[value]"116"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 88 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Effigial Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный тотемный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"123"
+	[tag]"base armour max"	[value]"123"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 94 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Rampart Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный крепостной ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"131"
+	[tag]"base armour max"	[value]"131"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 101 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Heraldric Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный геральдический ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"139"
+	[tag]"base armour max"	[value]"139"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 108 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Stone Tower Shield"
+	[tag]"name RU"	[value]"Улучшенный каменный ростовой щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"144"
+	[tag]"base armour max"	[value]"144"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 61, 112 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Hardwood Targe"
+	[tag]"name RU"	[value]"Тарджет из твёрдой древесины"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base evasion min"	[value]"54"
+	[tag]"base evasion max"	[value]"54"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 46 Str, 46 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Pelage Targe"
+	[tag]"name RU"	[value]"Улучшенный отделанный мехом тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"64"
+	[tag]"base armour max"	[value]"64"
+	[tag]"base evasion min"	[value]"58"
+	[tag]"base evasion max"	[value]"58"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 49 Str, 49 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Studded Targe"
+	[tag]"name RU"	[value]"Улучшенный тарджет с заклёпками"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 52 Str, 52 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Crescent Targe"
+	[tag]"name RU"	[value]"Улучшенный тарджет с полумесяцем"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"72"
+	[tag]"base armour max"	[value]"72"
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"65"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 55 Str, 55 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Chiseled Targe"
+	[tag]"name RU"	[value]"Улучшенный рельефный тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"77"
+	[tag]"base armour max"	[value]"77"
+	[tag]"base evasion min"	[value]"70"
+	[tag]"base evasion max"	[value]"70"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 59 Str, 59 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Feathered Targe"
+	[tag]"name RU"	[value]"Улучшенный украшенный перьями тарджет"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 62 Str, 62 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Blazon Crest Shield"
+	[tag]"name RU"	[value]"Крашеный гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base energy shield min"	[value]"22"
+	[tag]"base energy shield max"	[value]"22"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 46 Str, 46 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Sigil Crest Shield"
+	[tag]"name RU"	[value]"Улучшенный гербовый щит с символикой"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"64"
+	[tag]"base armour max"	[value]"64"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 49 Str, 49 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Emblem Crest Shield"
+	[tag]"name RU"	[value]"Улучшенный гербовый щит с эмблемой"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base energy shield min"	[value]"24"
+	[tag]"base energy shield max"	[value]"24"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 52 Str, 52 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Jingling Crest Shield"
+	[tag]"name RU"	[value]"Улучшенный звенящий гербовый щит"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"72"
+	[tag]"base armour max"	[value]"72"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 55 Str, 55 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Sectarian Crest Shield"
+	[tag]"name RU"	[value]"Улучшенный гербовый щит сектанта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"77"
+	[tag]"base armour max"	[value]"77"
+	[tag]"base energy shield min"	[value]"27"
+	[tag]"base energy shield max"	[value]"27"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 59 Str, 59 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Omen Crest Shield"
+	[tag]"name RU"	[value]"Улучшенный гербовый щит знамения"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 62 Str, 62 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Wooden Buckler"
+	[tag]"name RU"	[value]"Улучшенный деревянный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"99"
+	[tag]"base evasion max"	[value]"99"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 83 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Plated Buckler"
+	[tag]"name RU"	[value]"Улучшенный облицованный баклер"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Ridged Buckler"
+	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 94 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Spiked Buckler"
+	[tag]"name RU"	[value]"Улучшенный баклер с шипом"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 101 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Ringed Buckler"
+	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"127"
+	[tag]"base evasion max"	[value]"127"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 108 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Edged Buckler"
+	[tag]"name RU"	[value]"Улучшенный баклер с остриём"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"131"
+	[tag]"base evasion max"	[value]"131"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 61, 112 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Braced Tower Shield"
+	[tag]"name RU"	[value]"Окованный ростовой щит эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"152"
+	[tag]"base armour max"	[value]"152"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 118 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Rampart Tower Shield"
+	[tag]"name RU"	[value]"Крепостной ростовой щит эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"167"
+	[tag]"base armour max"	[value]"167"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 70, 129 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Stone Tower Shield"
+	[tag]"name RU"	[value]"Каменный ростовой щит эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"26%"
+	[tag]"base armour min"	[value]"182"
+	[tag]"base armour max"	[value]"182"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.03"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Str"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Pelage Targe"
+	[tag]"name RU"	[value]"Отделанный мехом тарджет эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"84"
+	[tag]"base armour max"	[value]"84"
+	[tag]"base evasion min"	[value]"76"
+	[tag]"base evasion max"	[value]"76"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 65 Str, 65 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Crescent Targe"
+	[tag]"name RU"	[value]"Тарджет с полумесяцем эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base evasion min"	[value]"84"
+	[tag]"base evasion max"	[value]"84"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 70, 70 Str, 70 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Feathered Targe"
+	[tag]"name RU"	[value]"Украшенный перьями тарджет эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base evasion min"	[value]"91"
+	[tag]"base evasion max"	[value]"91"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 76 Str, 76 Dex"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Sigil Crest Shield"
+	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"84"
+	[tag]"base armour max"	[value]"84"
+	[tag]"base energy shield min"	[value]"29"
+	[tag]"base energy shield max"	[value]"29"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 65 Str, 65 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Jingling Crest Shield"
+	[tag]"name RU"	[value]"Звенящий гербовый щит эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 70, 70 Str, 70 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Omen Crest Shield"
+	[tag]"name RU"	[value]"Гербовый щит знамения эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"25%"
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED[Base Movement Speed]"	[value]"-0.015"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 76 Str, 76 Int"
+	[tag]"UNDEFINED[Grants Skill]"	[value]"Raise Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Plated Buckler"
+	[tag]"name RU"	[value]"Облицованный баклер эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"139"
+	[tag]"base evasion max"	[value]"139"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 118 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Spiked Buckler"
+	[tag]"name RU"	[value]"Баклер с шипом эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"152"
+	[tag]"base evasion max"	[value]"152"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 70, 129 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Edged Buckler"
+	[tag]"name RU"	[value]"Баклер с остриём эксперта"
+
+	[tag]"icon path"	[value]"undefined"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"166"
+	[tag]"base evasion max"	[value]"166"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"basic"
+
+	[tag]"worth"	[value]"Trash"

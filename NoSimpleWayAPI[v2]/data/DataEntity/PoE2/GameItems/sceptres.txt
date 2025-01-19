@@ -1,0 +1,287 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rattling Sceptre"
+	[tag]"name RU"		[value]"Гремящий скипетр"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stoic Sceptre"
+	[tag]"name RU"		[value]"Скипетр стоика"
+
+	[tag]"icon path"	[value]"StoicSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lupine Sceptre"
+	[tag]"name RU"		[value]"Волчий скипетр"
+
+	[tag]"icon path"	[value]"LupineSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen Sceptre"
+	[tag]"name RU"		[value]"Скипетр предвестия"
+
+	[tag]"icon path"	[value]"OmenSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ochre Sceptre"
+	[tag]"name RU"		[value]"Охристый скипетр"
+
+	[tag]"icon path"	[value]"OchreSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shrine Sceptre"
+	[tag]"name RU"		[value]"Храмовый скипетр"
+
+	[tag]"icon path"	[value]"ShrineSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Devouring Sceptre"
+	[tag]"name RU"		[value]"Поглощающий скипетр"
+
+	[tag]"icon path"	[value]"DevouringSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Clasped Sceptre"
+	[tag]"name RU"		[value]"ClaspedSceptre"
+
+	[tag]"icon path"	[value]"DevouringSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Devotional Sceptre"
+	[tag]"name RU"		[value]"Скипетр служения"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wrath Sceptre"
+	[tag]"name RU"		[value]"Скипетр гнева"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Aromatic Sceptre"
+	[tag]"name RU"		[value]"Скипетр благовоний"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pious Sceptre"
+	[tag]"name RU"		[value]"Скипетр благочестия"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hallowed Sceptre"
+	[tag]"name RU"		[value]"Священный скипетр"
+
+	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Trash"

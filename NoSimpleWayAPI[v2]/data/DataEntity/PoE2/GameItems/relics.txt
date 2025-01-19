@@ -1,0 +1,121 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Urn Relic"
+	[tag]"name RU"		[value]"Урна"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Amphora Relic"
+	[tag]"name RU"		[value]"Амфора"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vase Relic"
+	[tag]"name RU"		[value]"Ваза"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Seal Relic"
+	[tag]"name RU"		[value]"Печать"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Coffer Relic"
+	[tag]"name RU"		[value]"Ларец"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tapestry Relic"
+	[tag]"name RU"		[value]"Гобелен"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"3"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Incense Relic"
+	[tag]"name RU"		[value]"Курительница"
+
+	[tag]"icon path"	[value]"urn_relic"
+	[tag]"base class"	[value]"Relics"
+	
+	[tag]"item tag"		[value]"Sekhema item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"4"
+	[tag]"item height"	[value]"1"
+	
