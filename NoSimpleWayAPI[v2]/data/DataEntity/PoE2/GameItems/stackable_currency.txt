@@ -423,7 +423,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Gold"
 	[tag]"name RU"			[value]"Золото"
 	
-	[tag]"icon path"		[value]"BronzeKey"
+	[tag]"icon path"		[value]"Gold"
 	[tag]"base class"		[value]"Stackable Currency"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
@@ -442,7 +442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Bronze Key"
 	[tag]"name RU"			[value]"Бронзовый ключ"
 	
-	[tag]"icon path"		[value]"SilverKey"
+	[tag]"icon path"		[value]"BronzeKey"
 	[tag]"base class"		[value]"Stackable Currency"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
@@ -480,7 +480,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Gold Key"
 	[tag]"name RU"			[value]"Золотой ключ"
 	
-	[tag]"icon path"		[value]"3333333333"
+	[tag]"icon path"		[value]"GoldKey"
 	[tag]"base class"		[value]"Stackable Currency"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"

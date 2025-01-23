@@ -1602,3 +1602,19 @@
 [Heavy Belt] dust quantity = 1782320, dust tag = Very expensive
 [Colosseum Plate] dust quantity = 8260, dust tag = Common
 [Glorious Plate] dust quantity = 86960, dust tag = Rare
+[Rawhide Boots] dust quantity = 106940, dust tag = Expensive
+[Silk Slippers] dust quantity = 3720, dust tag = Trash
+[Crude Bow] dust quantity = 4000, dust tag = Trash
+[Recurve Bow] dust quantity = 3300, dust tag = Trash
+[Embroidered Gloves] dust quantity = 11260, dust tag = Moderate
+[Spiked Club] dust quantity = 2600, dust tag = Trash
+[Iron Ring] dust quantity = 10340, dust tag = Moderate
+[Ruby Ring] dust quantity = 106940, dust tag = Expensive
+[Sapphire Ring] dust quantity = 37820, dust tag = Rare
+[Topaz Ring] dust quantity = 106940, dust tag = Expensive
+[Amethyst Ring] dust quantity = 45380, dust tag = Rare
+[Prismatic Ring] dust quantity = 5900, dust tag = Common
+[Gold Ring] dust quantity = 17020, dust tag = Moderate
+[Unset Ring] dust quantity = 44060, dust tag = Rare
+[Ring] dust quantity = 1144000, dust tag = Very expensive
+[Painted Tower Shield] dust quantity = 10920, dust tag = Moderate

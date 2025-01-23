@@ -3,9 +3,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Felled Greatclub"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Дубина из пня"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FelledGreatclub"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -27,9 +27,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Oak Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Дубовая кувалда"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OakGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -52,9 +52,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Forge Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Кузнечная кувалда"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ForgeMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -77,9 +77,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Studded Greatclub"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Шипастая палица"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StuddedGreatclub"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -102,9 +102,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Cultist Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Культовый молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CultistGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -127,9 +127,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Temple Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Храмовая дубина"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TempleMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -152,9 +152,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Leaden Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Освинцованный молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LeadenGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -177,9 +177,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Crumbling Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Крошащий молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrumblingMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -202,9 +202,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Pointed Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Остроконечная дубина"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PointedMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -227,9 +227,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Totemic Greatclub"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Тотемная палица"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TotemicGreatclub"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -252,9 +252,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Greatmace"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Большая булава"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"Greatmace"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -277,9 +277,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Precise Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Тяжёлый чекан"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PrecisseGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -302,9 +302,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Giant Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Огромный молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GiantMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -327,9 +327,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Oak Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенная дубовая кувалда"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OakGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -352,9 +352,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Forge Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенная кузнечная кувалда"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ForgeMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -377,9 +377,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Cultist Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенный культовый молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CultistGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -402,9 +402,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Temple Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенная храмовая дубина"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TempleMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -427,9 +427,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Leaden Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенный освинцованный молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LeadenGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -452,9 +452,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Crumbling Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенный крошащий молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrumblingMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -477,9 +477,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Forge Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Кузнечная кувалда эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ForgeMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -502,9 +502,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Temple Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Храмовая дубина эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TempleMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -527,9 +527,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Oak Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Дубовая кувалда эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OakGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -552,9 +552,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Cultist Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Культовый молот эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CultistGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -577,9 +577,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Crumbling Maul"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Крошащий молот эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrumblingMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -602,9 +602,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Leaden Greathammer"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Освинцованный молот эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LeadenGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -620,16 +620,3 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"basic"
 
 	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]""
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
-
-	[tag]"icon path"	[value]"undefined"
-	[tag]"base class"	[value]"Two Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"

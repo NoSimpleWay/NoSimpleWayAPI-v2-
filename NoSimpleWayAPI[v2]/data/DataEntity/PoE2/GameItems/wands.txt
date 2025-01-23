@@ -1,0 +1,235 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Withered Wand"
+	[tag]"name RU"		[value]"Увядший жезл"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bone Wand"
+	[tag]"name RU"		[value]"Костяной жезл"
+
+	[tag]"icon path"	[value]"BoneWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Attuned Wand"
+	[tag]"name RU"		[value]"Вытягивающий жезл"
+
+	[tag]"icon path"	[value]"AttunedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Siphoning Wand"
+	[tag]"name RU"		[value]"Переливающий жезл"
+
+	[tag]"icon path"	[value]"SiphonicWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Volatile Wand"
+	[tag]"name RU"		[value]"Нестабильный жезл"
+
+	[tag]"icon path"	[value]"VolatileWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Galvanic Wand"
+	[tag]"name RU"		[value]"Электризующий жезл"
+
+	[tag]"icon path"	[value]"GalvanicWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Acrid Wand"
+	[tag]"name RU"		[value]"Едкий жезл"
+
+	[tag]"icon path"	[value]"AcridWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Offering Wand"
+	[tag]"name RU"		[value]"Жезл подношения"
+
+	[tag]"icon path"	[value]"OfferingWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Frigid Wand"
+	[tag]"name RU"		[value]"Хладный жезл"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Torture Wand"
+	[tag]"name RU"		[value]"Жезл мук"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Critical Wand"
+	[tag]"name RU"		[value]"Острый жезл"
+
+	[tag]"icon path"	[value]"CriticalWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primordial Wand"
+	[tag]"name RU"		[value]"Первобытный жезл"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dueling Wand"
+	[tag]"name RU"		[value]"Дуэльный жезл"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	

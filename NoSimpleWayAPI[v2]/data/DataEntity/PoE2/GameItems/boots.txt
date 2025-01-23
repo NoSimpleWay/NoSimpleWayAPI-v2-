@@ -3,7 +3,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Rough Greaves"
-	[tag]"name RU"		[value]"Р“СЂСѓР±С‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Грубые поножи"
 
 	[tag]"icon path"	[value]"RoughGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -25,7 +25,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Iron Greaves"
-	[tag]"name RU"		[value]"Р–РµР»РµР·РЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Железные поножи"
 
 	[tag]"icon path"	[value]"IronGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -47,7 +47,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Iron Greaves"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р¶РµР»РµР·РЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Улучшенные железные поножи"
 
 	[tag]"icon path"	[value]"IronGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -69,7 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Iron Greaves"
-	[tag]"name RU"		[value]"Р–РµР»РµР·РЅС‹Рµ РїРѕРЅРѕР¶Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Железные поножи эксперта"
 
 	[tag]"icon path"	[value]"IronGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -91,7 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Bronze Greaves"
-	[tag]"name RU"		[value]"Р‘СЂРѕРЅР·РѕРІС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Бронзовые поножи"
 
 	[tag]"icon path"	[value]"BronzeGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -113,7 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Bronze Greaves"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р±СЂРѕРЅР·РѕРІС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Улучшенные бронзовые поножи"
 
 	[tag]"icon path"	[value]"BronzeGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -135,7 +135,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Trimmed Greaves"
-	[tag]"name RU"		[value]"РџРѕР»РѕРіРЅР°РЅРЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Пологнанные поножи"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -157,7 +157,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Trimmed Greaves"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїРѕР»РѕРіРЅР°РЅРЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Улучшенные пологнанные поножи"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -179,7 +179,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Trimmed Greaves"
-	[tag]"name RU"		[value]"РџРѕР»РѕРіРЅР°РЅРЅС‹Рµ РїРѕРЅРѕР¶Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Пологнанные поножи эксперта"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -201,7 +201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Stone Greaves"
-	[tag]"name RU"		[value]"РљР°РјРµРЅРЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Каменные поножи"
 
 	[tag]"icon path"	[value]"StoneGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -223,7 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Stone Greaves"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РєР°РјРµРЅРЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Улучшенные каменные поножи"
 
 	[tag]"icon path"	[value]"StoneGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -245,7 +245,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Stone Greaves"
-	[tag]"name RU"		[value]"РљР°РјРµРЅРЅС‹Рµ РїРѕРЅРѕР¶Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Каменные поножи эксперта"
 
 	[tag]"icon path"	[value]"StoneGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -267,7 +267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Reefsteel Greaves"
-	[tag]"name RU"		[value]"РЎС‚Р°Р»СЊРЅС‹Рµ СЂРёС„Р»С‘РЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Стальные рифлёные поножи"
 
 	[tag]"icon path"	[value]"ReefsteelGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -289,7 +289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Monument Greaves"
-	[tag]"name RU"		[value]"РњРѕРЅСѓРјРµРЅС‚Р°Р»СЊС‹РЅРµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Монументальыне поножи"
 
 	[tag]"icon path"	[value]"RoughGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -311,7 +311,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Totemic Greaves"
-	[tag]"name RU"		[value]"РўРѕС‚РµРјРЅС‹Рµ РїРѕРЅРѕР¶Рё"
+	[tag]"name RU"		[value]"Тотемные поножи"
 
 	[tag]"icon path"	[value]"RoughGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -355,7 +355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Rawhide Boots"
-	[tag]"name RU"		[value]"РЎС‹СЂРѕРјСЏС‚РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Сыромятные сапоги"
 
 	[tag]"icon path"	[value]"RawhideBoots"
 	[tag]"base class"	[value]"Boots"
@@ -378,7 +378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Laced Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё СЃ С‚РµСЃСЊРјРѕР№"
+	[tag]"name RU"		[value]"Сапоги с тесьмой"
 
 	[tag]"icon path"	[value]"LacedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -401,7 +401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Laced Boots"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°РїРѕРіРё СЃ С‚РµСЃСЊРјРѕР№"
+	[tag]"name RU"		[value]"Улучшенные сапоги с тесьмой"
 
 	[tag]"icon path"	[value]"LacedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -424,7 +424,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Laced Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё СЃ С‚РµСЃСЊРјРѕР№ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сапоги с тесьмой эксперта"
 
 	[tag]"icon path"	[value]"LacedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -447,7 +447,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Embossed Boots"
-	[tag]"name RU"		[value]"РўРёСЃРЅС‘РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Тиснёные сапоги"
 
 	[tag]"icon path"	[value]"EmbossedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -470,7 +470,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Embossed Boots"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ С‚РёСЃРЅС‘РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Улучшенные тиснёные сапоги"
 
 	[tag]"icon path"	[value]"EmbossedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -493,7 +493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Steeltoe Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё СЃРѕ СЃС‚Р°Р»СЊРЅС‹Рј РЅРѕСЃРєРѕРј"
+	[tag]"name RU"		[value]"Сапоги со стальным носком"
 
 	[tag]"icon path"	[value]"SteeltoeBoots"
 	[tag]"base class"	[value]"Boots"
@@ -516,7 +516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Steeltoe Boots"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°РїРѕРіРё СЃРѕ СЃС‚Р°Р»СЊРЅС‹Рј РЅРѕСЃРєРѕРј"
+	[tag]"name RU"		[value]"Улучшенные сапоги со стальным носком"
 
 	[tag]"icon path"	[value]"SteeltoeBoots"
 	[tag]"base class"	[value]"Boots"
@@ -539,7 +539,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Steeltoe Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё СЃРѕ СЃС‚Р°Р»СЊРЅС‹Рј РЅРѕСЃРєРѕРј СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сапоги со стальным носком эксперта"
 
 	[tag]"icon path"	[value]"SteeltoeBoots"
 	[tag]"base class"	[value]"Boots"
@@ -562,7 +562,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lizardscale Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё РёР· РєРѕР¶Рё СЏС‰РµСЂР°"
+	[tag]"name RU"		[value]"Сапоги из кожи ящера"
 
 	[tag]"icon path"	[value]"LizardscaleBoots"
 	[tag]"base class"	[value]"Boots"
@@ -585,7 +585,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Lizardscale Boots"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°РїРѕРіРё РёР· РєРѕР¶Рё СЏС‰РµСЂР°"
+	[tag]"name RU"		[value]"Улучшенные сапоги из кожи ящера"
 
 	[tag]"icon path"	[value]"LizardscaleBoots"
 	[tag]"base class"	[value]"Boots"
@@ -608,7 +608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Lizardscale Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё РёР· РєРѕР¶Рё СЏС‰РµСЂР° СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сапоги из кожи ящера эксперта"
 
 	[tag]"icon path"	[value]"LizardscaleBoots"
 	[tag]"base class"	[value]"Boots"
@@ -631,7 +631,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Flared Boots"
-	[tag]"name RU"		[value]"Р‘РѕС‚С„РѕСЂС‚С‹"
+	[tag]"name RU"		[value]"Ботфорты"
 
 	[tag]"icon path"	[value]"FlaredBoots"
 	[tag]"base class"	[value]"Boots"
@@ -654,7 +654,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Leatherplate Boots"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё СЃ РєРѕР¶Р°РЅС‹РјРё РїР»Р°СЃС‚РёРЅР°РјРё"
+	[tag]"name RU"		[value]"Сапоги с кожаными пластинами"
 
 	[tag]"icon path"	[value]"RawhideBoots"
 	[tag]"base class"	[value]"Boots"
@@ -677,7 +677,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Embroidered Boots"
-	[tag]"name RU"		[value]"Р Р°СЃС€РёС‚С‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Расшитые сапоги"
 
 	[tag]"icon path"	[value]"RawhideBoots"
 	[tag]"base class"	[value]"Boots"
@@ -723,7 +723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Straw Sandals"
-	[tag]"name RU"		[value]"РљР»С‘РїР°РЅС‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Клёпаные сандалии"
 
 	[tag]"icon path"	[value]"StrawSandals"
 	[tag]"base class"	[value]"Boots"
@@ -746,7 +746,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Wrapped Sandals"
-	[tag]"name RU"		[value]"CР°РЅРґР°Р»РёРё СЃ РѕР±РјРѕС‚РєР°РјРё"
+	[tag]"name RU"		[value]"Cандалии с обмотками"
 
 	[tag]"icon path"	[value]"WrappedSandals"
 	[tag]"base class"	[value]"Boots"
@@ -769,7 +769,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Wrapped Sandals"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°РЅРґР°Р»РёРё СЃ РѕР±РјРѕС‚РєР°РјРё"
+	[tag]"name RU"		[value]"Улучшенные сандалии с обмотками"
 
 	[tag]"icon path"	[value]"WrappedSandals"
 	[tag]"base class"	[value]"Boots"
@@ -792,7 +792,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Wrapped Sandals"
-	[tag]"name RU"		[value]"РЎР°РЅРґР°Р»РёРё СЃ РѕР±РјРѕС‚РєР°РјРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сандалии с обмотками эксперта"
 
 	[tag]"icon path"	[value]"WrappedSandals"
 	[tag]"base class"	[value]"Boots"
@@ -815,7 +815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lattice Sandals"
-	[tag]"name RU"		[value]"РЎРµС‚С‡Р°С‚С‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Сетчатые сандалии"
 
 	[tag]"icon path"	[value]"LatticeSandals"
 	[tag]"base class"	[value]"Boots"
@@ -838,7 +838,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Lattice Sandals"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃРµС‚С‡Р°С‚С‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Улучшенные сетчатые сандалии"
 
 	[tag]"icon path"	[value]"LatticeSandals"
 	[tag]"base class"	[value]"Boots"
@@ -861,7 +861,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Silk Slippers"
-	[tag]"name RU"		[value]"РЁС‘Р»РєРѕРІС‹Рµ С‚Р°РїРѕС‡РєРё"
+	[tag]"name RU"		[value]"Шёлковые тапочки"
 
 	[tag]"icon path"	[value]"SilkSlippers"
 	[tag]"base class"	[value]"Boots"
@@ -884,7 +884,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Silk Slippers"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ С€С‘Р»РєРѕРІС‹Рµ С‚Р°РїРѕС‡РєРё"
+	[tag]"name RU"		[value]"Улучшенные шёлковые тапочки"
 
 	[tag]"icon path"	[value]"SilkSlippers"
 	[tag]"base class"	[value]"Boots"
@@ -907,7 +907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Silk Slippers"
-	[tag]"name RU"		[value]"РЁС‘Р»РєРѕРІС‹Рµ С‚Р°РїРѕС‡РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Шёлковые тапочки эксперта"
 
 	[tag]"icon path"	[value]"SilkSlippers"
 	[tag]"base class"	[value]"Boots"
@@ -930,7 +930,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Feathered Sandals"
-	[tag]"name RU"		[value]"РџРµСЂРЅР°С‚С‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Пернатые сандалии"
 
 	[tag]"icon path"	[value]"FeatheredSandals"
 	[tag]"base class"	[value]"Boots"
@@ -953,7 +953,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Feathered Sandals"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїРµСЂРЅР°С‚С‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Улучшенные пернатые сандалии"
 
 	[tag]"icon path"	[value]"FeatheredSandals"
 	[tag]"base class"	[value]"Boots"
@@ -976,7 +976,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Feathered Sandals"
-	[tag]"name RU"		[value]"РџРµСЂРЅР°С‚С‹Рµ СЃР°РЅРґР°Р»РёРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Пернатые сандалии эксперта"
 
 	[tag]"icon path"	[value]"FeatheredSandals"
 	[tag]"base class"	[value]"Boots"
@@ -999,7 +999,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Flax Sandals"
-	[tag]"name RU"		[value]"Р›СЊРЅСЏРЅС‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Льняные сандалии"
 
 	[tag]"icon path"	[value]"FlaxSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1022,7 +1022,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Studded Sandals"
-	[tag]"name RU"		[value]"РљР»С‘РїР°РЅС‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Клёпаные сандалии"
 
 	[tag]"icon path"	[value]"StrawSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1045,7 +1045,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Elaborate Sandals"
-	[tag]"name RU"		[value]"РСЃРєСѓСЃРЅС‹Рµ СЃР°РЅРґР°Р»РёРё"
+	[tag]"name RU"		[value]"Искусные сандалии"
 
 	[tag]"icon path"	[value]"StrawSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1087,7 +1087,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Mail Sabatons"
-	[tag]"name RU"		[value]"РљРѕР»СЊС‡СѓР¶РЅС‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Кольчужные сабатоны"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1111,7 +1111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Mail Sabatons"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РєРѕР»СЊС‡СѓР¶РЅС‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Улучшенные кольчужные сабатоны"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1135,7 +1135,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Mail Sabatons"
-	[tag]"name RU"		[value]"РљРѕР»СЊС‡СѓР¶РЅС‹Рµ СЃР°Р±Р°С‚РѕРЅС‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Кольчужные сабатоны эксперта"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1160,7 +1160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Braced Sabatons"
-	[tag]"name RU"		[value]"РЎР°Р±Р°С‚РѕРЅС‹ СЃ СЂРµРјРЅСЏРјРё"
+	[tag]"name RU"		[value]"Сабатоны с ремнями"
 
 	[tag]"icon path"	[value]"BracedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1185,7 +1185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Braced Sabatons"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°Р±Р°С‚РѕРЅС‹ СЃ СЂРµРјРЅСЏРјРё"
+	[tag]"name RU"		[value]"Улучшенные сабатоны с ремнями"
 
 	[tag]"icon path"	[value]"BracedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1210,7 +1210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Braced Sabatons"
-	[tag]"name RU"		[value]"РЎР°Р±Р°С‚РѕРЅС‹ СЃ СЂРµРјРЅСЏРјРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сабатоны с ремнями эксперта"
 
 	[tag]"icon path"	[value]"BracedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1235,7 +1235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Stacked Sabatons"
-	[tag]"name RU"		[value]"РџР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Пластинчатые сабатоны"
 
 	[tag]"icon path"	[value]"StackedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1259,7 +1259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Stacked Sabatons"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Улучшенные пластинчатые сабатоны"
 
 	[tag]"icon path"	[value]"StackedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1283,7 +1283,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Stacked Sabatons"
-	[tag]"name RU"		[value]"РџР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ СЃР°Р±Р°С‚РѕРЅС‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Пластинчатые сабатоны эксперта"
 
 	[tag]"icon path"	[value]"StackedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1308,7 +1308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Covered Sabatons"
-	[tag]"name RU"		[value]"РЎРїР»РѕС€РЅС‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Сплошные сабатоны"
 
 	[tag]"icon path"	[value]"CoveredSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1333,9 +1333,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Flexile Sabatons"
-	[tag]"name RU"		[value]"Р“РёР±РєРёРµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Гибкие сабатоны"
 
-	[tag]"icon path"	[value]"33333"
+	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
 
 	[tag]"item width"	[value]"2"
@@ -1358,9 +1358,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Bold Sabatons"
-	[tag]"name RU"		[value]"РўСЏР¶С‘Р»С‹Рµ СЃР°Р±Р°С‚РѕРЅС‹"
+	[tag]"name RU"		[value]"Тяжёлые сабатоны"
 
-	[tag]"icon path"	[value]"33333"
+	[tag]"icon path"	[value]"SuedeBracers"
 	[tag]"base class"	[value]"Boots"
 
 	[tag]"item width"	[value]"2"
@@ -1408,7 +1408,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Padded Leggings"
-	[tag]"name RU"		[value]"Р’Р°С‚РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Ватные сапоги"
 
 	[tag]"icon path"	[value]"PaddedLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1432,7 +1432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Padded Leggings"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РІР°С‚РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Улучшенные ватные сапоги"
 
 	[tag]"icon path"	[value]"PaddedLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1456,7 +1456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Padded Leggings"
-	[tag]"name RU"		[value]"Р’Р°С‚РЅС‹Рµ СЃР°РїРѕРіРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Ватные сапоги эксперта"
 
 	[tag]"icon path"	[value]"PaddedLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1481,7 +1481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Secured Leggings"
-	[tag]"name RU"		[value]"РњРµС…РѕРІС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Меховые сапоги"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1506,7 +1506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Secured Leggings"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РјРµС…РѕРІС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Улучшенные меховые сапоги"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1531,7 +1531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Secured Leggings"
-	[tag]"name RU"		[value]"РњРµС…РѕРІС‹Рµ СЃР°РїРѕРіРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Меховые сапоги эксперта"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1556,7 +1556,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Pelt Leggings"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё РёР· С€РєСѓСЂ"
+	[tag]"name RU"		[value]"Сапоги из шкур"
 
 	[tag]"icon path"	[value]"PeltLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1580,7 +1580,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Pelt Leggings"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃР°РїРѕРіРё РёР· С€РєСѓСЂ"
+	[tag]"name RU"		[value]"Улучшенные сапоги из шкур"
 
 	[tag]"icon path"	[value]"PeltLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1604,7 +1604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Pelt Leggings"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё РёР· С€РєСѓСЂ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Сапоги из шкур эксперта"
 
 	[tag]"icon path"	[value]"PeltLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1629,7 +1629,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Weaver Leggings"
-	[tag]"name RU"		[value]"РџР»РµС‚С‘РЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Плетёные сапоги"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1654,7 +1654,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Gilt Leggings"
-	[tag]"name RU"		[value]"РџРѕР·РѕР»РѕС‡РµРЅРЅС‹Рµ СЃР°РїРѕРіРё"
+	[tag]"name RU"		[value]"Позолоченные сапоги"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1679,7 +1679,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Pious Leggings"
-	[tag]"name RU"		[value]"РЎР°РїРѕРіРё РїСЂР°РІРµРґРЅРёРєР°"
+	[tag]"name RU"		[value]"Сапоги праведника"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1733,7 +1733,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Frayed Shoes"
-	[tag]"name RU"		[value]"РџРѕС‚С‘СЂС‚С‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Потёртые ботинки"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1758,7 +1758,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Frayed Shoes"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїРѕС‚С‘СЂС‚С‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Улучшенные потёртые ботинки"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1783,7 +1783,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Frayed Shoes"
-	[tag]"name RU"		[value]"РџРѕС‚С‘СЂС‚С‹Рµ Р±РѕС‚РёРЅРєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Потёртые ботинки эксперта"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1808,7 +1808,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Threaded Shoes"
-	[tag]"name RU"		[value]"РџСЂРѕС€РёС‚С‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Прошитые ботинки"
 
 	[tag]"icon path"	[value]"ThreadedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1833,7 +1833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Threaded Shoes"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїСЂРѕС€РёС‚С‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Улучшенные прошитые ботинки"
 
 	[tag]"icon path"	[value]"ThreadedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1858,7 +1858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Threaded Shoes"
-	[tag]"name RU"		[value]"РџСЂРѕС€РёС‚С‹Рµ Р±РѕС‚РёРЅРєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Прошитые ботинки эксперта"
 
 	[tag]"icon path"	[value]"ThreadedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1883,7 +1883,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Hunting Shoes"
-	[tag]"name RU"		[value]"РћС…РѕС‚РЅРёС‡СЊРё Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Охотничьи ботинки"
 
 	[tag]"icon path"	[value]"HuntingShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1908,7 +1908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Hunting Shoes"
-	[tag]"name RU"		[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РѕС…РѕС‚РЅРёС‡СЊРё Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Улучшенные охотничьи ботинки"
 
 	[tag]"icon path"	[value]"HuntingShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1933,7 +1933,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Hunting Shoes"
-	[tag]"name RU"		[value]"РћС…РѕС‚РЅРёС‡СЊРё Р±РѕС‚РёРЅРєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"		[value]"Охотничьи ботинки эксперта"
 
 	[tag]"icon path"	[value]"HuntingShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1958,7 +1958,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Steelpoint Shoes"
-	[tag]"name RU"		[value]"Р‘РѕС‚РёРЅРєРё СЃРѕ СЃС‚Р°Р»СЊРЅС‹Рј РЅРѕСЃРєРѕРј"
+	[tag]"name RU"		[value]"Ботинки со стальным носком"
 
 	[tag]"icon path"	[value]"SteelpointShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1983,7 +1983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Velour Shoes"
-	[tag]"name RU"		[value]"Р‘Р°СЂС…Р°С‚РЅС‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Бархатные ботинки"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -2008,7 +2008,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Bladed Shoes"
-	[tag]"name RU"		[value]"Р—Р°РѕСЃС‚СЂС‘РЅРЅС‹Рµ Р±РѕС‚РёРЅРєРё"
+	[tag]"name RU"		[value]"Заострённые ботинки"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -2049,57 +2049,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"60"
 	[tag]"base energy shield min"	[value]"23"
 	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"11111"
-	[tag]"name RU"		[value]"22222"
-
-	[tag]"icon path"	[value]"33333"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"777"
-	[tag]"base evasion max"	[value]"777"
 	
 	[tag]"base family"	[value]"Basic"
 		

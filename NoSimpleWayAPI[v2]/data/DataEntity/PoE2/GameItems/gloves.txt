@@ -3,7 +3,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Stocky Mitts"
-	[tag]"name RU"	[value]"РўРѕР»СЃС‚С‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Толстые рукавицы"
 
 	[tag]"icon path"	[value]"StockyMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -25,7 +25,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Riveted Mitts"
-	[tag]"name RU"	[value]"РљР»С‘РїР°РЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Клёпаные рукавицы"
 
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
@@ -48,7 +48,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Tempered Mitts"
-	[tag]"name RU"	[value]"Р—Р°РєР°Р»С‘РЅРЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Закалённые рукавицы"
 
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -71,7 +71,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Bolstered Mitts"
-	[tag]"name RU"	[value]"РЈРєСЂРµРїР»С‘РЅРЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Укреплённые рукавицы"
 
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -94,7 +94,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Moulded Mitts"
-	[tag]"name RU"	[value]"Р›РёС‚С‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Литые рукавицы"
 
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -117,7 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Detailed Mitts"
-	[tag]"name RU"	[value]"РЈРєСЂР°С€РµРЅРЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Украшенные рукавицы"
 
 	[tag]"icon path"	[value]"DetailedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -140,7 +140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Titan Mitts"
-	[tag]"name RU"	[value]"Р СѓРєР°РІРёС†С‹ С‚РёС‚Р°РЅР°"
+	[tag]"name RU"	[value]"Рукавицы титана"
 
 	[tag]"icon path"	[value]"TitanMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -163,7 +163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Grand Mitts"
-	[tag]"name RU"	[value]"Р’РµР»РёРєРёРµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Великие рукавицы"
 
 	[tag]"icon path"	[value]"StockyMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -186,7 +186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Suede Bracers"
-	[tag]"name RU"	[value]"Р—Р°РјС€РµРІС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Замшевые наручи"
 
 	[tag]"icon path"	[value]"SuedeBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -208,7 +208,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Firm Bracers"
-	[tag]"name RU"	[value]"РџР»РѕС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Плотные наручи"
 
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -231,7 +231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Bound Bracers"
-	[tag]"name RU"	[value]"РћР±РјРѕС‚Р°РЅРЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Обмотанные наручи"
 
 	[tag]"icon path"	[value]"BoundBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -254,7 +254,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Sectioned Bracers"
-	[tag]"name RU"	[value]"РЎРµРіРјРµРЅС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Сегментные наручи"
 
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -277,7 +277,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Spined Bracers"
-	[tag]"name RU"	[value]"РЁРёРїР°СЃС‚С‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Шипастые наручи"
 
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -300,7 +300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Fine Bracers"
-	[tag]"name RU"	[value]"РСЃРєСѓСЃРЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Искусные наручи"
 
 	[tag]"icon path"	[value]"FineBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -323,7 +323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Hardened Bracers"
-	[tag]"name RU"	[value]"Р–С‘СЃС‚РєРёРµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Жёсткие наручи"
 
 	[tag]"icon path"	[value]"HardenedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -346,9 +346,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Engraved Bracers"
-	[tag]"name RU"	[value]"Р РµР·РЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Резные наручи"
 
-	[tag]"icon path"	[value]"SuedeBracerstorn"
+	[tag]"icon path"	[value]"SuedeBracers"
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
@@ -369,7 +369,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Torn Gloves"
-	[tag]"name RU"	[value]"Р РІР°РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Рваные перчатки"
 
 	[tag]"icon path"	[value]"TornGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -391,7 +391,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Sombre Gloves"
-	[tag]"name RU"	[value]"РўС‘РјРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Тёмные перчатки"
 
 	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -414,7 +414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Stitched Gloves"
-	[tag]"name RU"	[value]"РЎС€РёС‚С‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Сшитые перчатки"
 
 	[tag]"icon path"	[value]"StitchedGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -437,7 +437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Jewelled Gloves"
-	[tag]"name RU"	[value]"РРЅРєСЂСѓСЃС‚РёСЂРѕРІР°РЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Инкрустированные перчатки"
 
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -460,7 +460,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Intricate Gloves"
-	[tag]"name RU"	[value]"Р—Р°С‚РµР№Р»РёРІС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Затейливые перчатки"
 
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -483,7 +483,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Pauascale Gloves"
-	[tag]"name RU"	[value]"РџРµСЂС‡Р°С‚РєРё СЃ РїРµСЂР»Р°РјСѓС‚СЂРѕРј"
+	[tag]"name RU"	[value]"Перчатки с перламутром"
 
 	[tag]"icon path"	[value]"PauascaleGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -506,7 +506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Embroidered Gloves"
-	[tag]"name RU"	[value]"Р Р°СЃС€РёС‚С‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Расшитые перчатки"
 
 	[tag]"icon path"	[value]"EmbroideredGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -529,7 +529,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Adorned Gloves"
-	[tag]"name RU"	[value]"РЈРєСЂР°С€РµРЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Украшенные перчатки"
 
 	[tag]"icon path"	[value]"TornGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -552,7 +552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Ringmail Gauntlets"
-	[tag]"name RU"	[value]"РљРѕР»СЊС‡СѓР¶РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Кольчужные перчатки"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -577,7 +577,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Layered Gauntlets"
-	[tag]"name RU"	[value]"РџР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Пластинчатые перчатки"
 
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -602,7 +602,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Doubled Gauntlets"
-	[tag]"name RU"	[value]"Р”РІСѓС…СЃР»РѕР№РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Двухслойные перчатки"
 
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -627,7 +627,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Plate Gauntlets"
-	[tag]"name RU"	[value]"Р›Р°С‚РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Латные перчатки"
 
 	[tag]"icon path"	[value]"PlateGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -652,7 +652,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Burnished Gauntlets"
-	[tag]"name RU"	[value]"РџРѕР»РёСЂРѕРІР°РЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Полированные перчатки"
 
 	[tag]"icon path"	[value]"BurnishedGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -677,7 +677,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Ornate Gauntlets"
-	[tag]"name RU"	[value]"РР·С‹СЃРєР°РЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Изысканные перчатки"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -702,7 +702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Rope Cuffs"
-	[tag]"name RU"	[value]"Р’РµСЂС‘РІРѕС‡РЅС‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Верёвочные манжеты"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -727,7 +727,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Aged Cuffs"
-	[tag]"name RU"	[value]"РЎС‚Р°СЂРёРЅРЅС‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Старинные манжеты"
 
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -752,7 +752,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Goldcast Cuffs"
-	[tag]"name RU"	[value]"Р—РѕР»РѕС‚С‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Золотые манжеты"
 
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -777,7 +777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Diviner Cuffs"
-	[tag]"name RU"	[value]"РњР°РЅР¶РµС‚С‹ РїСЂРµРґСЃРєР°Р·Р°С‚РµР»СЏ"
+	[tag]"name RU"	[value]"Манжеты предсказателя"
 
 	[tag]"icon path"	[value]"DivinerCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -802,7 +802,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Righteous Cuffs"
-	[tag]"name RU"	[value]"РњР°РЅР¶РµС‚С‹ РїСЂР°РІРµРґРЅРёРєР°"
+	[tag]"name RU"	[value]"Манжеты праведника"
 
 	[tag]"icon path"	[value]"RighteousCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -827,7 +827,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Signet Cuffs"
-	[tag]"name RU"	[value]"РњР°РЅР¶РµС‚С‹ СЃ РїРµС‡Р°С‚РєРѕР№"
+	[tag]"name RU"	[value]"Манжеты с печаткой"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -852,7 +852,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Gauze Wraps"
-	[tag]"name RU"	[value]"РћР±РјРѕС‚РєРё РёР· РјСѓСЃР»РёРЅР°"
+	[tag]"name RU"	[value]"Обмотки из муслина"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -877,7 +877,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Linen Wraps"
-	[tag]"name RU"	[value]"Р›СЊРЅСЏРЅС‹Рµ РѕР±РјРѕС‚РєРё"
+	[tag]"name RU"	[value]"Льняные обмотки"
 
 	[tag]"icon path"	[value]"LinenWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -902,7 +902,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Spiral Wraps"
-	[tag]"name RU"	[value]"Р’РёС‚С‹Рµ РѕР±РјРѕС‚РєРё"
+	[tag]"name RU"	[value]"Витые обмотки"
 
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -927,7 +927,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Buckled Wraps"
-	[tag]"name RU"	[value]"РћР±РјРѕС‚РєРё СЃ РїСЂСЏР¶РєР°РјРё"
+	[tag]"name RU"	[value]"Обмотки с пряжками"
 
 	[tag]"icon path"	[value]"BuckledWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -977,7 +977,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Utility Wraps"
-	[tag]"name RU"	[value]"РџСЂР°РєС‚РёС‡РЅС‹Рµ РѕР±РјРѕС‚РєРё"
+	[tag]"name RU"	[value]"Практичные обмотки"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1029,7 +1029,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Riveted Mitts"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РљР»С‘РїР°РЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Улучшенные Клёпаные рукавицы"
 
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1052,7 +1052,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Tempered Mitts"
-	[tag]"name RU"	[value]"РљР»С‘РїР°РЅС‹Рµ СЂСѓРєР°РІРёС†С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Клёпаные рукавицы эксперта"
 
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1075,7 +1075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Bolstered Mitts"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СѓРєСЂРµРїР»С‘РЅРЅС‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Улучшенные укреплённые рукавицы"
 
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1098,7 +1098,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Moulded Mitts"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р»РёС‚С‹Рµ СЂСѓРєР°РІРёС†С‹"
+	[tag]"name RU"	[value]"Улучшенные литые рукавицы"
 
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1121,7 +1121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Firm Bracers"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїР»РѕС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Улучшенные плотные наручи"
 
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1144,7 +1144,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Bound Bracers"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РѕР±РјРѕС‚Р°РЅРЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Улучшенные обмотанные наручи"
 
 	[tag]"icon path"	[value]"BoundBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1167,7 +1167,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Sectioned Bracers"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃРµРіРјРµРЅС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Улучшенные сегментные наручи"
 
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1190,7 +1190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Spined Bracers"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ С€РёРїР°СЃС‚С‹Рµ РЅР°СЂСѓС‡Рё"
+	[tag]"name RU"	[value]"Улучшенные шипастые наручи"
 
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1213,7 +1213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Sombre Gloves"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ С‚С‘РјРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные тёмные перчатки"
 
 	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1236,7 +1236,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Stitched Gloves"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃС€РёС‚С‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные сшитые перчатки"
 
 	[tag]"icon path"	[value]"StitchedGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1259,7 +1259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Jewelled Gloves"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РёРЅРєСЂСѓСЃС‚РёСЂРѕРІР°РЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные инкрустированные перчатки"
 
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1282,7 +1282,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Intricate Gloves"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р·Р°С‚РµР№Р»РёРІС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные затейливые перчатки"
 
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1305,7 +1305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Ringmail Gauntlets"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РєРѕР»СЊС‡СѓР¶РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные кольчужные перчатки"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1330,7 +1330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Layered Gauntlets"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РїР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные пластинчатые перчатки"
 
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1355,7 +1355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Doubled Gauntlets"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РґРІСѓС…СЃР»РѕР№РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные двухслойные перчатки"
 
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1380,7 +1380,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Rope Cuffs"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РІРµСЂС‘РІРѕС‡РЅС‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Улучшенные верёвочные манжеты"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1405,7 +1405,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Aged Cuffs"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ СЃС‚Р°СЂРёРЅРЅС‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Улучшенные старинные манжеты"
 
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1430,7 +1430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Goldcast Cuffs"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р·РѕР»РѕС‚С‹Рµ РјР°РЅР¶РµС‚С‹"
+	[tag]"name RU"	[value]"Улучшенные золотые манжеты"
 
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1455,7 +1455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Gauze Wraps"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РѕР±РјРѕС‚РєРё РёР· РјСѓСЃР»РёРЅР°"
+	[tag]"name RU"	[value]"Улучшенные обмотки из муслина"
 
 	[tag]"icon path"	[value]"undefined"
 	[tag]"base class"	[value]"Gloves"
@@ -1480,7 +1480,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Linen Wraps"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ Р»СЊРЅСЏРЅС‹Рµ РѕР±РјРѕС‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные льняные обмотки"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1505,7 +1505,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Spiral Wraps"
-	[tag]"name RU"	[value]"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РІРёС‚С‹Рµ РѕР±РјРѕС‚РєРё"
+	[tag]"name RU"	[value]"Улучшенные витые обмотки"
 
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1530,7 +1530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Riveted Mitts"
-	[tag]"name RU"	[value]"РљР»С‘РїР°РЅС‹Рµ СЂСѓРєР°РІРёС†С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Клёпаные рукавицы эксперта"
 
 	[tag]"icon path"	[value]"RivetedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1553,7 +1553,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Bolstered Mitts"
-	[tag]"name RU"	[value]"РЈРєСЂРµРїР»С‘РЅРЅС‹Рµ СЂСѓРєР°РІРёС†С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Укреплённые рукавицы эксперта"
 
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1576,7 +1576,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Moulded Mitts"
-	[tag]"name RU"	[value]"Р›РёС‚С‹Рµ СЂСѓРєР°РІРёС†С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Литые рукавицы эксперта"
 
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1599,7 +1599,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Firm Bracers"
-	[tag]"name RU"	[value]"РџР»РѕС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Плотные наручи эксперта"
 
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1622,7 +1622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Sectioned Bracers"
-	[tag]"name RU"	[value]"РЎРµРіРјРµРЅС‚РЅС‹Рµ РЅР°СЂСѓС‡Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Сегментные наручи эксперта"
 
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1645,7 +1645,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Spined Bracers"
-	[tag]"name RU"	[value]"РЁРёРїР°СЃС‚С‹Рµ РЅР°СЂСѓС‡Рё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Шипастые наручи эксперта"
 
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1668,7 +1668,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Sombre Gloves"
-	[tag]"name RU"	[value]"РўС‘РјРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Тёмные перчатки эксперта"
 
 	[tag]"icon path"	[value]"undefined"
 	[tag]"base class"	[value]"Gloves"
@@ -1691,7 +1691,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Jewelled Gloves"
-	[tag]"name RU"	[value]"РРЅРєСЂСѓСЃС‚РёСЂРѕРІР°РЅРЅС‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Инкрустированные перчатки эксперта"
 
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1714,7 +1714,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Intricate Gloves"
-	[tag]"name RU"	[value]"Р—Р°С‚РµР№Р»РёРІС‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Затейливые перчатки эксперта"
 
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1737,7 +1737,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Ringmail Gauntlets"
-	[tag]"name RU"	[value]"РљРѕР»СЊС‡СѓР¶РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Кольчужные перчатки эксперта"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1762,7 +1762,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Layered Gauntlets"
-	[tag]"name RU"	[value]"РџР»Р°СЃС‚РёРЅС‡Р°С‚С‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Пластинчатые перчатки эксперта"
 
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1787,7 +1787,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Doubled Gauntlets"
-	[tag]"name RU"	[value]"Р”РІСѓС…СЃР»РѕР№РЅС‹Рµ РїРµСЂС‡Р°С‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Двухслойные перчатки эксперта"
 
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1812,7 +1812,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Rope Cuffs"
-	[tag]"name RU"	[value]"Р’РµСЂС‘РІРѕС‡РЅС‹Рµ РјР°РЅР¶РµС‚С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Верёвочные манжеты эксперта"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1837,7 +1837,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Aged Cuffs"
-	[tag]"name RU"	[value]"РЎС‚Р°СЂРёРЅРЅС‹Рµ РјР°РЅР¶РµС‚С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Старинные манжеты эксперта"
 
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1862,7 +1862,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Goldcast Cuffs"
-	[tag]"name RU"	[value]"Р—РѕР»РѕС‚С‹Рµ РјР°РЅР¶РµС‚С‹ СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Золотые манжеты эксперта"
 
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1887,7 +1887,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Gauze Wraps"
-	[tag]"name RU"	[value]"РћР±РјРѕС‚РєРё РёР· РјСѓСЃР»РёРЅР° СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Обмотки из муслина эксперта"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1912,7 +1912,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Linen Wraps"
-	[tag]"name RU"	[value]"Р›СЊРЅСЏРЅС‹Рµ РѕР±РјРѕС‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Льняные обмотки эксперта"
 
 	[tag]"icon path"	[value]"LinenWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1937,7 +1937,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Spiral Wraps"
-	[tag]"name RU"	[value]"Р’РёС‚С‹Рµ РѕР±РјРѕС‚РєРё СЌРєСЃРїРµСЂС‚Р°"
+	[tag]"name RU"	[value]"Витые обмотки эксперта"
 
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"

@@ -3,7 +3,7 @@
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lesser Mana Flask"
 	[tag]"name RU"		[value]"Малый флакон маны"
@@ -19,7 +19,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Medium Mana Flask"
 	[tag]"name RU"		[value]"Средний флакон маны"
@@ -33,7 +33,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Mana Flask"
 	[tag]"name RU"		[value]"Вместительный флакон маны"
@@ -47,7 +47,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Grand Mana Flask"
 	[tag]"name RU"		[value]"Огромный флакон маны"
@@ -60,7 +60,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Giant Mana Flask"
 	[tag]"name RU"		[value]"Гигантский флакон маны"
@@ -74,7 +74,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Colossal Mana Flask"
 	[tag]"name RU"		[value]"Великий флакон маны"
@@ -87,7 +87,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Gargantuan Mana Flask"
 	[tag]"name RU"		[value]"Громадный флакон маны"
@@ -100,7 +100,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Transcendent Mana Flask"
 	[tag]"name RU"		[value]"Возвышенный флакон маны"
@@ -114,7 +114,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Ultimate Mana Flask"
 	[tag]"name RU"		[value]"Совершенный флакон маны"

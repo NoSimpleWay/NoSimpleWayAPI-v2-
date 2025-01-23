@@ -5,7 +5,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Wooden Club"
 	[tag]"name RU"	[value]"Деревянная дубинка"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -29,7 +29,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Smithing Hammer"
 	[tag]"name RU"	[value]"Кузнечный молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -55,7 +55,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Slim Mace"
 	[tag]"name RU"	[value]"Шестопёр"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SlimMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -80,7 +80,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Spiked Club"
 	[tag]"name RU"	[value]"Шипастая дубинка"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpikedClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -105,7 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Warpick"
 	[tag]"name RU"	[value]"Клевец"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"Warpick"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -130,7 +130,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Plated Mace"
 	[tag]"name RU"	[value]"Кованая булава"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -155,7 +155,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Brigand Mace"
 	[tag]"name RU"	[value]"Булава грабителя"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrigandMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -180,7 +180,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Construct Hammer"
 	[tag]"name RU"	[value]"Молот конструкта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ConstructHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -205,7 +205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Morning Star"
 	[tag]"name RU"	[value]"Моргенштерн"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"MorningStar"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -230,7 +230,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Jade Club"
 	[tag]"name RU"	[value]"Нефритовая дубинка"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"JadeClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -255,7 +255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Lumen Mace"
 	[tag]"name RU"	[value]"Булава света"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -280,7 +280,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Execratus Hammer"
 	[tag]"name RU"	[value]"Проклятый молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -305,7 +305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Torment Club"
 	[tag]"name RU"	[value]"Булава мучений"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenClub"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -330,7 +330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Smithing Hammer"
 	[tag]"name RU"	[value]"Улучшенный кузнечный молот"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -356,7 +356,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Slim Mace"
 	[tag]"name RU"	[value]"Улучшенный шестопёр"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SlimMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -381,7 +381,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Warpick"
 	[tag]"name RU"	[value]"Улучшенный клевец"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"Warpick"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -406,7 +406,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Plated Mace"
 	[tag]"name RU"	[value]"Улучшенная кованая булава"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -431,7 +431,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Brigand Mace"
 	[tag]"name RU"	[value]"Улучшенная булава грабителя"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrigandMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -456,7 +456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Construct Hammer"
 	[tag]"name RU"	[value]"Улучшенный молот конструкта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ConstructHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -481,7 +481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Slim Mace"
 	[tag]"name RU"	[value]"Шестопёр эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SlimMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -506,7 +506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Plated Mace"
 	[tag]"name RU"	[value]"Кованая булава"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -531,7 +531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Smithing Hammer"
 	[tag]"name RU"	[value]"Кузнечный молот эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -557,7 +557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Warpick"
 	[tag]"name RU"	[value]"Клевец эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"Warpick"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -582,7 +582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Construct Hammer"
 	[tag]"name RU"	[value]"Молот конструкта эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ConstructHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
@@ -607,7 +607,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Brigand Mace"
 	[tag]"name RU"	[value]"Молот грабителя эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrigandMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"

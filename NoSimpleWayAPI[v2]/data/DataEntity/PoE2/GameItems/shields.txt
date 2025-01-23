@@ -5,7 +5,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Splintered Tower Shield"
 	[tag]"name RU"	[value]"Обшарпанный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SplinteredTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -30,7 +30,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Painted Tower Shield"
 	[tag]"name RU"	[value]"Расписной ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PaintedTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -56,7 +56,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Braced Tower Shield"
 	[tag]"name RU"	[value]"Окованный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BracedTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -82,7 +82,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Barricade Tower Shield"
 	[tag]"name RU"	[value]"Баррикадный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BarricadeTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -108,7 +108,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Effigial Tower Shield"
 	[tag]"name RU"	[value]"Тотемный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EffigialTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -134,7 +134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Rampart Tower Shield"
 	[tag]"name RU"	[value]"Крепостной ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RampartTowertShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -160,7 +160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Heraldric Tower Shield"
 	[tag]"name RU"	[value]"Геральдический ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HeraldricTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -186,7 +186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Stone Tower Shield"
 	[tag]"name RU"	[value]"Каменный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StoneTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -212,7 +212,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Crucible Tower Shield"
 	[tag]"name RU"	[value]"Закалённый ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrucibleTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -238,7 +238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Ancestor Tower Shield"
 	[tag]"name RU"	[value]"Ростовой щит предков"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"AncestorTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -264,7 +264,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Phalanx Tower Shield"
 	[tag]"name RU"	[value]"Ростовой щит фаланги"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SplinteredTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -290,7 +290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Defiant Tower Shield"
 	[tag]"name RU"	[value]"Непокорный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SplinteredTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -316,7 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Blacksteel Tower Shield"
 	[tag]"name RU"	[value]"Ростовой щит из чёрной стали"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SplinteredTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -342,7 +342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Hardwood Targe"
 	[tag]"name RU"	[value]"Тарджет из твёрдой древесины"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HardwoodTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -369,7 +369,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Pelage Targe"
 	[tag]"name RU"	[value]"Отделанный мехом тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PelageTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -397,7 +397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Studded Targe"
 	[tag]"name RU"	[value]"Тарджет с заклёпками"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StuddedTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -425,7 +425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Crescent Targe"
 	[tag]"name RU"	[value]"Тарджет с полумесяцем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrescentTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -453,7 +453,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Chiseled Targe"
 	[tag]"name RU"	[value]"Рельефный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ChiseledTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -481,7 +481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Feathered Targe"
 	[tag]"name RU"	[value]"Украшенный перьями тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -509,7 +509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Stratified Targe"
 	[tag]"name RU"	[value]"Многослойный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SrtatifiedTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -537,7 +537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Carved Targe"
 	[tag]"name RU"	[value]"Резной тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CarvedTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -565,7 +565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Mosaic Targe"
 	[tag]"name RU"	[value]"Мозаичный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"MosaicTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -593,7 +593,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Aureate Targe"
 	[tag]"name RU"	[value]"Золочёный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"AureateTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -621,7 +621,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Grand Targe"
 	[tag]"name RU"	[value]"Великолепный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GrandTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -649,7 +649,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Blazon Crest Shield"
 	[tag]"name RU"	[value]"Крашеный гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -676,7 +676,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Sigil Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит с символикой"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SigilCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -704,7 +704,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Emblem Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит с эмблемой"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EmblemCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -732,7 +732,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Jingling Crest Shield"
 	[tag]"name RU"	[value]"Звенящий гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"JinglingCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -760,7 +760,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Sectarian Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит сектанта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SectarianCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -788,7 +788,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Omen Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит знамения"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OmenCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -816,7 +816,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Wayward Crest Shield"
 	[tag]"name RU"	[value]"Неуступчивый гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WaywardCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -844,7 +844,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Seer Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит провидца"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -872,7 +872,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Stoic Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит стоика"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -900,7 +900,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Empyreal Crest Shield"
 	[tag]"name RU"	[value]"Небесный гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -928,7 +928,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Deified Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит божества"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -956,7 +956,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Leather Buckler"
 	[tag]"name RU"	[value]"Кожаный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LeatherBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -979,7 +979,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Wooden Buckler"
 	[tag]"name RU"	[value]"Деревянный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1003,7 +1003,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Plated Buckler"
 	[tag]"name RU"	[value]"Облицованный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1027,7 +1027,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Iron Buckler"
 	[tag]"name RU"	[value]"Железный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"IronBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1051,7 +1051,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Ridged Buckler"
 	[tag]"name RU"	[value]"Ребристый баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RidgedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1075,7 +1075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Spiked Buckler"
 	[tag]"name RU"	[value]"Баклер с шипом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpikedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1099,7 +1099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Ringed Buckler"
 	[tag]"name RU"	[value]"Баклер с кольцами"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RingedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1123,7 +1123,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Edged Buckler"
 	[tag]"name RU"	[value]"Баклер с остриём"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EdgedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1147,7 +1147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Laminate Buckler"
 	[tag]"name RU"	[value]"Витой баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LaminateBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1171,7 +1171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Pearl Buckler"
 	[tag]"name RU"	[value]"Перламутровый баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PearlBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1195,7 +1195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Ornate Buckler"
 	[tag]"name RU"	[value]"Украшенный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OrnateBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1219,7 +1219,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Array Buckler"
 	[tag]"name RU"	[value]"Колющий баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ArrayBucklker"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1243,7 +1243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Aegis Buckler"
 	[tag]"name RU"	[value]"Баклер эгиды"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"AegisBucklker"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1267,7 +1267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Painted Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный расписной ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PaintedTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1293,7 +1293,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Braced Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный окованный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BracedTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1319,7 +1319,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Effigial Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный тотемный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EffigialTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1345,7 +1345,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Rampart Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный крепостной ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RampartTowertShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1371,7 +1371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Heraldric Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный геральдический ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HeraldricTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1397,7 +1397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Stone Tower Shield"
 	[tag]"name RU"	[value]"Улучшенный каменный ростовой щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StoneTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1423,7 +1423,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Hardwood Targe"
 	[tag]"name RU"	[value]"Тарджет из твёрдой древесины"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HardwoodTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1451,7 +1451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Pelage Targe"
 	[tag]"name RU"	[value]"Улучшенный отделанный мехом тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PelageTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1479,7 +1479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Studded Targe"
 	[tag]"name RU"	[value]"Улучшенный тарджет с заклёпками"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StuddedTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1507,7 +1507,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Crescent Targe"
 	[tag]"name RU"	[value]"Улучшенный тарджет с полумесяцем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrescentTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1535,7 +1535,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Chiseled Targe"
 	[tag]"name RU"	[value]"Улучшенный рельефный тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ChiseledTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1563,7 +1563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Feathered Targe"
 	[tag]"name RU"	[value]"Улучшенный украшенный перьями тарджет"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1591,7 +1591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Blazon Crest Shield"
 	[tag]"name RU"	[value]"Крашеный гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BlazonCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1619,7 +1619,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Sigil Crest Shield"
 	[tag]"name RU"	[value]"Улучшенный гербовый щит с символикой"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SigilCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1647,7 +1647,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Emblem Crest Shield"
 	[tag]"name RU"	[value]"Улучшенный гербовый щит с эмблемой"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EmblemCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1675,7 +1675,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Jingling Crest Shield"
 	[tag]"name RU"	[value]"Улучшенный звенящий гербовый щит"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"JinglingCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1703,7 +1703,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Sectarian Crest Shield"
 	[tag]"name RU"	[value]"Улучшенный гербовый щит сектанта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SectarianCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1731,7 +1731,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Omen Crest Shield"
 	[tag]"name RU"	[value]"Улучшенный гербовый щит знамения"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OmenCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1759,7 +1759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Wooden Buckler"
 	[tag]"name RU"	[value]"Улучшенный деревянный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WoodenBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1783,7 +1783,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Plated Buckler"
 	[tag]"name RU"	[value]"Улучшенный облицованный баклер"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1807,7 +1807,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Ridged Buckler"
 	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RidgedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1831,7 +1831,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Spiked Buckler"
 	[tag]"name RU"	[value]"Улучшенный баклер с шипом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpikedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1855,7 +1855,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Ringed Buckler"
 	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RingedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1879,7 +1879,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Edged Buckler"
 	[tag]"name RU"	[value]"Улучшенный баклер с остриём"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EdgedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1903,7 +1903,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Braced Tower Shield"
 	[tag]"name RU"	[value]"Окованный ростовой щит эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BracedTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1929,7 +1929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Rampart Tower Shield"
 	[tag]"name RU"	[value]"Крепостной ростовой щит эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RampartTowertShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1955,7 +1955,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Stone Tower Shield"
 	[tag]"name RU"	[value]"Каменный ростовой щит эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"StoneTowerShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1981,7 +1981,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Pelage Targe"
 	[tag]"name RU"	[value]"Отделанный мехом тарджет эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PelageTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2009,7 +2009,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Crescent Targe"
 	[tag]"name RU"	[value]"Тарджет с полумесяцем эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CrescentTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2037,7 +2037,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Feathered Targe"
 	[tag]"name RU"	[value]"Украшенный перьями тарджет эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTarge"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2065,7 +2065,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Sigil Crest Shield"
 	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SigilCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2093,7 +2093,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Jingling Crest Shield"
 	[tag]"name RU"	[value]"Звенящий гербовый щит эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"JinglingCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2121,7 +2121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Omen Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит знамения эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"OmenCrestShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2149,7 +2149,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Plated Buckler"
 	[tag]"name RU"	[value]"Облицованный баклер эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"PlatedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2173,7 +2173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Spiked Buckler"
 	[tag]"name RU"	[value]"Баклер с шипом эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpikedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2197,7 +2197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Edged Buckler"
 	[tag]"name RU"	[value]"Баклер с остриём эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EdgedBuckler"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
