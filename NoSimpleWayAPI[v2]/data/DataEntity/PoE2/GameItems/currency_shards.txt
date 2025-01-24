@@ -3,10 +3,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
-	[tag]"name EN"			[value]"Alchemy Shard"
-	[tag]"name RU"			[value]"Осколок алхимии"
+	[tag]"name EN"			[value]"Transmutation Shard"
+	[tag]"name RU"			[value]"Осколок превращения"
 	
-	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
+	[tag]"icon path"		[value]"ChanceShard(PoE2)"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
@@ -19,6 +19,30 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Alchemy Shard"
+	[tag]"name RU"			[value]"Осколок алхимии"
+	
+	[tag]"icon path"		[value]"AlchemyShard(PoE2)"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item tag"			[value]"Currency shard"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -27,7 +51,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Chance Shard"
 	[tag]"name RU"			[value]"Осколок удачи"
 	
-	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
+	[tag]"icon path"		[value]"ChanceShard(PoE2)"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item tag"			[value]"Currency shard"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Regal Shard"
+	[tag]"name RU"			[value]"Осколок царей"
+	
+	[tag]"icon path"		[value]"RegalShard(PoE2)"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
@@ -45,52 +91,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
-	[tag]"name EN"			[value]"Alchemy Shard"
-	[tag]"name RU"			[value]"Осколок алхимии"
+	[tag]"name EN"			[value]"Artificer's Shard"
+	[tag]"name RU"			[value]"Осколок астромантии"
 	
-	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Trash"
-	
-	[tag]"item tag"			[value]"Currency shard"
-	[tag]"stack multiplier"	[value]"5"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Alchemy Shard"
-	[tag]"name RU"			[value]"Осколок алхимии"
-	
-	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Trash"
-	
-	[tag]"item tag"			[value]"Currency shard"
-	[tag]"stack multiplier"	[value]"5"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Alchemy Shard"
-	[tag]"name RU"			[value]"Осколок алхимии"
-	
-	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
+	[tag]"icon path"		[value]"ArtificerShard(PoE2)"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
