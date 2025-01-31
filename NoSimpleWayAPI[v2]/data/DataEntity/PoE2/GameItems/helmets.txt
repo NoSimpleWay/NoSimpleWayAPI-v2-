@@ -5,7 +5,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Rusted Greathelm"
 	[tag]"name RU"	[value]"Ржавый большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -27,7 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Soldier Greathelm"
 	[tag]"name RU"	[value]"Большой шлем солдата"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SoldierGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -50,7 +50,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Wrapped Greathelm"
 	[tag]"name RU"	[value]"Обмотанный большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WrappedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -73,7 +73,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Spired Greathelm"
 	[tag]"name RU"	[value]"Остроконечный большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpiredGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -96,7 +96,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Elite Greathelm"
 	[tag]"name RU"	[value]"Большой шлем элиты"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EliteGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -119,7 +119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Warrior Greathelm"
 	[tag]"name RU"	[value]"Большой шлем воина"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WarriorGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -142,7 +142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Commander Greathelm"
 	[tag]"name RU"	[value]"Большой шлем командира"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -165,7 +165,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Fierce Greathelm"
 	[tag]"name RU"	[value]"Свирепый большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FierceGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -188,7 +188,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Dueling Greathelm"
 	[tag]"name RU"	[value]"Большой шлем поединщика"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -211,7 +211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Goliath Greathelm"
 	[tag]"name RU"	[value]"Большой шлем голиафа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -234,7 +234,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Guardian Greathelm"
 	[tag]"name RU"	[value]"Большой шлем стража"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -257,7 +257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Shabby Hood"
 	[tag]"name RU"	[value]"Потрёпанный капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -279,7 +279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Felt Cap"
 	[tag]"name RU"	[value]"Войлочная шляпа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeltCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -302,7 +302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Lace Hood"
 	[tag]"name RU"	[value]"Вышитый капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LaceHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -325,7 +325,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Swathed Cap"
 	[tag]"name RU"	[value]"Капюшон с куфией"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SwathedCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -348,7 +348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Hunter Hood"
 	[tag]"name RU"	[value]"Капюшон охотника"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HunterHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -371,7 +371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Viper Cap"
 	[tag]"name RU"	[value]"Голова гадюки"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ViperCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -394,7 +394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Corsair Cap"
 	[tag]"name RU"	[value]"Треуголка корсара"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CorsairCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -417,7 +417,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Leatherbound Hood"
 	[tag]"name RU"	[value]"Кожаный капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -440,7 +440,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Velvet Cap"
 	[tag]"name RU"	[value]"Бархатная шляпа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -463,7 +463,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Covert Hood"
 	[tag]"name RU"	[value]"Капюшон агента"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -486,7 +486,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Armoured Cap"
 	[tag]"name RU"	[value]"Защитный капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -509,7 +509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Twig Circlet"
 	[tag]"name RU"	[value]"Венок из ветвей"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -531,7 +531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Wicker Tiara"
 	[tag]"name RU"	[value]"Тиара из прутьев"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WickerTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -554,7 +554,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Beaded Circlet"
 	[tag]"name RU"	[value]"Обруч с чётками"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BeadedCircle"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -577,7 +577,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Chain Tiara"
 	[tag]"name RU"	[value]"Цепная тиара"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ChainTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -600,7 +600,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Feathered Tiara"
 	[tag]"name RU"	[value]"Тиара с перьями"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -623,7 +623,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Gold Circlet"
 	[tag]"name RU"	[value]"Венец из золота"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GoldCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -646,7 +646,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Coral Circlet"
 	[tag]"name RU"	[value]"Коралловый обруч"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -669,7 +669,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Jade Tiara"
 	[tag]"name RU"	[value]"Нефритовая тиара"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"JadeTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -692,7 +692,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Noble Circlet"
 	[tag]"name RU"	[value]"Венец аристократа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -715,7 +715,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Twilight Tiara"
 	[tag]"name RU"	[value]"Сумеречная тиара"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -738,7 +738,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Magus Tiara"
 	[tag]"name RU"	[value]"Тиара волшебника"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -761,7 +761,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Brimmed Helm"
 	[tag]"name RU"	[value]"Шлем с полями"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrimmedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -786,7 +786,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Guarded Helm"
 	[tag]"name RU"	[value]"Шлем с забралом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GuardedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -811,7 +811,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Visored Helm"
 	[tag]"name RU"	[value]"Шлем с козырьком"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"VisoredHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -836,7 +836,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Cowled Helm"
 	[tag]"name RU"	[value]"Шлем с капюшоном"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CowledHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -861,7 +861,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Shielded Helm"
 	[tag]"name RU"	[value]"Шлем с горжетом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShieldedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -886,7 +886,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Closed Helm"
 	[tag]"name RU"	[value]"Закрытый шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ClosedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -911,7 +911,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Decorated Helm"
 	[tag]"name RU"	[value]"Украшенный шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrimmedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -936,7 +936,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Gallant Helm"
 	[tag]"name RU"	[value]"Gallant Helm"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrimmedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -961,7 +961,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Iron Crown"
 	[tag]"name RU"	[value]"Железная корона"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"IronCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -986,7 +986,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Horned Crown"
 	[tag]"name RU"	[value]"Корона с рогами"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HornedCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1011,7 +1011,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Cultist Crown"
 	[tag]"name RU"	[value]"Корона культиста"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CultistCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1036,7 +1036,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Martyr Crown"
 	[tag]"name RU"	[value]"Корона мученика"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"MartyrCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1061,7 +1061,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Heavy Crown"
 	[tag]"name RU"	[value]"Тяжёлая корона"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HeavyCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1086,7 +1086,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Spiritbone Crown"
 	[tag]"name RU"	[value]"Корона из костей духа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpiritboneCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1111,7 +1111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Lavish Crown"
 	[tag]"name RU"	[value]"Богатая корона"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LavishCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1136,7 +1136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Templar Crown"
 	[tag]"name RU"	[value]"Корона храмовника"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"IronCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1161,7 +1161,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Hewn Mask"
 	[tag]"name RU"	[value]"Обтёсанная маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HewnMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1186,7 +1186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Face Mask"
 	[tag]"name RU"	[value]"Лицевая маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FaceMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1211,7 +1211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Hooded Mask"
 	[tag]"name RU"	[value]"Маска с капюшоном"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HoodedMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1236,7 +1236,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Veiled Mask"
 	[tag]"name RU"	[value]"Маска с вуалью"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"VeiledMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1261,7 +1261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Tribal Mask"
 	[tag]"name RU"	[value]"Племенная маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TribalMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1286,7 +1286,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Solid Mask"
 	[tag]"name RU"	[value]"Цельная маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SolidMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1311,7 +1311,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Shaded Mask"
 	[tag]"name RU"	[value]"Маска тени"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HewnMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1336,7 +1336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Death Mask"
 	[tag]"name RU"	[value]"Маска смерти"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HewnMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1361,7 +1361,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Grand Visage"
 	[tag]"name RU"	[value]"Grand Visage"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1388,7 +1388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Rusted Greathelm"
 	[tag]"name RU"	[value]"Улучшенный ржавый большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1411,7 +1411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Soldier Greathelm"
 	[tag]"name RU"	[value]"Улучшенный большой шлем солдата"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SoldierGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1434,7 +1434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Wrapped Greathelm"
 	[tag]"name RU"	[value]"Улучшенный обмотанный большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WrappedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1457,7 +1457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Spired Greathelm"
 	[tag]"name RU"	[value]"Улучшенный остроконечный большой шлем"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpiredGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1480,7 +1480,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Elite Greathelm"
 	[tag]"name RU"	[value]"Улучшенный большой шлем элиты"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EliteGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1503,7 +1503,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Shabby Hood"
 	[tag]"name RU"	[value]"Улучшенный потрёпанный капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1526,7 +1526,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Felt Cap"
 	[tag]"name RU"	[value]"Улучшенная войлочная шляпа"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeltCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1549,7 +1549,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Lace Hood"
 	[tag]"name RU"	[value]"Улучшенный вышитый капюшон"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"LaceHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1572,7 +1572,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Swathed Cap"
 	[tag]"name RU"	[value]"Улучшенный капюшон с куфией"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SwathedCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1595,7 +1595,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Hunter Hood"
 	[tag]"name RU"	[value]"Улучшенный капюшон охотника"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HunterHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1618,7 +1618,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Twig Circlet"
 	[tag]"name RU"	[value]"Улучшенный венок из ветвей"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1641,7 +1641,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Wicker Tiara"
 	[tag]"name RU"	[value]"Улучшенная тиара из прутьев"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WickerTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1664,7 +1664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Beaded Circlet"
 	[tag]"name RU"	[value]"Улучшенный обруч с чётками"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BeadedCircle"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1687,7 +1687,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Chain Tiara"
 	[tag]"name RU"	[value]"Улучшенная цепная тиара"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ChainTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1710,7 +1710,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Feathered Tiara"
 	[tag]"name RU"	[value]"Улучшенная тиара с перьями"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1733,7 +1733,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Brimmed Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с полями"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"BrimmedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1758,7 +1758,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Guarded Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с забралом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GuardedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1783,7 +1783,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Visored Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с козырьком"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"VisoredHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1808,7 +1808,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Cowled Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с капюшоном"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CowledHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1833,7 +1833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Shielded Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с горжетом"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShieldedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1858,7 +1858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Iron Crown"
 	[tag]"name RU"	[value]"Улучшенная железная корона"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"IronCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1883,7 +1883,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Horned Crown"
 	[tag]"name RU"	[value]"Улучшенная корона с рогами"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HornedCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1908,7 +1908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Cultist Crown"
 	[tag]"name RU"	[value]"Улучшенная корона культиста"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CultistCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1933,7 +1933,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Martyr Crown"
 	[tag]"name RU"	[value]"Улучшенная корона мученика"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"MartyrCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1958,7 +1958,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Heavy Crown"
 	[tag]"name RU"	[value]"Улучшенная тяжёлая корона"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HeavyCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1983,7 +1983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Hewn Mask"
 	[tag]"name RU"	[value]"Улучшенная обтёсанная маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HewnMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2008,7 +2008,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Face Mask"
 	[tag]"name RU"	[value]"Улучшенная лицевая маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FaceMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2033,7 +2033,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Hooded Mask"
 	[tag]"name RU"	[value]"Улучшенная маска с капюшоном"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HoodedMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2058,7 +2058,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Veiled Mask"
 	[tag]"name RU"	[value]"Улучшенная маска с вуалью"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"VeiledMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2083,7 +2083,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Tribal Mask"
 	[tag]"name RU"	[value]"Улучшенная племенная маска"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TribalMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2108,7 +2108,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Soldier Greathelm"
 	[tag]"name RU"	[value]"Большой шлем солдата эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SoldierGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2131,7 +2131,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Spired Greathelm"
 	[tag]"name RU"	[value]"Остроконечный большой шлем эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SpiredGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2154,7 +2154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Elite Greathelm"
 	[tag]"name RU"	[value]"Большой шлем элиты эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"EliteGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2177,7 +2177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Felt Cap"
 	[tag]"name RU"	[value]"Войлочная шляпа эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeltCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2200,7 +2200,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Swathed Cap"
 	[tag]"name RU"	[value]"Капюшон с куфией эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SwathedCap"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2223,7 +2223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Hunter Hood"
 	[tag]"name RU"	[value]"Капюшон охотника эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HunterHood"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2246,7 +2246,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Wicker Tiara"
 	[tag]"name RU"	[value]"Тиара из прутьев эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"WickerTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2269,7 +2269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Chain Tiara"
 	[tag]"name RU"	[value]"Цепная тиара эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ChainTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2292,7 +2292,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Feathered Tiara"
 	[tag]"name RU"	[value]"Тиара с перьями эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FeatheredTiara"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2315,7 +2315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Guarded Helm"
 	[tag]"name RU"	[value]"Шлем с забралом эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GuardedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2340,7 +2340,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Cowled Helm"
 	[tag]"name RU"	[value]"Шлем с капюшоном эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"CowledHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2365,7 +2365,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Shielded Helm"
 	[tag]"name RU"	[value]"Шлем с горжетом эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"ShieldedHelm"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2390,7 +2390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Horned Crown"
 	[tag]"name RU"	[value]"Корона с рогами эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HornedCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2415,7 +2415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Martyr Crown"
 	[tag]"name RU"	[value]"Корона мученика эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"MartyrCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2440,7 +2440,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Heavy Crown"
 	[tag]"name RU"	[value]"Тяжёлая корона эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"HeavyCrown"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2465,7 +2465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Face Mask"
 	[tag]"name RU"	[value]"Лицевая маска эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"FaceMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2490,7 +2490,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Veiled Mask"
 	[tag]"name RU"	[value]"Маска с вуалью эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"VeiledMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
@@ -2515,7 +2515,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Tribal Mask"
 	[tag]"name RU"	[value]"Племенная маска эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"TribalMask"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"

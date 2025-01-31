@@ -1,4 +1,5 @@
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Deleted items"
 name_RU	"Удалённые предметы"
 icon	"data/textures/buttons/button_red_x.png"
@@ -25,6 +26,7 @@ DETF_color	255	230	204	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Trash items"
 name_RU	"Мусор"
 icon	"data/textures/icons/Orb_of_Alchemy_inventory_icon.png"
@@ -227,6 +229,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Valuable items"
 name_RU	"Ценные предметы"
 icon	"data/textures/minimap_shapes/minimap_icon_shape[star].png"
@@ -439,6 +442,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Fast check"
 name_RU	"Быстрая проверка"
 icon	"data/textures/minimap_shapes/minimap_icon_shape[star].png"
@@ -448,6 +452,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Deleted items"
 name_RU	"Удалённые предметы"
@@ -489,6 +494,7 @@ DETF_color	255	230	204	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"New currency"
 name_RU	"Новая валюта"
 icon	"data/textures/icons/SuperChisel.png"
@@ -543,6 +549,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Changed items"
 name_RU	"Изменённые предметы"
 icon	"data/textures/buttons/button_refresh.png"
@@ -578,6 +585,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"New bases"
 name_RU	"Новые базы предмета"
 icon	"data/textures/icons/SuperChest.png"
@@ -667,6 +675,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Returned items"
 name_RU	"Возвращённые предметы"
@@ -703,6 +712,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"New divinations"
 name_RU	"Новые гадалки"
@@ -745,6 +755,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Scarabs"
 name_RU	"Скарабеи"
 icon	"data/textures/icons/Veiled_scarab.png"
@@ -878,6 +889,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"New map fragments"
 name_RU	"Новые проходки"
@@ -940,6 +952,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nSettlers of Kalguur"
 name_RU	"Категория:\nПоселенцы Калгуура"
 icon	"data/textures/buttons/pattern_folder_settlers.png"
@@ -950,6 +963,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Currency, gems, divinations"
 name_RU	"Валюта, камни, гадалки"
 icon	"data/textures/buttons/pattern_high_volatility_currency_and_other.png"
@@ -1068,6 +1082,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"High volatility"
 name_RU	"Высокая волатильность"
 icon	"data/textures/buttons/pattern_folder_high_volatility.png"
@@ -1094,6 +1109,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"All oils item"
 name_RU	"Все предметы масел"
 icon	"data/textures/buttons/oils_all.png"
@@ -1179,6 +1195,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"All catalysts"
 name_RU	"Все катализаторы"
 icon	"data/textures/buttons/all_catalysts.png"
@@ -1261,6 +1278,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Currency shards"
 name_RU	"Фрагменты валюты"
 icon	"data/textures/buttons/currency_shards_all.png"
@@ -1343,6 +1361,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Harvest lifeforce"
 name_RU	"Семена жатвы"
 icon	"data/textures/icons/VividLifeforce.png"
@@ -1394,6 +1413,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Expedition currency"
 name_RU	"Валюта экспедиции"
 icon	"data/textures/icons/Coinage.png"
@@ -1473,6 +1493,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Eldritch currency"
 name_RU	"Древняя валюта"
 icon	"data/textures/icons/EldritchChaosOrb.png"
@@ -1567,6 +1588,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Delirium orbs"
 name_RU	"Сферы делириума"
 icon	"data/textures/icons/DeliriumOrb.png"
@@ -1661,6 +1683,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Essences"
 name_RU	"Эссенции"
 icon	"data/textures/icons/Essence_of_Hysteria.png"
@@ -1769,6 +1792,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Tainted currency"
 name_RU	"Порочная валюта"
 icon	"data/textures/icons/TaintedOrbofFusing.png"
@@ -1866,6 +1890,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Guardian orbs"
 name_RU	"Сферы Хранителей"
 icon	"data/textures/icons/HunterExalt.png"
@@ -1921,6 +1946,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Incubators"
 name_RU	"Инкубаторы"
 icon	"data/textures/icons/Incubator.png"
@@ -2003,6 +2029,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Basic currency"
 name_RU	"Базовая валюта"
 icon	"data/textures/buttons/button_good_currency.png"
@@ -2100,6 +2127,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nBasic currency"
 name_RU	"Категория:\nОбычная валюта"
 icon	"data/textures/buttons/pattern_folder_basic_currencies.png"
@@ -2111,6 +2139,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Equipable:\nArmour"
 name_RU	"Экипировка:\nБроня"
 icon	"data/textures/icons/Nightmare_Bascinet_inventory_icon.png"
@@ -2270,6 +2299,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Equipable:\nWeapons and shields"
 name_RU	"Экипировка:\nЩиты и оружие"
 icon	"data/textures/icons/Graceful_Sword_inventory_icon.png"
@@ -2484,6 +2514,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Equipable:\nJewelery"
 name_RU	"Экипировка:\nБижутерия"
 icon	"data/textures/icons/Cerulean_Ring.png"
@@ -2633,6 +2664,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Unique items for leveling"
 name_RU	"Уникальные предметы для старта"
 icon	"data/textures/buttons/button_icon_uniques.png"
@@ -2691,6 +2723,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Unique items"
 name_RU	"Уникальные предметы"
 icon	"data/textures/buttons/button_icon_uniques.png"
@@ -2864,6 +2897,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nEquip"
 name_RU	"Категория:\nЭкипировка"
 icon	"data/textures/buttons/pattern_folder_equip.png"
@@ -2875,6 +2909,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Breach fragments"
 name_RU	"Проходки разломов"
 icon	"data/textures/icons/Xoph's_Breachstone.png"
@@ -2927,6 +2962,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Breach blessings"
 name_RU	"Благословения разломов"
 icon	"data/textures/icons/Blessing_of_Uul-Netol_inventory_icon.png"
@@ -2967,6 +3003,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Breach splinters"
 name_RU	"Осколки разломов"
 icon	"data/textures/icons/Splinter_of_Chayula_inventory_icon.png"
@@ -3018,6 +3055,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Breach uniques"
 name_RU	"Уники разломов"
 icon	"data/textures/buttons/breach_uniques.png"
@@ -3066,6 +3104,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nBreach items"
 name_RU	"Категория:\nПредметы разлома"
 icon	"data/textures/buttons/pattern_folder_breach_items.png"
@@ -3087,6 +3126,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Tinctures"
 name_RU	"Микстуры"
 icon	"data/textures/icons/FulguriteTincturePic.png"
@@ -3128,6 +3168,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Corpses"
 name_RU	"Трупы"
 icon	"data/textures/icons/Corpse.png"
@@ -3178,6 +3219,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Afflition items"
 name_RU	"Вещи заклятья"
 icon	"data/textures/buttons/pattern_folder_affliction.png"
@@ -3197,6 +3239,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Delve items:\nFossils"
 name_RU	"Предметы шахты:\nИскопаемые"
 icon	"data/textures/icons/Faceted_Fossil_inventory_icon.png"
@@ -3280,6 +3323,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Delve items:\nResonators"
 name_RU	"Предметы шахты:\nРезонаторы"
 icon	"data/textures/icons/Powerful_Chaotic_Resonator_inventory_icon.png"
@@ -3322,6 +3366,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Delve items:\nSpecial explicits"
 name_RU	"Предметы шахты:\nОсобые свойства"
 icon	"data/textures/icons/Cabalist_Regalia_inventory_icon.png"
@@ -3365,6 +3410,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nDelve items"
 name_RU	"Категория:\nПредметы шахты"
 icon	"data/textures/buttons/pattern_folder_delve_items.png"
@@ -3375,6 +3421,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Heist base items"
 name_RU	"Базы кражи"
@@ -3421,6 +3468,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Heist equip"
 name_RU	"Экипировка кражи"
 icon	"data/textures/icons/Cloak.png"
@@ -3512,6 +3560,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Heist targets"
 name_RU	"Цель кражи"
 icon	"data/textures/icons/HeistTarget.png"
@@ -3577,6 +3626,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Heist quest сontract"
 name_RU	"Контракт кражи (квест)"
 icon	"data/textures/icons/HeistQuestContract.png"
@@ -3629,6 +3679,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Heist contract"
 name_RU	"Контракт кражи"
 icon	"data/textures/icons/Contract.png"
@@ -3672,6 +3723,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Heist blueprints"
 name_RU	"Чертежи кражи"
 icon	"data/textures/icons/Blueprint.png"
@@ -3715,6 +3767,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nHeist items"
 name_RU	"Категория:\nПредметы кражи"
 icon	"data/textures/buttons/pattern_folder_heist_items.png"
@@ -3726,6 +3779,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Scouting reports"
 name_RU	"Доклады разведки"
 icon	"data/textures/icons/ScoutingReport.png"
@@ -3765,6 +3819,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Set fragment"
 name_RU	"Фрагмент проходки"
 icon	"data/textures/icons/UberElderSet.png"
@@ -3804,6 +3859,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Reliquary keys"
 name_RU	"Ключи реликвария"
 icon	"data/textures/icons/OublietteReliquaryKey.png"
@@ -3843,6 +3899,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Scarabs"
 name_RU	"Скарабеи"
 icon	"data/textures/icons/Scarab.png"
@@ -3960,6 +4017,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"All map fragments"
 name_RU	"Все фрагменты карт"
 icon	"data/textures/icons/Fragment_of_Knowledge.png"
@@ -3999,6 +4057,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Map splinters"
 name_RU	"Осколки карт"
 icon	"data/textures/icons/Timeless_Maraketh_Splinter_inventory_icon.png"
@@ -4068,6 +4127,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Maps"
 name_RU	"Карты"
 icon	"data/textures/buttons/button_maps.png"
@@ -4099,6 +4159,7 @@ DETF_color	255	230	204	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nMap items"
 name_RU	"Категория:\nПредметы карты"
 icon	"data/textures/buttons/pattern_folder_map_items.png"
@@ -4110,6 +4171,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Specific items"
 name_RU	"Особые предметы"
@@ -4161,6 +4223,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Vial item"
 name_RU	"Виалы"
@@ -4212,6 +4275,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nSpecific items"
 name_RU	"Категория:\nОсобые предметы"
 icon	"data/textures/buttons/pattern_folder_specific_items.png"
@@ -4223,6 +4287,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Flasks"
 name_RU	"Флаконы"
 icon	"data/textures/icons/Hybrid_flask.png"
@@ -4286,6 +4351,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nFlasks"
 name_RU	"Категория:\nФлаконы"
 icon	"data/textures/buttons/pattern_folder_flask_items.png"
@@ -4296,6 +4362,7 @@ is_folder
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Divinations:\nby worth"
 name_RU	"Гадальные карты:\nпо ценности"
 icon	"data/textures/icons/card.png"
@@ -4377,6 +4444,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nDivinations"
 name_RU	"Категория:\nГадальные карты"
 icon	"data/textures/buttons/pattern_folder_divinations.png"
@@ -4388,6 +4456,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Boss loot\n(uniques)"
 name_RU	"Лут с боссов\n(Уникальные предметы)"
 icon	"data/textures/buttons/button_pinnacle_boss_loot.png"
@@ -4482,6 +4551,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Boss loot\n(other)"
 name_RU	"Лут с боссов\n(прочее)"
 icon	"data/textures/buttons/button_pinnacle_boss_loot.png"
@@ -4596,6 +4666,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nBoss loot"
 name_RU	"Категория:\nЛут с боссов"
 icon	"data/textures/buttons/pattern_folder_boss_loot.png"
@@ -4607,6 +4678,7 @@ have_force_field
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 cannot_be_configured
 name_EN	"Gems"
 name_RU	"Камни"
@@ -4639,6 +4711,7 @@ DETF_color	255	230	204	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Awakened gems"
 name_RU	"Пробуждённые камни"
 icon	"data/textures/icons/awakened_enlighten.png"
@@ -4722,6 +4795,7 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_PATTERN
+target_game	"PoE1"
 name_EN	"Category:\nSkill gems"
 name_RU	"Категория:\nКамни умений"
 icon	"data/textures/buttons/pattern_folder_gems.png"

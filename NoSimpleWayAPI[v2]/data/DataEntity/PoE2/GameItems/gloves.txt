@@ -1457,7 +1457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Gauze Wraps"
 	[tag]"name RU"	[value]"Улучшенные обмотки из муслина"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
@@ -1670,7 +1670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Sombre Gloves"
 	[tag]"name RU"	[value]"Тёмные перчатки эксперта"
 
-	[tag]"icon path"	[value]"undefined"
+	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"

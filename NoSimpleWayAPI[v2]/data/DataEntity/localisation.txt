@@ -1560,8 +1560,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_map_tier"
-	[tag]"name EN"		[value]"Conditiom: a certain map type.\nThe higher the map tier, the higher the level of monsters on the map, which makes the map more difficult and the reward better.\nSome events, such as summoning bosses, require a certain map type.\nFor example, summoning a high-level Exarch requires a map with at least 14 tier.\n\nThe tiers are divided by 'colors':\n\n= White maps (tier 1-5)\n= Yellow maps (tier 6-10)\n= Red maps (tier 11-16).\n\nThe map tier should not be confused with the level of the item."
+	[tag]"name EN"		[value]"Condition: a certain map type.\nThe higher the map tier, the higher the level of monsters on the map, which makes the map more difficult and the reward better.\nSome events, such as summoning bosses, require a certain map type.\nFor example, summoning a high-level Exarch requires a map with at least 14 tier.\n\nThe tiers are divided by 'colors':\n\n= White maps (tier 1-5)\n= Yellow maps (tier 6-10)\n= Red maps (tier 11-16).\n\nThe map tier should not be confused with the level of the item."
 	[tag]"name RU"		[value]"Условие: определённый тир карты.\nЧем выше тир карты, тем выше уровень монстров на ней, что делает её сложнее, а награду лучше.\nНекоторые события, вроде призыва боссов, требуют определённый тир карты.\nНапример, призыв высокоуровнего Экзарха требует карты как минимум 14 тира.\n\nТиры разделяют по 'цветам':\n\n= Белые карты (тир 1-5)\n= Жёлтые карты (тир 6-10)\n= Красные карты (тир 11-16).\n\nТир карты не следует путать с уровнем предмета"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_waystone_tier"
+	[tag]"name EN"		[value]"Condition: a certain waystone type.\nThe higher the waystone tier, the higher the level of monsters on the map, which makes the map more difficult and the reward better."
+	[tag]"name RU"		[value]"Условие: определённый тир путевого камня.\nЧем выше тир путвеого камня, тем выше уровень монстров на карте, что делает её сложнее, а награду лучше.\n\nТир путевого камня не следует путать с уровнем предмета"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -3940,3 +3948,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_game_poe2"
 	[tag]"name EN"		[value]"Path of Exile 2"
 	[tag]"name RU"		[value]"Path of Exile 2"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"RV_button_game_poe1"
+	[tag]"name EN"		[value]"Game: Path of Exile 1"
+	[tag]"name RU"		[value]"Игра: Path of Exile 1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"RV_button_game_poe2"
+	[tag]"name EN"		[value]"Game: Path of Exile 2"
+	[tag]"name RU"		[value]"Игра: Path of Exile 2"

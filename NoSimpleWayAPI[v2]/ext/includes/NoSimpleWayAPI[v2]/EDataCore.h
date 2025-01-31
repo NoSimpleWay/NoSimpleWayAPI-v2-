@@ -60,7 +60,7 @@ class ECustomData
 public:
 	ECustomData();
 	~ECustomData();
-
+	//GameItemAttribute* target_attribute;
 	Entity* parent_entity = nullptr;
 
 	//data
@@ -650,11 +650,14 @@ public:
 	EButtonGroup* target_group;
 };
 
-class EDataContainer_Button_AddContentToFilterBlock : public EDataContainer
-{
-public:
-	GameItemAttribute* target_attribute;
-};
+//class EDataContainer_Button_AddContentToFilterBlock : public EDataContainer
+//{
+//public:
+//	GameItemAttribute* target_attribute;
+//};
+
+
+
 //
 //class EDataContainer_Group_WholeFilterBlock : public EDataContainer
 //{

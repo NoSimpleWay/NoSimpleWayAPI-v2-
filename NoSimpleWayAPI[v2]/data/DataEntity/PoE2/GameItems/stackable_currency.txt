@@ -7,6 +7,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"BlacksmithWhetstone(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -26,12 +29,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"ArcanustEtcher(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -45,6 +51,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"ScrollOfWisdom(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -64,12 +73,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"ChaosOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -83,6 +95,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"ArmourerScrap(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -102,6 +117,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"MirrorOfKalandra(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -121,12 +139,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"OrbOfAlchemy(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -140,12 +161,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"OrbOfChance(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -159,6 +183,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"OrbOfTransmutation(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -178,12 +205,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"ExaltedOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Rare"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -197,12 +227,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"RegalOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -216,6 +249,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"OrbOfAugmentation(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -235,12 +271,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"GlassblowerBauble(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -254,6 +293,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"GemcutterPrism(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -273,6 +315,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"LesserJewellerOrb"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -292,6 +337,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"GreaterJewellerOrb"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -311,6 +359,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"PerfectJewellerOrb"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -333,6 +384,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"drop level"		[value]"1"
 			
 	[tag]"worth"			[value]"Trash"
@@ -349,6 +402,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"DivineOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
@@ -368,12 +424,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"Albino_Rhoa_Feather_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Expensive"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -387,12 +446,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"VaalOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -406,12 +468,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"OrbOfAnnulment(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Moderate"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -425,12 +490,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"Gold"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Moderate"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -444,12 +512,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"BronzeKey"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Drop from sekhema"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Moderate"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -463,12 +534,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"GoldKey"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Drop from sekhema"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Rare"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
@@ -482,12 +556,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"GoldKey"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Drop from sekhema"
+	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
 			
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Rare"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
