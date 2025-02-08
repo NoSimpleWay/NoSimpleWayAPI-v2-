@@ -278,6 +278,7 @@ public:
 	bool										hidden_by_folder = false;
 
 	std::string									folder_named_id = "";
+
 	EntityButtonFilterRule*						parent_folder;
 	std::vector<EntityButtonFilterRule*>		child_button_list;
 
@@ -744,6 +745,8 @@ public:
 	std::string		target_data_type = "";
 	//EButtonGroup* active_group_for_filter_rules				= nullptr;
 
+	EntityButtonGameSwitch* pointer_to_select_game_version_button[2];
+
 	EntityButtonWideItem* target_filter_rule_pattern_button	= nullptr;
 
 	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
@@ -882,6 +885,15 @@ class EButtonGroupAttributeGeneratorGroup_MapAttributes : public EButtonGroupAtt
 {
 public:
 	EButtonGroupAttributeGeneratorGroup_MapAttributes(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
+class EButtonGroupAttributeGeneratorGroup_WaystoneTier : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_WaystoneTier(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
 
 	void init()																			override;
 	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
@@ -1481,6 +1493,8 @@ namespace EDataActionCollection
 	void action_set_auto_prices(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_game_in_data_entity_collection(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void switch_game_in_data_entity_collection(std::string target_game_name, EntityButton* game_switch_button);
+
 
 
 	//LOOT SIMULATOR ATTRIBUTES AFFIXES
@@ -1493,6 +1507,8 @@ namespace EDataActionCollection
 	void action_open_price_check_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_pattern_as_game_item(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_game_version_for_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void switch_loot_pattern_for_game();
 
 
 
@@ -1983,6 +1999,7 @@ public:
 	bool can_be_quality			= false;
 	bool can_be_gem_level		= false;
 	bool can_be_maptier			= false;
+	bool can_be_waystone_tier	= false;
 	bool can_be_blighted		= false;
 	bool can_be_uberblighted	= false;
 	bool can_be_transfigured	= false;

@@ -3271,6 +3271,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"waystone_tier"
+	[tag]"name EN"		[value]"Waystone tier"
+	[tag]"name RU"		[value]"Тир путевого камня"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"blighted_map"
 	[tag]"name EN"		[value]"Blighted map"
 	[tag]"name RU"		[value]"Карта скверны"

@@ -1,6 +1,3 @@
-
-
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -43,6 +40,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Камень разлома"
 
 	[tag]"icon path"	[value]"BreachstonePoE2"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cowardly Fate"
+	[tag]"name RU"		[value]"Трусливая судьба"
+
+	[tag]"icon path"	[value]"CowardlyFate"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Deadly Fate"
+	[tag]"name RU"		[value]"Смертельная судьба"
+
+	[tag]"icon path"	[value]"DeadlyFate"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Victorious Fate"
+	[tag]"name RU"		[value]"Победоносная судьба"
+
+	[tag]"icon path"	[value]"VictoriousFate(PoE2)"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Boss pass"

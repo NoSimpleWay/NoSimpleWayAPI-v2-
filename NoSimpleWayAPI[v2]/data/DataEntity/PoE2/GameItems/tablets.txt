@@ -1,0 +1,92 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breach Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч Разлома"
+
+	[tag]"icon path"	[value]"BreachTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expedition Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч Экспедиции"
+
+	[tag]"icon path"	[value]"ExpeditionTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Delirium Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч Делириума"
+
+	[tag]"icon path"	[value]"DeliriumTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ritual Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч Ритуала"
+
+	[tag]"icon path"	[value]"RitualTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч"
+
+	[tag]"icon path"	[value]"IrradiatedTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Overseer Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка смотрителя"
+
+	[tag]"icon path"	[value]"BossTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	

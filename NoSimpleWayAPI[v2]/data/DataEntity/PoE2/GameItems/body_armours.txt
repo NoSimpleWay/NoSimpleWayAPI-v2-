@@ -17,6 +17,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -39,6 +40,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -62,6 +64,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -84,6 +87,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -106,6 +110,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -128,6 +133,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -150,6 +156,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -172,6 +179,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -194,6 +202,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -216,6 +225,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -239,6 +249,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -261,6 +272,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -283,6 +295,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -305,6 +318,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -327,6 +341,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -349,6 +364,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -371,6 +387,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -393,6 +410,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -415,6 +433,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -437,6 +456,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -459,6 +479,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -481,6 +502,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -503,6 +525,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -525,6 +548,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"		[value]"Trash"
 	
@@ -563,6 +587,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -586,6 +611,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -608,6 +634,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -631,6 +658,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -653,6 +681,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -675,6 +704,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -697,6 +727,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -720,6 +751,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -742,6 +774,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -765,6 +798,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -787,6 +821,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -809,6 +844,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -832,6 +868,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -854,6 +891,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -877,6 +915,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -899,6 +938,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -921,6 +961,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -944,6 +985,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -967,6 +1009,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -990,6 +1033,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1013,6 +1057,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1036,6 +1081,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1059,6 +1105,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1082,6 +1129,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1105,6 +1153,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1144,6 +1193,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1166,6 +1216,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1188,6 +1239,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1210,6 +1262,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1232,6 +1285,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1254,6 +1308,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1276,6 +1331,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1298,6 +1354,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1320,6 +1377,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1342,6 +1400,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1364,6 +1423,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1386,6 +1446,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1408,6 +1469,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1430,6 +1492,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1452,6 +1515,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1474,6 +1538,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1496,6 +1561,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1518,6 +1584,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1540,6 +1607,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1562,6 +1630,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1585,6 +1654,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1607,6 +1677,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1629,6 +1700,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1651,6 +1723,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1692,6 +1765,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1716,6 +1790,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1740,6 +1815,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1764,6 +1840,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1788,6 +1865,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1812,6 +1890,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1836,6 +1915,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1860,6 +1940,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1884,6 +1965,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1908,6 +1990,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -1932,6 +2015,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1956,6 +2040,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1980,6 +2065,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -2004,6 +2090,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -2028,6 +2115,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"	
 	
@@ -2052,6 +2140,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2076,6 +2165,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2100,6 +2190,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2124,6 +2215,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2148,6 +2240,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2172,6 +2265,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2196,6 +2290,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2238,6 +2333,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2262,6 +2358,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2286,6 +2383,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2310,6 +2408,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2334,6 +2433,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2358,6 +2458,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 ADD_NEW_DATA_ENTITY
@@ -2381,6 +2482,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2405,6 +2507,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2429,6 +2532,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2453,6 +2557,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2477,6 +2582,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2501,6 +2607,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2525,6 +2632,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2549,6 +2657,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2573,6 +2682,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2597,6 +2707,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2621,6 +2732,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2645,6 +2757,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2669,6 +2782,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2693,6 +2807,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2717,6 +2832,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2741,6 +2857,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2789,6 +2906,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2813,6 +2931,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2838,6 +2957,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2862,6 +2982,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2886,6 +3007,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2911,6 +3033,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2935,6 +3058,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2960,6 +3084,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2984,6 +3109,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3008,6 +3134,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3033,6 +3160,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3057,6 +3185,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3082,6 +3211,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3106,6 +3236,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3130,6 +3261,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3155,6 +3287,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3180,6 +3313,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3205,6 +3339,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3230,6 +3365,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3255,6 +3391,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3280,6 +3417,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3305,6 +3443,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -3332,5 +3471,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"

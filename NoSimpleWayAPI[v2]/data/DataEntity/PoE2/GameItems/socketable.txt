@@ -1,0 +1,426 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Desert Rune"
+	[tag]"name RU"		[value]"–уна пустыни"
+
+	[tag]"icon path"	[value]"DesertRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Glacial Rune"
+	[tag]"name RU"		[value]"–уна ледника"
+
+	[tag]"icon path"	[value]"GlacialRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Storm Rune"
+	[tag]"name RU"		[value]"–уна шторма"
+
+	[tag]"icon path"	[value]"StormRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Iron Rune"
+	[tag]"name RU"		[value]"–уна железа"
+
+	[tag]"icon path"	[value]"IronRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Body Rune"
+	[tag]"name RU"		[value]"–уна тела"
+
+	[tag]"icon path"	[value]"BodyRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mind Rune"
+	[tag]"name RU"		[value]"–уна разума"
+
+	[tag]"icon path"	[value]"MindRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rebirth Rune"
+	[tag]"name RU"		[value]"–уна перерождени€"
+
+	[tag]"icon path"	[value]"RebirthRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Inspiration Rune"
+	[tag]"name RU"		[value]"–уна вдохновени€"
+
+	[tag]"icon path"	[value]"InspirationRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stone Rune"
+	[tag]"name RU"		[value]"–уна камн€"
+
+	[tag]"icon path"	[value]"StoneRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vision Rune"
+	[tag]"name RU"		[value]"–уна видени€"
+
+	[tag]"icon path"	[value]"VisionRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Tacati"
+	[tag]"name RU"		[value]"ядро душ “акати"
+
+	[tag]"icon path"	[value]"SoulCoreOfTacati"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Opiloti"
+	[tag]"name RU"		[value]"ядро душ ќпилоти"
+
+	[tag]"icon path"	[value]"SoulCoreOfOpiloti"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Jiquani"
+	[tag]"name RU"		[value]"ядро душ ƒжиквани"
+
+	[tag]"icon path"	[value]"SoulCoreOfJiquani"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Zalatl"
+	[tag]"name RU"		[value]"ядро душ «алатл€"
+
+	[tag]"icon path"	[value]"SoulCoreOfZalatl"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Citaqualotl"
+	[tag]"name RU"		[value]"ядро душ —итаквалотл€"
+
+	[tag]"icon path"	[value]"SoulCoreOfCitaqualotl"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Puhuarte"
+	[tag]"name RU"		[value]"ядро душ ѕухварте"
+
+	[tag]"icon path"	[value]"SoulCoreOfPuhuatre"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Tzamoto"
+	[tag]"name RU"		[value]"ядро душ ÷амото"
+
+	[tag]"icon path"	[value]"SoulCoreOfTzamoto"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Xopec"
+	[tag]"name RU"		[value]"ядро душ Ўопека"
+
+	[tag]"icon path"	[value]"SoulCoreOfXopec"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Azcapa"
+	[tag]"name RU"		[value]"ядро душ јзкапы"
+
+	[tag]"icon path"	[value]"SoulCoreOfAzcapa"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Topotante"
+	[tag]"name RU"		[value]"ядро душ “опотанте"
+
+	[tag]"icon path"	[value]"SoulCoreOfTopotante"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Quipolatl"
+	[tag]"name RU"		[value]"ядро душ  виполатл€"
+
+	[tag]"icon path"	[value]"SoulCoreOfQuipolatl"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Ticaba"
+	[tag]"name RU"		[value]"ядро душ “икабы"
+
+	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Atmohua"
+	[tag]"name RU"		[value]"ядро душ јтмохвы"
+
+	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Cholotl"
+	[tag]"name RU"		[value]"ядро душ „олотл€"
+
+	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soul Core of Zantipi"
+	[tag]"name RU"		[value]"ядро душ «антипи"
+
+	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	

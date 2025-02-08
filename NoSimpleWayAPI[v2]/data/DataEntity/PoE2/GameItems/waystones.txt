@@ -1,0 +1,12 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Waystone"
+	[tag]"name RU"		[value]"Путевой камень"
+
+	[tag]"icon path"	[value]"ClassWaystones"
+	[tag]"base class"	[value]"Waystones"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

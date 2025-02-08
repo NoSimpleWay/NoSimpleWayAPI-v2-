@@ -1666,7 +1666,51 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"short name"	[value]"Waystone"
 	
+	[tag]"can be"		[value]"WaystoneTier"
+	
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"ClassWaystones"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Pinnacle Keys"
+	[tag]"name RU"		[value]"Древние ключи"
+	
+	[tag]"short name"	[value]"Pinnacle Key"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ClassWaystones"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Socketable"
+	[tag]"name RU"		[value]"Размещаемое"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"IronRune"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Tablet"
+	[tag]"name RU"		[value]"Плитки"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"ExpeditionTablet"
 	

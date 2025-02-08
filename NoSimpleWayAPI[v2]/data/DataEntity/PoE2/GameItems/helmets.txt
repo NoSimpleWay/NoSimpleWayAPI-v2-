@@ -15,7 +15,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -38,7 +39,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -61,7 +63,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -84,7 +87,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -107,7 +111,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -130,7 +135,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -153,7 +159,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -176,7 +183,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -199,7 +207,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -222,7 +231,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -245,7 +255,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -267,7 +278,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -290,7 +302,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -313,7 +326,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -336,7 +350,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -359,7 +374,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -382,7 +398,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -405,7 +422,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -428,7 +446,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -451,7 +470,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -474,7 +494,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -497,7 +518,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -519,7 +541,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -542,7 +565,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -565,7 +589,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -588,7 +613,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -611,7 +637,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -634,7 +661,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -657,7 +685,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -680,7 +709,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -703,7 +733,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -726,7 +757,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -749,7 +781,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -774,7 +807,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -799,7 +833,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -824,7 +859,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -849,7 +885,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -874,7 +911,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -899,7 +937,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -924,7 +963,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -949,7 +989,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -974,7 +1015,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -999,7 +1041,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1024,7 +1067,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1049,7 +1093,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1074,7 +1119,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1099,7 +1145,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1124,7 +1171,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1149,7 +1197,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1174,7 +1223,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1199,7 +1249,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1224,7 +1275,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1249,7 +1301,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1274,7 +1327,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1299,7 +1353,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1324,7 +1379,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1349,7 +1405,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1376,7 +1433,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1399,7 +1457,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1422,7 +1481,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1445,7 +1505,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1468,7 +1529,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1491,7 +1553,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1514,7 +1577,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1537,7 +1601,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1560,7 +1625,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1583,7 +1649,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1606,7 +1673,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1629,7 +1697,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1652,7 +1721,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1675,7 +1745,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1698,7 +1769,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1721,7 +1793,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1746,7 +1819,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1771,7 +1845,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1796,7 +1871,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1821,7 +1897,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1846,7 +1923,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1871,7 +1949,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1896,7 +1975,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1921,7 +2001,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1946,7 +2027,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1971,7 +2053,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -1996,7 +2079,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2021,7 +2105,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2046,7 +2131,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2071,7 +2157,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2096,7 +2183,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2119,7 +2207,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2142,7 +2231,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2165,7 +2255,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2188,7 +2279,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2211,7 +2303,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2234,7 +2327,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2257,7 +2351,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2280,7 +2375,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2303,7 +2399,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2328,7 +2425,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2353,7 +2451,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2378,7 +2477,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2403,7 +2503,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2428,7 +2529,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2453,7 +2555,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2478,7 +2581,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2503,7 +2607,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"basic"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2525,3 +2630,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"55"
 	[tag]"UNDEFINED"	[value]"Level 75, 76 Dex, 76 Int"
 	[tag]"UNDEFINED"	[value]"Level 75, 76 Dex, 76 Int"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"

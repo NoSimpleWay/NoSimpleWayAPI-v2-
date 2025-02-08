@@ -7,9 +7,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность тела"
 
 	[tag]"icon path"	[value]"EssenceOfBody"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29,9 +30,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность разума"
 
 	[tag]"icon path"	[value]"EssenceOfMind"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -51,9 +53,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность улучшения"
 
 	[tag]"icon path"	[value]"EssenceOfEnchantment"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -73,9 +76,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность мучения"
 
 	[tag]"icon path"	[value]"EssenceOfTorment"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -95,9 +99,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность пламени"
 
 	[tag]"icon path"	[value]"EssenceOfFlames"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -117,9 +122,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность льда"
 
 	[tag]"icon path"	[value]"EssenceOfIce"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -139,9 +145,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность электричества"
 
 	[tag]"icon path"	[value]"EssenceOfElectricity"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -161,9 +168,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность гибели"
 
 	[tag]"icon path"	[value]"EssenceOfRuin"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -183,9 +191,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность битвы"
 
 	[tag]"icon path"	[value]"EssenceOfBattle"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -205,9 +214,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность колдовства"
 
 	[tag]"icon path"	[value]"EssenceOfSorcery"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -227,9 +237,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность спешки"
 
 	[tag]"icon path"	[value]"EssenceOfHaste"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -249,9 +260,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность бесконечности"
 
 	[tag]"icon path"	[value]"EssenceOfInfinite"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -271,9 +283,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность тела"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfBody"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -293,9 +306,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность разума"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfMind"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -315,9 +329,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность улучшения"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfEnchancement"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -337,9 +352,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность мучения"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfTorment"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -359,9 +375,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность пламени"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfFlames"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -381,9 +398,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность льда"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfIce"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -403,9 +421,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность электричества"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfElectricity"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -425,9 +444,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность гибели"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfRuin"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -447,9 +467,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность битвы"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfBattle"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -468,9 +489,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность колдовства"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfSorcery"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -489,9 +511,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность спешки"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfHaste"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -511,9 +534,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большая сущность бесконечности"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfInfinite"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Greater"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

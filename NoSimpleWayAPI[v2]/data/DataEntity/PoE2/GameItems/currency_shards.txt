@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Transmutation Shard"
 	[tag]"name RU"			[value]"Осколок превращения"
 	
-	[tag]"icon path"		[value]"ChanceShard(PoE2)"
+	[tag]"icon path"		[value]"TransmutationShard(PoE2)"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"

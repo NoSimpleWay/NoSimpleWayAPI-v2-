@@ -17,6 +17,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"22"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -39,6 +40,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"47"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -61,6 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"132"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -83,6 +86,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"182"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -105,6 +109,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"60"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -127,6 +132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"147"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -149,6 +155,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"87"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -171,6 +178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"157"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -193,6 +201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"200"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -215,6 +224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"102"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -237,6 +247,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"167"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -259,6 +270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"219"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -281,6 +293,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"132"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -303,6 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"150"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -325,6 +339,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"182"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -369,6 +384,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"15"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -392,6 +408,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"38"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -415,6 +432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"119"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -438,6 +456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"166"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -461,6 +480,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"50"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -484,6 +504,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"133"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -507,6 +528,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"79"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -530,6 +552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"143"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -553,6 +576,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"183"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -576,6 +600,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"90"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -599,6 +624,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"152"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -622,6 +648,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"200"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -645,6 +672,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"119"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -668,6 +696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"135"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -691,6 +720,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"166"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -737,6 +767,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"14"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -760,6 +791,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"22"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -783,6 +815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"48"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -806,6 +839,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"63"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -829,6 +863,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"25"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -852,6 +887,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"52"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -875,6 +911,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"34"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -898,6 +935,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"55"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -921,6 +959,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"69"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -944,6 +983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"38"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -967,6 +1007,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"58"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -990,6 +1031,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"75"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1013,6 +1055,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"48"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1036,6 +1079,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"53"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1059,6 +1103,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"63"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1103,6 +1148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"15"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1127,6 +1173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"65"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1151,6 +1198,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"91"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1176,6 +1224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"28"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1201,6 +1250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"73"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1226,6 +1276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"101"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1251,6 +1302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"50"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1275,6 +1327,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"84"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1299,6 +1352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"110"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1324,6 +1378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"65"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1349,6 +1404,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"74"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1374,6 +1430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion max"	[value]"91"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1424,6 +1481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"9"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1448,6 +1506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"26"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -1472,6 +1531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"35"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1497,6 +1557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"14"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1522,6 +1583,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"29"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1547,6 +1609,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"38"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1572,6 +1635,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"21"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1596,6 +1660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"32"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1620,6 +1685,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"42"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1645,6 +1711,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"26"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1670,6 +1737,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"29"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1695,6 +1763,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"35"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1749,6 +1818,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"9"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1774,6 +1844,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"26"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1799,6 +1870,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"35"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1824,6 +1896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"14"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1849,6 +1922,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"29"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1874,6 +1948,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"38"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1899,6 +1974,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"21"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1924,6 +2000,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"32"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1949,6 +2026,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"42"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1974,6 +2052,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"26"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1999,6 +2078,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"29"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2024,6 +2104,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"35"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2051,5 +2132,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield max"	[value]"23"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"

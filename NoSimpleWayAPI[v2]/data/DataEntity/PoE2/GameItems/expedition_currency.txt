@@ -31,6 +31,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"LesserBrokenCircleArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Expedition currency"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10000"
 
@@ -47,6 +49,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserBlackScytheArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Expedition currency"
 	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10000"
@@ -65,6 +69,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"LesserOrderArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Expedition currency"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10000"
 
@@ -81,6 +87,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"LesserSunArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Expedition currency"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10000"
 
@@ -96,6 +104,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExpeditionLogbook"
 	[tag]"base class"	[value]"Expedition Logbook"
+	
+	[tag]"item tag"		[value]"Expedition currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	

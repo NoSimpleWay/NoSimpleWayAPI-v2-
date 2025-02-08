@@ -1,0 +1,53 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Crisis Fragment"
+	[tag]"name RU"		[value]"Древний переломный фрагмент"
+
+	[tag]"icon path"	[value]"AncientCrisis"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Faded Crisis Fragment"
+	[tag]"name RU"		[value]"Увядший переломный фрагмент"
+
+	[tag]"icon path"	[value]"FadedCrisis"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Weathered Crisis Fragment"
+	[tag]"name RU"		[value]"Выветрившийся переломный фрагмент"
+
+	[tag]"icon path"	[value]"WeatheredCrisis"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

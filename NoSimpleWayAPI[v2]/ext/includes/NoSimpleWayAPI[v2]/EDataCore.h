@@ -502,6 +502,7 @@ public:
 
 	bool								is_folder	= false;
 	std::string							named_id	= "";
+	std::string							unique_id = "";
 
 	bool								always_show = false;
 

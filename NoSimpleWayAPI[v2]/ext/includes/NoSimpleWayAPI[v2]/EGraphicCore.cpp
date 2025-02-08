@@ -3371,143 +3371,152 @@ bool NS_EGraphicCore::getPngSize(const char* fileName, int& _x, int& _y)
 
 ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, ETextureAtlas* _atlas)
 {
-	float stored_zoom = NS_EGraphicCore::current_zoom;
-	NS_EGraphicCore::current_zoom = 1.0f;
-
-	for (int i = 0; i < _full_path.length(); i++)
+	if (std::filesystem::exists(_full_path))
 	{
-		if (_full_path[i] == '\\') { _full_path[i] = '/'; }
-	}
+			float stored_zoom = NS_EGraphicCore::current_zoom;
+		NS_EGraphicCore::current_zoom = 1.0f;
 
-	ETextureGabarite* duplicate_gabarite = nullptr;
-
-	//search already loaded texture gabarite
-	int
-	index = EStringUtils::get_id_by_hash(_full_path);
-
-
-
-	for (ETextureGabarite* g : NS_EGraphicCore::texture_gabarites_list[index])
-	{
-		if (g->get_full_path() == _full_path)
+		for (int i = 0; i < _full_path.length(); i++)
 		{
-			duplicate_gabarite = g;
-		}
-	}
-
-	ETextureGabarite* new_gabarite = nullptr;
-
-	if (duplicate_gabarite == nullptr)
-	{
-		
-		
-		unsigned int u_size_x = 0;
-		unsigned int u_size_y = 0;
-		get_png_image_dimensions(_full_path, u_size_x, u_size_y);
-
-		
-		
-
-		//search free place for new texture
-		int place_x = -1;
-		int place_y = -1;
-		for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 4.0f); x++)
-		{
-			for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 4.0f); y++)
-			{
-				if (_atlas->can_place_here(x, y, ceil(u_size_x / 4.0f), ceil(u_size_y / 4.0f)))
-				{
-					place_x = x * 4;
-					place_y = y * 4;
-
-					break;
-				}
-			}
-			if (place_x >= 0) { break; }
+			if (_full_path[i] == '\\') { _full_path[i] = '/'; }
 		}
 
-		//remove free space
-		//
-		if (_atlas->have_matrix)
-		for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + u_size_x) / 4.0f) + 2; x++)
-			for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + u_size_y) / 4.0f) + 2; y++)
-				if
-					(
-						(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
-						&&
-						(y < (int)(_atlas->get_atlas_size_y() / 4.0f))
-						&&
-						(x >= 0)
-						&&
-						(y >= 0)
-						)
-				{
-					_atlas->free_space[x][y] = false;
-				}
-	
+		ETextureGabarite* duplicate_gabarite = nullptr;
 
-		new_gabarite = new ETextureGabarite();
+		//search already loaded texture gabarite
+		int
+			index = EStringUtils::get_id_by_hash(_full_path);
 
-		if (new_gabarite != nullptr)
+
+
+		for (ETextureGabarite* g : NS_EGraphicCore::texture_gabarites_list[index])
 		{
-			new_gabarite->set_full_path(_full_path);
-			new_gabarite->set_name_based_on_full_path(_full_path);
-
-			new_gabarite->position_on_texture_atlas_x = place_x;
-			new_gabarite->position_on_texture_atlas_y = place_y;
-
-			new_gabarite->set_uv_parameters
-			(
-				(float)(place_x + 0.5f) / (float)(_atlas->get_atlas_size_x()),
-				(float)(place_y + 0.5f) / (float)(_atlas->get_atlas_size_y()),
-
-				(float)(u_size_x - 1.0f) / (float)(_atlas->get_atlas_size_x()),
-				(float)(u_size_y - 1.0f) / (float)(_atlas->get_atlas_size_y())
-			);
-
-			new_gabarite->target_atlas = _atlas;
-
-			new_gabarite->set_real_texture_size
-			(
-				u_size_x,
-				u_size_y
-			);
-
-			//EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
-			//EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
-
-			//NS_EGraphicCore::complete_texture_gabarite(new_gabarite);
-			NS_EGraphicCore::texture_gabarites_list[index].push_back(new_gabarite);
-
-			ETextureGabarite::incomplete_gabarites_list.push_back(new_gabarite);
-
-			if (new_gabarite->get_name() == "")
+			if (g->get_full_path() == _full_path)
 			{
-				EInputCore::logger_simple_error("empty texture name");
+				duplicate_gabarite = g;
 			}
 		}
+
+		ETextureGabarite* new_gabarite = nullptr;
+
+		if (duplicate_gabarite == nullptr)
+		{
+
+
+			unsigned int u_size_x = 0;
+			unsigned int u_size_y = 0;
+			get_png_image_dimensions(_full_path, u_size_x, u_size_y);
+
+
+
+
+			//search free place for new texture
+			int place_x = -1;
+			int place_y = -1;
+			for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 4.0f); x++)
+			{
+				for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 4.0f); y++)
+				{
+					if (_atlas->can_place_here(x, y, ceil(u_size_x / 4.0f), ceil(u_size_y / 4.0f)))
+					{
+						place_x = x * 4;
+						place_y = y * 4;
+
+						break;
+					}
+				}
+				if (place_x >= 0) { break; }
+			}
+
+			//remove free space
+			//
+			if (_atlas->have_matrix)
+				for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + u_size_x) / 4.0f) + 2; x++)
+					for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + u_size_y) / 4.0f) + 2; y++)
+						if
+							(
+								(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
+								&&
+								(y < (int)(_atlas->get_atlas_size_y() / 4.0f))
+								&&
+								(x >= 0)
+								&&
+								(y >= 0)
+								)
+						{
+							_atlas->free_space[x][y] = false;
+						}
+
+
+			new_gabarite = new ETextureGabarite();
+
+			if (new_gabarite != nullptr)
+			{
+				new_gabarite->set_full_path(_full_path);
+				new_gabarite->set_name_based_on_full_path(_full_path);
+
+				new_gabarite->position_on_texture_atlas_x = place_x;
+				new_gabarite->position_on_texture_atlas_y = place_y;
+
+				new_gabarite->set_uv_parameters
+				(
+					(float)(place_x + 0.5f) / (float)(_atlas->get_atlas_size_x()),
+					(float)(place_y + 0.5f) / (float)(_atlas->get_atlas_size_y()),
+
+					(float)(u_size_x - 1.0f) / (float)(_atlas->get_atlas_size_x()),
+					(float)(u_size_y - 1.0f) / (float)(_atlas->get_atlas_size_y())
+				);
+
+				new_gabarite->target_atlas = _atlas;
+
+				new_gabarite->set_real_texture_size
+				(
+					u_size_x,
+					u_size_y
+				);
+
+				//EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
+				//EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
+
+				//NS_EGraphicCore::complete_texture_gabarite(new_gabarite);
+				NS_EGraphicCore::texture_gabarites_list[index].push_back(new_gabarite);
+
+				ETextureGabarite::incomplete_gabarites_list.push_back(new_gabarite);
+
+				if (new_gabarite->get_name() == "")
+				{
+					EInputCore::logger_simple_error("empty texture name");
+				}
+			}
+		}
+		else
+		{
+			new_gabarite = duplicate_gabarite;
+			//EInputCore::logger_param("Use existed gabarite", new_gabarite->get_full_path());
+		}
+
+
+
+
+
+
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
+		//if (_full_path == "data/textures/loot_version_strong_ignore.png")
+		//{
+		//	duplicate_gabarite = duplicate_gabarite;
+		//}
+
+		NS_EGraphicCore::current_zoom = stored_zoom;
+		return new_gabarite;
 	}
 	else
 	{
-		new_gabarite = duplicate_gabarite;
-		//EInputCore::logger_param("Use existed gabarite", new_gabarite->get_full_path());
+		EInputCore::logger_simple_error("Texture [" + _full_path + "] do not exist!");
+
+		return NS_DefaultGabarites::texture_close_circle;
 	}
-
-	
-
-
-
-
-	//glActiveTexture(GL_TEXTURE0);
-	//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-
-	//if (_full_path == "data/textures/loot_version_strong_ignore.png")
-	//{
-	//	duplicate_gabarite = duplicate_gabarite;
-	//}
-
-	NS_EGraphicCore::current_zoom = stored_zoom;
-	return new_gabarite;
 }
 
 ETextureGabarite* NS_EGraphicCore::load_from_textures_folder(std::string _name)

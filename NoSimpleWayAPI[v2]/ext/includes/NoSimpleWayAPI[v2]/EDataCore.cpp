@@ -301,7 +301,11 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	}
 
 	slider->scroll_speed *= pow(0.01f, _d);
-	if ((slider->scroll_speed * slider->scroll_speed) < 0.05f) { slider->scroll_speed = 0.0f; }
+	if ((slider->scroll_speed * slider->scroll_speed) < 0.02f)
+	{
+		slider->scroll_speed = 0.0f;
+
+	}
 
 	
 	slider->current_value_percent = (slider->current_value - slider->min_value) / total_value;

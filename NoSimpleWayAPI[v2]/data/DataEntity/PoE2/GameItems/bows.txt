@@ -14,6 +14,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -33,6 +34,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -52,6 +54,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -71,6 +74,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -90,6 +94,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -109,6 +114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -128,6 +134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -147,6 +154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -166,6 +174,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -185,6 +194,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -204,6 +214,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -223,6 +234,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -242,6 +254,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -261,6 +274,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -280,6 +294,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -299,6 +314,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -318,6 +334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -337,6 +354,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -356,6 +374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -375,6 +394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -394,6 +414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -413,6 +434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -432,6 +454,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -451,6 +474,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
 	

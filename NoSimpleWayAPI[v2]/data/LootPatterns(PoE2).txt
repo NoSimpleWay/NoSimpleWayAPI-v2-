@@ -111,6 +111,420 @@ DETF_color	255	128	64	255
 
 
 
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Essences"
+name_RU	"Эссенции"
+icon	"data/textures/icons/GreaterEssenceOfInfinite.png"
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Currency"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"essence rang"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Regular"
+DETF_color	190	200	210	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Greater"
+DETF_color	255	200	100	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Essences"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Distilled emotions"
+name_RU	"Очищенные эмоции"
+icon	"data/textures/icons/DistilledGreed.png"
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Currency"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Distilled emotion"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Splinters"
+name_RU	"Осколки"
+icon	"data/textures/icons/BreachSplinter.png"
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Currency"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Splinter item"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Catalysts"
+name_RU	"Катализаторы"
+icon	"data/textures/icons/ChayulaCatalyst.png"
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Currency"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Catalyst item"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
 REGISTER_NEW_PATTERN
 target_game	"PoE2"
 name_EN	"Category:\nBasic currency"
@@ -118,6 +532,128 @@ name_RU	"Категория:\nОбычная валюта"
 icon	"data/textures/buttons/pattern_folder_basic_currencies.png"
 is_folder
 have_force_field
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Waystones"
+name_RU	"Путевые камни"
+icon	"data/textures/icons/ClassWaystones.png"
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"WaystoneTier"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Waystones"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Map fragments"
+name_RU	"Фрагменты карт"
+icon	"data/textures/icons/WeatheredCrisis.png"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Map Fragments"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Pinnacle Keys"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Category:\nMap items"
+name_RU	"Категория:\nПредметы карт"
+icon	"data/textures/icons/ClassWaystones.png"
+is_folder
+have_force_field
+
+
+
+
+
+
 
 
 
