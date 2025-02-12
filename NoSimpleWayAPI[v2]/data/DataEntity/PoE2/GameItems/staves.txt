@@ -14,6 +14,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -32,6 +33,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -50,6 +52,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -68,6 +71,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -86,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -104,6 +109,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -122,6 +128,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -140,6 +147,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -158,6 +166,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -176,6 +185,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -194,6 +204,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -212,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -230,6 +242,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"

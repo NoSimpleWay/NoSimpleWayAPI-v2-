@@ -1,0 +1,204 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thawing Charm"
+	[tag]"name RU"		[value]"Тающий оберег"
+
+	[tag]"icon path"	[value]"ThawingCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Staunching Charm"
+	[tag]"name RU"		[value]"Рубцующий оберег"
+
+	[tag]"icon path"	[value]"StaunchingCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Antidote Charm"
+	[tag]"name RU"		[value]"Очищающий оберег"
+
+	[tag]"icon path"	[value]"AntidoteCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dousing Charm"
+	[tag]"name RU"		[value]"Охлаждающий оберег"
+
+	[tag]"icon path"	[value]"DousingCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Grounding Charm"
+	[tag]"name RU"		[value]"Заземляющий оберег"
+
+	[tag]"icon path"	[value]"GroundingCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stone Charm"
+	[tag]"name RU"		[value]"Каменный оберег"
+
+	[tag]"icon path"	[value]"StoneCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Silver Charm"
+	[tag]"name RU"		[value]"Серебряный оберег"
+
+	[tag]"icon path"	[value]"SilverCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ruby Charm"
+	[tag]"name RU"		[value]"Оберег с рубином"
+
+	[tag]"icon path"	[value]"RubyCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sapphire Charm"
+	[tag]"name RU"		[value]"Оберег с сапфиром"
+
+	[tag]"icon path"	[value]"SapphireCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Topaz Charm"
+	[tag]"name RU"		[value]"Оберег с топазом"
+
+	[tag]"icon path"	[value]"TopazCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Amethyst Charm"
+	[tag]"name RU"		[value]"Оберег с аметистом"
+
+	[tag]"icon path"	[value]"AmethystCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Golden Charm"
+	[tag]"name RU"		[value]"Золотой оберег"
+
+	[tag]"icon path"	[value]"GoldenCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"

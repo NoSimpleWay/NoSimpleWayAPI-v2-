@@ -15,6 +15,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -35,6 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -55,6 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -75,6 +78,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -95,6 +99,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -115,6 +120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -135,6 +141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -155,6 +162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -175,6 +183,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -195,6 +204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -215,5 +225,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"

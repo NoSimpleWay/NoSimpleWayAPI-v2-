@@ -532,7 +532,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Silver Key"
 	[tag]"name RU"			[value]"Серебряный ключ"
 	
-	[tag]"icon path"		[value]"GoldKey"
+	[tag]"icon path"		[value]"SilverKey"
 	[tag]"base class"		[value]"Stackable Currency"
 	
 	[tag]"item tag"			[value]"Drop from sekhema"

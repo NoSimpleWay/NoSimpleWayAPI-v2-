@@ -50,234 +50,6 @@ target_tag	"item tag"
 
 
 
-//Экипировка для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Equipable"
-name_RU	"Экипировка"
-icon	"data/textures/icons/Wyrmscale_Boots_inventory_icon.png"
-
-target_game	"PoE2"
-tag	"Base Class"
-min_y	"100"
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"data type"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Base Class"
-	DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"name EN"
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Helmets"
-DETF_localised_attribute_name_EN	"Helmets"
-DETF_localised_attribute_name_RU	"Шлемы"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Gloves"
-DETF_localised_attribute_name_EN	"Gloves"
-DETF_localised_attribute_name_RU	"Перчатки"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boots"
-DETF_localised_attribute_name_EN	"Boots"
-DETF_localised_attribute_name_RU	"Сапоги"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Body Armours"
-DETF_localised_attribute_name_EN	"Body armours"
-DETF_localised_attribute_name_RU	"Нательные доспехи"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Two Hand Axes"
-DETF_localised_attribute_name_EN	"Two hand axes"
-DETF_localised_attribute_name_RU	"Двуручные топоры"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Two Hand Swords"
-DETF_localised_attribute_name_EN	"Two hand swords"
-DETF_localised_attribute_name_RU	"Двуручные мечи"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Two Hand Maces"
-DETF_localised_attribute_name_EN	"Two hand maces"
-DETF_localised_attribute_name_RU	"Двуручные дубины"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Spears"
-DETF_localised_attribute_name_EN	"Spears"
-DETF_localised_attribute_name_RU	"Копья"
-DETF_color	255	230	204	255
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Staves"
-DETF_localised_attribute_name_EN	"Staves"
-DETF_localised_attribute_name_RU	"Посохи"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Quarterstaves"
-DETF_localised_attribute_name_EN	"Quarterstaves"
-DETF_localised_attribute_name_RU	"Боевые посохи"
-DETF_color	255	230	204	255
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Daggers"
-DETF_localised_attribute_name_EN	"Daggers"
-DETF_localised_attribute_name_RU	"Кинжалы"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Sceptres"
-DETF_localised_attribute_name_EN	"Sceptres"
-DETF_localised_attribute_name_RU	"Скипетры"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"One Hand Maces"
-DETF_localised_attribute_name_EN	"One hand maces"
-DETF_localised_attribute_name_RU	"Одноручные дубины"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"One Hand Axes"
-DETF_localised_attribute_name_EN	"One hand axes"
-DETF_localised_attribute_name_RU	"Одноручные топоры"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"One Hand Swords"
-DETF_localised_attribute_name_EN	"One hand swords"
-DETF_localised_attribute_name_RU	"Одноручные мечи"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Flails"
-DETF_localised_attribute_name_EN	"Flails"
-DETF_localised_attribute_name_RU	"Кистени"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Traps"
-DETF_localised_attribute_name_EN	"Traps"
-DETF_localised_attribute_name_RU	"Ловушки"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Claws"
-DETF_localised_attribute_name_EN	"Claws"
-DETF_localised_attribute_name_RU	"Когти"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Wands"
-DETF_localised_attribute_name_EN	"Wands"
-DETF_localised_attribute_name_RU	"Жезлы"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Bows"
-DETF_localised_attribute_name_EN	"Bows"
-DETF_localised_attribute_name_RU	"Луки"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Crossbows"
-DETF_localised_attribute_name_EN	"Crossbows"
-DETF_localised_attribute_name_RU	"Арбалеты"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Quivers"
-DETF_localised_attribute_name_EN	"Quivers"
-DETF_localised_attribute_name_RU	"Колчаны"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Shields"
-DETF_localised_attribute_name_EN	"Shields"
-DETF_localised_attribute_name_RU	"Щиты"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Focus"
-DETF_localised_attribute_name_EN	"Focus"
-DETF_localised_attribute_name_RU	"Фокус"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rings"
-DETF_localised_attribute_name_EN	"Rings"
-DETF_localised_attribute_name_RU	"Кольца"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Amulets"
-DETF_localised_attribute_name_EN	"Amulets"
-DETF_localised_attribute_name_RU	"Амулеты"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Belts"
-DETF_localised_attribute_name_EN	"Belts"
-DETF_localised_attribute_name_RU	"Пояса"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Fishing Rods"
-DETF_localised_attribute_name_EN	"Fishing rods"
-DETF_localised_attribute_name_RU	"Удочки"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-
-
-
-
-
-
 
 
 
@@ -325,6 +97,313 @@ DETF_color	255	128	64	255
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Экипировка для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Equipable"
+name_RU	"Экипировка"
+icon	"data/textures/icons/Wyrmscale_Boots_inventory_icon.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"DAE tier"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	""
+	DETF_localised_attribute_name_EN	"All"
+	DETF_localised_attribute_name_RU	"Все"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Default"
+	DETF_localised_attribute_name_EN	"Default"
+	DETF_localised_attribute_name_RU	"Обычное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Advanced"
+	DETF_localised_attribute_name_EN	"Advanced"
+	DETF_localised_attribute_name_RU	"Улучшенное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Expert"
+	DETF_localised_attribute_name_EN	"Expert"
+	DETF_localised_attribute_name_RU	"Эксперта"
+	DETF_color	255	230	204	255
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base Class"
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Helmets"
+	DETF_localised_attribute_name_EN	"Helmets"
+	DETF_localised_attribute_name_RU	"Шлемы"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Gloves"
+	DETF_localised_attribute_name_EN	"Gloves"
+	DETF_localised_attribute_name_RU	"Перчатки"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Boots"
+	DETF_localised_attribute_name_EN	"Boots"
+	DETF_localised_attribute_name_RU	"Сапоги"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Body Armours"
+	DETF_localised_attribute_name_EN	"Body armours"
+	DETF_localised_attribute_name_RU	"Нательные доспехи"
+	DETF_color	255	230	204	255
+
+
+	
+
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Sceptres"
+	DETF_localised_attribute_name_EN	"Sceptres"
+	DETF_localised_attribute_name_RU	"Скипетры"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Wands"
+	DETF_localised_attribute_name_EN	"Wands"
+	DETF_localised_attribute_name_RU	"Жезлы"
+	DETF_color	150	200	255	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Staves"
+	DETF_localised_attribute_name_EN	"Staves"
+	DETF_localised_attribute_name_RU	"Посохи"
+	DETF_color	150	200	255	255
+	
+	
+	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Maces"
+	DETF_localised_attribute_name_EN	"One hand maces"
+	DETF_localised_attribute_name_RU	"Одноручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Maces"
+	DETF_localised_attribute_name_EN	"Two hand maces"
+	DETF_localised_attribute_name_RU	"Двуручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Quarterstaves"
+	DETF_localised_attribute_name_EN	"Quarterstaves"
+	DETF_localised_attribute_name_RU	"Боевые посохи"
+	DETF_color	255	200	200	255
+
+
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Bows"
+	DETF_localised_attribute_name_EN	"Bows"
+	DETF_localised_attribute_name_RU	"Луки"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Crossbows"
+	DETF_localised_attribute_name_EN	"Crossbows"
+	DETF_localised_attribute_name_RU	"Арбалеты"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Quivers"
+	DETF_localised_attribute_name_EN	"Quivers"
+	DETF_localised_attribute_name_RU	"Колчаны"
+	DETF_color	150	255	200	255
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Shields"
+	DETF_localised_attribute_name_EN	"Shields"
+	DETF_localised_attribute_name_RU	"Щиты"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Focus"
+	DETF_localised_attribute_name_EN	"Focus"
+	DETF_localised_attribute_name_RU	"Фокус"
+	DETF_color	150	200	255	255
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rings"
+	DETF_localised_attribute_name_EN	"Rings"
+	DETF_localised_attribute_name_RU	"Кольца"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Amulets"
+	DETF_localised_attribute_name_EN	"Amulets"
+	DETF_localised_attribute_name_RU	"Амулеты"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Belts"
+	DETF_localised_attribute_name_EN	"Belts"
+	DETF_localised_attribute_name_RU	"Пояса"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Fishing Rods"
+	DETF_localised_attribute_name_EN	"Fishing rods"
+	DETF_localised_attribute_name_RU	"Удочки"
+	DETF_color	255	255	100	255
+	
+	
+	
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Axes"
+	DETF_localised_attribute_name_EN	"Two hand axes"
+	DETF_localised_attribute_name_RU	"Двуручные топоры"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Swords"
+	DETF_localised_attribute_name_EN	"Two hand swords"
+	DETF_localised_attribute_name_RU	"Двуручные мечи"
+	DETF_color	255	110	100	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Spears"
+	DETF_localised_attribute_name_RU	"Копья"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Daggers"
+	DETF_localised_attribute_name_EN	"Daggers"
+	DETF_localised_attribute_name_RU	"Кинжалы"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Axes"
+	DETF_localised_attribute_name_EN	"One hand axes"
+	DETF_localised_attribute_name_RU	"Одноручные топоры"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Swords"
+	DETF_localised_attribute_name_EN	"One hand swords"
+	DETF_localised_attribute_name_RU	"Одноручные мечи"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Flails"
+	DETF_localised_attribute_name_EN	"Flails"
+	DETF_localised_attribute_name_RU	"Кистени"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Traps"
+	DETF_localised_attribute_name_EN	"Traps"
+	DETF_localised_attribute_name_RU	"Ловушки"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Claws"
+	DETF_localised_attribute_name_EN	"Claws"
+	DETF_localised_attribute_name_RU	"Когти"
+	DETF_color	255	110	100	255
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_RULE
+name_EN	"Category:\nEquip"
+name_RU	"Категория:\nЭкипировка"
+icon	"data/textures/icons/LavishCrown.png"
+is_folder
+
+target_game	"PoE2"
+tag	"Game item"
+named_id	"equip PoE2"
+min_y	"100"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1237,3 +1316,95 @@ target_game	"PoE2"
 tag	"Game item"
 named_id	"map fragments PoE2"
 min_y	"100"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Таблички для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Flasks"
+name_RU	"Флаконы"
+icon	"data/textures/icons/Colossal_Life_Flask_inventory_icon.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base Class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Life Flasks"
+	DETF_color	255	150	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Mana Flasks"
+	DETF_color	100	150	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Charms"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

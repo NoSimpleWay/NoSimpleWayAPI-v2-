@@ -1,0 +1,657 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Twig Focus"
+	[tag]"name RU"	[value]"Фокус из веток"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Woven Focus"
+	[tag]"name RU"	[value]"Плетёный фокус"
+
+	[tag]"icon path"	[value]"WovenFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Woven Focus"
+	[tag]"name RU"	[value]"Улучшенный плетёный фокус"
+
+	[tag]"icon path"	[value]"WovenFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Antler Focus"
+	[tag]"name RU"	[value]"Фокус из рогов"
+
+	[tag]"icon path"	[value]"AntlerFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Antler Focus"
+	[tag]"name RU"	[value]"Улучшенный фокус из рогов"
+
+	[tag]"icon path"	[value]"AntlerFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Antler Focus"
+	[tag]"name RU"	[value]"Фокус из рогов эксперта"
+
+	[tag]"icon path"	[value]"AntlerFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Engraved Focus"
+	[tag]"name RU"	[value]"Резной фокус"
+
+	[tag]"icon path"	[value]"EngravedFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tonal Focus"
+	[tag]"name RU"	[value]"Звенящий фокус"
+
+	[tag]"icon path"	[value]"TonalFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Tonal Focus"
+	[tag]"name RU"	[value]"Улучшенный звенящий фокус"
+
+	[tag]"icon path"	[value]"TonalFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Crystal Focus"
+	[tag]"name RU"	[value]"Кристальный фокус"
+
+	[tag]"icon path"	[value]"CrystalFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Crystal Focus"
+	[tag]"name RU"	[value]"Улучшенный кристальный фокус"
+
+	[tag]"icon path"	[value]"CrystalFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Crystal Focus"
+	[tag]"name RU"	[value]"Кристальный фокус эксперта"
+
+	[tag]"icon path"	[value]"CrystalFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Voodoo Focus"
+	[tag]"name RU"	[value]"Фокус вуду"
+
+	[tag]"icon path"	[value]"VoodooFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Voodoo Focus"
+	[tag]"name RU"	[value]"Улучшенный фокус вуду"
+
+	[tag]"icon path"	[value]"VoodooFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Plumed Focus"
+	[tag]"name RU"	[value]"Павлиний фокус"
+
+	[tag]"icon path"	[value]"PlumedFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Plumed Focus"
+	[tag]"name RU"	[value]"Улучшенный павлиний фокус"
+
+	[tag]"icon path"	[value]"PlumedFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Expert Plumed Focus"
+	[tag]"name RU"	[value]"Павлиний фокус эксперта"
+
+	[tag]"icon path"	[value]"PlumedFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jade Focus"
+	[tag]"name RU"	[value]"Нефритовый фокус"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Paua Focus"
+	[tag]"name RU"	[value]"Фокус из ракушек"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elegant Focus"
+	[tag]"name RU"	[value]"Изящный фокус"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Attuned Focus"
+	[tag]"name RU"	[value]"Гармоничный фокус"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Magus Focus"
+	[tag]"name RU"	[value]"Фокус волшебника"
+
+	[tag]"icon path"	[value]"TwigFocus"
+	[tag]"base class"	[value]"Focus"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+

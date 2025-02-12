@@ -10027,11 +10027,14 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/boots.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/bows.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/catalysts.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/charms.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/crossbows.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/currency_shards.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/distilled_emotions.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/essences.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/expedition_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/flasks.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/foci.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/gloves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/helmets.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/jewels.txt");
@@ -10041,6 +10044,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/omens.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/one_hand_maces.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/pinnacle_keys.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/quarterstaves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/quivers.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/relics.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/rings.txt");
@@ -10050,7 +10054,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/stackable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/staves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/tablets.txt");
-	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt	");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/wands.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/waystones.txt");
 
