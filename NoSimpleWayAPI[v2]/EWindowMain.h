@@ -962,6 +962,8 @@ public:
 	static EntityButtonVariantRouter* pointer_to_game_version_router_button;
 
 	static EntityButtonVariantRouter* pointer_to_target_loot_filter_version_button;
+	static EntityButton* pointer_to_price_check_button;
+
 	static EntityButton* pointer_to_input_area_level_button;
 
 	std::vector<EntityButtonVariantRouterForLootSimulatorAddition*> pointer_to_addition_button;
@@ -1544,9 +1546,10 @@ namespace EDataActionCollection
 
 
 
-	//close button grup
+	//close button group
 	void action_on_closing_loot_versions_window(EButtonGroup* _group);
 	void action_on_closing_data_entity_group(EButtonGroup* _group);
+	void action_on_closing_poe_ninja_price_check(EButtonGroup* _group);
 
 }
 
@@ -1755,6 +1758,8 @@ public:
 
 	
 	
+	static void reset_price_tag_for_data_entity();
+
 	static void get_poe_ninja_api_prices();
 	static void parse_json_from_poe_ninja(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
@@ -1806,6 +1811,8 @@ public:
 	void register_default_color_patterns();
 
 	
+
+	static void read_poe_ninja_data_from_cache();
 
 	EWindowMain();
 

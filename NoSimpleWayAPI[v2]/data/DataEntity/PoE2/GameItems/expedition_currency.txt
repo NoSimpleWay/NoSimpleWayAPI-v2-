@@ -42,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Black Scythe Artifact"
 	[tag]"name RU"		[value]"Артефакт Чёрной косы"

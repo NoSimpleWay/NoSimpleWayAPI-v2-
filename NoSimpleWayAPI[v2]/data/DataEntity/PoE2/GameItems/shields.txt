@@ -1873,7 +1873,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Ridged Buckler"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенный ребристый баклер"
 
 	[tag]"icon path"	[value]"RidgedBuckler"
 	[tag]"base class"	[value]"Shields"
@@ -1923,7 +1923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Ringed Buckler"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Улучшенный баклер с кольцами"
 
 	[tag]"icon path"	[value]"RingedBuckler"
 	[tag]"base class"	[value]"Shields"
@@ -2141,7 +2141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Sigil Crest Shield"
-	[tag]"name RU"	[value]"[ЗАГЛУШКА]"
+	[tag]"name RU"	[value]"Гербовый щит с символикой эксперта"
 
 	[tag]"icon path"	[value]"SigilCrestShield"
 	[tag]"base class"	[value]"Shields"
@@ -2160,7 +2160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 

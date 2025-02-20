@@ -378,42 +378,12 @@ DETF_color	255	128	64	255
 
 
 
-REGISTER_NEW_FILTER_RULE
-name_EN	"Category:\nEquip"
-name_RU	"Категория:\nЭкипировка"
-icon	"data/textures/icons/LavishCrown.png"
-is_folder
-
-target_game	"PoE2"
-tag	"Game item"
-named_id	"equip PoE2"
-min_y	"100"
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Экипировка для PoE2
+//Руны для PoE2
 REGISTER_NEW_FILTER_RULE
 name_EN	"Socketable"
 name_RU	"Размещаемое"
@@ -422,6 +392,7 @@ icon	"data/textures/icons/IronRune.png"
 target_game	"PoE2"
 tag	"Game item"
 min_y	"100"
+named_id	"equip PoE2"
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
@@ -469,6 +440,111 @@ DETF_color	255	128	64	255
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+//Фляски для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Flasks"
+name_RU	"Флаконы"
+icon	"data/textures/icons/Colossal_Life_Flask_inventory_icon.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base Class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Life Flasks"
+	DETF_color	255	150	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Mana Flasks"
+	DETF_color	100	150	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Charms"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_RULE
+name_EN	"Category:\nEquip"
+name_RU	"Категория:\nЭкипировка"
+icon	"data/textures/buttons/pattern_folder_equip_PoE2.png"
+is_folder
+
+target_game	"PoE2"
+tag	"Game item"
+named_id	"equip PoE2"
+min_y	"100"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1316,73 +1392,6 @@ target_game	"PoE2"
 tag	"Game item"
 named_id	"map fragments PoE2"
 min_y	"100"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Таблички для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Flasks"
-name_RU	"Флаконы"
-icon	"data/textures/icons/Colossal_Life_Flask_inventory_icon.png"
-
-target_game	"PoE2"
-tag	"Game item"
-min_y	"100"
-
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"Base Class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Life Flasks"
-	DETF_color	255	150	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Mana Flasks"
-	DETF_color	100	150	255	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Charms"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-
-
-
-
 
 
 

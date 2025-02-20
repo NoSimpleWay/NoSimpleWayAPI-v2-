@@ -3,8 +3,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"base name"	[value]"map"
-	[tag]"name EN"		[value]"Map"
-	[tag]"name RU"		[value]"Карта"
+	[tag]"name EN"		[value]"T1 Map"
+	[tag]"name RU"		[value]"T1 Карта"
 
 	[tag]"icon path"	[value]"Map"
 	[tag]"base class"	[value]"Maps"	
@@ -15,6 +15,360 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T2 Map"
+	[tag]"name RU"		[value]"T2 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "2"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T3 Map"
+	[tag]"name RU"		[value]"T3 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "3"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T4 Map"
+	[tag]"name RU"		[value]"T4 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "4"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T5 Map"
+	[tag]"name RU"		[value]"T5 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "5"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T6 Map"
+	[tag]"name RU"		[value]"T6 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "6"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T7 Map"
+	[tag]"name RU"		[value]"T7 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "7"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T8 Map"
+	[tag]"name RU"		[value]"T8 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "8"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T9 Map"
+	[tag]"name RU"		[value]"T9 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T10 Map"
+	[tag]"name RU"		[value]"T10 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "10"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T11 Map"
+	[tag]"name RU"		[value]"T11 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "11"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T12 Map"
+	[tag]"name RU"		[value]"T12 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "12"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T13 Map"
+	[tag]"name RU"		[value]"T13 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "13"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T14 Map"
+	[tag]"name RU"		[value]"T14 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "14"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T15 Map"
+	[tag]"name RU"		[value]"T15 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "15"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T16 Map"
+	[tag]"name RU"		[value]"T16 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "16"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"map"
+	[tag]"name EN"		[value]"T17 Map"
+	[tag]"name RU"		[value]"T17 Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Regular map"
+	
+	[tag]"set int attribute"	[value]"MapTier" "17"
 	
 	[tag]"worth"		[value]"Common"
 	

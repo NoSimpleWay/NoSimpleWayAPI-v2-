@@ -1,6 +1,7 @@
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Alchemy Shard"
 	[tag]"name RU"			[value]"Осколок алхимии"
@@ -21,6 +22,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Binding Shard"
 	[tag]"name RU"			[value]"Осколок сплетени¤"
@@ -41,6 +43,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Alteration Shard"
 	[tag]"name RU"			[value]"Осколок перемен"
@@ -66,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Chaos Shard"
 	[tag]"name RU"			[value]"Осколок хаоса"
@@ -86,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Engineer's Shard"
 	[tag]"name RU"			[value]"Осколок инженера"
@@ -105,6 +110,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Horizon Shard"
 	[tag]"name RU"			[value]"Осколок горизонтов"
@@ -124,6 +130,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Regal Shard"
 	[tag]"name RU"			[value]"Осколок царей"
@@ -143,6 +150,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Transmutation Shard"
 	[tag]"name RU"			[value]"Осколок превращения"
@@ -178,6 +186,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Ancient Shard"
 	[tag]"name RU"			[value]"Древний осколок"
@@ -197,6 +206,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Annulment Shard"
 	[tag]"name RU"			[value]"Осколок отмены"
@@ -216,6 +226,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Harbinger's Shard"
 	[tag]"name RU"			[value]"Осколок предвестника"
@@ -252,6 +263,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Exalted Shard"
 	[tag]"name RU"			[value]"Осколок возвышени¤"
@@ -280,6 +292,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Fracturing Shard"
 	[tag]"name RU"			[value]"Раскалывающий осколок"
@@ -311,6 +324,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Mirror Shard"
 	[tag]"name RU"			[value]"Осколок зеркала"

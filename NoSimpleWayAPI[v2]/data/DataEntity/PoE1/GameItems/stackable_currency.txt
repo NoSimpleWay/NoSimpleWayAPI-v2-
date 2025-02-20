@@ -1,5 +1,6 @@
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Scroll Fragment"
 	[tag]"name RU"			[value]"Обрывок свитка"
@@ -18,6 +19,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Scroll of Wisdom"
 	[tag]"name RU"			[value]"Свиток мудрости"
@@ -39,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Portal Scroll"
 	[tag]"name RU"			[value]"Свиток портала"
@@ -61,6 +64,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Armourer's Scrap"
 	[tag]"name RU"			[value]"Деталь доспеха"
@@ -210,6 +214,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Chaos Orb"
 	[tag]"name RU"			[value]"Сфера хаоса"
@@ -232,6 +237,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Veiled Orb"
 	[tag]"name RU"			[value]"Скрытая сфера"
@@ -256,6 +262,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Veiled Chaos Orb"
 	[tag]"name RU"			[value]"Скрытая сфера хаоса"
@@ -867,6 +874,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Mirror of Kalandra"
 	[tag]"name RU"			[value]"Зеркало каландры"
@@ -909,6 +917,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Orb of Alchemy"
 	[tag]"name RU"			[value]"Сфера алхимии"
@@ -979,6 +988,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Orb of Chance"
 	[tag]"name RU"			[value]"Сфера удачи"

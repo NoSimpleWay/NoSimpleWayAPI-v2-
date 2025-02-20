@@ -74,7 +74,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -139,7 +139,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -163,7 +163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -267,7 +267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -327,7 +327,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -352,7 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -411,7 +411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -476,7 +476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -501,7 +501,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 

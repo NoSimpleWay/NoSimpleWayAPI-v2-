@@ -477,7 +477,7 @@ void EDataActionCollection::action_confirmed_mark_filter_blocks_as_removed_confi
 					(!block->is_default_filter_block)
 					&&
 					(!block->is_base_filter_block)
-					)
+				)
 			{
 				at_least_one_user_block = true;
 				break;
@@ -849,6 +849,8 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 		target_game_name = "PoE1";
 		target_unique_id = "all items for PoE1";
 		selected_filter_rule_button = EWindowMain::data_entity_filter->pointer_to_select_game_version_button[0];
+
+		EWindowMain::loot_simulator_button_group->pointer_to_price_check_button->suppressor = new bool(true);
 	}
 	else
 	if (clicked_loot_filter->game_version == PathOfExileGame::POE2)
@@ -856,6 +858,9 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 		target_game_name = "PoE2";
 		target_unique_id = "all items for PoE2";
 		selected_filter_rule_button = EWindowMain::data_entity_filter->pointer_to_select_game_version_button[1];
+
+
+		EWindowMain::loot_simulator_button_group->pointer_to_price_check_button->suppressor = new bool(false);
 	}
 
 	if (selected_filter_rule_button != nullptr)
@@ -2354,25 +2359,29 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 	}*/
 
 	//if (loot_button->matched_filter_blocks.size() == 1)
+	if (loot_button->matched_show_hide_block != nullptr)
 	{
 		if
-			(
-				(loot_button->matched_filter_blocks.back()->attached_separator != nullptr)
-				&&
-				!(loot_button->matched_filter_blocks.back()->attached_separator->is_expanded)
-				)
+		(
+			(loot_button->matched_show_hide_block->attached_separator != nullptr)
+			&&
+			!(loot_button->matched_show_hide_block->attached_separator->is_expanded)
+			/*(loot_button->matched_filter_blocks.back()->attached_separator != nullptr)
+			&&
+			!(loot_button->matched_filter_blocks.back()->attached_separator->is_expanded)*/
+		)
 		{
-			loot_button->matched_filter_blocks.back()->attached_separator->is_expanded = true;
+			loot_button->matched_show_hide_block->attached_separator->is_expanded = true;
 
 			EButtonGroup::refresh_button_group(EWindowMain::active_loot_filter_editor);
 		}
 
-		EWindowMain::active_loot_filter_editor->scroll_y = std::max(-loot_button->matched_filter_blocks.back()->region_gabarite->offset_y, 0.0f);
+		EWindowMain::active_loot_filter_editor->scroll_y = std::max(-loot_button->matched_show_hide_block->region_gabarite->offset_y, 0.0f);
 		EWindowMain::active_loot_filter_editor->slider->current_value = EWindowMain::active_loot_filter_editor->scroll_y;
 
 		//EInputCore::logger_param("scroll_y", loot_button->matched_filter_blocks.back()->region_gabarite->offset_y);
 
-		loot_button->matched_filter_blocks.back()->highlight_this_group_green_info();
+		loot_button->matched_show_hide_block->highlight_this_group_green_info();
 
 
 		EButtonGroup::refresh_button_group(EWindowMain::active_loot_filter_editor);
@@ -4434,6 +4443,28 @@ void EDataActionCollection::action_on_closing_data_entity_group(EButtonGroup* _g
 	}
 }
 
+void EDataActionCollection::action_on_closing_poe_ninja_price_check(EButtonGroup* _group)
+{
+
+
+	//reset price tag in data entity
+	EWindowMain::reset_price_tag_for_data_entity();
+
+
+
+	EWindowMain::read_poe_ninja_data_from_cache();
+
+
+	EWindowMain::active_loot_filter_editor->reinit_all_filter_rule_pattern_buttons();
+	EButtonGroup::refresh_button_group(EWindowMain::active_loot_filter_editor);
+
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
+	
+	//_group->close_this_group();
+
+	//_group->activate_move_to_foreground_and_center();
+}
+
 
 void EWindowMain::register_loot_version_names()
 {
@@ -4455,6 +4486,34 @@ size_t write_to_string(void* ptr, size_t size, size_t count, void* stream)
 {
 	((std::string*)stream)->append((char*)ptr, 0, size * count);
 	return size * count;
+}
+
+void EWindowMain::reset_price_tag_for_data_entity()
+{
+	for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
+	{
+		EDataEntity*
+			data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+
+		DataEntityUtils::set_tag_value_by_name(0, "base worth", "Trash", data_entity);
+
+		//remove all "good for unique" tags
+		for (int k = 0; k < data_entity->tag_list.size(); k++)
+		{
+			if
+				(
+					(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_world_drop.ID)
+					||
+					(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_boss_drop.ID)
+					)
+			{
+				data_entity->tag_list.erase(data_entity->tag_list.begin() + k);
+				k--;
+			}
+		}
+		//data_tag->tag_value_list.
+
+	}
 }
 
 void EWindowMain::get_poe_ninja_api_prices()
@@ -4492,30 +4551,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
-		{
-			EDataEntity*
-			data_entity = EWindowMain::registered_data_entity_game_item_list[i];
-
-			DataEntityUtils::set_tag_value_by_name(0, "base worth", "Trash", data_entity);
-
-			//remove all "good for unique" tags
-			for (int k = 0; k < data_entity->tag_list.size(); k++)
-			{
-				if
-					(
-						(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_world_drop.ID)
-						||
-						(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_boss_drop.ID)
-						)
-				{
-					data_entity->tag_list.erase(data_entity->tag_list.begin() + k);
-					k--;
-				}
-			}
-			//data_tag->tag_value_list.
-
-		}
+		EWindowMain::reset_price_tag_for_data_entity();
 
 		parse_json_from_poe_ninja("Unique jewels", & url_content, PoeNinjaAPIMode::UNIQUES, false);
 
@@ -6729,7 +6765,7 @@ void EWindowMain::register_loot_simulator_group()
 			EntityButton*
 				area_level_slider = EntityButton::create_horizontal_named_slider
 				(
-					new ERegionGabarite(250.0f, 38.0f),
+					new ERegionGabarite(200.0f, 38.0f),
 					top_control_part,
 					EFont::font_list[0],
 					EGUIStyle::active_style,
@@ -6772,6 +6808,8 @@ void EWindowMain::register_loot_simulator_group()
 				NS_EGraphicCore::load_from_textures_folder("buttons/ninja-logo"),
 				"update_poe_ninja_prices"
 			);
+
+			whole_loot_simulator_group->pointer_to_price_check_button = poe_ninja_price_check_button;
 
 
 			poe_ninja_price_check_button->main_text_area->font = EFont::font_list[1];
@@ -8021,7 +8059,7 @@ void EWindowMain::register_add_data_entity_group()
 
 						game_switch_poe_one->make_as_default_button_with_icon_and_localisation_by_key
 						(
-							new ERegionGabarite(120.0f, 25.0f),
+							new ERegionGabarite(100.0f, 25.0f),
 							mid_part_for_game_switch_buttons,
 							EDataActionCollection::action_switch_game_in_data_entity_collection,
 							NS_EGraphicCore::load_from_textures_folder("icons/PoE1"),
@@ -8047,12 +8085,14 @@ void EWindowMain::register_add_data_entity_group()
 
 						game_switch_poe_two->make_as_default_button_with_icon_and_localisation_by_key
 						(
-							new ERegionGabarite(120.0f, 25.0f),
+							new ERegionGabarite(100.0f, 25.0f),
 							mid_part_for_game_switch_buttons,
 							EDataActionCollection::action_switch_game_in_data_entity_collection,
 							NS_EGraphicCore::load_from_textures_folder("icons/PoE2"),
 							"button_game_poe2"
 						);
+
+						game_switch_poe_two->can_be_stretched = true;
 
 						game_switch_poe_two->game_type = PathOfExileGame::POE2;
 
@@ -9520,10 +9560,14 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 	//poe_ninja_price_checker_group->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM
 	poe_ninja_price_checker_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
+	poe_ninja_price_checker_group->actions_on_close.push_back(&EDataActionCollection::action_on_closing_poe_ninja_price_check);
+
 	//		WORSPACE PART		//////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 	workspace_part = poe_ninja_price_checker_group->add_close_group_and_return_workspace_group(new ERegionGabarite(1.0f, 20.0f), EGUIStyle::active_style);
 	workspace_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+
+	
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			//		LEFT NEST FOR STATUS AND LEAGUE NAME		//////////////////////////////////////////////////////////////////////////////////////////
@@ -9751,6 +9795,27 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 	EWindowMain::link_to_main_window->button_group_list.push_back(poe_ninja_price_checker_group);
 
 	NSWRegisteredButtonGroups::poe_ninja_price_checker_group = poe_ninja_price_checker_group;
+}
+
+void EWindowMain::read_poe_ninja_data_from_cache()
+{
+	read_poe_ninja_cache("UniqueJewel", PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueFlask", PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueWeapon", PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueArmour", PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("UniqueAccessory", PoeNinjaAPIMode::UNIQUES);
+	read_poe_ninja_cache("DivinationCard", PoeNinjaAPIMode::DIVINATIONS);
+	read_poe_ninja_cache("Currency", PoeNinjaAPIMode::CURRENCY);
+	read_poe_ninja_cache("Fragment", PoeNinjaAPIMode::FRAGMENTS);
+	read_poe_ninja_cache("Incubator", PoeNinjaAPIMode::INCUBATORS);
+	read_poe_ninja_cache("Scarab", PoeNinjaAPIMode::SCARABS);
+	read_poe_ninja_cache("Fossil", PoeNinjaAPIMode::FOSSILS);
+	read_poe_ninja_cache("SkillGem", PoeNinjaAPIMode::GEMS);
+	//read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
+	read_poe_ninja_cache("Tattoo", PoeNinjaAPIMode::TATTOO);
+	read_poe_ninja_cache("Omen", PoeNinjaAPIMode::OMEN);
+	read_poe_ninja_cache("Runes", PoeNinjaAPIMode::RUNES);
+	read_poe_ninja_cache("Delirium", PoeNinjaAPIMode::DELIRIUM_ORBS);
 }
 
 //CONSTRUCTOR
@@ -11032,23 +11097,7 @@ EWindowMain::EWindowMain()
 	
 	check_new_version_from_github();
 	  
-	read_poe_ninja_cache("UniqueJewel",		PoeNinjaAPIMode::UNIQUES);
-	read_poe_ninja_cache("UniqueFlask",		PoeNinjaAPIMode::UNIQUES);
-	read_poe_ninja_cache("UniqueWeapon",	PoeNinjaAPIMode::UNIQUES);
-	read_poe_ninja_cache("UniqueArmour",	PoeNinjaAPIMode::UNIQUES);
-	read_poe_ninja_cache("UniqueAccessory",	PoeNinjaAPIMode::UNIQUES);
-	read_poe_ninja_cache("DivinationCard",	PoeNinjaAPIMode::DIVINATIONS);
-	read_poe_ninja_cache("Currency",		PoeNinjaAPIMode::CURRENCY);
-	read_poe_ninja_cache("Fragment",		PoeNinjaAPIMode::FRAGMENTS);
-	read_poe_ninja_cache("Incubator",		PoeNinjaAPIMode::INCUBATORS);
-	read_poe_ninja_cache("Scarab",			PoeNinjaAPIMode::SCARABS);
-	read_poe_ninja_cache("Fossil",			PoeNinjaAPIMode::FOSSILS);
-	read_poe_ninja_cache("SkillGem",		PoeNinjaAPIMode::GEMS);
-	//read_poe_ninja_cache("AllflameEmber",	PoeNinjaAPIMode::EMBERS);
-	read_poe_ninja_cache("Tattoo",			PoeNinjaAPIMode::TATTOO);
-	read_poe_ninja_cache("Omen",			PoeNinjaAPIMode::OMEN);
-	read_poe_ninja_cache("Runes",			PoeNinjaAPIMode::RUNES);
-	read_poe_ninja_cache("Delirium",		PoeNinjaAPIMode::DELIRIUM_ORBS);
+	read_poe_ninja_data_from_cache();
 
 	read_user_loot_patterns();
 
@@ -23757,54 +23806,66 @@ void EButtonGroupDataEntity::background_update(float _d)
 
 	//buttons for data entity
 	unsigned int counter = 0;
-	for (int i = 0; i < 10; i++)
-		if (data_entity_id < EDataEntity::data_entity_global_list.size())
-		{
-			EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
-			(
-				new ERegionGabarite(300.0f, 60.0f),
-				main_left_side,
-				EDataEntity::data_entity_global_list[data_entity_id],
-				EFont::font_list[0],
-				false
-			);
-			jc_button->can_be_stretched = true;
+	if (data_entity_id < EDataEntity::data_entity_global_list.size())
+	{
+		
 
-			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
-
-			main_left_side->add_button_to_working_group(jc_button);
-
-			//counter++;
-
-
-			data_entity_id++;
-
-			if (data_entity_id >= EDataEntity::data_entity_global_list.size())
+		for (int i = 0; i < 50; i++)
+			if (data_entity_id < EDataEntity::data_entity_global_list.size())
 			{
+				EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
+				(
+					new ERegionGabarite(300.0f, 60.0f),
+					main_left_side,
+					EDataEntity::data_entity_global_list[data_entity_id],
+					EFont::font_list[0],
+					false
+				);
+				jc_button->can_be_stretched = true;
 
-				EDataActionCollection::action_type_search_data_entity_text(main_input_field->main_text_area);
-				//EButtonGroup::refresh_button_group(this);
-				need_refresh = true;
+				jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
 
-				EWindowMain::background_loading_info->exist_time = 0.1f;
-				EWindowMain::background_loading_info->block_need_remove = true;
+				main_left_side->add_button_to_working_group(jc_button);
 
-				EInputCore::logger_simple_info("autorefresh!");
-
-				glActiveTexture(GL_TEXTURE0);
-				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
-				glGenerateMipmap(GL_TEXTURE_2D);
-
-				//for (int j = 1; j < texture_skydome_levels; j++)
-				//{
-				//	glActiveTexture(GL_TEXTURE0);
-				//	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[j]->get_framebuffer());
-				//	glGenerateMipmap(GL_TEXTURE_2D);
-				//}
+				//counter++;
 
 
+				data_entity_id++;
+
+				if (data_entity_id >= EDataEntity::data_entity_global_list.size())
+				{
+
+					EDataActionCollection::action_type_search_data_entity_text(main_input_field->main_text_area);
+					//EButtonGroup::refresh_button_group(this);
+					need_refresh = true;
+
+					EWindowMain::background_loading_info->exist_time = 0.1f;
+					EWindowMain::background_loading_info->block_need_remove = true;
+
+					EInputCore::logger_simple_info("autorefresh!");
+
+					glActiveTexture(GL_TEXTURE0);
+					glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
+					glGenerateMipmap(GL_TEXTURE_2D);
+
+					//for (int j = 1; j < texture_skydome_levels; j++)
+					//{
+					//	glActiveTexture(GL_TEXTURE0);
+					//	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[j]->get_framebuffer());
+					//	glGenerateMipmap(GL_TEXTURE_2D);
+					//}
+
+
+				}
 			}
-		}
+
+		//if (data_entity_id % 100 == 0)
+		//{
+		//	EDataActionCollection::action_type_search_data_entity_text(main_input_field->main_text_area);
+		//	//EButtonGroup::refresh_button_group(this);
+		//	need_refresh = true;
+		//}
+	}
 
 
 
@@ -24001,7 +24062,7 @@ void EButtonGroupFilterBlockEditor::reinit_all_filter_rule_pattern_buttons()
 		}
 	}
 
-	EWindowMain::registered_group_filter_error_list->check_errors();
+	//EWindowMain::registered_group_filter_error_list->check_errors();
 }
 
 EButtonGroupFilterBlockSeparator::~EButtonGroupFilterBlockSeparator()
@@ -24531,6 +24592,10 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 				);
 			}
 
+
+
+
+			//activate bool attribute for data entity
 			std::string
 			set_bool_string = DataEntityUtils::get_tag_value_by_name(0, "set bool attribute", _game_item->stored_data_entity);
 
@@ -24543,6 +24608,28 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 					true
 				);
 			}
+
+
+
+			//activate bool attribute for data entity
+			std::string
+			int_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "set int attribute", _game_item->stored_data_entity);
+
+			std::string
+			int_attribute_value = DataEntityUtils::get_tag_value_by_name(1, "set int attribute", _game_item->stored_data_entity);
+
+			if ((int_attribute_name != "") && (int_attribute_value != ""))
+			{
+				GameItemAttribute::game_attribute_set_int_value
+				(
+					_game_item,
+					int_attribute_name,
+					EStringUtils::safe_convert_string_to_number(int_attribute_value, 0, 999'999)
+				);
+			}
+
+
+
 
 
 			//CHECK IS ITEM ALWAYS UNIQUE
@@ -25346,7 +25433,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 		{
 			{
 				EButtonGroupFilterBlock*
-					filter_block = static_cast<EButtonGroupFilterBlock*>(group);
+				filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
 				if
 					(
@@ -25427,27 +25514,27 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 	if (matched_filter_blocks.empty())
 		for (EButtonGroup* group : _filter_block_editor->group_list)
 			if
+			(
+				(!group->block_need_remove)
+				&&
 				(
-					(!group->block_need_remove)
-					&&
-					(
-						(matched_bg_color_block == nullptr)
-						||
-						(matched_text_color_block == nullptr)
-						||
-						(matched_rama_color_block == nullptr)
-						||
-						(matched_size_block == nullptr)
-						)
-					&&
-					(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
-					&&
-					(static_cast<EButtonGroupFilterBlock*>(group)->is_default_filter_block)
-					)//filter block
+					(matched_bg_color_block == nullptr)
+					||
+					(matched_text_color_block == nullptr)
+					||
+					(matched_rama_color_block == nullptr)
+					||
+					(matched_size_block == nullptr)
+				)
+				&&
+				(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
+				&&
+				(static_cast<EButtonGroupFilterBlock*>(group)->is_default_filter_block)
+			)//filter block
 			{
 				{
 					EButtonGroupFilterBlock*
-						filter_block = static_cast<EButtonGroupFilterBlock*>(group);
+					filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
 					if (EButtonGroupLootSimulator::this_group_is_matched(this, stored_game_item, filter_block))
 					{
@@ -25500,7 +25587,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 						if ((!break_detect_user) && (!break_detect_default))
 						{
-							matched_show_hide_block = filter_block;
+							//matched_show_hide_block = filter_block;
 
 							any_detect = true;
 						}
@@ -25550,7 +25637,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					(matched_size_block == nullptr)
 					||
 					(matched_minimap_icon_color == nullptr)
-					)
+				)
 				&&
 				(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
 				&&
@@ -25579,11 +25666,11 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					}
 
 					if
-						(
+					(
 							(matched_text_color_block == nullptr)
 							&&
 							(filter_block->color_check[1])
-							)
+					)
 					{
 
 						matched_text_color = &filter_block->pointer_to_color_button[1]->stored_color;
@@ -25612,7 +25699,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 					if ((!break_detect_user) && (!break_detect_default) && (!break_detect_base))
 					{
-						matched_show_hide_block = filter_block;
+						//matched_show_hide_block = filter_block;
 
 						any_detect = true;
 					}
@@ -25698,22 +25785,33 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 	EButtonGroupLootSimulator::pointer_to_warning_group->close_this_group();
 	//EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active = false;
 
+
+	EntityButtonLootItem*
+	loot_item_array[6][1024] = { nullptr };
+
+	unsigned int
+	loot_item_array_last[6] = { 0,0,0,0,0,0 };
+
 	for (int i = 0; i < _pattern->game_item_generator_list.size(); i++)
 	{
 		std::vector<EGameItem*> game_item_vector;
 
 		_pattern->game_item_generator_list[i]->generate_game_item_list(&game_item_vector);
 
+		
+
 
 		//EInputCore::logger_param("WTF", game_item->attribute_container_list[0].target_attribute->localisation.base_name);
 
 		for (EGameItem* game_item : game_item_vector)
 		{
+
+
 			_pattern->game_item_generator_list[i]->init_game_item(game_item, _pattern->game_item_generator_list[i]);
 
 
 			EntityButtonLootItem*
-				loot_item = new EntityButtonLootItem();
+			loot_item = new EntityButtonLootItem();
 			loot_item->align_even_if_hidden = true;
 			loot_item->do_not_generate_bg = true;
 
@@ -25778,8 +25876,48 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 			//);
 
 
+			
+			int worth_id_current = 0;
+			if (game_item->stored_data_entity != nullptr)
+			{
+				ID_string*
+				worth_string_current = DataEntityUtils::get_tag_ID_string_by_name_ID(0, &ERegisteredStrings::worth, game_item->stored_data_entity);
 
-			EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->add_button_to_working_group(loot_item);
+				if (worth_string_current != nullptr)
+				{
+					if (worth_string_current->ID == ERegisteredStrings::trash.ID)			{ worth_id_current = 0; } else
+					if (worth_string_current->ID == ERegisteredStrings::common.ID)			{ worth_id_current = 1; } else
+					if (worth_string_current->ID == ERegisteredStrings::moderate.ID)		{ worth_id_current = 2; } else
+					if (worth_string_current->ID == ERegisteredStrings::rare.ID)			{ worth_id_current = 3; } else
+					if (worth_string_current->ID == ERegisteredStrings::expensive.ID)		{ worth_id_current = 4; } else
+					if (worth_string_current->ID == ERegisteredStrings::very_expensive.ID)	{ worth_id_current = 5; }
+				}
+			}
+
+			loot_item_array[worth_id_current][loot_item_array_last[worth_id_current]] = loot_item;
+
+			loot_item_array_last[worth_id_current]++;
+
+			//EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->add_button_to_working_group(loot_item);
+			
+		}
+	}
+
+	for (int wrt = 0; wrt < 6; wrt++)
+	for (int item_id = 0; item_id < loot_item_array_last[wrt]; item_id++)
+	{
+		if (loot_item_array[wrt][item_id] != nullptr)
+		{
+			if ((item_id == 0) && (wrt != 0)) 
+			{
+				loot_item_array[wrt][item_id]->new_line_method = NewLineMethod::FORCIBLY;
+			}
+
+			EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->add_button_to_working_group(loot_item_array[wrt][item_id]);
+		}
+		else
+		{
+			break;
 		}
 	}
 
@@ -26055,7 +26193,11 @@ EButtonGroup* EButtonGroupLootSimulator::pointer_to_flag_configurator_group;
 EntityButtonVariantRouter*
 EButtonGroupLootSimulator::pointer_to_game_version_router_button;
 
-EntityButtonVariantRouter* EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button;
+EntityButton*
+EButtonGroupLootSimulator::pointer_to_price_check_button;
+
+EntityButtonVariantRouter*
+EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button;
 //EntityButton* EButtonGroupLootSimulator::pointer_to_input_area_level_button;
 
 
@@ -26077,8 +26219,18 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 	//if (LootFilterVersionPattern::registered_loot_filter_version_patterns[version_select].full_ignore_mode) { return false; }
 
 
-	//full ignored blocks cannot be matched
-	if (target_version_pattern->full_ignore_mode) { return false; }
+	//full ignored, non-default blocks cannot be matched. 
+	if
+	(
+		(target_version_pattern->full_ignore_mode)
+		&&
+		(
+			(!_filter_block->is_default_filter_block)
+			&&
+			(!_filter_block->is_base_filter_block)
+		)
+	) 
+	{ return false; }
 
 
 
@@ -30921,25 +31073,28 @@ void EButtonGroupPoeNinjaPriceChecker::add_price_table_group(ELocalisationText _
 
 	//		COPY BUTTON
 	////////////////////////////////////////////////////////////////////////////////////////////////
-	EntityButtonFilterTableID*
-	button_copy_price_table = new EntityButtonFilterTableID();
+	if (false)
+	{
+		EntityButtonFilterTableID*
+			button_copy_price_table = new EntityButtonFilterTableID();
 
-	button_copy_price_table->table_id = _table_id;
+		button_copy_price_table->table_id = _table_id;
 
-	button_copy_price_table->make_as_default_button_with_full_icon
-	(
-		new ERegionGabarite(20.0f, 20.0f),
-		pointer_to_price_tabs,
-		&EDataActionCollection::action_price_change_to_copy_mode,
-		NS_EGraphicCore::load_from_textures_folder("buttons/button_copy")
-	);
+		button_copy_price_table->make_as_default_button_with_full_icon
+		(
+			new ERegionGabarite(20.0f, 20.0f),
+			pointer_to_price_tabs,
+			&EDataActionCollection::action_price_change_to_copy_mode,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_copy")
+		);
 
-	button_copy_price_table->new_line_method = NewLineMethod::FORBIDDEN;
-	button_copy_price_table->add_default_description_by_key("description_copy_price_table");
+		button_copy_price_table->new_line_method = NewLineMethod::FORBIDDEN;
+		button_copy_price_table->add_default_description_by_key("description_copy_price_table");
 
-	pointer_to_price_tabs->add_button_to_working_group(button_copy_price_table);
+		pointer_to_price_tabs->add_button_to_working_group(button_copy_price_table);
 
-	price_table_copy_button_vector.push_back(button_copy_price_table);
+		price_table_copy_button_vector.push_back(button_copy_price_table);
+	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//		SWITCHER BUTTON

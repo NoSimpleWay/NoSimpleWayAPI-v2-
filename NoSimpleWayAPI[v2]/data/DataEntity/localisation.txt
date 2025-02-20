@@ -3431,35 +3431,35 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"trade_type_unique_jewels"
 	[tag]"name EN"		[value]"Unique jewels"
-	[tag]"name RU"		[value]"”никальные самоцветы"
+	[tag]"name RU"		[value]"”ник. самоцветы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"trade_type_unique_flasks"
 	[tag]"name EN"		[value]"Unique flasks"
-	[tag]"name RU"		[value]"”никальные флаконы"
+	[tag]"name RU"		[value]"”ник. флаконы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"trade_type_unique_weapon"
 	[tag]"name EN"		[value]"Unique weapon"
-	[tag]"name RU"		[value]"”никальное оружие"
+	[tag]"name RU"		[value]"”ник. оружие"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"trade_type_unique_armour"
 	[tag]"name EN"		[value]"Unique armour"
-	[tag]"name RU"		[value]"”никальные доспехи"
+	[tag]"name RU"		[value]"”ник. доспехи"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"trade_type_unique_accessory"
 	[tag]"name EN"		[value]"Unique accessory"
-	[tag]"name RU"		[value]"”никальные бижутери€"
+	[tag]"name RU"		[value]"”ник. бижутери€"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

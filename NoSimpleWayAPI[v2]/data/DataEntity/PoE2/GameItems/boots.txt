@@ -86,7 +86,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour max"	[value]"182"
 	
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
 	

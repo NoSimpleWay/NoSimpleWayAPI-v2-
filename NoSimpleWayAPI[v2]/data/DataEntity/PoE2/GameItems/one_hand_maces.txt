@@ -357,8 +357,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
-	[tag]"base family"	[value]"Advanced"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"base family"	[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -462,7 +462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -488,7 +488,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -567,7 +567,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
 
