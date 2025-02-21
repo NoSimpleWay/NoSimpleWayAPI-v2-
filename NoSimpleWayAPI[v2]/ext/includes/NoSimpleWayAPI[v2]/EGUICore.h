@@ -822,6 +822,7 @@ public:
 	EButtonGroupSimpleColorEditor(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	EButtonGroup* pointer_to_preview_group;
+	EButtonGroup* pointer_to_digit_group;
 	EButtonGroup* pointer_to_hair_slider_group;
 	EButtonGroup* pointer_to_VA_slider_group;
 

@@ -4224,6 +4224,102 @@ void EDataActionCollection::action_change_price_table_value(ETextArea* _text_are
 	_text_area->change_text(Helper::float_to_string_with_precision(unprocessed_float_value, 100.0f));
 }
 
+void EDataActionCollection::action_apply_text_code_to_color(ETextArea* _text_area)
+{
+	EButtonGroupFilterBlockColors*
+	color_editor = NSWRegisteredButtonGroups::filter_block_colors;
+
+	ETextArea*
+	text_area = color_editor->pointer_to_digint_input_button->main_text_area;
+
+	std::string color_text = text_area->original_text + "000000";
+
+	if (color_editor->target_color != nullptr)
+	{
+		text_area->change_text(text_area->original_text);
+		//for (int i = 0; i < std::min((int)(text_area->original_text.size()), 6); i++)
+		{
+			//RED
+			unsigned char			ch = color_text[0];
+
+
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->r = (float)(ch - 48) * 16.0f;
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->r = (float)(ch - 87) * 16.0f;
+			}
+
+			ch = color_text[1];
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->r += (float)(ch - 48);
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->r += (float)(ch - 87);
+			}
+
+			//GREEN
+			ch = color_text[2];
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->g = (float)(ch - 48) * 16.0f;
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->g = (float)(ch - 87) * 16.0f;
+			}
+
+			ch = color_text[3];
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->g += (float)(ch - 48);
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->g += (float)(ch - 87);
+			}
+			
+
+			//BLUE
+			ch = color_text[4];
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->b = (float)(ch - 48) * 16.0f;
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->b = (float)(ch - 87) * 16.0f;
+			}
+
+			ch = color_text[5];
+			if ((ch >= 48) && (ch <= 57))
+			{
+				color_editor->target_color->b += (float)(ch - 48);
+			}
+			else
+			if ((ch >= 97) && (ch <= 102))
+			{
+				color_editor->target_color->b += (float)(ch - 87);
+			}
+
+			//text_area = color_editor->target_color = 
+
+		}
+
+		Helper::rgb2hsv(color_editor->target_color);
+	}
+
+}
+
 void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if (!static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->is_empty)
@@ -9488,7 +9584,7 @@ void EWindowMain::register_color_editor()
 	if (true)
 	{
 		EButtonGroupSimpleColorEditor*
-			simple_color_editor = EButtonGroupSimpleColorEditor::create_color_editor_group(new ERegionGabarite(350.0f, 260.0f), EGUIStyle::active_style, this);
+		simple_color_editor = EButtonGroupSimpleColorEditor::create_color_editor_group(new ERegionGabarite(350.0f, 260.0f), EGUIStyle::active_style, this);
 
 		EButtonGroupSimpleColorEditor::registered_color_editor_group = simple_color_editor;
 		simple_color_editor->button_group_is_active = false;
@@ -28855,7 +28951,7 @@ void DataEntityFilterConfigurer::clear_router_vector(DETFConfigurerMode _mode)
 void NSWRegisteredButtonGroups::register_filter_block_colors_group_for_filter_block()
 {
 
-	filter_block_colors = new EButtonGroupFilterBlockColors(new ERegionGabarite(350.0f, 350.0f));
+	filter_block_colors = new EButtonGroupFilterBlockColors(new ERegionGabarite(350.0f, 380.0f));
 
 	filter_block_colors->auto_superfocused = true;
 	filter_block_colors->button_group_is_active = false;
@@ -28875,43 +28971,82 @@ void NSWRegisteredButtonGroups::register_filter_block_colors_group_for_filter_bl
 	left_part = workspace_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 256.0f), EGUIStyle::active_style));
 	left_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 	////////////////////////////////////////////////////////////////////////////
+	//|
+	//|
+	//|
+	//|
+	//|
 
-	//slider	[Value]	[Alpha]
-	////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
-	value_alpha_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 70.0f), EGUIStyle::active_style));
-	value_alpha_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
-	filter_block_colors->pointer_to_VA_slider_group = value_alpha_part;
-	////////////////////////////////////////////////////////////////////////////
+			//STATIC
+			//digit number
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			digit_number_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 25.0f), EGUIStyle::active_style));
+			digit_number_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
-	//slider	hair slider Hue Saturation
-	////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
-	hair_HS_slider_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 150.0f), EGUIStyle::active_style));
-	hair_HS_slider_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
-	hair_HS_slider_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+			filter_block_colors->pointer_to_digit_group = digit_number_part;
+			////////////////////////////////////////////////////////////////////////////
 
-	filter_block_colors->pointer_to_hair_slider_group = hair_HS_slider_part;
-	////////////////////////////////////////////////////////////////////////////
+					//BUTTONS
+					EntityButton*
+					digint_input_button = new EntityButton();
 
-	//cosmetic element	rama text BG
-	////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
-	cosmetic_element_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 64.0f), EGUIStyle::active_style));
-	cosmetic_element_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+					digint_input_button->make_default_button_with_edible_text
+					(
+						new ERegionGabarite(150.0f, 22.0f),
+						digit_number_part,
+						nullptr,
+						""
+					);
 
-	filter_block_colors->pointer_to_cosmetic_element_group = cosmetic_element_part;
-	////////////////////////////////////////////////////////////////////////////
+					digint_input_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_apply_text_code_to_color);
 
-	//preview box
-	////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
-	preview_box_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 32.0f), EGUIStyle::active_style));
-	preview_box_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+					filter_block_colors->pointer_to_digint_input_button = digint_input_button;
 
-	filter_block_colors->pointer_to_preview_group = preview_box_part;
-	////////////////////////////////////////////////////////////////////////////
+					digit_number_part->add_button_to_working_group(digint_input_button);
+					//
+
+			//STATIC
+			//slider	[Value]	[Alpha]
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			value_alpha_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 70.0f), EGUIStyle::active_style));
+			value_alpha_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			filter_block_colors->pointer_to_VA_slider_group = value_alpha_part;
+			////////////////////////////////////////////////////////////////////////////
+
+			//STATIC
+			//slider	hair slider Hue Saturation
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			hair_HS_slider_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 150.0f), EGUIStyle::active_style));
+			hair_HS_slider_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
+			hair_HS_slider_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			filter_block_colors->pointer_to_hair_slider_group = hair_HS_slider_part;
+			////////////////////////////////////////////////////////////////////////////
+
+			//STATIC
+			//cosmetic element	rama text BG
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			cosmetic_element_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 64.0f), EGUIStyle::active_style));
+			cosmetic_element_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			filter_block_colors->pointer_to_cosmetic_element_group = cosmetic_element_part;
+			////////////////////////////////////////////////////////////////////////////
+
+			//STATIC
+			//preview box
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			preview_box_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 32.0f), EGUIStyle::active_style));
+			preview_box_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			filter_block_colors->pointer_to_preview_group = preview_box_part;
+			////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -29188,6 +29323,49 @@ void NSWRegisteredButtonGroups::register_explicit_for_loot_simulator_group()
 
 		part_with_data_entity->add_button_to_working_group(wide_button);
 	}
+}
+void EButtonGroupFilterBlockColors::button_group_update(float _d)
+{
+
+	static const char charlist[16] = { '0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f' };
+
+	EButtonGroupSimpleColorEditor::button_group_update(_d);
+
+	if
+	(
+		(pointer_to_digint_input_button != nullptr)
+		&& 
+		(target_color != nullptr)
+		&&
+		(!pointer_to_digint_input_button->main_text_area->text_area_active)
+	)
+	{
+		std::string digit_string = "";
+
+		int color		= (int)(target_color->r * 255.0f);
+		int left_side	= (int)(color / 16.0f);
+		int right_side	= color - left_side * 16;
+
+		digit_string += charlist[left_side];
+		digit_string += charlist[right_side];
+
+		color = (int)(target_color->g * 255.0f);
+		left_side = (int)(color / 16.0f);
+		right_side = color - left_side * 16;
+
+		digit_string += charlist[left_side];
+		digit_string += charlist[right_side];
+
+		color = (int)(target_color->b * 255.0f);
+		left_side = (int)(color / 16.0f);
+		right_side = color - left_side * 16;
+
+		digit_string += charlist[left_side];
+		digit_string += charlist[right_side];
+
+		pointer_to_digint_input_button->main_text_area->change_text(digit_string);
+	}
+
 }
 void EButtonGroupFilterBlockColors::draw_button_group()
 {

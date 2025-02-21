@@ -1223,6 +1223,9 @@ public:
 	EntityButtonCosmeticElement*	cosmetic_element_button_text;
 	EntityButtonCosmeticElement*	cosmetic_element_button_bg;
 
+	EntityButton*					pointer_to_digint_input_button;
+
+	void button_group_update(float _d) override;
 	void draw_button_group() override;
 	//void assign_colors(HSVRGBAColor* _color);
 	//void generate_color_pattern_buttons();
@@ -1532,6 +1535,7 @@ namespace EDataActionCollection
 	void action_change_version_names(ETextArea* _text_area);
 	void action_change_version_pattern_name(ETextArea* _text_area);
 	void action_change_price_table_value(ETextArea* _text_area);
+	void action_apply_text_code_to_color(ETextArea* _text_area);
 
 
 
