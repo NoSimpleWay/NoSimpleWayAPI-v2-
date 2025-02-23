@@ -11745,7 +11745,7 @@ void EWindowMain::parse_dust_prices()
 			int
 			base_dust_quantity = EStringUtils::safe_convert_string_to_number(base_dust_string, 0, 9'999'999);
 
-			if (base_dust_quantity > 0)
+			if (base_dust_quantity >= 0)
 			{
 				ID_string
 				new_worth_ID_string;

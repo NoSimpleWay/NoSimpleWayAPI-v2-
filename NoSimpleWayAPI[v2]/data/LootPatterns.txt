@@ -3318,6 +3318,12 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	""
+DETF_localised_attribute_name_EN	"Any"
+DETF_localised_attribute_name_RU	"Все"
+DETF_color	200	230	255	255
+
+REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"World drop"
 DETF_localised_attribute_name_EN	"World drop"
 DETF_localised_attribute_name_RU	"Добывается везде"
