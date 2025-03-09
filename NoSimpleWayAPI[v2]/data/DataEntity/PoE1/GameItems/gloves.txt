@@ -814,6 +814,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Martyr Gloves"
 	[tag]"name RU"			[value]"Перчатки мученика"
@@ -836,6 +837,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Paladin Gloves"
 	[tag]"name RU"			[value]"Перчатки паладина"
@@ -939,6 +941,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Chimerascale Gauntlets"
 	[tag]"name RU"			[value]"Перчатки из чешуи химеры"
@@ -961,6 +964,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Wyvernscale Gauntlets"
 	[tag]"name RU"			[value]"Перчатки из чешуи виверны"
@@ -1377,6 +1381,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Infiltrator Mitts"
 	[tag]"name RU"			[value]"Перчатки лазутчика"
@@ -1399,6 +1404,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Phantom Mitts"
 	[tag]"name RU"			[value]"Перчатки призрака"
@@ -1760,6 +1766,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Harpyskin Gloves"
 	[tag]"name RU"			[value]"Гарпиевые перчатки"
@@ -1780,6 +1787,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Velour Gloves"
 	[tag]"name RU"			[value]"Велюровые перчатки"
@@ -1886,6 +1894,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Sage Gloves"
 	[tag]"name RU"			[value]"Перчатки мудреца"
@@ -1906,6 +1915,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Warlock Gloves"
 	[tag]"name RU"			[value]"Перчатки колдуна"
@@ -2107,6 +2117,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Precursor Gauntlets"
 	[tag]"name RU"			[value]"Перчатки предтечи"
@@ -2127,6 +2138,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Leviathan Gauntlets"
 	[tag]"name RU"			[value]"Перчатки исполина"
@@ -2386,6 +2398,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Runic Gloves"
 	[tag]"name RU"			[value]"Рунические перчатки"
@@ -2405,6 +2418,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Runic Gages"
 	[tag]"name RU"			[value]"Рунические краги"
@@ -2424,6 +2438,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Runic Gauntlets"
 	[tag]"name RU"			[value]"Рунические рукавицы"

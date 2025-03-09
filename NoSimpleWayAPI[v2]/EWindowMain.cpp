@@ -5411,6 +5411,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								
 								PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(total_cost, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
 								
+								DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses", std::to_string(total_cost), data_entity);
 								//if (_mode == PoeNinjaAPIMode::INCUBATORS)
 								//{
 								//	_mode  = _mode;
