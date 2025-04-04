@@ -45,6 +45,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Shortbow"
 	[tag]"name RU"		[value]"Улучшенный короткий лук"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Snakewood Shortbow"
+
 	[tag]"icon path"	[value]"Shortbow"
 	[tag]"base class"	[value]"Bows"
 
@@ -57,6 +60,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Snakewood Shortbow"
+	[tag]"name RU"		[value]"Snakewood Shortbow"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -64,6 +97,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Shortbow"
 	[tag]"name RU"		[value]"Короткий лук эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ironwood Shortbow"
 
 	[tag]"icon path"	[value]"Shortbow"
 	[tag]"base class"	[value]"Bows"
@@ -77,6 +113,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ironwood Shortbow"
+	[tag]"name RU"		[value]"Ironwood Shortbow"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -105,6 +171,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Warden Bow"
 	[tag]"name RU"		[value]"Улучшенный лук часового"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Protector Bow"
+
 	[tag]"icon path"	[value]"WardenBow"
 	[tag]"base class"	[value]"Bows"
 
@@ -117,6 +186,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Protector Bow"
+	[tag]"name RU"		[value]"Protector Bow"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -124,6 +224,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Warden Bow"
 	[tag]"name RU"		[value]"Лук часового эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Guardian Bow"
 
 	[tag]"icon path"	[value]"WardenBow"
 	[tag]"base class"	[value]"Bows"
@@ -137,6 +240,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Bow"
+	[tag]"name RU"		[value]"Guardian Bow"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -185,6 +318,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Composite Bow"
 	[tag]"name RU"		[value]"Улучшенный составной лук"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Rider Bow"
+
 	[tag]"icon path"	[value]"CompositeBow"
 	[tag]"base class"	[value]"Bows"
 
@@ -197,6 +333,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rider Bow"
+	[tag]"name RU"		[value]"Rider Bow"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -204,6 +369,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Composite Bow"
 	[tag]"name RU"		[value]"Составной лук эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cavalry Bow"
 
 	[tag]"icon path"	[value]"CompositeBow"
 	[tag]"base class"	[value]"Bows"
@@ -217,6 +385,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cavalry Bow"
+	[tag]"name RU"		[value]"Cavalry Bow"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -237,6 +441,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -244,6 +451,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Advanced Dualstring Bow"
 	[tag]"name RU"		[value]"Улучшенный спаренный лук"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Twin Bow"
 
 	[tag]"icon path"	[value]"DualstringBow"
 	[tag]"base class"	[value]"Bows"
@@ -257,6 +467,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twin Bow"
+	[tag]"name RU"		[value]"Twin Bow"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -264,6 +508,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Dualstring Bow"
 	[tag]"name RU"		[value]"Спаренный лук эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gemini Bow"
 
 	[tag]"icon path"	[value]"DualstringBow"
 	[tag]"base class"	[value]"Bows"
@@ -277,6 +524,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gemini Bow"
+	[tag]"name RU"		[value]"Gemini Bow"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -305,6 +588,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Cultist Bow"
 	[tag]"name RU"		[value]"Улучшенный лук культиста"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Adherent Bow"
+
 	[tag]"icon path"	[value]"CultistBow"
 	[tag]"base class"	[value]"Bows"
 
@@ -317,6 +603,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adherent Bow"
+	[tag]"name RU"		[value]"<?Adherent Bow?>"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -324,6 +642,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Cultist Bow"
 	[tag]"name RU"		[value]"Лук культиста эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Fanatic Bow"
 
 	[tag]"icon path"	[value]"CultistBow"
 	[tag]"base class"	[value]"Bows"
@@ -337,6 +658,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fanatic Bow"
+	[tag]"name RU"		[value]"Fanatic Bow"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -365,6 +724,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Zealot Bow"
 	[tag]"name RU"		[value]"Улучшенный лук фанатика"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Militant Bow"
+
 	[tag]"icon path"	[value]"ZealotBow"
 	[tag]"base class"	[value]"Bows"
 
@@ -377,6 +739,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Militant Bow"
+	[tag]"name RU"		[value]"Militant Bow"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -384,6 +776,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Zealot Bow"
 	[tag]"name RU"		[value]"Лук фанатика эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Warmonger Bow"
 
 	[tag]"icon path"	[value]"ZealotBow"
 	[tag]"base class"	[value]"Bows"
@@ -397,6 +792,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warmonger Bow"
+	[tag]"name RU"		[value]"Warmonger Bow"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -443,7 +868,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greatbow"
-	[tag]"name RU"		[value]"Большой лук"
+	[tag]"name RU"		[value]"Ѕольшой лук"
 
 	[tag]"icon path"	[value]"CrudeBow"
 	[tag]"base class"	[value]"Bows"

@@ -49,6 +49,7 @@ namespace ERegisteredStrings
 	const ID_string ERegisteredStrings::max_stack_size				= ID_string::register_new_unique_ID_by_key("max stack size");
 	const ID_string ERegisteredStrings::stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
 	const ID_string ERegisteredStrings::max_sockets					= ID_string::register_new_unique_ID_by_key("max sockets");
+	const ID_string ERegisteredStrings::max_rune_sockets			= ID_string::register_new_unique_ID_by_key("max rune sockets");
 	const ID_string ERegisteredStrings::base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
 	const ID_string ERegisteredStrings::base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
 	const ID_string ERegisteredStrings::base_armour_min				= ID_string::register_new_unique_ID_by_key("base armour min");
@@ -102,6 +103,8 @@ namespace ERegisteredStrings
 	const ID_string ERegisteredStrings::simulacrum					= ID_string::register_new_unique_ID_by_key("Loot source: Simulacrum");
 
 	const ID_string ERegisteredStrings::dust_quantity				= ID_string::register_new_unique_ID_by_key("Dust quantity");
+
+	const ID_string ERegisteredStrings::rename_to					= ID_string::register_new_unique_ID_by_key("Renamed to");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)

@@ -9,7 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfRefreshment"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -33,7 +33,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfResurgence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -57,7 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfAmelioration"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -81,7 +81,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfWhittling"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -105,7 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfSinistralErasure"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -129,7 +129,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfDextralErasure"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -153,7 +153,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfSinistralAlchemy"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -177,7 +177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfDextralAlchemy"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -201,7 +201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfSinistralCoronation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -249,7 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfCorruption"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -273,7 +273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfGreaterExaltation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -321,7 +321,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfDextralExaltation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -369,7 +369,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfSinistralAnnulment"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
@@ -393,12 +393,123 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"OmenOfDextralAnnulment"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
 	
 	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Answered Prayers"
+	[tag]"name RU"		[value]"Предзнаменование услышанных молитв"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Secret Compartments"
+	[tag]"name RU"		[value]"Предзнаменование потайных отделений"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Hunt"
+	[tag]"name RU"		[value]"Предзнаменование охоты"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Reinforcements"
+	[tag]"name RU"		[value]"Предзнаменование подкрепления"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"

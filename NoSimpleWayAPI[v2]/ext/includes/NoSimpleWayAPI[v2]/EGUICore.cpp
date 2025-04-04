@@ -59,6 +59,21 @@ void EWindow::update_additional(float _d)
 {
 }
 
+void EWindow::reset_groups_selection()
+{
+	for (EButtonGroup* group : EButtonGroup::selected_groups)
+	{
+		group->is_selected = false;
+	}
+
+	EButtonGroup::selected_groups.clear();
+
+	EButtonGroup::first_selected_element		= nullptr;
+	EButtonGroup::last_selected_element			= nullptr;
+
+	EButtonGroup::parent_for_selected_groups	= nullptr;
+}
+
 void EWindow::GUI_update_default(float _d)
 {
 
@@ -258,24 +273,13 @@ void EWindow::GUI_update_default(float _d)
 
 	//RESET GROUP SELECTION
 	if
-		(
-			(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
-			||
-			(EInputCore::key_pressed_once(GLFW_KEY_ESCAPE))
-			)
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		||
+		(EInputCore::key_pressed_once(GLFW_KEY_ESCAPE))
+	)
 	{
-		for (EButtonGroup* group : EButtonGroup::selected_groups)
-		{
-			group->is_selected = false;
-		}
-
-		EButtonGroup::selected_groups.clear();
-
-		EButtonGroup::first_selected_element = nullptr;
-		EButtonGroup::last_selected_element = nullptr;
-
-		EButtonGroup::parent_for_selected_groups = nullptr;
-
+		reset_groups_selection();
 	}
 
 	//SELECT BUTTON GROUP BLOCKS
@@ -975,6 +979,9 @@ void EButtonGroup::button_group_update(float _d)
 	for (int i = 0; i < group_list.size(); i++)
 		if ((group_list[i] != nullptr) && (group_list[i]->block_need_remove))
 		{
+			if (group_list[i]->is_selected)
+			{ EWindow::reset_groups_selection(); }
+
 			if (!disable_deleting)
 			{
 				delete group_list[i];
@@ -985,7 +992,7 @@ void EButtonGroup::button_group_update(float _d)
 
 			i--;
 
-
+			
 			any_remove = true;
 		}
 
@@ -4950,24 +4957,27 @@ void EButtonGroup::add_help_button(ETextureGabarite* _texture_gabarite, std::str
 
 void EButtonGroup::scroll_to_this_button(EntityButton* _button)
 {
-	float
+	if ((have_slider)&&(slider != nullptr)&&(slider->entity_is_active()))
+	{
+		float
 		original_scroll = scroll_y;
 
 
 
-	float new_scroll = _button->offset_y - (region_gabarite->size_y - group_offset_for_content_up) + _button->button_gabarite->size_y;
-	new_scroll = max(new_scroll, 0.0f);
-	//translate_group_content(0.0f, (new_scroll - original_scroll), 0.0f, false);
-	EInputCore::logger_param("button name", _button->main_text_area->localisation_text.base_name);
-	EInputCore::logger_param("button offset y", _button->offset_y);
-	EInputCore::logger_param("region size y", region_gabarite->size_y);
-	EInputCore::logger_param("new scroll", new_scroll);
+		float new_scroll = _button->offset_y - (region_gabarite->size_y - group_offset_for_content_up) + _button->button_gabarite->size_y;
+		new_scroll = max(new_scroll, 0.0f);
+		//translate_group_content(0.0f, (new_scroll - original_scroll), 0.0f, false);
+		EInputCore::logger_param("button name", _button->main_text_area->localisation_text.base_name);
+		EInputCore::logger_param("button offset y", _button->offset_y);
+		EInputCore::logger_param("region size y", region_gabarite->size_y);
+		EInputCore::logger_param("new scroll", new_scroll);
 
 
-	slider->current_value = -new_scroll;
-	scroll_y = slider->current_value;
+		slider->current_value = -new_scroll;
+		scroll_y = slider->current_value;
 
-	need_change = true;
+		need_change = true;
+	}
 
 	//_button->highlight_time = _button->max_highlight_time;
 }

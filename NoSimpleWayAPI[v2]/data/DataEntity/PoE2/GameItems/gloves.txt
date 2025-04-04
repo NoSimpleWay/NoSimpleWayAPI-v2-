@@ -69,6 +69,73 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Tempered Mitts"
+	[tag]"name RU"	[value]"Закалённые рукавицы"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Mitts"
+
+	[tag]"icon path"	[value]"TemperedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"40"
+	[tag]"base armour max"	[value]"40"
+	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elegant Mitts"
+	[tag]"name RU"	[value]"Elegant Mitts"
+
+	[tag]"icon path"	[value]"TemperedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"40"
+	[tag]"base armour max"	[value]"40"
+	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1074,6 +1141,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Riveted Mitts"
 	[tag]"name RU"	[value]"Улучшенные Клёпаные рукавицы"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Plated Mitts"
+
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
 
@@ -1089,6 +1159,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Plated Mitts"
+	[tag]"name RU"	[value]"Plated Mitts"
+
+	[tag]"icon path"	[value]"Rivetedmitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"88"
+	[tag]"base armour max"	[value]"88"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -1115,12 +1220,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Expert"
 
 
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Bolstered Mitts"
 	[tag]"name RU"	[value]"Улучшенные укреплённые рукавицы"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ancient Mitts"
 
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1139,12 +1252,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Mitts"
+	[tag]"name RU"	[value]"Ancient Mitts"
+
+	[tag]"icon path"	[value]"BolsteredMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"105"
+	[tag]"base armour max"	[value]"105"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Moulded Mitts"
 	[tag]"name RU"	[value]"Улучшенные литые рукавицы"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Feathered Mitts"
 
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1163,12 +1314,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Feathered Mitts"
+	[tag]"name RU"	[value]"Feathered Mitts"
+
+	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"111"
+	[tag]"base armour max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Firm Bracers"
 	[tag]"name RU"	[value]"Улучшенные плотные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hunting Bracers"
 
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1187,12 +1378,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hunting Bracers"
+	[tag]"name RU"	[value]"Hunting Bracers"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Bound Bracers"
 	[tag]"name RU"	[value]"Улучшенные обмотанные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Swift Bracers"
 
 	[tag]"icon path"	[value]"BoundBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1211,12 +1443,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Swift Bracers"
+	[tag]"name RU"	[value]"Swift Bracers"
+
+	[tag]"icon path"	[value]"BoundBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"89"
+	[tag]"base evasion max"	[value]"89"
+	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Sectioned Bracers"
 	[tag]"name RU"	[value]"Улучшенные сегментные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Refined Bracers"
 
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1235,12 +1508,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Refined Bracers"
+	[tag]"name RU"	[value]"Refined Bracers"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"95"
+	[tag]"base evasion max"	[value]"95"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Spined Bracers"
 	[tag]"name RU"	[value]"Улучшенные шипастые наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Spiked Bracers"
 
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1259,12 +1572,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiked Bracers"
+	[tag]"name RU"	[value]"Spiked Bracers"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Sombre Gloves"
 	[tag]"name RU"	[value]"Улучшенные тёмные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ominous Gloves"
 
 	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1283,12 +1637,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ominous Gloves"
+	[tag]"name RU"	[value]"Ominous Gloves"
+
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Stitched Gloves"
 	[tag]"name RU"	[value]"Улучшенные сшитые перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Embroidered Gloves"
 
 	[tag]"icon path"	[value]"StitchedGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1307,12 +1704,59 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Embroidered Gloves"
+	[tag]"name RU"	[value]"Embroidered Gloves"
+
+	[tag]"icon path"	[value]"StitchedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED"	[value]"Level 51, 82 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Jewelled Gloves"
 	[tag]"name RU"	[value]"Улучшенные инкрустированные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Baroque Gloves"
 
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1331,12 +1775,56 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Baroque Gloves"
+	[tag]"name RU"	[value]"Baroque Gloves"
+
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"37"
+	[tag]"base energy shield max"	[value]"37"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Intricate Gloves"
 	[tag]"name RU"	[value]"Улучшенные затейливые перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gold Gloves"
 
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1355,12 +1843,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gold Gloves"
+	[tag]"name RU"	[value]"Gold Gloves"
+
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"39"
+	[tag]"base energy shield max"	[value]"39"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Ringmail Gauntlets"
 	[tag]"name RU"	[value]"Улучшенные кольчужные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ironmail Gauntlets"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1381,12 +1908,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ironmail Gauntlets"
+	[tag]"name RU"	[value]"Ironmail Gauntlets"
+
+	[tag]"icon path"	[value]"RingmailGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+	
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Layered Gauntlets"
 	[tag]"name RU"	[value]"Улучшенные пластинчатые перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Captain Gauntlets"
 
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1407,12 +1977,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Captain Gauntlets"
+	[tag]"name RU"	[value]"Captain Gauntlets"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Doubled Gauntlets"
 	[tag]"name RU"	[value]"Улучшенные двухслойные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Zealot Gauntlets"
 
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1433,12 +2046,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zealot Gauntlets"
+	[tag]"name RU"	[value]"Zealot Gauntlets"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Rope Cuffs"
 	[tag]"name RU"	[value]"Улучшенные верёвочные манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Braided Cuffs"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1459,12 +2109,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Braided Cuffs"
+	[tag]"name RU"	[value]"Braided Cuffs"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Aged Cuffs"
 	[tag]"name RU"	[value]"Улучшенные старинные манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Heirloom Cuffs"
 
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1485,12 +2180,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Heirloom Cuffs"
+	[tag]"name RU"	[value]"Heirloom Cuffs"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Goldcast Cuffs"
 	[tag]"name RU"	[value]"Улучшенные золотые манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ornate Cuffs"
 
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1511,12 +2248,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Cuffs"
+	[tag]"name RU"	[value]"Ornate Cuffs"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Gauze Wraps"
 	[tag]"name RU"	[value]"Улучшенные обмотки из муслина"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bandage Wraps"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1537,12 +2314,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bandage Wraps"
+	[tag]"name RU"	[value]"Bandage Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Linen Wraps"
 	[tag]"name RU"	[value]"Улучшенные льняные обмотки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cambric Wraps"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1563,12 +2378,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cambric Wraps"
+	[tag]"name RU"	[value]"Cambric Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Dex, 46 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Spiral Wraps"
 	[tag]"name RU"	[value]"Улучшенные витые обмотки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Adorned Wraps"
 
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1589,12 +2446,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Adorned Wraps"
+	[tag]"name RU"	[value]"Adorned Wraps"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Dex, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Riveted Mitts"
 	[tag]"name RU"	[value]"Клёпаные рукавицы эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Knightly Mitts"
 
 	[tag]"icon path"	[value]"RivetedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1613,12 +2513,80 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Knightly Mitts"
+	[tag]"name RU"	[value]"Knightly Mitts"
+
+	[tag]"icon path"	[value]"RivetedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"122"
+	[tag]"base armour max"	[value]"122"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY	
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Bolstered Mitts"
 	[tag]"name RU"	[value]"Укреплённые рукавицы эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ornate Mitts"
+
+	[tag]"icon path"	[value]"BolsteredMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"134"
+	[tag]"base armour max"	[value]"134"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY	
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Mitts"
+	[tag]"name RU"	[value]"Ornate Mitts"
 
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1637,12 +2605,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Moulded Mitts"
 	[tag]"name RU"	[value]"Литые рукавицы эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Vaal Mitts"
 
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
@@ -1661,12 +2637,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Mitts"
+	[tag]"name RU"	[value]"Vaal Mitts"
+
+	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"146"
+	[tag]"base armour max"	[value]"146"
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Firm Bracers"
 	[tag]"name RU"	[value]"Плотные наручи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Stalking Bracers"
 
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1685,12 +2700,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stalking Bracers"
+	[tag]"name RU"	[value]"Stalking Bracers"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Sectioned Bracers"
 	[tag]"name RU"	[value]"Сегментные наручи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Grand Bracers"
 
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1713,8 +2773,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Grand Bracers"
+	[tag]"name RU"	[value]"Grand Bracers"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"122"
+	[tag]"base evasion max"	[value]"122"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Expert Spined Bracers"
 	[tag]"name RU"	[value]"Шипастые наручи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Barbed Bracers"
 
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
@@ -1733,12 +2829,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Barbed Bracers"
+	[tag]"name RU"	[value]"Barbed Bracers"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Sombre Gloves"
 	[tag]"name RU"	[value]"Тёмные перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Grim Gloves"
 
 	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1757,12 +2894,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Grim Gloves"
+	[tag]"name RU"	[value]"Grim Gloves"
+
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Jewelled Gloves"
 	[tag]"name RU"	[value]"Инкрустированные перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Opulent Gloves"
 
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1781,12 +2963,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Opulent Gloves"
+	[tag]"name RU"	[value]"Opulent Gloves"
+
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"46"
+	[tag]"base energy shield max"	[value]"46"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Intricate Gloves"
 	[tag]"name RU"	[value]"Затейливые перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Vaal Gloves"
 
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
@@ -1805,12 +3030,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Gloves"
+	[tag]"name RU"	[value]"Vaal Gloves"
+
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"50"
+	[tag]"base energy shield max"	[value]"50"
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Ringmail Gauntlets"
 	[tag]"name RU"	[value]"Кольчужные перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Steelmail Gauntlets"
 
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1831,12 +3095,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Steelmail Gauntlets"
+	[tag]"name RU"	[value]"Steelmail Gauntlets"
+
+	[tag]"icon path"	[value]"RingmailGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Layered Gauntlets"
 	[tag]"name RU"	[value]"Пластинчатые перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Commander Gauntlets"
 
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1857,12 +3160,72 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Commander Gauntlets"
+	[tag]"name RU"	[value]"Commander Gauntlets"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base evasion min"	[value]"67"
+	[tag]"base evasion max"	[value]"67"
+	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Doubled Gauntlets"
 	[tag]"name RU"	[value]"Двухслойные перчатки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cultist Gauntlets"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cultist Gauntlets"
+	[tag]"name RU"	[value]"Cultist Gauntlets"
 
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
@@ -1883,12 +3246,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Rope Cuffs"
 	[tag]"name RU"	[value]"Верёвочные манжеты эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bound Cuffs"
 
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1909,12 +3280,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bound Cuffs"
+	[tag]"name RU"	[value]"Bound Cuffs"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Aged Cuffs"
 	[tag]"name RU"	[value]"Старинные манжеты эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ancient Cuffs"
 
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1939,8 +3348,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Ancient Cuffs"
+	[tag]"name RU"	[value]"Ancient Cuffs"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Expert Goldcast Cuffs"
 	[tag]"name RU"	[value]"Золотые манжеты эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gleaming Cuffs"
 
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
@@ -1961,12 +3405,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gleaming Cuffs"
+	[tag]"name RU"	[value]"Gleaming Cuffs"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Gauze Wraps"
 	[tag]"name RU"	[value]"Обмотки из муслина эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"War Wraps"
 
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -1987,12 +3474,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"War Wraps"
+	[tag]"name RU"	[value]"War Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Dex, 57 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Linen Wraps"
 	[tag]"name RU"	[value]"Льняные обмотки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Wraps"
 
 	[tag]"icon path"	[value]"LinenWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -2013,12 +3538,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elegant Wraps"
+	[tag]"name RU"	[value]"Elegant Wraps"
+
+	[tag]"icon path"	[value]"LinenWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"67"
+	[tag]"base evasion max"	[value]"67"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"UNDEFINED"	[value]"Level 70, 62 Dex, 62 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Spiral Wraps"
 	[tag]"name RU"	[value]"Витые обмотки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Vaal Wraps"
 
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"
@@ -2037,3 +3602,34 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Wraps"
+	[tag]"name RU"	[value]"Vaal Wraps"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+

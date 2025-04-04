@@ -29,6 +29,10 @@ REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Deleted"
 DETF_color	255	230	204	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -118,6 +122,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 REGISTER_NEW_GENERATOR
@@ -239,6 +247,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Heist base"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -328,6 +340,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
@@ -363,6 +379,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 REGISTER_NEW_GENERATOR
@@ -415,6 +435,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
@@ -457,6 +481,10 @@ target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -579,6 +607,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -721,6 +753,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -765,6 +801,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Scarab item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -812,6 +852,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -957,6 +1001,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1019,6 +1067,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Scarab item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -1169,6 +1221,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1291,6 +1347,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1384,6 +1444,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -1481,6 +1545,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1546,6 +1614,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1609,6 +1681,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 REGISTER_NEW_GENERATOR
 generations_count	1
 random_selection_count	1
@@ -1636,6 +1712,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -1745,6 +1825,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -1852,6 +1936,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -1975,6 +2063,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -2084,6 +2176,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -2151,6 +2247,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -2246,6 +2346,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -2398,6 +2502,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -2510,6 +2618,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -2701,6 +2813,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -2933,6 +3049,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3099,6 +3219,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3172,6 +3296,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Runic base"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -3369,6 +3497,10 @@ DETF_color	255	128	64	255
 
 
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3448,6 +3580,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3503,6 +3639,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -3573,6 +3713,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3635,6 +3779,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -3719,6 +3867,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 REGISTER_NEW_PATTERN
@@ -3773,6 +3925,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -3908,6 +4064,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -3965,6 +4125,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4028,6 +4192,10 @@ target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4103,6 +4271,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4216,6 +4388,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4298,6 +4474,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4367,6 +4547,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4420,6 +4604,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4477,6 +4665,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4544,6 +4736,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4597,6 +4793,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4654,6 +4854,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -4790,6 +4994,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4846,6 +5054,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -4900,6 +5112,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -5032,6 +5248,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -5101,6 +5321,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -5194,6 +5418,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -5308,6 +5536,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -5437,6 +5669,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -5564,6 +5800,10 @@ target_tag	"item tag"
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -5725,6 +5965,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 

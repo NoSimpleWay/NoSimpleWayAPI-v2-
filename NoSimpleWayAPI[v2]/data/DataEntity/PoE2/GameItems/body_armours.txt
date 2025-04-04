@@ -49,8 +49,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Advanced Fur plate"
+	[tag]"name EN"		[value]"Advanced Fur Plate"
 	[tag]"name RU"		[value]"Улучшенный доспех из шкур"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Barbarian Plate"
 
 	[tag]"icon path"	[value]"FurPlate"
 	[tag]"base class"	[value]"Body Armours"
@@ -67,6 +70,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Barbarian Plate"
+	[tag]"name RU"		[value]"Barbarian Plate"
+
+	[tag]"icon path"	[value]"FurPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -98,6 +134,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Iron Cuirass"
 	[tag]"name RU"		[value]"Улучшенная Железная кираса"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Rugged Cuirass"
+
 	[tag]"icon path"	[value]"IronCuirass"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -113,6 +152,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rugged Cuirass"
+	[tag]"name RU"		[value]"Rugged Cuirass"
+
+	[tag]"icon path"	[value]"IronCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"284"
+	[tag]"base armour max"	[value]"284"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -120,6 +193,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Iron Cuirass"
 	[tag]"name RU"		[value]"Железная кираса эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soldier Cuirass"
 
 	[tag]"icon path"	[value]"IronCuirass"
 	[tag]"base class"	[value]"Body Armours"
@@ -136,6 +212,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soldier Cuirass"
+	[tag]"name RU"		[value]"Soldier Cuirass"
+
+	[tag]"icon path"	[value]"IronCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"534"
+	[tag]"base armour max"	[value]"534"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -190,6 +300,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Maraketh Cuirass"
 	[tag]"name RU"		[value]"Улучшенная Маракетская кираса"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sandsworn Cuirass"
+
 	[tag]"icon path"	[value]"MarakethCuirass"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -205,6 +318,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sandsworn Cuirass"
+	[tag]"name RU"		[value]"Sandsworn Cuirass"
+
+	[tag]"icon path"	[value]"MarakethCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"299"
+	[tag]"base armour max"	[value]"299"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -237,6 +381,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Steel Plate"
 	[tag]"name RU"		[value]"Улучшенный стальной доспех"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Plate"
+
 	[tag]"icon path"	[value]"SteelPlate"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -253,12 +400,49 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Plate"
+	[tag]"name RU"		[value]"Elegant Plate"
+
+	[tag]"icon path"	[value]"SteelPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"320"
+	[tag]"base armour max"	[value]"320"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Steel Plate"
 	[tag]"name RU"		[value]"Стальной доспех эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ornate Plate"
 
 	[tag]"icon path"	[value]"SteelPlate"
 	[tag]"base class"	[value]"Body Armours"
@@ -275,6 +459,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Plate"
+	[tag]"name RU"		[value]"Ornate Plate"
+
+	[tag]"icon path"	[value]"SteelPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"445"
+	[tag]"base armour max"	[value]"445"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -306,6 +522,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Full Plate"
 	[tag]"name RU"		[value]"Улучшенные полные латы"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Heavy Plate"
+
 	[tag]"icon path"	[value]"FullPlate"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -321,6 +540,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heavy Plate"
+	[tag]"name RU"		[value]"Heavy Plate"
+
+	[tag]"icon path"	[value]"FullPlate"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"340"
+	[tag]"base armour max"	[value]"340"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -352,6 +605,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Vaal Cuirass"
 	[tag]"name RU"		[value]"Улучшенный нагрудник ваал"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Stone Cuirass"
+
 	[tag]"icon path"	[value]"VaalCuirass"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -367,6 +623,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stone Cuirass"
+	[tag]"name RU"		[value]"Stone Cuirass"
+
+	[tag]"icon path"	[value]"VaalCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"355"
+	[tag]"base armour max"	[value]"355"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -374,6 +662,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Vaal Cuirass"
 	[tag]"name RU"		[value]"Нагрудник ваал эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Utzaal Cuirass"
 
 	[tag]"icon path"	[value]"VaalCuirass"
 	[tag]"base class"	[value]"Body Armours"
@@ -390,6 +681,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Utzaal Cuirass"
+	[tag]"name RU"		[value]"Utzaal Cuirass"
+
+	[tag]"icon path"	[value]"VaalCuirass"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"445"
+	[tag]"base armour max"	[value]"445"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -622,6 +945,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Quilted Vest"
 	[tag]"name RU"		[value]"Улучшенный стёганый жилет"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Patchwork Vest"
+
 	[tag]"icon path"	[value]"QuiltedVest"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -637,6 +963,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Patchwork Vest"
+	[tag]"name RU"		[value]"Patchwork Vest"
+
+	[tag]"icon path"	[value]"QuiltedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"242"
+	[tag]"base evasion max"	[value]"242"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -669,6 +1028,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Pathfinder Coat"
 	[tag]"name RU"		[value]"Улучшенный жилет следопыта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hunting Coat"
+
 	[tag]"icon path"	[value]"PathfinderCoat"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -684,6 +1046,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hunting Coat"
+	[tag]"name RU"		[value]"Hunting Coat"
+
+	[tag]"icon path"	[value]"PathfinderCoat"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"256"
+	[tag]"base evasion max"	[value]"256"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -691,6 +1090,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Pathfinder Coat"
 	[tag]"name RU"		[value]"Жилет следопыта эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Swiftstalker Coat"
 
 	[tag]"icon path"	[value]"PathfinderCoat"
 	[tag]"base class"	[value]"Body Armours"
@@ -707,6 +1109,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Swiftstalker Coat"
+	[tag]"name RU"		[value]"Swiftstalker Coat"
+
+	[tag]"icon path"	[value]"PathfinderCoat"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"406"
+	[tag]"base evasion max"	[value]"406"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -762,6 +1199,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Rhoahide Coat"
 	[tag]"name RU"		[value]"Улучшенная накидка из кожи роа"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Riding Coat"
+
 	[tag]"icon path"	[value]"RhoahideVest"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -777,6 +1217,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Riding Coat"
+	[tag]"name RU"		[value]"Riding Coat"
+
+	[tag]"icon path"	[value]"RhoahideVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"271"
+	[tag]"base evasion max"	[value]"271"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -809,6 +1279,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Studded Vest"
 	[tag]"name RU"		[value]"Улучшенный клёпаный жилет"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Layered Vest"
+
 	[tag]"icon path"	[value]"StubbedVest"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -824,6 +1297,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Layered Vest"
+	[tag]"name RU"		[value]"Layered Vest"
+
+	[tag]"icon path"	[value]"StubbedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"290"
+	[tag]"base evasion max"	[value]"290"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -831,6 +1334,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Studded Vest"
 	[tag]"name RU"		[value]"Клёпаный жилет эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Slipstrike Vest"
 
 	[tag]"icon path"	[value]"StubbedVest"
 	[tag]"base class"	[value]"Body Armours"
@@ -847,6 +1353,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Slipstrike Vest"
+	[tag]"name RU"		[value]"Slipstrike Vest"
+
+	[tag]"icon path"	[value]"StubbedVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"487"
+	[tag]"base evasion max"	[value]"487"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -879,6 +1420,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Scout's Vest"
 	[tag]"name RU"		[value]"Улучшенный жилет разведчика"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Runner Vest"
+
 	[tag]"icon path"	[value]"ScoutsVest"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -894,6 +1438,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Runner Vest"
+	[tag]"name RU"		[value]"Runner Vest"
+
+	[tag]"icon path"	[value]"ScoutsVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"309"
+	[tag]"base evasion max"	[value]"309"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -926,6 +1513,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Serpentscale Coat"
 	[tag]"name RU"		[value]"Улучшенный плащ из змеиной чешуи"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Lizardscale Coat"
+
 	[tag]"icon path"	[value]"SerpentscaleVest"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -942,12 +1532,49 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lizardscale Coat"
+	[tag]"name RU"		[value]"Lizardscale Coat"
+
+	[tag]"icon path"	[value]"SerpentscaleVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"324"
+	[tag]"base evasion max"	[value]"324"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Serpentscale Coat"
 	[tag]"name RU"		[value]"Плащ из змеиной чешуи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wyrmscale Coat"
 
 	[tag]"icon path"	[value]"SerpentscaleVest"
 	[tag]"base class"	[value]"Body Armours"
@@ -964,6 +1591,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wyrmscale Coat"
+	[tag]"name RU"		[value]"Wyrmscale Coat"
+
+	[tag]"icon path"	[value]"SerpentscaleVest"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"406"
+	[tag]"base evasion max"	[value]"406"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1227,6 +1888,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Feathered Robe"
 	[tag]"name RU"		[value]"Улучшенный халат из перьев"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Avian Robe"
+
 	[tag]"icon path"	[value]"FeatheredRobe"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1242,6 +1906,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Avian Robe"
+	[tag]"name RU"		[value]"Avian Robe"
+
+	[tag]"icon path"	[value]"FeatheredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"97"
+	[tag]"base energy shield max"	[value]"97"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1273,6 +1970,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Hexer's Robe"
 	[tag]"name RU"		[value]"Улучшенная мантия заклинателя"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cursespeaker's Robe"
+
 	[tag]"icon path"	[value]"HexersRobe"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1288,6 +1988,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cursespeaker's Robe"
+	[tag]"name RU"		[value]"Cursespeaker's Robe"
+
+	[tag]"icon path"	[value]"HexersRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"101"
+	[tag]"base energy shield max"	[value]"101"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1295,6 +2028,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Hexer's Robe"
 	[tag]"name RU"		[value]"Мантия заклинателя эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Vile Robe"
 
 	[tag]"icon path"	[value]"HexersRobe"
 	[tag]"base class"	[value]"Body Armours"
@@ -1312,6 +2048,39 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vile Robe"
+	[tag]"name RU"		[value]"Vile Robe"
+
+	[tag]"icon path"	[value]"HexersRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"184"
+	[tag]"base energy shield max"	[value]"184"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1357,6 +2126,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1364,6 +2139,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Advanced Silk Robe"
 	[tag]"name RU"		[value]"Улучшенное щёлковое одеяние"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Luxurious Robe"
 
 	[tag]"icon path"	[value]"SilkRobe"
 	[tag]"base class"	[value]"Body Armours"
@@ -1380,6 +2158,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Luxurious Robe"
+	[tag]"name RU"		[value]"Luxurious Robe"
+
+	[tag]"icon path"	[value]"SilkRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"106"
+	[tag]"base energy shield max"	[value]"106"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1411,6 +2222,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Keth Raiment"
 	[tag]"name RU"		[value]"Улучшенная мантия Кет"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"River Raiment"
+
 	[tag]"icon path"	[value]"KethRaiment"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1426,6 +2240,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"River Raiment"
+	[tag]"name RU"		[value]"River Raiment"
+
+	[tag]"icon path"	[value]"KethRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"112"
+	[tag]"base energy shield max"	[value]"112"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1433,6 +2282,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Keth Raiment"
 	[tag]"name RU"		[value]"Мантия Кет эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Flowing Raiment"
 
 	[tag]"icon path"	[value]"KethRaiment"
 	[tag]"base class"	[value]"Body Armours"
@@ -1449,6 +2301,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flowing Raiment"
+	[tag]"name RU"		[value]"Flowing Raiment"
+
+	[tag]"icon path"	[value]"KethRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1480,6 +2365,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Votive Raiment"
 	[tag]"name RU"		[value]"Улучшенное обетное одеяние"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Adherent's Raiment"
+
 	[tag]"icon path"	[value]"VotiveRaiment"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1495,6 +2383,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adherent's Raiment"
+	[tag]"name RU"		[value]"Adherent's Raiment"
+
+	[tag]"icon path"	[value]"VotiveRaiment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"119"
+	[tag]"base energy shield max"	[value]"119"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1526,6 +2448,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Altar Robe"
 	[tag]"name RU"		[value]"Улучшенное церемониальное одеяние"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ceremonial Robe"
+
 	[tag]"icon path"	[value]"AltarRobe"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1541,12 +2466,116 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
-	
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Altar Robe"
+	[tag]"name RU"		[value]"Улучшенное церемониальное одеяние"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Priestess Robe"
+
+
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"123"
+	[tag]"base energy shield max"	[value]"123"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Priestess Robe"
+	[tag]"name RU"		[value]"Улучшенное церемониальное одеяние"
+
+
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"123"
+	[tag]"base energy shield max"	[value]"123"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ceremonial Robe"
+	[tag]"name RU"		[value]"Ceremonial Robe"
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"123"
+	[tag]"base energy shield max"	[value]"123"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Priestess Robe"
 	[tag]"name RU"		[value]"Церемониальное одеяние эксперта"
 
 	[tag]"icon path"	[value]"AltarRobe"
@@ -1564,6 +2593,73 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Priestess Robe"
+	[tag]"name RU"		[value]"Церемониальное одеяние эксперта"
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Priestess Robe"
+	[tag]"name RU"		[value]"Церемониальное одеяние эксперта"
+
+	[tag]"icon path"	[value]"AltarRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1776,6 +2872,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Chain Mail"
 	[tag]"name RU"		[value]"Улучшенная кольчуга"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Chain Hauberk"
+
 	[tag]"icon path"	[value]"ChainMail"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1793,6 +2892,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chain Hauberk"
+	[tag]"name RU"		[value]"Chain Hauberk"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"148"
+	[tag]"base armour max"	[value]"148"
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1826,6 +2962,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Rogue Armour"
 	[tag]"name RU"		[value]"Улучшенный доспех разбойника"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Scoundrel Armour"
+
 	[tag]"icon path"	[value]"RogueArmour"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1843,6 +2982,45 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Scoundrel Armour"
+	[tag]"name RU"		[value]"Scoundrel Armour"
+
+	[tag]"icon path"	[value]"RogueArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"156"
+	[tag]"base armour max"	[value]"156"
+	[tag]"base evasion min"	[value]"141"
+	[tag]"base evasion max"	[value]"141"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1850,6 +3028,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Rogue Armour"
 	[tag]"name RU"		[value]"Доспех разбойника эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dastard Armour"
 
 	[tag]"icon path"	[value]"RogueArmour"
 	[tag]"base class"	[value]"Body Armours"
@@ -1869,6 +3050,38 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dastard Armour"
+	[tag]"name RU"		[value]"Dastard Armour"
+
+	[tag]"icon path"	[value]"RogueArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"245"
+	[tag]"base armour max"	[value]"245"
+	[tag]"base evasion min"	[value]"223"
+	[tag]"base evasion max"	[value]"223"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1901,6 +3114,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Vagabond Armour"
 	[tag]"name RU"		[value]"Улучшенный доспех бродяги"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wanderer Armour"
+
 	[tag]"icon path"	[value]"VagaboundArmour"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1918,6 +3134,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wanderer Armour"
+	[tag]"name RU"		[value]"Wanderer Armour"
+
+	[tag]"icon path"	[value]"VagaboundArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"165"
+	[tag]"base armour max"	[value]"165"
+	[tag]"base evasion min"	[value]"149"
+	[tag]"base evasion max"	[value]"149"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1951,6 +3201,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Cloaked Mail"
 	[tag]"name RU"		[value]"Улучшенная кольчуга с плащом"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Mantled Mail"
+
 	[tag]"icon path"	[value]"CloackedMail"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -1968,6 +3221,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mantled Mail"
+	[tag]"name RU"		[value]"Mantled Mail"
+
+	[tag]"icon path"	[value]"CloackedMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"176"
+	[tag]"base evasion min"	[value]"159"
+	[tag]"base evasion max"	[value]"159"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1975,6 +3265,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Cloaked Mail"
 	[tag]"name RU"		[value]"Кольчуга с плащом эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Shrouded Mail"
 
 	[tag]"icon path"	[value]"CloackedMail"
 	[tag]"base class"	[value]"Body Armours"
@@ -1993,6 +3286,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shrouded Mail"
+	[tag]"name RU"		[value]"Shrouded Mail"
+
+	[tag]"icon path"	[value]"CloackedMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"245"
+	[tag]"base armour max"	[value]"245"
+	[tag]"base evasion min"	[value]"223"
+	[tag]"base evasion max"	[value]"223"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2026,6 +3363,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Explorer Armour"
 	[tag]"name RU"		[value]"Улучшенная кольчуга путешественника"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Trailblazer Armour"
+
 	[tag]"icon path"	[value]"ExplorerArmour"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2043,6 +3383,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Trailblazer Armour"
+	[tag]"name RU"		[value]"Trailblazer Armour"
+
+	[tag]"icon path"	[value]"ExplorerArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"187"
+	[tag]"base armour max"	[value]"187"
+	[tag]"base evasion min"	[value]"170"
+	[tag]"base evasion max"	[value]"170"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2076,6 +3454,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Scale Mail"
 	[tag]"name RU"		[value]"Улучшенная увесистая кольчуга"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Golden Mail"
+
 	[tag]"icon path"	[value]"ScaleMail"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2093,6 +3474,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Golden Mail"
+	[tag]"name RU"		[value]"Golden Mail"
+
+	[tag]"icon path"	[value]"ScaleMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"195"
+	[tag]"base armour max"	[value]"195"
+	[tag]"base evasion min"	[value]"178"
+	[tag]"base evasion max"	[value]"178"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2100,6 +3516,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Scale Mail"
 	[tag]"name RU"		[value]"Увесистая кольчуга эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Death Mail"
 
 	[tag]"icon path"	[value]"ScaleMail"
 	[tag]"base class"	[value]"Body Armours"
@@ -2118,6 +3537,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"	
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Death Mail"
+	[tag]"name RU"		[value]"Death Mail"
+
+	[tag]"icon path"	[value]"ScaleMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"294"
+	[tag]"base armour max"	[value]"294"
+	[tag]"base evasion min"	[value]"268"
+	[tag]"base evasion max"	[value]"268"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"	
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2344,6 +3800,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Pilgrim Vestments"
 	[tag]"name RU"		[value]"Улучшенное облачение паломника"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Templar Vestments"
+
 	[tag]"icon path"	[value]"PilgrimVestment"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2361,6 +3820,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Templar Vestments"
+	[tag]"name RU"		[value]"Templar Vestments"
+
+	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"148"
+	[tag]"base armour max"	[value]"148"
+	[tag]"base energy shield min"	[value]"53"
+	[tag]"base energy shield max"	[value]"53"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2394,6 +3890,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Pelt Mantle"
 	[tag]"name RU"		[value]"Улучшенная мантия из шкуры"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bearskin Mantle"
+
 	[tag]"icon path"	[value]"PeltMantle"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2411,6 +3910,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bearskin Mantle"
+	[tag]"name RU"		[value]"Bearskin Mantle"
+
+	[tag]"icon path"	[value]"PeltMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"156"
+	[tag]"base armour max"	[value]"156"
+	[tag]"base energy shield min"	[value]"56"
+	[tag]"base energy shield max"	[value]"56"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2418,6 +3952,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Pelt Mantle"
 	[tag]"name RU"		[value]"Мантия из шкуры эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wolfskin Mantle"
 
 	[tag]"icon path"	[value]"PeltMantle"
 	[tag]"base class"	[value]"Body Armours"
@@ -2436,6 +3973,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wolfskin Mantle"
+	[tag]"name RU"		[value]"Wolfskin Mantle"
+
+	[tag]"icon path"	[value]"PeltMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"294"
+	[tag]"base armour max"	[value]"294"
+	[tag]"base energy shield min"	[value]"101"
+	[tag]"base energy shield max"	[value]"101"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2461,12 +4030,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Mail Vestments"
 	[tag]"name RU"		[value]"Улучшенное кольчужное облачение"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Chain Vestments"
 
 	[tag]"icon path"	[value]"MailVestment"
 	[tag]"base class"	[value]"Body Armours"
@@ -2485,6 +4060,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Chain Vestments"
+	[tag]"name RU"		[value]"Chain Vestments"
+
+	[tag]"icon path"	[value]"MailVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"165"
+	[tag]"base armour max"	[value]"165"
+	[tag]"base energy shield min"	[value]"58"
+	[tag]"base energy shield max"	[value]"58"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2511,12 +4126,19 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Shaman Mantle"
 	[tag]"name RU"		[value]"Улучшенная мантия шамана"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Occultist Mantle"
 
 	[tag]"icon path"	[value]"ShamanMantle"
 	[tag]"base class"	[value]"Body Armours"
@@ -2535,6 +4157,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Occultist Mantle"
+	[tag]"name RU"		[value]"Occultist Mantle"
+
+	[tag]"icon path"	[value]"ShamanMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"176"
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"62"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2542,6 +4197,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Shaman Mantle"
 	[tag]"name RU"		[value]"Мантия шамана эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Conjurer Mantle"
 
 	[tag]"icon path"	[value]"ShamanMantle"
 	[tag]"base class"	[value]"Body Armours"
@@ -2560,6 +4218,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Conjurer Mantle"
+	[tag]"name RU"		[value]"Conjurer Mantle"
+
+	[tag]"icon path"	[value]"ShamanMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"245"
+	[tag]"base armour max"	[value]"245"
+	[tag]"base energy shield min"	[value]"84"
+	[tag]"base energy shield max"	[value]"84"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2593,6 +4287,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Ironclad Vestments"
 	[tag]"name RU"		[value]"Улучшенное Железное одеяние"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Plated Vestments"
+
 	[tag]"icon path"	[value]"IroncladVestment"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2610,6 +4307,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Plated Vestments"
+	[tag]"name RU"		[value]"Plated Vestments"
+
+	[tag]"icon path"	[value]"IroncladVestment"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"187"
+	[tag]"base armour max"	[value]"187"
+	[tag]"base energy shield min"	[value]"65"
+	[tag]"base energy shield max"	[value]"65"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2643,6 +4380,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Sacrificial Mantle"
 	[tag]"name RU"		[value]"Улучшенное жертвенная мантия"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Heartcarver Mantle"
+
 	[tag]"icon path"	[value]"SacrificialMantle"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2660,6 +4400,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heartcarver Mantle"
+	[tag]"name RU"		[value]"Heartcarver Mantle"
+
+	[tag]"icon path"	[value]"SacrificialMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"195"
+	[tag]"base armour max"	[value]"195"
+	[tag]"base energy shield min"	[value]"68"
+	[tag]"base energy shield max"	[value]"68"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2667,6 +4442,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Sacrificial Mantle"
 	[tag]"name RU"		[value]"Жертвенная мантия эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Death Mantle"
 
 	[tag]"icon path"	[value]"SacrificialMantle"
 	[tag]"base class"	[value]"Body Armours"
@@ -2685,6 +4463,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Death Mantle"
+	[tag]"name RU"		[value]"Death Mantle"
+
+	[tag]"icon path"	[value]"SacrificialMantle"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"245"
+	[tag]"base armour max"	[value]"245"
+	[tag]"base energy shield min"	[value]"84"
+	[tag]"base energy shield max"	[value]"84"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2917,6 +4726,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Hermit Garb"
 	[tag]"name RU"		[value]"Улучшенный наряд отшельника"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ascetic Garb"
+
 	[tag]"icon path"	[value]"HermitGarb"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2934,6 +4746,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ascetic Garb"
+	[tag]"name RU"		[value]"Ascetic Garb"
+
+	[tag]"icon path"	[value]"HermitGarb"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	[tag]"base energy shield min"	[value]"53"
+	[tag]"base energy shield max"	[value]"53"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -2968,6 +4814,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Waxed Jacket"
 	[tag]"name RU"		[value]"Улучшенный вощёный плащ"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Oiled Jacket"
+
 	[tag]"icon path"	[value]"WaxedJacket"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -2985,6 +4834,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Oiled Jacket"
+	[tag]"name RU"		[value]"Oiled Jacket"
+
+	[tag]"icon path"	[value]"WaxedJacket"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"141"
+	[tag]"base evasion max"	[value]"141"
+	[tag]"base energy shield min"	[value]"56"
+	[tag]"base energy shield max"	[value]"56"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2992,6 +4874,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Waxed Jacket"
 	[tag]"name RU"		[value]"Вощёный плащ эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sleek Jacket"
 
 	[tag]"icon path"	[value]"WaxedJacket"
 	[tag]"base class"	[value]"Body Armours"
@@ -3010,6 +4895,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sleek Jacket"
+	[tag]"name RU"		[value]"Sleek Jacket"
+
+	[tag]"icon path"	[value]"WaxedJacket"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"268"
+	[tag]"base evasion max"	[value]"268"
+	[tag]"base energy shield min"	[value]"101"
+	[tag]"base energy shield max"	[value]"101"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -3044,6 +4971,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Marabout Garb"
 	[tag]"name RU"		[value]"Улучшенный костюм марабута"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Evangelist Garb"
+
 	[tag]"icon path"	[value]"MaraboutGarb"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -3061,6 +4991,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Evangelist Garb"
+	[tag]"name RU"		[value]"Evangelist Garb"
+
+	[tag]"icon path"	[value]"MaraboutGarb"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"149"
+	[tag]"base evasion max"	[value]"149"
+	[tag]"base energy shield min"	[value]"58"
+	[tag]"base energy shield max"	[value]"58"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -3095,6 +5056,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Wayfarer Jacket"
 	[tag]"name RU"		[value]"Улучшенный плащ путника"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Itinerant Jacket"
+
 	[tag]"icon path"	[value]"WayfarerGarb"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -3112,6 +5076,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Itinerant Jacket"
+	[tag]"name RU"		[value]"Itinerant Jacket"
+
+	[tag]"icon path"	[value]"WayfarerGarb"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"159"
+	[tag]"base evasion max"	[value]"159"
+	[tag]"base energy shield min"	[value]"62"
+	[tag]"base energy shield max"	[value]"62"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3119,6 +5120,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Wayfarer Jacket"
 	[tag]"name RU"		[value]"Плащ путника эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Rambler Jacket"
 
 	[tag]"icon path"	[value]"WayfarerGarb"
 	[tag]"base class"	[value]"Body Armours"
@@ -3138,6 +5142,47 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rambler Jacket"
+	[tag]"name RU"		[value]"Rambler Jacket"
+
+	[tag]"icon path"	[value]"WayfarerGarb"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"223"
+	[tag]"base evasion max"	[value]"223"
+	[tag]"base energy shield min"	[value]"84"
+	[tag]"base energy shield max"	[value]"84"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3171,6 +5216,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Anchorite Garb"
 	[tag]"name RU"		[value]"Улучшенное одеяние анахорета"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hatungo Garb"
+
 	[tag]"icon path"	[value]"AchoriteGarb"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -3188,6 +5236,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hatungo Garb"
+	[tag]"name RU"		[value]"Hatungo Garb"
+
+	[tag]"icon path"	[value]"AchoriteGarb"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"170"
+	[tag]"base evasion max"	[value]"170"
+	[tag]"base energy shield min"	[value]"65"
+	[tag]"base energy shield max"	[value]"65"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -3222,6 +5303,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Scalper's Jacket"
 	[tag]"name RU"		[value]"Улучшенная накидка спекулянта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hawker's Jacket"
+
 	[tag]"icon path"	[value]"ScalpersJacket"
 	[tag]"base class"	[value]"Body Armours"
 
@@ -3239,6 +5323,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hawker's Jacket"
+	[tag]"name RU"		[value]"Hawker's Jacket"
+
+	[tag]"icon path"	[value]"ScalpersJacket"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"178"
+	[tag]"base evasion max"	[value]"178"
+	[tag]"base energy shield min"	[value]"68"
+	[tag]"base energy shield max"	[value]"68"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3246,6 +5366,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Scalper's Jacket"
 	[tag]"name RU"		[value]"Накидка спекулянта эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Falconer's Jacket"
 
 	[tag]"icon path"	[value]"ScalpersJacket"
 	[tag]"base class"	[value]"Body Armours"
@@ -3266,6 +5389,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Falconer's Jacket"
+	[tag]"name RU"		[value]"Falconer's Jacket"
+
+	[tag]"icon path"	[value]"ScalpersJacket"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"base evasion min"	[value]"223"
+	[tag]"base evasion max"	[value]"223"
+	[tag]"base energy shield min"	[value]"84"
+	[tag]"base energy shield max"	[value]"84"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"

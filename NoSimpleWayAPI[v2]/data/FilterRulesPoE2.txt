@@ -33,24 +33,9 @@ target_tag	"item tag"
 	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -98,6 +83,989 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Копья для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Spears"
+name_RU	"Копья"
+icon	"data/textures/icons/ClassSpears.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_color	255	230	204	255
+
+
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+//Баклеры для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Bucklers"
+name_RU	"Баклеры"
+icon	"data/textures/icons/RidgedBuckler.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Bucklers"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+//Ванды для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New wands"
+name_RU	"Новые жезлы"
+icon	"data/textures/icons/UndefinedWand.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Wands"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+//Кольца для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New rings"
+name_RU	"Новые кольца"
+icon	"data/textures/icons/DuskRing.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rings"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+//Амулеты для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New amulets"
+name_RU	"Новые амулеты"
+icon	"data/textures/icons/UndefinedAmulet.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Amulets"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+//Валюта для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New currency"
+name_RU	"Новая валюта"
+icon	"data/textures/icons/FracturingOrb.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+//Эссенции для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New essences"
+name_RU	"Новые эссенции"
+icon	"data/textures/icons/Essence_of_Delirium.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//Ключи реликвария для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Vault keys"
+name_RU	"Ключи реликвария"
+icon	"data/textures/icons/UndefinedReliquaryKey.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Vault Keys"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+//Омены для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New omens"
+name_RU	"Новые омены"
+icon	"data/textures/icons/UndefinedOmen.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(hunt)"
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_color	255	230	204	255
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_RULE
+name_EN	"Category:\nNew content"
+name_RU	"Категория:\nНовый контнет"
+icon	"data/textures/buttons/pattern_folder_hunt.png"
+is_folder
+
+target_game	"PoE2"
+tag	"Game item"
+named_id	"new content(hunt)"
+min_y	"100"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Экипировка для PoE1
+REGISTER_NEW_FILTER_RULE
+name_EN	"Equipable"
+name_RU	"Экипировка"
+icon	"data/textures/icons/EliteGreathelm.png"
+
+target_game	"PoE2"
+tag	"Base Class"
+min_y	"100"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"data type"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Base Class"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"name EN"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Helmets"
+	DETF_localised_attribute_name_EN	"Helmets"
+	DETF_localised_attribute_name_RU	"Шлемы"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Gloves"
+	DETF_localised_attribute_name_EN	"Gloves"
+	DETF_localised_attribute_name_RU	"Перчатки"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Boots"
+	DETF_localised_attribute_name_EN	"Boots"
+	DETF_localised_attribute_name_RU	"Сапоги"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Body Armours"
+	DETF_localised_attribute_name_EN	"Body armours"
+	DETF_localised_attribute_name_RU	"Нательные доспехи"
+	DETF_color	255	230	204	255
+
+
+	
+
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Sceptres"
+	DETF_localised_attribute_name_EN	"Sceptres"
+	DETF_localised_attribute_name_RU	"Скипетры"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Wands"
+	DETF_localised_attribute_name_EN	"Wands"
+	DETF_localised_attribute_name_RU	"Жезлы"
+	DETF_color	150	200	255	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Staves"
+	DETF_localised_attribute_name_EN	"Staves"
+	DETF_localised_attribute_name_RU	"Посохи"
+	DETF_color	150	200	255	255
+	
+	
+	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Maces"
+	DETF_localised_attribute_name_EN	"One hand maces"
+	DETF_localised_attribute_name_RU	"Одноручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Maces"
+	DETF_localised_attribute_name_EN	"Two hand maces"
+	DETF_localised_attribute_name_RU	"Двуручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Quarterstaves"
+	DETF_localised_attribute_name_EN	"Quarterstaves"
+	DETF_localised_attribute_name_RU	"Боевые посохи"
+	DETF_color	255	200	200	255
+
+
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Bows"
+	DETF_localised_attribute_name_EN	"Bows"
+	DETF_localised_attribute_name_RU	"Луки"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Spears"
+	DETF_localised_attribute_name_RU	"Копья"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Bucklers"
+	DETF_localised_attribute_name_RU	"Баклеры"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Crossbows"
+	DETF_localised_attribute_name_EN	"Crossbows"
+	DETF_localised_attribute_name_RU	"Арбалеты"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Quivers"
+	DETF_localised_attribute_name_EN	"Quivers"
+	DETF_localised_attribute_name_RU	"Колчаны"
+	DETF_color	150	255	200	255
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Shields"
+	DETF_localised_attribute_name_EN	"Shields"
+	DETF_localised_attribute_name_RU	"Щиты"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Foci"
+	DETF_localised_attribute_name_EN	"Foci"
+	DETF_localised_attribute_name_RU	"Фокус"
+	DETF_color	150	200	255	255
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rings"
+	DETF_localised_attribute_name_EN	"Rings"
+	DETF_localised_attribute_name_RU	"Кольца"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Amulets"
+	DETF_localised_attribute_name_EN	"Amulets"
+	DETF_localised_attribute_name_RU	"Амулеты"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Belts"
+	DETF_localised_attribute_name_EN	"Belts"
+	DETF_localised_attribute_name_RU	"Пояса"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Fishing Rods"
+	DETF_localised_attribute_name_EN	"Fishing rods"
+	DETF_localised_attribute_name_RU	"Удочки"
+	DETF_color	255	255	100	255
+	
+	
+	
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Axes"
+	DETF_localised_attribute_name_EN	"Two hand axes"
+	DETF_localised_attribute_name_RU	"Двуручные топоры"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Swords"
+	DETF_localised_attribute_name_EN	"Two hand swords"
+	DETF_localised_attribute_name_RU	"Двуручные мечи"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Daggers"
+	DETF_localised_attribute_name_EN	"Daggers"
+	DETF_localised_attribute_name_RU	"Кинжалы"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Axes"
+	DETF_localised_attribute_name_EN	"One hand axes"
+	DETF_localised_attribute_name_RU	"Одноручные топоры"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Swords"
+	DETF_localised_attribute_name_EN	"One hand swords"
+	DETF_localised_attribute_name_RU	"Одноручные мечи"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Flails"
+	DETF_localised_attribute_name_EN	"Flails"
+	DETF_localised_attribute_name_RU	"Кистени"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Traps"
+	DETF_localised_attribute_name_EN	"Traps"
+	DETF_localised_attribute_name_RU	"Ловушки"
+	DETF_color	255	110	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Claws"
+	DETF_localised_attribute_name_EN	"Claws"
+	DETF_localised_attribute_name_RU	"Когти"
+	DETF_color	255	110	100	255
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
 
 
 
@@ -124,9 +1092,6 @@ target_game	"PoE2"
 tag	"Game item"
 min_y	"100"
 named_id	"equip PoE2"
-
-
-
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"exist for"
@@ -248,6 +1213,18 @@ target_tag	"Base Class"
 	DETF_color	150	255	200	255
 
 	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Spears"
+	DETF_localised_attribute_name_RU	"Копья"
+	DETF_color	150	255	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Bucklers"
+	DETF_localised_attribute_name_RU	"Баклеры"
+	DETF_color	150	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Crossbows"
 	DETF_localised_attribute_name_EN	"Crossbows"
 	DETF_localised_attribute_name_RU	"Арбалеты"
@@ -313,12 +1290,6 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_EN	"Two hand swords"
 	DETF_localised_attribute_name_RU	"Двуручные мечи"
 	DETF_color	255	110	100	255
-	
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Spears"
-	DETF_localised_attribute_name_EN	"Spears"
-	DETF_localised_attribute_name_RU	"Копья"
-	DETF_color	255	110	100	255
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Daggers"
@@ -367,6 +1338,11 @@ DETF_color	255	128	64	255
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -417,16 +1393,34 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_TAG
 target_tag	"rune type"
 	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Lesser"
+	DETF_localised_attribute_name_EN	"Lesser runes"
+	DETF_localised_attribute_name_RU	"Младшие руны"
+	DETF_color	200	210	220	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Default"
 	DETF_localised_attribute_name_EN	"Runes"
 	DETF_localised_attribute_name_RU	"Руны"
 	DETF_color	255	230	204	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Greater"
+	DETF_localised_attribute_name_EN	"Greater runes"
+	DETF_localised_attribute_name_RU	"Старшие руны"
+	DETF_color	255	200	100	255
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Soul core"
 	DETF_localised_attribute_name_EN	"Soul core"
 	DETF_localised_attribute_name_RU	"Ядра душ"
-	DETF_color	255	230	204	255
+	DETF_color	255	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Talisman"
+	DETF_localised_attribute_name_EN	"Talisman"
+	DETF_localised_attribute_name_RU	"Талисманы"
+	DETF_color	200	255	220	255
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -439,6 +1433,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -495,6 +1493,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -600,6 +1602,10 @@ REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
 
 
 
@@ -656,6 +1662,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -722,6 +1732,12 @@ target_tag	"essence rang"
 	DETF_localised_attribute_name_RU	"Великие сущности"
 	DETF_color	255	200	100	255
 
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Corrupted"
+	DETF_localised_attribute_name_EN	"Corrupted"
+	DETF_localised_attribute_name_RU	"Осквернённые"
+	DETF_color	255	100	50	255
+
 
 REGISTER_NEW_BANNED_FILTER_TAG
 target_tag	"item tag"
@@ -733,6 +1749,10 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
 DETF_color	255	128	64	255
 
 
@@ -769,6 +1789,8 @@ tag_cannot_be_configured
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
 	
+	
+	
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
@@ -776,6 +1798,49 @@ tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Catalyst item"
 	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Trash"
+	DETF_localised_attribute_name_EN	"Worth: Trash"
+	DETF_localised_attribute_name_RU	"Мусор"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Common"
+	DETF_localised_attribute_name_EN	"Worth: Common"
+	DETF_localised_attribute_name_RU	"Дешёвое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Moderate"
+	DETF_localised_attribute_name_EN	"Worth: Moderate"
+	DETF_localised_attribute_name_RU	"Недорогое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rare"
+	DETF_localised_attribute_name_EN	"Worth: Rare"
+	DETF_localised_attribute_name_RU	"Редкое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Expensive"
+	DETF_localised_attribute_name_EN	"Worth: Expensive"
+	DETF_localised_attribute_name_RU	"Ценное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Very expensive"
+	DETF_localised_attribute_name_EN	"Worth: Very expensive"
+	DETF_localised_attribute_name_RU	"Очень ценное"
+	DETF_color	255	230	204	255
+
+
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -788,6 +1853,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -838,6 +1907,48 @@ tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Currency shard"
 	DETF_color	255	230	204	255
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Trash"
+	DETF_localised_attribute_name_EN	"Worth: Trash"
+	DETF_localised_attribute_name_RU	"Мусор"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Common"
+	DETF_localised_attribute_name_EN	"Worth: Common"
+	DETF_localised_attribute_name_RU	"Дешёвое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Moderate"
+	DETF_localised_attribute_name_EN	"Worth: Moderate"
+	DETF_localised_attribute_name_RU	"Недорогое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rare"
+	DETF_localised_attribute_name_EN	"Worth: Rare"
+	DETF_localised_attribute_name_RU	"Редкое"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Expensive"
+	DETF_localised_attribute_name_EN	"Worth: Expensive"
+	DETF_localised_attribute_name_RU	"Ценное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Very expensive"
+	DETF_localised_attribute_name_EN	"Worth: Very expensive"
+	DETF_localised_attribute_name_RU	"Очень ценное"
+	DETF_color	255	230	204	255
+
+
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -850,6 +1961,77 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+//Экспедиция
+REGISTER_NEW_FILTER_RULE
+name_EN	"Expedition currency"
+name_RU	"Валюта экспедиции"
+icon	"data/textures/icons/Coinage.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"currency PoE2"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expedition currency"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -912,6 +2094,73 @@ tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Distilled emotion"
 	DETF_color	255	230	204	255
+	
+	
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"distilled level"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"1"
+DETF_localised_attribute_name_EN	"Level 1(worst)"
+DETF_localised_attribute_name_RU	"Уровень 1(худший)"
+DETF_color	255	255	255	200
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"2"
+DETF_localised_attribute_name_EN	"Level 2"
+DETF_localised_attribute_name_RU	"Уровень 2"
+DETF_color	220	255	220	205
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"3"
+DETF_localised_attribute_name_EN	"Level 3"
+DETF_localised_attribute_name_RU	"Уровень 3"
+DETF_color	200	255	220	210
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"4"
+DETF_localised_attribute_name_EN	"Level 4"
+DETF_localised_attribute_name_RU	"Уровень 4"
+DETF_color	200	255	255	215
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"5"
+DETF_localised_attribute_name_EN	"Level 5"
+DETF_localised_attribute_name_RU	"Уровень 5"
+DETF_color	220	220	255	220
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"6"
+DETF_localised_attribute_name_EN	"Level 6"
+DETF_localised_attribute_name_RU	"Уровень 6"
+DETF_color	255	200	255	225
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"7"
+DETF_localised_attribute_name_EN	"Level 7"
+DETF_localised_attribute_name_RU	"Уровень 7"
+DETF_color	255	220	220	230
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"8"
+DETF_localised_attribute_name_EN	"Level 8"
+DETF_localised_attribute_name_RU	"Уровень 8"
+DETF_color	255	255	150	240
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"9"
+DETF_localised_attribute_name_EN	"Level 9"
+DETF_localised_attribute_name_RU	"Уровень 9"
+DETF_color	255	255	70	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"10"
+DETF_localised_attribute_name_EN	"Level 10(best)"
+DETF_localised_attribute_name_RU	"Уровень 10(лучший)"
+DETF_color	255	255	0	255
+
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -924,6 +2173,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -999,6 +2252,9 @@ tag_cannot_be_configured
 	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -1026,7 +2282,8 @@ tag_cannot_be_configured
 
 
 
-//Валюта экспедиции для PoE2
+
+//Омены для PoE2
 REGISTER_NEW_FILTER_RULE
 name_EN	"Omens"
 name_RU	"Предсказания"
@@ -1059,6 +2316,10 @@ tag_cannot_be_configured
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
 	
+	
+	
+	
+	
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
@@ -1066,6 +2327,50 @@ tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Omen"
 	DETF_color	255	230	204	255
+	
+	
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -1080,6 +2385,9 @@ tag_cannot_be_configured
 	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -1091,7 +2399,8 @@ tag_cannot_be_configured
 
 
 
-//Валюта экспедиции для PoE2
+
+//Ключи с санктума
 REGISTER_NEW_FILTER_RULE
 name_EN	"Keys"
 name_RU	"Ключи"
@@ -1143,6 +2452,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -1217,6 +2530,10 @@ tag_cannot_be_configured
 	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
 
 
 
@@ -1240,6 +2557,27 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Map Fragments"
+	DETF_localised_attribute_name_EN	"Map Fragments"
+	DETF_localised_attribute_name_RU	"Фрагменты карт"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Pinnacle Keys"
+	DETF_localised_attribute_name_EN	"Pinnacle Keys"
+	DETF_localised_attribute_name_RU	"Верховные ключи"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Trial Coins"
+	DETF_localised_attribute_name_EN	"Trial Coins"
+	DETF_localised_attribute_name_RU	"Монеты испытаний"
+	DETF_color	255	230	204	255
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Inscribed Ultimatum"
+	DETF_localised_attribute_name_EN	"Inscribed Ultimatum"
+	DETF_localised_attribute_name_RU	"Начертаный Ультиматум"
 	DETF_color	255	230	204	255
 
 
@@ -1262,6 +2600,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -1312,6 +2654,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 
@@ -1366,6 +2712,10 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
 

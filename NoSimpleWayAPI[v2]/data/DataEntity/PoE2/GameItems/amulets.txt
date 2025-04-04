@@ -239,3 +239,128 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dusk Amulet"
+	[tag]"name RU"		[value]"Сумеречный амулет"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gloam Amulet"
+	[tag]"name RU"		[value]"Мглистый амулет"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Penumbra Amulet"
+	[tag]"name RU"		[value]"Амулет полутени"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tenebrous Amulet"
+	[tag]"name RU"		[value]"Тусклый амулет"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	

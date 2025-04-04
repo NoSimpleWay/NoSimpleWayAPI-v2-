@@ -1,0 +1,15 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Djinn Barya"
+	[tag]"name RU"		[value]"Бария Джинна"
+
+	[tag]"icon path"	[value]"DjinnBarya"
+	[tag]"base class"	[value]"Trial Coins"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	

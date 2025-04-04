@@ -1,0 +1,15 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Inscribed Ultimatum"
+	[tag]"name RU"		[value]"Начертанный ультиматум"
+
+	[tag]"icon path"	[value]"InscribedUltimatum"
+	[tag]"base class"	[value]"Inscribed Ultimatum"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	

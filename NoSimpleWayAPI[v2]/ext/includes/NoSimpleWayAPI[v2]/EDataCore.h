@@ -365,6 +365,7 @@ namespace ERegisteredStrings
 	extern const ID_string max_stack_size;
 	extern const ID_string stack_multiplier;
 	extern const ID_string max_sockets;
+	extern const ID_string max_rune_sockets;
 	extern const ID_string base_ward_min;
 	extern const ID_string base_ward_max;
 	extern const ID_string base_armour_min;
@@ -419,6 +420,7 @@ namespace ERegisteredStrings
 	extern const ID_string simulacrum;
 
 	extern const ID_string dust_quantity;
+	extern const ID_string rename_to;
 
 
 }

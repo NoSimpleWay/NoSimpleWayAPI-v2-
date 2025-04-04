@@ -120,6 +120,9 @@ std::vector<ENamedSound*>								EWindowMain::custom_sound_list;
 GameItemAttribute* GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 
 
+EButtonGroupRenameditemsInterface*		EButtonGroupRenameditemsInterface::rename_interface_group		= nullptr;
+bool									EButtonGroupRenameditemsInterface::rename_interface_is_opened	= false;
+
 namespace NS_DefaultGabarites
 {
 	ETextureGabarite* texture_example_text_for_preview_box;
@@ -417,6 +420,8 @@ void EDataActionCollection::action_confirmed_mark_filter_blocks_as_removed_confi
 		{
 			group->block_need_remove = true;
 		}
+
+		EWindow::reset_groups_selection();
 	}
 
 
@@ -2084,7 +2089,7 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 					entity_button->button_gabarite->size_x,
 					entity_button->button_gabarite->size_y,
 
-					3.0f,
+					2.0f,
 
 					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);
@@ -2234,8 +2239,16 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 						(loot_button->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
 						)
 				{
-					float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
-					ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
+					float
+					minimap_icon_size = entity_button->button_gabarite->size_y;
+
+					float
+					size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.15f;
+					
+					ETextureGabarite*
+					texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
+
+					size_multiplier *= minimap_icon_size / (float)(texture_gabarite->size_y_in_pixels);
 
 					NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->text_color);
 					ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -2250,8 +2263,8 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 						//y pos
 						entity_button->button_gabarite->world_position_y,
 
-						texture_gabarite->size_x_in_pixels * size_multiplier + 4.0f,
-						texture_gabarite->size_y_in_pixels * size_multiplier + 4.0f,
+						(float)(texture_gabarite->size_x_in_pixels) * size_multiplier - 8.0f * size_multiplier,
+						(float)(texture_gabarite->size_y_in_pixels) * size_multiplier - 8.0f * size_multiplier,
 
 						texture_gabarite
 					);
@@ -2358,18 +2371,45 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 		group->highlight_time = 30.0f;
 	}*/
 
+
+
+
+	if (!loot_button->suitable_buttons_list.empty())
+	{
+		
+
+		for (EntityButton* but : loot_button->suitable_buttons_list)
+		{
+			//but->highlight_time = but->max_highlight_time;
+			but->parent_button_group->scroll_to_this_button(but);
+			but->set_highlight(1.0f, 1.0f);
+
+		}
+	}
+
+
+
+
+
+	if (!loot_button->matched_filter_blocks.empty())
+	{
+		for (EButtonGroupFilterBlock* fb : loot_button->matched_filter_blocks)
+		{
+			fb->highlight_this_group_green_info();
+		}
+	}
 	//if (loot_button->matched_filter_blocks.size() == 1)
 	if (loot_button->matched_show_hide_block != nullptr)
 	{
 		if
-		(
-			(loot_button->matched_show_hide_block->attached_separator != nullptr)
-			&&
-			!(loot_button->matched_show_hide_block->attached_separator->is_expanded)
-			/*(loot_button->matched_filter_blocks.back()->attached_separator != nullptr)
-			&&
-			!(loot_button->matched_filter_blocks.back()->attached_separator->is_expanded)*/
-		)
+			(
+				(loot_button->matched_show_hide_block->attached_separator != nullptr)
+				&&
+				!(loot_button->matched_show_hide_block->attached_separator->is_expanded)
+				/*(loot_button->matched_filter_blocks.back()->attached_separator != nullptr)
+				&&
+				!(loot_button->matched_filter_blocks.back()->attached_separator->is_expanded)*/
+				)
 		{
 			loot_button->matched_show_hide_block->attached_separator->is_expanded = true;
 
@@ -2381,17 +2421,11 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 
 		//EInputCore::logger_param("scroll_y", loot_button->matched_filter_blocks.back()->region_gabarite->offset_y);
 
-		loot_button->matched_show_hide_block->highlight_this_group_green_info();
+
+		
 
 
 		EButtonGroup::refresh_button_group(EWindowMain::active_loot_filter_editor);
-	}
-
-	for (EntityButton* but : loot_button->suitable_buttons_list)
-	{
-		//but->highlight_time = but->max_highlight_time;
-		but->set_highlight(1.0f, 1.0f);
-		but->parent_button_group->scroll_to_this_button(but);
 	}
 
 
@@ -2746,66 +2780,81 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 					for (int i = 0; i < loot_button->stored_game_item->attribute_container_list.size(); i++)
 					{
 						EGameItemAttributeContainer*
-							attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
+						attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
 
-						if (attribute_container->target_attribute->show_in_loot_item_description)
+						if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 						{
-							if
-								(
-
-									(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
-									//&&
-									//(attribute_container->attribute_value_bool)
-									)
+							if (attribute_container->target_attribute->show_in_loot_item_description)
 							{
-								item_attributes_generated_text += "\\n";
-								item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-
-							}
-							else
 								if
 									(
-										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+
+										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+										//&&
+										//(attribute_container->attribute_value_bool)
 										)
 								{
 									item_attributes_generated_text += "\\n";
 									item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-									item_attributes_generated_text += " ";
-									item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
 
 								}
 								else
 									if
 										(
-											(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
+											(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 											)
 									{
 										item_attributes_generated_text += "\\n";
 										item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-										item_attributes_generated_text += " [";
-										item_attributes_generated_text += attribute_container->attribute_value_str;
-										item_attributes_generated_text += "]";
+										item_attributes_generated_text += " ";
+										item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
 
 									}
 									else
 										if
 											(
-												(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY)
-												&&
-												(true)
+												(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 												)
 										{
 											item_attributes_generated_text += "\\n";
 											item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-											for (ELocalisationText listed_string : attribute_container->listed_value_list)
+											item_attributes_generated_text += " [";
+											item_attributes_generated_text += attribute_container->attribute_value_str;
+											item_attributes_generated_text += "]";
+
+										}
+										else
+											if
+												(
+													(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY)
+													&&
+													(true)
+													)
 											{
-												item_attributes_generated_text += " {";
-												item_attributes_generated_text += listed_string.localisations[ELocalisationText::active_localisation];
-												item_attributes_generated_text += "}";
+												item_attributes_generated_text += "\\n";
+												item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
+
+												for (ELocalisationText listed_string : attribute_container->listed_value_list)
+												{
+													item_attributes_generated_text += " {";
+													item_attributes_generated_text += listed_string.localisations[ELocalisationText::active_localisation];
+													item_attributes_generated_text += "}";
+												}
+
+
 											}
 
 
-										}
+							}
+						}
+						else
+						{
+							item_attributes_generated_text += "\\n";
+
+							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation] + " <" + attribute_container->target_attribute->localisation.base_name + ">";
+							item_attributes_generated_text += "i[" + std::to_string(attribute_container->attribute_value_int) + "]";
+							item_attributes_generated_text += " ";
+							item_attributes_generated_text += "s[" + attribute_container->attribute_value_str + "]";
 						}
 					}
 
@@ -5357,7 +5406,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 									std::string
 									item_name_en = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_entity);
 
-									if (item_name_en == "")
+									if (item_name_en == "")	
 									{
 										EInputCore::logger_simple_error("item [" + details_id + "] have no item name!");
 									}
@@ -5830,7 +5879,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string EWindowMain::this_version = "1.4.1";
+const std::string EWindowMain::this_version = "1.5.0";
 //DataEntityParserMode data_entity_parser_mode = DataEntityParserMode::UNDEFINED;
 
 void EWindowMain::check_new_version_from_github()
@@ -6771,6 +6820,21 @@ void EWindowMain::register_loot_simulator_group()
 			socket_link_color_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 			right_loot_part->add_group(socket_link_color_group);
+
+		}
+
+		/////////		RUNE SOCKETS																								//////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EButtonGroupAttributeGeneratorGroup_RuneSockets*
+			rune_color_group = new EButtonGroupAttributeGeneratorGroup_RuneSockets(new ERegionGabarite(200.0f, 0.0f));
+			rune_color_group->init();
+			rune_color_group->additional_y_distance = 10.0f;
+
+			rune_color_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+			rune_color_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			right_loot_part->add_group(rune_color_group);
 
 		}
 
@@ -10183,11 +10247,13 @@ EWindowMain::EWindowMain()
 
 	
 
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/_special_items.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/amulets.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/belts.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/body_armours.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/boots.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/bows.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/bucklers.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/catalysts.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/charms.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/crossbows.txt");
@@ -10199,6 +10265,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/foci.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/gloves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/helmets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/jewels.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/mana_flasks.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/map_fragments.txt");
@@ -10213,10 +10280,14 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/sceptres.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/shields.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/socketable.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/spears.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/stackable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/staves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/tablets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/trial_coins.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/uncut.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/vault_keys.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/wands.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/waystones.txt");
 
@@ -10274,6 +10345,32 @@ EWindowMain::EWindowMain()
 	//export_loot_patterns_to_file();
 	import_loot_patterns();
 
+
+	{
+		std::string
+		result_buffer = "";
+
+		std::ofstream result_file;
+
+
+		for (EDataEntity* de : EWindowMain::registered_data_entity_game_item_list)
+		{
+			std::string
+			original_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
+
+			std::string
+			target_rename = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::rename_to, de);
+
+			if (target_rename != "")
+			{
+				result_buffer += original_name + '\t' + target_rename + '\n';
+			}
+
+			result_file.open("data/RenameResult.txt");
+			result_file << result_buffer;
+			result_file.close();
+		}
+	}
 
 
 	std::cout << green << "IDstrings hash density" << std::endl;
@@ -12511,7 +12608,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
-	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_linked_colours");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_socket_group";
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
@@ -12530,7 +12627,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
-	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_links");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_lined_sockets";
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
@@ -12551,7 +12648,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
-	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_socket_colours");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_sockets";
 	jc_filter_block_attribute->game_type = PathOfExileGame::BOTH;
@@ -16741,6 +16838,8 @@ void EWindowMain::open_loot_filter(std::string _full_path, LootFilterOpenMode _l
 
 	filter_text_lines.clear();
 
+	EButtonGroupRenameditemsInterface::rename_interface_is_opened = false;
+
 	while (std::getline(file, full_line))
 	{
 		filter_text_lines.push_back(full_line);
@@ -19463,8 +19562,55 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 	return whole_separator_block;
 }
 
+void EWindowMain::create_renamed_items_group()
+{
+	EWindowMain::make_unsaved_loot_filter_changes();
+	EButtonGroupRenameditemsInterface::rename_interface_group = new EButtonGroupRenameditemsInterface(new ERegionGabarite(700.0f, 600.0f));
+
+
+	EButtonGroupRenameditemsInterface::rename_interface_group->init_as_root_group(link_to_main_window);
+	EButtonGroupRenameditemsInterface::rename_interface_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	EButtonGroupRenameditemsInterface::rename_interface_group->autodeletable = true;
+	EButtonGroupRenameditemsInterface::rename_interface_group->auto_superfocused = true;
+
+	EButtonGroup*
+		workspace_part = EButtonGroupRenameditemsInterface::rename_interface_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+
+
+	/////////////////////////////////
+	EButtonGroup*
+	bottom_part_for_renamed_items = workspace_part->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(150.0f, 256.0f), EGUIStyle::active_style));
+	bottom_part_for_renamed_items->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	bottom_part_for_renamed_items->button_size_x_override = 300.0f;
+	EButtonGroupRenameditemsInterface::rename_interface_group->bottom_part_for_renamed_items = bottom_part_for_renamed_items;
+
+
+
+
+	/////////////////////////////////
+	EButtonGroup*
+	top_part_for_text_description = workspace_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 160.0f), EGUIStyle::active_style));
+	top_part_for_text_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+	top_part_for_text_description->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("button_group_text_renamed_items"));
+
+	top_part_for_text_description->main_clickable_area->text_area->text_have_background = false;
+	top_part_for_text_description->main_clickable_area->text_area->offset_by_gabarite_size_x = 0.0f;
+	top_part_for_text_description->main_clickable_area->text_area->offset_by_text_size_x = 0.0f;
+
+	top_part_for_text_description->main_clickable_area->text_area->offset_border[BorderSide::LEFT] = 8.0f;
+	top_part_for_text_description->main_clickable_area->text_area->offset_border[BorderSide::RIGHT] = 16.0f;
+
+	link_to_main_window->button_group_list.push_back(EButtonGroupRenameditemsInterface::rename_interface_group);
+
+	EButtonGroupRenameditemsInterface::rename_interface_group->activate_move_to_foreground_and_center();
+}
+
 void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block, LootFilterOpenMode _parse_mode, PathOfExileGame _game_type)
 {
+	std::ofstream result_file;
+
+	std::string rename_buffer = "";
+
 	std::string buffer_text = "";
 
 	bool space_is_not_separator = false;
@@ -19511,6 +19657,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 	//PathOfExileGame
 	//game_version = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version;
+
+	//ELocalisationText
+	//renamed_array[1000];
+
+	//bool rename_interface_is_opened = false;
+
+	//EButtonGroupRenameditemsInterface*
+	//rename_interface_group = nullptr;
 
 	for (std::string str_line : filter_text_lines)
 	{
@@ -20195,15 +20349,116 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 													)
 												&&
 												(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
-												)
+											)
 										{
 											matched_data_entity = de;
+
+											break;
 
 
 											//EButtonGroup::change_group(((EDataContainer_Group_FilterBlockListedSegment*)d_container)->group_with_listed_buttons);
 										}
 
 										xxx++;
+									}
+
+									//change data entity to another if data entity have tag "rename to"
+									if (matched_data_entity != nullptr)
+									{
+										std::string
+										target_rename = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::rename_to, matched_data_entity);
+
+										
+
+										if (target_rename != "")
+										{
+											rename_buffer += "Item original name[" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, matched_data_entity) + "] target rename [" + target_rename + "]\r\n";
+
+											if (!EButtonGroupRenameditemsInterface::rename_interface_is_opened)
+											{
+												EButtonGroupRenameditemsInterface::rename_interface_is_opened = true;
+
+												EWindowMain::create_renamed_items_group();
+											}
+
+											
+
+											for (EDataEntity* de : EDataEntity::data_entity_hash_struct.data_entity_list[EStringUtils::get_id_by_hash(target_rename)])
+											{
+												std::string
+												name_EN = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
+
+												
+
+
+												if
+												(
+													(name_EN == target_rename)
+													&&
+													(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
+												)
+												{
+													ELocalisationText
+													ltext;
+
+													ltext.localisations[NSW_localisation_EN]
+													=
+													"["
+													+
+													DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, matched_data_entity)
+													+
+													"]\\nrenamed to\\n["
+													+
+													DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de)
+													+
+													"]";
+
+													
+													ltext.localisations[NSW_localisation_RU]
+													=
+													"["
+													+
+													DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, matched_data_entity)
+													+
+													"]\\nпереименован в\\n["
+													+
+													DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, de)
+													+
+													"]";
+
+													if (EButtonGroupRenameditemsInterface::rename_interface_group != nullptr)
+													{
+														EntityButton*
+														renamed_item_button = new EntityButton();
+														renamed_item_button->make_as_default_button_with_icon_and_text
+														(
+															new ERegionGabarite(400.0f, 50.0f),
+															EButtonGroupRenameditemsInterface::rename_interface_group->bottom_part_for_renamed_items,
+															nullptr,
+															NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, matched_data_entity)),
+															ltext.localisations[ELocalisationText::active_localisation]
+														);
+														renamed_item_button->can_be_stretched = true;
+
+														EButtonGroupRenameditemsInterface::rename_interface_group->bottom_part_for_renamed_items->add_button_to_working_group(renamed_item_button);
+
+														renamed_item_button->main_clickable_area->text_area->localisation_text = ltext;
+
+														EButtonGroupRenameditemsInterface::rename_interface_group->need_refresh = true;
+
+													}
+													std::string
+													name_RU = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, de);
+
+													matched_data_entity = de;
+
+													//DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::name_EN, "*" + name_EN + "*", matched_data_entity);
+													//DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::name_RU, "*" + name_RU + "*", matched_data_entity);
+
+													break;
+												}
+											}
+										}
 									}
 
 
@@ -20829,7 +21084,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 		registered_group_filter_error_list->activate_move_to_foreground_and_center();
 	}
 
-
+	result_file.open("data/RenameResult.txt");
+	result_file << rename_buffer;
+	result_file.close();
 }
 
 bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text)
@@ -24518,14 +24775,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 				std::string
 					class_EN_name = "";
 				//search in all class data entity, to get localised names and short name
-				for (EDataEntity* d_entity : *target_data_entity_list_for_class)
+				for (EDataEntity* class_DE : *target_data_entity_list_for_class)
 					if (!suitable_data_entity_searched)
 					{
 						//try get base name
 
 
-						class_EN_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, d_entity);
-						short_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::short_name, d_entity);
+						class_EN_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, class_DE);
+						short_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::short_name, class_DE);
 
 
 
@@ -24539,14 +24796,27 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 						{
 							l_text.base_name = class_EN_name;
 							l_text.localisations[NSW_localisation_EN] = class_EN_name;
-							l_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, d_entity);
+							l_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, class_DE);
 
+
+
+
+
+							//MAX SOCKETS
 							std::string
-								sockets_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::max_sockets, d_entity);
+							sockets_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::max_sockets, class_DE);
 							if (sockets_text != "") { _game_item->max_available_sockets = EStringUtils::safe_convert_string_to_number(sockets_text, 0, 6); }
 
+							//MAX RUNE SOCKETS
 							std::string
-								rarity_override_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::rarity_override, d_entity);
+							rune_sockets_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::max_rune_sockets, class_DE);
+							if (rune_sockets_text != "") { _game_item->max_available_rune_sockets = EStringUtils::safe_convert_string_to_number(rune_sockets_text, 0, 6); }
+
+
+
+
+							std::string
+								rarity_override_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::rarity_override, class_DE);
 							if (rarity_override_text != "")
 							{
 								if (rarity_override_text == "Normal") { _game_item->rarity = 0; }
@@ -24558,24 +24828,25 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 											if (rarity_override_text == "Unique") { _game_item->rarity = 3; }
 							}
 
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Synthesised",		d_entity))		{ _game_item->can_be_synthesised	= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Fractured",		d_entity))		{ _game_item->can_be_fractured		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Corrupted",		d_entity))		{ _game_item->can_be_corrupted		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Mirrored",		d_entity))		{ _game_item->can_be_mirrored		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Enchanted",		d_entity))		{ _game_item->can_be_enchanted		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Replica",			d_entity))		{ _game_item->can_be_replica		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Quality",			d_entity))		{ _game_item->can_be_quality		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Maptier",			d_entity))		{ _game_item->can_be_maptier		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "WaystoneTier",	d_entity))		{ _game_item->can_be_waystone_tier	= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Synthesised",		class_DE))		{ _game_item->can_be_synthesised	= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Fractured",		class_DE))		{ _game_item->can_be_fractured		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Corrupted",		class_DE))		{ _game_item->can_be_corrupted		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Mirrored",		class_DE))		{ _game_item->can_be_mirrored		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Enchanted",		class_DE))		{ _game_item->can_be_enchanted		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Replica",			class_DE))		{ _game_item->can_be_replica		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Quality",			class_DE))		{ _game_item->can_be_quality		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Maptier",			class_DE))		{ _game_item->can_be_maptier		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "WaystoneTier",	class_DE))		{ _game_item->can_be_waystone_tier	= true; }
 							//if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Maptier",		d_entity))		{ _game_item->can_be_maptier	= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Gem level",		d_entity))		{ _game_item->can_be_gem_level		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Transfigured",	d_entity))		{ _game_item->can_be_transfigured	= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Blighted",		d_entity))		{ _game_item->can_be_blighted		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Uberblighted",	d_entity))		{ _game_item->can_be_uberblighted	= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Procentile",		d_entity))		{ _game_item->can_be_procentile		= true; }
-							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Influenced",		d_entity))		{ _game_item->can_be_influenced		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Gem level",		class_DE))		{ _game_item->can_be_gem_level		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Transfigured",	class_DE))		{ _game_item->can_be_transfigured	= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Blighted",		class_DE))		{ _game_item->can_be_blighted		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Uberblighted",	class_DE))		{ _game_item->can_be_uberblighted	= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Procentile",		class_DE))		{ _game_item->can_be_procentile		= true; }
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "can be", "Influenced",		class_DE))		{ _game_item->can_be_influenced		= true; }
 
 							suitable_data_entity_searched = true;
+
 							break;
 						}
 					}
@@ -25333,6 +25604,7 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE] = 10000;
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS] = 0;
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE] = 0;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RUNE] = 0;
 	}
 	else
 	{
@@ -25343,15 +25615,16 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE] = round(loot_simulator_pointer->selected_white_weight);
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS] = 0;
 		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE] = 0;
+		color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RUNE] = 0;
 	}
 
 	//if (!wrong_base)
 	if (_game_item->max_available_sockets > 0)
 	{
 
-		std::string temp_socket_color_names = "RGBWAD";
+		std::string temp_socket_color_names = "RGBWADS";
 
-		int exactly_color_count[6]{ 0 };
+		int exactly_color_count[SocketColorEnum::_SOCKET_COLOR_ENUM_LAST_ELEMENT]{ 0 };
 		//int color_id_array[6]		{ 0 };
 
 		int total_weight = 0;
@@ -25367,6 +25640,7 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 		std::string sockets_result_string = "";
 		std::string links_result_string = "";
 
+		//ALWAYS SIX LINKED
 		if
 			(
 				(_game_item->stored_data_entity != nullptr)
@@ -25391,7 +25665,7 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 
 		if (links_count == 1) { links_count = 0; }
 
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 7; i++)
 		{
 			total_weight += color_weight[i];
 		}
@@ -25408,7 +25682,7 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 			weight_sum = 0;
 			result_color_id = 0;
 
-			for (int i = 0; i < 6; i++)
+			for (int i = 0; i < 7; i++)
 			{
 				if
 					(
@@ -25417,7 +25691,7 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 						(weight_sum <= random_selected)
 						&&
 						(color_weight[i] + weight_sum > random_selected)
-						)
+					)
 				{
 					result_color_id = i;
 					break;
@@ -25438,14 +25712,14 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 		links_result_string = std::to_string(links_count);
 
 		//		GENERATE COLOR SOCKETS STRING LIKE "RRRGGB"
-		for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+		for (int i = 0; i < 7; i++) { exactly_color_count[i] = 0; }
 
 		for (int i = 0; i < sockets_count; i++)
 		{
 			exactly_color_count[_game_item->socket_color_id_array[i]]++;
 		};
 
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 7; i++)
 			if (exactly_color_count[i] > 0)
 				for (int j = 0; j < exactly_color_count[i]; j++)
 				{
@@ -25453,14 +25727,14 @@ void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _g
 				}
 
 		//		GENERATE COLOR LINKS STRING LIKE "RRRGGB"
-		for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+		for (int i = 0; i < 7; i++) { exactly_color_count[i] = 0; }
 
 		for (int i = 0; i < links_count; i++)
 		{
 			exactly_color_count[_game_item->socket_color_id_array[i]]++;
 		};
 
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 7; i++)
 			if (exactly_color_count[i] > 0)
 				for (int j = 0; j < exactly_color_count[i]; j++)
 				{
@@ -25912,6 +26186,10 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 			loot_item->align_even_if_hidden = true;
 			loot_item->do_not_generate_bg = true;
 
+			loot_item->force_field_left		= 1.0f;
+			loot_item->force_field_right	= 1.0f;
+			loot_item->force_field_up		= 1.0f;
+			loot_item->force_field_bottom	= 1.0f;
 
 
 			loot_item->stored_game_item = game_item;
@@ -26092,6 +26370,10 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 		}
 
 		float additional_left_space = 0.0f;
+		float
+		expectable_y_size = 30.0f * (0.35f + size_multiplier * 0.65f);
+		expectable_y_size = std::max(expectable_y_size, 15.0f);
+
 
 		if
 			(
@@ -26100,13 +26382,30 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 				(loot_item->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
 				)
 		{
-			float
-				size_multiplier = 1.0f - loot_item->matched_minimap_icon_size->selected_variant * 0.25;
+			//size_multiplier *= 0.333f;
 
 			ETextureGabarite*
-				texture_gabarite = loot_item->matched_minimap_icon_shape->router_variant_list[loot_item->matched_minimap_icon_shape->selected_variant]->texture;
+			texture_gabarite = loot_item->matched_minimap_icon_shape->router_variant_list[loot_item->matched_minimap_icon_shape->selected_variant]->texture;
 
-			additional_left_space = (float)texture_gabarite->size_x_in_pixels * size_multiplier;
+			float
+			minimap_icon_size = (float)(texture_gabarite->size_y_in_pixels);
+
+			float
+			router_size_multiplier = 1.0f - loot_item->matched_minimap_icon_size->selected_variant * 0.15f;
+
+			//minimap_icon_size *= router_size_multiplier;
+
+			float
+			downscale_multiplier = expectable_y_size / minimap_icon_size;
+
+			float
+			total_size = minimap_icon_size * downscale_multiplier * router_size_multiplier;
+
+			
+
+
+			additional_left_space = total_size;
+			
 		}
 
 		size_multiplier = std::min(size_multiplier, 1.0f);
@@ -26114,13 +26413,17 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 		loot_item->main_text_area->font = EFont::font_list[1];
 		loot_item->main_text_area->font_scale = (0.35f + size_multiplier * 0.65f);
 
-		loot_item->main_text_area->offset_border[BorderSide::LEFT] = additional_left_space;
+		
 
 		loot_item->button_gabarite->size_x = loot_item->main_text_area->get_text_width(&loot_item->main_text_area->original_text) * (0.35f + size_multiplier * 0.65f) + additional_left_space + 10.0f;
-		loot_item->button_gabarite->size_y = 30.0f * (0.35f + size_multiplier * 0.65f);
+		loot_item->button_gabarite->size_y = expectable_y_size;
+
+		
 
 		loot_item->button_gabarite->size_x = std::max(loot_item->button_gabarite->size_x, 100.0f);
 		loot_item->button_gabarite->size_y = std::max(loot_item->button_gabarite->size_y, 15.0f);
+
+		loot_item->main_text_area->offset_border[BorderSide::LEFT] = round((float)(additional_left_space) * 0.75f);
 
 		loot_item->main_text_area->change_text(loot_item->main_text_area->original_text);
 	}
@@ -26697,27 +27000,30 @@ bool EButtonGroupLootSimulator::is_condition_satisfied(int _left, std::string _o
 
 bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::string _operator, std::string _item)
 {
-	int sockets_count_block = 0;
-	int red_count_block = 0;
-	int green_count_block = 0;
-	int blue_count_block = 0;
-	int white_count_block = 0;
-	int abyss_count_block = 0;
-	int delve_count_block = 0;
+	int sockets_count_block	= 0;
+	int red_count_block		= 0;
+	int green_count_block	= 0;
+	int blue_count_block	= 0;
+	int white_count_block	= 0;
+	int abyss_count_block	= 0;
+	int delve_count_block	= 0;
+	int rune_count_block	= 0;
 
-	int sockets_count_item = 0;
-	int red_count_item = 0;
-	int green_count_item = 0;
-	int blue_count_item = 0;
-	int white_count_item = 0;
-	int abyss_count_item = 0;
-	int delve_count_item = 0;
+	int sockets_count_item	= 0;
+	int red_count_item		= 0;
+	int green_count_item	= 0;
+	int blue_count_item		= 0;
+	int white_count_item	= 0;
+	int abyss_count_item	= 0;
+	int delve_count_item	= 0;
+	int rune_count_item		= 0;
 
+	//SOCKETS ON BLOCK (STORED IN STRING LIKE "5RRRGGB"
 	for (int i = 0; i < _block.length(); i++)
 	{
 
 		if
-			(
+		(
 				(_block[i] == '0')
 				||
 				(_block[i] == '1')
@@ -26731,7 +27037,7 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 				(_block[i] == '5')
 				||
 				(_block[i] == '6')
-				)
+		)
 		{
 			sockets_count_block = std::stoi(&_block[i]);
 		}
@@ -26743,45 +27049,31 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 		if (_block[i] == 'A') { abyss_count_block++; }
 		if (_block[i] == 'D') { delve_count_block++; }
+
+		if (_block[i] == 'S') { rune_count_block++; }
 	}
 
+
+	//SOCKETS ON ITEM (STORED IN STRING LIKE "5RRRGGB"
 	for (int i = 0; i < _item.length(); i++)
 	{
+		if (_item[i] == 'R') { red_count_item++;	sockets_count_item++; }
+		if (_item[i] == 'G') { green_count_item++;	sockets_count_item++; }
+		if (_item[i] == 'B') { blue_count_item++;	sockets_count_item++; }
+		if (_item[i] == 'W') { white_count_item++;	sockets_count_item++; }
 
-		if
-			(
-				(_item[i] == '0')
-				||
-				(_item[i] == '1')
-				||
-				(_item[i] == '2')
-				||
-				(_item[i] == '3')
-				||
-				(_item[i] == '4')
-				||
-				(_item[i] == '5')
-				||
-				(_item[i] == '6')
-				)
-		{
-			sockets_count_item = std::stoi(&_item[i]);
-		}
+		if (_item[i] == 'A') { abyss_count_item++;	sockets_count_item++;}
+		if (_item[i] == 'D') { delve_count_item++;	sockets_count_item++;}
 
-		if (_item[i] == 'R') { red_count_item++; }
-		if (_item[i] == 'G') { green_count_item++; }
-		if (_item[i] == 'B') { blue_count_item++; }
-		if (_item[i] == 'W') { white_count_item++; }
-		if (_item[i] == 'A') { abyss_count_item++; }
-		if (_item[i] == 'D') { delve_count_item++; }
+		if (_item[i] == 'S') { rune_count_item++;	sockets_count_item++;}
 	}
 
 	if
-		(
-			(sockets_count_block > 0)
-			&&
-			(!is_condition_satisfied(sockets_count_item, _operator, sockets_count_block))
-			)
+	(
+		(sockets_count_block >= 0)
+		&&
+		(!is_condition_satisfied(sockets_count_item, _operator, sockets_count_block))
+	)
 	{
 		return false;
 	}
@@ -26789,7 +27081,7 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 	if
 		(
-			(red_count_block > 0)
+			(red_count_block >= 0)
 			&&
 			(!is_condition_satisfied(red_count_item, _operator, red_count_block))
 			)
@@ -26800,21 +27092,21 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 	if
 		(
-			(green_count_block > 0)
+			(green_count_block >= 0)
 			&&
 			(!is_condition_satisfied(green_count_item, _operator, green_count_block))
-			)
+		)
 	{
 		return false;
 	}
 
 
 	if
-		(
-			(blue_count_block > 0)
+	(
+			(blue_count_block >= 0)
 			&&
 			(!is_condition_satisfied(blue_count_item, _operator, blue_count_block))
-			)
+		)
 	{
 		return false;
 	}
@@ -26822,7 +27114,7 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 	if
 		(
-			(white_count_block > 0)
+			(white_count_block >= 0)
 			&&
 			(!is_condition_satisfied(white_count_item, _operator, white_count_block))
 			)
@@ -26833,7 +27125,7 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 	if
 		(
-			(abyss_count_block > 0)
+			(abyss_count_block >= 0)
 			&&
 			(!is_condition_satisfied(abyss_count_item, _operator, abyss_count_block))
 			)
@@ -26844,10 +27136,20 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 	if
 		(
-			(delve_count_block > 0)
+			(delve_count_block >= 0)
 			&&
 			(!is_condition_satisfied(delve_count_item, _operator, delve_count_block))
 			)
+	{
+		return false;
+	}
+
+	if
+		(
+			(rune_count_block >= 0)
+			&&
+			(!is_condition_satisfied(rune_count_item, _operator, rune_count_block))
+		)
 	{
 		return false;
 	}
@@ -28148,8 +28450,10 @@ void EButtonGroupSocketPreview::draw_button_group()
 {
 	if (icon_texture != nullptr)
 	{
-		EColor_4 color_table[6][4];
+		EColor_4
+		color_table[SocketColorEnum::_SOCKET_COLOR_ENUM_LAST_ELEMENT][4];
 
+		//R G B A
 		for (int i = 0; i < 4; i++)
 		{
 			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_RED][i]		= NS_EColorUtils::COLOR_RED[i];
@@ -28158,6 +28462,7 @@ void EButtonGroupSocketPreview::draw_button_group()
 			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE][i]	= NS_EColorUtils::COLOR_WHITE[i];
 			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE][i]	= NS_EColorUtils::COLOR_YELLOW[i];
 			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS][i]	= NS_EColorUtils::COLOR_BLACK[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_RUNE][i]		= NS_EColorUtils::COLOR_GREY[i];
 		}
 
 
@@ -29893,7 +30198,7 @@ void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::init()
 void EButtonGroupAttributeGeneratorGroup_SocketsAndLinks::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
 {
 	EButtonGroupLootSimulator*
-		loot_simulator_pointer = EWindowMain::loot_simulator_button_group;
+	loot_simulator_pointer = EWindowMain::loot_simulator_button_group;
 
 	int color_weight[6];
 
@@ -31415,6 +31720,8 @@ EntityButtonTabForPriceTable::EntityButtonTabForPriceTable()
 
 std::vector<EButtonGroup*> EntityButtonTabForPriceTable::all_price_table_groups;
 
+
+
 void EButtonGroupEnvironmentConfigure::button_group_update(float _d)
 {
 	EButtonGroup::button_group_update(_d);
@@ -31509,5 +31816,83 @@ void EButtonGroupAttributeGeneratorGroup_WaystoneTier::execute_attribute_group(E
 		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "WaystoneTier");
 
 		attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_maptier);
+	}
+}
+
+void EButtonGroupAttributeGeneratorGroup_RuneSockets::init()
+{
+	name.set_ID_by_string("RuneSocket");
+	//attribute_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+	EWindowMain::loot_simulator_button_group->attribute_group_list.push_back(this);
+
+
+	EntityButton*
+	named_slider = nullptr;
+
+
+	//WHITE SOCKETS
+	named_slider = EntityButton::create_horizontal_named_slider
+	(
+
+		new ERegionGabarite(350.0f, 36.0f),
+		this,
+		EFont::font_list[0],
+		EGUIStyle::active_style,
+		ELocalisationText::get_localisation_by_key("rune_socket_count")
+	);
+	add_button_to_working_group_and_expand_y(named_slider);
+	named_slider->can_be_stretched = true;
+	named_slider->force_field_up = 2.0f;
+	named_slider->force_field_bottom = 2.0f;
+
+	EDataContainer_VerticalNamedSlider*
+	data_container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container);
+
+	data_container->pointer_to_value = &EWindowMain::loot_simulator_button_group->selected_sockets;
+
+	data_container->min_value = 0.0f;
+	data_container->mid_value = 3.0f;
+	data_container->max_value = 6.0f;
+
+	data_container->current_slide_value = 1.0f;
+
+	data_container->rounded_numbers = true;
+	data_container->is_float = false;
+
+	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
+}
+
+void EButtonGroupAttributeGeneratorGroup_RuneSockets::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
+{
+	EButtonGroupLootSimulator*
+	loot_simulator_pointer = EWindowMain::loot_simulator_button_group;
+
+	int max_rune_sockets = std::min(loot_simulator_pointer->selected_sockets, _game_item->max_available_rune_sockets);
+
+	if (max_rune_sockets >= 0)
+	{
+
+
+
+		//generate socket string
+		std::string
+		socket_buffer = "";
+
+		for (int i = 0; i < max_rune_sockets; i++)
+		{
+			socket_buffer += "S";
+		}
+
+
+		//SOCKETS GROUP
+		EGameItemAttributeContainer*
+		attribute_container_socket_group = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "SocketGroup");
+		attribute_container_socket_group->attribute_value_str = socket_buffer;
+
+		//SOCKETS
+		EGameItemAttributeContainer*
+		attribute_container_sockets = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Sockets");
+		attribute_container_sockets->attribute_value_str = socket_buffer;
 	}
 }

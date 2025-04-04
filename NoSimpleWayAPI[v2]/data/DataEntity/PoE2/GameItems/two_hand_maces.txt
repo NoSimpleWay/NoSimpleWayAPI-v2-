@@ -342,6 +342,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Oak Greathammer"
 	[tag]"name RU"	[value]"Улучшенная дубовая кувалда"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Snakewood Greathammer"
+
+	[tag]"icon path"	[value]"OakGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"59-109"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 104 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Snakewood Greathammer"
+	[tag]"name RU"	[value]"Snakewood Greathammer"
+
 	[tag]"icon path"	[value]"OakGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
@@ -367,6 +394,35 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"	[value]"Advanced Forge Maul"
 	[tag]"name RU"	[value]"Улучшенная кузнечная кувалда"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Blacksmith Maul"
+
+	[tag]"icon path"	[value]"ForgeMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"84-113"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 110 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blacksmith Maul"
+	[tag]"name RU"	[value]"Blacksmith Maul"
 
 	[tag]"icon path"	[value]"ForgeMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -394,6 +450,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Cultist Greathammer"
 	[tag]"name RU"	[value]"Улучшенный культовый молот"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Zealot Greathammer"
+
 	[tag]"icon path"	[value]"CultistGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
@@ -413,12 +472,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zealot Greathammer"
+	[tag]"name RU"	[value]"Zealot Greathammer"
+
+	[tag]"icon path"	[value]"CultistGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"62-83"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 117 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Temple Maul"
 	[tag]"name RU"	[value]"Улучшенная храмовая дубина"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Solemn Maul"
 
 	[tag]"icon path"	[value]"TempleMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -439,12 +541,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Solemn Maul"
+	[tag]"name RU"	[value]"Solemn Maul"
+
+	[tag]"icon path"	[value]"TempleMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"60-125"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.2"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 126 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Leaden Greathammer"
 	[tag]"name RU"	[value]"Улучшенный освинцованный молот"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Heavy Greathammer"
 
 	[tag]"icon path"	[value]"LeadenGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -465,12 +608,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Heavy Greathammer"
+	[tag]"name RU"	[value]"Heavy Greathammer"
+
+	[tag]"icon path"	[value]"LeadenGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"94-127"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.1"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 135 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Crumbling Maul"
 	[tag]"name RU"	[value]"Улучшенный крошащий молот"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Disintegrating Maul"
 
 	[tag]"icon path"	[value]"CrumblingMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -491,12 +675,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Disintegrating Maul"
+	[tag]"name RU"	[value]"Disintegrating Maul"
+
+	[tag]"icon path"	[value]"CrumblingMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"93-114"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.1"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 142 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Forge Maul"
 	[tag]"name RU"	[value]"Кузнечная кувалда эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Anvil Maul"
 
 	[tag]"icon path"	[value]"ForgeMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -517,12 +741,81 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Anvil Maul"
+	[tag]"name RU"	[value]"Anvil Maul"
+
+	[tag]"icon path"	[value]"ForgeMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"112-151"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 67, 174 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Temple Maul"
 	[tag]"name RU"	[value]"Храмовая дубина эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sacred Maul"
+
+	[tag]"icon path"	[value]"TempleMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"76-158"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.2"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 72, 193 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sacred Maul"
+	[tag]"name RU"	[value]"Sacred Maul"
 
 	[tag]"icon path"	[value]"TempleMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -550,6 +843,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Oak Greathammer"
 	[tag]"name RU"	[value]"Дубовая кувалда эксперта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ironwood Greathammer"
+
 	[tag]"icon path"	[value]"OakGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
@@ -569,12 +865,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ironwood Greathammer"
+	[tag]"name RU"	[value]"Ironwood Greathammer"
+
+	[tag]"icon path"	[value]"OakGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"94-174"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Cultist Greathammer"
 	[tag]"name RU"	[value]"Культовый молот эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Fanatic Greathammer"
 
 	[tag]"icon path"	[value]"CultistGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -595,12 +930,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fanatic Greathammer"
+	[tag]"name RU"	[value]"Fanatic Greathammer"
+
+	[tag]"icon path"	[value]"CultistGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"89-120"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.05"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 78, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Crumbling Maul"
 	[tag]"name RU"	[value]"Крошащий молот эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ruination Maul"
 
 	[tag]"icon path"	[value]"CrumblingMaul"
 	[tag]"base class"	[value]"Two Hand Maces"
@@ -621,12 +991,80 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ruination Maul"
+	[tag]"name RU"	[value]"Ruination Maul"
+
+	[tag]"icon path"	[value]"CrumblingMaul"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"113-138"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.1"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 79, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Leaden Greathammer"
 	[tag]"name RU"	[value]"Освинцованный молот эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Massive Greathammer"
+
+	[tag]"icon path"	[value]"LeadenGreathammer"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"119-161"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.1"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.3"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Massive Greathammer"
+	[tag]"name RU"	[value]"Massive Greathammer"
 
 	[tag]"icon path"	[value]"LeadenGreathammer"
 	[tag]"base class"	[value]"Two Hand Maces"

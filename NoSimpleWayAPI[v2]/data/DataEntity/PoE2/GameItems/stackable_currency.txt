@@ -569,3 +569,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Fracturing Orb"
+	[tag]"name RU"			[value]"FracturingOrb"
+	
+	[tag]"icon path"		[value]"FracturingOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Undefined"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Expensive"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
