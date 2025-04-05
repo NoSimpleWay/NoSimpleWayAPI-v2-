@@ -5530,11 +5530,11 @@
 [Tangmazu's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Olroth's Reliquary Key] dust quantity = 0, dust tag = Trash
 [The Arbiter's Reliquary Key] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key (Against the Darkness)] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key (Sandstorm Visage)] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key (Blessed Bonds)] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key (Sekhema's Resolve)] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key (Temporalis)] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Withered Wand] dust quantity = 0, dust tag = Trash
 [Bone Wand] dust quantity = 0, dust tag = Trash
 [Attuned Wand] dust quantity = 0, dust tag = Trash

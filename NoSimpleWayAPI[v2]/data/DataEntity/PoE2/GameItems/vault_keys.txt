@@ -113,7 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zarokh's Reliquary Key (Against the Darkness)"
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
 	[tag]"name RU"		[value]"Ключ реликвария Зароха (Противление тьме)"
 
 	[tag]"icon path"	[value]"UndefinedReliquaryKey"
@@ -128,7 +128,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zarokh's Reliquary Key (Sandstorm Visage)"
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
 	[tag]"name RU"		[value]"Ключ реликвария Зароха (Образ песчаной бури)"
 
 	[tag]"icon path"	[value]"UndefinedReliquaryKey"
@@ -143,7 +143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zarokh's Reliquary Key (Blessed Bonds)"
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
 	[tag]"name RU"		[value]"Ключ реликвария Зароха (Благословенные узы)"
 
 	[tag]"icon path"	[value]"UndefinedReliquaryKey"
@@ -158,7 +158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zarokh's Reliquary Key (Sekhema's Resolve)"
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
 	[tag]"name RU"		[value]"Ключ реликвария Зароха (Решимость Сехемы)"
 
 	[tag]"icon path"	[value]"UndefinedReliquaryKey"
@@ -173,7 +173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zarokh's Reliquary Key (Temporalis)"
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
 	[tag]"name RU"		[value]"Ключ реликвария Зароха (Темпоралис)"
 
 	[tag]"icon path"	[value]"UndefinedReliquaryKey"
