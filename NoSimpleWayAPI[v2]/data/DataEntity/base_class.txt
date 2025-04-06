@@ -126,7 +126,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Quality"
 	[tag]"can be"		[value]"Influenced"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"exist for"	[value]"PoE1"
 	[tag]"exist for"	[value]"PoE2"
@@ -139,7 +140,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Daggers"
 	[tag]"name RU"		[value]"Кинжалы"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -173,7 +175,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"short name"	[value]"Wand"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -195,7 +198,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Sceptres"
 	[tag]"name RU"		[value]"Скипетры"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -217,7 +221,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Rune Daggers"
 	[tag]"name RU"		[value]"Рунический кинжал"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -247,7 +252,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"short name"	[value]"One Hand Sword"
 	
-	[tag]"max sockets"	[value]"3"
+	[tag]"max sockets"		[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -293,6 +299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Sword"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -325,6 +332,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"One Hand Axe"
 	
 	[tag]"max sockets"	[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -349,6 +357,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Axe"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -379,6 +388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"One Hand Mace"
 	
 	[tag]"max sockets"	[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -403,6 +413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Two Hand Mace"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -435,6 +446,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Bow"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -487,6 +499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Staff"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -511,6 +524,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Warstaff"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -547,6 +561,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Fishing Rod"
 	
 	[tag]"max sockets"	[value]"4"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -589,6 +604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перчатки"
 	
 	[tag]"max sockets"	[value]"4"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -614,6 +630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Helmet"
 	
 	[tag]"max sockets"	[value]"4"
+	[tag]"max rune sockets"	[value]"2"
 
 	
 	[tag]"can be"		[value]"Synthesised"
@@ -638,6 +655,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Обувь"
 	
 	[tag]"max sockets"	[value]"4"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -663,6 +681,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Body Armour"
 	
 	[tag]"max sockets"	[value]"6"
+	[tag]"max rune sockets"	[value]"3"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -690,6 +709,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"short name"	[value]"Shield"
 	
 	[tag]"max sockets"	[value]"3"
+	[tag]"max rune sockets"	[value]"2"
 	
 	[tag]"can be"		[value]"Synthesised"
 	[tag]"can be"		[value]"Fractured"
@@ -1003,6 +1023,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ Реликвария"
 	
 	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 	
 	[tag]"icon path"	[value]"VisceralReliquaryKey"
 	
@@ -1590,6 +1611,12 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"short name"	[value]"Spear"
 	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Quality"
+	
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"ClassSpears"
@@ -1625,6 +1652,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Боевые посохи(PoE2)"
 	
 	[tag]"short name"	[value]"Quarterstaff"
+
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Quality"
 	
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1638,6 +1671,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Арбалеты"
 	
 	[tag]"short name"	[value]"Crossbow"
+
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Quality"
 	
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1646,10 +1685,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Focus"
+	[tag]"name EN"		[value]"Foci"
 	[tag]"name RU"		[value]"Фокус"
-	
-	[tag]"short name"	[value]"Foci"
 	
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1713,4 +1750,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"ExpeditionTablet"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Bucklers"
+	[tag]"name RU"		[value]"Баклеры"
+	
+	[tag]"can be"		[value]"Fractured"
+	[tag]"can be"		[value]"Corrupted"
+	[tag]"can be"		[value]"Mirrored"
+	[tag]"can be"		[value]"Enchanted"
+	[tag]"can be"		[value]"Quality"
+	
+	[tag]"short name"	[value]"Buckler"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"RidgedBuckler"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Trial Coins"
+	[tag]"name RU"		[value]"Монеты испытания"
+	
+	[tag]"short name"	[value]"Trial Coin"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"DjinnBarya"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Inscribed Ultimatum"
+	[tag]"name RU"		[value]"Начертанный ультиматум"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"InscribedUltimatum"
 	

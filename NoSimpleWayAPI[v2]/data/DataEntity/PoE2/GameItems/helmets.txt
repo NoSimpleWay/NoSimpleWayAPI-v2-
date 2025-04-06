@@ -265,8 +265,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Shabby Hood"
+	[tag]"name EN"	[value]"Advanced Shabby Hood"
 	[tag]"name RU"	[value]"Потрёпанный капюшон"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Rotted Hood"
+
+	[tag]"icon path"	[value]"ShabbyHood"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"19"
+	[tag]"base evasion max"	[value]"19"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Rotted Hood"
+	[tag]"name RU"	[value]"Rotted Hood"
 
 	[tag]"icon path"	[value]"ShabbyHood"
 	[tag]"base class"	[value]"Helmets"
@@ -1051,8 +1076,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Cultist Crown"
+	[tag]"name EN"	[value]"Expert Cowled Helm"
 	[tag]"name RU"	[value]"Корона культиста"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cryptic Helm"
 
 	[tag]"icon path"	[value]"CultistCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -1071,6 +1099,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cryptic Helm"
+	[tag]"name RU"	[value]"Cryptic Helm"
+
+	[tag]"icon path"	[value]"CultistCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"44"
+	[tag]"base armour max"	[value]"44"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 16, 18 Str, 18 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -1446,6 +1510,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Rusted Greathelm"
 	[tag]"name RU"	[value]"Улучшенный ржавый большой шлем"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Corroded Greathelm"
+
 	[tag]"icon path"	[value]"RustedGreathelm"
 	[tag]"base class"	[value]"Helmets"
 
@@ -1463,12 +1530,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Corroded Greathelm"
+	[tag]"name RU"	[value]"Corroded Greathelm"
+
+	[tag]"icon path"	[value]"RustedGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"176"
+	[tag]"base armour max"	[value]"176"
+	[tag]"UNDEFINED"	[value]"Level 45, 83 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Soldier Greathelm"
 	[tag]"name RU"	[value]"Улучшенный большой шлем солдата"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Mercenary Greathelm"
 
 	[tag]"icon path"	[value]"SoldierGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1491,8 +1594,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Mercenary Greathelm"
+	[tag]"name RU"	[value]"Mercenary Greathelm"
+
+	[tag]"icon path"	[value]"SoldierGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"186"
+	[tag]"base armour max"	[value]"186"
+	[tag]"UNDEFINED"	[value]"Level 48, 88 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Advanced Wrapped Greathelm"
 	[tag]"name RU"	[value]"Улучшенный обмотанный большой шлем"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Homeguard Greathelm"
 
 	[tag]"icon path"	[value]"WrappedGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1511,12 +1645,73 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Homeguard Greathelm"
+	[tag]"name RU"	[value]"Homeguard Greathelm"
+
+	[tag]"icon path"	[value]"WrappedGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"196"
+	[tag]"base armour max"	[value]"196"
+	[tag]"UNDEFINED"	[value]"Level 51, 94 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Spired Greathelm"
 	[tag]"name RU"	[value]"Улучшенный остроконечный большой шлем"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Greathelm"
+
+	[tag]"icon path"	[value]"SpiredGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"210"
+	[tag]"base armour max"	[value]"210"
+	[tag]"UNDEFINED"	[value]"Level 55, 101 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elegant Greathelm"
+	[tag]"name RU"	[value]"Elegant Greathelm"
 
 	[tag]"icon path"	[value]"SpiredGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1535,12 +1730,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Elite Greathelm"
 	[tag]"name RU"	[value]"Улучшенный большой шлем элиты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Noble Greathelm"
 
 	[tag]"icon path"	[value]"EliteGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1557,6 +1768,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Noble Greathelm"
+	[tag]"name RU"	[value]"Noble Greathelm"
+
+	[tag]"icon path"	[value]"EliteGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"223"
+	[tag]"base armour max"	[value]"223"
+	[tag]"UNDEFINED"	[value]"Level 59, 108 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -1590,6 +1831,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Felt Cap"
 	[tag]"name RU"	[value]"Улучшенная войлочная шляпа"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wool Cap"
+
 	[tag]"icon path"	[value]"FeltCap"
 	[tag]"base class"	[value]"Helmets"
 
@@ -1607,12 +1851,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wool Cap"
+	[tag]"name RU"	[value]"Wool Cap"
+
+	[tag]"icon path"	[value]"FeltCap"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"168"
+	[tag]"base evasion max"	[value]"168"
+	[tag]"UNDEFINED"	[value]"Level 48, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Lace Hood"
 	[tag]"name RU"	[value]"Улучшенный вышитый капюшон"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Narrow Hood"
 
 	[tag]"icon path"	[value]"LaceHood"
 	[tag]"base class"	[value]"Helmets"
@@ -1631,12 +1910,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Narrow Hood"
+	[tag]"name RU"	[value]"Narrow Hood"
+
+	[tag]"icon path"	[value]"LaceHood"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"177"
+	[tag]"base evasion max"	[value]"177"
+	[tag]"UNDEFINED"	[value]"Level 51, 94 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Swathed Cap"
 	[tag]"name RU"	[value]"Улучшенный капюшон с куфией"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wrapped Cap"
 
 	[tag]"icon path"	[value]"SwathedCap"
 	[tag]"base class"	[value]"Helmets"
@@ -1655,12 +1970,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wrapped Cap"
+	[tag]"name RU"	[value]"Wrapped Cap"
+
+	[tag]"icon path"	[value]"SwathedCap"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"190"
+	[tag]"base evasion max"	[value]"190"
+	[tag]"UNDEFINED"	[value]"Level 55, 101 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Hunter Hood"
 	[tag]"name RU"	[value]"Улучшенный капюшон охотника"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Deerstalker Hood"
 
 	[tag]"icon path"	[value]"HunterHood"
 	[tag]"base class"	[value]"Helmets"
@@ -1679,12 +2031,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Deerstalker Hood"
+	[tag]"name RU"	[value]"Deerstalker Hood"
+
+	[tag]"icon path"	[value]"HunterHood"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"203"
+	[tag]"base evasion max"	[value]"203"
+	[tag]"UNDEFINED"	[value]"Level 59, 108 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Twig Circlet"
 	[tag]"name RU"	[value]"Улучшенный венок из ветвей"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Druidic Circlet"
 
 	[tag]"icon path"	[value]"TwigCirclet"
 	[tag]"base class"	[value]"Helmets"
@@ -1703,12 +2089,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Druidic Circlet"
+	[tag]"name RU"	[value]"Druidic Circlet"
+
+	[tag]"icon path"	[value]"TwigCirclet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"63"
+	[tag]"base energy shield max"	[value]"63"
+	[tag]"UNDEFINED"	[value]"Level 45, 83 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Wicker Tiara"
 	[tag]"name RU"	[value]"Улучшенная тиара из прутьев"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Avian Tiara"
 
 	[tag]"icon path"	[value]"WickerTiara"
 	[tag]"base class"	[value]"Helmets"
@@ -1727,12 +2147,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Avian Tiara"
+	[tag]"name RU"	[value]"Avian Tiara"
+
+	[tag]"icon path"	[value]"WickerTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"67"
+	[tag]"base energy shield max"	[value]"67"
+	[tag]"UNDEFINED"	[value]"Level 48, 88 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Beaded Circlet"
 	[tag]"name RU"	[value]"Улучшенный обруч с чётками"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Desert Circlet"
 
 	[tag]"icon path"	[value]"BeadedCircle"
 	[tag]"base class"	[value]"Helmets"
@@ -1751,12 +2205,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Desert Circlet"
+	[tag]"name RU"	[value]"Desert Circlet"
+
+	[tag]"icon path"	[value]"BeadedCircle"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"70"
+	[tag]"base energy shield max"	[value]"70"
+	[tag]"UNDEFINED"	[value]"Level 51, 94 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Chain Tiara"
 	[tag]"name RU"	[value]"Улучшенная цепная тиара"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sandsworn Tiara"
 
 	[tag]"icon path"	[value]"ChainTiara"
 	[tag]"base class"	[value]"Helmets"
@@ -1775,12 +2264,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sandsworn Tiara"
+	[tag]"name RU"	[value]"Sandsworn Tiara"
+
+	[tag]"icon path"	[value]"ChainTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"74"
+	[tag]"base energy shield max"	[value]"74"
+	[tag]"UNDEFINED"	[value]"Level 55, 101 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Feathered Tiara"
 	[tag]"name RU"	[value]"Улучшенная тиара с перьями"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Jungle Tiara"
 
 	[tag]"icon path"	[value]"FeatheredTiara"
 	[tag]"base class"	[value]"Helmets"
@@ -1799,12 +2324,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jungle Tiara"
+	[tag]"name RU"	[value]"Jungle Tiara"
+
+	[tag]"icon path"	[value]"FeatheredTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"78"
+	[tag]"base energy shield max"	[value]"78"
+	[tag]"UNDEFINED"	[value]"Level 59, 108 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Brimmed Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с полями"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Domed Helm"
 
 	[tag]"icon path"	[value]"BrimmedHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1825,12 +2384,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Domed Helm"
+	[tag]"name RU"	[value]"Domed Helm"
+
+	[tag]"icon path"	[value]"BrimmedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"97"
+	[tag]"base armour max"	[value]"97"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED"	[value]"Level 45, 46 Str, 46 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Guarded Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с забралом"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Engraved Helm"
 
 	[tag]"icon path"	[value]"GuardedHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1851,12 +2446,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Engraved Helm"
+	[tag]"name RU"	[value]"Engraved Helm"
+
+	[tag]"icon path"	[value]"GuardedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"102"
+	[tag]"base armour max"	[value]"102"
+	[tag]"base evasion min"	[value]"92"
+	[tag]"base evasion max"	[value]"92"
+	[tag]"UNDEFINED"	[value]"Level 48, 49 Str, 49 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Visored Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с козырьком"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soldier Helm"
 
 	[tag]"icon path"	[value]"VisoredHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1881,8 +2510,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Soldier Helm"
+	[tag]"name RU"	[value]"Soldier Helm"
+
+	[tag]"icon path"	[value]"VisoredHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"108"
+	[tag]"base armour max"	[value]"108"
+	[tag]"base evasion min"	[value]"98"
+	[tag]"base evasion max"	[value]"98"
+	[tag]"UNDEFINED"	[value]"Level 51, 52 Str, 52 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Advanced Cowled Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с капюшоном"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cabalist Helm"
 
 	[tag]"icon path"	[value]"CowledHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1903,12 +2567,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cabalist Helm"
+	[tag]"name RU"	[value]"Cabalist Helm"
+
+	[tag]"icon path"	[value]"CowledHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"115"
+	[tag]"base armour max"	[value]"115"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"UNDEFINED"	[value]"Level 55, 55 Str, 55 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Shielded Helm"
 	[tag]"name RU"	[value]"Улучшенный шлем с горжетом"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gladiatoral Helm"
 
 	[tag]"icon path"	[value]"ShieldedHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -1929,12 +2635,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gladiatoral Helm"
+	[tag]"name RU"	[value]"Gladiatoral Helm"
+
+	[tag]"icon path"	[value]"ShieldedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"123"
+	[tag]"base armour max"	[value]"123"
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 59, 59 Str, 59 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Iron Crown"
 	[tag]"name RU"	[value]"Улучшенная железная корона"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Mailed Crown"
 
 	[tag]"icon path"	[value]"IronCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -1955,12 +2698,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Mailed Crown"
+	[tag]"name RU"	[value]"Mailed Crown"
+
+	[tag]"icon path"	[value]"IronCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"97"
+	[tag]"base armour max"	[value]"97"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED"	[value]"Level 45, 46 Str, 46 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Horned Crown"
 	[tag]"name RU"	[value]"Улучшенная корона с рогами"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Forest Crown"
 
 	[tag]"icon path"	[value]"HornedCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -1981,12 +2761,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Forest Crown"
+	[tag]"name RU"	[value]"Forest Crown"
+
+	[tag]"icon path"	[value]"HornedCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"102"
+	[tag]"base armour max"	[value]"102"
+	[tag]"base energy shield min"	[value]"37"
+	[tag]"base energy shield max"	[value]"37"
+	[tag]"UNDEFINED"	[value]"Level 48, 49 Str, 49 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Cultist Crown"
 	[tag]"name RU"	[value]"Улучшенная корона культиста"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Zealot Crown"
 
 	[tag]"icon path"	[value]"CultistCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2007,12 +2823,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zealot Crown"
+	[tag]"name RU"	[value]"Zealot Crown"
+
+	[tag]"icon path"	[value]"CultistCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"108"
+	[tag]"base armour max"	[value]"108"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	[tag]"UNDEFINED"	[value]"Level 51, 52 Str, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Martyr Crown"
 	[tag]"name RU"	[value]"Улучшенная корона мученика"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hallowed Crown"
 
 	[tag]"icon path"	[value]"MartyrCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2033,12 +2887,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hallowed Crown"
+	[tag]"name RU"	[value]"Hallowed Crown"
+
+	[tag]"icon path"	[value]"MartyrCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"115"
+	[tag]"base armour max"	[value]"115"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"41"
+	[tag]"UNDEFINED"	[value]"Level 55, 55 Str, 55 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Heavy Crown"
 	[tag]"name RU"	[value]"Улучшенная тяжёлая корона"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Inquisitor Crown"
 
 	[tag]"icon path"	[value]"HeavyCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2059,12 +2951,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Inquisitor Crown"
+	[tag]"name RU"	[value]"Inquisitor Crown"
+
+	[tag]"icon path"	[value]"HeavyCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"123"
+	[tag]"base armour max"	[value]"123"
+	[tag]"base energy shield min"	[value]"43"
+	[tag]"base energy shield max"	[value]"43"
+	[tag]"UNDEFINED"	[value]"Level 59, 59 Str, 59 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Hewn Mask"
 	[tag]"name RU"	[value]"Улучшенная обтёсанная маска"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Oak Mask"
 
 	[tag]"icon path"	[value]"HewnMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2085,12 +3016,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Oak Mask"
+	[tag]"name RU"	[value]"Oak Mask"
+
+	[tag]"icon path"	[value]"HewnMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED"	[value]"Level 45, 46 Dex, 46 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Face Mask"
 	[tag]"name RU"	[value]"Улучшенная лицевая маска"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bandit Mask"
 
 	[tag]"icon path"	[value]"FaceMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2111,12 +3076,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bandit Mask"
+	[tag]"name RU"	[value]"Bandit Mask"
+
+	[tag]"icon path"	[value]"FaceMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"92"
+	[tag]"base evasion max"	[value]"92"
+	[tag]"base energy shield min"	[value]"37"
+	[tag]"base energy shield max"	[value]"37"
+	[tag]"UNDEFINED"	[value]"Level 48, 49 Dex, 49 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Hooded Mask"
 	[tag]"name RU"	[value]"Улучшенная маска с капюшоном"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Skulking Mask"
 
 	[tag]"icon path"	[value]"HoodedMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2137,12 +3142,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Skulking Mask"
+	[tag]"name RU"	[value]"Skulking Mas"
+
+	[tag]"icon path"	[value]"HoodedMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"98"
+	[tag]"base evasion max"	[value]"98"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	[tag]"UNDEFINED"	[value]"Level 51, 52 Dex, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Veiled Mask"
 	[tag]"name RU"	[value]"Улучшенная маска с вуалью"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Pariah Mask"
 
 	[tag]"icon path"	[value]"VeiledMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2163,12 +3203,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Pariah Mask"
+	[tag]"name RU"	[value]"Pariah Mask"
+
+	[tag]"icon path"	[value]"VeiledMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"base energy shield min"	[value]"41"
+	[tag]"base energy shield max"	[value]"41"
+	[tag]"UNDEFINED"	[value]"Level 55, 55 Dex, 55 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Tribal Mask"
 	[tag]"name RU"	[value]"Улучшенная племенная маска"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Avian Mask"
 
 	[tag]"icon path"	[value]"TribalMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2189,12 +3265,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Avian Mask"
+	[tag]"name RU"	[value]"Avian Mask"
+
+	[tag]"icon path"	[value]"TribalMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"base energy shield min"	[value]"43"
+	[tag]"base energy shield max"	[value]"43"
+	[tag]"UNDEFINED"	[value]"Level 59, 59 Dex, 59 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Soldier Greathelm"
 	[tag]"name RU"	[value]"Большой шлем солдата эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Warmonger Greathelm"
 
 	[tag]"icon path"	[value]"SoldierGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -2213,12 +3325,45 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Warmonger Greathelm"
+	[tag]"name RU"	[value]"Warmonger Greathelm"
+
+	[tag]"icon path"	[value]"SoldierGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"243"
+	[tag]"base armour max"	[value]"243"
+	[tag]"UNDEFINED"	[value]"Level 65, 118 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Spired Greathelm"
 	[tag]"name RU"	[value]"Остроконечный большой шлем эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Masked Greathelm"
 
 	[tag]"icon path"	[value]"SpiredGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -2237,12 +3382,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Masked Greathelm"
+	[tag]"name RU"	[value]"Masked Greathelm"
+
+	[tag]"icon path"	[value]"SpiredGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"267"
+	[tag]"base armour max"	[value]"267"
+	[tag]"UNDEFINED"	[value]"Level 70, 129 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Elite Greathelm"
 	[tag]"name RU"	[value]"Большой шлем элиты эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Paragon Greathelm"
 
 	[tag]"icon path"	[value]"EliteGreathelm"
 	[tag]"base class"	[value]"Helmets"
@@ -2261,12 +3445,73 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Paragon Greathelm"
+	[tag]"name RU"	[value]"Paragon Greathelm"
+
+	[tag]"icon path"	[value]"EliteGreathelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"292"
+	[tag]"base armour max"	[value]"292"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Felt Cap"
 	[tag]"name RU"	[value]"Войлочная шляпа эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Woven Cap"
+
+	[tag]"icon path"	[value]"FeltCap"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"222"
+	[tag]"base evasion max"	[value]"222"
+	[tag]"UNDEFINED"	[value]"Level 65, 118 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Woven Cap"
+	[tag]"name RU"	[value]"Woven Cap"
 
 	[tag]"icon path"	[value]"FeltCap"
 	[tag]"base class"	[value]"Helmets"
@@ -2292,6 +3537,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Swathed Cap"
 	[tag]"name RU"	[value]"Капюшон с куфией эксперта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Desert Cap"
+
 	[tag]"icon path"	[value]"SwathedCap"
 	[tag]"base class"	[value]"Helmets"
 
@@ -2309,12 +3557,70 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Desert Cap"
+	[tag]"name RU"	[value]"Desert Cap"
+
+	[tag]"icon path"	[value]"SwathedCap"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"244"
+	[tag]"base evasion max"	[value]"244"
+	[tag]"UNDEFINED"	[value]"Level 70, 129 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Hunter Hood"
 	[tag]"name RU"	[value]"Капюшон охотника эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Trapper Hood"
+
+	[tag]"icon path"	[value]"HunterHood"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"266"
+	[tag]"base evasion max"	[value]"266"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Trapper Hood"
+	[tag]"name RU"	[value]"Trapper Hood"
 
 	[tag]"icon path"	[value]"HunterHood"
 	[tag]"base class"	[value]"Helmets"
@@ -2340,6 +3646,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Wicker Tiara"
 	[tag]"name RU"	[value]"Тиара из прутьев эксперта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Skycrown Tiara"
+
 	[tag]"icon path"	[value]"WickerTiara"
 	[tag]"base class"	[value]"Helmets"
 
@@ -2357,12 +3666,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Skycrown Tiara"
+	[tag]"name RU"	[value]"Skycrown Tiara"
+
+	[tag]"icon path"	[value]"WickerTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"84"
+	[tag]"base energy shield max"	[value]"84"
+	[tag]"UNDEFINED"	[value]"Level 65, 118 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Chain Tiara"
 	[tag]"name RU"	[value]"Цепная тиара эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sorcerous Tiara"
 
 	[tag]"icon path"	[value]"ChainTiara"
 	[tag]"base class"	[value]"Helmets"
@@ -2381,12 +3725,45 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sorcerous Tiara"
+	[tag]"name RU"	[value]"Sorcerous Tiara"
+
+	[tag]"icon path"	[value]"ChainTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"92"
+	[tag]"base energy shield max"	[value]"92"
+	[tag]"UNDEFINED"	[value]"Level 70, 129 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Feathered Tiara"
 	[tag]"name RU"	[value]"Тиара с перьями эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Kamasan Tiara"
 
 	[tag]"icon path"	[value]"FeatheredTiara"
 	[tag]"base class"	[value]"Helmets"
@@ -2405,12 +3782,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Kamasan Tiara"
+	[tag]"name RU"	[value]"Kamasan Tiara"
+
+	[tag]"icon path"	[value]"FeatheredTiara"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base energy shield min"	[value]"101"
+	[tag]"base energy shield max"	[value]"101"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Guarded Helm"
 	[tag]"name RU"	[value]"Шлем с забралом эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Warded Helm"
 
 	[tag]"icon path"	[value]"GuardedHelm"
 	[tag]"base class"	[value]"Helmets"
@@ -2429,6 +3841,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Warded Helm"
+	[tag]"name RU"	[value]"Warded Helm"
+
+	[tag]"icon path"	[value]"GuardedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"134"
+	[tag]"base armour max"	[value]"134"
+	[tag]"base evasion min"	[value]"122"
+	[tag]"base evasion max"	[value]"122"
+	[tag]"UNDEFINED"	[value]"Level 65, 65 Str, 65 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -2464,6 +3911,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Expert Shielded Helm"
 	[tag]"name RU"	[value]"Шлем с горжетом эксперта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Champion Helm"
+
 	[tag]"icon path"	[value]"ShieldedHelm"
 	[tag]"base class"	[value]"Helmets"
 
@@ -2487,8 +3937,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Champion Helm"
+	[tag]"name RU"	[value]"Champion Helm"
+
+	[tag]"icon path"	[value]"ShieldedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"160"
+	[tag]"base armour max"	[value]"160"
+	[tag]"base evasion min"	[value]"146"
+	[tag]"base evasion max"	[value]"146"
+	[tag]"UNDEFINED"	[value]"Level 75, 76 Str, 76 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Expert Horned Crown"
 	[tag]"name RU"	[value]"Корона с рогами эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Druidic Crown"
 
 	[tag]"icon path"	[value]"HornedCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2509,12 +3995,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Druidic Crown"
+	[tag]"name RU"	[value]"Druidic Crown"
+
+	[tag]"icon path"	[value]"HornedCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"134"
+	[tag]"base armour max"	[value]"134"
+	[tag]"base energy shield min"	[value]"46"
+	[tag]"base energy shield max"	[value]"46"
+	[tag]"UNDEFINED"	[value]"Level 65, 65 Str, 65 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Martyr Crown"
 	[tag]"name RU"	[value]"Корона мученика эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Saintly Crown"
 
 	[tag]"icon path"	[value]"MartyrCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2535,12 +4058,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Saintly Crown"
+	[tag]"name RU"	[value]"Saintly Crown"
+
+	[tag]"icon path"	[value]"MartyrCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"147"
+	[tag]"base armour max"	[value]"147"
+	[tag]"base energy shield min"	[value]"51"
+	[tag]"base energy shield max"	[value]"51"
+	[tag]"UNDEFINED"	[value]"Level 70, 70 Str, 70 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Heavy Crown"
 	[tag]"name RU"	[value]"Тяжёлая корона эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Divine Crown"
 
 	[tag]"icon path"	[value]"HeavyCrown"
 	[tag]"base class"	[value]"Helmets"
@@ -2561,12 +4126,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Divine Crown"
+	[tag]"name RU"	[value]"Divine Crown"
+
+	[tag]"icon path"	[value]"HeavyCrown"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base armour min"	[value]"160"
+	[tag]"base armour max"	[value]"160"
+	[tag]"base energy shield min"	[value]"55"
+	[tag]"base energy shield max"	[value]"55"
+	[tag]"UNDEFINED"	[value]"Level 75, 76 Str, 76 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Face Mask"
 	[tag]"name RU"	[value]"Лицевая маска эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Brigand Mask"
 
 	[tag]"icon path"	[value]"FaceMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2587,12 +4189,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Brigand Mask"
+	[tag]"name RU"	[value]"Brigand Mask"
+
+	[tag]"icon path"	[value]"FaceMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"122"
+	[tag]"base evasion max"	[value]"122"
+	[tag]"base energy shield min"	[value]"46"
+	[tag]"base energy shield max"	[value]"46"
+	[tag]"UNDEFINED"	[value]"Level 65, 65 Dex, 65 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Veiled Mask"
 	[tag]"name RU"	[value]"Маска с вуалью эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Faridun Mask"
 
 	[tag]"icon path"	[value]"VeiledMask"
 	[tag]"base class"	[value]"Helmets"
@@ -2617,8 +4257,71 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Faridun Mask"
+	[tag]"name RU"	[value]"Faridun Mask"
+
+	[tag]"icon path"	[value]"VeiledMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"134"
+	[tag]"base evasion max"	[value]"134"
+	[tag]"base energy shield min"	[value]"51"
+	[tag]"base energy shield max"	[value]"51"
+	[tag]"UNDEFINED"	[value]"Level 70, 70 Dex, 70 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Expert Tribal Mask"
 	[tag]"name RU"	[value]"Племенная маска эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soaring Mask"
+
+	[tag]"icon path"	[value]"TribalMask"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"146"
+	[tag]"base evasion max"	[value]"146"
+	[tag]"base energy shield min"	[value]"55"
+	[tag]"base energy shield max"	[value]"55"
+	[tag]"UNDEFINED"	[value]"Level 75, 76 Dex, 76 Int"
+	[tag]"UNDEFINED"	[value]"Level 75, 76 Dex, 76 Int"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Soaring Mask"
+	[tag]"name RU"	[value]"Soaring Mask"
 
 	[tag]"icon path"	[value]"TribalMask"
 	[tag]"base class"	[value]"Helmets"

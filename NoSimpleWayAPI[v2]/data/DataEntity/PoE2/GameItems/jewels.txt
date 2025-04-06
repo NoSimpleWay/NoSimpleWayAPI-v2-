@@ -162,3 +162,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Timeless Jewel"
+	[tag]"name RU"		[value]"Вневременной самоцвет"
+
+	[tag]"icon path"	[value]"timeless_jewel"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"item tag"		[value]"Always unique"
+	
+	[tag]"base tier"	[value]"Best"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Expensive"

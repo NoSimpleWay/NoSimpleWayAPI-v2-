@@ -343,6 +343,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Advanced Smithing Hammer"
 	[tag]"name RU"	[value]"Улучшенный кузнечный молот"
 
+	
+	[tag]"renamed to"	[value]"Calescent Hammer"
+
 	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
@@ -363,12 +366,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Calescent Hammer"
+	[tag]"name RU"	[value]"Calescent Hammer"
+
+	[tag]"icon path"	[value]"SmithingHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"19-32"
+	[tag]"UNDEFINED[Fire Damage]"	[value]"19-32"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 104 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Default"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Slim Mace"
 	[tag]"name RU"	[value]"Улучшенный шестопёр"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Flared Mace"
 
 	[tag]"icon path"	[value]"SlimMace"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -389,12 +430,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Flared Mace"
+	[tag]"name RU"	[value]"Flared Mace"
+
+	[tag]"icon path"	[value]"SlimMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"33-50"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 110 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Warpick"
 	[tag]"name RU"	[value]"Улучшенный клевец"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Battle Pick"
 
 	[tag]"icon path"	[value]"Warpick"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -415,12 +493,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Battle Pick"
+	[tag]"name RU"	[value]"Battle Pick"
+
+	[tag]"icon path"	[value]"Warpick"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"34-46"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"8%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 117 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Plated Mace"
 	[tag]"name RU"	[value]"Улучшенная кованая булава"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Marching Mace"
 
 	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -441,12 +557,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Marching Mace"
+	[tag]"name RU"	[value]"Marching Mace"
+
+	[tag]"icon path"	[value]"PlatedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"34-70"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 126 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Brigand Mace"
 	[tag]"name RU"	[value]"Улучшенная булава грабителя"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bandit Mace"
+
+	[tag]"icon path"	[value]"BrigandMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"45-61"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 135 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bandit Mace"
+	[tag]"name RU"	[value]"Bandit Mace"
 
 	[tag]"icon path"	[value]"BrigandMace"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -467,12 +649,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Advanced Construct Hammer"
 	[tag]"name RU"	[value]"Улучшенный молот конструкта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Structured Hammer"
 
 	[tag]"icon path"	[value]"ConstructHammer"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -493,12 +683,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Structured Hammer"
+	[tag]"name RU"	[value]"Structured Hammer"
+
+	[tag]"icon path"	[value]"ConstructHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"49-60"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 142 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Slim Mace"
 	[tag]"name RU"	[value]"Шестопёр эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Flanged Mace"
 
 	[tag]"icon path"	[value]"SlimMace"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -523,8 +751,45 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Flanged Mace"
+	[tag]"name RU"	[value]"Flanged Mace"
+
+	[tag]"icon path"	[value]"SlimMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"45-67"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 67, 174 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"	[value]"Expert Plated Mace"
 	[tag]"name RU"	[value]"Кованая булава"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Crown Mace"
 
 	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -545,12 +810,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Crown Mace"
+	[tag]"name RU"	[value]"Crown Mace"
+
+	[tag]"icon path"	[value]"PlatedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"43-89"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 72, 193 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Smithing Hammer"
 	[tag]"name RU"	[value]"Кузнечный молот эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Molten Hammer"
 
 	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -572,12 +880,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Molten Hammer"
+	[tag]"name RU"	[value]"Molten Hammer"
+
+	[tag]"icon path"	[value]"SmithingHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"30.5-50.5"
+	[tag]"UNDEFINED[Fire Damage]"	[value]"30.5-50.5"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Warpick"
 	[tag]"name RU"	[value]"Клевец эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Strife Pick"
 
 	[tag]"icon path"	[value]"Warpick"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -598,12 +943,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Strife Pick"
+	[tag]"name RU"	[value]"Strife Pick"
+
+	[tag]"icon path"	[value]"Warpick"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"48-64"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"8%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 78, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Construct Hammer"
 	[tag]"name RU"	[value]"Молот конструкта эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Fortified Hammer"
 
 	[tag]"icon path"	[value]"ConstructHammer"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -624,12 +1010,79 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fortified Hammer"
+	[tag]"name RU"	[value]"Fortified Hammer"
+
+	[tag]"icon path"	[value]"ConstructHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"60-73"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 79, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Expert Brigand Mace"
 	[tag]"name RU"	[value]"Молот грабителя эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Marauding Mace"
+
+	[tag]"icon path"	[value]"BrigandMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"51-84"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Marauding Mace"
+	[tag]"name RU"	[value]"Marauding Mace"
 
 	[tag]"icon path"	[value]"BrigandMace"
 	[tag]"base class"	[value]"One Hand Maces"

@@ -53,6 +53,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Tense Crossbow"
 	[tag]"name RU"		[value]"Улучшенный Тугой самострел"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Taut Crossbow"
+
 	[tag]"icon path"	[value]"TenseCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -65,6 +68,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Taut Crossbow"
+	[tag]"name RU"		[value]"Taut Crossbow"
+
+	[tag]"icon path"	[value]"TenseCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -73,6 +110,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Tense Crossbow"
 	[tag]"name RU"		[value]"Тугой самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Flexed Crossbow"
+
+	[tag]"icon path"	[value]"TenseCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flexed Crossbow"
+	[tag]"name RU"		[value]"Flexed Crossbow"
 
 	[tag]"icon path"	[value]"TenseCrossbow"
 	[tag]"base class"	[value]"Crossbows"
@@ -131,6 +194,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Sturdy Crossbow"
 	[tag]"name RU"		[value]"Улучшенный прочный самострел"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Robust Crossbow"
+
 	[tag]"icon path"	[value]"SturdyCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -143,6 +209,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Robust Crossbow"
+	[tag]"name RU"		[value]"Robust Crossbow"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -150,6 +245,30 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Sturdy Crossbow"
 	[tag]"name RU"		[value]"Прочный самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Stout Crossbow"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stout Crossbow"
+	[tag]"name RU"		[value]"Stout Crossbow"
 
 	[tag]"icon path"	[value]"SturdyCrossbow"
 	[tag]"base class"	[value]"Crossbows"
@@ -206,6 +325,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Varnished Crossbow"
 	[tag]"name RU"		[value]"Улучшенный лакированный самострел"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Painted Crossbow"
+
 	[tag]"icon path"	[value]"VarnishedCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -218,6 +340,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Painted Crossbow"
+	[tag]"name RU"		[value]"Painted Crossbow"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -226,6 +377,36 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Varnished Crossbow"
 	[tag]"name RU"		[value]"Лакированный самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Engraved Crossbow"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Engraved Crossbow"
+	[tag]"name RU"		[value]"Engraved Crossbow"
 
 	[tag]"icon path"	[value]"VarnishedCrossbow"
 	[tag]"base class"	[value]"Crossbows"
@@ -283,6 +464,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Dyad Crossbow"
 	[tag]"name RU"		[value]"Улучшенный парный самострел"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Twin Crossbow"
+
 	[tag]"icon path"	[value]"DyadCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -295,6 +479,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twin Crossbow"
+	[tag]"name RU"		[value]"Twin Crossbow"
+
+	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -302,6 +516,33 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Dyad Crossbow"
 	[tag]"name RU"		[value]"Парный самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gemini Crossbow"
+
+	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gemini Crossbow"
+	[tag]"name RU"		[value]"Gemini Crossbow"
 
 	[tag]"icon path"	[value]"DyadCrossbow"
 	[tag]"base class"	[value]"Crossbows"
@@ -389,6 +630,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Bombard Crossbow"
 	[tag]"name RU"		[value]"Улучшенный самострел бомбардира"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cannonade Crossbow"
+
 	[tag]"icon path"	[value]"BombardCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -401,6 +645,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cannonade Crossbow"
+	[tag]"name RU"		[value]"Cannonade Crossbow"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 	
 	
 	
@@ -411,6 +686,33 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Bombard Crossbow"
 	[tag]"name RU"		[value]"Самострел бомбардира эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Siege Crossbow"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+		
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Siege Crossbow"
+	[tag]"name RU"		[value]"Siege Crossbow"
 
 	[tag]"icon path"	[value]"BombardCrossbow"
 	[tag]"base class"	[value]"Crossbows"
@@ -460,6 +762,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Forlorn Crossbow"
 	[tag]"name RU"		[value]"Улучшенный Самострел конструкта"
 
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bleak Crossbow"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"worth"		[value]"Trash"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bleak Crossbow"
+	[tag]"name RU"		[value]"Bleak Crossbow"
+
 	[tag]"icon path"	[value]"ConstructCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
@@ -474,12 +798,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Forlorn Crossbow"
 	[tag]"name RU"		[value]"Самострел конструкта эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Desolate Crossbow"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"worth"		[value]"Trash"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Desolate Crossbow"
+	[tag]"name RU"		[value]"Desolate Crossbow"
 
 	[tag]"icon path"	[value]"ConstructCrossbow"
 	[tag]"base class"	[value]"Crossbows"

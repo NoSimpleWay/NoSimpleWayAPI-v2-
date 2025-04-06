@@ -1,0 +1,185 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twilight Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария затмения"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Xesht's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Ксешта"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"The Trialmaster's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария мастера испытаний"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ritualistic Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария ритуала"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tangmazu's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Тангмазу"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Olroth's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Олрота"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"The Arbiter's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Арбитра"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Зароха (Противление тьме)"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Зароха (Образ песчаной бури)"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Зароха (Благословенные узы)"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Зароха (Решимость Сехемы)"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zarokh's Reliquary Key"
+	[tag]"name RU"		[value]"Ключ реликвария Зароха (Темпоралис)"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

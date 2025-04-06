@@ -1,0 +1,392 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T1)"
+	[tag]"name RU"		[value]"Путевой камень"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T2)"
+	[tag]"name RU"		[value]"Путевой камень (T2)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "2"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T3)"
+	[tag]"name RU"		[value]"Путевой камень (T3)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "3"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T4)"
+	[tag]"name RU"		[value]"Путевой камень (T4)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "4"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T5)"
+	[tag]"name RU"		[value]"Путевой камень (T5)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "5"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T6)"
+	[tag]"name RU"		[value]"Путевой камень (T6)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "6"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T7)"
+	[tag]"name RU"		[value]"Путевой камень (T7)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "7"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T8)"
+	[tag]"name RU"		[value]"Путевой камень (T8)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "8"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T9)"
+	[tag]"name RU"		[value]"Путевой камень (T9)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "9"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T10)"
+	[tag]"name RU"		[value]"Путевой камень (T10)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "10"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T11)"
+	[tag]"name RU"		[value]"Путевой камень (T11)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "11"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T12)"
+	[tag]"name RU"		[value]"Путевой камень (T12)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "12"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T13)"
+	[tag]"name RU"		[value]"Путевой камень (T13)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "13"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T14)"
+	[tag]"name RU"		[value]"Путевой камень (T14)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "14"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T15)"
+	[tag]"name RU"		[value]"Путевой камень (T15)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "15"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Waystone"
+	[tag]"name EN"		[value]"Waystone (T16)"
+	[tag]"name RU"		[value]"Путевой камень (T16)"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Waystone showcase"
+	
+	[tag]"set int attribute"	[value]"WaystoneTier" "16"
+	
+	[tag]"worth"		[value]"Common"
+	
+	

@@ -413,7 +413,7 @@ int main()
 
 			//EInputCore::logger_simple_info("[" + std::to_string(min(16, ETextureGabarite::incomplete_gabarites_list.size())) + "] delayed textures loaded!");
 
-			for (int i = 0; i < min(16, ETextureGabarite::incomplete_gabarites_list.size()); i++)
+			for (int i = 0; i < min(20, ETextureGabarite::incomplete_gabarites_list.size()); i++)
 			{
 				NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
 				//NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);

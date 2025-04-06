@@ -4257,6 +4257,22 @@
 [Vaal Ancestral Warchief] dust quantity = 0, dust tag = Trash
 [Earthbreaker Support] dust quantity = 0, dust tag = Trash
 [Increased Duration] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
+[Waystone] dust quantity = 0, dust tag = Trash
 [Crimson Amulet] dust quantity = 0, dust tag = Trash
 [Azure Amulet] dust quantity = 0, dust tag = Trash
 [Amber Amulet] dust quantity = 10340, dust tag = Moderate
@@ -4268,6 +4284,10 @@
 [Solar Amulet] dust quantity = 0, dust tag = Trash
 [Solar Amulet] dust quantity = 0, dust tag = Trash
 [Gold Amulet] dust quantity = 10640, dust tag = Moderate
+[Dusk Amulet] dust quantity = 0, dust tag = Trash
+[Gloam Amulet] dust quantity = 0, dust tag = Trash
+[Penumbra Amulet] dust quantity = 0, dust tag = Trash
+[Tenebrous Amulet] dust quantity = 0, dust tag = Trash
 [Rawhide Belt] dust quantity = 0, dust tag = Trash
 [Linen Belt] dust quantity = 0, dust tag = Trash
 [Wide Belt] dust quantity = 0, dust tag = Trash
@@ -4281,21 +4301,30 @@
 [Fine Belt] dust quantity = 0, dust tag = Trash
 [Rusted Cuirass] dust quantity = 0, dust tag = Trash
 [Fur plate] dust quantity = 0, dust tag = Trash
-[Advanced Fur plate] dust quantity = 0, dust tag = Trash
+[Advanced Fur Plate] dust quantity = 0, dust tag = Trash
+[Barbarian Plate] dust quantity = 0, dust tag = Trash
 [Iron Cuirass] dust quantity = 0, dust tag = Trash
 [Advanced Iron Cuirass] dust quantity = 0, dust tag = Trash
+[Rugged Cuirass] dust quantity = 0, dust tag = Trash
 [Expert Iron Cuirass] dust quantity = 0, dust tag = Trash
+[Soldier Cuirass] dust quantity = 0, dust tag = Trash
 [Raider Plate] dust quantity = 0, dust tag = Trash
 [Maraketh Cuirass] dust quantity = 0, dust tag = Trash
 [Advanced Maraketh Cuirass] dust quantity = 0, dust tag = Trash
+[Sandsworn Cuirass] dust quantity = 0, dust tag = Trash
 [Steel Plate] dust quantity = 0, dust tag = Trash
 [Advanced Steel Plate] dust quantity = 0, dust tag = Trash
+[Elegant Plate] dust quantity = 0, dust tag = Trash
 [Expert Steel Plate] dust quantity = 0, dust tag = Trash
+[Ornate Plate] dust quantity = 0, dust tag = Trash
 [Full Plate] dust quantity = 0, dust tag = Trash
 [Advanced Full Plate] dust quantity = 0, dust tag = Trash
+[Heavy Plate] dust quantity = 0, dust tag = Trash
 [Vaal Cuirass] dust quantity = 0, dust tag = Trash
 [Advanced Vaal Cuirass] dust quantity = 0, dust tag = Trash
+[Stone Cuirass] dust quantity = 0, dust tag = Trash
 [Expert Vaal Cuirass] dust quantity = 0, dust tag = Trash
+[Utzaal Cuirass] dust quantity = 0, dust tag = Trash
 [Juggernaut Plate] dust quantity = 0, dust tag = Trash
 [Chieftain Cuirass] dust quantity = 0, dust tag = Trash
 [Colosseum Plate] dust quantity = 8260, dust tag = Common
@@ -4306,20 +4335,29 @@
 [Lether Vest] dust quantity = 0, dust tag = Trash
 [Quilted Vest] dust quantity = 0, dust tag = Trash
 [Advanced Quilted Vest] dust quantity = 0, dust tag = Trash
+[Patchwork Vest] dust quantity = 0, dust tag = Trash
 [Pathfinder Coat] dust quantity = 0, dust tag = Trash
 [Advanced Pathfinder Coat] dust quantity = 0, dust tag = Trash
+[Hunting Coat] dust quantity = 0, dust tag = Trash
 [Expert Pathfinder Coat] dust quantity = 0, dust tag = Trash
+[Swiftstalker Coat] dust quantity = 0, dust tag = Trash
 [Shrouded Vest] dust quantity = 0, dust tag = Trash
 [Rhoahide Coat] dust quantity = 0, dust tag = Trash
 [Advanced Rhoahide Coat] dust quantity = 0, dust tag = Trash
+[Riding Coat] dust quantity = 0, dust tag = Trash
 [Studded Vest] dust quantity = 0, dust tag = Trash
 [Advanced Studded Vest] dust quantity = 0, dust tag = Trash
+[Layered Vest] dust quantity = 0, dust tag = Trash
 [Expert Studded Vest] dust quantity = 0, dust tag = Trash
+[Slipstrike Vest] dust quantity = 0, dust tag = Trash
 [Scout's Vest] dust quantity = 0, dust tag = Trash
 [Advanced Scout's Vest] dust quantity = 0, dust tag = Trash
+[Runner Vest] dust quantity = 0, dust tag = Trash
 [Serpentscale Coat] dust quantity = 0, dust tag = Trash
 [Advanced Serpentscale Coat] dust quantity = 0, dust tag = Trash
+[Lizardscale Coat] dust quantity = 0, dust tag = Trash
 [Expert Serpentscale Coat] dust quantity = 0, dust tag = Trash
+[Wyrmscale Coat] dust quantity = 0, dust tag = Trash
 [Corsair Vest] dust quantity = 0, dust tag = Trash
 [Smuggler Coat] dust quantity = 0, dust tag = Trash
 [Strider Vest] dust quantity = 0, dust tag = Trash
@@ -4331,20 +4369,32 @@
 [Tattered Robe] dust quantity = 0, dust tag = Trash
 [Feathered Robe] dust quantity = 0, dust tag = Trash
 [Advanced Feathered Robe] dust quantity = 0, dust tag = Trash
+[Avian Robe] dust quantity = 0, dust tag = Trash
 [Hexer's Robe] dust quantity = 0, dust tag = Trash
 [Advanced Hexer's Robe] dust quantity = 0, dust tag = Trash
+[Cursespeaker's Robe] dust quantity = 0, dust tag = Trash
 [Expert Hexer's Robe] dust quantity = 0, dust tag = Trash
+[Vile Robe] dust quantity = 0, dust tag = Trash
 [Bone Raiment] dust quantity = 0, dust tag = Trash
 [Silk Robe] dust quantity = 0, dust tag = Trash
 [Advanced Silk Robe] dust quantity = 0, dust tag = Trash
+[Luxurious Robe] dust quantity = 0, dust tag = Trash
 [Keth Raiment] dust quantity = 0, dust tag = Trash
 [Advanced Keth Raiment] dust quantity = 0, dust tag = Trash
+[River Raiment] dust quantity = 0, dust tag = Trash
 [Expert Keth Raiment] dust quantity = 0, dust tag = Trash
+[Flowing Raiment] dust quantity = 0, dust tag = Trash
 [Votive Raiment] dust quantity = 0, dust tag = Trash
 [Advanced Votive Raiment] dust quantity = 0, dust tag = Trash
+[Adherent's Raiment] dust quantity = 0, dust tag = Trash
 [Altar Robe] dust quantity = 0, dust tag = Trash
 [Advanced Altar Robe] dust quantity = 0, dust tag = Trash
 [Expert Altar Robe] dust quantity = 0, dust tag = Trash
+[Priestess Robe] dust quantity = 0, dust tag = Trash
+[Ceremonial Robe] dust quantity = 0, dust tag = Trash
+[Priestess Robe] dust quantity = 0, dust tag = Trash
+[Priestess Robe] dust quantity = 0, dust tag = Trash
+[Priestess Robe] dust quantity = 0, dust tag = Trash
 [Elementalist Robe] dust quantity = 0, dust tag = Trash
 [Mystic Raiment] dust quantity = 0, dust tag = Trash
 [Imperial Robe] dust quantity = 0, dust tag = Trash
@@ -4354,19 +4404,28 @@
 [Arcane Robe] dust quantity = 0, dust tag = Trash
 [Chain Mail] dust quantity = 0, dust tag = Trash
 [Advanced Chain Mail] dust quantity = 0, dust tag = Trash
+[Chain Hauberk] dust quantity = 0, dust tag = Trash
 [Rogue Armour] dust quantity = 0, dust tag = Trash
 [Advanced Rogue Armour] dust quantity = 0, dust tag = Trash
+[Scoundrel Armour] dust quantity = 0, dust tag = Trash
 [Expert Rogue Armour] dust quantity = 0, dust tag = Trash
+[Dastard Armour] dust quantity = 0, dust tag = Trash
 [Vagabond Armour] dust quantity = 0, dust tag = Trash
 [Advanced Vagabond Armour] dust quantity = 0, dust tag = Trash
+[Wanderer Armour] dust quantity = 0, dust tag = Trash
 [Cloaked Mail] dust quantity = 0, dust tag = Trash
 [Advanced Cloaked Mail] dust quantity = 0, dust tag = Trash
+[Mantled Mail] dust quantity = 0, dust tag = Trash
 [Expert Cloaked Mail] dust quantity = 0, dust tag = Trash
+[Shrouded Mail] dust quantity = 0, dust tag = Trash
 [Explorer Armour] dust quantity = 0, dust tag = Trash
 [Advanced Explorer Armour] dust quantity = 0, dust tag = Trash
+[Trailblazer Armour] dust quantity = 0, dust tag = Trash
 [Scale Mail] dust quantity = 0, dust tag = Trash
 [Advanced Scale Mail] dust quantity = 0, dust tag = Trash
+[Golden Mail] dust quantity = 0, dust tag = Trash
 [Expert Scale Mail] dust quantity = 0, dust tag = Trash
+[Death Mail] dust quantity = 0, dust tag = Trash
 [Knight Armour] dust quantity = 0, dust tag = Trash
 [Ancestral Mail] dust quantity = 0, dust tag = Trash
 [Lamellar Mail] dust quantity = 0, dust tag = Trash
@@ -4376,19 +4435,28 @@
 [Slayer Armour] dust quantity = 0, dust tag = Trash
 [Pilgrim Vestments] dust quantity = 0, dust tag = Trash
 [Advanced Pilgrim Vestments] dust quantity = 0, dust tag = Trash
+[Templar Vestments] dust quantity = 0, dust tag = Trash
 [Pelt Mantle] dust quantity = 0, dust tag = Trash
 [Advanced Pelt Mantle] dust quantity = 0, dust tag = Trash
+[Bearskin Mantle] dust quantity = 0, dust tag = Trash
 [Expert Pelt Mantle] dust quantity = 0, dust tag = Trash
+[Wolfskin Mantle] dust quantity = 0, dust tag = Trash
 [Mail Vestments] dust quantity = 0, dust tag = Trash
 [Advanced Mail Vestments] dust quantity = 0, dust tag = Trash
+[Chain Vestments] dust quantity = 0, dust tag = Trash
 [Shaman Mantle] dust quantity = 0, dust tag = Trash
 [Advanced Shaman Mantle] dust quantity = 0, dust tag = Trash
+[Occultist Mantle] dust quantity = 0, dust tag = Trash
 [Expert Shaman Mantle] dust quantity = 0, dust tag = Trash
+[Conjurer Mantle] dust quantity = 0, dust tag = Trash
 [Ironclad Vestments] dust quantity = 0, dust tag = Trash
 [Advanced Ironclad Vestments] dust quantity = 0, dust tag = Trash
+[Plated Vestments] dust quantity = 0, dust tag = Trash
 [Sacrificial Mantle] dust quantity = 0, dust tag = Trash
 [Advanced Sacrificial Mantle] dust quantity = 0, dust tag = Trash
+[Heartcarver Mantle] dust quantity = 0, dust tag = Trash
 [Expert Sacrificial Mantle] dust quantity = 0, dust tag = Trash
+[Death Mantle] dust quantity = 0, dust tag = Trash
 [Cleric Vestments] dust quantity = 0, dust tag = Trash
 [Tideseer Mantle] dust quantity = 0, dust tag = Trash
 [Gilded Vestments] dust quantity = 0, dust tag = Trash
@@ -4398,19 +4466,28 @@
 [Zenith Vestments] dust quantity = 0, dust tag = Trash
 [Hermit Garb] dust quantity = 0, dust tag = Trash
 [Advanced Hermit Garb] dust quantity = 0, dust tag = Trash
+[Ascetic Garb] dust quantity = 0, dust tag = Trash
 [Waxed Jacket] dust quantity = 0, dust tag = Trash
 [Advanced Waxed Jacket] dust quantity = 0, dust tag = Trash
+[Oiled Jacket] dust quantity = 0, dust tag = Trash
 [Expert Waxed Jacket] dust quantity = 0, dust tag = Trash
+[Sleek Jacket] dust quantity = 0, dust tag = Trash
 [Marabout Garb] dust quantity = 0, dust tag = Trash
 [Advanced Marabout Garb] dust quantity = 0, dust tag = Trash
+[Evangelist Garb] dust quantity = 0, dust tag = Trash
 [Wayfarer Jacket] dust quantity = 0, dust tag = Trash
 [Advanced Wayfarer Jacket] dust quantity = 0, dust tag = Trash
+[Itinerant Jacket] dust quantity = 0, dust tag = Trash
 [Expert Wayfarer Jacket] dust quantity = 0, dust tag = Trash
+[Rambler Jacket] dust quantity = 0, dust tag = Trash
 [Anchorite Garb] dust quantity = 0, dust tag = Trash
 [Advanced Anchorite Garb] dust quantity = 0, dust tag = Trash
+[Hatungo Garb] dust quantity = 0, dust tag = Trash
 [Scalper's Jacket] dust quantity = 0, dust tag = Trash
 [Advanced Scalper's Jacket] dust quantity = 0, dust tag = Trash
+[Hawker's Jacket] dust quantity = 0, dust tag = Trash
 [Expert Scalper's Jacket] dust quantity = 0, dust tag = Trash
+[Falconer's Jacket] dust quantity = 0, dust tag = Trash
 [Scoundrel Jacket] dust quantity = 0, dust tag = Trash
 [Ascetic Garb] dust quantity = 0, dust tag = Trash
 [Clandestine Jacket] dust quantity = 0, dust tag = Trash
@@ -4421,82 +4498,122 @@
 [Grand Regalia] dust quantity = 0, dust tag = Trash
 [Rough Greaves] dust quantity = 0, dust tag = Trash
 [Iron Greaves] dust quantity = 0, dust tag = Trash
-[Advanced Iron Greaves] dust quantity = 0, dust tag = Trash
 [Expert Iron Greaves] dust quantity = 0, dust tag = Trash
+[Bulwark Greaves] dust quantity = 0, dust tag = Trash
+[Advanced Iron Greaves] dust quantity = 0, dust tag = Trash
+[Soldiering Greaves] dust quantity = 0, dust tag = Trash
+[Veteran Greaves] dust quantity = 0, dust tag = Trash
 [Bronze Greaves] dust quantity = 0, dust tag = Trash
 [Advanced Bronze Greaves] dust quantity = 0, dust tag = Trash
+[Lionheart Greaves] dust quantity = 0, dust tag = Trash
 [Trimmed Greaves] dust quantity = 0, dust tag = Trash
 [Advanced Trimmed Greaves] dust quantity = 0, dust tag = Trash
+[Elegant Greaves] dust quantity = 0, dust tag = Trash
 [Expert Trimmed Greaves] dust quantity = 0, dust tag = Trash
+[Ornate Greaves] dust quantity = 0, dust tag = Trash
 [Stone Greaves] dust quantity = 0, dust tag = Trash
 [Advanced Stone Greaves] dust quantity = 0, dust tag = Trash
+[Carved Greaves] dust quantity = 0, dust tag = Trash
 [Expert Stone Greaves] dust quantity = 0, dust tag = Trash
+[Vaal Greaves] dust quantity = 0, dust tag = Trash
 [Reefsteel Greaves] dust quantity = 0, dust tag = Trash
 [Monument Greaves] dust quantity = 0, dust tag = Trash
 [Totemic Greaves] dust quantity = 0, dust tag = Trash
 [Rawhide Boots] dust quantity = 106940, dust tag = Expensive
 [Laced Boots] dust quantity = 0, dust tag = Trash
 [Advanced Laced Boots] dust quantity = 0, dust tag = Trash
+[Bound Boots] dust quantity = 0, dust tag = Trash
 [Expert Laced Boots] dust quantity = 0, dust tag = Trash
+[Cinched Boots] dust quantity = 0, dust tag = Trash
 [Embossed Boots] dust quantity = 0, dust tag = Trash
 [Advanced Embossed Boots] dust quantity = 0, dust tag = Trash
+[Sleek Boots] dust quantity = 0, dust tag = Trash
 [Steeltoe Boots] dust quantity = 0, dust tag = Trash
 [Advanced Steeltoe Boots] dust quantity = 0, dust tag = Trash
+[Studded Boots] dust quantity = 0, dust tag = Trash
 [Expert Steeltoe Boots] dust quantity = 0, dust tag = Trash
+[Cavalry Boots] dust quantity = 0, dust tag = Trash
 [Lizardscale Boots] dust quantity = 0, dust tag = Trash
 [Advanced Lizardscale Boots] dust quantity = 0, dust tag = Trash
+[Serpentscale Boots] dust quantity = 13440, dust tag = Moderate
 [Expert Lizardscale Boots] dust quantity = 0, dust tag = Trash
+[Dragonscale Boots] dust quantity = 16580, dust tag = Moderate
 [Flared Boots] dust quantity = 0, dust tag = Trash
 [Leatherplate Boots] dust quantity = 0, dust tag = Trash
 [Embroidered Boots] dust quantity = 0, dust tag = Trash
 [Straw Sandals] dust quantity = 0, dust tag = Trash
 [Wrapped Sandals] dust quantity = 0, dust tag = Trash
 [Advanced Wrapped Sandals] dust quantity = 0, dust tag = Trash
+[Laced Sandals] dust quantity = 0, dust tag = Trash
 [Expert Wrapped Sandals] dust quantity = 0, dust tag = Trash
+[Bound Sandals] dust quantity = 0, dust tag = Trash
 [Lattice Sandals] dust quantity = 0, dust tag = Trash
 [Advanced Lattice Sandals] dust quantity = 0, dust tag = Trash
+[Bangled Sandals] dust quantity = 0, dust tag = Trash
 [Silk Slippers] dust quantity = 3720, dust tag = Trash
 [Advanced Silk Slippers] dust quantity = 0, dust tag = Trash
+[Elegant Slippers] dust quantity = 0, dust tag = Trash
 [Expert Silk Slippers] dust quantity = 0, dust tag = Trash
+[Luxurious Slippers] dust quantity = 0, dust tag = Trash
 [Feathered Sandals] dust quantity = 0, dust tag = Trash
 [Advanced Feathered Sandals] dust quantity = 0, dust tag = Trash
+[Dunerunner Sandals] dust quantity = 0, dust tag = Trash
 [Expert Feathered Sandals] dust quantity = 0, dust tag = Trash
+[Sandsworn Sandals] dust quantity = 0, dust tag = Trash
 [Flax Sandals] dust quantity = 0, dust tag = Trash
 [Studded Sandals] dust quantity = 0, dust tag = Trash
 [Elaborate Sandals] dust quantity = 0, dust tag = Trash
 [Mail Sabatons] dust quantity = 0, dust tag = Trash
 [Advanced Mail Sabatons] dust quantity = 0, dust tag = Trash
+[Soldiering Sabatons] dust quantity = 0, dust tag = Trash
 [Expert Mail Sabatons] dust quantity = 0, dust tag = Trash
+[Veteran Sabatons] dust quantity = 0, dust tag = Trash
 [Braced Sabatons] dust quantity = 0, dust tag = Trash
-[Advanced Braced Sabatons] dust quantity = 0, dust tag = Trash
 [Expert Braced Sabatons] dust quantity = 0, dust tag = Trash
+[Noble Sabatons] dust quantity = 0, dust tag = Trash
+[Advanced Braced Sabatons] dust quantity = 0, dust tag = Trash
+[Goldwork Sabatons] dust quantity = 0, dust tag = Trash
 [Stacked Sabatons] dust quantity = 0, dust tag = Trash
 [Advanced Stacked Sabatons] dust quantity = 0, dust tag = Trash
+[Bastion Sabatons] dust quantity = 0, dust tag = Trash
 [Expert Stacked Sabatons] dust quantity = 0, dust tag = Trash
+[Fortress Sabatons] dust quantity = 0, dust tag = Trash
 [Covered Sabatons] dust quantity = 0, dust tag = Trash
 [Flexile Sabatons] dust quantity = 0, dust tag = Trash
 [Bold Sabatons] dust quantity = 0, dust tag = Trash
 [Padded Leggings] dust quantity = 0, dust tag = Trash
 [Advanced Padded Leggings] dust quantity = 0, dust tag = Trash
 [Expert Padded Leggings] dust quantity = 0, dust tag = Trash
-[Secured Leggings] dust quantity = 0, dust tag = Trash
+[Faithful Leggings] dust quantity = 0, dust tag = Trash
+[Advanced Padded Leggings] dust quantity = 0, dust tag = Trash
+[Adherent Leggings] dust quantity = 0, dust tag = Trash
 [Advanced Secured Leggings] dust quantity = 0, dust tag = Trash
+[Bound Leggings] dust quantity = 0, dust tag = Trash
 [Expert Secured Leggings] dust quantity = 0, dust tag = Trash
+[Apostle Leggings] dust quantity = 0, dust tag = Trash
 [Pelt Leggings] dust quantity = 0, dust tag = Trash
 [Advanced Pelt Leggings] dust quantity = 0, dust tag = Trash
+[Shamanistic Leggings] dust quantity = 0, dust tag = Trash
 [Expert Pelt Leggings] dust quantity = 0, dust tag = Trash
+[Warlock Leggings] dust quantity = 0, dust tag = Trash
 [Weaver Leggings] dust quantity = 0, dust tag = Trash
 [Gilt Leggings] dust quantity = 0, dust tag = Trash
 [Pious Leggings] dust quantity = 0, dust tag = Trash
 [Frayed Shoes] dust quantity = 0, dust tag = Trash
 [Advanced Frayed Shoes] dust quantity = 0, dust tag = Trash
+[Wayfarer Shoes] dust quantity = 0, dust tag = Trash
 [Expert Frayed Shoes] dust quantity = 0, dust tag = Trash
+[Wanderer Shoes] dust quantity = 0, dust tag = Trash
 [Threaded Shoes] dust quantity = 0, dust tag = Trash
 [Advanced Threaded Shoes] dust quantity = 0, dust tag = Trash
+[Silverbuckled Shoes] dust quantity = 0, dust tag = Trash
 [Expert Threaded Shoes] dust quantity = 0, dust tag = Trash
+[Charmed Shoes] dust quantity = 0, dust tag = Trash
 [Hunting Shoes] dust quantity = 0, dust tag = Trash
 [Advanced Hunting Shoes] dust quantity = 0, dust tag = Trash
+[Treerunner Shoes] dust quantity = 0, dust tag = Trash
 [Expert Hunting Shoes] dust quantity = 0, dust tag = Trash
+[Quickslip Shoes] dust quantity = 0, dust tag = Trash
 [Steelpoint Shoes] dust quantity = 0, dust tag = Trash
 [Velour Shoes] dust quantity = 0, dust tag = Trash
 [Bladed Shoes] dust quantity = 0, dust tag = Trash
@@ -4504,28 +4621,61 @@
 [Crude Bow] dust quantity = 4000, dust tag = Trash
 [Shortbow] dust quantity = 0, dust tag = Trash
 [Advanced Shortbow] dust quantity = 0, dust tag = Trash
+[Snakewood Shortbow] dust quantity = 0, dust tag = Trash
 [Expert Shortbow] dust quantity = 0, dust tag = Trash
+[Ironwood Shortbow] dust quantity = 0, dust tag = Trash
 [Warden Bow] dust quantity = 0, dust tag = Trash
 [Advanced Warden Bow] dust quantity = 0, dust tag = Trash
+[Protector Bow] dust quantity = 0, dust tag = Trash
 [Expert Warden Bow] dust quantity = 0, dust tag = Trash
+[Guardian Bow] dust quantity = 0, dust tag = Trash
 [Recurve Bow] dust quantity = 3300, dust tag = Trash
 [Composite Bow] dust quantity = 0, dust tag = Trash
 [Advanced Composite Bow] dust quantity = 0, dust tag = Trash
+[Rider Bow] dust quantity = 0, dust tag = Trash
 [Expert Composite Bow] dust quantity = 0, dust tag = Trash
+[Cavalry Bow] dust quantity = 0, dust tag = Trash
 [Dualstring Bow] dust quantity = 0, dust tag = Trash
 [Advanced Dualstring Bow] dust quantity = 0, dust tag = Trash
+[Twin Bow] dust quantity = 0, dust tag = Trash
 [Expert Dualstring Bow] dust quantity = 0, dust tag = Trash
+[Gemini Bow] dust quantity = 0, dust tag = Trash
 [Cultist Bow] dust quantity = 0, dust tag = Trash
 [Advanced Cultist Bow] dust quantity = 0, dust tag = Trash
+[Adherent Bow] dust quantity = 0, dust tag = Trash
 [Expert Cultist Bow] dust quantity = 0, dust tag = Trash
+[Fanatic Bow] dust quantity = 0, dust tag = Trash
 [Zealot Bow] dust quantity = 0, dust tag = Trash
 [Advanced Zealot Bow] dust quantity = 0, dust tag = Trash
+[Militant Bow] dust quantity = 0, dust tag = Trash
 [Expert Zealot Bow] dust quantity = 0, dust tag = Trash
+[Warmonger Bow] dust quantity = 0, dust tag = Trash
 [Artillery Bow] dust quantity = 0, dust tag = Trash
 [Tribal Bow] dust quantity = 0, dust tag = Trash
 [Greatbow] dust quantity = 0, dust tag = Trash
 [Double Limb Bow] dust quantity = 0, dust tag = Trash
 [Heavy Bow] dust quantity = 0, dust tag = Trash
+[Leather Buckler] dust quantity = 0, dust tag = Trash
+[Wooden Buckler] dust quantity = 0, dust tag = Trash
+[Plated Buckler] dust quantity = 0, dust tag = Trash
+[Iron Buckler] dust quantity = 0, dust tag = Trash
+[Ridged Buckler] dust quantity = 0, dust tag = Trash
+[Spiked Buckler] dust quantity = 0, dust tag = Trash
+[Ringed Buckler] dust quantity = 0, dust tag = Trash
+[Edged Buckler] dust quantity = 0, dust tag = Trash
+[Oak Buckler] dust quantity = 0, dust tag = Trash
+[Painted Buckler] dust quantity = 3120, dust tag = Trash
+[Painted Buckler] dust quantity = 3120, dust tag = Trash
+[Spikeward Buckler] dust quantity = 0, dust tag = Trash
+[Jingling Buckler] dust quantity = 0, dust tag = Trash
+[Bladeguard Buckler] dust quantity = 0, dust tag = Trash
+[Gutspike Buckler] dust quantity = 0, dust tag = Trash
+[Ancient Buckler] dust quantity = 0, dust tag = Trash
+[Ornate Buckler] dust quantity = 0, dust tag = Trash
+[Array Buckler] dust quantity = 0, dust tag = Trash
+[Aegis Buckler] dust quantity = 0, dust tag = Trash
+[Laminate Buckler] dust quantity = 0, dust tag = Trash
+[Pearl Buckler] dust quantity = 0, dust tag = Trash
 [Flesh Catalyst] dust quantity = 0, dust tag = Trash
 [Neural Catalyst] dust quantity = 0, dust tag = Trash
 [Carapace Catalyst] dust quantity = 0, dust tag = Trash
@@ -4553,23 +4703,35 @@
 [Makeshift Crossbow] dust quantity = 0, dust tag = Trash
 [Tense Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Tense Crossbow] dust quantity = 0, dust tag = Trash
+[Taut Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Tense Crossbow] dust quantity = 0, dust tag = Trash
+[Flexed Crossbow] dust quantity = 0, dust tag = Trash
 [Sturdy Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Sturdy Crossbow] dust quantity = 0, dust tag = Trash
+[Robust Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Sturdy Crossbow] dust quantity = 0, dust tag = Trash
+[Stout Crossbow] dust quantity = 0, dust tag = Trash
 [Varnished Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Varnished Crossbow] dust quantity = 0, dust tag = Trash
+[Painted Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Varnished Crossbow] dust quantity = 0, dust tag = Trash
+[Engraved Crossbow] dust quantity = 0, dust tag = Trash
 [Dyad Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Dyad Crossbow] dust quantity = 0, dust tag = Trash
+[Twin Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Dyad Crossbow] dust quantity = 0, dust tag = Trash
+[Gemini Crossbow] dust quantity = 0, dust tag = Trash
 [Alloy Crossbow] dust quantity = 0, dust tag = Trash
 [Bombard Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Bombard Crossbow] dust quantity = 0, dust tag = Trash
+[Cannonade Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Bombard Crossbow] dust quantity = 0, dust tag = Trash
+[Siege Crossbow] dust quantity = 0, dust tag = Trash
 [Construct Crossbow] dust quantity = 0, dust tag = Trash
 [Advanced Forlorn Crossbow] dust quantity = 0, dust tag = Trash
+[Bleak Crossbow] dust quantity = 0, dust tag = Trash
 [Expert Forlorn Crossbow] dust quantity = 0, dust tag = Trash
+[Desolate Crossbow] dust quantity = 0, dust tag = Trash
 [Blackfire Crossbow] dust quantity = 0, dust tag = Trash
 [Piercing Crossbow] dust quantity = 0, dust tag = Trash
 [Cumbrous Crossbow] dust quantity = 0, dust tag = Trash
@@ -4580,16 +4742,16 @@
 [Chance Shard] dust quantity = 0, dust tag = Trash
 [Regal Shard] dust quantity = 0, dust tag = Trash
 [Artificer's Shard] dust quantity = 0, dust tag = Trash
-[Distilled Despair] dust quantity = 0, dust tag = Trash
-[Distilled Disgust] dust quantity = 0, dust tag = Trash
-[Distilled Envy] dust quantity = 0, dust tag = Trash
-[Distilled Fear] dust quantity = 0, dust tag = Trash
-[Distilled Greed] dust quantity = 0, dust tag = Trash
-[Distilled Guilt] dust quantity = 0, dust tag = Trash
 [Distilled Ire] dust quantity = 0, dust tag = Trash
-[Distilled Isolation] dust quantity = 0, dust tag = Trash
+[Distilled Guilt] dust quantity = 0, dust tag = Trash
+[Distilled Greed] dust quantity = 0, dust tag = Trash
 [Distilled Paranoia] dust quantity = 0, dust tag = Trash
+[Distilled Envy] dust quantity = 0, dust tag = Trash
+[Distilled Disgust] dust quantity = 0, dust tag = Trash
+[Distilled Despair] dust quantity = 0, dust tag = Trash
+[Distilled Fear] dust quantity = 0, dust tag = Trash
 [Distilled Suffering] dust quantity = 0, dust tag = Trash
+[Distilled Isolation] dust quantity = 0, dust tag = Trash
 [Essence of the Body] dust quantity = 0, dust tag = Trash
 [Essence of the Mind] dust quantity = 0, dust tag = Trash
 [Essence of Enhancement] dust quantity = 0, dust tag = Trash
@@ -4614,12 +4776,15 @@
 [Greater Essence of Sorcery] dust quantity = 0, dust tag = Trash
 [Greater Essence of Haste] dust quantity = 0, dust tag = Trash
 [Greater Essence of the Infinite] dust quantity = 0, dust tag = Trash
+[Essence of Hysteria] dust quantity = 0, dust tag = Trash
+[Essence of Horror] dust quantity = 0, dust tag = Trash
+[Essence of Insanity] dust quantity = 0, dust tag = Trash
+[Essence of Delirium] dust quantity = 0, dust tag = Trash
 [Exotic Coinage] dust quantity = 0, dust tag = Trash
 [Broken Circle Artifact] dust quantity = 0, dust tag = Trash
 [Black Scythe Artifact] dust quantity = 0, dust tag = Trash
 [Order Artifact] dust quantity = 0, dust tag = Trash
 [Sun Artifact] dust quantity = 0, dust tag = Trash
-[Expedition Logbooks] dust quantity = 0, dust tag = Trash
 [Lesser Life Flask] dust quantity = 0, dust tag = Trash
 [Medium Life Flask] dust quantity = 0, dust tag = Trash
 [Greater Life Flask] dust quantity = 0, dust tag = Trash
@@ -4632,20 +4797,29 @@
 [Twig Focus] dust quantity = 0, dust tag = Trash
 [Woven Focus] dust quantity = 0, dust tag = Trash
 [Advanced Woven Focus] dust quantity = 0, dust tag = Trash
+[Wreath Focus] dust quantity = 0, dust tag = Trash
 [Antler Focus] dust quantity = 0, dust tag = Trash
 [Advanced Antler Focus] dust quantity = 0, dust tag = Trash
+[Staghorn Focus] dust quantity = 0, dust tag = Trash
 [Expert Antler Focus] dust quantity = 0, dust tag = Trash
+[Druidic Focus] dust quantity = 0, dust tag = Trash
 [Engraved Focus] dust quantity = 0, dust tag = Trash
 [Tonal Focus] dust quantity = 0, dust tag = Trash
 [Advanced Tonal Focus] dust quantity = 0, dust tag = Trash
+[Jingling Focus] dust quantity = 0, dust tag = Trash
 [Crystal Focus] dust quantity = 0, dust tag = Trash
 [Advanced Crystal Focus] dust quantity = 0, dust tag = Trash
+[Arrayed Focus] dust quantity = 0, dust tag = Trash
 [Expert Crystal Focus] dust quantity = 0, dust tag = Trash
+[Leyline Focus] dust quantity = 0, dust tag = Trash
 [Voodoo Focus] dust quantity = 0, dust tag = Trash
 [Advanced Voodoo Focus] dust quantity = 0, dust tag = Trash
+[Cultist Focus] dust quantity = 0, dust tag = Trash
 [Plumed Focus] dust quantity = 0, dust tag = Trash
 [Advanced Plumed Focus] dust quantity = 0, dust tag = Trash
+[Hallowed Focus] dust quantity = 0, dust tag = Trash
 [Expert Plumed Focus] dust quantity = 0, dust tag = Trash
+[Sacred Focus] dust quantity = 0, dust tag = Trash
 [Jade Focus] dust quantity = 0, dust tag = Trash
 [Paua Focus] dust quantity = 0, dust tag = Trash
 [Elegant Focus] dust quantity = 0, dust tag = Trash
@@ -4654,6 +4828,8 @@
 [Stocky Mitts] dust quantity = 0, dust tag = Trash
 [Riveted Mitts] dust quantity = 0, dust tag = Trash
 [Tempered Mitts] dust quantity = 0, dust tag = Trash
+[Advanced Tempered Mitts] dust quantity = 0, dust tag = Trash
+[Elegant Mitts] dust quantity = 0, dust tag = Trash
 [Bolstered Mitts] dust quantity = 0, dust tag = Trash
 [Moulded Mitts] dust quantity = 0, dust tag = Trash
 [Detailed Mitts] dust quantity = 0, dust tag = Trash
@@ -4695,44 +4871,82 @@
 [Utility Wraps] dust quantity = 0, dust tag = Trash
 [Grand Manchettes] dust quantity = 0, dust tag = Trash
 [Advanced Riveted Mitts] dust quantity = 0, dust tag = Trash
+[Plated Mitts] dust quantity = 0, dust tag = Trash
 [Expert Tempered Mitts] dust quantity = 0, dust tag = Trash
 [Advanced Bolstered Mitts] dust quantity = 0, dust tag = Trash
+[Ancient Mitts] dust quantity = 0, dust tag = Trash
 [Advanced Moulded Mitts] dust quantity = 0, dust tag = Trash
+[Feathered Mitts] dust quantity = 0, dust tag = Trash
 [Advanced Firm Bracers] dust quantity = 0, dust tag = Trash
+[Hunting Bracers] dust quantity = 0, dust tag = Trash
 [Advanced Bound Bracers] dust quantity = 0, dust tag = Trash
+[Swift Bracers] dust quantity = 0, dust tag = Trash
 [Advanced Sectioned Bracers] dust quantity = 0, dust tag = Trash
+[Refined Bracers] dust quantity = 0, dust tag = Trash
 [Advanced Spined Bracers] dust quantity = 0, dust tag = Trash
+[Spiked Bracers] dust quantity = 0, dust tag = Trash
 [Advanced Sombre Gloves] dust quantity = 0, dust tag = Trash
+[Ominous Gloves] dust quantity = 0, dust tag = Trash
 [Advanced Stitched Gloves] dust quantity = 0, dust tag = Trash
+[Embroidered Gloves] dust quantity = 11260, dust tag = Moderate
 [Advanced Jewelled Gloves] dust quantity = 0, dust tag = Trash
+[Baroque Gloves] dust quantity = 0, dust tag = Trash
 [Advanced Intricate Gloves] dust quantity = 0, dust tag = Trash
+[Gold Gloves] dust quantity = 0, dust tag = Trash
 [Advanced Ringmail Gauntlets] dust quantity = 0, dust tag = Trash
+[Ironmail Gauntlets] dust quantity = 0, dust tag = Trash
 [Advanced Layered Gauntlets] dust quantity = 0, dust tag = Trash
+[Captain Gauntlets] dust quantity = 0, dust tag = Trash
 [Advanced Doubled Gauntlets] dust quantity = 0, dust tag = Trash
+[Zealot Gauntlets] dust quantity = 0, dust tag = Trash
 [Advanced Rope Cuffs] dust quantity = 0, dust tag = Trash
+[Braided Cuffs] dust quantity = 0, dust tag = Trash
 [Advanced Aged Cuffs] dust quantity = 0, dust tag = Trash
+[Heirloom Cuffs] dust quantity = 0, dust tag = Trash
 [Advanced Goldcast Cuffs] dust quantity = 0, dust tag = Trash
+[Ornate Cuffs] dust quantity = 0, dust tag = Trash
 [Advanced Gauze Wraps] dust quantity = 0, dust tag = Trash
+[Bandage Wraps] dust quantity = 0, dust tag = Trash
 [Advanced Linen Wraps] dust quantity = 0, dust tag = Trash
+[Cambric Wraps] dust quantity = 0, dust tag = Trash
 [Advanced Spiral Wraps] dust quantity = 0, dust tag = Trash
+[Adorned Wraps] dust quantity = 0, dust tag = Trash
 [Expert Riveted Mitts] dust quantity = 0, dust tag = Trash
+[Knightly Mitts] dust quantity = 0, dust tag = Trash
 [Expert Bolstered Mitts] dust quantity = 0, dust tag = Trash
+[Ornate Mitts] dust quantity = 0, dust tag = Trash
 [Expert Moulded Mitts] dust quantity = 0, dust tag = Trash
+[Vaal Mitts] dust quantity = 0, dust tag = Trash
 [Expert Firm Bracers] dust quantity = 0, dust tag = Trash
+[Stalking Bracers] dust quantity = 0, dust tag = Trash
 [Expert Sectioned Bracers] dust quantity = 0, dust tag = Trash
+[Grand Bracers] dust quantity = 0, dust tag = Trash
 [Expert Spined Bracers] dust quantity = 0, dust tag = Trash
+[Barbed Bracers] dust quantity = 0, dust tag = Trash
 [Expert Sombre Gloves] dust quantity = 0, dust tag = Trash
+[Grim Gloves] dust quantity = 0, dust tag = Trash
 [Expert Jewelled Gloves] dust quantity = 0, dust tag = Trash
+[Opulent Gloves] dust quantity = 0, dust tag = Trash
 [Expert Intricate Gloves] dust quantity = 0, dust tag = Trash
+[Vaal Gloves] dust quantity = 0, dust tag = Trash
 [Expert Ringmail Gauntlets] dust quantity = 0, dust tag = Trash
+[Steelmail Gauntlets] dust quantity = 0, dust tag = Trash
 [Expert Layered Gauntlets] dust quantity = 0, dust tag = Trash
+[Commander Gauntlets] dust quantity = 0, dust tag = Trash
 [Expert Doubled Gauntlets] dust quantity = 0, dust tag = Trash
+[Cultist Gauntlets] dust quantity = 0, dust tag = Trash
 [Expert Rope Cuffs] dust quantity = 0, dust tag = Trash
+[Bound Cuffs] dust quantity = 0, dust tag = Trash
 [Expert Aged Cuffs] dust quantity = 0, dust tag = Trash
+[Ancient Cuffs] dust quantity = 0, dust tag = Trash
 [Expert Goldcast Cuffs] dust quantity = 0, dust tag = Trash
+[Gleaming Cuffs] dust quantity = 0, dust tag = Trash
 [Expert Gauze Wraps] dust quantity = 0, dust tag = Trash
+[War Wraps] dust quantity = 0, dust tag = Trash
 [Expert Linen Wraps] dust quantity = 0, dust tag = Trash
+[Elegant Wraps] dust quantity = 0, dust tag = Trash
 [Expert Spiral Wraps] dust quantity = 0, dust tag = Trash
+[Vaal Wraps] dust quantity = 0, dust tag = Trash
 [Rusted Greathelm] dust quantity = 0, dust tag = Trash
 [Soldier Greathelm] dust quantity = 0, dust tag = Trash
 [Wrapped Greathelm] dust quantity = 0, dust tag = Trash
@@ -4744,7 +4958,8 @@
 [Dueling Greathelm] dust quantity = 0, dust tag = Trash
 [Goliath Greathelm] dust quantity = 0, dust tag = Trash
 [Guardian Greathelm] dust quantity = 0, dust tag = Trash
-[Shabby Hood] dust quantity = 0, dust tag = Trash
+[Advanced Shabby Hood] dust quantity = 0, dust tag = Trash
+[Rotted Hood] dust quantity = 0, dust tag = Trash
 [Felt Cap] dust quantity = 0, dust tag = Trash
 [Lace Hood] dust quantity = 0, dust tag = Trash
 [Swathed Cap] dust quantity = 0, dust tag = Trash
@@ -4776,7 +4991,8 @@
 [Gallant Helm] dust quantity = 0, dust tag = Trash
 [Iron Crown] dust quantity = 0, dust tag = Trash
 [Horned Crown] dust quantity = 0, dust tag = Trash
-[Cultist Crown] dust quantity = 0, dust tag = Trash
+[Expert Cowled Helm] dust quantity = 0, dust tag = Trash
+[Cryptic Helm] dust quantity = 0, dust tag = Trash
 [Martyr Crown] dust quantity = 0, dust tag = Trash
 [Heavy Crown] dust quantity = 0, dust tag = Trash
 [Spiritbone Crown] dust quantity = 0, dust tag = Trash
@@ -4792,53 +5008,100 @@
 [Death Mask] dust quantity = 0, dust tag = Trash
 [Grand Visage] dust quantity = 0, dust tag = Trash
 [Advanced Rusted Greathelm] dust quantity = 0, dust tag = Trash
+[Corroded Greathelm] dust quantity = 0, dust tag = Trash
 [Advanced Soldier Greathelm] dust quantity = 0, dust tag = Trash
+[Mercenary Greathelm] dust quantity = 0, dust tag = Trash
 [Advanced Wrapped Greathelm] dust quantity = 0, dust tag = Trash
+[Homeguard Greathelm] dust quantity = 0, dust tag = Trash
 [Advanced Spired Greathelm] dust quantity = 0, dust tag = Trash
+[Elegant Greathelm] dust quantity = 0, dust tag = Trash
 [Advanced Elite Greathelm] dust quantity = 0, dust tag = Trash
+[Noble Greathelm] dust quantity = 0, dust tag = Trash
 [Advanced Shabby Hood] dust quantity = 0, dust tag = Trash
 [Advanced Felt Cap] dust quantity = 0, dust tag = Trash
+[Wool Cap] dust quantity = 0, dust tag = Trash
 [Advanced Lace Hood] dust quantity = 0, dust tag = Trash
+[Narrow Hood] dust quantity = 0, dust tag = Trash
 [Advanced Swathed Cap] dust quantity = 0, dust tag = Trash
+[Wrapped Cap] dust quantity = 0, dust tag = Trash
 [Advanced Hunter Hood] dust quantity = 0, dust tag = Trash
+[Deerstalker Hood] dust quantity = 0, dust tag = Trash
 [Advanced Twig Circlet] dust quantity = 0, dust tag = Trash
+[Druidic Circlet] dust quantity = 0, dust tag = Trash
 [Advanced Wicker Tiara] dust quantity = 0, dust tag = Trash
+[Avian Tiara] dust quantity = 0, dust tag = Trash
 [Advanced Beaded Circlet] dust quantity = 0, dust tag = Trash
+[Desert Circlet] dust quantity = 0, dust tag = Trash
 [Advanced Chain Tiara] dust quantity = 0, dust tag = Trash
+[Sandsworn Tiara] dust quantity = 0, dust tag = Trash
 [Advanced Feathered Tiara] dust quantity = 0, dust tag = Trash
+[Jungle Tiara] dust quantity = 0, dust tag = Trash
 [Advanced Brimmed Helm] dust quantity = 0, dust tag = Trash
+[Domed Helm] dust quantity = 0, dust tag = Trash
 [Advanced Guarded Helm] dust quantity = 0, dust tag = Trash
+[Engraved Helm] dust quantity = 0, dust tag = Trash
 [Advanced Visored Helm] dust quantity = 0, dust tag = Trash
+[Soldier Helm] dust quantity = 0, dust tag = Trash
 [Advanced Cowled Helm] dust quantity = 0, dust tag = Trash
+[Cabalist Helm] dust quantity = 0, dust tag = Trash
 [Advanced Shielded Helm] dust quantity = 0, dust tag = Trash
+[Gladiatoral Helm] dust quantity = 0, dust tag = Trash
 [Advanced Iron Crown] dust quantity = 0, dust tag = Trash
+[Mailed Crown] dust quantity = 0, dust tag = Trash
 [Advanced Horned Crown] dust quantity = 0, dust tag = Trash
+[Forest Crown] dust quantity = 0, dust tag = Trash
 [Advanced Cultist Crown] dust quantity = 0, dust tag = Trash
+[Zealot Crown] dust quantity = 0, dust tag = Trash
 [Advanced Martyr Crown] dust quantity = 0, dust tag = Trash
+[Hallowed Crown] dust quantity = 0, dust tag = Trash
 [Advanced Heavy Crown] dust quantity = 0, dust tag = Trash
+[Inquisitor Crown] dust quantity = 0, dust tag = Trash
 [Advanced Hewn Mask] dust quantity = 0, dust tag = Trash
+[Oak Mask] dust quantity = 0, dust tag = Trash
 [Advanced Face Mask] dust quantity = 0, dust tag = Trash
+[Bandit Mask] dust quantity = 0, dust tag = Trash
 [Advanced Hooded Mask] dust quantity = 0, dust tag = Trash
+[Skulking Mask] dust quantity = 0, dust tag = Trash
 [Advanced Veiled Mask] dust quantity = 0, dust tag = Trash
+[Pariah Mask] dust quantity = 0, dust tag = Trash
 [Advanced Tribal Mask] dust quantity = 0, dust tag = Trash
+[Avian Mask] dust quantity = 0, dust tag = Trash
 [Expert Soldier Greathelm] dust quantity = 0, dust tag = Trash
+[Warmonger Greathelm] dust quantity = 0, dust tag = Trash
 [Expert Spired Greathelm] dust quantity = 0, dust tag = Trash
+[Masked Greathelm] dust quantity = 0, dust tag = Trash
 [Expert Elite Greathelm] dust quantity = 0, dust tag = Trash
+[Paragon Greathelm] dust quantity = 0, dust tag = Trash
 [Expert Felt Cap] dust quantity = 0, dust tag = Trash
+[Woven Cap] dust quantity = 0, dust tag = Trash
 [Expert Swathed Cap] dust quantity = 0, dust tag = Trash
+[Desert Cap] dust quantity = 0, dust tag = Trash
 [Expert Hunter Hood] dust quantity = 0, dust tag = Trash
+[Trapper Hood] dust quantity = 0, dust tag = Trash
 [Expert Wicker Tiara] dust quantity = 0, dust tag = Trash
+[Skycrown Tiara] dust quantity = 0, dust tag = Trash
 [Expert Chain Tiara] dust quantity = 0, dust tag = Trash
+[Sorcerous Tiara] dust quantity = 0, dust tag = Trash
 [Expert Feathered Tiara] dust quantity = 0, dust tag = Trash
+[Kamasan Tiara] dust quantity = 0, dust tag = Trash
 [Expert Guarded Helm] dust quantity = 0, dust tag = Trash
+[Warded Helm] dust quantity = 0, dust tag = Trash
 [Expert Cowled Helm] dust quantity = 0, dust tag = Trash
 [Expert Shielded Helm] dust quantity = 0, dust tag = Trash
+[Champion Helm] dust quantity = 0, dust tag = Trash
 [Expert Horned Crown] dust quantity = 0, dust tag = Trash
+[Druidic Crown] dust quantity = 0, dust tag = Trash
 [Expert Martyr Crown] dust quantity = 0, dust tag = Trash
+[Saintly Crown] dust quantity = 0, dust tag = Trash
 [Expert Heavy Crown] dust quantity = 0, dust tag = Trash
+[Divine Crown] dust quantity = 0, dust tag = Trash
 [Expert Face Mask] dust quantity = 0, dust tag = Trash
+[Brigand Mask] dust quantity = 0, dust tag = Trash
 [Expert Veiled Mask] dust quantity = 0, dust tag = Trash
+[Faridun Mask] dust quantity = 0, dust tag = Trash
 [Expert Tribal Mask] dust quantity = 0, dust tag = Trash
+[Soaring Mask] dust quantity = 0, dust tag = Trash
+[Inscribed Ultimatum] dust quantity = 0, dust tag = Trash
 [Ruby] dust quantity = 0, dust tag = Trash
 [Emerald] dust quantity = 0, dust tag = Trash
 [Sapphire] dust quantity = 0, dust tag = Trash
@@ -4847,6 +5110,7 @@
 [Time-Lost Emerald] dust quantity = 0, dust tag = Trash
 [Time-Lost Sapphire] dust quantity = 0, dust tag = Trash
 [Time-Lost Diamond] dust quantity = 0, dust tag = Trash
+[Timeless Jewel] dust quantity = 0, dust tag = Trash
 [Lesser Mana Flask] dust quantity = 0, dust tag = Trash
 [Medium Mana Flask] dust quantity = 0, dust tag = Trash
 [Greater Mana Flask] dust quantity = 0, dust tag = Trash
@@ -4881,6 +5145,10 @@
 [Omen of Greater Annulment] dust quantity = 0, dust tag = Trash
 [Omen of Sinistral Annulment] dust quantity = 0, dust tag = Trash
 [Omen of Dextral Annulment] dust quantity = 0, dust tag = Trash
+[Omen of Answered Prayers] dust quantity = 0, dust tag = Trash
+[Omen of Secret Compartments] dust quantity = 0, dust tag = Trash
+[Omen of the Hunt] dust quantity = 0, dust tag = Trash
+[Omen of Reinforcements] dust quantity = 0, dust tag = Trash
 [Wooden Club] dust quantity = 0, dust tag = Trash
 [Smithing Hammer] dust quantity = 0, dust tag = Trash
 [Slim Mace] dust quantity = 0, dust tag = Trash
@@ -4895,40 +5163,67 @@
 [Execratus Hammer] dust quantity = 0, dust tag = Trash
 [Torment Club] dust quantity = 0, dust tag = Trash
 [Advanced Smithing Hammer] dust quantity = 0, dust tag = Trash
+[Calescent Hammer] dust quantity = 0, dust tag = Trash
 [Advanced Slim Mace] dust quantity = 0, dust tag = Trash
+[Flared Mace] dust quantity = 0, dust tag = Trash
 [Advanced Warpick] dust quantity = 0, dust tag = Trash
+[Battle Pick] dust quantity = 0, dust tag = Trash
 [Advanced Plated Mace] dust quantity = 0, dust tag = Trash
+[Marching Mace] dust quantity = 0, dust tag = Trash
 [Advanced Brigand Mace] dust quantity = 0, dust tag = Trash
+[Bandit Mace] dust quantity = 0, dust tag = Trash
 [Advanced Construct Hammer] dust quantity = 0, dust tag = Trash
+[Structured Hammer] dust quantity = 0, dust tag = Trash
 [Expert Slim Mace] dust quantity = 0, dust tag = Trash
+[Flanged Mace] dust quantity = 0, dust tag = Trash
 [Expert Plated Mace] dust quantity = 0, dust tag = Trash
+[Crown Mace] dust quantity = 0, dust tag = Trash
 [Expert Smithing Hammer] dust quantity = 0, dust tag = Trash
+[Molten Hammer] dust quantity = 0, dust tag = Trash
 [Expert Warpick] dust quantity = 0, dust tag = Trash
+[Strife Pick] dust quantity = 0, dust tag = Trash
 [Expert Construct Hammer] dust quantity = 0, dust tag = Trash
+[Fortified Hammer] dust quantity = 0, dust tag = Trash
 [Expert Brigand Mace] dust quantity = 0, dust tag = Trash
+[Marauding Mace] dust quantity = 0, dust tag = Trash
 [Ancient Crisis Fragment] dust quantity = 0, dust tag = Trash
 [Faded Crisis Fragment] dust quantity = 0, dust tag = Trash
 [Weathered Crisis Fragment] dust quantity = 0, dust tag = Trash
 [Wrapped Quarterstaff] dust quantity = 0, dust tag = Trash
 [Long Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Long Quarterstaff] dust quantity = 0, dust tag = Trash
+[Reaching Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Long Quarterstaff] dust quantity = 0, dust tag = Trash
+[Striking Quarterstaff] dust quantity = 0, dust tag = Trash
 [Gothic Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Gothic Quarterstaff] dust quantity = 0, dust tag = Trash
+[Barbarous Quarterstaff] dust quantity = 0, dust tag = Trash
+[Advanced Gothic Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Gothic Quarterstaff] dust quantity = 0, dust tag = Trash
+[Sinister Quarterstaff] dust quantity = 0, dust tag = Trash
 [Crackling Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Crackling Quarterstaff] dust quantity = 0, dust tag = Trash
+[Arcing Quarterstaff] dust quantity = 0, dust tag = Trash
+[Advanced Crackling Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Crackling Quarterstaff] dust quantity = 0, dust tag = Trash
+[Bolting Quarterstaff] dust quantity = 0, dust tag = Trash
 [Crescent Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Crescent Quarterstaff] dust quantity = 0, dust tag = Trash
+[Waxing Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Crescent Quarterstaff] dust quantity = 0, dust tag = Trash
+[Lunar Quarterstaff] dust quantity = 0, dust tag = Trash
 [Steelpoint Quarterstaff] dust quantity = 0, dust tag = Trash
 [Slicing Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Slicing Quarterstaff] dust quantity = 0, dust tag = Trash
+[Bladed Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Slicing Quarterstaff] dust quantity = 0, dust tag = Trash
+[Razor Quarterstaff] dust quantity = 0, dust tag = Trash
 [Barrier Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Barrier Quarterstaff] dust quantity = 0, dust tag = Trash
+[Guardian Quarterstaff] dust quantity = 0, dust tag = Trash
+[Guardian Quarterstaff] dust quantity = 0, dust tag = Trash
 [Expert Barrier Quarterstaff] dust quantity = 0, dust tag = Trash
+[Aegis Quarterstaff] dust quantity = 0, dust tag = Trash
 [Hefty Quarterstaff] dust quantity = 0, dust tag = Trash
 [Smooth Quarterstaff] dust quantity = 0, dust tag = Trash
 [Anima Quarterstaff] dust quantity = 0, dust tag = Trash
@@ -4965,6 +5260,10 @@
 [Unset Ring] dust quantity = 44060, dust tag = Rare
 [Ring] dust quantity = 1144000, dust tag = Very expensive
 [Breach Ring] dust quantity = 0, dust tag = Trash
+[Dusk Ring] dust quantity = 0, dust tag = Trash
+[Gloam Ring] dust quantity = 0, dust tag = Trash
+[Penumbra Ring] dust quantity = 0, dust tag = Trash
+[Tenebrous Ring] dust quantity = 0, dust tag = Trash
 [Rattling Sceptre] dust quantity = 0, dust tag = Trash
 [Stoic Sceptre] dust quantity = 0, dust tag = Trash
 [Lupine Sceptre] dust quantity = 0, dust tag = Trash
@@ -5007,71 +5306,100 @@
 [Emblem Crest Shield] dust quantity = 0, dust tag = Trash
 [Jingling Crest Shield] dust quantity = 0, dust tag = Trash
 [Sectarian Crest Shield] dust quantity = 0, dust tag = Trash
+[Advanced Sectarian Crest Shield] dust quantity = 0, dust tag = Trash
+[Quartered Crest Shield] dust quantity = 0, dust tag = Trash
 [Omen Crest Shield] dust quantity = 0, dust tag = Trash
 [Wayward Crest Shield] dust quantity = 0, dust tag = Trash
 [Seer Crest Shield] dust quantity = 0, dust tag = Trash
 [Stoic Crest Shield] dust quantity = 0, dust tag = Trash
 [Empyreal Crest Shield] dust quantity = 0, dust tag = Trash
 [Deified Crest Shield] dust quantity = 0, dust tag = Trash
-[Leather Buckler] dust quantity = 0, dust tag = Trash
-[Wooden Buckler] dust quantity = 0, dust tag = Trash
-[Plated Buckler] dust quantity = 0, dust tag = Trash
-[Iron Buckler] dust quantity = 0, dust tag = Trash
-[Ridged Buckler] dust quantity = 0, dust tag = Trash
-[Spiked Buckler] dust quantity = 0, dust tag = Trash
-[Ringed Buckler] dust quantity = 0, dust tag = Trash
-[Edged Buckler] dust quantity = 0, dust tag = Trash
-[Laminate Buckler] dust quantity = 0, dust tag = Trash
-[Pearl Buckler] dust quantity = 0, dust tag = Trash
-[Ornate Buckler] dust quantity = 0, dust tag = Trash
-[Array Buckler] dust quantity = 0, dust tag = Trash
-[Aegis Buckler] dust quantity = 0, dust tag = Trash
 [Advanced Painted Tower Shield] dust quantity = 0, dust tag = Trash
+[Aged Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Braced Tower Shield] dust quantity = 0, dust tag = Trash
+[Metalworked Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Effigial Tower Shield] dust quantity = 0, dust tag = Trash
+[Cultist Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Rampart Tower Shield] dust quantity = 0, dust tag = Trash
+[Bulwark Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Heraldric Tower Shield] dust quantity = 0, dust tag = Trash
+[Noble Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Stone Tower Shield] dust quantity = 0, dust tag = Trash
+[Goldworked Tower Shield] dust quantity = 0, dust tag = Trash
 [Advanced Hardwood Targe] dust quantity = 0, dust tag = Trash
+[Ironwood Targe] dust quantity = 0, dust tag = Trash
 [Advanced Pelage Targe] dust quantity = 0, dust tag = Trash
+[Fur-lined Targe] dust quantity = 0, dust tag = Trash
 [Advanced Studded Targe] dust quantity = 0, dust tag = Trash
+[Mercenary Targe] dust quantity = 0, dust tag = Trash
 [Advanced Crescent Targe] dust quantity = 0, dust tag = Trash
+[Polished Targe] dust quantity = 0, dust tag = Trash
 [Advanced Chiseled Targe] dust quantity = 0, dust tag = Trash
+[Stone Targe] dust quantity = 0, dust tag = Trash
 [Advanced Feathered Targe] dust quantity = 0, dust tag = Trash
+[Avian Targe] dust quantity = 0, dust tag = Trash
 [Advanced Blazon Crest Shield] dust quantity = 0, dust tag = Trash
+[Painted Crest Shield] dust quantity = 0, dust tag = Trash
 [Advanced Sigil Crest Shield] dust quantity = 0, dust tag = Trash
+[Engraved Crest Shield] dust quantity = 0, dust tag = Trash
 [Advanced Emblem Crest Shield] dust quantity = 0, dust tag = Trash
+[Descry Crest Shield] dust quantity = 0, dust tag = Trash
 [Advanced Jingling Crest Shield] dust quantity = 0, dust tag = Trash
-[Advanced Sectarian Crest Shield] dust quantity = 0, dust tag = Trash
+[Advanced Jingling Crest Shield] dust quantity = 0, dust tag = Trash
+[Dekharan Crest Shield] dust quantity = 0, dust tag = Trash
 [Advanced Omen Crest Shield] dust quantity = 0, dust tag = Trash
-[Advanced Wooden Buckler] dust quantity = 0, dust tag = Trash
+[Advanced Omen Crest Shield] dust quantity = 0, dust tag = Trash
+[Glowering Crest Shield] dust quantity = 0, dust tag = Trash
 [Advanced Plated Buckler] dust quantity = 0, dust tag = Trash
 [Advanced Ridged Buckler] dust quantity = 0, dust tag = Trash
 [Advanced Spiked Buckler] dust quantity = 0, dust tag = Trash
 [Advanced Ringed Buckler] dust quantity = 0, dust tag = Trash
 [Advanced Edged Buckler] dust quantity = 0, dust tag = Trash
 [Expert Braced Tower Shield] dust quantity = 0, dust tag = Trash
+[Noble Tower Shield] dust quantity = 0, dust tag = Trash
 [Expert Rampart Tower Shield] dust quantity = 0, dust tag = Trash
+[Fortress Tower Shield] dust quantity = 0, dust tag = Trash
 [Expert Stone Tower Shield] dust quantity = 0, dust tag = Trash
+[Vaal Tower Shield] dust quantity = 0, dust tag = Trash
 [Expert Pelage Targe] dust quantity = 0, dust tag = Trash
+[Mammoth Targe] dust quantity = 0, dust tag = Trash
 [Expert Crescent Targe] dust quantity = 0, dust tag = Trash
+[Baroque Targe] dust quantity = 0, dust tag = Trash
 [Expert Feathered Targe] dust quantity = 0, dust tag = Trash
+[Soaring Targe] dust quantity = 0, dust tag = Trash
 [Expert Sigil Crest Shield] dust quantity = 0, dust tag = Trash
+[Intricate Crest Shield] dust quantity = 0, dust tag = Trash
 [Expert Jingling Crest Shield] dust quantity = 0, dust tag = Trash
+[Sekheman Crest Shield] dust quantity = 0, dust tag = Trash
 [Expert Omen Crest Shield] dust quantity = 0, dust tag = Trash
+[Vaal Crest Shield] dust quantity = 0, dust tag = Trash
 [Expert Plated Buckler] dust quantity = 0, dust tag = Trash
 [Expert Spiked Buckler] dust quantity = 0, dust tag = Trash
 [Expert Edged Buckler] dust quantity = 0, dust tag = Trash
+[Lesser Desert Rune] dust quantity = 0, dust tag = Trash
 [Desert Rune] dust quantity = 0, dust tag = Trash
+[Greater Desert Rune] dust quantity = 0, dust tag = Trash
+[Lesser Glacial Rune] dust quantity = 0, dust tag = Trash
 [Glacial Rune] dust quantity = 0, dust tag = Trash
+[Greater Glacial Rune] dust quantity = 0, dust tag = Trash
+[Lesser Storm Rune] dust quantity = 0, dust tag = Trash
 [Storm Rune] dust quantity = 0, dust tag = Trash
+[Greater Storm Rune] dust quantity = 0, dust tag = Trash
+[Lesser Iron Rune] dust quantity = 0, dust tag = Trash
 [Iron Rune] dust quantity = 0, dust tag = Trash
+[Greater Iron Rune] dust quantity = 0, dust tag = Trash
+[Lesser Body Rune] dust quantity = 0, dust tag = Trash
 [Body Rune] dust quantity = 0, dust tag = Trash
+[Greater Body Rune] dust quantity = 0, dust tag = Trash
+[Lesser Mind Rune] dust quantity = 0, dust tag = Trash
 [Mind Rune] dust quantity = 0, dust tag = Trash
+[Greater Mind Rune] dust quantity = 0, dust tag = Trash
+[Lesser Rebirth Rune] dust quantity = 0, dust tag = Trash
 [Rebirth Rune] dust quantity = 0, dust tag = Trash
-[Inspiration Rune] dust quantity = 0, dust tag = Trash
+[Greater Rebirth Rune] dust quantity = 0, dust tag = Trash
+[Lesser Inspiration Rune] dust quantity = 0, dust tag = Trash
 [Stone Rune] dust quantity = 0, dust tag = Trash
-[Vision Rune] dust quantity = 0, dust tag = Trash
+[Greater Vision Rune] dust quantity = 0, dust tag = Trash
 [Soul Core of Tacati] dust quantity = 0, dust tag = Trash
 [Soul Core of Opiloti] dust quantity = 0, dust tag = Trash
 [Soul Core of Jiquani] dust quantity = 0, dust tag = Trash
@@ -5087,6 +5415,30 @@
 [Soul Core of Atmohua] dust quantity = 0, dust tag = Trash
 [Soul Core of Cholotl] dust quantity = 0, dust tag = Trash
 [Soul Core of Zantipi] dust quantity = 0, dust tag = Trash
+[Serpent Talisman] dust quantity = 0, dust tag = Trash
+[Primate Talisman] dust quantity = 0, dust tag = Trash
+[Owl Talisman] dust quantity = 0, dust tag = Trash
+[Cat Talisman] dust quantity = 0, dust tag = Trash
+[Wolf Talisman] dust quantity = 0, dust tag = Trash
+[Stag Talisman] dust quantity = 0, dust tag = Trash
+[Boar Talisman] dust quantity = 0, dust tag = Trash
+[Bear Talisman] dust quantity = 0, dust tag = Trash
+[Ox Talisman] dust quantity = 0, dust tag = Trash
+[Rabbit Talisman] dust quantity = 0, dust tag = Trash
+[Fox Talisman] dust quantity = 0, dust tag = Trash
+[Hardwood Spear] dust quantity = 0, dust tag = Trash
+[Ironhead Spear] dust quantity = 0, dust tag = Trash
+[Hunting Spear] dust quantity = 0, dust tag = Trash
+[Winged Spear] dust quantity = 0, dust tag = Trash
+[War Spear] dust quantity = 0, dust tag = Trash
+[Forked Spear] dust quantity = 0, dust tag = Trash
+[Barbed Spear] dust quantity = 0, dust tag = Trash
+[Broad Spear] dust quantity = 0, dust tag = Trash
+[Crossblade Spear] dust quantity = 0, dust tag = Trash
+[Seaglass Spear] dust quantity = 0, dust tag = Trash
+[Sword Spear] dust quantity = 0, dust tag = Trash
+[Striking Spear] dust quantity = 0, dust tag = Trash
+[Helix Spear] dust quantity = 0, dust tag = Trash
 [Blacksmith's Whetstone] dust quantity = 0, dust tag = Trash
 [Arcanist's Etcher] dust quantity = 0, dust tag = Trash
 [Scroll of Wisdom] dust quantity = 0, dust tag = Trash
@@ -5113,6 +5465,7 @@
 [Bronze Key] dust quantity = 0, dust tag = Trash
 [Silver Key] dust quantity = 0, dust tag = Trash
 [Gold Key] dust quantity = 0, dust tag = Trash
+[Fracturing Orb] dust quantity = 0, dust tag = Trash
 [Ashen Staff] dust quantity = 0, dust tag = Trash
 [Gelid Staff] dust quantity = 0, dust tag = Trash
 [Voltaic Staff] dust quantity = 0, dust tag = Trash
@@ -5132,6 +5485,7 @@
 [Ritual Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Overseer Precursor Tablet] dust quantity = 0, dust tag = Trash
+[Djinn Barya] dust quantity = 0, dust tag = Trash
 [Felled Greatclub] dust quantity = 0, dust tag = Trash
 [Oak Greathammer] dust quantity = 0, dust tag = Trash
 [Forge Maul] dust quantity = 0, dust tag = Trash
@@ -5146,17 +5500,41 @@
 [Precise Greathammer] dust quantity = 0, dust tag = Trash
 [Giant Maul] dust quantity = 0, dust tag = Trash
 [Advanced Oak Greathammer] dust quantity = 0, dust tag = Trash
+[Snakewood Greathammer] dust quantity = 0, dust tag = Trash
 [Advanced Forge Maul] dust quantity = 0, dust tag = Trash
+[Blacksmith Maul] dust quantity = 0, dust tag = Trash
 [Advanced Cultist Greathammer] dust quantity = 0, dust tag = Trash
+[Zealot Greathammer] dust quantity = 0, dust tag = Trash
 [Advanced Temple Maul] dust quantity = 0, dust tag = Trash
+[Solemn Maul] dust quantity = 0, dust tag = Trash
 [Advanced Leaden Greathammer] dust quantity = 0, dust tag = Trash
+[Heavy Greathammer] dust quantity = 0, dust tag = Trash
 [Advanced Crumbling Maul] dust quantity = 0, dust tag = Trash
+[Disintegrating Maul] dust quantity = 0, dust tag = Trash
 [Expert Forge Maul] dust quantity = 0, dust tag = Trash
+[Anvil Maul] dust quantity = 0, dust tag = Trash
 [Expert Temple Maul] dust quantity = 0, dust tag = Trash
+[Sacred Maul] dust quantity = 0, dust tag = Trash
 [Expert Oak Greathammer] dust quantity = 0, dust tag = Trash
+[Ironwood Greathammer] dust quantity = 0, dust tag = Trash
 [Expert Cultist Greathammer] dust quantity = 0, dust tag = Trash
+[Fanatic Greathammer] dust quantity = 0, dust tag = Trash
 [Expert Crumbling Maul] dust quantity = 0, dust tag = Trash
+[Ruination Maul] dust quantity = 0, dust tag = Trash
 [Expert Leaden Greathammer] dust quantity = 0, dust tag = Trash
+[Massive Greathammer] dust quantity = 0, dust tag = Trash
+[Twilight Reliquary Key] dust quantity = 0, dust tag = Trash
+[Xesht's Reliquary Key] dust quantity = 0, dust tag = Trash
+[The Trialmaster's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Ritualistic Reliquary Key] dust quantity = 0, dust tag = Trash
+[Tangmazu's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Olroth's Reliquary Key] dust quantity = 0, dust tag = Trash
+[The Arbiter's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
+[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Withered Wand] dust quantity = 0, dust tag = Trash
 [Bone Wand] dust quantity = 0, dust tag = Trash
 [Attuned Wand] dust quantity = 0, dust tag = Trash
@@ -5170,4 +5548,5 @@
 [Critical Wand] dust quantity = 0, dust tag = Trash
 [Primordial Wand] dust quantity = 0, dust tag = Trash
 [Dueling Wand] dust quantity = 0, dust tag = Trash
+[Acrid Wand] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash

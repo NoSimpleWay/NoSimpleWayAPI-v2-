@@ -319,6 +319,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Martyr Boots"
 	[tag]"name RU"			[value]"Сапоги мученика"
@@ -341,6 +342,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Paladin Boots"
 	[tag]"name RU"			[value]"Сапоги паладина"
@@ -439,6 +441,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Chimerascale Boots"
 	[tag]"name RU"			[value]"Ботинки из чешуи химеры"
@@ -462,6 +465,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Wyvernscale Boots"
 	[tag]"name RU"			[value]"Ботинки из чешуи виверны"
@@ -795,6 +799,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Infiltrator Boots"
 	[tag]"name RU"			[value]"Сандалеты лазутчика"
@@ -817,6 +822,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Phantom Boots"
 	[tag]"name RU"			[value]"Сапоги призрака"
@@ -1257,6 +1263,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Harpyskin Boots"
 	[tag]"name RU"			[value]"Гарпиевые ботинки"
@@ -1276,6 +1283,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Velour Boots"
 	[tag]"name RU"			[value]"Велюровые ботинки"
@@ -1379,6 +1387,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Sage Slippers"
 	[tag]"name RU"			[value]"Сапоги мудреца"
@@ -1399,6 +1408,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Warlock Boots"
 	[tag]"name RU"			[value]"Сапоги колдуна"
@@ -1608,6 +1618,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Precursor Greaves"
 	[tag]"name RU"			[value]"Поножи предтечи"
@@ -1628,6 +1639,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Leviathan Greaves"
 	[tag]"name RU"			[value]"Поножи исполина"
@@ -2185,6 +2197,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Runic Greaves"
 	[tag]"name RU"			[value]"Рунические поножи"
@@ -2224,6 +2237,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
 	
 	[tag]"name EN"			[value]"Runic Sabatons"
 	[tag]"name RU"			[value]"Рунические сабатоны"

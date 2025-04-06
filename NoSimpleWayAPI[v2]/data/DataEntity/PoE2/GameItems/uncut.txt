@@ -1,0 +1,41 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut skill gem"
+	[tag]"name RU"		[value]"Необработанный камень умения"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut support gem"
+	[tag]"name RU"		[value]"Необработанный камень поддержки"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut spirit gem"
+	[tag]"name RU"		[value]"Необработанный камень духа"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

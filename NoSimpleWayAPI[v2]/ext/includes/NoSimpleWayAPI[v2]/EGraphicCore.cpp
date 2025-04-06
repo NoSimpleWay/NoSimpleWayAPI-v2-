@@ -132,6 +132,7 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_button_radiance_dot;
 
 	ETextureGabarite* texture_close_circle;
+	ETextureGabarite* texture_undefined_icon;
 
 	ETextureGabarite* texture_socket;
 }
@@ -974,6 +975,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
 	NS_DefaultGabarites::texture_close_circle					= NS_EGraphicCore::load_from_textures_folder("close_circle");
+	NS_DefaultGabarites::texture_undefined_icon					= NS_EGraphicCore::load_from_textures_folder("icons/undefined");
 	
 
 	NS_DefaultGabarites::texture_socket							= NS_EGraphicCore::load_from_textures_folder("socket");
@@ -3515,7 +3517,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	{
 		EInputCore::logger_simple_error("Texture [" + _full_path + "] do not exist!");
 
-		return NS_DefaultGabarites::texture_close_circle;
+		return NS_DefaultGabarites::texture_undefined_icon;
 	}
 }
 

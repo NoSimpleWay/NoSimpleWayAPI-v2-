@@ -1,0 +1,599 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Leather Buckler"
+	[tag]"name RU"	[value]"Кожаный баклер"
+
+	[tag]"icon path"	[value]"LeatherBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"12"
+	[tag]"base evasion max"	[value]"12"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wooden Buckler"
+	[tag]"name RU"	[value]"Деревянный баклер"
+
+	[tag]"icon path"	[value]"WoodenBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"20"
+	[tag]"base evasion max"	[value]"20"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 5, 11 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Plated Buckler"
+	[tag]"name RU"	[value]"Облицованный баклер"
+
+	[tag]"icon path"	[value]"PlatedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"32"
+	[tag]"base evasion max"	[value]"32"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 11, 22 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Iron Buckler"
+	[tag]"name RU"	[value]"Железный баклер"
+
+	[tag]"icon path"	[value]"IronBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"42"
+	[tag]"base evasion max"	[value]"42"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 16, 30 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ridged Buckler"
+	[tag]"name RU"	[value]"Ребристый баклер"
+
+	[tag]"icon path"	[value]"RidgedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"54"
+	[tag]"base evasion max"	[value]"54"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 22, 42 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiked Buckler"
+	[tag]"name RU"	[value]"Баклер с шипом"
+
+	[tag]"icon path"	[value]"SpikedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"62"
+	[tag]"base evasion max"	[value]"62"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 26, 49 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ringed Buckler"
+	[tag]"name RU"	[value]"Баклер с кольцами"
+
+	[tag]"icon path"	[value]"RingedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"75"
+	[tag]"base evasion max"	[value]"75"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 33, 61 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Edged Buckler"
+	[tag]"name RU"	[value]"Баклер с остриЄм"
+
+	[tag]"icon path"	[value]"EdgedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Oak Buckler"
+	[tag]"name RU"	[value]"Дубовый баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Painted Buckler"
+	[tag]"name RU"	[value]"Украшенный баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Painted Buckler"
+	[tag]"name RU"	[value]"Спиральный баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spikeward Buckler"
+	[tag]"name RU"	[value]"Остроконечный баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jingling Buckler"
+	[tag]"name RU"	[value]"Звенящий баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bladeguard Buckler"
+	[tag]"name RU"	[value]"Клинковый баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gutspike Buckler"
+	[tag]"name RU"	[value]"Баклер с гутшпилем"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Buckler"
+	[tag]"name RU"	[value]"Древний баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"87"
+	[tag]"base evasion max"	[value]"87"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 39, 72 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Buckler"
+	[tag]"name RU"	[value]"Украшенный баклер"
+
+	[tag]"icon path"	[value]"OrnateBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"113"
+	[tag]"base evasion max"	[value]"113"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 95 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Array Buckler"
+	[tag]"name RU"	[value]"Колющий баклер"
+
+	[tag]"icon path"	[value]"ArrayBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Deleted"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 101 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Aegis Buckler"
+	[tag]"name RU"	[value]"Баклер эгиды"
+
+	[tag]"icon path"	[value]"AegisBucklker"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Deleted"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"139"
+	[tag]"base evasion max"	[value]"139"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 65, 118 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Laminate Buckler"
+	[tag]"name RU"	[value]"¬итой баклер"
+
+	[tag]"icon path"	[value]"LaminateBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Deleted"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"99"
+	[tag]"base evasion max"	[value]"99"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 83 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Pearl Buckler"
+	[tag]"name RU"	[value]"ѕерламутровый баклер"
+
+	[tag]"icon path"	[value]"PearlBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Deleted"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"

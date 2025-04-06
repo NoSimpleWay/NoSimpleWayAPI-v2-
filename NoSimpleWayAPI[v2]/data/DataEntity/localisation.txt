@@ -3970,3 +3970,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"RV_button_game_poe2"
 	[tag]"name EN"		[value]"Game: Path of Exile 2"
 	[tag]"name RU"		[value]"Игра: Path of Exile 2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_group_text_renamed_items"
+	[tag]"name EN"		[value]"The following items have been renamed in the latest version of the game, so AwakenedDadEditor will automatically change their names to the correct ones.\n\nYou do not need to take any action, we just keep you informed :)"
+	[tag]"name RU"		[value]"Следующие предметы были переименованы в последней версии игры, поэтому AwakenedDadEditor автоматически изменит их названия на корректные.\n\nВам не нужно предпринимать никаких действий, мы просто держим вас в курсе :)"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rune_socket_count"
+	[tag]"name EN"		[value]"Rune sockets"
+	[tag]"name RU"		[value]"Гнёзда для рун"

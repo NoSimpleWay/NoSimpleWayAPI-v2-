@@ -547,3 +547,116 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"9"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Hysteria"
+	[tag]"name RU"		[value]"Сущность истерии"
+
+	[tag]"icon path"	[value]"Essence_of_Hysteria"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Corrupted"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Horror"
+	[tag]"name RU"		[value]"Сущность ужаса"
+
+	[tag]"icon path"	[value]"Essence_of_Horror"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Corrupted"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Insanity"
+	[tag]"name RU"		[value]"Сущность безумия"
+
+	[tag]"icon path"	[value]"Essence_of_Insanity"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Corrupted"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Delirium"
+	[tag]"name RU"		[value]"Сущность бреда"
+
+	[tag]"icon path"	[value]"Essence_of_Delirium"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Corrupted"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"

@@ -174,6 +174,8 @@ public:
 	void			update_default(float _d);
 	virtual void	update_additional(float _d);
 
+	static void		reset_groups_selection();
+
 	void			GUI_update_default(float _d);
 	virtual void	GUI_update_additional(float _d);
 

@@ -1,128 +1,5 @@
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Despair"
-	[tag]"name RU"			[value]"Очищенное отчаяние"
-	
-	[tag]"icon path"		[value]"DistilledDespair"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Common"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Disgust"
-	[tag]"name RU"			[value]"Очищенное отвращение"
-	
-	[tag]"icon path"		[value]"DistileldDisgust"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Common"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Envy"
-	[tag]"name RU"			[value]"Очищенная зависть"
-	
-	[tag]"icon path"		[value]"DistilledEnvy"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Common"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Fear"
-	[tag]"name RU"			[value]"Очищенный страх"
-	
-	[tag]"icon path"		[value]"DistilledFear"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Common"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Greed"
-	[tag]"name RU"			[value]"Очищенная жадность"
-	
-	[tag]"icon path"		[value]"DistilledGreed"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Moderate"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Game item"
-	[tag]"exist for"		[value]"PoE2"
-	
-	[tag]"name EN"			[value]"Distilled Guilt"
-	[tag]"name RU"			[value]"Очищенная вина"
-	
-	[tag]"icon path"		[value]"DistilledGiult"
-	[tag]"base class"		[value]"Stackable Currency"
-		
-	[tag]"worth"			[value]"Moderate"
-	
-	[tag]"item tag"			[value]"Distilled emotion"
-	[tag]"stack multiplier"	[value]"2"
-	[tag]"max stack size"	[value]"10"
-	
-	[tag]"drop level"		[value]"1"
-	
-	[tag]"item width"		[value]"1"
-	[tag]"item height"		[value]"1"
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -134,9 +11,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"DistilledIre"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Rare"
+	[tag]"worth"			[value]"Trash"
 	
 	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"1"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
@@ -144,20 +23,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
-	
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
-	[tag]"name EN"			[value]"Distilled Isolation"
-	[tag]"name RU"			[value]"Очищенное отчуждение"
+	[tag]"name EN"			[value]"Distilled Guilt"
+	[tag]"name RU"			[value]"Очищенная вина"
 	
-	[tag]"icon path"		[value]"DistilledIsolation"
+	[tag]"icon path"		[value]"DistilledGiult"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Rare"
+	[tag]"worth"			[value]"Trash"
 	
 	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"2"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
@@ -166,6 +50,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
 	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Greed"
+	[tag]"name RU"			[value]"Очищенная жадность"
+	
+	[tag]"icon path"		[value]"DistilledGreed"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Common"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"3"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
@@ -176,9 +87,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"DistilledParanoia"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Expensive"
+	[tag]"worth"			[value]"Common"
 	
 	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"4"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
@@ -186,6 +99,110 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Envy"
+	[tag]"name RU"			[value]"Очищенная зависть"
+	
+	[tag]"icon path"		[value]"DistilledEnvy"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"5"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Disgust"
+	[tag]"name RU"			[value]"Очищенное отвращение"
+	
+	[tag]"icon path"		[value]"DistileldDisgust"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"6"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Despair"
+	[tag]"name RU"			[value]"Очищенное отчаяние"
+	
+	[tag]"icon path"		[value]"DistilledDespair"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"7"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Fear"
+	[tag]"name RU"			[value]"Очищенный страх"
+	
+	[tag]"icon path"		[value]"DistilledFear"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Expensive"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"8"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -200,6 +217,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Expensive"
 	
 	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"9"
+	
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
@@ -207,3 +226,31 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Distilled Isolation"
+	[tag]"name RU"			[value]"Очищенное отчуждение"
+	
+	[tag]"icon path"		[value]"DistilledIsolation"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Very expensive"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+

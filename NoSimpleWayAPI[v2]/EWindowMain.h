@@ -843,6 +843,16 @@ public:
 	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
+
+class EButtonGroupAttributeGeneratorGroup_RuneSockets : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_RuneSockets(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
 class EButtonGroupAttributeGeneratorGroup_Quantity : public EButtonGroupAttributeGeneratorGroup
 {
 public:
@@ -1005,8 +1015,9 @@ public:
 
 	int	selected_procentile				= 0;
 
-	int	selected_sockets				= 3.0f;
-	int	selected_links					= 3.0f;
+	int	selected_sockets				= 3;
+	//int	selected_rune_sockets			= 1;
+	int	selected_links					= 3;
 
 	int	selected_red_weight				= 100;
 	int	selected_green_weight			= 100;
@@ -1343,6 +1354,18 @@ public:
 	EButtonGroupEnvironmentConfigure(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	void button_group_update(float _d) override;
+};
+
+class EButtonGroupRenameditemsInterface : public EButtonGroup
+{
+public:
+	EButtonGroupRenameditemsInterface(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	static EButtonGroupRenameditemsInterface* rename_interface_group;
+	static bool rename_interface_is_opened;
+
+	EButtonGroup*
+	bottom_part_for_renamed_items = nullptr;
 };
 
 
@@ -1911,6 +1934,10 @@ public:
 	static EButtonGroupFilterBlock* create_filter_block(EButtonGroup* _target_editor, int _specific_position);
 	static EButtonGroupFilterBlockSeparator* create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 
+
+
+	static void create_renamed_items_group();
+
 	static void									parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block, LootFilterOpenMode _parse_mode, PathOfExileGame _game_type);
 
 	static RouterVariant* registered_rarity_router_variants[NSW_registered_rarity_count];
@@ -1991,12 +2018,14 @@ public:
 
 	void import_base_attributes_from_data_entity();
 
-	int socket_color_id_array[6];
+	int socket_color_id_array[7];
 
 	int sockets_count = 0;
+	int rune_sockets_count = 0;
 	int links_count = 0;
 
 	int max_available_sockets = 0;
+	int max_available_rune_sockets = 0;
 
 	int max_stack_size = 1;
 	float stack_multiplier = 1.0f;
@@ -2287,6 +2316,7 @@ enum SocketColorEnum
 	SOCKET_COLOR_ENUM_WHITE,
 	SOCKET_COLOR_ENUM_ABYSS,
 	SOCKET_COLOR_ENUM_DELVE,
+	SOCKET_COLOR_ENUM_RUNE,
 
 	_SOCKET_COLOR_ENUM_LAST_ELEMENT
 };
@@ -2303,7 +2333,7 @@ public:
 	int		links_max = 6;
 	float	links_pow = 1.0f;
 
-	int		color_weight[6];
+	int		color_weight[7];
 
 	void execute_generation(EGameItem* _game_item);
 };

@@ -64,6 +64,34 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Advanced Long Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный длинный боевой посох"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Reaching Quarterstaff"
+
+
+
+	
+
+	[tag]"icon path"	[value]"LongQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+		
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Reaching Quarterstaff"
+	[tag]"name RU"		[value]"Reaching Quarterstaff"
 
 	[tag]"icon path"	[value]"LongQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -80,6 +108,11 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -87,6 +120,37 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Long Quarterstaff"
 	[tag]"name RU"		[value]"Длинный боевой посох эксперта"
+
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Striking Quarterstaff"
+
+
+
+	
+	[tag]"icon path"	[value]"LongQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Striking Quarterstaff"
+	[tag]"name RU"		[value]"Striking Quarterstaff"
 
 	[tag]"icon path"	[value]"LongQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -141,6 +205,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Advanced Gothic Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный готический боевой посох"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Barbarous Quarterstaff"
 
 	[tag]"icon path"	[value]"GothicQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -155,6 +222,60 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Barbarous Quarterstaff"
+	[tag]"name RU"		[value]"Barbarous Quarterstaff"
+	
+	[tag]"icon path"	[value]"GothicQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Gothic Quarterstaff"
+	[tag]"name RU"		[value]"Улучшенный готический боевой посох"
+	
+	[tag]"icon path"	[value]"GothicQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -162,6 +283,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Gothic Quarterstaff"
 	[tag]"name RU"		[value]"Готический боевой посох эксперта"
+
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sinister Quarterstaff"
+
+
+
+	
+	[tag]"icon path"	[value]"GothicQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sinister Quarterstaff"
+	[tag]"name RU"		[value]"Sinister Quarterstaff"
 
 	[tag]"icon path"	[value]"GothicQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -221,6 +368,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Advanced Crackling Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный искрящийся боевой посох"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Arcing Quarterstaff"
 
 	[tag]"icon path"	[value]"CracklingQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -239,8 +389,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"		[value]"Arcing Quarterstaff"
+	[tag]"name RU"		[value]"Arcing Quarterstaff"
+
+	[tag]"icon path"	[value]"CracklingQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Crackling Quarterstaff"
+	[tag]"name RU"		[value]"Улучшенный искрящийся боевой посох"
+
+	[tag]"icon path"	[value]"CracklingQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"		[value]"Expert Crackling Quarterstaff"
 	[tag]"name RU"		[value]"Искрящийся боевой посох эксперта"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bolting Quarterstaff"
+
+
+
+	
 
 	[tag]"icon path"	[value]"CracklingQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -253,6 +473,27 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bolting Quarterstaff"
+	[tag]"name RU"		[value]"Bolting Quarterstaff"
+
+	[tag]"icon path"	[value]"CracklingQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
 	
 	
 	
@@ -302,6 +543,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Crescent Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный боевой посох с полумесяцем"
 
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Waxing Quarterstaff"
+	
+	[tag]"icon path"	[value]"CrescentQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Waxing Quarterstaff"
+	[tag]"name RU"		[value]"Waxing Quarterstaff"
+
+
+	
 	[tag]"icon path"	[value]"CrescentQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
 	
@@ -317,12 +583,54 @@ ADD_NEW_DATA_ENTITY
 	
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Crescent Quarterstaff"
 	[tag]"name RU"		[value]"Боевой посох с полумесяцем эксперта"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Lunar Quarterstaff"
+
+
+
+	
+
+	[tag]"icon path"	[value]"CrescentQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lunar Quarterstaff"
+	[tag]"name RU"		[value]"Lunar Quarterstaff"
 
 	[tag]"icon path"	[value]"CrescentQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -422,6 +730,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Slicing Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный режущий боевой посох"
 
+
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bladed Quarterstaff"
+
+
+
+	
 	[tag]"icon path"	[value]"SlicingQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
 	
@@ -435,6 +751,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bladed Quarterstaff"
+	[tag]"name RU"		[value]"Bladed Quarterstaff"
+
+
+
+	
+	[tag]"icon path"	[value]"SlicingQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 
 ADD_NEW_DATA_ENTITY
@@ -443,6 +796,37 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Slicing Quarterstaff"
 	[tag]"name RU"		[value]"Режущий боевой посох эксперта"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Razor Quarterstaff"
+
+
+
+	
+
+	[tag]"icon path"	[value]"SlicingQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Razor Quarterstaff"
+	[tag]"name RU"		[value]"Razor Quarterstaff"
 
 	[tag]"icon path"	[value]"SlicingQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
@@ -494,6 +878,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -502,6 +898,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Advanced Barrier Quarterstaff"
 	[tag]"name RU"		[value]"Улучшенный барьерный боевой посох"
 
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Guardian Quarterstaff"
+
+
+
+
+	
 	[tag]"icon path"	[value]"BarrierQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"
 	
@@ -514,6 +918,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
+		
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Quarterstaff"
+	[tag]"name RU"		[value]"Guardian Quarterstaff"
+
+
+
+
+	
+	[tag]"icon path"	[value]"BarrierQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Quarterstaff"
+	[tag]"name RU"		[value]"Guardian Quarterstaff"
+
+
+
+	
+	[tag]"icon path"	[value]"BarrierQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -521,6 +997,36 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Barrier Quarterstaff"
 	[tag]"name RU"		[value]"Барьерный боевой посох эксперта"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Aegis Quarterstaff"
+
+
+
+	
+
+	[tag]"icon path"	[value]"BarrierQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Aegis Quarterstaff"
+	[tag]"name RU"		[value]"Aegis Quarterstaff"
+
+
+	
 
 	[tag]"icon path"	[value]"BarrierQuarterstaff"
 	[tag]"base class"	[value]"Quarterstaves"

@@ -44,12 +44,20 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Advanced Iron Greaves"
+	[tag]"name EN"		[value]"Expert Iron Greaves"
 	[tag]"name RU"		[value]"Улучшенные железные поножи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Veteran Greaves"
+
 
 	[tag]"icon path"	[value]"IronGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -66,13 +74,128 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bulwark Greaves"
+	[tag]"name RU"		[value]"Veteran Greaves"
+
+
+	[tag]"icon path"	[value]"IronGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"132"
+	[tag]"base armour max"	[value]"132"calc
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Iron Greaves"
+	[tag]"name RU"		[value]"Улучшенные железные поножи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soldiering Greaves"
+
+
+	[tag]"icon path"	[value]"IronGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"132"
+	[tag]"base armour max"	[value]"132"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soldiering Greaves"
+	[tag]"name RU"		[value]"Soldiering Greaves"
+
+
+	[tag]"icon path"	[value]"IronGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"132"
+	[tag]"base armour max"	[value]"132"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Expert Iron Greaves"
+	[tag]"name EN"		[value]"Veteran Greaves"
 	[tag]"name RU"		[value]"Железные поножи эксперта"
+
 
 	[tag]"icon path"	[value]"IronGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -89,6 +212,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -113,12 +248,20 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Bronze Greaves"
 	[tag]"name RU"		[value]"Улучшенные бронзовые поножи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Lionheart Greaves"
 
 	[tag]"icon path"	[value]"BronzeGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -135,6 +278,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lionheart Greaves"
+	[tag]"name RU"		[value]"Lionheart Greaves"
+
+
+	[tag]"icon path"	[value]"BronzeGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"147"
+	[tag]"base armour max"	[value]"147"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -159,12 +334,22 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Trimmed Greaves"
 	[tag]"name RU"		[value]"Улучшенные пологнанные поножи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Greaves"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -181,6 +366,39 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Greaves"
+	[tag]"name RU"		[value]"Elegant Greaves"
+
+	[tag]"icon path"	[value]"TrimmedGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"157"
+	[tag]"base armour max"	[value]"157"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -188,6 +406,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Trimmed Greaves"
 	[tag]"name RU"		[value]"Пологнанные поножи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ornate Greaves"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -204,6 +425,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Greaves"
+	[tag]"name RU"		[value]"Ornate Greaves"
+
+	[tag]"icon path"	[value]"TrimmedGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"200"
+	[tag]"base armour max"	[value]"200"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -228,12 +485,19 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Stone Greaves"
 	[tag]"name RU"		[value]"Улучшенные каменные поножи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Carved Greaves"
 
 	[tag]"icon path"	[value]"StoneGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -250,6 +514,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Greaves"
+	[tag]"name RU"		[value]"Carved Greaves"
+
+
+	[tag]"icon path"	[value]"StoneGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"167"
+	[tag]"base armour max"	[value]"167"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -257,6 +563,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Stone Greaves"
 	[tag]"name RU"		[value]"Каменные поножи эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Vaal Greaves"
 
 	[tag]"icon path"	[value]"StoneGreaves"
 	[tag]"base class"	[value]"Boots"
@@ -273,6 +582,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vaal Greaves"
+	[tag]"name RU"		[value]"Vaal Greaves"
+
+
+	[tag]"icon path"	[value]"StoneGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"219"
+	[tag]"base armour max"	[value]"219"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+	
+
+
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -413,12 +764,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Laced Boots"
 	[tag]"name RU"		[value]"Улучшенные сапоги с тесьмой"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bound Boots"
 
 	[tag]"icon path"	[value]"LacedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -437,12 +799,61 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bound Boots"
+	[tag]"name RU"		[value]"Bound Boots"
+
+
+	[tag]"icon path"	[value]"LacedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Laced Boots"
 	[tag]"name RU"		[value]"Сапоги с тесьмой эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cinched Boots"
 
 	[tag]"icon path"	[value]"LacedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -459,6 +870,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cinched Boots"
+	[tag]"name RU"		[value]"Cinched Boots"
+
+	[tag]"icon path"	[value]"LacedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"166"
+	[tag]"base evasion max"	[value]"166"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -485,12 +942,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Embossed Boots"
 	[tag]"name RU"		[value]"Улучшенные тиснёные сапоги"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sleek Boots"
+
 
 	[tag]"icon path"	[value]"EmbossedBoots"
 	[tag]"base class"	[value]"Boots"
@@ -507,6 +975,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sleek Boots"
+	[tag]"name RU"		[value]"Sleek Boots"
+
+
+	[tag]"icon path"	[value]"EmbossedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -533,12 +1042,34 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Steeltoe Boots"
 	[tag]"name RU"		[value]"Улучшенные сапоги со стальным носком"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Studded Boots"
+
 
 	[tag]"icon path"	[value]"SteeltoeBoots"
 	[tag]"base class"	[value]"Boots"
@@ -557,12 +1088,64 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Studded Boots"
+	[tag]"name RU"		[value]"Studded Boots"
+
+	[tag]"icon path"	[value]"SteeltoeBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"143"
+	[tag]"base evasion max"	[value]"143"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Steeltoe Boots"
 	[tag]"name RU"		[value]"Сапоги со стальным носком эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cavalry Boots"
 
 	[tag]"icon path"	[value]"SteeltoeBoots"
 	[tag]"base class"	[value]"Boots"
@@ -579,6 +1162,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cavalry Boots"
+	[tag]"name RU"		[value]"Cavalry Boots"
+
+
+	[tag]"icon path"	[value]"SteeltoeBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"183"
+	[tag]"base evasion max"	[value]"183"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -605,12 +1230,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Lizardscale Boots"
-	[tag]"name RU"		[value]"Улучшенные сапоги из кожи ящера"
+	[tag]"name RU"		[value]"Сапоги из кожи ящера"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Serpentscale Boots"
 
 	[tag]"icon path"	[value]"LizardscaleBoots"
 	[tag]"base class"	[value]"Boots"
@@ -620,13 +1254,48 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base evasion min"	[value]"152"
-	[tag]"base evasion max"	[value]"152"
+	[tag]"base evasion min"	[value]"90"
+	[tag]"base evasion max"	[value]"90"
 	
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Serpentscale Boots"
+	[tag]"name RU"		[value]"Serpentscale Boots"
+
+	[tag]"icon path"	[value]"LizardscaleBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"90"
+	[tag]"base evasion max"	[value]"90"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -635,6 +1304,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Expert Lizardscale Boots"
 	[tag]"name RU"		[value]"Сапоги из кожи ящера эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dragonscale Boots"
 
 	[tag]"icon path"	[value]"LizardscaleBoots"
 	[tag]"base class"	[value]"Boots"
@@ -651,6 +1323,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dragonscale Boots"
+	[tag]"name RU"		[value]"Dragonscale Boots"
+
+	[tag]"icon path"	[value]"LizardscaleBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"200"
+	[tag]"base evasion max"	[value]"200"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -796,12 +1500,19 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Wrapped Sandals"
 	[tag]"name RU"		[value]"Улучшенные сандалии с обмотками"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Laced Sandals"
 
 	[tag]"icon path"	[value]"WrappedSandals"
 	[tag]"base class"	[value]"Boots"
@@ -820,12 +1531,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Laced Sandals"
+	[tag]"name RU"		[value]"Laced Sandals"
+
+	[tag]"icon path"	[value]"WrappedSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"48"
+	[tag]"base energy shield max"	[value]"48"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Wrapped Sandals"
 	[tag]"name RU"		[value]"Сандалии с обмотками эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bound Sandals"
 
 	[tag]"icon path"	[value]"WrappedSandals"
 	[tag]"base class"	[value]"Boots"
@@ -842,6 +1590,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bound Sandals"
+	[tag]"name RU"		[value]"Bound Sandals"
+
+	[tag]"icon path"	[value]"WrappedSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"63"
+	[tag]"base energy shield max"	[value]"63"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -868,12 +1651,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Lattice Sandals"
 	[tag]"name RU"		[value]"Улучшенные сетчатые сандалии"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bangled Sandals"
 
 	[tag]"icon path"	[value]"LatticeSandals"
 	[tag]"base class"	[value]"Boots"
@@ -890,6 +1682,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bangled Sandals"
+	[tag]"name RU"		[value]"Bangled Sandals"
+
+	[tag]"icon path"	[value]"LatticeSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"52"
+	[tag]"base energy shield max"	[value]"52"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -916,12 +1742,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Silk Slippers"
 	[tag]"name RU"		[value]"Улучшенные шёлковые тапочки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Elegant Slippers"
 
 	[tag]"icon path"	[value]"SilkSlippers"
 	[tag]"base class"	[value]"Boots"
@@ -940,12 +1774,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Slippers"
+	[tag]"name RU"		[value]"Elegant Slippers"
+
+	[tag]"icon path"	[value]"SilkSlippers"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"55"
+	[tag]"base energy shield max"	[value]"55"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Silk Slippers"
 	[tag]"name RU"		[value]"Шёлковые тапочки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Luxurious Slippers"
 
 	[tag]"icon path"	[value]"SilkSlippers"
 	[tag]"base class"	[value]"Boots"
@@ -962,6 +1831,45 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Luxurious Slippers"
+	[tag]"name RU"		[value]"Luxurious Slippers"
+
+	[tag]"icon path"	[value]"SilkSlippers"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"69"
+	[tag]"base energy shield max"	[value]"69"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -988,12 +1896,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Feathered Sandals"
 	[tag]"name RU"		[value]"Улучшенные пернатые сандалии"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dunerunner Sandals"
 
 	[tag]"icon path"	[value]"FeatheredSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1012,12 +1928,48 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dunerunner Sandals"
+	[tag]"name RU"		[value]"Dunerunner Sandals"
+
+	[tag]"icon path"	[value]"FeatheredSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"58"
+	[tag]"base energy shield max"	[value]"58"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Feathered Sandals"
 	[tag]"name RU"		[value]"Пернатые сандалии эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Sandsworn Sandals"
 
 	[tag]"icon path"	[value]"FeatheredSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1034,6 +1986,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sandsworn Sandals"
+	[tag]"name RU"		[value]"Sandsworn Sandals"
+
+	[tag]"icon path"	[value]"FeatheredSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"75"
+	[tag]"base energy shield max"	[value]"75"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1152,12 +2141,19 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Mail Sabatons"
 	[tag]"name RU"		[value]"Улучшенные кольчужные сабатоны"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soldiering Sabatons"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1177,12 +2173,54 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soldiering Sabatons"
+	[tag]"name RU"		[value]"Soldiering Sabatons"
+
+	[tag]"icon path"	[value]"MailSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"73"
+	[tag]"base armour max"	[value]"73"
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"65"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Mail Sabatons"
 	[tag]"name RU"		[value]"Кольчужные сабатоны эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Veteran Sabatons"
 
 	[tag]"icon path"	[value]"MailSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1201,6 +2239,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Veteran Sabatons"
+	[tag]"name RU"		[value]"Veteran Sabatons"
+
+	[tag]"icon path"	[value]"MailSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base evasion min"	[value]"91"
+	[tag]"base evasion max"	[value]"91"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1229,12 +2301,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Advanced Braced Sabatons"
+	[tag]"name EN"		[value]"Expert Braced Sabatons"
 	[tag]"name RU"		[value]"Улучшенные сабатоны с ремнями"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Noble Sabatons"
 
 	[tag]"icon path"	[value]"BracedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1255,12 +2335,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Expert Braced Sabatons"
-	[tag]"name RU"		[value]"Сабатоны с ремнями эксперта"
+	[tag]"name EN"		[value]"Noble Sabatons"
+	[tag]"name RU"		[value]"Noble Sabatons"
+
+	[tag]"icon path"	[value]"BracedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"81"
+	[tag]"base armour max"	[value]"81"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Braced Sabatons"
+	[tag]"name RU"		[value]"Улучшенные сабатоны с ремнями"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Goldwork Sabatons"
+
+	[tag]"icon path"	[value]"BracedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"81"
+	[tag]"base armour max"	[value]"81"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Goldwork Sabatons"
+	[tag]"name RU"		[value]"Goldwork Sabatons"
 
 	[tag]"icon path"	[value]"BracedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1306,12 +2452,21 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Stacked Sabatons"
 	[tag]"name RU"		[value]"Улучшенные пластинчатые сабатоны"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bastion Sabatons"
 
 	[tag]"icon path"	[value]"StackedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1331,12 +2486,58 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bastion Sabatons"
+	[tag]"name RU"		[value]"Bastion Sabatons"
+
+	[tag]"icon path"	[value]"StackedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base evasion min"	[value]"84"
+	[tag]"base evasion max"	[value]"84"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Stacked Sabatons"
 	[tag]"name RU"		[value]"Пластинчатые сабатоны эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Fortress Sabatons"
 
 	[tag]"icon path"	[value]"StackedSabatons"
 	[tag]"base class"	[value]"Boots"
@@ -1355,6 +2556,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fortress Sabatons"
+	[tag]"name RU"		[value]"Fortress Sabatons"
+
+	[tag]"icon path"	[value]"StackedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"120"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base evasion min"	[value]"110"
+	[tag]"base evasion max"	[value]"110"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1510,12 +2745,46 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Padded Leggings"
 	[tag]"name RU"		[value]"Ватные сапоги эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Faithful Leggings"
+
+	[tag]"icon path"	[value]"PaddedLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Faithful Leggings"
+	[tag]"name RU"		[value]"Faithful Leggings"
 
 	[tag]"icon path"	[value]"PaddedLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1536,12 +2805,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Secured Leggings"
-	[tag]"name RU"		[value]"Меховые сапоги"
+	[tag]"name EN"		[value]"Advanced Padded Leggings"
+	[tag]"name RU"		[value]"Ватные сапоги эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Adherent Leggings"
+
+	[tag]"icon path"	[value]"PaddedLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adherent Leggings"
+	[tag]"name RU"		[value]"Adherent Leggings"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1562,12 +2868,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Secured Leggings"
 	[tag]"name RU"		[value]"Улучшенные меховые сапоги"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bound Leggings"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1588,12 +2903,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bound Leggings"
+	[tag]"name RU"		[value]"Bound Leggings"
+
+	[tag]"icon path"	[value]"SecuredLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"81"
+	[tag]"base armour max"	[value]"81"
+	[tag]"base energy shield min"	[value]"29"
+	[tag]"base energy shield max"	[value]"29"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Secured Leggings"
 	[tag]"name RU"		[value]"Меховые сапоги эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Apostle Leggings"
 
 	[tag]"icon path"	[value]"SecuredLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1612,6 +2968,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Apostle Leggings"
+	[tag]"name RU"		[value]"Apostle Leggings"
+
+	[tag]"icon path"	[value]"SecuredLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"110"
+	[tag]"base armour max"	[value]"110"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1639,12 +3030,20 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Pelt Leggings"
 	[tag]"name RU"		[value]"Улучшенные сапоги из шкур"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Shamanistic Leggings"
 
 	[tag]"icon path"	[value]"PeltLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1664,12 +3063,53 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shamanistic Leggings"
+	[tag]"name RU"		[value]"Shamanistic Leggings"
+
+	[tag]"icon path"	[value]"PeltLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Pelt Leggings"
 	[tag]"name RU"		[value]"Сапоги из шкур эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Warlock Leggings"
 
 	[tag]"icon path"	[value]"PeltLeggings"
 	[tag]"base class"	[value]"Boots"
@@ -1688,6 +3128,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warlock Leggings"
+	[tag]"name RU"		[value]"Warlock Leggings"
+
+	[tag]"icon path"	[value]"PeltLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"120"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1823,12 +3298,19 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Frayed Shoes"
 	[tag]"name RU"		[value]"Улучшенные потёртые ботинки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wayfarer Shoes"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1849,12 +3331,57 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wayfarer Shoes"
+	[tag]"name RU"		[value]"Wayfarer Shoes"
+
+	[tag]"icon path"	[value]"FrayedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"65"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"26"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Frayed Shoes"
 	[tag]"name RU"		[value]"Потёртые ботинки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Wanderer Shoes"
 
 	[tag]"icon path"	[value]"FrayedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1873,6 +3400,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wanderer Shoes"
+	[tag]"name RU"		[value]"Wanderer Shoes"
+
+	[tag]"icon path"	[value]"FrayedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"91"
+	[tag]"base evasion max"	[value]"91"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1901,12 +3468,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Threaded Shoes"
 	[tag]"name RU"		[value]"Улучшенные прошитые ботинки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Silverbuckled Shoes"
 
 	[tag]"icon path"	[value]"ThreadedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1927,12 +3502,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Silverbuckled Shoes"
+	[tag]"name RU"		[value]"Silverbuckled Shoes"
+
+	[tag]"icon path"	[value]"ThreadedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"29"
+	[tag]"base energy shield max"	[value]"29"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Threaded Shoes"
 	[tag]"name RU"		[value]"Прошитые ботинки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Charmed Shoes"
 
 	[tag]"icon path"	[value]"ThreadedShoes"
 	[tag]"base class"	[value]"Boots"
@@ -1951,6 +3568,50 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Charmed Shoes"
+	[tag]"name RU"		[value]"Charmed Shoes"
+
+	[tag]"icon path"	[value]"ThreadedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
@@ -1979,12 +3640,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Advanced Hunting Shoes"
 	[tag]"name RU"		[value]"Улучшенные охотничьи ботинки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Treerunner Shoes"
 
 	[tag]"icon path"	[value]"HuntingShoes"
 	[tag]"base class"	[value]"Boots"
@@ -2005,12 +3679,58 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Treerunner Shoes"
+	[tag]"name RU"		[value]"Treerunner Shoes"
+
+	[tag]"icon path"	[value]"HuntingShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"84"
+	[tag]"base evasion max"	[value]"84"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Expert Hunting Shoes"
 	[tag]"name RU"		[value]"Охотничьи ботинки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Quickslip Shoes"
 
 	[tag]"icon path"	[value]"HuntingShoes"
 	[tag]"base class"	[value]"Boots"
@@ -2029,6 +3749,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Quickslip Shoes"
+	[tag]"name RU"		[value]"Quickslip Shoes"
+
+	[tag]"icon path"	[value]"HuntingShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"110"
+	[tag]"base evasion max"	[value]"110"
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 
 
 	ADD_NEW_DATA_ENTITY
