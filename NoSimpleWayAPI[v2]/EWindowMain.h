@@ -587,11 +587,13 @@ public:
 
 
 	//sounds
-	EntityButtonFilterSound* pointer_to_custom_sound_button;
-	bool	custom_sound_suppressor_bool;
+	EntityButtonFilterSound*	pointer_to_custom_sound_button;
+	bool						custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound* pointer_to_game_sound_button;
-	bool	game_sound_suppressor_bool;
+	EntityButtonFilterSound*	pointer_to_game_sound_button;
+	bool						game_sound_suppressor_bool;
+
+
 	EntityButton* user_sound_volume_button;
 	EntityButton* ingame_sound_volume_button;
 
@@ -1416,6 +1418,8 @@ namespace EDataActionCollection
 	void action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_ingame_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_play_attached_sound_for_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -1478,6 +1482,7 @@ namespace EDataActionCollection
 	void action_remove_wide_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_make_unsave_filter_block_changes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_make_unsave_filter_block_changes_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_make_unsave_filter_block_changes_and_refresh_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_show_hide_correct_loot_filters(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -2072,6 +2077,10 @@ public:
 
 	EButtonGroupFilterBlock* matched_show_hide_block;
 
+
+
+
+
 	//BG COLOR
 	HSVRGBAColor** matched_bg_color;
 	EButtonGroupFilterBlock* matched_bg_color_block;
@@ -2083,6 +2092,23 @@ public:
 	//RAMA COLOR
 	HSVRGBAColor** matched_rama_color;
 	EButtonGroupFilterBlock* matched_rama_color_block;
+
+
+
+
+
+
+	//INGAME SOUND
+	EntityButtonFilterSound*	matched_ingame_sound_button;
+	EButtonGroupFilterBlock*	matched_ingame_sound_block;
+
+	EClickableArea*				play_sound_clickable_area;
+
+
+
+
+
+
 
 
 	//MINIMAP ICONS
@@ -2098,6 +2124,12 @@ public:
 	//EButtonGroupFilterBlock* matched_minimap_icon_size_block;
 
 	EButtonGroupFilterBlock* matched_minimap_icon_block;
+
+
+
+
+
+
 
 	//SIZE
 	int* matched_size;

@@ -2343,9 +2343,13 @@ void EClickableArea::draw()
 	//if ((parent_custom_data != nullptr)&&(*parent_custom_data->is_second_pass)) { EInputCore::logger_simple_info("idiot?"); }
 	if
 	(
-		(draw_only_is_specific_region_overlapped == nullptr)
-		||
-		(draw_only_is_specific_region_overlapped->overlapped_by_mouse())
+		(clickable_region_is_active)
+		&&
+		(
+			(draw_only_is_specific_region_overlapped == nullptr)
+			||
+			(draw_only_is_specific_region_overlapped->overlapped_by_mouse())
+		)
 	)
 	{
 		if (!sprite_layer_list.empty())

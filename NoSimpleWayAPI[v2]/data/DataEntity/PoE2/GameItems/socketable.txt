@@ -313,7 +313,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Body Rune"
-	[tag]"name RU"		[value]"Старшая руна руна тела"
+	[tag]"name RU"		[value]"Старшая руна тела"
 
 	[tag]"icon path"	[value]"GreaterBodyRune"
 	[tag]"base class"	[value]"Socketable"
@@ -507,9 +507,81 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Inspiration Rune"
+	[tag]"name RU"		[value]"Руна вдохновения"
+
+	[tag]"icon path"	[value]"InspirationRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
 		
 	
 	
+	
+	
+		ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Inspiration Rune"
+	[tag]"name RU"		[value]"Старшая руна вдохновения"
+
+	[tag]"icon path"	[value]"GreaterInspirationRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Stone Rune"
+	[tag]"name RU"		[value]"Младшая руна камня"
+
+	[tag]"icon path"	[value]"LesserStoneRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Lesser"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+		
 	
 	
 	ADD_NEW_DATA_ENTITY
@@ -529,10 +601,89 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Stone Rune"
+	[tag]"name RU"		[value]"Старшая руна камня"
+
+	[tag]"icon path"	[value]"GreaterStoneRune"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Greater"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
 		
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Vision Rune"
+	[tag]"name RU"		[value]"Младшая руна видения"
+
+	[tag]"icon path"	[value]"LesserVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+		
+	
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vision Rune"
+	[tag]"name RU"		[value]"Руна видения"
+
+	[tag]"icon path"	[value]"VisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+		
+
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -551,7 +702,130 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
+	
+		
+	
+	
+		
+
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Rune of Leadership"
+	[tag]"name RU"		[value]"Старшая руна лидерства"
+
+	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+		
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Rune of Tithing"
+	[tag]"name RU"		[value]"Старшая руна десятины"
+
+	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Rune of Tithing"
+	[tag]"name RU"		[value]"Старшая руна десятины"
+
+	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+		
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Rune of Alacrity"
+	[tag]"name RU"		[value]"Старшая руна ловкости"
+
+	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+		
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Rune of Nobility"
+	[tag]"name RU"		[value]"Старшая руна благородства"
+
+	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 	
 		
 	

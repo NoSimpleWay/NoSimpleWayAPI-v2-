@@ -316,7 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Trimmed Greaves"
-	[tag]"name RU"		[value]"Пологнанные поножи"
+	[tag]"name RU"		[value]"Подогнанные поножи"
 
 	[tag]"icon path"	[value]"TrimmedGreaves"
 	[tag]"base class"	[value]"Boots"

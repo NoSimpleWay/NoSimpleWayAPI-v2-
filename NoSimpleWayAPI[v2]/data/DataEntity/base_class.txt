@@ -536,7 +536,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"can be"		[value]"Influenced"
 	
 	[tag]"exist for"	[value]"PoE1"
-	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"icon path"	[value]"class_warstaves"
 	
@@ -1652,6 +1651,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Боевые посохи(PoE2)"
 	
 	[tag]"short name"	[value]"Quarterstaff"
+	
+	[tag]"max rune sockets"	[value]"3"
 
 	[tag]"can be"		[value]"Fractured"
 	[tag]"can be"		[value]"Corrupted"

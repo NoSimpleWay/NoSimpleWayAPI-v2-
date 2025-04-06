@@ -5398,8 +5398,19 @@
 [Rebirth Rune] dust quantity = 0, dust tag = Trash
 [Greater Rebirth Rune] dust quantity = 0, dust tag = Trash
 [Lesser Inspiration Rune] dust quantity = 0, dust tag = Trash
+[Inspiration Rune] dust quantity = 0, dust tag = Trash
+[Greater Inspiration Rune] dust quantity = 0, dust tag = Trash
+[Lesser Stone Rune] dust quantity = 0, dust tag = Trash
 [Stone Rune] dust quantity = 0, dust tag = Trash
+[Greater Stone Rune] dust quantity = 0, dust tag = Trash
+[Lesser Vision Rune] dust quantity = 0, dust tag = Trash
+[Vision Rune] dust quantity = 0, dust tag = Trash
 [Greater Vision Rune] dust quantity = 0, dust tag = Trash
+[Greater Rune of Leadership] dust quantity = 0, dust tag = Trash
+[Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
+[Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
+[Greater Rune of Alacrity] dust quantity = 0, dust tag = Trash
+[Greater Rune of Nobility] dust quantity = 0, dust tag = Trash
 [Soul Core of Tacati] dust quantity = 0, dust tag = Trash
 [Soul Core of Opiloti] dust quantity = 0, dust tag = Trash
 [Soul Core of Jiquani] dust quantity = 0, dust tag = Trash
@@ -5530,10 +5541,6 @@
 [Tangmazu's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Olroth's Reliquary Key] dust quantity = 0, dust tag = Trash
 [The Arbiter's Reliquary Key] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
-[Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Zarokh's Reliquary Key] dust quantity = 0, dust tag = Trash
 [Withered Wand] dust quantity = 0, dust tag = Trash
 [Bone Wand] dust quantity = 0, dust tag = Trash
