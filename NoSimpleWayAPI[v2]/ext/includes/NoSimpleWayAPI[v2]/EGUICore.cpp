@@ -1044,6 +1044,10 @@ void EButtonGroup::button_group_update(float _d)
 
 		phantom_translate_if_need();
 
+		if ((EInputCore::MOUSE_BUTTON_RIGHT) && (focused_button_group_clickable_area != nullptr))
+		{
+			focused_button_group_clickable_area->group_is_suppressed = true;
+		}
 
 		for (EntityButton* but : all_button_list)
 		{
@@ -4463,23 +4467,23 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 	//only active and visible groups can be focused
 	if
 		(
-			(_group->is_this_group_active())
+			(_group->is_this_group_active())//groups can be diasbled
 			&&
-			(!_group->block_need_remove)
+			(!_group->block_need_remove)//groups can be marked as removed
 			&&
-			(_group->is_in_visible_diapason())
+			(_group->is_in_visible_diapason())//groups can be outside of screen space (or parent group)
 			&&
-			(!_group->group_is_suppressed)
+			(!_group->group_is_suppressed)//groups can be suppressed 9still visible, but not active)
 			&&
-			(!_group->is_blocked_by_superfocus())
+			(!_group->is_blocked_by_superfocus())//groups can be blcoked by another superfocused group
 		)
 	{
 		if
-			(
-				EButtonGroup::catched_by_mouse(_group)
-				&&
-				(_group->can_be_focused)
-				)
+		(
+			(EButtonGroup::catched_by_mouse(_group))
+			&&
+			(_group->can_be_focused)
+		)
 		{
 			//default focus
 			focused_button_group = _group;
@@ -4493,6 +4497,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 				EButtonGroup::focused_button_group_for_select = _group;
 			}
 
+			//try focus clickable area
 			if ((!_group->clickable_area_list.empty()) && (_group->clickable_area_can_be_focused))
 			{
 				EButtonGroup::focused_button_group_clickable_area = _group;
@@ -4500,13 +4505,13 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 
 			//focus last group with slider
 			if
-				(
-					(_group->slider != nullptr)
-					&&
-					(_group->slider->entity_is_active())
-					&&
-					(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
-					)
+			(
+				(_group->slider != nullptr)
+				&&
+				(_group->slider->entity_is_active())
+				&&
+				(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
+			)
 			{
 				focused_button_group_with_slider = _group;
 			}

@@ -5829,7 +5829,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string EWindowMain::this_version = "1.4.1";
+const std::string EWindowMain::this_version = "1.0.1";
 //DataEntityParserMode data_entity_parser_mode = DataEntityParserMode::UNDEFINED;
 
 void EWindowMain::check_new_version_from_github()
@@ -23906,7 +23906,7 @@ void EButtonGroupDataEntity::background_update(float _d)
 	{
 		
 
-		for (int i = 0; i < 50; i++)
+		for (int i = 0; i < 10; i++)
 			if (data_entity_id < EDataEntity::data_entity_global_list.size())
 			{
 				EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button

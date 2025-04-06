@@ -477,7 +477,7 @@ int main()
 
 		//NS_EGraphicCore::stored_zoom = NS_EGraphicCore::current_zoom;
 
-		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		if ((!EInputCore::MOUSE_BUTTON_LEFT) && (!EInputCore::MOUSE_BUTTON_RIGHT))
 		{
 			EButtonGroup::focused_button_group = nullptr;
 			EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
