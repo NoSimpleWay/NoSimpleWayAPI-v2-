@@ -1,0 +1,171 @@
+START
+start[0ms] Delay status: Minimal
+init graphic core[333ms] Delay status: High
+init input core[0ms] Delay status: Minimal
+init sound engine[80ms] Delay status: Low
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/stackable_currency.txt[7ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/omens.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tattoos.txt[4ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gold.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/oils.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/catalysts.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/charms.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency_shards.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delirium_orbs.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/fossils.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_splinters.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/breach_blessings.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tainted_currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tinctures.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/expedition_currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/scouting_reports.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/eldritch_currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incubators.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incursion_items.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/vials.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/nets.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/essences.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/amulets.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/abyss_jewels.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/belts.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rings.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/jewels.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/divinations.txt[9ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/body_armours.txt[7ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gloves.txt[4ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/helmets.txt[5ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/boots.txt[4ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/contracts.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/corpses.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/blueprints.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_brooch.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_cloak.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_gear.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_targets.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_tool.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/trinkets.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/bows.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quivers.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_axes.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_maces.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_swords.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/warstaves.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rune_daggers.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sceptres.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wands.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/staves.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sanctum_research.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/shields.txt[6ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/claws.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/daggers.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_axes.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_maces.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_swords.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/support_skill_gems.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/skill_gems.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/flasks.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/mana_flasks.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/hybrid_flasks.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/utility_flasks.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_fragments.txt[11ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/maps.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/memories.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/misc_map_items.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harvest_seeds.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/metamorph_samples.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quest_items.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/relics.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/item_piece.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/ambers_of_the_allflame.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/uniques.txt[55ms] Delay status: Low
+	(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/_special_items.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/influence.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/base_class.txt[6ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/basic.txt[128ms] Delay status: Medium
+	(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/special.txt[5ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/_special_items.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/amulets.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/belts.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/body_armours.txt[23ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/boots.txt[10ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bows.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bucklers.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/catalysts.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/charms.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/crossbows.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/currency_shards.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/distilled_emotions.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/essences.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/expedition_currency.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/flasks.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/foci.txt[3ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/gloves.txt[13ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/helmets.txt[17ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/jewels.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/mana_flasks.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_fragments.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_splinters.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/omens.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/one_hand_maces.txt[8ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/pinnacle_keys.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quarterstaves.txt[5ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quivers.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/relics.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/rings.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/sceptres.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/shields.txt[24ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/socketable.txt[8ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/spears.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/stackable_currency.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/staves.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/tablets.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/trial_coins.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/two_hand_maces.txt[12ms] Delay status: Very low
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/uncut.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/vault_keys.txt[1ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wands.txt[2ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/waystones.txt[0ms] Delay status: Minimal
+	(EWindowMain) load data entity: data/DataEntity/localisation.txt[41ms] Delay status: Very low
+	(EWindowMain) split data entity to named structs[7ms] Delay status: Minimal
+	(EWindowMain) add game item data entity to named lists[3ms] Delay status: Minimal
+	(EWindowMain) register default filter rules[0ms] Delay status: Minimal
+	(EWindowMain) import filter rules for PoE1[21ms] Delay status: Very low
+	(EWindowMain) import filter rules for PoE2[29ms] Delay status: Very low
+	(EWindowMain) preload textures[21ms] Delay status: Very low
+	(EWindowMain) register rarity[0ms] Delay status: Minimal
+	(EWindowMain) register alternate quality[0ms] Delay status: Minimal
+	(EWindowMain) register game item attributes[21ms] Delay status: Very low
+	(EWindowMain) import loot pattern[104ms] Delay status: Medium
+	(EWindowMain) load config from disc[1ms] Delay status: Minimal
+	(EWindowMain) load config filter versions[0ms] Delay status: Minimal
+	(EWindowMain) register color editor[4ms] Delay status: Minimal
+	(EWindowMain) register bottom search line[1ms] Delay status: Minimal
+	(EWindowMain) register filter tabs[0ms] Delay status: Minimal
+	(EWindowMain) register styles group[224ms] Delay status: Medium
+	(EWindowMain) register loot filter errors group[0ms] Delay status: Minimal
+	(EWindowMain) register loot version configurator group[2ms] Delay status: Minimal
+	(EWindowMain) register create new loot filter group[1ms] Delay status: Minimal
+	(EWindowMain) register data entities group[3ms] Delay status: Minimal
+	(EWindowMain) register world parameters group[2ms] Delay status: Minimal
+	(EWindowMain) register loot simulator group[22ms] Delay status: Very low
+	(EWindowMain) register add content to filter blcok group[1ms] Delay status: Minimal
+	(EWindowMain) register sound group[22ms] Delay status: Very low
+	(EWindowMain) register loot filter list group[26ms] Delay status: Very low
+	(EWindowMain) register about group[5ms] Delay status: Minimal
+	(EWindowMain) register filter block colour editor block[1ms] Delay status: Minimal
+	(EWindowMain) register explicit manager group[77ms] Delay status: Low
+	(EWindowMain) register poe ninja price checker group[2ms] Delay status: Minimal
+	(EWindowMain) regiter head buttons group[8ms] Delay status: Minimal
+	(EWindowMain) register confirm deleting filter block group[0ms] Delay status: Minimal
+	(EWindowMain) register confirm opening autogenerated loot filter group[1ms] Delay status: Minimal
+	(EWindowMain) register confirm opening autosaved loot filter group[0ms] Delay status: Minimal
+	(EWindowMain) read version from github[3ms] Delay status: Minimal
+	(EWindowMain) check new version from github[161ms] Delay status: Medium
+	(EWindowMain) read user pattern[1ms] Delay status: Minimal
+TOTAL TIME OF (EWindowMain) is [1287ms]
+register debug structs[6ms] Delay status: Minimal

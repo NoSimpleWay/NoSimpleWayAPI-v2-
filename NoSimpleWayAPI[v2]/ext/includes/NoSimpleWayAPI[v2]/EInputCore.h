@@ -12,6 +12,11 @@
 /**/#include "EGraphicCore.h"
 #endif
 
+#ifndef _CHRONO_ALREADY_INCLUDED_
+/**/#define _CHRONO_ALREADY_INCLUDED_
+/**/#include <chrono>
+#endif
+
 #include <string>
 #include "ConsoleColor.h"
 
@@ -23,6 +28,16 @@ namespace std
 namespace EInputCore
 {
 	extern bool NSW_have_unsave_changes;
+
+	extern std::ofstream				logger_writer;
+	extern std::string					logger_buffer;
+	//extern std::string					logger_prefix;
+	extern unsigned long long			last_timestamp;
+
+	//logger prefixes
+	extern std::string					logger_prefixes[128];
+	extern unsigned long long			prefix_timestamp[128];
+	extern int							active_prefix_id;
 
 	extern int		scroll_direction;
 
@@ -41,6 +56,11 @@ namespace EInputCore
 
 	extern	char		LAST_INPUTED_CHAR;
 
+	extern void add_log_info_with_timestamp(std::string _text);
+	extern void add_logger_prefix(std::string _text);
+	extern void reset_timestamp();
+	extern void remove_last_logger_prefix();
+
 	extern void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	extern void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 	extern void mouse_position_callback(GLFWwindow* window, double _x, double _y);
@@ -58,6 +78,10 @@ namespace EInputCore
 	extern void logger_simple_success(std::string _message);
 	extern void logger_simple_try(std::string _message);
 	extern void logger_simple_info(std::string _message);
+
+
+
+	
 
 	template<typename T>
 	extern std::string border_this_text(T _data, char _border_symbol)

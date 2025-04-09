@@ -169,6 +169,10 @@ void register_debug_structs()
 }
 int main()
 {
+	EInputCore::logger_writer.open("Log.txt");
+	EInputCore::logger_writer << "START" << std::endl;
+
+
 	#ifndef  _DEBUG
 		FreeConsole();
 	#endif //  _DEBUG
@@ -193,11 +197,21 @@ int main()
 	ent = new Entity();
 	std::cout << "entity pointer: " << ent << std::endl;*/
 
+	EInputCore::last_timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+	
+	
+	EInputCore::add_log_info_with_timestamp("start");
+		
 	NS_EGraphicCore::initiate_graphic_core();
+		EInputCore::add_log_info_with_timestamp("init graphic core");
+
+
 	EInputCore::initiate_input_core();
+		EInputCore::add_log_info_with_timestamp("init input core");
 
 	ESound::irrKlang_initiate_sound_engine();
-	if (ESound::engine != nullptr) { ESound::engine->play2D(ESound::shootSound); }
+		EInputCore::add_log_info_with_timestamp("init sound engine");
+	//if (ESound::engine != nullptr) { ESound::engine->play2D(ESound::shootSound); }
 
 
 
@@ -221,11 +235,15 @@ int main()
 	NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 
-
+	EInputCore::add_logger_prefix("EWindowMain");
 	EWindowMain::link_to_main_window = new EWindowMain();
+	EInputCore::remove_last_logger_prefix();
+	
+
 	EWindow::window_list.push_back(EWindowMain::link_to_main_window);
 
 	register_debug_structs();
+		EInputCore::add_log_info_with_timestamp("register debug structs");
 	EWindowMain::header_line->pointer_to_debug_button->target_group = DebugNamespace::NSW_pointer_to_debug_window;
 
 
@@ -702,10 +720,14 @@ int main()
 		NS_EGraphicCore::pbr_already_updated = true;
 	}
 
+	
+
 	for (EWindow* w : EWindow::window_list)
 	{
 		w->action_on_close();
 	}
+
+	EInputCore::logger_writer.close();
 
 	return 0;
 

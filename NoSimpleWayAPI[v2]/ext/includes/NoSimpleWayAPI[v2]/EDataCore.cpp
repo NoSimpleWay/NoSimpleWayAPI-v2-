@@ -3198,6 +3198,7 @@ void ETextParser::data_entity_parse_file(std::string _file)
 	//EInputCore::logger_simple_info("");
 
 	std::cout << green << "Loaded and parsed: <" << yellow << _file << green << ">" << std::endl;
+	EInputCore::add_log_info_with_timestamp("load data entity: " + _file);
 }
 
 void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _file)

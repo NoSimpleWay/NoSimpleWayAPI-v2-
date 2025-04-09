@@ -6,12 +6,23 @@
 #include "EInputCore.h"
 #endif
 /**/
+
+
 namespace EInputCore
 {
 	int			scroll_direction;
 
 	bool		NSW_have_unsave_changes = false;
 
+	std::ofstream				logger_writer;
+	std::string					logger_buffer = "";
+	//std::string					logger_prefix = "";
+	unsigned long long			last_timestamp;
+
+	std::string					logger_prefixes[128];
+	unsigned long long			prefix_timestamp[128];
+	int							active_prefix_id = -1;
+	
 	bool		MOUSE_BUTTON_LEFT;
 	bool		MOUSE_BUTTON_RIGHT;
 	bool		MOUSE_BUTTON_MID;
@@ -132,6 +143,97 @@ void EInputCore::logger_simple_info(std::string _message)
 	std::cout << white << "[info]: " << _message  << std::endl;
 }
 
+
+void EInputCore::add_log_info_with_timestamp(std::string _text)
+{
+	unsigned long long
+	current_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+
+	unsigned long long
+	passed_time = current_time - last_timestamp;
+
+	if (active_prefix_id >= 0)
+	{
+		//add tabs
+		for (int i = 0; i <= active_prefix_id; i++)
+		{
+			logger_writer << "\t";
+		}
+
+		//add prefixes
+		//for (int i = 0; i <= active_prefix_id; i++)
+		{
+			logger_writer << ("(" + logger_prefixes[active_prefix_id] + ") ");
+		}
+	}
+
+	logger_writer << _text << "[" << (std::chrono::milliseconds)(passed_time) << "]";
+	logger_writer << " ";
+	logger_writer << "Delay status: ";
+
+	if (passed_time >= 1000) { logger_writer << "UNACCEPTABLE!"; }
+	else
+	if (passed_time >= 500)
+	{
+		logger_writer << "Very high";
+	}
+	else
+	if (passed_time >= 250) { logger_writer << "High"; }
+	else
+	if (passed_time >= 100) { logger_writer << "Medium"; }
+	else
+	if (passed_time >= 50) { logger_writer << "Low"; }
+	else
+	if (passed_time >= 10) { logger_writer << "Very low"; }
+	else
+	{ logger_writer << "Minimal"; }
+
+
+
+
+	logger_writer << std::endl;
+	last_timestamp = current_time;
+}
+
+void EInputCore::add_logger_prefix(std::string _text)
+{
+	active_prefix_id++;
+
+	active_prefix_id = std::clamp(active_prefix_id, -1, 127);
+
+	unsigned long long
+	current_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+
+	prefix_timestamp[active_prefix_id]	= current_time;
+	logger_prefixes[active_prefix_id]	= _text;
+	
+	//logger_prefix = _text;
+}
+
+void EInputCore::reset_timestamp()
+{
+	last_timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+}
+
+void EInputCore::remove_last_logger_prefix()
+{
+
+	if (active_prefix_id >= 0)
+	{
+		unsigned long long
+			current_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+
+		unsigned long long
+			passed_time = current_time - prefix_timestamp[active_prefix_id];
+
+		logger_writer << "TOTAL TIME OF (" << logger_prefixes[active_prefix_id] << ") is [" << (std::chrono::milliseconds)(passed_time) << "]" << std::endl;
+	
+
+		active_prefix_id--;
+		active_prefix_id = std::clamp(active_prefix_id, -1, 127);
+	}
+	//logger_prefix = "";
+}
 
 void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {

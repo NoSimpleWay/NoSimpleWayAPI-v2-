@@ -1845,7 +1845,7 @@ public:
 	
 
 	static void read_poe_ninja_data_from_cache();
-
+	static bool	all_caches_already_readed;
 	EWindowMain();
 
 	void register_loot_filter_list_group();
