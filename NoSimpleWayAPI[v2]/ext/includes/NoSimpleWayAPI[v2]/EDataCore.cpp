@@ -1786,6 +1786,7 @@ void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECust
 
 void EDataActionCollection::action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	//EInputCore::add_log_info_with_timestamp("set unsaved changes flag");
 	EInputCore::NSW_have_unsave_changes = true;
 
 }
@@ -2204,14 +2205,14 @@ EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite*
 
 void EClickableArea::update(float _d)
 {
-	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-	//if
-	//(
-	//	(EButtonGroup::focused_button_group_with_slider->region == this->region)
-	//)
-	{
-		check_all_catches();
-	}
+	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	////if
+	////(
+	////	(EButtonGroup::focused_button_group_with_slider->region == this->region)
+	////)
+	//{
+	//	check_all_catches();
+	//}
 
 	if ((debug_updating)&&(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT)))
 	{
@@ -2237,12 +2238,18 @@ void EClickableArea::update(float _d)
 			(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
 			&&
 			(
-				(parent_entity == nullptr)
-				||
-				(!parent_entity->is_suppressed())
+					(
+						//(EInputCore::key_pressed(GLFW_KEY_TAB))
+						//||
+						(
+							(parent_entity == nullptr)
+							||
+							(!parent_entity->is_suppressed())
+						)
+					)
+					&&
+					(EClickableArea::active_clickable_region == this)
 			)
-			&&
-			(EClickableArea::active_clickable_region == this)
 		)
 		{
 			//EInputCore::logger_param("size of DAP", actions_on_click_list.size());
@@ -2261,6 +2268,7 @@ void EClickableArea::update(float _d)
 						//(EClickableArea::active_clickable_region == this)
 					)
 				{
+					EInputCore::add_log_info_with_timestamp("call [actions on click list]");
 					EInputCore::logger_simple_info("call [actions on click list]");
 					dap(parent_entity, parent_custom_data, _d);
 				}
@@ -2294,6 +2302,10 @@ void EClickableArea::update(float _d)
 		)
 	)
 	{
+		//EInputCore::add_log_info_with_timestamp("RIGHT CLICK");
+
+		EInputCore::add_log_info_with_timestamp("call [actions on right click list]");
+		EInputCore::logger_simple_info("call [actions on right click list]");
 		for (data_action_pointer dap : actions_on_right_click_list)
 			if
 			(
@@ -2305,6 +2317,7 @@ void EClickableArea::update(float _d)
 				//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 			)
 			{
+				EInputCore::add_log_info_with_timestamp("DAP RC");
 				dap(parent_entity, parent_custom_data, _d);
 			}
 	}
@@ -2390,7 +2403,12 @@ void EClickableArea::draw()
 			(DebugNamespace::is_debug_element_active(DebugStructID::ENTITY_GABARITES))
 		)
 		{
-			if (active_clickable_region == this)
+			if
+			(
+				(active_clickable_region == this)
+				||
+				(EInputCore::key_pressed(GLFW_KEY_TAB))
+			)
 			{
 				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.75f);
 
@@ -2516,9 +2534,9 @@ void EClickableArea::draw()
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_body));
 			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 			if
-				(
-					(active_clickable_region == this)
-					)
+			(
+				(active_clickable_region == this)
+			)
 			{
 				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_PINK, 0.5f);
 			}

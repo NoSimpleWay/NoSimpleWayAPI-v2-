@@ -3987,3 +3987,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"rune_socket_count"
 	[tag]"name EN"		[value]"Rune sockets"
 	[tag]"name RU"		[value]"√нЄзда дл€ рун"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_gradient_between_blocks"
+	[tag]"name EN"		[value]"Gradient"
+	[tag]"name RU"		[value]"√радиент"

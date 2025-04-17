@@ -537,6 +537,8 @@ public:
 	void clear_listed_segment();
 	static GameItemAttribute* get_suitable_game_item_attribute(std::string _name, PathOfExileGame _game_version);
 
+	void set_cosmetic_from_gradient(EButtonGroupFilterBlock* _front, EButtonGroupFilterBlock* _back, float _mix);
+
 	EButtonGroup* pointer_to_whole_non_listed_segment;
 	EButtonGroup* pointer_to_workspace_non_listed_segment;
 
@@ -1375,7 +1377,7 @@ namespace NSWRegisteredButtonGroups
 {
 	static EButtonGroupFilterBlockColors*				filter_block_colors;
 	static EButtonGroupAddExplicitToLootSimulatorItem*	add_explicit_to_simulator;
-	static EButtonGroupPoeNinjaPriceChecker*				poe_ninja_price_checker_group;
+	static EButtonGroupPoeNinjaPriceChecker*			poe_ninja_price_checker_group;
 
 	static void register_filter_block_colors_group_for_filter_block();
 	static void register_explicit_for_loot_simulator_group();
@@ -1525,6 +1527,9 @@ namespace EDataActionCollection
 	void action_price_accept_cloning_price_table(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_auto_prices(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_game_in_data_entity_collection(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_open_preview_box_right_click_group(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_make_gradient_between_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void switch_game_in_data_entity_collection(std::string target_game_name, EntityButton* game_switch_button);
 

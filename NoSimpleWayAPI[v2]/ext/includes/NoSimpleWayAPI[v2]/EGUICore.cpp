@@ -7,6 +7,7 @@
 std::vector<EWindow*> EWindow::window_list;
 
 EButtonGroup* EButtonGroup::focused_button_group = nullptr;
+EButtonGroup* EButtonGroup::focused_root_button_group = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_for_select = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_clickable_area = nullptr;
@@ -126,7 +127,7 @@ void EWindow::GUI_update_default(float _d)
 					(EButtonGroup::move_vector_mode == MoveVectorMethod::METHOD_DRAG)
 					&&
 					(!EInputCore::MOUSE_BUTTON_LEFT)
-					)
+				)
 				||
 				(
 					(EButtonGroup::move_vector_mode == MoveVectorMethod::METHOD_PRESS)
@@ -250,26 +251,37 @@ void EWindow::GUI_update_default(float _d)
 		//EButtonGroup::vector_moving_group = nullptr;
 	}
 
-
-
-
-	//GET LAST FOCUSED GROUP
+	//GET FOCUSED ROOT GROUP
 	for (EButtonGroup* b_group : button_group_list)
+	{
 		if
-			(
-				(b_group != nullptr)
-				&&
-				(b_group->is_this_group_active())
-				&&
-				(!b_group->block_need_remove)
-				//&&
-				//(b_group->region_gabarite->world_position_y <= b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y)
-				//&&
-				//(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= b_group->region_gabarite->world_position_y)
-				)
+		(
+			(b_group->can_be_focused)
+			&&
+			(b_group->is_this_group_active())//groups can be diasbled
+			&&
+			(!b_group->block_need_remove)//groups can be marked as removed
+			&&
+			(b_group->is_in_visible_diapason())//groups can be outside of screen space (or parent group)
+			&&
+			(!b_group->group_is_suppressed)//groups can be suppressed 9still visible, but not active)
+			&&
+			(!b_group->is_blocked_by_superfocus())//groups can be blcoked by another superfocused group
+			&&
+			(EButtonGroup::catched_by_mouse(b_group))
+		)
 		{
-			EButtonGroup::get_last_focused_group(b_group);
+			EButtonGroup::focused_root_button_group = b_group;
 		}
+	}
+
+
+	//GET LAST FOCUSED SUB GROUP
+	if (EButtonGroup::focused_root_button_group != nullptr)
+	{
+		EButtonGroup::get_last_focused_sub_group(EButtonGroup::focused_root_button_group);
+	}
+
 
 	//RESET GROUP SELECTION
 	if
@@ -284,15 +296,15 @@ void EWindow::GUI_update_default(float _d)
 
 	//SELECT BUTTON GROUP BLOCKS
 	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-			&&
-			(EButtonGroup::focused_button_group_for_select != nullptr)
-			&&
-			(EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
-			&&
-			(EButtonGroup::focused_button_group_for_select->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
-		)
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_for_select != nullptr)
+		&&
+		(EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
+		&&
+		(EButtonGroup::focused_button_group_for_select->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
+	)
 	{
 		if
 			(EButtonGroup::first_selected_element == nullptr)
@@ -363,7 +375,7 @@ void EWindow::GUI_update_default(float _d)
 		for (EClickableArea* c_area : EButtonGroup::focused_button_group_clickable_area->clickable_area_list)
 		{
 
-			if (EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+			//if (EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 			{
 				EClickableArea::active_clickable_region = c_area;
 			}
@@ -415,11 +427,12 @@ void EWindow::GUI_update_default(float _d)
 	}
 
 
-
+	//UPDATE GROUPS
 	int id = 0;
 	for (int i = 0; i < button_group_list.size(); i++)
 	{
-		EButtonGroup* b_group = button_group_list[i];
+		EButtonGroup*
+		b_group = button_group_list[i];
 
 
 		b_group->background_update(_d);
@@ -892,11 +905,11 @@ void EButtonGroup::button_group_update(float _d)
 	}
 
 	if
-		(
+	(
 			(EInputCore::key_pressed_once(GLFW_KEY_RIGHT_SHIFT))
 			&&
 			(EButtonGroup::focused_button_group_mouse_unpressed == this)
-			)
+	)
 	{
 
 		recursive_get_info();
@@ -932,7 +945,7 @@ void EButtonGroup::button_group_update(float _d)
 				group_list[i]->swap_to_next = false;
 
 				EButtonGroup*
-					swap = group_list[i];
+				swap = group_list[i];
 
 				group_list[i] = group_list[i + 1];
 				group_list[i + 1] = swap;
@@ -1053,7 +1066,9 @@ void EButtonGroup::button_group_update(float _d)
 
 		if ((EInputCore::MOUSE_BUTTON_RIGHT) && (focused_button_group_clickable_area != nullptr))
 		{
-			focused_button_group_clickable_area->group_is_suppressed = true;
+			//focused_button_group_clickable_area->group_is_suppressed = true;
+
+			//focused_button_group_clickable_area->act
 		}
 
 		for (EntityButton* but : all_button_list)
@@ -1174,13 +1189,15 @@ void EButtonGroup::button_group_update(float _d)
 		}
 
 		for (EClickableArea* group_clickable_area : clickable_area_list)
-			if ((group_clickable_area != nullptr) && (group_clickable_area->clickable_region_is_active))
-			{
-				group_clickable_area->update(_d);
-			}
+		if ((group_clickable_area != nullptr) && (group_clickable_area->clickable_region_is_active))
+		{
+			//EInputCore::add_log_info_with_timestamp("update clickable region");
+			group_clickable_area->update(_d);
+		}
 
 		for (int i = 0; i < group_list.size(); i++)
 		{
+			
 			group_list[i]->button_group_update(_d);
 		}
 	}
@@ -4317,6 +4334,17 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 
 }
 
+EClickableArea* EButtonGroup::add_default_clickable_region()
+{
+	EClickableArea*
+	new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
+	main_clickable_area = new_clickable_area;
+
+	clickable_area_list.push_back(new_clickable_area);
+
+	return new_clickable_area;
+}
+
 void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText _text)
 {
 	EClickableArea*
@@ -4469,7 +4497,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group(EWindow* _window)
 	this->need_refresh = true;
 }
 
-void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
+void EButtonGroup::get_last_focused_sub_group(EButtonGroup* _group)
 {
 	//only active and visible groups can be focused
 	if
@@ -4508,6 +4536,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 			if ((!_group->clickable_area_list.empty()) && (_group->clickable_area_can_be_focused))
 			{
 				EButtonGroup::focused_button_group_clickable_area = _group;
+				//EClickableArea::active_clickable_region = _group->clickable_area_list[0];
 			}
 
 			//focus last group with slider
@@ -4526,7 +4555,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 			//repeat for each parent
 			for (EButtonGroup* group : _group->group_list)
 			{
-				get_last_focused_group(group);
+				get_last_focused_sub_group(group);
 			}
 		}
 	}

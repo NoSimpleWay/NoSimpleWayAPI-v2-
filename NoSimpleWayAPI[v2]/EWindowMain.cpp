@@ -4088,6 +4088,126 @@ void EDataActionCollection::action_switch_game_in_data_entity_collection(Entity*
 	switch_game_in_data_entity_collection(target_game_name, game_switch_button);
 }
 
+void EDataActionCollection::action_open_preview_box_right_click_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
+	EButtonGroup*
+	cosmetic_right_click_block = new EButtonGroup(new ERegionGabarite(120.0f, 330.0f));
+	//cosmetic_right_click_block->button_group_is_active = false;
+	cosmetic_right_click_block->auto_superfocused	= true;
+	cosmetic_right_click_block->autodeletable = true;
+
+	cosmetic_right_click_block->init_as_root_group(EWindowMain::link_to_main_window);
+	//poe_ninja_price_checker_group->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM
+	cosmetic_right_click_block->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+	//cosmetic_right_click_block->actions_on_close.push_back(&EDataActionCollection::action_on_closing_poe_ninja_price_check);
+
+	//		WORSPACE PART		//////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+	workspace_part = cosmetic_right_click_block->add_close_group_and_return_workspace_group(new ERegionGabarite(1.0f, 20.0f), EGUIStyle::active_style);
+	workspace_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+			//GRADIENT BUTTON
+			EntityButton*
+			gradient_button = new EntityButton();
+
+			gradient_button->suppressor = new bool(!EButtonGroup::selected_groups.empty());
+
+			gradient_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(120.0f, 35.0f),
+				workspace_part,
+				&EDataActionCollection::action_make_gradient_between_blocks,
+				ELocalisationText::get_localisation_by_key("button_gradient_between_blocks")
+			);
+
+	workspace_part->add_button_to_working_group(gradient_button);
+
+	EWindowMain::link_to_main_window->button_group_list.push_back(cosmetic_right_click_block);
+	cosmetic_right_click_block->activate_move_to_foreground_and_center();
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//		LEFT NEST FOR STATUS AND LEAGUE NAME		//////////////////////////////////////////////////////////////////////////////////////////
+	//EButtonGroup*
+	//status_and_league_name_nest = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 40.0f), EGUIStyle::active_style)
+	//->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	//workspace_part->add_group(status_and_league_name_nest);
+}
+
+void EDataActionCollection::action_make_gradient_between_blocks(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (!EButtonGroup::selected_groups.empty())
+	{
+
+		int filter_blocks_count = 0;
+		//float front_HUE			= 0.0;
+		//float back_HUE			= 0.0;
+
+		//float front_saturation	= 0.0;
+		//float back_saturation		= 0.0;
+
+		//float front_luminance		= 0.0;
+		//float back_luminance		= 0.0;
+
+		//float front_alpha			= 0.0;
+		//float back_alpha			= 0.0;
+
+		//float front_font_size		= 0.0;
+		//float back_front_size		= 0.0;
+
+		EButtonGroupFilterBlock* front_block	= nullptr;
+		EButtonGroupFilterBlock* back_block		= nullptr;
+
+
+		for (int i = 0; i < EButtonGroup::selected_groups.size(); i++)
+		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EButtonGroup::selected_groups[i]))//filter block
+		{
+			filter_blocks_count++;
+		}
+
+		//search for first filter block
+		for (int i = 0; i < EButtonGroup::selected_groups.size(); i++)
+		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EButtonGroup::selected_groups[i]))//filter block
+		{
+			EButtonGroupFilterBlock*
+			filter_block_group = static_cast<EButtonGroupFilterBlock*>(EButtonGroup::selected_groups[i]);
+
+
+			front_block = filter_block_group;
+
+			break;
+		}
+
+		//search for last filter block
+		for (int i = EButtonGroup::selected_groups.size() - 1; i >= 0; i--)
+		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EButtonGroup::selected_groups[i]))//filter block
+		{
+			EButtonGroupFilterBlock*
+			filter_block_group = static_cast<EButtonGroupFilterBlock*>(EButtonGroup::selected_groups[i]);
+
+
+			back_block = filter_block_group;
+
+			break;
+		}
+
+
+		//for every selected blocks
+		if (filter_blocks_count > 0)
+		for (int i = 0; i < EButtonGroup::selected_groups.size(); i++ )
+		{
+			EButtonGroup* b_group = EButtonGroup::selected_groups[i];
+
+			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(b_group))//filter block
+			{
+				static_cast<EButtonGroupFilterBlock*>(b_group)->set_cosmetic_from_gradient(front_block, back_block, 1.0f - (float(i) / float(filter_blocks_count - 1)));
+			}
+
+		}
+	}
+}
+
 void EDataActionCollection::switch_game_in_data_entity_collection(std::string target_game_name, EntityButton* game_switch_button)
 {
 	EWindowMain::data_entity_filter->show_only_suitable_buttons(EWindowMain::data_entity_filter->target_data_type, target_game_name);
@@ -17277,7 +17397,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group->pointer_to_workspace_non_listed_segment = non_listed_workspace_group;
 
 	non_listed_workspace_group->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("text_region_press_plus_button_to_add_new_condition"));
-
+	//non_listed_workspace_group->clickable_area_list.back()->actions_on_right_click_list.push_back(&EDataActionCollection::action_set_unsaved_changes);
+	
 	non_list_whole_group->add_group(non_listed_workspace_group);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -18563,6 +18684,10 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 					whole_filter_block_group->pointer_preview_box_group = preview_box_cosmetic_segment;
 
 					text_bg_ray_and_icon_nest->add_group(preview_box_cosmetic_segment);
+
+					EClickableArea*
+					new_c_region = preview_box_cosmetic_segment->add_default_clickable_region();
+					new_c_region->actions_on_right_click_list.push_back(EDataActionCollection::action_open_preview_box_right_click_group);
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -23975,6 +24100,74 @@ GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute(std
 	}
 
 	return nullptr;
+}
+
+void EButtonGroupFilterBlock::set_cosmetic_from_gradient(EButtonGroupFilterBlock* _front, EButtonGroupFilterBlock* _back, float _mix)
+{
+	float front_HUE			= 0.0;
+	float back_HUE			= 0.0;
+	
+	float front_saturation	= 0.0;
+	float back_saturation	= 0.0;
+	
+	float front_luminance	= 0.0;
+	float back_luminance	= 0.0;
+	
+	float front_alpha		= 0.0;
+	float back_alpha		= 0.0;
+	
+	int front_font_size		= 0;
+	int back_font_size		= 0;
+
+	//float HUE_direction		= 1.0f;
+
+	for (int i = 0; i < 3; i++)
+	{
+		front_HUE			= _front->pointer_to_color_button[i]->stored_color->h;
+		back_HUE			= _back->pointer_to_color_button[i]->stored_color->h;
+		
+		front_saturation	= _front->pointer_to_color_button[i]->stored_color->s;
+		back_saturation		= _back->pointer_to_color_button[i]->stored_color->s;
+		
+		front_luminance		= _front->pointer_to_color_button[i]->stored_color->v;
+		back_luminance		= _back->pointer_to_color_button[i]->stored_color->v;
+		
+		front_alpha			= _front->pointer_to_color_button[i]->stored_color->a;
+		back_alpha			= _back->pointer_to_color_button[i]->stored_color->a;
+
+		front_font_size		= _front->text_size;
+		back_font_size		= _back->text_size;
+
+		if (front_saturation <= 0.01f)	{ front_HUE = back_HUE; }
+		if (back_saturation <= 0.01f)	{ back_HUE = front_HUE; }
+
+		if (std::max (front_HUE,back_HUE) > 180.0f)
+		{
+			front_HUE -= 180.0f;
+			if (front_HUE < 0.0f) { front_HUE += 360.0f; }
+			
+			back_HUE -= 180.0f;
+			if (back_HUE < 0.0f) { back_HUE += 360.0f; }
+
+			pointer_to_color_button[i]->stored_color->h = (back_HUE * _mix + front_HUE * (1.0f - _mix)) + 180.0f;
+		}
+		else
+		{													
+			pointer_to_color_button[i]->stored_color->h = front_HUE * _mix + back_HUE * (1.0f - _mix);
+		}
+
+		pointer_to_color_button[i]->stored_color->h = std::clamp(pointer_to_color_button[i]->stored_color->h, 0.0f, 360.0f);
+
+		pointer_to_color_button[i]->stored_color->s = front_saturation * _mix + back_saturation * (1.0f - _mix);
+		pointer_to_color_button[i]->stored_color->v = front_luminance * _mix + back_luminance * (1.0f - _mix);
+		pointer_to_color_button[i]->stored_color->a = front_alpha * _mix + back_alpha * (1.0f - _mix);
+
+		text_size = std::round(float(front_font_size) * _mix + float(back_font_size) * (1.0f - _mix));
+		//EInputCore::add_log_info_with_timestamp("gradient mix = " + std::to_string(_mix));
+		EInputCore::add_log_info_with_timestamp("[" + std::to_string(i) + "] front luminance = " + std::to_string(front_luminance) + " back luminance = " + std::to_string(back_luminance));
+
+		Helper::hsv2rgb(pointer_to_color_button[i]->stored_color);
+	}
 }
 
 void EButtonGroupFilterBlock::post_draw()

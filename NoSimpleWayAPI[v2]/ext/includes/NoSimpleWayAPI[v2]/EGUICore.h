@@ -440,6 +440,7 @@ public:
 
 	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
+	static EButtonGroup* focused_root_button_group;
 	static EButtonGroup* focused_button_group_for_select;
 	static EButtonGroup* focused_button_group_mouse_unpressed;
 	static EButtonGroup* focused_button_group_clickable_area;
@@ -663,7 +664,7 @@ public:
 	//static EButtonGroup* focused_button_group;
 
 	//static void get_focused_group(EButtonGroup* _group);
-	static void get_last_focused_group(EButtonGroup* _group);
+	static void get_last_focused_sub_group(EButtonGroup* _group);
 
 	static bool catched_by_mouse(EButtonGroup* _group);
 
@@ -750,6 +751,7 @@ public:
 
 	void recursive_change_localisation(int _localisaton_id);
 
+	EClickableArea* add_default_clickable_region();
 	void add_default_clickable_region_with_text_area(ELocalisationText _text);
 
 	void init_as_root_group(EWindow* _window);
