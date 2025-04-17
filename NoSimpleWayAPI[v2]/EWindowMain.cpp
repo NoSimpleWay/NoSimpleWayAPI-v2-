@@ -3209,35 +3209,19 @@ void EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_
 		//EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
-void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::add_wide_item_button_to_listed_group(EButtonGroup* receiver, Entity* _entity, EDataContainer_DataEntityHolder* data_entity_holder)
 {
-	EWindowMain::make_unsaved_loot_filter_changes();
-
-	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
-	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
-	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
-
-	//EInputCore::logger_simple_info("!!!");
-	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
-
 	float temp_width = 220.0f;
 
 	//if (data->target_rule. )
 
 	bool
-		already_have_this_item = false;
+	already_have_this_item = false;
 
 	for (EntityButton* but : receiver->workspace_button_list)
 	{
 		EntityButtonWideItem*
-			wide_item_button = static_cast<EntityButtonWideItem*>(but);
-
-		//EDataEntity*
-		//stored_data_entity = static_cast<EDataContainer_DataEntityHolder*> (wide_item_button->main_custom_data->data_container)->stored_data_entity;
-
-
+		wide_item_button = static_cast<EntityButtonWideItem*>(but);
 
 		if (wide_item_button->main_text_area->localisation_text.base_name == static_cast<EntityButtonWideItem*>(_entity)->main_text_area->localisation_text.base_name)
 		{
@@ -3259,19 +3243,10 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 
 		jc_button->pointer_to_close_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 
-		//jc_button->main_clickable_area->region_gabarite->child_gabarite_list[0]->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
-		if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-		{
-			root_group->close_this_group();
-		}
 
 		receiver->add_button_to_working_group(jc_button);
-		//receiver->button_list.clear();
-		//EButtonGroup::change_group(receiver);
 		receiver->parent_group->parent_group->parent_group->need_change = true;
-
-		//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 
 		EWindowMain::loot_simulator_button_group->delayed_execution = true;
 		EWindowMain::make_unsaved_loot_filter_changes();
@@ -3279,7 +3254,69 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	else
 	{
 		static_cast<EntityButton*>(_entity)->set_highlight(1.0f, 1.0f);
-		//static_cast<EntityButton*>(_entity)->highlight_time = static_cast<EntityButton*>(_entity)->max_highlight_time;
+	}
+}
+
+void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EWindowMain::make_unsaved_loot_filter_changes();
+
+	EButtonGroup*
+	parent_group = ((EntityButton*)_entity)->parent_button_group;
+
+
+	EButtonGroup*
+	root_group = parent_group->root_group;
+
+	EDataContainer_Group_DataEntitiesSearch*
+	data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
+
+	EButtonGroup*
+	receiver = data->pointer_to_group_item_receiver;
+
+	EDataContainer_DataEntityHolder*
+	data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+
+	//EInputCore::logger_simple_info("!!!");
+	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
+
+
+	if (EButtonGroup::selected_groups.empty())
+	{
+		add_wide_item_button_to_listed_group(receiver, _entity, data_entity_holder);
+	}
+	else
+	{
+		for (EButtonGroup* selected_group : EButtonGroup::selected_groups)
+		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(selected_group))//it filter block, not separator
+		{
+			EButtonGroupFilterBlock*
+			filter_block = static_cast<EButtonGroupFilterBlock*>(selected_group);
+
+			if
+			(
+				(filter_block != nullptr)
+				&&
+				(filter_block->pointer_to_attribute_tab != nullptr)
+				&&
+				(filter_block->pointer_to_attribute_tab->selected_button != nullptr)
+			)
+			{
+				EntityButton*
+				selected_button_in_tab_group = filter_block->pointer_to_attribute_tab->selected_button;
+
+				EntityButtonAttributeTab*
+				tab_button = static_cast<EntityButtonAttributeTab*>(selected_button_in_tab_group);
+
+				add_wide_item_button_to_listed_group(tab_button->target_whole_listed_block->section_for_wide_item_buttons, _entity, data_entity_holder);
+			}
+			
+		}
+	}
+	
+	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		root_group->close_this_group();
 	}
 }
 
