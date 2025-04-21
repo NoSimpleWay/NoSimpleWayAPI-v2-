@@ -2268,7 +2268,7 @@ void EClickableArea::update(float _d)
 						//(EClickableArea::active_clickable_region == this)
 					)
 				{
-					EInputCore::add_log_info_with_timestamp("call [actions on click list]");
+					//EInputCore::add_log_info_with_timestamp("call [actions on click list]");
 					EInputCore::logger_simple_info("call [actions on click list]");
 					dap(parent_entity, parent_custom_data, _d);
 				}

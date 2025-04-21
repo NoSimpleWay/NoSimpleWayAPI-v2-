@@ -2068,7 +2068,7 @@ void EntityButton::update(float _d)
 								(dap != nullptr)
 							)
 							{
-								EInputCore::logger_simple_info("call [actions on click list]");
+								//EInputCore::logger_simple_info("call [actions on click list]");
 								dap(this, cd, _d);
 							}
 			}

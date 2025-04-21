@@ -57,6 +57,7 @@ namespace EInputCore
 	extern	char		LAST_INPUTED_CHAR;
 
 	extern void add_log_info_with_timestamp(std::string _text);
+	extern void add_log_info_without_timestamp(std::string _text);
 	extern void add_logger_prefix(std::string _text);
 	extern void reset_timestamp();
 	extern void remove_last_logger_prefix();

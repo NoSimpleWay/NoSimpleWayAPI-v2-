@@ -11822,7 +11822,7 @@ void EWindowMain::register_loot_filter_list_group()
 
 
 		load_loot_filter_list();
-
+		EInputCore::add_log_info_with_timestamp("Load loot filter list");
 		/*for (int i = 0; i < 2; i++)
 		{
 		EntityButton* but = EntityButton::make_default_button_with_unedible_text
@@ -12086,11 +12086,15 @@ void EWindowMain::parse_dust_prices()
 	std::string
 	result_buffer = "";
 
+	EInputCore::add_logger_prefix("Dust prices");
+
 	//reset dust quantity for bases
 	for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
 	{
 		DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::dust_quantity, "0", item_base_de);
 	}
+
+	EInputCore::add_log_info_with_timestamp("Reset dust price tag");
 
 	while (std::getline(file, str))
 	{
@@ -12145,6 +12149,9 @@ void EWindowMain::parse_dust_prices()
 					std::string
 					unique_base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
 
+					EInputCore::add_log_info_with_timestamp("Set dust price for [" + unique_name + "] as [" + EStringUtils::string_array[1] + "]");
+					
+
 					for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
 					{
 						std::string
@@ -12164,6 +12171,9 @@ void EWindowMain::parse_dust_prices()
 							{
 								DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], item_base_de);
 							}
+
+							EInputCore::add_log_info_with_timestamp("Set dust price for item base [" + base_name + "] as [" + EStringUtils::string_array[1] + "]");
+							break;
 						}
 					}
 				}
@@ -12172,7 +12182,11 @@ void EWindowMain::parse_dust_prices()
 					result_buffer += "[" + unique_name + "] is not world drop!" + '\n';
 				}
 
+				break;
+
 			}
+
+			
 		}
 
 		if (!have_match)
@@ -12221,14 +12235,20 @@ void EWindowMain::parse_dust_prices()
 				}
 
 				result_buffer += "[" + base_name + "] dust quantity = " + std::to_string(base_dust_quantity) + ", dust tag = " + new_worth_ID_string.string_value + '\r' + '\n';
+			
+				
 			}
 		}
+
+		
+
 	}
 
 	result_file.open("data/DustPrices[result].txt");
 	result_file << result_buffer;
 	result_file.close();
 
+	EInputCore::remove_last_logger_prefix();
 }
 
 void EWindowMain::load_config_from_disc()

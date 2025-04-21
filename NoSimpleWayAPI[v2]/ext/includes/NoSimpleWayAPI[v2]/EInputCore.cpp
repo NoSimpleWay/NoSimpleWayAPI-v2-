@@ -107,16 +107,21 @@ void EInputCore::initiate_input_core()
 extern void EInputCore::simple_logger_with_parameter(std::string _text, std::string _parameter)
 {
 	std::cout << white << "------[" << green << _text << ":\t" << blue << _parameter << white << "]-------" << std::endl;
+
+	EInputCore::add_log_info_without_timestamp(_text +  "[" + _parameter + "]");
 }
 
 void EInputCore::simple_logger_with_parameter_and_warning(std::string _text, std::string _parameter)
 {
 	std::cout << white << "------[" << yellow << _text << ":\t" << blue << _parameter << white << "]-------" << std::endl;
+
+	EInputCore::add_log_info_without_timestamp("WARNING: " + _text + "[" + _parameter + "]");
 }
 
 void EInputCore::logger_param(std::string _text, std::string _parameter)
 {
 	simple_logger_with_parameter(_text, _parameter);
+	EInputCore::add_log_info_without_timestamp("_text [" + _parameter + "]");
 }
 void EInputCore::logger_param_with_warning(std::string _text, std::string _parameter)
 {
@@ -126,21 +131,30 @@ void EInputCore::logger_param_with_warning(std::string _text, std::string _param
 void EInputCore::logger_simple_error(std::string _error)
 {
 	std::cout << red << "^^^^^^^ ERROR: " << _error << std::endl;
+	EInputCore::add_log_info_with_timestamp("ERROR: " + _error);
 }
 
 void EInputCore::logger_simple_success(std::string _message)
 {
 	std::cout << green << "| Success: " << _message << " |" << std::endl;
+
+	EInputCore::add_log_info_without_timestamp("Success: " + _message);
 }
 
 void EInputCore::logger_simple_try(std::string _message)
 {
 	std::cout << blue << "| Try: " << _message << " |" << std::endl;
+
+
+	EInputCore::add_log_info_without_timestamp("Try: " + _message);
 }
 
 void EInputCore::logger_simple_info(std::string _message)
 {
 	std::cout << white << "[info]: " << _message  << std::endl;
+
+
+	EInputCore::add_log_info_without_timestamp("[info]: " + _message);
 }
 
 
@@ -169,7 +183,7 @@ void EInputCore::add_log_info_with_timestamp(std::string _text)
 
 	logger_writer << _text << "[" << (std::chrono::milliseconds)(passed_time) << "]";
 	logger_writer << " ";
-	logger_writer << "Delay status: ";
+	logger_writer << "Delay status:\t";
 
 	if (passed_time >= 1000) { logger_writer << "UNACCEPTABLE!"; }
 	else
@@ -193,6 +207,28 @@ void EInputCore::add_log_info_with_timestamp(std::string _text)
 
 	logger_writer << std::endl;
 	last_timestamp = current_time;
+}
+
+void EInputCore::add_log_info_without_timestamp(std::string _text)
+{
+	if (active_prefix_id >= 0)
+	{
+		//add tabs
+		for (int i = 0; i <= active_prefix_id; i++)
+		{
+			logger_writer << "\t";
+		}
+
+		//add prefixes
+		//for (int i = 0; i <= active_prefix_id; i++)
+		{
+			logger_writer << ("(" + logger_prefixes[active_prefix_id] + ") ");
+		}
+	}
+
+	logger_writer << _text;
+	logger_writer << std::endl;
+
 }
 
 void EInputCore::add_logger_prefix(std::string _text)

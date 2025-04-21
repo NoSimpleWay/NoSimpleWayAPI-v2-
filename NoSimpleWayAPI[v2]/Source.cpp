@@ -202,8 +202,10 @@ int main()
 	
 	EInputCore::add_log_info_with_timestamp("start");
 		
+	EInputCore::add_logger_prefix("Graphic core");
+
 	NS_EGraphicCore::initiate_graphic_core();
-		EInputCore::add_log_info_with_timestamp("init graphic core");
+	EInputCore::add_log_info_with_timestamp("init graphic core");
 
 
 	EInputCore::initiate_input_core();

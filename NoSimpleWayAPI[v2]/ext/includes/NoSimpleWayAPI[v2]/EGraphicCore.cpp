@@ -574,7 +574,7 @@ void ERenderBatcher::apply_transform()
 void ERenderBatcher::set_shader(Shader* _shader)
 {
 	batcher_shader = _shader;
-	EInputCore::logger_simple_success("crete new shader");
+	EInputCore::logger_simple_success("create new shader");
 }
 
 Shader* ERenderBatcher::get_shader()
@@ -695,11 +695,26 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 	//////////////////////////////
 	glGenTextures(1, colorbuffer);
 	glBindTexture(GL_TEXTURE_2D, *colorbuffer);
-	EInputCore::logger_param("[texture atlas] texture created", *colorbuffer);
+	//EInputCore::logger_param("[texture atlas] texture created", *colorbuffer);
+
+	std::string
+	string_message =
+	"Create new texture atlas";
+
+	string_message +=
+		"[W:" + std::to_string(_size_x) + "]"
+		+
+		"[H:" + std::to_string(_size_y) + "]"
+		+
+		"[DEPTH:" + std::to_string(_color_depth) + "]"
+		+
+		"[BYTE_MODE:" + std::to_string(_byte_mode) + "]";
+
+	EInputCore::add_log_info_with_timestamp (string_message);
 
 	glGenFramebuffers(1, framebuffer);
 	glBindFramebuffer(GL_FRAMEBUFFER, *framebuffer);
-	EInputCore::logger_param("[texture atlas] framebuffer created", *framebuffer);
+	//EInputCore::logger_param("[texture atlas] framebuffer created", *framebuffer);
 
 
 
@@ -874,6 +889,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	NS_EGraphicCore::default_batcher_for_texture_atlas = new ERenderBatcher();
 
+	EInputCore::add_log_info_with_timestamp("Create RenderBatcher");
+
 	NS_EGraphicCore::default_batcher_for_texture_atlas->set_total_attribute_count(8);
 
 	NS_EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//position	| [x][y]
@@ -899,7 +916,13 @@ void NS_EGraphicCore::initiate_graphic_core()
 	default_batcher_for_drawing->register_new_vertex_attribute(4);	//color			1[r]	2[g]	3[b]	4[a]
 	default_batcher_for_drawing->register_new_vertex_attribute(2);	//uv texture	1[u]	2[v]	#		#
 
+	EInputCore::add_log_info_with_timestamp("Register vertex attributes (for default shader)");
+
 	default_batcher_for_drawing->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
+
+
+
+	EInputCore::add_log_info_with_timestamp("Compile shader (for default");
 	//total
 	//8 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
 	//[x][y][r][g][b][a][u][v]
@@ -913,8 +936,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	pbr_batcher->register_new_vertex_attribute(2);	//normal map		1[u]	2[v]	#		#
 	pbr_batcher->register_new_vertex_attribute(2);	//gloss map			1[u]	2[v]	#		#
 
+	EInputCore::add_log_info_with_timestamp("Register vertex attributes (for PBR shader");
+
 	pbr_batcher->set_shader(new Shader("data/PBR.vs", "data/PBR.fs"));
 
+	EInputCore::add_log_info_with_timestamp("Compile shader (for PBR");
 
 
 	test_batcher = new ERenderBatcher();				//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
@@ -926,7 +952,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	test_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
 	test_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
 
+	EInputCore::add_log_info_with_timestamp("Register vertex attributes (for test shader");
+
 	test_batcher->set_shader(new Shader("data/#test.vs", "data/#test.fs"));
+
+	EInputCore::add_log_info_with_timestamp("Compile shader (for test");
 	//total
 	//13 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
 
@@ -939,7 +969,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	skydome_batcher->register_new_vertex_attribute(4);	//color				1[r]	2[g]	3[b]	4[a]
 	skydome_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
 
+	EInputCore::add_log_info_with_timestamp("Register vertex attributes (for blur shader");
+
 	skydome_batcher->set_shader(new Shader("data/simple_blur.vs", "data/simple_blur.fs"));
+
+	EInputCore::add_log_info_with_timestamp("Compile shader (for blur");
 	NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
 
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
@@ -1018,9 +1052,14 @@ void NS_EGraphicCore::initiate_graphic_core()
 	new_font = new EFont("palatino", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
 
+	EInputCore::add_log_info_with_timestamp("Load font [palantino]");
+
+
 	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/fontin_0.png", NS_EGraphicCore::default_texture_atlas);
 	new_font = new EFont("fontin", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
+
+	EInputCore::add_log_info_with_timestamp("Load font [fontin]");
 
 	//NS_EGraphicCore::sun_color = Helper::hsvrgba_color;
 	NS_EGraphicCore::sun_color.r = 1.0f;
@@ -1165,6 +1204,10 @@ void NS_EGraphicCore::create_styles()
 
 		EGUIStyle::active_style = just_created_style;
 		EGUIStyle::style_list.push_back(just_created_style);
+
+
+
+		EInputCore::add_log_info_with_timestamp("Load style [lead and gold]");
 	}
 
 
@@ -1268,6 +1311,12 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->brick_style[BrickStyleID::BUTTON_BG] = *jc_brick;
 
 		EGUIStyle::style_list.push_back(just_created_style);
+
+
+
+
+
+		EInputCore::add_log_info_with_timestamp("Load style [dark spruce]");
 	}
 
 	//###########################################################
@@ -1366,6 +1415,10 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->brick_style[BrickStyleID::ROUND_SLIDER] = *jc_brick;
 
 		EGUIStyle::style_list.push_back(just_created_style);
+
+
+
+		EInputCore::add_log_info_with_timestamp("Load style [Strict gray]");
 	}
 
 	//stone
@@ -1997,6 +2050,10 @@ void NS_EGraphicCore::create_styles()
 
 		just_created_style->brick_style[BrickStyleID::ROUND_SLIDER] = *jc_brick;
 		EGUIStyle::style_list.push_back(just_created_style);
+
+
+
+		EInputCore::add_log_info_with_timestamp("Load style [Path of black]");
 	}
 
 	//basalt
@@ -2097,6 +2154,10 @@ void NS_EGraphicCore::create_styles()
 
 		just_created_style->brick_style[BrickStyleID::ROUND_SLIDER] = *jc_brick;
 		EGUIStyle::style_list.push_back(just_created_style);
+
+
+
+		EInputCore::add_log_info_with_timestamp("Load style [Basalt]");
 	}
 
 	//TEST
@@ -2988,7 +3049,7 @@ void NS_EGraphicCore::load_skydome_texture(ETextureGabarite* _texture)
 	);
 
 	skydome_texture_atlas[0]->set_size(2048, 1024.0f);
-
+	EInputCore::add_log_info_with_timestamp("Create texture atlas[0]");
 			
 	{
 		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
@@ -3021,6 +3082,8 @@ void NS_EGraphicCore::load_skydome_texture(ETextureGabarite* _texture)
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
 		glGenerateMipmap(GL_TEXTURE_2D);
+
+		EInputCore::add_log_info_with_timestamp("Draw skydome to texture atlas");
 	}
 			
 
@@ -3430,6 +3493,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				if (place_x >= 0) { break; }
 			}
 
+			EInputCore::add_log_info_with_timestamp("Search free space for [" + _full_path + "]");
+
 			//remove free space
 			//
 			if (_atlas->have_matrix)
@@ -3448,7 +3513,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 						{
 							_atlas->free_space[x][y] = false;
 						}
-
+			EInputCore::add_log_info_with_timestamp("Fill space mask for [" + _full_path + "]");
 
 			new_gabarite = new ETextureGabarite();
 
@@ -3591,6 +3656,8 @@ void NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite* _texture_gabar
 
 	glDisable(GL_DEPTH_TEST);
 	glBlendEquation(GL_FUNC_ADD);
+
+	EInputCore::add_log_info_with_timestamp("Complete texture gabarite [" + _texture_gabarite->get_full_path() + "]");
 }
 
 void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
