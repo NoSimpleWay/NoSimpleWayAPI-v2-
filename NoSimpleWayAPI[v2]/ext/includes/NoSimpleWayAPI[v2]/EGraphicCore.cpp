@@ -693,8 +693,7 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 	atlas_size_y = _size_y;
 
 	//////////////////////////////
-	glGenTextures(1, colorbuffer);
-	glBindTexture(GL_TEXTURE_2D, *colorbuffer);
+	
 	//EInputCore::logger_param("[texture atlas] texture created", *colorbuffer);
 
 	std::string
@@ -716,12 +715,13 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 	glBindFramebuffer(GL_FRAMEBUFFER, *framebuffer);
 	//EInputCore::logger_param("[texture atlas] framebuffer created", *framebuffer);
 
-
+	glGenTextures(1, colorbuffer);
+	glBindTexture(GL_TEXTURE_2D, *colorbuffer);
 
 	glTexImage2D(GL_TEXTURE_2D, 0, _color_depth, _size_x, _size_y, 0, GL_RGBA, _byte_mode, NULL);
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, *colorbuffer, 0);
 
@@ -731,6 +731,8 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	{
+		EInputCore::add_log_info_without_timestamp("ERROR::FRAMEBUFFER:: Framebuffer is not complete! " + glCheckFramebufferStatus(GL_FRAMEBUFFER));
+
 		std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
 	}
 
