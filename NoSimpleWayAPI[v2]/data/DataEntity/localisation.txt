@@ -1562,6 +1562,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"attribute_description_map_tier"
 	[tag]"name EN"		[value]"Condition: a certain map type.\nThe higher the map tier, the higher the level of monsters on the map, which makes the map more difficult and the reward better.\nSome events, such as summoning bosses, require a certain map type.\nFor example, summoning a high-level Exarch requires a map with at least 14 tier.\n\nThe tiers are divided by 'colors':\n\n= White maps (tier 1-5)\n= Yellow maps (tier 6-10)\n= Red maps (tier 11-16).\n\nThe map tier should not be confused with the level of the item."
 	[tag]"name RU"		[value]"Условие: определённый тир карты.\nЧем выше тир карты, тем выше уровень монстров на ней, что делает её сложнее, а награду лучше.\nНекоторые события, вроде призыва боссов, требуют определённый тир карты.\nНапример, призыв высокоуровнего Экзарха требует карты как минимум 14 тира.\n\nТиры разделяют по 'цветам':\n\n= Белые карты (тир 1-5)\n= Жёлтые карты (тир 6-10)\n= Красные карты (тир 11-16).\n\nТир карты не следует путать с уровнем предмета"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_memory_strands"
+	[tag]"name EN"		[value]"Condition: a number of memory strands on map."
+	[tag]"name RU"		[value]"Условие: количетсво нитей воспоминания"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1596,8 +1603,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_is_uberblighted_map"
-	[tag]"name EN"		[value]"Condition: blighted map"
-	[tag]"name RU"		[value]"Условие: карта Уберскверны.\nSame as a regular blighted map, but much more harder."
+	[tag]"name EN"		[value]"Condition: blighted map\nSame as a regular blighted map, but much more harder."
+	[tag]"name RU"		[value]"Условие: карта Уберскверны."
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_zana_memory"
+	[tag]"name EN"		[value]"Condition: Zana memory"
+	[tag]"name RU"		[value]"Условие: воспоминание Заны"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

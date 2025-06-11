@@ -244,6 +244,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"Veiled_chaos"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Veiled Exalted Orb"
 		
 	[tag]"worth"			[value]"Expensive"
 		
@@ -252,6 +255,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"Syndicate drop"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"			[value]"Changed in Necropolis"
+	
+	[tag]"drop level"		[value]"61"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Veiled Exalted Orb"
+	[tag]"name RU"			[value]"Скрытая сфера возвышения"
+	
+	[tag]"icon path"		[value]"VeiledExaltedOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Expensive"
+		
+	[tag]"item tag"			[value]"Loot source: Boss"
+	[tag]"item tag"			[value]"Loot source: Catarina"
+	[tag]"item tag"			[value]"Syndicate drop"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"			[value]"Changed in Necropolis"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
 	
 	[tag]"drop level"		[value]"61"
 	[tag]"stack multiplier"	[value]"1"
@@ -699,6 +729,188 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shaper's Exalted Orb"
+	[tag]"name RU"		[value]"Сфера Возвышения Создателя"
+
+	[tag]"icon path"	[value]"ShaperExaltedOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Guardian orb"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Elder's Exalted Orb"
+	[tag]"name RU"		[value]"Сфера Возвышения Древнего"
+
+	[tag]"icon path"	[value]"ElderExaltedOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Guardian orb"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Orb of Remembrance"
+	[tag]"name RU"		[value]"Сфера воспоминаний"
+
+	[tag]"icon path"	[value]"OrbOfRemembrance"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Unknown"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Orb of Unravelling"
+	[tag]"name RU"		[value]"Сфера раскрытия"
+
+	[tag]"icon path"	[value]"OrbOfUnravelling"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Unknown"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Orb of Intention"
+	[tag]"name RU"		[value]"Сфера намерения"
+
+	[tag]"icon path"	[value]"OrbOfIntention"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Unknown"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

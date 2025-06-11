@@ -4859,6 +4859,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Intelligence"
+	[tag]"name RU"		[value]"Скарабей Предательства разведки"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Betrayal Scarab of the Allflame"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of the Allflame"
+	[tag]"name RU"		[value]"Скарабей Предательства всепламени"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"

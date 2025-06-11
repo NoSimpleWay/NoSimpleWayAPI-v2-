@@ -12931,9 +12931,33 @@ void EWindowMain::register_game_item_attributes()
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "ZanaMemory";
+	jc_localisation.localisations[NSW_localisation_EN] = "Zana memory";
+	jc_localisation.localisations[NSW_localisation_RU] = "Воспоминание Заны";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_zana_memory");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_zana_memory";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+
+
 	////////		ATTRIBUTE HEADER SEPARATOR		////////
 	jc_filter_block_attribute->header_localistaion_key = "attribute_header_map_attributes";
 	////////////////////////////////////////////////////////
+
+
+
 
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -13457,6 +13481,24 @@ void EWindowMain::register_game_item_attributes()
 	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HAVE_IMPLICIT] = jc_filter_block_attribute;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name								= "MemoryStrands";
+	jc_localisation.localisations[NSW_localisation_EN]		= "Memory strands";
+	jc_localisation.localisations[NSW_localisation_RU]		= "Нитей воспоминания";
+
+	jc_filter_block_attribute								= new GameItemAttribute();
+	jc_filter_block_attribute->localisation					= jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type		= FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type	= FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator				= true;
+	jc_filter_block_attribute->icon							= NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_memory_strands");
+	jc_filter_block_attribute->description_localisation_key	= "attribute_description_map_tier";
+	jc_filter_block_attribute->game_type					= PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
 
 
 	////////		ATTRIBUTE HEADER SEPARATOR		////////

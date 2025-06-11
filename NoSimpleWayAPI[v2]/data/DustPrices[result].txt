@@ -334,6 +334,7 @@
 [Cartographer's Chisel] dust quantity = 0, dust tag = Trash
 [Chaos Orb] dust quantity = 0, dust tag = Trash
 [Veiled Orb] dust quantity = 0, dust tag = Trash
+[Veiled Exalted Orb] dust quantity = 0, dust tag = Trash
 [Veiled Chaos Orb] dust quantity = 0, dust tag = Trash
 [Vaal Orb] dust quantity = 0, dust tag = Trash
 [Harbinger's Orb] dust quantity = 0, dust tag = Trash
@@ -2811,6 +2812,8 @@
 [Incursion Scarab of Champions] dust quantity = 0, dust tag = Trash
 [Incursion Scarab of Timelines] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab] dust quantity = 0, dust tag = Trash
+[Betrayal Scarab of Intelligence] dust quantity = 0, dust tag = Trash
+[Betrayal Scarab of the Allflame] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Intelligence] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Reinforcements] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Perpetuation] dust quantity = 0, dust tag = Trash
