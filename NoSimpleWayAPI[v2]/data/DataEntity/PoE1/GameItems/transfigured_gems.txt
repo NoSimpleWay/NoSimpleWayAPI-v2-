@@ -1,0 +1,257 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"True"
+	[tag]"name EN"		[value]"Any"
+	[tag]"name RU"		[value]"Любой"
+
+	[tag]"icon path"	[value]"TransfiguredGemAny"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Transfigured gem"
+	[tag]"item tag"		[value]"Ignore quote symbol"
+	[tag]"item tag"		[value]"Hidden item"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"False"
+	[tag]"name EN"		[value]"None"
+	[tag]"name RU"		[value]"Никакой"
+
+	[tag]"icon path"	[value]"TransfiguredGemNone"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Transfigured gem"
+	[tag]"item tag"		[value]"Ignore quote symbol"
+	[tag]"item tag"		[value]"Hidden item"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"	
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Pact of Trarthus"
+	[tag]"name RU"		[value]"Тёмный договор Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Heavy Strike of Trarthus"
+	[tag]"name RU"		[value]"Тяжёлый удар Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spectral Shield Throw of Trarthus"
+	[tag]"name RU"		[value]"Призрачный бросок щита Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spectral Throw of Trarthus"
+	[tag]"name RU"		[value]"Призрачный бросок Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Storm Call of Trarthus"
+	[tag]"name RU"		[value]"Призыв бури Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blast Rain of Trarthus"
+	[tag]"name RU"		[value]"Дождь взрывов Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Siege Ballista of Trarthus"
+	[tag]"name RU"		[value]"Осадная баллиста Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sunder of Trarthus"
+	[tag]"name RU"		[value]"Раскол Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wave of Conviction of Trarthus"
+	[tag]"name RU"		[value]"Волна осуждения Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chain Hook of Trarthus"
+	[tag]"name RU"		[value]"Цепной крюк Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spectral Helix of Trarthus"
+	[tag]"name RU"		[value]"Призрачная спираль Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Transfigured gem"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bladefall of Trarthus"
+	[tag]"name RU"		[value]"Мечепад Тератны"
+
+	[tag]"icon path"	[value]"TransfiguredGem"
+	[tag]"base class"	[value]"Skill Gems"
+	[tag]"item tag"		[value]"Transfigured gem"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

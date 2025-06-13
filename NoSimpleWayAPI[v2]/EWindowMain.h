@@ -522,6 +522,56 @@ public:
 	void draw_button_group() override;
 };
 
+
+
+
+
+enum FilterAttributeValueType
+{
+	FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST,
+	FILTER_ATTRIBUTE_VALUE_TYPE_TRANSFIGURED_GEM_LIST,
+	FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
+	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
+	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR,
+	FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND,
+	//FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND_OPTIONAL,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
+	FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE,
+
+
+	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR,
+
+	FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE,
+
+
+
+	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
+
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FAKE_BUTTONS_COUNT,
+
+	FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_REQUIRED_TAGS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FORBIDDEN_TAGS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_FINALIZE_FILTER_RULE
+
+
+
+
+};
+
+
 class EButtonGroupFilterBlockSeparator;
 class EButtonGroupFilterBlock : public EButtonGroup
 {
@@ -536,6 +586,7 @@ public:
 	void clear_non_listed_segment();
 	void clear_listed_segment();
 	static GameItemAttribute* get_suitable_game_item_attribute(std::string _name, PathOfExileGame _game_version);
+	static GameItemAttribute* get_suitable_game_item_attribute_specific_type(std::string _name, PathOfExileGame _game_version, FilterAttributeValueType _value_type);
 
 	void set_cosmetic_from_gradient(EButtonGroupFilterBlock* _front, EButtonGroupFilterBlock* _back, float _mix);
 
@@ -1069,6 +1120,7 @@ public:
 	EntityButton* target_button_with_value;
 
 	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
+	EntityButtonVariantRouterForFilterBlock* transfigured_gem_router_button;
 
 	GameItemAttribute* target_game_attribute;
 };
@@ -1602,49 +1654,6 @@ enum FilterAttributeType
 
 };
 
-enum FilterAttributeValueType
-{
-	FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER,
-	FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST,
-	FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
-	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
-	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
-	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR,
-	FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON,
-	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER,
-	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND,
-	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND,
-	//FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND_OPTIONAL,
-	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND,
-	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND,
-	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
-	FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE,
-
-
-	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR,
-
-	FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE,
-
-
-
-	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
-
-	FILTER_ATTRIBUTE_VALUE_CONFIG_FAKE_BUTTONS_COUNT,
-	
-	FILTER_ATTRIBUTE_VALUE_CONFIG_CREATE_PATTERN_BUTTON,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_REQUIRED_TAGS,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_FORBIDDEN_TAGS,
-	FILTER_ATTRIBUTE_VALUE_CONFIG_FINALIZE_FILTER_RULE
-	
-
-
-
-};
 
 enum DefaultGameAttributeEnum
 {
@@ -1732,7 +1741,11 @@ static std::string generate_color_palette_text();
 static std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
 
-static std::vector<GameItemAttribute*> registered_game_item_attributes;
+static std::vector<GameItemAttribute*>	registered_game_item_attributes;
+
+static GameItemAttribute*				transfigured_attribute_bool_flag_type;
+static GameItemAttribute*				transfigured_attribute_listed_type;
+
 static EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent, EButtonGroupFilterBlock* _parent_filter_block);
 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
@@ -1809,6 +1822,8 @@ public:
 
 
 	static const std::string this_version;
+	static std::vector<ELocalisationText> registered_transfigured_gems;
+
 	//static DataEntityParserMode data_entity_parser_mode;
 
 	static void check_new_version_from_github();
@@ -1859,6 +1874,7 @@ public:
 
 	void parse_raw_explicit_table();
 	void parse_dust_prices();
+	void parse_transfigured_gems();
 
 	void load_config_from_disc();
 	void load_config_from_disc_for_filter_version();
@@ -1866,6 +1882,7 @@ public:
 
 	void preload_textures();
 	void register_rarities();
+	void register_transfigured_gems();
 	void register_alternate_qualities();
 	void register_game_item_attributes();
 

@@ -1,0 +1,187 @@
+True	Да	green
+False	Нет	red
+Absolution of Inspiring	Absolution of Inspiring	red
+Animate Guardian of Smiting	Animate Guardian of Smiting	red
+Bladestorm of Uncertainty	Bladestorm of Uncertainty	red
+Boneshatter of Carnage	Boneshatter of Carnage	red
+Boneshatter of Complex Trauma	Boneshatter of Complex Trauma	red
+Cleave of Rage	Cleave of Rage	red
+Consecrated Path of Endurance	Consecrated Path of Endurance	red
+Dominating Blow of Inspiring	Dominating Blow of Inspiring	red
+Earthquake of Amplification	Earthquake of Amplification	red
+Earthshatter of Fragility	Earthshatter of Fragility	red
+Earthshatter of Prominence	Earthshatter of Prominence	red
+Exsanguinate of Transmission	Exsanguinate of Transmission	red
+Frozen Legion of Rallying	Frozen Legion of Rallying	red
+Glacial Hammer of Shattering	Glacial Hammer of Shattering	red
+Ground Slam of Earthshaking	Ground Slam of Earthshaking	red
+Holy Flame Totem of Ire	Holy Flame Totem of Ire	red
+Ice Crash of Cadence	Ice Crash of Cadence	red
+Infernal Blow of Immolation	Infernal Blow of Immolation	red
+Leap Slam of Groundbreaking	Leap Slam of Groundbreaking	red
+Molten Strike of the Zenith	Molten Strike of the Zenith	red
+Perforate of Bloodshed	Perforate of Bloodshed	red
+Perforate of Duality	Perforate of Duality	red
+Rage Vortex of Berserking	Rage Vortex of Berserking	red
+Shield Crush of the Chieftain	Shield Crush of the Chieftain	red
+Smite of Divine Judgement	Smite of Divine Judgement	red
+Summon Flame Golem of Hordes	Summon Flame Golem of Hordes	red
+Summon Flame Golem of the Meteor	Summon Flame Golem of the Meteor	red
+Summon Stone Golem of Hordes	Summon Stone Golem of Hordes	red
+Summon Stone Golem of Safeguarding	Summon Stone Golem of Safeguarding	red
+Sunder of Earthbreaking	Sunder of Earthbreaking	red
+Tectonic Slam of Cataclysm	Tectonic Slam of Cataclysm	red
+Volcanic Fissure of Snaking	Volcanic Fissure of Snaking	red
+Animate Weapon of Ranged Arms	Animate Weapon of Ranged Arms	green
+Animate Weapon of Self Reflection	Animate Weapon of Self Reflection	green
+Artillery Ballista of Cross Strafe	Artillery Ballista of Cross Strafe	green
+Artillery Ballista of Focus Fire	Artillery Ballista of Focus Fire	green
+Barrage of Volley Fire	Barrage of Volley Fire	green
+Bear Trap of Skewers	Bear Trap of Skewers	green
+Blade Blast of Dagger Detonation	Blade Blast of Dagger Detonation	green
+Blade Blast of Unloading	Blade Blast of Unloading	green
+Blade Flurry of Incision	Blade Flurry of Incision	green
+Blade Trap of Greatswords	Blade Trap of Greatswords	green
+Blade Trap of Laceration	Blade Trap of Laceration	green
+Blade Vortex of the Scythe	Blade Vortex of the Scythe	green
+Bladefall of Impaling	Bladefall of Impaling	green
+Bladefall of Volleys	Bladefall of Volleys	green
+Blink Arrow of Bombarding Clones	Blink Arrow of Bombarding Clones	green
+Blink Arrow of Prismatic Clones	Blink Arrow of Prismatic Clones	green
+Burning Arrow of Vigour	Burning Arrow of Vigour	green
+Caustic Arrow of Poison	Caustic Arrow of Poison	green
+Cremation of Exhuming	Cremation of Exhuming	green
+Cremation of the Volcano	Cremation of the Volcano	green
+Cyclone of Tumult	Cyclone of Tumult	green
+Detonate Dead of Chain Reaction	Detonate Dead of Chain Reaction	green
+Detonate Dead of Scavenging	Detonate Dead of Scavenging	green
+Double Strike of Impaling	Double Strike of Impaling	green
+Double Strike of Momentum	Double Strike of Momentum	green
+Dual Strike of Ambidexterity	Dual Strike of Ambidexterity	green
+Elemental Hit of the Spectrum	Elemental Hit of the Spectrum	green
+Ethereal Knives of Lingering Blades	Ethereal Knives of Lingering Blades	green
+Ethereal Knives of the Massacre	Ethereal Knives of the Massacre	green
+Explosive Concoction of Destruction	Explosive Concoction of Destruction	green
+Explosive Trap of Magnitude	Explosive Trap of Magnitude	green
+Explosive Trap of Shrapnel	Explosive Trap of Shrapnel	green
+Fire Trap of Blasting	Fire Trap of Blasting	green
+Flicker Strike of Power	Flicker Strike of Power	green
+Frenzy of Onslaught	Frenzy of Onslaught	green
+Frost Blades of Katabasis	Frost Blades of Katabasis	green
+Galvanic Arrow of Energy	Galvanic Arrow of Energy	green
+Galvanic Arrow of Surging	Galvanic Arrow of Surging	green
+Ice Shot of Penetration	Ice Shot of Penetration	green
+Ice Trap of Hollowness	Ice Trap of Hollowness	green
+Lacerate of Butchering	Lacerate of Butchering	green
+Lacerate of Haemorrhage	Lacerate of Haemorrhage	green
+Lancing Steel of Spraying	Lancing Steel of Spraying	green
+Lightning Arrow of Electrocution	Lightning Arrow of Electrocution	green
+Lightning Strike of Arcing	Lightning Strike of Arcing	green
+Mirror Arrow of Bombarding Clones	Mirror Arrow of Bombarding Clones	green
+Mirror Arrow of Prismatic Clones	Mirror Arrow of Prismatic Clones	green
+Poisonous Concoction of Bouncing	Poisonous Concoction of Bouncing	green
+Puncture of Shanking	Puncture of Shanking	green
+Rain of Arrows of Artillery	Rain of Arrows of Artillery	green
+Rain of Arrows of Saturation	Rain of Arrows of Saturation	green
+Reave of Refraction	Reave of Refraction	green
+Scourge Arrow of Menace	Scourge Arrow of Menace	green
+Seismic Trap of Swells	Seismic Trap of Swells	green
+Shattering Steel of Ammunition	Shattering Steel of Ammunition	green
+Shrapnel Ballista of Steel	Shrapnel Ballista of Steel	green
+Siege Ballista of Splintering	Siege Ballista of Splintering	green
+Spectral Shield Throw of Shattering	Spectral Shield Throw of Shattering	green
+Spectral Throw of Materialising	Spectral Throw of Materialising	green
+Split Arrow of Splitting	Split Arrow of Splitting	green
+Splitting Steel of Ammunition	Splitting Steel of Ammunition	green
+Storm Rain of the Conduit	Storm Rain of the Conduit	green
+Storm Rain of the Fence	Storm Rain of the Fence	green
+Summon Ice Golem of Hordes	Summon Ice Golem of Hordes	green
+Summon Ice Golem of Shattering	Summon Ice Golem of Shattering	green
+Tornado of Elemental Turbulence	Tornado of Elemental Turbulence	green
+Tornado Shot of Cloudburst	Tornado Shot of Cloudburst	green
+Toxic Rain of Sporeburst	Toxic Rain of Sporeburst	green
+Toxic Rain of Withering	Toxic Rain of Withering	green
+Viper Strike of the Mamba	Viper Strike of the Mamba	green
+Volatile Dead of Confinement	Volatile Dead of Confinement	green
+Volatile Dead of Seething	Volatile Dead of Seething	green
+Wild Strike of Extremes	Wild Strike of Extremes	green
+Arc of Oscillating	Arc of Oscillating	blue
+Arc of Surging	Arc of Surging	blue
+Armageddon Brand of Recall	Armageddon Brand of Recall	blue
+Armageddon Brand of Volatility	Armageddon Brand of Volatility	blue
+Ball Lightning of Orbiting	Ball Lightning of Orbiting	blue
+Ball Lightning of Static	Ball Lightning of Static	blue
+Bane of Condemnation	Bane of Condemnation	blue
+Blight of Atrophy	Blight of Atrophy	blue
+Blight of Contagion	Blight of Contagion	blue
+Bodyswap of Sacrifice	Bodyswap of Sacrifice	blue
+Cold Snap of Power	Cold Snap of Power	blue
+Contagion of Subsiding	Contagion of Subsiding	blue
+Contagion of Transference	Contagion of Transference	blue
+Crackling Lance of Branching	Crackling Lance of Branching	blue
+Crackling Lance of Disintegration	Crackling Lance of Disintegration	blue
+Discharge of Misery	Discharge of Misery	blue
+Divine Ire of Disintegration	Divine Ire of Disintegration	blue
+Divine Ire of Holy Lightning	Divine Ire of Holy Lightning	blue
+Essence Drain of Desperation	Essence Drain of Desperation	blue
+Essence Drain of Wickedness	Essence Drain of Wickedness	blue
+Eye of Winter of Finality	Eye of Winter of Finality	blue
+Eye of Winter of Transience	Eye of Winter of Transience	blue
+Firestorm of Meteors	Firestorm of Meteors	blue
+Firestorm of Pelting	Firestorm of Pelting	blue
+Flame Dash of Return	Flame Dash of Return	blue
+Flame Surge of Combusting	Flame Surge of Combusting	blue
+Flameblast of Celerity	Flameblast of Celerity	blue
+Flameblast of Contraction	Flameblast of Contraction	blue
+Forbidden Rite of Soul Sacrifice	Forbidden Rite of Soul Sacrifice	blue
+Frost Bomb of Forthcoming	Frost Bomb of Forthcoming	blue
+Frost Bomb of Instability	Frost Bomb of Instability	blue
+Frostblink of Wintry Blast	Frostblink of Wintry Blast	blue
+Galvanic Field of Intensity	Galvanic Field of Intensity	blue
+Glacial Cascade of the Fissure	Glacial Cascade of the Fissure	blue
+Hexblast of Contradiction	Hexblast of Contradiction	blue
+Hexblast of Havoc	Hexblast of Havoc	blue
+Ice Nova of Deep Freeze	Ice Nova of Deep Freeze	blue
+Ice Nova of Frostbolts	Ice Nova of Frostbolts	blue
+Ice Spear of Splitting	Ice Spear of Splitting	blue
+Icicle Mine of Fanning	Icicle Mine of Fanning	blue
+Icicle Mine of Sabotage	Icicle Mine of Sabotage	blue
+Incinerate of Expanse	Incinerate of Expanse	blue
+Incinerate of Venting	Incinerate of Venting	blue
+Kinetic Blast of Clustering	Kinetic Blast of Clustering	blue
+Kinetic Bolt of Fragmentation	Kinetic Bolt of Fragmentation	blue
+Lightning Conduit of the Heavens	Lightning Conduit of the Heavens	blue
+Lightning Spire Trap of Overloading	Lightning Spire Trap of Overloading	blue
+Lightning Spire Trap of Zapping	Lightning Spire Trap of Zapping	blue
+Lightning Tendrils of Eccentricity	Lightning Tendrils of Eccentricity	blue
+Lightning Tendrils of Escalation	Lightning Tendrils of Escalation	blue
+Lightning Trap of Sparking	Lightning Trap of Sparking	blue
+Penance Brand of Conduction	Penance Brand of Conduction	blue
+Penance Brand of Dissipation	Penance Brand of Dissipation	blue
+Power Siphon of the Archmage	Power Siphon of the Archmage	blue
+Purifying Flame of Revelations	Purifying Flame of Revelations	blue
+Pyroclast Mine of Sabotage	Pyroclast Mine of Sabotage	blue
+Raise Spectre of Transience	Raise Spectre of Transience	blue
+Raise Zombie of Falling	Raise Zombie of Falling	blue
+Raise Zombie of Slamming	Raise Zombie of Slamming	blue
+Righteous Fire of Arcane Devotion	Righteous Fire of Arcane Devotion	blue
+Scorching Ray of Immolation	Scorching Ray of Immolation	blue
+Soulrend of Reaping	Soulrend of Reaping	blue
+Soulrend of the Spiral	Soulrend of the Spiral	blue
+Spark of the Nova	Spark of the Nova	blue
+Spark of Unpredictability	Spark of Unpredictability	blue
+Storm Brand of Indecision	Storm Brand of Indecision	blue
+Stormbind of Teleportation	Stormbind of Teleportation	blue
+Summon Carrion Golem of Hordes	Summon Carrion Golem of Hordes	blue
+Summon Carrion Golem of Scavenging	Summon Carrion Golem of Scavenging	blue
+Summon Chaos Golem of Hordes	Summon Chaos Golem of Hordes	blue
+Summon Chaos Golem of the Maelstrom	Summon Chaos Golem of the Maelstrom	blue
+Summon Holy Relic of Conviction	Summon Holy Relic of Conviction	blue
+Summon Lightning Golem of Hordes	Summon Lightning Golem of Hordes	blue
+Summon Raging Spirit of Enormity	Summon Raging Spirit of Enormity	blue
+Summon Reaper of Eviscerating	Summon Reaper of Eviscerating	blue
+Summon Reaper of Revenants	Summon Reaper of Revenants	blue
+Summon Skeletons of Archers	Summon Skeletons of Archers	blue
+Summon Skeletons of Mages	Summon Skeletons of Mages	blue
+Void Sphere of Rending	Void Sphere of Rending	blue
+Vortex of Projection	Vortex of Projection	blue

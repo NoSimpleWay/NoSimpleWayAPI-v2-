@@ -1669,7 +1669,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2041,9 +2044,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2406,8 +2411,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сделка"
 
 	[tag]"icon path"	[value]"Card"
+	
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4036,9 +4045,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5613,7 +5624,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5944,7 +5958,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Returned in Mercenaries"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -7140,6 +7157,97 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runic Luck"
+	[tag]"name RU"		[value]"Рунная удача"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Last Stand"
+	[tag]"name RU"		[value]"До последнего"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Damnation"
+	[tag]"name RU"		[value]"Вечные муки"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"When Currents Blaze"
+	[tag]"name RU"		[value]"Когда пылают реки"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"History"
+	[tag]"name RU"		[value]"История"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

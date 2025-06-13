@@ -6159,7 +6159,10 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string EWindowMain::this_version = "1.5.0";
+const std::string				EWindowMain::this_version = "1.6.0";
+std::vector<ELocalisationText>	EWindowMain::registered_transfigured_gems;
+
+
 //DataEntityParserMode data_entity_parser_mode = DataEntityParserMode::UNDEFINED;
 
 void EWindowMain::check_new_version_from_github()
@@ -10231,7 +10234,7 @@ void NSWRegisteredButtonGroups::register_poe_ninja_price_checker()
 			league_name_part,
 			nullptr,
 			//"Settlers"
-			(EButtonGroupPoeNinjaPriceChecker::league_name != "") ? (EButtonGroupPoeNinjaPriceChecker::league_name) : ("Settlers")
+			(EButtonGroupPoeNinjaPriceChecker::league_name != "") ? (EButtonGroupPoeNinjaPriceChecker::league_name) : ("Mercenaries")
 		);
 		button_league_name->can_be_stretched = true;
 
@@ -10425,6 +10428,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tainted_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tinctures.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/transfigured_gems.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/expedition_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/scouting_reports.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/eldritch_currency.txt");
@@ -11634,6 +11638,8 @@ EWindowMain::EWindowMain()
 		style_list_group->activate_move_to_foreground_and_center();
 	}
 
+
+	parse_transfigured_gems();
 	
 	check_new_version_from_github();
 	EInputCore::add_log_info_with_timestamp("check new version from github");
@@ -12251,6 +12257,45 @@ void EWindowMain::parse_dust_prices()
 	EInputCore::remove_last_logger_prefix();
 }
 
+void EWindowMain::parse_transfigured_gems()
+{
+	std::ifstream file;
+	std::ofstream result_file;
+
+	std::string str;
+
+	file.open("data/transfigured_gems.txt");
+
+	std::string
+	result_buffer = "";
+
+
+	ELocalisationText
+	ltext;
+
+	while (std::getline(file, str))
+	{
+		EStringUtils::split_line_to_array(str, true);
+
+		std::string
+		gem_name_EN = EStringUtils::string_array[0];
+
+		std::string
+		gem_name_RU = EStringUtils::string_array[1];
+
+		std::string
+		gem_color = EStringUtils::string_array[2];
+
+		ltext.base_name = gem_name_EN;
+
+		ltext.localisations[NSW_localisation_EN] = gem_name_EN;
+		ltext.localisations[NSW_localisation_RU] = gem_name_RU;
+		 
+		registered_transfigured_gems.push_back(ltext);
+	}
+
+}
+
 void EWindowMain::load_config_from_disc()
 {
 	if (std::filesystem::exists(path_of_exile_folder + "DaDEditorConfig.config"))
@@ -12581,6 +12626,10 @@ void EWindowMain::register_rarities()
 	registered_rarity_router_variants[3]->text_color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 }
 
+void EWindowMain::register_transfigured_gems()
+{
+}
+
 void EWindowMain::register_alternate_qualities()
 {
 	ELocalisationText localisation_text;
@@ -12784,21 +12833,6 @@ void EWindowMain::register_game_item_attributes()
 	//jc_filter_block_attribute->description_localisation_key = "attribute_description_gem_quality_type";
 
 	//registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "TransfiguredGem";
-	jc_localisation.localisations[NSW_localisation_EN] = "Transfigured gem";
-	jc_localisation.localisations[NSW_localisation_RU] = "Преображённый камень";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/box_switcher_on");
-	jc_filter_block_attribute->description_localisation_key = "attribute_description_gem_have_transfigured_quality";
-	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "AlternateQuality";
@@ -12814,6 +12848,33 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_gem_have_alternate_qualitry";
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
 
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_gem_attributes";
+	////////////////////////////////////////////////////////
+
+
+	
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "TransfiguredGem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Transfigured gem";
+	jc_localisation.localisations[NSW_localisation_RU] = "Преображённый камень";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/box_switcher_on");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_gem_have_transfigured_quality";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+
+	transfigured_attribute_bool_flag_type = jc_filter_block_attribute;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 
@@ -13766,6 +13827,34 @@ void EWindowMain::register_game_item_attributes()
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT];
 
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "TransfiguredGem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Transfigured gem";
+	jc_localisation.localisations[NSW_localisation_RU] = "Преобр. камень";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->button_x_size_override = 200.0f;
+	jc_filter_block_attribute->attribute_tab_priority = 3;
+
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->have_exact_match = true;
+	jc_filter_block_attribute->have_input_field_for_listed = false;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
+
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/box_switcher_on");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_gem_have_transfigured_quality";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_TRANSFIGURED_GEMS];
+	
+	transfigured_attribute_listed_type = jc_filter_block_attribute;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 	/*_____________________________________________________________________________________________________*/
 
@@ -16348,6 +16437,23 @@ void EWindowMain::register_default_filter_rules()
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//transfigured gems
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->min_y_size = 45.0f;
+		jc_filter_rule->focused_by_data_type = "Transfigured gem";
+		jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+
+
+		jc_filter = DataEntityTagFilter();
+		jc_filter.target_tag.set_ID_by_string("data type");
+		jc_filter.add_new_suitable_value("Transfigured gem");
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_TRANSFIGURED_GEMS] = jc_filter_rule;
 	}
 }
 
@@ -20274,6 +20380,28 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						{
 							matched_item_attribute = EButtonGroupFilterBlock::get_suitable_game_item_attribute(buffer_text, _game_type);
 
+							if
+							(
+								(matched_item_attribute != nullptr)
+								&&
+								(matched_item_attribute->localisation.base_name == "TransfiguredGem")
+								&&
+								(matched_item_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+							)
+							{
+								std::string
+								back_value_4 = str_line.substr(std::max(0, (int)(str_line.size()) - 4), 4);
+
+								std::string
+								back_value_5 = str_line.substr(std::max(0, (int)(str_line.size()) - 5), 5);
+
+								if ((back_value_4 != "True") && (back_value_5 != "False"))
+								{
+									matched_item_attribute = EButtonGroupFilterBlock::get_suitable_game_item_attribute_specific_type("TransfiguredGem", _game_type, FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY);
+								}
+
+							}
+
 							//UNDEFINED ATTRIBUTE
 							if
 								(
@@ -20706,6 +20834,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									{
 										last_non_listed_line->target_button_with_value->main_text_area->change_text(buffer_text);
 									}
+									else
 
 
 									//
@@ -20722,13 +20851,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										}
 
 									}
+									else
 
 									//rarity
 									if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 									{
 										last_non_listed_line->rarity_router_button->select_variant_by_base_name(buffer_text);
 									}
-
+									else
 									//quality
 									if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 									{
@@ -22528,144 +22658,172 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 			switch (_game_item_attribute->filter_attribute_value_type)
 			{
-			case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST:
-			{
-				EntityButtonVariantRouterForFilterBlock*
-					rarity_button = new EntityButtonVariantRouterForFilterBlock();
-				non_listed_line->add_button_to_working_group(rarity_button);
 
-				rarity_button->make_as_default_router_variant_button(new ERegionGabarite(100.0f + input_field_additional_width, button_height));
-				rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
+				case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST:
+				{
+					EntityButtonVariantRouterForFilterBlock*
+						rarity_button = new EntityButtonVariantRouterForFilterBlock();
+					non_listed_line->add_button_to_working_group(rarity_button);
 
-				rarity_button->main_text_area->font = EFont::font_list[1];
-				rarity_button->main_text_area->font_scale = 0.7f;
+					rarity_button->make_as_default_router_variant_button(new ERegionGabarite(100.0f + input_field_additional_width, button_height));
+					rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 
-				rarity_button->parent_filter_block = _target_filter_block;
-				rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+					rarity_button->main_text_area->font = EFont::font_list[1];
+					rarity_button->main_text_area->font_scale = 0.7f;
 
-				non_listed_line->rarity_router_button = rarity_button;
+					rarity_button->parent_filter_block = _target_filter_block;
+					rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
-
-				RouterVariant* router_variant = nullptr;
-				ELocalisationText ltext;;
-
-				///		NORMAL		///////////////////////////////////////////////////////////////////////////
-				router_variant = new RouterVariant();
+					non_listed_line->rarity_router_button = rarity_button;
 
 
-				ltext.base_name = "Normal";
-				ltext.localisations[NSW_localisation_EN] = "Normal";
-				ltext.localisations[NSW_localisation_RU] = "Обычный";
+					RouterVariant* router_variant = nullptr;
+					ELocalisationText ltext;;
 
-				router_variant->router_localisation = ltext;
-
-				router_variant->text_color = new HSVRGBAColor();
-				router_variant->text_color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
-
-				rarity_button->router_variant_list.push_back(router_variant);
-				///		MAGIC		///////////////////////////////////////////////////////////////////////////
-				router_variant = new RouterVariant();
+					///		NORMAL		///////////////////////////////////////////////////////////////////////////
+					router_variant = new RouterVariant();
 
 
-				ltext.base_name = "Magic";
-				ltext.localisations[NSW_localisation_EN] = "Magic";
-				ltext.localisations[NSW_localisation_RU] = "Волшебный";
+					ltext.base_name = "Normal";
+					ltext.localisations[NSW_localisation_EN] = "Normal";
+					ltext.localisations[NSW_localisation_RU] = "Обычный";
 
-				router_variant->router_localisation = ltext;
+					router_variant->router_localisation = ltext;
 
-				router_variant->text_color = new HSVRGBAColor();
-				router_variant->text_color->set_color_RGBA(0.2f, 0.6f, 1.6f, 1.0f);
+					router_variant->text_color = new HSVRGBAColor();
+					router_variant->text_color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
-				rarity_button->router_variant_list.push_back(router_variant);
-				///		RARE		///////////////////////////////////////////////////////////////////////////
-				router_variant = new RouterVariant();
-
-
-				ltext.base_name = "Rare";
-				ltext.localisations[NSW_localisation_EN] = "Rare";
-				ltext.localisations[NSW_localisation_RU] = "Редкий";
-
-				router_variant->router_localisation = ltext;
-
-				router_variant->text_color = new HSVRGBAColor();
-				router_variant->text_color->set_color_RGBA(1.0f, 0.8f, 0.2f, 1.0f);
-
-				rarity_button->router_variant_list.push_back(router_variant);
-				///		UNIQUE		///////////////////////////////////////////////////////////////////////////
-				router_variant = new RouterVariant();
+					rarity_button->router_variant_list.push_back(router_variant);
+					///		MAGIC		///////////////////////////////////////////////////////////////////////////
+					router_variant = new RouterVariant();
 
 
-				ltext.base_name = "Unique";
-				ltext.localisations[NSW_localisation_EN] = "Unique";
-				ltext.localisations[NSW_localisation_RU] = "Уникальный";
+					ltext.base_name = "Magic";
+					ltext.localisations[NSW_localisation_EN] = "Magic";
+					ltext.localisations[NSW_localisation_RU] = "Волшебный";
 
-				router_variant->router_localisation = ltext;
+					router_variant->router_localisation = ltext;
 
-				router_variant->text_color = new HSVRGBAColor();
-				router_variant->text_color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
+					router_variant->text_color = new HSVRGBAColor();
+					router_variant->text_color->set_color_RGBA(0.2f, 0.6f, 1.6f, 1.0f);
 
-				rarity_button->router_variant_list.push_back(router_variant);
-				///////////////////////////////////////////////////////////////////////////////////////////////
+					rarity_button->router_variant_list.push_back(router_variant);
+					///		RARE		///////////////////////////////////////////////////////////////////////////
+					router_variant = new RouterVariant();
 
-				rarity_button->select_variant(0);
+
+					ltext.base_name = "Rare";
+					ltext.localisations[NSW_localisation_EN] = "Rare";
+					ltext.localisations[NSW_localisation_RU] = "Редкий";
+
+					router_variant->router_localisation = ltext;
+
+					router_variant->text_color = new HSVRGBAColor();
+					router_variant->text_color->set_color_RGBA(1.0f, 0.8f, 0.2f, 1.0f);
+
+					rarity_button->router_variant_list.push_back(router_variant);
+					///		UNIQUE		///////////////////////////////////////////////////////////////////////////
+					router_variant = new RouterVariant();
 
 
-				//non_listed_line->button_list.push_back(rarity_button);
-				break;
-			}
+					ltext.base_name = "Unique";
+					ltext.localisations[NSW_localisation_EN] = "Unique";
+					ltext.localisations[NSW_localisation_RU] = "Уникальный";
 
-			
+					router_variant->router_localisation = ltext;
 
-			case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER:
-			{
-				//NON-LISTED GAME TTRIBUTE BOOL CHECKER
-				jc_button = new EntityButtonForFilterBlock();
-				jc_button->make_default_bool_switcher_button
-				(
-					new ERegionGabarite(button_height, button_height),
-					non_listed_line,
-					EDataActionCollection::action_switch_boolean_value,
-					NS_DefaultGabarites::texture_bool_switcher_activated_box,
-					NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
-					nullptr
-				);
-				jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
+					router_variant->text_color = new HSVRGBAColor();
+					router_variant->text_color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 
-				jc_button->parent_filter_block = _target_filter_block;
-				jc_button->used_filter_block_attribute = _game_item_attribute;
+					rarity_button->router_variant_list.push_back(router_variant);
+					///////////////////////////////////////////////////////////////////////////////////////////////
 
-				non_listed_line->target_button_with_value = jc_button;
-				non_listed_line->add_button_to_working_group(jc_button);
+					rarity_button->select_variant(0);
 
-				break;
-			}
 
-			default:
-			{
-				jc_button = new EntityButtonForFilterBlock();
-				jc_button->make_default_button_with_edible_text
-				(
-					new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-					non_listed_line,
-					nullptr,
-					text
-				);
-				jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
-				jc_button->main_text_area->font = EFont::font_list[1];
-				jc_button->main_text_area->font_scale = 0.75f;
+					//non_listed_line->button_list.push_back(rarity_button);
+					break;
+				}
+				//case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TRANSFIGURED_GEM_LIST:
+				//{
+				//	EntityButtonVariantRouterForFilterBlock*
+				//	transfigured_version_button = new EntityButtonVariantRouterForFilterBlock();
 
-				jc_button->main_text_area->gray_text = ELocalisationText();
-				jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "value";
-				jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "значение";
+				//	non_listed_line->add_button_to_working_group(transfigured_version_button);
 
-				jc_button->parent_filter_block = _target_filter_block;
-				jc_button->used_filter_block_attribute = _game_item_attribute;
+				//	transfigured_version_button->make_as_default_router_variant_button(new ERegionGabarite(100.0f + input_field_additional_width, button_height));
+				//	transfigured_version_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 
-				jc_button->main_text_area->localisation_text = _game_item_attribute->localisation;
+				//	transfigured_version_button->main_text_area->font = EFont::font_list[1];
+				//	transfigured_version_button->main_text_area->font_scale = 0.60f;
 
-				non_listed_line->target_button_with_value = jc_button;
-				non_listed_line->add_button_to_working_group(jc_button);
-			}
+				//	transfigured_version_button->parent_filter_block = _target_filter_block;
+				//	transfigured_version_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+
+				//	non_listed_line->rarity_router_button = transfigured_version_button;
+
+				//	for (ELocalisationText tgem_locaisation : EWindowMain::registered_transfigured_gems)
+				//	{
+				//		transfigured_version_button->add_router_variant_by_localisation(&tgem_locaisation);
+				//	}
+
+				//	transfigured_version_button->select_variant(0);
+
+				//	non_listed_line->transfigured_gem_router_button = transfigured_version_button;
+
+				//	break;
+				//}
+
+				case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER:
+				{
+					//NON-LISTED GAME TTRIBUTE BOOL CHECKER
+					jc_button = new EntityButtonForFilterBlock();
+					jc_button->make_default_bool_switcher_button
+					(
+						new ERegionGabarite(button_height, button_height),
+						non_listed_line,
+						EDataActionCollection::action_switch_boolean_value,
+						NS_DefaultGabarites::texture_bool_switcher_activated_box,
+						NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+						nullptr
+					);
+					jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
+
+					jc_button->parent_filter_block = _target_filter_block;
+					jc_button->used_filter_block_attribute = _game_item_attribute;
+
+					non_listed_line->target_button_with_value = jc_button;
+					non_listed_line->add_button_to_working_group(jc_button);
+
+					break;
+				}
+
+				default:
+				{
+					jc_button = new EntityButtonForFilterBlock();
+					jc_button->make_default_button_with_edible_text
+					(
+						new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+						non_listed_line,
+						nullptr,
+						text
+					);
+					jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+					jc_button->main_text_area->font = EFont::font_list[1];
+					jc_button->main_text_area->font_scale = 0.75f;
+
+					jc_button->main_text_area->gray_text = ELocalisationText();
+					jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "value";
+					jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "значение";
+
+					jc_button->parent_filter_block = _target_filter_block;
+					jc_button->used_filter_block_attribute = _game_item_attribute;
+
+					jc_button->main_text_area->localisation_text = _game_item_attribute->localisation;
+
+					non_listed_line->target_button_with_value = jc_button;
+					non_listed_line->add_button_to_working_group(jc_button);
+				}
 			}
 
 
@@ -22989,7 +23147,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 					result_string += "False";
 				}
 			}
-
+			else
 			//bool attribute
 			if
 				(
@@ -23001,19 +23159,39 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 				result_string += " ";
 				result_string += container->target_button_with_value->main_text_area->original_text;
 			}
-
+			else
 			if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 			{
 				result_string += " ";
 				result_string += container->rarity_router_button->router_variant_list[container->rarity_router_button->selected_variant]->router_localisation.base_name;
 			}
-
-
+			else
 			if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 			{
 				result_string += " ";
 				result_string += container->target_button_with_value->main_text_area->localisation_text.base_name;
 			}
+
+			//if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TRANSFIGURED_GEM_LIST)
+			//{
+			//	result_string += " ";
+
+			//	std::string
+			//	str_value = container->transfigured_gem_router_button->main_text_area->original_text;
+			//	
+			//	if ((str_value == "True") || (str_value == "False"))
+			//	{
+			//		result_string += str_value;
+			//	}
+			//	else
+			//	{
+			//		result_string += '"' + str_value + '"';
+			//	}
+
+			//}
+
+
+			
 
 			result_string += '\n';
 		}
@@ -24192,6 +24370,33 @@ GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute(std
 				||
 				(attribute->game_type == PathOfExileGame::BOTH)
 			)
+		)
+		{
+			return attribute;
+		}
+	}
+
+	return nullptr;
+}
+
+GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute_specific_type(std::string _name, PathOfExileGame _game_version, FilterAttributeValueType _value_type)
+{
+	for (int i = 0; i < registered_game_item_attributes.size(); i++)
+	{
+		GameItemAttribute*
+		attribute = registered_game_item_attributes[i];
+
+		if
+		(
+			(EStringUtils::compare_ignoring_case(_name, attribute->localisation.base_name))
+			&&
+			(
+				(attribute->game_type == _game_version)
+				||
+				(attribute->game_type == PathOfExileGame::BOTH)
+			)
+			&&
+			(attribute->filter_attribute_value_type == _value_type)
 		)
 		{
 			return attribute;
@@ -25500,6 +25705,42 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 					_game_item,
 					int_attribute_name,
 					EStringUtils::safe_convert_string_to_number(int_attribute_value, 0, 999'999)
+				);
+			}
+
+
+			//activate string attribute for data entity
+			std::string
+			string_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "set string attribute", _game_item->stored_data_entity);
+
+			std::string
+			string_attribute_value = DataEntityUtils::get_tag_value_by_name(1, "set string attribute", _game_item->stored_data_entity);
+
+			if ((string_attribute_name != "") && (string_attribute_value != ""))
+			{
+				GameItemAttribute::game_attribute_set_string_value
+				(
+					_game_item,
+					string_attribute_name,
+					string_attribute_value
+				);
+			}
+
+
+			//activate string attribute for data entity
+			std::string
+			listed_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "set listed attribute", _game_item->stored_data_entity);
+
+			std::string
+			listed_attribute_value = DataEntityUtils::get_tag_value_by_name(1, "set listed attribute", _game_item->stored_data_entity);
+
+			if ((listed_attribute_name != "") && (listed_attribute_value != ""))
+			{
+				GameItemAttribute::add_new_listed_value_to_game_attribute
+				(
+					_game_item,
+					listed_attribute_name,
+					ELocalisationText::generate_localization_with_base_name(listed_attribute_value)
 				);
 			}
 
@@ -27320,6 +27561,12 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 						}
 					}
 
+					////transfigured gem
+					//if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TRANSFIGURED_GEM_LIST)
+					//{
+					//	if (!EStringUtils::compare_ignoring_case(matched_item_attribute_container->attribute_value_str, line_group->transfigured_gem_router_button->main_text_area->localisation_text.base_name)) { return false; }
+					//}
+
 					//alternate quality
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 					{
@@ -27368,7 +27615,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							return false;
 						}
 					}
-
+					else
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 					{
 						if
@@ -27384,7 +27631,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							return false;
 						}
 					}
-
+					else
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
 					{
 						if (*static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)
@@ -27392,12 +27639,17 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							return false;//block require bool-flag for attribute, which item dont have
 						}
 					}
-
+					//else
+					//if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TRANSFIGURED_GEM_LIST)
+					//{
+					//	return (line_group->transfigured_gem_router_button->main_text_area->original_text == "False");//return TRUE only if rule is not transfigured
+					//}
+					else
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 					{
 						return false;//if item have no alternative quality, always return false
 					}
-
+					else
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 					{
 						if

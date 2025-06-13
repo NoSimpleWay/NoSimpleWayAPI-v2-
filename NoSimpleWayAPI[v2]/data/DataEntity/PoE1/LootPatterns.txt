@@ -427,17 +427,17 @@ DETF_color	255	230	204	255
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Renamed item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -479,13 +479,13 @@ DETF_color	255	230	204	255
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Renamed item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -531,7 +531,7 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Deleted in Settlers"
+DETF_value_key	"Deleted in Mercenaries"
 DETF_color	255	230	204	255
 
 
@@ -554,7 +554,7 @@ REGISTER_NEW_PATTERN
 target_game	"PoE1"
 name_EN	"New currency"
 name_RU	"Новая валюта"
-icon	"data/textures/icons/SuperChisel.png"
+icon	"data/textures/icons/VeiledExaltedOrb.png"
 cannot_be_configured
 activate_attribute_group_by_name	"Quantity"
 
@@ -594,19 +594,88 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Settlers league"
+DETF_value_key	"Introduced: Mercenaries league"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Changed in Settlers"
+DETF_value_key	"Changed in Mercenaries"
 DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Rune"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+name_EN	"Trarthus gems"
+name_RU	"Камни Тератны"
+icon	"data/textures/icons/TransfiguredGem.png"
+cannot_be_configured
+activate_attribute_group_by_name	"GemAttributes"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"special tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Transfigured"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Mercenaries league"
+	DETF_color	255	230	204	255
+
+
 
 REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
 DETF_color	255	128	64	255
 
 REGISTER_NEW_BANNED_VALUES
@@ -635,127 +704,30 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Changed in Settlers"
-DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New bases"
-name_RU	"Новые базы предмета"
-icon	"data/textures/icons/SuperChest.png"
-
-activate_attribute_group_by_name	"Rarity"
-activate_attribute_group_by_name	"ItemLevel"
-activate_attribute_group_by_name	"SocketsLinksColours"
-activate_attribute_group_by_name	"FlagAttributes"
-activate_attribute_group_by_name	"Influence"
-activate_attribute_group_by_name	"Quality"
-activate_attribute_group_by_name	"DefenceProcentile"
-activate_attribute_group_by_name	"Explicits"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Gloves"
-DETF_localised_attribute_name_EN	"Gloves"
-DETF_localised_attribute_name_RU	"Перчатки"
+DETF_value_key	"Changed in Mercenaries"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Helmets"
-DETF_localised_attribute_name_EN	"Helmets"
-DETF_localised_attribute_name_RU	"Шлемы"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Boots"
-DETF_localised_attribute_name_EN	"Boots"
-DETF_localised_attribute_name_RU	"Сапоги"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Body Armours"
-DETF_localised_attribute_name_EN	"Body armours"
-DETF_localised_attribute_name_RU	"Доспехи"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rings"
-DETF_localised_attribute_name_EN	"Rings"
-DETF_localised_attribute_name_RU	"Кольца"
-DETF_color	255	230	128	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-tag_cannot_be_configured
-DETF_value_key	"Introduced: Settlers league"
-DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-tag_cannot_be_configured
-DETF_value_key	"Introduced: Settlers league"
-DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
-
-REGISTER_NEW_BANNED_VALUES
 DETF_value_key	"Renamed item"
-DETF_color	255	128	64	255
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
 
 
 
@@ -765,7 +737,7 @@ target_game	"PoE1"
 cannot_be_configured
 name_EN	"Returned items"
 name_RU	"Возвращённые предметы"
-icon	"data/textures/icons/SubduingOakbranchTinctureoftheChase.png"
+icon	"data/textures/icons/Card.png"
 activate_attribute_group_by_name	"Rarity"
 
 REGISTER_NEW_GENERATOR
@@ -788,24 +760,166 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Returned in Settlers"
+DETF_value_key	"Returned in Mercenaries"
 DETF_color	255	230	204	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Scarab item"
-DETF_color	255	128	64	255
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Renamed item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Scarab item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Runegrafts"
+name_RU	"Рунограммы"
+icon	"data/textures/icons/RunegraftOfCombatant.png"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rune"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Introduced: Mercenaries league"
+DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Allflame embers"
+name_RU	"Угольки всепламени"
+icon	"data/textures/icons/Allflame_ember.png"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Map Fragments"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Allflame amber"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Mercenaries league"
+	DETF_color	255	230	204	255
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
 
 
 REGISTER_NEW_PATTERN
@@ -834,29 +948,34 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Divination Cards"
-DETF_color	255	230	204	255
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Divination Cards"
+	DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Settlers league"
-DETF_color	255	230	204	255
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Mercenaries league"
+	DETF_color	255	230	204	255
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Deleted"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Hidden item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
 
-REGISTER_NEW_BANNED_VALUES
-DETF_value_key	"Renamed item"
-DETF_color	255	128	64	255
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -979,11 +1098,11 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Settlers league"
+DETF_value_key	"Introduced: Mercenaries league"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Settlers league"
+DETF_value_key	"Introduced: Mercenaries league"
 DETF_color	255	230	204	255
 
 
@@ -1015,7 +1134,7 @@ target_game	"PoE1"
 cannot_be_configured
 name_EN	"New map fragments"
 name_RU	"Новые проходки"
-icon	"data/textures/icons/AnAudienceWithTheKing.png"
+icon	"data/textures/icons/EchoOfRevence.png"
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -1048,7 +1167,16 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Introduced: Settlers league"
+DETF_value_key	"Introduced: Mercenaries league"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Boss pass"
 DETF_color	255	230	204	255
 
 
@@ -1088,9 +1216,9 @@ DETF_color	255	128	64	255
 
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"Category:\nSettlers of Kalguur"
-name_RU	"Категория:\nПоселенцы Калгуура"
-icon	"data/textures/buttons/pattern_folder_settlers.png"
+name_EN	"Category:\nMercenaries"
+name_RU	"Категория:\nНаёмники"
+icon	"data/textures/buttons/pattern_folder_mercenaries.png"
 is_folder
 have_force_field
 

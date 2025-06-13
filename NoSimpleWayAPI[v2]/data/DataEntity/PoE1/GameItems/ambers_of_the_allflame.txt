@@ -1263,3 +1263,168 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of Kulemak"
+	[tag]"name RU"		[value]"Уголь Всепламени Кулемака"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of Resplendence"
+	[tag]"name RU"		[value]"Уголь Всепламени великолепия"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of Propagation"
+	[tag]"name RU"		[value]"Уголь Всепламени размножения"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of Flesh"
+	[tag]"name RU"		[value]"Уголь Всепламени плоти"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Wildwood"
+	[tag]"name RU"		[value]"Уголь Всепламени Диколесья"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Ethereal"
+	[tag]"name RU"		[value]"Уголь Всепламени бесплотных"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Gilded"
+	[tag]"name RU"		[value]"Уголь Всепламени позолоченных"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Gilded"
+	[tag]"name RU"		[value]"Уголь Всепламени жаб"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

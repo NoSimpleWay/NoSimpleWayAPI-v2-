@@ -306,8 +306,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"Loot source: Catarina"
 	[tag]"item tag"			[value]"Syndicate drop"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"			[value]"Deleted in Necropolis"
-	[tag]"item tag"			[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
 	
 	[tag]"drop level"		[value]"61"
 	[tag]"stack multiplier"	[value]"1"
@@ -2104,6 +2104,13 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -2116,6 +2123,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2138,6 +2147,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2160,6 +2171,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2182,6 +2195,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2204,6 +2219,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2226,6 +2243,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2244,6 +2263,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Руна Странствия"
 
 	[tag]"icon path"	[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
+	
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
@@ -2266,6 +2288,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Руна Горы"
 
 	[tag]"icon path"	[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
+	
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
@@ -2288,6 +2313,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Руна Времени"
 
 	[tag]"icon path"	[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
+	
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
@@ -2314,6 +2342,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Rune"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mercenaries"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2323,6 +2353,556 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Angler"
+	[tag]"name RU"		[value]"Рунограмма удильщика"
+
+	[tag]"icon path"	[value]"RunegraftOfAngler"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Bound"
+	[tag]"name RU"		[value]"Рунограмма уз"
+
+	[tag]"icon path"	[value]"RunegraftOfBound"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Combatant"
+	[tag]"name RU"		[value]"Рунограмма бойца"
+
+	[tag]"icon path"	[value]"RunegraftOfCombatant"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Fortress"
+	[tag]"name RU"		[value]"Рунограмма крепости"
+
+	[tag]"icon path"	[value]"RunegraftOfFortress"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Jeweller"
+	[tag]"name RU"		[value]"Рунограмма златокузнеца"
+
+	[tag]"icon path"	[value]"RunegraftOfJeweller"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Novamark"
+	[tag]"name RU"		[value]"Рунограмма дальнего кольца"
+
+	[tag]"icon path"	[value]"RunegraftOfNovamark"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the River"
+	[tag]"name RU"		[value]"Рунограмма реки"
+
+	[tag]"icon path"	[value]"RunegraftOfRiver"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Sinistral"
+	[tag]"name RU"		[value]"Рунограмма левши"
+
+	[tag]"icon path"	[value]"RunegraftOfSinistral"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Soulwick"
+	[tag]"name RU"		[value]"Рунограмма фитиля душ"
+
+	[tag]"icon path"	[value]"RunegraftOfSoulwick"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Warp"
+	[tag]"name RU"		[value]"Рунограмма перехода"
+
+	[tag]"icon path"	[value]"RunegraftOfWarp"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Witchmark"
+	[tag]"name RU"		[value]"Рунограмма ведьмовской метки"
+
+	[tag]"icon path"	[value]"RunegraftOfWitchmark"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Bellows"
+	[tag]"name RU"		[value]"Рунограмма лужёной глотки"
+
+	[tag]"icon path"	[value]"RunegraftOfBellows"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Blasphemy"
+	[tag]"name RU"		[value]"Рунограмма богохульства"
+
+	[tag]"icon path"	[value]"RunegraftOfBlasphemy"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Gemcraft"
+	[tag]"name RU"		[value]"Рунограмма камнереза"
+
+	[tag]"icon path"	[value]"RunegraftOfGemcraft"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Loyalty"
+	[tag]"name RU"		[value]"Рунограмма верности"
+
+	[tag]"icon path"	[value]"RunegraftOfLoyalty"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Quaffing"
+	[tag]"name RU"		[value]"Рунограмма опорожнения"
+
+	[tag]"icon path"	[value]"RunegraftOfQuaffing"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Recompense"
+	[tag]"name RU"		[value]"Рунограмма возмещения"
+
+	[tag]"icon path"	[value]"RunegraftOfRecompense"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Restitching"
+	[tag]"name RU"		[value]"Рунограмма сшивания"
+
+	[tag]"icon path"	[value]"RunegraftOfRestitching"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Stability"
+	[tag]"name RU"		[value]"Рунограмма стабильности"
+
+	[tag]"icon path"	[value]"RunegraftOfStability"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Time"
+	[tag]"name RU"		[value]"Рунограмма времени"
+
+	[tag]"icon path"	[value]"RunegraftOfTime"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Treachery"
+	[tag]"name RU"		[value]"Рунограмма вероломства"
+
+	[tag]"icon path"	[value]"RunegraftOfTreachery"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 ADD_NEW_DATA_ENTITY

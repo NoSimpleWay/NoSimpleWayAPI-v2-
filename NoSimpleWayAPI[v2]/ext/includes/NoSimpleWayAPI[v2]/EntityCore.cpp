@@ -2625,6 +2625,21 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_by_text_and_color(s
 	return router_variant;
 }
 
+RouterVariant* EntityButtonVariantRouter::add_router_variant_by_localisation(ELocalisationText* _ltext)
+{
+	RouterVariant*
+	router_variant = new RouterVariant();
+
+	router_variant->router_localisation = *(_ltext);
+
+	router_variant->text_color = new HSVRGBAColor();
+	router_variant->text_color->set_color_RGBA(1.0f, 0.9f, 0.8f, 1.0f);
+
+	router_variant_list.push_back(router_variant);
+
+	return router_variant;
+}
+
 RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
 {
 	RouterVariant*

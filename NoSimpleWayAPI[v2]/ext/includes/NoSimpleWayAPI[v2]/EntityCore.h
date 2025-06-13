@@ -555,6 +555,7 @@ public:
 	//);
 
 	RouterVariant* add_router_variant_by_text_and_color(std::string _text, float _r, float _g, float _b, float _a);
+	RouterVariant* add_router_variant_by_localisation(ELocalisationText* _ltext);
 	RouterVariant* add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
 	RouterVariant* add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 	RouterVariant* add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);

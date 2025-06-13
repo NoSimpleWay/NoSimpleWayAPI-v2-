@@ -4861,6 +4861,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -4873,9 +4876,86 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"Renamed item"
+	[tag]"item tag"		[value]"Deleted"
 	[tag]"renamed to"	[value]"Betrayal Scarab of the Allflame"
+
+	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of the Allflame"
+	[tag]"name RU"		[value]"Скарабей Предательства всепламени"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Kalguuran Scarab"
+	[tag]"name RU"		[value]"Калгууранский скарабей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Kalguuran Scarab of Guarded Riches"
+	[tag]"name RU"		[value]"Калгууранский скарабей охраняемых богатств"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4887,8 +4967,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Betrayal Scarab of the Allflame"
-	[tag]"name RU"		[value]"Скарабей Предательства всепламени"
+	[tag]"name EN"		[value]"Kalguuran Scarab of Refinement"
+	[tag]"name RU"		[value]"Калгууранский скарабей переплавки"
 
 	[tag]"icon path"	[value]"Scarab_bonus"
 	[tag]"base class"	[value]"Map Fragments"
@@ -4904,26 +4984,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Betrayal Scarab of Intelligence"
-	[tag]"name RU"		[value]"Скарабей Предательства разведки"
-
-	[tag]"icon path"	[value]"Scarab_bonus"
-	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Scarab item"
 	
-	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"worth"		[value]"Moderate"
 	
-	[tag]"scarab tier"	[value]"Bonus"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -5651,6 +5732,97 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Echo of Trauma"
+	[tag]"name RU"		[value]"Отголосок травмы"
+
+	[tag]"icon path"	[value]"EchoOfTrauma"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Echo of Reverence"
+	[tag]"name RU"		[value]"Отголосок почитания"
+
+	[tag]"icon path"	[value]"EchoOfRevence"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Echo of Loneliness"
+	[tag]"name RU"		[value]"Отголосок одиночества"
+
+	[tag]"icon path"	[value]"EchoOfLoneliness"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Syndicate Medallion"
+	[tag]"name RU"		[value]"Медальон Синдиката"
+
+	[tag]"icon path"	[value]"SyndicateMedallion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
 
 
 

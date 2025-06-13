@@ -353,6 +353,11 @@
 [Eternal Orb] dust quantity = 0, dust tag = Trash
 [Orb of Dominance] dust quantity = 0, dust tag = Trash
 [Exalted Orb] dust quantity = 0, dust tag = Trash
+[Shaper's Exalted Orb] dust quantity = 0, dust tag = Trash
+[Elder's Exalted Orb] dust quantity = 0, dust tag = Trash
+[Orb of Remembrance] dust quantity = 0, dust tag = Trash
+[Orb of Unravelling] dust quantity = 0, dust tag = Trash
+[Orb of Intention] dust quantity = 0, dust tag = Trash
 [Hunter's Exalted Orb] dust quantity = 0, dust tag = Trash
 [Redeemer's Exalted Orb] dust quantity = 0, dust tag = Trash
 [Warlord's Exalted Orb] dust quantity = 0, dust tag = Trash
@@ -409,6 +414,27 @@
 [Mountain Rune] dust quantity = 0, dust tag = Trash
 [Time Rune] dust quantity = 0, dust tag = Trash
 [Power Rune] dust quantity = 0, dust tag = Trash
+[Runegraft of the Angler] dust quantity = 0, dust tag = Trash
+[Runegraft of the Bound] dust quantity = 0, dust tag = Trash
+[Runegraft of the Combatant] dust quantity = 0, dust tag = Trash
+[Runegraft of the Fortress] dust quantity = 0, dust tag = Trash
+[Runegraft of the Jeweller] dust quantity = 0, dust tag = Trash
+[Runegraft of the Novamark] dust quantity = 0, dust tag = Trash
+[Runegraft of the River] dust quantity = 0, dust tag = Trash
+[Runegraft of the Sinistral] dust quantity = 0, dust tag = Trash
+[Runegraft of the Soulwick] dust quantity = 0, dust tag = Trash
+[Runegraft of the Warp] dust quantity = 0, dust tag = Trash
+[Runegraft of the Witchmark] dust quantity = 0, dust tag = Trash
+[Runegraft of Bellows] dust quantity = 0, dust tag = Trash
+[Runegraft of Blasphemy] dust quantity = 0, dust tag = Trash
+[Runegraft of Gemcraft] dust quantity = 0, dust tag = Trash
+[Runegraft of Loyalty] dust quantity = 0, dust tag = Trash
+[Runegraft of Quaffing] dust quantity = 0, dust tag = Trash
+[Runegraft of Recompense] dust quantity = 0, dust tag = Trash
+[Runegraft of Restitching] dust quantity = 0, dust tag = Trash
+[Runegraft of Stability] dust quantity = 0, dust tag = Trash
+[Runegraft of Time] dust quantity = 0, dust tag = Trash
+[Runegraft of Treachery] dust quantity = 0, dust tag = Trash
 [Filled Coffin] dust quantity = 0, dust tag = Trash
 [Omen of Amelioration] dust quantity = 0, dust tag = Trash
 [Omen of Return] dust quantity = 0, dust tag = Trash
@@ -1400,6 +1426,11 @@
 [Temperance] dust quantity = 0, dust tag = Trash
 [Lonely Warrior] dust quantity = 0, dust tag = Trash
 [Toxic Tidings] dust quantity = 0, dust tag = Trash
+[Runic Luck] dust quantity = 0, dust tag = Trash
+[Last Stand] dust quantity = 0, dust tag = Trash
+[Damnation] dust quantity = 0, dust tag = Trash
+[When Currents Blaze] dust quantity = 0, dust tag = Trash
+[History] dust quantity = 0, dust tag = Trash
 [Glorious Plate] dust quantity = 86960, dust tag = Rare
 [Gladiator Plate] dust quantity = 113460, dust tag = Expensive
 [Astral Plate] dust quantity = 24280, dust tag = Moderate
@@ -2517,10 +2548,6 @@
 [Awakened Enhance Support] dust quantity = 0, dust tag = Trash
 [Awakened Enlighten Support] dust quantity = 0, dust tag = Trash
 [Greater Volley Support] dust quantity = 0, dust tag = Trash
-[Riposte] dust quantity = 0, dust tag = Trash
-[Vengeance] dust quantity = 0, dust tag = Trash
-[Reckoning] dust quantity = 0, dust tag = Trash
-[Call to Arms] dust quantity = 0, dust tag = Trash
 [Colossal Life Flask] dust quantity = 0, dust tag = Trash
 [Divine Life Flask] dust quantity = 0, dust tag = Trash
 [Eternal Life Flask] dust quantity = 0, dust tag = Trash
@@ -2814,7 +2841,9 @@
 [Betrayal Scarab] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Intelligence] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of the Allflame] dust quantity = 0, dust tag = Trash
-[Betrayal Scarab of Intelligence] dust quantity = 0, dust tag = Trash
+[Kalguuran Scarab] dust quantity = 0, dust tag = Trash
+[Kalguuran Scarab of Guarded Riches] dust quantity = 0, dust tag = Trash
+[Kalguuran Scarab of Refinement] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Reinforcements] dust quantity = 0, dust tag = Trash
 [Betrayal Scarab of Perpetuation] dust quantity = 0, dust tag = Trash
 [Beyond Scarab] dust quantity = 0, dust tag = Trash
@@ -2848,6 +2877,10 @@
 [Horned Scarab of Glittering] dust quantity = 0, dust tag = Trash
 [Horned Scarab of Pandemonium] dust quantity = 0, dust tag = Trash
 [An Audience With The King] dust quantity = 0, dust tag = Trash
+[Echo of Trauma] dust quantity = 0, dust tag = Trash
+[Echo of Reverence] dust quantity = 0, dust tag = Trash
+[Echo of Loneliness] dust quantity = 0, dust tag = Trash
+[Syndicate Medallion] dust quantity = 0, dust tag = Trash
 [Cartography Scarab] dust quantity = 0, dust tag = Trash
 [Cartography Scarab of Escalation] dust quantity = 0, dust tag = Trash
 [Cartography Scarab of Ascension] dust quantity = 0, dust tag = Trash
@@ -3115,6 +3148,14 @@
 [Allflame Ember of the False God] dust quantity = 0, dust tag = Trash
 [Allflame Ember of Trial Guards] dust quantity = 0, dust tag = Trash
 [Allflame Ember of Trial Cores] dust quantity = 0, dust tag = Trash
+[Allflame Ember of Kulemak] dust quantity = 0, dust tag = Trash
+[Allflame Ember of Resplendence] dust quantity = 0, dust tag = Trash
+[Allflame Ember of Propagation] dust quantity = 0, dust tag = Trash
+[Allflame Ember of Flesh] dust quantity = 0, dust tag = Trash
+[Allflame Ember of the Wildwood] dust quantity = 0, dust tag = Trash
+[Allflame Ember of the Ethereal] dust quantity = 0, dust tag = Trash
+[Allflame Ember of the Gilded] dust quantity = 0, dust tag = Trash
+[Allflame Ember of the Gilded] dust quantity = 0, dust tag = Trash
 [Coral Amulet] dust quantity = 2120, dust tag = Trash
 [Coral Amulet] dust quantity = 4860, dust tag = Trash
 [Coral Amulet] dust quantity = 6640, dust tag = Common
@@ -4252,6 +4293,18 @@
 [Vaal Ancestral Warchief] dust quantity = 0, dust tag = Trash
 [Earthbreaker Support] dust quantity = 0, dust tag = Trash
 [Increased Duration] dust quantity = 0, dust tag = Trash
+[Dark Pact] dust quantity = 0, dust tag = Trash
+[Heavy Strike] dust quantity = 0, dust tag = Trash
+[Spectral Shield Throw] dust quantity = 0, dust tag = Trash
+[Spectral Throw] dust quantity = 0, dust tag = Trash
+[Storm Call] dust quantity = 0, dust tag = Trash
+[Blast Rain] dust quantity = 0, dust tag = Trash
+[Siege Ballista] dust quantity = 0, dust tag = Trash
+[Sunder] dust quantity = 0, dust tag = Trash
+[Wave of Conviction] dust quantity = 0, dust tag = Trash
+[Chain Hook] dust quantity = 0, dust tag = Trash
+[Spectral Helix] dust quantity = 0, dust tag = Trash
+[Bladefall] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash

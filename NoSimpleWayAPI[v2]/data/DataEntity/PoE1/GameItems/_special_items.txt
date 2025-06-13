@@ -681,3 +681,291 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Settlers"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Dark Pact"
+	[tag]"name EN"		[value]"Dark Pact of Trarthus"
+	[tag]"name RU"		[value]"Тёмный договор Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Dark Pact of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Heavy Strike"
+	[tag]"name EN"		[value]"Heavy Strike of Trarthus"
+	[tag]"name RU"		[value]"Тяжёлый удар Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Heavy Strike of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Spectral Shield Throw"
+	[tag]"name EN"		[value]"Spectral Shield Throw of Trarthus"
+	[tag]"name RU"		[value]"Призрачный бросок щита Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Spectral Shield Throw of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Spectral Throw"
+	[tag]"name EN"		[value]"Spectral Throw of Trarthus"
+	[tag]"name RU"		[value]"Призрачный бросок Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Spectral Throw of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Storm Call"
+	[tag]"name EN"		[value]"Storm Call of Trarthus"
+	[tag]"name RU"		[value]"Призыв бури Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Storm Call of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Blast Rain"
+	[tag]"name EN"		[value]"Blast Rain of Trarthus"
+	[tag]"name RU"		[value]"Дождь взрывов Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Blast Rain of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Siege Ballista"
+	[tag]"name EN"		[value]"Siege Ballista of Trarthus"
+	[tag]"name RU"		[value]"Осадная баллиста Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Siege Ballista of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Sunder"
+	[tag]"name EN"		[value]"Sunder of Trarthus"
+	[tag]"name RU"		[value]"Раскол Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Sunder of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Wave of Conviction"
+	[tag]"name EN"		[value]"Wave of Conviction of Trarthus"
+	[tag]"name RU"		[value]"Волна осуждения Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Wave of Conviction of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Chain Hook"
+	[tag]"name EN"		[value]"Chain Hook of Trarthus"
+	[tag]"name RU"		[value]"Цепной крюк Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Chain Hook of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Spectral Helix"
+	[tag]"name EN"		[value]"Spectral Helix of Trarthus"
+	[tag]"name RU"		[value]"Призрачная спираль Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Spectral Helix of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Bladefall"
+	[tag]"name EN"		[value]"Bladefall of Trarthus"
+	[tag]"name RU"		[value]"Мечепад Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"special tag"		[value]"Transfigured"
+	
+	[tag]"set listed attribute"	[value]"TransfiguredGem" "Bladefall of Trarthus"
+	[tag]"set bool attribute"	[value]"TransfiguredGem"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
