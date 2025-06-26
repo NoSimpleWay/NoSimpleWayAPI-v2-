@@ -1029,6 +1029,13 @@ DETF_value_key	"Game item"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1120,6 +1127,13 @@ tag_cannot_be_configured
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Game item"
 DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
@@ -1409,6 +1423,13 @@ DETF_value_key	"Game item"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1500,6 +1521,13 @@ tag_cannot_be_configured
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Game item"
 DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
@@ -1688,6 +1716,13 @@ DETF_value_key	"Game item"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
@@ -1812,6 +1847,13 @@ DETF_value_key	"Game item"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 
@@ -1864,6 +1906,13 @@ tag_cannot_be_configured
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Game item"
 DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
@@ -2271,6 +2320,13 @@ DETF_value_key	"Game item"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
 target_tag	"Base tier"
 
 REGISTER_NEW_SUITABLE_VALUES
@@ -2537,6 +2593,14 @@ tag	"Game item"
 named_id	"item bases folder"
 min_y	"100"
 
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"Worth: boss drop"
 
@@ -2665,6 +2729,14 @@ tag	"Game item"
 named_id	"item bases folder"
 min_y	"100"
 
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+	
 REGISTER_NEW_FILTER_TAG
 target_tag	"Worth: world drop"
 

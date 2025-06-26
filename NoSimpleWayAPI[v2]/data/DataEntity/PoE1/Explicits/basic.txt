@@ -14371,7 +14371,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"of Rebuttal"
 	[tag]"name EN"	[value]"[T5]+(5-6)% chance to Suppress Spell Damage"
-	[tag]"name RU"	[value]"[T5]+(21-42) к уклонению +(24-28) к максимуму здоровья"
+	[tag]"name RU"	[value]"[T5]+(5-6)% шанс подавить урон от чар"
 
 	[tag]"tier"	[value]"5"
 	[tag]"required level"	[value]"46"
@@ -14380,6 +14380,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Boots"
 	[tag]"suitable class"	[value]"Helmets"
 	[tag]"suitable class"	[value]"Helmets"
+
+	[tag]"attribute tag"	[value]"defences"
 
 
 ADD_NEW_DATA_ENTITY
@@ -14399,6 +14401,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Helmets"
 	[tag]"suitable class"	[value]"Helmets"
 
+	[tag]"attribute tag"	[value]"defences"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -14416,6 +14420,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Boots"
 	[tag]"suitable class"	[value]"Helmets"
 	[tag]"suitable class"	[value]"Helmets"
+
+	[tag]"attribute tag"	[value]"defences"
 
 
 ADD_NEW_DATA_ENTITY
@@ -14435,6 +14441,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Helmets"
 	[tag]"suitable class"	[value]"Helmets"
 
+	[tag]"attribute tag"	[value]"defences"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -14452,6 +14460,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Boots"
 	[tag]"suitable class"	[value]"Helmets"
 	[tag]"suitable class"	[value]"Helmets"
+
+	[tag]"attribute tag"	[value]"defences"
 
 
 ADD_NEW_DATA_ENTITY
@@ -16871,6 +16881,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Body Armours"
 	[tag]"suitable class"	[value]"Shields"
 
+	[tag]"attribute tag"	[value]"defences"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -16886,6 +16898,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"suitable class"	[value]"Body Armours"
 	[tag]"suitable class"	[value]"Shields"
+
+	[tag]"attribute tag"	[value]"defences"
 
 
 ADD_NEW_DATA_ENTITY
@@ -16903,6 +16917,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Body Armours"
 	[tag]"suitable class"	[value]"Shields"
 
+	[tag]"attribute tag"	[value]"defences"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -16919,6 +16935,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"suitable class"	[value]"Body Armours"
 	[tag]"suitable class"	[value]"Shields"
 
+	[tag]"attribute tag"	[value]"defences"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -16934,6 +16952,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"suitable class"	[value]"Body Armours"
 	[tag]"suitable class"	[value]"Shields"
+
+	[tag]"attribute tag"	[value]"defences"
 
 
 ADD_NEW_DATA_ENTITY
