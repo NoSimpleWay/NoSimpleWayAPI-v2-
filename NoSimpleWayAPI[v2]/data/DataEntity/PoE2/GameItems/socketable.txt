@@ -1376,3 +1376,102 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Amanamu's Gaze"
+	[tag]"name RU"		[value]"Взгляд Аманаму"
+
+	[tag]"icon path"	[value]"AmanamusGaze"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tecrod's Gaze"
+	[tag]"name RU"		[value]"TecrodsGaze2"
+
+	[tag]"icon path"	[value]"HypnoticEyeJewel"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Kurgal's Gaze"
+	[tag]"name RU"		[value]"Взгляд Кургала"
+
+	[tag]"icon path"	[value]"KurgalsGaze"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ulaman's Gaze"
+	[tag]"name RU"		[value]"Взгляд Уламана"
+
+	[tag]"icon path"	[value]"UlamansGaze"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	

@@ -195,6 +195,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"88"
 	[tag]"base armour max"	[value]"88"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
@@ -386,6 +388,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"79"
 	[tag]"base evasion max"	[value]"79"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
@@ -577,6 +581,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base energy shield min"	[value]"32"
 	[tag]"base energy shield max"	[value]"32"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
@@ -727,6 +733,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"48"
 	[tag]"base armour max"	[value]"48"
 	[tag]"base evasion min"	[value]"44"
@@ -1039,6 +1047,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"44"
 	[tag]"base evasion max"	[value]"44"
 	[tag]"base energy shield min"	[value]"17"
@@ -3618,6 +3628,227 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Verisium Cuffs"
+	[tag]"name RU"	[value]"Verisium Cuffs"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Massive Mitts"
+	[tag]"name RU"	[value]"Тяжёлые рукавицы"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Polished Bracers"
+	[tag]"name RU"	[value]"Полированные наручи"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sirenscale Gloves"
+	[tag]"name RU"	[value]"Перчатки из чешуи сирены"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blacksteel Gauntlets"
+	[tag]"name RU"	[value]"Стальные перчатки"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Adherent Cuffs"
+	[tag]"name RU"	[value]"Обмотки адепта"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Secured Wraps"
+	[tag]"name RU"	[value]"Защитные манжеты"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"
 	[tag]"base energy shield min"	[value]"28"

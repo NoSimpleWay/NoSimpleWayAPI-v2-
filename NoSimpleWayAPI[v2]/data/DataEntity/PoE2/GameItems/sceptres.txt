@@ -214,7 +214,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wrath Sceptre"
 	[tag]"name RU"		[value]"Скипетр гнева"
 
-	[tag]"icon path"	[value]"RattlingSceptre"
+	[tag]"icon path"	[value]"UndefinedSceptre"
 	[tag]"base class"	[value]"Sceptres"
 
 	[tag]"item width"	[value]"2"
@@ -223,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Item for caster"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"

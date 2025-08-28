@@ -192,7 +192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Edged Buckler"
-	[tag]"name RU"	[value]"Баклер с остриЄм"
+	[tag]"name RU"	[value]"Баклер с остриём"
 
 	[tag]"icon path"	[value]"EdgedBuckler"
 	[tag]"base class"	[value]"Bucklers"
@@ -548,13 +548,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Laminate Buckler"
-	[tag]"name RU"	[value]"¬итой баклер"
+	[tag]"name RU"	[value]"Витой баклер"
 
 	[tag]"icon path"	[value]"LaminateBuckler"
 	[tag]"base class"	[value]"Bucklers"
 
 	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"99"
@@ -575,13 +575,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Pearl Buckler"
-	[tag]"name RU"	[value]"ѕерламутровый баклер"
+	[tag]"name RU"	[value]"Перламутровый баклер"
 
 	[tag]"icon path"	[value]"PearlBuckler"
 	[tag]"base class"	[value]"Bucklers"
 
 	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Deleted"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"105"
@@ -594,6 +594,32 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Desert Buckler"
+	[tag]"name RU"	[value]"Пустынный баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Bucklers"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"105"
+	[tag]"base evasion max"	[value]"105"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"

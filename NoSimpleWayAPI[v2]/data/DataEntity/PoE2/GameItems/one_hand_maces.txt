@@ -1102,3 +1102,83 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Kalguuran Forgehammer"
+	[tag]"name RU"	[value]"Калгурский кузнечный молот"
+
+	[tag]"icon path"	[value]"UndefinedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"		
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jade Club"
+	[tag]"name RU"	[value]"Нефритовая дубина"
+
+	[tag]"icon path"	[value]"UndefinedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"		
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+
+	[tag]"worth"	[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Akoyan Club"
+	[tag]"name RU"	[value]"Дубина Akoyan"
+
+	[tag]"icon path"	[value]"UndefinedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+
+	[tag]"worth"	[value]"Trash"

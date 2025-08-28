@@ -51,3 +51,74 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primary Calamity Fragment"
+	[tag]"name RU"		[value]"Фрагмент первичного бедствия"
+
+	[tag]"icon path"	[value]"PrimaryCalamityFragment"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Secondary Calamity Fragment"
+	[tag]"name RU"		[value]"Фрагмент вторичного бедствия"
+
+	[tag]"icon path"	[value]"SecondaryCalamityFragment"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tertiary Calamity Fragment"
+	[tag]"name RU"		[value]"Фрагмент третичного бедствия"
+
+	[tag]"icon path"	[value]"TertiaryCalamityFragment"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -224,6 +224,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"26%"
 	[tag]"base armour min"	[value]"110"
 	[tag]"base armour max"	[value]"110"
@@ -251,6 +253,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"26%"
 	[tag]"base armour min"	[value]"121"
 	[tag]"base armour max"	[value]"121"
@@ -532,6 +536,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"61"
 	[tag]"base armour max"	[value]"61"
@@ -561,6 +567,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"63"
 	[tag]"base armour max"	[value]"63"
@@ -926,6 +934,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"61"
 	[tag]"base armour max"	[value]"61"
@@ -951,10 +961,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Seer Crest Shield"
 	[tag]"name RU"	[value]"Гербовый щит провидца"
 
-	[tag]"icon path"	[value]"BlazonCrestShield"
+	[tag]"icon path"	[value]"UndefinedShield"
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"65"
 	[tag]"base armour max"	[value]"65"
@@ -3208,6 +3220,94 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"166"
 	[tag]"base evasion max"	[value]"166"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tawhoan Tower Shield"
+	[tag]"name RU"	[value]"Ростовой щит Тахоа"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base armour min"	[value]"300"
+	[tag]"base armour max"	[value]"300"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Golden Targe"
+	[tag]"name RU"	[value]"Золотой тарджет"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base evasion min"	[value]"300"
+	[tag]"base evasion max"	[value]"300"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blacksteel Crest Shield"
+	[tag]"name RU"	[value]"Стальной гербовый щит"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base energy shield min"	[value]"100"
+	[tag]"base energy shield max"	[value]"100"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
 

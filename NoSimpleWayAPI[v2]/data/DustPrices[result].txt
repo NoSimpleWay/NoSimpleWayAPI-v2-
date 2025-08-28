@@ -4544,6 +4544,12 @@
 [Devout Garb] dust quantity = 0, dust tag = Trash
 [Assassin Garb] dust quantity = 0, dust tag = Trash
 [Grand Regalia] dust quantity = 0, dust tag = Trash
+[Warlord Cuirass] dust quantity = 0, dust tag = Trash
+[Corsair Coat] dust quantity = 0, dust tag = Trash
+[Feathered Raiment] dust quantity = 0, dust tag = Trash
+[Thane Mail] dust quantity = 0, dust tag = Trash
+[Seastorm Mantle] dust quantity = 0, dust tag = Trash
+[Austere Garb] dust quantity = 0, dust tag = Trash
 [Rough Greaves] dust quantity = 0, dust tag = Trash
 [Iron Greaves] dust quantity = 0, dust tag = Trash
 [Expert Iron Greaves] dust quantity = 0, dust tag = Trash
@@ -4666,6 +4672,12 @@
 [Velour Shoes] dust quantity = 0, dust tag = Trash
 [Bladed Shoes] dust quantity = 0, dust tag = Trash
 [Grand Cuisses] dust quantity = 0, dust tag = Trash
+[Tasalian Greaves] dust quantity = 0, dust tag = Trash
+[Drakeskin Boots] dust quantity = 0, dust tag = Trash
+[Sekhema Sandals] dust quantity = 0, dust tag = Trash
+[Blacksteel Sabatons] dust quantity = 0, dust tag = Trash
+[Cryptic Leggings] dust quantity = 0, dust tag = Trash
+[Daggerfoot Shoes] dust quantity = 0, dust tag = Trash
 [Crude Bow] dust quantity = 0, dust tag = Trash
 [Shortbow] dust quantity = 0, dust tag = Trash
 [Advanced Shortbow] dust quantity = 0, dust tag = Trash
@@ -4703,6 +4715,7 @@
 [Greatbow] dust quantity = 0, dust tag = Trash
 [Double Limb Bow] dust quantity = 0, dust tag = Trash
 [Heavy Bow] dust quantity = 0, dust tag = Trash
+[Obliterator Bow] dust quantity = 0, dust tag = Trash
 [Leather Buckler] dust quantity = 0, dust tag = Trash
 [Wooden Buckler] dust quantity = 0, dust tag = Trash
 [Plated Buckler] dust quantity = 0, dust tag = Trash
@@ -4724,6 +4737,7 @@
 [Aegis Buckler] dust quantity = 0, dust tag = Trash
 [Laminate Buckler] dust quantity = 0, dust tag = Trash
 [Pearl Buckler] dust quantity = 0, dust tag = Trash
+[Desert Buckler] dust quantity = 0, dust tag = Trash
 [Flesh Catalyst] dust quantity = 0, dust tag = Trash
 [Neural Catalyst] dust quantity = 0, dust tag = Trash
 [Carapace Catalyst] dust quantity = 0, dust tag = Trash
@@ -4785,6 +4799,7 @@
 [Cumbrous Crossbow] dust quantity = 0, dust tag = Trash
 [Dedalian Crossbow] dust quantity = 0, dust tag = Trash
 [Esoteric Crossbow] dust quantity = 0, dust tag = Trash
+[Elegant Crossbow] dust quantity = 0, dust tag = Trash
 [Transmutation Shard] dust quantity = 0, dust tag = Trash
 [Alchemy Shard] dust quantity = 0, dust tag = Trash
 [Chance Shard] dust quantity = 0, dust tag = Trash
@@ -4800,10 +4815,22 @@
 [Distilled Fear] dust quantity = 0, dust tag = Trash
 [Distilled Suffering] dust quantity = 0, dust tag = Trash
 [Distilled Isolation] dust quantity = 0, dust tag = Trash
+[Lesser Essence of the Body] dust quantity = 0, dust tag = Trash
+[Lesser Essence of the Mind] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Enhancement] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Flames] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Ice] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Electricity] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Ruin] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Battle] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Sorcery] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Haste] dust quantity = 0, dust tag = Trash
+[Lesser Essence of the Infinite] dust quantity = 0, dust tag = Trash
 [Essence of the Body] dust quantity = 0, dust tag = Trash
 [Essence of the Mind] dust quantity = 0, dust tag = Trash
 [Essence of Enhancement] dust quantity = 0, dust tag = Trash
 [Essence of Torment] dust quantity = 0, dust tag = Trash
+[Essence of Abrasion] dust quantity = 0, dust tag = Trash
 [Essence of Flames] dust quantity = 0, dust tag = Trash
 [Essence of Ice] dust quantity = 0, dust tag = Trash
 [Essence of Electricity] dust quantity = 0, dust tag = Trash
@@ -4824,10 +4851,54 @@
 [Greater Essence of Sorcery] dust quantity = 0, dust tag = Trash
 [Greater Essence of Haste] dust quantity = 0, dust tag = Trash
 [Greater Essence of the Infinite] dust quantity = 0, dust tag = Trash
+[Perfect Essence of the Body] dust quantity = 0, dust tag = Trash
+[Perfect Essence of the Mind] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Enhancement] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Torment] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Flames] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Ice] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Electricity] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Ruin] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Battle] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Sorcery] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Haste] dust quantity = 0, dust tag = Trash
+[Perfect Essence of the Infinite] dust quantity = 0, dust tag = Trash
 [Essence of Hysteria] dust quantity = 0, dust tag = Trash
 [Essence of Horror] dust quantity = 0, dust tag = Trash
 [Essence of Insanity] dust quantity = 0, dust tag = Trash
 [Essence of Delirium] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Seeking] dust quantity = 0, dust tag = Trash
+[Lesser Essence of the Abyss] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Insulation] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Thawing] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Grounding] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Alacrity] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Opulence] dust quantity = 0, dust tag = Trash
+[Lesser Essence of Command] dust quantity = 0, dust tag = Trash
+[Essence of Seeking] dust quantity = 0, dust tag = Trash
+[Essence of the Abyss] dust quantity = 0, dust tag = Trash
+[Essence of Insulation] dust quantity = 0, dust tag = Trash
+[Essence of Thawing] dust quantity = 0, dust tag = Trash
+[Essence of Grounding] dust quantity = 0, dust tag = Trash
+[Essence of Alacrity] dust quantity = 0, dust tag = Trash
+[Essence of Opulence] dust quantity = 0, dust tag = Trash
+[Essence of Command] dust quantity = 0, dust tag = Trash
+[Greater Essence of Seeking] dust quantity = 0, dust tag = Trash
+[Greater Essence of the Abyss] dust quantity = 0, dust tag = Trash
+[Greater Essence of Insulation] dust quantity = 0, dust tag = Trash
+[Greater Essence of Thawing] dust quantity = 0, dust tag = Trash
+[Greater Essence of Grounding] dust quantity = 0, dust tag = Trash
+[Greater Essence of Alacrity] dust quantity = 0, dust tag = Trash
+[Greater Essence of Opulence] dust quantity = 0, dust tag = Trash
+[Greater Essence of Command] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Seeking] dust quantity = 0, dust tag = Trash
+[Essence of the Abyss] dust quantity = 0, dust tag = Trash
+[Essence of Insulation] dust quantity = 0, dust tag = Trash
+[Essence of Thawing] dust quantity = 0, dust tag = Trash
+[Essence of Grounding] dust quantity = 0, dust tag = Trash
+[Essence of Alacrity] dust quantity = 0, dust tag = Trash
+[Essence of Opulence] dust quantity = 0, dust tag = Trash
+[Essence of Command] dust quantity = 0, dust tag = Trash
 [Exotic Coinage] dust quantity = 0, dust tag = Trash
 [Broken Circle Artifact] dust quantity = 0, dust tag = Trash
 [Black Scythe Artifact] dust quantity = 0, dust tag = Trash
@@ -4874,6 +4945,9 @@
 [Elegant Focus] dust quantity = 0, dust tag = Trash
 [Attuned Focus] dust quantity = 0, dust tag = Trash
 [Magus Focus] dust quantity = 0, dust tag = Trash
+[Runed Focus] dust quantity = 0, dust tag = Trash
+[Whorl Focus] dust quantity = 0, dust tag = Trash
+[Tasalian Focus] dust quantity = 0, dust tag = Trash
 [Stocky Mitts] dust quantity = 0, dust tag = Trash
 [Riveted Mitts] dust quantity = 0, dust tag = Trash
 [Tempered Mitts] dust quantity = 0, dust tag = Trash
@@ -4996,6 +5070,13 @@
 [Elegant Wraps] dust quantity = 0, dust tag = Trash
 [Expert Spiral Wraps] dust quantity = 0, dust tag = Trash
 [Vaal Wraps] dust quantity = 0, dust tag = Trash
+[Verisium Cuffs] dust quantity = 0, dust tag = Trash
+[Massive Mitts] dust quantity = 0, dust tag = Trash
+[Polished Bracers] dust quantity = 0, dust tag = Trash
+[Sirenscale Gloves] dust quantity = 0, dust tag = Trash
+[Blacksteel Gauntlets] dust quantity = 0, dust tag = Trash
+[Adherent Cuffs] dust quantity = 0, dust tag = Trash
+[Secured Wraps] dust quantity = 0, dust tag = Trash
 [Rusted Greathelm] dust quantity = 0, dust tag = Trash
 [Soldier Greathelm] dust quantity = 0, dust tag = Trash
 [Wrapped Greathelm] dust quantity = 0, dust tag = Trash
@@ -5150,6 +5231,13 @@
 [Faridun Mask] dust quantity = 0, dust tag = Trash
 [Expert Tribal Mask] dust quantity = 0, dust tag = Trash
 [Soaring Mask] dust quantity = 0, dust tag = Trash
+[Vermeil Circlet] dust quantity = 0, dust tag = Trash
+[Imperial Greathelm] dust quantity = 0, dust tag = Trash
+[Freebooter Cap] dust quantity = 0, dust tag = Trash
+[Ancestral Tiara] dust quantity = 0, dust tag = Trash
+[Gladiatorial Helm] dust quantity = 0, dust tag = Trash
+[Cryptic Crown] dust quantity = 0, dust tag = Trash
+[Cryptic Crown] dust quantity = 0, dust tag = Trash
 [Inscribed Ultimatum] dust quantity = 0, dust tag = Trash
 [Ruby] dust quantity = 0, dust tag = Trash
 [Emerald] dust quantity = 0, dust tag = Trash
@@ -5175,6 +5263,8 @@
 [Cowardly Fate] dust quantity = 0, dust tag = Trash
 [Deadly Fate] dust quantity = 0, dust tag = Trash
 [Victorious Fate] dust quantity = 0, dust tag = Trash
+[Idol of Estazunti] dust quantity = 0, dust tag = Trash
+[KulemaksInvitation] dust quantity = 0, dust tag = Trash
 [Simulacrum Splinter] dust quantity = 0, dust tag = Trash
 [Breach Splinter] dust quantity = 0, dust tag = Trash
 [Omen of Refreshment] dust quantity = 0, dust tag = Trash
@@ -5198,6 +5288,30 @@
 [Omen of Secret Compartments] dust quantity = 0, dust tag = Trash
 [Omen of the Hunt] dust quantity = 0, dust tag = Trash
 [Omen of Reinforcements] dust quantity = 0, dust tag = Trash
+[Omen of Homogenising Exaltation] dust quantity = 0, dust tag = Trash
+[Omen of Homogenising Exaltation] dust quantity = 0, dust tag = Trash
+[Omen of Homogenising Coronation] dust quantity = 0, dust tag = Trash
+[Omen of Gambling] dust quantity = 0, dust tag = Trash
+[Omen of Bartering] dust quantity = 0, dust tag = Trash
+[Omen of Recombination] dust quantity = 0, dust tag = Trash
+[Omen of the Blessed] dust quantity = 0, dust tag = Trash
+[Omen of Chaotic Rarity] dust quantity = 0, dust tag = Trash
+[Omen of Chaotic Monsters] dust quantity = 0, dust tag = Trash
+[Omen of Chaotic Quantity] dust quantity = 0, dust tag = Trash
+[Omen of Chance] dust quantity = 0, dust tag = Trash
+[Omen of the Ancients] dust quantity = 0, dust tag = Trash
+[Omen of Sanctification] dust quantity = 0, dust tag = Trash
+[Omen of Dextral Crystallisation] dust quantity = 0, dust tag = Trash
+[Omen of Sinistral Crystallisation] dust quantity = 0, dust tag = Trash
+[Omen of Catalysing Exaltation] dust quantity = 0, dust tag = Trash
+[Omen of Abyssal Echoes] dust quantity = 0, dust tag = Trash
+[Omen of Putrefaction] dust quantity = 0, dust tag = Trash
+[Omen of Light] dust quantity = 0, dust tag = Trash
+[Omen of Sinistral Necromancy] dust quantity = 0, dust tag = Trash
+[Omen of Dextral Necromancy] dust quantity = 0, dust tag = Trash
+[Omen of the Sovereign] dust quantity = 0, dust tag = Trash
+[Omen of the Liege] dust quantity = 0, dust tag = Trash
+[Omen of the Blackblooded] dust quantity = 0, dust tag = Trash
 [Wooden Club] dust quantity = 0, dust tag = Trash
 [Smithing Hammer] dust quantity = 0, dust tag = Trash
 [Slim Mace] dust quantity = 0, dust tag = Trash
@@ -5235,9 +5349,15 @@
 [Fortified Hammer] dust quantity = 0, dust tag = Trash
 [Expert Brigand Mace] dust quantity = 0, dust tag = Trash
 [Marauding Mace] dust quantity = 0, dust tag = Trash
+[Kalguuran Forgehammer] dust quantity = 0, dust tag = Trash
+[Jade Club] dust quantity = 0, dust tag = Trash
+[Akoyan Club] dust quantity = 0, dust tag = Trash
 [Ancient Crisis Fragment] dust quantity = 0, dust tag = Trash
 [Faded Crisis Fragment] dust quantity = 0, dust tag = Trash
 [Weathered Crisis Fragment] dust quantity = 0, dust tag = Trash
+[Primary Calamity Fragment] dust quantity = 0, dust tag = Trash
+[Secondary Calamity Fragment] dust quantity = 0, dust tag = Trash
+[Tertiary Calamity Fragment] dust quantity = 0, dust tag = Trash
 [Wrapped Quarterstaff] dust quantity = 0, dust tag = Trash
 [Long Quarterstaff] dust quantity = 0, dust tag = Trash
 [Advanced Long Quarterstaff] dust quantity = 0, dust tag = Trash
@@ -5274,10 +5394,11 @@
 [Expert Barrier Quarterstaff] dust quantity = 0, dust tag = Trash
 [Aegis Quarterstaff] dust quantity = 0, dust tag = Trash
 [Hefty Quarterstaff] dust quantity = 0, dust tag = Trash
-[Smooth Quarterstaff] dust quantity = 0, dust tag = Trash
 [Anima Quarterstaff] dust quantity = 0, dust tag = Trash
 [Graceful Quarterstaff] dust quantity = 0, dust tag = Trash
 [Wyrm Quarterstaff] dust quantity = 0, dust tag = Trash
+[Hefty Quarterstaff] dust quantity = 0, dust tag = Trash
+[Smooth Quarterstaff] dust quantity = 0, dust tag = Trash
 [Broadhead Quiver] dust quantity = 0, dust tag = Trash
 [Fire Quiver] dust quantity = 0, dust tag = Trash
 [Sacral Quiver] dust quantity = 0, dust tag = Trash
@@ -5313,6 +5434,7 @@
 [Gloam Ring] dust quantity = 0, dust tag = Trash
 [Penumbra Ring] dust quantity = 0, dust tag = Trash
 [Tenebrous Ring] dust quantity = 0, dust tag = Trash
+[Abyssal Signet] dust quantity = 0, dust tag = Trash
 [Rattling Sceptre] dust quantity = 0, dust tag = Trash
 [Stoic Sceptre] dust quantity = 0, dust tag = Trash
 [Lupine Sceptre] dust quantity = 0, dust tag = Trash
@@ -5425,6 +5547,9 @@
 [Expert Plated Buckler] dust quantity = 0, dust tag = Trash
 [Expert Spiked Buckler] dust quantity = 0, dust tag = Trash
 [Expert Edged Buckler] dust quantity = 0, dust tag = Trash
+[Tawhoan Tower Shield] dust quantity = 0, dust tag = Trash
+[Golden Targe] dust quantity = 0, dust tag = Trash
+[Blacksteel Crest Shield] dust quantity = 0, dust tag = Trash
 [Lesser Desert Rune] dust quantity = 0, dust tag = Trash
 [Desert Rune] dust quantity = 0, dust tag = Trash
 [Greater Desert Rune] dust quantity = 0, dust tag = Trash
@@ -5486,6 +5611,10 @@
 [Ox Talisman] dust quantity = 0, dust tag = Trash
 [Rabbit Talisman] dust quantity = 0, dust tag = Trash
 [Fox Talisman] dust quantity = 0, dust tag = Trash
+[Amanamu's Gaze] dust quantity = 0, dust tag = Trash
+[Tecrod's Gaze] dust quantity = 0, dust tag = Trash
+[Kurgal's Gaze] dust quantity = 0, dust tag = Trash
+[Ulaman's Gaze] dust quantity = 0, dust tag = Trash
 [Hardwood Spear] dust quantity = 0, dust tag = Trash
 [Ironhead Spear] dust quantity = 0, dust tag = Trash
 [Hunting Spear] dust quantity = 0, dust tag = Trash
@@ -5499,18 +5628,29 @@
 [Sword Spear] dust quantity = 0, dust tag = Trash
 [Striking Spear] dust quantity = 0, dust tag = Trash
 [Helix Spear] dust quantity = 0, dust tag = Trash
+[Pearlescent Amulet] dust quantity = 0, dust tag = Trash
 [Blacksmith's Whetstone] dust quantity = 0, dust tag = Trash
 [Arcanist's Etcher] dust quantity = 0, dust tag = Trash
 [Scroll of Wisdom] dust quantity = 0, dust tag = Trash
 [Chaos Orb] dust quantity = 0, dust tag = Trash
+[Greater Chaos Orb] dust quantity = 0, dust tag = Trash
+[Perfect Chaos Orb] dust quantity = 0, dust tag = Trash
 [Armourer's Scrap] dust quantity = 0, dust tag = Trash
 [Mirror of Kalandra] dust quantity = 0, dust tag = Trash
 [Orb of Alchemy] dust quantity = 0, dust tag = Trash
 [Orb of Chance] dust quantity = 0, dust tag = Trash
 [Orb of Transmutation] dust quantity = 0, dust tag = Trash
+[Greater Orb of Transmutation] dust quantity = 0, dust tag = Trash
+[Perfect Orb of Transmutation] dust quantity = 0, dust tag = Trash
 [Exalted Orb] dust quantity = 0, dust tag = Trash
+[Greater Exalted Orb] dust quantity = 0, dust tag = Trash
+[Perfect Exalted Orb] dust quantity = 0, dust tag = Trash
 [Regal Orb] dust quantity = 0, dust tag = Trash
+[Greater Regal Orb] dust quantity = 0, dust tag = Trash
+[Perfect Regal Orb] dust quantity = 0, dust tag = Trash
 [Orb of Augmentation] dust quantity = 0, dust tag = Trash
+[Greater Orb of Augmentation] dust quantity = 0, dust tag = Trash
+[Perfect Orb of Augmentation] dust quantity = 0, dust tag = Trash
 [Glassblower's Bauble] dust quantity = 0, dust tag = Trash
 [Gemcutter's Prism] dust quantity = 0, dust tag = Trash
 [Lesser Jeweller's Orb] dust quantity = 0, dust tag = Trash
@@ -5526,6 +5666,19 @@
 [Silver Key] dust quantity = 0, dust tag = Trash
 [Gold Key] dust quantity = 0, dust tag = Trash
 [Fracturing Orb] dust quantity = 0, dust tag = Trash
+[Petition Splinter] dust quantity = 0, dust tag = Trash
+[Runic Splinter] dust quantity = 0, dust tag = Trash
+[Gnawed Jawbone] dust quantity = 0, dust tag = Trash
+[Preserved Jawbone] dust quantity = 0, dust tag = Trash
+[Ancient Jawbone] dust quantity = 0, dust tag = Trash
+[Gnawed Rib] dust quantity = 0, dust tag = Trash
+[Preserved Rib] dust quantity = 0, dust tag = Trash
+[Ancient Rib] dust quantity = 0, dust tag = Trash
+[Gnawed Collarbone] dust quantity = 0, dust tag = Trash
+[Preserved Collarbone] dust quantity = 0, dust tag = Trash
+[Ancient Collarbone] dust quantity = 0, dust tag = Trash
+[PreservedCranium] dust quantity = 0, dust tag = Trash
+[Preserved Vertebrae] dust quantity = 0, dust tag = Trash
 [Ashen Staff] dust quantity = 0, dust tag = Trash
 [Gelid Staff] dust quantity = 0, dust tag = Trash
 [Voltaic Staff] dust quantity = 0, dust tag = Trash
@@ -5539,6 +5692,7 @@
 [Paralysing Staff] dust quantity = 0, dust tag = Trash
 [Cleric Staff] dust quantity = 0, dust tag = Trash
 [Dark Staff] dust quantity = 0, dust tag = Trash
+[Sanctified Staff] dust quantity = 0, dust tag = Trash
 [Breach Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Expedition Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Delirium Precursor Tablet] dust quantity = 0, dust tag = Trash
@@ -5583,6 +5737,9 @@
 [Ruination Maul] dust quantity = 0, dust tag = Trash
 [Expert Leaden Greathammer] dust quantity = 0, dust tag = Trash
 [Massive Greathammer] dust quantity = 0, dust tag = Trash
+[Pointed Maul] dust quantity = 0, dust tag = Trash
+[Totemic Greatclub] dust quantity = 0, dust tag = Trash
+[Tawhoan Greatclub] dust quantity = 0, dust tag = Trash
 [Twilight Reliquary Key] dust quantity = 0, dust tag = Trash
 [Xesht's Reliquary Key] dust quantity = 0, dust tag = Trash
 [The Trialmaster's Reliquary Key] dust quantity = 0, dust tag = Trash

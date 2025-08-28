@@ -837,6 +837,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -850,13 +851,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tribal Bow"
 	[tag]"name RU"		[value]"Племенной лук"
 
-	[tag]"icon path"	[value]"CrudeBow"
+	[tag]"icon path"	[value]"UndefinedBow"
 	[tag]"base class"	[value]"Bows"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -917,6 +919,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Obliterator Bow"
+	[tag]"name RU"		[value]"Лук изничтожения"
+
+	[tag]"icon path"	[value]"UndefinedBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"

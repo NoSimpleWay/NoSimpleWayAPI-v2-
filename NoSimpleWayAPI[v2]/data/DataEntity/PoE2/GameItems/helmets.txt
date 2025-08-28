@@ -148,10 +148,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Commander Greathelm"
 	[tag]"name RU"	[value]"Большой шлем командира"
 
-	[tag]"icon path"	[value]"RustedGreathelm"
+	[tag]"icon path"	[value]"UndefinedHelmet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"176"
 	[tag]"base armour max"	[value]"176"
 	[tag]"UNDEFINED"	[value]"Level 45, 83 Str"
@@ -176,6 +178,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"196"
 	[tag]"base armour max"	[value]"196"
 	[tag]"UNDEFINED"	[value]"Level 51, 94 Str"
@@ -440,6 +444,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"158"
 	[tag]"base evasion max"	[value]"158"
 	[tag]"UNDEFINED"	[value]"Level 45, 83 Dex"
@@ -460,10 +466,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"	[value]"Leatherbound Hood"
 	[tag]"name RU"	[value]"Кожаный капюшон"
 
-	[tag]"icon path"	[value]"ShabbyHood"
+	[tag]"icon path"	[value]"UndefinedHelmet"
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"177"
 	[tag]"base evasion max"	[value]"177"
 	[tag]"UNDEFINED"	[value]"Level 51, 94 Dex"
@@ -727,6 +735,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base energy shield min"	[value]"69"
 	[tag]"base energy shield max"	[value]"69"
 	[tag]"UNDEFINED"	[value]"Level 50, 92 Int"
@@ -953,6 +963,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"97"
 	[tag]"base armour max"	[value]"97"
 	[tag]"base evasion min"	[value]"87"
@@ -1200,6 +1212,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"97"
 	[tag]"base armour max"	[value]"97"
 	[tag]"base energy shield min"	[value]"35"
@@ -1408,6 +1422,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	
 	[tag]"base evasion min"	[value]"87"
 	[tag]"base evasion max"	[value]"87"
 	[tag]"base energy shield min"	[value]"35"
@@ -4341,3 +4358,211 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vermeil Circlet"
+	[tag]"name RU"	[value]"Алый обруч"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"70"
+	[tag]"base energy shield max"	[value]"70"
+	[tag]"UNDEFINED"	[value]"Level 51, 94 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Imperial Greathelm"
+	[tag]"name RU"	[value]"Имперский большой шлем"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"292"
+	[tag]"base armour max"	[value]"292"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Freebooter Cap"
+	[tag]"name RU"	[value]"Чепец флибустера"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"292"
+	[tag]"base evasion max"	[value]"292"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancestral Tiara"
+	[tag]"name RU"	[value]"Диадема предков"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"100"
+	[tag]"base energy shield max"	[value]"100"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gladiatorial Helm"
+	[tag]"name RU"	[value]"Шлем гладиатора"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"300"
+	[tag]"base armour max"	[value]"300"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cryptic Crown"
+	[tag]"name RU"	[value]"Загадочная ккорона"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"100"
+	[tag]"base energy shield max"	[value]"100"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cryptic Crown"
+	[tag]"name RU"	[value]"Загадочная ккорона"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"300"
+	[tag]"base evasion max"	[value]"300"
+	[tag]"UNDEFINED"	[value]"Level 75, 139 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	

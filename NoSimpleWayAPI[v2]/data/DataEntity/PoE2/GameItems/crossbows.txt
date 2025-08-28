@@ -873,13 +873,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Blackfire Crossbow"
 	[tag]"name RU"		[value]"Самострел чёрного пламени"
 
-	[tag]"icon path"	[value]"MakeshiftCrossbow"
+	[tag]"icon path"	[value]"UndefinedCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -900,13 +901,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Piercing Crossbow"
 	[tag]"name RU"		[value]"Пронзающий самострел"
 
-	[tag]"icon path"	[value]"MakeshiftCrossbow"
+	[tag]"icon path"	[value]"UndefinedCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -993,6 +995,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Crossbow"
+	[tag]"name RU"		[value]"Элегантный самострел"
+
+	[tag]"icon path"	[value]"UndefinedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"

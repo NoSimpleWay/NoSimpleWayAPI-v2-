@@ -1542,60 +1542,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Meta Skill Gem"
-	[tag]"name RU"		[value]"Камень мета-умений"
 	
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"icon path"	[value]"UncutGem"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Spirit Gems"
-	[tag]"name RU"		[value]"Камень духа"
-	
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"icon path"	[value]"UncutGem"
-	
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Uncut Skill Gem"
-	[tag]"name RU"		[value]"Необработанный камень умения"
-	
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"icon path"	[value]"UncutGem"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Uncut Support Gem"
-	[tag]"name RU"		[value]"Необработанный камень поддержки"
-	
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"icon path"	[value]"UncutGem"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Uncut Spirit Gem"
-	[tag]"name RU"		[value]"Необработанный камень духа"
-	
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"icon path"	[value]"UncutGem"
 	
 	
 	

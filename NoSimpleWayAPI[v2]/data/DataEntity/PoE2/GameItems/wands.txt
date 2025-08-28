@@ -105,6 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"DAE tier"		[value]"Default"
@@ -234,10 +235,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Dueling Wand"
 	[tag]"name RU"		[value]"Дуэльный жезл"
 
-	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"icon path"	[value]"UndefinedWand"
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"DAE tier"		[value]"Default"

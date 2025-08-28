@@ -355,3 +355,27 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Abyssal Signet"
+	[tag]"name RU"		[value]"Печатка бездны"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

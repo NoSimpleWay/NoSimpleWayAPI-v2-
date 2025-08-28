@@ -140,10 +140,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Reaping Staff"
 	[tag]"name RU"		[value]"Пожинающий посох"
 
-	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"icon path"	[value]"UndefinedStaff"
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
@@ -178,10 +179,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Roaring Staff"
 	[tag]"name RU"		[value]"Ревущий посох"
 
-	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"icon path"	[value]"UndefinedStaff"
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
@@ -197,10 +199,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Paralysing Staff"
 	[tag]"name RU"		[value]"Парализующий посох"
 
-	[tag]"icon path"	[value]"AshenStaff"
+	[tag]"icon path"	[value]"UndefinedStaff"
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
@@ -239,6 +242,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sanctified Staff"
+	[tag]"name RU"		[value]"Освящённый посох"
+
+	[tag]"icon path"	[value]"UndefinedStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"

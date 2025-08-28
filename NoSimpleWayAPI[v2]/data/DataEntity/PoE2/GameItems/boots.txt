@@ -639,6 +639,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base armour min"	[value]"132"
 	[tag]"base armour max"	[value]"132"
@@ -1371,6 +1372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base evasion min"	[value]"119"
 	[tag]"base evasion max"	[value]"119"
@@ -2039,6 +2041,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base energy shield min"	[value]"48"
 	[tag]"base energy shield max"	[value]"48"
@@ -2606,6 +2609,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base armour min"	[value]"73"
 	[tag]"base armour max"	[value]"73"
@@ -3179,6 +3183,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base armour min"	[value]"73"
 	[tag]"base armour max"	[value]"73"
@@ -3810,6 +3815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base evasion min"	[value]"65"
 	[tag]"base evasion max"	[value]"65"
@@ -3888,6 +3894,181 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tasalian Greaves"
+	[tag]"name RU"		[value]"Поножи Тасалио"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Drakeskin Boots"
+	[tag]"name RU"		[value]"Сапоги из кожи дракона"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sekhema Sandals"
+	[tag]"name RU"		[value]"Сандали Сехемы"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Blacksteel Sabatons"
+	[tag]"name RU"		[value]"Стальные сабатоны"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cryptic Leggings"
+	[tag]"name RU"		[value]"Загадочные сапоги"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Daggerfoot Shoes"
+	[tag]"name RU"		[value]"Клинковая обувь"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
 	[tag]"base armour min"	[value]"66"
 	[tag]"base armour max"	[value]"66"

@@ -1,4 +1,284 @@
 
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of the Body"
+	[tag]"name RU"		[value]"Малая сущность тела"
+
+	[tag]"icon path"	[value]"LesserEssenceOfBody"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of the Mind"
+	[tag]"name RU"		[value]"Малая сущность разума"
+
+	[tag]"icon path"	[value]"LesserEssenceOfMind"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Enhancement"
+	[tag]"name RU"		[value]"Малая сущность улучшения"
+
+	[tag]"icon path"	[value]"LesserEssenceOfEnchantment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Flames"
+	[tag]"name RU"		[value]"Малая сущность пламени"
+
+	[tag]"icon path"	[value]"LesserEssenceOfFlames"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Ice"
+	[tag]"name RU"		[value]"Малая сущность льда"
+
+	[tag]"icon path"	[value]"LesserEssenceOfIce"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Electricity"
+	[tag]"name RU"		[value]"Малая сущность электричества"
+
+	[tag]"icon path"	[value]"LesserEssenceOfElectricity"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Ruin"
+	[tag]"name RU"		[value]"Малая сущность гибели"
+
+	[tag]"icon path"	[value]"LesserEssenceOfRuin"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Battle"
+	[tag]"name RU"		[value]"Малая сущность битвы"
+
+	[tag]"icon path"	[value]"LesserEssenceOfBattle"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Sorcery"
+	[tag]"name RU"		[value]"Малая сущность колдовства"
+
+	[tag]"icon path"	[value]"LesserEssenceOfSorcery"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Haste"
+	[tag]"name RU"		[value]"Малая сущность спешки"
+
+	[tag]"icon path"	[value]"LesserEssenceOfHaste"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of the Infinite"
+	[tag]"name RU"		[value]"Малая сущность бесконечности"
+
+	[tag]"icon path"	[value]"LesserEssenceOfInfinite"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -74,6 +354,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Essence of Torment"
 	[tag]"name RU"		[value]"Сущность мучения"
+
+	[tag]"icon path"	[value]"EssenceOfTorment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Regular"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Essence of Abrasion"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Abrasion"
+	[tag]"name RU"		[value]"Сущность шлифовки"
 
 	[tag]"icon path"	[value]"EssenceOfTorment"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -564,6 +870,335 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of the Body"
+	[tag]"name RU"		[value]"Совершенная сущность тела"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfBody"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of the Mind"
+	[tag]"name RU"		[value]"Совершенная сущность разума"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfMind"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Enhancement"
+	[tag]"name RU"		[value]"Совершенная сущность улучшения"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfEnchancement"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Torment"
+	[tag]"name RU"		[value]"Совершенная сущность мучения"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfTorment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Flames"
+	[tag]"name RU"		[value]"Совершенная сущность пламени"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfFlames"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Ice"
+	[tag]"name RU"		[value]"Совершенная сущность льда"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfIce"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Electricity"
+	[tag]"name RU"		[value]"Совершенная сущность электричества"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfElectricity"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Ruin"
+	[tag]"name RU"		[value]"Совершенная сущность гибели"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfRuin"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Battle"
+	[tag]"name RU"		[value]"Совершенная сущность битвы"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfBattle"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Sorcery"
+	[tag]"name RU"		[value]"Совершенная сущность колдовства"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfSorcery"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Haste"
+	[tag]"name RU"		[value]"Совершенная сущность спешки"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfHaste"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of the Infinite"
+	[tag]"name RU"		[value]"Совершенная сущность бесконечности"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfInfinite"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"essence rang"	[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -651,6 +1286,810 @@ ADD_NEW_DATA_ENTITY
 	[tag]"essence rang"	[value]"Corrupted"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Seeking"
+	[tag]"name RU"		[value]"Малая сущность стремления"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of the Abyss"
+	[tag]"name RU"		[value]"Малая сущность Бездны"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Insulation"
+	[tag]"name RU"		[value]"Малая сущность изоляции"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Thawing"
+	[tag]"name RU"		[value]"Малая сущность таяния"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Grounding"
+	[tag]"name RU"		[value]"Малая сущность заземления"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Alacrity"
+	[tag]"name RU"		[value]"Малая сущность гибкости"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Opulence"
+	[tag]"name RU"		[value]"Малая сущность богатства"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Command"
+	[tag]"name RU"		[value]"Малая сущность подчинения"
+
+	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Seeking"
+	[tag]"name RU"		[value]"Сущность стремления"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of the Abyss"
+	[tag]"name RU"		[value]"Сущность Бездны"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Insulation"
+	[tag]"name RU"		[value]"Сущность изоляции"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Thawing"
+	[tag]"name RU"		[value]"Сущность таяния"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Grounding"
+	[tag]"name RU"		[value]"Сущность заземления"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Alacrity"
+	[tag]"name RU"		[value]"Сущность гибкости"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Opulence"
+	[tag]"name RU"		[value]"Сущность богатства"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Command"
+	[tag]"name RU"		[value]"Сущность подчинения"
+
+	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Regular"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Seeking"
+	[tag]"name RU"		[value]"Большая сущность стремления"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of the Abyss"
+	[tag]"name RU"		[value]"Большая сущность Бездны"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Insulation"
+	[tag]"name RU"		[value]"Большая сущность изоляции"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Thawing"
+	[tag]"name RU"		[value]"Большая сущность таяния"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Grounding"
+	[tag]"name RU"		[value]"Большая сущность заземления"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Alacrity"
+	[tag]"name RU"		[value]"Большая сущность гибкости"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Opulence"
+	[tag]"name RU"		[value]"Большая сущность богатства"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Essence of Command"
+	[tag]"name RU"		[value]"Большая сущность подчинения"
+
+	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Seeking"
+	[tag]"name RU"		[value]"Совершенная сущность стремления"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of the Abyss"
+	[tag]"name RU"		[value]"Сущность Бездны"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Insulation"
+	[tag]"name RU"		[value]"Сущность изоляции"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Thawing"
+	[tag]"name RU"		[value]"Сущность таяния"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Grounding"
+	[tag]"name RU"		[value]"Сущность заземления"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Alacrity"
+	[tag]"name RU"		[value]"Сущность гибкости"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Opulence"
+	[tag]"name RU"		[value]"Сущность богатства"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of Command"
+	[tag]"name RU"		[value]"Сущность подчинения"
+
+	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

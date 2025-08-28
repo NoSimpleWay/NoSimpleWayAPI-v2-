@@ -1083,24 +1083,6 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Smooth Quarterstaff"
-	[tag]"name RU"		[value]"Гладкий боевой посох"
-
-	[tag]"icon path"	[value]"SmoothQuarterstaff"
-	[tag]"base class"	[value]"Quarterstaves"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
 	
 	
@@ -1164,6 +1146,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quarterstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hefty Quarterstaff"
+	[tag]"name RU"		[value]"Огромный посох"
+
+	[tag]"icon path"	[value]"UndefinedQuarterstaff"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Smooth Quarterstaff"
+	[tag]"name RU"		[value]"Мечтательный Посох"
+
+	[tag]"icon path"	[value]"UndefinedQuarterstaff"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"base class"	[value]"Quarterstaves"
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"

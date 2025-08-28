@@ -721,13 +721,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Juggernaut Plate"
 	[tag]"name RU"		[value]"Доспех покорителя"
 
-	[tag]"icon path"	[value]"RustedCuirass"
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"269"
 	[tag]"base armour max"	[value]"269"
 	
@@ -751,6 +753,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"294"
 	[tag]"base armour max"	[value]"294"
 	
@@ -1634,13 +1638,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Corsair Vest"
 	[tag]"name RU"		[value]"Жилет корсара"
 
-	[tag]"icon path"	[value]"LeatherVest"
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"242"
 	[tag]"base evasion max"	[value]"242"
 	
@@ -1665,6 +1671,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"256"
 	[tag]"base evasion max"	[value]"256"
 	
@@ -2675,6 +2683,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base energy shield min"	[value]"97"
 	[tag]"base energy shield max"	[value]"97"
 	
@@ -2691,13 +2701,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mystic Raiment"
 	[tag]"name RU"		[value]"Наряд мистика"
 
-	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base energy shield min"	[value]"100"
 	[tag]"base energy shield max"	[value]"100"
 	
@@ -3589,6 +3601,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"148"
 	[tag]"base armour max"	[value]"148"
 	[tag]"base evasion min"	[value]"133"
@@ -3607,13 +3621,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ancestral Mail"
 	[tag]"name RU"		[value]"Кольчуга предков"
 
-	[tag]"icon path"	[value]"ChainMail"
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"162"
 	[tag]"base armour max"	[value]"162"
 	[tag]"base evasion min"	[value]"146"
@@ -4509,6 +4525,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"148"
 	[tag]"base armour max"	[value]"148"
 	[tag]"base energy shield min"	[value]"53"
@@ -4527,13 +4545,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tideseer Mantle"
 	[tag]"name RU"		[value]"Мантия прилива"
 
-	[tag]"icon path"	[value]"PilgrimVestment"
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"165"
 	[tag]"base armour max"	[value]"165"
 	[tag]"base energy shield min"	[value]"58"
@@ -5440,6 +5460,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base evasion min"	[value]"30"
 	[tag]"base evasion max"	[value]"30"
 	[tag]"base energy shield min"	[value]"28"
@@ -5622,6 +5644,186 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warlord Cuirass"
+	[tag]"name RU"		[value]"Кираса воеводы"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Corsair Coat"
+	[tag]"name RU"		[value]"Накидка корсара"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Feathered Raiment"
+	[tag]"name RU"		[value]"Одеяние из перьев"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thane Mail"
+	[tag]"name RU"		[value]"Кольчуга главаря"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Seastorm Mantle"
+	[tag]"name RU"		[value]"Накидка штормов"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Austere Garb"
+	[tag]"name RU"		[value]"Строгое одеяние"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
 	[tag]"base armour min"	[value]"45"
 	[tag]"base armour max"	[value]"45"
 	[tag]"base evasion min"	[value]"30"

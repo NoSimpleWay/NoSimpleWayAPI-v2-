@@ -172,7 +172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Dextral Alchemy"
-	[tag]"name RU"		[value]"Предзнаменование алхимии левши"
+	[tag]"name RU"		[value]"Предзнаменование алхимии правши"
 
 	[tag]"icon path"	[value]"OmenOfDextralAlchemy"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -510,6 +510,637 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Homogenising Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование гомогенизированного возвышения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Homogenising Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование возвышения усреднения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Homogenising Coronation"
+	[tag]"name RU"		[value]"Предзнаменование коронации усреднения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Gambling"
+	[tag]"name RU"		[value]"Предзнаменование азарта"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Bartering"
+	[tag]"name RU"		[value]"Предзнаменование обмена"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Recombination"
+	[tag]"name RU"		[value]"Предзнаменование рекомбинации"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Blessed"
+	[tag]"name RU"		[value]"Предзнаменование благословения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Chaotic Rarity"
+	[tag]"name RU"		[value]"Предзнаменование непредсказуемой редкости"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Chaotic Monsters"
+	[tag]"name RU"		[value]"Предзнаменование непредсказуемых монстров"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Chaotic Quantity"
+	[tag]"name RU"		[value]"Предзнаменование непредсказуемого количества"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Chance"
+	[tag]"name RU"		[value]"Предзнаменование удачи"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Ancients"
+	[tag]"name RU"		[value]"Предзнаменование Древних"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sanctification"
+	[tag]"name RU"		[value]"Предзнаменование насыщения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Crystallisation"
+	[tag]"name RU"		[value]"Предзнаменование кристаллизации правши"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Crystallisation"
+	[tag]"name RU"		[value]"Предзнаменование кристаллизации левши"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Catalysing Exaltation"
+	[tag]"name RU"		[value]"Предзнаменование каталистического возвышения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Abyssal Echoes"
+	[tag]"name RU"		[value]"Предзнаменование эха бездны"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Putrefaction"
+	[tag]"name RU"		[value]"Предзнаменование гниения"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Light"
+	[tag]"name RU"		[value]"Предзнаменование света"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Sinistral Necromancy"
+	[tag]"name RU"		[value]"Предзнаменование некромантии левши"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Dextral Necromancy"
+	[tag]"name RU"		[value]"Предзнаменование некромантии правши"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Sovereign"
+	[tag]"name RU"		[value]"Предзнаменование повелителя"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Liege"
+	[tag]"name RU"		[value]"Предзнаменование сеньора"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of the Blackblooded"
+	[tag]"name RU"		[value]"Предзнаменование чернокровки"
+
+	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"

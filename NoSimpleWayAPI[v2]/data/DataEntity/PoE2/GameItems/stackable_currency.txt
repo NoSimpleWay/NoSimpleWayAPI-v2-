@@ -90,6 +90,62 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
+	[tag]"name EN"			[value]"Greater Chaos Orb"
+	[tag]"name RU"			[value]"Великая сфера хаоса"
+	
+	[tag]"icon path"		[value]"GreaterChaosOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Moderate"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Chaos Orb"
+	[tag]"name RU"			[value]"Совершенная сфера хаоса"
+	
+	[tag]"icon path"		[value]"PerfectChaosOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
 	[tag]"name EN"			[value]"Armourer's Scrap"
 	[tag]"name RU"			[value]"Деталь доспеха"
 	
@@ -174,6 +230,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
@@ -195,6 +259,64 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Greater Orb of Transmutation"
+	[tag]"name RU"			[value]"Великая Сфера превращения"
+	
+	[tag]"icon path"		[value]"GreaterOrbOfTransmutation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"4"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Common"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Orb of Transmutation"
+	[tag]"name RU"			[value]"Совершенная Сфера превращения"
+	
+	[tag]"icon path"		[value]"GreaterOrbOfTransmutation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"4"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Moderate"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -222,6 +344,66 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
+	[tag]"name EN"			[value]"Greater Exalted Orb"
+	[tag]"name RU"			[value]"Великая сфера возвышения"
+	
+	[tag]"icon path"		[value]"GreaterExaltedOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Exalted Orb"
+	[tag]"name RU"			[value]"Совершенная сфера возвышения"
+	
+	[tag]"icon path"		[value]"PerfectExaltedOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
 	[tag]"name EN"			[value]"Regal Orb"
 	[tag]"name RU"			[value]"Сфера царей"
 	
@@ -239,6 +421,66 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Greater Regal Orb"
+	[tag]"name RU"			[value]"Великая сфера царей"
+	
+	[tag]"icon path"		[value]"GreaterRegalOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Moderate"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Regal Orb"
+	[tag]"name RU"			[value]"Совершенная сфера царей"
+	
+	[tag]"icon path"		[value]"PerfectRegalOrb(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -261,6 +503,63 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Greater Orb of Augmentation"
+	[tag]"name RU"			[value]"Великая сфера усиления"
+	
+	[tag]"icon path"		[value]"GreaterOrbOfAugmentation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Perfect Orb of Augmentation"
+	[tag]"name RU"			[value]"Совершенная сфера усиления"
+	
+	[tag]"icon path"		[value]"PerfectOrbOfAugmentation(Poe2)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Basic currency"
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
@@ -591,6 +890,344 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 			
 	[tag]"worth"			[value]"Expensive"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Petition Splinter"
+	[tag]"name RU"			[value]"Осколок прошения"
+	
+	[tag]"icon path"		[value]"PetitionSplinter"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Runic Splinter"
+	[tag]"name RU"			[value]"Рунический осколок"
+	
+	[tag]"icon path"		[value]"RunicSplinter"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gnawed Jawbone"
+	[tag]"name RU"			[value]"Обглоданная челюсть"
+	
+	[tag]"icon path"		[value]"GnawedJawbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Preserved Jawbone"
+	[tag]"name RU"			[value]"Сохранившаяся челюсть"
+	
+	[tag]"icon path"		[value]"PreservedJawbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Jawbone"
+	[tag]"name RU"			[value]"Древняя челюсть"
+	
+	[tag]"icon path"		[value]"AncientJawbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gnawed Rib"
+	[tag]"name RU"			[value]"Обглоданные рёбра"
+	
+	[tag]"icon path"		[value]"GnawedRib"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Preserved Rib"
+	[tag]"name RU"			[value]"Сохранившиеся рёбра"
+	
+	[tag]"icon path"		[value]"PreservedRib"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Rib"
+	[tag]"name RU"			[value]"Древние рёбра"
+	
+	[tag]"icon path"		[value]"AncientRib"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Gnawed Collarbone"
+	[tag]"name RU"			[value]"Обглоданная ключица"
+	
+	[tag]"icon path"		[value]"GnawedCollarbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Preserved Collarbone"
+	[tag]"name RU"			[value]"Сохранившаяся ключица"
+	
+	[tag]"icon path"		[value]"PreservedCollarbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Collarbone"
+	[tag]"name RU"			[value]"Древняя ключица"
+	
+	[tag]"icon path"		[value]"AncientCollarbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"PreservedCranium"
+	[tag]"name RU"			[value]"Сохранившийся череп"
+	
+	[tag]"icon path"		[value]"AncientCollarbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Preserved Vertebrae"
+	[tag]"name RU"			[value]"Сохранившийся позвонок"
+	
+	[tag]"icon path"		[value]"PreservedVertebrae"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"

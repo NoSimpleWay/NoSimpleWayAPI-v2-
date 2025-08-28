@@ -944,3 +944,90 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"	[value]"Trash"
 
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Runed Focus"
+	[tag]"name RU"	[value]"Рунический фокус"
+
+	[tag]"icon path"	[value]"UndefinedFoci"
+	[tag]"base class"	[value]"Foci"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Whorl Focus"
+	[tag]"name RU"	[value]"Фокус из листьев"
+
+	[tag]"icon path"	[value]"UndefinedFoci"
+	[tag]"base class"	[value]"Foci"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tasalian Focus"
+	[tag]"name RU"	[value]"Фокус Тасалио"
+
+	[tag]"icon path"	[value]"UndefinedFoci"
+	[tag]"base class"	[value]"Foci"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"18"
+	[tag]"base energy shield max"	[value]"18"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
