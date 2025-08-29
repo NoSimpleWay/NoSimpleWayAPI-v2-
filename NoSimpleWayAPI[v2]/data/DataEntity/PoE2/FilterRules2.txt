@@ -101,276 +101,147 @@ DETF_color	255	128	64	255
 
 
 
-//Копья для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Spears"
-name_RU	"Копья"
-icon	"data/textures/icons/ClassSpears.png"
 
+
+//Новые базы для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New bases"
+name_RU	"Новые базы"
+icon	"data/textures/icons/AbyssalSignet.png"
 target_game	"PoE2"
+
 tag	"Game item"
 min_y	"100"
-named_id	"new content(hunt)"
-
+named_id	"new content(abyss)"
 
 
 
 REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
+target_tag	"base class"
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Helmets"
+	DETF_localised_attribute_name_EN	"Helmets"
+	DETF_localised_attribute_name_RU	"Шлемы"
+	DETF_color	255	230	204	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
+	DETF_value_key	"Gloves"
+	DETF_localised_attribute_name_EN	"Gloves"
+	DETF_localised_attribute_name_RU	"Перчатки"
 	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Boots"
+	DETF_localised_attribute_name_EN	"Boots"
+	DETF_localised_attribute_name_RU	"Сапоги"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Body Armours"
+	DETF_localised_attribute_name_EN	"Body armours"
+	DETF_localised_attribute_name_RU	"Нательные доспехи"
+	DETF_color	255	230	204	255
+
+
 	
 
 
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
+
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Spears"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-//Баклеры для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Bucklers"
-name_RU	"Баклеры"
-icon	"data/textures/icons/RidgedBuckler.png"
-target_game	"PoE2"
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(hunt)"
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Bucklers"
-	DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-//Ванды для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New wands"
-name_RU	"Новые жезлы"
-icon	"data/textures/icons/UndefinedWand.png"
-target_game	"PoE2"
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(hunt)"
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
+	DETF_value_key	"Sceptres"
+	DETF_localised_attribute_name_EN	"Sceptres"
+	DETF_localised_attribute_name_RU	"Скипетры"
+	DETF_color	150	200	255	255
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Wands"
-	DETF_color	255	230	204	255
+	DETF_localised_attribute_name_EN	"Wands"
+	DETF_localised_attribute_name_RU	"Жезлы"
+	DETF_color	150	200	255	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Staves"
+	DETF_localised_attribute_name_EN	"Staves"
+	DETF_localised_attribute_name_RU	"Посохи"
+	DETF_color	150	200	255	255
+	
+	
+	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"One Hand Maces"
+	DETF_localised_attribute_name_EN	"One hand maces"
+	DETF_localised_attribute_name_RU	"Одноручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Two Hand Maces"
+	DETF_localised_attribute_name_EN	"Two hand maces"
+	DETF_localised_attribute_name_RU	"Двуручные дубины"
+	DETF_color	255	200	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Quarterstaves"
+	DETF_localised_attribute_name_EN	"Quarterstaves"
+	DETF_localised_attribute_name_RU	"Боевые посохи"
+	DETF_color	255	200	200	255
 
 
 
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
+
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-	tag_cannot_be_configured
+	DETF_value_key	"Bows"
+	DETF_localised_attribute_name_EN	"Bows"
+	DETF_localised_attribute_name_RU	"Луки"
+	DETF_color	150	255	200	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
-	DETF_color	255	230	204	255
+	DETF_value_key	"Spears"
+	DETF_localised_attribute_name_EN	"Spears"
+	DETF_localised_attribute_name_RU	"Копья"
+	DETF_color	150	255	200	255
 	
-	
-	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Bucklers"
+	DETF_localised_attribute_name_EN	"Bucklers"
+	DETF_localised_attribute_name_RU	"Баклеры"
+	DETF_color	150	255	200	255
 
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Crossbows"
+	DETF_localised_attribute_name_EN	"Crossbows"
+	DETF_localised_attribute_name_RU	"Арбалеты"
+	DETF_color	150	255	200	255
 
 
 
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Shields"
+	DETF_localised_attribute_name_EN	"Shields"
+	DETF_localised_attribute_name_RU	"Щиты"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Foci"
+	DETF_localised_attribute_name_EN	"Focus"
+	DETF_localised_attribute_name_RU	"Фокус"
+	DETF_color	150	200	255	255
 
 
-
-//Кольца для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New rings"
-name_RU	"Новые кольца"
-icon	"data/textures/icons/DuskRing.png"
-target_game	"PoE2"
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(hunt)"
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Rings"
-	DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
-	DETF_color	255	230	204	255
-	
-	
-	
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-//Амулеты для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New amulets"
-name_RU	"Новые амулеты"
-icon	"data/textures/icons/UndefinedAmulet.png"
-target_game	"PoE2"
-
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(hunt)"
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
+	DETF_localised_attribute_name_EN	"Rings"
+	DETF_localised_attribute_name_RU	"Кольца"
+	DETF_color	255	255	100	255
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Amulets"
-	DETF_color	255	230	204	255
-
+	DETF_localised_attribute_name_EN	"Amulets"
+	DETF_localised_attribute_name_RU	"Амулеты"
+	DETF_color	255	255	100	255
 
 
 REGISTER_NEW_FILTER_TAG
@@ -388,8 +259,9 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
 	DETF_color	255	230	204	255
+	
 	
 	
 
@@ -409,6 +281,59 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+//Новые базы для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Removed items"
+name_RU	"Удалённые предметы"
+icon	"data/textures/buttons/button_red_x.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(abyss)"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Deleted"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Deleted in Rise of the Abyssals"
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
 
 
 
@@ -419,13 +344,13 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_RULE
 name_EN	"New currency"
 name_RU	"Новая валюта"
-icon	"data/textures/icons/FracturingOrb.png"
+icon	"data/textures/icons/PerfectChaosOrb(Poe2).png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(hunt)"
+named_id	"new content(abyss)"
 
 
 
@@ -460,7 +385,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
 	DETF_color	255	230	204	255
 	
 	
@@ -504,13 +429,13 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_RULE
 name_EN	"New essences"
 name_RU	"Новые эссенции"
-icon	"data/textures/icons/Essence_of_Delirium.png"
+icon	"data/textures/icons/PerfectEssenceOfInfinite.png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(hunt)"
+named_id	"new content(abyss)"
 
 
 
@@ -555,7 +480,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
 	DETF_color	255	230	204	255
 	
 	
@@ -582,23 +507,19 @@ tag_cannot_be_configured
 	
 	
 	
+//Эссенции для PoE2
 	
-	
-	
-	
-	
-//Ключи реликвария для PoE2
+//Мап фрагменты для PoE2
 REGISTER_NEW_FILTER_RULE
-name_EN	"Vault keys"
-name_RU	"Ключи реликвария"
-icon	"data/textures/icons/UndefinedReliquaryKey.png"
+name_EN	"New map fragments"
+name_RU	"Новые фрагменты карт"
+icon	"data/textures/icons/IdolOfEstazunti.png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(hunt)"
-
+named_id	"new content(abyss)"
 
 
 
@@ -607,9 +528,8 @@ named_id	"new content(hunt)"
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
-
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Vault Keys"
+	DETF_value_key	"Map Fragments"
 	DETF_color	255	230	204	255
 
 
@@ -622,13 +542,16 @@ REGISTER_NEW_FILTER_TAG
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
 	
+
+	
+	
 	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
 	DETF_color	255	230	204	255
 	
 	
@@ -651,11 +574,189 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+//Проходки боссов для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New Pinnacle keys"
+name_RU	"Новые проходки боссов"
+icon	"data/textures/icons/TertiaryCalamityFragment.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(abyss)"
 
 
 
 
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Pinnacle Keys"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//Камни для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"New gems"
+name_RU	"Новые камни"
+icon	"data/textures/icons/SuppotGem(PoE2).png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(abyss)"
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Support Gems"
+	DETF_localised_attribute_name_EN	"Support gems"
+	DETF_localised_attribute_name_RU	"Камни поддержки"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Skill Gems"
+	DETF_localised_attribute_name_EN	"Skill gems"
+	DETF_localised_attribute_name_RU	"Камни умений"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Uncut Skill Gems"
+	DETF_localised_attribute_name_EN	"Uncut Skill Gems"
+	DETF_localised_attribute_name_RU	"Необработанный: умения"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Uncut Support Gems"
+	DETF_localised_attribute_name_EN	"Uncut Support Gems"
+	DETF_localised_attribute_name_RU	"Необработанный: поддержка"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Uncut Spirit Gems"
+	DETF_localised_attribute_name_EN	"Uncut Spirit Gems"
+	DETF_localised_attribute_name_RU	"Необработанный: духа"
+	DETF_color	255	230	204	255
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
 
 
 //Омены для PoE2
@@ -668,7 +769,7 @@ target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(hunt)"
+named_id	"new content(abyss)"
 
 
 
@@ -709,7 +810,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Dawn of the Hunt league"
+	DETF_value_key	"Introduced: Rise of the Abyssals League"
 	DETF_color	255	230	204	255
 	
 REGISTER_NEW_FILTER_TAG
@@ -792,13 +893,13 @@ tag_cannot_be_configured
 
 REGISTER_NEW_FILTER_RULE
 name_EN	"Category:\nNew content"
-name_RU	"Категория:\nНовый контнет"
+name_RU	"Категория:\nНовый контент"
 icon	"data/textures/buttons/pattern_folder_hunt.png"
 is_folder
 
 target_game	"PoE2"
 tag	"Game item"
-named_id	"new content(hunt)"
+named_id	"new content(abyss)"
 min_y	"100"
 
 
@@ -933,7 +1034,7 @@ target_tag	"name EN"
 	DETF_color	150	255	200	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Spears"
+	DETF_value_key	"Bucklers"
 	DETF_localised_attribute_name_EN	"Bucklers"
 	DETF_localised_attribute_name_RU	"Баклеры"
 	DETF_color	150	255	200	255
@@ -983,64 +1084,6 @@ target_tag	"name EN"
 	DETF_localised_attribute_name_EN	"Belts"
 	DETF_localised_attribute_name_RU	"Пояса"
 	DETF_color	255	255	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Fishing Rods"
-	DETF_localised_attribute_name_EN	"Fishing rods"
-	DETF_localised_attribute_name_RU	"Удочки"
-	DETF_color	255	255	100	255
-	
-	
-	
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Two Hand Axes"
-	DETF_localised_attribute_name_EN	"Two hand axes"
-	DETF_localised_attribute_name_RU	"Двуручные топоры"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Two Hand Swords"
-	DETF_localised_attribute_name_EN	"Two hand swords"
-	DETF_localised_attribute_name_RU	"Двуручные мечи"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Daggers"
-	DETF_localised_attribute_name_EN	"Daggers"
-	DETF_localised_attribute_name_RU	"Кинжалы"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"One Hand Axes"
-	DETF_localised_attribute_name_EN	"One hand axes"
-	DETF_localised_attribute_name_RU	"Одноручные топоры"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"One Hand Swords"
-	DETF_localised_attribute_name_EN	"One hand swords"
-	DETF_localised_attribute_name_RU	"Одноручные мечи"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Flails"
-	DETF_localised_attribute_name_EN	"Flails"
-	DETF_localised_attribute_name_RU	"Кистени"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Traps"
-	DETF_localised_attribute_name_EN	"Traps"
-	DETF_localised_attribute_name_RU	"Ловушки"
-	DETF_color	255	110	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Claws"
-	DETF_localised_attribute_name_EN	"Claws"
-	DETF_localised_attribute_name_RU	"Когти"
-	DETF_color	255	110	100	255
-
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -1219,7 +1262,7 @@ target_tag	"Base Class"
 	DETF_color	150	255	200	255
 	
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Spears"
+	DETF_value_key	"Bucklers"
 	DETF_localised_attribute_name_EN	"Bucklers"
 	DETF_localised_attribute_name_RU	"Баклеры"
 	DETF_color	150	255	200	255
@@ -1228,12 +1271,6 @@ target_tag	"Base Class"
 	DETF_value_key	"Crossbows"
 	DETF_localised_attribute_name_EN	"Crossbows"
 	DETF_localised_attribute_name_RU	"Арбалеты"
-	DETF_color	150	255	200	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Quivers"
-	DETF_localised_attribute_name_EN	"Quivers"
-	DETF_localised_attribute_name_RU	"Колчаны"
 	DETF_color	150	255	200	255
 
 
@@ -1245,7 +1282,7 @@ target_tag	"Base Class"
 	DETF_color	150	200	255	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Focus"
+	DETF_value_key	"Foci"
 	DETF_localised_attribute_name_EN	"Focus"
 	DETF_localised_attribute_name_RU	"Фокус"
 	DETF_color	150	200	255	255
@@ -1363,7 +1400,7 @@ DETF_color	255	128	64	255
 REGISTER_NEW_FILTER_RULE
 name_EN	"Socketable"
 name_RU	"Размещаемое"
-icon	"data/textures/icons/IronRune.png"
+icon	"data/textures/icons/AmanamusGaze.png"
 
 target_game	"PoE2"
 tag	"Game item"
@@ -1421,6 +1458,18 @@ target_tag	"rune type"
 	DETF_localised_attribute_name_EN	"Talisman"
 	DETF_localised_attribute_name_RU	"Талисманы"
 	DETF_color	200	255	220	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Special"
+	DETF_localised_attribute_name_EN	"Special"
+	DETF_localised_attribute_name_RU	"Особые"
+	DETF_color	255	220	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss jewel"
+	DETF_localised_attribute_name_EN	"Abyss jewels"
+	DETF_localised_attribute_name_RU	"Самоцветы бездны"
+	DETF_color	60	200	80	255
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -1774,6 +1823,12 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"essence rang"
 
 	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Lesser"
+	DETF_localised_attribute_name_EN	"Lesser essences"
+	DETF_localised_attribute_name_RU	"Малые сущности"
+	DETF_color	190	200	210	255
+
+	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Regular"
 	DETF_localised_attribute_name_EN	"Regular essences"
 	DETF_localised_attribute_name_RU	"Обычные сущности"
@@ -1783,6 +1838,12 @@ target_tag	"essence rang"
 	DETF_value_key	"Greater"
 	DETF_localised_attribute_name_EN	"Greater essences"
 	DETF_localised_attribute_name_RU	"Великие сущности"
+	DETF_color	255	200	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Perfect"
+	DETF_localised_attribute_name_EN	"Perfect essences"
+	DETF_localised_attribute_name_RU	"Совершенные сущности"
 	DETF_color	255	200	100	255
 
 	REGISTER_NEW_SUITABLE_VALUES

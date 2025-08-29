@@ -4,6 +4,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Uncut skill gem"
 	[tag]"name RU"		[value]"Необработанный камень умения"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
 
 	[tag]"icon path"	[value]"UncutGem"
 	
@@ -11,6 +13,467 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 1)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 1)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 2)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 2)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 3)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 3)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 4)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 4)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 5)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 5)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 6)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 6)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 7)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 7)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 8)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 8)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 9)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 9)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 10)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 10)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 11)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 11)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 12)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 12)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 13)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 13)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 14)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 14)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 15)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 15)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 16)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 16)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 17)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 17)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 18)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 18)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 19)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 19)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Skill Gem (Level 20)"
+	[tag]"name RU"		[value]"Необработанный камень умения (уровень 20)"
+	
+	[tag]"base class"	[value]"Uncut Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18,6 +481,313 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Uncut support gem"
 	[tag]"name RU"		[value]"Необработанный камень поддержки"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Support Gem (Level 1)"
+	[tag]"name RU"		[value]"Необработанный камень поддержки (уровень 1)"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Support Gem (Level 2)"
+	[tag]"name RU"		[value]"Необработанный камень поддержки (уровень 2)"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Support Gem (Level 3)"
+	[tag]"name RU"		[value]"Необработанный камень поддержки (уровень 3)"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Support Gem (Level 4)"
+	[tag]"name RU"		[value]"Необработанный камень поддержки (уровень 4)"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Support Gem (Level 5)"
+	[tag]"name RU"		[value]"Необработанный камень поддержки (уровень 5)"
+	
+	[tag]"base class"	[value]"Uncut Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut spirit gem"
+	[tag]"name RU"		[value]"Необработанный камень духа"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 4)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 4)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 5)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 5)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 6)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 6)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 7)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 7)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 8)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 8)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 9)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 9)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 10)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 10)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 11)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 11)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 12)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 12)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"icon path"	[value]"UncutGem"
 	
@@ -30,8 +800,138 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Uncut spirit gem"
-	[tag]"name RU"		[value]"Необработанный камень духа"
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 13)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 13)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 14)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 14)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 15)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 15)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 16)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 16)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 17)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 17)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 18)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 18)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 19)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 19)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"icon path"	[value]"UncutGem"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uncut Spirit Gem (Level 20)"
+	[tag]"name RU"		[value]"Необработанный камень духа (уровень 20)"
+	
+	[tag]"base class"	[value]"Uncut Spirit Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"icon path"	[value]"UncutGem"
 	

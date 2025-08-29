@@ -121,7 +121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"KulemaksInvitation"
+	[tag]"name EN"		[value]"Kulemak's Invitation"
 	[tag]"name RU"		[value]"Приглашение Кулемака"
 
 	[tag]"icon path"	[value]"KulemaksInvitation"

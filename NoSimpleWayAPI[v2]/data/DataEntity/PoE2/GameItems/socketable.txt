@@ -1,3 +1,4 @@
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -41,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Desert Rune"
 	[tag]"name RU"		[value]"Старшая руна пустыни"
 
-	[tag]"icon path"	[value]"GreaterDesertRune"
+	[tag]"icon path"	[value]"GreaterDesertRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -113,7 +114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Glacial Rune"
 	[tag]"name RU"		[value]"Старшая руна ледника"
 
-	[tag]"icon path"	[value]"GreaterGlacialRune"
+	[tag]"icon path"	[value]"GreaterGlacialRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -183,7 +184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Storm Rune"
 	[tag]"name RU"		[value]"Старшая руна шторма"
 
-	[tag]"icon path"	[value]"GreaterStormRune"
+	[tag]"icon path"	[value]"GreaterStormRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -248,7 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Iron Rune"
 	[tag]"name RU"		[value]"Старшая руна железа"
 
-	[tag]"icon path"	[value]"GreaterIronRune"
+	[tag]"icon path"	[value]"GreaterIronRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -315,7 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Body Rune"
 	[tag]"name RU"		[value]"Старшая руна тела"
 
-	[tag]"icon path"	[value]"GreaterBodyRune"
+	[tag]"icon path"	[value]"GreaterBodyRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -386,7 +387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Mind Rune"
 	[tag]"name RU"		[value]"Старшая руна разума"
 
-	[tag]"icon path"	[value]"GreaterMindRune"
+	[tag]"icon path"	[value]"GreaterMindRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -456,7 +457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rebirth Rune"
 	[tag]"name RU"		[value]"Старшая руна перерождения"
 
-	[tag]"icon path"	[value]"GreaterRebirthRune"
+	[tag]"icon path"	[value]"GreaterRebirthRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -531,14 +532,14 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-		ADD_NEW_DATA_ENTITY
+	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Inspiration Rune"
 	[tag]"name RU"		[value]"Старшая руна вдохновения"
 
-	[tag]"icon path"	[value]"GreaterInspirationRune"
+	[tag]"icon path"	[value]"GreaterInspirationRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -611,7 +612,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Stone Rune"
 	[tag]"name RU"		[value]"Старшая руна камня"
 
-	[tag]"icon path"	[value]"GreaterStoneRune"
+	[tag]"icon path"	[value]"GreaterStoneRune2"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Greater"
@@ -692,7 +693,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Vision Rune"
 	[tag]"name RU"		[value]"Старшая руна видения"
 
-	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"icon path"	[value]"GreaterVisionRune2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -716,14 +717,287 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	ADD_NEW_DATA_ENTITY
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Robust Rune"
+	[tag]"name RU"		[value]"Малая руна мощи"
+
+	[tag]"icon path"	[value]"LesserStrengthRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Robust Rune"
+	[tag]"name RU"		[value]"Руна мощи"
+
+	[tag]"icon path"	[value]"StrengthRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Robust Rune"
+	[tag]"name RU"		[value]"Большая руна мощи"
+
+	[tag]"icon path"	[value]"StrengthRuneTier3"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Adept Rune"
+	[tag]"name RU"		[value]"Малая руна искусности"
+
+	[tag]"icon path"	[value]"LesserDexRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adept Rune"
+	[tag]"name RU"		[value]"Руна искусности"
+
+	[tag]"icon path"	[value]"DexRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Adept Rune"
+	[tag]"name RU"		[value]"Большая руна искусности"
+
+	[tag]"icon path"	[value]"DexRuneTier3"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Resolve Rune"
+	[tag]"name RU"		[value]"Малая руна решительности"
+
+	[tag]"icon path"	[value]"LesserIntRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Resolve Rune"
+	[tag]"name RU"		[value]"Руна решительности"
+
+	[tag]"icon path"	[value]"IntRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Resolve Rune"
+	[tag]"name RU"		[value]"Большая руна решительности"
+
+	[tag]"icon path"	[value]"IntRuneTier3"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Tempered Rune"
+	[tag]"name RU"		[value]"Малая руна закалки"
+
+	[tag]"icon path"	[value]"LesserPhyDmgRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tempered Rune"
+	[tag]"name RU"		[value]"Руна закалки"
+
+	[tag]"icon path"	[value]"PhyDmgRune"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Tempered Rune"
+	[tag]"name RU"		[value]"Большая руна закалки"
+
+	[tag]"icon path"	[value]"PhyDmgRuneTier3"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Rune of Leadership"
 	[tag]"name RU"		[value]"Старшая руна лидерства"
 
-	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"icon path"	[value]"GreaterRuneLeadership2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -735,19 +1009,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	
-		
-	
-	
-	
-	
-	ADD_NEW_DATA_ENTITY
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Rune of Tithing"
 	[tag]"name RU"		[value]"Старшая руна десятины"
 
-	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"icon path"	[value]"GreaterRuneTithing2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -759,40 +1028,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	
-	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Greater Rune of Tithing"
-	[tag]"name RU"		[value]"Старшая руна десятины"
-
-	[tag]"icon path"	[value]"GreaterVisionRune"
-	[tag]"base class"	[value]"Socketable"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-
-	[tag]"rune type"	[value]"Greater"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-		
-	
-	
-	
-	
-	ADD_NEW_DATA_ENTITY
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Rune of Alacrity"
-	[tag]"name RU"		[value]"Старшая руна ловкости"
+	[tag]"name RU"		[value]"Старшая руна стремления"
 
-	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"icon path"	[value]"GreaterRuneAlacrity2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -804,23 +1047,431 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	
-		
-	
-	
-	
-	ADD_NEW_DATA_ENTITY
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Rune of Nobility"
-	[tag]"name RU"		[value]"Старшая руна благородства"
+	[tag]"name RU"		[value]"Старшая руна дворянства"
 
-	[tag]"icon path"	[value]"GreaterVisionRune"
+	[tag]"icon path"	[value]"GreaterRuneNobility2"
 	[tag]"base class"	[value]"Socketable"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
 	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hedgewitch Assandra's Rune of Wisdom"
+	[tag]"name RU"		[value]"Руна мудрости лесной ведьмы Ассандры"
+
+	[tag]"icon path"	[value]"RuneofWisdom"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Expensive"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Saqawal's Rune of the Sky"
+	[tag]"name RU"		[value]"Руна неба Сакаваля"
+
+	[tag]"icon path"	[value]"RuneoftheSky"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fenumus' Rune of Agony"
+	[tag]"name RU"		[value]"Руна агонии Фенумы"
+
+	[tag]"icon path"	[value]"RuneofAgony"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Farrul's Rune of Grace"
+	[tag]"name RU"		[value]"Руна грации Фаррул"
+
+	[tag]"icon path"	[value]"RuneofGrace"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Farrul's Rune of the Chase"
+	[tag]"name RU"		[value]"Руна погони Фаррул"
+
+	[tag]"icon path"	[value]"RuneoftheChase"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Craiceann's Rune of Warding"
+	[tag]"name RU"		[value]"Руна барьера Краценна"
+
+	[tag]"icon path"	[value]"RuneofWarding"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Saqawal's Rune of Memory"
+	[tag]"name RU"		[value]"Руна памяти Сакаваля"
+
+	[tag]"icon path"	[value]"RuneofMemory"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Saqawal's Rune of Erosion"
+	[tag]"name RU"		[value]"Руна эрозии Сакаваля"
+
+	[tag]"icon path"	[value]"RuneofErosion"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Farrul's Rune of the Hunt"
+	[tag]"name RU"		[value]"Руна охоты Фаррул"
+
+	[tag]"icon path"	[value]"RuneoftheHunt"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Craiceann's Rune of Recovery"
+	[tag]"name RU"		[value]"Руна восстановления Краценна"
+
+	[tag]"icon path"	[value]"RuneofRecovery"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Courtesan Mannan's Rune of Cruelty"
+	[tag]"name RU"		[value]"Руна жестокости куртизанки Маннан"
+
+	[tag]"icon path"	[value]"RuneofCruelty"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thane Grannell's Rune of Mastery"
+	[tag]"name RU"		[value]"Руна мастерства тана Граннеля"
+
+	[tag]"icon path"	[value]"RuneofMastery"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fenumus' Rune of Spinning"
+	[tag]"name RU"		[value]"Руна плетения Фенумы"
+
+	[tag]"icon path"	[value]"RuneofSpinning"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Countess Seske's Rune of Archery"
+	[tag]"name RU"		[value]"Руна меткости графини Сеске"
+
+	[tag]"icon path"	[value]"RuneofArchery"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Expensive"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thane Girt's Rune of Wildness"
+	[tag]"name RU"		[value]"Руна дикости тана Гирта"
+
+	[tag]"icon path"	[value]"RuneofWildness"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fenumus' Rune of Draining"
+	[tag]"name RU"		[value]"Руна высушивания Фенумы"
+
+	[tag]"icon path"	[value]"RuneofDraining"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thane Myrk's Rune of Summer"
+	[tag]"name RU"		[value]"Руна лета тана Мирка"
+
+	[tag]"icon path"	[value]"RuneofSummer"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lady Hestra's Rune of Winter"
+	[tag]"name RU"		[value]"Руна зимы леди Гестры"
+
+	[tag]"icon path"	[value]"RuneofWinter"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thane Leld's Rune of Spring"
+	[tag]"name RU"		[value]"Руна весны тана Лельда"
+
+	[tag]"icon path"	[value]"RuneofSpring"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"The Greatwolf's Rune of Claws"
+	[tag]"name RU"		[value]"Руна когтей Великого волка"
+
+	[tag]"icon path"	[value]"RuneofClaws"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"The Greatwolf's Rune of Willpower"
+	[tag]"name RU"		[value]"Руна воли Великого волка"
+
+	[tag]"icon path"	[value]"RuneofWillpower"
+	[tag]"base class"	[value]"Socketable"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"rune type"	[value]"Special"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -923,7 +1574,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Soul Core of Citaqualotl"
 	[tag]"name RU"		[value]"Ядро душ Ситаквалотля"
 
-	[tag]"icon path"	[value]"SoulCoreOfCitaqualotl"
+	[tag]"icon path"	[value]"SoulCoreOfCitaqualotl2"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Soul core"
@@ -1023,7 +1674,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Soul Core of Quipolatl"
-	[tag]"name RU"		[value]"Ядро душ Ситаквалотля"
+	[tag]"name RU"		[value]"Ядро душ Квиполатля"
 
 	[tag]"icon path"	[value]"SoulCoreOfQuipolatl"
 	[tag]"base class"	[value]"Socketable"
@@ -1042,7 +1693,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Soul Core of Ticaba"
 	[tag]"name RU"		[value]"Ядро душ Тикабы"
 
-	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"icon path"	[value]"SoulCoreOfTicaba"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Soul core"
@@ -1050,7 +1701,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1076,7 +1727,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Soul Core of Cholotl"
 	[tag]"name RU"		[value]"Ядро душ Чолотля"
 
-	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"icon path"	[value]"Soul CoreOfCholotl"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Soul core"
@@ -1093,7 +1744,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Soul Core of Zantipi"
 	[tag]"name RU"		[value]"Ядро душ Зантипи"
 
-	[tag]"icon path"	[value]"SoulCoreOfAtmohua"
+	[tag]"icon path"	[value]"SoulCoreOfZantipi"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Soul core"
@@ -1102,6 +1753,272 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hayoxi's Soul Core of Heatproofing"
+	[tag]"name RU"		[value]"Ядро душ жаростойкости Хайоши"
+
+	[tag]"icon path"	[value]"HayoxiSoulCore OfHeatproofing"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zalatl's Soul Core of Insulation"
+	[tag]"name RU"		[value]"Ядро душ изоляции Залатля"
+
+	[tag]"icon path"	[value]"ZalatlSoulCoreOf Insulation"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Topotante's Soul Core of Dampening"
+	[tag]"name RU"		[value]"Ядро душ подавления Топотанте"
+
+	[tag]"icon path"	[value]"TopotanteSoulCoreOfDampening"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Atmohua's Soul Core of Retreat"
+	[tag]"name RU"		[value]"Ядро душ отступления Атмохвы"
+
+	[tag]"icon path"	[value]"AtmohuaSoulCoreOfRetreat"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Quipolatl's Soul Core of Flow"
+	[tag]"name RU"		[value]"Ядро душ потока Квиполатля"
+
+	[tag]"icon path"	[value]"QuipolatlSoulCoreOfFlow"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tzamoto's Soul Core of Ferocity"
+	[tag]"name RU"		[value]"Ядро душ свирепости Цамото"
+
+	[tag]"icon path"	[value]"TzamotoSoulCoreOfFerocity"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uromoti's Soul Core of Attenuation"
+	[tag]"name RU"		[value]"Ядро душ истощения Уромоти"
+
+	[tag]"icon path"	[value]"UromotiSoulCoreOfAttenuation"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Opiloti's Soul Core of Assault"
+	[tag]"name RU"		[value]"Ядро душ нападения Опилоти"
+
+	[tag]"icon path"	[value]"OpilotiSoulCoreOfAssault"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guatelitzi's Soul Core of Endurance"
+	[tag]"name RU"		[value]"Ядро душ выносливости Гвателитзи"
+
+	[tag]"icon path"	[value]"GuatelitziSoulCoreOfEndurance"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Xopec's Soul Core of Power"
+	[tag]"name RU"		[value]"Ядро душ могущества Шопека"
+
+	[tag]"icon path"	[value]"XopecSoulCoreOfPower"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Estazunti's Soul Core of Convalescence"
+	[tag]"name RU"		[value]"Ядро душ оздоровления Эстазунти"
+
+	[tag]"icon path"	[value]"EstazuntiSoulCoreOfConvalescence"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tacati's Soul Core of Affliction"
+	[tag]"name RU"		[value]"Ядро душ недуга Такати"
+
+	[tag]"icon path"	[value]"TacatiSoulCoreOfAffliction"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cholotl's Soul Core of War"
+	[tag]"name RU"		[value]"Ядро душ войны Чолотля"
+
+	[tag]"icon path"	[value]"CholotlSoulCoreOfWar"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Citaqualotl's Soul Core of Foulness"
+	[tag]"name RU"		[value]"Ядро душ гнусности Ситаквалотля"
+
+	[tag]"icon path"	[value]"CitaqualotlSoulCoreOfFoulness"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Xipocado's Soul Core of Dominion"
+	[tag]"name RU"		[value]"Ядро душ господства Шипокадо"
+
+	[tag]"icon path"	[value]"XipocadoSoulCoreOfDominion"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Soul core"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
 	
 	
 	
@@ -1131,7 +2048,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Serpent Talisman"
 	[tag]"name RU"		[value]"Талисман змеи"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableSnake"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1154,7 +2071,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Primate Talisman"
 	[tag]"name RU"		[value]"Талисман примата"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableMonkey"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1177,7 +2094,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Owl Talisman"
 	[tag]"name RU"		[value]"Талисман совы"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableOwl"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1200,7 +2117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cat Talisman"
 	[tag]"name RU"		[value]"Талисман кошки"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableCat"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1223,7 +2140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wolf Talisman"
 	[tag]"name RU"		[value]"Талисман волка"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableWolf"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1246,7 +2163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Stag Talisman"
 	[tag]"name RU"		[value]"Талисман оленя"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableStag"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1269,7 +2186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Boar Talisman"
 	[tag]"name RU"		[value]"Талисман вепря"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableBoar"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1292,7 +2209,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Bear Talisman"
 	[tag]"name RU"		[value]"Талисман медведя"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableBear"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1313,9 +2230,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Ox Talisman"
-	[tag]"name RU"		[value]"Талисман вола"
+	[tag]"name RU"		[value]"Талисман быка"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableOx"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1338,7 +2255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Rabbit Talisman"
 	[tag]"name RU"		[value]"Талисман кролика"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableRabbit"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1361,7 +2278,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Fox Talisman"
 	[tag]"name RU"		[value]"Талисман лисы"
 
-	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"icon path"	[value]"AzmeriSocketableFox"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Talisman"
@@ -1372,8 +2289,152 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Sirrius"
+	[tag]"name RU"		[value]"Талисман Сирриуса"
+
+	[tag]"icon path"	[value]"AzmeriSocketableWolfSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
 	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Thruldana"
+	[tag]"name RU"		[value]"Талисман Трулданы"
+
+	[tag]"icon path"	[value]"AzmeriSocketableSnakeSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Grold"
+	[tag]"name RU"		[value]"Талисман Грольда"
+
+	[tag]"icon path"	[value]"AzmeriSocketableBearSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Eeshta"
+	[tag]"name RU"		[value]"Талисман Ишты"
+
+	[tag]"icon path"	[value]"AzmeriSocketableOwlSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Egrin"
+	[tag]"name RU"		[value]"Талисман Эгрина"
+
+	[tag]"icon path"	[value]"AzmeriSocketableCatSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Maxarius"
+	[tag]"name RU"		[value]"Талисман Макерия"
+
+	[tag]"icon path"	[value]"AzmeriSocketableStagSpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Talisman of Ralakesh"
+	[tag]"name RU"		[value]"Талисман Ралакеша"
+
+	[tag]"icon path"	[value]"AzmeriSocketableMonkeySpecial"
+	[tag]"base class"	[value]"Socketable"
+
+	[tag]"rune type"	[value]"Talisman"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -1409,9 +2470,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Tecrod's Gaze"
-	[tag]"name RU"		[value]"TecrodsGaze2"
+	[tag]"name RU"		[value]"Взгляд Текрода"
 
-	[tag]"icon path"	[value]"HypnoticEyeJewel"
+	[tag]"icon path"	[value]"TecrodsGaze2"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Abyss jewel"
