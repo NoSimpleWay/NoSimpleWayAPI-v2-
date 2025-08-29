@@ -951,7 +951,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -975,7 +975,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -999,7 +999,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1023,7 +1023,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1047,7 +1047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1071,7 +1071,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1095,7 +1095,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1119,7 +1119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1143,7 +1143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1166,7 +1166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1189,7 +1189,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -1213,7 +1213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	
-	[tag]"essence rang"	[value]"Expensive"
+	[tag]"worth"	[value]"Expensive"
 	
 	
 	
@@ -1971,8 +1971,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of the Abyss"
-	[tag]"name RU"		[value]"Сущность Бездны"
+	[tag]"name EN"		[value]"Perfect Essence of the Abyss"
+	[tag]"name RU"		[value]"Совершенная сущность Бездны"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -1994,8 +1994,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Insulation"
-	[tag]"name RU"		[value]"Сущность изоляции"
+	[tag]"name EN"		[value]"Perfect Essence of Insulation"
+	[tag]"name RU"		[value]"Совершенная сущность изоляции"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2017,8 +2017,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Thawing"
-	[tag]"name RU"		[value]"Сущность таяния"
+	[tag]"name EN"		[value]"Perfect Essence of Thawing"
+	[tag]"name RU"		[value]"Совершенная сущность таяния"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2040,8 +2040,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Grounding"
-	[tag]"name RU"		[value]"Сущность заземления"
+	[tag]"name EN"		[value]"Perfect Essence of Grounding"
+	[tag]"name RU"		[value]"Совершенная сущность заземления"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2063,8 +2063,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Alacrity"
-	[tag]"name RU"		[value]"Сущность гибкости"
+	[tag]"name EN"		[value]"Perfect Essence of Alacrity"
+	[tag]"name RU"		[value]"Совершенная сущность гибкости"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2086,8 +2086,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Opulence"
-	[tag]"name RU"		[value]"Сущность богатства"
+	[tag]"name EN"		[value]"Perfect Essence of Opulence"
+	[tag]"name RU"		[value]"Совершенная сущность богатства"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2109,8 +2109,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Command"
-	[tag]"name RU"		[value]"Сущность подчинения"
+	[tag]"name EN"		[value]"Perfect Essence of Command"
+	[tag]"name RU"		[value]"Безупречная сущность подчинения"
 
 	[tag]"icon path"	[value]"UnknownPerfectEssence"
 	[tag]"base class"	[value]"Stackable Currency"
