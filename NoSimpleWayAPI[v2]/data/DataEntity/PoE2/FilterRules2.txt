@@ -1443,6 +1443,59 @@ DETF_color	255	128	64	255
 
 
 
+//Камни для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Gems"
+name_RU	"Камни"
+icon	"data/textures/icons/PortalGem.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Support Gems"
+	DETF_color	255	230	204	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Skill Gems"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+
 
 
 

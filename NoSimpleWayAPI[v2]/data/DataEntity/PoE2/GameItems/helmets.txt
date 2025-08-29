@@ -301,6 +301,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"19"
 	[tag]"base evasion max"	[value]"19"
 
@@ -1560,6 +1564,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"176"
 	[tag]"base armour max"	[value]"176"
 	[tag]"UNDEFINED"	[value]"Level 45, 83 Str"
@@ -1618,6 +1626,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"186"
 	[tag]"base armour max"	[value]"186"
 	[tag]"UNDEFINED"	[value]"Level 48, 88 Str"
@@ -1676,6 +1688,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"196"
 	[tag]"base armour max"	[value]"196"
 	[tag]"UNDEFINED"	[value]"Level 51, 94 Str"
@@ -1881,6 +1897,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"168"
 	[tag]"base evasion max"	[value]"168"
 	[tag]"UNDEFINED"	[value]"Level 48, 88 Dex"
@@ -1941,6 +1961,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"177"
 	[tag]"base evasion max"	[value]"177"
 	[tag]"UNDEFINED"	[value]"Level 51, 94 Dex"
@@ -2119,6 +2143,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"63"
 	[tag]"base energy shield max"	[value]"63"
 	[tag]"UNDEFINED"	[value]"Level 45, 83 Int"
@@ -2176,6 +2204,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"67"
 	[tag]"base energy shield max"	[value]"67"
 	[tag]"UNDEFINED"	[value]"Level 48, 88 Int"
@@ -2234,6 +2266,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"70"
 	[tag]"base energy shield max"	[value]"70"
 	[tag]"UNDEFINED"	[value]"Level 51, 94 Int"
@@ -2413,6 +2449,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"97"
 	[tag]"base armour max"	[value]"97"
 	[tag]"base evasion min"	[value]"87"
@@ -2475,6 +2515,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"102"
 	[tag]"base armour max"	[value]"102"
 	[tag]"base evasion min"	[value]"92"
@@ -2534,6 +2578,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"108"
 	[tag]"base armour max"	[value]"108"
 	[tag]"base evasion min"	[value]"98"
@@ -2728,6 +2776,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"97"
 	[tag]"base armour max"	[value]"97"
 	[tag]"base energy shield min"	[value]"35"
@@ -2791,6 +2843,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"102"
 	[tag]"base armour max"	[value]"102"
 	[tag]"base energy shield min"	[value]"37"
@@ -2854,6 +2910,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"108"
 	[tag]"base armour max"	[value]"108"
 	[tag]"base energy shield min"	[value]"38"
@@ -3045,6 +3105,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"87"
 	[tag]"base evasion max"	[value]"87"
 	[tag]"base energy shield min"	[value]"35"
@@ -3108,6 +3172,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"92"
 	[tag]"base evasion max"	[value]"92"
 	[tag]"base energy shield min"	[value]"37"
@@ -3173,6 +3241,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"98"
 	[tag]"base evasion max"	[value]"98"
 	[tag]"base energy shield min"	[value]"38"

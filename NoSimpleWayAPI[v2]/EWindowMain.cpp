@@ -10599,10 +10599,12 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/rings.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/sceptres.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/shields.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/skill_gems.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/socketable.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/spears.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/stackable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/staves.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/support_gems.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/tablets.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/trial_coins.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt");

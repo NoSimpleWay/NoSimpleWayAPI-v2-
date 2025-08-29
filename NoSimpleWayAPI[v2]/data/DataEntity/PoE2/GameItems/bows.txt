@@ -78,6 +78,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 	
@@ -181,7 +185,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
-	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 	
@@ -204,6 +207,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -329,6 +337,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 	
@@ -350,6 +359,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"

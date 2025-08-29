@@ -88,6 +88,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"269"
 	[tag]"base armour max"	[value]"269"
 	
@@ -170,6 +174,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"284"
 	[tag]"base armour max"	[value]"284"
 	
@@ -310,6 +318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
 	[tag]"base armour min"	[value]"299"
 	[tag]"base armour max"	[value]"299"
 	
@@ -335,6 +344,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"299"
 	[tag]"base armour max"	[value]"299"
 	
@@ -989,6 +1002,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"242"
 	[tag]"base evasion max"	[value]"242"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -1042,6 +1059,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
 	[tag]"base evasion min"	[value]"256"
 	[tag]"base evasion max"	[value]"256"
 	
@@ -1069,6 +1087,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"256"
 	[tag]"base evasion max"	[value]"256"
 	
@@ -1239,6 +1261,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"271"
 	[tag]"base evasion max"	[value]"271"
 	
@@ -1930,6 +1956,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"97"
 	[tag]"base energy shield max"	[value]"97"
 	
@@ -2013,6 +2043,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"101"
 	[tag]"base energy shield max"	[value]"101"
 	
@@ -2186,6 +2220,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"base energy shield min"	[value]"106"
 	[tag]"base energy shield max"	[value]"106"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
@@ -2812,12 +2850,44 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Arcane Robe"
 	[tag]"name RU"		[value]"Наряд чародея"
+
+	[tag]"icon path"	[value]"TatteredRobe"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Arcane Raiment"
+	
+	[tag]"base energy shield min"	[value]"153"
+	[tag]"base energy shield max"	[value]"153"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Arcane Raiment"
+	[tag]"name RU"		[value]"<Arcane Raiment>"
 
 	[tag]"icon path"	[value]"TatteredRobe"
 	[tag]"base class"	[value]"Body Armours"
@@ -2933,6 +3003,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ring Mail"
+	[tag]"name RU"		[value]"Ring Mail"
+
+	[tag]"icon path"	[value]"ChainMail"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base armour min"	[value]"148"
+	[tag]"base armour max"	[value]"148"
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+		
+	[tag]"worth"		[value]"Trash"	
 
 
 
@@ -3013,6 +3112,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"156"
 	[tag]"base armour max"	[value]"156"
 	[tag]"base evasion min"	[value]"141"
@@ -3163,6 +3266,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"165"
 	[tag]"base armour max"	[value]"165"
 	[tag]"base evasion min"	[value]"149"
@@ -3853,6 +3960,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"148"
 	[tag]"base armour max"	[value]"148"
 	[tag]"base energy shield min"	[value]"53"
@@ -3943,6 +4054,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"156"
 	[tag]"base armour max"	[value]"156"
 	[tag]"base energy shield min"	[value]"56"
@@ -4097,6 +4212,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"165"
 	[tag]"base armour max"	[value]"165"
 	[tag]"base energy shield min"	[value]"58"
@@ -4871,6 +4990,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"141"
 	[tag]"base evasion max"	[value]"141"
 	[tag]"base energy shield min"	[value]"56"
@@ -5028,6 +5151,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"149"
 	[tag]"base evasion max"	[value]"149"
 	[tag]"base energy shield min"	[value]"58"
@@ -5488,6 +5615,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"30"
 	[tag]"base evasion max"	[value]"30"
 	[tag]"base energy shield min"	[value]"28"

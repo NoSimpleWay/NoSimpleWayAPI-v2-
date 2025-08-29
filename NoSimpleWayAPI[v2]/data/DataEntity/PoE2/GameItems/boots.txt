@@ -44,6 +44,33 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Trash"
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Plated Greaves"
+	[tag]"name RU"		[value]"Пластинчатые поножи"
+
+	[tag]"icon path"	[value]"IronGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	[tag]"base armour min"	[value]"47"
+	[tag]"base armour max"	[value]"47"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
 
 
 
@@ -294,6 +321,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base armour min"	[value]"147"
 	[tag]"base armour max"	[value]"147"
@@ -820,6 +851,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base evasion min"	[value]"119"
 	[tag]"base evasion max"	[value]"119"
 	
@@ -996,6 +1031,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base evasion min"	[value]"133"
 	[tag]"base evasion max"	[value]"133"
@@ -1550,6 +1589,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base energy shield min"	[value]"48"
 	[tag]"base energy shield max"	[value]"48"
 	
@@ -1703,6 +1746,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base energy shield min"	[value]"52"
 	[tag]"base energy shield max"	[value]"52"
@@ -2194,6 +2241,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base armour min"	[value]"73"
 	[tag]"base armour max"	[value]"73"
 	[tag]"base evasion min"	[value]"65"
@@ -2418,6 +2469,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base armour min"	[value]"110"
 	[tag]"base armour max"	[value]"110"
@@ -2861,6 +2916,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base armour min"	[value]"33"
 	[tag]"base armour max"	[value]"33"
 	[tag]"base energy shield min"	[value]"14"
@@ -2924,6 +2983,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base armour min"	[value]"81"
 	[tag]"base armour max"	[value]"81"
@@ -3355,6 +3418,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
 	[tag]"base evasion min"	[value]"65"
 	[tag]"base evasion max"	[value]"65"
 	[tag]"base energy shield min"	[value]"26"
@@ -3525,6 +3592,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"2"
 	
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"

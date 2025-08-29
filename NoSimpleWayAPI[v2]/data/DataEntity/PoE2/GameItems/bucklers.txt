@@ -224,6 +224,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Bucklers"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"87"
 	[tag]"base evasion max"	[value]"87"
@@ -250,6 +254,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Bucklers"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"87"
 	[tag]"base evasion max"	[value]"87"
@@ -269,13 +277,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Painted Buckler"
+	[tag]"name EN"	[value]"Coiled Buckler"
 	[tag]"name RU"	[value]"Спиральный баклер"
 
 	[tag]"icon path"	[value]"UndefinedBuckler"
 	[tag]"base class"	[value]"Bucklers"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"24%"
 	[tag]"base evasion min"	[value]"87"
 	[tag]"base evasion max"	[value]"87"

@@ -862,7 +862,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Quartered Crest Shield"
-	[tag]"name RU"	[value]"<Quartered Crest Shield"
+	[tag]"name RU"	[value]"<Quartered Crest Shield>"
 
 	[tag]"icon path"	[value]"SectarianCrestShield"
 	[tag]"base class"	[value]"Shields"
@@ -1122,6 +1122,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"26%"
 	[tag]"base armour min"	[value]"110"
 	[tag]"base armour max"	[value]"110"
@@ -1186,6 +1190,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"26%"
 	[tag]"base armour min"	[value]"116"
 	[tag]"base armour max"	[value]"116"
@@ -1256,6 +1264,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"26%"
 	[tag]"base armour min"	[value]"123"
 	[tag]"base armour max"	[value]"123"
@@ -1550,6 +1562,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"61"
 	[tag]"base armour max"	[value]"61"
@@ -1622,6 +1638,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"64"
 	[tag]"base armour max"	[value]"64"
@@ -1702,6 +1722,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"67"
 	[tag]"base armour max"	[value]"67"
@@ -1992,6 +2016,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"61"
 	[tag]"base armour max"	[value]"61"
@@ -2069,6 +2097,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"64"
 	[tag]"base armour max"	[value]"64"
@@ -2146,6 +2178,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Shields"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Block chance]"	[value]"25%"
 	[tag]"base armour min"	[value]"67"
 	[tag]"base armour max"	[value]"67"

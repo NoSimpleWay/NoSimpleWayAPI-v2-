@@ -1,0 +1,537 @@
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Artillery Ballista"
+	[tag]"name RU"	[value]"<Artillery Ballista>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Siege Ballista"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Siege Ballista"
+	[tag]"name RU"	[value]"<Siege Ballista>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ripwire Ballista"
+	[tag]"name RU"	[value]"<Ripwire Ballista>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Artillery Ballista"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Artillery Ballista"
+	[tag]"name RU"	[value]"<Artillery Ballista>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cold Snap"
+	[tag]"name RU"	[value]"<Cold Snap>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Snap"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Snap"
+	[tag]"name RU"	[value]"<Snap>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fortifying Cry"
+	[tag]"name RU"	[value]"<Fortifying Cry>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cast on Elemental Ailment"
+	[tag]"name RU"	[value]"<Cast on Elemental Ailment>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ravenous Swarm"
+	[tag]"name RU"	[value]"<Ravenous Swarm>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Mirage Archer"
+	[tag]"name RU"	[value]"<Mirage Archer>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Iron Ward"
+	[tag]"name RU"	[value]"<Iron Ward>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Forge Hammer"
+	[tag]"name RU"	[value]"<Forge Hammer>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Mortar Cannon"
+	[tag]"name RU"	[value]"<Mortar Cannon>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancestral Cry"
+	[tag]"name RU"	[value]"<Ancestral Cry>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Toxic Domain"
+	[tag]"name RU"	[value]"<Toxic Domain>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ice-Tipped Arrows"
+	[tag]"name RU"	[value]"<Ice-Tipped Arrows>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Siphon Elements"
+	[tag]"name RU"	[value]"<Siphon Elements>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Frost Darts"
+	[tag]"name RU"	[value]"<Frost Darts>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elemental Weakness"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Skill gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	

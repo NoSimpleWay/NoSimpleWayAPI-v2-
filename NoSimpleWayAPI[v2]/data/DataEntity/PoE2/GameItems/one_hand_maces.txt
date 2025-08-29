@@ -378,6 +378,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Physical Damage]"	[value]"19-32"
 	[tag]"UNDEFINED[Fire Damage]"	[value]"19-32"
 	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
@@ -442,6 +446,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Physical Damage]"	[value]"33-50"
 	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
@@ -506,6 +514,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"UNDEFINED[Physical Damage]"	[value]"34-46"
 	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"8%"
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"

@@ -44,6 +44,81 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"		[value]"Steelhead Spear"
+	[tag]"name RU"		[value]"Копьё со стальным наконечником"
+
+	[tag]"icon path"	[value]"IronheadSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Coursing Spear"
+	[tag]"name RU"		[value]"<Coursing Spear>"
+
+	[tag]"icon path"	[value]"IronheadSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Swift Spear"
+	[tag]"name RU"		[value]"<Swift Spear>"
+
+	[tag]"icon path"	[value]"IronheadSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
 	[tag]"name EN"		[value]"Hunting Spear"
 	[tag]"name RU"		[value]"Охотничьё копьё"
 
@@ -228,6 +303,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -249,6 +326,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"drop level"	[value]"1"
 	

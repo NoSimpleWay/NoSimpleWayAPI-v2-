@@ -95,6 +95,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Foci"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"18"
 	[tag]"base energy shield max"	[value]"18"
 
@@ -186,6 +190,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Foci"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"18"
 	[tag]"base energy shield max"	[value]"18"
 
@@ -373,6 +381,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Foci"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"18"
 	[tag]"base energy shield max"	[value]"18"
 

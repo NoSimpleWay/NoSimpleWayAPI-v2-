@@ -1185,6 +1185,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"88"
 	[tag]"base armour max"	[value]"88"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
@@ -1401,6 +1405,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"79"
 	[tag]"base evasion max"	[value]"79"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
@@ -1467,6 +1475,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"89"
 	[tag]"base evasion max"	[value]"89"
 	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
@@ -1659,6 +1671,37 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Embellished Gloves"
+	[tag]"name RU"	[value]"Embellished Gloves"
+
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base energy shield min"	[value]"32"
 	[tag]"base energy shield max"	[value]"32"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
@@ -1934,6 +1977,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"48"
 	[tag]"base armour max"	[value]"48"
 	[tag]"base evasion min"	[value]"44"
@@ -2002,6 +2049,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"54"
 	[tag]"base armour max"	[value]"54"
 	[tag]"base evasion min"	[value]"49"
@@ -2134,6 +2185,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"48"
 	[tag]"base armour max"	[value]"48"
 	[tag]"base energy shield min"	[value]"17"
@@ -2204,6 +2259,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"54"
 	[tag]"base armour max"	[value]"54"
 	[tag]"base energy shield min"	[value]"19"
@@ -2342,6 +2401,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"17"
 	[tag]"base energy shield max"	[value]"17"
 	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2402,6 +2465,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"49"
 	[tag]"base evasion max"	[value]"49"
 	[tag]"base energy shield min"	[value]"19"
@@ -3560,6 +3627,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Gloves"
 
 	[tag]"item tag"	[value]"World drop"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base evasion min"	[value]"67"
 	[tag]"base evasion max"	[value]"67"
 	[tag]"base energy shield min"	[value]"25"
