@@ -1184,7 +1184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Game item"
 	[tag]"exist for"		[value]"PoE2"
 	
-	[tag]"name EN"			[value]"PreservedCranium"
+	[tag]"name EN"			[value]"Preserved Cranium"
 	[tag]"name RU"			[value]"Сохранившийся череп"
 	
 	[tag]"icon path"		[value]"AncientCollarbone"
