@@ -69,7 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Primary Calamity Fragment"
-	[tag]"name RU"		[value]"Фрагмент первичного бедствия"
+	[tag]"name RU"		[value]"Первичный фрагмент бедствия"
 
 	[tag]"icon path"	[value]"PrimaryCalamityFragment"
 	[tag]"base class"	[value]"Pinnacle Keys"
@@ -89,7 +89,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Secondary Calamity Fragment"
-	[tag]"name RU"		[value]"Фрагмент вторичного бедствия"
+	[tag]"name RU"		[value]"Вторичный фрагмент бедствия"
 
 	[tag]"icon path"	[value]"SecondaryCalamityFragment"
 	[tag]"base class"	[value]"Pinnacle Keys"
@@ -109,7 +109,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Tertiary Calamity Fragment"
-	[tag]"name RU"		[value]"Фрагмент третичного бедствия"
+	[tag]"name RU"		[value]"Третичный фрагмент бедствия"
 
 	[tag]"icon path"	[value]"TertiaryCalamityFragment"
 	[tag]"base class"	[value]"Pinnacle Keys"

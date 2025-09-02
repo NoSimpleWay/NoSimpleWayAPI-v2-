@@ -2494,7 +2494,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Kurgal's Gaze"
-	[tag]"name RU"		[value]"Взгляд Кургала"
+	[tag]"name RU"		[value]"Взгляд Каргала"
 
 	[tag]"icon path"	[value]"KurgalsGaze"
 	[tag]"base class"	[value]"Socketable"

@@ -91,7 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Greater Chaos Orb"
-	[tag]"name RU"			[value]"Великая сфера хаоса"
+	[tag]"name RU"			[value]"Большая сфера хаоса"
 	
 	[tag]"icon path"		[value]"GreaterChaosOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -266,7 +266,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Greater Orb of Transmutation"
-	[tag]"name RU"			[value]"Великая Сфера превращения"
+	[tag]"name RU"			[value]"Большая сфера превращения"
 	
 	[tag]"icon path"		[value]"GreaterOrbOfTransmutation(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -293,7 +293,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Perfect Orb of Transmutation"
 	[tag]"name RU"			[value]"Совершенная Сфера превращения"
 	
-	[tag]"icon path"		[value]"GreaterOrbOfTransmutation(Poe2)"
+	[tag]"icon path"		[value]"PerfectOrbOfTransmutation(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
 	
 	[tag]"item tag"			[value]"Basic currency"
@@ -345,7 +345,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Greater Exalted Orb"
-	[tag]"name RU"			[value]"Великая сфера возвышения"
+	[tag]"name RU"			[value]"Большая сфера возвышения"
 	
 	[tag]"icon path"		[value]"GreaterExaltedOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -428,7 +428,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Greater Regal Orb"
-	[tag]"name RU"			[value]"Великая сфера царей"
+	[tag]"name RU"			[value]"Большая сфера царей"
 	
 	[tag]"icon path"		[value]"GreaterRegalOrb(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -510,7 +510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Greater Orb of Augmentation"
-	[tag]"name RU"			[value]"Великая сфера усиления"
+	[tag]"name RU"			[value]"Большая сфера усиления"
 	
 	[tag]"icon path"		[value]"GreaterOrbOfAugmentation(Poe2)"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -1024,7 +1024,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Gnawed Rib"
-	[tag]"name RU"			[value]"Обглоданные рёбра"
+	[tag]"name RU"			[value]"Обглоданное ребро"
 	
 	[tag]"icon path"		[value]"GnawedRib"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -1049,7 +1049,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Preserved Rib"
-	[tag]"name RU"			[value]"Сохранившиеся рёбра"
+	[tag]"name RU"			[value]"Сохранившееся ребро"
 	
 	[tag]"icon path"		[value]"PreservedRib"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -1075,7 +1075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Ancient Rib"
-	[tag]"name RU"			[value]"Древние рёбра"
+	[tag]"name RU"			[value]"Древнее ребро"
 	
 	[tag]"icon path"		[value]"AncientRib"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -1215,7 +1215,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Preserved Vertebrae"
-	[tag]"name RU"			[value]"Сохранившийся позвонок"
+	[tag]"name RU"			[value]"Сохранившийся позвоночник"
 	
 	[tag]"icon path"		[value]"PreservedVertebrae"
 	[tag]"base class"		[value]"Stackable Currency"

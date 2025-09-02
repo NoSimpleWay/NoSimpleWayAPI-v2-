@@ -550,35 +550,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Homogenising Exaltation"
-	[tag]"name RU"		[value]"Предзнаменование гомогенизированного возвышения"
+	[tag]"name RU"		[value]"Предзнаменование единого возвышения"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Common"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Omen"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Omen of Homogenising Exaltation"
-	[tag]"name RU"		[value]"Предзнаменование возвышения усреднения"
-
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfHomogenisingExaltation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Common"
@@ -602,9 +576,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Homogenising Coronation"
-	[tag]"name RU"		[value]"Предзнаменование коронации усреднения"
+	[tag]"name RU"		[value]"Предзнаменование единой коронации"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfHomogenisingCoronation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -630,7 +604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Gambling"
 	[tag]"name RU"		[value]"Предзнаменование азарта"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfGambling"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -654,9 +628,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Bartering"
-	[tag]"name RU"		[value]"Предзнаменование обмена"
+	[tag]"name RU"		[value]"Предзнаменование бартера"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfBartering"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -682,7 +656,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Recombination"
 	[tag]"name RU"		[value]"Предзнаменование рекомбинации"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfRecombination"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -706,9 +680,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of the Blessed"
-	[tag]"name RU"		[value]"Предзнаменование благословения"
+	[tag]"name RU"		[value]"Предзнаменование благотатныых"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfTheBlessed"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -732,9 +706,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Chaotic Rarity"
-	[tag]"name RU"		[value]"Предзнаменование непредсказуемой редкости"
+	[tag]"name RU"		[value]"Предзнаменование хаотичной редкости"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfChaoticRarity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -758,9 +732,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Chaotic Monsters"
-	[tag]"name RU"		[value]"Предзнаменование непредсказуемых монстров"
+	[tag]"name RU"		[value]"Предзнаменование хаотичных монстров"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfChaoticMonsters"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -784,9 +758,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Chaotic Quantity"
-	[tag]"name RU"		[value]"Предзнаменование непредсказуемого количества"
+	[tag]"name RU"		[value]"Предзнаменование хаотичного количества"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfChaoticQuantity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -812,7 +786,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Chance"
 	[tag]"name RU"		[value]"Предзнаменование удачи"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfChance"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -838,7 +812,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of the Ancients"
 	[tag]"name RU"		[value]"Предзнаменование Древних"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfTheAncients"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -862,9 +836,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Sanctification"
-	[tag]"name RU"		[value]"Предзнаменование насыщения"
+	[tag]"name RU"		[value]"Предзнаменование освящения"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfSanctification"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -890,7 +864,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Dextral Crystallisation"
 	[tag]"name RU"		[value]"Предзнаменование кристаллизации правши"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfDextralCrystallisation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -916,7 +890,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Sinistral Crystallisation"
 	[tag]"name RU"		[value]"Предзнаменование кристаллизации левши"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfSinistralCrystallisation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -940,9 +914,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Catalysing Exaltation"
-	[tag]"name RU"		[value]"Предзнаменование каталистического возвышения"
+	[tag]"name RU"		[value]"Предзнаменование катализированного возвышения"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfCatalysingExaltation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -966,9 +940,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Abyssal Echoes"
-	[tag]"name RU"		[value]"Предзнаменование эха бездны"
+	[tag]"name RU"		[value]"Предзнаменование отголосков бездны"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfAbyssalEchoes"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -992,9 +966,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of Putrefaction"
-	[tag]"name RU"		[value]"Предзнаменование гниения"
+	[tag]"name RU"		[value]"Предзнаменование разложения"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfPutrefaction"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1020,7 +994,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Light"
 	[tag]"name RU"		[value]"Предзнаменование света"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfLight"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1046,7 +1020,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Sinistral Necromancy"
 	[tag]"name RU"		[value]"Предзнаменование некромантии левши"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfSinistralNecromancy"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1071,7 +1045,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Omen of Dextral Necromancy"
 	[tag]"name RU"		[value]"Предзнаменование некромантии правши"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfDextralNecromancy"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1094,9 +1068,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of the Sovereign"
-	[tag]"name RU"		[value]"Предзнаменование повелителя"
+	[tag]"name RU"		[value]"Предзнаменование правителя"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfTheSovereign"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1119,9 +1093,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of the Liege"
-	[tag]"name RU"		[value]"Предзнаменование сеньора"
+	[tag]"name RU"		[value]"Предзнаменование властителя"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfTheLiege"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"
@@ -1144,9 +1118,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Omen of the Blackblooded"
-	[tag]"name RU"		[value]"Предзнаменование чернокровки"
+	[tag]"name RU"		[value]"Предзнаменование чернокровных"
 
-	[tag]"icon path"	[value]"UndefinedOmen"
+	[tag]"icon path"	[value]"OmenOfTheBlackblooded"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"worth"		[value]"Trash"

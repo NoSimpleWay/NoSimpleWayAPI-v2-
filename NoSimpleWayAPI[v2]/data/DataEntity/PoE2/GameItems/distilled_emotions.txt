@@ -34,7 +34,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Diluted Liquid Ire"
-	[tag]"name RU"			[value]"<Diluted Liquid Ire>"
+	[tag]"name RU"			[value]"Разбавленный жидкий гнев"
 	
 	[tag]"icon path"		[value]"DistilledIre"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -97,7 +97,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Diluted Liquid Guilt"
-	[tag]"name RU"			[value]"<Diluted Liquid Guilt>"
+	[tag]"name RU"			[value]"Разбавленная жидкая вина"
 	
 	[tag]"icon path"		[value]"DistilledGiult"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -158,7 +158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Diluted Liquid Greed"
-	[tag]"name RU"			[value]"<Diluted Liquid Greed>"
+	[tag]"name RU"			[value]"Разбавленная жидкая жадность"
 	
 	[tag]"icon path"		[value]"DistilledGreed"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -224,7 +224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Liquid Paranoia"
-	[tag]"name RU"			[value]"<Liquid Paranoia>"
+	[tag]"name RU"			[value]"Жидкая паранойя"
 	
 	[tag]"icon path"		[value]"DistilledParanoia"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -282,7 +282,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Liquid Envy"
-	[tag]"name RU"			[value]"<Liquid Envy>"
+	[tag]"name RU"			[value]"Жидкая зависть"
 	
 	[tag]"icon path"		[value]"DistilledEnvy"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -350,7 +350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Liquid Disgust"
-	[tag]"name RU"			[value]"<Liquid Disgust>"
+	[tag]"name RU"			[value]"Жидкое отвращение"
 	
 	[tag]"icon path"		[value]"DistileldDisgust"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -411,7 +411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Liquid Despair"
-	[tag]"name RU"			[value]"<Liquid Despair>"
+	[tag]"name RU"			[value]"Жидкое отчаяние"
 	
 	[tag]"icon path"		[value]"DistilledDespair"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -471,7 +471,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Concentrated Liquid Fear"
-	[tag]"name RU"			[value]"<Concentrated Liquid Fear>"
+	[tag]"name RU"			[value]"Концетрированный жидкий страх"
 	
 	[tag]"icon path"		[value]"DistilledFear"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -535,7 +535,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Concentrated Liquid Suffering"
-	[tag]"name RU"			[value]"<Concentrated Liquid Suffering>"
+	[tag]"name RU"			[value]"Концетрированное жидкое страдание"
 	
 	[tag]"icon path"		[value]"DistilledSuffering"
 	[tag]"base class"		[value]"Stackable Currency"
@@ -604,7 +604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Concentrated Liquid Isolation"
-	[tag]"name RU"			[value]"<Concentrated Liquid Isolation>"
+	[tag]"name RU"			[value]"Концетрированное жидкое отчуждение"
 	
 	[tag]"icon path"		[value]"DistilledIsolation"
 	[tag]"base class"		[value]"Stackable Currency"
