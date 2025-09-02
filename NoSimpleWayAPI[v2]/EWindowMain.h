@@ -1951,7 +1951,7 @@ public:
 
 	static void										open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode);
 
-
+	static PathOfExileGame							get_selected_game_version();
 
 
 

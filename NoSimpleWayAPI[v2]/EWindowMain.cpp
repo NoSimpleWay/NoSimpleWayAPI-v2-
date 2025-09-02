@@ -311,11 +311,11 @@ void EWindowMain::update_additional(float _d)
 			std::string
 			path_to_folder = "";
 
-			if (static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE1)
+			if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE1)
 			{
 				path_to_folder = "autosave_poe1/";
 			}
-			else if (static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE2)
+			else if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE2)
 			{
 				path_to_folder = "autosave_poe2/";
 			}
@@ -998,7 +998,7 @@ void EDataActionCollection::action_import_filter_text_from_clipboard(Entity* _en
 
 
 	PathOfExileGame
-	selected_game_type = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version;
+	selected_game_type = EWindowMain::get_selected_game_version();
 
 	EWindowMain::parse_filter_text_lines(static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block, LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC, selected_game_type);
 
@@ -1477,7 +1477,7 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 	}
 
 	PathOfExileGame
-	selected_game_type = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version;
+	selected_game_type = EWindowMain::get_selected_game_version();
 
 	EWindowMain::parse_filter_text_lines(filter_block, LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC, selected_game_type);
 
@@ -4691,11 +4691,11 @@ void EDataActionCollection::action_multisave_lootfilter(Entity* _entity, ECustom
 		std::string
 		path_to_filter;
 
-		if (static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE1)
+		if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE1)
 		{
 			path_to_filter = EWindowMain::path_of_exile_folder;
 		}
-		else if(static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE2)
+		else if(EWindowMain::get_selected_game_version() == PathOfExileGame::POE2)
 		{
 			path_to_filter = EWindowMain::path_of_exile2_folder;
 		}
@@ -4819,11 +4819,11 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		std::string
 		path_to_filter;
 
-		if (static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE1)
+		if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE1)
 		{
 			path_to_filter = EWindowMain::path_of_exile_folder;
 		}
-		else if (static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == PathOfExileGame::POE2)
+		else if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE2)
 		{
 			path_to_filter = EWindowMain::path_of_exile2_folder;
 		}
@@ -17398,6 +17398,11 @@ void EWindowMain::open_loot_filter(std::string _full_path, LootFilterOpenMode _l
 	file.close();
 
 
+}
+
+PathOfExileGame EWindowMain::get_selected_game_version()
+{
+	return static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version;
 }
 
 EntityButtonVariantRouterForFilterBlock* EWindowMain::create_show_hide_button()
@@ -32616,7 +32621,7 @@ bool EntityButtonGameAttribute::entity_is_active()
 		&&
 		//if game version match attribute version. for example, [WaystoneTier] attribute exist only in <path of exile 2>
 		(
-			(static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->game_version == target_attribute->game_type)
+			(EWindowMain::get_selected_game_version() == target_attribute->game_type)
 			||//or if game attribute exist for both PoE. For example, [item level] exist in bot version of game
 			(target_attribute->game_type == PathOfExileGame::BOTH)
 		)
