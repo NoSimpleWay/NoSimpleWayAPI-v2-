@@ -368,9 +368,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Pearlescent Amulet"
-	[tag]"name RU"		[value]"<Pearlescent Amulet>"
+	[tag]"name RU"		[value]"PearlescentAmulet"
 
-	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"icon path"	[value]"PearlescentAmulet"
 	[tag]"base class"	[value]"Amulets"
 	
 	[tag]"base tier"	[value]"Good"

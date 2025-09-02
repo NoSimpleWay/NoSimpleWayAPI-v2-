@@ -366,7 +366,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Abyssal Signet"
 	[tag]"name RU"		[value]"Печатка бездны"
 
-	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"icon path"	[value]"AbyssalSignet"
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
