@@ -922,66 +922,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Lesser Tempered Rune"
-	[tag]"name RU"		[value]"Малая руна закалки"
-
-	[tag]"icon path"	[value]"LesserPhyDmgRune"
-	[tag]"base class"	[value]"Socketable"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-
-	[tag]"rune type"	[value]"Lesser"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Tempered Rune"
-	[tag]"name RU"		[value]"Руна закалки"
-
-	[tag]"icon path"	[value]"PhyDmgRune"
-	[tag]"base class"	[value]"Socketable"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-
-	[tag]"rune type"	[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Greater Tempered Rune"
-	[tag]"name RU"		[value]"Большая руна закалки"
-
-	[tag]"icon path"	[value]"PhyDmgRuneTier3"
-	[tag]"base class"	[value]"Socketable"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-
-	[tag]"rune type"	[value]"Greater"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
 
 
 
@@ -2456,6 +2396,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Abyss item"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"item width"	[value]"1"
@@ -2472,10 +2413,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tecrod's Gaze"
 	[tag]"name RU"		[value]"Взгляд Текрода"
 
-	[tag]"icon path"	[value]"TecrodsGaze2"
+	[tag]"icon path"	[value]"TecrodsGaze"
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Abyss item"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"item width"	[value]"1"
@@ -2500,6 +2442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Abyss item"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"item width"	[value]"1"
@@ -2526,6 +2469,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Socketable"
 
 	[tag]"rune type"	[value]"Abyss jewel"
+	[tag]"item tag"		[value]"Abyss item"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 
 	[tag]"item width"	[value]"1"

@@ -105,6 +105,11 @@ namespace ERegisteredStrings
 	const ID_string ERegisteredStrings::dust_quantity				= ID_string::register_new_unique_ID_by_key("Dust quantity");
 
 	const ID_string ERegisteredStrings::rename_to					= ID_string::register_new_unique_ID_by_key("Renamed to");
+	const ID_string ERegisteredStrings::exist_for					= ID_string::register_new_unique_ID_by_key("exist for");
+	const ID_string ERegisteredStrings::PoE1						= ID_string::register_new_unique_ID_by_key("PoE1");
+	const ID_string ERegisteredStrings::PoE2						= ID_string::register_new_unique_ID_by_key("PoE2");
+	const ID_string ERegisteredStrings::hidden_item					= ID_string::register_new_unique_ID_by_key("Hidden item");
+	const ID_string ERegisteredStrings::both						= ID_string::register_new_unique_ID_by_key("Both");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3318,7 +3323,7 @@ void ETextParser::split_data_entity_list_to_named_structs()
 			int index = 0;
 
 			data_type_name	= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, data_entity);
-			base_name		= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
+			//base_name		= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
 
 			data_entity_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::key, data_entity);
 

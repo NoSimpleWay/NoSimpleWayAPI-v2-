@@ -7,7 +7,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30,7 +30,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T2)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,7 +53,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T3)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -76,7 +76,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T4)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -101,7 +101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T5)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -126,7 +126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T6)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -151,7 +151,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T7)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -176,7 +176,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T8)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -201,7 +201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T9)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -226,7 +226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T10)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -251,7 +251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T11)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -276,7 +276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T12)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -301,7 +301,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T13)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -326,7 +326,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T14)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -351,7 +351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T15)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -376,7 +376,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путевой камень (T16)"
 
 	[tag]"icon path"	[value]"Map"
-	[tag]"base class"	[value]"Maps"	
+	[tag]"base class"	[value]"Waystones"	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -390,3 +390,277 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+//EXCEPTIONAL ITEMS
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional spear"
+	[tag]"name RU"		[value]"Исключительное копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional staff"
+	[tag]"name RU"		[value]"Исключительный посох"
+
+	[tag]"icon path"	[value]"UndefinedStaff"
+	[tag]"base class"	[value]"Staves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional two hand mace"
+	[tag]"name RU"		[value]"Исключительная двуручная дубина"
+
+	[tag]"icon path"	[value]"UndefinedTwoHandMace"
+	[tag]"base class"	[value]"Two Hand Maces"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional one hand mace"
+	[tag]"name RU"		[value]"Исключительная одноручная дубина"
+
+	[tag]"icon path"	[value]"UndefinedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional quarterstaff"
+	[tag]"name RU"		[value]"Исключительный боевой посох"
+
+	[tag]"icon path"	[value]"UndefinedQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional sceptre"
+	[tag]"name RU"		[value]"Исключительный скипетр"
+
+	[tag]"icon path"	[value]"UndefinedSceptre"
+	[tag]"base class"	[value]"Sceptres"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional shield"
+	[tag]"name RU"		[value]"Исключительный щит"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional foci"
+	[tag]"name RU"		[value]"Исключительный фокус"
+
+	[tag]"icon path"	[value]"UndefinedFoci"
+	[tag]"base class"	[value]"Foci"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional gloves"
+	[tag]"name RU"		[value]"Исключительные перчатки"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional helmet"
+	[tag]"name RU"		[value]"Исключительный шлем"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional boots"
+	[tag]"name RU"		[value]"Исключительные сапоги"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional crossbow"
+	[tag]"name RU"		[value]"Исключительный самострел"
+
+	[tag]"icon path"	[value]"UndefinedCrossbow"
+	[tag]"base class"	[value]"Crossbows"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional buckler"
+	[tag]"name RU"		[value]"Исключительный баклер"
+
+	[tag]"icon path"	[value]"UndefinedBuckler"
+	[tag]"base class"	[value]"Buckler"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional wand"
+	[tag]"name RU"		[value]"Исключительный жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"special tag"	[value]"Exceptional item"
+	
+	[tag]"worth"		[value]"Rare"

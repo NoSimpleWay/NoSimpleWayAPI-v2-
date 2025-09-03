@@ -128,6 +128,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Abyss item"
 	
 	[tag]"worth"		[value]"Rare"
 

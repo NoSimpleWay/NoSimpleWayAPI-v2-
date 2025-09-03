@@ -422,6 +422,11 @@ namespace ERegisteredStrings
 
 	extern const ID_string dust_quantity;
 	extern const ID_string rename_to;
+	extern const ID_string exist_for;
+	extern const ID_string PoE1;
+	extern const ID_string PoE2;
+	extern const ID_string hidden_item;
+	extern const ID_string both;
 
 
 }

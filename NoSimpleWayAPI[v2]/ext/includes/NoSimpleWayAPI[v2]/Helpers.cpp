@@ -10,8 +10,8 @@ std::string Helper::float_to_string(float _f)
 
 	for (int i = t.length() - 1; i >= 0; i--)
 	{
-		if (t.at(i) == '.') { return t.substr(0, i); }
-		if (t.at(i) != '0') { return t.substr(0, i + 1); }
+		if (t.at(i) == '.') { return t.substr(0, min(i, 8)); }
+		if (t.at(i) != '0') { return t.substr(0, min(i, 8) + 1); }
 	}
 
 	return "?";

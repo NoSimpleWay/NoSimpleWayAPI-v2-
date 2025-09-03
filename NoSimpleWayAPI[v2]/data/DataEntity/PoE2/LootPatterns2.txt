@@ -314,10 +314,6 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Essences"
 	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Omen"
-	DETF_color	255	128	64	255
 	
 	
 
@@ -866,19 +862,8 @@ target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Omen"
 	DETF_color	255	230	204	255
-
 
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
@@ -980,6 +965,539 @@ name_RU	"Категория:\nНовые предметы"
 icon	"data/textures/buttons/pattern_folder_hunt.png"
 is_folder
 have_force_field
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_PATTERN
+name_EN	"Bones"
+name_RU	"Кости"
+icon	"data/textures/icons/PreservedJawbone.png"
+target_game	"PoE2"
+activate_attribute_group_by_name	"Quantity"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss bone"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_PATTERN
+name_EN	"Omens"
+name_RU	"Омены"
+icon	"data/textures/icons/OmenOfAbyssalEchoes.png"
+target_game	"PoE2"
+
+activate_attribute_group_by_name	"Quantity"
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_PATTERN
+name_EN	"Socketable"
+name_RU	"Размещаемое"
+icon	"data/textures/icons/TecrodsGaze.png"
+target_game	"PoE2"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Socketable"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"rune type"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss jewel"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_PATTERN
+name_EN	"Map fragments"
+name_RU	"Проходки"
+icon	"data/textures/icons/KulemaksInvitation.png"
+target_game	"PoE2"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Map fragments"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Category:\nAbyss"
+name_RU	"Категория:\nБездна"
+icon	"data/textures/buttons/pattern_folder_abyss.png"
+is_folder
+have_force_field
+
 
 
 
@@ -1351,17 +1869,12 @@ random_selection_count	1
 generator_mode	MODE_ALL
 
 
-
-FILTER_TAG
+REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Currency"
+	DETF_value_key	"Omen"
 	DETF_color	255	230	204	255
 
 
@@ -1373,18 +1886,7 @@ tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
-	
-	
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Omen"
-	DETF_color	255	230	204	255
 	
 	
 	
@@ -2358,6 +2860,63 @@ have_force_field
 
 
 
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE2"
+name_EN	"Equipable:\nExceptional"
+name_RU	"Экипировка:\nИсключительное"
+icon	"data/textures/icons/SuperChest.png"
+
+activate_attribute_group_by_name	"RuneSocket"
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"Explicits"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"PoE2"
+DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"special tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Exceptional item"
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
 
 
 

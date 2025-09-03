@@ -1494,6 +1494,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The level of an item is determined by the level of the area or monster\nThe level of the item determines which attributes can appear on the item and which cannot."
 	[tag]"name RU"		[value]"Уровень предмета определяется уровнем области или монстра\nОт уровня предмета зависит, какие атрибуты могут появиться на предмете, а какие нет."
 	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_item_tier"
+	[tag]"name EN"		[value]"Item tier determine, what level of attributes generate at this item.\n\nHigher tier mean better attribute"
+	[tag]"name RU"		[value]"Тир предмета определяет, насколько редкими будут свойтва на предмете при опознании.\n\nЧем выше тир, тем лучше свойства"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
@@ -3499,6 +3507,55 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"trade_type_uncut_gems"
+	[tag]"name EN"		[value]"Uncut gems"
+	[tag]"name RU"		[value]"Необраб. камни"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_lineage_gems"
+	[tag]"name EN"		[value]"Lineage gems"
+	[tag]"name RU"		[value]"Камни родословной"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_essences"
+	[tag]"name EN"		[value]"Essences"
+	[tag]"name RU"		[value]"Сущности"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_abyss_items"
+	[tag]"name EN"		[value]"Abyss items"
+	[tag]"name RU"		[value]"Предметы Бездны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_soul_cores"
+	[tag]"name EN"		[value]"Soul cores"
+	[tag]"name RU"		[value]"Ядра душ"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_talismans"
+	[tag]"name EN"		[value]"Talismans"
+	[tag]"name RU"		[value]"Талисманы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_expedition"
+	[tag]"name EN"		[value]"Expedition"
+	[tag]"name RU"		[value]"Экспедиция"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"trade_type_incubators"
 	[tag]"name EN"		[value]"Incubators"
 	[tag]"name RU"		[value]"Инкубаторы"
@@ -3558,6 +3615,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"trade_type_delirium"
 	[tag]"name EN"		[value]"Delirium orbs"
 	[tag]"name RU"		[value]"Сферы делириума"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_delirium(PoE2)"
+	[tag]"name EN"		[value]"Delirium"
+	[tag]"name RU"		[value]"Делириум"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"trade_type_breach(PoE2)"
+	[tag]"name EN"		[value]"Catalysts"
+	[tag]"name RU"		[value]"Катализаторы"
 	
 	
 	
@@ -3868,6 +3939,63 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_tab_price_table_delirium"
 	[tag]"name EN"		[value]"Delirium orbs"
 	[tag]"name RU"		[value]"Сферы делириума"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_abyss_item"
+	[tag]"name EN"		[value]"Abyss item"
+	[tag]"name RU"		[value]"Предметы Бездны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_uncut_gems"
+	[tag]"name EN"		[value]"Uncut gems"
+	[tag]"name RU"		[value]"Необр. камни"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_lineage_support"
+	[tag]"name EN"		[value]"Lineage support"
+	[tag]"name RU"		[value]"Камни родословной"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_soul_cores"
+	[tag]"name EN"		[value]"Soul cores"
+	[tag]"name RU"		[value]"Ядра душ"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_table_talismans"
+	[tag]"name EN"		[value]"Talismans"
+	[tag]"name RU"		[value]"Талисманы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_expedition"
+	[tag]"name EN"		[value]"Expedition"
+	[tag]"name RU"		[value]"Экспедиция"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_distilled_emotions"
+	[tag]"name EN"		[value]"Distilled emotions"
+	[tag]"name RU"		[value]"Эмоции (масла)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_tab_price_catalysts"
+	[tag]"name EN"		[value]"Catalysts"
+	[tag]"name RU"		[value]"Катализаторы"
+	
 
 	
 	

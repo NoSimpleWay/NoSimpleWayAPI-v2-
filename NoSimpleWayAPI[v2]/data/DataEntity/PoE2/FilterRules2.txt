@@ -823,7 +823,7 @@ target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"Omen"
 	DETF_color	255	230	204	255
 	
 	
@@ -934,6 +934,541 @@ tag	"Game item"
 named_id	"new content(abyss)"
 min_y	"100"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_FILTER_RULE
+name_EN	"Bones"
+name_RU	"Кости"
+icon	"data/textures/icons/PreservedJawbone.png"
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"Abyss items"
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss bone"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_FILTER_RULE
+name_EN	"Omens"
+name_RU	"Омены"
+icon	"data/textures/icons/OmenOfAbyssalEchoes.png"
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"Abyss items"
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_FILTER_RULE
+name_EN	"Socketable"
+name_RU	"Размещаемое"
+icon	"data/textures/icons/TecrodsGaze.png"
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"Abyss items"
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Socketable"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"rune type"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss jewel"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+	
+REGISTER_NEW_FILTER_RULE
+name_EN	"Map fragments"
+name_RU	"Проходки"
+icon	"data/textures/icons/KulemaksInvitation.png"
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"Abyss items"
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Map fragments"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss item"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"worth"
+
+
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Common"
+DETF_localised_attribute_name_EN	"Worth: Common"
+DETF_localised_attribute_name_RU	"Дешёвое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Moderate"
+DETF_localised_attribute_name_EN	"Worth: Moderate"
+DETF_localised_attribute_name_RU	"Недорогое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Rare"
+DETF_localised_attribute_name_EN	"Worth: Rare"
+DETF_localised_attribute_name_RU	"Редкое"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Expensive"
+DETF_localised_attribute_name_EN	"Worth: Expensive"
+DETF_localised_attribute_name_RU	"Ценное"
+DETF_color	255	230	204	255
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Very expensive"
+DETF_localised_attribute_name_EN	"Worth: Very expensive"
+DETF_localised_attribute_name_RU	"Очень ценное"
+DETF_color	255	230	204	255
+
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_FILTER_RULE
+name_EN	"Category:\nAbyss"
+name_RU	"Категория:\nБездна"
+icon	"data/textures/buttons/pattern_folder_abyss.png"
+is_folder
+
+target_game	"PoE2"
+tag	"Game item"
+named_id	"Abyss items"
+min_y	"100"
 
 
 
@@ -2445,11 +2980,7 @@ target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Currency"
+	DETF_value_key	"Omen"
 	DETF_color	255	230	204	255
 
 

@@ -4336,6 +4336,7 @@
 [Gloam Amulet] dust quantity = 0, dust tag = Trash
 [Penumbra Amulet] dust quantity = 0, dust tag = Trash
 [Tenebrous Amulet] dust quantity = 0, dust tag = Trash
+[Pearlescent Amulet] dust quantity = 0, dust tag = Trash
 [Rawhide Belt] dust quantity = 0, dust tag = Trash
 [Linen Belt] dust quantity = 0, dust tag = Trash
 [Wide Belt] dust quantity = 0, dust tag = Trash
@@ -4450,9 +4451,11 @@
 [Havoc Raiment] dust quantity = 0, dust tag = Trash
 [Enlightened Robe] dust quantity = 0, dust tag = Trash
 [Arcane Robe] dust quantity = 0, dust tag = Trash
+[Arcane Raiment] dust quantity = 0, dust tag = Trash
 [Chain Mail] dust quantity = 0, dust tag = Trash
 [Advanced Chain Mail] dust quantity = 0, dust tag = Trash
 [Chain Hauberk] dust quantity = 0, dust tag = Trash
+[Ring Mail] dust quantity = 0, dust tag = Trash
 [Rogue Armour] dust quantity = 0, dust tag = Trash
 [Advanced Rogue Armour] dust quantity = 0, dust tag = Trash
 [Scoundrel Armour] dust quantity = 0, dust tag = Trash
@@ -4552,6 +4555,7 @@
 [Austere Garb] dust quantity = 0, dust tag = Trash
 [Rough Greaves] dust quantity = 0, dust tag = Trash
 [Iron Greaves] dust quantity = 0, dust tag = Trash
+[Plated Greaves] dust quantity = 0, dust tag = Trash
 [Expert Iron Greaves] dust quantity = 0, dust tag = Trash
 [Bulwark Greaves] dust quantity = 0, dust tag = Trash
 [Advanced Iron Greaves] dust quantity = 0, dust tag = Trash
@@ -4726,7 +4730,7 @@
 [Edged Buckler] dust quantity = 0, dust tag = Trash
 [Oak Buckler] dust quantity = 0, dust tag = Trash
 [Painted Buckler] dust quantity = 0, dust tag = Trash
-[Painted Buckler] dust quantity = 0, dust tag = Trash
+[Coiled Buckler] dust quantity = 0, dust tag = Trash
 [Spikeward Buckler] dust quantity = 0, dust tag = Trash
 [Jingling Buckler] dust quantity = 0, dust tag = Trash
 [Bladeguard Buckler] dust quantity = 0, dust tag = Trash
@@ -4806,15 +4810,25 @@
 [Regal Shard] dust quantity = 0, dust tag = Trash
 [Artificer's Shard] dust quantity = 0, dust tag = Trash
 [Distilled Ire] dust quantity = 0, dust tag = Trash
+[Diluted Liquid Ire] dust quantity = 0, dust tag = Trash
 [Distilled Guilt] dust quantity = 0, dust tag = Trash
+[Diluted Liquid Guilt] dust quantity = 0, dust tag = Trash
 [Distilled Greed] dust quantity = 0, dust tag = Trash
+[Diluted Liquid Greed] dust quantity = 0, dust tag = Trash
 [Distilled Paranoia] dust quantity = 0, dust tag = Trash
+[Liquid Paranoia] dust quantity = 0, dust tag = Trash
 [Distilled Envy] dust quantity = 0, dust tag = Trash
+[Liquid Envy] dust quantity = 0, dust tag = Trash
 [Distilled Disgust] dust quantity = 0, dust tag = Trash
+[Liquid Disgust] dust quantity = 0, dust tag = Trash
 [Distilled Despair] dust quantity = 0, dust tag = Trash
+[Liquid Despair] dust quantity = 0, dust tag = Trash
 [Distilled Fear] dust quantity = 0, dust tag = Trash
+[Concentrated Liquid Fear] dust quantity = 0, dust tag = Trash
 [Distilled Suffering] dust quantity = 0, dust tag = Trash
+[Concentrated Liquid Suffering] dust quantity = 0, dust tag = Trash
 [Distilled Isolation] dust quantity = 0, dust tag = Trash
+[Concentrated Liquid Isolation] dust quantity = 0, dust tag = Trash
 [Lesser Essence of the Body] dust quantity = 0, dust tag = Trash
 [Lesser Essence of the Mind] dust quantity = 0, dust tag = Trash
 [Lesser Essence of Enhancement] dust quantity = 0, dust tag = Trash
@@ -4843,6 +4857,7 @@
 [Greater Essence of the Mind] dust quantity = 0, dust tag = Trash
 [Greater Essence of Enhancement] dust quantity = 0, dust tag = Trash
 [Greater Essence of Torment] dust quantity = 0, dust tag = Trash
+[Greater Essence of Abrasion] dust quantity = 0, dust tag = Trash
 [Greater Essence of Flames] dust quantity = 0, dust tag = Trash
 [Greater Essence of Ice] dust quantity = 0, dust tag = Trash
 [Greater Essence of Electricity] dust quantity = 0, dust tag = Trash
@@ -4854,7 +4869,6 @@
 [Perfect Essence of the Body] dust quantity = 0, dust tag = Trash
 [Perfect Essence of the Mind] dust quantity = 0, dust tag = Trash
 [Perfect Essence of Enhancement] dust quantity = 0, dust tag = Trash
-[Perfect Essence of Torment] dust quantity = 0, dust tag = Trash
 [Perfect Essence of Flames] dust quantity = 0, dust tag = Trash
 [Perfect Essence of Ice] dust quantity = 0, dust tag = Trash
 [Perfect Essence of Electricity] dust quantity = 0, dust tag = Trash
@@ -4868,7 +4882,6 @@
 [Essence of Insanity] dust quantity = 0, dust tag = Trash
 [Essence of Delirium] dust quantity = 0, dust tag = Trash
 [Lesser Essence of Seeking] dust quantity = 0, dust tag = Trash
-[Lesser Essence of the Abyss] dust quantity = 0, dust tag = Trash
 [Lesser Essence of Insulation] dust quantity = 0, dust tag = Trash
 [Lesser Essence of Thawing] dust quantity = 0, dust tag = Trash
 [Lesser Essence of Grounding] dust quantity = 0, dust tag = Trash
@@ -4884,7 +4897,6 @@
 [Essence of Opulence] dust quantity = 0, dust tag = Trash
 [Essence of Command] dust quantity = 0, dust tag = Trash
 [Greater Essence of Seeking] dust quantity = 0, dust tag = Trash
-[Greater Essence of the Abyss] dust quantity = 0, dust tag = Trash
 [Greater Essence of Insulation] dust quantity = 0, dust tag = Trash
 [Greater Essence of Thawing] dust quantity = 0, dust tag = Trash
 [Greater Essence of Grounding] dust quantity = 0, dust tag = Trash
@@ -4892,13 +4904,12 @@
 [Greater Essence of Opulence] dust quantity = 0, dust tag = Trash
 [Greater Essence of Command] dust quantity = 0, dust tag = Trash
 [Perfect Essence of Seeking] dust quantity = 0, dust tag = Trash
-[Essence of the Abyss] dust quantity = 0, dust tag = Trash
-[Essence of Insulation] dust quantity = 0, dust tag = Trash
-[Essence of Thawing] dust quantity = 0, dust tag = Trash
-[Essence of Grounding] dust quantity = 0, dust tag = Trash
-[Essence of Alacrity] dust quantity = 0, dust tag = Trash
-[Essence of Opulence] dust quantity = 0, dust tag = Trash
-[Essence of Command] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Insulation] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Thawing] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Grounding] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Alacrity] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Opulence] dust quantity = 0, dust tag = Trash
+[Perfect Essence of Command] dust quantity = 0, dust tag = Trash
 [Exotic Coinage] dust quantity = 0, dust tag = Trash
 [Broken Circle Artifact] dust quantity = 0, dust tag = Trash
 [Black Scythe Artifact] dust quantity = 0, dust tag = Trash
@@ -5010,6 +5021,7 @@
 [Spiked Bracers] dust quantity = 0, dust tag = Trash
 [Advanced Sombre Gloves] dust quantity = 0, dust tag = Trash
 [Ominous Gloves] dust quantity = 0, dust tag = Trash
+[Embellished Gloves] dust quantity = 0, dust tag = Trash
 [Advanced Stitched Gloves] dust quantity = 0, dust tag = Trash
 [Embroidered Gloves] dust quantity = 0, dust tag = Trash
 [Advanced Jewelled Gloves] dust quantity = 0, dust tag = Trash
@@ -5264,7 +5276,7 @@
 [Deadly Fate] dust quantity = 0, dust tag = Trash
 [Victorious Fate] dust quantity = 0, dust tag = Trash
 [Idol of Estazunti] dust quantity = 0, dust tag = Trash
-[KulemaksInvitation] dust quantity = 0, dust tag = Trash
+[Kulemak's Invitation] dust quantity = 0, dust tag = Trash
 [Simulacrum Splinter] dust quantity = 0, dust tag = Trash
 [Breach Splinter] dust quantity = 0, dust tag = Trash
 [Omen of Refreshment] dust quantity = 0, dust tag = Trash
@@ -5288,7 +5300,6 @@
 [Omen of Secret Compartments] dust quantity = 0, dust tag = Trash
 [Omen of the Hunt] dust quantity = 0, dust tag = Trash
 [Omen of Reinforcements] dust quantity = 0, dust tag = Trash
-[Omen of Homogenising Exaltation] dust quantity = 0, dust tag = Trash
 [Omen of Homogenising Exaltation] dust quantity = 0, dust tag = Trash
 [Omen of Homogenising Coronation] dust quantity = 0, dust tag = Trash
 [Omen of Gambling] dust quantity = 0, dust tag = Trash
@@ -5550,6 +5561,25 @@
 [Tawhoan Tower Shield] dust quantity = 0, dust tag = Trash
 [Golden Targe] dust quantity = 0, dust tag = Trash
 [Blacksteel Crest Shield] dust quantity = 0, dust tag = Trash
+[Artillery Ballista] dust quantity = 0, dust tag = Trash
+[Siege Ballista] dust quantity = 0, dust tag = Trash
+[Ripwire Ballista] dust quantity = 0, dust tag = Trash
+[Artillery Ballista] dust quantity = 0, dust tag = Trash
+[Cold Snap] dust quantity = 0, dust tag = Trash
+[Snap] dust quantity = 0, dust tag = Trash
+[Fortifying Cry] dust quantity = 0, dust tag = Trash
+[Cast on Elemental Ailment] dust quantity = 0, dust tag = Trash
+[Ravenous Swarm] dust quantity = 0, dust tag = Trash
+[Mirage Archer] dust quantity = 0, dust tag = Trash
+[Iron Ward] dust quantity = 0, dust tag = Trash
+[Forge Hammer] dust quantity = 0, dust tag = Trash
+[Mortar Cannon] dust quantity = 0, dust tag = Trash
+[Ancestral Cry] dust quantity = 0, dust tag = Trash
+[Toxic Domain] dust quantity = 0, dust tag = Trash
+[Ice-Tipped Arrows] dust quantity = 0, dust tag = Trash
+[Siphon Elements] dust quantity = 0, dust tag = Trash
+[Frost Darts] dust quantity = 0, dust tag = Trash
+[Elemental Weakness] dust quantity = 0, dust tag = Trash
 [Lesser Desert Rune] dust quantity = 0, dust tag = Trash
 [Desert Rune] dust quantity = 0, dust tag = Trash
 [Greater Desert Rune] dust quantity = 0, dust tag = Trash
@@ -5580,11 +5610,43 @@
 [Lesser Vision Rune] dust quantity = 0, dust tag = Trash
 [Vision Rune] dust quantity = 0, dust tag = Trash
 [Greater Vision Rune] dust quantity = 0, dust tag = Trash
+[Lesser Robust Rune] dust quantity = 0, dust tag = Trash
+[Robust Rune] dust quantity = 0, dust tag = Trash
+[Greater Robust Rune] dust quantity = 0, dust tag = Trash
+[Lesser Adept Rune] dust quantity = 0, dust tag = Trash
+[Adept Rune] dust quantity = 0, dust tag = Trash
+[Greater Adept Rune] dust quantity = 0, dust tag = Trash
+[Lesser Resolve Rune] dust quantity = 0, dust tag = Trash
+[Resolve Rune] dust quantity = 0, dust tag = Trash
+[Greater Resolve Rune] dust quantity = 0, dust tag = Trash
+[Lesser Tempered Rune] dust quantity = 0, dust tag = Trash
+[Tempered Rune] dust quantity = 0, dust tag = Trash
+[Greater Tempered Rune] dust quantity = 0, dust tag = Trash
 [Greater Rune of Leadership] dust quantity = 0, dust tag = Trash
-[Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
 [Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
 [Greater Rune of Alacrity] dust quantity = 0, dust tag = Trash
 [Greater Rune of Nobility] dust quantity = 0, dust tag = Trash
+[Hedgewitch Assandra's Rune of Wisdom] dust quantity = 0, dust tag = Trash
+[Saqawal's Rune of the Sky] dust quantity = 0, dust tag = Trash
+[Fenumus' Rune of Agony] dust quantity = 0, dust tag = Trash
+[Farrul's Rune of Grace] dust quantity = 0, dust tag = Trash
+[Farrul's Rune of the Chase] dust quantity = 0, dust tag = Trash
+[Craiceann's Rune of Warding] dust quantity = 0, dust tag = Trash
+[Saqawal's Rune of Memory] dust quantity = 0, dust tag = Trash
+[Saqawal's Rune of Erosion] dust quantity = 0, dust tag = Trash
+[Farrul's Rune of the Hunt] dust quantity = 0, dust tag = Trash
+[Craiceann's Rune of Recovery] dust quantity = 0, dust tag = Trash
+[Courtesan Mannan's Rune of Cruelty] dust quantity = 0, dust tag = Trash
+[Thane Grannell's Rune of Mastery] dust quantity = 0, dust tag = Trash
+[Fenumus' Rune of Spinning] dust quantity = 0, dust tag = Trash
+[Countess Seske's Rune of Archery] dust quantity = 0, dust tag = Trash
+[Thane Girt's Rune of Wildness] dust quantity = 0, dust tag = Trash
+[Fenumus' Rune of Draining] dust quantity = 0, dust tag = Trash
+[Thane Myrk's Rune of Summer] dust quantity = 0, dust tag = Trash
+[Lady Hestra's Rune of Winter] dust quantity = 0, dust tag = Trash
+[Thane Leld's Rune of Spring] dust quantity = 0, dust tag = Trash
+[The Greatwolf's Rune of Claws] dust quantity = 0, dust tag = Trash
+[The Greatwolf's Rune of Willpower] dust quantity = 0, dust tag = Trash
 [Soul Core of Tacati] dust quantity = 0, dust tag = Trash
 [Soul Core of Opiloti] dust quantity = 0, dust tag = Trash
 [Soul Core of Jiquani] dust quantity = 0, dust tag = Trash
@@ -5600,6 +5662,21 @@
 [Soul Core of Atmohua] dust quantity = 0, dust tag = Trash
 [Soul Core of Cholotl] dust quantity = 0, dust tag = Trash
 [Soul Core of Zantipi] dust quantity = 0, dust tag = Trash
+[Hayoxi's Soul Core of Heatproofing] dust quantity = 0, dust tag = Trash
+[Zalatl's Soul Core of Insulation] dust quantity = 0, dust tag = Trash
+[Topotante's Soul Core of Dampening] dust quantity = 0, dust tag = Trash
+[Atmohua's Soul Core of Retreat] dust quantity = 0, dust tag = Trash
+[Quipolatl's Soul Core of Flow] dust quantity = 0, dust tag = Trash
+[Tzamoto's Soul Core of Ferocity] dust quantity = 0, dust tag = Trash
+[Uromoti's Soul Core of Attenuation] dust quantity = 0, dust tag = Trash
+[Opiloti's Soul Core of Assault] dust quantity = 0, dust tag = Trash
+[Guatelitzi's Soul Core of Endurance] dust quantity = 0, dust tag = Trash
+[Xopec's Soul Core of Power] dust quantity = 0, dust tag = Trash
+[Estazunti's Soul Core of Convalescence] dust quantity = 0, dust tag = Trash
+[Tacati's Soul Core of Affliction] dust quantity = 0, dust tag = Trash
+[Cholotl's Soul Core of War] dust quantity = 0, dust tag = Trash
+[Citaqualotl's Soul Core of Foulness] dust quantity = 0, dust tag = Trash
+[Xipocado's Soul Core of Dominion] dust quantity = 0, dust tag = Trash
 [Serpent Talisman] dust quantity = 0, dust tag = Trash
 [Primate Talisman] dust quantity = 0, dust tag = Trash
 [Owl Talisman] dust quantity = 0, dust tag = Trash
@@ -5611,12 +5688,22 @@
 [Ox Talisman] dust quantity = 0, dust tag = Trash
 [Rabbit Talisman] dust quantity = 0, dust tag = Trash
 [Fox Talisman] dust quantity = 0, dust tag = Trash
+[Talisman of Sirrius] dust quantity = 0, dust tag = Trash
+[Talisman of Thruldana] dust quantity = 0, dust tag = Trash
+[Talisman of Grold] dust quantity = 0, dust tag = Trash
+[Talisman of Eeshta] dust quantity = 0, dust tag = Trash
+[Talisman of Egrin] dust quantity = 0, dust tag = Trash
+[Talisman of Maxarius] dust quantity = 0, dust tag = Trash
+[Talisman of Ralakesh] dust quantity = 0, dust tag = Trash
 [Amanamu's Gaze] dust quantity = 0, dust tag = Trash
 [Tecrod's Gaze] dust quantity = 0, dust tag = Trash
 [Kurgal's Gaze] dust quantity = 0, dust tag = Trash
 [Ulaman's Gaze] dust quantity = 0, dust tag = Trash
 [Hardwood Spear] dust quantity = 0, dust tag = Trash
 [Ironhead Spear] dust quantity = 0, dust tag = Trash
+[Steelhead Spear] dust quantity = 0, dust tag = Trash
+[Coursing Spear] dust quantity = 0, dust tag = Trash
+[Swift Spear] dust quantity = 0, dust tag = Trash
 [Hunting Spear] dust quantity = 0, dust tag = Trash
 [Winged Spear] dust quantity = 0, dust tag = Trash
 [War Spear] dust quantity = 0, dust tag = Trash
@@ -5628,7 +5715,7 @@
 [Sword Spear] dust quantity = 0, dust tag = Trash
 [Striking Spear] dust quantity = 0, dust tag = Trash
 [Helix Spear] dust quantity = 0, dust tag = Trash
-[Pearlescent Amulet] dust quantity = 0, dust tag = Trash
+[Akoyan Spear] dust quantity = 0, dust tag = Trash
 [Blacksmith's Whetstone] dust quantity = 0, dust tag = Trash
 [Arcanist's Etcher] dust quantity = 0, dust tag = Trash
 [Scroll of Wisdom] dust quantity = 0, dust tag = Trash
@@ -5677,7 +5764,7 @@
 [Gnawed Collarbone] dust quantity = 0, dust tag = Trash
 [Preserved Collarbone] dust quantity = 0, dust tag = Trash
 [Ancient Collarbone] dust quantity = 0, dust tag = Trash
-[PreservedCranium] dust quantity = 0, dust tag = Trash
+[Preserved Cranium] dust quantity = 0, dust tag = Trash
 [Preserved Vertebrae] dust quantity = 0, dust tag = Trash
 [Ashen Staff] dust quantity = 0, dust tag = Trash
 [Gelid Staff] dust quantity = 0, dust tag = Trash
@@ -5693,6 +5780,470 @@
 [Cleric Staff] dust quantity = 0, dust tag = Trash
 [Dark Staff] dust quantity = 0, dust tag = Trash
 [Sanctified Staff] dust quantity = 0, dust tag = Trash
+[Close Combat] dust quantity = 0, dust tag = Trash
+[Close Combat I] dust quantity = 0, dust tag = Trash
+[Close Combat II] dust quantity = 0, dust tag = Trash
+[Ignition] dust quantity = 0, dust tag = Trash
+[Ignite II] dust quantity = 0, dust tag = Trash
+[Ignite III] dust quantity = 0, dust tag = Trash
+[Lacerate] dust quantity = 0, dust tag = Trash
+[Bleed I] dust quantity = 0, dust tag = Trash
+[Bleed II] dust quantity = 0, dust tag = Trash
+[Bleed III] dust quantity = 0, dust tag = Trash
+[Bleed IV] dust quantity = 0, dust tag = Trash
+[Bludgeon] dust quantity = 0, dust tag = Trash
+[Knockback] dust quantity = 0, dust tag = Trash
+[Overpower] dust quantity = 0, dust tag = Trash
+[Stun I] dust quantity = 0, dust tag = Trash
+[Persistence] dust quantity = 0, dust tag = Trash
+[Prolonged Duration I] dust quantity = 0, dust tag = Trash
+[Prolonged Duration II] dust quantity = 0, dust tag = Trash
+[Fast Forward] dust quantity = 0, dust tag = Trash
+[Compressed Duration I] dust quantity = 0, dust tag = Trash
+[Compressed Duration II] dust quantity = 0, dust tag = Trash
+[Rage] dust quantity = 0, dust tag = Trash
+[Rage II] dust quantity = 0, dust tag = Trash
+[Rage III] dust quantity = 0, dust tag = Trash
+[Execute] dust quantity = 0, dust tag = Trash
+[Execute I] dust quantity = 0, dust tag = Trash
+[Execute II] dust quantity = 0, dust tag = Trash
+[Execute III] dust quantity = 0, dust tag = Trash
+[Searing Flame] dust quantity = 0, dust tag = Trash
+[Searing Flame I] dust quantity = 0, dust tag = Trash
+[Searing Flame II] dust quantity = 0, dust tag = Trash
+[Behead] dust quantity = 0, dust tag = Trash
+[Behead I] dust quantity = 0, dust tag = Trash
+[Behead II] dust quantity = 0, dust tag = Trash
+[Jagged Ground] dust quantity = 0, dust tag = Trash
+[Jagged Ground I] dust quantity = 0, dust tag = Trash
+[Jagged Ground II] dust quantity = 0, dust tag = Trash
+[Fire Penetration] dust quantity = 0, dust tag = Trash
+[Fire Penetration I] dust quantity = 0, dust tag = Trash
+[Fire Penetration II] dust quantity = 0, dust tag = Trash
+[Enraged Warcry] dust quantity = 0, dust tag = Trash
+[Enraged Warcry I] dust quantity = 0, dust tag = Trash
+[Enraged Warcry II] dust quantity = 0, dust tag = Trash
+[Fist of War] dust quantity = 0, dust tag = Trash
+[Fist of War I] dust quantity = 0, dust tag = Trash
+[Fist of War II] dust quantity = 0, dust tag = Trash
+[Fist of War III] dust quantity = 0, dust tag = Trash
+[Life Thief] dust quantity = 0, dust tag = Trash
+[Life Leech I] dust quantity = 0, dust tag = Trash
+[Life Leech II] dust quantity = 0, dust tag = Trash
+[Life Leech III] dust quantity = 0, dust tag = Trash
+[Brutality] dust quantity = 0, dust tag = Trash
+[Brutality I] dust quantity = 0, dust tag = Trash
+[Brutality II] dust quantity = 0, dust tag = Trash
+[Brutality III] dust quantity = 0, dust tag = Trash
+[Meat Shield] dust quantity = 0, dust tag = Trash
+[Meat Shield I] dust quantity = 0, dust tag = Trash
+[Meat Shield II] dust quantity = 0, dust tag = Trash
+[Eternal Flame] dust quantity = 0, dust tag = Trash
+[Eternal Flame I] dust quantity = 0, dust tag = Trash
+[Eternal Flame II] dust quantity = 0, dust tag = Trash
+[Eternal Flame III] dust quantity = 0, dust tag = Trash
+[Infernal Legion] dust quantity = 0, dust tag = Trash
+[Infernal Legion I] dust quantity = 0, dust tag = Trash
+[Infernal Legion II] dust quantity = 0, dust tag = Trash
+[Infernal Legion III] dust quantity = 0, dust tag = Trash
+[Fire Infusion] dust quantity = 0, dust tag = Trash
+[Fire Attunement] dust quantity = 0, dust tag = Trash
+[Inspiration] dust quantity = 0, dust tag = Trash
+[Efficiency I] dust quantity = 0, dust tag = Trash
+[Efficiency II] dust quantity = 0, dust tag = Trash
+[Demolisher] dust quantity = 0, dust tag = Trash
+[Armour Demolisher I] dust quantity = 0, dust tag = Trash
+[Armour Demolisher II] dust quantity = 0, dust tag = Trash
+[Rageforged] dust quantity = 0, dust tag = Trash
+[Rageforged I] dust quantity = 0, dust tag = Trash
+[Rageforged II] dust quantity = 0, dust tag = Trash
+[Corrupting Cry] dust quantity = 0, dust tag = Trash
+[Corrupting Cry I] dust quantity = 0, dust tag = Trash
+[Corrupting Cry II] dust quantity = 0, dust tag = Trash
+[Deep Cuts] dust quantity = 0, dust tag = Trash
+[Deep Cuts I] dust quantity = 0, dust tag = Trash
+[Deep Cuts II] dust quantity = 0, dust tag = Trash
+[Splinter] dust quantity = 0, dust tag = Trash
+[Armour Break I] dust quantity = 0, dust tag = Trash
+[Armour Break II] dust quantity = 0, dust tag = Trash
+[Armour Break III] dust quantity = 0, dust tag = Trash
+[Primal Armament] dust quantity = 0, dust tag = Trash
+[Elemental Armament I] dust quantity = 0, dust tag = Trash
+[Elemental Armament II] dust quantity = 0, dust tag = Trash
+[Elemental Armament III] dust quantity = 0, dust tag = Trash
+[Vitality] dust quantity = 0, dust tag = Trash
+[Vitality I] dust quantity = 0, dust tag = Trash
+[Vitality II] dust quantity = 0, dust tag = Trash
+[Herbalism] dust quantity = 0, dust tag = Trash
+[Herbalism I] dust quantity = 0, dust tag = Trash
+[Herbalism II] dust quantity = 0, dust tag = Trash
+[Cannibalism] dust quantity = 0, dust tag = Trash
+[Cannibalism II] dust quantity = 0, dust tag = Trash
+[Aftershock] dust quantity = 0, dust tag = Trash
+[Aftershock I] dust quantity = 0, dust tag = Trash
+[Aftershock II] dust quantity = 0, dust tag = Trash
+[Conduction] dust quantity = 0, dust tag = Trash
+[Shock] dust quantity = 0, dust tag = Trash
+[Pierce] dust quantity = 0, dust tag = Trash
+[Pierce I] dust quantity = 0, dust tag = Trash
+[Pierce II] dust quantity = 0, dust tag = Trash
+[Pierce III] dust quantity = 0, dust tag = Trash
+[Scattershot] dust quantity = 0, dust tag = Trash
+[Multishot I] dust quantity = 0, dust tag = Trash
+[Multishot II] dust quantity = 0, dust tag = Trash
+[Nova Projectiles] dust quantity = 0, dust tag = Trash
+[Envenom] dust quantity = 0, dust tag = Trash
+[Poison I] dust quantity = 0, dust tag = Trash
+[Poison II] dust quantity = 0, dust tag = Trash
+[Poison III] dust quantity = 0, dust tag = Trash
+[Blind] dust quantity = 0, dust tag = Trash
+[Blind I] dust quantity = 0, dust tag = Trash
+[Blind II] dust quantity = 0, dust tag = Trash
+[Acceleration] dust quantity = 0, dust tag = Trash
+[Projectile Acceleration I] dust quantity = 0, dust tag = Trash
+[Projectile Acceleration II] dust quantity = 0, dust tag = Trash
+[Projectile Acceleration III] dust quantity = 0, dust tag = Trash
+[Deceleration] dust quantity = 0, dust tag = Trash
+[Projectile Deceleration I] dust quantity = 0, dust tag = Trash
+[Projectile Deceleration II] dust quantity = 0, dust tag = Trash
+[Overabundance] dust quantity = 0, dust tag = Trash
+[Overabundance I] dust quantity = 0, dust tag = Trash
+[Overabundance II] dust quantity = 0, dust tag = Trash
+[Overabundance III] dust quantity = 0, dust tag = Trash
+[Pin] dust quantity = 0, dust tag = Trash
+[Pin I] dust quantity = 0, dust tag = Trash
+[Pin II] dust quantity = 0, dust tag = Trash
+[Pin III] dust quantity = 0, dust tag = Trash
+[Chain] dust quantity = 0, dust tag = Trash
+[Chain I] dust quantity = 0, dust tag = Trash
+[Chain II] dust quantity = 0, dust tag = Trash
+[Chain III] dust quantity = 0, dust tag = Trash
+[Second Wind] dust quantity = 0, dust tag = Trash
+[Second Wind I] dust quantity = 0, dust tag = Trash
+[Second Wind II] dust quantity = 0, dust tag = Trash
+[Second Wind III] dust quantity = 0, dust tag = Trash
+[Bounty I] dust quantity = 0, dust tag = Trash
+[Bounty II] dust quantity = 0, dust tag = Trash
+[Lightning Infusion] dust quantity = 0, dust tag = Trash
+[Lightning Attunement] dust quantity = 0, dust tag = Trash
+[Martial Tempo] dust quantity = 0, dust tag = Trash
+[Rapid Attacks I] dust quantity = 0, dust tag = Trash
+[Rapid Attacks II] dust quantity = 0, dust tag = Trash
+[Rapid Attacks III] dust quantity = 0, dust tag = Trash
+[Bullseye] dust quantity = 0, dust tag = Trash
+[Heightened Accuracy I] dust quantity = 0, dust tag = Trash
+[Heightened Accuracy II] dust quantity = 0, dust tag = Trash
+[Profusion] dust quantity = 0, dust tag = Trash
+[Charge Profusion I] dust quantity = 0, dust tag = Trash
+[Charge Profusion II] dust quantity = 0, dust tag = Trash
+[Comorbidity] dust quantity = 0, dust tag = Trash
+[Escalating Poison] dust quantity = 0, dust tag = Trash
+[Crescendo] dust quantity = 0, dust tag = Trash
+[Crescendo I] dust quantity = 0, dust tag = Trash
+[Crescendo II] dust quantity = 0, dust tag = Trash
+[Crescendo III] dust quantity = 0, dust tag = Trash
+[Deadly Poison] dust quantity = 0, dust tag = Trash
+[Deadly Poison II] dust quantity = 0, dust tag = Trash
+[Window of Opportunity] dust quantity = 0, dust tag = Trash
+[Window of Opportunity I] dust quantity = 0, dust tag = Trash
+[Window of Opportunity II] dust quantity = 0, dust tag = Trash
+[Swift Affliction] dust quantity = 0, dust tag = Trash
+[Swift Affliction I] dust quantity = 0, dust tag = Trash
+[Swift Affliction II] dust quantity = 0, dust tag = Trash
+[Swift Affliction III] dust quantity = 0, dust tag = Trash
+[Combo Finisher] dust quantity = 0, dust tag = Trash
+[Combo Finisher I] dust quantity = 0, dust tag = Trash
+[Combo Finisher II] dust quantity = 0, dust tag = Trash
+[Encumbrance] dust quantity = 0, dust tag = Trash
+[Slow Potency] dust quantity = 0, dust tag = Trash
+[Longshot] dust quantity = 0, dust tag = Trash
+[Longshot I] dust quantity = 0, dust tag = Trash
+[Longshot II] dust quantity = 0, dust tag = Trash
+[Culling Strike] dust quantity = 0, dust tag = Trash
+[Culling Strike II] dust quantity = 0, dust tag = Trash
+[Ingenuity] dust quantity = 0, dust tag = Trash
+[Cooldown Recovery I] dust quantity = 0, dust tag = Trash
+[Cooldown Recovery II] dust quantity = 0, dust tag = Trash
+[Precision] dust quantity = 0, dust tag = Trash
+[Precision I] dust quantity = 0, dust tag = Trash
+[Precision II] dust quantity = 0, dust tag = Trash
+[Glaciation] dust quantity = 0, dust tag = Trash
+[Freeze] dust quantity = 0, dust tag = Trash
+[Coursing Current] dust quantity = 0, dust tag = Trash
+[Shock Conduction] dust quantity = 0, dust tag = Trash
+[Magnified Effect] dust quantity = 0, dust tag = Trash
+[Magnified Area I] dust quantity = 0, dust tag = Trash
+[Magnified Area II] dust quantity = 0, dust tag = Trash
+[Concentrated Effect] dust quantity = 0, dust tag = Trash
+[Concentrated Area] dust quantity = 0, dust tag = Trash
+[Fortress] dust quantity = 0, dust tag = Trash
+[Fortress I] dust quantity = 0, dust tag = Trash
+[Fortress II] dust quantity = 0, dust tag = Trash
+[Soul Thief] dust quantity = 0, dust tag = Trash
+[Mana Leech] dust quantity = 0, dust tag = Trash
+[Feeding Frenzy] dust quantity = 0, dust tag = Trash
+[Feeding Frenzy I] dust quantity = 0, dust tag = Trash
+[Feeding Frenzy II] dust quantity = 0, dust tag = Trash
+[Cold Infusion] dust quantity = 0, dust tag = Trash
+[Cold Attunement] dust quantity = 0, dust tag = Trash
+[Arcane Tempo] dust quantity = 0, dust tag = Trash
+[Rapid Casting I] dust quantity = 0, dust tag = Trash
+[Rapid Casting II] dust quantity = 0, dust tag = Trash
+[Rapid Casting III] dust quantity = 0, dust tag = Trash
+[Minion Pact] dust quantity = 0, dust tag = Trash
+[Minion Pact I] dust quantity = 0, dust tag = Trash
+[Minion Pact II] dust quantity = 0, dust tag = Trash
+[Chaos Infusion] dust quantity = 0, dust tag = Trash
+[Chaos Attunement] dust quantity = 0, dust tag = Trash
+[Clarity] dust quantity = 0, dust tag = Trash
+[Clarity I] dust quantity = 0, dust tag = Trash
+[Clarity II] dust quantity = 0, dust tag = Trash
+[Charge Infusion] dust quantity = 0, dust tag = Trash
+[Charge Regulation] dust quantity = 0, dust tag = Trash
+[Double Barrel] dust quantity = 0, dust tag = Trash
+[Double Barrel I] dust quantity = 0, dust tag = Trash
+[Double Barrel II] dust quantity = 0, dust tag = Trash
+[Double Barrel III] dust quantity = 0, dust tag = Trash
+[Ammo Conservation] dust quantity = 0, dust tag = Trash
+[Ammo Conservation I] dust quantity = 0, dust tag = Trash
+[Ammo Conservation I II] dust quantity = 0, dust tag = Trash
+[Ammo Conservation I III] dust quantity = 0, dust tag = Trash
+[Fresh Clip] dust quantity = 0, dust tag = Trash
+[Fresh Clip I] dust quantity = 0, dust tag = Trash
+[Fresh Clip II] dust quantity = 0, dust tag = Trash
+[Sacrificial Lamb] dust quantity = 0, dust tag = Trash
+[Sacrificial Lamb I] dust quantity = 0, dust tag = Trash
+[Sacrificial Lamb II] dust quantity = 0, dust tag = Trash
+[Branching Fissures I] dust quantity = 0, dust tag = Trash
+[Branching Fissures II] dust quantity = 0, dust tag = Trash
+[Upheaval] dust quantity = 0, dust tag = Trash
+[Upheaval I] dust quantity = 0, dust tag = Trash
+[Upheaval II] dust quantity = 0, dust tag = Trash
+[Ricochet] dust quantity = 0, dust tag = Trash
+[Ricochet I] dust quantity = 0, dust tag = Trash
+[Ricochet II] dust quantity = 0, dust tag = Trash
+[Ricochet III] dust quantity = 0, dust tag = Trash
+[Ancestral Urgency] dust quantity = 0, dust tag = Trash
+[Urgent Totems I] dust quantity = 0, dust tag = Trash
+[Urgent Totems II] dust quantity = 0, dust tag = Trash
+[Urgent Totems III] dust quantity = 0, dust tag = Trash
+[Long Fuse] dust quantity = 0, dust tag = Trash
+[Long Fuse I] dust quantity = 0, dust tag = Trash
+[Long Fuse II] dust quantity = 0, dust tag = Trash
+[Strip Away] dust quantity = 0, dust tag = Trash
+[Potent Exposure] dust quantity = 0, dust tag = Trash
+[Ironwood] dust quantity = 0, dust tag = Trash
+[Reinforced Totems I] dust quantity = 0, dust tag = Trash
+[Reinforced Totems II] dust quantity = 0, dust tag = Trash
+[Wildshards] dust quantity = 0, dust tag = Trash
+[Wildshards I] dust quantity = 0, dust tag = Trash
+[Wildshards II] dust quantity = 0, dust tag = Trash
+[Culmination] dust quantity = 0, dust tag = Trash
+[Culmination I] dust quantity = 0, dust tag = Trash
+[Culmination II] dust quantity = 0, dust tag = Trash
+[Ablation] dust quantity = 0, dust tag = Trash
+[Sacrificial Offering] dust quantity = 0, dust tag = Trash
+[Capacitor] dust quantity = 0, dust tag = Trash
+[Energy Capacitor] dust quantity = 0, dust tag = Trash
+[Impetus] dust quantity = 0, dust tag = Trash
+[Boundless Energy I] dust quantity = 0, dust tag = Trash
+[Boundless Energy II] dust quantity = 0, dust tag = Trash
+[Dissipate] dust quantity = 0, dust tag = Trash
+[Harmonic Remnants I] dust quantity = 0, dust tag = Trash
+[Harmonic Remnants II] dust quantity = 0, dust tag = Trash
+[Zenith] dust quantity = 0, dust tag = Trash
+[Zenith I] dust quantity = 0, dust tag = Trash
+[Zenith II] dust quantity = 0, dust tag = Trash
+[Bidding] dust quantity = 0, dust tag = Trash
+[Bidding I] dust quantity = 0, dust tag = Trash
+[Bidding II] dust quantity = 0, dust tag = Trash
+[Bidding III] dust quantity = 0, dust tag = Trash
+[Adhere] dust quantity = 0, dust tag = Trash
+[Adhesive Grenades I] dust quantity = 0, dust tag = Trash
+[Adhesive Grenades II] dust quantity = 0, dust tag = Trash
+[Retaliate] dust quantity = 0, dust tag = Trash
+[Retaliate I] dust quantity = 0, dust tag = Trash
+[Retaliate II] dust quantity = 0, dust tag = Trash
+[Alignment] dust quantity = 0, dust tag = Trash
+[Alignment I] dust quantity = 0, dust tag = Trash
+[Alignment II] dust quantity = 0, dust tag = Trash
+[Charged Shots] dust quantity = 0, dust tag = Trash
+[Charged Shots I] dust quantity = 0, dust tag = Trash
+[Charged Shots II] dust quantity = 0, dust tag = Trash
+[Profanity] dust quantity = 0, dust tag = Trash
+[Profanity I] dust quantity = 0, dust tag = Trash
+[Profanity II] dust quantity = 0, dust tag = Trash
+[Burgeon] dust quantity = 0, dust tag = Trash
+[Burgeon I] dust quantity = 0, dust tag = Trash
+[Burgeon II] dust quantity = 0, dust tag = Trash
+[Steadfast] dust quantity = 0, dust tag = Trash
+[Steadfast II] dust quantity = 0, dust tag = Trash
+[Concoct] dust quantity = 0, dust tag = Trash
+[Concoct I] dust quantity = 0, dust tag = Trash
+[Concoct II] dust quantity = 0, dust tag = Trash
+[Domain] dust quantity = 0, dust tag = Trash
+[Persistent Ground I] dust quantity = 0, dust tag = Trash
+[Persistent Ground II] dust quantity = 0, dust tag = Trash
+[Persistent Ground III] dust quantity = 0, dust tag = Trash
+[Figurehead] dust quantity = 0, dust tag = Trash
+[Selfless Remnants] dust quantity = 0, dust tag = Trash
+[Interlude] dust quantity = 0, dust tag = Trash
+[Remnant Potency I] dust quantity = 0, dust tag = Trash
+[Remnant Potency II] dust quantity = 0, dust tag = Trash
+[Remnant Potency III] dust quantity = 0, dust tag = Trash
+[Retreat] dust quantity = 0, dust tag = Trash
+[Retreat I] dust quantity = 0, dust tag = Trash
+[Retreat II] dust quantity = 0, dust tag = Trash
+[Retreat III] dust quantity = 0, dust tag = Trash
+[Pursuit] dust quantity = 0, dust tag = Trash
+[Pursuit I] dust quantity = 0, dust tag = Trash
+[Pursuit II] dust quantity = 0, dust tag = Trash
+[Pursuit III] dust quantity = 0, dust tag = Trash
+[Reach] dust quantity = 0, dust tag = Trash
+[Overreach] dust quantity = 0, dust tag = Trash
+[Defy] dust quantity = 0, dust tag = Trash
+[Defy I] dust quantity = 0, dust tag = Trash
+[Defy II] dust quantity = 0, dust tag = Trash
+[Enormity] dust quantity = 0, dust tag = Trash
+[Hulking Minions] dust quantity = 0, dust tag = Trash
+[Ancestral Call] dust quantity = 0, dust tag = Trash
+[Ancestral Call I] dust quantity = 0, dust tag = Trash
+[Ancestral Call II] dust quantity = 0, dust tag = Trash
+[Barbs] dust quantity = 0, dust tag = Trash
+[Barbs I] dust quantity = 0, dust tag = Trash
+[Barbs II] dust quantity = 0, dust tag = Trash
+[Barbs III] dust quantity = 0, dust tag = Trash
+[Thornskin] dust quantity = 0, dust tag = Trash
+[Thornskin I] dust quantity = 0, dust tag = Trash
+[Thornskin II] dust quantity = 0, dust tag = Trash
+[Mysticism] dust quantity = 0, dust tag = Trash
+[Mysticism I] dust quantity = 0, dust tag = Trash
+[Mysticism II] dust quantity = 0, dust tag = Trash
+[Direstrike] dust quantity = 0, dust tag = Trash
+[Direstrike I] dust quantity = 0, dust tag = Trash
+[Direstrike II] dust quantity = 0, dust tag = Trash
+[Upwelling] dust quantity = 0, dust tag = Trash
+[Upwelling I] dust quantity = 0, dust tag = Trash
+[Upwelling II] dust quantity = 0, dust tag = Trash
+[Refraction] dust quantity = 0, dust tag = Trash
+[Refraction I] dust quantity = 0, dust tag = Trash
+[Refraction II] dust quantity = 0, dust tag = Trash
+[Refraction III] dust quantity = 0, dust tag = Trash
+[Greatwood] dust quantity = 0, dust tag = Trash
+[Greatwood I] dust quantity = 0, dust tag = Trash
+[Greatwood II] dust quantity = 0, dust tag = Trash
+[Brink] dust quantity = 0, dust tag = Trash
+[Brink I] dust quantity = 0, dust tag = Trash
+[Brink II] dust quantity = 0, dust tag = Trash
+[Retort] dust quantity = 0, dust tag = Trash
+[Frenzied Riposte] dust quantity = 0, dust tag = Trash
+[Twofold] dust quantity = 0, dust tag = Trash
+[Heightened Charges] dust quantity = 0, dust tag = Trash
+[Rearm] dust quantity = 0, dust tag = Trash
+[Rearm II] dust quantity = 0, dust tag = Trash
+[Expedite] dust quantity = 0, dust tag = Trash
+[Short Fuse I] dust quantity = 0, dust tag = Trash
+[Short Fuse II] dust quantity = 0, dust tag = Trash
+[Admixture] dust quantity = 0, dust tag = Trash
+[Stoicism I] dust quantity = 0, dust tag = Trash
+[Stoicism II] dust quantity = 0, dust tag = Trash
+[Hardy Totems I] dust quantity = 0, dust tag = Trash
+[Hardy Totems II] dust quantity = 0, dust tag = Trash
+[Living Lightning] dust quantity = 0, dust tag = Trash
+[Living Lightning II] dust quantity = 0, dust tag = Trash
+[Frozen Spite] dust quantity = 0, dust tag = Trash
+[Streamlined Rounds] dust quantity = 0, dust tag = Trash
+[Perfected Endurance] dust quantity = 0, dust tag = Trash
+[Enduring Impact I] dust quantity = 0, dust tag = Trash
+[Enduring Impact II] dust quantity = 0, dust tag = Trash
+[Crater] dust quantity = 0, dust tag = Trash
+[Vanguard I] dust quantity = 0, dust tag = Trash
+[Vanguard II] dust quantity = 0, dust tag = Trash
+[Crystalline Shards] dust quantity = 0, dust tag = Trash
+[Skittering Stone I] dust quantity = 0, dust tag = Trash
+[Skittering Stone II] dust quantity = 0, dust tag = Trash
+[Durability] dust quantity = 0, dust tag = Trash
+[Atalui's Bloodletting] dust quantity = 0, dust tag = Trash
+[Einhar's Beastrite] dust quantity = 0, dust tag = Trash
+[Vilenta's Propulsion] dust quantity = 0, dust tag = Trash
+[Ahn's Citadel] dust quantity = 0, dust tag = Trash
+[Brutus' Brain] dust quantity = 0, dust tag = Trash
+[Tecrod's Revenge] dust quantity = 0, dust tag = Trash
+[Uruk's Smelting] dust quantity = 0, dust tag = Trash
+[Paquate's Pact] dust quantity = 0, dust tag = Trash
+[Ailith's Chimes] dust quantity = 0, dust tag = Trash
+[Doedre's Undoing] dust quantity = 0, dust tag = Trash
+[Ratha's Assault] dust quantity = 0, dust tag = Trash
+[Arjun's Medal] dust quantity = 0, dust tag = Trash
+[Kaom's Madness] dust quantity = 0, dust tag = Trash
+[Sione's Temper] dust quantity = 0, dust tag = Trash
+[Ixchel's Torment] dust quantity = 0, dust tag = Trash
+[Romira's Requital] dust quantity = 0, dust tag = Trash
+[Tawhoa's Tending] dust quantity = 0, dust tag = Trash
+[Piety's Mercy] dust quantity = 0, dust tag = Trash
+[Dialla's Desire] dust quantity = 0, dust tag = Trash
+[Kalisa's Crescendo] dust quantity = 0, dust tag = Trash
+[Xoph's Pyre] dust quantity = 0, dust tag = Trash
+[Esh's Radiance] dust quantity = 0, dust tag = Trash
+[Tul's Stillness] dust quantity = 0, dust tag = Trash
+[Uul-Netol's Embrace] dust quantity = 0, dust tag = Trash
+[Rakiata's Flow] dust quantity = 0, dust tag = Trash
+[Rigwald's Ferocity] dust quantity = 0, dust tag = Trash
+[Uhtred's Exodus] dust quantity = 0, dust tag = Trash
+[Uhtred's Omen] dust quantity = 0, dust tag = Trash
+[Uhtred's Augury] dust quantity = 0, dust tag = Trash
+[Daresso's Passion] dust quantity = 0, dust tag = Trash
+[Atziri's Allure] dust quantity = 0, dust tag = Trash
+[Tacati's Ire] dust quantity = 0, dust tag = Trash
+[Zarokh's Refrain] dust quantity = 0, dust tag = Trash
+[Garukhan's Resolve] dust quantity = 0, dust tag = Trash
+[Kurgal's Leash] dust quantity = 0, dust tag = Trash
+[Kulemak's Dominion] dust quantity = 0, dust tag = Trash
+[Amanamu's Tithe] dust quantity = 0, dust tag = Trash
+[Varashta's Blessing] dust quantity = 0, dust tag = Trash
+[Arbiter's Ignition] dust quantity = 0, dust tag = Trash
+[Arakaali's Lust] dust quantity = 0, dust tag = Trash
+[Single Out] dust quantity = 0, dust tag = Trash
+[Mark for Death] dust quantity = 0, dust tag = Trash
+[Suffuse] dust quantity = 0, dust tag = Trash
+[Encroaching Ground] dust quantity = 0, dust tag = Trash
+[Hobble] dust quantity = 0, dust tag = Trash
+[Unsteady Tempo] dust quantity = 0, dust tag = Trash
+[Daze] dust quantity = 0, dust tag = Trash
+[Unyielding] dust quantity = 0, dust tag = Trash
+[Unbending] dust quantity = 0, dust tag = Trash
+[Untouchable] dust quantity = 0, dust tag = Trash
+[Unabating] dust quantity = 0, dust tag = Trash
+[Premeditation] dust quantity = 0, dust tag = Trash
+[Unbreakable] dust quantity = 0, dust tag = Trash
+[Ruthless] dust quantity = 0, dust tag = Trash
+[Devastate] dust quantity = 0, dust tag = Trash
+[Wind Wave] dust quantity = 0, dust tag = Trash
+[Energy Barrier] dust quantity = 0, dust tag = Trash
+[Break Endurance] dust quantity = 0, dust tag = Trash
+[Hinder] dust quantity = 0, dust tag = Trash
+[Break Posture] dust quantity = 0, dust tag = Trash
+[Dazing Cry] dust quantity = 0, dust tag = Trash
+[Leverage] dust quantity = 0, dust tag = Trash
+[Potential] dust quantity = 0, dust tag = Trash
+[Flow] dust quantity = 0, dust tag = Trash
+[Tremors] dust quantity = 0, dust tag = Trash
+[Rally] dust quantity = 0, dust tag = Trash
+[Reverberate] dust quantity = 0, dust tag = Trash
+[Dazzle] dust quantity = 0, dust tag = Trash
+[Desperation] dust quantity = 0, dust tag = Trash
+[Excoriate] dust quantity = 0, dust tag = Trash
+[Ancestral Aid] dust quantity = 0, dust tag = Trash
+[Rime] dust quantity = 0, dust tag = Trash
+[Arms Length] dust quantity = 0, dust tag = Trash
+[Charm Bounty] dust quantity = 0, dust tag = Trash
+[First Blood] dust quantity = 0, dust tag = Trash
+[Volatile Power] dust quantity = 0, dust tag = Trash
+[Unerring Power] dust quantity = 0, dust tag = Trash
+[See Red] dust quantity = 0, dust tag = Trash
+[Undermine] dust quantity = 0, dust tag = Trash
+[Outmaneuver] dust quantity = 0, dust tag = Trash
+[Tumult] dust quantity = 0, dust tag = Trash
 [Breach Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Expedition Precursor Tablet] dust quantity = 0, dust tag = Trash
 [Delirium Precursor Tablet] dust quantity = 0, dust tag = Trash
@@ -5740,6 +6291,51 @@
 [Pointed Maul] dust quantity = 0, dust tag = Trash
 [Totemic Greatclub] dust quantity = 0, dust tag = Trash
 [Tawhoan Greatclub] dust quantity = 0, dust tag = Trash
+[Uncut skill gem] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 1)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 2)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 3)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 4)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 5)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 6)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 7)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 8)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 9)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 10)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 11)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 12)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 13)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 14)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 15)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 16)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 17)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 18)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 19)] dust quantity = 0, dust tag = Trash
+[Uncut Skill Gem (Level 20)] dust quantity = 0, dust tag = Trash
+[Uncut support gem] dust quantity = 0, dust tag = Trash
+[Uncut Support Gem (Level 1)] dust quantity = 0, dust tag = Trash
+[Uncut Support Gem (Level 2)] dust quantity = 0, dust tag = Trash
+[Uncut Support Gem (Level 3)] dust quantity = 0, dust tag = Trash
+[Uncut Support Gem (Level 4)] dust quantity = 0, dust tag = Trash
+[Uncut Support Gem (Level 5)] dust quantity = 0, dust tag = Trash
+[Uncut spirit gem] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 4)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 5)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 6)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 7)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 8)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 9)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 10)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 11)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 12)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 13)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 14)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 15)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 16)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 17)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 18)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 19)] dust quantity = 0, dust tag = Trash
+[Uncut Spirit Gem (Level 20)] dust quantity = 0, dust tag = Trash
 [Twilight Reliquary Key] dust quantity = 0, dust tag = Trash
 [Xesht's Reliquary Key] dust quantity = 0, dust tag = Trash
 [The Trialmaster's Reliquary Key] dust quantity = 0, dust tag = Trash

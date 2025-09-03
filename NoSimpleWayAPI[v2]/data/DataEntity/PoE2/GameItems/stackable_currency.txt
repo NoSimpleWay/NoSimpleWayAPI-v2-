@@ -962,6 +962,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -985,6 +987,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1009,6 +1013,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1033,6 +1039,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1058,6 +1066,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1084,6 +1094,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1110,6 +1122,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1137,6 +1151,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1165,6 +1181,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1187,13 +1205,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Preserved Cranium"
 	[tag]"name RU"			[value]"Сохранившийся череп"
 	
-	[tag]"icon path"		[value]"AncientCollarbone"
+	[tag]"icon path"		[value]"PreservedCranium"
 	[tag]"base class"		[value]"Stackable Currency"
 	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1224,6 +1244,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
 	
 	[tag]"drop level"		[value]"1"
 			

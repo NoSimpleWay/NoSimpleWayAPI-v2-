@@ -1742,3 +1742,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"InscribedUltimatum"
 	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Omen"
+	[tag]"name RU"		[value]"Предзнаменования"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"OmenOfHomogenisingCoronation"
+	

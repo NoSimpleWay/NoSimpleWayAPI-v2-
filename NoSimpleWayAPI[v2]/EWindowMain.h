@@ -21,6 +21,12 @@
 #endif
 /**/
 
+/**/
+#ifndef _CURL_ALREADY_LINKED_
+#define _CURL_ALREADY_LINKED_
+#include "curl.h"
+#endif
+
 //#ifndef _E_TEXT_CORE_ALREADY_LINKED_
 ///**/#define _E_TEXT_CORE_ALREADY_LINKED_
 ///**/#include "NoSimpleWayAPI[v2]/ETextCore.h"
@@ -435,6 +441,7 @@ class EntityButtonTabForPriceTable : public EntityButton
 {
 public:
 	EButtonGroup* target_group_activator;
+	PathOfExileGame target_game = PathOfExileGame::UNDEFINED;
 
 	EntityButtonTabForPriceTable();
 	int table_id = -1;
@@ -1343,6 +1350,7 @@ public:
 enum class PoeNinjaAPIMode
 {
 	CURRENCY,
+	ESSENCES,
 	UNIQUES,
 	DIVINATIONS,
 	GEMS,
@@ -1354,19 +1362,18 @@ enum class PoeNinjaAPIMode
 	DELIRIUM_ORBS,
 	SCARABS,
 	FOSSILS,
-	_PLACEHOLDER_04,
-	_PLACEHOLDER_05,
-	_PLACEHOLDER_06,
-	_PLACEHOLDER_07,
-	_PLACEHOLDER_08,
-	_PLACEHOLDER_09,
-	_PLACEHOLDER_10,
-	_PLACEHOLDER_11,
-	_PLACEHOLDER_12,
-	_PLACEHOLDER_13,
-	_PLACEHOLDER_14,
-	_PLACEHOLDER_15,
-	_PLACEHOLDER_16,
+	ABYSS_ITEMS,
+	UNCUT_GEMS,
+	LINEAGE_SUPPORT,
+	VAULT_KEYS,
+	SOUL_CORES,
+	TALISMANS,
+	EXPEDITION,
+	OILS,
+	ALLFLAME_EMBERS,
+	VIALS,
+	DISTILLED_EMOTIONS,
+	CATALYSTS,
 	_LAST_ELEMENT
 };
 
@@ -1400,7 +1407,7 @@ public:
 
 	static std::string league_name;
 
-	void add_price_table_group(ELocalisationText _ltext, int _table_id);
+	void add_price_table_group(ELocalisationText _ltext, int _table_id, PathOfExileGame _game_version);
 };
 
 
@@ -1785,7 +1792,18 @@ public:
 
 namespace PoeNinjaNamespace
 {
-	extern float price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
+	extern float			price_table[int(PoeNinjaAPIMode::_LAST_ELEMENT)][6];
+	extern PathOfExileGame	suitable_game[int(PoeNinjaAPIMode::_LAST_ELEMENT)];
+
+	static size_t write_to_string(void* ptr, size_t size, size_t count, void* stream);
+
+	extern std::string		url_prefix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	extern std::string		url_suffix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+
+	extern void set_price_table_url_prefix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
+	extern void set_price_table_url_suffix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
+
+	extern void read_poe_ninja_api(CURL* _curl, std::string _league_name, std::string _url_suffix, PoeNinjaAPIMode _api_mode, std::string _localisation_key);
 };
 
 //enum class DataEntityParserMode
@@ -1813,6 +1831,7 @@ public:
 	static void reset_price_tag_for_data_entity();
 
 	static void get_poe_ninja_api_prices();
+	static void get_poe_ninja_api_prices_poe2();
 	static void parse_json_from_poe_ninja(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
 	static void save_poe_ninja_cache(std::string _filename, std::string* _content);
@@ -1868,6 +1887,7 @@ public:
 
 	static void read_poe_ninja_data_from_cache();
 	static bool	all_caches_already_readed;
+	void prepare_price_checker();
 	EWindowMain();
 
 	void register_loot_filter_list_group();
@@ -1984,6 +2004,8 @@ public:
 	static std::vector<EDataEntity*>			registered_data_entity_explicit_list;
 	static std::vector<EDataEntity*>			registered_data_entity_uniques_list;
 	static std::vector<EDataEntity*>			registered_data_entity_base_item_list;
+
+	static std::vector<EDataEntity*>			registered_data_entity_game_related_list;
 
 	static void									add_game_item_data_entity_to_list();
 	
