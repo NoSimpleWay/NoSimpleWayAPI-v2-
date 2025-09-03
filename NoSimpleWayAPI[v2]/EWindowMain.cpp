@@ -6372,7 +6372,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string				EWindowMain::this_version = "1.7.2";
+const std::string				EWindowMain::this_version = "1.7.3";
 std::vector<ELocalisationText>	EWindowMain::registered_transfigured_gems;
 
 
