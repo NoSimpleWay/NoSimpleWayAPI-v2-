@@ -650,8 +650,8 @@ bool ETextureAtlas::can_place_here(int _x, int _y, int _w, int _h)
 {
 	if (!have_matrix) { return true; }
 
+	for (int j = _x; j <= _x + _w; j++)
 	for (int i = _y; i <= _y + _h; i++)
-		for (int j = _x; j <= _x + _w; j++)
 		{
 			if ((j * 4 >= atlas_size_x) || (i * 4 >= atlas_size_x))
 			{
@@ -884,7 +884,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLint max_tex_size;
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 
-	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size, 8192), min(8192 / 2, max_tex_size));
+	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size, 8192), min(8192, max_tex_size));
 	
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
@@ -3480,14 +3480,14 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 			//search free place for new texture
 			int place_x = -1;
 			int place_y = -1;
-			for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 4.0f); x++)
+			for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 8.0f); y++)
 			{
-				for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 4.0f); y++)
+				for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 8.0f); x++)
 				{
-					if (_atlas->can_place_here(x, y, ceil(u_size_x / 4.0f), ceil(u_size_y / 4.0f)))
+					if (_atlas->can_place_here(x, y, ceil(u_size_x / 8.0f), ceil(u_size_y / 8.0f)))
 					{
-						place_x = x * 4;
-						place_y = y * 4;
+						place_x = x * 8;
+						place_y = y * 8;
 
 						break;
 					}
@@ -3495,18 +3495,19 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				if (place_x >= 0) { break; }
 			}
 
-			EInputCore::add_log_info_with_timestamp("Search free space for [" + _full_path + "]");
+			//EInputCore::add_log_info_with_timestamp("Search free space for [" + _full_path + "]");
 
 			//remove free space
 			//
 			if (_atlas->have_matrix)
-				for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + u_size_x) / 4.0f) + 2; x++)
-					for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + u_size_y) / 4.0f) + 2; y++)
+				for (int y = (ceil)(place_y / 8.0f) - 0; y < (ceil)((place_y + u_size_y) / 8.0f) + 0; y++)
+				for (int x = (ceil)(place_x / 8.0f) - 0; x < (ceil)((place_x + u_size_x) / 8.0f) + 0; x++)
+					
 						if
 							(
-								(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
+								(x < (int)(_atlas->get_atlas_size_x() / 8.0f))
 								&&
-								(y < (int)(_atlas->get_atlas_size_y() / 4.0f))
+								(y < (int)(_atlas->get_atlas_size_y() / 8.0f))
 								&&
 								(x >= 0)
 								&&
@@ -3515,7 +3516,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 						{
 							_atlas->free_space[x][y] = false;
 						}
-			EInputCore::add_log_info_with_timestamp("Fill space mask for [" + _full_path + "]");
+			//EInputCore::add_log_info_with_timestamp("Fill space mask for [" + _full_path + "]");
 
 			new_gabarite = new ETextureGabarite();
 
@@ -3659,7 +3660,7 @@ void NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite* _texture_gabar
 	glDisable(GL_DEPTH_TEST);
 	glBlendEquation(GL_FUNC_ADD);
 
-	EInputCore::add_log_info_with_timestamp("Complete texture gabarite [" + _texture_gabarite->get_full_path() + "]");
+	//EInputCore::add_log_info_with_timestamp("Complete texture gabarite [" + _texture_gabarite->get_full_path() + "]");
 }
 
 void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)

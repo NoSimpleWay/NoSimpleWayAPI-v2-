@@ -586,13 +586,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bestiary_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Keepers of the Flames"
+	
 	[tag]"drop level"	[value]"15"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
+	
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2768,12 +2769,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Runegraft of Recompense"
 	[tag]"name RU"		[value]"Рунограмма возмещения"
+
+	[tag]"icon path"	[value]"RunegraftOfRecompense"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Runegraft of Refraction"
+	[tag]"item tag"		[value]"Changed in Keepers of the Flame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Refraction"
+	[tag]"name RU"		[value]"Рунограмма преломления"
 
 	[tag]"icon path"	[value]"RunegraftOfRecompense"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2789,6 +2824,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2927,4 +2968,176 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Augmentation Implant"
+	[tag]"name RU"		[value]"Усиливающий имплантат"
+
+	[tag]"icon path"	[value]"AugmentationImplant"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Implant"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Regal Implant"
+	[tag]"name RU"		[value]"Царский имплантат"
+
+	[tag]"icon path"	[value]"RegalImplant"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Implant"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Exalted Implant"
+	[tag]"name RU"		[value]"Возвышающий имплантат"
+
+	[tag]"icon path"	[value]"ExaltedImplant"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Implant"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Unstable Implant"
+	[tag]"name RU"		[value]"Возвышающий имплантат"
+
+	[tag]"icon path"	[value]"UnstableImplant"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Implant"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Foulborn Orb of Augmentation"
+	[tag]"name RU"		[value]"Нечестивая сфера усиления"
+
+	[tag]"icon path"	[value]"FoulbornOrbOfAugmentation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Foulborn currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Foulborn Regal Orb"
+	[tag]"name RU"		[value]"Нечестивая сфера царей"
+
+	[tag]"icon path"	[value]"FoulbornRegalOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Foulborn currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Foulborn Exalted Orb"
+	[tag]"name RU"		[value]"Нечестивая сфера возвышения"
+
+	[tag]"icon path"	[value]"FoulbornExaltedOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Foulborn currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
 	

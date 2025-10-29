@@ -85,6 +85,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Keepers of the Flame"
+	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
@@ -102,7 +105,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
-	
 	[tag]"item tag"		[value]"Rare base"
 	
 	[tag]"base tier"	[value]"Best"
@@ -175,6 +177,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Keepers of the Flame"
+	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
 
@@ -242,6 +247,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Keepers of the Flame"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
@@ -497,6 +505,86 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Somatic Wand"
+	[tag]"name RU"		[value]"Соматический жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blasting Wand"
+	[tag]"name RU"		[value]"Подрывной жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Kinetic Wand"
+	[tag]"name RU"		[value]"Кинетический жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Best"
 	
 	[tag]"worth"		[value]"Trash"
 

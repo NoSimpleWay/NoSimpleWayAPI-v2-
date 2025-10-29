@@ -5754,7 +5754,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 					details_id = "";
 					item_name = read_buffer[1];
 
-					EInputCore::add_log_info_without_timestamp("get item name [" + item_name + "]");
+					//EInputCore::add_log_info_without_timestamp("get item name [" + item_name + "]");
 
 					/*if (_mode == PoeNinjaAPIMode::CURRENCY)
 					{
@@ -5824,7 +5824,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 				)
 				{
 					item_value = std::stof(read_buffer[1]);
-					EInputCore::add_log_info_without_timestamp("item value [" + read_buffer[1] + "]");
+					//EInputCore::add_log_info_without_timestamp("item value [" + read_buffer[1] + "]");
 				}
 				//EInputCore::logger_param(item_name, item_value);
 
@@ -5885,7 +5885,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 							)
 							{
 								
-								EInputCore::add_log_info_without_timestamp("item [" + item_name + "] exist!");
+								//EInputCore::add_log_info_without_timestamp("item [" + item_name + "] exist!");
 								
 								if (_mode == PoeNinjaAPIMode::UNIQUES)
 								{
@@ -6115,7 +6115,7 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								else
 								{old_worth_id = -1;}
 
-								EInputCore::add_log_info_without_timestamp("item [" + item_name + "] new cost: " + new_worth_ID_string.string_value);
+								//exist!EInputCore::add_log_info_without_timestamp("item [" + item_name + "] new cost: " + new_worth_ID_string.string_value);
 
 								//set new worth if new higher that old
 								if
@@ -10877,6 +10877,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/omens.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tattoos.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/gold.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/grafts.txt");
 
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/oils.txt");
@@ -10941,6 +10942,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/two_hand_maces.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/two_hand_swords.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/warstaves.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/wombgifts.txt");
 
 
 
@@ -12619,7 +12621,7 @@ void EWindowMain::parse_dust_prices()
 					std::string
 					unique_base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
 
-					EInputCore::add_log_info_with_timestamp("Set dust price for [" + unique_name + "] as [" + EStringUtils::string_array[1] + "]");
+					//EInputCore::add_log_info_with_timestamp("Set dust price for [" + unique_name + "] as [" + EStringUtils::string_array[1] + "]");
 					
 
 					for (EDataEntity* item_base_de : EWindowMain::registered_data_entity_base_item_list)
@@ -12642,7 +12644,7 @@ void EWindowMain::parse_dust_prices()
 								DataEntityUtils::set_tag_value_by_name(0, "Dust quantity", EStringUtils::string_array[1], item_base_de);
 							}
 
-							EInputCore::add_log_info_with_timestamp("Set dust price for item base [" + base_name + "] as [" + EStringUtils::string_array[1] + "]");
+							//EInputCore::add_log_info_with_timestamp("Set dust price for item base [" + base_name + "] as [" + EStringUtils::string_array[1] + "]");
 							break;
 						}
 					}
@@ -14001,6 +14003,23 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_crucible_passive");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_crucible_passive";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Foulborn";
+	jc_localisation.localisations[NSW_localisation_EN] = "Foulborn unique";
+	jc_localisation.localisations[NSW_localisation_RU] = "Нечестивый предмет";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_foulborn");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_crucible_passive";
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
 

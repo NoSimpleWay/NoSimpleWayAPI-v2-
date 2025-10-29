@@ -635,7 +635,7 @@ int main()
 				0.0,
 				0.0f,
 				1024.0f,
-				512.0f,
+				1024.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
 
@@ -646,7 +646,7 @@ int main()
 				0.0,
 				0.0f,
 				1024.0f,
-				512.0f
+				1024.0f
 			);
 
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();

@@ -1,0 +1,256 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fleshgraft"
+	[tag]"name RU"		[value]"Нарост плоти"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Battering Uulgraft"
+	[tag]"name RU"		[value]"Пробивающий нарост Уул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spiking Uulgraft"
+	[tag]"name RU"		[value]"Шипастый нарост Уул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Impaling Uulgraft"
+	[tag]"name RU"		[value]"Прокалывающий нарост Уул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hardening Uulgraft"
+	[tag]"name RU"		[value]"Укрепляющий нарост Уул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Molten Xophgraft"
+	[tag]"name RU"		[value]"Расплавленный нарост Ксофа"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Erupting Xophgraft"
+	[tag]"name RU"		[value]"Извергающий нарост Ксофа"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flamecaller Xophgraft"
+	[tag]"name RU"		[value]"Пламезовущий нарост Ксофа"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Stoking Xophgraft"
+	[tag]"name RU"		[value]"Разжигающий нарост Ксофа"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Storming Eshgraft"
+	[tag]"name RU"		[value]"Бушующий нарост Иш"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Replicating Eshgraft"
+	[tag]"name RU"		[value]"Реплицирующий нарост Иш"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Draining Eshgraft"
+	[tag]"name RU"		[value]"Осущающий нарост Иш"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Jolting Eshgraft"
+	[tag]"name RU"		[value]"Встряхивающий нарост Иш"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Squalling Tulgraft"
+	[tag]"name RU"		[value]"Шквальный нарост Тул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Freezing Tulgraft"
+	[tag]"name RU"		[value]"Замораживающий нарост Тул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Summoning Tulgraft"
+	[tag]"name RU"		[value]"Призывающий нарост Тул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Aegis Tulgraft"
+	[tag]"name RU"		[value]"Защищающий нарост Тул"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Grafts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

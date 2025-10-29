@@ -395,3 +395,87 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lonely Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Одинокого реликвария"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reverent Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Одинокого реликвария"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reverent Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Почитаемого реликвария"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Traumatic Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Травматичного реликвария"
+
+	[tag]"icon path"	[value]"UndefinedReliquaryKey"
+	[tag]"base class"	[value]"Vault Keys"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
