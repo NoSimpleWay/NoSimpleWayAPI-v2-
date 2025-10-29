@@ -431,11 +431,19 @@
 [Runegraft of Loyalty] dust quantity = 0, dust tag = Trash
 [Runegraft of Quaffing] dust quantity = 0, dust tag = Trash
 [Runegraft of Recompense] dust quantity = 0, dust tag = Trash
+[Runegraft of Refraction] dust quantity = 0, dust tag = Trash
 [Runegraft of Restitching] dust quantity = 0, dust tag = Trash
 [Runegraft of Stability] dust quantity = 0, dust tag = Trash
 [Runegraft of Time] dust quantity = 0, dust tag = Trash
 [Runegraft of Treachery] dust quantity = 0, dust tag = Trash
 [Filled Coffin] dust quantity = 0, dust tag = Trash
+[Augmentation Implant] dust quantity = 0, dust tag = Trash
+[Regal Implant] dust quantity = 0, dust tag = Trash
+[Exalted Implant] dust quantity = 0, dust tag = Trash
+[Unstable Implant] dust quantity = 0, dust tag = Trash
+[Foulborn Orb of Augmentation] dust quantity = 0, dust tag = Trash
+[Foulborn Regal Orb] dust quantity = 0, dust tag = Trash
+[Foulborn Exalted Orb] dust quantity = 0, dust tag = Trash
 [Omen of Amelioration] dust quantity = 0, dust tag = Trash
 [Omen of Return] dust quantity = 0, dust tag = Trash
 [Omen of Death-dancing] dust quantity = 0, dust tag = Trash
@@ -544,6 +552,23 @@
 [Journey Tattoo of the Mind] dust quantity = 0, dust tag = Trash
 [Journey Tattoo of the Soul] dust quantity = 0, dust tag = Trash
 [Gold] dust quantity = 0, dust tag = Trash
+[Fleshgraft] dust quantity = 0, dust tag = Trash
+[Battering Uulgraft] dust quantity = 0, dust tag = Trash
+[Spiking Uulgraft] dust quantity = 0, dust tag = Trash
+[Impaling Uulgraft] dust quantity = 0, dust tag = Trash
+[Hardening Uulgraft] dust quantity = 0, dust tag = Trash
+[Molten Xophgraft] dust quantity = 0, dust tag = Trash
+[Erupting Xophgraft] dust quantity = 0, dust tag = Trash
+[Flamecaller Xophgraft] dust quantity = 0, dust tag = Trash
+[Stoking Xophgraft] dust quantity = 0, dust tag = Trash
+[Storming Eshgraft] dust quantity = 0, dust tag = Trash
+[Replicating Eshgraft] dust quantity = 0, dust tag = Trash
+[Draining Eshgraft] dust quantity = 0, dust tag = Trash
+[Jolting Eshgraft] dust quantity = 0, dust tag = Trash
+[Squalling Tulgraft] dust quantity = 0, dust tag = Trash
+[Freezing Tulgraft] dust quantity = 0, dust tag = Trash
+[Summoning Tulgraft] dust quantity = 0, dust tag = Trash
+[Aegis Tulgraft] dust quantity = 0, dust tag = Trash
 [Potent Alchemical Resonator] dust quantity = 0, dust tag = Trash
 [Potent Chaotic Resonator] dust quantity = 0, dust tag = Trash
 [Powerful Alchemical Resonator] dust quantity = 0, dust tag = Trash
@@ -967,7 +992,12 @@
 [Manifold Ring] dust quantity = 0, dust tag = Trash
 [Ratcheting Ring] dust quantity = 0, dust tag = Trash
 [Helical Ring] dust quantity = 0, dust tag = Trash
-[Nameless Ring] dust quantity = 0, dust tag = Trash
+[Cryonic Ring] dust quantity = 0, dust tag = Trash
+[Enthalpic Ring] dust quantity = 0, dust tag = Trash
+[Synaptic Ring] dust quantity = 0, dust tag = Trash
+[Organic Ring] dust quantity = 0, dust tag = Trash
+[Fugitive Ring] dust quantity = 0, dust tag = Trash
+[Formless Ring] dust quantity = 0, dust tag = Trash
 [Large Cluster Jewel] dust quantity = 0, dust tag = Trash
 [Medium Cluster Jewel] dust quantity = 0, dust tag = Trash
 [Small Cluster Jewel] dust quantity = 0, dust tag = Trash
@@ -1431,6 +1461,11 @@
 [Damnation] dust quantity = 0, dust tag = Trash
 [When Currents Blaze] dust quantity = 0, dust tag = Trash
 [History] dust quantity = 0, dust tag = Trash
+[The Last Laugh] dust quantity = 0, dust tag = Trash
+[The Lake] dust quantity = 0, dust tag = Trash
+[One Last Score] dust quantity = 0, dust tag = Trash
+[Bound by Flame] dust quantity = 0, dust tag = Trash
+[Outfoxed] dust quantity = 0, dust tag = Trash
 [Glorious Plate] dust quantity = 86960, dust tag = Rare
 [Gladiator Plate] dust quantity = 113460, dust tag = Expensive
 [Astral Plate] dust quantity = 24280, dust tag = Moderate
@@ -2163,6 +2198,11 @@
 [Potentiality Rod] dust quantity = 0, dust tag = Trash
 [Serpentine Staff] dust quantity = 10340, dust tag = Moderate
 [Vile Staff] dust quantity = 10300, dust tag = Moderate
+[Provisioning Wombgift] dust quantity = 0, dust tag = Trash
+[Lavish Wombgift] dust quantity = 0, dust tag = Trash
+[Ancient Wombgift] dust quantity = 0, dust tag = Trash
+[Growing Wombgift] dust quantity = 0, dust tag = Trash
+[Mysterious Wombgift] dust quantity = 0, dust tag = Trash
 [Boot Blade] dust quantity = 7120, dust tag = Common
 [Boot Knife] dust quantity = 3500, dust tag = Trash
 [Butcher Knife] dust quantity = 0, dust tag = Trash
@@ -2235,6 +2275,9 @@
 [Tornado Wand] dust quantity = 0, dust tag = Trash
 [Calling Wand] dust quantity = 0, dust tag = Trash
 [Convening Wand] dust quantity = 0, dust tag = Trash
+[Somatic Wand] dust quantity = 0, dust tag = Trash
+[Blasting Wand] dust quantity = 0, dust tag = Trash
+[Kinetic Wand] dust quantity = 0, dust tag = Trash
 [Crescent Staff] dust quantity = 0, dust tag = Trash
 [Eclipse Staff] dust quantity = 0, dust tag = Trash
 [Gnarled Branch] dust quantity = 2180, dust tag = Trash
@@ -2912,6 +2955,9 @@
 [Ritual Scarab of Wisps] dust quantity = 0, dust tag = Trash
 [Blight Scarab of the Blightheart] dust quantity = 0, dust tag = Trash
 [Scarab of Divinity] dust quantity = 0, dust tag = Trash
+[Traumatic Fragment] dust quantity = 0, dust tag = Trash
+[Reverent Fragment] dust quantity = 0, dust tag = Trash
+[Lonely Fragment] dust quantity = 0, dust tag = Trash
 [Forge of the Phoenix] dust quantity = 0, dust tag = Trash
 [Lair of the Hydra] dust quantity = 0, dust tag = Trash
 [Map] dust quantity = 0, dust tag = Trash
@@ -2945,6 +2991,10 @@
 [Maven's Invitation: The Hidden] dust quantity = 0, dust tag = Trash
 [Maven's Invitation: The Feared] dust quantity = 0, dust tag = Trash
 [Maven's Invitation: The Elderslayers] dust quantity = 0, dust tag = Trash
+[Lonely Reliquary Key] dust quantity = 0, dust tag = Trash
+[Reverent Reliquary Key] dust quantity = 0, dust tag = Trash
+[Reverent Reliquary Key] dust quantity = 0, dust tag = Trash
+[Traumatic Reliquary Key] dust quantity = 0, dust tag = Trash
 [Primal Crystallised Lifeforce] dust quantity = 0, dust tag = Trash
 [Vivid Crystallised Lifeforce] dust quantity = 0, dust tag = Trash
 [Wild Crystallised Lifeforce] dust quantity = 0, dust tag = Trash
@@ -4321,6 +4371,20 @@
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
 [Crimson Amulet] dust quantity = 0, dust tag = Trash
 [Azure Amulet] dust quantity = 0, dust tag = Trash
 [Amber Amulet] dust quantity = 0, dust tag = Trash
@@ -5619,9 +5683,6 @@
 [Lesser Resolve Rune] dust quantity = 0, dust tag = Trash
 [Resolve Rune] dust quantity = 0, dust tag = Trash
 [Greater Resolve Rune] dust quantity = 0, dust tag = Trash
-[Lesser Tempered Rune] dust quantity = 0, dust tag = Trash
-[Tempered Rune] dust quantity = 0, dust tag = Trash
-[Greater Tempered Rune] dust quantity = 0, dust tag = Trash
 [Greater Rune of Leadership] dust quantity = 0, dust tag = Trash
 [Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
 [Greater Rune of Alacrity] dust quantity = 0, dust tag = Trash

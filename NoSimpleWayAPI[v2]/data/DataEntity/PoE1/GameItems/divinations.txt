@@ -7251,3 +7251,106 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Last Laugh"
+	[tag]"name RU"		[value]"Последний смех"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Lake"
+	[tag]"name RU"		[value]"Озеро"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"One Last Score"
+	[tag]"name RU"		[value]"Одно последнее дельце"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bound by Flame"
+	[tag]"name RU"		[value]"Узы пламени"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Outfoxed"
+	[tag]"name RU"		[value]"Лисья хитрость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -674,20 +674,165 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Nameless Ring"
-	[tag]"name RU"		[value]"Безымянное кольцо"
+	[tag]"name EN"		[value]"Cryonic Ring"
+	[tag]"name RU"		[value]"Крионическое кольцо"
 
-	[tag]"icon path"	[value]"NamelessRing"
+	[tag]"icon path"	[value]"CryonicRing"
 	[tag]"base class"	[value]"Rings"
 	
-	[tag]"item tag"		[value]"Always unique"
-	[tag]"item tag"		[value]"Non world drop"
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
-	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enthalpic Ring"
+	[tag]"name RU"		[value]"Энтальпийное кольцо"
+
+	[tag]"icon path"	[value]"EnthalpicRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Synaptic Ring"
+	[tag]"name RU"		[value]"Синаптическое кольцо"
+
+	[tag]"icon path"	[value]"SynapticRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Organic Ring"
+	[tag]"name RU"		[value]"Органическое кольцо"
+
+	[tag]"icon path"	[value]"OrganicRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fugitive Ring"
+	[tag]"name RU"		[value]"Беглое кольцо"
+
+	[tag]"icon path"	[value]"FugitiveRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Formless Ring"
+	[tag]"name RU"		[value]"Бесформенное кольцо"
+
+	[tag]"icon path"	[value]"FormlessRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -1,0 +1,76 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Provisioning Wombgift"
+	[tag]"name RU"		[value]"Питающий дар утробы"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lavish Wombgift"
+	[tag]"name RU"		[value]"Обильный дар утробы"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ancient Wombgift"
+	[tag]"name RU"		[value]"Древний дар утробы"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Growing Wombgift"
+	[tag]"name RU"		[value]"Растущий дар утробы"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mysterious Wombgift"
+	[tag]"name RU"		[value]"Загадочный дар утробы"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

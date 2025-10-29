@@ -1753,3 +1753,30 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"OmenOfHomogenisingCoronation"
 	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Grafts"
+	[tag]"name RU"		[value]"Наросты"
+	
+	[tag]"short name"	[value]"Graft"
+	
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"icon path"	[value]"Fleshgraft"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Wombgifts"
+	[tag]"name RU"		[value]"Дары утробы"
+	
+	[tag]"short name"	[value]"Wombgift"
+	
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"icon path"	[value]"Wombgift"
+	

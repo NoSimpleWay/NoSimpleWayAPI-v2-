@@ -6561,3 +6561,68 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Traumatic Fragment"
+	[tag]"name RU"		[value]"Фрагмент травмы"
+
+	[tag]"icon path"	[value]"EchoOfTrauma"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reverent Fragment"
+	[tag]"name RU"		[value]"Фрагмент почитания"
+
+	[tag]"icon path"	[value]"EchoOfRevence"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lonely Fragment"
+	[tag]"name RU"		[value]"Фрагмент одиночества"
+
+	[tag]"icon path"	[value]"EchoOfLoneliness"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
