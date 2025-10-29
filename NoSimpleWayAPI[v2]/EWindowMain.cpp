@@ -27426,7 +27426,7 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 
 
 	EntityButtonLootItem*
-	loot_item_array[6][1024] = { nullptr };
+	loot_item_array[6][4096] = { nullptr };
 
 	unsigned int
 	loot_item_array_last[6] = { 0,0,0,0,0,0 };
@@ -27982,6 +27982,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 
 		//		NON-LISTED lines attributes
 		//for each non-listed attribute
+		if(true)
 		for (EButtonGroup* group : _filter_block->pointer_to_workspace_non_listed_segment->group_list)
 		if (!group->block_need_remove)
 		{
@@ -28205,6 +28206,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 		}
 
 		//		LISTED
+		if (true)
 		for (EButtonGroup* button_group : _filter_block->pointer_to_listed_attributes->group_list)
 		{
 			EButtonGroupListedBlock* listed_block = static_cast<EButtonGroupListedBlock*>(button_group);

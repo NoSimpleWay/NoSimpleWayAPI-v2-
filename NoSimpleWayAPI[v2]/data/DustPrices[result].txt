@@ -4321,6 +4321,20 @@
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
+[Exceptional] dust quantity = 0, dust tag = Trash
 [Crimson Amulet] dust quantity = 0, dust tag = Trash
 [Azure Amulet] dust quantity = 0, dust tag = Trash
 [Amber Amulet] dust quantity = 0, dust tag = Trash
@@ -5619,9 +5633,6 @@
 [Lesser Resolve Rune] dust quantity = 0, dust tag = Trash
 [Resolve Rune] dust quantity = 0, dust tag = Trash
 [Greater Resolve Rune] dust quantity = 0, dust tag = Trash
-[Lesser Tempered Rune] dust quantity = 0, dust tag = Trash
-[Tempered Rune] dust quantity = 0, dust tag = Trash
-[Greater Tempered Rune] dust quantity = 0, dust tag = Trash
 [Greater Rune of Leadership] dust quantity = 0, dust tag = Trash
 [Greater Rune of Tithing] dust quantity = 0, dust tag = Trash
 [Greater Rune of Alacrity] dust quantity = 0, dust tag = Trash
