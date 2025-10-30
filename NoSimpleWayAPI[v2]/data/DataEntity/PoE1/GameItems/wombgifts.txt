@@ -5,9 +5,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Provisioning Wombgift"
-	[tag]"name RU"		[value]"РџРёС‚Р°СЋС‰РёР№ РґР°СЂ СѓС‚СЂРѕР±С‹"
+	[tag]"name RU"		[value]"Питающий дар утробы"
 
-	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"icon path"	[value]"Wombgift"
 	[tag]"base class"	[value]"Wombgifts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
@@ -20,9 +20,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Lavish Wombgift"
-	[tag]"name RU"		[value]"РћР±РёР»СЊРЅС‹Р№ РґР°СЂ СѓС‚СЂРѕР±С‹"
+	[tag]"name RU"		[value]"Обильный дар утробы"
 
-	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"icon path"	[value]"Wombgift"
 	[tag]"base class"	[value]"Wombgifts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
@@ -35,9 +35,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Ancient Wombgift"
-	[tag]"name RU"		[value]"Р”СЂРµРІРЅРёР№ РґР°СЂ СѓС‚СЂРѕР±С‹"
+	[tag]"name RU"		[value]"Древний дар утробы"
 
-	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"icon path"	[value]"Wombgift"
 	[tag]"base class"	[value]"Wombgifts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
@@ -50,9 +50,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Growing Wombgift"
-	[tag]"name RU"		[value]"Р Р°СЃС‚СѓС‰РёР№ РґР°СЂ СѓС‚СЂРѕР±С‹"
+	[tag]"name RU"		[value]"Растущий дар утробы"
 
-	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"icon path"	[value]"Wombgift"
 	[tag]"base class"	[value]"Wombgifts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
@@ -65,9 +65,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Mysterious Wombgift"
-	[tag]"name RU"		[value]"Р—Р°РіР°РґРѕС‡РЅС‹Р№ РґР°СЂ СѓС‚СЂРѕР±С‹"
+	[tag]"name RU"		[value]"Загадочный дар утробы"
 
-	[tag]"icon path"	[value]"Fleshgraft"
+	[tag]"icon path"	[value]"Wombgift"
 	[tag]"base class"	[value]"Wombgifts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"

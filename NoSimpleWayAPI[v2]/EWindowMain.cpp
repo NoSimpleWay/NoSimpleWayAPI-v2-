@@ -27445,7 +27445,7 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 
 
 	EntityButtonLootItem*
-	loot_item_array[6][4096] = { nullptr };
+	loot_item_array[6][16384] = { nullptr };
 
 	unsigned int
 	loot_item_array_last[6] = { 0,0,0,0,0,0 };

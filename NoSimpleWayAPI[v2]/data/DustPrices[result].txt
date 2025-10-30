@@ -4355,6 +4355,13 @@
 [Chain Hook] dust quantity = 0, dust tag = Trash
 [Spectral Helix] dust quantity = 0, dust tag = Trash
 [Bladefall] dust quantity = 0, dust tag = Trash
+[Body Armour] dust quantity = 0, dust tag = Trash
+[Gloves] dust quantity = 0, dust tag = Trash
+[Boots] dust quantity = 0, dust tag = Trash
+[Helmet] dust quantity = 0, dust tag = Trash
+[Belt] dust quantity = 0, dust tag = Trash
+[Random Ring] dust quantity = 0, dust tag = Trash
+[Amulet] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash
 [Waystone] dust quantity = 0, dust tag = Trash

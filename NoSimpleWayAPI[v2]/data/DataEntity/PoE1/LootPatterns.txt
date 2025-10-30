@@ -955,7 +955,14 @@ name_EN	"Grafts"
 name_RU	"Наросты"
 icon	"data/textures/icons/Fleshgraft.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -993,6 +1000,61 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+name_EN	"Foulborn uniques"
+name_RU	"Нечестивые уники"
+icon	"data/textures/buttons/attribute_icon_foulborn.png"
+cannot_be_configured
+
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"special tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Foulborn unique"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
 
 	REGISTER_NEW_BANNED_VALUES

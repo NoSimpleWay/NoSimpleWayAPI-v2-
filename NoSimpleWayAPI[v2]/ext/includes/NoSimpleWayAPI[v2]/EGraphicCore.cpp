@@ -653,7 +653,7 @@ bool ETextureAtlas::can_place_here(int _x, int _y, int _w, int _h)
 	for (int j = _x; j <= _x + _w; j++)
 	for (int i = _y; i <= _y + _h; i++)
 		{
-			if ((j * 4 >= atlas_size_x) || (i * 4 >= atlas_size_x))
+			if ((j * 8 >= atlas_size_x) || (i * 8 >= atlas_size_x))
 			{
 				return false;
 			}
@@ -740,13 +740,13 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 	//////////////////////////////////////
 	//if (_generate_matrix)
 	{
-		free_space = new bool* [(int)(_size_x / 4.0f)];
+		free_space = new bool* [(int)(_size_x / 8.0f)];
 
-		for (auto i = 0; i < (int)(_size_x / 4.0f); i++)
+		for (auto i = 0; i < (int)(_size_x / 8.0f); i++)
 		{
-			free_space[i] = new bool[(int)(_size_y / 4.0f)];
+			free_space[i] = new bool[(int)(_size_y / 8.0f)];
 
-			for (auto j = 0; j < (int)(_size_y / 4.0f); ++j)
+			for (auto j = 0; j < (int)(_size_y / 8.0f); ++j)
 			{
 				free_space[i][j] = true;
 			}
