@@ -8,7 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущая сущность жадности[T1]"
 
 	[tag]"icon path"	[value]"Essence_whispering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T1"
@@ -31,7 +31,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность жадности[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -54,7 +54,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность жадности[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -77,7 +77,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность жадности[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -100,7 +100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность жадности[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -123,7 +123,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность жадности[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -146,7 +146,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность жадности[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -177,7 +177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущая сущность презрения[T1]"
 
 	[tag]"icon path"	[value]"Essence_whispering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T1"
@@ -200,7 +200,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность презрения[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -223,7 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность презрения[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -246,7 +246,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность презрения[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -269,7 +269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность презрения[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -292,7 +292,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность презрения[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -315,7 +315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность презрения[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -350,7 +350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущая сущность ненависти[T1]"
 
 	[tag]"icon path"	[value]"Essence_whispering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T1"
@@ -373,7 +373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность ненависти[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -396,7 +396,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность ненависти[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -419,7 +419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность ненависти[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -442,7 +442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность ненависти[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -465,7 +465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность ненависти[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -488,7 +488,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность ненависти[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -522,7 +522,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущая сущность скорби[T1]"
 
 	[tag]"icon path"	[value]"Essence_whispering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T1"
@@ -545,7 +545,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность скорби[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -568,7 +568,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность скорби[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -591,7 +591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность скорби[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -614,7 +614,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность скорби[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -637,7 +637,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность скорби[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -660,7 +660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность скорби[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -694,7 +694,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность страха[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -717,7 +717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность страха[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -740,7 +740,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность страха[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -763,7 +763,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность страха[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -786,7 +786,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность страха[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -809,7 +809,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность страха[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -840,7 +840,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность злобы[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -863,7 +863,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность злобы[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -886,7 +886,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность злобы[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -909,7 +909,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность злобы[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -932,7 +932,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность злобы[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -955,7 +955,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность злобы[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -987,7 +987,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность мучения[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -1010,7 +1010,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность мучения[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -1033,7 +1033,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность мучения[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1056,7 +1056,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность мучения[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1079,7 +1079,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность мучения[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1102,7 +1102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность мучения[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1137,7 +1137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бормочущая сущность печали[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T2"
@@ -1160,7 +1160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность печали[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -1183,7 +1183,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность печали[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1206,7 +1206,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность печали[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1229,7 +1229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность печали[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1252,7 +1252,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность печали[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1279,7 +1279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность ярости[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -1302,7 +1302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность ярости[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1325,7 +1325,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность ярости[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1348,7 +1348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность ярости[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1371,7 +1371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность ярости[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1404,7 +1404,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность страдания[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -1427,7 +1427,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность страдания[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1450,7 +1450,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность страдания[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1473,7 +1473,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность страдания[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1496,7 +1496,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность страдания[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1525,7 +1525,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плачущая сущность гнева[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T3"
@@ -1548,7 +1548,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность гнева[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1571,7 +1571,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность гнева[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1594,7 +1594,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность гнева[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1617,7 +1617,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность гнева[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1651,7 +1651,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность отвращения[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1674,7 +1674,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность отвращения[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1697,7 +1697,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность отвращения[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1720,7 +1720,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность отвращения[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1749,7 +1749,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность усердия[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1772,7 +1772,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность усердия[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1795,7 +1795,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность усердия[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1818,7 +1818,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность усердия[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1851,7 +1851,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность горя[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1874,7 +1874,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность горя[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1897,7 +1897,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность горя[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -1920,7 +1920,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность горя[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -1953,7 +1953,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вопящая сущность неприязни[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T4"
@@ -1976,7 +1976,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность неприязни[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -1999,7 +1999,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность неприязни[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -2022,7 +2022,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность неприязни[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -2053,7 +2053,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность насмешки[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -2076,7 +2076,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность насмешки[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -2099,7 +2099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность насмешки[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -2135,7 +2135,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность зависти[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -2158,7 +2158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность зависти[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -2181,7 +2181,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность зависти[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -2224,7 +2224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность тоски[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -2247,7 +2247,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность тоски[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -2270,7 +2270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность тоски[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -2325,7 +2325,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кричащая сущность жути[T5]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T5"
@@ -2348,7 +2348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Визжащая сущность жути[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T6"
@@ -2371,7 +2371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оглушающая сущность жути[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Essence tier: T7"
@@ -2415,7 +2415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность бреда"
 
 	[tag]"icon path"	[value]"Essence_of_Delirium"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2439,7 +2439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность ужаса"
 
 	[tag]"icon path"	[value]"Essence_of_Horror"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2462,7 +2462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность истерии"
 
 	[tag]"icon path"	[value]"Essence_of_Hysteria"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2485,7 +2485,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сущность безумия"
 
 	[tag]"icon path"	[value]"Essence_of_Insanity"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2516,7 +2516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"След порчи"
 
 	[tag]"icon path"	[value]"Remnant_of_Corruption"
-	[tag]"base class"	[value]"Currency"
+	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"

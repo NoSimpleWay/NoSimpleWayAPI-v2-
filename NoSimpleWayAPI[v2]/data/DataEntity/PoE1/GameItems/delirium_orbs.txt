@@ -1,27 +1,4 @@
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Delirium Orb"
-	[tag]"name RU"		[value]"Cфера Делириума"
-
-	[tag]"icon path"	[value]"DeliriumOrb"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Delirium orb"
-	[tag]"item tag"		[value]"Non-basic currency"
-		
-	[tag]"worth"		[value]"Common"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-		
-	[tag]"drop level"		[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10"
-	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -239,6 +216,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	
 		
 	[tag]"worth"		[value]"Common"
 	
@@ -389,6 +368,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	
 		
 	[tag]"worth"		[value]"Moderate"
 	
@@ -445,6 +426,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
+	[tag]"item tag"		[value]"Deleted"
+	
 		
 	[tag]"worth"		[value]"Common"
 	

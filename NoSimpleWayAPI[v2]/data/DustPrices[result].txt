@@ -622,7 +622,6 @@
 [Exalted Shard] dust quantity = 0, dust tag = Trash
 [Fracturing Shard] dust quantity = 0, dust tag = Trash
 [Mirror Shard] dust quantity = 0, dust tag = Trash
-[Delirium Orb] dust quantity = 0, dust tag = Trash
 [Diviner's Delirium Orb] dust quantity = 0, dust tag = Trash
 [Fine Delirium Orb] dust quantity = 0, dust tag = Trash
 [Foreboding Delirium Orb] dust quantity = 0, dust tag = Trash
@@ -1031,7 +1030,7 @@
 [Blind Venture] dust quantity = 0, dust tag = Trash
 [Boon of Justice] dust quantity = 0, dust tag = Trash
 [Boon of the First Ones] dust quantity = 0, dust tag = Trash
-[Broken truce] dust quantity = 0, dust tag = Trash
+[Broken Truce] dust quantity = 0, dust tag = Trash
 [Boundless Realms] dust quantity = 0, dust tag = Trash
 [Bowyer's Dream] dust quantity = 0, dust tag = Trash
 [Brother's Stash] dust quantity = 0, dust tag = Trash
@@ -1062,12 +1061,12 @@
 [Draped in Dreams] dust quantity = 0, dust tag = Trash
 [Dying Light] dust quantity = 0, dust tag = Trash
 [Earth Drinker] dust quantity = 0, dust tag = Trash
-[Endless night] dust quantity = 0, dust tag = Trash
+[Endless Night] dust quantity = 0, dust tag = Trash
 [Echoes of Love] dust quantity = 0, dust tag = Trash
 [Emperor of Purity] dust quantity = 0, dust tag = Trash
 [Emperor's Luck] dust quantity = 0, dust tag = Trash
 [Etched in Blood] dust quantity = 0, dust tag = Trash
-[Fire of Unknown Origin] dust quantity = 0, dust tag = Trash
+[Fire Of Unknown Origin] dust quantity = 0, dust tag = Trash
 [From Bone to Ashes] dust quantity = 0, dust tag = Trash
 [Further Invention] dust quantity = 0, dust tag = Trash
 [Home] dust quantity = 0, dust tag = Trash
@@ -1448,9 +1447,7 @@
 [Assassin's Gift] dust quantity = 0, dust tag = Trash
 [Eldritch Perfection] dust quantity = 0, dust tag = Trash
 [Who Asked] dust quantity = 0, dust tag = Trash
-[Fire Of Unknown Origin] dust quantity = 0, dust tag = Trash
 [Endless Night] dust quantity = 0, dust tag = Trash
-[Broken Truce] dust quantity = 0, dust tag = Trash
 [Father's Love] dust quantity = 0, dust tag = Trash
 [Avian Pursuit] dust quantity = 0, dust tag = Trash
 [Temperance] dust quantity = 0, dust tag = Trash

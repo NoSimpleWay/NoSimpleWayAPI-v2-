@@ -3380,6 +3380,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3487,6 +3489,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3593,6 +3597,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3726,6 +3732,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3818,6 +3826,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4084,6 +4094,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4193,6 +4205,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4321,6 +4335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5037,6 +5052,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5085,6 +5102,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -5418,6 +5437,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"

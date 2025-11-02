@@ -1470,8 +1470,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Tincture"
+	[tag]"name EN"		[value]"Tinctures"
 	[tag]"name RU"		[value]"Микстуры"
+	[tag]"short name"	[value]"Tincture"
 	
 	[tag]"exist for"	[value]"PoE1"
 

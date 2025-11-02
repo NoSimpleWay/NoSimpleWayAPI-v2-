@@ -5065,11 +5065,13 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 	curl = curl_easy_init();
 	//curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	// 
+	//https://poe.ninja/poe1/api/economy/exchange/current/overview
 
 	std::string	url_content;
 	std::string league_name = NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->stored_text;
 
-	std::string	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=UniqueJewel";
+	std::string	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueAccessory";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5109,7 +5111,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=UniqueFlask";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueFlask";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5132,7 +5134,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=UniqueWeapon";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueWeapon";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5157,7 +5159,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=UniqueArmour";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueArmour";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5181,7 +5183,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=UniqueAccessory";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueAccessory";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5204,7 +5206,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=DivinationCard";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=DivinationCard";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5229,7 +5231,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/currencyoverview?league=" + league_name + "&type=Currency";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Currency";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5255,7 +5257,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/currencyoverview?league=" + league_name + "&type=Fragment";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Fragment";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5282,7 +5284,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Incubator";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=Incubator";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5309,7 +5311,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Scarab";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Scarab";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5336,7 +5338,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Fossil";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Fossil";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5363,7 +5365,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=SkillGem";
+	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=SkillGem";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5417,7 +5419,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Tattoo";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Tattoo";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5444,7 +5446,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=Omen";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Omen";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5469,7 +5471,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=KalguuranRune";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=Runegraft";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5494,7 +5496,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 
-	url = "https://poe.ninja/api/data/itemoverview?league=" + league_name + "&type=DeliriumOrb";
+	url = "https://poe.ninja/poe1/api/economy/exchange/current/overview?league=" + league_name + "&type=DeliriumOrb";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -5718,13 +5720,13 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 
 			//finalize buff, read to param or value
 			if
+			(
 				(
-					(
-						((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
-						&&
-						(!raw_read_mode)
-						)
-					)
+					((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
+					&&
+					(!raw_read_mode)
+				)
+			)
 			{
 				read_buffer[read_mode] = buff;
 				//read_mode++;
@@ -5736,15 +5738,17 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 				}*/
 
 				if
+				(
 					(
-						(
-							(read_buffer[0] == "currencyTypeName")
-							||
-							(read_buffer[0] == "name")
-							)
-						&&
-						(read_mode == 1)
-						)
+						(read_buffer[0] == "currencyTypeName")
+						||
+						(read_buffer[0] == "name")
+						||
+						(read_buffer[0] == "id")
+					)
+					&&
+					(read_mode == 1)
+				)
 				{
 					links = 0;
 					count = 0;
@@ -5752,8 +5756,27 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 					is_banned = false;
 
 					details_id = "";
-					item_name = read_buffer[1];
 
+					item_name = read_buffer[1];
+					if (read_buffer[0] == "id")
+					{
+						std::string replaced_name = "";
+
+						for (int i = 0; i < item_name.length(); i++)
+						{
+							if (item_name[i] == '-')
+							{
+								replaced_name += ' ';
+							}
+							else
+							{
+								replaced_name += item_name[i];
+							}
+						}
+
+						item_name = replaced_name;
+
+					}
 					//EInputCore::add_log_info_without_timestamp("get item name [" + item_name + "]");
 
 					/*if (_mode == PoeNinjaAPIMode::CURRENCY)
@@ -5832,7 +5855,19 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 			//FINALIZE READ, PREPARE ITEM
 				if
 				(
-					((read_buffer[0] == "detailsId")|| (read_buffer[0] == "primaryValue"))
+					(
+						(
+							(
+								(_mode == PoeNinjaAPIMode::UNIQUES)
+								||
+								(_mode == PoeNinjaAPIMode::CURRENCY)
+							)
+							&&
+							(read_buffer[0] == "detailsId")
+						)
+						|| 
+						(read_buffer[0] == "primaryValue")
+					)
 					&&
 					(read_mode == 1)
 				)
@@ -6115,7 +6150,8 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 								else
 								{old_worth_id = -1;}
 
-								//exist!EInputCore::add_log_info_without_timestamp("item [" + item_name + "] new cost: " + new_worth_ID_string.string_value);
+								//exist!
+								EInputCore::add_log_info_without_timestamp("item [" + item_name + "] new cost: " + new_worth_ID_string.string_value);
 
 								//set new worth if new higher that old
 								if
@@ -6276,6 +6312,8 @@ void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url
 						}
 					}
 
+					item_name = "";
+					existed_item = false;
 
 				}
 

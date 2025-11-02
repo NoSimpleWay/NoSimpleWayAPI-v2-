@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из дубовой ветви"
 
 	[tag]"icon path"	[value]"SubduingOakbranchTinctureoftheChase"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -21,7 +21,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из железного дерева"
 
 	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -36,7 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из коры ясеня"
 
 	[tag]"icon path"	[value]"AshbarkTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -51,7 +51,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из фульгурита"
 
 	[tag]"icon path"	[value]"FulguriteTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -66,7 +66,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из паслёна"
 
 	[tag]"icon path"	[value]"PoisonberryTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -81,7 +81,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из розового шипа"
 
 	[tag]"icon path"	[value]"UnKnownTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -96,7 +96,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из северной древесины"
 
 	[tag]"icon path"	[value]"UnKnownTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -111,7 +111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из кровавой живицы"
 
 	[tag]"icon path"	[value]"UnKnownTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Returned in Settlers"
 
@@ -130,7 +130,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из цветных ягод"
 
 	[tag]"icon path"	[value]"UnKnownTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 
@@ -145,7 +145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микстура из споровика"
 
 	[tag]"icon path"	[value]"UnKnownTincturePic"
-	[tag]"base class"	[value]"Tincture"
+	[tag]"base class"	[value]"Tinctures"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 

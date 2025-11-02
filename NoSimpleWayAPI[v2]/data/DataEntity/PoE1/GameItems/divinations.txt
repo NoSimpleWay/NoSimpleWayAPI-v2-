@@ -410,7 +410,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Broken truce"
+	[tag]"name EN"		[value]"Broken Truce"
 	[tag]"name RU"		[value]"Нарушенное перемирие"
 
 	[tag]"icon path"	[value]"Card"
@@ -829,7 +829,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -906,7 +906,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Endless night"
+	[tag]"name EN"		[value]"Endless Night"
 	[tag]"name RU"		[value]"Бесконечная ночь"
 
 	[tag]"icon path"	[value]"Card"
@@ -983,7 +983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Fire of Unknown Origin"
+	[tag]"name EN"		[value]"Fire Of Unknown Origin"
 	[tag]"name RU"		[value]"Огонь незнамо откуда"
 
 	[tag]"icon path"	[value]"Card"
@@ -1102,7 +1102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Returned in Settlers"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -4013,9 +4013,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Master"
 	[tag]"name RU"		[value]"Хозяин"
 
+	[tag]"item tag"		[value]"Divination item"
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
 	[tag]"item tag"		[value]"Divination item"
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -6881,6 +6885,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7016,23 +7021,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Fire Of Unknown Origin"
-	[tag]"name RU"		[value]"Огонь незнамо откуда"
-
-	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Cards"
-	[tag]"item tag"		[value]"Divination item"
-	[tag]"worth"		[value]"Very expensive"
-	
-	[tag]"item tag"		[value]"Introduced: Affliction league"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
 	[tag]"name EN"		[value]"Endless Night"
 	[tag]"name RU"		[value]"Бесконечная ночь"
 
@@ -7042,23 +7030,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Broken Truce"
-	[tag]"name RU"		[value]"Бесконечная ночь"
-
-	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Cards"
-	[tag]"item tag"		[value]"Divination item"
-	[tag]"worth"		[value]"Common"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -1,181 +1,181 @@
 START
 start[0ms] Delay status:	Minimal
-	(Graphic core) Create new texture atlas[W:8192][H:8192][DEPTH:6408][BYTE_MODE:5121][296ms] Delay status:	High
-	(Graphic core) Create RenderBatcher[11ms] Delay status:	Very low
+	(Graphic core) Create new texture atlas[W:8192][H:8192][DEPTH:6408][BYTE_MODE:5121][154ms] Delay status:	Medium
+	(Graphic core) Create RenderBatcher[3ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Register vertex attributes (for default shader)[2ms] Delay status:	Minimal
+	(Graphic core) Register vertex attributes (for default shader)[36ms] Delay status:	Very low
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for default[1ms] Delay status:	Minimal
-	(Graphic core) Register vertex attributes (for PBR shader[0ms] Delay status:	Minimal
+	(Graphic core) Compile shader (for default[0ms] Delay status:	Minimal
+	(Graphic core) Register vertex attributes (for PBR shader[1ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for PBR[1ms] Delay status:	Minimal
+	(Graphic core) Compile shader (for PBR[7ms] Delay status:	Minimal
 	(Graphic core) Register vertex attributes (for test shader[1ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for test[1ms] Delay status:	Minimal
-	(Graphic core) Register vertex attributes (for blur shader[0ms] Delay status:	Minimal
+	(Graphic core) Compile shader (for test[2ms] Delay status:	Minimal
+	(Graphic core) Register vertex attributes (for blur shader[1ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for blur[1ms] Delay status:	Minimal
-	(Graphic core) Create new texture atlas[W:2048][H:1024][DEPTH:6408][BYTE_MODE:5121][44ms] Delay status:	Very low
-	(Graphic core) Create texture atlas[0][1ms] Delay status:	Minimal
-	(Graphic core) Draw skydome to texture atlas[94ms] Delay status:	Low
+	(Graphic core) Compile shader (for blur[3ms] Delay status:	Minimal
+	(Graphic core) Create new texture atlas[W:2048][H:1024][DEPTH:6408][BYTE_MODE:5121][82ms] Delay status:	Low
+	(Graphic core) Create texture atlas[0][0ms] Delay status:	Minimal
+	(Graphic core) Draw skydome to texture atlas[0ms] Delay status:	Minimal
 	(Graphic core) Load style [lead and gold][1ms] Delay status:	Minimal
-	(Graphic core) Load style [dark spruce][0ms] Delay status:	Minimal
+	(Graphic core) Load style [dark spruce][1ms] Delay status:	Minimal
 	(Graphic core) Load style [Strict gray][1ms] Delay status:	Minimal
-	(Graphic core) Load style [Path of black][0ms] Delay status:	Minimal
-	(Graphic core) Load style [Basalt][2ms] Delay status:	Minimal
+	(Graphic core) Load style [Path of black][1ms] Delay status:	Minimal
+	(Graphic core) Load style [Basalt][1ms] Delay status:	Minimal
 	(Graphic core) Success: try load font: palatino
-	(Graphic core) Load font [palantino][2ms] Delay status:	Minimal
+	(Graphic core) Load font [palantino][3ms] Delay status:	Minimal
 	(Graphic core) Success: try load font: fontin
-	(Graphic core) Load font [fontin][1ms] Delay status:	Minimal
+	(Graphic core) Load font [fontin][3ms] Delay status:	Minimal
 	(Graphic core) init graphic core[0ms] Delay status:	Minimal
 	(Graphic core) init input core[0ms] Delay status:	Minimal
-	(Graphic core) init sound engine[111ms] Delay status:	Medium
-	(Graphic core) max_texture_size:[32768]
+	(Graphic core) init sound engine[98ms] Delay status:	Low
+	(Graphic core) max_texture_size:[16384]
 		(EWindowMain) size of EButtonGroup [680]
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/stackable_currency.txt[7ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/omens.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tattoos.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/stackable_currency.txt[12ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/omens.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tattoos.txt[6ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gold.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/grafts.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/grafts.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/oils.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/catalysts.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/charms.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/catalysts.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/charms.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency_shards.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delirium_orbs.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/fossils.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delirium_orbs.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/fossils.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_splinters.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/breach_blessings.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/breach_blessings.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tainted_currency.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tainted_currency.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tinctures.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/transfigured_gems.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/expedition_currency.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/transfigured_gems.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/expedition_currency.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/scouting_reports.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/eldritch_currency.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incubators.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/eldritch_currency.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incubators.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incursion_items.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/vials.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/nets.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/essences.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/amulets.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/nets.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/essences.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/amulets.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/abyss_jewels.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/belts.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rings.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/jewels.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/divinations.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/body_armours.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gloves.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/helmets.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/boots.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/contracts.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/corpses.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/belts.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rings.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/jewels.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/divinations.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/body_armours.txt[10ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gloves.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/helmets.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/boots.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/contracts.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/corpses.txt[5ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/blueprints.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_brooch.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_cloak.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_gear.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_targets.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_tool.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_gear.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_targets.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_tool.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/trinkets.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/bows.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quivers.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/bows.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quivers.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_axes.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_maces.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_swords.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/warstaves.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wombgifts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rune_daggers.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sceptres.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wands.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/staves.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_maces.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_swords.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/warstaves.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wombgifts.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rune_daggers.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sceptres.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wands.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/staves.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sanctum_research.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/shields.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/claws.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/shields.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/claws.txt[2ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/daggers.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_axes.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_maces.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_swords.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_axes.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_maces.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_swords.txt[4ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/support_skill_gems.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/skill_gems.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/flasks.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/flasks.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/mana_flasks.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/hybrid_flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/utility_flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_fragments.txt[7ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/maps.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/utility_flasks.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_fragments.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/maps.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/memories.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/misc_map_items.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harvest_seeds.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harvest_seeds.txt[3ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/metamorph_samples.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quest_items.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/relics.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quest_items.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/relics.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/item_piece.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/ambers_of_the_allflame.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/uniques.txt[40ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/_special_items.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/uniques.txt[94ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/_special_items.txt[6ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE1/influence.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/base_class.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/basic.txt[96ms] Delay status:	Low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/special.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/_special_items.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/amulets.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/belts.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/body_armours.txt[12ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/boots.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bows.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bucklers.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/base_class.txt[12ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/basic.txt[218ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/special.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/_special_items.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/amulets.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/belts.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/body_armours.txt[26ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/boots.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bows.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bucklers.txt[4ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/catalysts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/charms.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/crossbows.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/currency_shards.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/distilled_emotions.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/essences.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/charms.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/crossbows.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/currency_shards.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/distilled_emotions.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/essences.txt[8ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/expedition_currency.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/foci.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/gloves.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/helmets.txt[12ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/flasks.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/foci.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/gloves.txt[18ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/helmets.txt[21ms] Delay status:	Very low
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt[0ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/jewels.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/mana_flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_fragments.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/mana_flasks.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_fragments.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_splinters.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/omens.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/one_hand_maces.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/omens.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/one_hand_maces.txt[9ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/pinnacle_keys.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quarterstaves.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quarterstaves.txt[4ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quivers.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/relics.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/relics.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/rings.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/sceptres.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/shields.txt[11ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/sceptres.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/shields.txt[23ms] Delay status:	Very low
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/skill_gems.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/socketable.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/socketable.txt[14ms] Delay status:	Very low
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/spears.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/stackable_currency.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/staves.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/support_gems.txt[20ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/tablets.txt[0ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/stackable_currency.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/staves.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/support_gems.txt[36ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/tablets.txt[1ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/trial_coins.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/two_hand_maces.txt[5ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/uncut.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/vault_keys.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wands.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/two_hand_maces.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/uncut.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/vault_keys.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wands.txt[3ms] Delay status:	Minimal
 		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/waystones.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/localisation.txt[20ms] Delay status:	Very low
-		(EWindowMain) split data entity to named structs[5ms] Delay status:	Minimal
-		(EWindowMain) add game item data entity to named lists[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/localisation.txt[61ms] Delay status:	Low
+		(EWindowMain) split data entity to named structs[10ms] Delay status:	Very low
+		(EWindowMain) add game item data entity to named lists[3ms] Delay status:	Minimal
 		(EWindowMain) register default filter rules[0ms] Delay status:	Minimal
-		(EWindowMain) import filter rules for PoE1[10ms] Delay status:	Very low
-		(EWindowMain) import filter rules for PoE2[9ms] Delay status:	Minimal
-		(EWindowMain) preload textures[3ms] Delay status:	Minimal
+		(EWindowMain) import filter rules for PoE1[18ms] Delay status:	Very low
+		(EWindowMain) import filter rules for PoE2[15ms] Delay status:	Very low
+		(EWindowMain) preload textures[5ms] Delay status:	Minimal
 		(EWindowMain) register rarity[0ms] Delay status:	Minimal
 		(EWindowMain) register alternate quality[0ms] Delay status:	Minimal
-		(EWindowMain) ERROR: Texture [data/textures/icons/box_switcher_on.png] do not exist![3ms] Delay status:	Minimal
+		(EWindowMain) ERROR: Texture [data/textures/icons/box_switcher_on.png] do not exist![6ms] Delay status:	Minimal
 		(EWindowMain) register game item attributes[0ms] Delay status:	Minimal
-		(EWindowMain) import loot pattern[29ms] Delay status:	Very low
+		(EWindowMain) import loot pattern[43ms] Delay status:	Very low
 		(EWindowMain) ID string[0][94]
 		(EWindowMain) ID string[1][65]
 		(EWindowMain) ID string[2][77]
@@ -231,7 +231,7 @@ start[0ms] Delay status:	Minimal
 		(EWindowMain) ID string[52][72]
 		(EWindowMain) ID string[53][98]
 		(EWindowMain) ID string[54][61]
-		(EWindowMain) ID string[55][83]
+		(EWindowMain) ID string[55][84]
 		(EWindowMain) ID string[56][91]
 		(EWindowMain) ID string[57][75]
 		(EWindowMain) ID string[58][87]
@@ -356,7 +356,7 @@ start[0ms] Delay status:	Minimal
 		(EWindowMain) ID string[177][91]
 		(EWindowMain) ID string[178][104]
 		(EWindowMain) ID string[179][92]
-		(EWindowMain) ID string[180][107]
+		(EWindowMain) ID string[180][106]
 		(EWindowMain) ID string[181][96]
 		(EWindowMain) ID string[182][93]
 		(EWindowMain) ID string[183][90]
@@ -421,7 +421,7 @@ start[0ms] Delay status:	Minimal
 		(EWindowMain) ID string[242][78]
 		(EWindowMain) ID string[243][81]
 		(EWindowMain) ID string[244][94]
-		(EWindowMain) ID string[245][86]
+		(EWindowMain) ID string[245][85]
 		(EWindowMain) ID string[246][76]
 		(EWindowMain) ID string[247][80]
 		(EWindowMain) ID string[248][85]
@@ -432,94 +432,1424 @@ start[0ms] Delay status:	Minimal
 		(EWindowMain) ID string[253][70]
 		(EWindowMain) ID string[254][71]
 		(EWindowMain) ID string[255][77]
-		(EWindowMain) load config from disc[0ms] Delay status:	Minimal
-		(EWindowMain) load config filter versions[1ms] Delay status:	Minimal
+		(EWindowMain) load config from disc[1ms] Delay status:	Minimal
+		(EWindowMain) load config filter versions[0ms] Delay status:	Minimal
 		(EWindowMain) ![1]
 		(EWindowMain) ![2]
 		(EWindowMain) ![3]
 		(EWindowMain) ![4]
 		(EWindowMain) ![5]
-		(EWindowMain) register color editor[0ms] Delay status:	Minimal
-		(EWindowMain) register bottom search line[0ms] Delay status:	Minimal
+		(EWindowMain) register color editor[1ms] Delay status:	Minimal
+		(EWindowMain) register bottom search line[1ms] Delay status:	Minimal
 		(EWindowMain) register filter tabs[0ms] Delay status:	Minimal
-		(EWindowMain) register styles group[27ms] Delay status:	Very low
+		(EWindowMain) register styles group[52ms] Delay status:	Low
 		(EWindowMain) register loot filter errors group[0ms] Delay status:	Minimal
 		(EWindowMain) register loot version configurator group[1ms] Delay status:	Minimal
 		(EWindowMain) register create new loot filter group[0ms] Delay status:	Minimal
-		(EWindowMain) register data entities group[1ms] Delay status:	Minimal
+		(EWindowMain) register data entities group[3ms] Delay status:	Minimal
 		(EWindowMain) register world parameters group[1ms] Delay status:	Minimal
-		(EWindowMain) register loot simulator group[5ms] Delay status:	Minimal
-		(EWindowMain) register add content to filter blcok group[1ms] Delay status:	Minimal
-		(EWindowMain) register sound group[8ms] Delay status:	Minimal
-		(EWindowMain) Load loot filter list[9ms] Delay status:	Minimal
+		(EWindowMain) register loot simulator group[9ms] Delay status:	Minimal
+		(EWindowMain) register add content to filter blcok group[2ms] Delay status:	Minimal
+		(EWindowMain) register sound group[22ms] Delay status:	Very low
+		(EWindowMain) Load loot filter list[33ms] Delay status:	Very low
 		(EWindowMain) register loot filter list group[0ms] Delay status:	Minimal
-		(EWindowMain) register about group[1ms] Delay status:	Minimal
+		(EWindowMain) register about group[2ms] Delay status:	Minimal
 		(EWindowMain) register filter block colour editor block[0ms] Delay status:	Minimal
-		(EWindowMain) register explicit manager group[20ms] Delay status:	Very low
-		(EWindowMain) register poe ninja price checker group[1ms] Delay status:	Minimal
-		(EWindowMain) regiter head buttons group[2ms] Delay status:	Minimal
+		(EWindowMain) register explicit manager group[35ms] Delay status:	Very low
+		(EWindowMain) register poe ninja price checker group[5ms] Delay status:	Minimal
+		(EWindowMain) regiter head buttons group[6ms] Delay status:	Minimal
 		(EWindowMain) register confirm deleting filter block group[0ms] Delay status:	Minimal
 		(EWindowMain) register confirm opening autogenerated loot filter group[0ms] Delay status:	Minimal
 		(EWindowMain) register confirm opening autosaved loot filter group[0ms] Delay status:	Minimal
-		(EWindowMain) read version from github[3ms] Delay status:	Minimal
+		(EWindowMain) read version from github[8ms] Delay status:	Minimal
 		(EWindowMain) latest version from Github[1.7.3]
 		(EWindowMain) _text [1.7.3]
-		(EWindowMain) check new version from github[104ms] Delay status:	Medium
-		(EWindowMain) read user pattern[0ms] Delay status:	Minimal
-TOTAL TIME OF (EWindowMain) is [602ms]
-	(Graphic core) register debug structs[2ms] Delay status:	Minimal
+		(EWindowMain) check new version from github[277ms] Delay status:	High
+		(EWindowMain) read user pattern[1ms] Delay status:	Minimal
+TOTAL TIME OF (EWindowMain) is [1381ms]
+	(Graphic core) register debug structs[3ms] Delay status:	Minimal
 	(Graphic core) [info]: call [actions on click list]
-		(Poe ninja) read api [UniqueJewel][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (UniqueJewel)[22ms] Delay status:	Very low
-		(Poe ninja) read api [UniqueFlask][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (UniqueFlask)[9ms] Delay status:	Minimal
-		(Poe ninja) read api [UniqueWeapon][2ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[tawhoas-felling-piledriver] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![10ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (UniqueWeapon)[45ms] Delay status:	Very low
-		(Poe ninja) read api [UniqueArmour][3ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[dance-of-the-offered-carnal-boots] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![36ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (UniqueArmour)[59ms] Delay status:	Low
-		(Poe ninja) read api [UniqueAccessory][2ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[yndas-stand-studded-belt] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![1ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[the-hateful-accuser-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![9ms] Delay status:	Minimal
+		(Poe ninja) read api [UniqueJewel][3ms] Delay status:	Minimal
+		(Poe ninja) item [Original Sin] new cost: Very expensive
+		(Poe ninja) item [Mageblood] new cost: Very expensive
+		(Poe ninja) item [Headhunter] new cost: Very expensive
+		(Poe ninja) item [Nimis] new cost: Very expensive
+		(Poe ninja) ERROR: unique item[yndas-stand-studded-belt] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![4ms] Delay status:	Minimal
+		(Poe ninja) item [Ynda's Stand] new cost: Very expensive
+		(Poe ninja) item [Defiance of Destiny] new cost: Very expensive
+		(Poe ninja) item [Uul-Netol's Vow] new cost: Very expensive
+		(Poe ninja) item [Ashes of the Stars] new cost: Very expensive
+		(Poe ninja) item [The Tides of Time] new cost: Very expensive
+		(Poe ninja) item [Putembo's Mountain] new cost: Very expensive
+		(Poe ninja) item [Aul's Uprising] new cost: Very expensive
+		(Poe ninja) item [Coward's Legacy] new cost: Very expensive
+		(Poe ninja) item [Stranglegasp] new cost: Very expensive
+		(Poe ninja) item [Kalandra's Touch] new cost: Very expensive
+		(Poe ninja) item [Ryslatha's Coil] new cost: Very expensive
+		(Poe ninja) item [Replica Headhunter] new cost: Very expensive
+		(Poe ninja) item [Yoke of Suffering] new cost: Expensive
+		(Poe ninja) item [Zerphi's Heart] new cost: Expensive
+		(Poe ninja) item [Astramentis] new cost: Expensive
+		(Poe ninja) ERROR: unique item[the-hateful-accuser-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![7ms] Delay status:	Minimal
 		(Poe ninja) ERROR: Item[the-hateful-accuser-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[the-queller-of-minds-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![10ms] Delay status:	Very low
+		(Poe ninja) item [The Hateful Accuser] new cost: Expensive
+		(Poe ninja) item [Atziri's Foible] new cost: Rare
+		(Poe ninja) item [Replica Bated Breath] new cost: Rare
+		(Poe ninja) item [Eternal Damnation] new cost: Rare
+		(Poe ninja) item [Curio of Absorption] new cost: Rare
+		(Poe ninja) item [The Flow Untethered] new cost: Rare
+		(Poe ninja) item [Curio of Consumption] new cost: Rare
+		(Poe ninja) item [Uzaza's Valley] new cost: Rare
+		(Poe ninja) item [Anathema] new cost: Rare
+		(Poe ninja) item [Curio of Potential] new cost: Rare
+		(Poe ninja) item [Polaric Devastation] new cost: Rare
+		(Poe ninja) item [The Taming] new cost: Rare
+		(Poe ninja) item [Uzaza's Mountain] new cost: Rare
+		(Poe ninja) item [Presence of Chayula] new cost: Rare
+		(Poe ninja) item [Hyperboreus] new cost: Rare
+		(Poe ninja) item [Berek's Respite] new cost: Rare
+		(Poe ninja) item [Darkness Enthroned] new cost: Rare
+		(Poe ninja) item [Putembo's Meadow] new cost: Rare
+		(Poe ninja) item [Crystallised Omniscience] new cost: Rare
+		(Poe ninja) item [Ahkeli's Meadow] new cost: Rare
+		(Poe ninja) item [Curio of Decay] new cost: Rare
+		(Poe ninja) item [Fury Valve] new cost: Rare
+		(Poe ninja) item [Replica Badge of the Brotherhood] new cost: Rare
+		(Poe ninja) item [Impresence] new cost: Moderate
+		(Poe ninja) item [Death Rush] new cost: Moderate
+		(Poe ninja) item [Second Piece of Time] new cost: Moderate
+		(Poe ninja) item [Shavronne's Revelation] new cost: Moderate
+		(Poe ninja) item [Circle of Ambition] new cost: Moderate
+		(Poe ninja) item [Coward's Chains] new cost: Moderate
+		(Poe ninja) item [Xoph's Blood] new cost: Moderate
+		(Poe ninja) item [Eyes of the Greatwolf] new cost: Moderate
+		(Poe ninja) item [The Magnate] new cost: Moderate
+		(Poe ninja) item [Blackflame] new cost: Moderate
+		(Poe ninja) item [Ahkeli's Mountain] new cost: Moderate
+		(Poe ninja) item [First Piece of Time] new cost: Moderate
+		(Poe ninja) item [Putembo's Valley] new cost: Moderate
+		(Poe ninja) item [Uzaza's Meadow] new cost: Moderate
+		(Poe ninja) item [Astral Projector] new cost: Moderate
+		(Poe ninja) item [Ahkeli's Valley] new cost: Common
+		(Poe ninja) item [The Jinxed Juju] new cost: Common
+		(Poe ninja) item [Call of the Void] new cost: Common
+		(Poe ninja) item [Replica Hinekora's Sight] new cost: Common
+		(Poe ninja) item [Call of the Void] new cost: Common
+		(Poe ninja) item [The Retch] new cost: Common
+		(Poe ninja) item [Doryani's Invitation] new cost: Common
+		(Poe ninja) item [Badge of the Brotherhood] new cost: Common
+		(Poe ninja) item [Replica Atziri's Foible] new cost: Common
+		(Poe ninja) item [Sacrificial Heart] new cost: Common
+		(Poe ninja) item [Solstice Vigil] new cost: Common
+		(Poe ninja) item [Vivinsect] new cost: Common
+		(Poe ninja) item [Warrior's Legacy] new cost: Common
+		(Poe ninja) item [Replica Emberwake] new cost: Common
+		(Poe ninja) item [Arn's Anguish] new cost: Common
+		(Poe ninja) item [Graven's Secret] new cost: Common
+		(Poe ninja) item [Replica Dragonfang's Flight] new cost: Common
+		(Poe ninja) item [The Pandemonius] new cost: Common
+		(Poe ninja) item [Pyre] new cost: Common
+		(Poe ninja) item [Choir of the Storm] new cost: Common
+		(Poe ninja) item [Cyclopean Coil] new cost: Common
+		(Poe ninja) item [Impresence] new cost: Common
+		(Poe ninja) item [Winterweave] new cost: Common
+		(Poe ninja) item [Mark of the Shaper] new cost: Common
+		(Poe ninja) item [Circle of Nostalgia] new cost: Common
+		(Poe ninja) item [Bear's Girdle] new cost: Common
+		(Poe ninja) item [Replica Soul Tether] new cost: Common
+		(Poe ninja) item [Replica Karui Ward] new cost: Common
+		(Poe ninja) item [Olesya's Delight] new cost: Common
+		(Poe ninja) item [The Burden of Truth] new cost: Common
+		(Poe ninja) item [The Untouched Soul] new cost: Common
+		(Poe ninja) item [Berek's Grip] new cost: Trash
+		(Poe ninja) item [Berek's Pass] new cost: Trash
+		(Poe ninja) item [Dyadian Dawn] new cost: Trash
+		(Poe ninja) item [Perandus Signet] new cost: Trash
+		(Poe ninja) item [The Pariah] new cost: Trash
+		(Poe ninja) item [Ventor's Gamble] new cost: Trash
+		(Poe ninja) item [Voice of the Storm] new cost: Trash
+		(Poe ninja) item [Bisco's Leash] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Mark of the Elder] new cost: Trash
+		(Poe ninja) item [Mark of Submission] new cost: Trash
+		(Poe ninja) item [Circle of Regret] new cost: Trash
+		(Poe ninja) item [Circle of Anguish] new cost: Trash
+		(Poe ninja) item [Circle of Guilt] new cost: Trash
+		(Poe ninja) item [Circle of Fear] new cost: Trash
+		(Poe ninja) item [Leash of Oblation] new cost: Trash
+		(Poe ninja) item [Replica Voideye] new cost: Trash
+		(Poe ninja) item [Replica Hyrri's Truth] new cost: Trash
+		(Poe ninja) item [Replica Tasalio's Sign] new cost: Trash
+		(Poe ninja) item [Replica Prismweave] new cost: Trash
+		(Poe ninja) item [Replica Siegebreaker] new cost: Trash
+		(Poe ninja) item [Fated End] new cost: Trash
+		(Poe ninja) item [Chains of Emancipation] new cost: Trash
+		(Poe ninja) item [Rotblood Promise] new cost: Trash
+		(Poe ninja) item [The Eternal Struggle] new cost: Trash
+		(Poe ninja) ERROR: unique item[the-queller-of-minds-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![32ms] Delay status:	Very low
 		(Poe ninja) ERROR: Item[the-queller-of-minds-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
-		(Poe ninja) ERROR: unique item[the-selfish-shepherd-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![0ms] Delay status:	Minimal
+		(Poe ninja) item [The Queller of Minds] new cost: Trash
+		(Poe ninja) item [Andvarius] new cost: Trash
+		(Poe ninja) item [Ascent From Flesh] new cost: Trash
+		(Poe ninja) item [Bated Breath] new cost: Trash
+		(Poe ninja) item [Belt of the Deceiver] new cost: Trash
+		(Poe ninja) item [Blackheart] new cost: Trash
+		(Poe ninja) item [Blightwell] new cost: Trash
+		(Poe ninja) item [Brinerot Mark] new cost: Trash
+		(Poe ninja) item [Call of the Brotherhood] new cost: Trash
+		(Poe ninja) item [Carnage Heart] new cost: Trash
+		(Poe ninja) item [Daresso's Salute] new cost: Trash
+		(Poe ninja) item [Doedre's Damning] new cost: Trash
+		(Poe ninja) item [Dream Fragments] new cost: Trash
+		(Poe ninja) item [Emberwake] new cost: Trash
+		(Poe ninja) item [Essence Worm] new cost: Trash
+		(Poe ninja) item [Extractor Mentis] new cost: Trash
+		(Poe ninja) item [Eye of Chayula] new cost: Trash
+		(Poe ninja) item [Eye of Innocence] new cost: Trash
+		(Poe ninja) item [Faminebind] new cost: Trash
+		(Poe ninja) item [Feastbind] new cost: Trash
+		(Poe ninja) item [Gifts from Above] new cost: Trash
+		(Poe ninja) item [Heartbound Loop] new cost: Trash
+		(Poe ninja) item [Hinekora's Sight] new cost: Trash
+		(Poe ninja) item [Immortal Flesh] new cost: Trash
+		(Poe ninja) item [Kaom's Sign] new cost: Trash
+		(Poe ninja) item [Karui Ward] new cost: Trash
+		(Poe ninja) item [Kikazaru] new cost: Trash
+		(Poe ninja) item [Le Heup of All] new cost: Trash
+		(Poe ninja) item [Lori's Lantern] new cost: Trash
+		(Poe ninja) item [Malachai's Artifice] new cost: Trash
+		(Poe ninja) item [Maligaro's Restraint] new cost: Trash
+		(Poe ninja) item [Marylene's Fallacy] new cost: Trash
+		(Poe ninja) item [Meginord's Girdle] new cost: Trash
+		(Poe ninja) item [Ming's Heart] new cost: Trash
+		(Poe ninja) item [Mokou's Embrace] new cost: Trash
+		(Poe ninja) item [Mutewind Seal] new cost: Trash
+		(Poe ninja) item [Natural Hierarchy] new cost: Trash
+		(Poe ninja) item [Ngamahu's Sign] new cost: Trash
+		(Poe ninja) item [Perandus Blazon] new cost: Trash
+		(Poe ninja) item [Praxis] new cost: Trash
+		(Poe ninja) item [Prismweave] new cost: Trash
+		(Poe ninja) item [Rashkaldor's Patience] new cost: Trash
+		(Poe ninja) item [Redblade Band] new cost: Trash
+		(Poe ninja) item [Rigwald's Crest] new cost: Trash
+		(Poe ninja) item [Rigwald's Curse] new cost: Trash
+		(Poe ninja) item [Romira's Banquet] new cost: Trash
+		(Poe ninja) item [Shaper's Seed] new cost: Trash
+		(Poe ninja) item [Sibyl's Lament] new cost: Trash
+		(Poe ninja) item [Sidhebreath] new cost: Trash
+		(Poe ninja) item [Snakepit] new cost: Trash
+		(Poe ninja) item [Soulthirst] new cost: Trash
+		(Poe ninja) item [Stone of Lazhwar] new cost: Trash
+		(Poe ninja) item [Sunblast] new cost: Trash
+		(Poe ninja) item [Tasalio's Sign] new cost: Trash
+		(Poe ninja) item [Tear of Purity] new cost: Trash
+		(Poe ninja) item [The Anvil] new cost: Trash
+		(Poe ninja) item [The Aylardex] new cost: Trash
+		(Poe ninja) item [The Ignomon] new cost: Trash
+		(Poe ninja) item [The Warden's Brand] new cost: Trash
+		(Poe ninja) item [Thief's Torment] new cost: Trash
+		(Poe ninja) item [Timeclasp] new cost: Trash
+		(Poe ninja) item [Umbilicus Immortalis] new cost: Trash
+		(Poe ninja) item [Ungil's Harmony] new cost: Trash
+		(Poe ninja) item [Valako's Sign] new cost: Trash
+		(Poe ninja) item [Valyrium] new cost: Trash
+		(Poe ninja) item [Voideye] new cost: Trash
+		(Poe ninja) item [Voll's Devotion] new cost: Trash
+		(Poe ninja) item [Warped Timepiece] new cost: Trash
+		(Poe ninja) item [Winterheart] new cost: Trash
+		(Poe ninja) item [Wurm's Molt] new cost: Trash
+		(Poe ninja) item [Xoph's Heart] new cost: Trash
+		(Poe ninja) item [The Halcyon] new cost: Trash
+		(Poe ninja) item [Perseverance] new cost: Trash
+		(Poe ninja) item [Auxium] new cost: Trash
+		(Poe ninja) item [Bloodgrip] new cost: Trash
+		(Poe ninja) item [Soul Tether] new cost: Trash
+		(Poe ninja) item [Maligaro's Cruelty] new cost: Trash
+		(Poe ninja) item [Gloomfang] new cost: Trash
+		(Poe ninja) item [The Hungry Loop] new cost: Trash
+		(Poe ninja) item [Stormfire] new cost: Trash
+		(Poe ninja) item [Gluttony] new cost: Trash
+		(Poe ninja) item [Perquil's Toe] new cost: Trash
+		(Poe ninja) item [The Primordial Chain] new cost: Trash
+		(Poe ninja) item [Hyrri's Truth] new cost: Trash
+		(Poe ninja) item [Tavukai] new cost: Trash
+		(Poe ninja) item [Siegebreaker] new cost: Trash
+		(Poe ninja) item [Venopuncture] new cost: Trash
+		(Poe ninja) item [Icefang Orbit] new cost: Trash
+		(Poe ninja) item [Mother's Embrace] new cost: Trash
+		(Poe ninja) item [Willowgift] new cost: Trash
+		(Poe ninja) item [Profane Proxy] new cost: Trash
+		(Poe ninja) item [Storm Secret] new cost: Trash
+		(Poe ninja) item [The Felbog Fang] new cost: Trash
+		(Poe ninja) item [Pyroshock Clasp] new cost: Trash
+		(Poe ninja) item [The Ephemeral Bond] new cost: Trash
+		(Poe ninja) item [The Highwayman] new cost: Trash
+		(Poe ninja) item [The Druggery] new cost: Trash
+		(Poe ninja) item [Replica Malachai's Artifice] new cost: Trash
+		(Poe ninja) item [Replica Doedre's Damning] new cost: Trash
+		(Poe ninja) item [Replica Winterheart] new cost: Trash
+		(Poe ninja) item [Survivor's Guilt] new cost: Trash
+		(Poe ninja) item [Triumvirate Authority] new cost: Trash
+		(Poe ninja) item [Doedre's Tongue] new cost: Trash
+		(Poe ninja) item [Chain of Endurance] new cost: Trash
+		(Poe ninja) item [Bloodsoaked Medallion] new cost: Trash
+		(Poe ninja) item [Ceinture of Benevolence] new cost: Trash
+		(Poe ninja) item [Tainted Pact] new cost: Trash
+		(Poe ninja) item [Soulbound] new cost: Trash
+		(Poe ninja) item [Ikiaho's Promise] new cost: Trash
+		(Poe ninja) item [Tawhanuku's Timing] new cost: Trash
+		(Poe ninja) item [Bound Fate] new cost: Trash
+		(Poe ninja) item [Kaom's Binding] new cost: Trash
+		(Poe ninja) item [Nevalius Inheritance] new cost: Trash
+		(Poe ninja) item [Grattus Signet] new cost: Trash
+		(Poe ninja) ERROR: unique item[the-selfish-shepherd-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![28ms] Delay status:	Very low
 		(Poe ninja) ERROR: Item[the-selfish-shepherd-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (UniqueAccessory)[16ms] Delay status:	Very low
-		(Poe ninja) read api [DivinationCard][1ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (DivinationCard)[25ms] Delay status:	Very low
+		(Poe ninja) item [The Selfish Shepherd] new cost: Trash
+		(Poe ninja) item [Victario's Acuity] new cost: Trash
+		(Poe ninja) item [Night's Hold] new cost: Trash
+		(Poe ninja) item [Araku Tiki] new cost: Trash
+		(Poe ninja) item [Retaliation Charm] new cost: Trash
+		(Poe ninja) read poe.ninja cache (UniqueJewel)[14ms] Delay status:	Very low
+		(Poe ninja) read api [UniqueFlask][0ms] Delay status:	Minimal
+		(Poe ninja) item [Progenesis] new cost: Very expensive
+		(Poe ninja) item [Oriath's End] new cost: Very expensive
+		(Poe ninja) item [Dying Sun] new cost: Very expensive
+		(Poe ninja) item [Bottled Faith] new cost: Expensive
+		(Poe ninja) item [Elixir of the Unbroken Circle] new cost: Expensive
+		(Poe ninja) item [Cinderswallow Urn] new cost: Rare
+		(Poe ninja) item [Taste of Hate] new cost: Rare
+		(Poe ninja) item [Atziri's Promise] new cost: Moderate
+		(Poe ninja) item [Starlight Chalice] new cost: Moderate
+		(Poe ninja) item [Vessel of Vinktar] new cost: Moderate
+		(Poe ninja) item [Coruscating Elixir] new cost: Moderate
+		(Poe ninja) item [Rumi's Concoction] new cost: Moderate
+		(Poe ninja) item [Olroth's Resolve] new cost: Moderate
+		(Poe ninja) item [Replica Witchfire Brew] new cost: Common
+		(Poe ninja) item [Replica Sorrow of the Divine] new cost: Common
+		(Poe ninja) item [The Writhing Jar] new cost: Trash
+		(Poe ninja) item [Sin's Rebirth] new cost: Trash
+		(Poe ninja) item [Soul Catcher] new cost: Trash
+		(Poe ninja) item [Replica Rumi's Concoction] new cost: Trash
+		(Poe ninja) item [Blood of the Karui] new cost: Trash
+		(Poe ninja) item [Divination Distillate] new cost: Trash
+		(Poe ninja) item [Forbidden Taste] new cost: Trash
+		(Poe ninja) item [Lavianga's Spirit] new cost: Trash
+		(Poe ninja) item [Lion's Roar] new cost: Trash
+		(Poe ninja) item [Rotgut] new cost: Trash
+		(Poe ninja) item [The Overflowing Chalice] new cost: Trash
+		(Poe ninja) item [The Sorrow of the Divine] new cost: Trash
+		(Poe ninja) item [Witchfire Brew] new cost: Trash
+		(Poe ninja) item [Zerphi's Last Breath] new cost: Trash
+		(Poe ninja) item [The Wise Oak] new cost: Trash
+		(Poe ninja) item [Coralito's Signature] new cost: Trash
+		(Poe ninja) item [Replica Lavianga's Spirit] new cost: Trash
+		(Poe ninja) item [Vorana's Preparation] new cost: Trash
+		(Poe ninja) item [Kiara's Determination] new cost: Trash
+		(Poe ninja) item [Doedre's Elixir] new cost: Trash
+		(Poe ninja) read poe.ninja cache (UniqueFlask)[15ms] Delay status:	Very low
+		(Poe ninja) read api [UniqueWeapon][4ms] Delay status:	Minimal
+		(Poe ninja) item [Voidforge] new cost: Very expensive
+		(Poe ninja) item [The Saviour] new cost: Very expensive
+		(Poe ninja) item [Kingmaker] new cost: Very expensive
+		(Poe ninja) item [Ephemeral Edge] new cost: Very expensive
+		(Poe ninja) item [Soul Taker] new cost: Very expensive
+		(Poe ninja) item [Grace of the Goddess] new cost: Very expensive
+		(Poe ninja) item [Rakiata's Dance] new cost: Very expensive
+		(Poe ninja) item [Atziri's Disfavour] new cost: Very expensive
+		(Poe ninja) item [Divinarius] new cost: Very expensive
+		(Poe ninja) item [Starforge] new cost: Very expensive
+		(Poe ninja) item [Nebulis] new cost: Very expensive
+		(Poe ninja) item [The Dark Seer] new cost: Very expensive
+		(Poe ninja) item [Relic of the Pact] new cost: Very expensive
+		(Poe ninja) item [The Winds of Fate] new cost: Very expensive
+		(Poe ninja) item [The Living Blade] new cost: Very expensive
+		(Poe ninja) item [Paradoxica] new cost: Very expensive
+		(Poe ninja) item [Hand of Thought and Motion] new cost: Expensive
+		(Poe ninja) item [The Enmity Divine] new cost: Rare
+		(Poe ninja) item [Cameria's Avarice] new cost: Rare
+		(Poe ninja) item [Arakaali's Fang] new cost: Rare
+		(Poe ninja) item [Pledge of Hands] new cost: Rare
+		(Poe ninja) item [The Rippling Thoughts] new cost: Rare
+		(Poe ninja) item [Story of the Vaal] new cost: Rare
+		(Poe ninja) item [Bino's Kitchen Knife] new cost: Rare
+		(Poe ninja) item [The Annihilating Light] new cost: Rare
+		(Poe ninja) item [Echoforge] new cost: Rare
+		(Poe ninja) item [Void Battery] new cost: Rare
+		(Poe ninja) item [Marohi Erqi] new cost: Rare
+		(Poe ninja) item [Mjölner] new cost: Rare
+		(Poe ninja) item [The Fulcrum] new cost: Rare
+		(Poe ninja) item [The Goddess Scorned] new cost: Moderate
+		(Poe ninja) item [Cane of Kulemak] new cost: Moderate
+		(Poe ninja) item [Voltaxic Rift] new cost: Moderate
+		(Poe ninja) item [Essentia Sanguis] new cost: Moderate
+		(Poe ninja) item [Bloodseeker] new cost: Moderate
+		(Poe ninja) item [Lioneye's Glare] new cost: Moderate
+		(Poe ninja) item [Replica Kongor's Undying Rage] new cost: Moderate
+		(Poe ninja) item [Replica Duskdawn] new cost: Moderate
+		(Poe ninja) item [First Piece of Brutality] new cost: Moderate
+		(Poe ninja) item [The Burden of Shadows] new cost: Moderate
+		(Poe ninja) item [Law of the Wilds] new cost: Moderate
+		(Poe ninja) item [Varunastra] new cost: Moderate
+		(Poe ninja) item [Razor of the Seventh Sun] new cost: Common
+		(Poe ninja) item [Maata's Teaching] new cost: Common
+		(Poe ninja) item [Cold Iron Point] new cost: Common
+		(Poe ninja) item [Yaomac's Accord] new cost: Common
+		(Poe ninja) item [United in Dream] new cost: Common
+		(Poe ninja) item [Disintegrator] new cost: Common
+		(Poe ninja) item [Second Piece of the Arcane] new cost: Common
+		(Poe ninja) item [Third Piece of the Arcane] new cost: Common
+		(Poe ninja) item [Replica Nebulis] new cost: Common
+		(Poe ninja) item [Kitava's Feast] new cost: Common
+		(Poe ninja) item [Tidebreaker] new cost: Common
+		(Poe ninja) item [Replica Windripper] new cost: Common
+		(Poe ninja) item [Martyr of Innocence] new cost: Common
+		(Poe ninja) item [687] new cost: Common
+		(Poe ninja) item [Kaom's Primacy] new cost: Common
+		(Poe ninja) item [Cerberus Limb] new cost: Common
+		(Poe ninja) item [Replica Dreamfeather] new cost: Common
+		(Poe ninja) item [Replica Trypanon] new cost: Common
+		(Poe ninja) item [The Iron Mass] new cost: Common
+		(Poe ninja) item [The Hidden Blade] new cost: Common
+		(Poe ninja) item [Replica Paradoxica] new cost: Trash
+		(Poe ninja) item [Arborix] new cost: Trash
+		(Poe ninja) item [First Piece of the Arcane] new cost: Trash
+		(Poe ninja) item [Bitterdream] new cost: Trash
+		(Poe ninja) item [Darkscorn] new cost: Trash
+		(Poe ninja) item [Doryani's Catalyst] new cost: Trash
+		(Poe ninja) item [Rebuke of the Vaal] new cost: Trash
+		(Poe ninja) item [The Scourge] new cost: Trash
+		(Poe ninja) item [Nebuloch] new cost: Trash
+		(Poe ninja) item [Hopeshredder] new cost: Trash
+		(Poe ninja) item [The Crimson Storm] new cost: Trash
+		(Poe ninja) item [Witchhunter's Judgment] new cost: Trash
+		(Poe ninja) item [Replica Iron Commander] new cost: Trash
+		(Poe ninja) item [Replica Last Resort] new cost: Trash
+		(Poe ninja) item [Replica Bitterdream] new cost: Trash
+		(Poe ninja) item [Replica Wings of Entropy] new cost: Trash
+		(Poe ninja) item [Replica Cold Iron Point] new cost: Trash
+		(Poe ninja) item [Replica Allure] new cost: Trash
+		(Poe ninja) item [Actum] new cost: Trash
+		(Poe ninja) item [Replica Tulfall] new cost: Trash
+		(Poe ninja) item [Replica Ungil's Gauche] new cost: Trash
+		(Poe ninja) item [Advancing Fortress] new cost: Trash
+		(Poe ninja) item [Agnerod East] new cost: Trash
+		(Poe ninja) item [Agnerod North] new cost: Trash
+		(Poe ninja) item [Agnerod South] new cost: Trash
+		(Poe ninja) item [Agnerod West] new cost: Trash
+		(Poe ninja) item [Al Dhih] new cost: Trash
+		(Poe ninja) item [Allure] new cost: Trash
+		(Poe ninja) item [Brain Rattler] new cost: Trash
+		(Poe ninja) item [Breath of the Council] new cost: Trash
+		(Poe ninja) item [Brutus' Lead Sprinkler] new cost: Trash
+		(Poe ninja) item [Callinellus Malleus] new cost: Trash
+		(Poe ninja) item [Cameria's Maul] new cost: Trash
+		(Poe ninja) item [Chin Sol] new cost: Trash
+		(Poe ninja) item [Clayshaper] new cost: Trash
+		(Poe ninja) item [Cospri's Malice] new cost: Trash
+		(Poe ninja) item [Cybil's Paw] new cost: Trash
+		(Poe ninja) item [Daresso's Passion] new cost: Trash
+		(Poe ninja) item [Death's Hand] new cost: Trash
+		(Poe ninja) item [Death's Harp] new cost: Trash
+		(Poe ninja) item [Doomfletch] new cost: Trash
+		(Poe ninja) item [Doomsower] new cost: Trash
+		(Poe ninja) item [Doon Cuebiyari] new cost: Trash
+		(Poe ninja) item [Dreamfeather] new cost: Trash
+		(Poe ninja) item [Dyadus] new cost: Trash
+		(Poe ninja) item [Edge of Madness] new cost: Trash
+		(Poe ninja) item [Femurs of the Saints] new cost: Trash
+		(Poe ninja) item [Frostbreath] new cost: Trash
+		(Poe ninja) item [Heartbreaker] new cost: Trash
+		(Poe ninja) item [Hegemony's Era] new cost: Trash
+		(Poe ninja) item [Hezmana's Bloodlust] new cost: Trash
+		(Poe ninja) item [Hiltless] new cost: Trash
+		(Poe ninja) item [Hyaon's Fury] new cost: Trash
+		(Poe ninja) item [Ichimonji] new cost: Trash
+		(Poe ninja) item [Innsbury Edge] new cost: Trash
+		(Poe ninja) item [Iron Commander] new cost: Trash
+		(Poe ninja) item [Jorrhast's Blacksteel] new cost: Trash
+		(Poe ninja) item [Kondo's Pride] new cost: Trash
+		(Poe ninja) item [Kongor's Undying Rage] new cost: Trash
+		(Poe ninja) item [Lifesprig] new cost: Trash
+		(Poe ninja) item [Mark of the Doubting Knight] new cost: Trash
+		(Poe ninja) item [Mightflay] new cost: Trash
+		(Poe ninja) item [Mon'tregul's Grasp] new cost: Trash
+		(Poe ninja) item [Moonbender's Wing] new cost: Trash
+		(Poe ninja) item [Mortem Morsu] new cost: Trash
+		(Poe ninja) item [Null's Inclination] new cost: Trash
+		(Poe ninja) item [Nuro's Harp] new cost: Trash
+		(Poe ninja) item [Nycta's Lantern] new cost: Trash
+		(Poe ninja) item [Oro's Sacrifice] new cost: Trash
+		(Poe ninja) item [Prismatic Eclipse] new cost: Trash
+		(Poe ninja) item [Quill Rain] new cost: Trash
+		(Poe ninja) item [Reach of the Council] new cost: Trash
+		(Poe ninja) item [Reaper's Pursuit] new cost: Trash
+		(Poe ninja) item [Reverberation Rod] new cost: Trash
+		(Poe ninja) item [Rigwald's Charge] new cost: Trash
+		(Poe ninja) item [Rigwald's Command] new cost: Trash
+		(Poe ninja) item [Rigwald's Savagery] new cost: Trash
+		(Poe ninja) item [Rive] new cost: Trash
+		(Poe ninja) item [Scaeva] new cost: Trash
+		(Poe ninja) item [Singularity] new cost: Trash
+		(Poe ninja) item [Sire of Shards] new cost: Trash
+		(Poe ninja) item [Slivertongue] new cost: Trash
+		(Poe ninja) item [Storm Cloud] new cost: Trash
+		(Poe ninja) item [Taryn's Shiver] new cost: Trash
+		(Poe ninja) item [Terminus Est] new cost: Trash
+		(Poe ninja) item [The Blood Reaper] new cost: Trash
+		(Poe ninja) item [The Consuming Dark] new cost: Trash
+		(Poe ninja) item [The Dancing Dervish] new cost: Trash
+		(Poe ninja) item [The Harvest] new cost: Trash
+		(Poe ninja) item [The Screaming Eagle] new cost: Trash
+		(Poe ninja) item [The Searing Touch] new cost: Trash
+		(Poe ninja) item [The Supreme Truth] new cost: Trash
+		(Poe ninja) item [The Tempestuous Steel] new cost: Trash
+		(Poe ninja) item [The Whispering Ice] new cost: Trash
+		(Poe ninja) item [Touch of Anguish] new cost: Trash
+		(Poe ninja) item [Tremor Rod] new cost: Trash
+		(Poe ninja) item [Trypanon] new cost: Trash
+		(Poe ninja) item [Voidhome] new cost: Trash
+		(Poe ninja) item [Widowmaker] new cost: Trash
+		(Poe ninja) item [Windripper] new cost: Trash
+		(Poe ninja) item [Xirgil's Crank] new cost: Trash
+		(Poe ninja) item [Ngamahu's Flame] new cost: Trash
+		(Poe ninja) item [Shade of Solaris] new cost: Trash
+		(Poe ninja) item [Xoph's Nurture] new cost: Trash
+		(Poe ninja) item [Severed in Sleep] new cost: Trash
+		(Poe ninja) item [Hand of Wisdom and Action] new cost: Trash
+		(Poe ninja) item [Uul-Netol's Embrace] new cost: Trash
+		(Poe ninja) item [Dying Breath] new cost: Trash
+		(Poe ninja) item [Taproot] new cost: Trash
+		(Poe ninja) item [The Wasp Nest] new cost: Trash
+		(Poe ninja) item [Debeon's Dirge] new cost: Trash
+		(Poe ninja) item [White Wind] new cost: Trash
+		(Poe ninja) item [Cane of Unravelling] new cost: Trash
+		(Poe ninja) item [Balefire] new cost: Trash
+		(Poe ninja) item [Grelwood Shank] new cost: Trash
+		(Poe ninja) item [Ahn's Might] new cost: Trash
+		(Poe ninja) item [Vulconus] new cost: Trash
+		(Poe ninja) item [Shimmeron] new cost: Trash
+		(Poe ninja) item [Augyre] new cost: Trash
+		(Poe ninja) item [Beltimber Blade] new cost: Trash
+		(Poe ninja) item [Earendel's Embrace] new cost: Trash
+		(Poe ninja) item [Sinvicta's Mettle] new cost: Trash
+		(Poe ninja) item [Soulwrest] new cost: Trash
+		(Poe ninja) item [The Grey Spire] new cost: Trash
+		(Poe ninja) item [Sign of the Sin Eater] new cost: Trash
+		(Poe ninja) item [The Black Cane] new cost: Trash
+		(Poe ninja) item [Third Piece of Brutality] new cost: Trash
+		(Poe ninja) item [Second Piece of Brutality] new cost: Trash
+		(Poe ninja) item [Wings of Entropy] new cost: Trash
+		(Poe ninja) item [Replica Tempestuous Steel] new cost: Trash
+		(Poe ninja) item [Replica Harvest] new cost: Trash
+		(Poe ninja) item [Replica Quill Rain] new cost: Trash
+		(Poe ninja) item [Replica Bloodplay] new cost: Trash
+		(Poe ninja) item [Replica Earendel's Embrace] new cost: Trash
+		(Poe ninja) item [Replica Advancing Fortress] new cost: Trash
+		(Poe ninja) item [Replica Fencoil] new cost: Trash
+		(Poe ninja) item [Replica Heartbreaker] new cost: Trash
+		(Poe ninja) item [Replica Innsbury Edge] new cost: Trash
+		(Poe ninja) item [Replica Blood Thorn] new cost: Trash
+		(Poe ninja) item [Replica Infractem] new cost: Trash
+		(Poe ninja) item [Replica Oro's Sacrifice] new cost: Trash
+		(Poe ninja) item [Replica Frostbreath] new cost: Trash
+		(Poe ninja) item [Goblinedge] new cost: Trash
+		(Poe ninja) item [The Gluttonous Tide] new cost: Trash
+		(Poe ninja) item [Widowhail] new cost: Trash
+		(Poe ninja) item [Storm Prison] new cost: Trash
+		(Poe ninja) item [Tulfall] new cost: Trash
+		(Poe ninja) item [Xoph's Inception] new cost: Trash
+		(Poe ninja) item [Uul-Netol's Kiss] new cost: Trash
+		(Poe ninja) item [Tulborn] new cost: Trash
+		(Poe ninja) item [Apep's Rage] new cost: Trash
+		(Poe ninja) item [Nametaker] new cost: Trash
+		(Poe ninja) item [Roth's Reach] new cost: Trash
+		(Poe ninja) item [Queen's Decree] new cost: Trash
+		(Poe ninja) item [Aurumvorax] new cost: Trash
+		(Poe ninja) item [Brightbeak] new cost: Trash
+		(Poe ninja) item [The Stormheart] new cost: Trash
+		(Poe ninja) item [Chober Chaber] new cost: Trash
+		(Poe ninja) item [Ornament of the East] new cost: Trash
+		(Poe ninja) item [Flesh-Eater] new cost: Trash
+		(Poe ninja) item [Abberath's Horn] new cost: Trash
+		(Poe ninja) item [Fidelitas' Spike] new cost: Trash
+		(Poe ninja) item [Infractem] new cost: Trash
+		(Poe ninja) item [Silverbranch] new cost: Trash
+		(Poe ninja) item [Axiom Perpetuum] new cost: Trash
+		(Poe ninja) item [Ungil's Gauche] new cost: Trash
+		(Poe ninja) item [Lakishu's Blade] new cost: Trash
+		(Poe ninja) item [Dreadarc] new cost: Trash
+		(Poe ninja) item [Ewar's Mirage] new cost: Trash
+		(Poe ninja) item [Bloodplay] new cost: Trash
+		(Poe ninja) item [Fencoil] new cost: Trash
+		(Poe ninja) item [Geofri's Baptism] new cost: Trash
+		(Poe ninja) item [Gorebreaker] new cost: Trash
+		(Poe ninja) item [Goredrill] new cost: Trash
+		(Poe ninja) item [Hrimnor's Hymn] new cost: Trash
+		(Poe ninja) item [Last Resort] new cost: Trash
+		(Poe ninja) item [Lavianga's Wisdom] new cost: Trash
+		(Poe ninja) item [Limbsplit] new cost: Trash
+		(Poe ninja) item [Quecholli] new cost: Trash
+		(Poe ninja) item [Realmshaper] new cost: Trash
+		(Poe ninja) item [Redbeak] new cost: Trash
+		(Poe ninja) item [Relentless Fury] new cost: Trash
+		(Poe ninja) item [Shiversting] new cost: Trash
+		(Poe ninja) item [The Blood Thorn] new cost: Trash
+		(Poe ninja) item [The Goddess Bound] new cost: Trash
+		(Poe ninja) item [The Princess] new cost: Trash
+		(Poe ninja) item [Wideswing] new cost: Trash
+		(Poe ninja) item [Wildslash] new cost: Trash
+		(Poe ninja) item [Pillar of the Caged God] new cost: Trash
+		(Poe ninja) read poe.ninja cache (UniqueWeapon)[112ms] Delay status:	Medium
+		(Poe ninja) read api [UniqueArmour][6ms] Delay status:	Minimal
+		(Poe ninja) item [Svalinn] new cost: Very expensive
+		(Poe ninja) item [Stasis Prison] new cost: Very expensive
+		(Poe ninja) item [The Celestial Brace] new cost: Very expensive
+		(Poe ninja) item [The Celestial Brace] new cost: Very expensive
+		(Poe ninja) item [Atziri's Reflection] new cost: Very expensive
+		(Poe ninja) item [The Squire] new cost: Very expensive
+		(Poe ninja) item [Hateforge] new cost: Very expensive
+		(Poe ninja) item [Shroud of the Lightless] new cost: Very expensive
+		(Poe ninja) item [Soul Ascension] new cost: Very expensive
+		(Poe ninja) item [Crown of the Tyrant] new cost: Very expensive
+		(Poe ninja) item [The Apostate] new cost: Very expensive
+		(Poe ninja) item [Wraithlord] new cost: Very expensive
+		(Poe ninja) item [Ralakesh's Impatience] new cost: Very expensive
+		(Poe ninja) item [Replica Alberon's Warpath] new cost: Very expensive
+		(Poe ninja) item [Apep's Slumber] new cost: Very expensive
+		(Poe ninja) item [Replica Farrul's Fur] new cost: Very expensive
+		(Poe ninja) item [Aegis Aurora] new cost: Very expensive
+		(Poe ninja) item [Indigon] new cost: Very expensive
+		(Poe ninja) item [Mask of the Stitched Demon] new cost: Very expensive
+		(Poe ninja) item [Bitterbind Point] new cost: Very expensive
+		(Poe ninja) item [Sandstorm Visage] new cost: Very expensive
+		(Poe ninja) item [Dialla's Malefaction] new cost: Very expensive
+		(Poe ninja) item [Echoes of Creation] new cost: Expensive
+		(Poe ninja) item [The Surrender] new cost: Expensive
+		(Poe ninja) item [Garukhan's Flight] new cost: Expensive
+		(Poe ninja) item [Shroud of the Lightless] new cost: Expensive
+		(Poe ninja) item [Gravebind] new cost: Expensive
+		(Poe ninja) item [Slavedriver's Hand] new cost: Expensive
+		(Poe ninja) item [Admiral's Arrogance] new cost: Expensive
+		(Poe ninja) item [Mask of the Spirit Drinker] new cost: Expensive
+		(Poe ninja) item [Cloak of Tawm'r Isley] new cost: Expensive
+		(Poe ninja) item [Asenath's Gentle Touch] new cost: Expensive
+		(Poe ninja) item [Mahuxotl's Machination] new cost: Expensive
+		(Poe ninja) item [Replica Heatshiver] new cost: Rare
+		(Poe ninja) item [Garb of the Ephemeral] new cost: Rare
+		(Poe ninja) item [The Queen's Hunger] new cost: Rare
+		(Poe ninja) item [Bubonic Trail] new cost: Rare
+		(Poe ninja) item [Saqawal's Nest] new cost: Rare
+		(Poe ninja) item [Rathpith Globe] new cost: Rare
+		(Poe ninja) item [Annihilation's Approach] new cost: Rare
+		(Poe ninja) item [The Unshattered Will] new cost: Rare
+		(Poe ninja) item [Tombfist] new cost: Rare
+		(Poe ninja) item [Omeyocan] new cost: Rare
+		(Poe ninja) item [Command of the Pit] new cost: Rare
+		(Poe ninja) item [The Stampede] new cost: Rare
+		(Poe ninja) item [Doppelgänger Guise] new cost: Rare
+		(Poe ninja) item [Farrul's Fur] new cost: Rare
+		(Poe ninja) item [Architect's Hand] new cost: Rare
+		(Poe ninja) item [Maw of Mischief] new cost: Rare
+		(Poe ninja) item [Replica Hyrri's Ire] new cost: Rare
+		(Poe ninja) item [Cloak of Flame] new cost: Rare
+		(Poe ninja) item [The Covenant] new cost: Rare
+		(Poe ninja) item [Lightpoacher] new cost: Rare
+		(Poe ninja) item [Seven-League Step] new cost: Rare
+		(Poe ninja) ERROR: unique item[dance-of-the-offered-carnal-boots] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![26ms] Delay status:	Very low
+		(Poe ninja) item [Dance of the Offered] new cost: Rare
+		(Poe ninja) item [Death's Door] new cost: Rare
+		(Poe ninja) item [Gruthkul's Pelt] new cost: Rare
+		(Poe ninja) item [Sporeguard] new cost: Rare
+		(Poe ninja) item [The Tempest's Binding] new cost: Rare
+		(Poe ninja) item [Craiceann's Carapace] new cost: Rare
+		(Poe ninja) item [Thunderfist] new cost: Rare
+		(Poe ninja) item [Loreweave] new cost: Rare
+		(Poe ninja) item [Viridi's Veil] new cost: Rare
+		(Poe ninja) item [Atziri's Acuity] new cost: Moderate
+		(Poe ninja) item [Inpulsa's Broken Heart] new cost: Moderate
+		(Poe ninja) item [Hyrri's Ire] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [The Tempest Rising] new cost: Moderate
+		(Poe ninja) item [Prism Guardian] new cost: Moderate
+		(Poe ninja) item [Fenumus' Toxins] new cost: Moderate
+		(Poe ninja) item [The Devouring Diadem] new cost: Moderate
+		(Poe ninja) item [Crown of the Inward Eye] new cost: Moderate
+		(Poe ninja) item [Abhorrent Interrogation] new cost: Moderate
+		(Poe ninja) item [Third Piece of Focus] new cost: Moderate
+		(Poe ninja) item [The Vertex] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [Fourth Piece of Focus] new cost: Moderate
+		(Poe ninja) item [Crest of Desire] new cost: Moderate
+		(Poe ninja) item [The Fledgling] new cost: Moderate
+		(Poe ninja) item [Manastorm] new cost: Moderate
+		(Poe ninja) item [Chains of Command] new cost: Moderate
+		(Poe ninja) item [Fenumus' Shroud] new cost: Moderate
+		(Poe ninja) item [Atziri's Step] new cost: Moderate
+		(Poe ninja) item [Fractal Thoughts] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [Ravenous Passion] new cost: Moderate
+		(Poe ninja) item [Heatshiver] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [Atziri's Splendour] new cost: Moderate
+		(Poe ninja) item [Third Piece of Storms] new cost: Moderate
+		(Poe ninja) item [Fenumus' Weave] new cost: Moderate
+		(Poe ninja) item [March of the Legion] new cost: Moderate
+		(Poe ninja) item [Replica Covenant] new cost: Moderate
+		(Poe ninja) item [The Flawed Refuge] new cost: Common
+		(Poe ninja) item [Mask of the Tribunal] new cost: Common
+		(Poe ninja) item [Replica Tukohama's Fortress] new cost: Common
+		(Poe ninja) item [Magna Eclipsis] new cost: Common
+		(Poe ninja) item [Skyforth] new cost: Common
+		(Poe ninja) item [Malachai's Mark] new cost: Common
+		(Poe ninja) item [The Eternity Shroud] new cost: Common
+		(Poe ninja) item [Saqawal's Flock] new cost: Common
+		(Poe ninja) item [Entropic Devastation] new cost: Common
+		(Poe ninja) item [Craiceann's Pincers] new cost: Common
+		(Poe ninja) item [Light of Lunaris] new cost: Common
+		(Poe ninja) item [The Iron Fortress] new cost: Common
+		(Poe ninja) item [Corpsewalker] new cost: Common
+		(Poe ninja) item [Voll's Vision] new cost: Common
+		(Poe ninja) item [Haemophilia] new cost: Common
+		(Poe ninja) item [Forbidden Shako] new cost: Common
+		(Poe ninja) item [The Brass Dome] new cost: Common
+		(Poe ninja) item [The Gull] new cost: Common
+		(Poe ninja) item [Second Piece of Focus] new cost: Common
+		(Poe ninja) item [Farrul's Bite] new cost: Common
+		(Poe ninja) item [Doryani's Delusion] new cost: Common
+		(Poe ninja) item [Hale Negator] new cost: Common
+		(Poe ninja) item [Maloney's Mechanism] new cost: Common
+		(Poe ninja) item [Cowl of the Thermophile] new cost: Common
+		(Poe ninja) item [Replica Maloney's Mechanism] new cost: Common
+		(Poe ninja) item [Replica Stampede] new cost: Common
+		(Poe ninja) item [Replica Kaom's Heart] new cost: Common
+		(Poe ninja) item [Replica Restless Ward] new cost: Common
+		(Poe ninja) item [Replica Eternity Shroud] new cost: Common
+		(Poe ninja) item [Expedition's End] new cost: Common
+		(Poe ninja) item [Legacy of Fury] new cost: Common
+		(Poe ninja) item [Qotra's Regulator] new cost: Common
+		(Poe ninja) item [Esh's Mirror] new cost: Common
+		(Poe ninja) item [First Piece of Focus] new cost: Common
+		(Poe ninja) item [Font of Thunder] new cost: Common
+		(Poe ninja) item [Faithguard] new cost: Common
+		(Poe ninja) item [Kaom's Heart] new cost: Common
+		(Poe ninja) item [Shaper's Touch] new cost: Common
+		(Poe ninja) item [Leper's Alms] new cost: Common
+		(Poe ninja) item [Doryani's Delusion] new cost: Common
+		(Poe ninja) item [Perepiteia] new cost: Common
+		(Poe ninja) item [Hands of the High Templar] new cost: Common
+		(Poe ninja) item [Doryani's Prototype] new cost: Common
+		(Poe ninja) item [Replica Voidwalker] new cost: Common
+		(Poe ninja) item [Shattershard] new cost: Common
+		(Poe ninja) item [Replica Atziri's Acuity] new cost: Common
+		(Poe ninja) item [The Admiral] new cost: Common
+		(Poe ninja) item [Cadigan's Crown] new cost: Common
+		(Poe ninja) item [Doryani's Delusion] new cost: Common
+		(Poe ninja) item [Second Piece of Directions] new cost: Common
+		(Poe ninja) item [Belly of the Beast] new cost: Common
+		(Poe ninja) item [Cloak of Defiance] new cost: Common
+		(Poe ninja) item [Kintsugi] new cost: Common
+		(Poe ninja) item [Abberath's Hooves] new cost: Common
+		(Poe ninja) item [Saqawal's Talons] new cost: Common
+		(Poe ninja) item [Saqawal's Winds] new cost: Common
+		(Poe ninja) item [Craiceann's Tracks] new cost: Common
+		(Poe ninja) item [Breathstealer] new cost: Common
+		(Poe ninja) item [Replica Mistwall] new cost: Common
+		(Poe ninja) item [Replica Alpha's Howl] new cost: Common
+		(Poe ninja) item [Replica Perfect Form] new cost: Common
+		(Poe ninja) item [Hand of the Fervent] new cost: Common
+		(Poe ninja) item [Temptation Step] new cost: Common
+		(Poe ninja) item [Voidfletcher] new cost: Common
+		(Poe ninja) item [Replica Allelopathy] new cost: Common
+		(Poe ninja) item [Wilma's Requital] new cost: Common
+		(Poe ninja) item [Pragmatism] new cost: Common
+		(Poe ninja) item [The Devourer of Minds] new cost: Common
+		(Poe ninja) item [Fenumus' Spinnerets] new cost: Trash
+		(Poe ninja) item [Olroth's Charge] new cost: Trash
+		(Poe ninja) item [Abyssus] new cost: Trash
+		(Poe ninja) item [Carcass Jack] new cost: Trash
+		(Poe ninja) item [Crown of Eyes] new cost: Trash
+		(Poe ninja) item [Leer Cast] new cost: Trash
+		(Poe ninja) item [Mind of the Council] new cost: Trash
+		(Poe ninja) item [Queen of the Forest] new cost: Trash
+		(Poe ninja) item [Redblade Banner] new cost: Trash
+		(Poe ninja) item [Rigwald's Quills] new cost: Trash
+		(Poe ninja) item [Voidwalker] new cost: Trash
+		(Poe ninja) item [Windscream] new cost: Trash
+		(Poe ninja) item [Tukohama's Fortress] new cost: Trash
+		(Poe ninja) item [The Brine Crown] new cost: Trash
+		(Poe ninja) item [First Piece of Directions] new cost: Trash
+		(Poe ninja) item [Third Piece of Directions] new cost: Trash
+		(Poe ninja) item [Second Piece of Storms] new cost: Trash
+		(Poe ninja) item [Tombfist] new cost: Trash
+		(Poe ninja) item [Bubonic Trail] new cost: Trash
+		(Poe ninja) item [Farrul's Chase] new cost: Trash
+		(Poe ninja) item [Farrul's Pounce] new cost: Trash
+		(Poe ninja) item [Offering to the Serpent] new cost: Trash
+		(Poe ninja) item [The Ivory Tower] new cost: Trash
+		(Poe ninja) item [Emperor's Vigilance] new cost: Trash
+		(Poe ninja) item [Fleshcrafter] new cost: Trash
+		(Poe ninja) item [Replica Victario's Charity] new cost: Trash
+		(Poe ninja) item [Replica Abyssus] new cost: Trash
+		(Poe ninja) item [Ancient Skull] new cost: Trash
+		(Poe ninja) item [Black Zenith] new cost: Trash
+		(Poe ninja) item [Dawnbreaker] new cost: Trash
+		(Poe ninja) item [Utula's Hunger] new cost: Trash
+		(Poe ninja) item [Alberon's Warpath] new cost: Trash
+		(Poe ninja) item [Alpha's Howl] new cost: Trash
+		(Poe ninja) item [Ambu's Charge] new cost: Trash
+		(Poe ninja) item [Asenath's Mark] new cost: Trash
+		(Poe ninja) item [Aurseize] new cost: Trash
+		(Poe ninja) item [Black Sun Crest] new cost: Trash
+		(Poe ninja) item [Bones of Ullr] new cost: Trash
+		(Poe ninja) item [Brinerot Flag] new cost: Trash
+		(Poe ninja) item [Brinerot Whalers] new cost: Trash
+		(Poe ninja) item [Broken Faith] new cost: Trash
+		(Poe ninja) item [Bronn's Lithe] new cost: Trash
+		(Poe ninja) item [Chalice of Horrors] new cost: Trash
+		(Poe ninja) item [Chernobog's Pillar] new cost: Trash
+		(Poe ninja) item [Cherrubim's Maleficence] new cost: Trash
+		(Poe ninja) item [Chitus' Apex] new cost: Trash
+		(Poe ninja) item [Cospri's Will] new cost: Trash
+		(Poe ninja) item [Crown of the Pale King] new cost: Trash
+		(Poe ninja) item [Daresso's Courage] new cost: Trash
+		(Poe ninja) item [Daresso's Defiance] new cost: Trash
+		(Poe ninja) item [Darkray Vectors] new cost: Trash
+		(Poe ninja) item [Death's Oath] new cost: Trash
+		(Poe ninja) item [Deidbell] new cost: Trash
+		(Poe ninja) item [Devoto's Devotion] new cost: Trash
+		(Poe ninja) item [Doedre's Scorn] new cost: Trash
+		(Poe ninja) item [Doedre's Tenure] new cost: Trash
+		(Poe ninja) item [Doryani's Fist] new cost: Trash
+		(Poe ninja) item [Dusktoe] new cost: Trash
+		(Poe ninja) item [Empire's Grasp] new cost: Trash
+		(Poe ninja) item [Facebreaker] new cost: Trash
+		(Poe ninja) item [Fairgraves' Tricorne] new cost: Trash
+		(Poe ninja) item [Foxshade] new cost: Trash
+		(Poe ninja) item [Gang's Momentum] new cost: Trash
+		(Poe ninja) item [Geofri's Crest] new cost: Trash
+		(Poe ninja) item [Geofri's Sanctuary] new cost: Trash
+		(Poe ninja) item [Goldrim] new cost: Trash
+		(Poe ninja) item [Goldwyrm] new cost: Trash
+		(Poe ninja) item [Great Old One's Ward] new cost: Trash
+		(Poe ninja) item [Greed's Embrace] new cost: Trash
+		(Poe ninja) item [Grip of the Council] new cost: Trash
+		(Poe ninja) item [Heretic's Veil] new cost: Trash
+		(Poe ninja) item [Honourhome] new cost: Trash
+		(Poe ninja) item [Hrimsorrow] new cost: Trash
+		(Poe ninja) item [Hyrri's Bite] new cost: Trash
+		(Poe ninja) item [Incandescent Heart] new cost: Trash
+		(Poe ninja) item [Infernal Mantle] new cost: Trash
+		(Poe ninja) item [Jaws of Agony] new cost: Trash
+		(Poe ninja) item [Kaltenhalt] new cost: Trash
+		(Poe ninja) item [Kaom's Roots] new cost: Trash
+		(Poe ninja) item [Kingsguard] new cost: Trash
+		(Poe ninja) item [Kitava's Thirst] new cost: Trash
+		(Poe ninja) item [Lightning Coil] new cost: Trash
+		(Poe ninja) item [Lioneye's Paws] new cost: Trash
+		(Poe ninja) item [Lioneye's Remorse] new cost: Trash
+		(Poe ninja) item [Lioneye's Vision] new cost: Trash
+		(Poe ninja) item [Lochtonial Caress] new cost: Trash
+		(Poe ninja) item [Malachai's Loop] new cost: Trash
+		(Poe ninja) item [Malachai's Simula] new cost: Trash
+		(Poe ninja) item [Maligaro's Lens] new cost: Trash
+		(Poe ninja) item [Maligaro's Virtuosity] new cost: Trash
+		(Poe ninja) item [Matua Tupuna] new cost: Trash
+		(Poe ninja) item [Meginord's Vise] new cost: Trash
+		(Poe ninja) item [Mindspiral] new cost: Trash
+		(Poe ninja) item [Mutewind Pennant] new cost: Trash
+		(Poe ninja) item [Mutewind Whispersteps] new cost: Trash
+		(Poe ninja) item [Null and Void] new cost: Trash
+		(Poe ninja) item [Obscurantis] new cost: Trash
+		(Poe ninja) item [Ondar's Clasp] new cost: Trash
+		(Poe ninja) item [Rainbowstride] new cost: Trash
+		(Poe ninja) item [Rat's Nest] new cost: Trash
+		(Poe ninja) item [Redblade Tramplers] new cost: Trash
+		(Poe ninja) item [Repentance] new cost: Trash
+		(Poe ninja) item [Rime Gaze] new cost: Trash
+		(Poe ninja) item [Rise of the Phoenix] new cost: Trash
+		(Poe ninja) item [Saffell's Frame] new cost: Trash
+		(Poe ninja) item [Scold's Bridle] new cost: Trash
+		(Poe ninja) item [Sentari's Answer] new cost: Trash
+		(Poe ninja) item [Shadows and Dust] new cost: Trash
+		(Poe ninja) item [Shavronne's Pace] new cost: Trash
+		(Poe ninja) item [Shavronne's Wrappings] new cost: Trash
+		(Poe ninja) item [Sin Trek] new cost: Trash
+		(Poe ninja) item [Skirmish] new cost: Trash
+		(Poe ninja) item [Skullhead] new cost: Trash
+		(Poe ninja) item [Slitherpinch] new cost: Trash
+		(Poe ninja) item [Snakebite] new cost: Trash
+		(Poe ninja) item [Soul Mantle] new cost: Trash
+		(Poe ninja) item [Soul Strike] new cost: Trash
+		(Poe ninja) item [Southbound] new cost: Trash
+		(Poe ninja) item [Springleaf] new cost: Trash
+		(Poe ninja) item [Starkonja's Head] new cost: Trash
+		(Poe ninja) item [Steppan Eard] new cost: Trash
+		(Poe ninja) item [Sundance] new cost: Trash
+		(Poe ninja) item [Surgebinders] new cost: Trash
+		(Poe ninja) item [The Beast Fur Shawl] new cost: Trash
+		(Poe ninja) item [The Blood Dance] new cost: Trash
+		(Poe ninja) item [The Bringer of Rain] new cost: Trash
+		(Poe ninja) item [The Broken Crown] new cost: Trash
+		(Poe ninja) item [The Rat Cage] new cost: Trash
+		(Poe ninja) item [The Restless Ward] new cost: Trash
+		(Poe ninja) item [The Three Dragons] new cost: Trash
+		(Poe ninja) item [Thousand Ribbons] new cost: Trash
+		(Poe ninja) item [Thousand Teeth Temu] new cost: Trash
+		(Poe ninja) item [Three-step Assault] new cost: Trash
+		(Poe ninja) item [Titucius' Span] new cost: Trash
+		(Poe ninja) item [Vaal Caress] new cost: Trash
+		(Poe ninja) item [Veil of the Night] new cost: Trash
+		(Poe ninja) item [Veruso's Battering Rams] new cost: Trash
+		(Poe ninja) item [Victario's Charity] new cost: Trash
+		(Poe ninja) item [Victario's Flight] new cost: Trash
+		(Poe ninja) item [Victario's Influence] new cost: Trash
+		(Poe ninja) item [Vis Mortis] new cost: Trash
+		(Poe ninja) item [Voidbringer] new cost: Trash
+		(Poe ninja) item [Voll's Protector] new cost: Trash
+		(Poe ninja) item [Wake of Destruction] new cost: Trash
+		(Poe ninja) item [Wanderlust] new cost: Trash
+		(Poe ninja) item [Winds of Change] new cost: Trash
+		(Poe ninja) item [Wondertrap] new cost: Trash
+		(Poe ninja) item [Wyrmsign] new cost: Trash
+		(Poe ninja) item [Ylfeban's Trickery] new cost: Trash
+		(Poe ninja) item [Zahndethus' Cassock] new cost: Trash
+		(Poe ninja) item [Lycosidae] new cost: Trash
+		(Poe ninja) item [The Anticipation] new cost: Trash
+		(Poe ninja) item [The Perfect Form] new cost: Trash
+		(Poe ninja) item [Esh's Visage] new cost: Trash
+		(Poe ninja) item [The Formless Inferno] new cost: Trash
+		(Poe ninja) item [The Red Trail] new cost: Trash
+		(Poe ninja) item [The Baron] new cost: Trash
+		(Poe ninja) item [Ahn's Heritage] new cost: Trash
+		(Poe ninja) item [Inya's Epiphany] new cost: Trash
+		(Poe ninja) item [Speaker's Wreath] new cost: Trash
+		(Poe ninja) item [Eber's Unification] new cost: Trash
+		(Poe ninja) item [The Embalmer] new cost: Trash
+		(Poe ninja) item [Tinkerskin] new cost: Trash
+		(Poe ninja) item [Dendrobate] new cost: Trash
+		(Poe ninja) item [The Coming Calamity] new cost: Trash
+		(Poe ninja) item [Volkuur's Guidance] new cost: Trash
+		(Poe ninja) item [Kalisa's Grace] new cost: Trash
+		(Poe ninja) item [Oskarm] new cost: Trash
+		(Poe ninja) item [Bloodbond] new cost: Trash
+		(Poe ninja) item [Stormcharger] new cost: Trash
+		(Poe ninja) item [Ahn's Contempt] new cost: Trash
+		(Poe ninja) item [Invictus Solaris] new cost: Trash
+		(Poe ninja) item [Vix Lunaris] new cost: Trash
+		(Poe ninja) item [Memory Vault] new cost: Trash
+		(Poe ninja) item [Blasphemer's Grasp] new cost: Trash
+		(Poe ninja) item [Doedre's Skin] new cost: Trash
+		(Poe ninja) item [Volkuur's Guidance] new cost: Trash
+		(Poe ninja) item [Yriel's Fostering] new cost: Trash
+		(Poe ninja) item [Yriel's Fostering] new cost: Trash
+		(Poe ninja) item [Volkuur's Guidance] new cost: Trash
+		(Poe ninja) item [Yriel's Fostering] new cost: Trash
+		(Poe ninja) item [Mark of the Red Covenant] new cost: Trash
+		(Poe ninja) item [Gorgon's Gaze] new cost: Trash
+		(Poe ninja) item [Craiceann's Chitin] new cost: Trash
+		(Poe ninja) item [Zeel's Amplifier] new cost: Trash
+		(Poe ninja) item [Unyielding Flame] new cost: Trash
+		(Poe ninja) item [The Eternal Apple] new cost: Trash
+		(Poe ninja) item [Demon Stitcher] new cost: Trash
+		(Poe ninja) item [Thundersight] new cost: Trash
+		(Poe ninja) item [Galesight] new cost: Trash
+		(Poe ninja) item [Flamesight] new cost: Trash
+		(Poe ninja) item [Vixen's Entrapment] new cost: Trash
+		(Poe ninja) item [Wreath of Phrecia] new cost: Trash
+		(Poe ninja) item [Maw of Conquest] new cost: Trash
+		(Poe ninja) item [Aukuna's Will] new cost: Trash
+		(Poe ninja) item [Torchoak Step] new cost: Trash
+		(Poe ninja) item [Triad Grip] new cost: Trash
+		(Poe ninja) item [Machina Mitts] new cost: Trash
+		(Poe ninja) item [Cowl of the Ceraunophile] new cost: Trash
+		(Poe ninja) item [Cowl of the Cryophile] new cost: Trash
+		(Poe ninja) item [Storm's Gift] new cost: Trash
+		(Poe ninja) item [Mistwall] new cost: Trash
+		(Poe ninja) item [Painseeker] new cost: Trash
+		(Poe ninja) item [Eye of Malice] new cost: Trash
+		(Poe ninja) item [Assailum] new cost: Trash
+		(Poe ninja) item [Perfidy] new cost: Trash
+		(Poe ninja) item [Beacon of Madness] new cost: Trash
+		(Poe ninja) item [Algor Mortis] new cost: Trash
+		(Poe ninja) item [Great Old One's Tentacles] new cost: Trash
+		(Poe ninja) item [Plume of Pursuit] new cost: Trash
+		(Poe ninja) item [Willclash] new cost: Trash
+		(Poe ninja) item [Mercenary's Lot] new cost: Trash
+		(Poe ninja) item [The Ghastly Theatre] new cost: Trash
+		(Poe ninja) item [Blunderbore] new cost: Trash
+		(Poe ninja) item [Replica Lioneye's Paws] new cost: Trash
+		(Poe ninja) item [Replica Ambu's Charge] new cost: Trash
+		(Poe ninja) item [Replica Veil of the Night] new cost: Trash
+		(Poe ninja) item [Replica Bones of Ullr] new cost: Trash
+		(Poe ninja) item [Replica Grip of the Council] new cost: Trash
+		(Poe ninja) item [Replica Kalisa's Grace] new cost: Trash
+		(Poe ninja) item [Replica Three-step Assault] new cost: Trash
+		(Poe ninja) item [Replica Inya's Epiphany] new cost: Trash
+		(Poe ninja) item [Replica Leer Cast] new cost: Trash
+		(Poe ninja) item [Replica Loreweave] new cost: Trash
+		(Poe ninja) item [Replica Soul Strike] new cost: Trash
+		(Poe ninja) item [Replica Red Trail] new cost: Trash
+		(Poe ninja) item [Hrimnor's Resolve] new cost: Trash
+		(Poe ninja) item [Steelworm] new cost: Trash
+		(Poe ninja) item [The Scales of Justice] new cost: Trash
+		(Poe ninja) item [Nightgrip] new cost: Trash
+		(Poe ninja) item [Medved's Challenge] new cost: Trash
+		(Poe ninja) item [Vorana's March] new cost: Trash
+		(Poe ninja) item [Usurper's Penance] new cost: Trash
+		(Poe ninja) item [The Oppressor] new cost: Trash
+		(Poe ninja) item [Blackgleam] new cost: Trash
+		(Poe ninja) item [Inextricable Fate] new cost: Trash
+		(Poe ninja) item [Sudden Dawn] new cost: Trash
+		(Poe ninja) item [Rearguard] new cost: Trash
+		(Poe ninja) item [Ceaseless Feast] new cost: Trash
+		(Poe ninja) item [Scorpion's Call] new cost: Trash
+		(Poe ninja) item [Maloney's Nightfall] new cost: Trash
+		(Poe ninja) item [Thrillsteel] new cost: Trash
+		(Poe ninja) item [Ghostwrithe] new cost: Trash
+		(Poe ninja) item [Kaom's Spirit] new cost: Trash
+		(Poe ninja) item [Elevore] new cost: Trash
+		(Poe ninja) item [The Poised Prism] new cost: Trash
+		(Poe ninja) item [Briskwrap] new cost: Trash
+		(Poe ninja) item [Kongming's Stratagem] new cost: Trash
+		(Poe ninja) item [Allelopathy] new cost: Trash
+		(Poe ninja) item [Dawnstrider] new cost: Trash
+		(Poe ninja) item [Orbala's Stand] new cost: Trash
+		(Poe ninja) item [Tanu Ahi] new cost: Trash
+		(Poe ninja) item [Stormseeker] new cost: Trash
+		(Poe ninja) item [The Fourth Vow] new cost: Trash
+		(Poe ninja) item [Blood Price] new cost: Trash
+		(Poe ninja) item [The Infinite Pursuit] new cost: Trash
+		(Poe ninja) item [The Formless Flame] new cost: Trash
+		(Poe ninja) item [The Snowblind Grace] new cost: Trash
+		(Poe ninja) item [Kahuturoa's Certainty] new cost: Trash
+		(Poe ninja) item [Kiloava's Bluster] new cost: Trash
+		(Poe ninja) item [Akoya's Gaze] new cost: Trash
+		(Poe ninja) item [Ahuana's Bite] new cost: Trash
+		(Poe ninja) item [Gamblesprint] new cost: Trash
+		(Poe ninja) item [The Trickster's Smile] new cost: Trash
+		(Poe ninja) item [The Hand of Phrecia] new cost: Trash
+		(Poe ninja) item [Veruso's Ambition] new cost: Trash
+		(Poe ninja) item [Icetomb] new cost: Trash
+		(Poe ninja) item [Solaris Lorica] new cost: Trash
+		(Poe ninja) item [Ashrend] new cost: Trash
+		(Poe ninja) item [Nomic's Storm] new cost: Trash
+		(Poe ninja) item [Crest of Perandus] new cost: Trash
+		(Poe ninja) item [Ezomyte Peak] new cost: Trash
+		(Poe ninja) item [Shackles of the Wretched] new cost: Trash
+		(Poe ninja) item [The Deep One's Hide] new cost: Trash
+		(Poe ninja) item [Drillneck] new cost: Trash
+		(Poe ninja) item [Lightbane Raiment] new cost: Trash
+		(Poe ninja) item [Sadima's Touch] new cost: Trash
+		(Poe ninja) item [Flesh and Spirit] new cost: Trash
+		(Poe ninja) item [Bramblejack] new cost: Trash
+		(Poe ninja) item [Craghead] new cost: Trash
+		(Poe ninja) item [Crown of Thorns] new cost: Trash
+		(Poe ninja) item [Deerstalker] new cost: Trash
+		(Poe ninja) item [Trolltimber Spire] new cost: Trash
+		(Poe ninja) item [Wheel of the Stormsail] new cost: Trash
+		(Poe ninja) item [Giantsbane] new cost: Trash
+		(Poe ninja) item [Curtain Call] new cost: Trash
+		(Poe ninja) item [Saemus' Gift] new cost: Trash
+		(Poe ninja) item [Asphyxia's Wrath] new cost: Trash
+		(Poe ninja) read poe.ninja cache (UniqueArmour)[174ms] Delay status:	Medium
+		(Poe ninja) read api [UniqueAccessory][3ms] Delay status:	Minimal
+		(Poe ninja) item [Original Sin] new cost: Very expensive
+		(Poe ninja) item [Mageblood] new cost: Very expensive
+		(Poe ninja) item [Headhunter] new cost: Very expensive
+		(Poe ninja) item [Nimis] new cost: Very expensive
+		(Poe ninja) ERROR: unique item[yndas-stand-studded-belt] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![2ms] Delay status:	Minimal
+		(Poe ninja) item [Ynda's Stand] new cost: Very expensive
+		(Poe ninja) item [Defiance of Destiny] new cost: Very expensive
+		(Poe ninja) item [Uul-Netol's Vow] new cost: Very expensive
+		(Poe ninja) item [Ashes of the Stars] new cost: Very expensive
+		(Poe ninja) item [The Tides of Time] new cost: Very expensive
+		(Poe ninja) item [Putembo's Mountain] new cost: Very expensive
+		(Poe ninja) item [Aul's Uprising] new cost: Very expensive
+		(Poe ninja) item [Coward's Legacy] new cost: Very expensive
+		(Poe ninja) item [Stranglegasp] new cost: Very expensive
+		(Poe ninja) item [Kalandra's Touch] new cost: Very expensive
+		(Poe ninja) item [Ryslatha's Coil] new cost: Very expensive
+		(Poe ninja) item [Replica Headhunter] new cost: Very expensive
+		(Poe ninja) item [Yoke of Suffering] new cost: Expensive
+		(Poe ninja) item [Zerphi's Heart] new cost: Expensive
+		(Poe ninja) item [Astramentis] new cost: Expensive
+		(Poe ninja) ERROR: unique item[the-hateful-accuser-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![4ms] Delay status:	Minimal
+		(Poe ninja) ERROR: Item[the-hateful-accuser-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
+		(Poe ninja) item [The Hateful Accuser] new cost: Expensive
+		(Poe ninja) item [Atziri's Foible] new cost: Rare
+		(Poe ninja) item [Replica Bated Breath] new cost: Rare
+		(Poe ninja) item [Eternal Damnation] new cost: Rare
+		(Poe ninja) item [Curio of Absorption] new cost: Rare
+		(Poe ninja) item [The Flow Untethered] new cost: Rare
+		(Poe ninja) item [Curio of Consumption] new cost: Rare
+		(Poe ninja) item [Uzaza's Valley] new cost: Rare
+		(Poe ninja) item [Anathema] new cost: Rare
+		(Poe ninja) item [Curio of Potential] new cost: Rare
+		(Poe ninja) item [Polaric Devastation] new cost: Rare
+		(Poe ninja) item [The Taming] new cost: Rare
+		(Poe ninja) item [Uzaza's Mountain] new cost: Rare
+		(Poe ninja) item [Presence of Chayula] new cost: Rare
+		(Poe ninja) item [Hyperboreus] new cost: Rare
+		(Poe ninja) item [Berek's Respite] new cost: Rare
+		(Poe ninja) item [Darkness Enthroned] new cost: Rare
+		(Poe ninja) item [Putembo's Meadow] new cost: Rare
+		(Poe ninja) item [Crystallised Omniscience] new cost: Rare
+		(Poe ninja) item [Ahkeli's Meadow] new cost: Rare
+		(Poe ninja) item [Curio of Decay] new cost: Rare
+		(Poe ninja) item [Fury Valve] new cost: Rare
+		(Poe ninja) item [Replica Badge of the Brotherhood] new cost: Rare
+		(Poe ninja) item [Impresence] new cost: Moderate
+		(Poe ninja) item [Death Rush] new cost: Moderate
+		(Poe ninja) item [Second Piece of Time] new cost: Moderate
+		(Poe ninja) item [Shavronne's Revelation] new cost: Moderate
+		(Poe ninja) item [Circle of Ambition] new cost: Moderate
+		(Poe ninja) item [Coward's Chains] new cost: Moderate
+		(Poe ninja) item [Xoph's Blood] new cost: Moderate
+		(Poe ninja) item [Eyes of the Greatwolf] new cost: Moderate
+		(Poe ninja) item [The Magnate] new cost: Moderate
+		(Poe ninja) item [Blackflame] new cost: Moderate
+		(Poe ninja) item [Ahkeli's Mountain] new cost: Moderate
+		(Poe ninja) item [First Piece of Time] new cost: Moderate
+		(Poe ninja) item [Putembo's Valley] new cost: Moderate
+		(Poe ninja) item [Uzaza's Meadow] new cost: Moderate
+		(Poe ninja) item [Astral Projector] new cost: Moderate
+		(Poe ninja) item [Ahkeli's Valley] new cost: Common
+		(Poe ninja) item [The Jinxed Juju] new cost: Common
+		(Poe ninja) item [Call of the Void] new cost: Common
+		(Poe ninja) item [Replica Hinekora's Sight] new cost: Common
+		(Poe ninja) item [Call of the Void] new cost: Common
+		(Poe ninja) item [The Retch] new cost: Common
+		(Poe ninja) item [Doryani's Invitation] new cost: Common
+		(Poe ninja) item [Badge of the Brotherhood] new cost: Common
+		(Poe ninja) item [Replica Atziri's Foible] new cost: Common
+		(Poe ninja) item [Sacrificial Heart] new cost: Common
+		(Poe ninja) item [Solstice Vigil] new cost: Common
+		(Poe ninja) item [Vivinsect] new cost: Common
+		(Poe ninja) item [Warrior's Legacy] new cost: Common
+		(Poe ninja) item [Replica Emberwake] new cost: Common
+		(Poe ninja) item [Arn's Anguish] new cost: Common
+		(Poe ninja) item [Graven's Secret] new cost: Common
+		(Poe ninja) item [Replica Dragonfang's Flight] new cost: Common
+		(Poe ninja) item [The Pandemonius] new cost: Common
+		(Poe ninja) item [Pyre] new cost: Common
+		(Poe ninja) item [Choir of the Storm] new cost: Common
+		(Poe ninja) item [Cyclopean Coil] new cost: Common
+		(Poe ninja) item [Impresence] new cost: Common
+		(Poe ninja) item [Winterweave] new cost: Common
+		(Poe ninja) item [Mark of the Shaper] new cost: Common
+		(Poe ninja) item [Circle of Nostalgia] new cost: Common
+		(Poe ninja) item [Bear's Girdle] new cost: Common
+		(Poe ninja) item [Replica Soul Tether] new cost: Common
+		(Poe ninja) item [Replica Karui Ward] new cost: Common
+		(Poe ninja) item [Olesya's Delight] new cost: Common
+		(Poe ninja) item [The Burden of Truth] new cost: Common
+		(Poe ninja) item [The Untouched Soul] new cost: Common
+		(Poe ninja) item [Berek's Grip] new cost: Trash
+		(Poe ninja) item [Berek's Pass] new cost: Trash
+		(Poe ninja) item [Dyadian Dawn] new cost: Trash
+		(Poe ninja) item [Perandus Signet] new cost: Trash
+		(Poe ninja) item [The Pariah] new cost: Trash
+		(Poe ninja) item [Ventor's Gamble] new cost: Trash
+		(Poe ninja) item [Voice of the Storm] new cost: Trash
+		(Poe ninja) item [Bisco's Leash] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Impresence] new cost: Trash
+		(Poe ninja) item [Mark of the Elder] new cost: Trash
+		(Poe ninja) item [Mark of Submission] new cost: Trash
+		(Poe ninja) item [Circle of Regret] new cost: Trash
+		(Poe ninja) item [Circle of Anguish] new cost: Trash
+		(Poe ninja) item [Circle of Guilt] new cost: Trash
+		(Poe ninja) item [Circle of Fear] new cost: Trash
+		(Poe ninja) item [Leash of Oblation] new cost: Trash
+		(Poe ninja) item [Replica Voideye] new cost: Trash
+		(Poe ninja) item [Replica Hyrri's Truth] new cost: Trash
+		(Poe ninja) item [Replica Tasalio's Sign] new cost: Trash
+		(Poe ninja) item [Replica Prismweave] new cost: Trash
+		(Poe ninja) item [Replica Siegebreaker] new cost: Trash
+		(Poe ninja) item [Fated End] new cost: Trash
+		(Poe ninja) item [Chains of Emancipation] new cost: Trash
+		(Poe ninja) item [Rotblood Promise] new cost: Trash
+		(Poe ninja) item [The Eternal Struggle] new cost: Trash
+		(Poe ninja) ERROR: unique item[the-queller-of-minds-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![32ms] Delay status:	Very low
+		(Poe ninja) ERROR: Item[the-queller-of-minds-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
+		(Poe ninja) item [The Queller of Minds] new cost: Trash
+		(Poe ninja) item [Andvarius] new cost: Trash
+		(Poe ninja) item [Ascent From Flesh] new cost: Trash
+		(Poe ninja) item [Bated Breath] new cost: Trash
+		(Poe ninja) item [Belt of the Deceiver] new cost: Trash
+		(Poe ninja) item [Blackheart] new cost: Trash
+		(Poe ninja) item [Blightwell] new cost: Trash
+		(Poe ninja) item [Brinerot Mark] new cost: Trash
+		(Poe ninja) item [Call of the Brotherhood] new cost: Trash
+		(Poe ninja) item [Carnage Heart] new cost: Trash
+		(Poe ninja) item [Daresso's Salute] new cost: Trash
+		(Poe ninja) item [Doedre's Damning] new cost: Trash
+		(Poe ninja) item [Dream Fragments] new cost: Trash
+		(Poe ninja) item [Emberwake] new cost: Trash
+		(Poe ninja) item [Essence Worm] new cost: Trash
+		(Poe ninja) item [Extractor Mentis] new cost: Trash
+		(Poe ninja) item [Eye of Chayula] new cost: Trash
+		(Poe ninja) item [Eye of Innocence] new cost: Trash
+		(Poe ninja) item [Faminebind] new cost: Trash
+		(Poe ninja) item [Feastbind] new cost: Trash
+		(Poe ninja) item [Gifts from Above] new cost: Trash
+		(Poe ninja) item [Heartbound Loop] new cost: Trash
+		(Poe ninja) item [Hinekora's Sight] new cost: Trash
+		(Poe ninja) item [Immortal Flesh] new cost: Trash
+		(Poe ninja) item [Kaom's Sign] new cost: Trash
+		(Poe ninja) item [Karui Ward] new cost: Trash
+		(Poe ninja) item [Kikazaru] new cost: Trash
+		(Poe ninja) item [Le Heup of All] new cost: Trash
+		(Poe ninja) item [Lori's Lantern] new cost: Trash
+		(Poe ninja) item [Malachai's Artifice] new cost: Trash
+		(Poe ninja) item [Maligaro's Restraint] new cost: Trash
+		(Poe ninja) item [Marylene's Fallacy] new cost: Trash
+		(Poe ninja) item [Meginord's Girdle] new cost: Trash
+		(Poe ninja) item [Ming's Heart] new cost: Trash
+		(Poe ninja) item [Mokou's Embrace] new cost: Trash
+		(Poe ninja) item [Mutewind Seal] new cost: Trash
+		(Poe ninja) item [Natural Hierarchy] new cost: Trash
+		(Poe ninja) item [Ngamahu's Sign] new cost: Trash
+		(Poe ninja) item [Perandus Blazon] new cost: Trash
+		(Poe ninja) item [Praxis] new cost: Trash
+		(Poe ninja) item [Prismweave] new cost: Trash
+		(Poe ninja) item [Rashkaldor's Patience] new cost: Trash
+		(Poe ninja) item [Redblade Band] new cost: Trash
+		(Poe ninja) item [Rigwald's Crest] new cost: Trash
+		(Poe ninja) item [Rigwald's Curse] new cost: Trash
+		(Poe ninja) item [Romira's Banquet] new cost: Trash
+		(Poe ninja) item [Shaper's Seed] new cost: Trash
+		(Poe ninja) item [Sibyl's Lament] new cost: Trash
+		(Poe ninja) item [Sidhebreath] new cost: Trash
+		(Poe ninja) item [Snakepit] new cost: Trash
+		(Poe ninja) item [Soulthirst] new cost: Trash
+		(Poe ninja) item [Stone of Lazhwar] new cost: Trash
+		(Poe ninja) item [Sunblast] new cost: Trash
+		(Poe ninja) item [Tasalio's Sign] new cost: Trash
+		(Poe ninja) item [Tear of Purity] new cost: Trash
+		(Poe ninja) item [The Anvil] new cost: Trash
+		(Poe ninja) item [The Aylardex] new cost: Trash
+		(Poe ninja) item [The Ignomon] new cost: Trash
+		(Poe ninja) item [The Warden's Brand] new cost: Trash
+		(Poe ninja) item [Thief's Torment] new cost: Trash
+		(Poe ninja) item [Timeclasp] new cost: Trash
+		(Poe ninja) item [Umbilicus Immortalis] new cost: Trash
+		(Poe ninja) item [Ungil's Harmony] new cost: Trash
+		(Poe ninja) item [Valako's Sign] new cost: Trash
+		(Poe ninja) item [Valyrium] new cost: Trash
+		(Poe ninja) item [Voideye] new cost: Trash
+		(Poe ninja) item [Voll's Devotion] new cost: Trash
+		(Poe ninja) item [Warped Timepiece] new cost: Trash
+		(Poe ninja) item [Winterheart] new cost: Trash
+		(Poe ninja) item [Wurm's Molt] new cost: Trash
+		(Poe ninja) item [Xoph's Heart] new cost: Trash
+		(Poe ninja) item [The Halcyon] new cost: Trash
+		(Poe ninja) item [Perseverance] new cost: Trash
+		(Poe ninja) item [Auxium] new cost: Trash
+		(Poe ninja) item [Bloodgrip] new cost: Trash
+		(Poe ninja) item [Soul Tether] new cost: Trash
+		(Poe ninja) item [Maligaro's Cruelty] new cost: Trash
+		(Poe ninja) item [Gloomfang] new cost: Trash
+		(Poe ninja) item [The Hungry Loop] new cost: Trash
+		(Poe ninja) item [Stormfire] new cost: Trash
+		(Poe ninja) item [Gluttony] new cost: Trash
+		(Poe ninja) item [Perquil's Toe] new cost: Trash
+		(Poe ninja) item [The Primordial Chain] new cost: Trash
+		(Poe ninja) item [Hyrri's Truth] new cost: Trash
+		(Poe ninja) item [Tavukai] new cost: Trash
+		(Poe ninja) item [Siegebreaker] new cost: Trash
+		(Poe ninja) item [Venopuncture] new cost: Trash
+		(Poe ninja) item [Icefang Orbit] new cost: Trash
+		(Poe ninja) item [Mother's Embrace] new cost: Trash
+		(Poe ninja) item [Willowgift] new cost: Trash
+		(Poe ninja) item [Profane Proxy] new cost: Trash
+		(Poe ninja) item [Storm Secret] new cost: Trash
+		(Poe ninja) item [The Felbog Fang] new cost: Trash
+		(Poe ninja) item [Pyroshock Clasp] new cost: Trash
+		(Poe ninja) item [The Ephemeral Bond] new cost: Trash
+		(Poe ninja) item [The Highwayman] new cost: Trash
+		(Poe ninja) item [The Druggery] new cost: Trash
+		(Poe ninja) item [Replica Malachai's Artifice] new cost: Trash
+		(Poe ninja) item [Replica Doedre's Damning] new cost: Trash
+		(Poe ninja) item [Replica Winterheart] new cost: Trash
+		(Poe ninja) item [Survivor's Guilt] new cost: Trash
+		(Poe ninja) item [Triumvirate Authority] new cost: Trash
+		(Poe ninja) item [Doedre's Tongue] new cost: Trash
+		(Poe ninja) item [Chain of Endurance] new cost: Trash
+		(Poe ninja) item [Bloodsoaked Medallion] new cost: Trash
+		(Poe ninja) item [Ceinture of Benevolence] new cost: Trash
+		(Poe ninja) item [Tainted Pact] new cost: Trash
+		(Poe ninja) item [Soulbound] new cost: Trash
+		(Poe ninja) item [Ikiaho's Promise] new cost: Trash
+		(Poe ninja) item [Tawhanuku's Timing] new cost: Trash
+		(Poe ninja) item [Bound Fate] new cost: Trash
+		(Poe ninja) item [Kaom's Binding] new cost: Trash
+		(Poe ninja) item [Nevalius Inheritance] new cost: Trash
+		(Poe ninja) item [Grattus Signet] new cost: Trash
+		(Poe ninja) ERROR: unique item[the-selfish-shepherd-nameless-ring] have tag <non world drop>, but have no suitable loot source (<Boss drop>, <Atzoatl sacrifice>, <Assembled from pieces>, <Uber lab>, <Boss drop>,  <Heist drop>, <Upgraded by blessing>, <Vendor recipe>, <Blight> or <Simulacrum>)![30ms] Delay status:	Very low
+		(Poe ninja) ERROR: Item[the-selfish-shepherd-nameless-ring] is replica, but have no <Loot source: Heist> and <Replica> tag![0ms] Delay status:	Minimal
+		(Poe ninja) item [The Selfish Shepherd] new cost: Trash
+		(Poe ninja) item [Victario's Acuity] new cost: Trash
+		(Poe ninja) item [Night's Hold] new cost: Trash
+		(Poe ninja) item [Araku Tiki] new cost: Trash
+		(Poe ninja) item [Retaliation Charm] new cost: Trash
+		(Poe ninja) read poe.ninja cache (UniqueAccessory)[12ms] Delay status:	Very low
+		(Poe ninja) read api [DivinationCard][0ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (DivinationCard)[120ms] Delay status:	Medium
 		(Poe ninja) read api [Currency][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Currency)[5ms] Delay status:	Minimal
+		(Poe ninja) item [Chaos Orb] new cost: Trash
+		(Poe ninja) item [Divine Orb] new cost: Trash
+		(Poe ninja) item [Accelerating Catalyst] new cost: Trash
+		(Poe ninja) item [Augmentation Implant] new cost: Trash
+		(Poe ninja) item [Blessed Orb] new cost: Trash
+		(Poe ninja) item [Abrasive Catalyst] new cost: Trash
+		(Poe ninja) item [Orb of Alchemy] new cost: Trash
+		(Poe ninja) item [Orb of Alteration] new cost: Trash
+		(Poe ninja) item [Ancient Orb] new cost: Trash
+		(Poe ninja) item [Ancient Shard] new cost: Trash
+		(Poe ninja) item [Orb of Annulment] new cost: Trash
+		(Poe ninja) item [Annulment Shard] new cost: Trash
+		(Poe ninja) item [Orb of Augmentation] new cost: Trash
+		(Poe ninja) item [Awakener's Orb] new cost: Trash
+		(Poe ninja) item [Glassblower's Bauble] new cost: Trash
+		(Poe ninja) item [Blighted Scouting Report] new cost: Trash
+		(Poe ninja) item [Orb of Chance] new cost: Trash
+		(Poe ninja) item [Chaos Shard] new cost: Trash
+		(Poe ninja) item [Cartographer's Chisel] new cost: Trash
+		(Poe ninja) item [Comprehensive Scouting Report] new cost: Trash
+		(Poe ninja) item [Delirious Scouting Report] new cost: Trash
+		(Poe ninja) item [Divine Orb] new cost: Trash
+		(Poe ninja) item [Elder's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Eldritch Chaos Orb] new cost: Trash
+		(Poe ninja) item [Eldritch Exalted Orb] new cost: Trash
+		(Poe ninja) item [Eldritch Orb of Annulment] new cost: Trash
+		(Poe ninja) item [Enkindling Orb] new cost: Trash
+		(Poe ninja) item [Exalted Orb] new cost: Trash
+		(Poe ninja) item [Exceptional Eldritch Ichor] new cost: Trash
+		(Poe ninja) item [Explorer's Scouting Report] new cost: Trash
+		(Poe ninja) item [Fertile Catalyst] new cost: Trash
+		(Poe ninja) item [Fracturing Orb] new cost: Trash
+		(Poe ninja) item [Fracturing Shard] new cost: Trash
+		(Poe ninja) item [Orb of Fusing] new cost: Trash
+		(Poe ninja) item [Grand Eldritch Ember] new cost: Trash
+		(Poe ninja) item [Grand Eldritch Ichor] new cost: Trash
+		(Poe ninja) item [Greater Eldritch Ember] new cost: Trash
+		(Poe ninja) item [Greater Eldritch Ichor] new cost: Trash
+		(Poe ninja) item [Harbinger's Orb] new cost: Trash
+		(Poe ninja) item [Imbued Catalyst] new cost: Trash
+		(Poe ninja) item [Instilling Orb] new cost: Trash
+		(Poe ninja) item [Intrinsic Catalyst] new cost: Trash
+		(Poe ninja) item [Jeweller's Orb] new cost: Trash
+		(Poe ninja) item [Lesser Eldritch Ember] new cost: Trash
+		(Poe ninja) item [Lesser Eldritch Ichor] new cost: Trash
+		(Poe ninja) item [Maven's Chisel of Avarice] new cost: Trash
+		(Poe ninja) item [Maven's Chisel of Scarabs] new cost: Trash
+		(Poe ninja) item [Operative's Scouting Report] new cost: Trash
+		(Poe ninja) item [Orb of Binding] new cost: Trash
+		(Poe ninja) item [Orb of Conflict] new cost: Trash
+		(Poe ninja) item [Orb of Horizons] new cost: Trash
+		(Poe ninja) item [Orb of Intention] new cost: Trash
+		(Poe ninja) item [Orb of Remembrance] new cost: Trash
+		(Poe ninja) item [Orb of Unmaking] new cost: Trash
+		(Poe ninja) item [Orb of Unravelling] new cost: Trash
+		(Poe ninja) item [Otherworldly Scouting Report] new cost: Trash
+		(Poe ninja) item [Primal Crystallised Lifeforce] new cost: Trash
+		(Poe ninja) item [Redeemer's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Reflecting Mist] new cost: Trash
+		(Poe ninja) item [Regal Orb] new cost: Trash
+		(Poe ninja) item [Orb of Regret] new cost: Trash
+		(Poe ninja) item [Sacred Crystallised Lifeforce] new cost: Trash
+		(Poe ninja) item [Orb of Scouring] new cost: Trash
+		(Poe ninja) item [Armourer's Scrap] new cost: Trash
+		(Poe ninja) item [Shaper's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Singular Scouting Report] new cost: Trash
+		(Poe ninja) item [Tainted Blacksmith's Whetstone] new cost: Trash
+		(Poe ninja) item [Tainted Exalted Orb] new cost: Trash
+		(Poe ninja) item [Tainted Orb of Fusing] new cost: Trash
+		(Poe ninja) item [Tempering Catalyst] new cost: Trash
+		(Poe ninja) item [Turbulent Catalyst] new cost: Trash
+		(Poe ninja) item [Unstable Implant] new cost: Trash
+		(Poe ninja) item [Vaal Scouting Report] new cost: Trash
+		(Poe ninja) item [Veiled Exalted Orb] new cost: Trash
+		(Poe ninja) item [Vivid Crystallised Lifeforce] new cost: Trash
+		(Poe ninja) item [Wild Crystallised Lifeforce] new cost: Trash
+		(Poe ninja) item [Chromatic Orb] new cost: Trash
+		(Poe ninja) item [Crusader's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Hinekora's Lock] new cost: Trash
+		(Poe ninja) item [Engineer's Orb] new cost: Trash
+		(Poe ninja) item [Exalted Implant] new cost: Trash
+		(Poe ninja) item [Exalted Shard] new cost: Trash
+		(Poe ninja) item [Exceptional Eldritch Ember] new cost: Trash
+		(Poe ninja) item [Foulborn Exalted Orb] new cost: Trash
+		(Poe ninja) item [Foulborn Orb of Augmentation] new cost: Trash
+		(Poe ninja) item [Foulborn Regal Orb] new cost: Trash
+		(Poe ninja) item [Gemcutter's Prism] new cost: Trash
+		(Poe ninja) item [Hunter's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Influenced Scouting Report] new cost: Trash
+		(Poe ninja) item [Maven's Chisel of Divination] new cost: Trash
+		(Poe ninja) item [Maven's Chisel of Procurement] new cost: Trash
+		(Poe ninja) item [Maven's Chisel of Proliferation] new cost: Trash
+		(Poe ninja) item [Orb of Dominance] new cost: Trash
+		(Poe ninja) item [Mirror of Kalandra] new cost: Trash
+		(Poe ninja) item [Mirror Shard] new cost: Trash
+		(Poe ninja) item [Noxious Catalyst] new cost: Trash
+		(Poe ninja) item [Portal Scroll] new cost: Trash
+		(Poe ninja) item [Prismatic Catalyst] new cost: Trash
+		(Poe ninja) item [Regal Implant] new cost: Trash
+		(Poe ninja) item [Rogue's Marker] new cost: Trash
+		(Poe ninja) item [Sacred Orb] new cost: Trash
+		(Poe ninja) item [Stacked Deck] new cost: Trash
+		(Poe ninja) item [Tailoring Orb] new cost: Trash
+		(Poe ninja) item [Tainted Armourer's Scrap] new cost: Trash
+		(Poe ninja) item [Tainted Catalyst] new cost: Trash
+		(Poe ninja) item [Tainted Chaos Orb] new cost: Trash
+		(Poe ninja) item [Tainted Chromatic Orb] new cost: Trash
+		(Poe ninja) item [Tainted Divine Teardrop] new cost: Trash
+		(Poe ninja) item [Tainted Jeweller's Orb] new cost: Trash
+		(Poe ninja) item [Tainted Mythic Orb] new cost: Trash
+		(Poe ninja) item [Tempering Orb] new cost: Trash
+		(Poe ninja) item [Orb of Transmutation] new cost: Trash
+		(Poe ninja) item [Unstable Catalyst] new cost: Trash
+		(Poe ninja) item [Vaal Orb] new cost: Trash
+		(Poe ninja) item [Veiled Chaos Orb] new cost: Trash
+		(Poe ninja) item [Warlord's Exalted Orb] new cost: Trash
+		(Poe ninja) item [Blacksmith's Whetstone] new cost: Trash
+		(Poe ninja) item [Scroll of Wisdom] new cost: Trash
+		(Poe ninja) read poe.ninja cache (Currency)[61ms] Delay status:	Low
 		(Poe ninja) read api [Fragment][1ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Fragment)[9ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (Fragment)[35ms] Delay status:	Very low
 		(Poe ninja) read api [Incubator][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Incubator)[2ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (Incubator)[1ms] Delay status:	Minimal
 		(Poe ninja) read api [Scarab][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Scarab)[19ms] Delay status:	Very low
+		(Poe ninja) read poe.ninja cache (Scarab)[53ms] Delay status:	Low
 		(Poe ninja) read api [Fossil][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Fossil)[1ms] Delay status:	Minimal
-		(Poe ninja) read api [SkillGem][24ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (SkillGem)[489ms] Delay status:	High
+		(Poe ninja) read poe.ninja cache (Fossil)[9ms] Delay status:	Minimal
+		(Poe ninja) read api [SkillGem][42ms] Delay status:	Very low
+		(Poe ninja) read poe.ninja cache (SkillGem)[60ms] Delay status:	Low
 		(Poe ninja) read api [Tattoo][1ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Tattoo)[2ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (Tattoo)[35ms] Delay status:	Very low
 		(Poe ninja) read api [Omen][0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Omen)[0ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (Omen)[7ms] Delay status:	Minimal
 		(Poe ninja) ERROR: Cannot read [poe ninja cache], because file <C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\poe_ninja_cache/KalguuranRunes.txt> do not exist[0ms] Delay status:	Minimal
-		(Poe ninja) read api [Delirium][1ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Delirium)[0ms] Delay status:	Minimal
-TOTAL TIME OF (Poe ninja) is [804ms]
-		(Dust prices) Reset dust price tag[7ms] Delay status:	Minimal
-TOTAL TIME OF (Dust prices) is [116ms]
-	(Graphic core) parse dust prices[109ms] Delay status:	Medium
-	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NSW[3.27].filter]
-	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NSW[3.27].filter]
+		(Poe ninja) read api [Delirium][0ms] Delay status:	Minimal
+		(Poe ninja) read poe.ninja cache (Delirium)[10ms] Delay status:	Very low
+TOTAL TIME OF (Poe ninja) is [943ms]
+		(Dust prices) Reset dust price tag[10ms] Delay status:	Very low
+TOTAL TIME OF (Dust prices) is [212ms]
+	(Graphic core) parse dust prices[202ms] Delay status:	Medium
+	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 1-REGULAR.filter]
+	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 1-REGULAR.filter]
 	(Graphic core) open loot filter[data/default_loot_filter.filter]
 	(Graphic core) _text [data/default_loot_filter.filter]
 	(Graphic core) open loot filter[data/base_loot_filter.filter]
 	(Graphic core) _text [data/base_loot_filter.filter]
 	(Graphic core) [info]: @
+	(Graphic core) Success: Need remove [25] element of button group list
+	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: autorefresh!
 	(Graphic core) Success: Need remove [21] element of button group list
 	(Graphic core) [info]: call [actions on click list]
@@ -531,12 +1861,285 @@ TOTAL TIME OF (Dust prices) is [116ms]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [action_rotate_variant]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) Success: Need remove [24] element of button group list
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [action_rotate_variant]
+	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) Success: Need remove [24] element of button group list
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) ERROR: GL ERROR: 1281[199350ms] Delay status:	UNACCEPTABLE!
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 3-STRICT.filter]
+	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 3-STRICT.filter]
+	(Graphic core) open loot filter[data/default_loot_filter.filter]
+	(Graphic core) _text [data/default_loot_filter.filter]
+	(Graphic core) open loot filter[data/base_loot_filter.filter]
+	(Graphic core) _text [data/base_loot_filter.filter]
+	(Graphic core) [info]: @
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Spine Bow]
+	(Graphic core) _text [Spine Bow]
+	(Graphic core) button offset y[600.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[468.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Siege Axe]
+	(Graphic core) _text [Siege Axe]
+	(Graphic core) button offset y[560.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[428.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 4-VERY-STRICT.filter]
+	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 4-VERY-STRICT.filter]
+	(Graphic core) open loot filter[data/default_loot_filter.filter]
+	(Graphic core) _text [data/default_loot_filter.filter]
+	(Graphic core) open loot filter[data/base_loot_filter.filter]
+	(Graphic core) _text [data/base_loot_filter.filter]
+	(Graphic core) [info]: @
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Siege Axe]
+	(Graphic core) _text [Siege Axe]
+	(Graphic core) button offset y[560.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[428.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 5-UBER-STRICT.filter]
+	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\NeverSink's filter - 5-UBER-STRICT.filter]
+	(Graphic core) open loot filter[data/default_loot_filter.filter]
+	(Graphic core) _text [data/default_loot_filter.filter]
+	(Graphic core) open loot filter[data/base_loot_filter.filter]
+	(Graphic core) _text [data/base_loot_filter.filter]
+	(Graphic core) [info]: @
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Solarine Bow]
+	(Graphic core) _text [Solarine Bow]
+	(Graphic core) button offset y[320.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[188.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Solarine Bow]
+	(Graphic core) _text [Solarine Bow]
+	(Graphic core) button offset y[320.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[188.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Solarine Bow]
+	(Graphic core) _text [Solarine Bow]
+	(Graphic core) button offset y[320.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[188.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Solarine Bow]
+	(Graphic core) _text [Solarine Bow]
+	(Graphic core) button offset y[320.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[188.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) button name[Solarine Bow]
+	(Graphic core) _text [Solarine Bow]
+	(Graphic core) button offset y[320.000000]
+	(Graphic core) region size y[172.000000]
+	(Graphic core) new scroll[188.000000]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [action_rotate_variant]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) Success: Need remove [24] element of button group list
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
 	(Graphic core) [info]: call [actions on click list]
