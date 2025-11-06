@@ -4111,3 +4111,238 @@ float EDataContainer_VerticalNamedSlider::get_slider_value_by_pointer_value(floa
 		}
 	}
 }
+
+
+JField* 		JField::parents_vector[1024]{ nullptr };
+int				JField::last_field_id = -1;
+
+char 			JField::bracket_array[1024]{ 0 };
+int				JField::last_bracket_id = 0;
+
+std::string		JField::test_string = "";
+
+void JField::reset_variables()
+{
+	JField::last_field_id = -1;
+
+	for (int i = 0; i < PARENT_VECTOR_CAPACITY; i++)
+	{
+		JField::parents_vector[i] = nullptr;
+	}
+
+
+}
+
+JField* JField::get_last_parent()
+{
+	return JField::parents_vector[JField::last_field_id];
+}
+
+void JField::save_test_json()
+{
+	std::ifstream file;
+	
+
+	file.open("raw_json.txt");
+	std::getline(file, JField::test_string);
+	file.close();
+
+	JField* test_jfield = JField::parse_string(&JField::test_string);
+
+	JField::test_string = "";
+
+	std::ofstream writabro;
+	std::string buffer = "";
+
+	writabro.open("test_json.txt");
+		//for (int i = 0; i < PARENT_VECTOR_CAPACITY; i++)
+		//if (JField::parents_vector[i] != nullptr)
+		//{
+		//	JField::parents_vector
+		// [i]->add_content_to_string(&JField::test_string, 0);
+		//}
+		test_jfield->add_content_to_string(&JField::test_string, 0);
+		writabro << JField::test_string;
+	writabro.close();
+}
+
+void JField::add_content_to_string(std::string* _string, int _depth)
+{
+	*_string += "[" + std::to_string(_depth) + "] key:[" + field_name + "]" + "\n";
+	*_string += "value[" + field_value + "] " + "\n";
+
+
+	_depth++;
+	for (int i = 0; i < child_jfield.size(); i++)
+	{
+		child_jfield[i]->add_content_to_string(_string,  _depth);
+	}
+}
+
+JField* JField::parse_string(std::string* _text)
+{
+	JField::reset_variables();
+
+	JField*
+	root_jfield = new JField();
+
+	std::string string_buffer = "";
+	bool quotes_mode = false;
+
+	parents_vector[0] = root_jfield;
+
+	JFIeldNamingMode naming_mode = JFIeldNamingMode::PARAMETER_NAME;
+	char sym = 0;
+	char lsym = 0;
+
+	std::string consym = "[]{},:";
+
+	JField*
+	last_jfield = nullptr;
+
+
+
+	for (int i = 0; i < (*_text).length(); i++)
+	{
+		if (i >= 234)
+		{ i = i;}
+
+		sym = (*_text)[i];
+
+		if (i > 0)
+		{lsym = (*_text)[i - 1];}
+
+
+
+		if (sym == '"')
+		{
+			quotes_mode = !quotes_mode;
+		}
+		else
+		{
+			if
+			(
+				(consym.find(sym) == std::string::npos)//non-control symbol
+				||
+				(quotes_mode)//or within quotes
+			)
+			{
+				string_buffer += sym;
+			}
+			else//control symbols
+			{
+				if (sym == ':')
+				{
+					last_jfield = new JField();
+
+					last_jfield->field_name = string_buffer;
+					last_jfield->parent_field = JField::get_last_parent();
+					
+					JField::get_last_parent()->child_jfield.push_back(last_jfield);
+
+					//JField::last_field_id++;
+					//JField::parents_vector[JField::last_field_id] = last_jfield;
+					
+
+					string_buffer = "";
+				}
+				else
+				if (sym == ',')
+				{
+					
+
+					if (JField::bracket_array[JField::last_bracket_id] == '[')
+					{
+						if (last_jfield != nullptr)
+						{ 
+							last_jfield->parent_field = JField::get_last_parent();
+							last_jfield->field_value = string_buffer;
+							string_buffer = "";
+							JField::get_last_parent()->child_jfield.push_back(last_jfield);
+						}
+						
+
+						
+
+						last_jfield = new JField();
+
+						
+					}
+					else
+					if (JField::bracket_array[JField::last_bracket_id] == '{')
+					{
+						if (last_jfield != nullptr)
+						{
+							last_jfield->field_value = string_buffer;
+						}
+
+						last_jfield = nullptr;
+					}
+
+					string_buffer = "";
+				}
+				else
+				if (sym == '{')
+				{
+					if (last_field_id == -1)
+					{
+						last_jfield = new JField();
+						root_jfield = last_jfield;
+						JField::parents_vector[0] = last_jfield;
+						last_field_id = 0;
+					}
+					else
+					{
+						JField::last_field_id++;
+						JField::parents_vector[JField::last_field_id] = last_jfield;
+					}
+
+
+
+
+
+					JField::last_bracket_id++;
+					JField::bracket_array[JField::last_bracket_id] = '{';
+				}
+				else
+				if (sym == '[')
+				{
+					JField::last_field_id++;
+					JField::parents_vector[JField::last_field_id] = last_jfield;
+
+					last_jfield = new JField();
+					last_jfield->parent_field = JField::get_last_parent();
+
+					JField::get_last_parent()->child_jfield.push_back(last_jfield);
+
+					
+
+
+					JField::last_bracket_id++;
+					JField::bracket_array[JField::last_bracket_id] = '[';
+				}
+				else
+				if ((sym == '}')||(sym == ']'))
+				{
+					if (last_jfield != nullptr)
+					{
+						last_jfield->field_value = string_buffer;
+					}
+
+					last_jfield = nullptr;
+					string_buffer = "";
+
+					JField::last_field_id--;
+					JField::last_bracket_id--;
+				}
+			}
+		}
+
+		i = i;
+	}
+
+
+
+	return root_jfield;
+}
+

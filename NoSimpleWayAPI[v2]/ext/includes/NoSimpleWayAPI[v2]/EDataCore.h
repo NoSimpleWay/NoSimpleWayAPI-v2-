@@ -432,9 +432,39 @@ namespace ERegisteredStrings
 }
 
 
+constexpr unsigned int PARENT_VECTOR_CAPACITY = 1024;
 
+enum class JFIeldNamingMode
+{
+	PARAMETER_NAME,
+	PARAMETER_VALUE
+};
 
+struct JField
+{
+public:
+	std::string					field_name;
+	std::string					field_value;
 
+	std::vector<JField*>		child_jfield;
+
+	JField* 					parent_field;
+	bool						field_must_have_name;
+
+	void						add_content_to_string(std::string* _string, int _depth);
+
+	static JField*				parents_vector[PARENT_VECTOR_CAPACITY];
+	static int					last_field_id;
+
+	static char					bracket_array[PARENT_VECTOR_CAPACITY];
+	static int					last_bracket_id;
+
+	static JField*				parse_string(std::string* _text);
+	static void					reset_variables();
+	static JField*				get_last_parent();
+	static void					save_test_json();
+	static std::string			test_string;
+};
 
 struct DETF_SuitableVariant
 {

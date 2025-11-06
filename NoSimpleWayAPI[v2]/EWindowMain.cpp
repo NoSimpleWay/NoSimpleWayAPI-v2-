@@ -107,7 +107,7 @@ namespace PoeNinjaNamespace
 		}
 		else
 		{
-			EWindowMain::parse_json_from_poe_ninja(_url_suffix + "(PoE2)", &url_content, _api_mode, false);
+			EWindowMain::parse_json_from_poe_ninja_old(_url_suffix + "(PoE2)", &url_content, _api_mode, false);
 
 			EWindowMain::save_poe_ninja_cache(_url_suffix + "(PoE2)", &url_content);
 			url_content = "";
@@ -5089,7 +5089,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja_old("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
 		save_poe_ninja_cache("UniqueJewel", &url_content);
 		url_content = "";
@@ -5125,7 +5125,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja("Unique flask", &url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja_old("Unique flask", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
 		save_poe_ninja_cache("UniqueFlask", &url_content);
 		url_content = "";
@@ -5148,7 +5148,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja("Unique weapon", &url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja_old("Unique weapon", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
 		save_poe_ninja_cache("UniqueWeapon", &url_content);
 		url_content = "";
@@ -5173,7 +5173,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja("Unique armour", &url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja_old("Unique armour", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
 		save_poe_ninja_cache("UniqueArmour", &url_content);
 		url_content = "";
@@ -5197,7 +5197,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	}
 	else
 	{
-		parse_json_from_poe_ninja("Unique accessory", &url_content, PoeNinjaAPIMode::UNIQUES, false);
+		parse_json_from_poe_ninja_old("Unique accessory", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
 		save_poe_ninja_cache("UniqueAccessory", &url_content);
 		url_content = "";
@@ -5221,7 +5221,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, false);
+		parse_json_from_poe_ninja_old("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, false);
 
 		save_poe_ninja_cache("DivinationCard", &url_content);
 		url_content = "";
@@ -5246,7 +5246,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, false);
+		parse_json_from_poe_ninja_old("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, false);
 
 		save_poe_ninja_cache("Currency", &url_content);
 		url_content = "";
@@ -5272,7 +5272,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, false);
+		parse_json_from_poe_ninja_old("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, false);
 
 		save_poe_ninja_cache("Fragment", &url_content);
 		url_content = "";
@@ -5299,7 +5299,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
+		parse_json_from_poe_ninja_old("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
 
 		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
@@ -5326,7 +5326,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, true);
+		parse_json_from_poe_ninja_old("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, true);
 
 		save_poe_ninja_cache("Scarab", &url_content);
 		url_content = "";
@@ -5353,7 +5353,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, false);
+		parse_json_from_poe_ninja_old("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, false);
 
 		save_poe_ninja_cache("Fossil", &url_content);
 		url_content = "";
@@ -5380,7 +5380,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, false);
+		parse_json_from_poe_ninja_old("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, false);
 
 		save_poe_ninja_cache("SkillGem", &url_content);
 		url_content = "";
@@ -5434,7 +5434,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, true);
+		parse_json_from_poe_ninja_old("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, true);
 
 		save_poe_ninja_cache("Tattoo", &url_content);
 		url_content = "";
@@ -5461,7 +5461,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Omen", &url_content, PoeNinjaAPIMode::OMEN, true);
+		parse_json_from_poe_ninja_old("Omen", &url_content, PoeNinjaAPIMode::OMEN, true);
 
 		save_poe_ninja_cache("Omen", &url_content);
 		url_content = "";
@@ -5486,7 +5486,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
+		parse_json_from_poe_ninja_old("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
 
 		save_poe_ninja_cache("Runes", &url_content);
 		url_content = "";
@@ -5511,7 +5511,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 
-		parse_json_from_poe_ninja("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, true);
+		parse_json_from_poe_ninja_old("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, true);
 
 		save_poe_ninja_cache("Delirium", &url_content);
 		url_content = "";
@@ -5647,7 +5647,7 @@ void EWindowMain::get_poe_ninja_api_prices_poe2()
 	EButtonGroup::refresh_button_group(EWindowMain::active_loot_filter_editor);
 }
 
-void EWindowMain::parse_json_from_poe_ninja(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug)
+void EWindowMain::parse_json_from_poe_ninja_old(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug)
 {
 	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -6372,7 +6372,7 @@ void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _a
 			buffer += str;
 		}
 
-		parse_json_from_poe_ninja(_filename, &buffer, _api_mode, false);
+		parse_json_from_poe_ninja_old(_filename, &buffer, _api_mode, false);
 		file.close();
 
 		EInputCore::add_log_info_with_timestamp("read poe.ninja cache (" + _filename + ")");
@@ -10908,7 +10908,7 @@ EWindowMain::EWindowMain()
 	
 	prepare_price_checker();
 
-
+	JField::save_test_json();
 
 	//data_entity_parser_mode = DataEntityParserMode::POE1;
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/stackable_currency.txt");
