@@ -454,7 +454,7 @@ public:
 	void						add_content_to_string(std::string* _string, int _depth);
 
 	static JField*				parents_vector[PARENT_VECTOR_CAPACITY];
-	static int					last_field_id;
+	static int					last_parent_id;
 
 	static char					bracket_array[PARENT_VECTOR_CAPACITY];
 	static int					last_bracket_id;

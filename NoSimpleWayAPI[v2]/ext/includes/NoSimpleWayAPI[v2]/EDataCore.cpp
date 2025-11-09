@@ -4114,7 +4114,7 @@ float EDataContainer_VerticalNamedSlider::get_slider_value_by_pointer_value(floa
 
 
 JField* 		JField::parents_vector[1024]{ nullptr };
-int				JField::last_field_id = -1;
+int				JField::last_parent_id = -1;
 
 char 			JField::bracket_array[1024]{ 0 };
 int				JField::last_bracket_id = 0;
@@ -4123,7 +4123,7 @@ std::string		JField::test_string = "";
 
 void JField::reset_variables()
 {
-	JField::last_field_id = -1;
+	JField::last_parent_id = -1;
 
 	for (int i = 0; i < PARENT_VECTOR_CAPACITY; i++)
 	{
@@ -4135,7 +4135,7 @@ void JField::reset_variables()
 
 JField* JField::get_last_parent()
 {
-	return JField::parents_vector[JField::last_field_id];
+	return JField::parents_vector[JField::last_parent_id];
 }
 
 void JField::save_test_json()
@@ -4168,8 +4168,25 @@ void JField::save_test_json()
 
 void JField::add_content_to_string(std::string* _string, int _depth)
 {
-	*_string += "[" + std::to_string(_depth) + "] key:[" + field_name + "]" + "\n";
-	*_string += "value[" + field_value + "] " + "\n";
+	if (field_name != "")
+	{
+		for (int i = 0; i < _depth; i++)
+		{
+			*_string += '\t';
+		}
+	
+
+		*_string += "field: \"" + field_name + "\"" + "\n";
+	}
+
+	if (field_value != "")
+	{
+		for (int i = 0; i < _depth; i++)
+		{
+			*_string += '\t';
+		}
+		*_string += "value: \"" + field_value + "\"" + "\n";
+	}
 
 
 	_depth++;
@@ -4204,8 +4221,6 @@ JField* JField::parse_string(std::string* _text)
 
 	for (int i = 0; i < (*_text).length(); i++)
 	{
-		if (i >= 234)
-		{ i = i;}
 
 		sym = (*_text)[i];
 
@@ -4247,26 +4262,31 @@ JField* JField::parse_string(std::string* _text)
 					string_buffer = "";
 				}
 				else
-				if (sym == ',')
+				if ((sym == ','))
 				{
 					
 
 					if (JField::bracket_array[JField::last_bracket_id] == '[')
 					{
-						if (last_jfield != nullptr)
-						{ 
+						if (lsym != '}')
+						{
+							if (last_jfield != nullptr)
+							{
+								last_jfield->parent_field = JField::get_last_parent();
+								last_jfield->field_value = string_buffer;
+								string_buffer = "";
+								JField::get_last_parent()->child_jfield.push_back(last_jfield);
+
+								last_jfield = new JField();
+							}
+						}
+						else
+						{
+							last_jfield = new JField();
 							last_jfield->parent_field = JField::get_last_parent();
-							last_jfield->field_value = string_buffer;
-							string_buffer = "";
+
 							JField::get_last_parent()->child_jfield.push_back(last_jfield);
 						}
-						
-
-						
-
-						last_jfield = new JField();
-
-						
 					}
 					else
 					if (JField::bracket_array[JField::last_bracket_id] == '{')
@@ -4284,17 +4304,19 @@ JField* JField::parse_string(std::string* _text)
 				else
 				if (sym == '{')
 				{
-					if (last_field_id == -1)
+					if (last_parent_id == -1)
 					{
 						last_jfield = new JField();
 						root_jfield = last_jfield;
+						root_jfield->field_name = "root";
+
 						JField::parents_vector[0] = last_jfield;
-						last_field_id = 0;
+						last_parent_id = 0;
 					}
 					else
 					{
-						JField::last_field_id++;
-						JField::parents_vector[JField::last_field_id] = last_jfield;
+						JField::last_parent_id++;
+						JField::parents_vector[JField::last_parent_id] = last_jfield;
 					}
 
 
@@ -4307,8 +4329,8 @@ JField* JField::parse_string(std::string* _text)
 				else
 				if (sym == '[')
 				{
-					JField::last_field_id++;
-					JField::parents_vector[JField::last_field_id] = last_jfield;
+					JField::last_parent_id++;
+					JField::parents_vector[JField::last_parent_id] = last_jfield;
 
 					last_jfield = new JField();
 					last_jfield->parent_field = JField::get_last_parent();
@@ -4332,7 +4354,7 @@ JField* JField::parse_string(std::string* _text)
 					last_jfield = nullptr;
 					string_buffer = "";
 
-					JField::last_field_id--;
+					JField::last_parent_id--;
 					JField::last_bracket_id--;
 				}
 			}
