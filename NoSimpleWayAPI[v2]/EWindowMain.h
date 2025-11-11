@@ -1407,6 +1407,12 @@ enum class PoeNinjaAPIMode
 		_LAST_ELEMENT
 };
 
+enum class PoeNinjaAPIReadMode
+{
+	DIRECT,
+	REDIRECTED
+};
+
 class EntityButtonFilterTableID;
 class EntityButtonPriceTableValue;
 class EButtonGroupPoeNinjaPriceChecker : public EButtonGroup
@@ -1864,10 +1870,10 @@ public:
 	static void get_poe_ninja_api_prices_poe2();
 	static void parse_json_from_poe_ninja_old(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
-	static void parse_json_from_poe_ninja_uniues(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode);
+	static void parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode);
 
 	static void save_poe_ninja_cache(std::string _filename, std::string* _content);
-	static void read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode);
+	static void read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode, PoeNinjaAPIReadMode _read_mode);
 
 	static void read_user_loot_patterns();
 

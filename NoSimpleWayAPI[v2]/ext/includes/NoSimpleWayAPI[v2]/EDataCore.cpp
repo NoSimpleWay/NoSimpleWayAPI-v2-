@@ -4114,10 +4114,10 @@ float EDataContainer_VerticalNamedSlider::get_slider_value_by_pointer_value(floa
 }
 
 
-JField* 		JField::parents_vector[1024]{ nullptr };
+JField* 		JField::parents_vector[PARENT_VECTOR_CAPACITY]{ nullptr };
 int				JField::last_parent_id = -1;
 
-char 			JField::bracket_array[1024]{ 0 };
+char 			JField::bracket_array[PARENT_VECTOR_CAPACITY]{ 0 };
 int				JField::last_bracket_id = 0;
 
 std::string		JField::test_string = "";
@@ -4125,10 +4125,14 @@ std::string		JField::test_string = "";
 void JField::reset_variables()
 {
 	JField::last_parent_id = -1;
+	JField::last_bracket_id = 0;
 
 	for (int i = 0; i < PARENT_VECTOR_CAPACITY; i++)
 	{
 		JField::parents_vector[i] = nullptr;
+		JField::bracket_array[i] = 0;
+
+		
 	}
 
 

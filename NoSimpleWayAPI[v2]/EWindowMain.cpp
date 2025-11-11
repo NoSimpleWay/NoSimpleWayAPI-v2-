@@ -5095,7 +5095,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_uniues("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja_new("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("UniqueJewel", &url_content);
 		url_content = "";
@@ -5133,7 +5133,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 		//parse_json_from_poe_ninja_old("Unique flask", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
-		parse_json_from_poe_ninja_uniues("Unique flasks", &url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja_new("Unique flasks", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
 		save_poe_ninja_cache("UniqueFlask", &url_content);
 		url_content = "";
 	}
@@ -5156,7 +5156,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique weapon", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_uniues("Unique weapons", &url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja_new("Unique weapons", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("UniqueWeapon", &url_content);
 		url_content = "";
@@ -5182,7 +5182,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique armour", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_uniues("Unique armours", &url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja_new("Unique armours", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("UniqueArmour", &url_content);
 		url_content = "";
@@ -5207,7 +5207,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique accessory", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_uniues("Unique accesories", &url_content, PoeNinjaAPIMode::UNIQUES);
+		parse_json_from_poe_ninja_new("Unique accesories", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("UniqueAccessory", &url_content);
 		url_content = "";
@@ -5234,6 +5234,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 		//parse_json_from_poe_ninja_old("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, false);
 
+		parse_json_from_poe_ninja_new("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, PoeNinjaAPIReadMode::REDIRECTED);
 		save_poe_ninja_cache("DivinationCard", &url_content);
 		url_content = "";
 	}
@@ -5258,7 +5259,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, false);
-		parse_json_from_poe_ninja_uniues("Currency", &url_content, PoeNinjaAPIMode::CURRENCY);
+		parse_json_from_poe_ninja_new("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, PoeNinjaAPIReadMode::REDIRECTED);
 
 		save_poe_ninja_cache("Currency", &url_content);
 		url_content = "";
@@ -5285,7 +5286,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, false);
-
+		parse_json_from_poe_ninja_new("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, PoeNinjaAPIReadMode::REDIRECTED);
 		save_poe_ninja_cache("Fragment", &url_content);
 		url_content = "";
 	}
@@ -5312,7 +5313,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
-
+		parse_json_from_poe_ninja_new("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, PoeNinjaAPIReadMode::DIRECT);
 		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
 	}
@@ -5339,6 +5340,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, true);
+		parse_json_from_poe_ninja_new("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, PoeNinjaAPIReadMode::REDIRECTED);
 
 		save_poe_ninja_cache("Scarab", &url_content);
 		url_content = "";
@@ -5366,7 +5368,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, false);
-
+		parse_json_from_poe_ninja_new("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, PoeNinjaAPIReadMode::REDIRECTED);
 		save_poe_ninja_cache("Fossil", &url_content);
 		url_content = "";
 	}
@@ -5393,6 +5395,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, false);
+		parse_json_from_poe_ninja_new("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("SkillGem", &url_content);
 		url_content = "";
@@ -5447,7 +5450,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, true);
-
+		parse_json_from_poe_ninja_new("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, PoeNinjaAPIReadMode::DIRECT);
 		save_poe_ninja_cache("Tattoo", &url_content);
 		url_content = "";
 	}
@@ -5474,6 +5477,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Omen", &url_content, PoeNinjaAPIMode::OMEN, true);
+		parse_json_from_poe_ninja_new("Omen", &url_content, PoeNinjaAPIMode::OMEN, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("Omen", &url_content);
 		url_content = "";
@@ -5499,6 +5503,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
+		parse_json_from_poe_ninja_new("Runes", &url_content, PoeNinjaAPIMode::RUNES, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("Runes", &url_content);
 		url_content = "";
@@ -5524,6 +5529,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, true);
+		parse_json_from_poe_ninja_new("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, PoeNinjaAPIReadMode::DIRECT);
 
 		save_poe_ninja_cache("Delirium", &url_content);
 		url_content = "";
@@ -6350,7 +6356,7 @@ void EWindowMain::parse_json_from_poe_ninja_old(std::string _name, std::string* 
 	}
 }
 
-void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode)
+void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode)
 {
 
 	JField*
@@ -6364,12 +6370,12 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 		JField*
 		item_secondary_info_child = nullptr;
 
-		if ((_mode == PoeNinjaAPIMode::UNIQUES) || (_mode == PoeNinjaAPIMode::GEMS))
+		if (_read_mode == PoeNinjaAPIReadMode::DIRECT)
 		{
 			item_info_child = root_jfield->child_jfield[0];
 		}
 		else
-		if (root_jfield->child_jfield.size() >= 2)
+		if (_read_mode == PoeNinjaAPIReadMode::REDIRECTED)
 		{
 			item_info_child				= root_jfield->child_jfield[2];
 			item_secondary_info_child	= root_jfield->child_jfield[1];
@@ -6381,17 +6387,15 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 			field_detailsid = child_field->get_jfield_by_name("detailsId");
 
 			JField*
+			field_item_name = child_field->get_jfield_by_name("name");
+
+			JField*
 			field_cost_in_chaoses = nullptr;
 			
 			float
 			cost_in_chaoses = -1.0f;
 
-			if
-			(
-				(_mode == PoeNinjaAPIMode::UNIQUES)
-				||
-				(_mode == PoeNinjaAPIMode::GEMS)
-			)
+			if(_read_mode == PoeNinjaAPIReadMode::DIRECT)
 			{
 				field_cost_in_chaoses = child_field->get_jfield_by_name("chaosValue");
 
@@ -6405,21 +6409,24 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 			JField*
 			jfield_item_id = child_field->get_jfield_by_name("id");
 
+			JField*
+			jfield_item_name = child_field->get_jfield_by_name("name");
 
-			if (field_detailsid == nullptr)
+			if ((field_detailsid == nullptr) && (_mode == PoeNinjaAPIMode::UNIQUES))
 			{
 				EInputCore::logger_simple_error("[root jfield] child have no <detailsId> field");
+			}
+			else
+			if (field_item_name == nullptr)
+			{
+				EInputCore::logger_simple_error("[root jfield] child have no <name> field");
 			}
 			else
 			if
 			(
 				(cost_in_chaoses < 0.0f)
 				&&
-				(
-					(_mode == PoeNinjaAPIMode::UNIQUES)
-					||
-					(_mode == PoeNinjaAPIMode::GEMS)
-				)
+				(_read_mode == PoeNinjaAPIReadMode::DIRECT)
 			)
 			{
 				EInputCore::logger_simple_error("item [" + field_detailsid->field_value + "] have no <chaosValue> field");
@@ -6432,27 +6439,53 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 				EInputCore::add_log_info_without_timestamp("\n[" + _name + "]details_id: \"" + details_id_value + "\"");
 				
 
+				std::vector<EDataEntity*>* pointer_to_data_entity_vector = nullptr;
 
-				if(_mode == PoeNinjaAPIMode::UNIQUES)
-				for (EDataEntity* de : EWindowMain::registered_data_entity_uniques_list)
+				if (_mode == PoeNinjaAPIMode::UNIQUES)
 				{
+					pointer_to_data_entity_vector = &EWindowMain::registered_data_entity_uniques_list;
+				}
+				else
+				{
+					pointer_to_data_entity_vector = &EWindowMain::registered_data_entity_game_related_list;
+				}
+
+
+				if (_read_mode == PoeNinjaAPIReadMode::DIRECT)
+				for (EDataEntity* de : *pointer_to_data_entity_vector)
+				{
+
 					std::string
 					data_entity_details_id = DataEntityUtils::get_tag_value_by_name(0, "detailsId", de);
 
 					std::string
 					data_entity_name_EN = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
 
+					if (data_entity_name_EN == "Awakened Enlighten Support")
+					{
+						data_entity_name_EN = data_entity_name_EN;
+					}
+
 					if (data_entity_name_EN == "")
 					{
 						EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag");
 					}
 					else
-					if (data_entity_details_id == "")
+					if ((data_entity_details_id == "") && (_mode == PoeNinjaAPIMode::UNIQUES))
 					{
 						EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <detailsId> tag");
 					}
+					if ((jfield_item_name == nullptr) && (_mode != PoeNinjaAPIMode::UNIQUES))
+					{
+						EInputCore::logger_simple_error("JField[item name] do not exist");
+					}
 					else
-					if (data_entity_details_id == details_id_value)
+					if
+					(
+						(_mode == PoeNinjaAPIMode::UNIQUES) && (data_entity_details_id == details_id_value)
+						||
+						(_mode != PoeNinjaAPIMode::UNIQUES) && (data_entity_name_EN == jfield_item_name->field_value)
+					)
 					{
 						ID_string new_worth_ID_string;
 						int old_worth_id = 0;
@@ -6473,13 +6506,22 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 						
 						PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(cost_in_chaoses, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
 						
+
+
 						DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses",	std::to_string(cost_in_chaoses), 	de);
 						DataEntityUtils::set_tag_value_by_name(0, "worth", 				new_worth_ID_string.string_value,	de);
 						DataEntityUtils::set_tag_value_by_name(0, "base worth", 		new_worth_ID_string.string_value,	de);
 
+						EInputCore::add_log_info_without_timestamp("item [" + data_entity_name_EN + "] now cost: " + std::to_string(cost_in_chaoses));
+
 						std::string
 						item_base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", de);
 
+						if (_mode != PoeNinjaAPIMode::UNIQUES)
+						{
+							//do nothing
+						}
+						else
 						if (item_base_name == "")
 						{
 							EInputCore::logger_simple_error("item[" + data_entity_details_id + "] have no base");
@@ -6557,6 +6599,9 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 					JField*
 					primary_name = child_field->get_jfield_by_name("name");
 
+					JField*
+					target_item_jfield = nullptr;
+
 
 					if (primary_name == nullptr)
 					{
@@ -6571,84 +6616,107 @@ void EWindowMain::parse_json_from_poe_ninja_uniues(std::string _name, std::strin
 					{
 						EInputCore::add_log_info_without_timestamp("new jfield: id[" + primary_id->field_value + "], name[" + primary_name->field_value + "]");
 
+						for (JField* secondary_jfield_child : item_secondary_info_child->child_jfield)
+						{
+							JField*
+							secondary_id_jfield = secondary_jfield_child->get_jfield_by_name("id");
+
+							if ((secondary_id_jfield != nullptr) && (secondary_id_jfield->field_value == primary_id->field_value))
+							{
+								target_item_jfield = secondary_jfield_child;
+
+								JField*
+								jfield_cost_value = secondary_jfield_child->get_jfield_by_name("primaryValue");
+
+								EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] found");
+
+
+								if (jfield_cost_value == nullptr)
+								{
+									EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no <primaryValue> tag");
+								}
+								else
+								{
+
+									cost_in_chaoses = EStringUtils::safe_convert_string_to_float(jfield_cost_value->field_value, 0.0f, 999'999'999.0f);
+									//cost_in_chaoses *= stack_multiplier;
+
+									EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] base cost: " + std::to_string(cost_in_chaoses));
+								}
+
+								break;
+							}
+
+							
+						}
+
+
+						bool
+						suitable_item_found = false;
+
 						for (EDataEntity* de : EWindowMain::registered_data_entity_game_related_list)
 						{
 							std::string
 							data_entity_name_EN = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
 
-							std::string
-							data_entity_stack_multiplier_string = DataEntityUtils::get_tag_value_by_name(0, "stack multiplier", de);
+							if (data_entity_name_EN == primary_name->field_value)
+							{
+								suitable_item_found = true;
+								EInputCore::add_log_info_without_timestamp("suitable item[" + data_entity_name_EN + "] found");
 
-							float
-							stack_multiplier = 0.0f;
+								std::string
+								data_entity_stack_multiplier_string = DataEntityUtils::get_tag_value_by_name(0, "stack multiplier", de);
 
-							if (data_entity_stack_multiplier_string != "")
-							{
-								stack_multiplier = EStringUtils::safe_convert_string_to_float(data_entity_stack_multiplier_string, 0.0f, 1'000'000.0f);
-							}
-							
-							if (data_entity_name_EN == "")
-							{
-								EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag");
-							}
-							else
-							{
-								for (JField* secondary_jfield_child : item_secondary_info_child->child_jfield)
+								float
+								stack_multiplier = 0.0f;
+
+								if (data_entity_stack_multiplier_string == "")
 								{
-									JField*
-									secondary_jfield = secondary_jfield_child->get_jfield_by_name("id");
-
-									if ((secondary_jfield != nullptr) && (secondary_jfield->field_value == primary_id->field_name))
-									{
-										JField*
-										jfield_cost_value = secondary_jfield->get_jfield_by_name("primaryValue");
-
-										EInputCore::add_log_info_without_timestamp("item[" + data_entity_name_EN + "] found");
-
-
-										if (jfield_cost_value == nullptr)
-										{
-											EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <primaryValue> tag");
-										}
-										else
-										{
-
-											cost_in_chaoses = EStringUtils::safe_convert_string_to_float(jfield_cost_value->field_value, 0.0f, 999'999'999.0f);
-											cost_in_chaoses *= stack_multiplier;
-
-											EInputCore::add_log_info_without_timestamp("item[" + data_entity_name_EN + "] cost: " + std::to_string(cost_in_chaoses));
-										}
-
-										
-									}
-
-									break;
-
+									EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <stack multiplier> tag");
+								}
+								else
+								{
+									stack_multiplier = EStringUtils::safe_convert_string_to_float(data_entity_stack_multiplier_string, 0.0f, 1'000'000.0f);
+								}
+							
+								if (data_entity_name_EN == "")
+								{
+									EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag");
+								}
+								else
+								{
+									ID_string new_worth_ID_string;
+									int old_worth_id = 0;
+									int new_worth_id = -1;
+							
+							
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][5]) { new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive; }
+									else
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][4]) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
+									else
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][3]) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
+									else
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][2]) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
+									else
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][1]) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
+									else
+									if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][0]) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								
+									PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(cost_in_chaoses, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
+								
+									DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses",	std::to_string(cost_in_chaoses), 	de);
+									DataEntityUtils::set_tag_value_by_name(0, "worth", 				new_worth_ID_string.string_value,	de);
+									DataEntityUtils::set_tag_value_by_name(0, "base worth", 		new_worth_ID_string.string_value,	de);
 								}
 
-								ID_string new_worth_ID_string;
-								int old_worth_id = 0;
-								int new_worth_id = -1;
-							
-							
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][5]) { new_worth_id = 5; new_worth_ID_string = ERegisteredStrings::very_expensive; }
-								else
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][4]) { new_worth_id = 4; new_worth_ID_string = ERegisteredStrings::expensive; }
-								else
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][3]) { new_worth_id = 3; new_worth_ID_string = ERegisteredStrings::rare; }
-								else
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][2]) { new_worth_id = 2; new_worth_ID_string = ERegisteredStrings::moderate; }
-								else
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][1]) { new_worth_id = 1; new_worth_ID_string = ERegisteredStrings::common; }
-								else
-								if (cost_in_chaoses >= PoeNinjaNamespace::price_table[(int)(_mode)][0]) { new_worth_id = 0; new_worth_ID_string = ERegisteredStrings::trash; }
+								if (suitable_item_found){ break; }
 								
-								PoeNinjaNamespace::price_table_max[(int)(_mode)] = std::max(cost_in_chaoses, PoeNinjaNamespace::price_table_max[(int)(_mode)]);
-								
-								DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses",	std::to_string(cost_in_chaoses), 	de);
-								DataEntityUtils::set_tag_value_by_name(0, "worth", 				new_worth_ID_string.string_value,	de);
-								DataEntityUtils::set_tag_value_by_name(0, "base worth", 		new_worth_ID_string.string_value,	de);
 							}
+						}
+
+						if (!suitable_item_found)
+						{
+							EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no suitable data entity");
 						}
 					}
 				}
@@ -6664,19 +6732,19 @@ void EWindowMain::save_poe_ninja_cache(std::string _filename, std::string* _cont
 	std::string buffer = "";
 
 	namespace fs = std::filesystem;
-	fs::create_directories(path_of_exile_folder + "poe_ninja_cache/");
-	writabro.open(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt");
+	fs::create_directories(path_of_exile_folder + "poe_ninja_cache_new/");
+	writabro.open(path_of_exile_folder + "poe_ninja_cache_new/" + _filename + ".txt");
 	
 	writabro << *_content << std::endl;
 
 	writabro.close();
 }
 
-void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode)
+void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode, PoeNinjaAPIReadMode _read_mode)
 {
-	if (!std::filesystem::exists(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt"))
+	if (!std::filesystem::exists(path_of_exile_folder + "poe_ninja_cache_new/" + _filename + ".txt"))
 	{
-		EInputCore::logger_simple_error("Cannot read [poe ninja cache], because file <" + path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt" + "> do not exist");
+		EInputCore::logger_simple_error("Cannot read [poe ninja cache], because file <" + path_of_exile_folder + "poe_ninja_cache_new/" + _filename + ".txt" + "> do not exist");
 	}
 	else
 	{
@@ -6684,7 +6752,7 @@ void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _a
 		std::string		str;
 		std::string		buffer;
 
-		file.open(path_of_exile_folder + "poe_ninja_cache/" + _filename + ".txt");
+		file.open(path_of_exile_folder + "poe_ninja_cache_new/" + _filename + ".txt");
 
 		while (std::getline(file, str))
 		{
@@ -6692,7 +6760,7 @@ void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _a
 		}
 
 		//parse_json_from_poe_ninja_old(_filename, &buffer, _api_mode, false);
-		if (_api_mode == PoeNinjaAPIMode::UNIQUES) { parse_json_from_poe_ninja_uniues(_filename, &buffer, _api_mode); }
+		{ parse_json_from_poe_ninja_new(_filename, &buffer, _api_mode, _read_mode); }
 
 		file.close();
 
@@ -10864,39 +10932,39 @@ void EWindowMain::read_poe_ninja_data_from_cache()
 
 	if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE1)
 	{
-		read_poe_ninja_cache("UniqueJewel",					PoeNinjaAPIMode::UNIQUES);
-		read_poe_ninja_cache("UniqueFlask",					PoeNinjaAPIMode::UNIQUES);
-		read_poe_ninja_cache("UniqueWeapon",				PoeNinjaAPIMode::UNIQUES);
-		read_poe_ninja_cache("UniqueArmour",				PoeNinjaAPIMode::UNIQUES);
-		read_poe_ninja_cache("UniqueAccessory",				PoeNinjaAPIMode::UNIQUES);
-		read_poe_ninja_cache("DivinationCard",				PoeNinjaAPIMode::DIVINATIONS);
-		read_poe_ninja_cache("Currency",					PoeNinjaAPIMode::CURRENCY);
-		read_poe_ninja_cache("Fragment",					PoeNinjaAPIMode::FRAGMENTS);
-		read_poe_ninja_cache("Incubator",					PoeNinjaAPIMode::INCUBATORS);
-		read_poe_ninja_cache("Scarab",						PoeNinjaAPIMode::SCARABS);
-		read_poe_ninja_cache("Fossil",						PoeNinjaAPIMode::FOSSILS);
-		read_poe_ninja_cache("SkillGem",					PoeNinjaAPIMode::GEMS);
+		read_poe_ninja_cache("UniqueJewel",					PoeNinjaAPIMode::UNIQUES,		PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("UniqueFlask",					PoeNinjaAPIMode::UNIQUES,		PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("UniqueWeapon",				PoeNinjaAPIMode::UNIQUES,		PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("UniqueArmour",				PoeNinjaAPIMode::UNIQUES,		PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("UniqueAccessory",				PoeNinjaAPIMode::UNIQUES,		PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("DivinationCard",				PoeNinjaAPIMode::DIVINATIONS,	PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Currency",					PoeNinjaAPIMode::CURRENCY,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Fragment",					PoeNinjaAPIMode::FRAGMENTS,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Incubator",					PoeNinjaAPIMode::INCUBATORS,	PoeNinjaAPIReadMode::DIRECT);
+		read_poe_ninja_cache("Scarab",						PoeNinjaAPIMode::SCARABS,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Fossil",						PoeNinjaAPIMode::FOSSILS,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("SkillGem",					PoeNinjaAPIMode::GEMS,			PoeNinjaAPIReadMode::REDIRECTED);
 		//read_poe_ninja_cache("AllflameEmber",				PoeNinjaAPIMode::EMBERS);
-		read_poe_ninja_cache("Tattoo",						PoeNinjaAPIMode::TATTOO);
-		read_poe_ninja_cache("Omen",						PoeNinjaAPIMode::OMEN);
-		read_poe_ninja_cache("KalguuranRunes",				PoeNinjaAPIMode::RUNES);
-		read_poe_ninja_cache("Delirium",					PoeNinjaAPIMode::DELIRIUM_ORBS);
+		read_poe_ninja_cache("Tattoo",						PoeNinjaAPIMode::TATTOO,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Omen",						PoeNinjaAPIMode::OMEN,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("KalguuranRunes",				PoeNinjaAPIMode::RUNES,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Delirium",					PoeNinjaAPIMode::DELIRIUM_ORBS, PoeNinjaAPIReadMode::REDIRECTED);
 	}
 	else
 	if (EWindowMain::get_selected_game_version() == PathOfExileGame::POE2)
 	{	
-		read_poe_ninja_cache("Abyss(PoE2)",					PoeNinjaAPIMode::ABYSS_ITEMS);
-		read_poe_ninja_cache("Currency(PoE2)",				PoeNinjaAPIMode::CURRENCY);
-		read_poe_ninja_cache("Delirium(PoE2)",				PoeNinjaAPIMode::DISTILLED_EMOTIONS);
-		read_poe_ninja_cache("Essences(PoE2)",				PoeNinjaAPIMode::ESSENCES);
-		read_poe_ninja_cache("Expedition(PoE2)",			PoeNinjaAPIMode::EXPEDITION);
-		read_poe_ninja_cache("Fragments(PoE2)",				PoeNinjaAPIMode::FRAGMENTS);
-		read_poe_ninja_cache("LineageSupportGems(PoE2)",	PoeNinjaAPIMode::LINEAGE_SUPPORT);
-		read_poe_ninja_cache("Ritual(PoE2)",				PoeNinjaAPIMode::OMEN);
-		read_poe_ninja_cache("Runes(PoE2)",					PoeNinjaAPIMode::RUNES);
-		read_poe_ninja_cache("Talismans(PoE2)",				PoeNinjaAPIMode::TALISMANS);
-		read_poe_ninja_cache("Ultimatum(PoE2)",				PoeNinjaAPIMode::SOUL_CORES);
-		read_poe_ninja_cache("UncutGems(PoE2)",				PoeNinjaAPIMode::UNCUT_GEMS);
+		read_poe_ninja_cache("Abyss(PoE2)",					PoeNinjaAPIMode::ABYSS_ITEMS,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Currency(PoE2)",				PoeNinjaAPIMode::CURRENCY,				PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Delirium(PoE2)",				PoeNinjaAPIMode::DISTILLED_EMOTIONS,	PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Essences(PoE2)",				PoeNinjaAPIMode::ESSENCES,				PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Expedition(PoE2)",			PoeNinjaAPIMode::EXPEDITION,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Fragments(PoE2)",				PoeNinjaAPIMode::FRAGMENTS,				PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("LineageSupportGems(PoE2)",	PoeNinjaAPIMode::LINEAGE_SUPPORT,		PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Ritual(PoE2)",				PoeNinjaAPIMode::OMEN,					PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Runes(PoE2)",					PoeNinjaAPIMode::RUNES,					PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Talismans(PoE2)",				PoeNinjaAPIMode::TALISMANS,				PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("Ultimatum(PoE2)",				PoeNinjaAPIMode::SOUL_CORES,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("UncutGems(PoE2)",				PoeNinjaAPIMode::UNCUT_GEMS,			PoeNinjaAPIReadMode::DIRECT);
 	}
 
 }
