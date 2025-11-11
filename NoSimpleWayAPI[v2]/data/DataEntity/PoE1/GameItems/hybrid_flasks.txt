@@ -11,6 +11,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -26,6 +27,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -41,6 +43,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -57,6 +60,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -72,6 +76,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -87,6 +92,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"10"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	

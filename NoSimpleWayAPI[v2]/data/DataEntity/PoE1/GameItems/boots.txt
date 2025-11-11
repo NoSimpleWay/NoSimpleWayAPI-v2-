@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -38,6 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -64,6 +66,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steel_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -90,6 +93,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -114,6 +118,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -146,6 +151,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -176,6 +182,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -207,6 +214,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -235,6 +243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Clasped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -265,6 +274,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Scholar_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -292,6 +302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -337,6 +348,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -360,6 +372,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -388,6 +401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -414,6 +428,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -460,6 +475,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -486,6 +502,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -517,6 +534,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Goathide_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -543,6 +561,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Goathide_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -569,6 +588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -597,6 +617,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -628,6 +649,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Iron_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -654,6 +676,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -682,6 +705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Leatherscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -712,6 +736,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -740,6 +765,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -770,6 +796,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -817,6 +844,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -840,6 +868,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -866,6 +895,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -892,6 +922,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -918,6 +949,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rawhide_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -945,6 +977,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -971,6 +1004,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1001,6 +1035,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1032,6 +1067,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1058,6 +1094,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Velvet_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1089,6 +1126,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
@@ -1102,6 +1140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ironscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1132,6 +1171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Shackled_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1162,6 +1202,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1190,6 +1231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1216,6 +1258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1242,6 +1285,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Slink_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1278,6 +1322,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1298,6 +1343,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1336,6 +1382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Soldier_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1366,6 +1413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Scholar_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1403,6 +1451,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1424,6 +1473,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1450,6 +1500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Deerskin_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1478,6 +1529,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steel_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1504,6 +1556,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Leatherscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1534,6 +1587,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Strapped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1572,6 +1626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1602,6 +1657,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Titan_Greaves_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1634,6 +1690,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1654,6 +1711,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1690,6 +1748,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Strapped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1720,6 +1779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Two-Toned_Boots_(Fire_and_Cold_Resistance)_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1757,6 +1817,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Velvet_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1783,6 +1844,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wool_Shoes_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1809,6 +1871,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wrapped_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1839,6 +1902,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrmscale_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1870,6 +1934,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ringmail_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1900,6 +1965,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1929,6 +1995,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1959,6 +2026,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1989,6 +2057,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2018,6 +2087,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2048,6 +2118,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2077,6 +2148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dreamquest_Slippers_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2106,6 +2178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cloudwhisper_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2136,6 +2209,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Brimstone_Treads_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2165,6 +2239,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"blessed_boots"
 	[tag]"base class"	[value]"Boots"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2212,6 +2287,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Runic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -2232,6 +2308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"		[value]"Good"
 	[tag]"base family"		[value]"Runic"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -2252,6 +2329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"		[value]"Best"
 	[tag]"base family"		[value]"Runic"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	

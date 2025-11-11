@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -42,6 +43,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -75,6 +77,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -114,6 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -147,6 +151,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -180,6 +185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -215,6 +221,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -248,6 +255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -281,6 +289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -321,6 +330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Aventail_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -350,6 +360,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Barbute_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -375,6 +386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Battered_Helm_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -404,6 +416,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bone_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -431,6 +444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bone_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -461,6 +475,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Callous_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -490,6 +505,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Close_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -515,6 +531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cone_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -540,6 +557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Crusader_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -569,6 +587,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Deicide_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -614,6 +633,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -637,6 +657,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -660,6 +681,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -704,6 +726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eternal_Burgonet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -746,6 +769,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -767,6 +791,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -788,6 +813,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -814,6 +840,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ezomyte_Burgonet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -842,6 +869,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fencer_Helm_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -871,6 +899,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Festival_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -900,6 +929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fluted_Bascinet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -938,6 +968,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
@@ -951,6 +982,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gladiator_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -976,6 +1008,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Golden_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1005,6 +1038,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Great_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1035,6 +1069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Great_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1064,6 +1099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harlequin_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1095,6 +1131,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Hubris_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1137,6 +1174,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1158,6 +1196,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1179,6 +1218,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1210,6 +1250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Hunter_Hood_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1235,6 +1276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Iron_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1261,6 +1303,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Iron_Hat_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1286,6 +1329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Iron_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1315,6 +1359,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lacquered_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1344,6 +1389,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Leather_Cap_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1369,6 +1415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Leather_Hood_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1395,6 +1442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lion_Pelt_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1431,6 +1479,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1452,6 +1501,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1473,6 +1523,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1514,6 +1565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lunaris_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1539,6 +1591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Magistrate_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1569,6 +1622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mind_Cage_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1596,6 +1650,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Necromancer_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1622,6 +1677,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Nightmare_Bascinet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1667,6 +1723,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1690,6 +1747,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1713,6 +1771,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1748,6 +1807,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Tricorne_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1773,6 +1833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pig-Faced_Bascinet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1805,6 +1866,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plague_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1834,6 +1896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Praetor_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1882,6 +1945,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1905,6 +1969,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -1928,6 +1993,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	
@@ -1961,6 +2027,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Prophet_Crown_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -1995,6 +2062,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Raven_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2024,6 +2092,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2049,6 +2118,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Regicide_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2078,6 +2148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Burgonet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2107,6 +2178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Coif_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2136,6 +2208,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sallet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2165,6 +2238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Samite_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2190,6 +2264,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Scare_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2219,6 +2294,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Secutor_Helm_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2248,6 +2324,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Siege_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2274,6 +2351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silken_Hood_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2301,6 +2379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sinner_Tricorne_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2330,6 +2409,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Solaris_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2357,6 +2437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Soldier_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2386,6 +2467,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steel_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2411,6 +2493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Torture_Cage_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2436,6 +2519,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2461,6 +2545,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tricorne_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2486,6 +2571,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ursine_Pelt_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2511,6 +2597,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Mask_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2543,6 +2630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vine_Circlet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2568,6 +2656,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Visored_Sallet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2597,6 +2686,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wolf_Pelt_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2622,6 +2712,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Zealot_Helmet_inventory_icon"
 	[tag]"base class"	[value]"Helmets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -2663,6 +2754,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"		[value]"Acceptable"
 	[tag]"base family"		[value]"Runic"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -2683,6 +2775,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"		[value]"Good"
 	[tag]"base family"		[value]"Runic"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 
@@ -2703,6 +2796,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"			[value]"Runic base"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"2"
 	

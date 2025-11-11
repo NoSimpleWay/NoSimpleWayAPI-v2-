@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Diamond_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -26,6 +27,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -39,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Aquamarine_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -52,6 +55,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Basalt_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -67,6 +71,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -82,6 +87,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -95,6 +101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jade_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -108,6 +115,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Quartz_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -123,6 +131,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -138,6 +147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -153,6 +163,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -166,6 +177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silver_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -181,6 +193,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -197,6 +210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -210,6 +224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Topaz_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -225,6 +240,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"GoldFlask"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 	
@@ -239,6 +255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CorundumFlask"
 	[tag]"base class"	[value]"Utility Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
 
@@ -253,5 +270,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Utility Flasks"
 	[tag]"item tag"		[value]"Good base for unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"

@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -36,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -59,6 +61,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mallet_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -83,6 +86,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Solar_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -107,6 +111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -133,6 +138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dread_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -157,6 +163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Driftwood_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -180,6 +187,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dread_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -203,6 +211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mallet_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -226,6 +235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -252,6 +262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -277,6 +288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Spiny_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -300,6 +312,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -325,6 +338,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mallet_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -348,6 +362,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Spiny_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -372,6 +387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Solar_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -395,6 +411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steelhead_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -419,6 +436,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Plated_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -443,6 +461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steelhead_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -466,6 +485,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Solar_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -490,6 +510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Spiny_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -514,6 +535,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Steelhead_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 
@@ -527,6 +549,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dread_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -551,6 +574,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -574,6 +598,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Maul_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	

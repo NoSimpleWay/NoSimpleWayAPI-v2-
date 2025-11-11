@@ -14,6 +14,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -31,6 +32,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -47,6 +49,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -65,6 +68,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -81,6 +85,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -97,6 +102,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -114,6 +120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -130,6 +137,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -150,6 +158,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -169,6 +178,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -188,6 +198,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -207,6 +218,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -228,6 +240,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -248,6 +261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -268,5 +282,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"

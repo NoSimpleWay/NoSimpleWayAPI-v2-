@@ -11,6 +11,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Boot_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -36,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Boot_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -60,6 +62,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Carving_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -85,6 +88,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Carving_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -110,6 +114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Golden_Kris_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -136,6 +141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Imp_Dagger_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -162,6 +168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Boot_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -188,6 +195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Imp_Dagger_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -221,6 +229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -234,6 +243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -262,6 +272,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Golden_Kris_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -288,6 +299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Imp_Dagger_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -313,6 +325,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Skean_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -340,6 +353,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -368,6 +382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Golden_Kris_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -395,6 +410,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Skean_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -424,6 +440,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 
@@ -437,6 +454,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Carving_Knife_inventory_icon"
 	[tag]"base class"	[value]"Rune Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	

@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lordly_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -38,6 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Arena_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -67,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -98,6 +101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -130,6 +134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Copper_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -159,6 +164,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lordly_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -186,6 +192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Arena_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -216,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -243,6 +251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -275,6 +284,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Copper_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -305,6 +315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lordly_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -333,6 +344,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Arena_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -363,6 +375,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -393,6 +406,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -421,6 +435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Copper_Plate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -452,6 +467,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chestplate_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -479,6 +495,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"Plate_Vest_inventory_icon"
 	[tag]"base class"		[value]"Body Armours"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"		[value]"2"
 	[tag]"item height"		[value]"3"
 	
@@ -525,6 +542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Shabby_Jerkin_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -553,6 +571,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Strapped_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -586,6 +605,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Buckskin_Tunic_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -613,6 +633,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wild_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -639,6 +660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -666,6 +688,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sun_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -693,6 +716,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thief's_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -718,6 +742,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Buckskin_Tunic_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -746,6 +771,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wild_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -776,6 +802,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -806,6 +833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sun_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -835,6 +863,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thief's_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -863,6 +892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Buckskin_Tunic_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -892,6 +922,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wild_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -920,6 +951,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -950,6 +982,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sun_Leather_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -980,6 +1013,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thief's_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1035,6 +1069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cabalist_Regalia_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1067,6 +1102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1097,6 +1133,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mage's_Vestment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1129,6 +1166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Necromancer_Silks_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1159,6 +1197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sage's_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1190,6 +1229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cabalist_Regalia_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1217,6 +1257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1245,6 +1286,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mage's_Vestment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1274,6 +1316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Necromancer_Silks_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1301,6 +1344,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sage's_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1329,6 +1373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cabalist_Regalia_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1357,6 +1402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silk_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1384,6 +1430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mage's_Vestment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1414,6 +1461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Necromancer_Silks_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1441,6 +1489,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sage's_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1475,6 +1524,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Silken_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1504,6 +1554,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Simple_Robe_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1574,6 +1625,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Battle_Lamellar_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1605,6 +1657,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blood_Raiment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1639,6 +1692,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bone_Armour_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1672,6 +1726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bone_Armour_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1708,6 +1763,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Hauberk_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1737,6 +1793,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chainmail_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1768,6 +1825,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chainmail_Tunic_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1799,6 +1857,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chainmail_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1831,6 +1890,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Commander's_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1863,6 +1923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chainmail_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1895,6 +1956,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blood_Raiment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1926,6 +1988,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chainmail_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -1956,6 +2019,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bone_Armour_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -1988,6 +2052,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Desert_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2020,6 +2085,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Devout_Chainmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2051,6 +2117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dragonscale_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2083,6 +2150,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Elegant_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2116,6 +2184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Battle_Lamellar_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2153,6 +2222,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Hauberk_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2184,6 +2254,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Dragonscale_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2217,6 +2288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Elegant_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2246,6 +2318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Dragonscale_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2277,6 +2350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Full_Dragonscale_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2309,6 +2383,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Commander's_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -2342,6 +2417,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Devout_Chainmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2373,6 +2449,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Desert_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2404,6 +2481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Desert_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2435,6 +2513,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lacquered_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2466,6 +2545,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Latticed_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2497,6 +2577,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Light_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2529,6 +2610,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Latticed_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2562,6 +2644,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mage's_Vestment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2590,6 +2673,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Padded_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2618,6 +2702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Oiled_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2647,6 +2732,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Elegant_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2678,6 +2764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Padded_Jacket_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2709,6 +2796,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Padded_Jacket_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2740,6 +2828,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Latticed_Ringmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2769,6 +2858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sacrificial_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2806,6 +2896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lacquered_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -2841,6 +2932,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Hauberk_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2875,6 +2967,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Devout_Chainmail_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -2911,6 +3004,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dragonscale_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -2941,6 +3035,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Scale_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -2971,6 +3066,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blood_Raiment_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3003,6 +3099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Padded_Jacket_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3040,6 +3137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Oiled_Coat_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3070,6 +3168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Oiled_Coat_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3100,6 +3199,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Commander's_Brigandine_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3133,6 +3233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Battle_Lamellar_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -3168,6 +3269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sleek_Coat_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3198,6 +3300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lacquered_Garb_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3230,6 +3333,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Dragonscale_Doublet_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3262,6 +3366,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"chainmail"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -3313,6 +3418,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3340,6 +3446,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3367,6 +3474,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3401,6 +3509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3428,6 +3537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3455,6 +3565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3482,6 +3593,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3510,6 +3622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3538,6 +3651,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3572,6 +3686,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3601,6 +3716,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3630,6 +3746,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3659,6 +3776,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3688,6 +3806,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3717,6 +3836,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3750,6 +3870,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3779,6 +3900,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -3809,6 +3931,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperChest"
 	[tag]"base class"	[value]"Body Armours"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	

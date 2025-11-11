@@ -394,6 +394,7 @@ namespace ERegisteredStrings
 
 	extern const ID_string rarity_override;
 	extern const ID_string unique_item;
+	extern const ID_string base_for_unique_item;
 	extern const ID_string details_ID;
 
 	extern const ID_string divination_cards;
@@ -452,6 +453,8 @@ public:
 	bool						field_must_have_name;
 
 	void						add_content_to_string(std::string* _string, int _depth);
+
+	JField* get_jfield_by_name(std::string _name);
 
 	static JField*				parents_vector[PARENT_VECTOR_CAPACITY];
 	static int					last_parent_id;

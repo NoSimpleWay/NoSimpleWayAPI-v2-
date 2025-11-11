@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Colossal_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -23,6 +24,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Divine_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -36,6 +38,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -49,6 +52,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -62,6 +66,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Grand_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -75,6 +80,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Greater_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -88,6 +94,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Hallowed_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -101,6 +108,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Large_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -114,6 +122,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Medium_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -127,6 +136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sacred_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -140,6 +150,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sanctified_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -153,5 +164,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Small_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

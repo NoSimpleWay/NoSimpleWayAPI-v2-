@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -35,6 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperSceptre"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -63,6 +65,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -88,6 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sekhem_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -112,6 +116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -138,6 +143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Quartz_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -163,6 +169,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Karui_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -188,6 +195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Driftwood_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -212,6 +220,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Karui_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -236,6 +245,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stag_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -265,6 +275,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -282,6 +293,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
@@ -295,6 +307,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lead_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -321,6 +334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -346,6 +360,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Quartz_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -373,6 +388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperSceptre"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -401,6 +417,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lead_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -427,6 +444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Quartz_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -453,6 +471,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -479,6 +498,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -505,6 +525,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stag_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -533,6 +554,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sekhem_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -558,6 +580,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -585,6 +608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperSceptre"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -613,6 +637,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stag_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -638,6 +663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sekhem_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -663,6 +689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -689,6 +716,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Sceptre_inventory_icon"
 	[tag]"base class"	[value]"Sceptres"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	

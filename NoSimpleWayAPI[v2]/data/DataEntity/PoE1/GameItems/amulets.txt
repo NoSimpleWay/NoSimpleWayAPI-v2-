@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -36,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -65,6 +67,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAmulet"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -88,6 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blue_Pearl_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -113,6 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -145,6 +150,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Talisman"
 	
 	[tag]"item height"	[value]"1"
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
@@ -163,6 +169,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -182,6 +189,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -203,6 +211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Talisman"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -218,6 +227,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -248,6 +258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -278,6 +289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Marble_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -302,6 +314,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -330,6 +343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -353,6 +367,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -376,6 +391,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAmulet"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -404,6 +420,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Talisman"
 	
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -419,6 +436,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -446,6 +464,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -477,6 +496,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -501,6 +521,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Always unique"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -521,5 +542,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

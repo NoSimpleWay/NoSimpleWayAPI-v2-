@@ -77,6 +77,7 @@ namespace ERegisteredStrings
 
 	const ID_string ERegisteredStrings::rarity_override				= ID_string::register_new_unique_ID_by_key("rarity override");
 	const ID_string ERegisteredStrings::unique_item					= ID_string::register_new_unique_ID_by_key("Unique item");
+	const ID_string ERegisteredStrings::base_for_unique_item 		= ID_string::register_new_unique_ID_by_key("Base for unique item");
 	const ID_string ERegisteredStrings::details_ID					= ID_string::register_new_unique_ID_by_key("detailsId");
 	const ID_string ERegisteredStrings::divination_cards			= ID_string::register_new_unique_ID_by_key("Divination Cards");
 	const ID_string ERegisteredStrings::stackable_currency			= ID_string::register_new_unique_ID_by_key("Stackable Currency");
@@ -4194,6 +4195,26 @@ void JField::add_content_to_string(std::string* _string, int _depth)
 	{
 		child_jfield[i]->add_content_to_string(_string,  _depth);
 	}
+}
+
+JField* JField::get_jfield_by_name(std::string _name)
+{
+	if (child_jfield.empty())
+	{
+		return nullptr;
+	}
+
+	JField*
+	suitable_jfield = nullptr;
+
+	for (JField* jfiled_child : child_jfield)
+	if (jfiled_child->field_name == _name)
+	{
+		return jfiled_child;
+	}
+
+
+	return nullptr;
 }
 
 JField* JField::parse_string(std::string* _text)

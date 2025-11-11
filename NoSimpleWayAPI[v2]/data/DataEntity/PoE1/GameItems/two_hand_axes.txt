@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -34,6 +35,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -61,6 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Talon_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -85,6 +88,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -109,6 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Labrys_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -133,6 +138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poleaxe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -157,6 +163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Talon_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -183,6 +190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -207,6 +215,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poleaxe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -230,6 +239,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -257,6 +267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jade_Chopper_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -280,6 +291,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jade_Chopper_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -303,6 +315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jade_Chopper_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -328,6 +341,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Labrys_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 
@@ -341,6 +355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -364,6 +379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poleaxe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -387,6 +403,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -414,6 +431,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -437,6 +455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stone_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -460,6 +479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Woodsplitter_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -485,6 +505,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Talon_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -510,6 +531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Woodsplitter_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -533,6 +555,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Labrys_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -561,6 +584,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Void_Axe_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -588,5 +612,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"

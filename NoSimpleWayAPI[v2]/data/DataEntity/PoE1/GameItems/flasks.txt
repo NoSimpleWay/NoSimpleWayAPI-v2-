@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Colossal_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -24,6 +25,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Divine_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -39,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -54,6 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Giant_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -69,6 +73,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Grand_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -84,6 +89,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Greater_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -99,6 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Hallowed_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -114,6 +121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Large_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -129,6 +137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Medium_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -144,6 +153,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sacred_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -159,6 +169,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sanctified_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -174,6 +185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Small_Life_Flask_inventory_icon"
 	[tag]"base class"	[value]"Life Flasks"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	

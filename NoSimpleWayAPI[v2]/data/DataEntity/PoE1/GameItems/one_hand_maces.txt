@@ -11,6 +11,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -38,6 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -66,6 +68,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperHammer"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -104,6 +107,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Club_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -129,6 +133,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ornate_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -155,6 +160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tenderizer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -180,6 +186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Hammer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -204,6 +211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrm_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -231,6 +239,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pernarch_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -256,6 +265,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ornate_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -280,6 +290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrm_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -305,6 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Phantom_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -329,9 +341,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Driftwood_Club_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"	
 	
@@ -356,6 +370,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pernarch_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -380,6 +395,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rock_Breaker_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -406,6 +422,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Hammer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -431,6 +448,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Phantom_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -459,6 +477,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ornate_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -485,6 +504,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pernarch_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -509,6 +529,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Club_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -533,6 +554,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Phantom_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -558,6 +580,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rock_Breaker_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -582,6 +605,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tenderizer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -606,6 +630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rock_Breaker_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -630,6 +655,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tenderizer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -654,6 +680,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tribal_Club_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -678,6 +705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Hammer_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -702,6 +730,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wyrm_Mace_inventory_icon"
 	[tag]"base class"	[value]"One Hand Maces"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	

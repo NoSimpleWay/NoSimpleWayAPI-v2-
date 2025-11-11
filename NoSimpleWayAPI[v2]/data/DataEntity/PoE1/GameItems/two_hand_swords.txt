@@ -11,6 +11,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -38,6 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -62,6 +64,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -89,6 +92,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Longsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -113,6 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Corroded_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -137,6 +142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lithe_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -161,6 +167,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Greatsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -185,6 +192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Greatsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -209,6 +217,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lithe_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -235,6 +244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Highland_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -260,6 +270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -284,6 +295,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Longsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -309,6 +321,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Highland_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -333,6 +346,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -360,6 +374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -386,6 +401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lithe_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -410,6 +426,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Longsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -434,6 +451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -458,6 +476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -483,6 +502,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -510,6 +530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -534,6 +555,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -559,6 +581,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Highland_Blade_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -583,6 +606,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Greatsword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -609,6 +633,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Sword_inventory_icon"
 	[tag]"base class"	[value]"Two Hand Swords"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	

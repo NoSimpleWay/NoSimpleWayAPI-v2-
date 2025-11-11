@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -32,6 +33,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -55,6 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -78,6 +81,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -103,6 +107,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -127,6 +132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -150,6 +156,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -173,6 +180,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -196,6 +204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -224,6 +233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -250,6 +260,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -274,6 +285,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -300,6 +312,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -324,6 +337,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -347,6 +361,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -370,6 +385,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -398,6 +414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperAxe"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -426,6 +443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -451,6 +469,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -477,6 +496,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -503,6 +523,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -526,6 +547,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -552,6 +574,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -575,6 +598,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -598,6 +622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -623,6 +648,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"War_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -646,6 +672,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -669,6 +696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
 	[tag]"base class"	[value]"One Hand Axes"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	

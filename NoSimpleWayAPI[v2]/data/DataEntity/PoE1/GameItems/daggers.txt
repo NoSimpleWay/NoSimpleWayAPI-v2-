@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poignard_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -36,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -62,6 +64,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Glass_Shank_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -86,6 +89,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -110,6 +114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperDagger"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -138,6 +143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperDagger"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -166,6 +172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poignard_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -190,6 +197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperDagger"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -218,6 +226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Trisula_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -242,6 +251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Trisula_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -269,6 +279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -293,6 +304,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Poignard_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
@@ -317,6 +329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Trisula_inventory_icon"
 	[tag]"base class"	[value]"Daggers"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	

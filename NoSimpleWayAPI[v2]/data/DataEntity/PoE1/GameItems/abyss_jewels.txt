@@ -12,6 +12,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Abyss"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -34,6 +35,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Abyss"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -56,6 +58,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Abyss"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -78,6 +81,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Abyss"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 

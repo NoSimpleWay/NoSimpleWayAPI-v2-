@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -33,6 +34,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -59,6 +61,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -85,6 +88,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -109,6 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -133,6 +138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -157,6 +163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -182,6 +189,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -207,6 +215,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -231,6 +240,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBow"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -259,6 +269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -284,6 +295,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -311,6 +323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBow"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -339,6 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -364,6 +378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -391,6 +406,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -415,6 +431,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -439,6 +456,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -466,6 +484,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -492,6 +511,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -517,6 +537,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -542,6 +563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -567,6 +589,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -592,6 +615,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -617,6 +641,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBow"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -645,6 +670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
@@ -670,6 +696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	
@@ -695,6 +722,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Short_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 	

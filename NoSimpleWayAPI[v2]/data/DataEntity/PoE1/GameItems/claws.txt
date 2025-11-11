@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gouger_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -32,6 +33,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eye_Gouger_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -57,6 +59,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger's_Paw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -81,6 +84,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Double_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -105,6 +109,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fright_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -129,6 +134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eye_Gouger_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -153,6 +159,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fright_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -177,6 +184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Twin_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -206,6 +214,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
@@ -219,6 +228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thresher_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -243,6 +253,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Eye_Gouger_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -267,6 +278,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger's_Paw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -292,6 +304,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -320,6 +333,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperFangs"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -348,6 +362,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Nailed_Fist_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -372,6 +387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -396,6 +412,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -420,6 +437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperFangs"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -448,6 +466,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thresher_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -472,6 +491,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Noble_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -496,6 +516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fright_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -522,6 +543,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thresher_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -546,6 +568,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gouger_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -570,6 +593,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Tiger's_Paw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -594,6 +618,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -618,6 +643,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Twin_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -642,6 +668,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vaal_Claw_inventory_icon"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
@@ -667,6 +694,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperFangs"
 	[tag]"base class"	[value]"Claws"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	

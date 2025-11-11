@@ -1347,34 +1347,64 @@ public:
 //expensive			4
 //very expensive	5
 
+//enum class PoeNinjaAPIMode
+//{
+//	CURRENCY,
+//	ESSENCES,
+//	UNIQUES,
+//	DIVINATIONS,
+//	GEMS,
+//	FRAGMENTS,
+//	TATTOO,
+//	OMEN,
+//	INCUBATORS,
+//	RUNES,
+//	DELIRIUM_ORBS,
+//	SCARABS,
+//	FOSSILS,
+//	ABYSS_ITEMS,
+//	UNCUT_GEMS,
+//	LINEAGE_SUPPORT,
+//	VAULT_KEYS,
+//	SOUL_CORES,
+//	TALISMANS,
+//	EXPEDITION,
+//	OILS,
+//	ALLFLAME_EMBERS,
+//	VIALS,
+//	DISTILLED_EMOTIONS,
+//	CATALYSTS,
+//	_LAST_ELEMENT
+//};
+
 enum class PoeNinjaAPIMode
 {
-	CURRENCY,
-	ESSENCES,
-	UNIQUES,
-	DIVINATIONS,
-	GEMS,
-	FRAGMENTS,
-	TATTOO,
-	OMEN,
-	INCUBATORS,
-	RUNES,
-	DELIRIUM_ORBS,
-	SCARABS,
-	FOSSILS,
-	ABYSS_ITEMS,
-	UNCUT_GEMS,
-	LINEAGE_SUPPORT,
-	VAULT_KEYS,
-	SOUL_CORES,
-	TALISMANS,
-	EXPEDITION,
-	OILS,
-	ALLFLAME_EMBERS,
-	VIALS,
-	DISTILLED_EMOTIONS,
-	CATALYSTS,
-	_LAST_ELEMENT
+		CURRENCY,
+		ESSENCES,
+		UNIQUES,
+		DIVINATIONS,
+		GEMS,
+		FRAGMENTS,
+		TATTOO,
+		OMEN,
+		INCUBATORS,
+		RUNES,
+		DELIRIUM_ORBS,
+		SCARABS,
+		FOSSILS,
+		ABYSS_ITEMS,
+		UNCUT_GEMS,
+		LINEAGE_SUPPORT,
+		VAULT_KEYS,
+		SOUL_CORES,
+		TALISMANS,
+		EXPEDITION,
+		OILS,
+		ALLFLAME_EMBERS,
+		VIALS,
+		DISTILLED_EMOTIONS,
+		CATALYSTS,
+		_LAST_ELEMENT
 };
 
 class EntityButtonFilterTableID;
@@ -1803,7 +1833,7 @@ namespace PoeNinjaNamespace
 	extern void set_price_table_url_prefix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
 	extern void set_price_table_url_suffix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
 
-	extern void read_poe_ninja_api(CURL* _curl, std::string _league_name, std::string _url_suffix, PoeNinjaAPIMode _api_mode, std::string _localisation_key);
+	extern void read_poe2_ninja_api(CURL* _curl, std::string _league_name, std::string _url_suffix, PoeNinjaAPIMode _api_mode, std::string _localisation_key);
 };
 
 //enum class DataEntityParserMode
@@ -1833,6 +1863,8 @@ public:
 	static void get_poe_ninja_api_prices();
 	static void get_poe_ninja_api_prices_poe2();
 	static void parse_json_from_poe_ninja_old(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
+
+	static void parse_json_from_poe_ninja_uniues(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode);
 
 	static void save_poe_ninja_cache(std::string _filename, std::string* _content);
 	static void read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode);

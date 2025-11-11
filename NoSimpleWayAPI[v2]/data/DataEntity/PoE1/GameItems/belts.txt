@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -33,6 +34,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -56,6 +58,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Crystal_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -82,6 +85,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -108,6 +112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -137,6 +142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBelt"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -165,6 +171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBelt"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -192,6 +199,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBelt"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -215,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 
@@ -240,6 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Studded_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	
@@ -263,6 +273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stygian_Vise_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	
@@ -289,6 +300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vanguard_Belt_inventory_icon"
 	[tag]"base class"	[value]"Belts"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	

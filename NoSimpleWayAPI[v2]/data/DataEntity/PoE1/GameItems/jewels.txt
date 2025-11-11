@@ -16,6 +16,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Cluster jewel"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -39,6 +40,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Cluster jewel"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -62,6 +64,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Cluster jewel"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -87,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"base family"	[value]"Boss"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -109,6 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -132,6 +137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -154,6 +160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -180,5 +187,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Moderate"
 
+	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
