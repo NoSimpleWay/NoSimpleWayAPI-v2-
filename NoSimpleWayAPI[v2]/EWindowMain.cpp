@@ -5037,6 +5037,10 @@ void EWindowMain::reset_price_tag_for_data_entity()
 				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_world_drop.ID)
 				||
 				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::worth_boss_drop.ID)
+				||
+				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::cost_in_chaoses_world_drop.ID)
+				||
+				(data_entity->tag_list[k]->tag_name.ID == ERegisteredStrings::cost_in_chaoses_non_world_drop.ID)
 			)
 			{
 				data_entity->tag_list.erase(data_entity->tag_list.begin() + k);
@@ -6456,15 +6460,15 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 				{
 
 					std::string
-					data_entity_details_id = DataEntityUtils::get_tag_value_by_name(0, "detailsId", de);
+					data_entity_details_id = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::details_ID, de);
 
 					std::string
-					data_entity_name_EN = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
+					data_entity_name_EN = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
 
-					if (data_entity_name_EN == "Awakened Enlighten Support")
-					{
-						data_entity_name_EN = data_entity_name_EN;
-					}
+					//if (data_entity_name_EN == "Awakened Enlighten Support")
+					//{
+					//	data_entity_name_EN = data_entity_name_EN;
+					//}
 
 					if (data_entity_name_EN == "")
 					{
@@ -6508,14 +6512,14 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 						
 
 
-						DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses",	std::to_string(cost_in_chaoses), 	de);
-						DataEntityUtils::set_tag_value_by_name(0, "worth", 				new_worth_ID_string.string_value,	de);
-						DataEntityUtils::set_tag_value_by_name(0, "base worth", 		new_worth_ID_string.string_value,	de);
+						DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::cost_in_chaoses,	std::to_string(cost_in_chaoses), 	de);
+						DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth, 			new_worth_ID_string.string_value,	de);
+						DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::base_worth, 		new_worth_ID_string.string_value,	de);
 
 						EInputCore::add_log_info_without_timestamp("item [" + data_entity_name_EN + "] now cost: " + std::to_string(cost_in_chaoses));
 
 						std::string
-						item_base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", de);
+						item_base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
 
 						if (_mode != PoeNinjaAPIMode::UNIQUES)
 						{
@@ -6532,7 +6536,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 							suitable_base = nullptr;
 
 							for (EDataEntity* de : EWindowMain::registered_data_entity_base_item_list)
-							if (DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == item_base_name)
+							if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de) == item_base_name)
 							{
 								suitable_base = de;
 								break;
@@ -6544,26 +6548,27 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 							}
 							else
 							{
-								EInputCore::add_log_info_without_timestamp("item[" + details_id_value + "] base item: \"" + DataEntityUtils::get_tag_value_by_name(0, "name EN", suitable_base) + "\"");
+								EInputCore::add_log_info_without_timestamp("item[" + details_id_value + "] base item: \"" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, suitable_base) + "\"");
 
 								float
-								current_cost_world = EStringUtils::safe_convert_string_to_float(DataEntityUtils::get_tag_value_by_name(0, "Cost in chaoses world", suitable_base), 0.0f, 999'999.0f);
+								current_cost_world = EStringUtils::safe_convert_string_to_float(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::cost_in_chaoses_world_drop, suitable_base), 0.0f, 999'999.0f);
 
 								float
-								current_cost_non_world = EStringUtils::safe_convert_string_to_float(DataEntityUtils::get_tag_value_by_name(0, "Cost in chaoses non-world", suitable_base), 0.0f, 999'999.0f);
+								current_cost_non_world = EStringUtils::safe_convert_string_to_float(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::cost_in_chaoses_non_world_drop, suitable_base), 0.0f, 999'999.0f);
 
 								bool
 								is_world_drop = DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &ERegisteredStrings::item_tag, &ERegisteredStrings::world_drop, de);
+
 
 								if (is_world_drop)
 								{
 									if (cost_in_chaoses > current_cost_world)
 									{
-										DataEntityUtils::set_tag_value_by_name(0, "Worth: world drop", new_worth_ID_string.string_value, suitable_base);
-										DataEntityUtils::set_tag_value_by_name(0, "Cost in chaoses world base", std::to_string(cost_in_chaoses), suitable_base);
+										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth_world_drop, new_worth_ID_string.string_value, suitable_base);
+										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::cost_in_chaoses_world_drop, std::to_string(cost_in_chaoses), suitable_base);
 
-										EInputCore::add_log_info_without_timestamp("base[" + DataEntityUtils::get_tag_value_by_name(0, "name EN", suitable_base) + "] new world cost: " + std::to_string(cost_in_chaoses));
-										EInputCore::add_log_info_without_timestamp("base[" + DataEntityUtils::get_tag_value_by_name(0, "name EN", suitable_base) + "] new world cost(tag): " + new_worth_ID_string.string_value);
+										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost: " + std::to_string(cost_in_chaoses));
+										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost(tag): " + new_worth_ID_string.string_value);
 									}
 
 
@@ -6572,15 +6577,15 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 								{
 									if (cost_in_chaoses > current_cost_non_world)
 									{
-										DataEntityUtils::set_tag_value_by_name(0, "Worth: boss drop", new_worth_ID_string.string_value, suitable_base);
-										DataEntityUtils::set_tag_value_by_name(0, "Cost in chaoses non-world base", std::to_string(cost_in_chaoses), suitable_base);
+										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth_boss_drop, new_worth_ID_string.string_value, suitable_base);
+										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::cost_in_chaoses_non_world_drop, std::to_string(cost_in_chaoses), suitable_base);
 
-										EInputCore::add_log_info_without_timestamp("base[" + DataEntityUtils::get_tag_value_by_name(0, "name EN", suitable_base) + "] new non-world cost: " + std::to_string(cost_in_chaoses));
+										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new non-world cost: " + std::to_string(cost_in_chaoses));
 									}
 								}
 
-								DataEntityUtils::set_tag_value_by_name(0, "worth", new_worth_ID_string.string_value, suitable_base);
-								DataEntityUtils::set_tag_value_by_name(0, "base worth", new_worth_ID_string.string_value, suitable_base);
+								DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth, new_worth_ID_string.string_value, suitable_base);
+								DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::base_worth, new_worth_ID_string.string_value, suitable_base);
 
 								//DataEntityUtils::set_tag_value_by_name(0, "cost in chaoses", std::to_string(cost_in_chaoses), suitable_base);
 

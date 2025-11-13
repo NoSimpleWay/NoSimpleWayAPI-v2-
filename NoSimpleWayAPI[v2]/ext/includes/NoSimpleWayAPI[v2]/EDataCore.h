@@ -407,6 +407,9 @@ namespace ERegisteredStrings
 
 	extern const ID_string worth_world_drop;
 	extern const ID_string worth_boss_drop;
+	extern const ID_string cost_in_chaoses_world_drop;
+	extern const ID_string cost_in_chaoses_non_world_drop;
+	extern const ID_string cost_in_chaoses;
 
 	extern const ID_string world_drop;
 	extern const ID_string boss_drop;
