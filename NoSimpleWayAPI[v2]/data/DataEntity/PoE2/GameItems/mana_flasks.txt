@@ -8,7 +8,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Mana Flask"
 	[tag]"name RU"		[value]"Малый флакон маны"
 
-	[tag]"icon path"	[value]"Small_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Small_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -24,7 +24,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Medium Mana Flask"
 	[tag]"name RU"		[value]"Средний флакон маны"
 
-	[tag]"icon path"	[value]"Medium_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Medium_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -36,9 +36,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Mana Flask"
-	[tag]"name RU"		[value]"Вместительный флакон маны"
+	[tag]"name RU"		[value]"Большой флакон маны"
 
-	[tag]"icon path"	[value]"Greater_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Greater_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -50,9 +50,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Grand Mana Flask"
-	[tag]"name RU"		[value]"Огромный флакон маны"
+	[tag]"name RU"		[value]"Вместительный флакон маны"
 
-	[tag]"icon path"	[value]"Grand_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Grand_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -63,9 +63,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Giant Mana Flask"
-	[tag]"name RU"		[value]"Гигантский флакон маны"
+	[tag]"name RU"		[value]"Огромный флакон маны"
 
-	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -79,7 +79,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Colossal Mana Flask"
 	[tag]"name RU"		[value]"Великий флакон маны"
 
-	[tag]"icon path"	[value]"Colossal_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Colossal_Mana_Flask_inventory_icon2"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -92,7 +92,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Gargantuan Mana Flask"
 	[tag]"name RU"		[value]"Громадный флакон маны"
 
-	[tag]"icon path"	[value]"Divine_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Gargantuan_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -105,7 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Transcendent Mana Flask"
 	[tag]"name RU"		[value]"Возвышенный флакон маны"
 
-	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Transcendent_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"
@@ -119,7 +119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ultimate Mana Flask"
 	[tag]"name RU"		[value]"Совершенный флакон маны"
 
-	[tag]"icon path"	[value]"Large_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Ultimate_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Mana Flasks"
 
 	[tag]"item width"	[value]"1"

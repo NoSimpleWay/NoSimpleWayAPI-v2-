@@ -1624,6 +1624,36 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"attribute_description_vaal_mod"
+	[tag]"name EN"		[value]"Is item have Vaal modifier"
+	[tag]"name RU"		[value]"Условие: предмет имеет свойство Ваал"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_double_mod"
+	[tag]"name EN"		[value]"Is item have double corruption"
+	[tag]"name RU"		[value]"Условие: предмет имеет 2 осквернённых свойства"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_always_show"
+	[tag]"name EN"		[value]"Always show this item at ground"
+	[tag]"name RU"		[value]"Предмет всегда виден на земле"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_vaal_unique"
+	[tag]"name EN"		[value]"Item is Vaal unique?"
+	[tag]"name RU"		[value]"Предмет является уником Ваал?"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"_attribute_"
 	[tag]"name EN"		[value]"_EN_"
 	[tag]"name RU"		[value]"_RU"

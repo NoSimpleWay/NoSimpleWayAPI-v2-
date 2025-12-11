@@ -5967,3 +5967,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sacrificial Regalia"
+	[tag]"name RU"		[value]"Жертвенное облачение"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"base armour min"	[value]"45"
+	[tag]"base armour max"	[value]"45"
+	[tag]"base evasion min"	[value]"30"
+	[tag]"base evasion max"	[value]"30"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"

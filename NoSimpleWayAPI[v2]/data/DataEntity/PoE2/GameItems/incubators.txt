@@ -1,0 +1,22 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Siphoner"
+	[tag]"name RU"			[value]"Культивирующая сфера ваал"
+	
+	[tag]"icon path"		[value]"Incubator"
+	[tag]"base class"		[value]"Incubators"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	

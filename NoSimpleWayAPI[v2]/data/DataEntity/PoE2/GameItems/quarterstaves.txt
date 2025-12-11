@@ -1213,3 +1213,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"4"
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Skullcrusher Quarterstaff"
+	[tag]"name RU"		[value]"Боевой посох крушителя черепов"
+
+	[tag]"icon path"	[value]"UndefinedQuarterstaff"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	

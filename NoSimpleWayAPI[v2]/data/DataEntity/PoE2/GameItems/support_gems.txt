@@ -3129,12 +3129,14 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Nova Projectiles"
-	[tag]"name RU"	[value]"<Nova Projectiles>"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
 
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
@@ -3142,8 +3144,35 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Nova Projectiles I"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Nova Projectiles I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
 	
 	
 	
@@ -5402,6 +5431,359 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Shock Conduction"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Shock Conduction I"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Shock Conduction I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Biting Frost"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Biting Frost I"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Biting Frost I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Inevitable Critical"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Inexorable Critical I"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Inexorable Critical I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ice Bite"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ice Bite I"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ice Bite I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Greatwood I"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cirel's Cultivation"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cirel's Cultivation"
+	[tag]"name RU"	[value]"<Elemental Weakness>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -10079,6 +10461,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in The last of the druids"
+	
 	
 	
 
@@ -10124,7 +10509,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Trash"	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -11830,6 +12216,34 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dominus' Grasp"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Dominus' Grasp"
+	[tag]"name RU"	[value]"<Piety's Mercy>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item tag"	[value]"Support Gems"
 	
 	
@@ -13910,3 +14324,27 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Font of Rage"
+	[tag]"name RU"	[value]"<Brink>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in The last of the druids"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"

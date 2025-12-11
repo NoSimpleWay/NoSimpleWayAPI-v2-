@@ -275,7 +275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Dusk Ring"
 	[tag]"name RU"		[value]"Сумеречное кольцо"
 
-	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"icon path"	[value]"DuskRing2"
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
@@ -297,7 +297,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Gloam Ring"
 	[tag]"name RU"		[value]"Мглистое кольцо"
 
-	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"icon path"	[value]"PenumbraRing2"
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
@@ -319,7 +319,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Penumbra Ring"
 	[tag]"name RU"		[value]"Кольцо полутени"
 
-	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"icon path"	[value]"GloamRing2"
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
@@ -342,7 +342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tenebrous Ring"
 	[tag]"name RU"		[value]"Тусклое кольцо"
 
-	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"icon path"	[value]"TenebrousRing2"
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
