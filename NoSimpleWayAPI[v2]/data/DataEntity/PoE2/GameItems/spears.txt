@@ -384,3 +384,55 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+
+
+
+
+
+
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soaring Spear"
+	[tag]"name RU"		[value]"Парящее копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Spear"
+	[tag]"name RU"		[value]"Копьё защитника"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	

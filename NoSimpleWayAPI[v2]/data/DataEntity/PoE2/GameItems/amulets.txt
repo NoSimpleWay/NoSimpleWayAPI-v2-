@@ -113,7 +113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lunar Amulet"
-	[tag]"name RU"		[value]"Амулет с лазуритом"
+	[tag]"name RU"		[value]"Лунный амулет"
 
 	[tag]"icon path"	[value]"LunarAmulet"
 	[tag]"base class"	[value]"Amulets"
@@ -200,28 +200,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Solar Amulet"
-	[tag]"name RU"		[value]"Солнечный амулет"
-
-	[tag]"icon path"	[value]"SolarAmulet"
-	[tag]"base class"	[value]"Amulets"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
 	[tag]"name EN"		[value]"Gold Amulet"
 	[tag]"name RU"		[value]"Золотой амулет"
 
@@ -265,7 +243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Dusk Amulet"
 	[tag]"name RU"		[value]"Сумеречный амулет"
 
-	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"icon path"	[value]"HeistAmulet1"
 	[tag]"base class"	[value]"Amulets"
 
 	[tag]"item width"	[value]"1"
@@ -292,7 +270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Gloam Amulet"
 	[tag]"name RU"		[value]"Мглистый амулет"
 
-	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"icon path"	[value]"HeistAmulet1"
 	[tag]"base class"	[value]"Amulets"
 
 	[tag]"item width"	[value]"1"
@@ -319,7 +297,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Penumbra Amulet"
 	[tag]"name RU"		[value]"Амулет полутени"
 
-	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"icon path"	[value]"HeistAmulet2"
 	[tag]"base class"	[value]"Amulets"
 
 	[tag]"item width"	[value]"1"
@@ -346,7 +324,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tenebrous Amulet"
 	[tag]"name RU"		[value]"Тусклый амулет"
 
-	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"icon path"	[value]"HeistAmulet2"
 	[tag]"base class"	[value]"Amulets"
 
 	[tag]"item width"	[value]"1"
@@ -368,7 +346,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Pearlescent Amulet"
-	[tag]"name RU"		[value]"PearlescentAmulet"
+	[tag]"name RU"		[value]"Амулет с перламутром"
 
 	[tag]"icon path"	[value]"PearlescentAmulet"
 	[tag]"base class"	[value]"Amulets"

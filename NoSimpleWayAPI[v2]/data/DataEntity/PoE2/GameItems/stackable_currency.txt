@@ -1247,6 +1247,191 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"Abyss item"
 	[tag]"item tag"			[value]"Abyss bone"
 	
+	[tag]"item tag"			[value]"Deleted"
+	[tag]"item tag"			[value]"Deleted in The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Core Destabiliser"
+	[tag]"name RU"			[value]"Дестабилизатор ядра"
+	
+	[tag]"icon path"		[value]"[undefined]CoreDestabiliser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Infuser"
+	[tag]"name RU"			[value]"Нагнетатель ваал"
+	
+	[tag]"icon path"		[value]"[undefined]VaalInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Architect's Orb"
+	[tag]"name RU"			[value]"Сфера архитектора"
+	
+	[tag]"icon path"		[value]"[undefined]ArchitectsOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Infuser"
+	[tag]"name RU"			[value]"Древний нагнетатель"
+	
+	[tag]"icon path"		[value]"[undefined]AncientInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Orb of Extraction"
+	[tag]"name RU"			[value]"Сфера извлечения"
+	
+	[tag]"icon path"		[value]"[undefined]OrbOfExtraction"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Crystallised Corruption"
+	[tag]"name RU"			[value]"Кристаллизованная Порча"
+	
+	[tag]"icon path"		[value]"[undefined]CrystallisedCorruption"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Cultivation Orb"
+	[tag]"name RU"			[value]"Культивирующая сфера ваал"
+	
+	[tag]"icon path"		[value]"[undefined]VaalCultivationOrb"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
 	[tag]"drop level"		[value]"1"
 			
 	[tag]"worth"			[value]"Rare"

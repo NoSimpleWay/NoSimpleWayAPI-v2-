@@ -561,6 +561,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Omen"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in The last of the druids"
+	
 	
 	
 	[tag]"drop level"	[value]"1"
@@ -586,6 +589,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Omen"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in The last of the druids"
 	
 	
 	

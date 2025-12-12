@@ -801,6 +801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор"
 	
 	[tag]"exist for"	[value]"PoE1"
+	[tag]"exist for"	[value]"PoE2"
 
 	
 	[tag]"icon path"	[value]"Incubator"
@@ -814,6 +815,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"icon path"	[value]"class_delve_socketable_currency"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Talismans"
+	[tag]"name RU"		[value]"Талисманы"
+	
+	[tag]"short name"	[value]"Talisman"
+	
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"icon path"	[value]"Talisman"
 	
 	
 	
@@ -1680,8 +1693,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Socketable"
-	[tag]"name RU"		[value]"Размещаемое"
+	[tag]"name EN"		[value]"Augment"
+	[tag]"name RU"		[value]"Усилители"
 	
 	[tag]"exist for"	[value]"PoE2"
 

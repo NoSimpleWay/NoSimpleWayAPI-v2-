@@ -53,8 +53,9 @@ namespace PoeNinjaNamespace
 	float			price_table_max[int(PoeNinjaAPIMode::_LAST_ELEMENT)];
 	PathOfExileGame	suitable_game[int(PoeNinjaAPIMode::_LAST_ELEMENT)];
 
-	std::string		url_prefix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
-	std::string		url_suffix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	std::string			url_prefix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	std::string			url_suffix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	PoeNinjaAPIReadMode	api_read_mode[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
 	
 	size_t write_to_string(void* ptr, size_t size, size_t count, void* stream)
 	{
@@ -72,14 +73,14 @@ namespace PoeNinjaNamespace
 		url_suffix[(int)_api_mode][(int)_game] = _string;
 	}
 
-	void read_poe2_ninja_api(CURL* _curl, std::string _league_name, std::string _url_suffix, PoeNinjaAPIMode _api_mode, std::string _localisation_key)
+	void read_poe2_ninja_api(CURL* _curl, std::string _league_name, std::string _url_suffix, PoeNinjaAPIMode _api_mode, PoeNinjaAPIReadMode _read_mode, std::string _localisation_key)
 	{
 		std::string	url_content;
 		CURLcode	code;
 
 		std::string	url
 		=
-		"https://poe.ninja/poe2/api/economy/temp/"
+		"https://poe.ninja/poe2/api/economy/exchange/current/"
 		+
 		PoeNinjaNamespace::url_prefix[(int)PoeNinjaAPIMode::CURRENCY][(int)PathOfExileGame::POE2]
 		+
@@ -107,7 +108,7 @@ namespace PoeNinjaNamespace
 		}
 		else
 		{
-			//EWindowMain::parse_json_from_poe_ninja_old(_url_suffix + "(PoE2)", &url_content, _api_mode, false);
+			EWindowMain::parse_json_from_poe_ninja_new(_url_suffix + "(PoE2)", &url_content, _api_mode, _read_mode, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 			EWindowMain::save_poe_ninja_cache(_url_suffix + "(PoE2)", &url_content);
 			url_content = "";
@@ -4186,7 +4187,7 @@ void EDataActionCollection::action_set_auto_prices(Entity* _entity, ECustomData*
 		1.0f / 30.0f,	//moderate
 		1.0f / 10.0f,	//rare
 		1.0f / 3.0f,	//expensive
-		0.75f			//very expensive
+		1.0f			//very expensive
 	};
 
 	int
@@ -4194,13 +4195,20 @@ void EDataActionCollection::action_set_auto_prices(Entity* _entity, ECustomData*
 
 	for (int i = 0; i < 6; i++)
 	{
+		float divine_factor = 300.0f;
+
+		divine_factor = (EWindowMain::get_selected_game_version() == PathOfExileGame::POE1) ? (300.0f) : (1000.0f);
+
 		float
 		result_cost = PoeNinjaNamespace::price_table_max[table_id];
-		result_cost = std::min(result_cost, 300.0f);
+		result_cost = std::min(result_cost, divine_factor);
+
 		result_cost *= price_multiplier[i];
 		//result_cost = round(result_cost);
 		//result_cost = std::round(result_cost * 10.0f) / 10.0f;
-		result_cost = std::max(result_cost, (float)(i)/10.0f);
+		result_cost = std::max(result_cost, (float)(i)/5.0f);
+
+
 
 		if (result_cost >= 2.0f) { result_cost = std::round(result_cost); }
 		std::string result_text = Helper::float_to_string_with_precision(result_cost, 16.0f);
@@ -5099,7 +5107,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_new("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Unique jewels", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("UniqueJewel", &url_content);
 		url_content = "";
@@ -5137,7 +5145,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 		//parse_json_from_poe_ninja_old("Unique flask", &url_content, PoeNinjaAPIMode::UNIQUES, false);
 
-		parse_json_from_poe_ninja_new("Unique flasks", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Unique flasks", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("UniqueFlask", &url_content);
 		url_content = "";
 	}
@@ -5160,7 +5168,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique weapon", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_new("Unique weapons", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Unique weapons", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("UniqueWeapon", &url_content);
 		url_content = "";
@@ -5186,7 +5194,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique armour", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_new("Unique armours", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Unique armours", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("UniqueArmour", &url_content);
 		url_content = "";
@@ -5211,7 +5219,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	else
 	{
 		//parse_json_from_poe_ninja_old("Unique accessory", &url_content, PoeNinjaAPIMode::UNIQUES, false);
-		parse_json_from_poe_ninja_new("Unique accesories", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Unique accesories", &url_content, PoeNinjaAPIMode::UNIQUES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("UniqueAccessory", &url_content);
 		url_content = "";
@@ -5238,7 +5246,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 		//parse_json_from_poe_ninja_old("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, false);
 
-		parse_json_from_poe_ninja_new("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, PoeNinjaAPIReadMode::REDIRECTED);
+		parse_json_from_poe_ninja_new("Divinations", &url_content, PoeNinjaAPIMode::DIVINATIONS, PoeNinjaAPIReadMode::REDIRECTED, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("DivinationCard", &url_content);
 		url_content = "";
 	}
@@ -5263,7 +5271,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, false);
-		parse_json_from_poe_ninja_new("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, PoeNinjaAPIReadMode::REDIRECTED);
+		parse_json_from_poe_ninja_new("Currency", &url_content, PoeNinjaAPIMode::CURRENCY, PoeNinjaAPIReadMode::REDIRECTED, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("Currency", &url_content);
 		url_content = "";
@@ -5290,7 +5298,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, false);
-		parse_json_from_poe_ninja_new("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, PoeNinjaAPIReadMode::REDIRECTED);
+		parse_json_from_poe_ninja_new("Fragments", &url_content, PoeNinjaAPIMode::FRAGMENTS, PoeNinjaAPIReadMode::REDIRECTED, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("Fragment", &url_content);
 		url_content = "";
 	}
@@ -5317,7 +5325,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, false);
-		parse_json_from_poe_ninja_new("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Incubators", &url_content, PoeNinjaAPIMode::INCUBATORS, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("Incubator", &url_content);
 		url_content = "";
 	}
@@ -5344,7 +5352,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, true);
-		parse_json_from_poe_ninja_new("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, PoeNinjaAPIReadMode::REDIRECTED);
+		parse_json_from_poe_ninja_new("Scarab", &url_content, PoeNinjaAPIMode::SCARABS, PoeNinjaAPIReadMode::REDIRECTED, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("Scarab", &url_content);
 		url_content = "";
@@ -5372,7 +5380,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, false);
-		parse_json_from_poe_ninja_new("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, PoeNinjaAPIReadMode::REDIRECTED);
+		parse_json_from_poe_ninja_new("Fossil", &url_content, PoeNinjaAPIMode::FOSSILS, PoeNinjaAPIReadMode::REDIRECTED, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("Fossil", &url_content);
 		url_content = "";
 	}
@@ -5399,7 +5407,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, false);
-		parse_json_from_poe_ninja_new("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Skill gem", &url_content, PoeNinjaAPIMode::GEMS, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("SkillGem", &url_content);
 		url_content = "";
@@ -5454,7 +5462,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, true);
-		parse_json_from_poe_ninja_new("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Tattoo", &url_content, PoeNinjaAPIMode::TATTOO, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 		save_poe_ninja_cache("Tattoo", &url_content);
 		url_content = "";
 	}
@@ -5481,7 +5489,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Omen", &url_content, PoeNinjaAPIMode::OMEN, true);
-		parse_json_from_poe_ninja_new("Omen", &url_content, PoeNinjaAPIMode::OMEN, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Omen", &url_content, PoeNinjaAPIMode::OMEN, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("Omen", &url_content);
 		url_content = "";
@@ -5507,7 +5515,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Runes", &url_content, PoeNinjaAPIMode::RUNES, true);
-		parse_json_from_poe_ninja_new("Runes", &url_content, PoeNinjaAPIMode::RUNES, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Runes", &url_content, PoeNinjaAPIMode::RUNES, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("Runes", &url_content);
 		url_content = "";
@@ -5533,7 +5541,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 
 		//parse_json_from_poe_ninja_old("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, true);
-		parse_json_from_poe_ninja_new("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, PoeNinjaAPIReadMode::DIRECT);
+		parse_json_from_poe_ninja_new("Delirium", &url_content, PoeNinjaAPIMode::DELIRIUM_ORBS, PoeNinjaAPIReadMode::DIRECT, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT));
 
 		save_poe_ninja_cache("Delirium", &url_content);
 		url_content = "";
@@ -5604,7 +5612,8 @@ void EWindowMain::get_poe_ninja_api_prices_poe2()
 	//curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 
 	
-	std::string league_name = NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->stored_text;
+	std::string
+	league_name = NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->stored_text;
 	std::replace(league_name.begin(), league_name.end(), ' ', '+');
 
 
@@ -5613,19 +5622,19 @@ void EWindowMain::get_poe_ninja_api_prices_poe2()
 	EWindowMain::reset_price_tag_for_data_entity();
 	//READ API'S
 	//////////////////////////////////////////////////////////////////////
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Currency",			PoeNinjaAPIMode::CURRENCY,			"trade_type_currency");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Fragments",			PoeNinjaAPIMode::FRAGMENTS,			"trade_type_fragment");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Abyss",				PoeNinjaAPIMode::ABYSS_ITEMS,		"trade_type_fragment");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "UncutGems",			PoeNinjaAPIMode::UNCUT_GEMS,		"trade_type_uncut_gems");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "LineageSupportGems",	PoeNinjaAPIMode::LINEAGE_SUPPORT,	"trade_type_lineage_gems");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Essences",			PoeNinjaAPIMode::ESSENCES,			"trade_type_essences");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Ultimatum",			PoeNinjaAPIMode::SOUL_CORES,		"trade_type_soul_cores");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Talismans",			PoeNinjaAPIMode::TALISMANS,			"trade_type_talismans");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Runes",				PoeNinjaAPIMode::RUNES,				"trade_type_runes");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Ritual",				PoeNinjaAPIMode::OMEN,				"trade_type_omen");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Expedition",			PoeNinjaAPIMode::EXPEDITION,		"trade_type_expedition");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Delirium",			PoeNinjaAPIMode::CURRENCY,			"trade_type_delirium(PoE2)");
-	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Breach",				PoeNinjaAPIMode::CATALYSTS,			"trade_type_breach(PoE2)");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Currency",			PoeNinjaAPIMode::CURRENCY,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_currency");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Fragments",			PoeNinjaAPIMode::FRAGMENTS,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_fragment");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Abyss",				PoeNinjaAPIMode::ABYSS_ITEMS,		PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_fragment");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "UncutGems",			PoeNinjaAPIMode::UNCUT_GEMS,		PoeNinjaAPIReadMode::DIRECT,		"trade_type_uncut_gems");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "LineageSupportGems",	PoeNinjaAPIMode::LINEAGE_SUPPORT,	PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_lineage_gems");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Essences",			PoeNinjaAPIMode::ESSENCES,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_essences");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Ultimatum",			PoeNinjaAPIMode::SOUL_CORES,		PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_soul_cores");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Talismans",			PoeNinjaAPIMode::TALISMANS,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_talismans");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Runes",				PoeNinjaAPIMode::RUNES,				PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_runes");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Ritual",				PoeNinjaAPIMode::OMEN,				PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_omen");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Expedition",			PoeNinjaAPIMode::EXPEDITION,		PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_expedition");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Delirium",			PoeNinjaAPIMode::CURRENCY,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_delirium(PoE2)");
+	PoeNinjaNamespace::read_poe2_ninja_api(curl, league_name, "Breach",				PoeNinjaAPIMode::CATALYSTS,			PoeNinjaAPIReadMode::REDIRECTED,	"trade_type_breach(PoE2)");
 	//////////////////////////////////////////////////////////////////////
 
 
@@ -6360,11 +6369,16 @@ void EWindowMain::parse_json_from_poe_ninja_old(std::string _name, std::string* 
 	}
 }
 
-void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode)
+void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode, bool _debug_log)
 {
 
 	JField*
 	root_jfield = JField::parse_string(_string_content);
+
+	PathOfExileGame
+	selected_game_version = PathOfExileGame::UNDEFINED;
+
+	selected_game_version = EWindowMain::get_selected_game_version();
 
 	if ((root_jfield != nullptr) && (!root_jfield->child_jfield.empty()))
 	{
@@ -6385,8 +6399,16 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 			item_secondary_info_child	= root_jfield->child_jfield[1];
 		}
 
+		int
+		child_id = 0;
+
 		for (JField* child_field : item_info_child->child_jfield)
 		{
+
+			if (_debug_log) { EInputCore::add_log_info_without_timestamp("child id = " + std::to_string(child_id)); }
+
+			child_id++;
+
 			JField*
 			field_detailsid = child_field->get_jfield_by_name("detailsId");
 
@@ -6418,12 +6440,12 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 
 			if ((field_detailsid == nullptr) && (_mode == PoeNinjaAPIMode::UNIQUES))
 			{
-				EInputCore::logger_simple_error("[root jfield] child have no <detailsId> field");
+				if (_debug_log) { EInputCore::logger_simple_error("[root jfield] child have no <detailsId> field"); }
 			}
 			else
 			if (field_item_name == nullptr)
 			{
-				EInputCore::logger_simple_error("[root jfield] child have no <name> field");
+				if (_debug_log) { EInputCore::logger_simple_error("[root jfield] child have no <name> field"); }
 			}
 			else
 			if
@@ -6433,14 +6455,14 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 				(_read_mode == PoeNinjaAPIReadMode::DIRECT)
 			)
 			{
-				EInputCore::logger_simple_error("item [" + field_detailsid->field_value + "] have no <chaosValue> field");
+				if (_debug_log) { EInputCore::logger_simple_error("item [" + field_detailsid->field_value + "] have no <chaosValue> field"); }
 			}
 			else
 			{
 				std::string
 				details_id_value = field_detailsid->field_value;
 
-				EInputCore::add_log_info_without_timestamp("\n[" + _name + "]details_id: \"" + details_id_value + "\"");
+				if (_debug_log) { EInputCore::add_log_info_without_timestamp("\n[" + _name + "]details_id: \"" + details_id_value + "\""); }
 				
 
 				std::vector<EDataEntity*>* pointer_to_data_entity_vector = nullptr;
@@ -6451,8 +6473,9 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 				}
 				else
 				{
-					pointer_to_data_entity_vector = &EWindowMain::registered_data_entity_game_related_list;
+					pointer_to_data_entity_vector = &EWindowMain::registered_data_entity_game_item_list;
 				}
+
 
 
 				if (_read_mode == PoeNinjaAPIReadMode::DIRECT)
@@ -6460,28 +6483,63 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 				{
 
 					std::string
-					data_entity_details_id = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::details_ID, de);
+					data_entity_details_id	= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::details_ID,	de);
 
 					std::string
-					data_entity_name_EN = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
+					data_entity_name_EN		= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN,	de);
+
+					ID_string*
+					exist_for_game			= DataEntityUtils::get_tag_ID_string_by_name_ID(0, &ERegisteredStrings::exist_for,	de);
+
+					bool
+					is_valid_game_version = false;
+
+					if (exist_for_game != nullptr)
+					{
+						if
+						(
+							((exist_for_game->ID == ERegisteredStrings::PoE1.ID) && (selected_game_version == PathOfExileGame::POE1))
+							||
+							((exist_for_game->ID == ERegisteredStrings::PoE2.ID) && (selected_game_version == PathOfExileGame::POE2))
+							||
+							(exist_for_game->ID == ERegisteredStrings::both.ID)
+						)
+						{
+							is_valid_game_version = true;
+						}
+					}
 
 					//if (data_entity_name_EN == "Awakened Enlighten Support")
 					//{
 					//	data_entity_name_EN = data_entity_name_EN;
 					//}
-
+					
+					if (selected_game_version == PathOfExileGame::UNDEFINED)
+					{
+						if (_debug_log) { EInputCore::logger_simple_error("Cannot define game version!"); }
+					}
+					else
+					if (exist_for_game == nullptr)
+					{
+						if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <exist for> tag"); }
+					}
+					else
+					if (!is_valid_game_version)
+					{
+						if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] and selected game version do not match"); }
+					}
 					if (data_entity_name_EN == "")
 					{
-						EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag");
+						if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag"); }
 					}
 					else
 					if ((data_entity_details_id == "") && (_mode == PoeNinjaAPIMode::UNIQUES))
 					{
-						EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <detailsId> tag");
+						if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <detailsId> tag"); }
 					}
 					if ((jfield_item_name == nullptr) && (_mode != PoeNinjaAPIMode::UNIQUES))
 					{
-						EInputCore::logger_simple_error("JField[item name] do not exist");
+						if (_debug_log) { EInputCore::logger_simple_error("JField[item name] do not exist"); }
 					}
 					else
 					if
@@ -6516,7 +6574,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 						DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth, 			new_worth_ID_string.string_value,	de);
 						DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::base_worth, 		new_worth_ID_string.string_value,	de);
 
-						EInputCore::add_log_info_without_timestamp("item [" + data_entity_name_EN + "] now cost: " + std::to_string(cost_in_chaoses));
+						if (_debug_log) { EInputCore::add_log_info_without_timestamp("item [" + data_entity_name_EN + "] now cost: " + std::to_string(cost_in_chaoses)); }
 
 						std::string
 						item_base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
@@ -6528,7 +6586,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 						else
 						if (item_base_name == "")
 						{
-							EInputCore::logger_simple_error("item[" + data_entity_details_id + "] have no base");
+							if (_debug_log) { EInputCore::logger_simple_error("item[" + data_entity_details_id + "] have no base"); }
 						}
 						else
 						{
@@ -6544,11 +6602,11 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 
 							if (suitable_base == nullptr)
 							{
-								EInputCore::logger_simple_error("item[" + data_entity_details_id + "] have no suitable base");
+								if (_debug_log) { EInputCore::logger_simple_error("item[" + data_entity_details_id + "] have no suitable base"); }
 							}
 							else
 							{
-								EInputCore::add_log_info_without_timestamp("item[" + details_id_value + "] base item: \"" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, suitable_base) + "\"");
+								if (_debug_log) { EInputCore::add_log_info_without_timestamp("item[" + details_id_value + "] base item: \"" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, suitable_base) + "\""); }
 
 								float
 								current_cost_world = EStringUtils::safe_convert_string_to_float(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::cost_in_chaoses_world_drop, suitable_base), 0.0f, 999'999.0f);
@@ -6567,8 +6625,11 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth_world_drop, new_worth_ID_string.string_value, suitable_base);
 										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::cost_in_chaoses_world_drop, std::to_string(cost_in_chaoses), suitable_base);
 
-										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost: " + std::to_string(cost_in_chaoses));
-										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost(tag): " + new_worth_ID_string.string_value);
+										if (_debug_log)
+										{
+											EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost: " + std::to_string(cost_in_chaoses));
+											EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new world cost(tag): " + new_worth_ID_string.string_value);
+										}
 									}
 
 
@@ -6580,7 +6641,10 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::worth_boss_drop, new_worth_ID_string.string_value, suitable_base);
 										DataEntityUtils::set_tag_value_by_ID_string_name(0, &ERegisteredStrings::cost_in_chaoses_non_world_drop, std::to_string(cost_in_chaoses), suitable_base);
 
-										EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new non-world cost: " + std::to_string(cost_in_chaoses));
+										if (_debug_log)
+										{
+											if (_debug_log) { EInputCore::add_log_info_without_timestamp("base[" + item_base_name + "] new non-world cost: " + std::to_string(cost_in_chaoses)); }
+										}
 									}
 								}
 
@@ -6608,18 +6672,20 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 					target_item_jfield = nullptr;
 
 
+
+
 					if (primary_name == nullptr)
 					{
-						EInputCore::logger_simple_error("jfield have no <name> field");
+						if (_debug_log) { EInputCore::logger_simple_error("jfield have no <name> field"); }
 					}
 					else
 					if (primary_id == nullptr)
 					{
-						EInputCore::logger_simple_error("jfield [" + primary_name->field_value + "] have no <name EN> field");
+						if (_debug_log) { EInputCore::logger_simple_error("jfield [" + primary_name->field_value + "] have no <name EN> field"); }
 					}
 					else
 					{
-						EInputCore::add_log_info_without_timestamp("new jfield: id[" + primary_id->field_value + "], name[" + primary_name->field_value + "]");
+						if (_debug_log) { EInputCore::add_log_info_without_timestamp("new jfield: id[" + primary_id->field_value + "], name[" + primary_name->field_value + "]"); }
 
 						for (JField* secondary_jfield_child : item_secondary_info_child->child_jfield)
 						{
@@ -6633,12 +6699,16 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 								JField*
 								jfield_cost_value = secondary_jfield_child->get_jfield_by_name("primaryValue");
 
-								EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] found");
+
+								JField*
+								jfield_target_currency = secondary_jfield_child->get_jfield_by_name("maxVolumeCurrency");
+
+								if (_debug_log) { EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] found"); }
 
 
 								if (jfield_cost_value == nullptr)
 								{
-									EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no <primaryValue> tag");
+									if (_debug_log) { EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no <primaryValue> tag"); }
 								}
 								else
 								{
@@ -6646,7 +6716,28 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 									cost_in_chaoses = EStringUtils::safe_convert_string_to_float(jfield_cost_value->field_value, 0.0f, 999'999'999.0f);
 									//cost_in_chaoses *= stack_multiplier;
 
-									EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] base cost: " + std::to_string(cost_in_chaoses));
+									if (jfield_target_currency != nullptr)
+									{
+										if (selected_game_version == PathOfExileGame::POE1)
+										{
+											if (jfield_target_currency->field_value == "chaos") { cost_in_chaoses *= 1.0f; }
+											else
+											if (jfield_target_currency->field_value == "exalted") { cost_in_chaoses *= 10.0f; }
+											else
+											if (jfield_target_currency->field_value == "divine") { cost_in_chaoses *= 100.0f; }
+										}
+										else
+										if (selected_game_version == PathOfExileGame::POE2)
+										{
+											if (jfield_target_currency->field_value == "exalted") { cost_in_chaoses *= 1.0f; }
+											else
+											if (jfield_target_currency->field_value == "chaos") { cost_in_chaoses *= 30.0f; }
+											else
+											if (jfield_target_currency->field_value == "divine") { cost_in_chaoses *= 900.0f; }
+										}
+									}
+
+									if (_debug_log) { EInputCore::add_log_info_without_timestamp("item[" + primary_name->field_value + "] base cost: " + std::to_string(cost_in_chaoses)); }
 								}
 
 								break;
@@ -6659,7 +6750,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 						bool
 						suitable_item_found = false;
 
-						for (EDataEntity* de : EWindowMain::registered_data_entity_game_related_list)
+						for (EDataEntity* de : EWindowMain::registered_data_entity_game_item_list)
 						{
 							std::string
 							data_entity_name_EN = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
@@ -6667,7 +6758,8 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 							if (data_entity_name_EN == primary_name->field_value)
 							{
 								suitable_item_found = true;
-								EInputCore::add_log_info_without_timestamp("suitable item[" + data_entity_name_EN + "] found");
+
+								if (_debug_log) { EInputCore::add_log_info_without_timestamp("suitable item[" + data_entity_name_EN + "] found"); }
 
 								std::string
 								data_entity_stack_multiplier_string = DataEntityUtils::get_tag_value_by_name(0, "stack multiplier", de);
@@ -6675,9 +6767,45 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 								float
 								stack_multiplier = 0.0f;
 
+								ID_string*
+								exist_for_game = DataEntityUtils::get_tag_ID_string_by_name_ID(0, &ERegisteredStrings::exist_for, de);
+
+								bool
+								is_valid_game_version = false;
+
+								if (exist_for_game != nullptr)
+								{
+									if
+										(
+											((exist_for_game->ID == ERegisteredStrings::PoE1.ID) && (selected_game_version == PathOfExileGame::POE1))
+											||
+											((exist_for_game->ID == ERegisteredStrings::PoE2.ID) && (selected_game_version == PathOfExileGame::POE2))
+											||
+											(exist_for_game->ID == ERegisteredStrings::both.ID)
+										)
+									{
+										is_valid_game_version = true;
+									}
+								}
+
+								if (selected_game_version == PathOfExileGame::UNDEFINED)
+								{
+									if (_debug_log) { EInputCore::logger_simple_error("Cannot define game version!"); }
+								}
+								else
+								if (exist_for_game == nullptr)
+								{
+									if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <exist for> tag"); }
+								}
+								else
+								if (!is_valid_game_version)
+								{
+									if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] and selected game version do not match"); }
+								}
+								else
 								if (data_entity_stack_multiplier_string == "")
 								{
-									EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <stack multiplier> tag");
+									if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <stack multiplier> tag"); }
 								}
 								else
 								{
@@ -6686,7 +6814,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 							
 								if (data_entity_name_EN == "")
 								{
-									EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag");
+									if (_debug_log) { EInputCore::logger_simple_error("item [" + data_entity_name_EN + "] have no <name EN> tag"); }
 								}
 								else
 								{
@@ -6721,7 +6849,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 
 						if (!suitable_item_found)
 						{
-							EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no suitable data entity");
+							if (_debug_log) { EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no suitable data entity"); }
 						}
 					}
 				}
@@ -6765,7 +6893,7 @@ void EWindowMain::read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _a
 		}
 
 		//parse_json_from_poe_ninja_old(_filename, &buffer, _api_mode, false);
-		{ parse_json_from_poe_ninja_new(_filename, &buffer, _api_mode, _read_mode); }
+		{ parse_json_from_poe_ninja_new(_filename, &buffer, _api_mode, _read_mode, EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT)); }
 
 		file.close();
 
@@ -10976,25 +11104,35 @@ void EWindowMain::read_poe_ninja_data_from_cache()
 
 void EWindowMain::prepare_price_checker()
 {
-	PoeNinjaAPIMode poe_ninja_api_mode;
+	PoeNinjaAPIMode		poe_ninja_api_mode;
+	//PoeNinjaAPIReadMode	poe_ninja_api_read_mode;
 
 	
 	//CURRENCY
 	poe_ninja_api_mode											= PoeNinjaAPIMode::CURRENCY;
+	//poe_ninja_api_read_mode										= PoeNinjaAPIReadMode::DIRECT;
+
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
+
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
 
 	PoeNinjaNamespace::set_price_table_url_prefix("currencyoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
 	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",			poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	//ESSENCES
 	poe_ninja_api_mode											= PoeNinjaAPIMode::ESSENCES;
-	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE1;
+	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
-	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("currencyoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",							poe_ninja_api_mode,	PathOfExileGame::POE1);
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",				poe_ninja_api_mode, PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",							poe_ninja_api_mode, PathOfExileGame::POE2);
 	
 	
 	//UNIQUES
@@ -11026,11 +11164,13 @@ void EWindowMain::prepare_price_checker()
 	poe_ninja_api_mode											= PoeNinjaAPIMode::FRAGMENTS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
 
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
 	PoeNinjaNamespace::set_price_table_url_prefix("currencyoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
 	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",			poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//TATTOO
@@ -11045,11 +11185,13 @@ void EWindowMain::prepare_price_checker()
 	poe_ninja_api_mode											= PoeNinjaAPIMode::OMEN;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
 
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
 	PoeNinjaNamespace::set_price_table_url_prefix("currencyoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
 	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&&type=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//INCUBATORS
@@ -11064,11 +11206,13 @@ void EWindowMain::prepare_price_checker()
 	poe_ninja_api_mode											= PoeNinjaAPIMode::RUNES;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
 
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
 	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
 	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",			poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//DELIRIUM_ORBS
@@ -11099,85 +11243,99 @@ void EWindowMain::prepare_price_checker()
 	poe_ninja_api_mode											= PoeNinjaAPIMode::ABYSS_ITEMS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//UNCUT_GEMS
 	poe_ninja_api_mode											= PoeNinjaAPIMode::UNCUT_GEMS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::DIRECT;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//LINEAGE_SUPPORT
 	poe_ninja_api_mode											= PoeNinjaAPIMode::LINEAGE_SUPPORT;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",			poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//VAULT_KEYS
-	poe_ninja_api_mode											= PoeNinjaAPIMode::VAULT_KEYS;
-	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
+	//poe_ninja_api_mode											= PoeNinjaAPIMode::VAULT_KEYS;
+	//PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	//PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	//PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//SOUL_CORES
 	poe_ninja_api_mode											= PoeNinjaAPIMode::SOUL_CORES;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//TALISMANS
 	poe_ninja_api_mode											= PoeNinjaAPIMode::TALISMANS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//EXPEDITION
 	poe_ninja_api_mode											= PoeNinjaAPIMode::EXPEDITION;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::BOTH;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
-	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
+
+	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE1);
 
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//OILS
 	poe_ninja_api_mode											= PoeNinjaAPIMode::OILS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE1;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
-	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE1);
 	
 	
 	//ALLFLAME_EMBERS
 	poe_ninja_api_mode											= PoeNinjaAPIMode::ALLFLAME_EMBERS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE1;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE1);
-	PoeNinjaNamespace::set_price_table_url_suffix("&type=",						poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_prefix("itemoverview?league=",	poe_ninja_api_mode,	PathOfExileGame::POE1);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE1);
 	
 	
 	//DISTILLED_EMOTIONS
 	poe_ninja_api_mode											= PoeNinjaAPIMode::DISTILLED_EMOTIONS;
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
+	PoeNinjaNamespace::api_read_mode[(int)(poe_ninja_api_mode)][(int)(PathOfExileGame::POE2)] = PoeNinjaAPIReadMode::REDIRECTED;
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 	
 	
 	//CATALYSTS
@@ -11185,8 +11343,8 @@ void EWindowMain::prepare_price_checker()
 	PoeNinjaNamespace::suitable_game[(int)poe_ninja_api_mode]	= PathOfExileGame::POE2;
 
 
-	PoeNinjaNamespace::set_price_table_url_prefix("overview?leagueName=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
-	PoeNinjaNamespace::set_price_table_url_suffix("&overviewName=",				poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_prefix("overview?league=",		poe_ninja_api_mode,	PathOfExileGame::POE2);
+	PoeNinjaNamespace::set_price_table_url_suffix("&type=",					poe_ninja_api_mode,	PathOfExileGame::POE2);
 
 
 	if (std::filesystem::exists(path_of_exile_folder + "PoeNinjaPriceTable.config"))
@@ -11481,6 +11639,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/foci.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/gloves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/helmets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/incubators.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/jewels.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/mana_flasks.txt");
@@ -11502,6 +11661,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/staves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/support_gems.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/tablets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/talismans.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/trial_coins.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/uncut.txt");
@@ -13929,6 +14089,78 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_zana_memory");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_zana_memory";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "HasVaalUniqueMod";
+	jc_localisation.localisations[NSW_localisation_EN] = "Vaal modifier";
+	jc_localisation.localisations[NSW_localisation_RU] = "Модификатор Ваал";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_vaal_mod");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_vaal_mod";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "TwiceCorrupted";
+	jc_localisation.localisations[NSW_localisation_EN] = "Twice corrupted";
+	jc_localisation.localisations[NSW_localisation_RU] = "Дважды освернённый";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_double_corrupt_mod");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_double_mod";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	
+
+	
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "AlwaysShow";
+	jc_localisation.localisations[NSW_localisation_EN] = "AlwaysShow";
+	jc_localisation.localisations[NSW_localisation_RU] = "Всегда виден";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_always_show");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_always_show";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "IsVaalUnique";
+	jc_localisation.localisations[NSW_localisation_EN] = "Vaal unique";
+	jc_localisation.localisations[NSW_localisation_RU] = "Уник Ваал";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_vaal_unique");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_vaal_unique";
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
@@ -22981,7 +23213,11 @@ void EWindowMain::save_config_file()
 	buffer = "selected_style\t" + EGUIStyle::active_style->localisation_text.base_name;
 	writabro << buffer << std::endl;
 
-	buffer = "league_name_input\t" + NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->original_text;
+	std::string league_name = NSWRegisteredButtonGroups::poe_ninja_price_checker_group->league_name_button->main_text_area->original_text;
+
+	std::replace(league_name.begin(), league_name.end(), ' ', '+');
+
+	buffer = "league_name_input\t" + league_name;
 	writabro << buffer << std::endl;
 
 

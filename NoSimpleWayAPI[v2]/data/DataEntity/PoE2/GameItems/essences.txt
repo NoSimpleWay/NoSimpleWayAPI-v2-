@@ -7,7 +7,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of the Body"
 	[tag]"name RU"		[value]"Малая сущность тела"
 
-	[tag]"icon path"	[value]"LesserEssenceOfBody"
+	[tag]"icon path"	[value]"LesserEssenceOfBody2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -31,7 +31,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of the Mind"
 	[tag]"name RU"		[value]"Малая сущность разума"
 
-	[tag]"icon path"	[value]"LesserEssenceOfMind"
+	[tag]"icon path"	[value]"LesserEssenceOfMind2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -55,7 +55,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Enhancement"
 	[tag]"name RU"		[value]"Малая сущность улучшения"
 
-	[tag]"icon path"	[value]"LesserEssenceOfEnchantment"
+	[tag]"icon path"	[value]"LesserEssenceOfEnchantment2"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Lesser"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Essence of Abrasion"
+	[tag]"name RU"		[value]"Малая сущность разрушения"
+
+	[tag]"icon path"	[value]"LesserEssenceOfAbrasion"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -79,7 +103,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Flames"
 	[tag]"name RU"		[value]"Малая сущность пламени"
 
-	[tag]"icon path"	[value]"LesserEssenceOfFlames"
+	[tag]"icon path"	[value]"LesserEssenceOfFlames2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -103,7 +127,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Ice"
 	[tag]"name RU"		[value]"Малая сущность льда"
 
-	[tag]"icon path"	[value]"LesserEssenceOfIce"
+	[tag]"icon path"	[value]"LesserEssenceOfIce2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -127,7 +151,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Electricity"
 	[tag]"name RU"		[value]"Малая сущность электричества"
 
-	[tag]"icon path"	[value]"LesserEssenceOfElectricity"
+	[tag]"icon path"	[value]"LesserEssenceOfElectricity2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -151,7 +175,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Ruin"
 	[tag]"name RU"		[value]"Малая сущность гибели"
 
-	[tag]"icon path"	[value]"LesserEssenceOfRuin"
+	[tag]"icon path"	[value]"LesserEssenceOfRuin2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -175,7 +199,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Battle"
 	[tag]"name RU"		[value]"Малая сущность битвы"
 
-	[tag]"icon path"	[value]"LesserEssenceOfBattle"
+	[tag]"icon path"	[value]"LesserEssenceOfBattle2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -199,7 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Sorcery"
 	[tag]"name RU"		[value]"Малая сущность колдовства"
 
-	[tag]"icon path"	[value]"LesserEssenceOfSorcery"
+	[tag]"icon path"	[value]"LesserEssenceOfSorcery2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -223,7 +247,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Haste"
 	[tag]"name RU"		[value]"Малая сущность спешки"
 
-	[tag]"icon path"	[value]"LesserEssenceOfHaste"
+	[tag]"icon path"	[value]"LesserEssenceOfHaste2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -247,7 +271,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of the Infinite"
 	[tag]"name RU"		[value]"Малая сущность бесконечности"
 
-	[tag]"icon path"	[value]"LesserEssenceOfInfinite"
+	[tag]"icon path"	[value]"LesserEssenceOfInfinite2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -347,41 +371,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Essence of Torment"
-	[tag]"name RU"		[value]"Сущность мучения"
-
-	[tag]"icon path"	[value]"EssenceOfTorment"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Essences"
-	[tag]"essence rang"	[value]"Regular"
-	
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Essence of Abrasion"
-	
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-		
-	[tag]"drop level"		[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"9"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Essence of Abrasion"
-	[tag]"name RU"		[value]"Сущность шлифовки"
+	[tag]"name RU"		[value]"Сущность разрушения"
 
 	[tag]"icon path"	[value]"EssenceOfTorment"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -656,34 +652,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Greater Essence of Torment"
-	[tag]"name RU"		[value]"Большая сущность мучения"
-
-	[tag]"icon path"	[value]"GreaterEssenceOfTorment"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Essences"
-	[tag]"essence rang"	[value]"Greater"
-	
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Greater Essence of Abrasion"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-		
-	[tag]"drop level"		[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"9"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
 	[tag]"name EN"		[value]"Greater Essence of Abrasion"
-	[tag]"name RU"		[value]"<Большая сущность шлифовки>"
+	[tag]"name RU"		[value]"Большая сущность разрушения"
 
 	[tag]"icon path"	[value]"GreaterEssenceOfTorment"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -937,7 +907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of the Body"
 	[tag]"name RU"		[value]"Совершенная сущность тела"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfBody"
+	[tag]"icon path"	[value]"PerfectEssenceOfBody2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -961,7 +931,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of the Mind"
 	[tag]"name RU"		[value]"Совершенная сущность разума"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfMind"
+	[tag]"icon path"	[value]"PerfectEssenceOfMind2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -985,7 +955,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Enhancement"
 	[tag]"name RU"		[value]"Совершенная сущность улучшения"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfEnchancement"
+	[tag]"icon path"	[value]"PerfectEssenceOfEnhancement2"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	[tag]"essence rang"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"	[value]"Expensive"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Essence of Abrasion"
+	[tag]"name RU"		[value]"Совершенная сущность разрушения"
+
+	[tag]"icon path"	[value]"PerfectEssenceOfAbrasion"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1002,8 +996,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Expensive"
 	
 
-	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1011,7 +1003,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Flames"
 	[tag]"name RU"		[value]"Совершенная сущность пламени"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfFlames"
+	[tag]"icon path"	[value]"PerfectEssenceOfFlames2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1035,7 +1027,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Ice"
 	[tag]"name RU"		[value]"Совершенная сущность льда"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfIce"
+	[tag]"icon path"	[value]"PerfectEssenceOfIce2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1059,7 +1051,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Electricity"
 	[tag]"name RU"		[value]"Совершенная сущность электричества"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfElectricity"
+	[tag]"icon path"	[value]"PerfectEssenceOfElectricity2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1083,7 +1075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Ruin"
 	[tag]"name RU"		[value]"Совершенная сущность гибели"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfRuin"
+	[tag]"icon path"	[value]"PerfectEssenceOfRuin2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1107,7 +1099,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Battle"
 	[tag]"name RU"		[value]"Совершенная сущность битвы"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfBattle"
+	[tag]"icon path"	[value]"PerfectEssenceOfBattle2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1130,7 +1122,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Sorcery"
 	[tag]"name RU"		[value]"Совершенная сущность колдовства"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfSorcery"
+	[tag]"icon path"	[value]"PerfectEssenceOfSorcery2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1153,7 +1145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Haste"
 	[tag]"name RU"		[value]"Совершенная сущность спешки"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfHaste"
+	[tag]"icon path"	[value]"PerfectEssenceOfHaste2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1177,7 +1169,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of the Infinite"
 	[tag]"name RU"		[value]"Совершенная сущность бесконечности"
 
-	[tag]"icon path"	[value]"PerfectEssenceOfInfinite"
+	[tag]"icon path"	[value]"PerfectEssenceOfInfinite2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1212,7 +1204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Hysteria"
 	[tag]"name RU"		[value]"Сущность истерии"
 
-	[tag]"icon path"	[value]"Essence_of_Hysteria"
+	[tag]"icon path"	[value]"Essence_of_Hysteria2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1236,7 +1228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Horror"
 	[tag]"name RU"		[value]"Сущность ужаса"
 
-	[tag]"icon path"	[value]"Essence_of_Horror"
+	[tag]"icon path"	[value]"Essence_of_Horror2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1261,7 +1253,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Insanity"
 	[tag]"name RU"		[value]"Сущность безумия"
 
-	[tag]"icon path"	[value]"Essence_of_Insanity"
+	[tag]"icon path"	[value]"Essence_of_Insanity2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1285,7 +1277,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Delirium"
 	[tag]"name RU"		[value]"Сущность бреда"
 
-	[tag]"icon path"	[value]"Essence_of_Delirium"
+	[tag]"icon path"	[value]"Essence_of_Delirium2"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1320,9 +1312,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lesser Essence of Seeking"
-	[tag]"name RU"		[value]"Малая сущность стремления"
+	[tag]"name RU"		[value]"Малая сущность искания"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfSeeking"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1345,7 +1337,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Insulation"
 	[tag]"name RU"		[value]"Малая сущность изоляции"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfInsulation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1368,7 +1360,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Thawing"
 	[tag]"name RU"		[value]"Малая сущность таяния"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfThawing"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1391,7 +1383,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Grounding"
 	[tag]"name RU"		[value]"Малая сущность заземления"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfGrounding"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1412,9 +1404,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lesser Essence of Alacrity"
-	[tag]"name RU"		[value]"Малая сущность гибкости"
+	[tag]"name RU"		[value]"Малая сущность живости"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfAlacrity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1435,9 +1427,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lesser Essence of Opulence"
-	[tag]"name RU"		[value]"Малая сущность богатства"
+	[tag]"name RU"		[value]"Малая сущность изобилия"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfOpulence
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1458,9 +1450,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Lesser Essence of Command"
-	[tag]"name RU"		[value]"Малая сущность подчинения"
+	[tag]"name RU"		[value]"Малая сущность повеления"
 
-	[tag]"icon path"	[value]"UnknownLesserEssence"
+	[tag]"icon path"	[value]"LesserEssenceOfCommand"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1496,9 +1488,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Essence of Seeking"
-	[tag]"name RU"		[value]"Сущность стремления"
+	[tag]"name RU"		[value]"Сущность искания"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfSeeking"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1521,7 +1513,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of the Abyss"
 	[tag]"name RU"		[value]"Сущность Бездны"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfAbyssal"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1544,7 +1536,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Insulation"
 	[tag]"name RU"		[value]"Сущность изоляции"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfInsulation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1567,7 +1559,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Thawing"
 	[tag]"name RU"		[value]"Сущность таяния"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfThawing"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1590,7 +1582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Essence of Grounding"
 	[tag]"name RU"		[value]"Сущность заземления"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfGrounding"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1611,9 +1603,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Essence of Alacrity"
-	[tag]"name RU"		[value]"Сущность гибкости"
+	[tag]"name RU"		[value]"Сущность живости"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfAlacrity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1634,9 +1626,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Essence of Opulence"
-	[tag]"name RU"		[value]"Сущность богатства"
+	[tag]"name RU"		[value]"Сущность изобилия"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfOpulence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1657,9 +1649,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Essence of Command"
-	[tag]"name RU"		[value]"Сущность подчинения"
+	[tag]"name RU"		[value]"Сущность повеления"
 
-	[tag]"icon path"	[value]"UnknownEssence"
+	[tag]"icon path"	[value]"EssenceOfCommand"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1700,9 +1692,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Essence of Seeking"
-	[tag]"name RU"		[value]"Большая сущность стремления"
+	[tag]"name RU"		[value]"Большая сущность искания"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfSeeking"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1726,7 +1718,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Essence of Insulation"
 	[tag]"name RU"		[value]"Большая сущность изоляции"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfInsulation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1749,7 +1741,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Essence of Thawing"
 	[tag]"name RU"		[value]"Большая сущность таяния"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfThawing"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1772,7 +1764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Essence of Grounding"
 	[tag]"name RU"		[value]"Большая сущность заземления"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfGrounding"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1793,9 +1785,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Essence of Alacrity"
-	[tag]"name RU"		[value]"Большая сущность гибкости"
+	[tag]"name RU"		[value]"Большая сущность живости"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfAlacrity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1816,9 +1808,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Essence of Opulence"
-	[tag]"name RU"		[value]"Большая сущность богатства"
+	[tag]"name RU"		[value]"Большая сущность изобилия"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfOpulence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1839,9 +1831,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Greater Essence of Command"
-	[tag]"name RU"		[value]"Большая сущность подчинения"
+	[tag]"name RU"		[value]"Большая сущность повеления"
 
-	[tag]"icon path"	[value]"UnknownGreaterEssence"
+	[tag]"icon path"	[value]"GreaterEssenceOfCommand"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1882,9 +1874,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Perfect Essence of Seeking"
-	[tag]"name RU"		[value]"Совершенная сущность стремления"
+	[tag]"name RU"		[value]"Совершенная сущность искания"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfSeeking"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1908,7 +1900,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Insulation"
 	[tag]"name RU"		[value]"Совершенная сущность изоляции"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfInsulation"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1931,7 +1923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Thawing"
 	[tag]"name RU"		[value]"Совершенная сущность таяния"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfThawing"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1954,7 +1946,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Perfect Essence of Grounding"
 	[tag]"name RU"		[value]"Совершенная сущность заземления"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfGrounding"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1975,9 +1967,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Perfect Essence of Alacrity"
-	[tag]"name RU"		[value]"Совершенная сущность гибкости"
+	[tag]"name RU"		[value]"Совершенная сущность живости"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfAlacrity"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1998,9 +1990,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Perfect Essence of Opulence"
-	[tag]"name RU"		[value]"Совершенная сущность богатства"
+	[tag]"name RU"		[value]"Совершенная сущность изобилия"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfOpulence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -2021,9 +2013,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Perfect Essence of Command"
-	[tag]"name RU"		[value]"Безупречная сущность подчинения"
+	[tag]"name RU"		[value]"Совершенная сущность повеления"
 
-	[tag]"icon path"	[value]"UnknownPerfectEssence"
+	[tag]"icon path"	[value]"PerfectEssenceOfCommand"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"

@@ -1833,8 +1833,9 @@ namespace PoeNinjaNamespace
 
 	static size_t write_to_string(void* ptr, size_t size, size_t count, void* stream);
 
-	extern std::string		url_prefix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
-	extern std::string		url_suffix[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	extern std::string			url_prefix		[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	extern std::string			url_suffix		[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
+	extern PoeNinjaAPIReadMode	api_read_mode	[int(PoeNinjaAPIMode::_LAST_ELEMENT)][2];
 
 	extern void set_price_table_url_prefix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
 	extern void set_price_table_url_suffix(std::string _string, PoeNinjaAPIMode _api_mode, PathOfExileGame _game);
@@ -1870,7 +1871,7 @@ public:
 	static void get_poe_ninja_api_prices_poe2();
 	static void parse_json_from_poe_ninja_old(std::string _name, std::string* _url_content, PoeNinjaAPIMode _mode, bool _console_debug = false);
 
-	static void parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode);
+	static void parse_json_from_poe_ninja_new(std::string _name, std::string* _string_content, PoeNinjaAPIMode _mode, PoeNinjaAPIReadMode _read_mode, bool _debug_log);
 
 	static void save_poe_ninja_cache(std::string _filename, std::string* _content);
 	static void read_poe_ninja_cache(std::string _filename, PoeNinjaAPIMode _api_mode, PoeNinjaAPIReadMode _read_mode);
