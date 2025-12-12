@@ -3,7 +3,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"		[value]"PoE2"
 	
 	[tag]"name EN"			[value]"Vaal Siphoner"
-	[tag]"name RU"			[value]"Культивирующая сфера ваал"
+	[tag]"name RU"			[value]"Поглотитель ваал"
 	
 	[tag]"icon path"		[value]"Incubator"
 	[tag]"base class"		[value]"Incubators"

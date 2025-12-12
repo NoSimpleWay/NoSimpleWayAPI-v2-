@@ -11661,6 +11661,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/staves.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/support_gems.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/tablets.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/talismans.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/trial_coins.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/two_hand_maces.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/uncut.txt");

@@ -107,12 +107,12 @@ DETF_color	255	128	64	255
 REGISTER_NEW_FILTER_RULE
 name_EN	"New bases"
 name_RU	"Новые базы"
-icon	"data/textures/icons/AbyssalSignet.png"
+icon	"data/textures/icons/UndefinedQuarterstaff.png"
 target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
@@ -259,12 +259,8 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_value_key	"Introduced: The last of the druids"
 	DETF_color	255	230	204	255
-	
-	
-	
-
 
 REGISTER_NEW_BANNED_FILTER_TAG
 target_tag	"item tag"
@@ -281,6 +277,17 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -299,7 +306,7 @@ target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
@@ -313,7 +320,7 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Deleted in Rise of the Abyssals"
+	DETF_value_key	"Deleted in The last of the druids"
 
 	
 
@@ -329,6 +336,21 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,7 +372,7 @@ target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
@@ -385,7 +407,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_value_key	"Introduced: The last of the druids"
 	DETF_color	255	230	204	255
 	
 	
@@ -425,133 +447,35 @@ tag_cannot_be_configured
 	
 	
 	
-//Эссенции для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New essences"
-name_RU	"Новые эссенции"
-icon	"data/textures/icons/PerfectEssenceOfInfinite.png"
-target_game	"PoE2"
-
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(abyss)"
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Currency"
-	DETF_color	255	230	204	255
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Essences"
-	DETF_color	255	230	204	255
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"essence rang"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Lesser"
-	DETF_localised_attribute_name_EN	"Lesser essences"
-	DETF_localised_attribute_name_RU	"Малые сущности"
-	DETF_color	190	200	210	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Regular"
-	DETF_localised_attribute_name_EN	"Regular essences"
-	DETF_localised_attribute_name_RU	"Обычные сущности"
-	DETF_color	190	200	210	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Greater"
-	DETF_localised_attribute_name_EN	"Greater essences"
-	DETF_localised_attribute_name_RU	"Великие сущности"
-	DETF_color	255	200	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Perfect"
-	DETF_localised_attribute_name_EN	"Perfect essences"
-	DETF_localised_attribute_name_RU	"Совершенные сущности"
-	DETF_color	255	200	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Corrupted"
-	DETF_localised_attribute_name_EN	"Corrupted"
-	DETF_localised_attribute_name_RU	"Осквернённые"
-	DETF_color	255	100	50	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
-	DETF_color	255	230	204	255
 	
 	
 	
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
 	
 //Эссенции для PoE2
-	
-//Мап фрагменты для PoE2
 REGISTER_NEW_FILTER_RULE
-name_EN	"New map fragments"
-name_RU	"Новые фрагменты карт"
-icon	"data/textures/icons/IdolOfEstazunti.png"
+name_EN	"New аugments"
+name_RU	"Новые аугменты"
+icon	"data/textures/icons/[undefined]QuipolatlsThesis.png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
@@ -560,10 +484,10 @@ named_id	"new content(abyss)"
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Map Fragments"
-	DETF_color	255	230	204	255
 
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Augment"
+	DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
@@ -574,8 +498,6 @@ REGISTER_NEW_FILTER_TAG
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
 	
-
-	
 	
 	
 REGISTER_NEW_FILTER_TAG
@@ -583,7 +505,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_value_key	"Introduced: The last of the druids"
 	DETF_color	255	230	204	255
 	
 	
@@ -611,17 +533,32 @@ tag_cannot_be_configured
 	
 	
 	
-//Проходки боссов для PoE2
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//Эссенции для PoE2
 REGISTER_NEW_FILTER_RULE
-name_EN	"New Pinnacle keys"
-name_RU	"Новые проходки боссов"
-icon	"data/textures/icons/TertiaryCalamityFragment.png"
+name_EN	"Incubators"
+name_RU	"Инкубаторы"
+icon	"data/textures/icons/Incubator.png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
@@ -630,10 +567,10 @@ named_id	"new content(abyss)"
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Pinnacle Keys"
-	DETF_color	255	230	204	255
 
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Incubators"
+	DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
@@ -644,8 +581,6 @@ REGISTER_NEW_FILTER_TAG
 	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
 	
-
-	
 	
 	
 REGISTER_NEW_FILTER_TAG
@@ -653,7 +588,7 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_value_key	"Introduced: The last of the druids"
 	DETF_color	255	230	204	255
 	
 	
@@ -685,207 +620,73 @@ tag_cannot_be_configured
 	
 	
 	
-//Камни для PoE2
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//Эссенции для PoE2
 REGISTER_NEW_FILTER_RULE
-name_EN	"New gems"
-name_RU	"Новые камни"
-icon	"data/textures/icons/SuppotGem(PoE2).png"
+name_EN	"Talismans"
+name_RU	"Талисманы"
+icon	"data/textures/icons/Talisman.png"
 target_game	"PoE2"
 
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 
 
 
 
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Support Gems"
-	DETF_localised_attribute_name_EN	"Support gems"
-	DETF_localised_attribute_name_RU	"Камни поддержки"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Skill Gems"
-	DETF_localised_attribute_name_EN	"Skill gems"
-	DETF_localised_attribute_name_RU	"Камни умений"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Uncut Skill Gems"
-	DETF_localised_attribute_name_EN	"Uncut Skill Gems"
-	DETF_localised_attribute_name_RU	"Необработанный: умения"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Uncut Support Gems"
-	DETF_localised_attribute_name_EN	"Uncut Support Gems"
-	DETF_localised_attribute_name_RU	"Необработанный: поддержка"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Uncut Spirit Gems"
-	DETF_localised_attribute_name_EN	"Uncut Spirit Gems"
-	DETF_localised_attribute_name_RU	"Необработанный: духа"
-	DETF_color	255	230	204	255
-
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
-	DETF_color	255	230	204	255
-	
-	
-	
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	
-	
-	
-	
-
-
-//Омены для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New omens"
-name_RU	"Новые омены"
-icon	"data/textures/icons/OmenOfTheSovereign.png"
-target_game	"PoE2"
-
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(abyss)"
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Omen"
+	DETF_value_key	"Talismans"
 	DETF_color	255	230	204	255
-	
-	
-	
+
+
 REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
+	target_tag	"exist for"
+	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Omen"
+	DETF_value_key	"PoE2"
 	DETF_color	255	230	204	255
-
-
+	
+	
+	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Rise of the Abyssals League"
+	DETF_value_key	"Introduced: The last of the druids"
 	DETF_color	255	230	204	255
 	
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
 	
 	
 
@@ -906,9 +707,113 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//Эссенции для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Tablets"
+name_RU	"Таблички"
+icon	"data/textures/icons/BossTablet.png"
+target_game	"PoE2"
+
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(druid)"
 
 
 
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Tablet"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: The last of the druids"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
 
 
 
@@ -926,12 +831,12 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_RULE
 name_EN	"Category:\nNew content"
 name_RU	"Категория:\nНовый контент"
-icon	"data/textures/buttons/pattern_folder_hunt.png"
+icon	"data/textures/buttons/pattern_folder_druid.png"
 is_folder
 
 target_game	"PoE2"
 tag	"Game item"
-named_id	"new content(abyss)"
+named_id	"new content(druid)"
 min_y	"100"
 
 
@@ -1201,245 +1106,6 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-REGISTER_NEW_FILTER_RULE
-name_EN	"Socketable"
-name_RU	"Размещаемое"
-icon	"data/textures/icons/TecrodsGaze.png"
-target_game	"PoE2"
-tag	"Game item"
-min_y	"100"
-named_id	"Abyss items"
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Socketable"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"rune type"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Abyss jewel"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
-	
-	
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-	
-REGISTER_NEW_FILTER_RULE
-name_EN	"Map fragments"
-name_RU	"Проходки"
-icon	"data/textures/icons/KulemaksInvitation.png"
-target_game	"PoE2"
-tag	"Game item"
-min_y	"100"
-named_id	"Abyss items"
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"exist for"
-	tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE2"
-	DETF_color	255	230	204	255
-	
-	
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Map fragments"
-	DETF_color	255	230	204	255
-	
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Abyss item"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
-
-	
-	
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
 
 
 
@@ -1979,7 +1645,7 @@ target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Socketable"
+	DETF_value_key	"Augment"
 	DETF_color	255	230	204	255
 
 
