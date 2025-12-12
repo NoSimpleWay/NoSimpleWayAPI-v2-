@@ -5080,7 +5080,7 @@ void EWindowMain::get_poe_ninja_api_prices()
 
 
 	//UNIUE JEWELS
-	std::string	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueAccessory";
+	std::string	url = "https://poe.ninja/poe1/api/economy/stash/current/item/overview?league=" + league_name + "&type=UniqueJewel";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, PoeNinjaNamespace::write_to_string);
@@ -10948,7 +10948,7 @@ void EWindowMain::read_poe_ninja_data_from_cache()
 		read_poe_ninja_cache("Incubator",					PoeNinjaAPIMode::INCUBATORS,	PoeNinjaAPIReadMode::DIRECT);
 		read_poe_ninja_cache("Scarab",						PoeNinjaAPIMode::SCARABS,		PoeNinjaAPIReadMode::REDIRECTED);
 		read_poe_ninja_cache("Fossil",						PoeNinjaAPIMode::FOSSILS,		PoeNinjaAPIReadMode::REDIRECTED);
-		read_poe_ninja_cache("SkillGem",					PoeNinjaAPIMode::GEMS,			PoeNinjaAPIReadMode::REDIRECTED);
+		read_poe_ninja_cache("SkillGem",					PoeNinjaAPIMode::GEMS,			PoeNinjaAPIReadMode::DIRECT);
 		//read_poe_ninja_cache("AllflameEmber",				PoeNinjaAPIMode::EMBERS);
 		read_poe_ninja_cache("Tattoo",						PoeNinjaAPIMode::TATTOO,		PoeNinjaAPIReadMode::REDIRECTED);
 		read_poe_ninja_cache("Omen",						PoeNinjaAPIMode::OMEN,			PoeNinjaAPIReadMode::REDIRECTED);
@@ -14690,7 +14690,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_input_field_for_listed = true;
-	jc_filter_block_attribute->have_exact_match = false;
+	jc_filter_block_attribute->have_exact_match = true;
 
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_has_implicit");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_explicit_mods";
@@ -14759,8 +14759,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
-	jc_filter_block_attribute->have_input_field_for_listed = true;
-	jc_filter_block_attribute->have_exact_match = false;
+	//jc_filter_block_attribute->have_input_field_for_listed = true;
+	jc_filter_block_attribute->have_exact_match = true;
 
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/enchantment");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_enchantment";
@@ -21196,7 +21196,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						(current_sym != ' ')
 						||
 						(space_is_not_separator)
-						)
+					)
 					&&
 					(current_sym != '\t')
 					&&
@@ -21206,8 +21206,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 					&&
 					(current_sym != '#')
 					&&
-					(i + 1 < str_line.length())
+					(
+						(current_sym != '"')
+						||
+						(space_is_not_separator)
 					)
+					&&
+					(i + 1 < str_line.length())
+			)
 			{
 				if (current_sym != '"')
 				{
@@ -21223,7 +21229,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							(current_sym != ' ')
 							||
 							(space_is_not_separator)
-							)
+						)
 						&&
 						(current_sym != '\t')
 						&&
@@ -21241,7 +21247,6 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						buffer_text += current_sym;
 					}
 				}
-
 				if (buffer_text != "")
 				{
 					//attribute name
@@ -21378,6 +21383,12 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										)
 									)
 							{
+
+								if (matched_item_attribute->localisation.base_name == "HasEnchantment")
+								{
+									matched_item_attribute = matched_item_attribute;
+								}
+
 								//add new sections to filter block
 								if
 									(
@@ -21386,7 +21397,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										(!matched_item_attribute->commentary_config)
 										&&
 										(jc_filter_block != nullptr)
-										)
+									)
 								{
 									add_game_item_attribute_to_filter_block(jc_filter_block, matched_item_attribute, "");
 								}
@@ -21647,6 +21658,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										if (buffer_text == "==")//select variant "exact match"
 										{
 											listed_block->matching_mode_router_button->select_variant(1);
+
+											if ((matched_item_attribute->have_input_field_for_listed) && (listed_block->input_field != nullptr))
+											{
+												listed_block->input_field->main_text_area->change_text("==");
+											}
 										}
 										else//CONDITION OPERATOR FOR EXPLICIT
 										{
@@ -24209,7 +24225,16 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 					result_string += " ==";
 				}
 
-				if ((listed_block->input_field != nullptr))
+				if
+				(
+					(listed_block->input_field != nullptr)
+					&&
+					(
+						(listed_block->matching_mode_router_button == nullptr)
+						||
+						(listed_block->matching_mode_router_button->selected_variant == 0)
+					)
+				)
 				{
 					if (listed_block->input_field->main_text_area->original_text != "")
 					{
