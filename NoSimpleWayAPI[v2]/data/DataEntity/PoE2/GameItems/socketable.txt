@@ -1994,7 +1994,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Talisman"
 	
 	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Idol of Serpent"
+	[tag]"renamed to"	[value]"Snake Idol"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -2008,7 +2008,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Idol of Serpent"
+	[tag]"name EN"		[value]"Snake Idol"
 	[tag]"name RU"		[value]"Талисман змеи"
 
 	[tag]"icon path"	[value]"AzmeriSocketableSnake"
