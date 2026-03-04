@@ -2530,3 +2530,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Essence of Desolation"
+	[tag]"name RU"		[value]"Сущность запустения"
+
+	[tag]"icon path"	[value]"EssenceOfDesolation"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	
+	[tag]"item tag"		[value]"Essence tier: special"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"

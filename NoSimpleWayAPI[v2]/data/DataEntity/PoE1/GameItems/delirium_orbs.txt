@@ -62,6 +62,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"worth"		[value]"Common"
 	
@@ -190,6 +193,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"worth"		[value]"Common"
 	
@@ -367,8 +373,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 		
 	[tag]"worth"		[value]"Moderate"

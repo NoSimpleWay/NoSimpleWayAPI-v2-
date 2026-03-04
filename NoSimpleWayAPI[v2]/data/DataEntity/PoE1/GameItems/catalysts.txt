@@ -273,3 +273,62 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sinistral Catalyst"
+	[tag]"name RU"		[value]"Катализатор левши"
+
+	[tag]"icon path"	[value]"SinistralCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+		
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dextral Catalyst"
+	[tag]"name RU"		[value]"Катализатор правши"
+
+	[tag]"icon path"	[value]"DextralCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+		
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"

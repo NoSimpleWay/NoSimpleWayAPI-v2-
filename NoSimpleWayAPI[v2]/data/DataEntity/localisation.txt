@@ -1624,6 +1624,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"attribute_description_is_imbued_gem"
+	[tag]"name EN"		[value]"Condition: Imbed gem"
+	[tag]"name RU"		[value]"Условие: встроенный саппорт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"attribute_description_vaal_mod"
 	[tag]"name EN"		[value]"Is item have Vaal modifier"
 	[tag]"name RU"		[value]"Условие: предмет имеет свойство Ваал"

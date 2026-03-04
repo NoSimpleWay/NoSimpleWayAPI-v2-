@@ -1,0 +1,78 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sweep"
+	[tag]"name RU"		[value]"Круговой взмах"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Holy Sweep"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Holy Sweep"
+	[tag]"name RU"		[value]"Священный взмах"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lesser Multiple Projectiles Support"
+	[tag]"name RU"		[value]"<Lesser Multiple Projectiles Support>"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Multiple Projectiles Support"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Holy Sweep"
+	[tag]"name RU"		[value]"Священный взмах"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	

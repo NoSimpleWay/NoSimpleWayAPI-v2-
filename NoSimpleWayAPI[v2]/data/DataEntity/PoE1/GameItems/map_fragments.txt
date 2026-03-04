@@ -2636,6 +2636,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2646,12 +2653,43 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GraspingVoidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Eldritch Voidstone"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+		
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eldritch Voidstone"
+	[tag]"name RU"		[value]"Мистический Камень Пустоты"
+
+	[tag]"icon path"	[value]"GraspingVoidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2662,12 +2700,43 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"OmniscientVoidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Originator Voidstone"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+		
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Originator Voidstone"
+	[tag]"name RU"		[value]"Камень Пустоты Источника"
+
+	[tag]"icon path"	[value]"OmniscientVoidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3348,6 +3417,11 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3360,6 +3434,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Breach Scarab of the Hive"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3368,6 +3447,40 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Breach Scarab of the Hive"
+	[tag]"name RU"		[value]"Скарабей Разлома улья"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3411,6 +3524,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -3422,6 +3542,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Breach Scarab of Instability"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3430,6 +3555,36 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Breach Scarab of Instability"
+	[tag]"name RU"		[value]"Скарабей Разлома нестабильности"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3442,6 +3597,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Breach Scarab of the Marshal"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3450,6 +3610,40 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Breach Scarab of the Marshal"
+	[tag]"name RU"		[value]"Скарабей Разлома маршала"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3462,6 +3656,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Breach Scarab of the Incensed Swarm"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3470,7 +3669,27 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
 
+	[tag]"name EN"		[value]"Breach Scarab of the Incensed Swarm"
+	[tag]"name RU"		[value]"Скарабей Разлома разъярённого роя"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 
 
 
@@ -3675,6 +3894,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -3686,8 +3912,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Influencing Scarab of Interference"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Influencing"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Influencing Scarab of Interference"
+	[tag]"name RU"		[value]"Влиятельный скарабей интервенции"
+
+	[tag]"icon path"	[value]"Scarab_influenced"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Influencing"
@@ -4083,6 +4334,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -4094,7 +4352,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Expedition Scarab of Infusion"
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -4104,6 +4366,35 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Expedition Scarab of Infusion"
+	[tag]"name RU"		[value]"Скарабей Экспедиции насыщения"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -4174,6 +4465,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -4185,6 +4480,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Legion Scarab of Treasures"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -4193,6 +4493,33 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Legion Scarab of Treasures"
+	[tag]"name RU"		[value]"Скарабей Легиона сокровищ"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -4324,6 +4651,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -4335,9 +4668,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Abyss Scarab of Descending"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Descending"
+	[tag]"name RU"		[value]"Скарабей Бездны нисхождения"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5041,6 +5400,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -5052,10 +5417,138 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Betrayal Scarab of Unbreaking"
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Unbreaking"
+	[tag]"name RU"		[value]"Скарабей Предательства несломимости"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of Bisection"
+	[tag]"name RU"		[value]"Скарабей раздвоения"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Scarab of the Sinistral"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of the Sinistral"
+	[tag]"name RU"		[value]"Скарабей левши"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of Unity"
+	[tag]"name RU"		[value]"Скарабей единения"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Scarab of the Dextral"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of the Dextral"
+	[tag]"name RU"		[value]"Скарабей правши"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6644,6 +7137,175 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss pass"
 	
 	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Anarchy Scarab of the Exceptional"
+	[tag]"name RU"		[value]"Скарабей Анархии исключительности"
+
+	[tag]"icon path"	[value]"AnarchyScarabOfTheExceptional"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ritual Scarab of Corpses"
+	[tag]"name RU"		[value]"Ритуальный скарабей трупов"
+
+	[tag]"icon path"	[value]"RitualScarabOfCorpses"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Kalguuran Scarab of Enriching"
+	[tag]"name RU"		[value]"Калгууранский скарабей обогащения"
+
+	[tag]"icon path"	[value]"KalguuranScarabOfEnriching"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of the Dextral"
+	[tag]"name RU"		[value]"Скарабей правши"
+
+	[tag]"icon path"	[value]"ScarabOfTheDextral"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Scarab of Unbreaking"
+	[tag]"name RU"		[value]"Скарабей Предательства несломимости"
+
+	[tag]"icon path"	[value]"BetrayalScarabOfUnbreaking"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Descending"
+	[tag]"name RU"		[value]"Скарабей Бездны нисхождения"
+
+	[tag]"icon path"	[value]"AbyssScarabOfDescending"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Expedition Scarab of Infusion"
+	[tag]"name RU"		[value]"Скарабей Экспедиции насыщения"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

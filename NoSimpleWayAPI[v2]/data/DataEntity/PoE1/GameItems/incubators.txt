@@ -660,3 +660,76 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Moderate"
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Honoured Incubator"
+	[tag]"name RU"		[value]"Почтенный инкубатор"
+
+	[tag]"icon path"	[value]"HonouredIncubator"
+	[tag]"base class"	[value]"Incubators"
+	[tag]"item tag"		[value]"Incubator item"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sacred Incubator"
+	[tag]"name RU"		[value]"Священный инкубатор"
+
+	[tag]"icon path"	[value]"SacredIncubator"
+	[tag]"base class"	[value]"Incubators"
+	[tag]"item tag"		[value]"Incubator item"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Miraged Incubator"
+	[tag]"name RU"		[value]"Зыбкий инкубатор"
+
+	[tag]"icon path"	[value]"MiragedIncubator"
+	[tag]"base class"	[value]"Incubators"
+	[tag]"item tag"		[value]"Incubator item"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"

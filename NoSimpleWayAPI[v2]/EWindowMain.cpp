@@ -6544,9 +6544,13 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 					else
 					if
 					(
-						(_mode == PoeNinjaAPIMode::UNIQUES) && (data_entity_details_id == details_id_value)
+						(
+							(details_id_value != "")
+							&&
+							(data_entity_details_id == details_id_value)
+						)
 						||
-						(_mode != PoeNinjaAPIMode::UNIQUES) && (data_entity_name_EN == jfield_item_name->field_value)
+						(data_entity_name_EN == jfield_item_name->field_value)
 					)
 					{
 						ID_string new_worth_ID_string;
@@ -6674,6 +6678,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 
 
 
+
 					if (primary_name == nullptr)
 					{
 						if (_debug_log) { EInputCore::logger_simple_error("jfield have no <name> field"); }
@@ -6766,7 +6771,19 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 							std::string
 							data_entity_name_EN = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
 
-							if (data_entity_name_EN == primary_name->field_value)
+							std::string
+							data_entity_details_id = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::details_ID, de);
+
+							if
+							(
+								(data_entity_name_EN == primary_name->field_value)
+								||
+								(
+									(data_entity_details_id != "")
+									&&
+									(details_id_value == data_entity_details_id)
+								)
+							)
 							{
 								suitable_item_found = true;
 
@@ -6869,7 +6886,7 @@ void EWindowMain::parse_json_from_poe_ninja_new(std::string _name, std::string* 
 
 						if (!suitable_item_found)
 						{
-							if (_debug_log) { EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no suitable data entity"); }
+							if (_debug_log) { EInputCore::logger_simple_error("item [" + primary_name->field_value + "] have no suitable data entity ("); }
 						}
 					}
 				}
@@ -14113,6 +14130,23 @@ void EWindowMain::register_game_item_attributes()
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Imbued";
+	jc_localisation.localisations[NSW_localisation_EN] = "Is imbued";
+	jc_localisation.localisations[NSW_localisation_RU] = "Встроенный";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/ImbuedGem");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_imbued_gem";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "HasVaalUniqueMod";
 	jc_localisation.localisations[NSW_localisation_EN] = "Vaal modifier";
@@ -14184,6 +14218,11 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE2;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+
+
 
 
 

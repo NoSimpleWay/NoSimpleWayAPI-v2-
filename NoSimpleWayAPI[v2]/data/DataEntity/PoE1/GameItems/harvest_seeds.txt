@@ -723,3 +723,28 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crystallised Rancour"
+	[tag]"name RU"		[value]"Кристаллизованная злоба"
+
+	[tag]"icon path"	[value]"CrystallisedRancour"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

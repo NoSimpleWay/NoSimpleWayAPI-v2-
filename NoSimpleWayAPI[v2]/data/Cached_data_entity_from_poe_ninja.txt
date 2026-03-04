@@ -30,7 +30,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"40"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000023"
+	[tag]"cost in chaoses"	[value]"0.002283"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -69,7 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"40"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.005071"
+	[tag]"cost in chaoses"	[value]"0.478469"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89,7 +89,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"30"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000183"
+	[tag]"cost in chaoses"	[value]"0.025233"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -128,7 +128,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"40"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000229"
+	[tag]"cost in chaoses"	[value]"0.021701"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -145,7 +145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.003699"
+	[tag]"cost in chaoses"	[value]"0.199601"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -179,15 +179,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Trash"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"drop level"	[value]"12"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"23.570999"
-	[tag]"base worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.609010"
+	[tag]"base worth"	[value]"Trash"
 
 
 
@@ -275,7 +275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002399"
+	[tag]"cost in chaoses"	[value]"0.341297"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -352,7 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.025750"
+	[tag]"cost in chaoses"	[value]"1.401738"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -372,7 +372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.004663"
+	[tag]"cost in chaoses"	[value]"1.479071"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -521,14 +521,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"drop level"	[value]"35"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"1.000000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"157.306900"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -591,7 +591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"8.377200"
+	[tag]"cost in chaoses"	[value]"0.635728"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -858,7 +858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"210600.000000"
+	[tag]"cost in chaoses"	[value]"33545.789062"
 	[tag]"base worth"	[value]"Very expensive"
 
 
@@ -878,7 +878,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.005899"
+	[tag]"cost in chaoses"	[value]"0.465116"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -912,14 +912,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"World drop"
 	[tag]"item tag"	[value]"Basic currency"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"drop level"	[value]"35"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.078200"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"15.576324"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -938,7 +938,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.077040"
+	[tag]"cost in chaoses"	[value]"9.259259"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -1089,7 +1089,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001516"
+	[tag]"cost in chaoses"	[value]"0.082440"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -1270,7 +1270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Раскалывающая сфера"
 	[tag]"icon path"	[value]"FracturingOrb"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"drop level"	[value]"1"
@@ -1279,8 +1279,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Forbidden Sanctum league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.141500"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"94.339622"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -1386,7 +1386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"20070.000000"
+	[tag]"cost in chaoses"	[value]"7541.478027"
 	[tag]"base worth"	[value]"Very expensive"
 
 
@@ -2402,7 +2402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предсказание избавления"
 	[tag]"icon path"	[value]"Omen"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"	[value]"Omen"
@@ -2412,8 +2412,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.048310"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"24.073183"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -2476,7 +2476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Returned if Affliction"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.003504"
+	[tag]"cost in chaoses"	[value]"0.145773"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -2670,7 +2670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.013990"
+	[tag]"cost in chaoses"	[value]"2.730003"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -6059,7 +6059,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002619"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -6079,7 +6078,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"0.500000"
 
 
 
@@ -7260,7 +7259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.008940"
+	[tag]"cost in chaoses"	[value]"1.791473"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 
@@ -8088,9 +8087,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"1000"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.016190"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.813008"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -11701,14 +11700,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Essences"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Essence tier: T0"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"cost in chaoses"	[value]"0.019400"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"4.631774"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -11722,14 +11721,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Essences"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Essence tier: T0"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"cost in chaoses"	[value]"0.153700"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"44.523598"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -11743,14 +11742,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Essences"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Essence tier: T0"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"cost in chaoses"	[value]"0.478600"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"169.176117"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -11764,14 +11763,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Essences"
 	[tag]"item tag"	[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"	[value]"Essence tier: T0"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"cost in chaoses"	[value]"0.029450"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.706449"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -62736,6 +62735,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 	[tag]"detailsId"	[value]"daressos-passion-estoc"
+	[tag]"cost in chaoses"	[value]"0.781250"
 
 
 
@@ -64069,9 +64069,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Non world drop"
 	[tag]"item tag"	[value]"Breach drop"
 	[tag]"item tag"	[value]"Upgraded by blessing"
-	[tag]"worth"	[value]"Moderate"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"uul-netols-embrace-vaal-axe"
+	[tag]"cost in chaoses"	[value]"1863.238281"
 
 
 
@@ -75280,10 +75281,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 	[tag]"detailsId"	[value]"amanamus-gaze-ghastly-eye-jewel"
-	[tag]"cost in chaoses"	[value]"1.210000"
+	[tag]"cost in chaoses"	[value]"212.765961"
 
 
 
@@ -75909,10 +75910,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Common"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 	[tag]"detailsId"	[value]"tecrods-gaze-murderous-eye-jewel"
-	[tag]"cost in chaoses"	[value]"0.201000"
+	[tag]"cost in chaoses"	[value]"471.253510"
 
 
 
@@ -76052,10 +76053,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 	[tag]"detailsId"	[value]"kurgals-gaze-hypnotic-eye-jewel"
-	[tag]"cost in chaoses"	[value]"0.151800"
+	[tag]"cost in chaoses"	[value]"80.710251"
 
 
 
@@ -76074,10 +76075,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Loot source: Abyss"
 	[tag]"item tag"	[value]"Loot source: Boss"
 	[tag]"item tag"	[value]"Non world drop"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 	[tag]"detailsId"	[value]"ulamans-gaze-searching-eye-jewel"
-	[tag]"cost in chaoses"	[value]"0.165800"
+	[tag]"cost in chaoses"	[value]"5.871990"
 
 
 
@@ -87868,14 +87869,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.020220"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"4.671442"
 
 
 
@@ -87891,14 +87892,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013120"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"4.939085"
 
 
 
@@ -87914,14 +87915,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015650"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"7.761966"
 
 
 
@@ -87937,14 +87938,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010950"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"6.071645"
 
 
 
@@ -87960,14 +87961,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.033440"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"16.402407"
 
 
 
@@ -87983,14 +87984,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.030370"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"15.503876"
 
 
 
@@ -88006,14 +88007,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.040890"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"24.350651"
 
 
 
@@ -88029,14 +88030,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.028930"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"9.578544"
 
 
 
@@ -88052,14 +88053,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.061240"
+	[tag]"base worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"37.565742"
 
 
 
@@ -88075,14 +88076,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.035170"
+	[tag]"base worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"10.752687"
 
 
 
@@ -88098,14 +88099,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.012300"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"3.679627"
 
 
 
@@ -88121,14 +88122,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.020740"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"3.375717"
 
 
 
@@ -89029,7 +89030,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.006478"
+	[tag]"cost in chaoses"	[value]"3.759398"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89066,7 +89067,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001470"
+	[tag]"cost in chaoses"	[value]"1.396648"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89108,7 +89109,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001466"
+	[tag]"cost in chaoses"	[value]"0.136799"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89150,7 +89151,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002913"
+	[tag]"cost in chaoses"	[value]"0.261438"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89192,7 +89193,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.008269"
+	[tag]"cost in chaoses"	[value]"0.634921"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89234,7 +89235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.008272"
+	[tag]"cost in chaoses"	[value]"1.069519"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89274,7 +89275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.010250"
+	[tag]"cost in chaoses"	[value]"1.960784"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89316,7 +89317,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.031330"
+	[tag]"cost in chaoses"	[value]"6.851661"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89349,7 +89350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Жидкое отчаяние"
 	[tag]"icon path"	[value]"DistilledDespair"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Distilled emotion"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"distilled level"	[value]"7"
@@ -89358,8 +89359,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.098380"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"21.765154"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -89391,7 +89392,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Концетрированный жидкий страх"
 	[tag]"icon path"	[value]"DistilledFear"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Distilled emotion"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"distilled level"	[value]"8"
@@ -89400,8 +89401,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.307100"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"69.492706"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -89433,7 +89434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Концетрированное жидкое страдание"
 	[tag]"icon path"	[value]"DistilledSuffering"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Distilled emotion"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"distilled level"	[value]"9"
@@ -89442,8 +89443,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.816800"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"210.925964"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -89475,7 +89476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Концетрированное жидкое отчуждение"
 	[tag]"icon path"	[value]"DistilledIsolation"
 	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Distilled emotion"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"distilled level"	[value]"10"
@@ -89484,8 +89485,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.709400"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"567.054138"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -89505,7 +89506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008643"
+	[tag]"cost in chaoses"	[value]"0.934579"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89526,7 +89527,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004452"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89547,7 +89548,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"0.806452"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89567,9 +89568,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014890"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.085468"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -89589,7 +89590,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89610,7 +89611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007757"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89631,7 +89632,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008145"
+	[tag]"cost in chaoses"	[value]"2.307870"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89651,9 +89652,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011970"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"6.997900"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -89673,7 +89674,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010480"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89694,7 +89695,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009998"
+	[tag]"cost in chaoses"	[value]"2.078570"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89715,7 +89716,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.026370"
+	[tag]"cost in chaoses"	[value]"1.940994"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89736,7 +89737,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007240"
+	[tag]"cost in chaoses"	[value]"0.699301"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89756,7 +89757,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.026740"
+	[tag]"cost in chaoses"	[value]"2.519526"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89776,7 +89777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004137"
+	[tag]"cost in chaoses"	[value]"0.558659"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89796,7 +89797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011260"
+	[tag]"cost in chaoses"	[value]"1.554485"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89815,9 +89816,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.038740"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"8.726004"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -89836,7 +89837,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009241"
+	[tag]"cost in chaoses"	[value]"0.625000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89856,7 +89857,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008128"
+	[tag]"cost in chaoses"	[value]"0.869565"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89876,7 +89877,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008923"
+	[tag]"cost in chaoses"	[value]"1.986887"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89896,7 +89897,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.016120"
+	[tag]"cost in chaoses"	[value]"2.698327"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89916,7 +89917,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006205"
+	[tag]"cost in chaoses"	[value]"0.675676"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89936,7 +89937,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014230"
+	[tag]"cost in chaoses"	[value]"1.489869"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89956,7 +89957,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013320"
+	[tag]"cost in chaoses"	[value]"1.983340"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89976,7 +89977,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008714"
+	[tag]"cost in chaoses"	[value]"0.854701"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -89996,7 +89997,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008804"
+	[tag]"cost in chaoses"	[value]"0.450450"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90016,7 +90017,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.002774"
+	[tag]"cost in chaoses"	[value]"0.316456"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90036,7 +90037,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018310"
+	[tag]"cost in chaoses"	[value]"1.409245"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90055,9 +90056,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.037010"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.075031"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90076,7 +90077,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007125"
+	[tag]"cost in chaoses"	[value]"0.473934"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90096,7 +90097,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006697"
+	[tag]"cost in chaoses"	[value]"0.383142"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90116,7 +90117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007720"
+	[tag]"cost in chaoses"	[value]"0.429185"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90135,9 +90136,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.060850"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"7.047216"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90156,7 +90157,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.005477"
+	[tag]"cost in chaoses"	[value]"0.432900"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90176,7 +90177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011310"
+	[tag]"cost in chaoses"	[value]"0.952381"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90196,7 +90197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018480"
+	[tag]"cost in chaoses"	[value]"2.105263"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90216,7 +90217,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004134"
+	[tag]"cost in chaoses"	[value]"0.269542"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90237,7 +90238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011220"
+	[tag]"cost in chaoses"	[value]"1.474057"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90258,7 +90259,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010930"
+	[tag]"cost in chaoses"	[value]"2.304147"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90279,7 +90280,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.016450"
+	[tag]"cost in chaoses"	[value]"2.447980"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90299,9 +90300,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.021950"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.859514"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90321,7 +90322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015000"
+	[tag]"cost in chaoses"	[value]"1.608493"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90342,7 +90343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014980"
+	[tag]"cost in chaoses"	[value]"2.295684"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90363,7 +90364,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.019380"
+	[tag]"cost in chaoses"	[value]"2.991325"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90384,7 +90385,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009421"
+	[tag]"cost in chaoses"	[value]"1.685772"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90404,9 +90405,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.628900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"75.930145"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -90425,9 +90426,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.094620"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"11.893435"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -90446,9 +90447,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.155900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"46.904316"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -90468,7 +90469,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008954"
+	[tag]"cost in chaoses"	[value]"1.582028"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90568,9 +90569,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011850"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"8.833922"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90590,7 +90591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010590"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90611,7 +90612,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013800"
+	[tag]"cost in chaoses"	[value]"1.512173"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90632,7 +90633,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015350"
+	[tag]"cost in chaoses"	[value]"1.093733"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90653,7 +90654,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015510"
+	[tag]"cost in chaoses"	[value]"1.557632"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90673,9 +90674,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013380"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"5.988024"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90695,7 +90696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010240"
+	[tag]"cost in chaoses"	[value]"1.133273"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90716,7 +90717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.017130"
+	[tag]"cost in chaoses"	[value]"2.624672"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90736,9 +90737,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018450"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.487966"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90758,7 +90759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.019480"
+	[tag]"cost in chaoses"	[value]"1.580028"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90779,7 +90780,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.019680"
+	[tag]"cost in chaoses"	[value]"1.558118"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90800,7 +90801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.016880"
+	[tag]"cost in chaoses"	[value]"2.090301"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90821,7 +90822,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.019110"
+	[tag]"cost in chaoses"	[value]"1.722950"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90841,9 +90842,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015040"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"12.693577"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -90863,7 +90864,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.012660"
+	[tag]"cost in chaoses"	[value]"2.666667"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90884,7 +90885,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018860"
+	[tag]"cost in chaoses"	[value]"2.938584"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90904,9 +90905,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.034700"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.216468"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90925,9 +90926,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.033710"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.056235"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90946,9 +90947,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.035170"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"3.183699"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -90968,7 +90969,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011580"
+	[tag]"cost in chaoses"	[value]"1.093016"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -90988,9 +90989,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.063480"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"38.729668"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -91010,7 +91011,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011600"
+	[tag]"cost in chaoses"	[value]"1.618647"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91031,7 +91032,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"1.641497"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91052,7 +91053,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008992"
+	[tag]"cost in chaoses"	[value]"1.439885"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91073,7 +91074,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008776"
+	[tag]"cost in chaoses"	[value]"1.461988"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91094,7 +91095,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008558"
+	[tag]"cost in chaoses"	[value]"1.345171"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91115,7 +91116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011150"
+	[tag]"cost in chaoses"	[value]"2.862049"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91136,7 +91137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010930"
+	[tag]"cost in chaoses"	[value]"1.602307"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91157,7 +91158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"9"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010920"
+	[tag]"cost in chaoses"	[value]"1.629992"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -91193,7 +91194,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10000"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000466"
+	[tag]"cost in chaoses"	[value]"0.179051"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 
@@ -91211,9 +91212,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10000"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002117"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.375940"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -91229,7 +91230,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10000"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001079"
+	[tag]"cost in chaoses"	[value]"0.146951"
 	[tag]"worth"	[value]"Trash"
 	[tag]"base worth"	[value]"Trash"
 
@@ -91247,9 +91248,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10000"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001831"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.295421"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -98433,8 +98434,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	[tag]"cost in chaoses"	[value]"2.120891"
 	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.060830"
 
 
 
@@ -98764,11 +98765,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CowardlyFate"
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"	[value]"Boss pass"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.227400"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"37.537537"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -98780,11 +98781,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"DeadlyFate"
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"	[value]"Boss pass"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.259900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"36.751194"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -98796,11 +98797,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"VictoriousFate(PoE2)"
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"	[value]"Boss pass"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.257800"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"35.373188"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -98828,11 +98829,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Abyss item"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.152900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"9.775170"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -98869,9 +98870,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006119"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"4.587156"
 
 
 
@@ -98939,7 +98940,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование оттачивания"
 	[tag]"icon path"	[value]"OmenOfWhittling"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -98947,8 +98948,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.920900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"276.701721"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -98959,7 +98960,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование истирания левши"
 	[tag]"icon path"	[value]"OmenOfSinistralErasure"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -98967,8 +98968,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"2907.000000"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"397.614288"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -98979,7 +98980,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование истирания правши"
 	[tag]"icon path"	[value]"OmenOfDextralErasure"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -98987,8 +98988,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"2223.000000"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"490.436493"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -99083,7 +99084,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование осквернения"
 	[tag]"icon path"	[value]"OmenOfCorruption"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -99091,8 +99092,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.072180"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"22.629555"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -99111,7 +99112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.042530"
+	[tag]"cost in chaoses"	[value]"3.829950"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99131,7 +99132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.044980"
+	[tag]"cost in chaoses"	[value]"5.868545"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99151,7 +99152,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.049940"
+	[tag]"cost in chaoses"	[value]"3.800836"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99184,7 +99185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование очищения левши"
 	[tag]"icon path"	[value]"OmenOfSinistralAnnulment"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -99192,8 +99193,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"2097.000000"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"508.646973"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -99204,7 +99205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование очищения правши"
 	[tag]"icon path"	[value]"OmenOfDextralAnnulment"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"drop level"	[value]"1"
@@ -99212,8 +99213,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"2988.000000"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"501.253113"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -99233,7 +99234,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.007786"
+	[tag]"cost in chaoses"	[value]"2.856327"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99254,7 +99255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.022930"
+	[tag]"cost in chaoses"	[value]"3.755163"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99275,7 +99276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.012280"
+	[tag]"cost in chaoses"	[value]"3.012048"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99296,7 +99297,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.013360"
+	[tag]"cost in chaoses"	[value]"6.811989"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99361,7 +99362,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.006141"
+	[tag]"cost in chaoses"	[value]"0.487805"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99382,7 +99383,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.021230"
+	[tag]"cost in chaoses"	[value]"3.242542"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99394,7 +99395,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование рекомбинации"
 	[tag]"icon path"	[value]"OmenOfRecombination"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99403,8 +99404,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.299200"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"35.174110"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -99415,7 +99416,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование благотатныых"
 	[tag]"icon path"	[value]"OmenOfTheBlessed"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99424,8 +99425,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.044940"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"10.292302"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -99436,7 +99437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование хаотичной редкости"
 	[tag]"icon path"	[value]"OmenOfChaoticRarity"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99445,8 +99446,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.097530"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"39.231071"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -99466,7 +99467,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.016320"
+	[tag]"cost in chaoses"	[value]"4.653327"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99487,7 +99488,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.017930"
+	[tag]"cost in chaoses"	[value]"6.211180"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99508,7 +99509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"6129.000000"
+	[tag]"cost in chaoses"	[value]"851.063843"
 	[tag]"base worth"	[value]"Very expensive"
 
 
@@ -99529,7 +99530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.019170"
+	[tag]"cost in chaoses"	[value]"7.961784"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99541,7 +99542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование освящения"
 	[tag]"icon path"	[value]"OmenOfSanctification"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99550,8 +99551,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.297900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"180.310135"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -99562,7 +99563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование кристаллизации правши"
 	[tag]"icon path"	[value]"OmenOfDextralCrystallisation"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99571,8 +99572,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"1.460000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"173.611115"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -99583,7 +99584,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование кристаллизации левши"
 	[tag]"icon path"	[value]"OmenOfSinistralCrystallisation"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99592,8 +99593,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.568000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"72.463768"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -99604,7 +99605,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование катализированного возвышения"
 	[tag]"icon path"	[value]"OmenOfCatalysingExaltation"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
@@ -99613,8 +99614,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.065460"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"9.259259"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -99625,7 +99626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование отголосков бездны"
 	[tag]"icon path"	[value]"OmenOfAbyssalEchoes"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Abyss item"
@@ -99635,8 +99636,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.354900"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"84.745758"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -99657,7 +99658,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.069920"
+	[tag]"cost in chaoses"	[value]"5.906674"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99669,7 +99670,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"Предзнаменование света"
 	[tag]"icon path"	[value]"OmenOfLight"
 	[tag]"base class"	[value]"Omen"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item tag"	[value]"Non-basic currency"
 	[tag]"item tag"	[value]"Omen"
 	[tag]"item tag"	[value]"Abyss item"
@@ -99679,8 +99680,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.571700"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"289.351837"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -99701,7 +99702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.066750"
+	[tag]"cost in chaoses"	[value]"4.142502"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99723,7 +99724,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.023830"
+	[tag]"cost in chaoses"	[value]"2.206045"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99745,7 +99746,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.021790"
+	[tag]"cost in chaoses"	[value]"2.124947"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99767,7 +99768,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002808"
+	[tag]"cost in chaoses"	[value]"0.141443"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -99789,7 +99790,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.013350"
+	[tag]"cost in chaoses"	[value]"1.807665"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -100709,9 +100710,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.689500"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"106.326424"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -100727,9 +100728,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.319800"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"48.473099"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -100745,9 +100746,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.270200"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"31.026993"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -100764,9 +100765,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.664400"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"123.701134"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -100783,9 +100784,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.385200"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"75.700233"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -100802,9 +100803,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Boss pass"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.355100"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"43.572987"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -105271,7 +105272,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004470"
+	[tag]"cost in chaoses"	[value]"0.699301"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105287,7 +105288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009824"
+	[tag]"cost in chaoses"	[value]"1.972776"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105304,7 +105305,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006906"
+	[tag]"cost in chaoses"	[value]"0.323625"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105321,7 +105322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004975"
+	[tag]"cost in chaoses"	[value]"1.048658"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105337,7 +105338,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011270"
+	[tag]"cost in chaoses"	[value]"2.519526"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105354,7 +105355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007756"
+	[tag]"cost in chaoses"	[value]"0.209644"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105371,7 +105372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010690"
+	[tag]"cost in chaoses"	[value]"2.448580"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105387,7 +105388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013030"
+	[tag]"cost in chaoses"	[value]"3.869969"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105404,7 +105405,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008346"
+	[tag]"cost in chaoses"	[value]"0.258398"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105421,7 +105422,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.021840"
+	[tag]"cost in chaoses"	[value]"2.699784"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105437,7 +105438,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.037830"
+	[tag]"cost in chaoses"	[value]"6.215041"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105454,7 +105455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.050130"
+	[tag]"cost in chaoses"	[value]"1.515152"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105471,7 +105472,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004778"
+	[tag]"cost in chaoses"	[value]"1.117319"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105487,7 +105488,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.007681"
+	[tag]"cost in chaoses"	[value]"1.691475"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105504,7 +105505,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008492"
+	[tag]"cost in chaoses"	[value]"0.476191"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105521,7 +105522,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.002402"
+	[tag]"cost in chaoses"	[value]"0.166667"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105537,7 +105538,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.003285"
+	[tag]"cost in chaoses"	[value]"0.840336"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105554,7 +105555,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.002961"
+	[tag]"cost in chaoses"	[value]"0.183824"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105571,7 +105572,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004654"
+	[tag]"cost in chaoses"	[value]"0.892857"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105587,7 +105588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"1.111111"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105604,7 +105605,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.003405"
+	[tag]"cost in chaoses"	[value]"0.272480"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105621,7 +105622,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004296"
+	[tag]"cost in chaoses"	[value]"0.925926"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105637,7 +105638,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004654"
+	[tag]"cost in chaoses"	[value]"1.636393"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105654,7 +105655,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.004050"
+	[tag]"cost in chaoses"	[value]"0.185185"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105671,7 +105672,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.003103"
+	[tag]"cost in chaoses"	[value]"0.689655"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105687,7 +105688,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006826"
+	[tag]"cost in chaoses"	[value]"1.000000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105704,7 +105705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.002582"
+	[tag]"cost in chaoses"	[value]"0.100000"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105721,7 +105722,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.002659"
+	[tag]"cost in chaoses"	[value]"0.333333"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105737,7 +105738,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006981"
+	[tag]"cost in chaoses"	[value]"0.934579"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105754,7 +105755,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.005950"
+	[tag]"cost in chaoses"	[value]"0.401606"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105771,7 +105772,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008229"
+	[tag]"cost in chaoses"	[value]"3.786445"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105788,7 +105789,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011920"
+	[tag]"cost in chaoses"	[value]"2.831257"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105805,7 +105806,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010830"
+	[tag]"cost in chaoses"	[value]"0.632911"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105822,7 +105823,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.008818"
+	[tag]"cost in chaoses"	[value]"3.982477"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105839,7 +105840,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011380"
+	[tag]"cost in chaoses"	[value]"1.359989"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105856,7 +105857,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006907"
+	[tag]"cost in chaoses"	[value]"0.564972"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105873,7 +105874,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013800"
+	[tag]"cost in chaoses"	[value]"3.883495"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105890,7 +105891,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.015750"
+	[tag]"cost in chaoses"	[value]"2.047502"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105907,7 +105908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010810"
+	[tag]"cost in chaoses"	[value]"0.854701"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105924,7 +105925,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.024280"
+	[tag]"cost in chaoses"	[value]"3.360215"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105940,9 +105941,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Greater"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.026760"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"10.079629"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -105957,9 +105958,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Greater"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.080390"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"14.634861"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -105975,7 +105976,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.006769"
+	[tag]"cost in chaoses"	[value]"0.934579"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -105991,9 +105992,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Special"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Very expensive"
-	[tag]"cost in chaoses"	[value]"1620.000000"
-	[tag]"base worth"	[value]"Very expensive"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"472.589783"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -106008,9 +106009,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Special"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Common"
-	[tag]"cost in chaoses"	[value]"0.259400"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"52.994171"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106026,7 +106027,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.069760"
+	[tag]"cost in chaoses"	[value]"7.788162"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106043,7 +106044,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011810"
+	[tag]"cost in chaoses"	[value]"0.990099"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106060,7 +106061,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Rare"
-	[tag]"cost in chaoses"	[value]"0.707600"
+	[tag]"cost in chaoses"	[value]"125.659721"
 	[tag]"base worth"	[value]"Rare"
 
 
@@ -106077,7 +106078,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.017640"
+	[tag]"cost in chaoses"	[value]"6.635700"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106093,9 +106094,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Special"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.114000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"29.585800"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106111,7 +106112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009308"
+	[tag]"cost in chaoses"	[value]"3.000300"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106128,7 +106129,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.033860"
+	[tag]"cost in chaoses"	[value]"3.234153"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106145,7 +106146,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.022540"
+	[tag]"cost in chaoses"	[value]"2.260909"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106161,9 +106162,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Special"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Expensive"
-	[tag]"cost in chaoses"	[value]"1.080000"
-	[tag]"base worth"	[value]"Expensive"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"96.899223"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106179,7 +106180,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.026580"
+	[tag]"cost in chaoses"	[value]"4.800768"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106196,7 +106197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.030280"
+	[tag]"cost in chaoses"	[value]"3.586800"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106213,7 +106214,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Very expensive"
-	[tag]"cost in chaoses"	[value]"2898.000000"
+	[tag]"cost in chaoses"	[value]"871.080139"
 	[tag]"base worth"	[value]"Very expensive"
 
 
@@ -106230,7 +106231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.034920"
+	[tag]"cost in chaoses"	[value]"3.049710"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106247,7 +106248,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.024050"
+	[tag]"cost in chaoses"	[value]"1.499925"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106264,7 +106265,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.073700"
+	[tag]"cost in chaoses"	[value]"2.645503"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106281,7 +106282,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.045510"
+	[tag]"cost in chaoses"	[value]"2.627430"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106298,7 +106299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.171600"
+	[tag]"cost in chaoses"	[value]"4.861449"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106315,7 +106316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.053620"
+	[tag]"cost in chaoses"	[value]"3.071253"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106332,7 +106333,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.073980"
+	[tag]"cost in chaoses"	[value]"5.512679"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106347,9 +106348,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.038410"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"3.993610"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106363,9 +106364,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010490"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.090631"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106379,9 +106380,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.149000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"15.496668"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106395,9 +106396,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018360"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.909126"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106411,9 +106412,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.022430"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.332633"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106427,9 +106428,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.013330"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.386386"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106443,9 +106444,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.012020"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.250000"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106459,9 +106460,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014360"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.492760"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106475,9 +106476,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Common"
-	[tag]"cost in chaoses"	[value]"0.256800"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"26.702269"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106491,9 +106492,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.011140"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.158883"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106507,9 +106508,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Common"
-	[tag]"cost in chaoses"	[value]"0.202200"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"21.026073"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106523,9 +106524,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.020930"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.175805"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106539,9 +106540,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014890"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.548467"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106555,9 +106556,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018870"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.962323"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106571,9 +106572,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.049670"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"5.165289"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106587,9 +106588,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.022440"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.333178"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106603,9 +106604,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.056950"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"5.920663"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106619,9 +106620,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.038750"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"4.029009"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106635,9 +106636,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.077520"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"8.058018"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106651,9 +106652,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.042580"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"4.426738"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106667,9 +106668,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.181000"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"18.825302"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106683,9 +106684,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.029240"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"3.040438"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106699,9 +106700,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.096860"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"10.071507"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106715,9 +106716,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.034100"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"3.544842"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106731,9 +106732,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Rare"
-	[tag]"cost in chaoses"	[value]"0.789300"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"82.101807"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -106747,9 +106748,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.089550"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"9.310987"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106763,9 +106764,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.031940"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"3.321156"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106779,9 +106780,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.027610"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.871088"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106795,9 +106796,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.019410"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.018163"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106811,9 +106812,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"rune type"	[value]"Soul core"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.103200"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"10.729614"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -106846,9 +106847,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.010460"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.649893"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106881,9 +106882,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.047330"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"5.094244"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -106916,9 +106917,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009688"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.512631"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -106952,7 +106953,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009563"
+	[tag]"cost in chaoses"	[value]"0.869565"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -106986,9 +106987,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009612"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.232641"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107021,9 +107022,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.018550"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.241003"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107056,9 +107057,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009778"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.202790"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107091,9 +107092,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.016740"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.895375"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107126,9 +107127,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.009573"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.967342"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107161,9 +107162,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.071360"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"40.128410"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -107196,9 +107197,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.025570"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"5.197505"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -107231,9 +107232,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Common"
-	[tag]"cost in chaoses"	[value]"0.300200"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"248.508957"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -107266,9 +107267,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.075760"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"5.665723"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -107301,9 +107302,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.012540"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"1.339047"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107336,9 +107337,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.032890"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"9.451796"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -107371,9 +107372,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.044340"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"7.621951"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -107406,9 +107407,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.031240"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"2.691066"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -107441,9 +107442,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Common"
-	[tag]"cost in chaoses"	[value]"0.210500"
-	[tag]"base worth"	[value]"Common"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"38.550503"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -107968,7 +107969,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001816"
+	[tag]"cost in chaoses"	[value]"0.416667"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108024,7 +108025,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.072410"
+	[tag]"cost in chaoses"	[value]"6.591958"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108041,11 +108042,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.399800"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"136.221222"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -108154,7 +108155,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000648"
+	[tag]"cost in chaoses"	[value]"0.141343"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108174,7 +108175,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.007973"
+	[tag]"cost in chaoses"	[value]"3.960396"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108212,7 +108213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.084150"
+	[tag]"cost in chaoses"	[value]"4.490346"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108229,11 +108230,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.592500"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"114.025085"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -108270,7 +108271,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.013020"
+	[tag]"cost in chaoses"	[value]"0.505050"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108290,7 +108291,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.069320"
+	[tag]"cost in chaoses"	[value]"9.624639"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108328,7 +108329,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.001273"
+	[tag]"cost in chaoses"	[value]"0.062972"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108348,7 +108349,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.023240"
+	[tag]"cost in chaoses"	[value]"3.813883"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108403,7 +108404,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.000655"
+	[tag]"cost in chaoses"	[value]"0.034795"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108422,7 +108423,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.070080"
+	[tag]"cost in chaoses"	[value]"0.793651"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108438,11 +108439,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.629100"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"67.249496"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -108460,7 +108461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.003847"
+	[tag]"cost in chaoses"	[value]"0.246914"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108643,7 +108644,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.003959"
+	[tag]"cost in chaoses"	[value]"0.423729"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108662,7 +108663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.002305"
+	[tag]"cost in chaoses"	[value]"1.347709"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108683,7 +108684,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.019040"
+	[tag]"cost in chaoses"	[value]"1.697505"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108704,7 +108705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.032430"
+	[tag]"cost in chaoses"	[value]"1.652619"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108725,7 +108726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"1.100000"
+	[tag]"cost in chaoses"	[value]"492.125946"
 	[tag]"base worth"	[value]"Very expensive"
 
 
@@ -108746,7 +108747,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.003988"
+	[tag]"cost in chaoses"	[value]"0.413223"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108764,11 +108765,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Abyss item"
 	[tag]"item tag"	[value]"Abyss bone"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.093590"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"5.668934"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -108785,11 +108786,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Abyss item"
 	[tag]"item tag"	[value]"Abyss bone"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Moderate"
+	[tag]"worth"	[value]"Expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.523700"
-	[tag]"base worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"210.128174"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -108809,7 +108810,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.009143"
+	[tag]"cost in chaoses"	[value]"1.230164"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -108827,11 +108828,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Abyss item"
 	[tag]"item tag"	[value]"Abyss bone"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Common"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.219400"
-	[tag]"base worth"	[value]"Common"
+	[tag]"cost in chaoses"	[value]"31.908106"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -108848,11 +108849,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Abyss item"
 	[tag]"item tag"	[value]"Abyss bone"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Very expensive"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.726600"
-	[tag]"base worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"493.583405"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -108869,11 +108870,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Abyss item"
 	[tag]"item tag"	[value]"Abyss bone"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.053920"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"17.686594"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -108910,11 +108911,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.035670"
+	[tag]"cost in chaoses"	[value]"35.919540"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -108929,11 +108930,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.014540"
+	[tag]"cost in chaoses"	[value]"23.912003"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -108948,11 +108949,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.087270"
+	[tag]"cost in chaoses"	[value]"33.036007"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -108967,11 +108968,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.206100"
+	[tag]"cost in chaoses"	[value]"24.160423"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -108986,10 +108987,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Rare"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"11.667251"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -109004,11 +109006,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Common"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.023470"
+	[tag]"cost in chaoses"	[value]"31.416901"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -109023,11 +109025,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"20"
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"drop level"	[value]"1"
-	[tag]"worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
-	[tag]"cost in chaoses"	[value]"0.079570"
+	[tag]"cost in chaoses"	[value]"202.224457"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -112651,6 +112653,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.970874"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115854,10 +115857,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"301.841217"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -115870,9 +115875,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.161556"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115884,11 +115891,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"<Vilenta's Propulsion>"
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"1.698658"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115900,11 +115909,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"<Ahn's Citadel>"
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"4.065041"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115916,12 +115927,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"	[value]"<Brutus' Brain>"
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"69.686409"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -115934,10 +115947,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"65.789474"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -115950,9 +115965,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.813883"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115966,9 +115983,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.943396"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115982,9 +116001,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.380663"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -115998,10 +116019,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"68.306015"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -116017,6 +116040,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"5.249344"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116033,6 +116057,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"5.871990"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116046,9 +116071,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"2.564103"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116064,8 +116091,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"34.952812"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -116080,8 +116108,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"524.383850"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -116097,6 +116126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"1.934610"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116113,6 +116143,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.980392"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116147,6 +116178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"5.482456"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116162,8 +116194,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"1930.129272"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -116179,6 +116212,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"1.911680"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116194,8 +116228,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"614.250610"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -116210,8 +116245,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"359.195404"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -116226,8 +116262,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"1117.693115"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -116258,8 +116295,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"2092.488037"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -116274,8 +116312,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"508.388397"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -116290,8 +116329,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"217.296814"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -116306,8 +116346,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"cost in chaoses"	[value]"645.161316"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -116322,8 +116363,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"2431.906494"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -116355,6 +116397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.000300"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116371,6 +116414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"0.892857"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116387,6 +116431,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"3.073141"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116402,8 +116447,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"cost in chaoses"	[value]"2090.301025"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -116419,6 +116465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"2.008839"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116435,6 +116482,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"9.242145"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116450,8 +116498,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Rare"
+	[tag]"cost in chaoses"	[value]"242.248077"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -116467,6 +116516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"1.303781"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -116482,8 +116532,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Support Gems"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"cost in chaoses"	[value]"63.251106"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -116499,6 +116550,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"2.944641"
 	[tag]"base worth"	[value]"Trash"
 
 
@@ -117209,6 +117261,652 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	[tag]"item tag"	[value]"Deleted"
 	[tag]"item tag"	[value]"Deleted in The last of the druids"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Eonyr's Thunder"
+	[tag]"name RU"	[value]"<Eonyr's Thunder>"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"	[value]"Trash"
+	[tag]"base worth"	[value]"Trash"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"1111111111"
+	[tag]"name RU"	[value]"2222222222"
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"	[value]"Trash"
@@ -119283,9 +119981,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.036870"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"5.605381"
+	[tag]"worth"	[value]"Common"
+	[tag]"base worth"	[value]"Common"
 
 
 
@@ -119299,9 +119997,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.065160"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"87.565674"
+	[tag]"worth"	[value]"Rare"
+	[tag]"base worth"	[value]"Rare"
 
 
 
@@ -119315,7 +120013,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"315.457428"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -119329,9 +120029,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"cost in chaoses"	[value]"0.297900"
-	[tag]"worth"	[value]"Trash"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"35.790981"
+	[tag]"worth"	[value]"Moderate"
+	[tag]"base worth"	[value]"Moderate"
 
 
 
@@ -119345,7 +120045,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"250.000000"
+	[tag]"worth"	[value]"Expensive"
+	[tag]"base worth"	[value]"Expensive"
 
 
 
@@ -119359,7 +120061,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"469.924835"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 
@@ -119373,7 +120077,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"	[value]"Introduced: Dawn of the Hunt league"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"base worth"	[value]"Trash"
+	[tag]"cost in chaoses"	[value]"518.134705"
+	[tag]"worth"	[value]"Very expensive"
+	[tag]"base worth"	[value]"Very expensive"
 
 
 

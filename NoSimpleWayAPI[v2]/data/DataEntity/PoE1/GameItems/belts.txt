@@ -314,3 +314,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cord Belt"
+	[tag]"name RU"		[value]"Верёвочный пояс"
+
+	[tag]"icon path"	[value]"CordBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Mirage"
+	
+	[tag]"worth"		[value]"Rare"

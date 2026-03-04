@@ -7325,3 +7325,155 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Everlasting"
+	[tag]"name RU"		[value]"Вечные"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lucky Bastion"
+	[tag]"name RU"		[value]"Счастливый бастион"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Miracle"
+	[tag]"name RU"		[value]"Чудо"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Apocalypse"
+	[tag]"name RU"		[value]"Апокалипсис"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Slumbering Beast"
+	[tag]"name RU"		[value]"Дремлющий зверь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Forbidden Fruit"
+	[tag]"name RU"		[value]"Запретный плод"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"The Silly Boy"
+	[tag]"name RU"		[value]"Наивный малец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Reflection of the Heart"
+	[tag]"name RU"		[value]"Отражение сердца"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Divination item"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

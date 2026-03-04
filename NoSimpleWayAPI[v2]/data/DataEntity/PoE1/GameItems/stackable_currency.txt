@@ -198,6 +198,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	[tag]"item tag"		[value]"Chisel"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -2938,176 +2941,20 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Filled Coffin"
-	[tag]"name RU"		[value]"Заполненный гроб"
+	[tag]"name EN"		[value]"Runegraft of Consecration"
+	[tag]"name RU"		[value]"Рунограмма освящения"
 
-	[tag]"icon path"	[value]"FilledCoffin"
+	[tag]"icon path"	[value]"RunegraftOfConsecration"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Necropolis league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Settlers"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
 	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"1"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"1"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Augmentation Implant"
-	[tag]"name RU"		[value]"Усиливающий имплантат"
-
-	[tag]"icon path"	[value]"AugmentationImplant"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Implant"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10000"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-		
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Regal Implant"
-	[tag]"name RU"		[value]"Царский имплантат"
-
-	[tag]"icon path"	[value]"RegalImplant"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Implant"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10000"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Exalted Implant"
-	[tag]"name RU"		[value]"Возвышающий имплантат"
-
-	[tag]"icon path"	[value]"ExaltedImplant"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Implant"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10000"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Unstable Implant"
-	[tag]"name RU"		[value]"Возвышающий имплантат"
-
-	[tag]"icon path"	[value]"UnstableImplant"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Implant"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10000"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Foulborn Orb of Augmentation"
-	[tag]"name RU"		[value]"Нечестивая сфера усиления"
-
-	[tag]"icon path"	[value]"FoulbornOrbOfAugmentation"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Foulborn currency"
-	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"52"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"10000"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Foulborn Regal Orb"
-	[tag]"name RU"		[value]"Нечестивая сфера царей"
-
-	[tag]"icon path"	[value]"FoulbornRegalOrb"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Foulborn currency"
-	
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
 	[tag]"stack multiplier"	[value]"1"
@@ -3118,20 +2965,24 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Foulborn Exalted Orb"
-	[tag]"name RU"		[value]"Нечестивая сфера возвышения"
+	[tag]"name EN"		[value]"Runegraft of Fury"
+	[tag]"name RU"		[value]"Рунограмма ярости"
 
-	[tag]"icon path"	[value]"FoulbornExaltedOrb"
+	[tag]"icon path"	[value]"RunegraftOfFury"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
-	[tag]"item tag"		[value]"Foulborn currency"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
 	
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
 	[tag]"stack multiplier"	[value]"1"
@@ -3139,5 +2990,624 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Rallying"
+	[tag]"name RU"		[value]"Рунограмма сплочения"
+
+	[tag]"icon path"	[value]"RunegraftOfRallying"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Rotblood"
+	[tag]"name RU"		[value]"Рунограмма гнилой крови"
+
+	[tag]"icon path"	[value]"RunegraftOfRotblood"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Imbued"
+	[tag]"name RU"		[value]"Рунограмма насыщения"
+
+	[tag]"icon path"	[value]"RunegraftOfTheImbued"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Agile"
+	[tag]"name RU"		[value]"Рунограмма ловкача"
+
+	[tag]"icon path"	[value]"RunegraftOfTheAgile"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Suffering"
+	[tag]"name RU"		[value]"Рунограмма страдания"
+
+	[tag]"icon path"	[value]"RunegraftOfSuffering"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of the Spellbound"
+	[tag]"name RU"		[value]"Рунограмма чароплетения"
+
+	[tag]"icon path"	[value]"RunegraftOfTheSpellbound"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Resurgence"
+	[tag]"name RU"		[value]"Рунограмма возрождения"
+
+	[tag]"icon path"	[value]"RunegraftOfResurgence"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runegraft of Connection"
+	[tag]"name RU"		[value]"Рунограмма соединения"
+
+	[tag]"icon path"	[value]"RunegraftOfConnection"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Rune"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coin of Restoration"
+	[tag]"name RU"		[value]"Монета восстановления"
+
+	[tag]"icon path"	[value]"CoinOfRestoration"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coin of Desecration"
+	[tag]"name RU"		[value]"Монета осквернения"
+
+	[tag]"icon path"	[value]"CoinOfDesecration"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coin of Knowledge"
+	[tag]"name RU"		[value]"Монета знания"
+
+	[tag]"icon path"	[value]"CoinOfKnowledge"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coin of Power"
+	[tag]"name RU"		[value]"Монета силы"
+
+	[tag]"icon path"	[value]"CoinOfPower"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coin of Skill"
+	[tag]"name RU"		[value]"Монета умения"
+
+	[tag]"icon path"	[value]"CoinOfSkill"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Templar Astrolabe"
+	[tag]"name RU"		[value]"Жреческая астролябия"
+
+	[tag]"icon path"	[value]"TemplarAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fruiting Astrolabe"
+	[tag]"name RU"		[value]"Плодовая астролябия"
+
+	[tag]"icon path"	[value]"FruitingAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lightless Astrolabe"
+	[tag]"name RU"		[value]"Бессветная астролябия"
+
+	[tag]"icon path"	[value]"LightlessAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Grasping Astrolabe"
+	[tag]"name RU"		[value]"Цепкая астролябия"
+
+	[tag]"icon path"	[value]"GraspingAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nameless Astrolabe"
+	[tag]"name RU"		[value]"Безымянная астролябия"
+
+	[tag]"icon path"	[value]"NamelessAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fungal Astrolabe"
+	[tag]"name RU"		[value]"Грибная астролябия"
+
+	[tag]"icon path"	[value]"FungalAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chaotic Astrolabe"
+	[tag]"name RU"		[value]"Хаотическая астролябия"
+
+	[tag]"icon path"	[value]"ChaoticAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Astrolabe"
+	[tag]"name RU"		[value]"Окутанная астролябия"
+
+	[tag]"icon path"	[value]"TimelessAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Timeless Astrolabe"
+	[tag]"name RU"		[value]"Вневременная астролябия"
+
+	[tag]"icon path"	[value]"EnshroudedAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Runic Astrolabe"
+	[tag]"name RU"		[value]"Руническая астролябия"
+
+	[tag]"icon path"	[value]"RunicAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
 	
 	

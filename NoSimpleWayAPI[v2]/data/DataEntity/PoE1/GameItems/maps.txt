@@ -124,3 +124,381 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Synthesised Map"
+	[tag]"name RU"		[value]"Синтезированная карта"
+
+	[tag]"icon path"	[value]"synthesised"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 1)"
+	[tag]"name RU"		[value]"Карта (уровень 1)"
+
+	[tag]"icon path"	[value]"Map01"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 2)"
+	[tag]"name RU"		[value]"Карта (уровень 2)"
+
+	[tag]"icon path"	[value]"Map02"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 3)"
+	[tag]"name RU"		[value]"Карта (уровень 3)"
+
+	[tag]"icon path"	[value]"Map03"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 4)"
+	[tag]"name RU"		[value]"Карта (уровень 4)"
+
+	[tag]"icon path"	[value]"Map04"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 5)"
+	[tag]"name RU"		[value]"Карта (уровень 5)"
+
+	[tag]"icon path"	[value]"Map05"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 6)"
+	[tag]"name RU"		[value]"Карта (уровень 6)"
+
+	[tag]"icon path"	[value]"Map06"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 7)"
+	[tag]"name RU"		[value]"Карта (уровень 7)"
+
+	[tag]"icon path"	[value]"Map07"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 8)"
+	[tag]"name RU"		[value]"Карта (уровень 8)"
+
+	[tag]"icon path"	[value]"Map08"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 9)"
+	[tag]"name RU"		[value]"Карта (уровень 9)"
+
+	[tag]"icon path"	[value]"Map09"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 10)"
+	[tag]"name RU"		[value]"Карта (уровень 10)"
+
+	[tag]"icon path"	[value]"Map10"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 11)"
+	[tag]"name RU"		[value]"Карта (уровень 11)"
+
+	[tag]"icon path"	[value]"Map11"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 12)"
+	[tag]"name RU"		[value]"Карта (уровень 12)"
+
+	[tag]"icon path"	[value]"Map12"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 13)"
+	[tag]"name RU"		[value]"Карта (уровень 13)"
+
+	[tag]"icon path"	[value]"Map13"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 14)"
+	[tag]"name RU"		[value]"Карта (уровень 14)"
+
+	[tag]"icon path"	[value]"Map14"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 15)"
+	[tag]"name RU"		[value]"Карта (уровень 15)"
+
+	[tag]"icon path"	[value]"Map15"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Map (Tier 16)"
+	[tag]"name RU"		[value]"Карта (уровень 16)"
+
+	[tag]"icon path"	[value]"Map16"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Valdo Map"
+	[tag]"name RU"		[value]"Карта Валдо"
+
+	[tag]"icon path"	[value]"MapValdo"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shaper Guardian Map"
+	[tag]"name RU"		[value]"Карта хранителя Создателя"
+
+	[tag]"icon path"	[value]"MapShaper"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmare Map"
+	[tag]"name RU"		[value]"Карта кошмара"
+
+	[tag]"icon path"	[value]"MapNightmare"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	

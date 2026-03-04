@@ -1329,6 +1329,7 @@
 [Engraved Ultimatum] dust quantity = 0, dust tag = Trash
 [Ultimatum aspect] dust quantity = 0, dust tag = Trash
 [Synthesised Map] dust quantity = 0, dust tag = Trash
+[Synthesised Map] dust quantity = 0, dust tag = Trash
 [Urn Relic] dust quantity = 0, dust tag = Trash
 [Tome Relic] dust quantity = 0, dust tag = Trash
 [Coffer Relic] dust quantity = 0, dust tag = Trash
