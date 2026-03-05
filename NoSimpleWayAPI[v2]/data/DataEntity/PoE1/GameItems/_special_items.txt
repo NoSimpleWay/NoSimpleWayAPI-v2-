@@ -544,17 +544,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"base name"	[value]"Support"
-	[tag]"name EN"		[value]"Support gem"
+	[tag]"name EN"		[value]"Support Gems"
 	[tag]"name RU"		[value]"Камень поддержки"
 
 	[tag]"icon path"	[value]"SupportGems"
-	[tag]"base class"	[value]"Support Gem"
+	[tag]"base class"	[value]"Support Gems"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Hidden item"
-	[tag]"special tag"	[value]"Support gem"
+	[tag]"special tag"	[value]"Support Gems"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1154,4 +1154,23 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"base name"	[value]"Exceptional"
+	[tag]"name EN"		[value]"Exceptional Support gem"
+	[tag]"name RU"		[value]"Исключительный Камень поддержки"
+
+	[tag]"icon path"	[value]"SupportGems"
+	[tag]"base class"	[value]"Support Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"special tag"	[value]"Exceptional support gem"
+	
+	[tag]"worth"		[value]"Expensive"

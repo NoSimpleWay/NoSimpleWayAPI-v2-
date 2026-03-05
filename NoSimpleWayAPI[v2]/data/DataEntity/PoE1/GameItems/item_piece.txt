@@ -27,3 +27,106 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Archon Kite Shield Piece"
+	[tag]"name RU"		[value]"Часть каплевидного щита архонта"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Piece"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Legion Sword Piece"
+	[tag]"name RU"		[value]"Часть меча всадника"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Piece"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cloth Belt Piece"
+	[tag]"name RU"		[value]"Часть матерчатого пояса"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Piece"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blunt Arrow Quiver Piece"
+	[tag]"name RU"		[value]"Часть колчана промысловых стрел"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Piece"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Callous Mask Piece"
+	[tag]"name RU"		[value]"Часть маски равнодушия"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Piece"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	

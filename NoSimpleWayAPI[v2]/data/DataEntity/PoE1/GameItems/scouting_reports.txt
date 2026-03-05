@@ -11,6 +11,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -31,6 +35,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -51,6 +58,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -71,6 +81,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -91,6 +104,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -111,6 +127,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -131,6 +150,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"
@@ -151,6 +173,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"81"
 	[tag]"stack multiplier"	[value]"1"
@@ -171,6 +196,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Scouting Report"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"69"
 	[tag]"stack multiplier"	[value]"1"

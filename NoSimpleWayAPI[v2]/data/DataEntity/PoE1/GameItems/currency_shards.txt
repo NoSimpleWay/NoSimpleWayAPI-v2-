@@ -33,6 +33,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Trash"
 	
 	[tag]"item tag"			[value]"Currency shard"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"drop level"		[value]"25"
 	[tag]"stack multiplier"	[value]"5"
@@ -100,6 +103,9 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Trash"
 	[tag]"item tag"			[value]"Currency shard"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"drop level"		[value]"8"
 	[tag]"stack multiplier"	[value]"10"
@@ -120,6 +126,9 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Trash"
 	[tag]"item tag"			[value]"Currency shard"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"drop level"		[value]"52"
 	[tag]"stack multiplier"	[value]"10"
@@ -196,6 +205,9 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"Currency shard"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"5"
@@ -236,6 +248,9 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"Currency shard"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 		
 	[tag]"drop level"		[value]"52"
 	[tag]"stack multiplier"	[value]"7"

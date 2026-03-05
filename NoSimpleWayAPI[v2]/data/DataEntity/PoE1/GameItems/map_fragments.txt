@@ -2656,6 +2656,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Eldritch Voidstone"
 	
@@ -2703,6 +2704,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Originator Voidstone"
 	
@@ -3437,6 +3439,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Hive"
 	
@@ -3545,6 +3548,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of Instability"
 	
@@ -3600,6 +3604,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Marshal"
 	
@@ -3659,6 +3664,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Incensed Swarm"
 	
@@ -3915,6 +3921,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Influencing Scarab of Interference"
 	
@@ -4216,6 +4223,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4237,6 +4248,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4257,6 +4272,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4355,6 +4374,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Expedition Scarab of Infusion"
 	
@@ -4483,6 +4503,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Legion Scarab of Treasures"
 	
@@ -4671,6 +4692,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Abyss Scarab of Descending"
 	
@@ -5420,6 +5442,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Betrayal Scarab of Unbreaking"
 	
@@ -5473,6 +5496,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Scarab of the Sinistral"
 	
@@ -5523,6 +5547,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
+	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Scarab of the Dextral"
 	
@@ -6043,6 +6068,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Special"
@@ -6962,6 +6991,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	

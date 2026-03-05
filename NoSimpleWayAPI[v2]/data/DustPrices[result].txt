@@ -1321,11 +1321,7 @@
 [Gold Flask] dust quantity = 0, dust tag = Trash
 [Corundum Flask] dust quantity = 0, dust tag = Trash
 [Iron Flask] dust quantity = 0, dust tag = Trash
-[Forge of the Phoenix] dust quantity = 0, dust tag = Trash
-[Lair of the Hydra] dust quantity = 0, dust tag = Trash
 [Map] dust quantity = 0, dust tag = Trash
-[Maze of the Minotaur] dust quantity = 0, dust tag = Trash
-[Pit of the Chimera] dust quantity = 0, dust tag = Trash
 [Engraved Ultimatum] dust quantity = 0, dust tag = Trash
 [Ultimatum aspect] dust quantity = 0, dust tag = Trash
 [Synthesised Map] dust quantity = 0, dust tag = Trash

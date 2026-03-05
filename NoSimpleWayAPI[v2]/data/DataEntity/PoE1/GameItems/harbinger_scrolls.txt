@@ -11,6 +11,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -32,6 +35,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -52,6 +58,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -72,6 +81,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -92,6 +104,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -112,6 +127,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"

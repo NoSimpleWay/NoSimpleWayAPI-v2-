@@ -745,6 +745,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Lifeforce item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

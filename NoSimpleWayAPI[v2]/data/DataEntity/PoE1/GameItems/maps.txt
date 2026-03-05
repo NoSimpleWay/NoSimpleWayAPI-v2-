@@ -8,7 +8,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Forge_of_the_Phoenix_Map"
 	[tag]"base class"	[value]"Maps"
 
-	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -22,7 +24,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lair_of_the_Hydra_Map"
 	[tag]"base class"	[value]"Maps"
 
-	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -50,7 +54,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Maze_of_the_Minotaur_Map"
 	[tag]"base class"	[value]"Maps"
 
-	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -64,7 +70,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pit_of_the_Chimera_Map"
 	[tag]"base class"	[value]"Maps"
 
-	[tag]"item tag"		[value]"Base for unique item"
+
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -171,11 +181,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "1"
 	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -189,6 +202,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "2"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -207,6 +222,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "1"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -225,6 +242,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "4"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -243,6 +262,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "5"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -261,6 +282,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "6"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -279,6 +302,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "7"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -297,6 +322,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "8"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -315,6 +342,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "9"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -333,6 +362,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "10"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -351,6 +382,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "11"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -369,6 +402,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "12"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -387,6 +422,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "13"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -405,6 +442,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "14"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -423,6 +462,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "15"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -441,6 +482,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "16"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -488,6 +531,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
+	[tag]"name EN"		[value]"Harbinger Map"
+	[tag]"name RU"		[value]"Карта Предвестника"
+
+	[tag]"icon path"	[value]"MapShaper"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
 	[tag]"name EN"		[value]"Nightmare Map"
 	[tag]"name RU"		[value]"Карта кошмара"
 
@@ -495,6 +557,2027 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+		
+	[tag]"set int attribute"	[value]"MapTier" "16"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bone Crypt Map"
+	[tag]"name RU"		[value]"Карта гробницы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shipyard Map"
+	[tag]"name RU"		[value]"Карта верфи"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Thicket Map"
+	[tag]"name RU"		[value]"Карта чащи"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Academy Map"
+	[tag]"name RU"		[value]"Карта академии"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dunes Map"
+	[tag]"name RU"		[value]"Карта дюн"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Volcano Map"
+	[tag]"name RU"		[value]"Карта вулкана"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Toxic Sewer Map"
+	[tag]"name RU"		[value]"Карта клоаки"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Waterways Map"
+	[tag]"name RU"		[value]"Карта водотоков"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flooded Mine Map"
+	[tag]"name RU"		[value]"Карта затопленной шахты"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Tropical Island Map"
+	[tag]"name RU"		[value]"Карта тропического острова"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Core Map"
+	[tag]"name RU"		[value]"Карта сердца"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Residence Map"
+	[tag]"name RU"		[value]"Карта резиденции"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Overgrown Shrine Map"
+	[tag]"name RU"		[value]"Карта заросшей обители"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Strand Map"
+	[tag]"name RU"		[value]"Карта взморья"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Excavation Map"
+	[tag]"name RU"		[value]"Карта раскопок"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Palace Map"
+	[tag]"name RU"		[value]"Карта дворца"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coves Map"
+	[tag]"name RU"		[value]"Карта бухты"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Castle Ruins Map"
+	[tag]"name RU"		[value]"Карта развалин замка"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Summit Map"
+	[tag]"name RU"		[value]"Карта вершины"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Canyon Map"
+	[tag]"name RU"		[value]"Карта ущелья"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cemetery Map"
+	[tag]"name RU"		[value]"Карта погоста"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Moon Temple Map"
+	[tag]"name RU"		[value]"Карта храма Луны"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Pyramid Map"
+	[tag]"name RU"		[value]"Карта пирамиды ваал"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Jungle Valley Map"
+	[tag]"name RU"		[value]"Карта долины джунглей"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mesa Map"
+	[tag]"name RU"		[value]"Карта плоского холма"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Precinct Map"
+	[tag]"name RU"		[value]"Карта окрестностей"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Factory Map"
+	[tag]"name RU"		[value]"Карта фактории"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Silo Map"
+	[tag]"name RU"		[value]"Карта зернохранилища"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Atoll Map"
+	[tag]"name RU"		[value]"Карта атолла"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Courtyard Map"
+	[tag]"name RU"		[value]"Карта подворья"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lava Chamber Map"
+	[tag]"name RU"		[value]"Карта лавовой тюрьмы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Colosseum Map"
+	[tag]"name RU"		[value]"Карта колизея"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bramble Valley Map"
+	[tag]"name RU"		[value]"Карта колючей долины"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Iceberg Map"
+	[tag]"name RU"		[value]"Карта айсберга"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ghetto Map"
+	[tag]"name RU"		[value]"Карта хибар"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crimson Temple Map"
+	[tag]"name RU"		[value]"Карта кровавого храма"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shore Map"
+	[tag]"name RU"		[value]"Карта берега"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Promenade Map"
+	[tag]"name RU"		[value]"Карта прогулочного парка"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arsenal Map"
+	[tag]"name RU"		[value]"Карта арсенала"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lookout Map"
+	[tag]"name RU"		[value]"Карта обзорной площадки"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spider Forest Map"
+	[tag]"name RU"		[value]"Карта паучьего леса"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Waste Pool Map"
+	[tag]"name RU"		[value]"Карта помойного пруда"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sepulchre Map"
+	[tag]"name RU"		[value]"Карта усыпальницы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cursed Crypt Map"
+	[tag]"name RU"		[value]"Карта проклятого склепа"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Tower Map"
+	[tag]"name RU"		[value]"Карта башни"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Infested Valley Map"
+	[tag]"name RU"		[value]"Карта заражённой долины"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Grave Trough Map"
+	[tag]"name RU"		[value]"Карта могильной низины"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"City Square Map"
+	[tag]"name RU"		[value]"Карта городской площади"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Primordial Blocks Map"
+	[tag]"name RU"		[value]"Карта первобытного поселения"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Estuary Map"
+	[tag]"name RU"		[value]"Карта устья реки"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Alleyways Map"
+	[tag]"name RU"		[value]"Карта переулка"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Grotto Map"
+	[tag]"name RU"		[value]"Карта грота"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Channel Map"
+	[tag]"name RU"		[value]"Карта канала"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Port Map"
+	[tag]"name RU"		[value]"Карта порта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arachnid Nest Map"
+	[tag]"name RU"		[value]"Карта гнезда пауков"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pit Map"
+	[tag]"name RU"		[value]"Карта ямы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bazaar Map"
+	[tag]"name RU"		[value]"Карта базара"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mausoleum Map"
+	[tag]"name RU"		[value]"Карта мавзолея"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Forest Map"
+	[tag]"name RU"		[value]"Карта мрачного леса"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arid Lake Map"
+	[tag]"name RU"		[value]"Карта высохшего озера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Glacier Map"
+	[tag]"name RU"		[value]"Карта ледника"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Villa Map"
+	[tag]"name RU"		[value]"Карта поместья"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lava Lake Map"
+	[tag]"name RU"		[value]"Карта лавового озера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Underground Sea Map"
+	[tag]"name RU"		[value]"Карта подземного моря"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Primordial Pool Map"
+	[tag]"name RU"		[value]"Карта древнего озера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mineral Pools Map"
+	[tag]"name RU"		[value]"Карта минеральных озёр"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cells Map"
+	[tag]"name RU"		[value]"Карта камер"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Frozen Cabins Map"
+	[tag]"name RU"		[value]"Карта замёрзших хижин"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crater Map"
+	[tag]"name RU"		[value]"Карта кратера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arcade Map"
+	[tag]"name RU"		[value]"Карта агоры"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ashen Wood Map"
+	[tag]"name RU"		[value]"Карта пепельного леса"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Belfry Map"
+	[tag]"name RU"		[value]"Карта колокольни"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ramparts Map"
+	[tag]"name RU"		[value]"Карта бастиона"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Acid Caverns Map"
+	[tag]"name RU"		[value]"Карта едких пещер"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Desert Map"
+	[tag]"name RU"		[value]"Карта пустыни"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Museum Map"
+	[tag]"name RU"		[value]"Карта музея"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Necropolis Map"
+	[tag]"name RU"		[value]"Карта некрополя"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mud Geyser Map"
+	[tag]"name RU"		[value]"Карта грязевого гейзера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Park Map"
+	[tag]"name RU"		[value]"Карта парка"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crimson Township Map"
+	[tag]"name RU"		[value]"Карта кровавой общины"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Marshes Map"
+	[tag]"name RU"		[value]"Карта болот"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Defiled Cathedral Map"
+	[tag]"name RU"		[value]"Карта осквернённого собора"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lighthouse Map"
+	[tag]"name RU"		[value]"Карта навигационной башни"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Desert Spring Map"
+	[tag]"name RU"		[value]"Карта пустынного источника"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Burial Chambers Map"
+	[tag]"name RU"		[value]"Карта погребальных камер"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chateau Map"
+	[tag]"name RU"		[value]"Карта усадьбы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Temple Map"
+	[tag]"name RU"		[value]"Карта храма"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Maze Map"
+	[tag]"name RU"		[value]"Карта лабиринта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Racecourse Map"
+	[tag]"name RU"		[value]"Карта ипподрома"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Orchard Map"
+	[tag]"name RU"		[value]"Карта фруктовых садов"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arachnid Tomb Map"
+	[tag]"name RU"		[value]"Карта паучьей гробницы"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Underground River Map"
+	[tag]"name RU"		[value]"Карта подземной реки"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sulphur Vents Map"
+	[tag]"name RU"		[value]"Карта серного озера"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Plateau Map"
+	[tag]"name RU"		[value]"Карта плоскогорья"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arena Map"
+	[tag]"name RU"		[value]"Карта арены"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Phantasmagoria Map"
+	[tag]"name RU"		[value]"Карта фантасмагории"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ivory Temple Map"
+	[tag]"name RU"		[value]"Карта храма из слоновой кости"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Beach Map"
+	[tag]"name RU"		[value]"Карта пляжа"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Forking River Map"
+	[tag]"name RU"		[value]"Карта речной развилки"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wasteland Map"
+	[tag]"name RU"		[value]"Карта пустоши"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Courtyard of Wasting Map"
+	[tag]"name RU"		[value]"Карта подворья растраты"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chambers of Impurity Map"
+	[tag]"name RU"		[value]"Карта палат нечестивости"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Theatre of Lies Map"
+	[tag]"name RU"		[value]"Карта театра лжи"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 	
 	[tag]"worth"		[value]"Moderate"
 

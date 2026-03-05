@@ -12,6 +12,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -26,6 +29,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -42,6 +48,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -56,6 +65,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -72,6 +84,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -86,6 +101,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -102,6 +120,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -116,6 +137,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -132,6 +156,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -146,6 +173,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -162,6 +192,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -176,6 +209,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -192,6 +228,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -206,6 +245,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -222,6 +264,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -237,6 +282,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -251,6 +299,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Grafts"
 	
 	[tag]"item tag"		[value]"Introduced: Keepers of the Flame"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

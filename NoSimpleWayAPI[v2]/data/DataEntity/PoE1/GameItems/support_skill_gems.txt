@@ -742,3 +742,867 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Spell Cascade Support"
+	[tag]"name RU"		[value]"Поддержка: Большой каскад чар"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eclipse Support"
+	[tag]"name RU"		[value]"Поддержка: Затмение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Invert the Rules Support"
+	[tag]"name RU"		[value]"Поддержка: Обращение правил"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cast on Ward Break Support"
+	[tag]"name RU"		[value]"Поддержка: Сотворение чар при разрушении барьера"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Sacrifice Support"
+	[tag]"name RU"		[value]"Поддержка: Жертвоприношение ваал"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Spell Echo Support"
+	[tag]"name RU"		[value]"Поддержка: Большое эхо магии"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Temptation Support"
+	[tag]"name RU"		[value]"Поддержка: Искушение ваал"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Machinations Support"
+	[tag]"name RU"		[value]"Поддержка: Махинации"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pyre Support"
+	[tag]"name RU"		[value]"Поддержка: Костёр"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bonespire Support"
+	[tag]"name RU"		[value]"Поддержка: Костяной шип"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Foulgrasp Support"
+	[tag]"name RU"		[value]"Поддержка: Дурная хватка"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hiveborn Support"
+	[tag]"name RU"		[value]"Поддержка: Порождение улья"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scornful Herald Support"
+	[tag]"name RU"		[value]"Поддержка: Вестник презрения"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cull the Weak Support"
+	[tag]"name RU"		[value]"Поддержка: Добивание слабых"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Ancestral Call Support"
+	[tag]"name RU"		[value]"Поддержка: Великий зов предков"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fissure Support"
+	[tag]"name RU"		[value]"Поддержка: Расселина"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hextoad Support"
+	[tag]"name RU"		[value]"Поддержка: Жабья порча"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hexpass Support"
+	[tag]"name RU"		[value]"Поддержка: Пагуба"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Fork Support"
+	[tag]"name RU"		[value]"Поддержка: Большое разветвление"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Chain Support"
+	[tag]"name RU"		[value]"Поддержка: Большая цепь"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lethal Dose Support"
+	[tag]"name RU"		[value]"Поддержка: Смертельная доза"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Companionship Support"
+	[tag]"name RU"		[value]"Поддержка: Товарищество"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Divine Sentinel Support"
+	[tag]"name RU"		[value]"Поддержка: Божественный страж"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Annihilation Support"
+	[tag]"name RU"		[value]"Поддержка: Изничтожение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Invention Support"
+	[tag]"name RU"		[value]"Поддержка: Изобретательность"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Kinetic Instability Support"
+	[tag]"name RU"		[value]"Поддержка: Большая кинетическая нестабильность"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cooldown Recovery Support"
+	[tag]"name RU"		[value]"Поддержка: Ускорение перезарядки"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Voidstorm Support"
+	[tag]"name RU"		[value]"Поддержка: Буря пустоты"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Void Shockwave Support"
+	[tag]"name RU"		[value]"Поддержка: Волна пустоты"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eldritch Blasphemy Support"
+	[tag]"name RU"		[value]"Поддержка: Мистическое богохульство"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gluttony Support"
+	[tag]"name RU"		[value]"Поддержка: Ненасытность"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Overheat Support"
+	[tag]"name RU"		[value]"Поддержка: Перегрев"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Multistrike Support"
+	[tag]"name RU"		[value]"Поддержка: Большой град ударов"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Congregation Support"
+	[tag]"name RU"		[value]"Поддержка: Сонм"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Frostmage Support"
+	[tag]"name RU"		[value]"Поддержка: Морозная магия"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Devour Support"
+	[tag]"name RU"		[value]"Поддержка: Большое пожирание"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Greater Unleash Support"
+	[tag]"name RU"		[value]"Поддержка: Большое высвобождение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pacifism Support"
+	[tag]"name RU"		[value]"Поддержка: Пацифизм"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bloodsoaked Banner Support"
+	[tag]"name RU"		[value]"Поддержка: Окровавленное знамя"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Minion Pact Support"
+	[tag]"name RU"		[value]"Поддержка: Договор служения"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Unholy Trinity Support"
+	[tag]"name RU"		[value]"Поддержка: Нечестивое триединство"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Overloaded Intensity Support"
+	[tag]"name RU"		[value]"Поддержка: Перегруженная интенсивность"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Transfusion Support"
+	[tag]"name RU"		[value]"Поддержка: Переливание"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Excommunicate Support"
+	[tag]"name RU"		[value]"Поддержка: Отлучение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Exemplar Support"
+	[tag]"name RU"		[value]"Поддержка: Эталон"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blessed Call Support"
+	[tag]"name RU"		[value]"Поддержка: Священный призыв"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hallow Support"
+	[tag]"name RU"		[value]"Поддержка: Благодать"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

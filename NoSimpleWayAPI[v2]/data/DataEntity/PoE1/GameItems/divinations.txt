@@ -765,7 +765,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Loot source: Boss"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	
 	[tag]"worth"		[value]"Expensive"
 
@@ -2416,6 +2419,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Returned in Mercenaries"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -2646,6 +2653,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2736,6 +2747,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3211,6 +3226,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3788,6 +3807,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3833,6 +3856,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4083,6 +4110,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4158,6 +4189,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4415,6 +4450,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4667,6 +4706,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5767,6 +5810,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Mirage"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
