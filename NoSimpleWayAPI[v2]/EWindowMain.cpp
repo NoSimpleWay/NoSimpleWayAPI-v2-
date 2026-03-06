@@ -6969,7 +6969,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string				EWindowMain::this_version = "1.7.3";
+const std::string				EWindowMain::this_version = "1.8.0";
 std::vector<ELocalisationText>	EWindowMain::registered_transfigured_gems;
 
 
@@ -13973,12 +13973,25 @@ void EWindowMain::register_game_item_attributes()
 
 
 
-	////////		ATTRIBUTE HEADER SEPARATOR		////////
-	jc_filter_block_attribute->header_localistaion_key = "attribute_header_gem_attributes";
-	////////////////////////////////////////////////////////
 
 
+	jc_localisation.base_name = "Imbued";
+	jc_localisation.localisations[NSW_localisation_EN] = "Is imbued";
+	jc_localisation.localisations[NSW_localisation_RU] = "Встроенный";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/ImbuedGem");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_imbued_gem";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 	
+
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "TransfiguredGem";
@@ -14000,23 +14013,14 @@ void EWindowMain::register_game_item_attributes()
 
 
 
+
+
+
+
+
 	////////		ATTRIBUTE HEADER SEPARATOR		////////
 	jc_filter_block_attribute->header_localistaion_key = "attribute_header_gem_attributes";
 	////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -14126,23 +14130,6 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_zana_memory");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_zana_memory";
-	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Imbued";
-	jc_localisation.localisations[NSW_localisation_EN] = "Is imbued";
-	jc_localisation.localisations[NSW_localisation_RU] = "Встроенный";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/ImbuedGem");
-	jc_filter_block_attribute->description_localisation_key = "attribute_description_is_imbued_gem";
 	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);

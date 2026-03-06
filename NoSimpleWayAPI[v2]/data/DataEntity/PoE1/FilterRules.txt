@@ -1617,9 +1617,9 @@ tag_cannot_be_configured
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Keepers of the Flame:\nnew items"
-name_RU	"Хранители пламени:\nновые предметы"
-icon	"data/textures/buttons/pattern_folder_keepers.png"
+name_EN	"Mirage league:\nnew items"
+name_RU	"Лига Мираж:\nновые предметы"
+icon	"data/textures/buttons/pattern_folder_mirage.png"
 is_folder
 
 target_game	"PoE1"
