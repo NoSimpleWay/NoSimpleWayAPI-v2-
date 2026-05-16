@@ -1360,9 +1360,9 @@ DETF_color	255	128	64	255
 
 //Экипировка для PoE2
 REGISTER_NEW_FILTER_RULE
-name_EN	"Equipable"
-name_RU	"Экипировка"
-icon	"data/textures/icons/Wyrmscale_Boots_inventory_icon.png"
+name_EN	"Armour"
+name_RU	"Броня"
+icon	"data/textures/icons/JuggernautPlate.png"
 
 target_game	"PoE2"
 tag	"Game item"
@@ -1380,7 +1380,7 @@ tag_cannot_be_configured
 
 
 REGISTER_NEW_FILTER_TAG
-target_tag	"DAE tier"
+target_tag	"usability"
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	""
@@ -1389,22 +1389,79 @@ target_tag	"DAE tier"
 	DETF_color	255	230	204	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Default"
-	DETF_localised_attribute_name_EN	"Default"
-	DETF_localised_attribute_name_RU	"Обычное"
+	DETF_value_key	"Unpopular"
+	DETF_localised_attribute_name_EN	"Unpopular"
+	DETF_localised_attribute_name_RU	"Непопулярное"
 	DETF_color	255	230	204	255
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Advanced"
-	DETF_localised_attribute_name_EN	"Advanced"
-	DETF_localised_attribute_name_RU	"Улучшенное"
+	DETF_value_key	"Popular"
+	DETF_localised_attribute_name_EN	"Popular"
+	DETF_localised_attribute_name_RU	"Популярное"
 	DETF_color	255	230	204	255
 
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"defence type"
+
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expert"
-	DETF_localised_attribute_name_EN	"Expert"
-	DETF_localised_attribute_name_RU	"Эксперта"
+	DETF_value_key	""
+	DETF_localised_attribute_name_EN	"All"
+	DETF_localised_attribute_name_RU	"Все"
 	DETF_color	255	230	204	255
+
+
+
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Armour"
+	DETF_localised_attribute_name_EN	"Armour"
+	DETF_localised_attribute_name_RU	"Броня"
+	DETF_color	255	200	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Evasion"
+	DETF_localised_attribute_name_EN	"Evasion"
+	DETF_localised_attribute_name_RU	"Уклонение"
+	DETF_color	200	255	200	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"ES"
+	DETF_localised_attribute_name_EN	"ES"
+	DETF_localised_attribute_name_RU	"Энергощит"
+	DETF_color	200	200	255	255
+	
+	
+	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Armour/Evasion"
+	DETF_localised_attribute_name_EN	"Armour/Evasion"
+	DETF_localised_attribute_name_RU	"Броня/Уклонение"
+	DETF_color	255	255	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Armour/ES"
+	DETF_localised_attribute_name_EN	"Armour/ES"
+	DETF_localised_attribute_name_RU	"Броня/Энергощит"
+	DETF_color	255	200	255	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Evasion/ES"
+	DETF_localised_attribute_name_EN	"Evasion/ES"
+	DETF_localised_attribute_name_RU	"Уклонение/Энергощит"
+	DETF_color	200	255	255	255
+	
+	
+	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Armour/Evasion/ES"
+	DETF_localised_attribute_name_EN	"Arm/Eva/ES"
+	DETF_localised_attribute_name_RU	"Броня/Укл/ЭЩ"
+	DETF_color	255	255	255	255
+
+
 	
 
 REGISTER_NEW_FILTER_TAG
@@ -1433,9 +1490,95 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_RU	"Нательные доспехи"
 	DETF_color	255	230	204	255
 
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Shields"
+	DETF_localised_attribute_name_EN	"Shields"
+	DETF_localised_attribute_name_RU	"Щиты"
+	DETF_color	150	200	255	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Foci"
+	DETF_localised_attribute_name_EN	"Focus"
+	DETF_localised_attribute_name_RU	"Фокус"
+	DETF_color	150	200	255	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Bucklers"
+	DETF_localised_attribute_name_EN	"Bucklers"
+	DETF_localised_attribute_name_RU	"Баклеры"
+	DETF_color	150	255	200	255
+	
+	
+	
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+
+
+
+
+
+//Экипировка для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Weapon"
+name_RU	"Оружие"
+icon	"data/textures/icons/Warpick.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"usability"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	""
+	DETF_localised_attribute_name_EN	"All"
+	DETF_localised_attribute_name_RU	"Все"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Unpopular"
+	DETF_localised_attribute_name_EN	"Unpopular"
+	DETF_localised_attribute_name_RU	"Непопулярное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Popular"
+	DETF_localised_attribute_name_EN	"Popular"
+	DETF_localised_attribute_name_RU	"Популярное"
+	DETF_color	255	230	204	255
 
 	
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base Class"
 
 
 
@@ -1478,10 +1621,6 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_RU	"Боевые посохи"
 	DETF_color	255	200	200	255
 
-
-
-
-
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Bows"
 	DETF_localised_attribute_name_EN	"Bows"
@@ -1494,11 +1633,6 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_RU	"Копья"
 	DETF_color	150	255	200	255
 	
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Bucklers"
-	DETF_localised_attribute_name_EN	"Bucklers"
-	DETF_localised_attribute_name_RU	"Баклеры"
-	DETF_color	150	255	200	255
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Crossbows"
@@ -1507,46 +1641,11 @@ target_tag	"Base Class"
 	DETF_color	150	255	200	255
 
 
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Shields"
-	DETF_localised_attribute_name_EN	"Shields"
-	DETF_localised_attribute_name_RU	"Щиты"
-	DETF_color	150	200	255	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Foci"
-	DETF_localised_attribute_name_EN	"Focus"
-	DETF_localised_attribute_name_RU	"Фокус"
-	DETF_color	150	200	255	255
-
-
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rings"
-	DETF_localised_attribute_name_EN	"Rings"
-	DETF_localised_attribute_name_RU	"Кольца"
-	DETF_color	255	255	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Amulets"
-	DETF_localised_attribute_name_EN	"Amulets"
-	DETF_localised_attribute_name_RU	"Амулеты"
-	DETF_color	255	255	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Belts"
-	DETF_localised_attribute_name_EN	"Belts"
-	DETF_localised_attribute_name_RU	"Пояса"
-	DETF_color	255	255	100	255
-
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Fishing Rods"
 	DETF_localised_attribute_name_EN	"Fishing rods"
 	DETF_localised_attribute_name_RU	"Удочки"
 	DETF_color	255	255	100	255
-	
-	
 	
 
 	REGISTER_NEW_SUITABLE_VALUES
@@ -1596,6 +1695,97 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_EN	"Claws"
 	DETF_localised_attribute_name_RU	"Когти"
 	DETF_color	255	110	100	255
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+
+
+//Экипировка для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Jewelry"
+name_RU	"Бижутерия"
+icon	"data/textures/icons/SapphireRing(Poe2).png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"usability"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	""
+	DETF_localised_attribute_name_EN	"All"
+	DETF_localised_attribute_name_RU	"Все"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Unpopular"
+	DETF_localised_attribute_name_EN	"Unpopular"
+	DETF_localised_attribute_name_RU	"Непопулярное"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Popular"
+	DETF_localised_attribute_name_EN	"Popular"
+	DETF_localised_attribute_name_RU	"Популярное"
+	DETF_color	255	230	204	255
+
+	
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base Class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Rings"
+	DETF_localised_attribute_name_EN	"Rings"
+	DETF_localised_attribute_name_RU	"Кольца"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Amulets"
+	DETF_localised_attribute_name_EN	"Amulets"
+	DETF_localised_attribute_name_RU	"Амулеты"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Belts"
+	DETF_localised_attribute_name_EN	"Belts"
+	DETF_localised_attribute_name_RU	"Пояса"
+	DETF_color	255	255	100	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Jewels"
+	DETF_localised_attribute_name_EN	"Jewels"
+	DETF_localised_attribute_name_RU	"Самоцветы"
+	DETF_color	255	255	100	255
+
 
 REGISTER_NEW_BANNED_FILTER_TAG
 target_tag	"item tag"

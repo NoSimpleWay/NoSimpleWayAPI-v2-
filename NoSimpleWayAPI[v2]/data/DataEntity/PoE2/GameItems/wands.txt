@@ -1,4 +1,5 @@
 
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -11,32 +12,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bone Wand"
-	[tag]"name RU"		[value]"Костяной жезл"
-
-	[tag]"icon path"	[value]"BoneWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -49,13 +31,34 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bone Wand"
+	[tag]"name RU"		[value]"Костяной жезл"
+
+	[tag]"icon path"	[value]"BoneWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
 	
+	
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -68,13 +71,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
-	
+#T4	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -87,13 +90,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
-	
+#T5	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -107,24 +110,128 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dueling Wand"
+	[tag]"name RU"		[value]"Дуэльный жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+###############################################################
+#________________UNRELEASED ITEMS
+###############################################################
+	
+	
+	
+	
+	
 	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Acrid Wand"
-	[tag]"name RU"		[value]"Адкий жезл"
+	[tag]"name EN"		[value]"Frigid Wand"
+	[tag]"name RU"		[value]"Хладный жезл"
 
-	[tag]"icon path"	[value]"AcridWand"
+	[tag]"icon path"	[value]"WitheredWand"
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Hidden item"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Torture Wand"
+	[tag]"name RU"		[value]"Жезл мук"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Hidden item"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Critical Wand"
+	[tag]"name RU"		[value]"Острый жезл"
+
+	[tag]"icon path"	[value]"CriticalWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Hidden item"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primordial Wand"
+	[tag]"name RU"		[value]"Первобытный жезл"
+
+	[tag]"icon path"	[value]"WitheredWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Hidden item"
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"DAE tier"		[value]"Default"
@@ -133,6 +240,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 	
 	
+	
+	
+###############################################################
+#________________DISABLED SECTION
+###############################################################
+	
+	
+	
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -147,127 +264,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Frigid Wand"
-	[tag]"name RU"		[value]"Хладный жезл"
-
-	[tag]"icon path"	[value]"WitheredWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Torture Wand"
-	[tag]"name RU"		[value]"Жезл мук"
-
-	[tag]"icon path"	[value]"WitheredWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Critical Wand"
-	[tag]"name RU"		[value]"Острый жезл"
-
-	[tag]"icon path"	[value]"CriticalWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Primordial Wand"
-	[tag]"name RU"		[value]"Первобытный жезл"
-
-	[tag]"icon path"	[value]"WitheredWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Dueling Wand"
-	[tag]"name RU"		[value]"Дуэльный жезл"
-
-	[tag]"icon path"	[value]"UndefinedWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Acrid Wand"
-	[tag]"name RU"		[value]"Дуэльный жезл"
-
-	[tag]"icon path"	[value]"UndefinedWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
 	

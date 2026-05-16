@@ -1,3 +1,5 @@
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -15,20 +17,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 
 	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"item height"	[value]"3"	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"	[value]"Smithing Hammer"
-	[tag]"name RU"	[value]"Кузнечный молот"
+	[tag]"name RU"	[value]"Кузнечный молоток"
 
 	[tag]"icon path"	[value]"SmithingHammer"
 	[tag]"base class"	[value]"One Hand Maces"
@@ -43,13 +45,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -69,13 +71,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T4
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -95,13 +97,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T5
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -127,7 +129,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T6
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -147,13 +149,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T7
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -173,13 +175,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T8
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -199,13 +201,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T9
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -225,13 +227,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T10
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -251,37 +253,298 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
 
 
+
+#T11
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Lumen Mace"
-	[tag]"name RU"	[value]"Булава света"
+	[tag]"name EN"	[value]"Marching Mace"
+	[tag]"name RU"	[value]"Походная булава"
 
-	[tag]"icon path"	[value]"WoodenClub"
+	[tag]"icon path"	[value]"PlatedMace"
 	[tag]"base class"	[value]"One Hand Maces"
 
 	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"36-60"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"34-70"
 	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 119 Str"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 126 Str"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bandit Mace"
+	[tag]"name RU"	[value]"Булава бандита"
+
+	[tag]"icon path"	[value]"BrigandMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"45-61"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 135 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T13
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Structured Hammer"
+	[tag]"name RU"	[value]"Гранёный молот"
+
+	[tag]"icon path"	[value]"ConstructHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"49-60"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 142 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T14
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Flanged Mace"
+	[tag]"name RU"	[value]"Оребрённый шестопёр"
+
+	[tag]"icon path"	[value]"SlimMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"45-67"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 67, 174 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T15
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Crown Mace"
+	[tag]"name RU"	[value]"Увенчанная булава"
+
+	[tag]"icon path"	[value]"PlatedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"43-89"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 72, 193 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+#T16
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Marauding Mace"
+	[tag]"name RU"	[value]"Булава мародёра"
+
+	[tag]"icon path"	[value]"BrigandMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"51-84"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Molten Hammer"
+	[tag]"name RU"	[value]"Плавильный молоток"
+
+	[tag]"icon path"	[value]"SmithingHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"30.5-50.5"
+	[tag]"UNDEFINED[Fire Damage]"	[value]"30.5-50.5"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T18
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Akoyan Club"
+	[tag]"name RU"	[value]"Булава Акойи"
+
+	[tag]"icon path"	[value]"UndefinedMace"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T19
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Strife Pick"
+	[tag]"name RU"	[value]"Кирка раздора"
+
+	[tag]"icon path"	[value]"Warpick"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"48-64"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"8%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 78, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T20
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fortified Hammer"
+	[tag]"name RU"	[value]"Укреплённый молот"
+
+	[tag]"icon path"	[value]"ConstructHammer"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"60-73"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 79, 212 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION
+###############################################################
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -303,11 +566,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"worth"	[value]"Trash"
+	
+	
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -329,13 +595,65 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION
+###############################################################
+
+
+
+	
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Lumen Mace"
+	[tag]"name RU"	[value]"Булава света"
+
+	[tag]"icon path"	[value]"WoodenClub"
+	[tag]"base class"	[value]"One Hand Maces"
+
+	[tag]"item tag"	[value]"World drop"
+	[tag]"UNDEFINED[Physical Damage]"	[value]"36-60"
+	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
+	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
+	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 52, 119 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
-
-
+	
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -356,6 +674,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 45, 104 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -367,6 +688,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -405,6 +727,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -424,6 +747,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 48, 110 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -435,6 +761,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -472,6 +799,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -491,6 +819,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 51, 117 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -503,6 +834,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -540,6 +872,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -559,36 +892,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 126 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Marching Mace"
-	[tag]"name RU"	[value]"Marching Mace"
-
-	[tag]"icon path"	[value]"PlatedMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"34-70"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 55, 126 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -608,6 +914,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -627,6 +936,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 135 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -635,37 +947,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Advanced"
 
 	[tag]"worth"	[value]"Trash"
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Bandit Mace"
-	[tag]"name RU"	[value]"Bandit Mace"
-
-	[tag]"icon path"	[value]"BrigandMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"45-61"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 59, 135 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
+	
+	
 
 
 
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -685,34 +972,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 142 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Structured Hammer"
-	[tag]"name RU"	[value]"Structured Hammer"
-
-	[tag]"icon path"	[value]"ConstructHammer"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"49-60"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 62, 142 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -730,6 +992,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -749,32 +1014,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 67, 174 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Flanged Mace"
-	[tag]"name RU"	[value]"Flanged Mace"
-
-	[tag]"icon path"	[value]"SlimMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"45-67"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.55"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 67, 174 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -792,7 +1034,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -812,36 +1054,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 72, 193 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Crown Mace"
-	[tag]"name RU"	[value]"Crown Mace"
-
-	[tag]"icon path"	[value]"PlatedMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"43-89"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 72, 193 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -862,6 +1077,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -882,35 +1099,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Molten Hammer"
-	[tag]"name RU"	[value]"Molten Hammer"
-
-	[tag]"icon path"	[value]"SmithingHammer"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"30.5-50.5"
-	[tag]"UNDEFINED[Fire Damage]"	[value]"30.5-50.5"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -926,6 +1117,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -945,36 +1137,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 78, 212 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Strife Pick"
-	[tag]"name RU"	[value]"Strife Pick"
-
-	[tag]"icon path"	[value]"Warpick"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"48-64"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"8%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 78, 212 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -993,6 +1158,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1012,35 +1179,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 79, 212 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Fortified Hammer"
-	[tag]"name RU"	[value]"Fortified Hammer"
-
-	[tag]"icon path"	[value]"ConstructHammer"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"60-73"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.4"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 79, 212 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -1059,7 +1200,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1079,118 +1220,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
 	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
 	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Marauding Mace"
-	[tag]"name RU"	[value]"Marauding Mace"
-
-	[tag]"icon path"	[value]"BrigandMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"UNDEFINED[Physical Damage]"	[value]"51-84"
-	[tag]"UNDEFINED[Critical Hit Chance]"	[value]"5%"
-	[tag]"UNDEFINED[Attacks per Second]"	[value]"1.45"
-	[tag]"UNDEFINED[Weapon Range]"	[value]"1.1"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
-	[tag]"UNDEFINED[Requires]"	[value]"Level 77, 212 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Kalguuran Forgehammer"
-	[tag]"name RU"	[value]"Калгурский кузнечный молот"
-
-	[tag]"icon path"	[value]"UndefinedMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"		
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Jade Club"
-	[tag]"name RU"	[value]"Нефритовая дубина"
-
-	[tag]"icon path"	[value]"UndefinedMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"		
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Akoyan Club"
-	[tag]"name RU"	[value]"Дубина Akoyan"
-
-	[tag]"icon path"	[value]"UndefinedMace"
-	[tag]"base class"	[value]"One Hand Maces"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
 
 	[tag]"worth"	[value]"Trash"

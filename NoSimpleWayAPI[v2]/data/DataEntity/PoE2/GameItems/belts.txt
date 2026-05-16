@@ -10,9 +10,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -31,9 +31,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -52,9 +52,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -73,9 +73,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -94,9 +94,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -115,9 +115,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -140,8 +140,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"worth"		[value]"Best"
 	
@@ -157,9 +157,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -178,9 +178,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -199,9 +199,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -220,9 +220,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"

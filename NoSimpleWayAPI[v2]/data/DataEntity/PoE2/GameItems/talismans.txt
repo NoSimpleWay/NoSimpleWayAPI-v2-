@@ -1,9 +1,12 @@
+
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Jade Talisman"
-	[tag]"name RU"		[value]"Нефритовый талисман"
+	[tag]"name EN"		[value]"Changeling Talisman"
+	[tag]"name RU"		[value]"Талисман-перевёртыш"
 
 	[tag]"icon path"	[value]"UndefinedTalisman"
 	[tag]"base class"	[value]"Talismans"
@@ -11,164 +14,16 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Lumbering Talisman"
-	[tag]"name RU"		[value]"Талисман увальня"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Thunder Talisman"
-	[tag]"name RU"		[value]"Талисман грома"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cinderbark Talisman"
-	[tag]"name RU"		[value]"Талисман из угольной коры"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Primal Talisman"
-	[tag]"name RU"		[value]"Первобытный талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Maji Talisman"
-	[tag]"name RU"		[value]"Талисман Маджи"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Rabid Talisman"
-	[tag]"name RU"		[value]"Бешеный талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Condemned Talisman"
-	[tag]"name RU"		[value]"Талисман осуждённого"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cruel Talisman"
-	[tag]"name RU"		[value]"Жестокий талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
+#T2	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -182,18 +37,22 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
 	
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Spiny Talisman"
-	[tag]"name RU"		[value]"Колючий талисман"
+	[tag]"name EN"		[value]"Cinderbark Talisman"
+	[tag]"name RU"		[value]"Талисман из угольной коры"
 
 	[tag]"icon path"	[value]"UndefinedTalisman"
 	[tag]"base class"	[value]"Talismans"
@@ -201,12 +60,204 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
 	
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Familial Talisman"
+	[tag]"name RU"		[value]"Наследственный талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Frenzied Talisman"
+	[tag]"name RU"		[value]"Яростный талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primal Talisman"
+	[tag]"name RU"		[value]"Первобытный талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rabid Talisman"
+	[tag]"name RU"		[value]"Бешеный талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vicious Talisman"
+	[tag]"name RU"		[value]"Свирепый талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vicious Talisman"
+	[tag]"name RU"		[value]"Свирепый талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Voltfang Talisman"
+	[tag]"name RU"		[value]"Талисман грозового когтя"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lumbering Talisman"
+	[tag]"name RU"		[value]"Талисман увальня"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T12
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -220,11 +271,326 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
+	
+	
+#T13	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fury Talisman"
+	[tag]"name RU"		[value]"Неистовый талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T14
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cruel Talisman"
+	[tag]"name RU"		[value]"Жестокий талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T15
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Condemned Talisman"
+	[tag]"name RU"		[value]"Талисман осуждённого"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T16
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wingbeat Talisman"
+	[tag]"name RU"		[value]"Крылатый талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+
+#T17	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Spiny Talisman"
+	[tag]"name RU"		[value]"Колючий талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+#T18	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wildwood Talisman"
+	[tag]"name RU"		[value]"Талисман Диколесья"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T19
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ashbark Talisman"
+	[tag]"name RU"		[value]"Талисман из пепельной коры"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+#T20
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Alpha Talisman"
+	[tag]"name RU"		[value]"Талисман вожака"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T21
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fang Talisman"
+	[tag]"name RU"		[value]"Талисман из клыка"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+#T22
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thunder Talisman"
+	[tag]"name RU"		[value]"Талисман грома"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+
+#T23
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fungal Talisman"
+	[tag]"name RU"		[value]"Грибной талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+#T24
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Jade Talisman"
+	[tag]"name RU"		[value]"Нефритовый талисман"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+#T25
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Maji Talisman"
+	[tag]"name RU"		[value]"Талисман Маджи"
+
+	[tag]"icon path"	[value]"UndefinedTalisman"
+	[tag]"base class"	[value]"Talismans"
+
+	
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -239,236 +605,20 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	[tag]"item tag"		[value]"Hidden item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Ashbark Talisman"
-	[tag]"name RU"		[value]"Талисман из пепельной коры"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
 	
 	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Vicious Talisman"
-	[tag]"name RU"		[value]"Свирепый талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
 	
 	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Fury Talisman"
-	[tag]"name RU"		[value]"Неистовый талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
 	
 	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Familial Talisman"
-	[tag]"name RU"		[value]"Наследственный талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Alpha Talisman"
-	[tag]"name RU"		[value]"Талисман вожака"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Frenzied Talisman"
-	[tag]"name RU"		[value]"Яростный талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Fang Talisman"
-	[tag]"name RU"		[value]"Талисман из клыка"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Fungal Talisman"
-	[tag]"name RU"		[value]"Грибной талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Voltfang Talisman"
-	[tag]"name RU"		[value]"Талисман грозового когтя"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Wildwood Talisman"
-	[tag]"name RU"		[value]"Талисман Диколесья"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Wingbeat Talisman"
-	[tag]"name RU"		[value]"Крылатый талисман"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Changeling Talisman"
-	[tag]"name RU"		[value]"Талисман-перевёртыш"
-
-	[tag]"icon path"	[value]"UndefinedTalisman"
-	[tag]"base class"	[value]"Talismans"
-
-	
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"worth"		[value]"Rare"

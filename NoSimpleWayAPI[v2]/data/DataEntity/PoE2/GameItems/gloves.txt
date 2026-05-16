@@ -1,3 +1,9 @@
+
+###############################################################
+#________________ARMOUR BASES
+###############################################################
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -8,19 +14,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"StockyMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"15"
 	[tag]"base armour max"	[value]"15"
 
 	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"item height"	[value]"2"	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
 
 	[tag]"worth"	[value]"Trash"
-
-
+	
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -31,20 +38,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"31"
 	[tag]"base armour max"	[value]"31"
 	[tag]"UNDEFINED"	[value]"Level 11, 19 Str"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
 
 	[tag]"worth"	[value]"Trash"
 
-
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -55,16 +63,275 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"40"
 	[tag]"base armour max"	[value]"40"
 	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"worth"	[value]"Trash"
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bolstered Mitts"
+	[tag]"name RU"	[value]"Укреплённые рукавицы"
+
+	[tag]"icon path"	[value]"BolsteredMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"58"
+	[tag]"base armour max"	[value]"58"
+	[tag]"UNDEFINED"	[value]"Level 27, 44 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Moulded Mitts"
+	[tag]"name RU"	[value]"Литые рукавицы"
+
+	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"68"
+	[tag]"base armour max"	[value]"68"
+	[tag]"UNDEFINED"	[value]"Level 33, 53 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Detailed Mitts"
+	[tag]"name RU"	[value]"Украшенные рукавицы"
+
+	[tag]"icon path"	[value]"DetailedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"88"
+	[tag]"base armour max"	[value]"88"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Mitts"
+	[tag]"name RU"	[value]"Ancient Mitts"
+
+	[tag]"icon path"	[value]"BolsteredMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"103"
+	[tag]"base armour max"	[value]"103"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Feathered Mitts"
+	[tag]"name RU"	[value]"Feathered Mitts"
+
+	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"111"
+	[tag]"base armour max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Knightly Mitts"
+	[tag]"name RU"	[value]"Knightly Mitts"
+
+	[tag]"icon path"	[value]"RivetedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"122"
+	[tag]"base armour max"	[value]"122"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T10
+ADD_NEW_DATA_ENTITY	
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Mitts"
+	[tag]"name RU"	[value]"Ornate Mitts"
+
+	[tag]"icon path"	[value]"BolsteredMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"134"
+	[tag]"base armour max"	[value]"134"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Mitts"
+	[tag]"name RU"	[value]"Vaal Mitts"
+
+	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"146"
+	[tag]"base armour max"	[value]"146"
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Str"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Massive Mitts"
+	[tag]"name RU"	[value]"Тяжёлые рукавицы"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"158"
+	[tag]"base armour max"	[value]"158"
+	
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -75,6 +342,15 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR)
+###############################################################
+
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -88,10 +364,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"40"
 	[tag]"base armour max"	[value]"40"
-	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"
+	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -105,6 +384,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -115,91 +395,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"40"
 	[tag]"base armour max"	[value]"40"
 	[tag]"UNDEFINED"	[value]"Level 16, 27 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Bolstered Mitts"
-	[tag]"name RU"	[value]"Укреплённые рукавицы"
-
-	[tag]"icon path"	[value]"BolsteredMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"58"
-	[tag]"base armour max"	[value]"58"
-	[tag]"UNDEFINED"	[value]"Level 27, 44 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Moulded Mitts"
-	[tag]"name RU"	[value]"Литые рукавицы"
-
-	[tag]"icon path"	[value]"MouldedMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"68"
-	[tag]"base armour max"	[value]"68"
-	[tag]"UNDEFINED"	[value]"Level 33, 53 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Detailed Mitts"
-	[tag]"name RU"	[value]"Украшенные рукавицы"
-
-	[tag]"icon path"	[value]"DetailedMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base armour min"	[value]"88"
-	[tag]"base armour max"	[value]"88"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -210,30 +412,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Titan Mitts"
-	[tag]"name RU"	[value]"Рукавицы титана"
-
-	[tag]"icon path"	[value]"TitanMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"100"
-	[tag]"base armour max"	[value]"100"
-	[tag]"UNDEFINED"	[value]"Level 52, 83 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -244,155 +424,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"StockyMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"122"
 	[tag]"base armour max"	[value]"122"
 	[tag]"UNDEFINED"	[value]"Level 65, 104 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Suede Bracers"
-	[tag]"name RU"	[value]"Замшевые наручи"
-
-	[tag]"icon path"	[value]"SuedeBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"10"
-	[tag]"base evasion max"	[value]"10"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Firm Bracers"
-	[tag]"name RU"	[value]"Плотные наручи"
-
-	[tag]"icon path"	[value]"FirmBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"26"
-	[tag]"base evasion max"	[value]"26"
-	[tag]"UNDEFINED"	[value]"Level 11, 19 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Bound Bracers"
-	[tag]"name RU"	[value]"Обмотанные наручи"
-
-	[tag]"icon path"	[value]"BoundBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"33"
-	[tag]"base evasion max"	[value]"33"
-	[tag]"UNDEFINED"	[value]"Level 16, 27 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Sectioned Bracers"
-	[tag]"name RU"	[value]"Сегментные наручи"
-
-	[tag]"icon path"	[value]"SectionedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"52"
-	[tag]"base evasion max"	[value]"52"
-	[tag]"UNDEFINED"	[value]"Level 28, 46 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Spined Bracers"
-	[tag]"name RU"	[value]"Шипастые наручи"
-
-	[tag]"icon path"	[value]"SpinedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"UNDEFINED"	[value]"Level 33, 53 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Fine Bracers"
-	[tag]"name RU"	[value]"Искусные наручи"
-
-	[tag]"icon path"	[value]"FineBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base evasion min"	[value]"79"
-	[tag]"base evasion max"	[value]"79"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -403,6 +441,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -413,179 +455,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HardenedBracers"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"90"
 	[tag]"base evasion max"	[value]"90"
 	[tag]"UNDEFINED"	[value]"Level 52, 83 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Engraved Bracers"
-	[tag]"name RU"	[value]"Резные наручи"
-
-	[tag]"icon path"	[value]"SuedeBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"111"
-	[tag]"base evasion max"	[value]"111"
-	[tag]"UNDEFINED"	[value]"Level 65, 104 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Torn Gloves"
-	[tag]"name RU"	[value]"Рваные перчатки"
-
-	[tag]"icon path"	[value]"TornGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"9"
-	[tag]"base energy shield max"	[value]"9"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Sombre Gloves"
-	[tag]"name RU"	[value]"Тёмные перчатки"
-
-	[tag]"icon path"	[value]"SombreGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"15"
-	[tag]"base energy shield max"	[value]"15"
-	[tag]"UNDEFINED"	[value]"Level 12, 20 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Stitched Gloves"
-	[tag]"name RU"	[value]"Сшитые перчатки"
-
-	[tag]"icon path"	[value]"StitchedGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 16, 27 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Jewelled Gloves"
-	[tag]"name RU"	[value]"Инкрустированные перчатки"
-
-	[tag]"icon path"	[value]"JewelledGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"22"
-	[tag]"base energy shield max"	[value]"22"
-	[tag]"UNDEFINED"	[value]"Level 26, 43 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Intricate Gloves"
-	[tag]"name RU"	[value]"Затейливые перчатки"
-
-	[tag]"icon path"	[value]"IntricateGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"26"
-	[tag]"base energy shield max"	[value]"26"
-	[tag]"UNDEFINED"	[value]"Level 33, 53 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Pauascale Gloves"
-	[tag]"name RU"	[value]"Перчатки с перламутром"
-
-	[tag]"icon path"	[value]"PauascaleGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -594,556 +470,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Embroidered Gloves"
-	[tag]"name RU"	[value]"Расшитые перчатки"
-
-	[tag]"icon path"	[value]"EmbroideredGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"35"
-	[tag]"base energy shield max"	[value]"35"
-	[tag]"UNDEFINED"	[value]"Level 52, 83 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Adorned Gloves"
-	[tag]"name RU"	[value]"Украшенные перчатки"
-
-	[tag]"icon path"	[value]"TornGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"42"
-	[tag]"base energy shield max"	[value]"42"
-	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ringmail Gauntlets"
-	[tag]"name RU"	[value]"Кольчужные перчатки"
-
-	[tag]"icon path"	[value]"RingmailGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"13"
-	[tag]"base armour max"	[value]"13"
-	[tag]"base evasion min"	[value]"10"
-	[tag]"base evasion max"	[value]"10"
-	[tag]"UNDEFINED"	[value]"Level 6, 7 Str, 7 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Layered Gauntlets"
-	[tag]"name RU"	[value]"Пластинчатые перчатки"
-
-	[tag]"icon path"	[value]"LayeredGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"22"
-	[tag]"base armour max"	[value]"22"
-	[tag]"base evasion min"	[value]"18"
-	[tag]"base evasion max"	[value]"18"
-	[tag]"UNDEFINED"	[value]"Level 16, 15 Str, 15 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Doubled Gauntlets"
-	[tag]"name RU"	[value]"Двухслойные перчатки"
-
-	[tag]"icon path"	[value]"DoubledGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"37"
-	[tag]"base armour max"	[value]"37"
-	[tag]"base evasion min"	[value]"33"
-	[tag]"base evasion max"	[value]"33"
-	[tag]"UNDEFINED"	[value]"Level 33, 30 Str, 30 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Plate Gauntlets"
-	[tag]"name RU"	[value]"Латные перчатки"
-
-	[tag]"icon path"	[value]"PlateGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Burnished Gauntlets"
-	[tag]"name RU"	[value]"Полированные перчатки"
-
-	[tag]"icon path"	[value]"BurnishedGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"55"
-	[tag]"base armour max"	[value]"55"
-	[tag]"base evasion min"	[value]"50"
-	[tag]"base evasion max"	[value]"50"
-	[tag]"UNDEFINED"	[value]"Level 52, 46 Str, 46 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ornate Gauntlets"
-	[tag]"name RU"	[value]"Изысканные перчатки"
-
-	[tag]"icon path"	[value]"RingmailGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"67"
-	[tag]"base armour max"	[value]"67"
-	[tag]"base evasion min"	[value]"61"
-	[tag]"base evasion max"	[value]"61"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Rope Cuffs"
-	[tag]"name RU"	[value]"Верёвочные манжеты"
-
-	[tag]"icon path"	[value]"RopeCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"12"
-	[tag]"base armour max"	[value]"12"
-	[tag]"base energy shield min"	[value]"6"
-	[tag]"base energy shield max"	[value]"6"
-	[tag]"UNDEFINED"	[value]"Level 5, 6 Str, 6 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Aged Cuffs"
-	[tag]"name RU"	[value]"Старинные манжеты"
-
-	[tag]"icon path"	[value]"AgedCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"22"
-	[tag]"base armour max"	[value]"22"
-	[tag]"base energy shield min"	[value]"9"
-	[tag]"base energy shield max"	[value]"9"
-	[tag]"UNDEFINED"	[value]"Level 16, 15 Str, 15 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Goldcast Cuffs"
-	[tag]"name RU"	[value]"Золотые манжеты"
-
-	[tag]"icon path"	[value]"GoldcastCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"37"
-	[tag]"base armour max"	[value]"37"
-	[tag]"base energy shield min"	[value]"14"
-	[tag]"base energy shield max"	[value]"14"
-	[tag]"UNDEFINED"	[value]"Level 33, 30 Str, 30 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Diviner Cuffs"
-	[tag]"name RU"	[value]"Манжеты предсказателя"
-
-	[tag]"icon path"	[value]"DivinerCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Righteous Cuffs"
-	[tag]"name RU"	[value]"Манжеты праведника"
-
-	[tag]"icon path"	[value]"RighteousCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"55"
-	[tag]"base armour max"	[value]"55"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 52, 46 Str, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Signet Cuffs"
-	[tag]"name RU"	[value]"Манжеты с печаткой"
-
-	[tag]"icon path"	[value]"RopeCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"67"
-	[tag]"base armour max"	[value]"67"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Gauze Wraps"
-	[tag]"name RU"	[value]"Обмотки из муслина"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"8"
-	[tag]"base evasion max"	[value]"8"
-	[tag]"base energy shield min"	[value]"6"
-	[tag]"base energy shield max"	[value]"6"
-	[tag]"UNDEFINED"	[value]"Level 4, 6 Dex, 6 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Linen Wraps"
-	[tag]"name RU"	[value]"Льняные обмотки"
-
-	[tag]"icon path"	[value]"LinenWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"18"
-	[tag]"base evasion max"	[value]"18"
-	[tag]"base energy shield min"	[value]"9"
-	[tag]"base energy shield max"	[value]"9"
-	[tag]"UNDEFINED"	[value]"Level 16, 15 Dex, 15 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Spiral Wraps"
-	[tag]"name RU"	[value]"Витые обмотки"
-
-	[tag]"icon path"	[value]"SpiralWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"33"
-	[tag]"base evasion max"	[value]"33"
-	[tag]"base energy shield min"	[value]"14"
-	[tag]"base energy shield max"	[value]"14"
-	[tag]"UNDEFINED"	[value]"Level 33, 30 Dex, 30 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Buckled Wraps"
-	[tag]"name RU"	[value]"Обмотки с пряжками"
-
-	[tag]"icon path"	[value]"BuckledWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Furtive Wraps"
-	[tag]"name RU"	[value]"Furtive Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"50"
-	[tag]"base evasion max"	[value]"50"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 52, 46 Dex, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Utility Wraps"
-	[tag]"name RU"	[value]"Практичные обмотки"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"61"
-	[tag]"base evasion max"	[value]"61"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Dex, 57 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Grand Manchettes"
-	[tag]"name RU"	[value]"Grand Manchettes"
-
-	[tag]"icon path"	[value]"StockyMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"44"
-	[tag]"base armour max"	[value]"44"
-	[tag]"base evasion min"	[value]"40"
-	[tag]"base evasion max"	[value]"40"
-	[tag]"base energy shield min"	[value]"15"
-	[tag]"base energy shield max"	[value]"15"
-	[tag]"UNDEFINED"	[value]"Level 65, 40 Str, 40 Dex, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"worth"	[value]"Trash"
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1157,7 +486,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"88"
 	[tag]"base armour max"	[value]"88"
 	[tag]"UNDEFINED"	[value]"Level 45, 73 Str"
@@ -1171,9 +500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1184,7 +511,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rivetedmitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
@@ -1201,15 +528,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"	[value]"Trash"
 
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1220,7 +539,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TemperedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base armour min"	[value]"98"
 	[tag]"base armour max"	[value]"98"
 	[tag]"UNDEFINED"	[value]"Level 51, 82 Str"
@@ -1234,11 +557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Expert"
 
 
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1252,10 +571,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"105"
 	[tag]"base armour max"	[value]"105"
 	[tag]"UNDEFINED"	[value]"Level 55, 88 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1266,41 +588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ancient Mitts"
-	[tag]"name RU"	[value]"Ancient Mitts"
-
-	[tag]"icon path"	[value]"BolsteredMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"105"
-	[tag]"base armour max"	[value]"105"
-	[tag]"UNDEFINED"	[value]"Level 55, 88 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1314,104 +602,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"111"
 	[tag]"base armour max"	[value]"111"
 	[tag]"UNDEFINED"	[value]"Level 59, 95 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Feathered Mitts"
-	[tag]"name RU"	[value]"Feathered Mitts"
-
-	[tag]"icon path"	[value]"MouldedMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"111"
-	[tag]"base armour max"	[value]"111"
-	[tag]"UNDEFINED"	[value]"Level 59, 95 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Firm Bracers"
-	[tag]"name RU"	[value]"Улучшенные плотные наручи"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Hunting Bracers"
-
-	[tag]"icon path"	[value]"FirmBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"79"
-	[tag]"base evasion max"	[value]"79"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Hunting Bracers"
-	[tag]"name RU"	[value]"Hunting Bracers"
-
-	[tag]"icon path"	[value]"FirmBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base evasion min"	[value]"79"
-	[tag]"base evasion max"	[value]"79"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1422,1147 +619,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Bound Bracers"
-	[tag]"name RU"	[value]"Улучшенные обмотанные наручи"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Swift Bracers"
-
-	[tag]"icon path"	[value]"BoundBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"89"
-	[tag]"base evasion max"	[value]"89"
-	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Swift Bracers"
-	[tag]"name RU"	[value]"Swift Bracers"
-
-	[tag]"icon path"	[value]"BoundBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base evasion min"	[value]"89"
-	[tag]"base evasion max"	[value]"89"
-	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Sectioned Bracers"
-	[tag]"name RU"	[value]"Улучшенные сегментные наручи"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Refined Bracers"
-
-	[tag]"icon path"	[value]"SectionedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"95"
-	[tag]"base evasion max"	[value]"95"
-	[tag]"UNDEFINED"	[value]"Level 55, 88 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Refined Bracers"
-	[tag]"name RU"	[value]"Refined Bracers"
-
-	[tag]"icon path"	[value]"SectionedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"95"
-	[tag]"base evasion max"	[value]"95"
-	[tag]"UNDEFINED"	[value]"Level 55, 88 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Spined Bracers"
-	[tag]"name RU"	[value]"Улучшенные шипастые наручи"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Spiked Bracers"
-
-	[tag]"icon path"	[value]"SpinedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"101"
-	[tag]"base evasion max"	[value]"101"
-	[tag]"UNDEFINED"	[value]"Level 59, 95 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Spiked Bracers"
-	[tag]"name RU"	[value]"Spiked Bracers"
-
-	[tag]"icon path"	[value]"SpinedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"101"
-	[tag]"base evasion max"	[value]"101"
-	[tag]"UNDEFINED"	[value]"Level 59, 95 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Sombre Gloves"
-	[tag]"name RU"	[value]"Улучшенные тёмные перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Ominous Gloves"
-
-	[tag]"icon path"	[value]"SombreGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ominous Gloves"
-	[tag]"name RU"	[value]"Ominous Gloves"
-
-	[tag]"icon path"	[value]"SombreGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Embellished Gloves"
-	[tag]"name RU"	[value]"Embellished Gloves"
-
-	[tag]"icon path"	[value]"SombreGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
-	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Stitched Gloves"
-	[tag]"name RU"	[value]"Улучшенные сшитые перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Embroidered Gloves"
-
-	[tag]"icon path"	[value]"StitchedGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"35"
-	[tag]"base energy shield max"	[value]"35"
-	[tag]"UNDEFINED"	[value]"Level 51, 82 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Embroidered Gloves"
-	[tag]"name RU"	[value]"Embroidered Gloves"
-
-	[tag]"icon path"	[value]"StitchedGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"35"
-	[tag]"base energy shield max"	[value]"35"
-	[tag]"UNDEFINED"	[value]"Level 51, 82 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Jewelled Gloves"
-	[tag]"name RU"	[value]"Улучшенные инкрустированные перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Baroque Gloves"
-
-	[tag]"icon path"	[value]"JewelledGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"37"
-	[tag]"base energy shield max"	[value]"37"
-	[tag]"UNDEFINED"	[value]"Level 55, 88 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Baroque Gloves"
-	[tag]"name RU"	[value]"Baroque Gloves"
-
-	[tag]"icon path"	[value]"JewelledGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"37"
-	[tag]"base energy shield max"	[value]"37"
-	[tag]"UNDEFINED"	[value]"Level 55, 88 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Intricate Gloves"
-	[tag]"name RU"	[value]"Улучшенные затейливые перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Gold Gloves"
-
-	[tag]"icon path"	[value]"IntricateGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"39"
-	[tag]"base energy shield max"	[value]"39"
-	[tag]"UNDEFINED"	[value]"Level 59, 95 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Gold Gloves"
-	[tag]"name RU"	[value]"Gold Gloves"
-
-	[tag]"icon path"	[value]"IntricateGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"39"
-	[tag]"base energy shield max"	[value]"39"
-	[tag]"UNDEFINED"	[value]"Level 59, 95 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Ringmail Gauntlets"
-	[tag]"name RU"	[value]"Улучшенные кольчужные перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Ironmail Gauntlets"
-
-	[tag]"icon path"	[value]"RingmailGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ironmail Gauntlets"
-	[tag]"name RU"	[value]"Ironmail Gauntlets"
-
-	[tag]"icon path"	[value]"RingmailGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-	
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Layered Gauntlets"
-	[tag]"name RU"	[value]"Улучшенные пластинчатые перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Captain Gauntlets"
-
-	[tag]"icon path"	[value]"LayeredGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"54"
-	[tag]"base armour max"	[value]"54"
-	[tag]"base evasion min"	[value]"49"
-	[tag]"base evasion max"	[value]"49"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-	
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Captain Gauntlets"
-	[tag]"name RU"	[value]"Captain Gauntlets"
-
-	[tag]"icon path"	[value]"LayeredGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base armour min"	[value]"54"
-	[tag]"base armour max"	[value]"54"
-	[tag]"base evasion min"	[value]"49"
-	[tag]"base evasion max"	[value]"49"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Doubled Gauntlets"
-	[tag]"name RU"	[value]"Улучшенные двухслойные перчатки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Zealot Gauntlets"
-
-	[tag]"icon path"	[value]"DoubledGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"61"
-	[tag]"base armour max"	[value]"61"
-	[tag]"base evasion min"	[value]"56"
-	[tag]"base evasion max"	[value]"56"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Zealot Gauntlets"
-	[tag]"name RU"	[value]"Zealot Gauntlets"
-
-	[tag]"icon path"	[value]"DoubledGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"61"
-	[tag]"base armour max"	[value]"61"
-	[tag]"base evasion min"	[value]"56"
-	[tag]"base evasion max"	[value]"56"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Rope Cuffs"
-	[tag]"name RU"	[value]"Улучшенные верёвочные манжеты"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Braided Cuffs"
-
-	[tag]"icon path"	[value]"RopeCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Braided Cuffs"
-	[tag]"name RU"	[value]"Braided Cuffs"
-
-	[tag]"icon path"	[value]"RopeCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base armour min"	[value]"48"
-	[tag]"base armour max"	[value]"48"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Aged Cuffs"
-	[tag]"name RU"	[value]"Улучшенные старинные манжеты"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Heirloom Cuffs"
-
-	[tag]"icon path"	[value]"AgedCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"54"
-	[tag]"base armour max"	[value]"54"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Heirloom Cuffs"
-	[tag]"name RU"	[value]"Heirloom Cuffs"
-
-	[tag]"icon path"	[value]"AgedCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base armour min"	[value]"54"
-	[tag]"base armour max"	[value]"54"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Goldcast Cuffs"
-	[tag]"name RU"	[value]"Улучшенные золотые манжеты"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Ornate Cuffs"
-
-	[tag]"icon path"	[value]"GoldcastCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"61"
-	[tag]"base armour max"	[value]"61"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ornate Cuffs"
-	[tag]"name RU"	[value]"Ornate Cuffs"
-
-	[tag]"icon path"	[value]"GoldcastCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"61"
-	[tag]"base armour max"	[value]"61"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Gauze Wraps"
-	[tag]"name RU"	[value]"Улучшенные обмотки из муслина"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Bandage Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Bandage Wraps"
-	[tag]"name RU"	[value]"Bandage Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"44"
-	[tag]"base evasion max"	[value]"44"
-	[tag]"base energy shield min"	[value]"17"
-	[tag]"base energy shield max"	[value]"17"
-	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Linen Wraps"
-	[tag]"name RU"	[value]"Улучшенные льняные обмотки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Cambric Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"49"
-	[tag]"base evasion max"	[value]"49"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Dex, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Cambric Wraps"
-	[tag]"name RU"	[value]"Cambric Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base evasion min"	[value]"49"
-	[tag]"base evasion max"	[value]"49"
-	[tag]"base energy shield min"	[value]"19"
-	[tag]"base energy shield max"	[value]"19"
-	[tag]"UNDEFINED"	[value]"Level 51, 46 Dex, 46 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Advanced Spiral Wraps"
-	[tag]"name RU"	[value]"Улучшенные витые обмотки"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Adorned Wraps"
-
-	[tag]"icon path"	[value]"SpiralWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"56"
-	[tag]"base evasion max"	[value]"56"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Dex, 52 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Adorned Wraps"
-	[tag]"name RU"	[value]"Adorned Wraps"
-
-	[tag]"icon path"	[value]"SpiralWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"56"
-	[tag]"base evasion max"	[value]"56"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	[tag]"UNDEFINED"	[value]"Level 59, 52 Dex, 52 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2576,10 +633,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"RivetedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"122"
 	[tag]"base armour max"	[value]"122"
 	[tag]"UNDEFINED"	[value]"Level 65, 104 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2592,46 +652,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Knightly Mitts"
-	[tag]"name RU"	[value]"Knightly Mitts"
-
-	[tag]"icon path"	[value]"RivetedMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"122"
-	[tag]"base armour max"	[value]"122"
-	[tag]"UNDEFINED"	[value]"Level 65, 104 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY	
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2645,33 +666,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"BolsteredMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"134"
 	[tag]"base armour max"	[value]"134"
 	[tag]"UNDEFINED"	[value]"Level 70, 113 Str"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-ADD_NEW_DATA_ENTITY	
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ornate Mitts"
-	[tag]"name RU"	[value]"Ornate Mitts"
-
-	[tag]"icon path"	[value]"BolsteredMitts"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"134"
-	[tag]"base armour max"	[value]"134"
-	[tag]"UNDEFINED"	[value]"Level 70, 113 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2685,8 +686,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2700,10 +700,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"MouldedMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"146"
 	[tag]"base armour max"	[value]"146"
 	[tag]"UNDEFINED"	[value]"Level 75, 122 Str"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2712,6 +715,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION(ARMOUR)
+###############################################################
 
 
 
@@ -2720,22 +733,267 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Vaal Mitts"
-	[tag]"name RU"	[value]"Vaal Mitts"
+	[tag]"name EN"	[value]"Titan Mitts"
+	[tag]"name RU"	[value]"Рукавицы титана"
 
-	[tag]"icon path"	[value]"MouldedMitts"
+	[tag]"icon path"	[value]"TitanMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"146"
-	[tag]"base armour max"	[value]"146"
-	[tag]"UNDEFINED"	[value]"Level 75, 122 Str"
+
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"UNDEFINED"	[value]"Level 52, 83 Str"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+
+	
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________EVASION BASES
+###############################################################
+
+
+
+#T1
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Suede Bracers"
+	[tag]"name RU"	[value]"Замшевые наручи"
+
+	[tag]"icon path"	[value]"SuedeBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"10"
+	[tag]"base evasion max"	[value]"10"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Firm Bracers"
+	[tag]"name RU"	[value]"Плотные наручи"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"26"
+	[tag]"base evasion max"	[value]"26"
+	[tag]"UNDEFINED"	[value]"Level 11, 19 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bound Bracers"
+	[tag]"name RU"	[value]"Обмотанные наручи"
+
+	[tag]"icon path"	[value]"BoundBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"33"
+	[tag]"base evasion max"	[value]"33"
+	[tag]"UNDEFINED"	[value]"Level 16, 27 Dex"
+	
+
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sectioned Bracers"
+	[tag]"name RU"	[value]"Сегментные наручи"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"52"
+	[tag]"base evasion max"	[value]"52"
+	[tag]"UNDEFINED"	[value]"Level 28, 46 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spined Bracers"
+	[tag]"name RU"	[value]"Шипастые наручи"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"UNDEFINED"	[value]"Level 33, 53 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fine Bracers"
+	[tag]"name RU"	[value]"Искусные наручи"
+
+	[tag]"icon path"	[value]"FineBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Refined Bracers"
+	[tag]"name RU"	[value]"Refined Bracers"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"95"
+	[tag]"base evasion max"	[value]"95"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiked Bracers"
+	[tag]"name RU"	[value]"Spiked Bracers"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -2744,12 +1002,129 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stalking Bracers"
+	[tag]"name RU"	[value]"Stalking Bracers"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Grand Bracers"
+	[tag]"name RU"	[value]"Grand Bracers"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"122"
+	[tag]"base evasion max"	[value]"122"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
 
 
 
 
 
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
 
+	[tag]"name EN"	[value]"Barbed Bracers"
+	[tag]"name RU"	[value]"Barbed Bracers"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"133"
+	[tag]"base evasion max"	[value]"133"
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Polished Bracers"
+	[tag]"name RU"	[value]"Полированные наручи"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(EVASION)
+###############################################################
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2763,10 +1138,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FirmBracers"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"111"
 	[tag]"base evasion max"	[value]"111"
 	[tag]"UNDEFINED"	[value]"Level 65, 104 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2778,47 +1156,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Stalking Bracers"
-	[tag]"name RU"	[value]"Stalking Bracers"
-
-	[tag]"icon path"	[value]"FirmBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"111"
-	[tag]"base evasion max"	[value]"111"
-	[tag]"UNDEFINED"	[value]"Level 65, 104 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2832,10 +1170,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SectionedBracers"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"122"
 	[tag]"base evasion max"	[value]"122"
 	[tag]"UNDEFINED"	[value]"Level 70, 113 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2846,39 +1187,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Grand Bracers"
-	[tag]"name RU"	[value]"Grand Bracers"
-
-	[tag]"icon path"	[value]"SectionedBracers"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"122"
-	[tag]"base evasion max"	[value]"122"
-	[tag]"UNDEFINED"	[value]"Level 70, 113 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2892,10 +1201,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SpinedBracers"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"133"
 	[tag]"base evasion max"	[value]"133"
 	[tag]"UNDEFINED"	[value]"Level 75, 122 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2906,6 +1218,368 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________ES BASES
+###############################################################
+
+
+
+
+	
+#T1
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Torn Gloves"
+	[tag]"name RU"	[value]"Рваные перчатки"
+
+	[tag]"icon path"	[value]"TornGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"9"
+	[tag]"base energy shield max"	[value]"9"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sombre Gloves"
+	[tag]"name RU"	[value]"Тёмные перчатки"
+
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"15"
+	[tag]"base energy shield max"	[value]"15"
+	[tag]"UNDEFINED"	[value]"Level 12, 20 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Stitched Gloves"
+	[tag]"name RU"	[value]"Сшитые перчатки"
+
+	[tag]"icon path"	[value]"StitchedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 16, 27 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Jewelled Gloves"
+	[tag]"name RU"	[value]"Инкрустированные перчатки"
+
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"22"
+	[tag]"base energy shield max"	[value]"22"
+	[tag]"UNDEFINED"	[value]"Level 26, 43 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Intricate Gloves"
+	[tag]"name RU"	[value]"Затейливые перчатки"
+
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"26"
+	[tag]"UNDEFINED"	[value]"Level 33, 53 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Pauascale Gloves"
+	[tag]"name RU"	[value]"Перчатки с перламутром"
+
+	[tag]"icon path"	[value]"PauascaleGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Baroque Gloves"
+	[tag]"name RU"	[value]"Вычурные перчатки"
+
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"36"
+	[tag]"base energy shield max"	[value]"36"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gold Gloves"
+	[tag]"name RU"	[value]"Золотые перчатки"
+
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"39"
+	[tag]"base energy shield max"	[value]"39"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Grim Gloves"
+	[tag]"name RU"	[value]"Мрачные перчатки"
+
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Opulent Gloves"
+	[tag]"name RU"	[value]"Богатые перчатки"
+
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base energy shield min"	[value]"46"
+	[tag]"base energy shield max"	[value]"46"
+	[tag]"UNDEFINED"	[value]"Level 70, 113 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Gloves"
+	[tag]"name RU"	[value]"Перчатки ваал"
+
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"base energy shield min"	[value]"50"
+	[tag]"base energy shield max"	[value]"50"
+	
+	[tag]"UNDEFINED"	[value]"Level 75, 122 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Sirenscale Gloves"
+	[tag]"name RU"	[value]"Перчатки из чешуи сирены"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"54"
+	[tag]"base energy shield max"	[value]"54"
+	
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION(ES)
+###############################################################
 
 
 
@@ -2913,23 +1587,213 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Barbed Bracers"
-	[tag]"name RU"	[value]"Barbed Bracers"
+	[tag]"name EN"	[value]"Embroidered Gloves"
+	[tag]"name RU"	[value]"Расшитые перчатки"
 
-	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"icon path"	[value]"EmbroideredGloves"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"133"
-	[tag]"base evasion max"	[value]"133"
-	[tag]"UNDEFINED"	[value]"Level 75, 122 Dex"
+
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED"	[value]"Level 52, 83 Int"
+	
+	[tag]"item tag"			[value]"Always unique"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
 
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(ES)
+###############################################################
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Adorned Gloves"
+	[tag]"name RU"	[value]"Украшенные перчатки"
+	[tag]"icon path"	[value]"TornGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Advanced Sombre Gloves"
+	[tag]"name RU"	[value]"Улучшенные тёмные перчатки"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ominous Gloves"
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"worth"	[value]"Trash"
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Ominous Gloves"
+	[tag]"name RU"	[value]"Ominous Gloves"
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"worth"	[value]"Trash"
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Embellished Gloves"
+	[tag]"name RU"	[value]"Embellished Gloves"
+	[tag]"icon path"	[value]"SombreGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Int"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Advanced Stitched Gloves"
+	[tag]"name RU"	[value]"Улучшенные сшитые перчатки"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Embroidered Gloves"
+	[tag]"icon path"	[value]"StitchedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	[tag]"UNDEFINED"	[value]"Level 51, 82 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Advanced Jewelled Gloves"
+	[tag]"name RU"	[value]"Улучшенные инкрустированные перчатки"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Baroque Gloves"
+	[tag]"icon path"	[value]"JewelledGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"base energy shield min"	[value]"37"
+	[tag]"base energy shield max"	[value]"37"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"worth"	[value]"Trash"
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+	[tag]"name EN"	[value]"Advanced Intricate Gloves"
+	[tag]"name RU"	[value]"Улучшенные затейливые перчатки"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Gold Gloves"
+	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"base energy shield min"	[value]"39"
+	[tag]"base energy shield max"	[value]"39"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
 	[tag]"worth"	[value]"Trash"
 
 
@@ -2937,13 +1801,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -2957,10 +1815,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SombreGloves"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base energy shield min"	[value]"42"
 	[tag]"base energy shield max"	[value]"42"
 	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -2975,44 +1836,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Grim Gloves"
-	[tag]"name RU"	[value]"Grim Gloves"
-
-	[tag]"icon path"	[value]"SombreGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"42"
-	[tag]"base energy shield max"	[value]"42"
-	[tag]"UNDEFINED"	[value]"Level 65, 104 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3026,10 +1850,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"JewelledGloves"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base energy shield min"	[value]"46"
 	[tag]"base energy shield max"	[value]"46"
 	[tag]"UNDEFINED"	[value]"Level 70, 113 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3040,46 +1867,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 
 
-
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Opulent Gloves"
-	[tag]"name RU"	[value]"Opulent Gloves"
-
-	[tag]"icon path"	[value]"JewelledGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"46"
-	[tag]"base energy shield max"	[value]"46"
-	[tag]"UNDEFINED"	[value]"Level 70, 113 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3093,10 +1881,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"IntricateGloves"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base energy shield min"	[value]"50"
 	[tag]"base energy shield max"	[value]"50"
 	[tag]"UNDEFINED"	[value]"Level 75, 122 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3111,26 +1902,284 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________ARMOUR/EVASION BASES
+###############################################################
+
+
+
+
+
+
+
+
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Vaal Gloves"
-	[tag]"name RU"	[value]"Vaal Gloves"
+	[tag]"name EN"	[value]"Ringmail Gauntlets"
+	[tag]"name RU"	[value]"Кольчужные перчатки"
 
-	[tag]"icon path"	[value]"IntricateGloves"
+	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base energy shield min"	[value]"50"
-	[tag]"base energy shield max"	[value]"50"
-	[tag]"UNDEFINED"	[value]"Level 75, 122 Int"
+
+	[tag]"base armour min"	[value]"13"
+	[tag]"base armour max"	[value]"13"
+	[tag]"base evasion min"	[value]"10"
+	[tag]"base evasion max"	[value]"10"
+	[tag]"UNDEFINED"	[value]"Level 6, 7 Str, 7 Dex"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"worth"	[value]"Trash"
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Layered Gauntlets"
+	[tag]"name RU"	[value]"Пластинчатые перчатки"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"22"
+	[tag]"base armour max"	[value]"22"
+	[tag]"base evasion min"	[value]"18"
+	[tag]"base evasion max"	[value]"18"
+	[tag]"UNDEFINED"	[value]"Level 16, 15 Str, 15 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Doubled Gauntlets"
+	[tag]"name RU"	[value]"Двухслойные перчатки"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"37"
+	[tag]"base armour max"	[value]"37"
+	[tag]"base evasion min"	[value]"33"
+	[tag]"base evasion max"	[value]"33"
+	[tag]"UNDEFINED"	[value]"Level 33, 30 Str, 30 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Plate Gauntlets"
+	[tag]"name RU"	[value]"Латные перчатки"
+
+	[tag]"icon path"	[value]"PlateGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zealot Gauntlets"
+	[tag]"name RU"	[value]"Перчатки подвижника"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Steelmail Gauntlets"
+	[tag]"name RU"	[value]"Стальные кольчужные перчатки"
+
+	[tag]"icon path"	[value]"RingmailGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Commander Gauntlets"
+	[tag]"name RU"	[value]"Перчатки командира"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base evasion min"	[value]"67"
+	[tag]"base evasion max"	[value]"67"
+	[tag]"UNDEFINED"	[value]"Level 70, 48 Str, 48 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cultist Gauntlets"
+	[tag]"name RU"	[value]"Cultist Gauntlets"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"UNDEFINED"	[value]"Level 75, 52 Str, 52 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Blacksteel Gauntlets"
+	[tag]"name RU"	[value]"Перчатки из чёрной стали"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+
+	[tag]"base armour min"	[value]"87"
+	[tag]"base armour max"	[value]"87"
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"UNDEFINED"	[value]"Level 80, 55 Str, 55 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -3143,6 +2192,1606 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR/EVASION)
+###############################################################
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Firm Bracers"
+	[tag]"name RU"	[value]"Улучшенные плотные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Hunting Bracers"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hunting Bracers"
+	[tag]"name RU"	[value]"Hunting Bracers"
+
+	[tag]"icon path"	[value]"FirmBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"UNDEFINED"	[value]"Level 45, 73 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Bound Bracers"
+	[tag]"name RU"	[value]"Улучшенные обмотанные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Swift Bracers"
+
+	[tag]"icon path"	[value]"BoundBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"89"
+	[tag]"base evasion max"	[value]"89"
+	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Swift Bracers"
+	[tag]"name RU"	[value]"Swift Bracers"
+
+	[tag]"icon path"	[value]"BoundBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base evasion min"	[value]"89"
+	[tag]"base evasion max"	[value]"89"
+	[tag]"UNDEFINED"	[value]"Level 51, 82 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Sectioned Bracers"
+	[tag]"name RU"	[value]"Улучшенные сегментные наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Refined Bracers"
+
+	[tag]"icon path"	[value]"SectionedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"95"
+	[tag]"base evasion max"	[value]"95"
+	[tag]"UNDEFINED"	[value]"Level 55, 88 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Spined Bracers"
+	[tag]"name RU"	[value]"Улучшенные шипастые наручи"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Spiked Bracers"
+
+	[tag]"icon path"	[value]"SpinedBracers"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	[tag]"UNDEFINED"	[value]"Level 59, 95 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Ringmail Gauntlets"
+	[tag]"name RU"	[value]"Улучшенные кольчужные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ironmail Gauntlets"
+
+	[tag]"icon path"	[value]"RingmailGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ironmail Gauntlets"
+	[tag]"name RU"	[value]"Ironmail Gauntlets"
+
+	[tag]"icon path"	[value]"RingmailGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+	
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Layered Gauntlets"
+	[tag]"name RU"	[value]"Улучшенные пластинчатые перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Captain Gauntlets"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+	
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Captain Gauntlets"
+	[tag]"name RU"	[value]"Captain Gauntlets"
+
+	[tag]"icon path"	[value]"LayeredGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Doubled Gauntlets"
+	[tag]"name RU"	[value]"Улучшенные двухслойные перчатки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Zealot Gauntlets"
+
+	[tag]"icon path"	[value]"DoubledGauntlets"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+###############################################################
+#________________ARMOUR BASES(ARMOUR/ES)
+###############################################################
+
+
+
+
+
+
+
+
+
+#T1
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Rope Cuffs"
+	[tag]"name RU"	[value]"Верёвочные манжеты"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"12"
+	[tag]"base armour max"	[value]"12"
+	[tag]"base energy shield min"	[value]"6"
+	[tag]"base energy shield max"	[value]"6"
+	[tag]"UNDEFINED"	[value]"Level 5, 6 Str, 6 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Aged Cuffs"
+	[tag]"name RU"	[value]"Старинные манжеты"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"22"
+	[tag]"base armour max"	[value]"22"
+	[tag]"base energy shield min"	[value]"9"
+	[tag]"base energy shield max"	[value]"9"
+	[tag]"UNDEFINED"	[value]"Level 16, 15 Str, 15 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Goldcast Cuffs"
+	[tag]"name RU"	[value]"Золотые манжеты"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"37"
+	[tag]"base armour max"	[value]"37"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"14"
+	[tag]"UNDEFINED"	[value]"Level 33, 30 Str, 30 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Verisium Cuffs"
+	[tag]"name RU"	[value]"Манжеты из веризия"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"48"
+	[tag]"base evasion max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ornate Cuffs"
+	[tag]"name RU"	[value]"Изысканные манжеты"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bound Cuffs"
+	[tag]"name RU"	[value]"Обвязанные манжеты"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Cuffs"
+	[tag]"name RU"	[value]"Древние манжеты"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"74"
+	[tag]"base armour max"	[value]"74"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gleaming Cuffs"
+	[tag]"name RU"	[value]"Сверкающие манжеты"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 52 Str, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Adherent Cuffs"
+	[tag]"name RU"	[value]"Манжеты приверженца"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"87"
+	[tag]"base armour max"	[value]"87"
+	[tag]"base energy shield min"	[value]"30"
+	[tag]"base energy shield max"	[value]"30"
+	[tag]"UNDEFINED"	[value]"Level 80, 55 Str, 55 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR/ES)
+###############################################################
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Diviner Cuffs"
+	[tag]"name RU"	[value]"Манжеты предсказателя"
+
+	[tag]"icon path"	[value]"DivinerCuffs"
+	[tag]"base class"	[value]"Gloves"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Braided Cuffs"
+
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Rope Cuffs"
+	[tag]"name RU"	[value]"Улучшенные верёвочные манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Braided Cuffs"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Braided Cuffs"
+	[tag]"name RU"	[value]"Braided Cuffs"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base armour min"	[value]"48"
+	[tag]"base armour max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Str, 40 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Aged Cuffs"
+	[tag]"name RU"	[value]"Улучшенные старинные манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Heirloom Cuffs"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Heirloom Cuffs"
+	[tag]"name RU"	[value]"Heirloom Cuffs"
+
+	[tag]"icon path"	[value]"AgedCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base armour min"	[value]"54"
+	[tag]"base armour max"	[value]"54"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Str, 46 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Goldcast Cuffs"
+	[tag]"name RU"	[value]"Улучшенные золотые манжеты"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ornate Cuffs"
+
+	[tag]"icon path"	[value]"GoldcastCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"61"
+	[tag]"base armour max"	[value]"61"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Str, 52 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________EVASION/ES BASES
+###############################################################
+
+#T1
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gauze Wraps"
+	[tag]"name RU"	[value]"Обмотки из муслина"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"8"
+	[tag]"base evasion max"	[value]"8"
+	[tag]"base energy shield min"	[value]"6"
+	[tag]"base energy shield max"	[value]"6"
+	[tag]"UNDEFINED"	[value]"Level 4, 6 Dex, 6 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Linen Wraps"
+	[tag]"name RU"	[value]"Льняные обмотки"
+
+	[tag]"icon path"	[value]"LinenWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"18"
+	[tag]"base evasion max"	[value]"18"
+	[tag]"base energy shield min"	[value]"9"
+	[tag]"base energy shield max"	[value]"9"
+	[tag]"UNDEFINED"	[value]"Level 16, 13 Dex, 13 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiral Wraps"
+	[tag]"name RU"	[value]"Витые обмотки"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"33"
+	[tag]"base evasion max"	[value]"33"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"14"
+	[tag]"UNDEFINED"	[value]"Level 33, 24 Dex, 24 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Buckled Wraps"
+	[tag]"name RU"	[value]"Обмотки с пряжками"
+
+	[tag]"icon path"	[value]"BuckledWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 32 Dex, 32 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Adorned Wraps"
+	[tag]"name RU"	[value]"Украшенные обмотки"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 41 Dex, 41 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"War Wraps"
+	[tag]"name RU"	[value]"Военные обмотки"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 44 Dex, 44 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Elegant Wraps"
+	[tag]"name RU"	[value]"Утончённые обмотки"
+
+	[tag]"icon path"	[value]"LinenWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	
+	[tag]"base evasion min"	[value]"67"
+	[tag]"base evasion max"	[value]"67"
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	[tag]"UNDEFINED"	[value]"Level 70, 62 Dex, 62 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vaal Wraps"
+	[tag]"name RU"	[value]"Обмотки ваал"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	[tag]"base energy shield min"	[value]"28"
+	[tag]"base energy shield max"	[value]"28"
+	[tag]"UNDEFINED"	[value]"Level 75, 52 Dex, 52 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Secured Wraps"
+	[tag]"name RU"	[value]"Крепкие обмотки"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	[tag]"base energy shield min"	[value]"30"
+	[tag]"base energy shield max"	[value]"30"
+	[tag]"UNDEFINED"	[value]"Level 80, 55 Dex, 55 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(EVASION/ES)
+###############################################################
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Gauze Wraps"
+	[tag]"name RU"	[value]"Улучшенные обмотки из муслина"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Bandage Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Righteous Cuffs"
+	[tag]"name RU"	[value]"Манжеты праведника"
+
+	[tag]"icon path"	[value]"RighteousCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"55"
+	[tag]"base armour max"	[value]"55"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 52, 46 Str, 46 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Signet Cuffs"
+	[tag]"name RU"	[value]"Манжеты с печаткой"
+
+	[tag]"icon path"	[value]"RopeCuffs"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"67"
+	[tag]"base armour max"	[value]"67"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Gauze Wraps"
+	[tag]"name RU"	[value]"Обмотки из муслина"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"8"
+	[tag]"base evasion max"	[value]"8"
+	[tag]"base energy shield min"	[value]"6"
+	[tag]"base energy shield max"	[value]"6"
+	[tag]"UNDEFINED"	[value]"Level 4, 6 Dex, 6 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Linen Wraps"
+	[tag]"name RU"	[value]"Льняные обмотки"
+
+	[tag]"icon path"	[value]"LinenWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"18"
+	[tag]"base evasion max"	[value]"18"
+	[tag]"base energy shield min"	[value]"9"
+	[tag]"base energy shield max"	[value]"9"
+	[tag]"UNDEFINED"	[value]"Level 16, 15 Dex, 15 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Spiral Wraps"
+	[tag]"name RU"	[value]"Витые обмотки"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"33"
+	[tag]"base evasion max"	[value]"33"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"14"
+	[tag]"UNDEFINED"	[value]"Level 33, 30 Dex, 30 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bandage Wraps"
+	[tag]"name RU"	[value]"Bandage Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"44"
+	[tag]"base evasion max"	[value]"44"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 45, 40 Dex, 40 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Linen Wraps"
+	[tag]"name RU"	[value]"Улучшенные льняные обмотки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cambric Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Dex, 46 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cambric Wraps"
+	[tag]"name RU"	[value]"Cambric Wraps"
+
+	[tag]"icon path"	[value]"GauzeWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base evasion min"	[value]"49"
+	[tag]"base evasion max"	[value]"49"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 51, 46 Dex, 46 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Advanced Spiral Wraps"
+	[tag]"name RU"	[value]"Улучшенные витые обмотки"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Adorned Wraps"
+
+	[tag]"icon path"	[value]"SpiralWraps"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base evasion min"	[value]"56"
+	[tag]"base evasion max"	[value]"56"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	[tag]"UNDEFINED"	[value]"Level 59, 52 Dex, 52 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Advanced"
+
+	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3156,41 +3805,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"RingmailGauntlets"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"67"
 	[tag]"base armour max"	[value]"67"
 	[tag]"base evasion min"	[value]"61"
 	[tag]"base evasion max"	[value]"61"
 	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Steelmail Gauntlets"
-	[tag]"name RU"	[value]"Steelmail Gauntlets"
-
-	[tag]"icon path"	[value]"RingmailGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"67"
-	[tag]"base armour max"	[value]"67"
-	[tag]"base evasion min"	[value]"61"
-	[tag]"base evasion max"	[value]"61"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3206,8 +3829,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3221,39 +3843,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"LayeredGauntlets"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"74"
 	[tag]"base armour max"	[value]"74"
 	[tag]"base evasion min"	[value]"67"
 	[tag]"base evasion max"	[value]"67"
 	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Commander Gauntlets"
-	[tag]"name RU"	[value]"Commander Gauntlets"
-
-	[tag]"icon path"	[value]"LayeredGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"74"
-	[tag]"base armour max"	[value]"74"
-	[tag]"base evasion min"	[value]"67"
-	[tag]"base evasion max"	[value]"67"
-	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3269,6 +3867,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3282,37 +3881,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"DoubledGauntlets"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"80"
 	[tag]"base armour max"	[value]"80"
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"
 	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Dex"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Cultist Gauntlets"
-	[tag]"name RU"	[value]"Cultist Gauntlets"
-
-	[tag]"icon path"	[value]"DoubledGauntlets"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"80"
-	[tag]"base armour max"	[value]"80"
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Dex"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3327,7 +3904,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3341,41 +3918,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"RopeCuffs"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"67"
 	[tag]"base armour max"	[value]"67"
 	[tag]"base energy shield min"	[value]"23"
 	[tag]"base energy shield max"	[value]"23"
 	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Bound Cuffs"
-	[tag]"name RU"	[value]"Bound Cuffs"
-
-	[tag]"icon path"	[value]"RopeCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"67"
-	[tag]"base armour max"	[value]"67"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Str, 57 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3392,6 +3943,11 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3405,38 +3961,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AgedCuffs"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"74"
 	[tag]"base armour max"	[value]"74"
 	[tag]"base energy shield min"	[value]"25"
 	[tag]"base energy shield max"	[value]"25"
 	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Ancient Cuffs"
-	[tag]"name RU"	[value]"Ancient Cuffs"
-
-	[tag]"icon path"	[value]"AgedCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"74"
-	[tag]"base armour max"	[value]"74"
-	[tag]"base energy shield min"	[value]"25"
-	[tag]"base energy shield max"	[value]"25"
-	[tag]"UNDEFINED"	[value]"Level 70, 62 Str, 62 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3453,6 +3986,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3466,42 +4000,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"GoldcastCuffs"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base armour min"	[value]"80"
 	[tag]"base armour max"	[value]"80"
 	[tag]"base energy shield min"	[value]"28"
 	[tag]"base energy shield max"	[value]"28"
 	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Gleaming Cuffs"
-	[tag]"name RU"	[value]"Gleaming Cuffs"
-
-	[tag]"icon path"	[value]"GoldcastCuffs"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base armour min"	[value]"80"
-	[tag]"base armour max"	[value]"80"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Str, 67 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3522,6 +4029,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3535,39 +4046,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"61"
 	[tag]"base evasion max"	[value]"61"
 	[tag]"base energy shield min"	[value]"23"
 	[tag]"base energy shield max"	[value]"23"
 	[tag]"UNDEFINED"	[value]"Level 65, 57 Dex, 57 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"War Wraps"
-	[tag]"name RU"	[value]"War Wraps"
-
-	[tag]"icon path"	[value]"GauzeWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"61"
-	[tag]"base evasion max"	[value]"61"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	[tag]"UNDEFINED"	[value]"Level 65, 57 Dex, 57 Int"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3585,7 +4072,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3599,43 +4086,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"LinenWraps"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"67"
 	[tag]"base evasion max"	[value]"67"
 	[tag]"base energy shield min"	[value]"25"
 	[tag]"base energy shield max"	[value]"25"
 	[tag]"UNDEFINED"	[value]"Level 70, 62 Dex, 62 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Elegant Wraps"
-	[tag]"name RU"	[value]"Elegant Wraps"
-
-	[tag]"icon path"	[value]"LinenWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	[tag]"base evasion min"	[value]"67"
-	[tag]"base evasion max"	[value]"67"
-	[tag]"base energy shield min"	[value]"25"
-	[tag]"base energy shield max"	[value]"25"
-	[tag]"UNDEFINED"	[value]"Level 70, 62 Dex, 62 Int"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3656,6 +4115,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -3669,100 +4130,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SpiralWraps"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
+
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"
 	[tag]"base energy shield min"	[value]"28"
 	[tag]"base energy shield max"	[value]"28"
 	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Vaal Wraps"
-	[tag]"name RU"	[value]"Vaal Wraps"
-
-	[tag]"icon path"	[value]"SpiralWraps"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Verisium Cuffs"
-	[tag]"name RU"	[value]"Verisium Cuffs"
-
-	[tag]"icon path"	[value]"UndefinedGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
-
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Massive Mitts"
-	[tag]"name RU"	[value]"Тяжёлые рукавицы"
-
-	[tag]"icon path"	[value]"UndefinedGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -3775,32 +4151,25 @@ ADD_NEW_DATA_ENTITY
 
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Polished Bracers"
-	[tag]"name RU"	[value]"Полированные наручи"
 
-	[tag]"icon path"	[value]"UndefinedGloves"
-	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
 
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
 
-	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION(EVASION/ES)
+###############################################################
 
 
 
@@ -3811,58 +4180,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Sirenscale Gloves"
-	[tag]"name RU"	[value]"Перчатки из чешуи сирены"
+	[tag]"name EN"	[value]"Furtive Wraps"
+	[tag]"name RU"	[value]"Furtive Wraps"
 
-	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"base evasion min"	[value]"50"
+	[tag]"base evasion max"	[value]"50"
+	[tag]"base energy shield min"	[value]"19"
+	[tag]"base energy shield max"	[value]"19"
+	[tag]"UNDEFINED"	[value]"Level 52, 46 Dex, 46 Int"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
 
 	[tag]"worth"	[value]"Trash"
-
-
-
-
-
-
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Blacksteel Gauntlets"
-	[tag]"name RU"	[value]"Стальные перчатки"
+	[tag]"name EN"	[value]"Utility Wraps"
+	[tag]"name RU"	[value]"Практичные обмотки"
 
-	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"icon path"	[value]"GauzeWraps"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"base evasion min"	[value]"61"
+	[tag]"base evasion max"	[value]"61"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	[tag]"UNDEFINED"	[value]"Level 65, 57 Dex, 57 Int"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
 
 	[tag]"worth"	[value]"Trash"
 
@@ -3872,32 +4237,12 @@ ADD_NEW_DATA_ENTITY
 
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Adherent Cuffs"
-	[tag]"name RU"	[value]"Обмотки адепта"
 
-	[tag]"icon path"	[value]"UndefinedGloves"
-	[tag]"base class"	[value]"Gloves"
+###############################################################
+#________________ARMOUR BASES(ARMOUR/EVASION/ES)
+###############################################################
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-
-	[tag]"worth"	[value]"Trash"
 
 
 
@@ -3911,27 +4256,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Secured Wraps"
-	[tag]"name RU"	[value]"Защитные манжеты"
+	[tag]"name EN"	[value]"Grand Manchettes"
+	[tag]"name RU"	[value]"Grand Manchettes"
 
-	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"icon path"	[value]"StockyMitts"
 	[tag]"base class"	[value]"Gloves"
 
-	[tag]"item tag"	[value]"World drop"
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
-	[tag]"base energy shield min"	[value]"28"
-	[tag]"base energy shield max"	[value]"28"
-	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"base armour min"	[value]"44"
+	[tag]"base armour max"	[value]"44"
+	[tag]"base evasion min"	[value]"40"
+	[tag]"base evasion max"	[value]"40"
+	[tag]"base energy shield min"	[value]"15"
+	[tag]"base energy shield max"	[value]"15"
+	[tag]"UNDEFINED"	[value]"Level 65, 40 Str, 40 Dex, 40 Int"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
-
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion/ES"
 
 	[tag]"worth"	[value]"Trash"
+
+
+
+
+
+
+
+
+
+
 
 

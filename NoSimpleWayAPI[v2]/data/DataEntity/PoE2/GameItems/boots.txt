@@ -1,3 +1,9 @@
+
+###############################################################
+#________________ARMOUR BASES
+###############################################################
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -16,12 +22,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour min"	[value]"22"
 	[tag]"base armour max"	[value]"22"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
 		
 	[tag]"worth"		[value]"Trash"
 	
-	ADD_NEW_DATA_ENTITY
+	
+#T2	
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -39,12 +48,309 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base armour min"	[value]"47"
 	[tag]"base armour max"	[value]"47"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
 		
 	[tag]"worth"		[value]"Trash"
 	
-	ADD_NEW_DATA_ENTITY
+	
+	
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bronze Greaves"
+	[tag]"name RU"		[value]"Бронзовые поножи"
+
+	[tag]"icon path"	[value]"BronzeGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"60"
+	[tag]"base armour max"	[value]"60"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Trimmed Greaves"
+	[tag]"name RU"		[value]"Подогнанные поножи"
+
+	[tag]"icon path"	[value]"TrimmedGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"87"
+	[tag]"base armour max"	[value]"87"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stone Greaves"
+	[tag]"name RU"		[value]"Каменные поножи"
+
+	[tag]"icon path"	[value]"StoneGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"102"
+	[tag]"base armour max"	[value]"102"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Reefsteel Greaves"
+	[tag]"name RU"		[value]"Стальные рифлёные поножи"
+
+	[tag]"icon path"	[value]"ReefsteelGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"132"
+	[tag]"base armour max"	[value]"132"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Greaves"
+	[tag]"name RU"		[value]"Элегантные поножи"
+
+	[tag]"icon path"	[value]"TrimmedGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"155"
+	[tag]"base armour max"	[value]"155"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+	
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Greaves"
+	[tag]"name RU"		[value]"Резные поножи"
+
+
+	[tag]"icon path"	[value]"StoneGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"167"
+	[tag]"base armour max"	[value]"167"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bulwark Greaves"
+	[tag]"name RU"		[value]"Поножи бастиона"
+
+
+	[tag]"icon path"	[value]"IronGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"182"
+	[tag]"base armour max"	[value]"182"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Greaves"
+	[tag]"name RU"		[value]"Украшенные поножи"
+
+	[tag]"icon path"	[value]"TrimmedGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"200"
+	[tag]"base armour max"	[value]"200"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vaal Greaves"
+	[tag]"name RU"		[value]"Поножи ваал"
+
+
+	[tag]"icon path"	[value]"StoneGreaves"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"219"
+	[tag]"base armour max"	[value]"219"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tasalian Greaves"
+	[tag]"name RU"		[value]"Поножи Тасалио"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"237"
+	[tag]"base armour max"	[value]"237"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Armour"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+
+	
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR)
+###############################################################
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -59,12 +365,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
 	
 	[tag]"base armour min"	[value]"47"
 	[tag]"base armour max"	[value]"47"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -75,7 +382,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -96,38 +404,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"132"
 	[tag]"base armour max"	[value]"132"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bulwark Greaves"
-	[tag]"name RU"		[value]"Veteran Greaves"
-
-
-	[tag]"icon path"	[value]"IronGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"132"
-	[tag]"base armour max"	[value]"132"calc
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -145,7 +425,16 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -166,6 +455,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"132"
 	[tag]"base armour max"	[value]"132"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -178,7 +471,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -196,6 +490,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"132"
 	[tag]"base armour max"	[value]"132"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -216,7 +514,8 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -234,6 +533,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"182"
 	[tag]"base armour max"	[value]"182"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -251,36 +554,11 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bronze Greaves"
-	[tag]"name RU"		[value]"Бронзовые поножи"
-
-	[tag]"icon path"	[value]"BronzeGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"60"
-	[tag]"base armour max"	[value]"60"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
 
 
 
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -300,12 +578,17 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"147"
 	[tag]"base armour max"	[value]"147"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
 	[tag]"worth"		[value]"Trash"
 	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -322,12 +605,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	
 	[tag]"base armour min"	[value]"147"
 	[tag]"base armour max"	[value]"147"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -341,38 +626,13 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Trimmed Greaves"
-	[tag]"name RU"		[value]"Подогнанные поножи"
-
-	[tag]"icon path"	[value]"TrimmedGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"87"
-	[tag]"base armour max"	[value]"87"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
 
 
 
 
 
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -392,30 +652,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"157"
 	[tag]"base armour max"	[value]"157"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Elegant Greaves"
-	[tag]"name RU"		[value]"Elegant Greaves"
-
-	[tag]"icon path"	[value]"TrimmedGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"157"
-	[tag]"base armour max"	[value]"157"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -431,7 +671,8 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -451,6 +692,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"200"
 	[tag]"base armour max"	[value]"200"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -460,28 +705,6 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Ornate Greaves"
-	[tag]"name RU"		[value]"Ornate Greaves"
-
-	[tag]"icon path"	[value]"TrimmedGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"200"
-	[tag]"base armour max"	[value]"200"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -492,35 +715,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Stone Greaves"
-	[tag]"name RU"		[value]"Каменные поножи"
-
-	[tag]"icon path"	[value]"StoneGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"102"
-	[tag]"base armour max"	[value]"102"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -540,32 +736,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"167"
 	[tag]"base armour max"	[value]"167"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Carved Greaves"
-	[tag]"name RU"		[value]"Carved Greaves"
-
-
-	[tag]"icon path"	[value]"StoneGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"167"
-	[tag]"base armour max"	[value]"167"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -587,8 +761,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
 	
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -608,35 +784,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"219"
 	[tag]"base armour max"	[value]"219"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Vaal Greaves"
-	[tag]"name RU"		[value]"Vaal Greaves"
-
-
-	[tag]"icon path"	[value]"StoneGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"219"
-	[tag]"base armour max"	[value]"219"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -651,36 +802,16 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
+
+
 	
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Reefsteel Greaves"
-	[tag]"name RU"		[value]"Стальные рифлёные поножи"
-
-	[tag]"icon path"	[value]"ReefsteelGreaves"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"132"
-	[tag]"base armour max"	[value]"132"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -697,13 +828,18 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"150"
 	[tag]"base armour max"	[value]"150"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -720,6 +856,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base armour min"	[value]"182"
 	[tag]"base armour max"	[value]"182"
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -734,6 +874,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________EVASION BASES
+###############################################################
 
 
 
@@ -741,14 +884,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#T1
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -766,13 +903,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"15"
 	[tag]"base evasion max"	[value]"15"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
 		
 	[tag]"worth"		[value]"Trash"
 
-
-	ADD_NEW_DATA_ENTITY
+#T2
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -790,8 +928,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"38"
 	[tag]"base evasion max"	[value]"38"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -799,12 +938,320 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Embossed Boots"
+	[tag]"name RU"		[value]"Тиснёные сапоги"
+
+	[tag]"icon path"	[value]"EmbossedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"50"
+	[tag]"base evasion max"	[value]"50"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Steeltoe Boots"
+	[tag]"name RU"		[value]"Сапоги со стальным носком"
+
+	[tag]"icon path"	[value]"SteeltoeBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"79"
+	[tag]"base evasion max"	[value]"79"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lizardscale Boots"
+	[tag]"name RU"		[value]"Сапоги из кожи ящера"
+
+	[tag]"icon path"	[value]"LizardscaleBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"90"
+	[tag]"base evasion max"	[value]"90"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flared Boots"
+	[tag]"name RU"		[value]"Ботфорты"
+
+	[tag]"icon path"	[value]"FlaredBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Studded Boots"
+	[tag]"name RU"		[value]"Клёпаные сапоги"
+
+	[tag]"icon path"	[value]"SteeltoeBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"140"
+	[tag]"base evasion max"	[value]"140"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Serpentscale Boots"
+	[tag]"name RU"		[value]"Сапоги из змеиной кожи"
+
+	[tag]"icon path"	[value]"LizardscaleBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"90"
+	[tag]"base evasion max"	[value]"90"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cinched Boots"
+	[tag]"name RU"		[value]"Расшитые сапоги"
+
+	[tag]"icon path"	[value]"LacedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"166"
+	[tag]"base evasion max"	[value]"166"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cavalry Boots"
+	[tag]"name RU"		[value]"Кавалерийские сапоги"
+
+
+	[tag]"icon path"	[value]"SteeltoeBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"183"
+	[tag]"base evasion max"	[value]"183"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dragonscale Boots"
+	[tag]"name RU"		[value]"Сапоги из кожи дракона"
+
+	[tag]"icon path"	[value]"LizardscaleBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"200"
+	[tag]"base evasion max"	[value]"200"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Drakeskin Boots"
+	[tag]"name RU"		[value]"Сапоги из кожи рептилии"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"216"
+	[tag]"base evasion max"	[value]"216"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"	[value]"Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+	
 
 
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+###############################################################
+#________________DISABLED SECTION(EVASION)
+###############################################################
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Laced Boots"
+	[tag]"name RU"		[value]"Сапоги с тесьмой эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Cinched Boots"
+
+	[tag]"icon path"	[value]"LacedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"166"
+	[tag]"base evasion max"	[value]"166"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Expert"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -825,6 +1272,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"119"
 	[tag]"base evasion max"	[value]"119"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -835,7 +1285,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -870,122 +1321,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Expert Laced Boots"
-	[tag]"name RU"		[value]"Сапоги с тесьмой эксперта"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Cinched Boots"
-
-	[tag]"icon path"	[value]"LacedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"166"
-	[tag]"base evasion max"	[value]"166"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cinched Boots"
-	[tag]"name RU"		[value]"Cinched Boots"
-
-	[tag]"icon path"	[value]"LacedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"166"
-	[tag]"base evasion max"	[value]"166"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Embossed Boots"
-	[tag]"name RU"		[value]"Тиснёные сапоги"
-
-	[tag]"icon path"	[value]"EmbossedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"50"
-	[tag]"base evasion max"	[value]"50"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1007,6 +1344,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"133"
 	[tag]"base evasion max"	[value]"133"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -1016,7 +1356,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1050,57 +1391,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Steeltoe Boots"
-	[tag]"name RU"		[value]"Сапоги со стальным носком"
-
-	[tag]"icon path"	[value]"SteeltoeBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"79"
-	[tag]"base evasion max"	[value]"79"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1122,35 +1414,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"143"
 	[tag]"base evasion max"	[value]"143"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Studded Boots"
-	[tag]"name RU"		[value]"Studded Boots"
-
-	[tag]"icon path"	[value]"SteeltoeBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"143"
-	[tag]"base evasion max"	[value]"143"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -1166,18 +1431,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1198,32 +1453,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"183"
 	[tag]"base evasion max"	[value]"183"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cavalry Boots"
-	[tag]"name RU"		[value]"Cavalry Boots"
-
-
-	[tag]"icon path"	[value]"SteeltoeBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"183"
-	[tag]"base evasion max"	[value]"183"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -1246,28 +1477,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Lizardscale Boots"
-	[tag]"name RU"		[value]"Сапоги из кожи ящера"
-
-	[tag]"icon path"	[value]"LizardscaleBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"90"
-	[tag]"base evasion max"	[value]"90"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -1275,8 +1484,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1297,33 +1506,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"90"
 	[tag]"base evasion max"	[value]"90"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Serpentscale Boots"
-	[tag]"name RU"		[value]"Serpentscale Boots"
-
-	[tag]"icon path"	[value]"LizardscaleBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"90"
-	[tag]"base evasion max"	[value]"90"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
@@ -1338,7 +1522,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1359,32 +1546,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"200"
 	[tag]"base evasion max"	[value]"200"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Dragonscale Boots"
-	[tag]"name RU"		[value]"Dragonscale Boots"
-
-	[tag]"icon path"	[value]"LizardscaleBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"200"
-	[tag]"base evasion max"	[value]"200"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -1395,34 +1558,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Flared Boots"
-	[tag]"name RU"		[value]"Ботфорты"
-
-	[tag]"icon path"	[value]"FlaredBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"119"
-	[tag]"base evasion max"	[value]"119"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1440,13 +1577,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"135"
 	[tag]"base evasion max"	[value]"135"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1464,6 +1605,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"166"
 	[tag]"base evasion max"	[value]"166"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
@@ -1483,6 +1627,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________ES BASES
+###############################################################
 
 
 
@@ -1493,12 +1640,17 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+
+#T1
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Straw Sandals"
-	[tag]"name RU"		[value]"Клёпаные сандалии"
+	[tag]"name RU"		[value]"Соломенные сандалии"
 
 	[tag]"icon path"	[value]"StrawSandals"
 	[tag]"base class"	[value]"Boots"
@@ -1511,13 +1663,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"14"
 	[tag]"base energy shield max"	[value]"14"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
 		
 	[tag]"worth"		[value]"Trash"
 
-
-	ADD_NEW_DATA_ENTITY
+#T2
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1535,8 +1688,143 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"22"
 	[tag]"base energy shield max"	[value]"22"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lattice Sandals"
+	[tag]"name RU"		[value]"Сетчатые сандалии"
+
+	[tag]"icon path"	[value]"LatticeSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"25"
+	[tag]"base energy shield max"	[value]"25"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Silk Slippers"
+	[tag]"name RU"		[value]"Шёлковые тапочки"
+
+	[tag]"icon path"	[value]"SilkSlippers"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"34"
+	[tag]"base energy shield max"	[value]"34"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Feathered Sandals"
+	[tag]"name RU"		[value]"Пернатые сандалии"
+
+	[tag]"icon path"	[value]"FeatheredSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flax Sandals"
+	[tag]"name RU"		[value]"Льняные сандалии"
+
+	[tag]"icon path"	[value]"FlaxSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"48"
+	[tag]"base energy shield max"	[value]"48"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Slippers"
+	[tag]"name RU"		[value]"Elegant Slippers"
+
+	[tag]"icon path"	[value]"SilkSlippers"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"54"
+	[tag]"base energy shield max"	[value]"54"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1544,8 +1832,165 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
 
-	ADD_NEW_DATA_ENTITY
+	[tag]"name EN"		[value]"Dunerunner Sandals"
+	[tag]"name RU"		[value]"Dunerunner Sandals"
+
+	[tag]"icon path"	[value]"FeatheredSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"58"
+	[tag]"base energy shield max"	[value]"58"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bound Sandals"
+	[tag]"name RU"		[value]"Bound Sandals"
+
+	[tag]"icon path"	[value]"WrappedSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"63"
+	[tag]"base energy shield max"	[value]"63"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Silk Slippers"
+	[tag]"name RU"		[value]"Шёлковые тапочки эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Luxurious Slippers"
+
+	[tag]"icon path"	[value]"SilkSlippers"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"69"
+	[tag]"base energy shield max"	[value]"69"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sandsworn Sandals"
+	[tag]"name RU"		[value]"Sandsworn Sandals"
+
+	[tag]"icon path"	[value]"FeatheredSandals"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base energy shield min"	[value]"75"
+	[tag]"base energy shield max"	[value]"75"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sekhema Sandals"
+	[tag]"name RU"		[value]"Сандали Сехемы"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base energy shield min"	[value]"82"
+	[tag]"base energy shield max"	[value]"82"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"ES"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(ES)
+###############################################################
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1566,6 +2011,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"48"
 	[tag]"base energy shield max"	[value]"48"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -1574,7 +2022,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1610,7 +2059,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1631,34 +2081,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"63"
 	[tag]"base energy shield max"	[value]"63"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bound Sandals"
-	[tag]"name RU"		[value]"Bound Sandals"
-
-	[tag]"icon path"	[value]"WrappedSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"63"
-	[tag]"base energy shield max"	[value]"63"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -1672,28 +2096,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Lattice Sandals"
-	[tag]"name RU"		[value]"Сетчатые сандалии"
-
-	[tag]"icon path"	[value]"LatticeSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"25"
-	[tag]"base energy shield max"	[value]"25"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -1702,7 +2104,11 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1723,6 +2129,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"52"
 	[tag]"base energy shield max"	[value]"52"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -1732,7 +2141,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1767,36 +2177,14 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Silk Slippers"
-	[tag]"name RU"		[value]"Шёлковые тапочки"
-
-	[tag]"icon path"	[value]"SilkSlippers"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"34"
-	[tag]"base energy shield max"	[value]"34"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
 
 
 
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1817,30 +2205,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"55"
 	[tag]"base energy shield max"	[value]"55"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Elegant Slippers"
-	[tag]"name RU"		[value]"Elegant Slippers"
-
-	[tag]"icon path"	[value]"SilkSlippers"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"55"
-	[tag]"base energy shield max"	[value]"55"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -1855,31 +2221,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Expert Silk Slippers"
-	[tag]"name RU"		[value]"Шёлковые тапочки эксперта"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Luxurious Slippers"
-
-	[tag]"icon path"	[value]"SilkSlippers"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"69"
-	[tag]"base energy shield max"	[value]"69"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -1887,9 +2228,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1907,6 +2247,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"69"
 	[tag]"base energy shield max"	[value]"69"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
 		
@@ -1921,28 +2264,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Feathered Sandals"
-	[tag]"name RU"		[value]"Пернатые сандалии"
-
-	[tag]"icon path"	[value]"FeatheredSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"38"
-	[tag]"base energy shield max"	[value]"38"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -1950,7 +2271,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -1971,30 +2293,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"58"
 	[tag]"base energy shield max"	[value]"58"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Dunerunner Sandals"
-	[tag]"name RU"		[value]"Dunerunner Sandals"
-
-	[tag]"icon path"	[value]"FeatheredSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"58"
-	[tag]"base energy shield max"	[value]"58"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -2010,7 +2310,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2031,34 +2334,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"75"
 	[tag]"base energy shield max"	[value]"75"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Sandsworn Sandals"
-	[tag]"name RU"		[value]"Sandsworn Sandals"
-
-	[tag]"icon path"	[value]"FeatheredSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base energy shield min"	[value]"75"
-	[tag]"base energy shield max"	[value]"75"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -2074,32 +2351,12 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Flax Sandals"
-	[tag]"name RU"		[value]"Льняные сандалии"
-
-	[tag]"icon path"	[value]"FlaxSandals"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base energy shield min"	[value]"48"
-	[tag]"base energy shield max"	[value]"48"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2117,13 +2374,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"53"
 	[tag]"base energy shield max"	[value]"53"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2141,6 +2402,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"63"
 	[tag]"base energy shield max"	[value]"63"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
@@ -2162,11 +2426,16 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________ARMOUR/EVASION BASES
+###############################################################
 
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+#T1
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2186,8 +2455,156 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"15"
 	[tag]"base evasion max"	[value]"15"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Braced Sabatons"
+	[tag]"name RU"		[value]"Сабатоны с ремнями"
+
+	[tag]"icon path"	[value]"BracedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"33"
+	[tag]"base armour max"	[value]"33"
+	[tag]"base evasion min"	[value]"28"
+	[tag]"base evasion max"	[value]"28"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stacked Sabatons"
+	[tag]"name RU"		[value]"Пластинчатые сабатоны"
+
+	[tag]"icon path"	[value]"StackedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"56"
+	[tag]"base armour max"	[value]"56"
+	[tag]"base evasion min"	[value]"50"
+	[tag]"base evasion max"	[value]"50"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Covered Sabatons"
+	[tag]"name RU"		[value]"Сплошные сабатоны"
+
+	[tag]"icon path"	[value]"CoveredSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"73"
+	[tag]"base armour max"	[value]"73"
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"65"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bastion Sabatons"
+	[tag]"name RU"		[value]"Сабатоны бастиона"
+
+	[tag]"icon path"	[value]"StackedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base evasion min"	[value]"84"
+	[tag]"base evasion max"	[value]"84"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Veteran Sabatons"
+	[tag]"name RU"		[value]"Сабатоны ветерана"
+
+	[tag]"icon path"	[value]"MailSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"110"
+	[tag]"base armour max"	[value]"110"
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2195,7 +2612,114 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Noble Sabatons"
+	[tag]"name RU"		[value]"Сабатоны дворянина"
+
+	[tag]"icon path"	[value]"BracedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"81"
+	[tag]"base armour max"	[value]"81"
+	[tag]"base evasion min"	[value]"73"
+	[tag]"base evasion max"	[value]"73"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fortress Sabatons"
+	[tag]"name RU"		[value]"Сабатоны оплота"
+
+	[tag]"icon path"	[value]"StackedSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"120"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base evasion min"	[value]"110"
+	[tag]"base evasion max"	[value]"110"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+	
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Blacksteel Sabatons"
+	[tag]"name RU"		[value]"Сабатоны из чёрной стали"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"130"
+	[tag]"base armour max"	[value]"130"
+	[tag]"base evasion min"	[value]"119"
+	[tag]"base evasion max"	[value]"119"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR/EVASION)
+###############################################################
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2218,6 +2742,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"65"
 	[tag]"base evasion max"	[value]"65"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -2226,7 +2753,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2266,7 +2794,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2289,33 +2818,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"91"
 	[tag]"base evasion max"	[value]"91"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Veteran Sabatons"
-	[tag]"name RU"		[value]"Veteran Sabatons"
-
-	[tag]"icon path"	[value]"MailSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"100"
-	[tag]"base armour max"	[value]"100"
-	[tag]"base evasion min"	[value]"91"
-	[tag]"base evasion max"	[value]"91"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -2324,43 +2828,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Braced Sabatons"
-	[tag]"name RU"		[value]"Сабатоны с ремнями"
-
-	[tag]"icon path"	[value]"BracedSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"33"
-	[tag]"base armour max"	[value]"33"
-	[tag]"base evasion min"	[value]"28"
-	[tag]"base evasion max"	[value]"28"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2383,33 +2852,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Noble Sabatons"
-	[tag]"name RU"		[value]"Noble Sabatons"
-
-	[tag]"icon path"	[value]"BracedSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"81"
-	[tag]"base armour max"	[value]"81"
-	[tag]"base evasion min"	[value]"73"
-	[tag]"base evasion max"	[value]"73"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -2418,8 +2862,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2442,6 +2886,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"73"
 	[tag]"base evasion max"	[value]"73"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -2455,7 +2902,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2483,40 +2931,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Expert"
 		
 	[tag]"worth"		[value]"Trash"
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Stacked Sabatons"
-	[tag]"name RU"		[value]"Пластинчатые сабатоны"
-
-	[tag]"icon path"	[value]"StackedSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base armour min"	[value]"56"
-	[tag]"base armour max"	[value]"56"
-	[tag]"base evasion min"	[value]"50"
-	[tag]"base evasion max"	[value]"50"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2539,36 +2960,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"84"
 	[tag]"base evasion max"	[value]"84"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bastion Sabatons"
-	[tag]"name RU"		[value]"Bastion Sabatons"
-
-	[tag]"icon path"	[value]"StackedSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"92"
-	[tag]"base armour max"	[value]"92"
-	[tag]"base evasion min"	[value]"84"
-	[tag]"base evasion max"	[value]"84"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -2578,16 +2971,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2610,34 +2995,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"110"
 	[tag]"base evasion max"	[value]"110"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Fortress Sabatons"
-	[tag]"name RU"		[value]"Fortress Sabatons"
-
-	[tag]"icon path"	[value]"StackedSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"120"
-	[tag]"base armour max"	[value]"120"
-	[tag]"base evasion min"	[value]"110"
-	[tag]"base evasion max"	[value]"110"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -2647,37 +3006,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Covered Sabatons"
-	[tag]"name RU"		[value]"Сплошные сабатоны"
-
-	[tag]"icon path"	[value]"CoveredSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"73"
-	[tag]"base armour max"	[value]"73"
-	[tag]"base evasion min"	[value]"65"
-	[tag]"base evasion max"	[value]"65"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2697,13 +3027,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"74"
 	[tag]"base evasion max"	[value]"74"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2723,6 +3057,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base evasion min"	[value]"91"
 	[tag]"base evasion max"	[value]"91"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
@@ -2734,6 +3071,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________ARMOUR/ES BASES
+###############################################################
 
 
 
@@ -2743,18 +3083,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#T1
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2774,12 +3104,267 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"9"
 	[tag]"base energy shield max"	[value]"9"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Secured Leggings"
+	[tag]"name RU"		[value]"Меховые сапоги"
+
+	[tag]"icon path"	[value]"SecuredLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"33"
+	[tag]"base armour max"	[value]"33"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"14"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
 		
 	[tag]"worth"		[value]"Trash"
 	
-	ADD_NEW_DATA_ENTITY
+	
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pelt Leggings"
+	[tag]"name RU"		[value]"Сапоги из шкур"
+
+	[tag]"icon path"	[value]"PeltLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"56"
+	[tag]"base armour max"	[value]"56"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Weaver Leggings"
+	[tag]"name RU"		[value]"Плетёные сапоги"
+
+	[tag]"icon path"	[value]"MailSabatons"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"73"
+	[tag]"base armour max"	[value]"73"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"26"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Shamanistic Leggings"
+	[tag]"name RU"		[value]"Шаманские сапоги"
+
+	[tag]"icon path"	[value]"PeltLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"92"
+	[tag]"base armour max"	[value]"92"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Faithful Leggings"
+	[tag]"name RU"		[value]"Сапоги верного"
+
+	[tag]"icon path"	[value]"PaddedLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"100"
+	[tag]"base armour max"	[value]"100"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Apostle Leggings"
+	[tag]"name RU"		[value]"Сапоги поборника"
+
+	[tag]"icon path"	[value]"SecuredLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"110"
+	[tag]"base armour max"	[value]"110"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warlock Leggings"
+	[tag]"name RU"		[value]"Сапоги ведуна"
+
+	[tag]"icon path"	[value]"PeltLeggings"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"120"
+	[tag]"base armour max"	[value]"120"
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cryptic Leggings"
+	[tag]"name RU"		[value]"Скрытые сапоги"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"130"
+	[tag]"base armour max"	[value]"130"
+	[tag]"base energy shield min"	[value]"45"
+	[tag]"base energy shield max"	[value]"45"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION(ARMOUR/ES)
+###############################################################
+
+
+
+
+	
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2799,6 +3384,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"26"
 	[tag]"base energy shield max"	[value]"26"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -2810,7 +3398,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2833,30 +3422,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"35"
 	[tag]"base energy shield max"	[value]"35"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Faithful Leggings"
-	[tag]"name RU"		[value]"Faithful Leggings"
-
-	[tag]"icon path"	[value]"PaddedLeggings"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"100"
-	[tag]"base armour max"	[value]"100"
-	[tag]"base energy shield min"	[value]"35"
-	[tag]"base energy shield max"	[value]"35"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -2866,7 +3433,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2889,6 +3458,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"35"
 	[tag]"base energy shield max"	[value]"35"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
 		
@@ -2901,7 +3473,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2937,7 +3510,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -2960,6 +3534,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"29"
 	[tag]"base energy shield max"	[value]"29"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -2969,7 +3546,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3008,7 +3586,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3031,34 +3610,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"38"
 	[tag]"base energy shield max"	[value]"38"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Apostle Leggings"
-	[tag]"name RU"		[value]"Apostle Leggings"
-
-	[tag]"icon path"	[value]"SecuredLeggings"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"110"
-	[tag]"base armour max"	[value]"110"
-	[tag]"base energy shield min"	[value]"38"
-	[tag]"base energy shield max"	[value]"38"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -3072,37 +3625,12 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Pelt Leggings"
-	[tag]"name RU"		[value]"Сапоги из шкур"
-
-	[tag]"icon path"	[value]"PeltLeggings"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"56"
-	[tag]"base armour max"	[value]"56"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
 
-
-
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3125,33 +3653,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"32"
 	[tag]"base energy shield max"	[value]"32"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Shamanistic Leggings"
-	[tag]"name RU"		[value]"Shamanistic Leggings"
-
-	[tag]"icon path"	[value]"PeltLeggings"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"92"
-	[tag]"base armour max"	[value]"92"
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -3168,7 +3671,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3191,34 +3695,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"42"
 	[tag]"base energy shield max"	[value]"42"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Warlock Leggings"
-	[tag]"name RU"		[value]"Warlock Leggings"
-
-	[tag]"icon path"	[value]"PeltLeggings"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"120"
-	[tag]"base armour max"	[value]"120"
-	[tag]"base energy shield min"	[value]"42"
-	[tag]"base energy shield max"	[value]"42"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -3232,34 +3710,11 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Weaver Leggings"
-	[tag]"name RU"		[value]"Плетёные сапоги"
-
-	[tag]"icon path"	[value]"MailSabatons"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"73"
-	[tag]"base armour max"	[value]"73"
-	[tag]"base energy shield min"	[value]"26"
-	[tag]"base energy shield max"	[value]"26"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3279,13 +3734,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"29"
 	[tag]"base energy shield max"	[value]"29"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3305,6 +3764,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"35"
 	[tag]"base energy shield max"	[value]"35"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
@@ -3322,6 +3784,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________EVASION/ES BASES
+###############################################################
 
 
 
@@ -3336,11 +3801,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-
-
-	ADD_NEW_DATA_ENTITY
+#T1
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3360,6 +3822,309 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"9"
 	[tag]"base energy shield max"	[value]"9"
 	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T2
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Threaded Shoes"
+	[tag]"name RU"		[value]"Прошитые ботинки"
+
+	[tag]"icon path"	[value]"ThreadedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"28"
+	[tag]"base evasion max"	[value]"28"
+	[tag]"base energy shield min"	[value]"14"
+	[tag]"base energy shield max"	[value]"14"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hunting Shoes"
+	[tag]"name RU"		[value]"Охотничьи ботинки"
+
+	[tag]"icon path"	[value]"HuntingShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"50"
+	[tag]"base evasion max"	[value]"50"
+	[tag]"base energy shield min"	[value]"21"
+	[tag]"base energy shield max"	[value]"21"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Steelpoint Shoes"
+	[tag]"name RU"		[value]"Ботинки со стальным носком"
+
+	[tag]"icon path"	[value]"SteelpointShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"65"
+	[tag]"base evasion max"	[value]"65"
+	[tag]"base energy shield min"	[value]"26"
+	[tag]"base energy shield max"	[value]"26"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Treerunner Shoes"
+	[tag]"name RU"		[value]"Ботинки лесного гонца"
+
+	[tag]"icon path"	[value]"HuntingShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"84"
+	[tag]"base evasion max"	[value]"84"
+	[tag]"base energy shield min"	[value]"32"
+	[tag]"base energy shield max"	[value]"32"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Wanderer Shoes"
+	[tag]"name RU"		[value]"Ботинки странника"
+
+	[tag]"icon path"	[value]"FrayedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"91"
+	[tag]"base evasion max"	[value]"91"
+	[tag]"base energy shield min"	[value]"35"
+	[tag]"base energy shield max"	[value]"35"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Charmed Shoes"
+	[tag]"name RU"		[value]"Зачарованные ботинки"
+
+	[tag]"icon path"	[value]"ThreadedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"101"
+	[tag]"base evasion max"	[value]"101"
+	[tag]"base energy shield min"	[value]"38"
+	[tag]"base energy shield max"	[value]"38"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Quickslip Shoes"
+	[tag]"name RU"		[value]"Ботинки быстрого шага"
+
+	[tag]"icon path"	[value]"HuntingShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"110"
+	[tag]"base evasion max"	[value]"110"
+	[tag]"base energy shield min"	[value]"42"
+	[tag]"base energy shield max"	[value]"42"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Daggerfoot Shoes"
+	[tag]"name RU"		[value]"Ботинки с кинжалом"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION(EVASION/ES)
+###############################################################
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Velour Shoes"
+	[tag]"name RU"		[value]"Бархатные ботинки"
+
+	[tag]"icon path"	[value]"FrayedShoes"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base evasion min"	[value]"74"
+	[tag]"base evasion max"	[value]"74"
+	[tag]"base energy shield min"	[value]"29"
+	[tag]"base energy shield max"	[value]"29"
+	
+	[tag]"item tag"			[value]"Always unique"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Grand Cuisses"
+	[tag]"name RU"		[value]"Grand Cuisses"
+
+	[tag]"icon path"	[value]"GrandCuisses"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"item tag"			[value]"Always unique"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
@@ -3370,7 +4135,23 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+###############################################################
+#________________DISABLED SECTION(EVASION/ES)
+###############################################################
+
+
+
+
+
+
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3393,6 +4174,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"26"
 	[tag]"base energy shield max"	[value]"26"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -3403,7 +4187,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3445,7 +4230,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3468,37 +4254,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"35"
 	[tag]"base energy shield max"	[value]"35"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Wanderer Shoes"
-	[tag]"name RU"		[value]"Wanderer Shoes"
-
-	[tag]"icon path"	[value]"FrayedShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"91"
-	[tag]"base evasion max"	[value]"91"
-	[tag]"base energy shield min"	[value]"35"
-	[tag]"base energy shield max"	[value]"35"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -3514,30 +4271,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Threaded Shoes"
-	[tag]"name RU"		[value]"Прошитые ботинки"
-
-	[tag]"icon path"	[value]"ThreadedShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"28"
-	[tag]"base evasion max"	[value]"28"
-	[tag]"base energy shield min"	[value]"14"
-	[tag]"base energy shield max"	[value]"14"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -3545,7 +4278,11 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3568,6 +4305,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"29"
 	[tag]"base energy shield max"	[value]"29"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
 		
@@ -3578,7 +4318,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3617,7 +4358,8 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3640,39 +4382,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"38"
 	[tag]"base energy shield max"	[value]"38"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Charmed Shoes"
-	[tag]"name RU"		[value]"Charmed Shoes"
-
-	[tag]"icon path"	[value]"ThreadedShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"101"
-	[tag]"base evasion max"	[value]"101"
-	[tag]"base energy shield min"	[value]"38"
-	[tag]"base energy shield max"	[value]"38"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -3690,30 +4401,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Hunting Shoes"
-	[tag]"name RU"		[value]"Охотничьи ботинки"
-
-	[tag]"icon path"	[value]"HuntingShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"50"
-	[tag]"base evasion max"	[value]"50"
-	[tag]"base energy shield min"	[value]"21"
-	[tag]"base energy shield max"	[value]"21"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
 
@@ -3726,7 +4413,12 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3749,40 +4441,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"32"
 	[tag]"base energy shield max"	[value]"32"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Treerunner Shoes"
-	[tag]"name RU"		[value]"Treerunner Shoes"
-
-	[tag]"icon path"	[value]"HuntingShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"84"
-	[tag]"base evasion max"	[value]"84"
-	[tag]"base energy shield min"	[value]"32"
-	[tag]"base energy shield max"	[value]"32"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Advanced"
@@ -3798,7 +4458,13 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
+
+
+
+
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3821,40 +4487,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"42"
 	[tag]"base energy shield max"	[value]"42"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-
-
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Quickslip Shoes"
-	[tag]"name RU"		[value]"Quickslip Shoes"
-
-	[tag]"icon path"	[value]"HuntingShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"110"
-	[tag]"base evasion max"	[value]"110"
-	[tag]"base energy shield min"	[value]"42"
-	[tag]"base energy shield max"	[value]"42"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
@@ -3872,60 +4506,20 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Steelpoint Shoes"
-	[tag]"name RU"		[value]"Ботинки со стальным носком"
 
-	[tag]"icon path"	[value]"SteelpointShoes"
-	[tag]"base class"	[value]"Boots"
 
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
+
+
+
+
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base evasion min"	[value]"65"
-	[tag]"base evasion max"	[value]"65"
-	[tag]"base energy shield min"	[value]"26"
-	[tag]"base energy shield max"	[value]"26"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Velour Shoes"
-	[tag]"name RU"		[value]"Бархатные ботинки"
-
-	[tag]"icon path"	[value]"FrayedShoes"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base evasion min"	[value]"74"
-	[tag]"base evasion max"	[value]"74"
-	[tag]"base energy shield min"	[value]"29"
-	[tag]"base energy shield max"	[value]"29"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 
 
-	ADD_NEW_DATA_ENTITY
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -3945,210 +4539,19 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"35"
 	[tag]"base energy shield max"	[value]"35"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-
-
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Grand Cuisses"
-	[tag]"name RU"		[value]"Grand Cuisses"
-
-	[tag]"icon path"	[value]"GrandCuisses"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Default"
 		
 	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Tasalian Greaves"
-	[tag]"name RU"		[value]"Поножи Тасалио"
 
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 	
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Drakeskin Boots"
-	[tag]"name RU"		[value]"Сапоги из кожи дракона"
-
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 	
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Sekhema Sandals"
-	[tag]"name RU"		[value]"Сандали Сехемы"
-
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
 	
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Blacksteel Sabatons"
-	[tag]"name RU"		[value]"Стальные сабатоны"
-
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cryptic Leggings"
-	[tag]"name RU"		[value]"Загадочные сапоги"
-
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"
-	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Daggerfoot Shoes"
-	[tag]"name RU"		[value]"Клинковая обувь"
-
-	[tag]"icon path"	[value]"UndefinedBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base armour min"	[value]"66"
-	[tag]"base armour max"	[value]"66"
-	[tag]"base evasion min"	[value]"60"
-	[tag]"base evasion max"	[value]"60"
-	[tag]"base energy shield min"	[value]"23"
-	[tag]"base energy shield max"	[value]"23"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-		
-	[tag]"worth"		[value]"Trash"

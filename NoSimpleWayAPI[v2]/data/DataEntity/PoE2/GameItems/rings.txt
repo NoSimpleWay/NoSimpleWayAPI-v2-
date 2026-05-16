@@ -1,5 +1,5 @@
 
-
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -12,14 +12,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -32,14 +32,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -52,14 +52,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T4
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -72,14 +72,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+#T5
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -92,14 +92,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T6
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -112,14 +112,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T7
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -132,14 +132,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T8
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -152,14 +152,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T9
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -172,14 +172,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T10
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -192,14 +192,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T11
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -212,14 +212,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T12
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -232,13 +232,15 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"item tag"		[value]"Always unique"
+
+	[tag]"usability"	[value]"Unique"
+	[tag]"drop source"	[value]"Global drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+#T13
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -250,16 +252,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Breach"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-
-
 
 
 
@@ -279,10 +277,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Fractured lake"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -301,10 +298,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Fractured lake"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -323,10 +319,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Fractured lake"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -346,10 +341,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Fractured lake"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -371,9 +365,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"item tag"		[value]"Always unique"
+
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Abyss"
 		
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 

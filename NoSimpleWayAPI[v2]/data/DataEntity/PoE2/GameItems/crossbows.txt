@@ -1,3 +1,6 @@
+
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -11,10 +14,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -24,7 +29,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -38,14 +43,524 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
 
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sturdy Crossbow"
+	[tag]"name RU"		[value]"Прочный самострел"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+	
+
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Varnished Crossbow"
+	[tag]"name RU"		[value]"Лакированный самострел"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dyad Crossbow"
+	[tag]"name RU"		[value]"Парный самострел"
+
+	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Alloy Crossbow"
+	[tag]"name RU"		[value]"Металлический самострел"
+
+	[tag]"icon path"	[value]"AlloyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bombard Crossbow"
+	[tag]"name RU"		[value]"Самострел бомбардира"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Construct Crossbow"
+	[tag]"name RU"		[value]"Самострел конструкта"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+	
+	
+	
+	
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Blackfire Crossbow"
+	[tag]"name RU"		[value]"Самострел чёрного пламени"
+
+	[tag]"icon path"	[value]"UndefinedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Piercing Crossbow"
+	[tag]"name RU"		[value]"Пронзающий самострел"
+
+	[tag]"icon path"	[value]"UndefinedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twin Crossbow"
+	[tag]"name RU"		[value]"Сдвоенный самострел"
+
+	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+	
+
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cannonade Crossbow"
+	[tag]"name RU"		[value]"Самострел канонира"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	
+	
+	
+#T13
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Bleak Crossbow"
+	[tag]"name RU"		[value]"Мрачный самострел"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+#T14		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stout Crossbow"
+	[tag]"name RU"		[value]"Добротный самострел"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+#T15
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Engraved Crossbow"
+	[tag]"name RU"		[value]"Резной самострел"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+#T16
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Desolate Crossbow"
+	[tag]"name RU"		[value]"Самострел опустошения"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flexed Crossbow"
+	[tag]"name RU"		[value]"Гибкий самострел"
+
+	[tag]"icon path"	[value]"TenseCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+#T18
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Elegant Crossbow"
+	[tag]"name RU"		[value]"Изящный самострел"
+
+	[tag]"icon path"	[value]"UndefinedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	
+	
+	
+
+#T19
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gemini Crossbow"
+	[tag]"name RU"		[value]"Двойной самострел"
+
+	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+
+#T20
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Siege Crossbow"
+	[tag]"name RU"		[value]"Осадный самострел"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+
+###############################################################
+#________________UNIQUE BASES SECTION
+###############################################################
+
+@UNIQUE
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Trarthan Cannon"
+	[tag]"name RU"		[value]"Trarthan Cannon"
+
+	[tag]"icon path"	[value]"ConstructCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Introduced: Runes of the Alduur"
+	
+	[tag]"item tag"		[value]"Always unique"
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+		
+		
+		
+
+
+###############################################################
+#________________DISABLED SECTION
+###############################################################
+
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -64,8 +579,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -74,6 +594,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -93,8 +614,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -108,6 +631,7 @@ ADD_NEW_DATA_ENTITY
 
 	
 	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -126,349 +650,21 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-		
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Flexed Crossbow"
-	[tag]"name RU"		[value]"Flexed Crossbow"
-
-	[tag]"icon path"	[value]"TenseCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Sturdy Crossbow"
-	[tag]"name RU"		[value]"Прочный самострел"
-
-	[tag]"icon path"	[value]"SturdyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Advanced Sturdy Crossbow"
-	[tag]"name RU"		[value]"Улучшенный прочный самострел"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Robust Crossbow"
-
-	[tag]"icon path"	[value]"SturdyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Robust Crossbow"
-	[tag]"name RU"		[value]"Robust Crossbow"
-
-	[tag]"icon path"	[value]"SturdyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Expert Sturdy Crossbow"
-	[tag]"name RU"		[value]"Прочный самострел эксперта"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Stout Crossbow"
-
-	[tag]"icon path"	[value]"SturdyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+
 		
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Stout Crossbow"
-	[tag]"name RU"		[value]"Stout Crossbow"
-
-	[tag]"icon path"	[value]"SturdyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Varnished Crossbow"
-	[tag]"name RU"		[value]"Лакированный самострел"
-
-	[tag]"icon path"	[value]"VarnishedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Advanced Varnished Crossbow"
-	[tag]"name RU"		[value]"Улучшенный лакированный самострел"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Painted Crossbow"
-
-	[tag]"icon path"	[value]"VarnishedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Painted Crossbow"
-	[tag]"name RU"		[value]"Painted Crossbow"
-
-	[tag]"icon path"	[value]"VarnishedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
-	
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Expert Varnished Crossbow"
-	[tag]"name RU"		[value]"Лакированный самострел эксперта"
-
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Engraved Crossbow"
-
-	[tag]"icon path"	[value]"VarnishedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	
-	
-	
 		
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Engraved Crossbow"
-	[tag]"name RU"		[value]"Engraved Crossbow"
-
-	[tag]"icon path"	[value]"VarnishedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Dyad Crossbow"
-	[tag]"name RU"		[value]"Парный самострел"
-
-	[tag]"icon path"	[value]"DyadCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -485,33 +681,97 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Twin Crossbow"
-	[tag]"name RU"		[value]"Twin Crossbow"
+	[tag]"name EN"		[value]"Advanced Sturdy Crossbow"
+	[tag]"name RU"		[value]"Улучшенный прочный самострел"
 
-	[tag]"icon path"	[value]"DyadCrossbow"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Robust Crossbow"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
 	[tag]"base class"	[value]"Crossbows"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+	
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Robust Crossbow"
+	[tag]"name RU"		[value]"Robust Crossbow"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -522,6 +782,175 @@ ADD_NEW_DATA_ENTITY
 
 
 	
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Sturdy Crossbow"
+	[tag]"name RU"		[value]"Прочный самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Stout Crossbow"
+
+	[tag]"icon path"	[value]"SturdyCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Advanced Varnished Crossbow"
+	[tag]"name RU"		[value]"Улучшенный лакированный самострел"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Painted Crossbow"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+	
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Painted Crossbow"
+	[tag]"name RU"		[value]"Painted Crossbow"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+	
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Expert Varnished Crossbow"
+	[tag]"name RU"		[value]"Лакированный самострел эксперта"
+
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Engraved Crossbow"
+
+	[tag]"icon path"	[value]"VarnishedCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -538,34 +967,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Gemini Crossbow"
-	[tag]"name RU"		[value]"Gemini Crossbow"
-
-	[tag]"icon path"	[value]"DyadCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -579,29 +989,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	
-	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Alloy Crossbow"
-	[tag]"name RU"		[value]"Металлический самострел"
-
-	[tag]"icon path"	[value]"AlloyCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
 	
 	
 	
@@ -612,29 +1000,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Bombard Crossbow"
-	[tag]"name RU"		[value]"Самострел бомбардира"
-
-	[tag]"icon path"	[value]"BombardCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
 	
 	
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -651,39 +1020,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cannonade Crossbow"
-	[tag]"name RU"		[value]"Cannonade Crossbow"
-
-	[tag]"icon path"	[value]"BombardCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 
+	
+
+
 
 
 
@@ -692,6 +1045,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -708,65 +1062,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
 	
 	
 		
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Siege Crossbow"
-	[tag]"name RU"		[value]"Siege Crossbow"
-
-	[tag]"icon path"	[value]"BombardCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
 	
 	
 	
 	
 	
 	
-	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Construct Crossbow"
-	[tag]"name RU"		[value]"Самострел конструкта"
-
-	[tag]"icon path"	[value]"ConstructCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -783,32 +1100,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Bleak Crossbow"
-	[tag]"name RU"		[value]"Bleak Crossbow"
-
-	[tag]"icon path"	[value]"ConstructCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
 
 
 
@@ -816,7 +1121,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -833,29 +1138,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Desolate Crossbow"
-	[tag]"name RU"		[value]"Desolate Crossbow"
-
-	[tag]"icon path"	[value]"ConstructCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -876,59 +1167,13 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Blackfire Crossbow"
-	[tag]"name RU"		[value]"Самострел чёрного пламени"
-
-	[tag]"icon path"	[value]"UndefinedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
 	
 	
 	
 	
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Piercing Crossbow"
-	[tag]"name RU"		[value]"Пронзающий самострел"
-
-	[tag]"icon path"	[value]"UndefinedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	
 	
 	
 	
@@ -943,6 +1188,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -956,10 +1202,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -968,6 +1219,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -981,10 +1233,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -993,6 +1250,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -1006,32 +1264,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+
+	
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
 	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Elegant Crossbow"
-	[tag]"name RU"		[value]"Элегантный самострел"
-
-	[tag]"icon path"	[value]"UndefinedCrossbow"
-	[tag]"base class"	[value]"Crossbows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"

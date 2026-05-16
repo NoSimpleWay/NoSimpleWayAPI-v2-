@@ -6835,8 +6835,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Priceless"
 	
-	[tag]"scarab tier"	[value]"Horned"
-	[tag]"item tag"		[value]"hidden item"
+	[tag]"scarab tier"	[value]"Horny"
+	[tag]"item tag"		[value]"Hidden item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

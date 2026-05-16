@@ -1,5 +1,5 @@
 
-
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -13,11 +13,12 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Good"
 	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
-
+	[tag]"DAE tier"		[value]"Default"	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -27,15 +28,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FireQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T3
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -45,15 +46,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SacralQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T4
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -63,15 +64,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TwoPointQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T5
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -81,15 +82,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"BluntQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
+#T6
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -99,15 +100,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ToxicQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T7
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -117,15 +118,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SerratedQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T8
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -135,15 +136,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"PrimedQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
+#T9
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -153,15 +154,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"PenetratingQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
-
+	
+#T10
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -171,15 +172,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"VolantQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
 
+#T11
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -189,11 +190,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"VisceralQuiver(PoE2)"
 	[tag]"base class"	[value]"Quivers"
-	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"

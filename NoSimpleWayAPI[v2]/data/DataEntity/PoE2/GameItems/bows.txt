@@ -1,3 +1,5 @@
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -11,14 +13,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+
+#T2	
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -31,14 +35,466 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warden Bow"
+	[tag]"name RU"		[value]"Лук часового"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 	
-	ADD_NEW_DATA_ENTITY
+	
+
+#T4	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Recurve Bow"
+	[tag]"name RU"		[value]"Загнутый лук"
+
+	[tag]"icon path"	[value]"RecurveBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Composite Bow"
+	[tag]"name RU"		[value]"Составной лук"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Dualstring Bow"
+	[tag]"name RU"		[value]"Спаренный лук"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cultist Bow"
+	[tag]"name RU"		[value]"Лук культиста"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T8	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Zealot Bow"
+	[tag]"name RU"		[value]"Лук фанатика"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Artillery Bow"
+	[tag]"name RU"		[value]"Артиллерийский лук"
+
+	[tag]"icon path"	[value]"ArtilleryBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+#T10	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Tribal Bow"
+	[tag]"name RU"		[value]"Племенной лук"
+
+	[tag]"icon path"	[value]"UndefinedBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twin Bow"
+	[tag]"name RU"		[value]"Twin Bow"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+	
+	
+	
+	
+	
+#T12	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Adherent Bow"
+	[tag]"name RU"		[value]"<?Adherent Bow?>"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T13
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Militant Bow"
+	[tag]"name RU"		[value]"Militant Bow"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+#T14
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ironwood Shortbow"
+	[tag]"name RU"		[value]"Ironwood Shortbow"
+
+	[tag]"icon path"	[value]"Shortbow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T15
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cavalry Bow"
+	[tag]"name RU"		[value]"Cavalry Bow"
+
+	[tag]"icon path"	[value]"CompositeBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T16	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Bow"
+	[tag]"name RU"		[value]"Guardian Bow"
+
+	[tag]"icon path"	[value]"WardenBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warmonger Bow"
+	[tag]"name RU"		[value]"Warmonger Bow"
+
+	[tag]"icon path"	[value]"ZealotBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T18
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Gemini Bow"
+	[tag]"name RU"		[value]"Gemini Bow"
+
+	[tag]"icon path"	[value]"DualstringBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+#T19	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Obliterator Bow"
+	[tag]"name RU"		[value]"Лук изничтожения"
+
+	[tag]"icon path"	[value]"UndefinedBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
+	
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+#T20	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Fanatic Bow"
+	[tag]"name RU"		[value]"Fanatic Bow"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+#________________DISABLED SECTION
+###############################################################
+
+#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -54,16 +510,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
+	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -76,14 +536,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -95,7 +554,8 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -107,68 +567,28 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Shortbow"
 	[tag]"base class"	[value]"Bows"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Ironwood Shortbow"
-	[tag]"name RU"		[value]"Ironwood Shortbow"
-
-	[tag]"icon path"	[value]"Shortbow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
 
 
-
-
-
-
-
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Warden Bow"
-	[tag]"name RU"		[value]"Лук часового"
-
-	[tag]"icon path"	[value]"WardenBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -180,20 +600,21 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"WardenBow"
 	[tag]"base class"	[value]"Bows"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -206,15 +627,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
+
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -226,7 +644,8 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -242,33 +661,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Guardian Bow"
-	[tag]"name RU"		[value]"Guardian Bow"
-
-	[tag]"icon path"	[value]"WardenBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -277,49 +676,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Recurve Bow"
-	[tag]"name RU"		[value]"Загнутый лук"
-
-	[tag]"icon path"	[value]"RecurveBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Composite Bow"
-	[tag]"name RU"		[value]"Составной лук"
-
-	[tag]"icon path"	[value]"CompositeBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -335,17 +695,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -358,13 +719,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -375,7 +734,8 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -391,37 +751,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cavalry Bow"
-	[tag]"name RU"		[value]"Cavalry Bow"
-
-	[tag]"icon path"	[value]"CompositeBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -433,31 +769,18 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Dualstring Bow"
-	[tag]"name RU"		[value]"Спаренный лук"
-
-	[tag]"icon path"	[value]"DualstringBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	
+
+
+
+	
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -473,34 +796,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Twin Bow"
-	[tag]"name RU"		[value]"Twin Bow"
-
-	[tag]"icon path"	[value]"DualstringBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -513,8 +813,10 @@ ADD_NEW_DATA_ENTITY
 
 
 
+
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -530,36 +832,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Gemini Bow"
-	[tag]"name RU"		[value]"Gemini Bow"
-
-	[tag]"icon path"	[value]"DualstringBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -568,32 +847,21 @@ ADD_NEW_DATA_ENTITY
 
 
 
+	
+	
+
+
+
+
+
 
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Cultist Bow"
-	[tag]"name RU"		[value]"Лук культиста"
-
-	[tag]"icon path"	[value]"CultistBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -609,33 +877,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
 
-
-
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Adherent Bow"
-	[tag]"name RU"		[value]"<?Adherent Bow?>"
-
-	[tag]"icon path"	[value]"CultistBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -646,9 +891,9 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -664,38 +909,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-
-
-
-
-
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Fanatic Bow"
-	[tag]"name RU"		[value]"Fanatic Bow"
-
-	[tag]"icon path"	[value]"CultistBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -708,28 +928,15 @@ ADD_NEW_DATA_ENTITY
 
 
 
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Zealot Bow"
-	[tag]"name RU"		[value]"Лук фанатика"
 
-	[tag]"icon path"	[value]"ZealotBow"
-	[tag]"base class"	[value]"Bows"
 
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
+
+
+
 	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -745,44 +952,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
-	
-	[tag]"worth"		[value]"Trash"
 
-
-
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Militant Bow"
-	[tag]"name RU"		[value]"Militant Bow"
-
-	[tag]"icon path"	[value]"ZealotBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Advanced"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 
+	
+
+
 
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -798,86 +986,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
-	
-	[tag]"worth"		[value]"Trash"
-
-
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Warmonger Bow"
-	[tag]"name RU"		[value]"Warmonger Bow"
-
-	[tag]"icon path"	[value]"ZealotBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Expert"
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
 	
 	[tag]"worth"		[value]"Trash"
 
 
 
+	
+
 
 
 
 
 	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Artillery Bow"
-	[tag]"name RU"		[value]"Артиллерийский лук"
-
-	[tag]"icon path"	[value]"ArtilleryBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Tribal Bow"
-	[tag]"name RU"		[value]"Племенной лук"
-
-	[tag]"icon path"	[value]"UndefinedBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -890,14 +1021,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"worth"		[value]"Trash"
 	
-	ADD_NEW_DATA_ENTITY
+	#DISABLED
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
@@ -910,12 +1047,32 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
+
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Rise of the Abyssals"
 	
 	[tag]"worth"		[value]"Trash"
+	
+
+
+
+
+###############################################################
+#________________UNIQUE BASES SECTION
+###############################################################
+
+
+
+	
+	
+	
+	
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -930,32 +1087,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"worth"		[value]"Trash"
-	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Obliterator Bow"
-	[tag]"name RU"		[value]"Лук изничтожения"
-
-	[tag]"icon path"	[value]"UndefinedBow"
-	[tag]"base class"	[value]"Bows"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"item tag"			[value]"Always unique"
 	
 	[tag]"worth"		[value]"Trash"
 	

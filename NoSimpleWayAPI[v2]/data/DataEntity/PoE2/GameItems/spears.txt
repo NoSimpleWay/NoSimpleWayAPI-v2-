@@ -1,3 +1,5 @@
+
+#T1
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -6,11 +8,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Копьё из твёрдого дерева"
 
 	[tag]"icon path"	[value]"HardwoodSpear"
-	[tag]"base class"	[value]"Spears"
+	[tag]"base class"	[value]"Spears"	
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
@@ -19,6 +20,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+#T2
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -29,9 +31,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"IronheadSpear"
 	[tag]"base class"	[value]"Spears"
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
@@ -40,6 +41,449 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+#T3
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hunting Spear"
+	[tag]"name RU"		[value]"Охотничьё копьё"
+
+	[tag]"icon path"	[value]"HuntingSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Winged Spear"
+	[tag]"name RU"		[value]"Крылатое копьё"
+
+	[tag]"icon path"	[value]"WingedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+
+#T5
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"War Spear"
+	[tag]"name RU"		[value]"Воинское копьё"
+
+	[tag]"icon path"	[value]"WarSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+	
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T6
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Forked Spear"
+	[tag]"name RU"		[value]"Раздвоенное копьё"
+
+	[tag]"icon path"	[value]"ForkedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T7
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Barbed Spear"
+	[tag]"name RU"		[value]"Копьё с зазубринами"
+
+	[tag]"icon path"	[value]"BarbedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Broad Spear"
+	[tag]"name RU"		[value]"Широкое копьё"
+
+	[tag]"icon path"	[value]"BroadSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+	
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T9
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Crossblade Spear"
+	[tag]"name RU"		[value]"Крестообразное копьё"
+
+	[tag]"icon path"	[value]"CrossbladeSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+
+#T10
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Seaglass Spear"
+	[tag]"name RU"		[value]"Копьё из морского стекла"
+
+	[tag]"icon path"	[value]"SeaglassSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T11
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Branched Spear"
+	[tag]"name RU"		[value]"
+Разветвлённое копьё"
+
+	[tag]"icon path"	[value]"SeaglassSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T12
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Jagged Spear"
+	[tag]"name RU"		[value]"Копьё с зубцами"
+
+	[tag]"icon path"	[value]"SeaglassSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T13
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Helix Spear"
+	[tag]"name RU"		[value]"Спиралевидное копьё"
+
+	[tag]"icon path"	[value]"HelixSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T14
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Orichalcum Spear"
+	[tag]"name RU"		[value]"Копьё из орихалка"
+
+	[tag]"icon path"	[value]"HelixSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+#T15
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Soaring Spear"
+	[tag]"name RU"		[value]"Парящее копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T16
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Pronged Spear"
+	[tag]"name RU"		[value]"Двузубое копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Guardian Spear"
+	[tag]"name RU"		[value]"Копьё защитника"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T18
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Spiked Spear"
+	[tag]"name RU"		[value]"Копьё с шипами"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T19
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stalking Spear"
+	[tag]"name RU"		[value]"Копьё погони"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+#T20	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Akoyan Spear"
+	[tag]"name RU"		[value]"Копьё Акойи"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T21
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Flying Spear"
+	[tag]"name RU"		[value]"Летящее копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+#T22
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Grand Spear"
+	[tag]"name RU"		[value]"Величественное копьё"
+
+	[tag]"icon path"	[value]"UndefinedSpear"
+	[tag]"base class"	[value]"Spears"
+	
+	[tag]"usability"	[value]"Unpopular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+###############################################################
+#________________DISABLED SECTION
+###############################################################
+	
+	
+
+
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -65,6 +509,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -90,6 +536,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+	
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -115,179 +564,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Hunting Spear"
-	[tag]"name RU"		[value]"Охотничьё копьё"
-
-	[tag]"icon path"	[value]"HuntingSpear"
-	[tag]"base class"	[value]"Spears"
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
 	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-	[tag]"item tag"		[value]"Have implicit"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Winged Spear"
-	[tag]"name RU"		[value]"Крылатое копьё"
-
-	[tag]"icon path"	[value]"WingedSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"War Spear"
-	[tag]"name RU"		[value]"Воинское копьё"
-
-	[tag]"icon path"	[value]"WarSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-	
-	[tag]"item tag"		[value]"Have implicit"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Forked Spear"
-	[tag]"name RU"		[value]"Раздвоенное копьё"
-
-	[tag]"icon path"	[value]"ForkedSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Barbed Spear"
-	[tag]"name RU"		[value]"Копьё с зазубринами"
-
-	[tag]"icon path"	[value]"BarbedSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Broad Spear"
-	[tag]"name RU"		[value]"Широкое копьё"
-
-	[tag]"icon path"	[value]"BroadSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-	
-	[tag]"item tag"		[value]"Have implicit"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Crossblade Spear"
-	[tag]"name RU"		[value]"Крестообразное копьё"
-
-	[tag]"icon path"	[value]"CrossbladeSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Seaglass Spear"
-	[tag]"name RU"		[value]"Копьё из морского стекла"
-
-	[tag]"icon path"	[value]"SeaglassSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -311,6 +590,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 	
+	
+	
+#DISABLED
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
@@ -339,50 +621,19 @@ ADD_NEW_DATA_ENTITY
 	
 
 	[tag]"item tag"		[value]"Have implicit"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Helix Spear"
-	[tag]"name RU"		[value]"Спиралевидное копьё"
-
-	[tag]"icon path"	[value]"HelixSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Akoyan Spear"
-	[tag]"name RU"		[value]"<Akoyan Spear>"
-
-	[tag]"icon path"	[value]"UndefinedSpear"
-	[tag]"base class"	[value]"Spears"
 	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
 	
-	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
-	[tag]"drop level"	[value]"1"
+	
+	
+	
+	
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
+
+	
+
 	
 
 
@@ -393,46 +644,4 @@ ADD_NEW_DATA_ENTITY
 
 	
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Soaring Spear"
-	[tag]"name RU"		[value]"Парящее копьё"
-
-	[tag]"icon path"	[value]"UndefinedSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"		[value]"Guardian Spear"
-	[tag]"name RU"		[value]"Копьё защитника"
-
-	[tag]"icon path"	[value]"UndefinedSpear"
-	[tag]"base class"	[value]"Spears"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Basic"
-	[tag]"DAE tier"		[value]"Default"
-	
-	[tag]"item tag"		[value]"Introduced: The last of the druids"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"4"
 	
