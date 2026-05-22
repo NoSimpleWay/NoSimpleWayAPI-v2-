@@ -4173,3 +4173,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_gradient_between_blocks"
 	[tag]"name EN"		[value]"Gradient"
 	[tag]"name RU"		[value]"Градиент"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"unidentified_item_tier"
+	[tag]"name EN"		[value]"Item tier"
+	[tag]"name RU"		[value]"Тир предмета"

@@ -1607,7 +1607,16 @@ target_tag	"Base Class"
 	DETF_value_key	"One Hand Maces"
 	DETF_localised_attribute_name_EN	"One hand maces"
 	DETF_localised_attribute_name_RU	"Одноручные дубины"
+	DETF_color	255	200	200	255	
+	
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Talismans"
+	DETF_localised_attribute_name_EN	"Talismans"
+	DETF_localised_attribute_name_RU	"Талисманы"
 	DETF_color	255	200	200	255
+	
+	
+	
 	
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Two Hand Maces"
@@ -1620,6 +1629,8 @@ target_tag	"Base Class"
 	DETF_localised_attribute_name_EN	"Quarterstaves"
 	DETF_localised_attribute_name_RU	"Боевые посохи"
 	DETF_color	255	200	200	255
+
+
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Bows"
@@ -1981,6 +1992,54 @@ tag_cannot_be_configured
 	
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Skill Gems"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Deleted"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Hidden item"
+DETF_color	255	128	64	255
+
+REGISTER_NEW_BANNED_VALUES
+DETF_value_key	"Renamed item"
+DETF_color	255	128	64	255
+
+
+//Камни для PoE2
+REGISTER_NEW_FILTER_RULE
+name_EN	"Lineage gems"
+name_RU	"Камни родословных"
+icon	"data/textures/icons/RakiataFlow.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"equip PoE2"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Lineage Gem"
 	DETF_color	255	230	204	255
 
 

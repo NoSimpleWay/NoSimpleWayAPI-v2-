@@ -225,8 +225,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE2"
 
 	[tag]"name EN"		[value]"Branched Spear"
-	[tag]"name RU"		[value]"
-Разветвлённое копьё"
+	[tag]"name RU"		[value]"Разветвлённое копьё"
 
 	[tag]"icon path"	[value]"SeaglassSpear"
 	[tag]"base class"	[value]"Spears"

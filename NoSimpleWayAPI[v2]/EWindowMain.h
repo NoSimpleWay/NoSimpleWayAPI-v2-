@@ -1003,6 +1003,15 @@ public:
 	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
 };
 
+class EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier : public EButtonGroupAttributeGeneratorGroup
+{
+public:
+	EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier(ERegionGabarite* _gabarite) :EButtonGroupAttributeGeneratorGroup(_gabarite) {};
+
+	void init()																			override;
+	void execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)	override;
+};
+
 
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -1068,6 +1077,7 @@ public:
 	int		rarity_override					= -1;
 
 	int	selected_item_level				= 80;
+	int	selected_unid_item_tier			= 0;
 	int	selected_quality				= 0;
 
 	int	selected_gem_level				= 1;
@@ -1077,7 +1087,7 @@ public:
 
 	int	selected_procentile				= 0;
 
-	int	selected_sockets				= 3;
+	int	selected_sockets				= 1;
 	//int	selected_rune_sockets			= 1;
 	int	selected_links					= 3;
 

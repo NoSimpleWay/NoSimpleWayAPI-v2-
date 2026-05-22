@@ -7811,6 +7811,22 @@ void EWindowMain::register_loot_simulator_group()
 
 		}
 
+		/////////		UNID ITEM TIER																						//////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier*
+				unid_tier_group = new EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier(new ERegionGabarite(200.0f, 40.0f));
+
+			unid_tier_group->init();
+			unid_tier_group->additional_y_distance = 10.0f;
+
+			unid_tier_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+			unid_tier_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+			right_loot_part->add_group(unid_tier_group);
+
+		}
+
 		/////////		QUALITY																								//////////
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		{
@@ -22818,8 +22834,25 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											else
 											if (data_part >= 4)//VALUES
 											{
+												//if (buffer_text == "") { buffer_text = "@"; }
+												ELocalisationText ltext;
 
-												jc_filter_rule->required_tag_list.back().add_new_suitable_value(buffer_text);
+
+												ltext.add_text_to_all_languages(buffer_text);
+
+												if (buffer_text == "%any%")
+												{
+													buffer_text = "";
+
+													ltext.localisations[NSW_localisation_EN] = "Any";
+													ltext.localisations[NSW_localisation_RU] = "Любое";
+												}
+
+												
+
+												
+
+												jc_filter_rule->required_tag_list.back().add_new_suitable_value(buffer_text, ltext);
 
 												jc_filter_rule->required_tag_list.back().suitable_values.back().DETF_is_active
 												=
@@ -22828,6 +22861,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 													||
 													(flag_mask[std::clamp(data_part - 4, 0, (int)(flag_mask.length() - 1))] == '1')
 												);
+
+												//buffer_text = buffer_text;
 											}
 										}
 
@@ -24599,7 +24634,22 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 				int fake_id = 0;
 				//ADD CONFIG INFO FOR PATTERN BUTTONS
+
+				int listed_size = listed_block->section_for_wide_item_buttons->workspace_button_list.size();
+				//EInputCore::add_log_info_without_timestamp("listed button size: " + std::to_string(listed_size));
+
+				//if (listed_size > 200)
+				//{
+				//	for (EntityButton* but : listed_block->section_for_wide_item_buttons->workspace_button_list)
+				//	{
+				//		EInputCore::add_log_info_without_timestamp("button text: " + but->main_text_area->original_text);
+				//	}
+				//}
+
+				
+
 				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
+				if (!listed_button->entity_need_remove)
 				{
 					EntityButtonWideItem*
 					wide_button = static_cast<EntityButtonWideItem*>(listed_button);
@@ -24615,6 +24665,8 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 						result_string += ' ';
 						result_string += '"' + std::to_string(wide_button->attached_filter_rule->tag) + '"';
+
+						//EInputCore::add_log_info_without_timestamp("fake_id: " + std::to_string(fake_id));
 
 						result_string += ' ';
 						result_string += std::to_string(fake_id);
@@ -24738,7 +24790,15 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 								{
 
 									result_string += ' ';
-									result_string += '"' + detf_value.target_value_key.string_value + '"';
+
+									if (detf_value.target_value_key.string_value != "")
+									{
+										result_string += '"' + detf_value.target_value_key.string_value + '"';
+									}
+									else
+									{
+										result_string += "\"%any%\"";
+									}
 								}
 							}
 
@@ -33992,7 +34052,7 @@ void EButtonGroupAttributeGeneratorGroup_RuneSockets::init()
 	data_container->mid_value = 3.0f;
 	data_container->max_value = 6.0f;
 
-	data_container->current_slide_value = 1.0f;
+	data_container->current_slide_value = 0.0f;
 
 	data_container->rounded_numbers = true;
 	data_container->is_float = false;
@@ -34032,4 +34092,44 @@ void EButtonGroupAttributeGeneratorGroup_RuneSockets::execute_attribute_group(EG
 		attribute_container_sockets = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Sockets");
 		attribute_container_sockets->attribute_value_str = socket_buffer;
 	}
+}
+
+void EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier::init()
+{
+	name.set_ID_by_string("UnidentifiedItemTier");
+	//attribute_generator = new GameAttributeGeneratorItemLevel("ItemLevel");
+	EWindowMain::loot_simulator_button_group->attribute_group_list.push_back(this);
+
+
+
+	EntityButton*
+		named_slider = EntityButton::create_horizontal_named_slider
+		(
+
+			new ERegionGabarite(350.0f, region_gabarite->size_y),
+			this,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ELocalisationText::get_localisation_by_key("unidentified_item_tier")
+		);
+	add_button_to_working_group(named_slider);
+	named_slider->can_be_stretched = true;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->pointer_to_value = &EWindowMain::loot_simulator_button_group->selected_unid_item_tier;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->min_value = 1.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 3.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 10.0f;
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
+
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->rounded_numbers = true;
+
+	named_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
+}
+
+void EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier::execute_attribute_group(EGameItem* _game_item, GameItemGenerator* _generator)
+{
+	GameItemAttribute::game_attribute_set_int_value(_game_item, "UnidentifiedItemTier", EWindowMain::loot_simulator_button_group->selected_unid_item_tier);
 }

@@ -5761,6 +5761,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 	[tag]"item tag"		[value]"Support Gems"
+	[tag]"item tag"		[value]"Lineage Gem"
 	
 	
 	
@@ -11936,6 +11937,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12013,6 +12015,41 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Guatelitzi's Ablation"
+	[tag]"name RU"	[value]"<Guatelitzi's Ablation>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12058,6 +12095,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12111,6 +12149,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12148,6 +12187,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12222,6 +12262,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: The last of the druids"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12257,6 +12298,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12297,6 +12339,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
 	
 	
 	
@@ -12340,6 +12384,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12384,6 +12429,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12433,7 +12479,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
-	
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 
@@ -12469,6 +12515,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12519,6 +12566,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12564,6 +12612,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12617,6 +12666,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12664,6 +12714,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12708,6 +12759,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12753,6 +12805,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12799,6 +12852,83 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Atziri's Call"
+	[tag]"name RU"	[value]"<Atziri's Call>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Atziri's Communion"
+	[tag]"name RU"	[value]"<Atziri's Communion>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Atziri's Impatience"
+	[tag]"name RU"	[value]"<Atziri's Impatience>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12842,6 +12972,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12886,6 +13017,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12933,6 +13065,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -12973,6 +13106,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -13008,6 +13142,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -13046,6 +13181,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -13085,6 +13221,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -13129,6 +13266,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -13169,6 +13307,240 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tasalio's Rhythm"
+	[tag]"name RU"	[value]"<Tasalio's Rhythm>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Xibaqua's Rending"
+	[tag]"name RU"	[value]"<Xibaqua's Rending>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Khatal's Rejuvenation"
+	[tag]"name RU"	[value]"<Khatal's Rejuvenation>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Morgana's Tempest"
+	[tag]"name RU"	[value]"<Morgana's Tempest>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hayoxi's Fulmination"
+	[tag]"name RU"	[value]"<Hayoxi's Fulmination>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zerphi's Infamy"
+	[tag]"name RU"	[value]"<Zerphi's Infamy>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bhatair's Vengeance"
+	[tag]"name RU"	[value]"<Bhatair's Vengeance>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Zarokh's Revolt"
+	[tag]"name RU"	[value]"<Zarokh's Revolt>"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	
+	
+	
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -14379,6 +14751,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
+	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -14397,975 +14770,4 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	
 		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
-		
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"1111111111"
-	[tag]"name RU"	[value]"2222222222"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
-	
 	
