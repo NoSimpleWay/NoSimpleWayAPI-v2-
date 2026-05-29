@@ -3330,6 +3330,79 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+
+
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Glacial Fortress"
+	[tag]"name RU"	[value]"Ледяная крепость"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base armour min"	[value]"300"
+	[tag]"base armour max"	[value]"300"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+	
+	[tag]"item tag"			[value]"Always unique"
+
+	[tag]"worth"	[value]"Rare"
+
+
+#T17
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Venerable Defender"
+	[tag]"name RU"	[value]"Почётный защитник"
+
+	[tag]"icon path"	[value]"UndefinedShield"
+	[tag]"base class"	[value]"Shields"
+
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"UNDEFINED[Block chance]"	[value]"24%"
+	[tag]"base armour min"	[value]"300"
+	[tag]"base armour max"	[value]"300"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+	[tag]"UNDEFINED[Requires]"	[value]"Level 75, 139 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+	
+	[tag]"item tag"			[value]"Always unique"
+
+	[tag]"worth"	[value]"Rare"
+
+
 
 
 

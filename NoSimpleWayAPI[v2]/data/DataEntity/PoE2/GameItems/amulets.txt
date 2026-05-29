@@ -364,3 +364,175 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Veridical Chain"
+	[tag]"name RU"		[value]"Цепочка истины"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lament Amulet"
+	[tag]"name RU"		[value]"Амулет горести"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Portent Amulet"
+	[tag]"name RU"		[value]"Амулет предвестия"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Absent Amulet"
+	[tag]"name RU"		[value]"Амулет отсутствия"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Corona Amulet"
+	[tag]"name RU"		[value]"Амулет свечения"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Distorted Amulet"
+	[tag]"name RU"		[value]"Искажённый амулет"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twisted Amulet"
+	[tag]"name RU"		[value]"<Twisted Amulet>[?]"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	
+	

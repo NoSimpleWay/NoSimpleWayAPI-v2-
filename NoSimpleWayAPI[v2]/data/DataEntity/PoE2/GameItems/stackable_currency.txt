@@ -1304,13 +1304,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Vaal Infuser"
 	[tag]"name RU"			[value]"Нагнетатель ваал"
 	
-	[tag]"icon path"		[value]"[undefined]VaalInfuser"
+	[tag]"icon path"		[value]"VaalInfuser"
 	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"item tag"			[value]"Renamed item"
+	[tag]"renamed to"		[value]"Vaal Armourer's Infuser"
+	
+	[tag]"item tag"			[value]"Deleted"
+	[tag]"item tag"			[value]"Deleted in Return of the Ancients"
 	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Armourer's Infuser"
+	[tag]"name RU"			[value]"Нагнетатель бронника ваал"
+	
+	[tag]"icon path"		[value]"VaalArmourersInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"			[value]"Vaal currency"
 	
 	[tag]"drop level"		[value]"1"
 			
@@ -1424,13 +1457,1379 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Vaal Cultivation Orb"
 	[tag]"name RU"			[value]"Культивирующая сфера ваал"
 	
-	[tag]"icon path"		[value]"[undefined]VaalCultivationOrb"
+	[tag]"icon path"		[value]"VaalCultivationOrb"
 	[tag]"base class"		[value]"Stackable Currency"
 	
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"			[value]"Introduced: The last of the druids"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+
+	
+	###############################################################
+	#________________Vaal items
+	###############################################################
+
+
+
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Blacksmith's Infuser"
+	[tag]"name RU"			[value]"Нагнетатель кузнеца ваал"
+	
+	[tag]"icon path"		[value]"VaalBlacksmithsInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Vaal currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Arcanist's Infuser"
+	[tag]"name RU"			[value]"Нагнетатель чародея ваал"
+	
+	[tag]"icon path"		[value]"VaalArcanistsInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Vaal currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vaal Catalysing Infuser"
+	[tag]"name RU"			[value]"Катализирующий нагнетатель ваал"
+	
+	[tag]"icon path"		[value]"VaalArcanistsInfuser"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Vaal currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	###############################################################
+	#________________Expedition
+	###############################################################
+
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Shattered Triskelion"
+	[tag]"name RU"			[value]"Расколотый Трискелион"
+	
+	[tag]"icon path"		[value]"ShatteredTriskelion"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Expedition currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	#######
+	#crests
+	#######
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Medved's Crest of the Circle"
+	[tag]"name RU"			[value]"Знак Круга Медведя"
+	
+	[tag]"icon path"		[value]"MedvedsCrestOfTheCircle"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Crest circle"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Vorana's Crest of the Scythe"
+	[tag]"name RU"			[value]"Знак Косы Вораны"
+	
+	[tag]"icon path"		[value]"VoranasCrestOfTheScythe"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Crest circle"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Uhtred's Crest of the Chalice"
+	[tag]"name RU"			[value]"Знак Чаши Утреда"
+	
+	[tag]"icon path"		[value]"UhtredsCrestOfTheChalice"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Crest circle"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Olroth's Crest of the Sun"
+	[tag]"name RU"			[value]"Знак Солнца Олрота"
+	
+	[tag]"icon path"		[value]"OlrothsCrestOfTheSun"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Crest circle"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	###############################################################
+	#________________Abyssal bones
+	###############################################################
+
+	
+	
+		
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Altered Collarbone"
+	[tag]"name RU"			[value]"Видоизменившаяся ключица"
+	
+	[tag]"icon path"		[value]"AlteredCollarbone"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item tag"			[value]"Abyss item"
+	[tag]"item tag"			[value]"Abyss bone"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	###############################################################
+	#________________New rune mechanic
+	###############################################################
+
+	
+	#########
+	#Verisium
+	#########
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Verisium"
+	[tag]"name RU"			[value]"Веризий"
+	
+	[tag]"icon path"		[value]"Verisium"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Verisium"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+		
+		
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Exceptional Verisium"
+	[tag]"name RU"			[value]"Исключительный веризий"
+	
+	[tag]"icon path"		[value]"ExceptionalVerisium"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Verisium"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	#########
+	#Alloys
+	#########
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Runic Alloy"
+	[tag]"name RU"			[value]"Рунный сплав"
+	
+	[tag]"icon path"		[value]"RunicAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Adaptive Alloy"
+	[tag]"name RU"			[value]"Адаптивный сплав"
+	
+	[tag]"icon path"		[value]"AdaptiveAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Protective Alloy"
+	[tag]"name RU"			[value]"Защитный сплав"
+	
+	[tag]"icon path"		[value]"ProtectiveAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Expansive Alloy"
+	[tag]"name RU"			[value]"Экспансивный сплав"
+	
+	[tag]"icon path"		[value]"ExpansiveAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Swift Alloy"
+	[tag]"name RU"			[value]"Лёгкий сплав"
+	
+	[tag]"icon path"		[value]"SwiftAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Cyclonic Alloy"
+	[tag]"name RU"			[value]"Вихревой сплав"
+	
+	[tag]"icon path"		[value]"CyclonicAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Prismatic Alloy"
+	[tag]"name RU"			[value]"Радужный сплав"
+	
+	[tag]"icon path"		[value]"PrismaticAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Mystic Alloy"
+	[tag]"name RU"			[value]"Мистический сплав"
+	
+	[tag]"icon path"		[value]"MysticAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Sovereign Alloy"
+	[tag]"name RU"			[value]"Державный сплав"
+	
+	[tag]"icon path"		[value]"SovereignAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Celestial Alloy"
+	[tag]"name RU"			[value]"Небесный сплав"
+	
+	[tag]"icon path"		[value]"CelestialAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	###
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Transcendent Alloy"
+	[tag]"name RU"			[value]"<Transcendent Alloy>[?]"
+	
+	[tag]"icon path"		[value]"TranscendentAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"The Runebinder's Alloy"
+	[tag]"name RU"			[value]"<The Runebinder's Alloy>[?]"
+	
+	[tag]"icon path"		[value]"TheRunebindersAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"The Runefather's Alloy"
+	[tag]"name RU"			[value]"<The Runefather's Alloy>[?]"
+	
+	[tag]"icon path"		[value]"TheRunefathersAlloy"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Alloys"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	#########
+	#ores
+	#########
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Venerable Starlit Ore"
+	[tag]"name RU"			[value]"Почитаемая подзвёздная руда"
+	
+	[tag]"icon path"		[value]"VenerableStarlitOre"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Ore"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Revered Starlit Ore"
+	[tag]"name RU"			[value]"Благоговейная подзвёздная руда"
+	
+	[tag]"icon path"		[value]"ReveredStarlitOre"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Ore"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Veridical Starlit Ore"
+	[tag]"name RU"			[value]"Истинная подзвёздная руда"
+	
+	[tag]"icon path"		[value]"VeridicalStarlitOre"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Ore"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Warding Starlit Ore"
+	[tag]"name RU"			[value]"WardingStarlitOre"
+	
+	[tag]"icon path"		[value]"WardingStarlitOre"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Ore"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Starlit Ore"
+	[tag]"name RU"			[value]"Подзвёздная руда"
+	
+	[tag]"icon path"		[value]"StarlitOre"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Ore"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+		
+	#########
+	#flux
+	#########
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Blazing Flux"
+	[tag]"name RU"			[value]"Жгучий расплав"
+	
+	[tag]"icon path"		[value]"BlazingFlux"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Chilling Flux"
+	[tag]"name RU"			[value]"Студёный расплав"
+	
+	[tag]"icon path"		[value]"ChillingFlux"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Crackling Flux"
+	[tag]"name RU"			[value]"Искрящий расплав"
+	
+	[tag]"icon path"		[value]"CracklingFlux"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Void Flux"
+	[tag]"name RU"			[value]"Пустотный расплав"
+	
+	[tag]"icon path"		[value]"VoidFlux"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	#########
+	#Thaumaturgic Flux
+	#########
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 5)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 5)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level5)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 6)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 6)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level6)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 7)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 7)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level7)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 8)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 8)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level6)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 9)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 9)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level9)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 10)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 10)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level10)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 11)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 11)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level11)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 12)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 12)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level12)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 13)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 13)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level13)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 14)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 14)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level14)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 15)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 15)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level15)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 16)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 16)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level16)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 17)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 17)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level17)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 18)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 18)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level18)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 19)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 19)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level19)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Thaumaturgic Flux (Level 20)"
+	[tag]"name RU"			[value]"Магический расплав (уровень 20)"
+	
+	[tag]"icon path"		[value]"ThaumaturgicFlux(Level20)"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Thaumaturgic flux"
+	[tag]"item tag"			[value]"RotA currency"
+	
+	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+
+	
+	
+	
+	#########
+	#key
+	#########
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Cryptic Key"
+	[tag]"name RU"			[value]"Скрытый ключ"
+	
+	[tag]"icon path"		[value]"CrypticKey"
+	[tag]"base class"		[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"			[value]"Key"
 	
 	[tag]"drop level"		[value]"1"
 			

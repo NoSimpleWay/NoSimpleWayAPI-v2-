@@ -3364,6 +3364,42 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Helmets"
 
 
+	[tag]"item tag"			[value]"Renamed item"
+	[tag]"renamed to"		[value]"Cassis Helm"
+	
+	[tag]"item tag"			[value]"Deleted"
+	[tag]"item tag"			[value]"Deleted in Return of the Ancients"
+	
+	
+	[tag]"base armour min"	[value]"123"
+	[tag]"base armour max"	[value]"123"
+	[tag]"base evasion min"	[value]"111"
+	[tag]"base evasion max"	[value]"111"
+	[tag]"UNDEFINED"	[value]"Level 59, 59 Str, 59 Dex"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"	
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion"
+
+	[tag]"worth"	[value]"Trash"
+
+
+#T8
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Cassis Helm"
+	[tag]"name RU"	[value]"<Cassis Helm>[?]"
+
+	[tag]"icon path"	[value]"ShieldedHelm"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
 	[tag]"base armour min"	[value]"123"
 	[tag]"base armour max"	[value]"123"
 	[tag]"base evasion min"	[value]"111"
@@ -5296,3 +5332,65 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 
 	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Visor"
+	[tag]"name RU"	[value]"Древний забранный шлем"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base evasion min"	[value]"80"
+	[tag]"base evasion max"	[value]"80"
+	[tag]"base energy shield min"	[value]"80"
+	[tag]"base energy shield max"	[value]"80"
+	[tag]"UNDEFINED"	[value]"Level 65, 46 Str, 46 Dex, 46 Int"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"worth"	[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tenebrous Crown"
+	[tag]"name RU"	[value]"<Tenebrous Crown>[?]"
+
+	[tag]"icon path"	[value]"UndefinedHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+
+	[tag]"base armour min"	[value]"80"
+	[tag]"base armour max"	[value]"80"
+	[tag]"base evasion min"	[value]"80"
+	[tag]"base evasion max"	[value]"80"
+	[tag]"base energy shield min"	[value]"80"
+	[tag]"base energy shield max"	[value]"80"
+	[tag]"UNDEFINED"	[value]"Level 65, 46 Str, 46 Dex, 46 Int"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+	[tag]"worth"	[value]"Trash"
+	

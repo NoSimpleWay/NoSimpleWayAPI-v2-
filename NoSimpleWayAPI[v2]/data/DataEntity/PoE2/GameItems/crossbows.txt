@@ -1277,3 +1277,32 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	
+###############################################################
+#________________RotA league section
+###############################################################
+
+#T20
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Trarthan Cannon"
+	[tag]"name RU"		[value]"Тератновская пушка"
+
+	[tag]"icon path"	[value]"BombardCrossbow"
+	[tag]"base class"	[value]"Crossbows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Always unique"
+		
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	

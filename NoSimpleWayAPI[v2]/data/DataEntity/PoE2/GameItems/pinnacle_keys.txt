@@ -122,3 +122,28 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Call of the Shadows"
+	[tag]"name RU"		[value]"Зов теней"
+
+	[tag]"icon path"	[value]"CallOfTheShadows"
+	[tag]"base class"	[value]"Pinnacle Keys"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"		[value]"Loot source: Boss"
+	[tag]"item tag"		[value]"Boss pass"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -228,3 +228,103 @@ ADD_NEW_DATA_ENTITY
 	[tag]"DAE tier"		[value]"Default"
 	
 	[tag]"worth"		[value]"Best"
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stalking Belt"
+	[tag]"name RU"		[value]"Охотничий ремень"
+
+	[tag]"icon path"	[value]"UndefinedItem"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Best"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Invoking Belt"
+	[tag]"name RU"		[value]"Ремень призывателя"
+
+	[tag]"icon path"	[value]"UndefinedItem"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Best"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Sinew Belt"
+	[tag]"name RU"		[value]"Ремень из сухожилий"
+
+	[tag]"icon path"	[value]"UndefinedItem"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Best"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Forking Belt"
+	[tag]"name RU"		[value]"Разветвляющий ремень"
+
+	[tag]"icon path"	[value]"UndefinedItem"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+	
+	[tag]"base family"	[value]"Basic"
+	[tag]"DAE tier"		[value]"Default"
+	
+	[tag]"worth"		[value]"Best"
+	

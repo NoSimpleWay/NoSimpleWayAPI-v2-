@@ -5467,20 +5467,51 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"	[value]"Trash"
 	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
-
-	[tag]"name EN"	[value]"Shock Conduction I"
-	[tag]"name RU"	[value]"<Elemental Weakness>"
+	
+	[tag]"name EN"		[value]"Shock Conduction I"
+	[tag]"name RU"		[value]"Проводник шока I"
 
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
 	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Shock Conduction"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
 	
 	
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Shock Conduction"
+	[tag]"name RU"	[value]"Проводник шока"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
 	[tag]"item tag"		[value]"Support Gems"
 	
 	
@@ -14714,31 +14745,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	
-	ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Eonyr's Thunder"
-	[tag]"name RU"	[value]"<Eonyr's Thunder>"
-
-	[tag]"icon path"	[value]"SuppotGem(PoE2)"
-	[tag]"base class"	[value]"Support Gems"
-	
-	
-	
-	
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
-	[tag]"item tag"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
-	
-	
-	
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"worth"	[value]"Trash"
 	
 		
 	
@@ -14751,7 +14758,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuppotGem(PoE2)"
 	[tag]"base class"	[value]"Support Gems"
-	[tag]"item tag"	[value]"Lineage Gem"
 	
 	
 	
@@ -14770,4 +14776,808 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"	[value]"Trash"
 	
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tangmazu's Thurible"
+	[tag]"name RU"	[value]"Кадильница Тангмазу"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Catha's Brilliance"
+	[tag]"name RU"	[value]"Великолепие Каты"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Morrigan's Insight"
+	[tag]"name RU"	[value]"Проницательность Морриган"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Prototype Seventeen"
+	[tag]"name RU"	[value]"Прототип семнадцать"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Arbiter's Reach"
+	[tag]"name RU"	[value]"Охват Арбитра"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Her Declaration"
+	[tag]"name RU"	[value]"Её заявление"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Seraph's Heart"
+	[tag]"name RU"	[value]"Сердце серафима"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Trickster's Shard"
+	[tag]"name RU"	[value]"Осколок Плута"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Esh's Prowess"
+	[tag]"name RU"	[value]"Умение Иш"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Tul's Avalanche"
+	[tag]"name RU"	[value]"Лавина Тул"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Breachlord's Amalgam"
+	[tag]"name RU"	[value]"Слияние Повелителя Разлома"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vruun's Aftermath"
+	[tag]"name RU"	[value]"Последствие Рууна"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vruun's Inevitability"
+	[tag]"name RU"	[value]"Неизбежность Рууна"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Uhtred's Rite"
+	[tag]"name RU"	[value]"Ритуал Утреда"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Uhtred's Constellation"
+	[tag]"name RU"	[value]"Созвездие Утреда"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Medved's Felling"
+	[tag]"name RU"	[value]"Неистовство Медведя"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Vorana's Siege"
+	[tag]"name RU"	[value]"Осада Вораны"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Styrn's Mountain"
+	[tag]"name RU"	[value]"Гора Стирна"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Styrn's Ferocity"
+	[tag]"name RU"	[value]"Свирепость Стирна"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Eonyr's Thunder"
+	[tag]"name RU"	[value]"Гром Эонира"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Helbrym's Hide"
+	[tag]"name RU"	[value]"Шкура Хельбрима"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Concussive Runes"
+	[tag]"name RU"	[value]"Сотрясающие руны"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fist of Kalguur"
+	[tag]"name RU"	[value]"Кулак Калгуура"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Healing Runes"
+	[tag]"name RU"	[value]"Исцеляющие руны"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Olroth's Conviction"
+	[tag]"name RU"	[value]"Калгууранская убеждённость"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Olroth's Hubris"
+	[tag]"name RU"	[value]"Гордыня Олрота"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Runeforged Blades"
+	[tag]"name RU"	[value]"Руннокованые клинки"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Runic Extraction"
+	[tag]"name RU"	[value]"Рунное извлечение"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Runic Infusion"
+	[tag]"name RU"	[value]"Рунное насыщение"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Scouring Flame"
+	[tag]"name RU"	[value]"Очищающее пламя"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Minion Splash I"
+	[tag]"name RU"	[value]"Удар по площади приспешников I"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Minion Splash II"
+	[tag]"name RU"	[value]"Удар по площади приспешников II"
+
+	[tag]"icon path"	[value]"SuppotGem(PoE2)"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Support Gems"
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+		
+	
+	
+		

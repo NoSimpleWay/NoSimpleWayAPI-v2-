@@ -374,3 +374,151 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Two-Stone Ring"
+	[tag]"name RU"		[value]"Кольцо с двумя камнями"
+
+	[tag]"icon path"	[value]"Two_stone"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Biostatic Ring"
+	[tag]"name RU"		[value]"Биостатическое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vitalic Ring"
+	[tag]"name RU"		[value]"Жизнестойкое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Mnemonic Ring"
+	[tag]"name RU"		[value]"Мнемоническое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Kinetic Ring"
+	[tag]"name RU"		[value]"Кинетическое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Oneiric Ring"
+	[tag]"name RU"		[value]"Сновидческое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Grasping Ring"
+	[tag]"name RU"		[value]"Цепкое кольцо"
+
+	[tag]"icon path"	[value]"UndefinedRing"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"World"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

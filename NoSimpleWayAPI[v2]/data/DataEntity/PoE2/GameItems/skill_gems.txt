@@ -544,6 +544,535 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Animus Exchange"
+	[tag]"name RU"	[value]"Обмен анимой"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Animus Splinters"
+	[tag]"name RU"	[value]"Осколки анимы"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Bitter Dead"
+	[tag]"name RU"	[value]"Стылые трупы"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Conductive Runes"
+	[tag]"name RU"	[value]"Проводящие руны"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Detonate Living"
+	[tag]"name RU"	[value]"Взрывная агония"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Eternal March"
+	[tag]"name RU"	[value]"Вечный марш"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Explosive Transmutation"
+	[tag]"name RU"	[value]"Взрывное преображение"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Fragments of the Past"
+	[tag]"name RU"	[value]"Фрагменты прошлого"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Frostflame Nova"
+	[tag]"name RU"	[value]"Кольцо морозного пламени"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Grim Pillars"
+	[tag]"name RU"	[value]"Мрачные столпы"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Hollow Shell"
+	[tag]"name RU"	[value]"Пустая оболочка"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Leylines"
+	[tag]"name RU"	[value]"Силовые линии"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Powered by Verisium"
+	[tag]"name RU"	[value]"Питание веризием"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Rain of Blades"
+	[tag]"name RU"	[value]"Дождь клинков"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Refutation"
+	[tag]"name RU"	[value]"Отвержение"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Remnants of Kalguur"
+	[tag]"name RU"	[value]"Реликты Отталкивание"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Repulsion"
+	[tag]"name RU"	[value]"Отталкивание"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Runic Reprieve"
+	[tag]"name RU"	[value]"Руническое отведение"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Skyfall"
+	[tag]"name RU"	[value]"Падение небес"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Triskelion Cascade"
+	[tag]"name RU"	[value]"Каскад Трискелиона"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Verisium Manifestations"
+	[tag]"name RU"	[value]"Веризиевые проявления"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Voltaic Barrier"
+	[tag]"name RU"	[value]"Электрический барьер"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Wardbound Minions"
+	[tag]"name RU"	[value]"Барьерные приспешники"
+
+	[tag]"icon path"	[value]"PortalGem"
+	[tag]"base class"	[value]"Skill gems"
+	
+
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"Skill gems"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"	[value]"Trash"
 	
 	
 	

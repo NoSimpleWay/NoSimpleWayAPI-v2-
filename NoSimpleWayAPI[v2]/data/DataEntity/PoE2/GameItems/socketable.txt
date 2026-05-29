@@ -42,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Desert Rune"
 	[tag]"name RU"		[value]"Старшая руна пустыни"
 
-	[tag]"icon path"	[value]"GreaterDesertRune2"
+	[tag]"icon path"	[value]"GreaterDesertrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -114,7 +114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Glacial Rune"
 	[tag]"name RU"		[value]"Старшая руна ледника"
 
-	[tag]"icon path"	[value]"GreaterGlacialRune2"
+	[tag]"icon path"	[value]"GreaterGlacialrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -184,7 +184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Storm Rune"
 	[tag]"name RU"		[value]"Старшая руна шторма"
 
-	[tag]"icon path"	[value]"GreaterStormRune2"
+	[tag]"icon path"	[value]"GreaterStormrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -249,7 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Iron Rune"
 	[tag]"name RU"		[value]"Старшая руна железа"
 
-	[tag]"icon path"	[value]"GreaterIronRune2"
+	[tag]"icon path"	[value]"GreaterIronrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -316,7 +316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Body Rune"
 	[tag]"name RU"		[value]"Старшая руна тела"
 
-	[tag]"icon path"	[value]"GreaterBodyRune2"
+	[tag]"icon path"	[value]"GreaterBodyrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -387,7 +387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Mind Rune"
 	[tag]"name RU"		[value]"Старшая руна разума"
 
-	[tag]"icon path"	[value]"GreaterMindRune2"
+	[tag]"icon path"	[value]"GreaterMindrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -457,7 +457,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rebirth Rune"
 	[tag]"name RU"		[value]"Старшая руна перерождения"
 
-	[tag]"icon path"	[value]"GreaterRebirthRune2"
+	[tag]"icon path"	[value]"GreaterRebirthrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -539,7 +539,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Inspiration Rune"
 	[tag]"name RU"		[value]"Старшая руна вдохновения"
 
-	[tag]"icon path"	[value]"GreaterInspirationRune2"
+	[tag]"icon path"	[value]"GreaterInspirationrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -612,7 +612,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Stone Rune"
 	[tag]"name RU"		[value]"Старшая руна камня"
 
-	[tag]"icon path"	[value]"GreaterStoneRune2"
+	[tag]"icon path"	[value]"GreaterStonerune"
 	[tag]"base class"	[value]"Augment"
 
 	[tag]"rune type"	[value]"Greater"
@@ -693,7 +693,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Vision Rune"
 	[tag]"name RU"		[value]"Старшая руна видения"
 
-	[tag]"icon path"	[value]"GreaterVisionRune2"
+	[tag]"icon path"	[value]"GreaterVisionrune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -724,7 +724,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Robust Rune"
 	[tag]"name RU"		[value]"Малая руна мощи"
 
-	[tag]"icon path"	[value]"LesserStrengthRune"
+	[tag]"icon path"	[value]"LesserRobustRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -743,7 +743,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Robust Rune"
 	[tag]"name RU"		[value]"Руна мощи"
 
-	[tag]"icon path"	[value]"StrengthRune"
+	[tag]"icon path"	[value]"RobustRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -762,7 +762,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Robust Rune"
 	[tag]"name RU"		[value]"Большая руна мощи"
 
-	[tag]"icon path"	[value]"StrengthRuneTier3"
+	[tag]"icon path"	[value]"GreaterRobustRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -793,7 +793,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Adept Rune"
 	[tag]"name RU"		[value]"Малая руна искусности"
 
-	[tag]"icon path"	[value]"LesserDexRune"
+	[tag]"icon path"	[value]"LesserAdeptRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -812,7 +812,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Adept Rune"
 	[tag]"name RU"		[value]"Руна искусности"
 
-	[tag]"icon path"	[value]"DexRune"
+	[tag]"icon path"	[value]"AdeptRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -831,7 +831,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Adept Rune"
 	[tag]"name RU"		[value]"Большая руна искусности"
 
-	[tag]"icon path"	[value]"DexRuneTier3"
+	[tag]"icon path"	[value]"AdeptRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -861,7 +861,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Resolve Rune"
 	[tag]"name RU"		[value]"Малая руна решительности"
 
-	[tag]"icon path"	[value]"LesserIntRune"
+	[tag]"icon path"	[value]"LesserResolveRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -880,7 +880,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Resolve Rune"
 	[tag]"name RU"		[value]"Руна решительности"
 
-	[tag]"icon path"	[value]"IntRune"
+	[tag]"icon path"	[value]"ResolveRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -899,7 +899,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Resolve Rune"
 	[tag]"name RU"		[value]"Большая руна решительности"
 
-	[tag]"icon path"	[value]"IntRuneTier3"
+	[tag]"icon path"	[value]"ResolveRune"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -937,7 +937,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rune of Leadership"
 	[tag]"name RU"		[value]"Старшая руна лидерства"
 
-	[tag]"icon path"	[value]"GreaterRuneLeadership2"
+	[tag]"icon path"	[value]"GreaterRuneLeadership"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -956,7 +956,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rune of Tithing"
 	[tag]"name RU"		[value]"Старшая руна десятины"
 
-	[tag]"icon path"	[value]"GreaterRuneTithing2"
+	[tag]"icon path"	[value]"GreaterRuneTithing"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -975,7 +975,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rune of Alacrity"
 	[tag]"name RU"		[value]"Старшая руна стремления"
 
-	[tag]"icon path"	[value]"GreaterRuneAlacrity2"
+	[tag]"icon path"	[value]"GreaterRuneAlacrity"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -994,7 +994,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Greater Rune of Nobility"
 	[tag]"name RU"		[value]"Старшая руна дворянства"
 
-	[tag]"icon path"	[value]"GreaterRuneNobility2"
+	[tag]"icon path"	[value]"GreaterRuneNobility"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -1178,7 +1178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Farrul's Rune of the Hunt"
 	[tag]"name RU"		[value]"Руна охоты Фаррул"
 
-	[tag]"icon path"	[value]"RuneoftheHunt"
+	[tag]"icon path"	[value]"FarrulRuneOfTheHunt"
 	[tag]"base class"	[value]"Augment"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
@@ -1991,7 +1991,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableSnake"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Snake Idol"
@@ -2014,7 +2014,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableSnake"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2048,7 +2048,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableMonkey"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Primate Idol"
@@ -2070,7 +2070,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableMonkey"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2105,7 +2105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOwl"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Owl Idol"
@@ -2127,7 +2127,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOwl"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2158,7 +2158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableCat"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Cat Idol"
@@ -2180,7 +2180,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableCat"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2211,7 +2211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableWolf"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Wolf Idol"
@@ -2233,7 +2233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableWolf"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2265,7 +2265,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableStag"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Stag Idol"
@@ -2287,7 +2287,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableStag"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2318,7 +2318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBoar"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Boar Idol"
@@ -2341,7 +2341,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBoar"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2380,7 +2380,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBear"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Bear Idol"
@@ -2402,7 +2402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBear"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2439,7 +2439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOx"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Ox Idol"
@@ -2461,7 +2461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOx"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2500,7 +2500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableRabbit"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Rabbit Idol"
@@ -2522,7 +2522,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableRabbit"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2565,7 +2565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableFox"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Fox Idol"
@@ -2587,7 +2587,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableFox"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2619,7 +2619,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableWolfSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
@@ -2641,7 +2641,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableWolfSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2669,7 +2669,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableSnakeSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 	
@@ -2691,7 +2691,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableSnakeSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2717,7 +2717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBearSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Idol of Grold"
@@ -2739,7 +2739,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableBearSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2773,7 +2773,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOwlSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Idol of Eeshta"
@@ -2795,7 +2795,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableOwlSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2829,7 +2829,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableCatSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Idol of Egrin"
@@ -2851,7 +2851,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableCatSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2881,7 +2881,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableStagSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Idol of Maxarius"
@@ -2903,7 +2903,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableStagSpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -2934,7 +2934,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableMonkeySpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Idol of Ralakesh"
@@ -2956,7 +2956,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AzmeriSocketableMonkeySpecial"
 	[tag]"base class"	[value]"Augment"
 
-	[tag]"rune type"	[value]"Talisman"
+	[tag]"rune type"	[value]"Idol"
 	
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
@@ -3101,7 +3101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Augment"
 
 	[tag]"rune type"	[value]"Soul core"
-	[tag]"item tag"		[value]"Introduced: Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3119,7 +3119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Augment"
 
 	[tag]"rune type"	[value]"Soul core"
-	[tag]"item tag"		[value]"Introduced: Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3137,7 +3137,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Augment"
 
 	[tag]"rune type"	[value]"Soul core"
-	[tag]"item tag"		[value]"Introduced: Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3156,9 +3156,3394 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Augment"
 
 	[tag]"rune type"	[value]"Soul core"
-	[tag]"item tag"		[value]"Introduced: Introduced: The last of the druids"
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+	######
+	#Runes
+	######
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Desert Rune"
+	[tag]"name RU"		[value]"Безупречная руна пустыни"
+
+	[tag]"icon path"	[value]"PerfectDesertRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Glacial Rune"
+	[tag]"name RU"		[value]"Безупречная руна ледника"
+
+	[tag]"icon path"	[value]"PerfectGlacialRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Storm Rune"
+	[tag]"name RU"		[value]"Безупречная руна шторма"
+
+	[tag]"icon path"	[value]"PerfectStormRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Iron Rune"
+	[tag]"name RU"		[value]"Безупречная руна железа"
+
+	[tag]"icon path"	[value]"PerfectIronRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Body Rune"
+	[tag]"name RU"		[value]"Безупречная руна тела"
+
+	[tag]"icon path"	[value]"PerfectBodyRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Mind Rune"
+	[tag]"name RU"		[value]"Безупречная руна разума"
+
+	[tag]"icon path"	[value]"PerfectMindRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Rebirth Rune"
+	[tag]"name RU"		[value]"Безупречная руна перерождения"
+
+	[tag]"icon path"	[value]"PerfectRebirthRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Inspiration Rune"
+	[tag]"name RU"		[value]"Безупречная руна вдохновения"
+
+	[tag]"icon path"	[value]"PerfectInspirationRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Stone Rune"
+	[tag]"name RU"		[value]"Безупречная руна камня"
+
+	[tag]"icon path"	[value]"PerfectStoneRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Vision Rune"
+	[tag]"name RU"		[value]"Безупречная руна видения"
+
+	[tag]"icon path"	[value]"PerfectVisionRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Robust Rune"
+	[tag]"name RU"		[value]"Безупречная руна мощи"
+
+	[tag]"icon path"	[value]"PerfectRobustRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Adept Rune"
+	[tag]"name RU"		[value]"Безупречная руна искусности"
+
+	[tag]"icon path"	[value]"PerfectAdeptRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Resolve Rune"
+	[tag]"name RU"		[value]"Безупречная руна решительности"
+
+	[tag]"icon path"	[value]"PerfectResolveRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Masterwork Rune"
+	[tag]"name RU"		[value]"Мастерская руна"
+
+	[tag]"icon path"	[value]"MasterworkRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Master"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	######
+	#Idols
+	######
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Greust"
+	[tag]"name RU"		[value]"Идол Груста"
+
+	[tag]"icon path"	[value]"IdolOfGreust"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Yeena"
+	[tag]"name RU"		[value]"Идол Йины"
+
+	[tag]"icon path"	[value]"IdolOfYeena"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Eramir"
+	[tag]"name RU"		[value]"Идол Эрамира"
+
+	[tag]"icon path"	[value]"IdolOfEramir"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Oak"
+	[tag]"name RU"		[value]"Идол Дуба"
+
+	[tag]"icon path"	[value]"IdolOfOak"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Alira"
+	[tag]"name RU"		[value]"Идол Алиры"
+
+	[tag]"icon path"	[value]"IdolOfAlira"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Kraityn"
+	[tag]"name RU"		[value]"Идол Крайтина"
+
+	[tag]"icon path"	[value]"IdolOfKraityn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of Silk"
+	[tag]"name RU"		[value]"Идол Шёлка"
+
+	[tag]"icon path"	[value]"IdolOfSilk"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of the Martyr"
+	[tag]"name RU"		[value]"Идол прислужника"
+
+	[tag]"icon path"	[value]"IdolOfTheMartyr"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of the Sycophant"
+	[tag]"name RU"		[value]"Идол жертвы"
+
+	[tag]"icon path"	[value]"IdolOfTheSycophant"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Idol of the Pharisee"
+	[tag]"name RU"		[value]"Идол фарисея"
+
+	[tag]"icon path"	[value]"IdolOfThePharisee"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Panther Idol"
+	[tag]"name RU"		[value]"<Panther Idol>[?]"
+
+	[tag]"icon path"	[value]"PantherIdol"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Hawk Idol"
+	[tag]"name RU"		[value]"<Hawk Idol>[?]"
+
+	[tag]"icon path"	[value]"HawkIdol"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Stoat Idol"
+	[tag]"name RU"		[value]"<Stoat Idol>[?]"
+
+	[tag]"icon path"	[value]"StoatIdol"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Idol"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	##########
+	#Emergents
+	##########
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emergent Vigour"
+	[tag]"name RU"		[value]"Зародившаяся сила"
+
+	[tag]"icon path"	[value]"EmergentVigour"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Emergent"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emergent Possibility"
+	[tag]"name RU"		[value]"Зародившаяся возможность"
+
+	[tag]"icon path"	[value]"EmergentProtection"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Emergent"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emergent Protection"
+	[tag]"name RU"		[value]"Зародившаяся защита"
+
+	[tag]"icon path"	[value]"EmergentPossibility"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Emergent"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Emergent Instinct"
+	[tag]"name RU"		[value]"Зародившийся инстинкт"
+
+	[tag]"icon path"	[value]"EmergentInstinct"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Emergent"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	##########
+	#Carved
+	##########
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Cunning"
+	[tag]"name RU"		[value]"Высеченная хитрость"
+
+	[tag]"icon path"	[value]"CarvedCunning"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Carved"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Majesty"
+	[tag]"name RU"		[value]"Высеченное величие"
+
+	[tag]"icon path"	[value]"CarvedMajesty"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Carved"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Mischief"
+	[tag]"name RU"		[value]"Высеченное озорство"
+
+	[tag]"icon path"	[value]"CarvedMischief"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Carved"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Carved Tenacity"
+	[tag]"name RU"		[value]"Высеченная стойкость"
+
+	[tag]"icon path"	[value]"CarvedTenacity"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Carved"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+	
+	
+	
+	##########
+	#Raven
+	##########
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Raven-Touched Shard"
+	[tag]"name RU"		[value]"Осколок Ворона"
+
+	[tag]"icon path"	[value]"RavenTouchedShard"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Raven"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+	
+	##########
+	#ward runes
+	##########
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Ward Rune"
+	[tag]"name RU"		[value]"Малая руна барьера"
+
+	[tag]"icon path"	[value]"LesserWard Rune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ward Rune"
+	[tag]"name RU"		[value]"Руна барьера"
+
+	[tag]"icon path"	[value]"WardRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Ward Rune"
+	[tag]"name RU"		[value]"Большая руна барьера"
+
+	[tag]"icon path"	[value]"GreaterWardRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Ward Rune"
+	[tag]"name RU"		[value]"Безупречная руна барьера"
+
+	[tag]"icon path"	[value]"PerfectWardRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lesser Charging Rune"
+	[tag]"name RU"		[value]"Малая руна заряда"
+
+	[tag]"icon path"	[value]"LesserChargingRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Lesser"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Charging Rune"
+	[tag]"name RU"		[value]"Руна заряда"
+
+	[tag]"icon path"	[value]"ChargingRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Greater Charging Rune"
+	[tag]"name RU"		[value]"Большая руна заряда"
+
+	[tag]"icon path"	[value]"GreaterChargingRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Greater"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perfect Charging Rune"
+	[tag]"name RU"		[value]"Безупречная руна заряда"
+
+	[tag]"icon path"	[value]"PerfectChargingRune"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Perfect"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+	
+	##########
+	#wardind runes
+	##########	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Reinforcement"
+	[tag]"name RU"		[value]"Барьерная руна укрепления"
+
+	[tag]"icon path"	[value]"WardingRuneOfReinforcement"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Protection"
+	[tag]"name RU"		[value]"Барьерная руна защиты"
+
+	[tag]"icon path"	[value]"WardingRuneOfProtection"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Disintegration"
+	[tag]"name RU"		[value]"Барьерная руна расщепления"
+
+	[tag]"icon path"	[value]"WardingRuneOfDisintegration"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Desperation"
+	[tag]"name RU"		[value]"Барьерная руна отчаяния"
+
+	[tag]"icon path"	[value]"WardingRuneOfDesperation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Symbiosis"
+	[tag]"name RU"		[value]"Барьерная руна симбиоза"
+
+	[tag]"icon path"	[value]"WardingRuneOfSymbiosis"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Courage"
+	[tag]"name RU"		[value]"Барьерная руна храбрости"
+
+	[tag]"icon path"	[value]"WardingRuneOfCourage"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Stability"
+	[tag]"name RU"		[value]"Барьерная руна устойчивости"
+
+	[tag]"icon path"	[value]"WardingRuneOfStability"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Glancing"
+	[tag]"name RU"		[value]"Барьерная руна скольжения"
+
+	[tag]"icon path"	[value]"WardingRuneOfGlancing"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Heart"
+	[tag]"name RU"		[value]"Барьерная руна сердца"
+
+	[tag]"icon path"	[value]"WardingRuneOfHeart"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Nourishment"
+	[tag]"name RU"		[value]"Барьерная руна пропитания"
+
+	[tag]"icon path"	[value]"WardingRuneOfNourishment"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Annihilation"
+	[tag]"name RU"		[value]"Барьерная руна уничтожения"
+
+	[tag]"icon path"	[value]"WardingRuneOfAnnihilation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Armature"
+	[tag]"name RU"		[value]"Барьерная руна панциря"
+
+	[tag]"icon path"	[value]"WardingRuneOfArmature"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Obsession"
+	[tag]"name RU"		[value]"Барьерная руна одержимости"
+
+	[tag]"icon path"	[value]"WardingRuneOfObsession"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Equinox"
+	[tag]"name RU"		[value]"Барьерная руна равноденствия"
+
+	[tag]"icon path"	[value]"WardingRuneOfEquinox"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Salvaging"
+	[tag]"name RU"		[value]"Барьерная руна обломков"
+
+	[tag]"icon path"	[value]"WardingRuneOfSalvaging"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Bodyguards"
+	[tag]"name RU"		[value]"Барьерная руна телохранителей"
+
+	[tag]"icon path"	[value]"WardingRuneOfBodyguards"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Rune of Hollowing"
+	[tag]"name RU"		[value]"Барьерная руна опустевания"
+
+	[tag]"icon path"	[value]"WardingRuneOfHollowing"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Warding"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	##########
+	#aldur runes
+	##########	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Passion of Aldur"
+	[tag]"name RU"		[value]"Страсть Альдура"
+
+	[tag]"icon path"	[value]"PassionOfAldur"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Aldur"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breath of Aldur"
+	[tag]"name RU"		[value]"Дыхание Альдура"
+
+	[tag]"icon path"	[value]"BreathOfAldur"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Aldur"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ire of Aldur"
+	[tag]"name RU"		[value]"Гнев Альдура"
+
+	[tag]"icon path"	[value]"IreOfAldur"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Aldur"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Betrayal of Aldur"
+	[tag]"name RU"		[value]"Предательство Альдура"
+
+	[tag]"icon path"	[value]"BetrayalOfAldur"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Aldur"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+
+	
+	##########
+	#ancient runes
+	##########	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Splinters"
+	[tag]"name RU"		[value]"Древняя руна осколков"
+
+	[tag]"icon path"	[value]"AncientRuneOfSplinters"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Dueling"
+	[tag]"name RU"		[value]"Древняя руна поединка"
+
+	[tag]"icon path"	[value]"AncientRuneOfDueling"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of the Titan"
+	[tag]"name RU"		[value]"Древняя руна Титана"
+
+	[tag]"icon path"	[value]"AncientRuneOfTheTitan"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Shattering"
+	[tag]"name RU"		[value]"Древняя руна разбивания"
+
+	[tag]"icon path"	[value]"AncientRuneOfShattering"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Prowess"
+	[tag]"name RU"		[value]"Древняя руна мастерства"
+
+	[tag]"icon path"	[value]"AncientRuneOfProwess"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Control"
+	[tag]"name RU"		[value]"Древняя руна правления"
+
+	[tag]"icon path"	[value]"AncientRuneOfControl"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Discovery"
+	[tag]"name RU"		[value]"Древняя руна находки"
+
+	[tag]"icon path"	[value]"AncientRuneOfDiscovery"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Decay"
+	[tag]"name RU"		[value]"Древняя руна тлена"
+
+	[tag]"icon path"	[value]"AncientRuneOfDecay"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Witchcraft"
+	[tag]"name RU"		[value]"Древняя руна ведьмовства"
+
+	[tag]"icon path"	[value]"AncientRuneOfWitchcraft"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of the Horde"
+	[tag]"name RU"		[value]"Древняя руна орды"
+
+	[tag]"icon path"	[value]"AncientRuneOfTheHorde"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Animosity"
+	[tag]"name RU"		[value]"Древняя руна вражды"
+
+	[tag]"icon path"	[value]"AncientRuneOfAnimosity"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Detonation"
+	[tag]"name RU"		[value]"Древняя руна подрыва"
+
+	[tag]"icon path"	[value]"AncientRuneOfDetonation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Rune of Retaliation"
+	[tag]"name RU"		[value]"Древняя руна расплаты"
+
+	[tag]"icon path"	[value]"AncientRuneOfRetaliation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Ancient"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	###############
+	#default runes
+	###############
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Vitality"
+	[tag]"name RU"		[value]"Руна живучести"
+
+	[tag]"icon path"	[value]"RuneOfVitality"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of the Hunt"
+	[tag]"name RU"		[value]"Руна охоты"
+
+	[tag]"icon path"	[value]"RuneOfTheHunt"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Acrobatics"
+	[tag]"name RU"		[value]"Руна акробатики"
+
+	[tag]"icon path"	[value]"RuneOfAcrobatics"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Culmination"
+	[tag]"name RU"		[value]"Руна кульминации"
+
+	[tag]"icon path"	[value]"RuneOfCulmination"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Renown"
+	[tag]"name RU"		[value]"Руна славы"
+
+	[tag]"icon path"	[value]"RuneOfRenown"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Accumulation"
+	[tag]"name RU"		[value]"Руна накопления"
+
+	[tag]"icon path"	[value]"RuneOfAccumulation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Foundations"
+	[tag]"name RU"		[value]"Руна основ"
+
+	[tag]"icon path"	[value]"RuneOfFoundations"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of the Prism"
+	[tag]"name RU"		[value]"Руна призмы"
+
+	[tag]"icon path"	[value]"RuneOfThePrism"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of the Blossom"
+	[tag]"name RU"		[value]"Руна цветения"
+
+	[tag]"icon path"	[value]"RuneOfTheBlossom"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Consistency"
+	[tag]"name RU"		[value]"Руна постоянства"
+
+	[tag]"icon path"	[value]"RuneOfConsistency"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Reach"
+	[tag]"name RU"		[value]"Руна охвата"
+
+	[tag]"icon path"	[value]"RuneOfReach"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Vital Flame"
+	[tag]"name RU"		[value]"Руна живого пламени"
+
+	[tag]"icon path"	[value]"RuneOfVitalFlame"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Rune of Confrontation"
+	[tag]"name RU"		[value]"Руна противоборства"
+
+	[tag]"icon path"	[value]"RuneOfConfrontation"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Default"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	###############
+	#special runes
+	###############
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Serle's Triumph"
+	[tag]"name RU"		[value]"Триумф Серли"
+
+	[tag]"icon path"	[value]"SerlesTriumph"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Cadigan's Epiphany"
+	[tag]"name RU"		[value]"Озарение Кадигана"
+
+	[tag]"icon path"	[value]"CadigansEpiphany"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Astrid's Creativity"
+	[tag]"name RU"		[value]"Изобретательность Астрид"
+
+	[tag]"icon path"	[value]"AstridsCreativity"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uhtred's Sidereus"
+	[tag]"name RU"		[value]"Сидерий Утреда"
+
+	[tag]"icon path"	[value]"UhtredsSidereus"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Kolr's Hunt"
+	[tag]"name RU"		[value]"Охота Колра"
+
+	[tag]"icon path"	[value]"KolrsHunt"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vorana's Carnage"
+	[tag]"name RU"		[value]"Резня Вораны"
+
+	[tag]"icon path"	[value]"VoranasCarnage"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Thrud's Might"
+	[tag]"name RU"		[value]"Сила Трада"
+
+	[tag]"icon path"	[value]"ThrudsMight"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Medved's Tending"
+	[tag]"name RU"		[value]"Присмотр Медведя"
+
+	[tag]"icon path"	[value]"MedvedsTending"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Katla's Gloom"
+	[tag]"name RU"		[value]"Мрачность Катлы"
+
+	[tag]"icon path"	[value]"KatlasGloom"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Aldur's Legacy"
+	[tag]"name RU"		[value]"Наследие Альдура"
+
+	[tag]"icon path"	[value]"AldursLegacy"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+		
+	###############
+	#unique runes
+	###############
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Bramblejack"
+	[tag]"name RU"		[value]"Наследие Колючего панциря"
+
+	[tag]"icon path"	[value]"LegacyOfBramblejack"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Blackbraid"
+	[tag]"name RU"		[value]"Наследие Чёрного плетения"
+
+	[tag]"icon path"	[value]"LegacyOfBlackbraid"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Edyrns Tusks"
+	[tag]"name RU"		[value]"Наследие Бивней Эдирна"
+
+	[tag]"icon path"	[value]"LegacyOfEdyrnsTusks"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Kingsguard"
+	[tag]"name RU"		[value]"Наследие Хранителя царей"
+
+	[tag]"icon path"	[value]"LegacyOfKingsguard"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Bristleboar"
+	[tag]"name RU"		[value]"Наследие Ощетинившегося вепря"
+
+	[tag]"icon path"	[value]"LegacyOfBristleboar"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Foxshade"
+	[tag]"name RU"		[value]"Наследие Лисьей тени"
+
+	[tag]"icon path"	[value]"LegacyOfFoxshade"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Ashrend"
+	[tag]"name RU"		[value]"Наследие Пепла"
+
+	[tag]"icon path"	[value]"LegacyOfAshrend"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Briskwrap"
+	[tag]"name RU"		[value]"Наследие Ремней проворства"
+
+	[tag]"icon path"	[value]"LegacyOfBriskwrap"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Unleashed"
+	[tag]"name RU"		[value]"Наследие Высвобожденного"
+
+	[tag]"icon path"	[value]"LegacyOfThe Unleashed"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Horns of Bynden"
+	[tag]"name RU"		[value]"Наследие Рогов Биндена"
+
+	[tag]"icon path"	[value]"LegacyOfHornsOfBynden"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Wings of Caelyn"
+	[tag]"name RU"		[value]"Наследие Крыльев Кейлин"
+
+	[tag]"icon path"	[value]"LegacyOfWingsOfCaelyn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Ezomyte Peak"
+	[tag]"name RU"		[value]"Наследие Триумфа эзомита"
+
+	[tag]"icon path"	[value]"LegacyOfEzomytePeak"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Deidbell"
+	[tag]"name RU"		[value]"Наследие Колокола мёртвых"
+
+	[tag]"icon path"	[value]"LegacyOfDeidbell"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Elevore"
+	[tag]"name RU"		[value]"Наследие Поедателя стихий"
+
+	[tag]"icon path"	[value]"LegacyOfElevore"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Starkonja's Head"
+	[tag]"name RU"		[value]"Наследие Головы Старконжи"
+
+	[tag]"icon path"	[value]"LegacyOfStarkonjasHead"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Crown of Thorns"
+	[tag]"name RU"		[value]"Наследие Тернового венца"
+
+	[tag]"icon path"	[value]"LegacyOfCrownOfThorns"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Greymake"
+	[tag]"name RU"		[value]"Наследие Серого мрака"
+
+	[tag]"icon path"	[value]"LegacyOfGreymake"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Erian's Cobble"
+	[tag]"name RU"		[value]"Наследие Шишака Эриана"
+
+	[tag]"icon path"	[value]"LegacyOfEriansCobble"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Smiling Knight"
+	[tag]"name RU"		[value]"Наследие Улыбающегося рыцаря"
+
+	[tag]"icon path"	[value]"LegacyOfTheSmilingKnight"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Vile Knight"
+	[tag]"name RU"		[value]"Наследие Подлого рыцаря"
+
+	[tag]"icon path"	[value]"LegacyOfTheVileKnight"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Northpaw"
+	[tag]"name RU"		[value]"Наследие Северных лап"
+
+	[tag]"icon path"	[value]"LegacyOfNorthpaw"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Candlemaker"
+	[tag]"name RU"		[value]"Наследие Свечеделов"
+
+	[tag]"icon path"	[value]"LegacyOfCandlemaker"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Deathblow"
+	[tag]"name RU"		[value]"Наследие Смертельного удара"
+
+	[tag]"icon path"	[value]"LegacyOfDeathblow"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Legionstride"
+	[tag]"name RU"		[value]"Наследие Поступи легиона"
+
+	[tag]"icon path"	[value]"LegacyOfLegionstride"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Trampletoe"
+	[tag]"name RU"		[value]"Наследие Плоскостопов"
+
+	[tag]"icon path"	[value]"LegacyOfTrampletoe"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Briarpatch"
+	[tag]"name RU"		[value]"Наследие Терновников"
+
+	[tag]"icon path"	[value]"LegacyOfBriarpatch"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Bushwhack"
+	[tag]"name RU"		[value]"Наследие Кустоломов"
+
+	[tag]"icon path"	[value]"LegacyOfBushwhack"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Wanderlust"
+	[tag]"name RU"		[value]"Наследие Странников"
+
+	[tag]"icon path"	[value]"LegacyOfWanderlust"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Knight-errant"
+	[tag]"name RU"		[value]"Наследие Странствующего рыцаря"
+
+	[tag]"icon path"	[value]"LegacyOfTheKnightErrant"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Obern's Bastion"
+	[tag]"name RU"		[value]"Наследие Бастиона Оберна"
+
+	[tag]"icon path"	[value]"LegacyOfObernsBastion"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Dionadair"
+	[tag]"name RU"		[value]"Наследие Защитника"
+
+	[tag]"icon path"	[value]"LegacyOfDionadair"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Wulfsbane"
+	[tag]"name RU"		[value]"Наследие Погибели Вульфа"
+
+	[tag]"icon path"	[value]"LegacyOfWulfsbane"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Chernobog's Pillar"
+	[tag]"name RU"		[value]"Наследие Столпа Чернобога"
+
+	[tag]"icon path"	[value]"LegacyOfChernobogsPillar"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Alkem Eira"
+	[tag]"name RU"		[value]"Наследие Альким Эира"
+
+	[tag]"icon path"	[value]"LegacyOfAlkemEira"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Oaksworn"
+	[tag]"name RU"		[value]"Наследие Старого дуба"
+
+	[tag]"icon path"	[value]"LegacyOfOaksworn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Dunkelhalt"
+	[tag]"name RU"		[value]"Наследие Тёмной хватки"
+
+	[tag]"icon path"	[value]"LegacyOfDunkelhalt"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Rondel de Ezo"
+	[tag]"name RU"		[value]"Наследие Ронделя де Эзо"
+
+	[tag]"icon path"	[value]"LegacyOfRondelDeEzo"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Brynhand's Mark"
+	[tag]"name RU"		[value]"Наследие Клейма Бринханда"
+
+	[tag]"icon path"	[value]"LegacyOfBrynhandsMark"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Trenchtimbre"
+	[tag]"name RU"		[value]"Наследие Траншейного звона"
+
+	[tag]"icon path"	[value]"LegacyOfTrenchtimbre"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Mjolner"
+	[tag]"name RU"		[value]"Наследие Мьёльнира"
+
+	[tag]"icon path"	[value]"LegacyOfMjolner"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Twisted Empyrean"
+	[tag]"name RU"		[value]"Наследие Искажённой тверди"
+
+	[tag]"icon path"	[value]"LegacyOfTwistedEmpyrean"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Hoghunt"
+	[tag]"name RU"		[value]"Наследие Кабаньего промысла"
+
+	[tag]"icon path"	[value]"LegacyOfHoghunt"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	[tag]"item tag"		[value]"КАБАНИЙ ПРОМЫСЕЛ!"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Hrimnor's Hymn"
+	[tag]"name RU"		[value]"Наследие Гимна Гримнора"
+
+	[tag]"icon path"	[value]"LegacyOfHrimnorsHymn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Brain Rattler"
+	[tag]"name RU"		[value]"Наследие Мозготряса"
+
+	[tag]"icon path"	[value]"LegacyOfBrainRattler"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Lifesprig"
+	[tag]"name RU"		[value]"Наследие Живого побега"
+
+	[tag]"icon path"	[value]"LegacyOfLifesprig"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Duality"
+	[tag]"name RU"		[value]"Наследие Двойственности"
+
+	[tag]"icon path"	[value]"LegacyOfDuality"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Tyranny's Grip"
+	[tag]"name RU"		[value]"Наследие Хватки тирании"
+
+	[tag]"icon path"	[value]"LegacyOfTyrannysGrip"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Sentry"
+	[tag]"name RU"		[value]"Наследие Часового"
+
+	[tag]"icon path"	[value]"LegacyOfTheSentry"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Adonia's Ego"
+	[tag]"name RU"		[value]"Наследие Эго Адонии"
+
+	[tag]"icon path"	[value]"LegacyOfAdoniasEgo"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Cursecarver"
+	[tag]"name RU"		[value]"Наследие Резчика проклятий"
+
+	[tag]"icon path"	[value]"LegacyOfCursecarver"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Dusk Vigil"
+	[tag]"name RU"		[value]"Наследие Сумеречного дозора"
+
+	[tag]"icon path"	[value]"LegacyOfDuskVigil"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of The Blood Thorn"
+	[tag]"name RU"		[value]"Наследие Кровавого шипа"
+
+	[tag]"icon path"	[value]"LegacyOfTheBloodThorn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Quill Rain"
+	[tag]"name RU"		[value]"Наследие Ливня перьев"
+
+	[tag]"icon path"	[value]"LegacyOfQuillRain"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Ironbound"
+	[tag]"name RU"		[value]"Наследие Железного плеча"
+
+	[tag]"icon path"	[value]"LegacyOfIronbound"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Amor Mandragora"
+	[tag]"name RU"		[value]"Наследие Амор Мандрагора"
+
+	[tag]"icon path"	[value]"LegacyOfAmorMandragora"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Spiteful Floret"
+	[tag]"name RU"		[value]"Наследие Злобного соцветия"
+
+	[tag]"icon path"	[value]"LegacyOfSpitefulFloret"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Svalinn"
+	[tag]"name RU"		[value]"Наследие Свалинна"
+
+	[tag]"icon path"	[value]"LegacyOfSvalinn"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Keeper of the Arc"
+	[tag]"name RU"		[value]"Наследие Хранителя свода"
+
+	[tag]"icon path"	[value]"LegacyOfKeeperOfTheArc"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Olrovasara"
+	[tag]"name RU"		[value]"Наследие Олровасары"
+
+	[tag]"icon path"	[value]"LegacyOfOlrovasara"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of A Worthy Foe"
+	[tag]"name RU"		[value]"Наследие Достойного противника"
+
+	[tag]"icon path"	[value]"LegacyOfAWorthyFoe"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Serle's Grit"
+	[tag]"name RU"		[value]"Наследие Выдержки Серли"
+
+	[tag]"icon path"	[value]"LegacyOfSerlesGrit"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Runeseeker's Call"
+	[tag]"name RU"		[value]"Наследие Клича искателя рун"
+
+	[tag]"icon path"	[value]"LegacyOfRuneseekersCall"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Legacy of Facebreaker"
+	[tag]"name RU"		[value]"Наследие Мордобоев"
+
+	[tag]"icon path"	[value]"LegacyOfFacebreaker"
+	[tag]"base class"	[value]"Augment"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"rune type"	[value]"Unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	

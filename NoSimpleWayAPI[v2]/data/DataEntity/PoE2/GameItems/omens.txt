@@ -671,6 +671,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Omen"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
 	
 	
 	[tag]"drop level"	[value]"1"
@@ -1151,3 +1154,164 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Aldur's Saga"
+	[tag]"name RU"		[value]"Aldur's Saga"
+
+	[tag]"icon path"	[value]"AldursSaga"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Medved's Saga"
+	[tag]"name RU"		[value]"Сага Медведя"
+
+	[tag]"icon path"	[value]"MedvedsSaga"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Vorana's Saga"
+	[tag]"name RU"		[value]"Сага Вораны"
+
+	[tag]"icon path"	[value]"VoranasSaga"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Uhtred's Saga"
+	[tag]"name RU"		[value]"Сага Утреда"
+
+	[tag]"icon path"	[value]"UhtredsSaga"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Olroth's Saga"
+	[tag]"name RU"		[value]"Сага Олрота"
+
+	[tag]"icon path"	[value]"OlrothsSaga"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Omen of Chaotic Effectiveness"
+	[tag]"name RU"		[value]"Предзнаменование хаотичной эффективности"
+
+	[tag]"icon path"	[value]"OmenOfChaoticEffectiveness"
+	[tag]"base class"	[value]"Omen"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Omen"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	

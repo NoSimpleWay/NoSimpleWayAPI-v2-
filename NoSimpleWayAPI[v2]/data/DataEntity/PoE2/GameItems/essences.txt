@@ -1281,7 +1281,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"essence rang"	[value]"Corrupted"
+	[tag]"essence rang"	[value]"Special"
 	
 	[tag]"item tag"		[value]"Introduced: Dawn of the Hunt league"
 
@@ -1429,7 +1429,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lesser Essence of Opulence"
 	[tag]"name RU"		[value]"Малая сущность изобилия"
 
-	[tag]"icon path"	[value]"LesserEssenceOfOpulence
+	[tag]"icon path"	[value]"LesserEssenceOfOpulence"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -1518,7 +1518,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
-	[tag]"essence rang"	[value]"Regular"
+	[tag]"essence rang"	[value]"Special"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2030,3 +2030,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"9"
 	
 	[tag]"worth"		[value]"Rare"
+	
+	
+	
+		
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Essence of the Breach"
+	[tag]"name RU"		[value]"Сущность Разлома"
+
+	[tag]"icon path"	[value]"EssenceOfTheBreach"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"essence rang"	[value]"Perfect"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"9"
+	
+	[tag]"worth"		[value]"Rare"
+	

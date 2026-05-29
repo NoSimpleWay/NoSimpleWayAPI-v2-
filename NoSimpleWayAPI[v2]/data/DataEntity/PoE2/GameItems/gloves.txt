@@ -2693,20 +2693,55 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"worth"	[value]"Trash"
 
-
+#RENAMED
 #T4
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"	[value]"Verisium Cuffs"
-	[tag]"name RU"	[value]"Манжеты из веризия"
+	[tag]"name EN"		[value]"Verisium Cuffs"
+	[tag]"name RU"		[value]"Манжеты из веризия"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Kalguuran Cuffs"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+
+	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	
+	[tag]"base evasion min"	[value]"48"
+	[tag]"base evasion max"	[value]"48"
+	[tag]"base energy shield min"	[value]"17"
+	[tag]"base energy shield max"	[value]"17"
+	[tag]"UNDEFINED"	[value]"Level 75, 67 Dex, 67 Int"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/ES"
+
+	[tag]"worth"	[value]"Trash"
+
+#NEW ITEM
+#T4
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Kalguuran Cuffs"
+	[tag]"name RU"	[value]"Калгууранские манжеты"
 
 	[tag]"icon path"	[value]"UndefinedGloves"
 	[tag]"base class"	[value]"Gloves"
 
-
-	[tag]"item tag"	[value]"Introduced: Rise of the Abyssals League"
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
 	
 	[tag]"base evasion min"	[value]"48"
 	[tag]"base evasion max"	[value]"48"
@@ -4282,6 +4317,42 @@ ADD_NEW_DATA_ENTITY
 
 
 
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"	[value]"Ancient Gauntlets"
+	[tag]"name RU"	[value]"Древние перчатки"
+
+	[tag]"icon path"	[value]"UndefinedGloves"
+	[tag]"base class"	[value]"Gloves"
+
+
+	[tag]"base armour min"	[value]"44"
+	[tag]"base armour max"	[value]"44"
+	[tag]"base evasion min"	[value]"40"
+	[tag]"base evasion max"	[value]"40"
+	[tag]"base energy shield min"	[value]"15"
+	[tag]"base energy shield max"	[value]"15"
+	[tag]"UNDEFINED"	[value]"Level 65, 40 Str, 40 Dex, 40 Int"
+
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"usability"		[value]"Unique"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour/Evasion/ES"
+
+	[tag]"worth"	[value]"Trash"
 
 
 

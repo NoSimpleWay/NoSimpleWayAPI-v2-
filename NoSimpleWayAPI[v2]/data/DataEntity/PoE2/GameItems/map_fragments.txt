@@ -130,7 +130,99 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Rise of the Abyssals League"
 	[tag]"item tag"		[value]"Abyss item"
 	
+	[tag]"item tag"		[value]"Boss pass"
+	
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"The Triskelion Reforged"
+	[tag]"name RU"		[value]"Трискелион Перекованный"
+
+	[tag]"icon path"	[value]"TheTriskelionReforged"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Head of the King"
+	[tag]"name RU"		[value]"Голова Хозяина"
+
+	[tag]"icon path"	[value]"HeadOfTheKing"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Abyss item"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breachlord Sac"
+	[tag]"name RU"		[value]"Мешок Повелителя Разлома"
+
+	[tag]"icon path"	[value]"BreachlordSac"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Abyss item"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Raven's Reflection"
+	[tag]"name RU"		[value]"Отражение Ворона"
+
+	[tag]"icon path"	[value]"RavensReflection"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Abyss item"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	

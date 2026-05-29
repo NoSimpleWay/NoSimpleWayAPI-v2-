@@ -4,6 +4,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Breach Precursor Tablet"
 	[tag]"name RU"		[value]"Плитка Предтеч Разлома"
+	
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Breach Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
 
 	[tag]"icon path"	[value]"BreachTablet"
 	[tag]"base class"	[value]"Tablet"
@@ -12,6 +20,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Breach Tablet"
+	[tag]"name RU"		[value]"Плитка Разлома"
+
+	[tag]"icon path"	[value]"BreachTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -23,10 +56,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ExpeditionTablet"
 	[tag]"base class"	[value]"Tablet"
 
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -37,11 +83,50 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"DeliriumTablet"
 	[tag]"base class"	[value]"Tablet"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Delirium Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+	
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Delirium Tablet"
+	[tag]"name RU"		[value]"Плитка Делириума"
+
+	[tag]"icon path"	[value]"DeliriumTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -52,6 +137,72 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RitualTablet"
 	[tag]"base class"	[value]"Tablet"
+	
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Ritual Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+
+	
+	
+	
+	
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ritual Tablet"
+	[tag]"name RU"		[value]"Плитка Ритуала"
+
+	[tag]"icon path"	[value]"RitualTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Irradiated Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч"
+
+	[tag]"icon path"	[value]"IrradiatedTablet"
+	[tag]"base class"	[value]"Tablet"
+	
+	
+	
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Irradiated Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+
+
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -62,8 +213,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE2"
 
-	[tag]"name EN"		[value]"Precursor Tablet"
-	[tag]"name RU"		[value]"Плитка Предтеч"
+	[tag]"name EN"		[value]"Irradiated Tablet"
+	[tag]"name RU"		[value]"Заражённая плитка Предтеч"
 
 	[tag]"icon path"	[value]"IrradiatedTablet"
 	[tag]"base class"	[value]"Tablet"
@@ -72,6 +223,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -84,11 +241,47 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"BossTablet"
 	[tag]"base class"	[value]"Tablet"
+	
+		
+		
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Overseer Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Overseer Tablet"
+	[tag]"name RU"		[value]"Плитка смотрителя"
+
+	[tag]"icon path"	[value]"BossTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -103,10 +296,98 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"BossTablet"
 	[tag]"base class"	[value]"Tablet"
 	
+	
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Abyss Tablet"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Return of the Ancients"
+	
+
+
+
 	[tag]"item tag"		[value]"Introduced: The last of the druids"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Abyss Tablet"
+	[tag]"name RU"		[value]"Плитка Бездны"
+
+	[tag]"icon path"	[value]"BossTablet"
+	[tag]"base class"	[value]"Tablet"
+	
+	[tag]"item tag"		[value]"Introduced: The last of the druids"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	###############################################################
+#________________RotA league section
+###############################################################
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Temple Precursor Tablet"
+	[tag]"name RU"		[value]"Плитка Предтеч Храма"
+
+	[tag]"icon path"	[value]"BossTablet"
+	[tag]"base class"	[value]"Tablet"
+	
+	
+	
+	[tag]"item tag"			[value]"Renamed item"
+	[tag]"renamed to"		[value]"Temple Tablet"
+	
+	[tag]"item tag"			[value]"Deleted"
+	[tag]"item tag"			[value]"Deleted in Return of the Ancients"
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Temple Tablet"
+	[tag]"name RU"		[value]"Плитка Храма"
+
+	[tag]"icon path"	[value]"BossTablet"
+	[tag]"base class"	[value]"Tablet"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
 	

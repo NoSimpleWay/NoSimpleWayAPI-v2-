@@ -992,6 +992,31 @@ ADD_NEW_DATA_ENTITY
 	
 
 	
+###############################################################
+#________________RotA league section
+###############################################################
+
+	
+	#T21
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Warding Quarterstaff"
+	[tag]"name RU"		[value]"Барьерный боевой посох"
+
+	[tag]"icon path"	[value]"UndefinedQuarterstaff"
+	[tag]"base class"	[value]"Quarterstaves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+		
+	[tag]"usability"		[value]"Unpopular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
 	
 	
 

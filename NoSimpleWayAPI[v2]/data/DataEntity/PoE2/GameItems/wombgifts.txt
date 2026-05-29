@@ -1,0 +1,76 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Lavish Wombgift"
+	[tag]"name RU"		[value]"Обильный дар утробы"
+
+	[tag]"icon path"	[value]"Wombgift"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Wombgift"
+	[tag]"name RU"		[value]"Украшенный дар утробы"
+
+	[tag]"icon path"	[value]"Wombgift"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Banded Wombgift"
+	[tag]"name RU"		[value]"Обмотанный дар утробы"
+
+	[tag]"icon path"	[value]"Wombgift"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Signet Wombgift"
+	[tag]"name RU"		[value]"Опечатанный дар утробы"
+
+	[tag]"icon path"	[value]"Wombgift"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Revelatory Wombgift"
+	[tag]"name RU"		[value]"Откровенный дар утробы"
+
+	[tag]"icon path"	[value]"Wombgift"
+	[tag]"base class"	[value]"Wombgifts"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

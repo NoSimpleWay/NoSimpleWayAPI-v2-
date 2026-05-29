@@ -319,3 +319,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+
+
+
+
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Perching Staff"
+	[tag]"name RU"		[value]"Посох насеста"
+
+	[tag]"icon path"	[value]"UndefinedStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Armour"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"

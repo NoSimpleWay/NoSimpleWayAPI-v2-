@@ -323,7 +323,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Distilled Disgust"
 	[tag]"name RU"			[value]"ќчищенное отвращение"
 	
-	[tag]"icon path"		[value]"DistileldDisgust"
+	[tag]"icon path"		[value]"DistilledDisgust"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Rare"
@@ -352,7 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"			[value]"Liquid Disgust"
 	[tag]"name RU"			[value]"∆идкое отвращение"
 	
-	[tag]"icon path"		[value]"DistileldDisgust"
+	[tag]"icon path"		[value]"DistilledDisgust"
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Rare"
@@ -625,3 +625,447 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"		[value]"1"
 	
 
+
+
+		
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Diluted Liquid Ire"
+	[tag]"name RU"			[value]"ƒревний разбавленный жидкий гнев"
+	
+	[tag]"icon path"		[value]"AncientDilutedLiquidIre"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Diluted Liquid Guilt"
+	[tag]"name RU"			[value]"ƒревн€€ разбавленна€ жидка€ вина"
+	
+	[tag]"icon path"		[value]"AncientDilutedLiquidGuilt"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Diluted Liquid Greed"
+	[tag]"name RU"			[value]"ƒревн€€ разбавленна€ жидка€ жадность"
+	
+	[tag]"icon path"		[value]"AncientDilutedLiquidGreed"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Liquid Paranoia"
+	[tag]"name RU"			[value]"∆идка€ параной€"
+	
+	[tag]"icon path"		[value]"AncientLiquidParanoia"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Liquid Envy"
+	[tag]"name RU"			[value]"ƒревн€€ жидка€ зависть"
+	
+	[tag]"icon path"		[value]"AncientLiquidEnvy"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Liquid Disgust"
+	[tag]"name RU"			[value]"ƒревнее жидкое отвращение"
+	
+	[tag]"icon path"		[value]"AncientLiquidDisgust"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Liquid Despair"
+	[tag]"name RU"			[value]"ƒревнее жидкое отча€ние"
+	
+	[tag]"icon path"		[value]"AncientLiquidDespair"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Concentrated Liquid Fear"
+	[tag]"name RU"			[value]"ƒревний концентрированный жидкий страх"
+	
+	[tag]"icon path"		[value]"AncientConcentratedLiquidFear"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Concentrated Liquid Suffering"
+	[tag]"name RU"			[value]"ƒревнее концентрированное жидкое страдание"
+	
+	[tag]"icon path"		[value]"AncientConcentratedLiquidSuffering"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Concentrated Liquid Isolation"
+	[tag]"name RU"			[value]"ƒревнее концентрированное жидкое отчуждение"
+	
+	[tag]"icon path"		[value]"AncientConcentratedLiquidIsolation"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Potent Liquid Melancholy"
+	[tag]"name RU"			[value]"√уста€ жидка€ меланхоли€"
+	
+	[tag]"icon path"		[value]"PotentLiquidMelancholy"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Potent Liquid Ferocity"
+	[tag]"name RU"			[value]"√уста€ жидка€ свирепость"
+	
+	[tag]"icon path"		[value]"PotentLiquidFerocity"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Potent Liquid Contempt"
+	[tag]"name RU"			[value]"√устое жидкое презрение"
+	
+	[tag]"icon path"		[value]"PotentLiquidContempt"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Potent Liquid Melancholy"
+	[tag]"name RU"			[value]"ƒревн€€ густа€ жидка€ меланхоли€"
+	
+	[tag]"icon path"		[value]"AncientPotentLiquidMelancholy"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Potent Liquid Ferocity"
+	[tag]"name RU"			[value]"ƒревн€€ густа€ жидка€ свирепость"
+	
+	[tag]"icon path"		[value]"AncientPotentLiquidFerocity"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE2"
+	
+	[tag]"name EN"			[value]"Ancient Potent Liquid Contempt"
+	[tag]"name RU"			[value]"ƒревнее густое жидкое презрение"
+	
+	[tag]"icon path"		[value]"AncientPotentLiquidContempt"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	
+	[tag]"item tag"			[value]"Distilled emotion"
+	
+	[tag]"item tag"			[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"distilled level"	[value]"10"
+	
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	

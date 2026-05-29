@@ -271,3 +271,66 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
 	
+	
+	
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+	
+	
+	
+	
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Twisted Wand"
+	[tag]"name RU"		[value]"Кручёный жезл"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+
+	
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Runic Fork"
+	[tag]"name RU"		[value]"Руническая вилка"
+
+	[tag]"icon path"	[value]"UndefinedWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+
+	
+	[tag]"usability"	[value]"Popular"
+	[tag]"drop source"	[value]"Global drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+
+
+	

@@ -4554,4 +4554,39 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+		
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Leggings"
+	[tag]"name RU"		[value]"Древние сапоги"
+
+	[tag]"icon path"	[value]"UndefinedBoots"
+	[tag]"base class"	[value]"Boots"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
 	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"base armour min"	[value]"66"
+	[tag]"base armour max"	[value]"66"
+	[tag]"base evasion min"	[value]"60"
+	[tag]"base evasion max"	[value]"60"
+	[tag]"base energy shield min"	[value]"23"
+	[tag]"base energy shield max"	[value]"23"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+	[tag]"defence type"		[value]"Evasion/ES"
+		
+	[tag]"worth"		[value]"Trash"

@@ -1097,3 +1097,33 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Heartwood Shortbow"
+	[tag]"name RU"		[value]"Короткий лук из ядровой древесины"
+
+	[tag]"icon path"	[value]"CultistBow"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Global drop"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"worth"		[value]"Trash"
+
+

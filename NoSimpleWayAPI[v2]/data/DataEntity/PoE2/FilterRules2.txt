@@ -103,20 +103,74 @@ DETF_color	255	128	64	255
 
 
 
+
+#REMOVED
+REGISTER_NEW_FILTER_RULE
+name_EN	"Removed items"
+name_RU	"Удалённые предметы"
+icon	"data/textures/buttons/button_red_x.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Deleted"
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Deleted in Return of the Ancients"
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
 //Новые базы для PoE2
 REGISTER_NEW_FILTER_RULE
 name_EN	"New bases"
 name_RU	"Новые базы"
 icon	"data/textures/icons/UndefinedQuarterstaff.png"
-target_game	"PoE2"
 
+target_game	"PoE2"
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 
 
-REGISTER_NEW_FILTER_TAG
+REGISTER_NEW_BANNED_FILTER_TAG
 target_tag	"base class"
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Helmets"
@@ -259,69 +313,10 @@ REGISTER_NEW_FILTER_TAG
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Новые базы для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Removed items"
-name_RU	"Удалённые предметы"
-icon	"data/textures/buttons/button_red_x.png"
-target_game	"PoE2"
-
-tag	"Game item"
-min_y	"100"
-named_id	"new content(druid)"
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Deleted"
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Deleted in The last of the druids"
-
+	
+	
 	
 
 
@@ -330,6 +325,10 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
@@ -340,43 +339,23 @@ tag_cannot_be_configured
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Валюта для PoE2
+#VAAL CURRENCY
 REGISTER_NEW_FILTER_RULE
-name_EN	"New currency"
-name_RU	"Новая валюта"
-icon	"data/textures/icons/PerfectChaosOrb(Poe2).png"
+name_EN	"New Vaal currency"
+name_RU	"Новая валюта Ваал"
+icon	"data/textures/icons/VaalCatalysingInfuser.png"
+
 target_game	"PoE2"
-
-
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
 
 
 
-
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
@@ -405,9 +384,20 @@ REGISTER_NEW_FILTER_TAG
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Vaal currency"
+	DETF_color	255	200	200	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
 	
 	
@@ -435,51 +425,670 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Essences"
 	DETF_color	255	128	64	255
+	
+	
+
+
+
+#NEW CATALYSTS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New catalysts"
+name_RU	"Новые катализаторы"
+icon	"data/textures/icons/RefinedSkitteringCatalyst.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Catalyst item"
+	DETF_color	255	200	200	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
 
 	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Omen"
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
 	DETF_color	255	128	64	255
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//Эссенции для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"New аugments"
-name_RU	"Новые аугменты"
-icon	"data/textures/icons/[undefined]QuipolatlsThesis.png"
-target_game	"PoE2"
 
+
+
+
+
+#NEW EMOTIONS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New emotions"
+name_RU	"Новые эмоции"
+icon	"data/textures/icons/AncientLiquidParanoia.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Distilled emotion"
+	DETF_color	255	200	200	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+	
+	
+
+
+
+#NEW EXPEDITION CURRENCY
+REGISTER_NEW_FILTER_RULE
+name_EN	"New Expedition currency"
+name_RU	"Новые валюта Экспедиции"
+icon	"data/textures/icons/ShatteredTriskelion.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Expedition currency"
+		DETF_localised_attribute_name_EN	"Expedition currency"
+		DETF_localised_attribute_name_RU	"Валюта экспедиции"
+		DETF_color	255	230	204	255
+		
+		
+		REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Crest circle"
+		DETF_localised_attribute_name_EN	"Crest circle"
+		DETF_localised_attribute_name_RU	"Знаки"
+		DETF_color	255	230	204	255
+	
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+	
+	
+
+
+#NEW ABYSS BONES
+REGISTER_NEW_FILTER_RULE
+name_EN	"New Abyss bones"
+name_RU	"Новые кости Бездны"
+icon	"data/textures/icons/AlteredCollarbone.png"
+
+target_game	"PoE2"
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Abyss bone"
+	DETF_color	255	200	200	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+	
+	
+#NEW LEAGUE CURRENCY
+REGISTER_NEW_FILTER_RULE
+name_EN	"New league currency"
+name_RU	"Новая валюта лиги"
+icon	"data/textures/icons/ExpansiveAlloy.png"
+target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Currency"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Verisium"
+		DETF_localised_attribute_name_EN	"Verisium"
+		DETF_localised_attribute_name_RU	"Веризий"
+		DETF_color	100	220	255	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Alloys"
+		DETF_localised_attribute_name_EN	"Alloys"
+		DETF_localised_attribute_name_RU	"Сплавы"
+		DETF_color	255	220	100	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Ore"
+		DETF_localised_attribute_name_EN	"Ores"
+		DETF_localised_attribute_name_RU	"Руды"
+		DETF_color	255	220	220	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Flux"
+		DETF_localised_attribute_name_EN	"Flux"
+		DETF_localised_attribute_name_RU	"Расплавы"
+		DETF_color	255	220	220	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Thaumaturgic flux"
+		DETF_localised_attribute_name_EN	"Thaumaturgic flux"
+		DETF_localised_attribute_name_RU	"Волшебные расплавы"
+		DETF_color	255	220	220	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+	
+	
 
 
 
 
+
+#NEW SKILL GEMS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New skill gems"
+name_RU	"Новые камни умений"
+icon	"data/textures/icons/UncutGem.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Skill gems"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+
+
+#NEW SUPPORT GEMS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New support gems"
+name_RU	"Новые камни поддержки"
+icon	"data/textures/icons/UncutGem.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Support gems"
+	DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+
+
+
+
+#NEW SOCKETABLE
+REGISTER_NEW_FILTER_RULE
+name_EN	"New socketable"
+name_RU	"Новые руны"
+icon	"data/textures/icons/SerlesTriumph.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
@@ -489,6 +1098,83 @@ tag_cannot_be_configured
 	DETF_value_key	"Augment"
 	DETF_color	255	230	204	255
 
+REGISTER_NEW_FILTER_TAG
+target_tag	"rune type"
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Lesser"
+		DETF_localised_attribute_name_EN	"Lesser runes"
+		DETF_localised_attribute_name_RU	"Малые руны"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Default"
+		DETF_localised_attribute_name_EN	"Default runes"
+		DETF_localised_attribute_name_RU	"Средние руны"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Greater"
+		DETF_localised_attribute_name_EN	"Greater runes"
+		DETF_localised_attribute_name_RU	"Большие руны"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Perfect"
+		DETF_localised_attribute_name_EN	"Perfect runes"
+		DETF_localised_attribute_name_RU	"Безупречные руны"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Ancient"
+		DETF_localised_attribute_name_EN	"Ancient runes"
+		DETF_localised_attribute_name_RU	"Древние руны"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Perfect"
+		DETF_localised_attribute_name_EN	"Emergent runes"
+		DETF_localised_attribute_name_RU	"Руны зарождения"
+		DETF_color	255	220	200	255
+	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Carved"
+		DETF_localised_attribute_name_EN	"Carved runes"
+		DETF_localised_attribute_name_RU	"Резные руны"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Raven"
+		DETF_localised_attribute_name_EN	"Raven runes"
+		DETF_localised_attribute_name_RU	"Руны ворона"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Warding"
+		DETF_localised_attribute_name_EN	"Warding runes"
+		DETF_localised_attribute_name_RU	"Руны оберега"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Aldur"
+		DETF_localised_attribute_name_EN	"Aldur runes"
+		DETF_localised_attribute_name_RU	"Руны Алдура"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Unique"
+		DETF_localised_attribute_name_EN	"Unique runes"
+		DETF_localised_attribute_name_RU	"Уникальные руны"
+		DETF_color	255	200	100	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Special"
+		DETF_localised_attribute_name_EN	"Special runes"
+		DETF_localised_attribute_name_RU	"Особые руны"
+		DETF_color	255	200	100	255
+		
+
+
 
 REGISTER_NEW_FILTER_TAG
 	target_tag	"exist for"
@@ -500,17 +1186,20 @@ REGISTER_NEW_FILTER_TAG
 	
 	
 	
+
+	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
 	
 	
 	
 
+	
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -530,48 +1219,36 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//Эссенции для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Incubators"
-name_RU	"Инкубаторы"
-icon	"data/textures/icons/Incubator.png"
-target_game	"PoE2"
 
+
+
+
+#NEW FRAGMENTS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New fragments"
+name_RU	"Новые фрагменты"
+icon	"data/textures/icons/TheTriskelionReforged.png"
+target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
 
 
 
 
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Incubators"
-	DETF_color	255	230	204	255
-
+	DETF_value_key	"Map Fragments"
+	DETF_color	255	230	204	2
 
 REGISTER_NEW_FILTER_TAG
 	target_tag	"exist for"
@@ -583,17 +1260,20 @@ REGISTER_NEW_FILTER_TAG
 	
 	
 	
+
+	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
 	
 	
 	
 
+	
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -613,61 +1293,37 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//Эссенции для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Talismans"
-name_RU	"Талисманы"
-icon	"data/textures/icons/Talisman.png"
-target_game	"PoE2"
 
+
+
+
+
+#NEW PINNACLE KEYS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New pinnacle keys"
+name_RU	"Новые убер проходки"
+icon	"data/textures/icons/CallOfTheShadows.png"
+target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
 
 
 
 
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Talismans"
-	DETF_color	255	230	204	255
-
+	DETF_value_key	"Pinnacle Keys"
+	DETF_color	255	230	204	2
 
 REGISTER_NEW_FILTER_TAG
 	target_tag	"exist for"
@@ -679,17 +1335,20 @@ REGISTER_NEW_FILTER_TAG
 	
 	
 	
+
+	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
 	
 	
 	
 
+	
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -709,38 +1368,180 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//Эссенции для PoE2
-REGISTER_NEW_FILTER_RULE
-name_EN	"Tablets"
-name_RU	"Таблички"
-icon	"data/textures/icons/BossTablet.png"
-target_game	"PoE2"
 
+
+
+
+
+
+#NEW OMENS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New Omens"
+name_RU	"Новые Омены"
+icon	"data/textures/icons/UhtredsSaga.png"
+target_game	"PoE2"
 
 tag	"Game item"
 min_y	"100"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
 
 
 
 
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	230	204	2
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+
+
+
+
+
+#WOMBGIFTS
+REGISTER_NEW_FILTER_RULE
+name_EN	"Wombgifts"
+name_RU	"Дары утробы"
+icon	"data/textures/icons/Wombgift.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Wombgifts"
+	DETF_color	255	230	204	2
+
+REGISTER_NEW_FILTER_TAG
+	target_tag	"exist for"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE2"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+REGISTER_NEW_FILTER_TAG
+	target_tag	"item tag"
+	tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Return of the Ancients"
+	DETF_color	255	230	204	255
+	
+	
+	
+
+	
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	
+
+
+
+
+
+#TABLETS
+REGISTER_NEW_FILTER_RULE
+name_EN	"New tablets"
+name_RU	"Новые таблички"
+icon	"data/textures/icons/IrradiatedTablet.png"
+target_game	"PoE2"
+
+tag	"Game item"
+min_y	"100"
+named_id	"new content(ancient)"
+
+
+
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
@@ -748,8 +1549,7 @@ tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Tablet"
-	DETF_color	255	230	204	255
-
+	DETF_color	255	230	204	2
 
 REGISTER_NEW_FILTER_TAG
 	target_tag	"exist for"
@@ -761,17 +1561,20 @@ REGISTER_NEW_FILTER_TAG
 	
 	
 	
+
+	
 REGISTER_NEW_FILTER_TAG
 	target_tag	"item tag"
 	tag_cannot_be_configured
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: The last of the druids"
+	DETF_value_key	"Introduced: Return of the Ancients"
 	DETF_color	255	230	204	255
 	
 	
 	
 
+	
 
 
 REGISTER_NEW_BANNED_FILTER_TAG
@@ -791,33 +1594,6 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	
-	
-	
-
-
-
-
 
 
 
@@ -831,12 +1607,12 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_RULE
 name_EN	"Category:\nNew content"
 name_RU	"Категория:\nНовый контент"
-icon	"data/textures/buttons/pattern_folder_druid.png"
+icon	"data/textures/buttons/pattern_folder_ancients.png"
 is_folder
 
 target_game	"PoE2"
 tag	"Game item"
-named_id	"new content(druid)"
+named_id	"new content(ancient)"
 min_y	"100"
 
 
@@ -1864,48 +2640,76 @@ tag_cannot_be_configured
 REGISTER_NEW_FILTER_TAG
 target_tag	"rune type"
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Lesser"
-	DETF_localised_attribute_name_EN	"Lesser runes"
-	DETF_localised_attribute_name_RU	"Младшие руны"
-	DETF_color	200	210	220	255
+		DETF_value_key	"Lesser"
+		DETF_localised_attribute_name_EN	"Lesser runes"
+		DETF_localised_attribute_name_RU	"Малые руны"
+		DETF_color	255	220	200	255
 	
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Default"
-	DETF_localised_attribute_name_EN	"Runes"
-	DETF_localised_attribute_name_RU	"Руны"
-	DETF_color	255	230	204	255
+		DETF_value_key	"Default"
+		DETF_localised_attribute_name_EN	"Default runes"
+		DETF_localised_attribute_name_RU	"Средние руны"
+		DETF_color	255	220	200	255
 	
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Greater"
-	DETF_localised_attribute_name_EN	"Greater runes"
-	DETF_localised_attribute_name_RU	"Старшие руны"
-	DETF_color	255	200	100	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Soul core"
-	DETF_localised_attribute_name_EN	"Soul core"
-	DETF_localised_attribute_name_RU	"Ядра душ"
-	DETF_color	255	200	255	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Talisman"
-	DETF_localised_attribute_name_EN	"Talisman"
-	DETF_localised_attribute_name_RU	"Талисманы"
-	DETF_color	200	255	220	255
+		DETF_value_key	"Greater"
+		DETF_localised_attribute_name_EN	"Greater runes"
+		DETF_localised_attribute_name_RU	"Большие руны"
+		DETF_color	255	220	200	255
 	
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Special"
-	DETF_localised_attribute_name_EN	"Special"
-	DETF_localised_attribute_name_RU	"Особые"
-	DETF_color	255	220	100	255
-
+		DETF_value_key	"Perfect"
+		DETF_localised_attribute_name_EN	"Perfect runes"
+		DETF_localised_attribute_name_RU	"Безупречные руны"
+		DETF_color	255	220	200	255
+	
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Abyss jewel"
-	DETF_localised_attribute_name_EN	"Abyss jewels"
-	DETF_localised_attribute_name_RU	"Самоцветы бездны"
-	DETF_color	60	200	80	255
+		DETF_value_key	"Ancient"
+		DETF_localised_attribute_name_EN	"Ancient runes"
+		DETF_localised_attribute_name_RU	"Древние руны"
+		DETF_color	255	220	200	255
 	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Perfect"
+		DETF_localised_attribute_name_EN	"Emergent runes"
+		DETF_localised_attribute_name_RU	"Руны зарождения"
+		DETF_color	255	220	200	255
 	
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Carved"
+		DETF_localised_attribute_name_EN	"Carved runes"
+		DETF_localised_attribute_name_RU	"Резные руны"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Raven"
+		DETF_localised_attribute_name_EN	"Raven runes"
+		DETF_localised_attribute_name_RU	"Руны ворона"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Warding"
+		DETF_localised_attribute_name_EN	"Warding runes"
+		DETF_localised_attribute_name_RU	"Руны оберега"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Aldur"
+		DETF_localised_attribute_name_EN	"Aldur runes"
+		DETF_localised_attribute_name_RU	"Руны Алдура"
+		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Unique"
+		DETF_localised_attribute_name_EN	"Unique runes"
+		DETF_localised_attribute_name_RU	"Уникальные руны"
+		DETF_color	255	200	100	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Special"
+		DETF_localised_attribute_name_EN	"Special runes"
+		DETF_localised_attribute_name_RU	"Особые руны"
+		DETF_color	255	200	100	255
 	
 	
 

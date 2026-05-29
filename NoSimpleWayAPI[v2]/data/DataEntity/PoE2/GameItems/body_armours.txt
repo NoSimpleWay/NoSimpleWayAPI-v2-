@@ -6138,3 +6138,143 @@ ADD_NEW_DATA_ENTITY
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		
 	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+###############################################################
+#________________RotA league section
+###############################################################
+
+
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ornate Ringmail"
+	[tag]"name RU"		[value]"Парадный кольчатый доспех"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	[tag]"base evasion min"	[value]"245"
+	[tag]"base evasion max"	[value]"245"
+	[tag]"base energy shield min"	[value]"93"
+	[tag]"base energy shield max"	[value]"93"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Vaal temple"
+	[tag]"defence type"	[value]"Armour/Evasion/ES"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Ancient Mail"
+	[tag]"name RU"		[value]"Древняя кольчуга"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+		
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	[tag]"base evasion min"	[value]"245"
+	[tag]"base evasion max"	[value]"245"
+	[tag]"base energy shield min"	[value]"93"
+	[tag]"base energy shield max"	[value]"93"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Vaal temple"
+	[tag]"defence type"	[value]"Armour/Evasion/ES"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Grasping Mail"
+	[tag]"name RU"		[value]"Цепкая кольчуга"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+		
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	[tag]"base evasion min"	[value]"245"
+	[tag]"base evasion max"	[value]"245"
+	[tag]"base energy shield min"	[value]"93"
+	[tag]"base energy shield max"	[value]"93"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Vaal temple"
+	[tag]"defence type"	[value]"Armour/Evasion/ES"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+#T??
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE2"
+
+	[tag]"name EN"		[value]"Primal Markings"
+	[tag]"name RU"		[value]"Первобытный узор"
+
+	[tag]"icon path"	[value]"UndefinedBodyArmour"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+		
+	[tag]"base armour min"	[value]"269"
+	[tag]"base armour max"	[value]"269"
+	[tag]"base evasion min"	[value]"245"
+	[tag]"base evasion max"	[value]"245"
+	[tag]"base energy shield min"	[value]"93"
+	[tag]"base energy shield max"	[value]"93"
+
+	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
+	
+	[tag]"usability"		[value]"Popular"
+	[tag]"drop source"		[value]"Vaal temple"
+	[tag]"defence type"	[value]"Armour/Evasion/ES"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	

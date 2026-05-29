@@ -1,564 +1,475 @@
 START
 start[0ms] Delay status:	Minimal
-	(Graphic core) Create new texture atlas[W:8192][H:8192][DEPTH:6408][BYTE_MODE:5121][541ms] Delay status:	Very high
-	(Graphic core) Create RenderBatcher[77ms] Delay status:	Low
+	(Graphic core) Create new texture atlas[W:8192][H:8192][DEPTH:6408][BYTE_MODE:5121][410ms] Delay status:	High
+	(Graphic core) Create RenderBatcher[19ms] Delay status:	Very low
 	(Graphic core) Success: create new shader
-	(Graphic core) Register vertex attributes (for default shader)[104ms] Delay status:	Medium
+	(Graphic core) Register vertex attributes (for default shader)[61ms] Delay status:	Low
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for default[12ms] Delay status:	Very low
+	(Graphic core) Compile shader (for default[3ms] Delay status:	Minimal
 	(Graphic core) Register vertex attributes (for PBR shader[1ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for PBR[42ms] Delay status:	Very low
-	(Graphic core) Register vertex attributes (for test shader[0ms] Delay status:	Minimal
+	(Graphic core) Compile shader (for PBR[26ms] Delay status:	Very low
+	(Graphic core) Register vertex attributes (for test shader[1ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for test[19ms] Delay status:	Very low
-	(Graphic core) Register vertex attributes (for blur shader[1ms] Delay status:	Minimal
+	(Graphic core) Compile shader (for test[7ms] Delay status:	Minimal
+	(Graphic core) Register vertex attributes (for blur shader[2ms] Delay status:	Minimal
 	(Graphic core) Success: create new shader
-	(Graphic core) Compile shader (for blur[52ms] Delay status:	Low
-	(Graphic core) Create new texture atlas[W:2048][H:1024][DEPTH:6408][BYTE_MODE:5121][124ms] Delay status:	Medium
-	(Graphic core) Create texture atlas[0][3ms] Delay status:	Minimal
-	(Graphic core) Draw skydome to texture atlas[337ms] Delay status:	High
-	(Graphic core) Load style [lead and gold][157ms] Delay status:	Medium
-	(Graphic core) Load style [dark spruce][204ms] Delay status:	Medium
-	(Graphic core) Load style [Strict gray][51ms] Delay status:	Low
-	(Graphic core) Load style [Path of black][26ms] Delay status:	Very low
-	(Graphic core) Load style [Basalt][95ms] Delay status:	Low
+	(Graphic core) Compile shader (for blur[25ms] Delay status:	Very low
+	(Graphic core) Create new texture atlas[W:2048][H:1024][DEPTH:6408][BYTE_MODE:5121][180ms] Delay status:	Medium
+	(Graphic core) Create texture atlas[0][1ms] Delay status:	Minimal
+	(Graphic core) Draw skydome to texture atlas[130ms] Delay status:	Medium
+	(Graphic core) Load style [lead and gold][2ms] Delay status:	Minimal
+	(Graphic core) Load style [dark spruce][1ms] Delay status:	Minimal
+	(Graphic core) Load style [Strict gray][2ms] Delay status:	Minimal
+	(Graphic core) Load style [Path of black][0ms] Delay status:	Minimal
+	(Graphic core) Load style [Basalt][4ms] Delay status:	Minimal
 	(Graphic core) Success: try load font: palatino
-	(Graphic core) Load font [palantino][20ms] Delay status:	Very low
+	(Graphic core) Load font [palantino][43ms] Delay status:	Very low
 	(Graphic core) Success: try load font: fontin
-	(Graphic core) Load font [fontin][29ms] Delay status:	Very low
+	(Graphic core) Load font [fontin][81ms] Delay status:	Low
 	(Graphic core) init graphic core[0ms] Delay status:	Minimal
 	(Graphic core) init input core[0ms] Delay status:	Minimal
-	(Graphic core) init sound engine[89ms] Delay status:	Low
+	(Graphic core) init sound engine[65ms] Delay status:	Low
 	(Graphic core) max_texture_size:[32768]
-		(EWindowMain) size of EButtonGroup [680]
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/stackable_currency.txt[29ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/omens.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tattoos.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gold.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/grafts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/oils.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/catalysts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/charms.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency_shards.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delirium_orbs.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/fossils.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_splinters.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/breach_blessings.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tainted_currency.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tinctures.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/transfigured_gems.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/expedition_currency.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/scouting_reports.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/eldritch_currency.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incubators.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incursion_items.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/vials.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/nets.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/essences.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/amulets.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/abyss_jewels.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/belts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rings.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/jewels.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/divinations.txt[10ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/body_armours.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gloves.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/helmets.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/boots.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/contracts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/corpses.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/blueprints.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_brooch.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_cloak.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_gear.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_targets.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_tool.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/trinkets.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/bows.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quivers.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_axes.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_maces.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_swords.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/warstaves.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wombgifts.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rune_daggers.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sceptres.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wands.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/staves.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sanctum_research.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/shields.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/claws.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/daggers.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_axes.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_maces.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_swords.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/support_skill_gems.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/skill_gems.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/flasks.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/mana_flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/hybrid_flasks.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/utility_flasks.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_fragments.txt[14ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/maps.txt[5ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/memories.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/misc_map_items.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harvest_seeds.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/metamorph_samples.txt[0ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quest_items.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/relics.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/item_piece.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/ambers_of_the_allflame.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/uniques.txt[91ms] Delay status:	Low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/_special_items.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE1/influence.txt[7ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/base_class.txt[18ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/basic.txt[207ms] Delay status:	Medium
-		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/special.txt[19ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/_special_items.txt[14ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/amulets.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/belts.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/body_armours.txt[27ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/boots.txt[18ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bows.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bucklers.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/catalysts.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/charms.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/crossbows.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/currency_shards.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/distilled_emotions.txt[11ms] Delay status:	Very low
-		(EWindowMain) WARNING: missed " at end in string[	[tag]"icon path"	[value]"LesserEssenceOfOpulence]
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/essences.txt[16ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/expedition_currency.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/flasks.txt[12ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/foci.txt[5ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/gloves.txt[25ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/helmets.txt[26ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/incubators.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt[7ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/jewels.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/mana_flasks.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_fragments.txt[3ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_splinters.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/omens.txt[12ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/one_hand_maces.txt[10ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/pinnacle_keys.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quarterstaves.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quivers.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/relics.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/rings.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/sceptres.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/shields.txt[22ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/skill_gems.txt[9ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/socketable.txt[15ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/spears.txt[5ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/stackable_currency.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/staves.txt[2ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/support_gems.txt[48ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/tablets.txt[8ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/talismans.txt[4ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/trial_coins.txt[6ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/two_hand_maces.txt[10ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/uncut.txt[10ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/vault_keys.txt[10ms] Delay status:	Very low
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wands.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/waystones.txt[1ms] Delay status:	Minimal
-		(EWindowMain) load data entity: data/DataEntity/localisation.txt[45ms] Delay status:	Very low
-		(EWindowMain) split data entity to named structs[6ms] Delay status:	Minimal
-		(EWindowMain) add game item data entity to named lists[4ms] Delay status:	Minimal
-		(EWindowMain) register default filter rules[0ms] Delay status:	Minimal
-		(EWindowMain) import filter rules for PoE1[247ms] Delay status:	Medium
-		(EWindowMain) import filter rules for PoE2[183ms] Delay status:	Medium
-		(EWindowMain) preload textures[172ms] Delay status:	Medium
+		(EWindowMain) size of EButtonGroup [784]
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/stackable_currency.txt[80ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/omens.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tattoos.txt[45ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gold.txt[1ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/grafts.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delve_stackable_socketable_currency.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/oils.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/catalysts.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/charms.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency_shards.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/delirium_orbs.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/fossils.txt[13ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_splinters.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/breach_blessings.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harbinger_scrolls.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tainted_currency.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/tinctures.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/transfigured_gems.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/expedition_currency.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/scouting_reports.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/eldritch_currency.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incubators.txt[15ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/incursion_items.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/vials.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/nets.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/essences.txt[46ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/currency.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/amulets.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/abyss_jewels.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/belts.txt[12ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rings.txt[21ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/jewels.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/divinations.txt[130ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/body_armours.txt[97ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/gloves.txt[61ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/helmets.txt[66ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/boots.txt[54ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/contracts.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/corpses.txt[31ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/blueprints.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_brooch.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_cloak.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_gear.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_targets.txt[21ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/heist_tool.txt[16ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/trinkets.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/bows.txt[20ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quivers.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_axes.txt[18ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_maces.txt[18ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/two_hand_swords.txt[19ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/warstaves.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wombgifts.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/rune_daggers.txt[13ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sceptres.txt[19ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/wands.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/staves.txt[10ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/sanctum_research.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/shields.txt[78ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/claws.txt[19ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/daggers.txt[10ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_axes.txt[20ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_maces.txt[20ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/one_hand_swords.txt[36ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/support_skill_gems.txt[31ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/skill_gems.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/flasks.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/mana_flasks.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/hybrid_flasks.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/utility_flasks.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/map_fragments.txt[134ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/maps.txt[52ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/memories.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/misc_map_items.txt[13ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/harvest_seeds.txt[24ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/metamorph_samples.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/quest_items.txt[17ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/relics.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/atlas_region_upgrade_item.txt[12ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/item_piece.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/ambers_of_the_allflame.txt[31ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/uniques.txt[653ms] Delay status:	Very high
+		(EWindowMain) load data entity: data/DataEntity/PoE1/GameItems/_special_items.txt[41ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/influence.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/base_class.txt[85ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/basic.txt[1676ms] Delay status:	UNACCEPTABLE!
+		(EWindowMain) load data entity: data/DataEntity/PoE1/Explicits/special.txt[55ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/_special_items.txt[27ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/amulets.txt[24ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/belts.txt[19ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/body_armours.txt[267ms] Delay status:	High
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/boots.txt[169ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bows.txt[45ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/bucklers.txt[56ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/catalysts.txt[18ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/charms.txt[11ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/crossbows.txt[50ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/currency_shards.txt[4ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/distilled_emotions.txt[39ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/essences.txt[74ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/expedition_currency.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/flasks.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/foci.txt[48ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/gloves.txt[203ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/helmets.txt[264ms] Delay status:	High
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/incubators.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/inscribed_utimatum.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/jewels.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/mana_flasks.txt[6ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_fragments.txt[10ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/map_splinters.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/omens.txt[40ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/one_hand_maces.txt[104ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/pinnacle_keys.txt[8ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quarterstaves.txt[50ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/quivers.txt[14ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/relics.txt[7ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/rings.txt[25ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/sceptres.txt[16ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/shields.txt[231ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/skill_gems.txt[30ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/socketable.txt[313ms] Delay status:	High
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/spears.txt[35ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/stackable_currency.txt[94ms] Delay status:	Low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/staves.txt[21ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/support_gems.txt[412ms] Delay status:	High
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/tablets.txt[16ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/talismans.txt[36ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/trial_coins.txt[3ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/two_hand_maces.txt[100ms] Delay status:	Medium
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/uncut.txt[42ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/vault_keys.txt[9ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wands.txt[17ms] Delay status:	Very low
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/waystones.txt[2ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/PoE2/GameItems/wombgifts.txt[5ms] Delay status:	Minimal
+		(EWindowMain) load data entity: data/DataEntity/localisation.txt[389ms] Delay status:	High
+		(EWindowMain) split data entity to named structs[33ms] Delay status:	Very low
+		(EWindowMain) add game item data entity to named lists[16ms] Delay status:	Very low
+		(EWindowMain) register default filter rules[1ms] Delay status:	Minimal
+		(EWindowMain) import filter rules for PoE1[108ms] Delay status:	Medium
+		(EWindowMain) import filter rules for PoE2[116ms] Delay status:	Medium
+		(EWindowMain) preload textures[19ms] Delay status:	Very low
 		(EWindowMain) register rarity[0ms] Delay status:	Minimal
 		(EWindowMain) register alternate quality[0ms] Delay status:	Minimal
-		(EWindowMain) ERROR: Texture [data/textures/icons/box_switcher_on.png] do not exist![228ms] Delay status:	Medium
+		(EWindowMain) ERROR: Texture [data/textures/icons/box_switcher_on.png] do not exist![36ms] Delay status:	Very low
 		(EWindowMain) register game item attributes[0ms] Delay status:	Minimal
-		(EWindowMain) import loot pattern[375ms] Delay status:	High
-		(EWindowMain) ID string[0][99]
-		(EWindowMain) ID string[1][71]
-		(EWindowMain) ID string[2][79]
-		(EWindowMain) ID string[3][73]
-		(EWindowMain) ID string[4][78]
-		(EWindowMain) ID string[5][72]
-		(EWindowMain) ID string[6][78]
-		(EWindowMain) ID string[7][74]
-		(EWindowMain) ID string[8][82]
-		(EWindowMain) ID string[9][94]
-		(EWindowMain) ID string[10][98]
-		(EWindowMain) ID string[11][71]
-		(EWindowMain) ID string[12][74]
-		(EWindowMain) ID string[13][76]
-		(EWindowMain) ID string[14][102]
-		(EWindowMain) ID string[15][91]
-		(EWindowMain) ID string[16][80]
-		(EWindowMain) ID string[17][100]
-		(EWindowMain) ID string[18][77]
-		(EWindowMain) ID string[19][84]
-		(EWindowMain) ID string[20][68]
-		(EWindowMain) ID string[21][94]
-		(EWindowMain) ID string[22][87]
-		(EWindowMain) ID string[23][93]
+		(EWindowMain) import loot pattern[324ms] Delay status:	High
+		(EWindowMain) ID string[0][102]
+		(EWindowMain) ID string[1][72]
+		(EWindowMain) ID string[2][80]
+		(EWindowMain) ID string[3][78]
+		(EWindowMain) ID string[4][85]
+		(EWindowMain) ID string[5][79]
+		(EWindowMain) ID string[6][86]
+		(EWindowMain) ID string[7][78]
+		(EWindowMain) ID string[8][84]
+		(EWindowMain) ID string[9][97]
+		(EWindowMain) ID string[10][103]
+		(EWindowMain) ID string[11][76]
+		(EWindowMain) ID string[12][76]
+		(EWindowMain) ID string[13][80]
+		(EWindowMain) ID string[14][109]
+		(EWindowMain) ID string[15][95]
+		(EWindowMain) ID string[16][81]
+		(EWindowMain) ID string[17][102]
+		(EWindowMain) ID string[18][84]
+		(EWindowMain) ID string[19][89]
+		(EWindowMain) ID string[20][69]
+		(EWindowMain) ID string[21][98]
+		(EWindowMain) ID string[22][88]
+		(EWindowMain) ID string[23][97]
 		(EWindowMain) ID string[24][84]
-		(EWindowMain) ID string[25][84]
-		(EWindowMain) ID string[26][97]
-		(EWindowMain) ID string[27][88]
+		(EWindowMain) ID string[25][85]
+		(EWindowMain) ID string[26][98]
+		(EWindowMain) ID string[27][91]
 		(EWindowMain) ID string[28][92]
-		(EWindowMain) ID string[29][83]
-		(EWindowMain) ID string[30][91]
+		(EWindowMain) ID string[29][84]
+		(EWindowMain) ID string[30][98]
 		(EWindowMain) ID string[31][88]
-		(EWindowMain) ID string[32][78]
-		(EWindowMain) ID string[33][91]
-		(EWindowMain) ID string[34][86]
-		(EWindowMain) ID string[35][87]
-		(EWindowMain) ID string[36][81]
+		(EWindowMain) ID string[32][82]
+		(EWindowMain) ID string[33][95]
+		(EWindowMain) ID string[34][91]
+		(EWindowMain) ID string[35][92]
+		(EWindowMain) ID string[36][82]
 		(EWindowMain) ID string[37][76]
-		(EWindowMain) ID string[38][80]
-		(EWindowMain) ID string[39][81]
-		(EWindowMain) ID string[40][86]
-		(EWindowMain) ID string[41][88]
-		(EWindowMain) ID string[42][71]
-		(EWindowMain) ID string[43][76]
-		(EWindowMain) ID string[44][60]
-		(EWindowMain) ID string[45][74]
-		(EWindowMain) ID string[46][80]
-		(EWindowMain) ID string[47][79]
-		(EWindowMain) ID string[48][83]
-		(EWindowMain) ID string[49][67]
-		(EWindowMain) ID string[50][82]
-		(EWindowMain) ID string[51][78]
-		(EWindowMain) ID string[52][73]
-		(EWindowMain) ID string[53][103]
-		(EWindowMain) ID string[54][65]
-		(EWindowMain) ID string[55][88]
-		(EWindowMain) ID string[56][96]
-		(EWindowMain) ID string[57][79]
-		(EWindowMain) ID string[58][90]
-		(EWindowMain) ID string[59][79]
-		(EWindowMain) ID string[60][69]
-		(EWindowMain) ID string[61][95]
+		(EWindowMain) ID string[38][85]
+		(EWindowMain) ID string[39][88]
+		(EWindowMain) ID string[40][90]
+		(EWindowMain) ID string[41][94]
+		(EWindowMain) ID string[42][75]
+		(EWindowMain) ID string[43][79]
+		(EWindowMain) ID string[44][64]
+		(EWindowMain) ID string[45][76]
+		(EWindowMain) ID string[46][84]
+		(EWindowMain) ID string[47][83]
+		(EWindowMain) ID string[48][87]
+		(EWindowMain) ID string[49][68]
+		(EWindowMain) ID string[50][83]
+		(EWindowMain) ID string[51][82]
+		(EWindowMain) ID string[52][77]
+		(EWindowMain) ID string[53][104]
+		(EWindowMain) ID string[54][67]
+		(EWindowMain) ID string[55][91]
+		(EWindowMain) ID string[56][99]
+		(EWindowMain) ID string[57][90]
+		(EWindowMain) ID string[58][94]
+		(EWindowMain) ID string[59][80]
+		(EWindowMain) ID string[60][73]
+		(EWindowMain) ID string[61][97]
 		(EWindowMain) ID string[62][94]
-		(EWindowMain) ID string[63][80]
-		(EWindowMain) ID string[64][79]
-		(EWindowMain) ID string[65][80]
-		(EWindowMain) ID string[66][77]
-		(EWindowMain) ID string[67][83]
-		(EWindowMain) ID string[68][82]
-		(EWindowMain) ID string[69][86]
-		(EWindowMain) ID string[70][72]
-		(EWindowMain) ID string[71][79]
-		(EWindowMain) ID string[72][73]
-		(EWindowMain) ID string[73][86]
-		(EWindowMain) ID string[74][98]
-		(EWindowMain) ID string[75][75]
-		(EWindowMain) ID string[76][79]
-		(EWindowMain) ID string[77][77]
-		(EWindowMain) ID string[78][89]
-		(EWindowMain) ID string[79][95]
-		(EWindowMain) ID string[80][85]
-		(EWindowMain) ID string[81][85]
-		(EWindowMain) ID string[82][94]
-		(EWindowMain) ID string[83][79]
-		(EWindowMain) ID string[84][94]
-		(EWindowMain) ID string[85][89]
-		(EWindowMain) ID string[86][94]
-		(EWindowMain) ID string[87][79]
-		(EWindowMain) ID string[88][68]
-		(EWindowMain) ID string[89][106]
-		(EWindowMain) ID string[90][90]
+		(EWindowMain) ID string[63][81]
+		(EWindowMain) ID string[64][83]
+		(EWindowMain) ID string[65][81]
+		(EWindowMain) ID string[66][80]
+		(EWindowMain) ID string[67][89]
+		(EWindowMain) ID string[68][83]
+		(EWindowMain) ID string[69][97]
+		(EWindowMain) ID string[70][74]
+		(EWindowMain) ID string[71][85]
+		(EWindowMain) ID string[72][80]
+		(EWindowMain) ID string[73][89]
+		(EWindowMain) ID string[74][105]
+		(EWindowMain) ID string[75][82]
+		(EWindowMain) ID string[76][80]
+		(EWindowMain) ID string[77][78]
+		(EWindowMain) ID string[78][93]
+		(EWindowMain) ID string[79][98]
+		(EWindowMain) ID string[80][86]
+		(EWindowMain) ID string[81][87]
+		(EWindowMain) ID string[82][96]
+		(EWindowMain) ID string[83][80]
+		(EWindowMain) ID string[84][95]
+		(EWindowMain) ID string[85][91]
+		(EWindowMain) ID string[86][97]
+		(EWindowMain) ID string[87][82]
+		(EWindowMain) ID string[88][72]
+		(EWindowMain) ID string[89][108]
+		(EWindowMain) ID string[90][93]
 		(EWindowMain) ID string[91][76]
-		(EWindowMain) ID string[92][112]
-		(EWindowMain) ID string[93][85]
-		(EWindowMain) ID string[94][92]
-		(EWindowMain) ID string[95][91]
-		(EWindowMain) ID string[96][87]
+		(EWindowMain) ID string[92][115]
+		(EWindowMain) ID string[93][90]
+		(EWindowMain) ID string[94][97]
+		(EWindowMain) ID string[95][92]
+		(EWindowMain) ID string[96][92]
 		(EWindowMain) ID string[97][89]
-		(EWindowMain) ID string[98][90]
-		(EWindowMain) ID string[99][100]
-		(EWindowMain) ID string[100][98]
-		(EWindowMain) ID string[101][95]
-		(EWindowMain) ID string[102][82]
-		(EWindowMain) ID string[103][89]
-		(EWindowMain) ID string[104][81]
+		(EWindowMain) ID string[98][94]
+		(EWindowMain) ID string[99][108]
+		(EWindowMain) ID string[100][100]
+		(EWindowMain) ID string[101][102]
+		(EWindowMain) ID string[102][83]
+		(EWindowMain) ID string[103][92]
+		(EWindowMain) ID string[104][84]
 		(EWindowMain) ID string[105][87]
-		(EWindowMain) ID string[106][78]
-		(EWindowMain) ID string[107][112]
-		(EWindowMain) ID string[108][85]
-		(EWindowMain) ID string[109][83]
-		(EWindowMain) ID string[110][82]
-		(EWindowMain) ID string[111][63]
-		(EWindowMain) ID string[112][82]
-		(EWindowMain) ID string[113][72]
-		(EWindowMain) ID string[114][112]
-		(EWindowMain) ID string[115][80]
-		(EWindowMain) ID string[116][84]
-		(EWindowMain) ID string[117][79]
-		(EWindowMain) ID string[118][80]
-		(EWindowMain) ID string[119][84]
-		(EWindowMain) ID string[120][90]
-		(EWindowMain) ID string[121][82]
-		(EWindowMain) ID string[122][84]
-		(EWindowMain) ID string[123][63]
-		(EWindowMain) ID string[124][70]
-		(EWindowMain) ID string[125][71]
-		(EWindowMain) ID string[126][81]
-		(EWindowMain) ID string[127][71]
-		(EWindowMain) ID string[128][73]
-		(EWindowMain) ID string[129][76]
-		(EWindowMain) ID string[130][78]
-		(EWindowMain) ID string[131][85]
-		(EWindowMain) ID string[132][64]
-		(EWindowMain) ID string[133][91]
-		(EWindowMain) ID string[134][91]
-		(EWindowMain) ID string[135][81]
-		(EWindowMain) ID string[136][72]
-		(EWindowMain) ID string[137][90]
-		(EWindowMain) ID string[138][61]
-		(EWindowMain) ID string[139][93]
-		(EWindowMain) ID string[140][75]
-		(EWindowMain) ID string[141][86]
-		(EWindowMain) ID string[142][86]
-		(EWindowMain) ID string[143][90]
-		(EWindowMain) ID string[144][101]
-		(EWindowMain) ID string[145][78]
-		(EWindowMain) ID string[146][68]
+		(EWindowMain) ID string[106][79]
+		(EWindowMain) ID string[107][113]
+		(EWindowMain) ID string[108][89]
+		(EWindowMain) ID string[109][84]
+		(EWindowMain) ID string[110][84]
+		(EWindowMain) ID string[111][65]
+		(EWindowMain) ID string[112][87]
+		(EWindowMain) ID string[113][77]
+		(EWindowMain) ID string[114][115]
+		(EWindowMain) ID string[115][84]
+		(EWindowMain) ID string[116][85]
+		(EWindowMain) ID string[117][88]
+		(EWindowMain) ID string[118][83]
+		(EWindowMain) ID string[119][88]
+		(EWindowMain) ID string[120][94]
+		(EWindowMain) ID string[121][87]
+		(EWindowMain) ID string[122][90]
+		(EWindowMain) ID string[123][68]
+		(EWindowMain) ID string[124][72]
+		(EWindowMain) ID string[125][81]
+		(EWindowMain) ID string[126][83]
+		(EWindowMain) ID string[127][77]
+		(EWindowMain) ID string[128][81]
+		(EWindowMain) ID string[129][83]
+		(EWindowMain) ID string[130][85]
+		(EWindowMain) ID string[131][87]
+		(EWindowMain) ID string[132][68]
+		(EWindowMain) ID string[133][93]
+		(EWindowMain) ID string[134][95]
+		(EWindowMain) ID string[135][84]
+		(EWindowMain) ID string[136][77]
+		(EWindowMain) ID string[137][94]
+		(EWindowMain) ID string[138][63]
+		(EWindowMain) ID string[139][98]
+		(EWindowMain) ID string[140][80]
+		(EWindowMain) ID string[141][90]
+		(EWindowMain) ID string[142][90]
+		(EWindowMain) ID string[143][97]
+		(EWindowMain) ID string[144][102]
+		(EWindowMain) ID string[145][80]
+		(EWindowMain) ID string[146][70]
 		(EWindowMain) ID string[147][65]
-		(EWindowMain) ID string[148][66]
-		(EWindowMain) ID string[149][75]
-		(EWindowMain) ID string[150][75]
-		(EWindowMain) ID string[151][87]
-		(EWindowMain) ID string[152][84]
-		(EWindowMain) ID string[153][86]
-		(EWindowMain) ID string[154][87]
-		(EWindowMain) ID string[155][88]
-		(EWindowMain) ID string[156][73]
-		(EWindowMain) ID string[157][89]
-		(EWindowMain) ID string[158][91]
-		(EWindowMain) ID string[159][97]
-		(EWindowMain) ID string[160][87]
-		(EWindowMain) ID string[161][85]
-		(EWindowMain) ID string[162][92]
-		(EWindowMain) ID string[163][81]
-		(EWindowMain) ID string[164][73]
-		(EWindowMain) ID string[165][89]
-		(EWindowMain) ID string[166][79]
-		(EWindowMain) ID string[167][96]
-		(EWindowMain) ID string[168][88]
-		(EWindowMain) ID string[169][81]
-		(EWindowMain) ID string[170][82]
-		(EWindowMain) ID string[171][110]
-		(EWindowMain) ID string[172][94]
-		(EWindowMain) ID string[173][106]
-		(EWindowMain) ID string[174][103]
-		(EWindowMain) ID string[175][84]
-		(EWindowMain) ID string[176][110]
-		(EWindowMain) ID string[177][98]
-		(EWindowMain) ID string[178][110]
-		(EWindowMain) ID string[179][98]
-		(EWindowMain) ID string[180][111]
-		(EWindowMain) ID string[181][98]
-		(EWindowMain) ID string[182][95]
-		(EWindowMain) ID string[183][91]
-		(EWindowMain) ID string[184][109]
-		(EWindowMain) ID string[185][97]
-		(EWindowMain) ID string[186][97]
-		(EWindowMain) ID string[187][77]
-		(EWindowMain) ID string[188][88]
-		(EWindowMain) ID string[189][80]
-		(EWindowMain) ID string[190][88]
-		(EWindowMain) ID string[191][81]
+		(EWindowMain) ID string[148][71]
+		(EWindowMain) ID string[149][77]
+		(EWindowMain) ID string[150][79]
+		(EWindowMain) ID string[151][93]
+		(EWindowMain) ID string[152][86]
+		(EWindowMain) ID string[153][93]
+		(EWindowMain) ID string[154][93]
+		(EWindowMain) ID string[155][94]
+		(EWindowMain) ID string[156][78]
+		(EWindowMain) ID string[157][96]
+		(EWindowMain) ID string[158][96]
+		(EWindowMain) ID string[159][104]
+		(EWindowMain) ID string[160][94]
+		(EWindowMain) ID string[161][89]
+		(EWindowMain) ID string[162][96]
+		(EWindowMain) ID string[163][85]
+		(EWindowMain) ID string[164][76]
+		(EWindowMain) ID string[165][93]
+		(EWindowMain) ID string[166][85]
+		(EWindowMain) ID string[167][98]
+		(EWindowMain) ID string[168][96]
+		(EWindowMain) ID string[169][91]
+		(EWindowMain) ID string[170][86]
+		(EWindowMain) ID string[171][111]
+		(EWindowMain) ID string[172][101]
+		(EWindowMain) ID string[173][116]
+		(EWindowMain) ID string[174][104]
+		(EWindowMain) ID string[175][90]
+		(EWindowMain) ID string[176][115]
+		(EWindowMain) ID string[177][102]
+		(EWindowMain) ID string[178][116]
+		(EWindowMain) ID string[179][100]
+		(EWindowMain) ID string[180][114]
+		(EWindowMain) ID string[181][100]
+		(EWindowMain) ID string[182][100]
+		(EWindowMain) ID string[183][94]
+		(EWindowMain) ID string[184][113]
+		(EWindowMain) ID string[185][98]
+		(EWindowMain) ID string[186][99]
+		(EWindowMain) ID string[187][82]
+		(EWindowMain) ID string[188][94]
+		(EWindowMain) ID string[189][84]
+		(EWindowMain) ID string[190][89]
+		(EWindowMain) ID string[191][84]
 		(EWindowMain) ID string[192][89]
-		(EWindowMain) ID string[193][97]
-		(EWindowMain) ID string[194][79]
-		(EWindowMain) ID string[195][77]
-		(EWindowMain) ID string[196][84]
-		(EWindowMain) ID string[197][79]
-		(EWindowMain) ID string[198][72]
-		(EWindowMain) ID string[199][85]
-		(EWindowMain) ID string[200][90]
-		(EWindowMain) ID string[201][86]
-		(EWindowMain) ID string[202][77]
-		(EWindowMain) ID string[203][74]
-		(EWindowMain) ID string[204][97]
-		(EWindowMain) ID string[205][81]
-		(EWindowMain) ID string[206][92]
-		(EWindowMain) ID string[207][90]
-		(EWindowMain) ID string[208][78]
-		(EWindowMain) ID string[209][72]
-		(EWindowMain) ID string[210][80]
+		(EWindowMain) ID string[193][103]
+		(EWindowMain) ID string[194][81]
+		(EWindowMain) ID string[195][78]
+		(EWindowMain) ID string[196][89]
+		(EWindowMain) ID string[197][84]
+		(EWindowMain) ID string[198][74]
+		(EWindowMain) ID string[199][87]
+		(EWindowMain) ID string[200][96]
+		(EWindowMain) ID string[201][93]
+		(EWindowMain) ID string[202][81]
+		(EWindowMain) ID string[203][82]
+		(EWindowMain) ID string[204][98]
+		(EWindowMain) ID string[205][85]
+		(EWindowMain) ID string[206][96]
+		(EWindowMain) ID string[207][95]
+		(EWindowMain) ID string[208][88]
+		(EWindowMain) ID string[209][74]
+		(EWindowMain) ID string[210][87]
 		(EWindowMain) ID string[211][74]
-		(EWindowMain) ID string[212][78]
-		(EWindowMain) ID string[213][81]
+		(EWindowMain) ID string[212][82]
+		(EWindowMain) ID string[213][87]
 		(EWindowMain) ID string[214][66]
-		(EWindowMain) ID string[215][87]
-		(EWindowMain) ID string[216][86]
-		(EWindowMain) ID string[217][90]
-		(EWindowMain) ID string[218][85]
-		(EWindowMain) ID string[219][85]
-		(EWindowMain) ID string[220][84]
-		(EWindowMain) ID string[221][83]
-		(EWindowMain) ID string[222][88]
-		(EWindowMain) ID string[223][68]
-		(EWindowMain) ID string[224][73]
-		(EWindowMain) ID string[225][82]
-		(EWindowMain) ID string[226][99]
-		(EWindowMain) ID string[227][75]
-		(EWindowMain) ID string[228][82]
-		(EWindowMain) ID string[229][89]
-		(EWindowMain) ID string[230][81]
-		(EWindowMain) ID string[231][90]
-		(EWindowMain) ID string[232][99]
+		(EWindowMain) ID string[215][96]
+		(EWindowMain) ID string[216][89]
+		(EWindowMain) ID string[217][93]
+		(EWindowMain) ID string[218][86]
+		(EWindowMain) ID string[219][90]
+		(EWindowMain) ID string[220][87]
+		(EWindowMain) ID string[221][86]
+		(EWindowMain) ID string[222][91]
+		(EWindowMain) ID string[223][69]
+		(EWindowMain) ID string[224][77]
+		(EWindowMain) ID string[225][89]
+		(EWindowMain) ID string[226][102]
+		(EWindowMain) ID string[227][80]
+		(EWindowMain) ID string[228][85]
+		(EWindowMain) ID string[229][93]
+		(EWindowMain) ID string[230][82]
+		(EWindowMain) ID string[231][96]
+		(EWindowMain) ID string[232][103]
 		(EWindowMain) ID string[233][87]
-		(EWindowMain) ID string[234][69]
-		(EWindowMain) ID string[235][75]
-		(EWindowMain) ID string[236][86]
-		(EWindowMain) ID string[237][83]
-		(EWindowMain) ID string[238][101]
-		(EWindowMain) ID string[239][92]
-		(EWindowMain) ID string[240][97]
-		(EWindowMain) ID string[241][77]
-		(EWindowMain) ID string[242][79]
-		(EWindowMain) ID string[243][87]
-		(EWindowMain) ID string[244][95]
-		(EWindowMain) ID string[245][89]
-		(EWindowMain) ID string[246][76]
-		(EWindowMain) ID string[247][82]
-		(EWindowMain) ID string[248][90]
-		(EWindowMain) ID string[249][67]
-		(EWindowMain) ID string[250][67]
-		(EWindowMain) ID string[251][68]
-		(EWindowMain) ID string[252][97]
-		(EWindowMain) ID string[253][74]
-		(EWindowMain) ID string[254][75]
-		(EWindowMain) ID string[255][81]
-		(EWindowMain) load config from disc[7ms] Delay status:	Minimal
-		(EWindowMain) load config filter versions[6ms] Delay status:	Minimal
+		(EWindowMain) ID string[234][73]
+		(EWindowMain) ID string[235][79]
+		(EWindowMain) ID string[236][89]
+		(EWindowMain) ID string[237][88]
+		(EWindowMain) ID string[238][107]
+		(EWindowMain) ID string[239][97]
+		(EWindowMain) ID string[240][101]
+		(EWindowMain) ID string[241][82]
+		(EWindowMain) ID string[242][85]
+		(EWindowMain) ID string[243][95]
+		(EWindowMain) ID string[244][98]
+		(EWindowMain) ID string[245][95]
+		(EWindowMain) ID string[246][80]
+		(EWindowMain) ID string[247][85]
+		(EWindowMain) ID string[248][93]
+		(EWindowMain) ID string[249][72]
+		(EWindowMain) ID string[250][69]
+		(EWindowMain) ID string[251][72]
+		(EWindowMain) ID string[252][105]
+		(EWindowMain) ID string[253][79]
+		(EWindowMain) ID string[254][76]
+		(EWindowMain) ID string[255][88]
+		(EWindowMain) load config from disc[241ms] Delay status:	Medium
+		(EWindowMain) load config filter versions[0ms] Delay status:	Minimal
 		(EWindowMain) ![1]
 		(EWindowMain) ![2]
 		(EWindowMain) ![3]
 		(EWindowMain) ![4]
 		(EWindowMain) ![5]
-		(EWindowMain) register color editor[18ms] Delay status:	Very low
-		(EWindowMain) register bottom search line[11ms] Delay status:	Very low
+		(EWindowMain) register color editor[8ms] Delay status:	Minimal
+		(EWindowMain) register bottom search line[2ms] Delay status:	Minimal
 		(EWindowMain) register filter tabs[0ms] Delay status:	Minimal
-		(EWindowMain) register styles group[958ms] Delay status:	Very high
+		(EWindowMain) register styles group[253ms] Delay status:	High
 		(EWindowMain) register loot filter errors group[0ms] Delay status:	Minimal
-		(EWindowMain) register loot version configurator group[12ms] Delay status:	Very low
+		(EWindowMain) register loot version configurator group[5ms] Delay status:	Minimal
 		(EWindowMain) register create new loot filter group[0ms] Delay status:	Minimal
-		(EWindowMain) register data entities group[15ms] Delay status:	Very low
-		(EWindowMain) register world parameters group[6ms] Delay status:	Minimal
-		(EWindowMain) register loot simulator group[186ms] Delay status:	Medium
-		(EWindowMain) register add content to filter blcok group[3ms] Delay status:	Minimal
-		(EWindowMain) register sound group[14ms] Delay status:	Very low
-		(EWindowMain) Load loot filter list[546ms] Delay status:	Very high
+		(EWindowMain) register data entities group[12ms] Delay status:	Very low
+		(EWindowMain) register world parameters group[4ms] Delay status:	Minimal
+		(EWindowMain) register loot simulator group[42ms] Delay status:	Very low
+		(EWindowMain) register add content to filter blcok group[8ms] Delay status:	Minimal
+		(EWindowMain) register sound group[41ms] Delay status:	Very low
+		(EWindowMain) Load loot filter list[47ms] Delay status:	Very low
 		(EWindowMain) register loot filter list group[0ms] Delay status:	Minimal
-		(EWindowMain) register about group[35ms] Delay status:	Very low
-		(EWindowMain) register filter block colour editor block[0ms] Delay status:	Minimal
-		(EWindowMain) register explicit manager group[245ms] Delay status:	Medium
-		(EWindowMain) register poe ninja price checker group[3ms] Delay status:	Minimal
-		(EWindowMain) regiter head buttons group[52ms] Delay status:	Low
-		(EWindowMain) register confirm deleting filter block group[0ms] Delay status:	Minimal
+		(EWindowMain) register about group[10ms] Delay status:	Very low
+		(EWindowMain) register filter block colour editor block[1ms] Delay status:	Minimal
+		(EWindowMain) register explicit manager group[156ms] Delay status:	Medium
+		(EWindowMain) register poe ninja price checker group[14ms] Delay status:	Very low
+		(EWindowMain) regiter head buttons group[15ms] Delay status:	Very low
+		(EWindowMain) register confirm deleting filter block group[1ms] Delay status:	Minimal
 		(EWindowMain) register confirm opening autogenerated loot filter group[0ms] Delay status:	Minimal
-		(EWindowMain) register confirm opening autosaved loot filter group[0ms] Delay status:	Minimal
-		(EWindowMain) read version from github[11ms] Delay status:	Very low
+		(EWindowMain) register confirm opening autosaved loot filter group[1ms] Delay status:	Minimal
+		(EWindowMain) read version from github[7ms] Delay status:	Minimal
 		(EWindowMain) latest version from Github[1.10.0]
 		(EWindowMain) _text [1.10.0]
-		(EWindowMain) check new version from github[308ms] Delay status:	High
-		(EWindowMain) read user pattern[1ms] Delay status:	Minimal
-TOTAL TIME OF (EWindowMain) is [4640ms]
-	(Graphic core) register debug structs[34ms] Delay status:	Very low
+		(EWindowMain) check new version from github[476ms] Delay status:	High
+		(EWindowMain) read user pattern[0ms] Delay status:	Minimal
+TOTAL TIME OF (EWindowMain) is [9475ms]
+	(Graphic core) register debug structs[12ms] Delay status:	Very low
 	(Graphic core) Success: Need remove [21] element of button group list
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [action_rotate_variant]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: autorefresh!
-	(Graphic core) [info]: call [actions on click list]
-		(Poe ninja) read poe.ninja cache (Abyss(PoE2))[28ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Currency(PoE2))[37ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Delirium(PoE2))[15ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Essences(PoE2))[48ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Expedition(PoE2))[15ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Fragments(PoE2))[29ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (LineageSupportGems(PoE2))[79ms] Delay status:	Low
-		(Poe ninja) read poe.ninja cache (Ritual(PoE2))[45ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (Runes(PoE2))[47ms] Delay status:	Very low
-		(Poe ninja) ERROR: Cannot read [poe ninja cache], because file <C:\Users\NoSimpleWay\Documents\My Games\Path of Exile\poe_ninja_cache_new/Idol(PoE2).txt> do not exist[0ms] Delay status:	Minimal
-		(Poe ninja) read poe.ninja cache (Ultimatum(PoE2))[34ms] Delay status:	Very low
-		(Poe ninja) read poe.ninja cache (UncutGems(PoE2))[8ms] Delay status:	Minimal
-TOTAL TIME OF (Poe ninja) is [385ms]
-	(Graphic core) open loot filter[C:\Users\NoSimpleWay\Documents\My Games\Path of Exile 2\DaD2.filter]
-	(Graphic core) _text [C:\Users\NoSimpleWay\Documents\My Games\Path of Exile 2\DaD2.filter]
-	(Graphic core) open loot filter[data/base_loot_filter.filter]
-	(Graphic core) _text [data/base_loot_filter.filter]
-	(Graphic core) [info]: @
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: try mark parent group is deleted
-	(Graphic core) Success: marked as deleted
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) Success: Need remove [1] child element of button group list
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: try mark as removed
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) ERROR: listed button group have no data container![56589ms] Delay status:	UNACCEPTABLE!
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) ERROR: listed button group have no data container![3030ms] Delay status:	UNACCEPTABLE!
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) ERROR: listed button group have no data container![7866ms] Delay status:	UNACCEPTABLE!
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![1ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) ERROR: listed button group have no data container![2ms] Delay status:	Minimal
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) Success: Need remove [1] child element of button group list
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) Success: Need remove [24] element of button group list
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
-	(Graphic core) [info]: call [actions on click list]
+	(Graphic core) ERROR: Texture [data/textures/icons/AnAudienceWithTheKing.png] do not exist![3152ms] Delay status:	UNACCEPTABLE!

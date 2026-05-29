@@ -6969,7 +6969,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string				EWindowMain::this_version = "1.10.0";
+const std::string				EWindowMain::this_version = "1.11.0";
 std::vector<ELocalisationText>	EWindowMain::registered_transfigured_gems;
 
 
@@ -11721,6 +11721,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/vault_keys.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/wands.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/waystones.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE2/GameItems/wombgifts.txt");
 
 
 
