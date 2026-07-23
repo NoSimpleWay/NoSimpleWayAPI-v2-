@@ -2802,6 +2802,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -2814,6 +2818,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2830,6 +2837,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2846,6 +2856,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2862,6 +2875,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2878,9 +2894,17 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -4631,6 +4655,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -4646,10 +4686,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Abyss Scarab of the Consort"
+	
 	[tag]"scarab tier"	[value]"Bonus"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Abyss Scarab of the Consort"
+	[tag]"name RU"		[value]"Скарабей Бездны спутницы"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ADD_NEW_DATA_ENTITY
@@ -4665,12 +4748,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Abyss Scarab of Crystals"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Abyss Scarab of Crystals"
+	[tag]"name RU"		[value]"Скарабей Бездны кристаллов"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
 
 
 
@@ -7342,3 +7457,214 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+	
+	##
+	#	Scarabs
+	##
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Trarthan Scarab"
+	[tag]"name RU"		[value]"Тератский скарабей"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Trarthan Scarab of Infamy"
+	[tag]"name RU"		[value]"Тератский скарабей бесчестия"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Trarthan Scarab of Renown"
+	[tag]"name RU"		[value]"Тератский скарабей известности"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Trarthan Scarab of Surprising Alliances"
+	[tag]"name RU"		[value]"Тератский скарабей неожиданных союзов"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+		
+	##
+	#	Warrant
+	##
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mercenary Warrant"
+	[tag]"name RU"		[value]"Наёмничья расписка"
+
+	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	##
+	#	Eyes
+	##
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Zorath's Eye of Malevolence"
+	[tag]"name RU"		[value]"Глаз Зората злорадства"
+
+	[tag]"icon path"	[value]"eye"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Eye item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Zorath's Eye of Authority"
+	[tag]"name RU"		[value]"Глаз Зората власти"
+
+	[tag]"icon path"	[value]"eye"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Eye item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Zorath's Eye of the Inevitable"
+	[tag]"name RU"		[value]"Глаз Зората неизбежности"
+
+	[tag]"icon path"	[value]"eye"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Eye item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Zorath's Eye of the Endless"
+	[tag]"name RU"		[value]"Глаз Зората бесконечности"
+
+	[tag]"icon path"	[value]"eye"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Eye item"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"scarab tier"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+	

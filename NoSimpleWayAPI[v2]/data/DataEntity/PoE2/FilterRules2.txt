@@ -1162,6 +1162,13 @@ target_tag	"rune type"
 		DETF_color	255	220	200	255
 		
 	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Idol"
+		DETF_localised_attribute_name_EN	"Idols"
+		DETF_localised_attribute_name_RU	"Идолы"
+		DETF_color	200	255	255	255
+		
+		
+	REGISTER_NEW_SUITABLE_VALUES
 		DETF_value_key	"Unique"
 		DETF_localised_attribute_name_EN	"Unique runes"
 		DETF_localised_attribute_name_RU	"Уникальные руны"
@@ -2698,6 +2705,12 @@ target_tag	"rune type"
 		DETF_localised_attribute_name_EN	"Aldur runes"
 		DETF_localised_attribute_name_RU	"Руны Алдура"
 		DETF_color	255	220	200	255
+		
+	REGISTER_NEW_SUITABLE_VALUES
+		DETF_value_key	"Idol"
+		DETF_localised_attribute_name_EN	"Idols"
+		DETF_localised_attribute_name_RU	"Идолы"
+		DETF_color	200	255	255	255
 		
 	REGISTER_NEW_SUITABLE_VALUES
 		DETF_value_key	"Unique"

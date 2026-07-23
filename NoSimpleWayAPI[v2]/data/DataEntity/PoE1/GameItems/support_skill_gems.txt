@@ -1606,3 +1606,46 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Minion Pact Support"
+	[tag]"name RU"		[value]"Поддержка: Договор служения"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Communion Support"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Communion Support"
+	[tag]"name RU"		[value]"Поддержка: Причастие"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	

@@ -1,0 +1,93 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Gloves"
+	[tag]"name RU"		[value]"Затуманенные перчатки"
+
+	[tag]"icon path"	[value]"EnshroudedGloves"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Boots"
+	[tag]"name RU"		[value]"Затуманенные сапоги"
+
+	[tag]"icon path"	[value]"EnshroudedBoots"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Helmet"
+	[tag]"name RU"		[value]"Затуманенный шлем"
+
+	[tag]"icon path"	[value]"EnshroudedHelmet"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Shield"
+	[tag]"name RU"		[value]"Затуманенный щит"
+
+	[tag]"icon path"	[value]"EnshroudedShield"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Body Armour"
+	[tag]"name RU"		[value]"Затуманенный нательный доспех"
+
+	[tag]"icon path"	[value]"EnshroudedBodyArmour"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+		
+	[tag]"worth"		[value]"Rare"
+	

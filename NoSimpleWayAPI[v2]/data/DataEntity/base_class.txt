@@ -1795,3 +1795,28 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Wombgift"
 	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Enshrouded Items"
+	[tag]"name RU"		[value]"Затуманенные предметы"
+	
+	[tag]"short name"	[value]"Enshrouded Item"
+	
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"icon path"	[value]"EnshroudedShield"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Chart"
+	[tag]"name RU"		[value]"Морские карты"
+	
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"icon path"	[value]"Chart"
+	

@@ -2461,7 +2461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"184"
 	[tag]"base energy shield max"	[value]"184"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"ES"
 		
@@ -2488,7 +2488,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"ES"
 		
@@ -4257,7 +4257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"101"
 	[tag]"base energy shield max"	[value]"101"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Armour/ES"
 		
@@ -4288,7 +4288,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Armour/ES"
 		
@@ -4317,7 +4317,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Armour/ES"
 		
@@ -4350,7 +4350,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Armour/ES"
 		
@@ -5373,7 +5373,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Unpopular"
+	[tag]"usability"		[value]"Popular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Evasion/ES"
 		
@@ -5433,7 +5433,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"usability"		[value]"Unpopular"
+	[tag]"usability"		[value]"Popular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"	[value]"Evasion/ES"
 		
@@ -6133,7 +6133,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"93"
 	[tag]"base energy shield max"	[value]"93"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Vaal temple"
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		
@@ -6175,7 +6175,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Vaal temple"
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		
@@ -6205,7 +6205,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Vaal temple"
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		
@@ -6235,7 +6235,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base energy shield min"	[value]"93"
 	[tag]"base energy shield max"	[value]"93"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Vaal temple"
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		
@@ -6265,7 +6265,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Introduced: Return of the Ancients"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Vaal temple"
 	[tag]"defence type"	[value]"Armour/Evasion/ES"
 		

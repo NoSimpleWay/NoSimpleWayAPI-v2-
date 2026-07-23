@@ -8,9 +8,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Active"
 	[tag]"base class"	[value]"Skill Gems"
 	
-	[tag]"item tag"		[value]"Renamed item"
-	[tag]"renamed to"	[value]"Holy Sweep"
-	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
 	[tag]"item tag"		[value]"Changed in Mirage"
@@ -71,6 +68,89 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Skill Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Pact"
+	[tag]"name RU"		[value]"Тёмный договор"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dark Bargain"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Bargain"
+	[tag]"name RU"		[value]"Тёмная сделка"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Pact of Trarthus"
+	[tag]"name RU"		[value]"Тёмный договор Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Dark Bargain of Trarthus"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dark Bargain of Trarthus"
+	[tag]"name RU"		[value]"Тёмная сделка Тератны"
+
+	[tag]"icon path"	[value]"Active"
+	[tag]"base class"	[value]"Skill Gems"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

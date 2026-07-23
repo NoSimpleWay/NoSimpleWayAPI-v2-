@@ -138,27 +138,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Clutching Talisman"
-	[tag]"name RU"		[value]"Сжимающий талисман"
-
-	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
-	[tag]"base class"	[value]"Amulets"
-
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Acceptable"
-	[tag]"base family"	[value]"Talisman"
-	
-	[tag]"item height"	[value]"1"
-	[tag]"item tag"		[value]"Base for unique item"
-	[tag]"item width"	[value]"1"
-	
-	[tag]"worth"		[value]"Common"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
 	[tag]"name EN"		[value]"Coral Amulet"
 	[tag]"name RU"		[value]"Амулет с кораллом"
 
@@ -361,30 +340,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Rotfeather Talisman"
-	[tag]"name RU"		[value]"Талисман перогнильца"
-
-	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
-	[tag]"base class"	[value]"Amulets"
-
-	[tag]"item tag"		[value]"Base for unique item"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-	[tag]"item tag"		[value]"Jewelry"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Talisman"
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Acceptable"
-	[tag]"base family"	[value]"Basic"
-	
-	[tag]"worth"		[value]"Trash"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
 	[tag]"name EN"		[value]"Simplex Amulet"
 	[tag]"name RU"		[value]"Простой амулет"
 
@@ -454,30 +409,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
-
-	[tag]"name EN"		[value]"Wereclaw Talisman"
-	[tag]"name RU"		[value]"Талисман когтистого оборотня"
-
-	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
-	[tag]"base class"	[value]"Amulets"
-
-	[tag]"item tag"		[value]"Base for unique item"
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"Jewelry"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Talisman"
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Talisman"
-	
-	
-	[tag]"worth"		[value]"Trash"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -545,3 +476,1601 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pearlescent Amulet"
+	[tag]"name RU"		[value]"Амулет с перламутром"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chieftain Talisman"
+	[tag]"name RU"		[value]"Талисман вожака"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gargantuan Talisman"
+	[tag]"name RU"		[value]"Талисман громадины"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Goliath Talisman"
+	[tag]"name RU"		[value]"Талисман исполина"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Rhoa Talisman"
+	[tag]"name RU"		[value]"Талисман роа"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blood Viper Talisman"
+	[tag]"name RU"		[value]"Талисман кровавой гадюки"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chimeral Talisman"
+	[tag]"name RU"		[value]"Талисман ящера"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Squid Talisman"
+	[tag]"name RU"		[value]"Талисман кальмара"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sand Spitter Talisman"
+	[tag]"name RU"		[value]"Талисман песчаного плевуна"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shield Crab Talisman"
+	[tag]"name RU"		[value]"Талисман крепкого краба"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Goatman Talisman"
+	[tag]"name RU"		[value]"Талисман козерога"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Devourer Talisman"
+	[tag]"name RU"		[value]"Талисман пожирателя"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Plagued Arachnid Talisman"
+	[tag]"name RU"		[value]"Талисман чумного арахнида"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Watcher Talisman"
+	[tag]"name RU"		[value]"Талисман смотрителя"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Savage Crab Talisman"
+	[tag]"name RU"		[value]"Талисман свирепого краба"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flame Hellion Talisman"
+	[tag]"name RU"		[value]"Талисман огненного адского льва"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Frost Hellion Talisman"
+	[tag]"name RU"		[value]"Талисман морозного адского льва"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lynx Talisman"
+	[tag]"name RU"		[value]"Талисман рыси"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ape Talisman"
+	[tag]"name RU"		[value]"Талисман примата"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wolf Alpha Talisman"
+	[tag]"name RU"		[value]"Талисман волка-альфа"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Magma Hound Talisman"
+	[tag]"name RU"		[value]"Талисман магмовой гончей"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pitbull Talisman"
+	[tag]"name RU"		[value]"Талисман пса"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ursa Talisman"
+	[tag]"name RU"		[value]"Талисман медведя"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Taurus Talisman"
+	[tag]"name RU"		[value]"Талисман тельца"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Retch Talisman"
+	[tag]"name RU"		[value]"Талисман рыгателя"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cobra Talisman"
+	[tag]"name RU"		[value]"Талисман кобры"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Carrion Queen Talisman"
+	[tag]"name RU"		[value]"Талисман матки трупоедов"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scrabbler Talisman"
+	[tag]"name RU"		[value]"Талисман норовика"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Black Widow Talisman"
+	[tag]"name RU"		[value]"Талисман чёрной вдовы"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scorpion Talisman"
+	[tag]"name RU"		[value]"Талисман скорпиона"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Tiger Talisman"
+	[tag]"name RU"		[value]"Талисман тигра"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vulture Talisman"
+	[tag]"name RU"		[value]"Талисман стервятника"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Rhex Talisman"
+	[tag]"name RU"		[value]"Талисман рекса"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hybrid Arachnid Talisman"
+	[tag]"name RU"		[value]"Талисман гибридного арахнида"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Octopus Talisman"
+	[tag]"name RU"		[value]"Талисман осьминога"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spider Crab Talisman"
+	[tag]"name RU"		[value]"Талисман краба-паука"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Great Maw Talisman"
+	[tag]"name RU"		[value]"Талисман громадной пасти"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Croaker Talisman"
+	[tag]"name RU"		[value]"Талисман квакуна"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Craicic Talisman"
+	[tag]"name RU"		[value]"Талисман Краценна"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fenumal Talisman"
+	[tag]"name RU"		[value]"Талисман Фенумы"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Saqawine Talisman"
+	[tag]"name RU"		[value]"Талисман Сакаваля"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Farric Talisman"
+	[tag]"name RU"		[value]"Талисман Фаррул"
+
+	[tag]"icon path"	[value]"UndefinedAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	##
+	#	Deleted
+	##
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bonespire Talisman"
+	[tag]"name RU"		[value]"Талисман костешипа"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ashscale Talisman"
+	[tag]"name RU"		[value]"Талисман пепельного чешуйника"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lone Antler Talisman"
+	[tag]"name RU"		[value]"Талисман оленерога-одиночки"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Deep One Talisman"
+	[tag]"name RU"		[value]"Талисман глубинника"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Breakrib Talisman"
+	[tag]"name RU"		[value]"Талисман ребролома"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Deadhand Talisman"
+	[tag]"name RU"		[value]"Талисман смерторука"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Undying Flesh Talisman"
+	[tag]"name RU"		[value]"Талисман бессмертной плоти"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Rot Head Talisman"
+	[tag]"name RU"		[value]"Талисман гнилой головы"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mandible Talisman"
+	[tag]"name RU"		[value]"Талисман мандибулы"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chrysalis Talisman"
+	[tag]"name RU"		[value]"Талисман кокона"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Writhing Talisman"
+	[tag]"name RU"		[value]"Талисман личинок"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hexclaw Talisman"
+	[tag]"name RU"		[value]"Талисман ведьмокогтя"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Primal Skull Talisman"
+	[tag]"name RU"		[value]"Талисман первочерепа"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wereclaw Talisman"
+	[tag]"name RU"		[value]"Талисман когтистого оборотня"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+				
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Splitnewt Talisman"
+	[tag]"name RU"		[value]"Талисман колотритона"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Clutching Talisman"
+	[tag]"name RU"		[value]"Сжимающий талисман"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Avian Twins Talisman"
+	[tag]"name RU"		[value]"Талисман пернатых близнецов"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Fangjaw Talisman"
+	[tag]"name RU"		[value]"Талисман клыкастика"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Horned Talisman"
+	[tag]"name RU"		[value]"Талисман рогов"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spinefuse Talisman"
+	[tag]"name RU"		[value]"Талисман хребтоплава"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Three Rat Talisman"
+	[tag]"name RU"		[value]"Талисман трёх крыс"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Monkey Twins Talisman"
+	[tag]"name RU"		[value]"Талисман близнецов-обезьян"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Longtooth Talisman"
+	[tag]"name RU"		[value]"Талисман длиннозуба"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	
+	[tag]"item height"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Rotfeather Talisman"
+	[tag]"name RU"		[value]"Талисман перогнильца"
+
+	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Monkey Paw Talisman"
+	[tag]"name RU"		[value]"Талисман обезьяньей лапки"
+
+	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Three Hands Talisman"
+	[tag]"name RU"		[value]"Талисман трёх рук"
+
+	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"

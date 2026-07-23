@@ -3618,6 +3618,15 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -3631,6 +3640,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Astrolable"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Deceptive Astrolabe"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3639,6 +3654,39 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Deceptive Astrolabe"
+	[tag]"name RU"		[value]"Обманчивая астролябия"
+
+	[tag]"icon path"	[value]"TimelessAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -3956,3 +4004,446 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scrying Orb"
+	[tag]"name RU"		[value]"Заговаривающая сфера"
+
+	[tag]"icon path"	[value]"ScryingOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Unknown"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Memory item"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	##
+	#	Legion crystals
+	##
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Karui Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл каруи"
+
+	[tag]"icon path"	[value]"KaruiEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Legion"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Imperial Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл Империи"
+
+	[tag]"icon path"	[value]"ImperialEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Legion"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл ваал"
+
+	[tag]"icon path"	[value]"VaalEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Legion"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Templar Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл храмовников"
+
+	[tag]"icon path"	[value]"TemplarEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Legion"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Maraketh Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл маракетов"
+
+	[tag]"icon path"	[value]"MaraketsEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Loot source: Legion"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	##
+	#	League content
+	##
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Merrick's Ducat"
+	[tag]"name RU"			[value]"Дукат Меррика"
+	
+	[tag]"icon path"		[value]"MerricksDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Cyaxan's Ducat"
+	[tag]"name RU"			[value]"Шиазанский дукат"
+	
+	[tag]"icon path"		[value]"CyaxansDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"The Changeling's Ducat"
+	[tag]"name RU"			[value]"Дукат подкидыша"
+	
+	[tag]"icon path"		[value]"TheChangelingsDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"The Genteel's Ducat"
+	[tag]"name RU"			[value]"Дукат дворянина"
+	
+	[tag]"icon path"		[value]"TheGenteelsDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Kishara's Ducat"
+	[tag]"name RU"			[value]"Дукат Кишары"
+	
+	[tag]"icon path"		[value]"KisharasDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Telesia's Ducat"
+	[tag]"name RU"			[value]"Дукат Телесии"
+	
+	[tag]"icon path"		[value]"TelesiasDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Rotmother's Ducat"
+	[tag]"name RU"			[value]"Дукат Мамаши Гниль"
+	
+	[tag]"icon path"		[value]"RotmothersDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Brinehook's Ducat"
+	[tag]"name RU"			[value]"Дукат Морского Крюка"
+	
+	[tag]"icon path"		[value]"BrinehooksDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Katakohi's Ducat"
+	[tag]"name RU"			[value]"Дукат Катакойи"
+	
+	[tag]"icon path"		[value]"KatakohisDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Tzamoto's Ducat"
+	[tag]"name RU"			[value]"Дукат Цамото"
+	
+	[tag]"icon path"		[value]"TzamotosDucat"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Dead Man's Sulphur"
+	[tag]"name RU"			[value]"Мертвецкая сера"
+	
+	[tag]"icon path"		[value]"DeadMansSulphur"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Message in a Bottle"
+	[tag]"name RU"			[value]"Послание в бутылке"
+	
+	[tag]"icon path"		[value]"MessageInABottle"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	

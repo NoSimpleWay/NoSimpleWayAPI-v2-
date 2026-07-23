@@ -1,0 +1,51 @@
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sandy Seabed Chart"
+	[tag]"name RU"		[value]"Карта песчаного дна"
+
+	[tag]"icon path"	[value]"Chart"
+	[tag]"base class"	[value]"Chart"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coral Forest Chart"
+	[tag]"name RU"		[value]"Карта кораллового леса"
+
+	[tag]"icon path"	[value]"Chart"
+	[tag]"base class"	[value]"Chart"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coral Reef Chart"
+	[tag]"name RU"		[value]"Карта кораллового рифа"
+
+	[tag]"icon path"	[value]"Chart"
+	[tag]"base class"	[value]"Chart"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Rare"

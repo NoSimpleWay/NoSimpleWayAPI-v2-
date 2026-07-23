@@ -1386,3 +1386,34 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Rare"
+	
+	###########################################
+	###		CURSE OF THE ALLFLAME LEAGUE	###
+	###########################################
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ghostflame Blade"
+	[tag]"name RU"		[value]"Клинок призрачного пламени"
+
+	[tag]"icon path"	[value]"GhostflameBlade"
+	[tag]"base class"	[value]"One Hand Swords"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	

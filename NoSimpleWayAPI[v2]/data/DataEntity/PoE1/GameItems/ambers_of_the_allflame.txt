@@ -376,6 +376,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -387,12 +396,41 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Embers of the Allflame"
 	
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Settlers"
+	[tag]"item tag"		[value]"Deleted in Curse of the Allflame"
+	[tag]"item tag"		[value]"Changed in Curse of the Allflame"
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Allflame Ember of K'Tash"
 	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of K'Tash"
+	[tag]"name RU"		[value]"Уголь Всепламени К'Таш"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Embers of the Allflame"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

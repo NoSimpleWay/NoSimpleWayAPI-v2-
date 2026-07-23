@@ -299,7 +299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Armour"
 
@@ -1077,7 +1077,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Evasion"
 
@@ -1530,7 +1530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"ES"
 
@@ -2149,7 +2149,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Armour/Evasion"
 
@@ -2866,7 +2866,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Armour/ES"
 
@@ -2895,7 +2895,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Armour/ES"
 
@@ -3414,7 +3414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Evasion/ES"
 
@@ -3449,7 +3449,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 	[tag]"DAE tier"		[value]"Expert"
 	
-	[tag]"usability"		[value]"Popular"
+	[tag]"usability"		[value]"Unpopular"
 	[tag]"drop source"		[value]"Global drop"
 	[tag]"defence type"		[value]"Evasion/ES"
 

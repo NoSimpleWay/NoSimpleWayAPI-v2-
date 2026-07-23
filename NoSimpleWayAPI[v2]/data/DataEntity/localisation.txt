@@ -1935,6 +1935,15 @@ ADD_NEW_DATA_ENTITY
 
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_vestigial"
+	[tag]"name EN"		[value]"Condition: Item have vestigial modifier (from legion mechanic)"
+	[tag]"name RU"		[value]"Условие: предмет вырожденный (пробразован лигмеханикой Легиона)"
+
+	
+	
 	
 
 ADD_NEW_DATA_ENTITY
