@@ -11,6 +11,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 
 	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 		
@@ -29,6 +30,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 
 	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 		
@@ -48,6 +50,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 
 	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 		
@@ -67,6 +70,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 
 	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 		
@@ -86,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 
 	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
 		

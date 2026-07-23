@@ -339,12 +339,16 @@
 [Blood Sap Tincture] dust quantity = 0, dust tag = Trash
 [Prismatic Tincture] dust quantity = 0, dust tag = Trash
 [Sporebloom Tincture] dust quantity = 0, dust tag = Trash
+[Enshrouded Gloves] dust quantity = 0, dust tag = Trash
+[Enshrouded Boots] dust quantity = 0, dust tag = Trash
+[Enshrouded Helmet] dust quantity = 0, dust tag = Trash
+[Enshrouded Shield] dust quantity = 0, dust tag = Trash
+[Enshrouded Body Armour] dust quantity = 0, dust tag = Trash
 [Agate Amulet] dust quantity = 92240, dust tag = Rare
 [Amber Amulet] dust quantity = 10340, dust tag = Moderate
 [Astrolabe Amulet] dust quantity = 0, dust tag = Trash
 [Blue Pearl Amulet] dust quantity = 37820, dust tag = Rare
 [Citrine Amulet] dust quantity = 18900, dust tag = Moderate
-[Clutching Talisman] dust quantity = 5560, dust tag = Common
 [Coral Amulet] dust quantity = 19740, dust tag = Moderate
 [Gold Amulet] dust quantity = 10640, dust tag = Moderate
 [Greatwolf Talisman] dust quantity = 131520, dust tag = Expensive
@@ -353,11 +357,9 @@
 [Marble Amulet] dust quantity = 17300, dust tag = Moderate
 [Onyx Amulet] dust quantity = 406560, dust tag = Very expensive
 [Paua Amulet] dust quantity = 1782320, dust tag = Very expensive
-[Rotfeather Talisman] dust quantity = 8920, dust tag = Common
 [Simplex Amulet] dust quantity = 0, dust tag = Trash
 [Talisman] dust quantity = 0, dust tag = Trash
 [Turquoise Amulet] dust quantity = 86960, dust tag = Rare
-[Wereclaw Talisman] dust quantity = 22880, dust tag = Moderate
 [Seaglass Amulet] dust quantity = 0, dust tag = Trash
 [Unset Amulet] dust quantity = 0, dust tag = Trash
 [Focused Amulet] dust quantity = 0, dust tag = Trash
@@ -1273,6 +1275,7 @@
 [Whalebone Rapier] dust quantity = 2980, dust tag = Trash
 [Wyrmbone Rapier] dust quantity = 0, dust tag = Trash
 [Charan's Sword] dust quantity = 0, dust tag = Trash
+[Ghostflame Blade] dust quantity = 0, dust tag = Trash
 [Colossal Life Flask] dust quantity = 0, dust tag = Trash
 [Divine Life Flask] dust quantity = 0, dust tag = Trash
 [Eternal Life Flask] dust quantity = 0, dust tag = Trash

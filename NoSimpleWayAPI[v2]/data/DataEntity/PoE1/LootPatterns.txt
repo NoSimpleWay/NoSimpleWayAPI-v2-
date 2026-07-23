@@ -501,95 +501,6 @@ is_folder
 
 
 
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Deleted items"
-name_RU	"Удалённые предметы"
-icon	"data/textures/buttons/button_red_x.png"
-always_show
-
-activate_attribute_group_by_name	"GemAttributes"
-activate_attribute_group_by_name	"Rarity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Deleted in Mirage"
-DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"data type"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Game item"
-DETF_color	255	230	204	255
-
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Renamed items"
-name_RU	"Переименованные предметы"
-icon	"data/textures/buttons/button_refresh.png"
-always_show
-
-activate_attribute_group_by_name	"GemAttributes"
-activate_attribute_group_by_name	"Rarity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Changed in Mirage"
-DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"data type"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Game item"
-DETF_color	255	230	204	255
 
 
 
@@ -600,8 +511,11 @@ DETF_color	255	230	204	255
 
 
 
-
-
+###########################################################################################################
+#
+#	CURSE OF THE ALLFLAME LEAGUE
+#
+###########################################################################################################
 
 
 
@@ -614,6 +528,8 @@ cannot_be_configured
 name_EN	"New divinations"
 name_RU	"Новые гадалки"
 icon	"data/textures/icons/Card.png"
+
+activate_attribute_group_by_name	"Quantity"
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -638,15 +554,18 @@ target_tag	"base class"
 	DETF_value_key	"Divination Cards"
 	DETF_color	255	230	204	255
 
-
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
-	
+
+
+
+
+
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
@@ -664,25 +583,24 @@ tag_cannot_be_configured
 	DETF_color	255	128	64	255
 
 
-
-
-
-
-
-
-
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
 cannot_be_configured
-name_EN	"New belts"
-name_RU	"Новые пояса"
-icon	"data/textures/icons/CordBelt.png"
+name_EN	"Charts"
+name_RU	"Морские карты"
+icon	"data/textures/icons/Chart.png"
 
-activate_attribute_group_by_name	"Rarity"
+
+
 activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
 activate_attribute_group_by_name	"FlagAttributes"
 activate_attribute_group_by_name	"Influence"
 activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -704,18 +622,21 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Belts"
+	DETF_value_key	"Chart"
 	DETF_color	255	230	204	255
-
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
-	
+
+
+
+
+
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
@@ -735,27 +656,24 @@ tag_cannot_be_configured
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New currency:\nAstrolable"
-name_RU	"Новая валюта:\nАстроляблии"
-icon	"data/textures/icons/RunicAstrolabe.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
+name_EN	"Enshrouded Items"
+name_RU	"Затуманенные предметы"
+icon	"data/textures/icons/EnshroudedShield.png"
+
+
+
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -773,33 +691,29 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"Enshrouded Items"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Astrolable"
-	DETF_color	255	230	204	255
+
+
+
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -814,13 +728,31 @@ tag_cannot_be_configured
 
 
 
+
+
+
+
+
+
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New currency:\nEssences"
-name_RU	"Новая валюта:\nСущности"
-icon	"data/textures/icons/EssenceOfDesolation.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
+name_EN	"New swords"
+name_RU	"Новые мечи"
+icon	"data/textures/icons/GhostflameBlade.png"
+
+
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -838,33 +770,29 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"One Hand Swords"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Essences"
-	DETF_color	255	230	204	255
+
+
+
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -881,13 +809,33 @@ tag_cannot_be_configured
 
 
 
+
+
+
+
+
+
+
+
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New currency:\nCatalysts"
-name_RU	"Новая валюта:\nКатализаторы"
-icon	"data/textures/icons/SinistralCatalyst.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
+name_EN	"New amulets"
+name_RU	"Новые амулеты"
+icon	"data/textures/icons/seaglass_amulet.png"
+
+
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -905,33 +853,29 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"Amulets"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Catalyst item"
-	DETF_color	255	230	204	255
+
+
+
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -944,6 +888,18 @@ tag_cannot_be_configured
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Talisman"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
 
 
 
@@ -951,11 +907,23 @@ tag_cannot_be_configured
 
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New currency:\nMemory"
-name_RU	"Новая валюта:\nВоспоминания"
-icon	"data/textures/icons/MemoryOfReverence.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
+name_EN	"New talismans"
+name_RU	"Новые талисманы"
+icon	"data/textures/icons/Wereclaw_Talisman_inventory_icon.png"
+
+
+
+activate_attribute_group_by_name	"Rarity"
+activate_attribute_group_by_name	"ItemLevel"
+activate_attribute_group_by_name	"SocketsLinksColours"
+activate_attribute_group_by_name	"FlagAttributes"
+activate_attribute_group_by_name	"Influence"
+activate_attribute_group_by_name	"Quality"
+activate_attribute_group_by_name	"DefenceProcentile"
+activate_attribute_group_by_name	"Explicits"
+
+
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -973,33 +941,36 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"Amulets"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Memory item"
+	DETF_value_key	"Talisman"
 	DETF_color	255	230	204	255
+
+
+
+
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -1015,211 +986,16 @@ tag_cannot_be_configured
 
 
 
+
+
+
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New currency:\nLifeforce"
-name_RU	"Новая валюта:\nЖизненная сила"
-icon	"data/textures/icons/CrystallisedRancour.png"
 cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Lifeforce item"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New currency:\nRunegrafts"
-name_RU	"Новая валюта:\nРунограммы"
-icon	"data/textures/icons/RunegraftOfConsecration.png"
-cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rune"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New currency:\nMirage coins"
-name_RU	"Новая валюта:\nМонеты Миража"
-icon	"data/textures/icons/CoinOfRestoration.png"
-cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Mirage coin"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
 name_EN	"New scarabs"
 name_RU	"Новые скарабеи"
-icon	"data/textures/icons/BetrayalScarabOfUnbreaking.png"
-cannot_be_configured
+icon	"data/textures/icons/Winged_Scarab.png"
+
 activate_attribute_group_by_name	"Quantity"
 
 REGISTER_NEW_GENERATOR
@@ -1238,33 +1014,35 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Map Fragments"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Scarab item"
 	DETF_color	255	230	204	255
 
 
+
+
+
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -1280,12 +1058,22 @@ tag_cannot_be_configured
 
 
 
+
+
+
+
+
+
+
+
+
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"New incubators"
-name_RU	"Новые инкубаторы"
-icon	"data/textures/icons/SacredIncubator.png"
 cannot_be_configured
+name_EN	"Pirate ducats"
+name_RU	"Пиратские Дукаты"
+icon	"data/textures/icons/KisharasDucat.png"
+
 activate_attribute_group_by_name	"Quantity"
 
 REGISTER_NEW_GENERATOR
@@ -1304,280 +1092,36 @@ tag_cannot_be_configured
 	DETF_color	255	230	204	255
 
 
-
-
 REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Incubators"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Incubator item"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New maps"
-name_RU	"Новые карты"
-icon	"data/textures/icons/MapValdo.png"
-cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Maps"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New gems:\nSupport gems"
-name_RU	"Новые камни:\nКамни поддержки"
-icon	"data/textures/icons/SupportGems.png"
-cannot_be_configured
-activate_attribute_group_by_name	"GemAttributes"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Support Gems"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New gems:\nExceptional support gems"
-name_RU	"Новые камни:\nИсключительные камни"
-icon	"data/textures/icons/SupportGems.png"
-cannot_be_configured
-activate_attribute_group_by_name	"GemAttributes"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Support Gems"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"special tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Exceptional support gem"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-REGISTER_NEW_PATTERN
-target_game	"PoE1"
-name_EN	"New currency:\nOther currency"
-name_RU	"Новая валюта:\nПрочее"
-icon	"data/textures/icons/FleshOfXesht.png"
-cannot_be_configured
-activate_attribute_group_by_name	"Quantity"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-	target_tag	"base class"
+target_tag	"base class"
 
 	REGISTER_NEW_SUITABLE_VALUES
 	DETF_value_key	"Stackable Currency"
 	DETF_color	255	230	204	255
-	
+
 REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Mirage"
-	DETF_color	255	230	204	255
-	
-REGISTER_NEW_FILTER_TAG
-	target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Other Mirage currency"
+	DETF_value_key	"Introduced: Curse of the Allflame"
 	DETF_color	255	230	204	255
 
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Ducat"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
 tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
@@ -1589,6 +1133,98 @@ tag_cannot_be_configured
 	REGISTER_NEW_BANNED_VALUES
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Legion crystals"
+name_RU	"Кристаллы Легиона"
+icon	"data/textures/icons/KaruiEnshroudingCrystal.png"
+
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Curse of the Allflame"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Legion crystal"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Ducat"
+	DETF_color	255	128	64	255
+
+
+
 
 
 
@@ -1606,11 +1242,114 @@ tag_cannot_be_configured
 
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"Category:\nMirage"
-name_RU	"Категория:\nМираж"
-icon	"data/textures/buttons/pattern_folder_mirage.png"
+cannot_be_configured
+name_EN	"New currency"
+name_RU	"Новая валюта"
+icon	"data/textures/icons/ScryingOrb.png"
+
+activate_attribute_group_by_name	"Quantity"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Stackable Currency"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Curse of the Allflame"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Omen"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Ducat"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Legion crystal"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+name_EN	"Category:\nCurse of the Allflame"
+name_RU	"Категория:\nПроклятие всепламени"
+icon	"data/textures/buttons/pattern_folder_allflame.png"
 is_folder
 have_force_field
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1762,6 +1501,64 @@ have_force_field
 
 
 
+
+
+
+REGISTER_NEW_PATTERN
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Astrolabies"
+name_RU	"Астролябии"
+icon	"data/textures/icons/RunicAstrolabe.png"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"base class"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Stackable Currency"
+DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Astrolable"
+DETF_color	255	230	204	255
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 

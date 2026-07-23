@@ -4032,7 +4032,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Unknown"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
-	[tag]"item tag"		[value]"Memory item"
+		
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4062,7 +4064,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Legion"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4088,7 +4091,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Legion"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4114,7 +4118,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Legion"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4140,7 +4145,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Legion"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4166,7 +4172,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Legion"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -4197,7 +4204,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4219,7 +4227,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4241,7 +4250,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4263,7 +4273,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4285,7 +4296,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4307,7 +4319,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4329,7 +4342,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4351,7 +4365,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4373,7 +4388,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4395,7 +4411,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Ducat"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"
@@ -4417,11 +4434,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Sulphur"
 		
 	[tag]"drop level"		[value]"12"
-	[tag]"stack multiplier"	[value]"1"
-	[tag]"max stack size"	[value]"20"
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"50000"
 
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"	
@@ -4439,7 +4457,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"			[value]"Bottle"
 		
 	[tag]"drop level"		[value]"12"
 	[tag]"stack multiplier"	[value]"1"

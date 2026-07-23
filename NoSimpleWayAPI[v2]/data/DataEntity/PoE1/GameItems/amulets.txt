@@ -512,6 +512,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -530,6 +532,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -548,6 +552,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -566,6 +572,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -584,6 +592,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -602,6 +612,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -620,6 +632,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -638,6 +652,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -656,6 +672,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -674,6 +692,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -692,6 +712,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -710,6 +732,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -728,6 +752,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -746,6 +772,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -764,6 +792,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -782,6 +812,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -800,6 +832,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -818,6 +852,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -836,6 +872,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -854,6 +892,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -872,6 +912,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -890,6 +932,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -908,6 +952,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -926,6 +972,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -944,6 +992,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -962,6 +1012,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -980,6 +1032,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -998,6 +1052,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1016,6 +1072,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1034,6 +1092,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1052,6 +1112,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1070,6 +1132,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1088,6 +1152,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1106,6 +1172,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1124,6 +1192,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1142,6 +1212,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1160,6 +1232,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1178,6 +1252,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1196,6 +1272,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1214,6 +1292,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1232,6 +1312,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1260,6 +1342,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1290,6 +1373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1319,6 +1403,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1350,6 +1435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1383,6 +1469,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1414,6 +1501,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1445,6 +1533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1478,6 +1567,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1513,6 +1603,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1545,6 +1636,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1575,6 +1667,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1609,6 +1702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1639,6 +1733,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1670,6 +1765,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -1701,6 +1797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -2008,6 +2105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -2036,6 +2134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
@@ -2064,6 +2163,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Deleted"
