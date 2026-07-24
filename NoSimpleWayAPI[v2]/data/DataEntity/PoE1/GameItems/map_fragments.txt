@@ -7564,10 +7564,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mercenary Warrant"
 	[tag]"name RU"		[value]"Наёмничья расписка"
 
-	[tag]"icon path"	[value]"ExpeditionScarabOfInfusion"
+	[tag]"icon path"	[value]"MercenaryWarrant"
 	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Scarab item"
+	[tag]"item tag"		[value]"Warrant item"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	
