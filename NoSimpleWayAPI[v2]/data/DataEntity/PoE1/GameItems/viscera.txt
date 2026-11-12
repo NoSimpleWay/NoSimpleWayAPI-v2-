@@ -1,0 +1,2625 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scorched Arm"
+	[tag]"name RU"		[value]"Обугленная рука"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Severed Rhoa Head"
+	[tag]"name RU"		[value]"Отсечённая голова роа"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sea Witch's Tentacle"
+	[tag]"name RU"		[value]"Щупальце морской ведьмы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crustacean's Claw"
+	[tag]"name RU"		[value]"Клешня ракообразного"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Totemic Visage"
+	[tag]"name RU"		[value]"Тотемный образ"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Skeletal Archer's Arm"
+	[tag]"name RU"		[value]"Рука скелета-лучника"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Skeletal Warrior's Leg"
+	[tag]"name RU"		[value]"Рука скелета-воина"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Warden's Arm"
+	[tag]"name RU"		[value]"Рука тюремщика"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Goatman's Horn"
+	[tag]"name RU"		[value]"Рог козерога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Mariner's Tricorne"
+	[tag]"name RU"		[value]"Треуголка моряка"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Elemental Essence"
+	[tag]"name RU"		[value]"Сущность стихии"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Galvanic Tentacle"
+	[tag]"name RU"		[value]"Электрическое щупальце"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Siren's Tentacle"
+	[tag]"name RU"		[value]"Щупальце сирены"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cutthroat's Head"
+	[tag]"name RU"		[value]"Голова головореза"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Golemic Stone"
+	[tag]"name RU"		[value]"Камень голема"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gargantuan Claws"
+	[tag]"name RU"		[value]"Громадные когти"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hollowed Skull"
+	[tag]"name RU"		[value]"Пустой череп"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bonestalker's Ribcage"
+	[tag]"name RU"		[value]"Рёбра костяка"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Templar Skull"
+	[tag]"name RU"		[value]"Череп жреца"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arachnid Fangs"
+	[tag]"name RU"		[value]"Жвалы арахнида"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Severed Stinger"
+	[tag]"name RU"		[value]"Отсечённое жало"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bandit Rogue's Head"
+	[tag]"name RU"		[value]"Голова бандита"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Poacher's Leg"
+	[tag]"name RU"		[value]"Нога браконьера"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cobra Tail"
+	[tag]"name RU"		[value]"Хвост кобры"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bandit Witch's Head"
+	[tag]"name RU"		[value]"Голова ведьмы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arachnid Leg"
+	[tag]"name RU"		[value]"Нога арахнида"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vaal Appendage"
+	[tag]"name RU"		[value]"Конечность ваал"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bandit Warrior's Head"
+	[tag]"name RU"		[value]"Голова воеводы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Primate Foot"
+	[tag]"name RU"		[value]"Ступня примата"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ursine Flesh"
+	[tag]"name RU"		[value]"Плоть медведя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Artificial Appendage"
+	[tag]"name RU"		[value]"Искусственная конечность"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Severed Scythe-hand"
+	[tag]"name RU"		[value]"Отсечённая рука-коса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Captain's Leg"
+	[tag]"name RU"		[value]"Нога капитана"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spined Claws"
+	[tag]"name RU"		[value]"Костяные когти"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Molten Core"
+	[tag]"name RU"		[value]"Расплавленное ядро"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Defaced Bust"
+	[tag]"name RU"		[value]"Обезображенный бюст"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spectral Hood"
+	[tag]"name RU"		[value]"Призрачный капюшон"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Soldier's Head"
+	[tag]"name RU"		[value]"Голова солдата"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flaming Ribbon"
+	[tag]"name RU"		[value]"Пылающая лента"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Statue Leg"
+	[tag]"name RU"		[value]"Нога статуи"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Voidbearer's Leg"
+	[tag]"name RU"		[value]"Нога носителя пустоты"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Voltaic Apparatus"
+	[tag]"name RU"		[value]"Электрический аппарат"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"General's Head"
+	[tag]"name RU"		[value]"Голова генерала"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Brute's Arm"
+	[tag]"name RU"		[value]"Рука громилы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Thaumaturge's Head"
+	[tag]"name RU"		[value]"Голова волшебницы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spiked Carapace"
+	[tag]"name RU"		[value]"Шипастый панцирь"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Skeletal Beast Leg"
+	[tag]"name RU"		[value]"Нога скелета-монстра"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scholar's Arm"
+	[tag]"name RU"		[value]"Рука учёного"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Aristocrat's Torso"
+	[tag]"name RU"		[value]"Торс аристократа"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Despot's Fist"
+	[tag]"name RU"		[value]"Кулак деспота"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vulture's Gut"
+	[tag]"name RU"		[value]"Кишки стервятника"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Templar Banner"
+	[tag]"name RU"		[value]"Жреческое знамя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pocked Leg"
+	[tag]"name RU"		[value]"Рябая нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pocked Arm"
+	[tag]"name RU"		[value]"Рябая рука"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flesh-fused Lantern"
+	[tag]"name RU"		[value]"Слившийся с плотью фонарь"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Carved Haunches"
+	[tag]"name RU"		[value]"Резной таз"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blazing Skull"
+	[tag]"name RU"		[value]"Горящий череп"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gladiator's Heart"
+	[tag]"name RU"		[value]"Сердце гладиатора"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Swordmaster's Blade"
+	[tag]"name RU"		[value]"Клинок мастера мечей"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chitinous Leg"
+	[tag]"name RU"		[value]"Хитиновая нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Engorged Eye"
+	[tag]"name RU"		[value]"Налитый глаз"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Corrupted Carapace"
+	[tag]"name RU"		[value]"Осквернённый панцирь"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Vendigo Claws"
+	[tag]"name RU"		[value]"Когти вендиго"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Overseer's Whip"
+	[tag]"name RU"		[value]"Кнут надзирателя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Justicar's Helm"
+	[tag]"name RU"		[value]"Шлем юстициара"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flaming Furnace"
+	[tag]"name RU"		[value]"Пылающая жаровня"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Adherent's Crown"
+	[tag]"name RU"		[value]"Корона приверженца"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Heretical Tome"
+	[tag]"name RU"		[value]"Еретический том"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hallowed Descry"
+	[tag]"name RU"		[value]"Священный символ"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Skeletal Tail"
+	[tag]"name RU"		[value]"Костяной хвост"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scholar's Leg"
+	[tag]"name RU"		[value]"Нога учёного"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ravenous Skull"
+	[tag]"name RU"		[value]"Ненасытный череп"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Noble's Head"
+	[tag]"name RU"		[value]"Голова аристократа"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Conjoined Hound Head"
+	[tag]"name RU"		[value]"Сдвоенная голова гончей"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scout's Bow"
+	[tag]"name RU"		[value]"Лук разведчицы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ancestor's Club"
+	[tag]"name RU"		[value]"Дубина предка"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Skeleton Wheel"
+	[tag]"name RU"		[value]"Колесо скелета"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Osseous Talon"
+	[tag]"name RU"		[value]"Окаменевший коготь"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flayed Visage"
+	[tag]"name RU"		[value]"Освежёванный лик"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bear Head"
+	[tag]"name RU"		[value]"Медвежья голова"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Boar Head"
+	[tag]"name RU"		[value]"Кабанья голова"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Stag Head"
+	[tag]"name RU"		[value]"Оленья голова"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Arachnid Egg Sac"
+	[tag]"name RU"		[value]"Яйцевой мешок арахнида"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Infested Torso"
+	[tag]"name RU"		[value]"Кишащий торс"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"King Crab's Claw"
+	[tag]"name RU"		[value]"Клешня королевского краба"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Calcified Leg"
+	[tag]"name RU"		[value]"Окостеневшая нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Wraith Claws"
+	[tag]"name RU"		[value]"Призрачные когти"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Infected Leg"
+	[tag]"name RU"		[value]"Заражённая нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Inquisitor's Claw"
+	[tag]"name RU"		[value]"Коготь инквизитора"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Necromancer's Mask"
+	[tag]"name RU"		[value]"Маска некроманта"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ornate Torso"
+	[tag]"name RU"		[value]"Разукрашенный торс"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Devourer's Antenna"
+	[tag]"name RU"		[value]"Усик пожирателя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blackened Lungs"
+	[tag]"name RU"		[value]"Почерневшие лёгкие"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Construct's Head"
+	[tag]"name RU"		[value]"Голова конструкта"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Spider Queen's Head"
+	[tag]"name RU"		[value]"Голова царицы пауков"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Dessicated Head"
+	[tag]"name RU"		[value]"Иссушенная голова"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hag's Stomach"
+	[tag]"name RU"		[value]"Желудок яги"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ghostly Claw"
+	[tag]"name RU"		[value]"Призрачный коготь"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Terrifying Maw"
+	[tag]"name RU"		[value]"Ужасающая пасть"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Armoured Leg"
+	[tag]"name RU"		[value]"Нога в доспехах"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blackguard's Leg"
+	[tag]"name RU"		[value]"Нога чёрного стражника"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Champion's Banner"
+	[tag]"name RU"		[value]"Чемпионское знамя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lunar Bow"
+	[tag]"name RU"		[value]"Лунный лук"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Golden Ankh"
+	[tag]"name RU"		[value]"Золотой анкх"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gemling Torso"
+	[tag]"name RU"		[value]"Торс каменита"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarecrow's Pitchfork"
+	[tag]"name RU"		[value]"Вилы пугала"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Charred Leg"
+	[tag]"name RU"		[value]"Обугленная нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sun-bleached Breastplate"
+	[tag]"name RU"		[value]"Выжженный нагрудник"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Resplendent Sceptre"
+	[tag]"name RU"		[value]"Ослепительный скипетр"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Solar Shield"
+	[tag]"name RU"		[value]"Солнечный щит"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crescent Blade"
+	[tag]"name RU"		[value]"Клинок-полумесяц"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Smuggler's Hand"
+	[tag]"name RU"		[value]"Кисть контрабандиста"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coagulated Essence"
+	[tag]"name RU"		[value]"Сгущённая сущность"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Gelid Fangs"
+	[tag]"name RU"		[value]"Студёные когти"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Desert Sword"
+	[tag]"name RU"		[value]"Пустынный меч"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scorpion Stinger"
+	[tag]"name RU"		[value]"Скорпионье жало"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lithic Haunches"
+	[tag]"name RU"		[value]"Каменный таз"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chimeral Eye"
+	[tag]"name RU"		[value]"Глаз ящера"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chaos Golem's Core"
+	[tag]"name RU"		[value]"Сердце голема хаоса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Desert Queen's Crown"
+	[tag]"name RU"		[value]"Корона царицы пустыни"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Voltaic Skull"
+	[tag]"name RU"		[value]"Гальванический череп"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flayed Arm"
+	[tag]"name RU"		[value]"Освежёванная рука"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Inquisitor's Head"
+	[tag]"name RU"		[value]"Голова инквизитора"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Witch's Head"
+	[tag]"name RU"		[value]"Голова ведьмы"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hag's Head"
+	[tag]"name RU"		[value]"Голова яги"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Diseased Wing"
+	[tag]"name RU"		[value]"Больное крыло"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bloodied Arm"
+	[tag]"name RU"		[value]"Окровавленная рука"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Prosthetic Leg"
+	[tag]"name RU"		[value]"Искусственная нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Distended Stomach"
+	[tag]"name RU"		[value]"Раздутый живот"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Smouldering Leg"
+	[tag]"name RU"		[value]"Тлеющая нога"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Broken Bust"
+	[tag]"name RU"		[value]"Сломанный бюст"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Osseous Scythe"
+	[tag]"name RU"		[value]"Костяная коса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Flaming Goat Hoof"
+	[tag]"name RU"		[value]"Пламенное козье копыто"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Maven's Orrery"
+	[tag]"name RU"		[value]"Планетарий Мейвен"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Sirus' Head"
+	[tag]"name RU"		[value]"Голова Сируса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Incarnation of Dread's Head"
+	[tag]"name RU"		[value]"Голова Воплощения ужаса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Incarnation of Neglect's Cube"
+	[tag]"name RU"		[value]"Голова Воплощения забвения"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Incarnation of Fear's Head"
+	[tag]"name RU"		[value]"Голова Воплощения страха"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Searing Exarch's Descry"
+	[tag]"name RU"		[value]"Познание Пламенного экзарха"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eater of Worlds' Head"
+	[tag]"name RU"		[value]"Голова Пожирателя миров"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Elder's Head"
+	[tag]"name RU"		[value]"Голова Древнего"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Shaper's Head"
+	[tag]"name RU"		[value]"Голова Создателя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Venarius' Scripture"
+	[tag]"name RU"		[value]"Рукопись Венария"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Minotaur's Head"
+	[tag]"name RU"		[value]"Голова Минотавра"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Hydra's Head"
+	[tag]"name RU"		[value]"Голова Гидры"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Chimera's Head"
+	[tag]"name RU"		[value]"Голова Химеры"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Phoenix's Head"
+	[tag]"name RU"		[value]"Голова Феникса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Constrictor's Head"
+	[tag]"name RU"		[value]"Голова Угнетателя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Purifier's Head"
+	[tag]"name RU"		[value]"Голова Искупителя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enslaver's Head"
+	[tag]"name RU"		[value]"Голова Поработителя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Eradicator's Head"
+	[tag]"name RU"		[value]"Голова Искоренителя"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Baran's Head"
+	[tag]"name RU"		[value]"Голова Бэрана"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Veritania's Head"
+	[tag]"name RU"		[value]"Голова Веритании"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Drox's Head"
+	[tag]"name RU"		[value]"Голова Дрокса"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Al-Hezmin's Head"
+	[tag]"name RU"		[value]"Голова Аль-Хезмина"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pit Fighter's Helm"
+	[tag]"name RU"		[value]"Шлем бойца ям"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Lion's Claws"
+	[tag]"name RU"		[value]"Когти льва"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bat's Wings"
+	[tag]"name RU"		[value]"Крылья летучей мыши"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmarish Book of Depravity"
+	[tag]"name RU"		[value]"Кошмарная книга порока"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmarish Head of Uhtred"
+	[tag]"name RU"		[value]"Кошмарная голова Утреда"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmarish Core of the Unbreakable"
+	[tag]"name RU"		[value]"Кошмарное ядро Нерушимого"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmarish Wings of Lycia"
+	[tag]"name RU"		[value]"Кошмарные крылья Люции"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Nightmarish Wings of Catarina"
+	[tag]"name RU"		[value]"Кошмарные крылья Катарины"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coven Queen's Crown"
+	[tag]"name RU"		[value]"Корона Владычицы ковена"
+
+	[tag]"icon path"	[value]"Viscera"
+	[tag]"base class"	[value]"Viscera"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"body part"	[value]"Unknown"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	

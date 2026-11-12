@@ -1,0 +1,205 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Expedition Thread"
+	[tag]"name RU"		[value]"Нить Экспедиции"
+
+	[tag]"icon path"	[value]"ExpeditionThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Abyss Thread"
+	[tag]"name RU"		[value]"Нить Бездны"
+
+	[tag]"icon path"	[value]"AbyssThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Breach Thread"
+	[tag]"name RU"		[value]"Нить Разлома"
+
+	[tag]"icon path"	[value]"BreachThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ritual Thread"
+	[tag]"name RU"		[value]"Нить Ритуала"
+
+	[tag]"icon path"	[value]"RitualThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Ultimatum Thread"
+	[tag]"name RU"		[value]"Нить Ультиматума"
+
+	[tag]"icon path"	[value]"UltimatumThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Legion Thread"
+	[tag]"name RU"		[value]"Нить Легиона"
+
+	[tag]"icon path"	[value]"LegionThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Blight Thread"
+	[tag]"name RU"		[value]"Нить Скверны"
+
+	[tag]"icon path"	[value]"BlightThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Bestiary Thread"
+	[tag]"name RU"		[value]"Нить Бестиария"
+
+	[tag]"icon path"	[value]"BestiaryThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Betrayal Thread"
+	[tag]"name RU"		[value]"Нить Предательства"
+
+	[tag]"icon path"	[value]"BetrayalThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Incursion Thread"
+	[tag]"name RU"		[value]"Нить Предательства"
+
+	[tag]"icon path"	[value]"IncursionThread"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cursed Poppet"
+	[tag]"name RU"		[value]"Проклятая кукла"
+
+	[tag]"icon path"	[value]"CursedPoppet"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Thread item"
+	
+	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

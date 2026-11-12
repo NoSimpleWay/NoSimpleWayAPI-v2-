@@ -11588,6 +11588,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/stackable_currency.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/omens.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/tattoos.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/threads.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/gold.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/grafts.txt");
 
@@ -11612,6 +11613,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/incubators.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/incursion_items.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/vials.txt");
+	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/viscera.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/nets.txt");
 	ETextParser::data_entity_parse_file("data/DataEntity/PoE1/GameItems/essences.txt");
 
@@ -13925,9 +13927,10 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->show_in_loot_item_description = false;
 	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_item_tier");
 	jc_filter_block_attribute->description_localisation_key = "attribute_description_item_tier";
-	jc_filter_block_attribute->game_type = PathOfExileGame::POE2;
+	jc_filter_block_attribute->game_type = PathOfExileGame::BOTH;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "Quality";
@@ -14630,6 +14633,24 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->game_type = PathOfExileGame::BOTH;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Fated";
+	jc_localisation.localisations[NSW_localisation_EN] = "Fated item";
+	jc_localisation.localisations[NSW_localisation_RU] = "Судьбоносный";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_fated_item");
+	jc_filter_block_attribute->description_localisation_key = "attribute_description_fated_item";
+	jc_filter_block_attribute->game_type = PathOfExileGame::POE1;
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "CorruptedMods";
@@ -32854,6 +32875,23 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::init()
 
 
 
+	switch_button = new EntityButton();
+	switch_button->can_be_stretched = true;
+	switch_button->make_default_bool_switcher_button_with_unedible_text
+	(
+		new ERegionGabarite(region_gabarite->size_x, 24.0f),
+		this,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/fated_active"),
+		NS_EGraphicCore::load_from_textures_folder("buttons/bool_flag_attributes/fated_inactive"),
+		ELocalisationText::get_localisation_by_key("item_fated"),
+		&EWindowMain::loot_simulator_button_group->is_fated
+	);
+	switch_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+	add_button_to_working_group_and_expand_y(switch_button);
+
+
+
 
 
 
@@ -32957,6 +32995,13 @@ void EButtonGroupAttributeGeneratorGroup_FlagAttributes::execute_attribute_group
 			attribute_container->attribute_value_int = std::round(EWindowMain::loot_simulator_button_group->selected_corrupted_implicits);
 		}
 
+	}
+
+	if ((EWindowMain::loot_simulator_button_group->is_fated))
+	{
+		EGameItemAttributeContainer*
+		attribute_container = GameItemAttribute::add_new_game_attribute_by_name(_game_item, "Fated");
+		attribute_container->attribute_value_bool = true;
 	}
 
 	if ((EWindowMain::loot_simulator_button_group->is_enchanted) && (_game_item->can_be_enchanted))
@@ -34208,7 +34253,7 @@ void EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier::init()
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->min_value = 1.0f;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 3.0f;
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 10.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 5.0f;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->is_float = false;
 

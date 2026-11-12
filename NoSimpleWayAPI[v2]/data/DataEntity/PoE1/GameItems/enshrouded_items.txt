@@ -96,3 +96,27 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Rare"
 	
+	
+	
+#################################
+#Covens of Umbra
+##################################	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Enshrouded Quiver"
+	[tag]"name RU"		[value]"Затуманенный колчан"
+
+	[tag]"icon path"	[value]"EnshroudedQuiver"
+	[tag]"base class"	[value]"Enshrouded Items"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+
+	[tag]"item tag"		[value]"Base for unique item"
+	[tag]"item tag"		[value]"Always unique"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+		
+	[tag]"worth"		[value]"Rare"
+	

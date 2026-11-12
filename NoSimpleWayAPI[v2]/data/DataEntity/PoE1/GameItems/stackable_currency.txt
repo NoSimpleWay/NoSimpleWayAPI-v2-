@@ -120,6 +120,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"25"
@@ -2135,6 +2138,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
@@ -2151,6 +2162,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	[tag]"item tag"		[value]"Chisel"
 	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Maven's Chisel of Threads"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -2159,6 +2175,44 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Maven's Chisel of Threads"
+	[tag]"name RU"		[value]"Резец Мейвен нитей"
+
+	[tag]"icon path"	[value]"SuperChisel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Settlers league"
+	[tag]"item tag"		[value]"Chisel"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3350,6 +3404,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Mirage coin"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3358,6 +3416,18 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -3374,6 +3444,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Mirage coin"
 	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soul Core of Intellect"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3382,6 +3457,47 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+		
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Soul Core of Intellect"
+	[tag]"name RU"		[value]"Монета знания"
+
+	[tag]"icon path"	[value]"CoinOfKnowledge"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -3398,6 +3514,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Mirage coin"
 	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soul Core of Might"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Soul Core of Might"
+	[tag]"name RU"		[value]"Монета силы"
+
+	[tag]"icon path"	[value]"CoinOfPower"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3409,11 +3554,54 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Coin of Skill"
+	[tag]"name RU"		[value]"Монета умения"
+
+	[tag]"icon path"	[value]"CoinOfSkill"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Mirage coin"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Soul Core of Finesse"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Soul Core of Finesse"
 	[tag]"name RU"		[value]"Монета умения"
 
 	[tag]"icon path"	[value]"CoinOfSkill"
@@ -3456,6 +3644,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Astrolable"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3480,6 +3672,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -3671,6 +3867,37 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Astrolable"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Prospecting Astrolabe"
+	[tag]"name RU"		[value]"Поисковая астролябия"
+
+	[tag]"icon path"	[value]"TimelessAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"52"
@@ -3727,6 +3954,105 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+#################################
+#Covens of Umbra
+##################################	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Immortal Astrolabe"
+	[tag]"name RU"		[value]"Бессмертная астролябия"
+
+	[tag]"icon path"	[value]"ImmortalAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Feral Astrolabe"
+	[tag]"name RU"		[value]"Дикая астролябия"
+
+	[tag]"icon path"	[value]"FeralAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Royal Astrolabe"
+	[tag]"name RU"		[value]"Царская астролябия"
+
+	[tag]"icon path"	[value]"RoyalAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Afarud Enshrouding Crystal"
+	[tag]"name RU"		[value]"Затуманивающий кристалл афарудцев"
+
+	[tag]"icon path"	[value]"AfarudEnshroudingCrystal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"item tag"		[value]"Astrolable"
 	
 	[tag]"worth"		[value]"Rare"
@@ -4466,3 +4792,79 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"	
+
+
+
+
+##################################
+#Covens of Umbra
+##################################
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Frayed Thread"
+	[tag]"name RU"			[value]"Истрёпанная нить"
+	
+	[tag]"icon path"		[value]"FrayedThread"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"			[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"			[value]"Thread"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Royal Visage"
+	[tag]"name RU"			[value]"Лик царицы"
+	
+	[tag]"icon path"		[value]"RoyalVisage"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"			[value]"Introduced: Covens of Umbra"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	[tag]"exist for"		[value]"PoE1"
+	
+	[tag]"name EN"			[value]"Soul Core of Instability"
+	[tag]"name RU"			[value]"Ядро душ нестабильности"
+	
+	[tag]"icon path"		[value]"SoulCoreOfCitaqualotl2"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Moderate"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"			[value]"Introduced: Covens of Umbra"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"	
+

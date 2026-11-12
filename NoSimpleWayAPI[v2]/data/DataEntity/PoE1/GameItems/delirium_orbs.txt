@@ -117,6 +117,10 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"		[value]"Common"
 	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -261,12 +265,51 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
+
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Skittering Delirium Orb"
 	[tag]"name RU"		[value]"Дергающаяся сфера Делириума"
+
+	[tag]"icon path"	[value]"SkitteringDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Renamed item"
+	[tag]"renamed to"	[value]"Threaded Delirium Orb"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+		
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Threaded Delirium Orb"
+	[tag]"name RU"		[value]"Нитяная сфера Делириума"
 
 	[tag]"icon path"	[value]"SkitteringDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -285,6 +328,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"		[value]"1"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

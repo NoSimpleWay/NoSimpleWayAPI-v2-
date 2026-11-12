@@ -12,6 +12,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -27,6 +29,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -42,6 +46,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -57,6 +63,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -667,6 +675,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -686,6 +697,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -705,9 +719,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -724,9 +742,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1345,6 +1367,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1364,6 +1390,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1383,6 +1413,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Boss"
 	[tag]"item tag"		[value]"Loot source: Atziri"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1402,6 +1436,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
 	[tag]"item tag"		[value]"Boss pass"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3467,6 +3505,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Hive"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
 	
@@ -3520,7 +3561,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -3543,7 +3586,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	
+	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3575,6 +3625,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of Instability"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3631,6 +3684,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Changed in Mirage"
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Marshal"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
@@ -3692,6 +3748,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Renamed item"
 	[tag]"renamed to"	[value]"Breach Scarab of the Incensed Swarm"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	[tag]"worth"		[value]"Moderate"
 	
@@ -3738,7 +3797,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -3760,6 +3821,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3788,6 +3853,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -3808,6 +3877,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3828,6 +3901,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3850,6 +3927,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -3877,6 +3958,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Influencing"
@@ -3897,6 +3982,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Influencing"
@@ -3917,6 +4006,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Influencing"
@@ -3970,6 +4063,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Influencing"
@@ -3996,6 +4093,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4018,6 +4119,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4038,6 +4143,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4070,6 +4179,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4090,6 +4203,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4108,7 +4225,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Bonus"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Torment Scarab of Posession"
+	[tag]"name RU"		[value]"Скарабей Мучения одержимости"
+
+	[tag]"icon path"	[value]"Scarab_bonus"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
@@ -4140,6 +4286,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4160,6 +4310,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4180,6 +4334,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4200,6 +4358,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4220,6 +4382,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4330,6 +4496,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4350,6 +4520,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4370,6 +4544,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4423,7 +4601,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
+	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
@@ -4482,6 +4663,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4502,6 +4687,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4552,6 +4741,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4581,6 +4774,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4601,6 +4798,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4628,6 +4829,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4648,6 +4853,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4710,6 +4923,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4779,6 +4996,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4834,6 +5055,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4861,6 +5086,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4881,6 +5110,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4901,6 +5134,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4928,6 +5165,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -4948,6 +5189,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4968,6 +5213,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -4988,6 +5237,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5008,6 +5261,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5048,6 +5305,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5068,6 +5329,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5097,6 +5362,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5118,6 +5387,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5147,6 +5420,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5168,6 +5445,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5199,6 +5480,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5219,6 +5504,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5239,6 +5528,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5271,6 +5564,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5291,6 +5588,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5311,6 +5612,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5331,6 +5636,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5363,6 +5672,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5411,6 +5724,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5447,6 +5764,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5467,6 +5788,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5487,6 +5812,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mercenaries league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5530,6 +5859,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5584,6 +5917,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5638,6 +5975,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5668,6 +6009,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5717,6 +6062,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5739,6 +6088,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5759,6 +6112,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5779,6 +6136,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5799,6 +6160,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5832,6 +6197,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5852,6 +6221,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5872,6 +6245,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5892,6 +6269,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5912,6 +6293,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5940,6 +6325,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -5960,6 +6349,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -5980,6 +6373,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6000,6 +6397,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6020,6 +6421,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6052,6 +6457,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -6074,6 +6483,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6094,6 +6507,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6135,6 +6552,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Bonus"
@@ -6162,6 +6583,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Special"
@@ -6187,6 +6612,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Mirage"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Special"
@@ -6207,6 +6636,58 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of Commander"
+	[tag]"name RU"		[value]"Скарабей командующего"
+
+	[tag]"icon path"	[value]"Scarab_special"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"scarab tier"	[value]"Special"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Scarab of Evolution"
+	[tag]"name RU"		[value]"Скарабей эволюции"
+
+	[tag]"icon path"	[value]"Scarab_special"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Special"
@@ -6227,6 +6708,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"	[value]"Expensive"
 	
@@ -6250,6 +6735,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"	[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Horned"
@@ -6270,6 +6759,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"	[value]"Expensive"
 	
@@ -6292,6 +6785,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"scarab tier"	[value]"Horned"
@@ -6315,6 +6812,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"	[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Horned"
@@ -6336,6 +6837,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"	[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Horned"
@@ -6356,6 +6861,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Necropolis league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Horned"
@@ -6529,6 +7038,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -6578,6 +7090,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -6975,6 +7490,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settl league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -6996,6 +7515,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7019,6 +7542,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7040,6 +7567,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7063,6 +7594,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7084,6 +7619,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7133,6 +7672,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7154,6 +7697,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7174,6 +7721,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7216,6 +7767,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Settlers league"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7325,6 +7880,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7346,6 +7904,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7366,6 +7928,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7482,6 +8048,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7502,6 +8072,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7524,6 +8098,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"scarab tier"	[value]"Basic"
@@ -7544,6 +8122,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -7572,8 +8154,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
 	
 	[tag]"worth"		[value]"Rare"
-	
-	[tag]"scarab tier"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

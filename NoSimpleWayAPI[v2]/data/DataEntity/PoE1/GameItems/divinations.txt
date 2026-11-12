@@ -491,6 +491,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Buried Treasure"
 	[tag]"name RU"		[value]"Спрятанное сокровище"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
@@ -540,6 +544,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1240,6 +1248,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Her Mask"
 	[tag]"name RU"		[value]"Её маска"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
@@ -1459,6 +1471,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1692,6 +1708,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
 	[tag]"item tag"		[value]"Returned in Settlers"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1940,6 +1960,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Sambodhi's Vow"
 	[tag]"name RU"		[value]"Клятва Самбодхи"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
@@ -2901,6 +2925,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -6154,6 +6182,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -6443,6 +6475,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -6870,6 +6906,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -7502,6 +7542,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Divination item"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Covens"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"

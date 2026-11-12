@@ -1400,11 +1400,33 @@ tag_cannot_be_configured
 
 REGISTER_NEW_PATTERN
 target_game	"PoE1"
-name_EN	"Category:\nCurse of the Allflame"
-name_RU	"Категория:\nПроклятие всепламени"
-icon	"data/textures/buttons/pattern_folder_allflame.png"
+name_EN	"Category:\nCovens of Umbra"
+name_RU	"Категория:\nКовены Умбрии"
+icon	"data/textures/buttons/pattern_folder_covens.png"
 is_folder
 have_force_field
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

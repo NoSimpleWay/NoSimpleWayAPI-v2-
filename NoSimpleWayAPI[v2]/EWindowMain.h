@@ -1105,6 +1105,7 @@ public:
 	bool	is_synthesised					= false;
 	bool	is_fractured					= false;
 	bool	is_corrupted					= false;
+	bool	is_fated						= false;
 	bool	gem_is_corrupted				= false;
 	bool	is_identified					= false;
 	bool	is_mirrored						= false;

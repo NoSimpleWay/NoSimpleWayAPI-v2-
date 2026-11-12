@@ -1505,6 +1505,19 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"attribute_description_fated_item"
+	[tag]"name EN"		[value]"Fated item(?)"
+	[tag]"name RU"		[value]"Судьбоносный(?)"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"item_fated"
+	[tag]"name EN"		[value]"Fated item"
+	[tag]"name RU"		[value]"Судьбоносный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"attribute_description_required_level"
 	[tag]"name EN"		[value]"Minimum character level required to equip an item"
 	[tag]"name RU"		[value]"Минимальный уровень персонажа, необходимый для того, что бы экипировать предмет"
