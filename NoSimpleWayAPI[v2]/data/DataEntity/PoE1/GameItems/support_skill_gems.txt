@@ -1458,22 +1458,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-	[tag]"exist for"	[value]"PoE1"
 
-	[tag]"name EN"		[value]"Minion Pact Support"
-	[tag]"name RU"		[value]"Поддержка: Договор служения"
-
-	[tag]"icon path"	[value]"Awakened"
-	[tag]"base class"	[value]"Support Gems"
-	
-	[tag]"item tag"		[value]"Introduced: Mirage"
-			
-	[tag]"worth"		[value]"Moderate"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 	
 ADD_NEW_DATA_ENTITY
