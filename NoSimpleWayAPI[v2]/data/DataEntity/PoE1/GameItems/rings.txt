@@ -641,8 +641,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AfflictionTempPic"
 	[tag]"base class"	[value]"Rings"
 	
+	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Non world drop"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 
@@ -660,8 +665,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AfflictionTempPic"
 	[tag]"base class"	[value]"Rings"
 	
+	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Non world drop"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 
@@ -679,8 +689,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AfflictionTempPic"
 	[tag]"base class"	[value]"Rings"
 	
+	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Non world drop"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 
@@ -698,9 +713,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AfflictionTempPic"
 	[tag]"base class"	[value]"Rings"
 	
+	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Non world drop"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	[tag]"item tag"		[value]"Introduced: Affliction league"
 
 	[tag]"item tag"		[value]"Base for unique item"

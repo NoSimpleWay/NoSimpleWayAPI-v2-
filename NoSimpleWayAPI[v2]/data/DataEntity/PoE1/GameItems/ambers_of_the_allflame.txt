@@ -1477,7 +1477,43 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Allflame Ember of the Cloister"
-	[tag]"name RU"		[value]"Уголь Всепламени жаб"
+	[tag]"name RU"		[value]"Уголь Всепламени обители"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Multitude"
+	[tag]"name RU"		[value]"Уголь Всепламени множества"
+
+	[tag]"icon path"	[value]"Allflame_ember"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Allflame amber"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Allflame Ember of the Divine"
+	[tag]"name RU"		[value]"Уголь Всепламени божественности"
 
 	[tag]"icon path"	[value]"Allflame_ember"
 	[tag]"base class"	[value]"Stackable Currency"

@@ -344,6 +344,7 @@
 [Enshrouded Helmet] dust quantity = 0, dust tag = Trash
 [Enshrouded Shield] dust quantity = 0, dust tag = Trash
 [Enshrouded Body Armour] dust quantity = 0, dust tag = Trash
+[Enshrouded Quiver] dust quantity = 0, dust tag = Trash
 [Agate Amulet] dust quantity = 92240, dust tag = Rare
 [Amber Amulet] dust quantity = 10340, dust tag = Moderate
 [Astrolabe Amulet] dust quantity = 0, dust tag = Trash
@@ -426,6 +427,7 @@
 [Crimson Jewel] dust quantity = 0, dust tag = Trash
 [Viridian Jewel] dust quantity = 0, dust tag = Trash
 [Timeless Jewel] dust quantity = 0, dust tag = Trash
+[Mycelium Core] dust quantity = 0, dust tag = Trash
 [Glorious Plate] dust quantity = 86960, dust tag = Rare
 [Gladiator Plate] dust quantity = 113460, dust tag = Expensive
 [Astral Plate] dust quantity = 24280, dust tag = Moderate

@@ -539,7 +539,7 @@ DETF_color	255	128	64	255
 
 #########################################################
 #
-#	CURSE OF THE ALLFLAME LEAGUE
+#	COVENS OF UMBRA
 #
 #########################################################
 
@@ -548,889 +548,21 @@ DETF_color	255	128	64	255
 
 
 
+
+#############
+#COVENS CURRENCY
+#############
 REGISTER_NEW_FILTER_RULE
 target_game	"PoE1"
 cannot_be_configured
-name_EN	"New divinations"
-name_RU	"Новые гадалки"
-icon	"data/textures/icons/Card.png"
+name_EN	"Other currency"
+name_RU	"Прочая валюта"
+icon	"data/textures/icons/FrayedThread.png"
 
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-tag_cannot_be_configured
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Divination Cards"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-tag_cannot_be_configured
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-REGISTER_NEW_FILTER_RULE
 target_game	"PoE1"
-cannot_be_configured
-name_EN	"Charts"
-name_RU	"Морские карты"
-icon	"data/textures/icons/Chart.png"
-
 tag	"Game item"
-named_id	"allflame folder"
+named_id	"covens folder"
 min_y	"100"
-
-
-
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Chart"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Enshrouded Items"
-name_RU	"Затуманенные предметы"
-icon	"data/textures/icons/EnshroudedShield.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-
-
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Enshrouded Items"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"New swords"
-name_RU	"Новые мечи"
-icon	"data/textures/icons/GhostflameBlade.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"One Hand Swords"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"New amulets"
-name_RU	"Новые амулеты"
-icon	"data/textures/icons/seaglass_amulet.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Amulets"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Talisman"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"New talismans"
-name_RU	"Новые талисманы"
-icon	"data/textures/icons/Wereclaw_Talisman_inventory_icon.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Amulets"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Talisman"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"New scarabs"
-name_RU	"Новые скарабеи"
-icon	"data/textures/icons/Winged_Scarab.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Map Fragments"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Scarab item"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Mercenary Warrant"
-name_RU	"Наёмничья расписка"
-icon	"data/textures/icons/MercenaryWarrant.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Map Fragments"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Warrant item"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Pirate ducats"
-name_RU	"Пиратские Дукаты"
-icon	"data/textures/icons/KisharasDucat.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
-
-REGISTER_NEW_GENERATOR
-generations_count	1
-random_selection_count	1
-generator_mode	MODE_ALL
-
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"exist for"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"PoE1"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
-	DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Ducat"
-	DETF_color	255	230	204	255
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
-
-
-
-
-
-REGISTER_NEW_BANNED_FILTER_TAG
-target_tag	"item tag"
-tag_cannot_be_configured
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Deleted"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Hidden item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Renamed item"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Omen"
-	DETF_color	255	128	64	255
-
-
-
-
-
-
-
-
-
-
-
-REGISTER_NEW_FILTER_RULE
-target_game	"PoE1"
-cannot_be_configured
-name_EN	"Legion crystals"
-name_RU	"Кристаллы Легиона"
-icon	"data/textures/icons/KaruiEnshroudingCrystal.png"
-
-tag	"Game item"
-named_id	"allflame folder"
-min_y	"100"
-
-
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -1459,7 +591,305 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Astrolable"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Allflame amber"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Legion crystal"
+	DETF_color	255	128	64	255
+	
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Chisel"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+#############
+#COVENS ESSENCES
+#############
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"New essences"
+name_RU	"Новые сущности"
+icon	"data/textures/icons/EssenceOfTrickery.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Essences"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+#######################################
+#COVENS ALLFLAME EMBERS
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"New allflames"
+name_RU	"Новая угольки"
+icon	"data/textures/icons/Allflame_ember.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Allflame amber"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+
+
+#######################################
+#COVENS ASTROLABIES
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"New astrolabies"
+name_RU	"Новые астролябии"
+icon	"data/textures/icons/ImmortalAstrolabe.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Astrolable"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+#######################################
+#COVENS LEGION CRYSTAL
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"New enshrouded items"
+name_RU	"Новые затуманенные предметы"
+icon	"data/textures/icons/AfarudEnshroudingCrystal.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
 	DETF_color	255	230	204	255
 
 
@@ -1470,46 +900,18 @@ target_tag	"item tag"
 	DETF_value_key	"Legion crystal"
 	DETF_color	255	230	204	255
 
-
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Enshrouded item"
+	DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
+	DETF_value_key	"Introduced: Covens of Umbra"
 	DETF_color	255	230	204	255
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
 
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
 
 
 
@@ -1529,81 +931,27 @@ tag_cannot_be_configured
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Omen"
-	DETF_color	255	128	64	255
-
-	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Ducat"
-	DETF_color	255	128	64	255
 
 
 
 
 
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
-	DETF_color	255	230	204	255
-
-
-
-
-
-
-
-
-
-
-
-
+#######################################
+#COVENS CHISELS
+#######################################
 REGISTER_NEW_FILTER_RULE
 target_game	"PoE1"
 cannot_be_configured
-name_EN	"New currency"
-name_RU	"Новая валюта"
-icon	"data/textures/icons/ScryingOrb.png"
+name_EN	"New chisels"
+name_RU	"Новые резцы картографа"
+icon	"data/textures/icons/Cartographer's_Chisel_inventory_icon.png"
 
+
+
+target_game	"PoE1"
 tag	"Game item"
-named_id	"allflame folder"
+named_id	"covens folder"
 min_y	"100"
-
-
 
 REGISTER_NEW_GENERATOR
 generations_count	1
@@ -1622,57 +970,17 @@ tag_cannot_be_configured
 
 
 REGISTER_NEW_FILTER_TAG
-target_tag	"base class"
+target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Stackable Currency"
+	DETF_value_key	"Chisel"
 	DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Introduced: Curse of the Allflame"
-	DETF_color	255	230	204	255
-	
-	
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Trash"
-	DETF_localised_attribute_name_EN	"Worth: Trash"
-	DETF_localised_attribute_name_RU	"Мусор"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Common"
-	DETF_localised_attribute_name_EN	"Worth: Common"
-	DETF_localised_attribute_name_RU	"Дешёвое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Moderate"
-	DETF_localised_attribute_name_EN	"Worth: Moderate"
-	DETF_localised_attribute_name_RU	"Недорогое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Rare"
-	DETF_localised_attribute_name_EN	"Worth: Rare"
-	DETF_localised_attribute_name_RU	"Редкое"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Expensive"
-	DETF_localised_attribute_name_EN	"Worth: Expensive"
-	DETF_localised_attribute_name_RU	"Ценное"
-	DETF_color	255	230	204	255
-
-	REGISTER_NEW_SUITABLE_VALUES
-	DETF_value_key	"Very expensive"
-	DETF_localised_attribute_name_EN	"Worth: Very expensive"
-	DETF_localised_attribute_name_RU	"Очень ценное"
+	DETF_value_key	"Introduced: Covens of Umbra"
 	DETF_color	255	230	204	255
 
 
@@ -1695,18 +1003,289 @@ tag_cannot_be_configured
 	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
+
+
+#######################################
+#COVENS THREADS
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Threads"
+name_RU	"Нити"
+icon	"data/textures/icons/BreachThread.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Thread item"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
 	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Omen"
+	DETF_value_key	"Deleted"
 	DETF_color	255	128	64	255
 
 	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Ducat"
+	DETF_value_key	"Hidden item"
 	DETF_color	255	128	64	255
 
 	REGISTER_NEW_BANNED_VALUES
-	DETF_value_key	"Legion crystal"
+	DETF_value_key	"Renamed item"
 	DETF_color	255	128	64	255
 
+
+#######################################
+#COVENS MAP FRAGMENTS
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Map fragments"
+name_RU	"Фрагменты карт"
+icon	"data/textures/icons/CursedPoppet.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Map fragments"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+	
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Thread item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+
+#######################################
+#COVENS JEWELS
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"New jewels"
+name_RU	"Новые самоцветы"
+icon	"data/textures/icons/MyceliumCore.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Jewels"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
+
+
+
+
+
+#######################################
+#COVENS VISCERA
+#######################################
+REGISTER_NEW_FILTER_RULE
+target_game	"PoE1"
+cannot_be_configured
+name_EN	"Visceras"
+name_RU	"Части тел"
+icon	"data/textures/icons/Viscera.png"
+
+
+
+target_game	"PoE1"
+tag	"Game item"
+named_id	"covens folder"
+min_y	"100"
+
+REGISTER_NEW_GENERATOR
+generations_count	1
+random_selection_count	1
+generator_mode	MODE_ALL
+
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"exist for"
+tag_cannot_be_configured
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"PoE1"
+	DETF_color	255	230	204	255
+
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"Base class"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Viscera"
+	DETF_color	255	230	204	255
+
+REGISTER_NEW_FILTER_TAG
+target_tag	"item tag"
+
+	REGISTER_NEW_SUITABLE_VALUES
+	DETF_value_key	"Introduced: Covens of Umbra"
+	DETF_color	255	230	204	255
+
+
+
+
+
+REGISTER_NEW_BANNED_FILTER_TAG
+target_tag	"item tag"
+tag_cannot_be_configured
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Deleted"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Hidden item"
+	DETF_color	255	128	64	255
+
+	REGISTER_NEW_BANNED_VALUES
+	DETF_value_key	"Renamed item"
+	DETF_color	255	128	64	255
 
 
 
@@ -1731,14 +1310,14 @@ tag_cannot_be_configured
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Mirage league:\nnew items"
-name_RU	"Лига Мираж:\nновые предметы"
-icon	"data/textures/buttons/pattern_folder_allflame.png"
+name_EN	"Covens league:\nnew items"
+name_RU	"Лига Ковены:\nновые предметы"
+icon	"data/textures/buttons/pattern_folder_covens.png"
 is_folder
 
 target_game	"PoE1"
 tag	"Game item"
-named_id	"allflame folder"
+named_id	"covens folder"
 min_y	"100"
 
 
@@ -2820,9 +2399,9 @@ DETF_color	255	128	64	255
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Scarabs"
-name_RU	"Скарабеи"
-icon	"data/textures/icons/Winged_Scarab.png"
+name_EN	"Threads"
+name_RU	"нити"
+icon	"data/textures/icons/FrayedThread.png"
 
 target_game	"PoE1"
 tag	"Game item"
@@ -2842,80 +2421,8 @@ target_tag	"item tag"
 tag_cannot_be_configured
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Scarab item"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"scarab tier"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Basic"
-DETF_localised_attribute_name_EN	"Basic"
-DETF_localised_attribute_name_RU	"Базовый"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Bonus"
-DETF_localised_attribute_name_EN	"Bonus"
-DETF_localised_attribute_name_RU	"Бонусный"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Influencing"
-DETF_localised_attribute_name_EN	"Influenced"
-DETF_localised_attribute_name_RU	"Влияния"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Horned"
-DETF_localised_attribute_name_EN	"Horned"
-DETF_localised_attribute_name_RU	"Рогатый"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Special"
-DETF_localised_attribute_name_EN	"Special"
-DETF_localised_attribute_name_RU	"Особый"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_FILTER_TAG
-target_tag	"worth"
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Trash"
-DETF_localised_attribute_name_EN	"Worth: Trash"
-DETF_localised_attribute_name_RU	"Мусор"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Common"
-DETF_localised_attribute_name_EN	"Worth: Common"
-DETF_localised_attribute_name_RU	"Дешёвое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Moderate"
-DETF_localised_attribute_name_EN	"Worth: Moderate"
-DETF_localised_attribute_name_RU	"Недорогое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Rare"
-DETF_localised_attribute_name_EN	"Worth: Rare"
-DETF_localised_attribute_name_RU	"Редкое"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Expensive"
-DETF_localised_attribute_name_EN	"Worth: Expensive"
-DETF_localised_attribute_name_RU	"Ценное"
-DETF_color	255	230	204	255
-
-REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Very expensive"
-DETF_localised_attribute_name_EN	"Worth: Very expensive"
-DETF_localised_attribute_name_RU	"Очень ценное"
-DETF_color	255	230	204	255
+DETF_value_key	"Thread item"
+DETF_color	255	230	204	25
 
 REGISTER_NEW_BANNED_FILTER_TAG
 target_tag	"item tag"
@@ -3983,8 +3490,8 @@ min_y	"100"
 
 
 REGISTER_NEW_FILTER_RULE
-name_EN	"Awakened gems"
-name_RU	"Пробуждённые камни"
+name_EN	"Exceptional gems"
+name_RU	"Исключительные камни"
 icon	"data/textures/icons/Awakened.png"
 
 target_game	"PoE1"
@@ -4003,11 +3510,17 @@ REGISTER_NEW_FILTER_TAG
 target_tag	"item tag"
 
 REGISTER_NEW_SUITABLE_VALUES
-DETF_value_key	"Awakened gem"
+DETF_value_key	"Exceptional gem"
 DETF_color	255	230	204	255
 
 REGISTER_NEW_FILTER_TAG
 target_tag	"worth"
+
+REGISTER_NEW_SUITABLE_VALUES
+DETF_value_key	"Trash"
+DETF_localised_attribute_name_EN	"Worth: Trash"
+DETF_localised_attribute_name_RU	"Мусор"
+DETF_color	255	230	204	255
 
 REGISTER_NEW_SUITABLE_VALUES
 DETF_value_key	"Common"

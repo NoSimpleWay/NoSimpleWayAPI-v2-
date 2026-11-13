@@ -7038,7 +7038,7 @@ void EWindowMain::read_user_loot_patterns()
 }
 
 
-const std::string				EWindowMain::this_version = "1.12.0";
+const std::string				EWindowMain::this_version = "1.13.0";
 std::vector<ELocalisationText>	EWindowMain::registered_transfigured_gems;
 
 
@@ -27576,6 +27576,12 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item, GameItemGenerator*
 			//EInputCore::logger_param("width", attribute_container.attribute_value);
 		}
 
+		if (EWindowMain::loot_simulator_button_group->selected_unid_item_tier > 0)
+		{
+			_game_item->localised_name.localisations[NSW_localisation_EN] += "<" + std::to_string(EWindowMain::loot_simulator_button_group->selected_unid_item_tier) + ">";
+			_game_item->localised_name.localisations[NSW_localisation_RU] += "<" + std::to_string(EWindowMain::loot_simulator_button_group->selected_unid_item_tier) + ">";
+		}
+
 
 
 
@@ -34251,7 +34257,7 @@ void EButtonGroupAttributeGeneratorGroup_UnidentifiedItemTier::init()
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->pointer_to_value = &EWindowMain::loot_simulator_button_group->selected_unid_item_tier;
 
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->min_value = 1.0f;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->min_value = 0.0f;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->mid_value = 3.0f;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(named_slider)->data_container)->max_value = 5.0f;
 

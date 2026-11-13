@@ -10,7 +10,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -28,7 +28,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -47,7 +47,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -66,7 +66,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -85,7 +85,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -104,7 +104,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -123,7 +123,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -142,7 +142,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -161,7 +161,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -180,7 +180,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Thread item"
 	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -196,9 +196,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CursedPoppet"
 	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Thread item"
-	
-	[tag]"item tag"		[value]"Introduced: Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"

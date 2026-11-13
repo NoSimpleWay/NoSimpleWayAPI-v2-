@@ -2576,7 +2576,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"exist for"	[value]"PoE1"
 
 	[tag]"name EN"		[value]"Essence of Trickery"
-	[tag]"name RU"		[value]"Сущность запустения"
+	[tag]"name RU"		[value]"Сущность обмана"
 
 	[tag]"icon path"	[value]"EssenceOfTrickery"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -2584,7 +2584,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Essences"
 	
 	[tag]"item tag"		[value]"Essence tier: special"
-	[tag]"item tag"		[value]"Introduced: Covens"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	
 	[tag]"worth"		[value]"Rare"
 

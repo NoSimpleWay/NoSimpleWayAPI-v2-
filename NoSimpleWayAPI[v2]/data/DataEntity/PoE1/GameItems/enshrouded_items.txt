@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"
@@ -28,6 +29,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"
@@ -48,6 +50,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"
@@ -68,6 +71,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"
@@ -88,6 +92,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Curse of the Allflame"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"
@@ -112,6 +117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Enshrouded Items"
 	
 	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Enshrouded item"
 
 	[tag]"item tag"		[value]"Base for unique item"
 	[tag]"item tag"		[value]"Always unique"

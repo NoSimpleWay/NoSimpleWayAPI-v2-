@@ -736,6 +736,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Greater Volley Support"
 	[tag]"name RU"		[value]"Большой залп"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Skill Gems"
@@ -786,6 +788,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -804,6 +809,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -822,6 +829,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -840,6 +849,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -858,6 +869,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -876,6 +889,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -894,6 +909,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -912,6 +929,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -930,6 +949,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -948,6 +969,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -966,6 +989,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -984,6 +1009,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1002,6 +1029,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1020,6 +1049,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1038,6 +1069,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1056,6 +1089,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1074,6 +1109,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1092,6 +1129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1110,6 +1149,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1128,6 +1169,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1146,6 +1189,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1164,6 +1209,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1182,6 +1229,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1200,6 +1249,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1218,6 +1269,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1236,6 +1289,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1254,6 +1309,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1272,6 +1329,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1290,6 +1349,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1308,6 +1369,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1326,6 +1389,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1343,6 +1408,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1361,6 +1428,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1379,6 +1448,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1397,6 +1468,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1415,6 +1488,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1433,6 +1508,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1451,6 +1528,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1472,6 +1551,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1491,6 +1572,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
@@ -1510,11 +1593,151 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 			
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Coursing Current Support"
+	[tag]"name RU"		[value]"Поддержка: Скачущее напряжение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Crystalfall Support"
+	[tag]"name RU"		[value]"Поддержка: Кристальный обвал"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pact of Beidat"
+	[tag]"name RU"		[value]"Пакт Беидата"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pact of Ghorr"
+	[tag]"name RU"		[value]"Пакт Гхорра"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pact of K'Tash"
+	[tag]"name RU"		[value]"Пакт К'Таш"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Pact of Lycia"
+	[tag]"name RU"		[value]"Пакт Люции"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Introduced: Mirage"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
 
 
 	
@@ -1629,6 +1852,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Gems"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

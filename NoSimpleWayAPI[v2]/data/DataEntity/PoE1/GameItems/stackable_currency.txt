@@ -3379,6 +3379,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Mirage coin"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -3403,6 +3404,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Mirage"
 	[tag]"item tag"		[value]"Mirage coin"
+	[tag]"item tag"		[value]"Deleted in Covens"
 	
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"item tag"		[value]"Deleted in Covens"
@@ -3473,8 +3475,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CoinOfKnowledge"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Mirage"
-	[tag]"item tag"		[value]"Mirage coin"
 	
 	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	
@@ -3528,7 +3528,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	ADD_NEW_DATA_ENTITY
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 	[tag]"exist for"	[value]"PoE1"
 
@@ -3537,9 +3537,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CoinOfPower"
 	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"item tag"		[value]"Introduced: Mirage"
-	[tag]"item tag"		[value]"Mirage coin"
 	
 	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	
@@ -3607,8 +3604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CoinOfSkill"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Mirage"
-	[tag]"item tag"		[value]"Mirage coin"
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -4039,6 +4035,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+	[tag]"exist for"	[value]"PoE1"
+
+	[tag]"name EN"		[value]"Cryptic Astrolabe"
+	[tag]"name RU"		[value]"Загадочная астролябия"
+
+	[tag]"icon path"	[value]"CrypticAstrolabe"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
+	[tag]"item tag"		[value]"Astrolable"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -4053,7 +4078,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Covens of Umbra"
-	[tag]"item tag"		[value]"Astrolable"
+	[tag]"item tag"		[value]"Legion crystal"
 	
 	[tag]"worth"		[value]"Rare"
 	
